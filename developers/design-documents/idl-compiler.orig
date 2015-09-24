@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/idl-compiler","deleted":false,"title":"IDL compiler","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/idl-compiler\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"IDL compiler","locale":"en","wuid":"wuid:gx:1bbd82db1b3e5ca8","revision":35,"path":"/developers/design-documents/idl-compiler","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"idl-compiler","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="IDL compiler - The Chromium Projects" />
+<meta itemprop="name" content="IDL compiler - The Chromium Projects" />
+<meta property="og:title" content="IDL compiler - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>IDL compiler - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">IDL compiler</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overall-structure"><strong>1 </strong>Overall structure</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Code"><strong>1.1 </strong>Code</a></li></ol></li><li class="goog-toc"><a href="#TOC-Front-end"><strong>2 </strong>Front end</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Extended-attribute-validation"><strong>2.1 </strong>Extended attribute validation</a></li><li class="goog-toc"><a href="#TOC-Dependency-resolution"><strong>2.2 </strong>Dependency resolution</a></li></ol></li><li class="goog-toc"><a href="#TOC-Back-end-code-generator-"><strong>3 </strong>Back end (code generator)</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Style"><strong>3.1 </strong>Style</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Jinja"><strong>3.1.1 </strong>Jinja</a></li><li class="goog-toc"><a href="#TOC-Python"><strong>3.1.2 </strong>Python</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Global-information"><strong>4 </strong>Global information</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Dependencies"><strong>4.1 </strong>Dependencies</a></li></ol></li><li class="goog-toc"><a href="#TOC-Goals"><strong>5 </strong>Goals</a></li><li class="goog-toc"><a href="#TOC-Alternatives"><strong>6 </strong>Alternatives</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Why-not-C-"><strong>6.1 </strong>Why not C++?</a></li><li class="goog-toc"><a href="#TOC-Why-not-SWIG-"><strong>6.2 </strong>Why not SWIG?</a></li><li class="goog-toc"><a href="#TOC-Why-not-another-lexer-parser-or-template-processor-"><strong>6.3 </strong>Why not another lexer/parser or template processor?</a></li></ol></li><li class="goog-toc"><a href="#TOC-Performance"><strong>7 </strong>Performance</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Further-improvements"><strong>7.1 </strong>Further improvements</a></li><li class="goog-toc"><a href="#TOC-References"><strong>7.2 </strong>References</a></li></ol></li><li class="goog-toc"><a href="#TOC-References1"><strong>8 </strong>References</a></li></ol></div></div></div></div></div>
+<div>The <b>IDL compiler</b> or <b>bindings generator</b> <a href="http://en.wikipedia.org/wiki/Transcompiler">transcompiles</a> <a href="https://www.chromium.org/blink/webidl">Web IDL</a> to C++ code, specifically <a href="http://en.wikipedia.org/wiki/Language_binding">bindings</a> between V8 (the <a href="http://en.wikipedia.org/wiki/JavaScript_engine">JavaScript engine</a>) and Blink. That is, when an attribute or method in a <a href="https://www.chromium.org/developers/web-idl-interfaces">Web IDL interface</a> is used from JavaScript, V8 calls the bindings code, which calls Blink code. As of early 2014, there are almost 700 IDL files, over 2,000 attributes, and almost 4,000 methods. This bindings code is highly repetitive, primarily passing values (arguments and return values) between V8 and Blink and doing various conversions and checks (e.g., type checking), hence it is mostly machine-generated.</div>
+<div><br />
+</div>
+<div>This is complicated by numerous parameters and special cases, due to either wanting to automatically generate repetitive code (so Blink implementation is simpler), supporting quirks of Web interfaces, or Blink implementation details. The compiler is under active development, due to adding new features (bug <a href="https://code.google.com/p/chromium/issues/detail?id=345506">345506</a>), adjusting to changes in V8 or Blink, and reducing technical debt, particularly custom bindings (manually written bindings, bug <a href="https://code.google.com/p/chromium/issues/detail?id=345519">345519</a>). By far the majority of development occurs on the <i>back end</i> (<b>code generator</b>); the <i>front end</i> and overall structure is quite stable.</div>
+<div><br />
+</div>
+<div>Users of the IDL compiler consist of:</div>
+<ul><li>Blink (hence Chromium), which uses the whole compiler in the build (to generate V8 bindings) – this is the primary use.</li>
+<li>Other bindings generators (who want to compile Blink IDL files), which use the front end and optionally parts of the top-level compiler and build scripts.</li>
+<li>Other IDL use: Web IDL is a convenient format for specifying JavaScript interfaces, and the front end can be used for reading these files, most simply using the IR object (<code>IdlDefinitions</code>).</li></ul>
+<div>The compiler is in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/">Source/bindings/scripts</a>, and bindings are generated as part of the build (see <a href="https://www.chromium.org/developers/design-documents/idl-build">IDL build</a>). The top-level file <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/idl_compiler.py">idl_compiler.py</a>, can be invoked directly (if you want to compile a single file), or via <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Tools/Scripts/run-bindings-tests">Tools/Scripts/run-bindings-tests</a>. The rest of this document describes design, implementation, and use.</div>
+<h2><a name="TOC-Overall-structure"></a>Overall structure</h2>
+<div>The compiler is factored into a pipeline, and the steps further divided into separate Python modules. While there are a number of components, each is simple and well-defined, and generally only one or two must be considered at a time.</div>
+<div><br />
+</div>
+<div>There are complicated issues with global information such as dependencies (see below), but initially it is sufficient to consider compiling a single file.</div>
+<div><br />
+</div>
+<div>The overall structure is standard for <a href="http://en.wikipedia.org/wiki/Compiler">compilers</a> (see <a href="http://en.wikipedia.org/wiki/Compiler_construction">compiler construction</a>): a front end reads in input (IDL), yielding an <a href="http://en.wikipedia.org/wiki/Intermediate_representation">intermediate representation</a> (IR), and the back end takes the IR and writes out output (C++).</div>
+<pre>IDL (Foo.idl)  --front end--&gt;  IR  --back end--&gt;  C++ (V8Foo.h, V8Foo.cpp)</pre>
+<div>The flow is a (per file) <a href="http://en.wikipedia.org/wiki/Pipeline_(software)">pipeline</a>: information flows one way, and, other than dependencies and global information, files are processed independently. In detail:</div>
+<pre>Front end: IDL  --lexer--&gt;  tokens  --parser--&gt;  AST  --constructor--&gt;  IR
+Back end:  IR  --logic--&gt;  context  --template processor--&gt;  C++</pre>
+<div>In terms of data types, objects, and modules, this is:</div>
+<pre>IdlCompiler: idl_filename  --IdlReader--&gt;  IdlDefinitions  --CodeGeneratorV8--&gt;  header_text, cpp_text
+
+IdlReader:   idl_filename  --BlinkIDLLexer--&gt; (internal) --BlinkIDLParser--&gt;  IDLNode
+               --idl_definitions_builder--&gt;  IdlDefinitions
+
+CodeGeneratorV8:  IdlDefinitions  --(extract member)--&gt;  IdlInterface  --v8_*.py--&gt;  dict
+                    --jinja2--&gt;  header_text, cpp_text</pre>
+<div>One can trace the processing of each element of IDL input text through the pipeline, essentially 1-to-1:</div>
+<ul><li>Spec: <a href="http://heycam.github.io/webidl/#idl-interfaces">Interfaces</a> (production rule: <a href="http://heycam.github.io/webidl/#prod-Interface">Interface</a>)</li>
+<li>Input IDL text is parsed by the <code>p_Interface</code> rule in <code>idl_parser.IDLParser</code> (base parser), producing an <code>IDLNode</code> (AST) named <code>'Interface'</code>.</li>
+<li>An <code>IdlInterface</code> is constructed from this tree in <code>idl_definitions_builder</code></li>
+<li>Python logic produces a dict (Jinja context) via the <code>v8_interface.interface_context</code> function</li>
+<li>The context is rendered to <code>.cpp/.h</code> output text by Jinja, from the templates <code>interface.cpp</code> (derived from <code>interface_base.cpp</code>) and <code>interface.h</code></li></ul>
+<div>The boundary between the stages of the pipeline can move, primarily in the CG between the context and the template (depending on logic complexity: can it fit in the template, or should it be a Python function?). Changing the boundary between the FE and the CG is possible (e.g., moving "find indexed property getter" into the <code>IdlInterface</code> constructor, instead of the CG <code>v8_interface</code> module), but rare. In principle the constructor could be entirely integrated into the parser (have the yacc actions construct the object directly, instead of an AST), but this is unlikely, as it would require a significant amount of work for a relatively minor simplification.</div>
+<div><br />
+</div>
+<div>Note that filenames, not IDL text, are what is input to the reader. This is fundamentally because the compiler and the parser assume they are reading in files (hence take a filename parameter, e.g. for reporting errors). Further, due to dependencies, processing one IDL file may require reading others (hence going out to the file system). This could be abstracted to taking in IDL text and passing interface names rather than filenames internally, but this isn't necessary at present.</div>
+<div><br />
+</div>
+<div>The front end is familiar (<a href="http://en.wikipedia.org/wiki/Regular_expression">regex</a> <a href="http://en.wikipedia.org/wiki/Lexical_analysis">lexer</a>, <a href="http://en.wikipedia.org/wiki/LALR_parser">LALR parser</a>, and object constructor). The lexer-parser uses <a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a>, a Python implementation of <a href="http://en.wikipedia.org/wiki/Lex_(software)">lex</a> and <a href="http://en.wikipedia.org/wiki/Yacc">yacc</a>; the constructor is lengthy but straightforward.</div>
+<div><br />
+</div>
+<div>However, the back end (<a href="http://en.wikipedia.org/wiki/Code_generation_(compiler)">code generator</a>) differs from compilers that target machine code: since it is a <a href="http://en.wikipedia.org/wiki/Source-to-source_compiler">source-to-source compiler</a>, the back end outputs C++ (source code, not machine code). Thus we use a <a href="http://en.wikipedia.org/wiki/Template_processor">template processor</a> to produce output; recall that <i>templating</i> (writing formatted <i>output</i>) is complementary to <i>parsing</i> (reading formatted <i>input</i>). The template processor is <a href="https://www.chromium.org/developers/jinja">Jinja</a>, which is used in several places in Chromium. Given an interface, containing various attributes and methods, we fill in a template for the corresponding C++ class and each attribute and method.</div>
+<div><br />
+</div>
+<div>Further, the input language is declarative (the 'D' in IDL), so no optimizations of input code are necessary (there is no <i>middle end</i>): it's just filling in a template. The back end is itself divided into the templates themselves, and the Python code that fills in the templates (produces the <i>context</i>). There is also no separate <a href="http://en.wikipedia.org/wiki/Semantic_analysis_(compilers)"><i>semantic analysis</i></a> step, except for validation of extended attributes (see below): the code generator assumes types are valid, and errors show up when the resulting C++ code fails to compile. This avoids the complexity and time cost of either a separate validation step, or of type-checking in the code generator, at the cost of typos showing up in compile failures instead of at IDL compile time. Notably, there is no type checking or name binding, since identifiers are assumed to refer to Web IDL interfaces (C++ classes) and the Web IDL namespace is global, and there is no assignment, since Web IDL is declarative.</div>
+<h3><a name="TOC-Code"></a>Code</h3>
+<div>Code-wise, the top-level file <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/idl_compiler.py">idl_compiler.py</a> imports two modules: <code><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/idl_reader.py">idl_reader</a></code> for the front end, <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/code_generator_v8.py"><code>code_generator_v8</code></a> for the back end. Each of these is used to create an object (<code>IdlReader</code> and <code>CodeGeneratorV8</code>), which handles the library initialization (PLY or Jinja, which are slow, and thus reused if running multiple times during one run) and global information. The objects are then called one time each, for the IDL → IR and IR → C++ steps, respectively. By contrast, <code>run-bindings-tests</code> creates these objects as well, then calls them multiple times, once for each test file. Note that in the actual build, compilation is parallelized, which is why only one file is compiled per process, and there is a pre-caching step which significantly speeds up library initialization.</div>
+<div><br />
+</div>
+<div>The code is mostly functional, except for a few module-level variables in the code generator (discussed below) for simplicity, and some objects used for initialization.</div>
+<div><br />
+</div>
+<div>The main classes are as follows, with the module in which they are defined. Note that the relations are primarily composition, with inheritance significantly used for the Blink-specific lexer and parser. <code>IdlCompiler, IdlReader,</code> and <code>CodeGeneratorV8</code> are expected to be used as singletons, and are just classes for initialization (avoids expensive re-initialization, and interface-wise separates initialization from execution). <code>IdlDefinitions</code> contains objects of a few other classes (for more minor data), and there is a bit of complex OO code in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/idl_definitions.py"><code>idl_definitions</code></a> to simplify <a href="http://heycam.github.io/webidl/#idl-typedefs">typedef</a> resolution.</div>
+<pre>IdlCompiler  :: idl_compiler
+    IdlReader  ::  idl_reader
+        BlinkIDLParser &lt; IDLParser
+            BlinkIDLLexer &lt; IDLLexer
+        IDLExtendedAttributeValidator
+    CodeGeneratorV8  :: code_generator_v8</pre>
+<pre>IdlDefinitions  ::  idl_definitions
+    IdlInterface
+        IdlAttribute
+        IdlConstant
+        IdlOperation
+            IdlArgument</pre>
+<h2><a name="TOC-Front-end"></a>Front end</h2>
+<div>The front end is structured as a lexer → parser → object constructor pipeline:</div>
+<pre>Front end: IDL  --lexer--&gt;  tokens  --parser--&gt;  AST  --constructor--&gt;  IR</pre>
+<div>There are two other steps:</div>
+<ul><li>extended attribute validation</li>
+<li>dependency resolution</li></ul>
+<div>The top-level module for the front end is <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/idl_reader.py"><code>idl_reader</code></a>. This implements a class, <code>IdlReader</code>, whose constructor also constructs a lexer, parser, validator, and resolver. <code>IdlReader</code> implements a method to construct an IR object (<code>IdlDefinitions</code>) from an IDL filename. Thus to convert IDL to IR one instantiates a reader, then call its method to read an IDL file.</div>
+<div><br />
+</div>
+<div>The lexer-parser uses <a href="http://www.dabeaz.com/ply/">PLY (Python Lex-Yacc)</a>. In fact, the lexer and parser for the Blink IDL dialect of Web IDL derive from a base lexer and base parser for standard Web IDL (in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/idl_parser">tools/idl_parser</a>), and thus only need to include deviations from the standard. The lexical syntax of Blink IDL is standard (though the base lexer is slightly non-standard), so the Blink IDL lexer is very small and slated for removal (Bug <a href="https://code.google.com/p/chromium/issues/detail?id=345137">345137</a>). The phrase syntax is slightly non-standard (primarily in extended attributes) and expected to stay this way, as extended attributes are implementation-dependent and the deviations are useful (see <a href="http://www.chromium.org/blink/webidl#TOC-Syntax">Blink IDL: syntax</a>). We thus say that the base lexer/parser + Blink lexer/parser form 1 lexer and 1.1 parser (base + derived).</div>
+<div><br />
+</div>
+<div>The base lexer class, defined in <code><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/idl_parser/idl_lexer.py">idl_lexer</a></code>, is straightforward and short: it is just a list of regular expressions and keywords, wrapped in a class, <code>IDLLexer</code>; a lexer (object) itself is an instance of this class. There is some minor complexity with error handling (correct line count) and methods to assist with derived classes, but it's quite simple. The derived lexer class is very simple: it's a class, <code>BlinkIDLLexer</code>, which derives from the base class. The only complexity is adding a method to remove a token class from the base class, and to remove comments (base lexer is non-standard here: standard lexer does not produce COMMENT tokens).</div>
+<div><br />
+</div>
+<div>The base parser class, defined in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/idl_parser/idl_parser.py"><code>idl_parser</code></a>, is considerably longer, but consists almost entirely of production rules in (a form of) <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">BNF</a>, together with yacc <i>actions</i> that build an <a href="http://en.wikipedia.org/wiki/Abstract_syntax_tree">abstract syntax tree</a> (AST, syntax tree). Recall that yacc <i>traverses</i> the <a href="http://en.wikipedia.org/wiki/Concrete_syntax_tree">concrete syntax tree</a> (CST, parse tree) and can take whatever actions it chooses; in this case it generates an AST, though it could also generate the IR directly. See <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/blink_idl_parser.py"><code>blink_idl_parser</code></a> for a detailed explanation of the PLY yacc syntax and <code>IDLParser</code> methods used to construct the AST. The grammar is directly from the <a href="http://heycam.github.io/webidl/#idl-grammar">Web IDL grammar</a>, which is an <a href="http://en.wikipedia.org/wiki/LL_grammar">LL(1) grammar</a>; the Blink IDL rules are exactly the deviations from the standard grammar, or overrides to irregularities in the base parser. A parser object is an instance of a class, <code>IDLParser</code>, from which <code>BlinkIDLParser</code> is derived. The parser constructor takes a lexer as an argument, and one passes the corresponding lexer.</div>
+<div><br />
+</div>
+<div>The definitions classes, defined in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/idl_definitions.py">idl_definitions</a>, primarily consist of constructors, which take the AST and generate an intermediate representation (IR), in this case an object of type <code>IdlDefinitions</code> and contained objects for individual definitions and definition's members.</div>
+<div><br />
+</div>
+<div>The classes are as follows (mostly composition, one case of inheritance); a few internal-use only classes are not shown:</div>
+<pre>IdlDefinitions
+    IdlInterface
+        IdlAttribute
+        IdlConstant
+        IdlOperation
+            IdlArgument
+    IdlException &lt; IdlInterface
+    IdlCallbackFunction
+    IdlEnum</pre>
+<div><br />
+</div>
+<div>After reading an IDL file (producing an IR), the reader has two optional additional steps (these are run during the build, but aren't necessary for simpler use, such as compiling a test file without dependencies): validation and dependency resolution.</div>
+<h3><a name="TOC-Extended-attribute-validation"></a>Extended attribute validation</h3>
+<div>The front end largely does not do <a href="http://en.wikipedia.org/wiki/Semantic_analysis_%28compilers%29">semantic analysis</a>, as semantic errors (primarily name errors) are largely caught by the build visibly failing, either during the IDL compile or during the C++ compile (name lookup errors). Notably, there is no symbol table or name binding in the front end: each name is simply looked up on use (e.g., type names), or passed through to the output (e.g., attribute names), and catch errors by the lookup failing or the generated code failing to compile, respectively.</div>
+<div><br />
+</div>
+<div>However, extended attributes are validated, both the keys and values, based on the list in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/IDLExtendedAttributes.txt">IDLExtendedAttributes.txt</a>. This is done because invalid extended attributes are <i>ignored</i> by the compiler, specifically the code generator, and thus errors are easy to miss. The Python code checks for specific extended attributes, so errors just result in the attribute not being found; for example, writing <code>[EnforecRange]</code> for <code>[EnforceRange]</code> would otherwise silently result in the range not being enforced. This is not perfect: extended attributes may be valid but used incorrectly (e.g., specified on an attribute when they only apply to methods), which is not caught; this is however a minor problem.</div>
+<div><br />
+</div>
+<div>This is done in the front end since that is the proper place for semantic analysis, and simplifies the code generator.</div>
+<h3><a name="TOC-Dependency-resolution"></a>Dependency resolution</h3>
+<div>IDL interface definitions have two types of dependencies:</div>
+<div>
+<ul><li>An IDL interface definition can be spread across multiple files, via partial interfaces and (in effect) by <code>implements</code> (interface inheritance). We call these <i>dependency interface definitions, dependency interfaces,</i> or just <i>dependencies</i>.</li>
+<li>An IDL interface may use other interfaces as interface types: e.g., <code>interface Foo { attribute Bar bar; };</code> We call these <i>referenced interfaces</i>.</li></ul>
+</div>
+<div>The dependency resolution phase consists of merging the dependencies into the main interface definition, and adding referenced interfaces to the list of all interfaces (available to the code generator). These dependencies are computed during the <i>Global information</i> stage; see below.</div>
+<div><br />
+</div>
+<div>Members defined in partial interfaces and in implemented interfaces are simply appended to the list of members of the main interface, with a few caveats (below). Formally the difference between partial interfaces and implemented interfaces is that a partial interface is (external) type extension (it is part of and modifies the type, but is just defined separately), and a partial interface is associated with a <i>single</i> main interface that it extends; while implemented interfaces are <i>interface inheritance</i> (providing multiple inheritance in IDL) and <i>several</i> interfaces can implement a given (implemented) interface. This difference is only for IDL: in JavaScript these are both just exposed as properties on the object implementing the interface; and thus we mostly don't distinguish them in the code generator either, just merging them into one list.</div>
+<div><br />
+</div>
+<div>The subtleties are:</div>
+<div>
+<ul><li>Members defined in partial interfaces are treated differently by the code generator: they are assumed to be implemented as static members in separate classes, not as methods on the object itself. This is because partial interfaces are usually for optional or specialized parts of a basic interface, which might only be used by subtypes, and thus we do not want to clutter the main Blink C++ class with these.</li>
+<li>Some extended attributes are transferred from the dependency interface definition to its members, because otherwise there is no way to apply the attributes to "just the members in this definition", due to merging. These are extended attributes for turning off a dependency interface, namely: <code>[Conditional], [PerContextEnabled],</code> and <code>[RuntimeEnabled].</code></li>
+<li>Interface-level <code>[TypeChecking]</code> extended attributes are also recognized on partial interfaces as a convenience. Its value is also transferred to its members, appending it to any <code>[TypeChecking]</code> values that the member already declares.</li></ul>
+<div>Also, note that the compiler currently does not do significant type introspection of referenced interfaces: it mostly just uses certain global information about the interface (is it a callback interface?, <code>[ImplementedAs],</code> etc.). The only significant use of type introspection is in <code>[PutForwards],</code> where generating the code for an attribute with <code>[PutForwards]</code> requires looking up the referenced attribute in another interface. Type introspection may increase in future, to simplify complex cases and reduce hard-coding, but for now is in very limited use.</div>
+</div>
+<h2><a name="TOC-Back-end-code-generator-"></a>Back end (code generator)</h2>
+<div>The back end (code generator, CG) is where the bulk of the complexity is. The structure is simple: the Python V8 CG modules (<code>v8_*</code>) generate a dictionary called the <b>context</b>, which is passed to Jinja, which uses this dict to fill in the appropriate templates (<a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/templates/">bindings/templates</a>/*.{cpp,h}). The modules correspond to the class structure in IR, with the following exceptions:</div>
+<ul><li>the CG uses “method” where the front end uses “operation” (the term in the spec), since “method” is a more standard term;</li>
+<li>constants are included in <code>v8_interface</code>, because very simple; and</li>
+<li>arguments are included in <code>v8_methods</code>, because they are closely related to methods.</li></ul>
+<div>Recall the overall flow of the CG:</div>
+<pre>CodeGeneratorV8:  IdlDefinitions  --(extract member)--&gt;  IdlInterface  --v8_*.py--&gt;  dict
+                    --jinja2--&gt;  header_text, cpp_text</pre>
+<div>The class structure of the IR, and corresponding Python module that processes it (in <i>italics</i> if included in a previously mentioned module), are:</div>
+<pre>IdlInterface  ::  v8_interface
+    IdlAttribute  ::  v8_attributes
+    IdlConstant   ::  <i>v8_interface</i>
+    IdlOperation  ::  v8_methods
+        IdlArgument  ::  <i>v8_methods</i>
+</pre>
+<div>The CG modules each have a top-level <code>*_context</code> function<i>,</i> which takes an IR object (<code>Idl*</code>) as a parameter and returns a context (<code>dict</code>), looping through contained IR objects as necessary.</div>
+<div><br />
+</div>
+<div>Note that the context is nested – the context for an interfaces contains a list of contexts for the members: attributes, constants, and methods. The context for a given member is used throughout the corresponding template, generally to generate several methods; e.g., in <code>attributes.cpp</code> there are macros for getter, getter callback, setter, and setter callback, which are called from a loop in <code>interface_base.cpp</code>. The context for members is <i>also</i> used at the overall interface level, notably for DOM configuration.</div>
+<div><br />
+</div>
+<h3><a name="TOC-Style"></a><b>Style</b></h3>
+<div><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/v8_attributes.py">v8_attributes.py</a> (Python) and <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/templates/attributes.cpp">attributes.cpp</a> (Jinja) are a good guide to style: the getter and setter methods themselves are quite complex, while the callbacks are simple.</div>
+<div><br />
+</div>
+<div>See <a href="https://www.chromium.org/developers/jinja#TOC-Style">Jinja: Style</a> for general Jinja style tips; below is bindings generator specific guidance.</div>
+<h4><a name="TOC-Jinja"></a>Jinja</h4>
+<div>If nesting macros (so macros that call macros), use top-down order: top-level macro, followed by macros it calls. This is most notable in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/templates/methods.cpp">methods.cpp</a>, where generating a method also requires generating code for the arguments, which comes after.</div>
+<h4><a name="TOC-Python"></a>Python</h4>
+<div>
+<div>Assertions should <i>not</i> be used for validating input, and this includes IDL files: if an IDL file is invalid (e.g., it uses an extended attribute improperly), raise an exception explicitly. Assertions can be used for validating internal logic, but in practice this is rare in the code generator; see <a href="https://wiki.python.org/moin/UsingAssertionsEffectively">Using Assertions Effectively</a>.</div>
+<div><br />
+</div>
+<div>Deviations from the "One dictionary display per context" rule:</div>
+<div>
+<ul><li>If the presence of an extended attribute has side effects (namely includes), this code comes before the display.</li>
+<li>An early return after the main display, and then additional processing afterwards, occurs for attributes, where certain attributes (constructors, custom attributes) have limited processing, and the side effects of running the additional context-generation code (extra includes) are not desired.</li>
+<li>Similarly, the getter and setter logic for attributes is relative complicated, and depends on previously computed variables, and thus this part of the context is produced in other functions, then added to the main dictionary via <code>dict.update()</code>.</li></ul>
+</div>
+</div>
+<div><b>No extended attributes in templates:</b> A key point for the CG is that the raw extended attributes are <i>not</i> passed to the Jinja templates, and literal extended attribute names accordingly do not appear in templates. Instead, extended attributes are all passed via some variable in the context, either a content variable or a (boolean) control variable (e.g., <code>deprecate_as</code> for the <code>[DeprecateAs]</code> extended attribute and <code>is_reflect</code> for the <code>[Reflect]</code> extended attribute (this is only boolean since the value is used elsewhere, in the function for the getter/setter name)). This is primarily for consistency: in some cases variables <i>must</i> be used, notably if the extended attribute requires a side effect (includes), and thus putting all literal references to extended attributes in the Python logic keeps them together.</div>
+<div><br />
+</div>
+<div><b>Includes:</b> The CG code is primarily functional, with one significant exception: <i>includes</i> (for the <code>.cpp</code> file; the <code>.h</code> includes are simple). Includes are added to the <code>.cpp</code> file throughout the CG (as needed by various features), and account for a significant amount of the code bulk. This is handled by considering includes as a <a href="http://en.wikipedia.org/wiki/Side_effect_(computer_science)">side effect</a>, and storing them in a global variable (or rather a module level variable, as Python modules are <a href="http://en.wikipedia.org/wiki/Singleton_pattern">singletons</a>), specifically in <code>v8_global</code>. Alternatives include: being purely functional, and returning the includes from the functions, which makes the calls and returns bulky (due to all the passing backwards and forwards); or having all CG functions be methods of some object (<code>CodeGeneratorV8</code>), which adds a large amount of OO boilerplate. The only complexity of using module variables is that one needs to import it into each module, and must clear the includes if compiling multiple files in a single Python run (and can't compile multiple files concurrently in a single Python processes). This latter is ok because compilation is parallelized by distributing across separate processes, not by compiling multiple files in a single process.</div>
+<div><br />
+</div>
+<div>Note that the context being computed is <i>not</i> a module-wide variable: for attributes, modules, and arguments, a context is computed for each of these (functionally), though for an interface only a single context is computed. In rare cases the context is also passed into functions as an argument (when later values depend on earlier computed values), which is primarily to flatten the module: it's clearer to pass explicitly, instead of having a nested function.</div>
+<div><br />
+</div>
+<div>There are a few other module-level variables for the IDL global context, which are write-once or update-only: <code>v8_globals.interfaces</code>, for referenced interfaces, and a few in <code>v8_types</code>, for global and local type information (e.g., <code>[ImplementedAs]</code>, enumerations). These are set at <code>CodeGeneratorV8</code> construction (from <code>interfaces_info</code>), which is write-once, or <code>CodeGeneratorV8.generate_code</code> invocation (from <code>definitions</code>), which is update-only (can add some new enumerations, for instance, but shouldn't need or refer to any from other files).</div>
+<div> </div>
+<div><b>Template rendering:</b> the context is then passed into a Jinja template, via the <a href="http://jinja.pocoo.org/docs/api/#jinja2.Template.render">Template.render</a> method, which returns the generated code.</div>
+<h2><a name="TOC-Global-information"></a>Global information</h2>
+<div>Global information is computed by a pre-processing step, dependency resolution and merging is done by the front end, and global information is used by the code generator in limited places.</div>
+<div>FIXME</div>
+<h3><a name="TOC-Dependencies"></a>Dependencies</h3>
+<div>FIXME</div>
+<h2><a name="TOC-Goals"></a>Goals</h2>
+<div>Key goals of the compiler are as follows (in descending order of importance); these primarily affect the code generator:</div>
+<ul><li><b>Correctness</b> (including <b>security</b>) and <b>performance</b> of generated object code (speed, memory usage, size), after compiling C++ to object code</li>
+<li><b>Simplicity</b> of compiler code itself, particularly code generator</li>
+<li><b>Build performance</b> (see <a href="http://www.chromium.org/developers/design-documents/idl-build#TOC-Performance">IDL build: performance</a> and <a href="http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Performance">Performance</a>, below)</li></ul>
+<div>Note that <b>legibility</b> of generated C++ source code is secondary to legibility of the code generator, as the CG is what is developed and reviewed, though the generated code should be legible if this does not conflict with other goals. As a rule, simple (one-line) changes to CG that simplify the generated source code are ok, but more complex changes that are only for source code legibility (that have no effect on object code) should be avoided. If you rely on the compiler (e.g., for dead code elimination), please write a comment to that effect.</div>
+<div><br />
+</div>
+<div>Since the CG is complex enough as it is, a key part of the design is moving complexity <i>out</i> of the code generator, notably to the front end (building an easy-to-use IR) and to the global information step.</div>
+<h2><a name="TOC-Alternatives"></a>Alternatives</h2>
+<div>Fundamentally, why do we have our own compiler at all? Can't we reuse an existing program?</div>
+<div>The answer is: we're reusing as much code as possible (lexer/parser and template library, and indeed a lexer/parser for the Web IDL standard), but we need custom code for 3 purposes:</div>
+<ul><li>Blink IDL dialect, which differs from Web IDL standard: we inherit from a standard parser, so this is small, but we need our own.</li>
+<li>IR constructor: the AST output from the base parser is hard to use directly (you need to walk a tree), so we construct an easy-to-use object so the CG can have simple reading code (instead of walking the tree itself).</li>
+<li>V8 code generator: we need to generate very specific C++ code to bind to V8 and implement Web IDL, with many options and special cases.</li></ul>
+<div>Of these, the V8 CG is the main reason; Blink IDL dialect and the IR constructor exist to reduce complexity of the CG.</div>
+<h3><a name="TOC-Why-not-C-"></a>Why not C++?</h3>
+<div>The compiler is written in Python, rather than C++, because hackability (ease of understanding and modification) is more important than build speed, and build speed is good enough.</div>
+<div><br />
+</div>
+<div>A high-level language like Python is the usual choice for such tasks, and Python is the standard high-level language in Chromium: other languages (except JavaScript) are not widely used in Chromium, and JavaScript offers no advantages over Python.</div>
+<div>Also, C++ code that generates C++ code risks being very confusing. In principle one could imagine writing the CG in template metaprogramming, but that would likely be hard to understand.</div>
+<div>In principle C/C++ code may be used in the front end (lexer, parser, and constructor), particularly as the lexer and parser can be generated by lex-yacc, but the code generator is expected to be in Python.</div>
+<h3><a name="TOC-Why-not-SWIG-"></a>Why not SWIG?</h3>
+<div>We can't use SWIG because there's in fact very little overlap. Essentially we use Jinja templates+Python logic for the backend, rather than SWIG templates.</div>
+<div><br />
+</div>
+<div>While SWIG is a general "high-level language to C++ bindings generator", and thus seems a natural fit, it doesn't fill our needs. We need a front end because we're taking IDL files as input, and we need a code generator that supports all the specific features that Web IDL and Blink require: Web IDL has different semantics from JavaScript generally, and Blink has many IDL extended attributes and other implementation details. Further, there is a prototype V8 backend for SWIG, but it is incomplete (the JavaScript backend primarily targets JavaScriptCore). In principle we could have a compiler whose back end output SWIG templates, complete the general V8 backend for SWIG, and then modify this or fork it to make a Web IDL to V8 backend, customized for Blink. As this description makes clear, that involves significant complexity and few advantages over generating the C++ code directly, using Jinja instead of SWIG.</div>
+<h3><a name="TOC-Why-not-another-lexer-parser-or-template-processor-"></a>Why not another lexer/parser or template processor?</h3>
+<div>PLY (built on lex-yacc) and Jinja are standard and widely-used libraries for these tasks, and are used elsewhere in Chromium. We're open to other libraries if they are significantly superior (and we switch throughout Chromium), but these libraries are fit for purpose.</div>
+<h2><a name="TOC-Performance"></a>Performance</h2>
+<div><i>For overall IDL build performance, see: <a href="http://www.chromium.org/developers/design-documents/idl-build#TOC-Performance">IDL build: Performance</a></i></div>
+<div><br />
+</div>
+<div>The bindings are generated by running a separate compiler process for each interface (main IDL file), for parallelization and simplicity of build. This section discusses optimization of individual IDL compiler runs.</div>
+<div><br />
+</div>
+<div>For compilation of an individual IDL file, the key factor in startup time, both Python startup time, and initialization time of libraries. This is because most IDL files are quite short and simple, so processing time (variable cost) is short relative to startup time (fixed cost). Currently (March 2014) the average sequential compilation time of a single IDL file on a fast Linux workstation is ~80 milliseconds, compared to Python startup time of ~4 milliseconds (skipping import of <code>site</code> with <code>-S</code>).</div>
+<div><br />
+</div>
+<div>Naively, the key limiting factor is initialization time of the libraries (PLY and Jinja). This is expensive, as it requires compiling the lexer &amp; parser or templates. Initialization is sped up by pre-caching these in a separate build step, which significantly improves build time. Note that <code>run-bindings-tests</code> will compile multiple test files in a single Python process<i>,</i> which is quite fast, since initialization is done only once.</div>
+<div><br />
+</div>
+<div>The compile has not been profiled (except by using <a href="http://en.wikipedia.org/wiki/Time_(Unix)">time(1)</a> on a build), since the low-hanging fruit were obvious (cache lexer and parser tables and templates), performance is now good enough, and significant additional improvements are unlikely without major work or reengineering.</div>
+<div>
+<div>Processing time itself is presumably dominated by the main libraries (parsing via PLY and template rendering via Jinja), and possibly object construction (IdlDefinitions); the actual CG is likely quite cheap, as it's a simple iteration over the IR with a few conditionals and simple computations.</div>
+<div>To our knowledge, there are no O(<i>n</i><sup>2</sup>) or slower algorithms in the compiler – everything should be O(<i>n</i>) or faster – but some may be lurking somewhere.</div>
+</div>
+<h3><a name="TOC-Further-improvements"></a>Further improvements</h3>
+<div>Potential future improvements (without substantial reengineering) would primarily be to improve startup of some components, or rewrite some components in C.</div>
+<div>
+<ul><li>Python tweaks:</li>
+<ul><li>execute bytecode directly (compile to <code>.pyc</code> or <code>.pyo</code> in separate step and execute that): v. small improvement (about .5 ms/process), would require other build step</li>
+<li>use Python optimized mode (<code>-O</code> or <code>-OO</code>): likely little improvement (just shrinks size of bytecode), and currently causes serious regressions (likely due to breaking caching in a library)</li></ul>
+<li>Further optimization of Jinja startup requires changes in the Jinja library itself; see discussion at references.</li>
+<li>Replacing parts of the PLY lexer-parser with a C/C++ library (produced by lex or yacc) would speed up execution of the front end, as it would be C code, not Python code, and make it virtually instantaneous. C lex/C++ yacc code is about 50x faster than PLY, and the lexer and parser typically each account for 40% of PLY execution time; remainder is cost of running the yacc actions, in this case to build an AST (<a href="http://www.dabeaz.com/ply/PLYTalk.pdf">Writing Parsers and Compilers with PLY</a>, slides 76 and 77).</li>
+<li>A C lexer would be simple and significant, while a C++ parser would be relatively complicated, particularly due to the use of inheritance to derive a parser for the Blink IDL dialect from a parser for the standard Web IDL language.</li>
+<li>
+<div>In terms of the overall build system, initialization costs could be significantly reduced by initializing a single process and then forking it, so it's just a copy. However, this is platform dependent (Windows does not have <code>fork()</code>), and would significantly complicate the compiler.</div>
+<div></div>
+</li></ul>
+<h3><a name="TOC-References"></a>References</h3>
+<ul><li>PLY: <a href="http://www.dabeaz.com/ply/ply.html#ply_nn15">Lex: Optimized mode</a> and <a href="http://www.dabeaz.com/ply/ply.html#ply_nn38">Using Python's Optimized Mode</a>: we use optimization for the control over caching, not because we are running Python in optimized mode (we aren't)</li>
+<li><a href="http://www.chromium.org/developers/jinja#TOC-Performance">Jinja performance</a></li></ul>
+<h2><a name="TOC-References1"></a>References</h2>
+<ul><li><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/">Source/bindings/scripts</a>: the code</li>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/s1xTE428OAs">Issue <strike>239771</strike>: Rewrite the IDL compiler in Python</a>: tracking bug for rewrite (2013/2014)</li>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/s1xTE428OAs">IDL compiler (V8 bindings generator) switched to Python</a>: wrap-up email for rewrite (Feb 2014)</li>
+<ul><li><a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/5FSUhiugWsE">followup</a> about front end</li></ul></ul>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/idl-compiler">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ypACsrbNhCvQFtnRUJWEIUlq2KB_SdM_mIrKdHjW4iLrEpbTkCC5_eBBEH7t6OAUq-MRs_6TGPF7ukl6BsY2m5EdYuu78X3Gtwh2RTGgk7fJdNit/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/tpm-usage","deleted":false,"title":"TPM Usage","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/tpm-usage\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"TPM Usage","locale":"en","wuid":"wuid:gx:6e54d01f91878a39","revision":11,"path":"/developers/design-documents/tpm-usage","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"tpm-usage","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="TPM Usage - The Chromium Projects" />
+<meta itemprop="name" content="TPM Usage - The Chromium Projects" />
+<meta property="og:title" content="TPM Usage - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>TPM Usage - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">TPM Usage</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-Modes-of-Operation"><strong>2 </strong>Modes of Operation</a></li><li class="goog-toc"><a href="#TOC-TPM-Ownership-and-Restrictions"><strong>3 </strong>TPM Ownership and Restrictions</a></li><li class="goog-toc"><a href="#TOC-Rollback-Prevention"><strong>4 </strong>Rollback Prevention</a></li><li class="goog-toc"><a href="#TOC-Protecting-User-Data-Encryption-Keys"><strong>5 </strong>Protecting User Data Encryption Keys</a></li><li class="goog-toc"><a href="#TOC-Protecting-Certain-User-RSA-Keys"><strong>6 </strong>Protecting Certain User RSA Keys</a></li><li class="goog-toc"><a href="#TOC-Tamper-Evident-Installation-Attributes"><strong>7 </strong>Tamper-Evident Installation Attributes</a></li><li class="goog-toc"><a href="#TOC-Stateful-Partition-Encryption"><strong>8 </strong>Stateful Partition Encryption</a></li><li class="goog-toc"><a href="#TOC-Attesting-TPM-Protected-Keys"><strong>9 </strong>Attesting TPM-Protected Keys</a></li><li class="goog-toc"><a href="#TOC-Attesting-Device-Mode"><strong>10 </strong>Attesting Device Mode</a></li><li class="goog-toc"><a href="#TOC-Chrome-OS-Specific-TPM-Configuration"><strong>11 </strong>Chrome OS-Specific TPM Configuration</a></li></ol></div></div></div></div></div><h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>This document describes the usage of a Trusted Platform Module (TPM) in Chrome devices (Chromebook or other form factors), including firmware, operating system, and applications.  It assumes some knowledge of Chrome OS concepts as well as TPM functions.  It may be of interest to Chromium OS developers who want to use the TPM and to users who wish to understand the usage of the TPM in Chrome OS.</p>
+<p>Chrome OS uses the TPM for these tasks:</p>
+<ul>
+<li>Preventing software and firmware version rollback</li>
+<li>Maintaining information to detect transitions between normal and developer modes</li>
+<li>Protecting user data encryption keys</li>
+<li>Protecting certain user RSA keys (‘hardware-backed’ certificates)</li>
+<li>Providing tamper evidence for installation attributes</li>
+<li>Protecting stateful partition encryption keys</li>
+<li>Attesting TPM-protected keys</li>
+<li>Attesting device mode</li>
+</ul>
+<p>The TPM is not directly available outside of Chrome OS for any purpose; that is, no remote computer has access to the TPM.</p>
+<p>Chrome OS does not use the TPM for the following:</p>
+<ul>
+<li>Trusted boot - the TPM is not used as part of the Chrome OS verified boot solution.</li>
+<li>Hardware-strength platform configuration reporting.  See <a href="https://www.chromium.org/developers/design-documents/tpm-usage#TOC-Attesting-Device-Mode">Attesting Device Mode</a> for more details.</li>
+<li>Whole-disk encryption or similar.  In particular, the TPM is not used to unwrap an encryption key during the boot process.</li>
+</ul>
+<p>The rest of this document first discusses the four different modes of operation of Chrome devices; then it describes how Chrome OS controls TPM ownership; and finally it presents each area of TPM usage in detail.</p>
+<h2><a name="TOC-Modes-of-Operation"></a>Modes of Operation</h2>
+<p>A Chrome device can be booted in four different modes, corresponding to the settings of two switches (physical or virtual) at power on.  They are the developer switch and the recovery switch.  They may be physically present on the device, or they may be virtual, in which case they are triggered by certain key presses at power on.  When both switches are off, the boot is called normal mode boot.  When the developer switch is on, it is called developer mode boot. When the recovery switch is on, it is called recovery mode boot (and normal-recovery or developer-recovery when there is a need to distinguish them).</p>
+<p>These modes give users a choice between a high degree of security or complete control over the device.  In normal mode, the device is running a Google-provided copy of Chrome OS, which cannot be altered (assuming the hardware has not been tampered with).  In developer mode, users can run a modified copy of Chromium OS (or any other supported operating system), though without some of the Chrome OS security defenses.  The recovery modes allow for installation of Chrome OS or Chromium OS from recovery media.</p>
+<h2><a name="TOC-TPM-Ownership-and-Restrictions"></a>TPM Ownership and Restrictions</h2>
+<p>Most of the TPM functionality becomes available after a TPM owner is established.  In normal mode, Chrome OS attempts to establish a TPM owner with a random password, which is generated only after the owner of the Chrome device starts using it.  When the owner password is created, there is a period of time in which the user can find out what it is and write it down.  After this period, the password is destroyed.  However, knowledge of the owner password is not necessary at any point in Chrome OS.</p>
+<p>Under certain conditions, the TPM owner will be cleared, rendering keys currently protected by the TPM useless (and therefore the data protected by those keys unrecoverable).  These conditions are as follows:</p>
+<ul>
+<li>On the first power-on after switching to developer mode, the TPM is cleared by the firmware before the OS kernel begins booting.</li>
+<li>On the first power-on after switching to normal mode, the TPM is also cleared by the firmware before the OS kernel begins booting.</li>
+<li>During a recovery mode boot in normal mode, a Chrome OS recovery image will clear the TPM before the device is rebooted.</li>
+<li>Some Chrome devices allow the system (or, if in developer mode, the user) to explicitly request that the TPM owner be cleared on the next reboot.</li>
+</ul>
+<p>When a non-Chrome OS image is booted in developer mode, it is up to that user-installed OS to decide whether or not to take ownership, or do anything at all with the TPM. The user-installed system, for example, may create additional TPM NVRAM spaces other than those that Chrome OS creates (e.g., see <a href="https://www.chromium.org/developers/design-documents/tpm-usage#TOC-Rollback-Prevention">Rollback Prevention</a> below).</p>
+<p>Note the following developer mode restrictions on the TPM:</p>
+<ul>
+<li>The TPM physical presence command is disabled by the read-write firmware on every boot.  This means that physical presence cannot be asserted even by a custom OS.</li>
+<li>The NVRAM firmware space (see <a href="https://www.chromium.org/developers/design-documents/tpm-usage#TOC-Rollback-Prevention">Rollback Prevention</a> below) cannot be removed.</li>
+<li>The NVRAM kernel space (see <a href="https://www.chromium.org/developers/design-documents/tpm-usage#TOC-Rollback-Prevention">Rollback Prevention</a> below) can be removed, but doing so will result in the firmware forcing recovery mode at the next boot.</li>
+</ul>
+<p>In the event that the NVRAM kernel space is removed, the device will only boot a Google-provided recovery image, which will try to reconstruct that space.  Chrome OS recovery will aggressively destroy other spaces as needed to make room.
+</p>
+<h2><a name="TOC-Rollback-Prevention"></a>Rollback Prevention</h2>
+<p>The normal boot process of a Chrome device follows a chain of trust, in the following order:</p>
+<ol>
+<li>Read-only section of firmware (set during factory installation and unchangeable in software)</li>
+<li>Upgradable section of firmware (called read-write firmware)</li>
+<li>Kernel</li>
+<li>Programs and services that comprise the operating system</li>
+</ol>
+<p>Each link in the chain is responsible for verifying that the next link has not been tampered with before yielding control to it.</p>
+<p>Read-write firmware and kernel can be updated, either manually (through a “recovery” process) or automatically.  For security, the automatic update process does not allow updating to versions of the software that are older than the current one.  This prevents “remote rollback attacks,” in which a remote attacker replaces newer software, through a hard to exploit vulnerability, with older software, with a well-known and easy to exploit vulnerability.</p>
+<p>To prevent remote rollback attacks, Chrome devices reserve two small NVRAM spaces in the TPM to store version numbers and other information.  These NVRAM spaces are called “firmware space” and “kernel space.” They are created during factory initialization and are never removed.  (The kernel space can be removed in developer mode, but the firmware space cannot.  Also note that a Chrome OS recovery image will try to recreate the kernel space, possibly removing other spaces to make room.)</p>
+<p>The firmware space contains the read-write firmware version number (among other things).  It is created with permission TPM_NV_PER_GLOBALLOCK | TPM_NV_PER_PPWRITE, and is locked by setting the TPM bGlobalLock bit.  On a normal boot, this space is locked by the read-only firmware, possibly after updating it to reflect the version of the verified read-write firmware installed.  As mentioned, this update may only replace the current version number with a larger one.</p>
+<p>The kernel space contains the kernel version number.  It is created with permission TPM_NV_PER_PPWRITE.  On a normal boot it is locked by turning off and locking physical presence in the read-write firmware.  As in the case of the firmware space, the read-write firmware will update this number to the version number of the current kernel.</p>
+<p>On a recovery boot (either in normal or developer mode), neither the firmware nor the kernel space is locked.  Therefore the recovery image can bypass the anti-rollback mechanism.  Bypassing the anti-rollback mechanism is allowed because there are legitimate cases in which it is desirable to install older versions of the system, as long as this rollback does not happen without the knowledge of the user.</p>
+<h2><a name="TOC-Protecting-User-Data-Encryption-Keys"></a>Protecting User Data Encryption Keys</h2>
+<p>User data in Chrome OS is encrypted when stored on the disk using the eCryptfs stacked filesystem.  When a user logs in for the first time, two random 128-bit AES keys are generated.  One key is used by eCryptfs to encrypt file names, and the other is used to encrypt file content.  These keys are managed locally; they are not escrowed outside of the Chrome device.  This allows users to log in and access their data while offline and also means that the keys never need to leave the device.  However, this feature also necessitates a strong method of protecting these keys from disclosure as they are stored in a persistent file on disk.</p>
+<p>Chrome OS uses the TPM to make parallelized attacks and password brute-forcing difficult.  One feature and one characteristic of the TPM are exploited here.  First, the TPM provides secure key storage for RSA keys.  This means that the private key only exists in plain text while it resides on the TPM itself--it can only be stored outside of the TPM in encrypted form.  This feature makes parallelizing difficult: decrypt operations involving that key must happen on the TPM itself (unless a vulnerability exists whereby the attacker can obtain the plain-text private key of a TPM-wrapped RSA key).  Second, the TPM is a relatively slow device.  Private key 
+operations can take over half a second to complete; this provides a level of brute-force protection by effectively throttling the rate at which guesses can be made.</p>
+<p>To protect the user keys, Chrome OS creates a system-wide RSA key wrapped by the TPM’s Storage Root Key (SRK) on first boot.  When storing a particular user’s AES keyset, Chrome OS encrypts the keyset using a random symmetric key.  That symmetric key is encrypted using the system-wide RSA key.  To tie the decryption to a user secret, 128 bits of this encrypted blob are encrypted a second time using a key derived from the user’s login password.  Since this step is done without padding, any decryption must blindly decrypt those 128 bits and then decrypt the entire blob on the TPM before knowing if the decryption process (and therefore the password) was correct.  Using this method (over per-user TPM keys requiring authentication) has the benefit of avoiding the TPM’s dictionary attack defense, which is overly aggressive for use during user login.</p>
+<p>There are two important implications to the use of the TPM to protect user data:</p>
+<ul>
+<li>If the TPM is cleared, user data protected by it cannot be recovered.  In this case, Chrome OS removes user data.</li>
+<li>If the TPM is somehow disabled or faults, user data cannot be accessed.  Chrome OS will fail logins for existing users until the TPM is enabled.</li>
+</ul>
+<h2><a name="TOC-Protecting-Certain-User-RSA-Keys"></a>Protecting Certain User RSA Keys</h2>
+<p>Chrome OS implements TPM-backed cryptographic services via the Chaps PKCS #11 component.  (More information about Chaps can be found in the <a href="https://www.chromium.org/developers/design-documents/chaps-technical-design">Chaps Technical Design</a>.) RSA private keys generated or imported into a Chaps PKCS #11 token with a modulus size supported by the TPM (typically up to 2048 bits) will be wrapped by the TPM Storage Root Key (SRK).  Each user account on the device has a distinct token.  A user can import a certificate and private key into his TPM-backed token by using the ‘Import and Bind’ operation available in Chrome’s certificate manager.  Also, any keys generated using the Webkit ‘keygen’ tag will use the TPM-backed token by default.</p>
+<p>RSA private keys that are not supported by the TPM and all other PKCS #11 data (certificates, public keys, data objects, TPM-encrypted key blobs, etc.) are encrypted with a symmetric key and stored in /home/chronos/user/.chaps.  This symmetric key is itself encrypted using a TPM-backed key which requires a value partially derived from the user password for authorization.  Thus, a user’s Chaps token can only be decrypted if both the TPM and the user password are available.</p>
+<h2><a name="TOC-Tamper-Evident-Installation-Attributes"></a>Tamper-Evident Installation Attributes</h2>
+<p>The first time a device is used, a set of installation attributes is stored on the device and remains tamper-evident for the remainder of the install (i.e., until the device mode changes).  If a device has been enterprise enrolled, as evidenced by a ribbon with text like “This device is owned by yourcompany.com,” then the installation attributes correspond to this enrollment.  If not, the set of attributes is empty.  Either way, the tamper-evidence for the set of attributes is implemented by computing a salted hash of the attributes and storing the random salt and the hash in TPM NVRAM with TPM_NV_PER_WRITE_DEFINE permissions (i.e. read-only until destroyed by the TPM owner).  The hash can then be verified at any time to ensure the attributes have not been modified.  This tamper-evident container is referred to as the “lockbox.”</p>
+<h2><a name="TOC-Stateful-Partition-Encryption"></a>Stateful Partition Encryption</h2>
+<p>Some parts (e.g., /var, /home/chronos) of the stateful partition are encrypted using dm-crypt.  The encryption key is randomly chosen via the TPM’s RNG on first boot and is encrypted by a TPM-held “system key” (read from TPM NVRAM during startup).  This system key is actually the random salt used for hashing installation attributes.</p>
+<h2><a name="TOC-Attesting-TPM-Protected-Keys"></a>Attesting TPM-Protected Keys</h2>
+<p>If an RSA private key has been generated in the TPM and has always been non-migratable, then the key may be certified by a key that has been verified as an Attestation Identity Key (AIK).  No key, including any AIK, is certified unless the user or device-owner has consented to remote attestation of his or her device.  A certified key credential gives very strong assurance that the key is protected by a Chrome Device TPM.</p>
+<h2><a name="TOC-Attesting-Device-Mode"></a>Attesting Device Mode</h2>
+<p>At boot time, the read-only firmware extends TPM PCR0 with the status of the developer and recovery mode switches.  The value of PCR0 can later be quoted using a key that has been verified as an Attestation Identity Key (AIK).  The quote, in combination with the AIK credential, gives assurance that the reported PCR0 value is accurate.  While assurance of the PCR0 value is very strong, assurance that this correctly reflects the device mode is weaker because of the reliance on read-only firmware to extend PCR0.  It is nonetheless useful for reporting policy compliance.  This PCR0 quote is not available outside of Chrome OS unless the user or device-owner has consented to remote attestation of the device.</p>
+<h2><a name="TOC-Chrome-OS-Specific-TPM-Configuration"></a>Chrome OS-Specific TPM Configuration</h2>
+<p>Under Chrome OS, there are a few configuration settings for the TPM that may differ from other operating systems:</p>
+<ul>
+<li>TPM ownership, as discussed above, is automatic and random.  While the user may choose to write the random owner password down, it is never used.  Rather, TPM ownership is established merely to enable the cryptographic features (such as using keys wrapped directly or indirectly by the SRK) that Chrome OS uses in the TPM.</li>
+<li>The Storage Root Key (SRK) is unrestricted so that it can be used without the owner password.  Since the TPM is used as a generic cryptographic device, and Chrome OS manages clearing the TPM in firmware as necessary, unrestricted use of the SRK is allowable.</li>
+<li>In Chrome OS, the TPM is only used locally on the Chrome device.  Chrome OS uses TrouSerS for communication with the TPM, which has been patched to use a UNIX domain socket instead of a TCP socket.</li>
+<li>Under Chrome OS, physical presence is disabled on every boot by the read-write firmware.</li>
+</ul></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/tpm-usage">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

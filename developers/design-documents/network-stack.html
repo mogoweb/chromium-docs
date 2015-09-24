@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/network-stack","deleted":false,"title":"Network Stack","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Network Stack","locale":"en","wuid":"wuid:gx:1e5bf38b977efb4d","revision":8,"path":"/developers/design-documents/network-stack","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"network-stack","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Network Stack - The Chromium Projects" />
+<meta itemprop="name" content="Network Stack - The Chromium Projects" />
+<meta property="og:title" content="Network Stack - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Network Stack - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1365539027235/developers/design-documents/network-stack/Chromium%20HTTP%20Network%20Request%20Diagram.svg" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1365539027235/developers/design-documents/network-stack/Chromium%20HTTP%20Network%20Request%20Diagram.svg" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Network Stack</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="network-stack.html#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="network-stack.html#TOC-Code-Layout"><strong>2 </strong>Code Layout</a></li><li class="goog-toc"><a href="network-stack.html#TOC-Anatomy-of-a-Network-Request-focused-on-HTTP-"><strong>3 </strong>Anatomy of a Network Request (focused on HTTP)</a><ol class="goog-toc"><li class="goog-toc"><a href="network-stack.html#TOC-URLRequest"><strong>3.1 </strong>URLRequest</a></li><li class="goog-toc"><a href="network-stack.html#TOC-URLRequestHttpJob"><strong>3.2 </strong>URLRequestHttpJob</a></li><li class="goog-toc"><a href="network-stack.html#TOC-HttpNetworkTransaction"><strong>3.3 </strong>HttpNetworkTransaction</a></li><li class="goog-toc"><a href="network-stack.html#TOC-HttpStreamFactory"><strong>3.4 </strong>HttpStreamFactory</a><ol class="goog-toc"><li class="goog-toc"><a href="network-stack.html#TOC-Proxy-Resolution"><strong>3.4.1 </strong>Proxy Resolution</a></li><li class="goog-toc"><a href="network-stack.html#TOC-Connection-Management"><strong>3.4.2 </strong>Connection Management</a></li><li class="goog-toc"><a href="network-stack.html#TOC-Host-Resolution"><strong>3.4.3 </strong>Host Resolution</a></li><li class="goog-toc"><a href="network-stack.html#TOC-SSL"><strong>3.4.4 </strong>SSL</a></li></ol></li></ol></li></ol></div></div></div></div><h2><a name="TOC-Overview"></a>Overview</h2><div>The network stack is a mostly single-threaded cross-platform library primarily for resource fetching.  Its main interfaces are <code>URLRequest</code> and <code>URLRequestContext</code>.  <code>URLRequest</code>, as indicated by its name, represents the request for a <a href="http://en.wikipedia.org/wiki/URL">URL</a>.  <code>URLRequestContext</code> contains all the associated context necessary to fulfill the URL request, such as <a href="http://en.wikipedia.org/wiki/HTTP_cookie">cookies</a>, host resolver, proxy resolver, <a href="network-stack/http-cache.html">cache</a>, etc.  Many <span style="color:rgb(0,96,0);font-family:monospace">URLRequest</span> objects may share the same <span style="color:rgb(0,96,0);font-family:monospace">URLRequestContext</span>.  Most <code>net</code> objects are not threadsafe, although the disk cache can use a dedicated thread, and several components (host resolution, certificate verification, etc.) may use unjoined worker threads.  Since it primarily runs on a single network thread, no operation on the network thread is allowed to block.  Therefore we use non-blocking operations with asynchronous callbacks (typically <code>CompletionCallback</code>).  The network stack code also logs most operations to <code>NetLog</code>, which allows the consumer to record said operations in memory and render it in a user-friendly format for debugging purposes.</div><div><br /></div><div>Chromium developers wrote the network stack in order to:</div><div><ul><li>Allow coding to cross-platform abstractions</li><li>Provide greater control than would be available with higher-level system networking libraries (WinHTTP)</li><ul><li>Avoids bugs that may exist in system libraries</li><li>Enables greater opportunity for performance optimizations</li></ul></ul></div><h2><a name="TOC-Code-Layout"></a>Code Layout</h2><div><ul><li><font face="'courier new', monospace">net/base</font> - Grab bag of <code>net</code> utilities, such as host resolution, cookies, network change detection, <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">SSL</a>.</li><li><font face="'courier new', monospace">net/disk_cache</font> - <a href="network-stack/disk-cache.html">Cache for web resources</a>.</li><li><font face="'courier new', monospace">net/ftp</font> - <a href="http://en.wikipedia.org/wiki/File_Transfer_Protocol">FTP</a> implementation.  Code is primarily based on the old HTTP implementation.</li><li><font face="'courier new', monospace">net/http</font> - <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> implementation.</li><li><font face="'courier new', monospace">net/ocsp</font> - <a href="http://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol">OCSP</a> implementation when not using the system libraries or if the system does not provide an OCSP implementation.  Currently only contains an NSS based implementation.</li><li><font face="'courier new', monospace">net/proxy</font> - Proxy (<a href="http://en.wikipedia.org/wiki/SOCKS">SOCKS</a> and HTTP) configuration, resolution, script fetching, etc.</li><li><font face="'courier new', monospace">net/quic</font> - <a href="http://www.chromium.org/quic">QUIC</a> implementation.</li><li><font face="'courier new', monospace">net/socket</font> - Cross-platform implementations of <a href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a> sockets, "SSL sockets", and socket pools.</li><li><font face="'courier new', monospace">net/socket_stream</font> - socket streams for WebSockets</li><li><font face="'courier new', monospace">net/spdy</font> - <a href="http://www.chromium.org/spdy">SPDY</a> implementation.</li><li><font face="'courier new', monospace">net/url_request</font> - <code>URLRequest</code>, <code>URLRequestContext</code>, and <code>URLRequestJob</code> implementations.</li><li><font face="'courier new', monospace">net/websockets</font> - <a href="http://en.wikipedia.org/wiki/WebSockets">WebSockets</a> implementation.</li></ul><h2><a name="TOC-Anatomy-of-a-Network-Request-focused-on-HTTP-"></a>Anatomy of a Network Request (focused on HTTP)</h2></div><div><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/network-stack/Chromium%20HTTP%20Network%20Request%20Diagram.svg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1365539027235/developers/design-documents/network-stack/Chromium%20HTTP%20Network%20Request%20Diagram.svg" /></a></div><br /></div><h3><a name="TOC-URLRequest"></a>URLRequest</h3><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>class URLRequest {</code></div><div><code> public:</code></div><div><code>  // Construct a URLRequest for |url|, notifying events to |delegate|.</code></div><div><code>  URLRequest(const GURL&amp; url, Delegate* delegate);</code></div><div><code>  </code></div><div><code>  // Specify the shared state</code></div><div><code>  void set_context(URLRequestContext* context);</code></div><div><code><br /></code></div><div><code>  // Start the request.  Notifications will be sent to |delegate|.</code></div><div><code>  void Start();</code></div><div><code><br /></code></div><div><code>  // Read data from the request.</code></div><div><code>  bool Read(IOBuffer* buf, int max_bytes, int* bytes_read);</code></div><div><code>};</code></div><div><code><br /></code></div><div><code>class URLRequest::Delegate {</code></div><div><code> public:</code></div><div><code>  // Called after the response has started coming in or an error occurred.</code></div><div><code>  virtual void OnResponseStarted(...) = 0;</code></div><div><code><br /></code></div><div><code>  // Called when Read() calls complete.</code></div><div><code>  virtual void OnReadCompleted(...) = 0;</code></div><div><span style="color:rgb(0,96,0);font-family:monospace">};</span></div><div></div></div><br /><div>When a <code>URLRequest</code> is started, the first thing it does is decide what type of <code>URLRequestJob</code> to create.  The main job type is the <code>URLRequestHttpJob</code> which is used to fulfill http:// requests.  There are a variety of other jobs, such as <code>URLRequestFileJob</code> (file://), <code>URLRequestFtpJob</code> (ftp://), <code>URLRequestDataJob</code> (data://), and so on.  The network stack will determine the appropriate job to fulfill the request, but it provides two ways for clients to customize the job creation: <code>URLRequest::Interceptor</code> and <code>URLRequest::ProtocolFactory</code>.  These are fairly redundant, except that <code>URLRequest::Interceptor</code>'s interface is more extensive.  As the job progresses, it will notify the <code>URLRequest</code> which will notify the <code>URLRequest::Delegate</code> as needed.</div><h3><a name="TOC-URLRequestHttpJob"></a>URLRequestHttpJob</h3><div>URLRequestHttpJob will first identify the cookies to set for the HTTP request, which requires querying the <code>CookieMonster</code> in the request context.  This can be asynchronous since the <span style="color:rgb(0,96,0);font-family:monospace">CookieMonster</span> may be backed by an <a href="http://en.wikipedia.org/wiki/SQLite">sqlite</a> database.  After doing so, it will ask the request context's <code>HttpTransactionFactory</code> to create a <code>HttpTransaction</code>.  Typically, the <code><a href="network-stack/http-cache.html">HttpCache</a></code> will be specified as the <code>HttpTransactionFactory</code>.  The <code>HttpCache</code> will create a <code>HttpCache::Transaction</code> to handle the HTTP request.  The <code>HttpCache::Transaction</code> will first check the <code>HttpCache</code> (which checks the <a href="network-stack/disk-cache.html">disk cache</a>) to see if the cache entry already exists.  If so, that means that the response was already cached, or a network transaction already exists for this cache entry, so just read from that entry.  If the cache entry does not exist, then we create it and ask the <code>HttpCache</code>'s <code>HttpNetworkLayer</code> to create a <code>HttpNetworkTransaction</code> to service the request.  The <code>HttpNetworkTransaction</code> is given a <code>HttpNetworkSession</code> which contains the contextual state for performing HTTP requests.  Some of this state comes from the <code>URLRequestContext</code>.</div><h3><a name="TOC-HttpNetworkTransaction"></a>HttpNetworkTransaction</h3><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>class HttpNetworkSession {</code></div><div><code> ...</code></div><div><code><br /></code></div><div><code> private:</code></div><div><code>  // Shim so we can mock out ClientSockets.</code></div><div><code>  ClientSocketFactory* const socket_factory_;</code></div><div><code>  // Pointer to URLRequestContext's HostResolver.</code></div><div><span style="color:rgb(0,96,0);font-family:monospace">  HostResolver* const host_resolver_;</span></div><div><span style="color:rgb(0,96,0);font-family:monospace">  // Reference to URLRequestContext's ProxyService</span></div><div><code>  scoped_refptr&lt;ProxyService&gt; proxy_service_;</code></div><div><code>  // Contains all the socket pools.</code></div><div><font color="#006000" face="monospace">  ClientSocketPoolManager socket_pool_manager_;</font></div><div><font color="#006000" face="monospace">  // Contains the active SpdySessions.</font></div><div><font color="#006000" face="monospace">  scoped_ptr&lt;SpdySessionPool&gt; spdy_session_pool_;</font></div><div><font color="#006000" face="monospace">  // Handles HttpStream creation.</font></div><div><font color="#006000" face="monospace">  HttpStreamFactory http_stream_factory_;</font></div><div><code>};</code></div><div></div></div><br /><div><code>HttpNetworkTransaction</code> asks the <code>HttpStreamFactory</code> to create a <code>HttpStream</code>.  The <code>HttpStreamFactory</code> returns a <code>HttpStreamRequest</code> that is supposed to handle all the logic of figuring out how to establish the connection, and once the connection is established, wraps it with a HttpStream subclass that mediates talking directly to the network.</div><div><br /></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>class HttpStream {</code></div><div><code> public:</code></div><div><code>  virtual int SendRequest(...) = 0;</code></div><div><code>  virtual int ReadResponseHeaders(...) = 0;</code></div><div><code>  virtual int ReadResponseBody(...) = 0;</code></div><div><code>  ...</code></div><div><code>};</code></div></div><div><br /></div><div>Currently, there are only two main <code>HttpStream</code> subclasses: <code>HttpBasicStream</code> and <code>SpdyHttpStream</code>, although we're planning on creating subclasses for <a href="http://en.wikipedia.org/wiki/HTTP_pipelining">HTTP pipelining</a>.  <span style="color:rgb(0,96,0);font-family:monospace">HttpBasicStream </span>assumes it is reading/writing directly to a socket.  <span style="color:rgb(0,96,0);font-family:monospace">SpdyHttpStream </span>reads and writes to a <code>SpdyStream</code>.  The network transaction will call methods on the stream, and on completion, will invoke callbacks back to the <code>HttpCache::Transaction</code> which will notify the <code>URLRequestHttpJob</code> and <code>URLRequest</code> as necessary.  For the HTTP pathway, the generation and parsing of http requests and responses will be handled by the <code>HttpStreamParser</code>.  For the SPDY pathway, request and response parsing are handled by <code>SpdyStream</code> and <code>SpdySession</code>.  Based on the HTTP response, the <code>HttpNetworkTransaction</code> may need to perform <a href="http-authentication.html">HTTP authentication</a>.  This may involve restarting the network transaction.</div><h3><a name="TOC-HttpStreamFactory"></a>HttpStreamFactory</h3><div><code>HttpStreamFactory</code> first does proxy resolution to determine whether or not a proxy is needed.  The endpoint is set to the URL host or the proxy server.  <code>HttpStreamFactory</code> then checks the <code>SpdySessionPool</code> to see if we have an available <code>SpdySession</code> for this endpoint.  If not, then the stream factory requests a "socket" (TCP/proxy/SSL/etc) from the appropriate pool.  If the socket is an SSL socket, then it checks to see if <a href="http://www.ietf.org/id/draft-agl-tls-nextprotoneg-01.txt">NPN</a> indicated a protocol (which may be SPDY), and if so, uses the specified protocol.  For SPDY, we'll check to see if a <code>SpdySession</code> already exists and use that if so, otherwise we'll create a new <code>SpdySession</code> from this SSL socket, and create a <code>SpdyStream</code> from the <code>SpdySession</code>, which we wrap a <code>SpdyHttpStream</code> around.  For HTTP, we'll simply take the socket and wrap it in a <code>HttpBasicStream</code>.</div><h4><a name="TOC-Proxy-Resolution"></a>Proxy Resolution</h4><div><code>HttpStreamFactory</code> queries the <code>ProxyService</code> to return the <code>ProxyInfo</code> for the GURL.  The proxy service first needs to check if it has an up to date proxy configuration.  If not, it uses the <code>ProxyConfigService</code> to query the system for the current proxy settings.  If the proxy settings are set to no proxy or a specific proxy, then proxy resolution is simple (we return no proxy or the specific proxy).  Otherwise, we need to run a <a href="http://en.wikipedia.org/wiki/Proxy_auto-config">PAC script</a> to determine the appropriate proxy (or lack thereof).  If we don't already have the PAC script, then the proxy settings will indicate we're supposed to use <a href="http://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol">WPAD auto-detection</a>, or a custom PAC url will be specified, and we'll fetch the PAC script with the <code>ProxyScriptFetcher</code>.  Once we have the PAC script, we'll execute it via the <code>ProxyResolver</code>.  Note that we use a shim <code>MultiThreadedProxyResolver</code> object to dispatch the PAC script execution to threads, which run a <code>ProxyResolverV8</code> instance.  This is because PAC script execution may block on host resolution.  Therefore, in order to prevent one stalled PAC script execution from blocking other proxy resolutions, we allow for executing multiple PAC scripts concurrently (caveat: <a href="http://en.wikipedia.org/wiki/V8_(JavaScript_engine)">V8</a> is not threadsafe, so we acquire locks for the javascript bindings, so while one V8 instance is blocked on host resolution, it releases the lock so another V8 instance can execute the PAC script to resolve the proxy for a different URL).</div><h4><a name="TOC-Connection-Management"></a>Connection Management</h4><div>After the <code>HttpStreamRequest</code> has determined the appropriate endpoint (URL endpoint or proxy endpoint), it needs to establish a connection.  It does so by identifying the appropriate "socket" pool and requesting a socket from it.  Note that "socket" here basically means something that we can read and write to, to send data over the network.  An SSL socket is built on top of a transport (<a href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol">TCP</a>) socket, and encrypts/decrypts the raw TCP data for the user.  Different socket types also handle different connection setups, for HTTP/SOCKS proxies, SSL handshakes, etc.  Socket pools are designed to be layered, so the various connection setups can be layered on top of other sockets.  <code>HttpStream</code> can be agnostic of the actual underlying socket type, since it just needs to read and write to the socket.  The socket pools perform a variety of functions.  They implement our connections per proxy, per host, and per process limits.  Currently these are set to 32 sockets per proxy, 6 sockets per destination host, and 256 sockets per process (not implemented exactly correct, but good enough).  Socket pools also abstract the socket request from the fulfillment, thereby giving us "late binding" of sockets.  A socket request can be fulfilled by a newly connected socket or an idle socket (<a href="http://en.wikipedia.org/wiki/HTTP_persistent_connection">reused from a previous http transaction</a>).</div><h4><a name="TOC-Host-Resolution"></a>Host Resolution</h4><div>Note that the connection setup for transport sockets not only requires the transport (TCP) handshake, but probably already requires host resolution.  <code>HostResolverImpl</code> uses getaddrinfo() to perform host resolutions, which is a blocking call, so the resolver invokes these calls on unjoined worker threads.  Typically host resolution usually involves <a href="http://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> resolution, but may involve non-DNS namespaces such as <a href="http://en.wikipedia.org/wiki/NetBIOS">NetBIOS</a>/<a href="http://en.wikipedia.org/wiki/Windows_Internet_Name_Service">WINS</a>.  Note that, as of time of writing, we cap the number of concurrent host resolutions to 8, but are looking to optimize this value.  <code>HostResolverImpl</code> also contains a <code>HostCache</code> which caches up to 1000 hostnames.</div><h4><a name="TOC-SSL"></a>SSL</h4><div><div>SSL sockets require performing SSL connection setup as well as certificate verification.  Currently, on all platforms, we use <a href="http://www.mozilla.org/projects/security/pki/nss/">NSS</a>'s libssl to handle the SSL connection logic.  However, we use platform specific APIs for certificate verification.  We are moving towards using a certificate verification cache as well, which will consolidate multiple requests for certificate verification of the same certificate into a single certificate verification job, as well as cache the results for a period of time.</div><div><br /></div><div><code>SSLClientSocketNSS</code> roughly follows this sequence of events (ignoring advanced features like <a href="http://tools.ietf.org/html/draft-agl-tls-snapstart-00">Snap Start</a> or <a href="http://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions">DNSSEC</a> based certificate verification):</div><div><ul><li>Connect() is called.  We set up NSS's SSL options based on <code>SSLConfig</code> specified configuration or preprocessor macros.  Then we kickoff the handshake.</li><li>Handshake completes.  Assuming we didn't hit any errors, we proceed to verify the server's certificate using <code>CertVerifier</code>.  Certificate verification may take some amount of time, so <code>CertVerifier</code> uses the <code>WorkerPool</code> to actually call <code>X509Certificate::Verify()</code>, which is implemented using platform specific APIs.</li></ul></div><div>Note that chromium has its own NSS patches which support some advanced features which aren't necessarily in the system's NSS installation, such as support for <a href="http://tools.ietf.org/html/draft-agl-tls-nextprotoneg-00">NPN</a> , <a href="http://tools.ietf.org/search/draft-bmoeller-tls-falsestart-00">False Start</a>, Snap Start , <a href="http://en.wikipedia.org/wiki/OCSP_Stapling">OCSP stapling</a>, etc.</div></div><div><br /></div><div>TODO: talk about network change notifications</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(13):</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/socks-proxy" dir="ltr">Configuring a SOCKS proxy server in Chrome</a>
+</span>
+<span>
+<a href="network-stack/cookiemonster.html" dir="ltr">CookieMonster</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/debugging-net-proxy" dir="ltr">Debugging problems with the network proxy</a>
+</span>
+<span>
+<a href="network-stack/disk-cache.html" dir="ltr">Disk Cache</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/http-authentication-throttling" dir="ltr">HTTP Authentication Throttling</a>
+</span>
+<span>
+<a href="network-stack/http-cache.html" dir="ltr">HTTP Cache</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/http-pipelining" dir="ltr">HTTP Pipelining</a>
+</span>
+<span>
+<a href="network-stack/netlog.html" dir="ltr">NetLog: Chrome’s network logging system</a>
+</span>
+<span>
+<a href="network-stack/network-bug-triage.html" dir="ltr">Network bug triage</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/network-stack-objectives" dir="ltr">Network Stack Objectives</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/network-stack-use-in-chromium" dir="ltr">Network Stack Use in Chromium</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/network-stack/preconnect" dir="ltr">Preconnect</a>
+</span>
+<span>
+<a href="network-stack/proxy-settings-fallback.html" dir="ltr">Proxy settings and fallback</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9xVZ1vaU6Q2gAk2htAxLLY5YpDhhAVCTALk00_Fjf2HLPyNWAVCVI4SNrtrsYPNrLBqQAdRZO8wQ2J0EOMHyLNnnUIt1-l1jPFlCA4Bt49Xl8xedi/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

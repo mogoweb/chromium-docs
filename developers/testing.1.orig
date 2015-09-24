@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/testing\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Testing and infrastructure","locale":"en","wuid":"wuid:gx:1415bd4fdab62446","revision":70,"path":"/developers/testing","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"testing","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Testing and infrastructure - The Chromium Projects" />
+<meta itemprop="name" content="Testing and infrastructure - The Chromium Projects" />
+<meta property="og:title" content="Testing and infrastructure - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Testing and infrastructure - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Testing and infrastructure</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h1><a name="TOC-1"></a><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Highlighted-Child-pages"><strong>1 </strong>Highlighted Child pages</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overview"><strong>1.1 </strong>Overview</a></li><li class="goog-toc"><a href="#TOC-Expectations"><strong>1.2 </strong>Expectations</a></li><li class="goog-toc"><a href="#TOC-Inventory-of-Existing-Tests"><strong>1.3 </strong>Inventory of Existing Tests</a></li><li class="goog-toc"><a href="#TOC-Inducing-a-crash"><strong>1.4 </strong>Inducing a crash</a></li><li class="goog-toc"><a href="#TOC-Subpages"><strong>1.5 </strong>Subpages</a></li></ol></li></ol></div></div></div></div></h1><h2><a name="TOC-Highlighted-Child-pages"></a>Highlighted Child pages</h2><div><ul><li><a href="https://www.chromium.org/developers/testing/running-tests">Running tests at home</a></li><li><a href="https://www.chromium.org/developers/testing/chromium-build-infrastructure">Chromium build infrastructure</a></li><li><a href="https://www.chromium.org/developers/testing/webkit-layout-tests">WebKit Layout Tests</a></li><li><a href="https://www.chromium.org/developers/testing/try-server-usage">Try Server usage</a></li><li><a href="https://www.chromium.org/developers/testing/commit-queue">Commit Queue</a></li><li><a href="https://www.chromium.org/developers/testing/isolated-testing" style="font-size:10pt">Isolated testing</a> and Swarming</li><li><u style="font-size:10pt"><a href="https://www.chromium.org/developers/testing/gpu-testing" style="font-size:10pt">GPU Testing</a></u></li><li><a href="https://www.chromium.org/developers/testing/gpu-recipe">GPU Recipe</a></li><li><a href="https://www.chromium.org/developers/testing/webgl-conformance-tests">WebGL Conformance Tests</a></li><li><a href="https://www.chromium.org/developers/testing/chromium-build-infrastructure/buildbot-annotations">Buildbot Annotations</a></li><li><a href="https://www.chromium.org/Home/domui-testing/webui-browser_tests">WebUI browser tests</a></li><li><a href="https://www.chromium.org/developers/testing/chrome-test-apis">chrome.test.* APIs</a></li></ul></div><h2><a name="TOC-Overview"></a>Overview</h2>Chromium development places a high premium on <a href="http://build.chromium.org/">tests</a>, <a href="http://build.chromium.org/buildbot/waterfall.fyi">tests</a>, <a href="http://build.chromium.org/buildbot/memory/console" target="_blank">tests</a>, <a href="http://build.chromium.org/buildbot/chromiumos/waterfall" target="_blank">tests</a>, and <a href="https://www.chromium.org/developers/testing/webkit-layout-tests">more</a> <a href="https://www.chromium.org/developers/testing/chromium-build-infrastructure/performance-test-plots">tests</a>. In order to maintain a rapid rate of development across multiple platforms and an ever increasing set of features, it is imperative that test suites be updated, maintained, executed, and evolved. <b>The </b><a href="https://www.chromium.org/developers/testing/chromium-build-infrastructure"><b>Chromium Buildbots</b></a><b> are employed to run these tests 24x7</b>.
+<div>
+<h2><a name="TOC-Expectations"></a><span style="font-weight:bold">Expectations</span></h2>
+</div>
+<div>Developers contributing code are expected to run all tests. This is not typically feasible on a single workstation, so the <a href="https://www.chromium.org/developers/testing/try-server-usage">try server</a> is used.</div><div><br /></div><div>When contributing code, consider whether your change has enough testing. If it is a new feature or module, it should almost certainly be accompanied by tests.</div>
+<div><br />
+</div>
+<div>After committing a change, you should use the Chromium Buildbot to monitor that the automated tests pass with your change. Please be reachable by email or IRC after check-in in case something unexpected happens.</div>
+<div>
+<h2><a name="TOC-Inventory-of-Existing-Tests"></a><span style="font-weight:bold">Inventory of Existing Tests</span></h2>
+</div>
+<div><i>List on <a href="http://code.google.com/p/chromium/wiki/TestDescriptions">the wiki</a>.</i></div><div><span style="font-size:20px;font-weight:bold"><br /></span></div><div><span style="font-size:20px;font-weight:bold">Test Development Infrastructure</span></div><div>
+<div>To assist with building tests, several pieces of infrastructure exist.</div>
+<div><br />
+</div>
+<div>Here are some tools you might find useful:</div>
+<div>
+<ul>
+<li><span style="background-color:rgb(255,255,255)">chrome/test/automation</span> - Chromium includes a mechanism for driving the browser through automation.  This is primarily used with the UI tests.<br />
+</li>
+<li><a href="http://code.google.com/p/googletest/">gtest</a> - Google Test is Chromium's C++ test harness.</li>
+<li><b>image_diff</b> - A mechanism for comparing bitmaps.</li></ul></div></div><div><h2><a name="TOC-Inducing-a-crash"></a>Inducing a crash</h2><div>This can be useful to test breakpad:</div></div><div><ul><li>about:crash - will cause a renderer crash.</li><li><span style="font-family:arial;font-size:small">about:inducebrowsercrashforrealz - will cause a browser crash.</span></li></ul><h2><a name="TOC-Subpages"></a>Subpages</h2><div><div>
+<div id="sites-toc-undefined" jotId="sites-toc-undefined" style="display:block; margin:5px auto 5px 0; text-align:left; width:auto;" class="sites-embed sites-sidebar-nav">
+<h4 class="sites-embed-title">Subpage Listing</h4>
+<div class="sites-embed-content" onclick="JOT_SUBPAGE_click(event)" style="text-align: left;">
+<ul jotId="navList">
+<li class="topLevel nav-first"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/adding-tests-to-the-main-waterfall" jotId="wuid:gx:39669dcd3838ddb4" class="sites-navigation-link topLevel">Adding new tests to the Main Chromium Waterfall</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/adding-tests-to-the-memory-waterfall" jotId="wuid:gx:3db1ba381c0a7579" class="sites-navigation-link topLevel">Adding new tests to the Memory Waterfall</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/adding-performance-tests" jotId="wuid:gx:5ff9b3e0963b9c5" class="sites-navigation-link topLevel">Adding Performance Tests</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/addresssanitizer" jotId="wuid:gx:15585e6c9779b0da" class="sites-navigation-link topLevel">AddressSanitizer (ASan)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:1cab338fd26098c"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/android-tests" jotId="wuid:gx:1cab338fd26098c" class="sites-navigation-link topLevel">Android Tests</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/android-tests/android-webview-tests" jotId="wuid:gx:55b67d06e84d4e02" class="sites-navigation-link">Android WebView tests</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/android-tests/testing-android-code-that-crosses-the-c-java-boundary" jotId="wuid:gx:3b2043c691e13dc0" class="sites-navigation-link">Testing Android code that crosses the C++/Java boundary</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/bidichecker" jotId="wuid:gx:56961bee401bd960" class="sites-navigation-link topLevel">BidiChecker</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/browser-tests" jotId="wuid:gx:5cf8ad2b49f3ae22" class="sites-navigation-link topLevel">Browser Tests</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/chrome-test-apis" jotId="wuid:gx:1ad3d1b689237945" class="sites-navigation-link topLevel">chrome.test APIs</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:565711f289883ee0"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/chromium-build-infrastructure" jotId="wuid:gx:565711f289883ee0" class="sites-navigation-link topLevel">Chromium build infrastructure</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/chromium-build-infrastructure/buildbot-annotations" jotId="wuid:gx:340c52be4df9e0c3" class="sites-navigation-link">Buildbot Annotations</a>
+</div></li>
+<li class="parent" wuid="gx:7efbae4f2bd0042e"><div dir="ltr" style="padding-left: 19px;"><div class="expander"></div><a href="/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source" jotId="wuid:gx:7efbae4f2bd0042e" class="sites-navigation-link">Getting the buildbot source</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source/configuring-your-buildbot" jotId="wuid:gx:4f30e6719a37db9f" class="sites-navigation-link">1. Configuring/setting up the buildbot instances</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source/running-a-buildbot-instance" jotId="wuid:gx:5b887eab9214d8f4" class="sites-navigation-link">2. Running a buildbot instance</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source/forking-your-buildbot" jotId="wuid:gx:6b10744165efade4" class="sites-navigation-link">3. Forking your buildbot</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source/buildbot-maintenance" jotId="wuid:gx:25ed1e65a2ba0f4b" class="sites-navigation-link">4. Maintain your Buildbot infrastructure</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source/tips" jotId="wuid:gx:5dd924d69c69edcc" class="sites-navigation-link">5. Buildbot Tips and Tricks</a>
+</div></li>
+</ul>
+</li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/chromium-build-infrastructure/repro-a-build" jotId="wuid:gx:3df164f5cb68ba25" class="sites-navigation-link">How to repro a build from a waterfall.</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/chromium-build-infrastructure/performance-test-plots" jotId="wuid:gx:f6b814a7ac195f4" class="sites-navigation-link">Performance Test Plots - to track performance regressions</a>
+</div></li>
+<li class="parent" wuid="gx:15eb6ba9af976111"><div dir="ltr" style="padding-left: 19px;"><div class="expander"></div><a href="/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot" jotId="wuid:gx:15eb6ba9af976111" class="sites-navigation-link">Tour of the Chromium Buildbot Waterfall</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/linux-builder-dbg-shlib" jotId="wuid:gx:3f7e73b4f1e263fc" class="sites-navigation-link">Linux Builder (dbg-shlib)</a>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="topLevel parent" wuid="gx:31c23927450dc52e"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/commit-queue" jotId="wuid:gx:31c23927450dc52e" class="sites-navigation-link topLevel">Chromium Commit Queue</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/commit-queue/chromium_trybot-json" jotId="wuid:gx:669a532b810da7be" class="sites-navigation-link">Analyze step(s)</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/commit-queue/design" jotId="wuid:gx:67d7b4346e9dcc07" class="sites-navigation-link">Design doc: Chromium Commit queue</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/commit-queue/integration-with-rietveld" jotId="wuid:gx:71add928afd9e46" class="sites-navigation-link">Design: 3-way Integration with Rietveld and the Try Server</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/contacting-a-trooper" jotId="wuid:gx:16c19669a7973c24" class="sites-navigation-link topLevel">Contacting a Trooper</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/control-flow-integrity" jotId="wuid:gx:20f5f3f65f7afeba" class="sites-navigation-link topLevel">Control Flow Integrity</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/fake-bidi" jotId="wuid:gx:7463fe8ab5b28cd6" class="sites-navigation-link topLevel">Fake Bidi</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/flakiness-dashboard" jotId="wuid:gx:4393fbf2070d0f58" class="sites-navigation-link topLevel">Flakiness Dashboard HOWTO</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/frame-rate-test" jotId="wuid:gx:66b65b4a70c32582" class="sites-navigation-link topLevel">Frame Rate Test</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/fuzzers" jotId="wuid:gx:173a97a2d6abf843" class="sites-navigation-link topLevel">fuzzers</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/gatekeeper-ng" jotId="wuid:gx:33089a38ae650f04" class="sites-navigation-link topLevel">Gatekeeper-NG</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/gpu-testing" jotId="wuid:gx:29111064f1155206" class="sites-navigation-link topLevel">GPU Testing</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/instrumented-libraries-for-dynamic-tools" jotId="wuid:gx:517c6650b184c736" class="sites-navigation-link topLevel">Instrumented libraries for dynamic tools</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:10f79ca11e86af6"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/isolated-testing" jotId="wuid:gx:10f79ca11e86af6" class="sites-navigation-link topLevel">Isolated Testing</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/isolated-testing/deterministic-builds" jotId="wuid:gx:7bec90dc8ee6b994" class="sites-navigation-link">Deterministic builds</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/isolated-testing/for-swes" jotId="wuid:gx:be87cd4fca1d981" class="sites-navigation-link">Isolated Testing for SWEs</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/isolated-testing/infrastructure" jotId="wuid:gx:2bb4d578b4a0c939" class="sites-navigation-link">Isolated Testing Infrastructure</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel parent" wuid="gx:1a8b2a346aa3984"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/webkit-layout-tests" jotId="wuid:gx:1a8b2a346aa3984" class="sites-navigation-link topLevel">Layout Tests</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/webkit-layout-tests/identifying-tests-that-depend-on-order" jotId="wuid:gx:40af43b10fb56f62" class="sites-navigation-link">Fixing layout test flakiness</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/webkit-layout-tests/goals" jotId="wuid:gx:172368e52c098bbc" class="sites-navigation-link">Goals</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/webkit-layout-tests/layout-test-stats" jotId="wuid:gx:460621fe96357154" class="sites-navigation-link">Layout test stats backup 2011-06-08</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/webkit-layout-tests/content-shell" jotId="wuid:gx:7e27c70aca511f4e" class="sites-navigation-link">Running layout tests using the content shell</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/webkit-layout-tests/testexpectations" jotId="wuid:gx:40912166aa8b896b" class="sites-navigation-link">Test Expectations</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/webkit-layout-tests/using-breakpad-with-content-shell" jotId="wuid:gx:47fd4c6f62c1be4" class="sites-navigation-link">Using breakpad with content shell</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/leaksanitizer" jotId="wuid:gx:1673a4845ffa2494" class="sites-navigation-link topLevel">LeakSanitizer</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/changedashboard" jotId="wuid:gx:7c5aec427da11d0c" class="sites-navigation-link topLevel">Making changes to test dashboard</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/memorysanitizer" jotId="wuid:gx:35aa3cc44f120757" class="sites-navigation-link topLevel">MemorySanitizer (MSan)</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/multi-process-ram-usage-analysis-on-android" jotId="wuid:gx:1a4cee57af3b5cbb" class="sites-navigation-link topLevel">Multi-Process RAM usage analysis on Android</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/no-compile-tests" jotId="wuid:gx:6c96713c0513f46f" class="sites-navigation-link topLevel">No-compile Tests</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:478f51db51e82a17"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/page-cyclers" jotId="wuid:gx:478f51db51e82a17" class="sites-navigation-link topLevel">Page Cycler Tests</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/page-cyclers/analyzing-page-cycler-results" jotId="wuid:gx:7d62b54e98418ea1" class="sites-navigation-link">Analyzing Page Cycler Results</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/page-heap-for-chrome" jotId="wuid:gx:4149ebd05d469df8" class="sites-navigation-link topLevel">Page Heap for Chromium</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/running-tests" jotId="wuid:gx:412fbc3fa13b033a" class="sites-navigation-link topLevel">Running tests at home</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/gpu-recipe" jotId="wuid:gx:715a78ce0631aa73" class="sites-navigation-link topLevel">The GPU bots' recipe</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/threadsanitizer-tsan-v2" jotId="wuid:gx:6306404b791cc293" class="sites-navigation-link topLevel">ThreadSanitizer (TSan) v. 2</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/time-complexity-tests" jotId="wuid:gx:1968bd0ff0d73378" class="sites-navigation-link topLevel">Time Complexity Tests</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:6cc38cc1928aef00"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/developers/testing/try-server-usage" jotId="wuid:gx:6cc38cc1928aef00" class="sites-navigation-link topLevel">Try Server usage</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/developers/testing/try-server-usage/design" jotId="wuid:gx:75f2b5fabe6ced1e" class="sites-navigation-link">Design doc: Try server</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/undefinedbehaviorsanitizer" jotId="wuid:gx:11f3a3abe5a7f269" class="sites-navigation-link topLevel">UndefinedBehaviorSanitizer (UBSan)</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/webgl-conformance-tests" jotId="wuid:gx:787277baba8ce77a" class="sites-navigation-link topLevel">WebGL Conformance Tests</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="/developers/testing/windows-installer-tests" jotId="wuid:gx:d1e4486b9bf612c" class="sites-navigation-link topLevel">Windows Installer Tests</a>
+</div></li>
+</ul>
+</div>
+</div>
+</div><br /></div>
+</div>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(36):</span>
+<span>
+<a href="/system/app/pages/subPages?path=/developers/testing" rel="nofollow">View All</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/testing">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9O1fHhf3yeABrhH_HMePJRemYaCQ8YBFJIKzfOHetrSzZ9W2qKqfDLlFhE-NMsCyydIp5n6EpSoDANfdEB_L02jW9aTujLW6qEIqvUklXuMIkLDTq/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

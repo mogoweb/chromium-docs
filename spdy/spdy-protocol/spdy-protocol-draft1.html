@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/spdy","deleted":false,"title":"SPDY","dir":"ltr"},{"path":"/spdy/spdy-protocol","deleted":false,"title":"SPDY Protocol","dir":"ltr"},{"path":"/spdy/spdy-protocol/spdy-protocol-draft1","deleted":false,"title":"SPDY Protocol - Draft 1","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/spdy/spdy-protocol/spdy-protocol-draft1\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/spdy/spdy-protocol","parentWuid":"wuid:gx:55ae4a9b90e631e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"SPDY Protocol - Draft 1","locale":"en","wuid":"wuid:gx:3cf9899c02de58fa","revision":50,"path":"/spdy/spdy-protocol/spdy-protocol-draft1","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"spdy-protocol-draft1","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="SPDY Protocol - Draft 1 - The Chromium Projects" />
+<meta itemprop="name" content="SPDY Protocol - Draft 1 - The Chromium Projects" />
+<meta property="og:title" content="SPDY Protocol - Draft 1 - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>SPDY Protocol - Draft 1 - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/spdy" dir="ltr">SPDY</A>‎ &gt; ‎<A href="../spdy-protocol.html" dir="ltr">SPDY Protocol</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">SPDY Protocol - Draft 1</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="background-color:rgb(255,255,255);min-height:150px;padding-bottom:5px">
+<div><b><br />
+</b>
+<table cellspacing="0" style="margin:0px;table-layout:fixed">
+<tbody>
+<tr>
+<td style="padding:10px;vertical-align:top">
+<div dir="ltr"><span style="color:rgb(0,0,0);font-family:Times New Roman;font-size:16px;line-height:normal">
+<div style="margin:6px;padding:0px;font-family:Verdana;font-size:10pt;background-color:rgb(255,255,255);min-height:1100px;line-height:normal">
+<div><span style="font-style:italic">Mike Belshe (mbelshe at google.com) &amp; Roberto Peon (fenix at google.com)</span></div>
+<div><i><br />
+</i></div>
+<div><i><span style="font-size:large"><font color="#cc0000">DRAFT</font></span></i></div>
+<br />
+<h2 style="font-family:arial,sans-serif"><a name="TOC-Overview" style="color:rgb(78,125,191);outline-style:none"></a>Overview</h2>
+<p style="margin:0px"><font face="arial, sans-serif">One of the bottlenecks of current HTTP is that it relies solely on multiple connections for concurrency. This causes several problems, including additional round trips for connection setup, slow-start delays, and a constant rationing by the client where it tries to avoid opening too many connections to a single server. HTTP "pipelining" doesn't help, as each connection may be blocked on the request at the head of the line; in addition, many proxies apparently have poor support for pipelining. Applications, in their desire to create many connections, create many sub-domains to work around browser per-domain connection throttling.</font></p>
+<p style="margin:0px"><font face="arial, sans-serif"><br />
+</font></p>
+<p style="margin:0px"><font face="arial, sans-serif">SPDY aims to address this and other application-layer problems associated with modern web applications, while requiring little or no change from the perspective of web application writers.</font></p>
+<p style="margin:0px"><font face="arial, sans-serif"><br />
+</font></p>
+<p style="margin:0px"><font face="arial, sans-serif">In a nutshell, SPDY adds a framing layer for multiplexing multiple, concurrent streams across a single TCP connection.  The framing layer is optimized for HTTP-like request-response streams.</font></p>
+<p style="margin:0px"><font face="arial, sans-serif"><br />
+</font></p>
+<p style="margin:0px"><font face="arial, sans-serif">The SPDY session offers three basic improvements over HTTP:</font><font face="arial, sans-serif"><br />
+</font></p>
+<ul><li><font face="arial, sans-serif">Multiplexed requests. There is no limit to the number of requests that can be issued concurrently over a single SPDY connection.  Because requests are interleaved on a single channel, the efficiency of TCP is much higher.</font></li></ul>
+<ul><li><font face="arial, sans-serif">Prioritized requests. Clients can request certain resources to be delivered first.  This avoids the problem of congesting the network channel with non-critical resources when a high-priority request is pending.</font></li></ul>
+<ul><li><font face="arial, sans-serif">Compressed headers.  Clients today send a significant amount of redundant data in the form of HTTP headers.  Because a single web page may require 50 or 100 subrequests, this data is significant. Compressing the headers saves a significant amount of latency and bandwidth compared to HTTP.</font></li></ul>
+<div><font face="arial, sans-serif">Note that for the most part, SPDY attempts to preserve the existing semantics of HTTP features.  All features such as cookies, etags, vary headers, content-encoding negotiations, etc work exactly as they do with HTTP; SPDY only replaces the way the data is written to the network.</font></div>
+<h2 style="font-family:arial,sans-serif"><a name="TOC-Definitions" style="color:rgb(78,125,191);outline-style:none"></a>Definitions</h2>
+<ul><li><span style="font-family:arial,sans-serif"><i>connection</i>: A TCP-level connection between two endpoints.</span></li>
+<li><span style="font-family:arial,sans-serif"><i>endpoint</i>: Either the client or server of a connection.</span></li>
+<li><span style="font-family:arial,sans-serif"><i>session</i>: A framed sequence of data chunks. Frames are defined as SPDY frames; see </span><a href="spdy-protocol-draft1.html#framing" style="color:rgb(78,125,191);outline-style:none;font-family:arial,sans-serif">Framing</a><span style="font-family:arial,sans-serif"> below.</span></li>
+<li><span style="font-family:arial,sans-serif"><i>stream</i>: A bi-directional flow of bytes across a virtual channel within a SPDY session.</span></li></ul>
+<h2 style="font-family:arial,sans-serif"><a name="TOC-Main-differences-from-HTTP" style="color:rgb(78,125,191);outline-style:none"></a>Main differences from HTTP</h2>
+<div style="font-family:arial,sans-serif">SPDY is intended to be as compatible as possible with current web-based applications. This means that, from the perspective of the server business logic or application API, nothing has changed. To achieve this, all of the application request and response header semantics are preserved.  SPDY introduces a "session" which resides between the HTTP application layer and the TCP transport to regulate the flow of data. This "session" is akin to an HTTP request-response pair. The following changes represent the differences between SPDY and HTTP:</div>
+<h4 style="font-family:arial,sans-serif"><a name="TOC-The-request" style="color:rgb(78,125,191);outline-style:none"></a>The request</h4>
+<div>
+<h4 style="font-size:10pt;font-family:arial,sans-serif"><a name="TOC-To-initiate-a-new-request-clients-f" style="color:rgb(78,125,191);outline-style:none"></a><span style="font-weight:normal">To initiate a new request, clients first create a new SPDY session.  Once the session is created, the client can create a new SPDY stream to carry the request.  Part of creating the stream is sending the HTTP header block.  The HTTP header block in SPDY is almost unchanged from today's HTTP header block, with the following differences:</span></h4>
+<div style="margin-top:0px;margin-bottom:0px">
+<ul style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><li style="margin-top:0px;margin-bottom:0px">The first line of the request is unfolded into name/value pairs like other HTTP headers.  The names of the first line fields are <code style="color:rgb(0,96,0)">method</code>, <code style="color:rgb(0,96,0)">url</code>, and <code style="color:rgb(0,96,0)">version</code>.  These keys are required to be present.  The 'url' is the fully-qualified URL, containing protocol, host, port, and path.</li>
+<li style="margin-top:0px;margin-bottom:0px">Duplicate header names are not allowed.</li>
+<li style="margin-top:0px;margin-bottom:0px">Header names are all lowercase.</li>
+<li style="margin-top:0px;margin-bottom:0px">The <code style="color:rgb(0,96,0)">Connection</code> and <code style="color:rgb(0,96,0)">Keep-Alive</code> headers are no longer valid and are ignored if present.</li>
+<li style="margin-top:0px;margin-bottom:0px">Clients are assumed to support <code style="color:rgb(0,96,0)">Accept-Encoding: gzip</code>.  Clients that do not specify any body encodings receive gzip-encoded data from the server.</li>
+<li style="margin-top:0px;margin-bottom:0px">HTTP request headers are compressed.  This is accomplished by compressing all data sent by the client with gzip encoding.</li>
+<li style="margin-top:0px;margin-bottom:0px">The "host" header is ignored.  The host:port portion of the HTTP URL is the definitive host.</li><li style="margin-top:0px;margin-bottom:0px">User-agents are expected to support gzip and deflate compression.  Regardless of the Accept-Encoding sent by the user-agent, the server may select gzip or deflate encoding at any time.</li>
+<li style="margin-top:0px;margin-bottom:0px">POST-specific changes:</li>
+<ul><li style="margin-top:0px;margin-bottom:0px">POST requests are expected to contain a data stream as part of the post; see <a href="spdy-protocol-draft1.html#dataflow" style="color:rgb(78,125,191);outline-style:none">Data flow</a> below.<br />
+</li>
+<li style="margin-top:0px;margin-bottom:0px"><code style="color:rgb(0,96,0)">Content-length</code> is only advisory for length (so that progress meters can work).</li>
+<li style="margin-top:0px;margin-bottom:0px">Chunked encoding is no longer valid.</li>
+<li style="margin-top:0px;margin-bottom:0px">The POST data stream is terminated by a zero-length data frame.</li></ul></ul>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<h4 style="font-size:10pt;font-family:arial,sans-serif"><a name="TOC-The-response" style="color:rgb(78,125,191);outline-style:none"></a>The response</h4>
+<h4 style="font-size:10pt;font-family:arial,sans-serif"><a name="TOC-When-responding-to-a-HTTP-request-s" style="color:rgb(78,125,191);outline-style:none"></a><span style="font-weight:normal">When responding to a HTTP request, servers will send data frames using the SPDY stream created by the client.  The response is similar to HTTP/1.1 in that it consists of a header block followed by a body. However, there are a few notable changes:</span></h4>
+<div style="margin-top:0px;margin-bottom:0px">
+<ul style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><li style="margin-top:0px;margin-bottom:0px">The response status line is unfolded into name/value pairs like other HTTP headers.  The names of the status line are <code style="color:rgb(0,96,0)">status </code>and <code style="color:rgb(0,96,0)">version</code>.  These keys are required to be present</li>
+<li style="margin-top:0px;margin-bottom:0px">If the SPDY reply happens before a SYN_STREAM, then it includes parameters that inform the client regarding the request that would have been made to receive this response, by including <code style="color:rgb(0,96,0)">url </code>and <code style="color:rgb(0,96,0)">method</code> keys. <br />
+</li>
+<li style="margin-top:0px;margin-bottom:0px">All header names must be lowercase.</li>
+<li style="margin-top:0px;margin-bottom:0px">The <code style="color:rgb(0,96,0)">Connection</code> and <code style="color:rgb(0,96,0)">Keep-alive</code> response headers are no longer valid.</li>
+<li style="margin-top:0px;margin-bottom:0px"><font color="#006000" face="monospace"><span style="color:rgb(0,0,0);font-family:arial,sans-serif"><code style="color:rgb(0,96,0)">Content-length</code> is only advisory for length.</span></font></li>
+<li style="margin-top:0px;margin-bottom:0px">Chunked encoding is no longer valid.</li>
+<li style="margin-top:0px;margin-bottom:0px">Duplicate header names are not allowed.</li></ul>
+<h2 style="text-align:left;font-family:arial,sans-serif"><a name="TOC-Connections" style="color:rgb(78,125,191);outline-style:none"></a>Connections</h2>
+<p style="font-family:arial,sans-serif">The first implementation of the SPDY session runs atop TCP, similarly to how HTTP works today. The client is expected to be the TCP connection initiator. Because it runs on TCP, we have a reliable transport. Unlike HTTP, all connections with SPDY are persistent connections. The HTTP connection header does not apply.</p>
+<p style="font-family:arial,sans-serif">For best performance, it is expected that clients will not close open connections until the user navigates away from all web pages referencing a connection, or until the server closes the connection. Servers are encouraged to leave connections open for as long as possible, but can terminate idle connections after some amount of inactivity if necessary.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</span>
+<h2 style="font-family:arial,sans-serif"><a name="framing" style="color:rgb(78,125,191);outline-style:none">Framing</a></h2>
+<p style="font-family:arial,sans-serif">Once the TCP connection is established, clients and servers exchange framed messages. There are two types of frames: control frames and data frames.  Frames always have a common header which is 8 bytes.</p>
+<p style="font-family:arial,sans-serif">The first bit is a control bit indicating whether a frame is a control frame or data frame. Control frames carry a version number, a frame type, flags, and a length. Data frames contain the stream ID, flags, and the length for the payload carried after the common header. The simple header is designed to make reading and writing of frames easy.</p><p style="font-family:arial,sans-serif">All integer values, included length, version, and type, are in network byte order.  SPDY does not enforce alignment of types in dynamically sized frames.</p><h3><a name="TOC-Control-frames-" style="color:rgb(78,125,191);outline-style:none"></a>Control frames</h3>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+</div>
+<div style="margin-top:0px;margin-bottom:0px">  |C| Version(15bits) | Type(16bits) |</div>
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+</div>
+<div style="margin-top:0px;margin-bottom:0px">  | Flags (8)  |  Length (24 bits)   |</div>
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+</div>
+<div style="margin-top:0px;margin-bottom:0px">  |               Data               |</div>
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+</div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+Control frame fields:<br />
+<br />
+Control bit: The 'C' bit is a single bit indicating that this is a control message. For control frames this value is always 1. <br />
+<br />
+Version: The version number of the session protocol (currently 1).<br />
+<br />
+Type: The type of control frame. Control frames are SYN_STREAM, SYN_REPLY, etc.
+<div><br />
+<div>Flags: Flags related to this frame. Flags for control frames and data frames are different.<br />
+<br />
+Length: An unsigned 24-bit value representing the number of bytes after the length field.
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Data: data associated with this control frame. The format and length of this data is controlled by the control frame type.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-size:16px;font-weight:bold">Data frames</span></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  |C|       Stream-ID (31bits)       |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"> </font><font face="'Courier New'"> | Flags (8)  |  Length (24 bits)   |</font>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  |               Data               |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Courier New,sans-serif"><font face="'Courier New'">  +----------------------------------+</font></span></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">Data frame fields:<br />
+<br />
+Control bit: For data frames this value is always 0.<br />
+<br />
+Stream-ID: A 31-bit value identifying the stream.<br />
+<br />
+Flags: Flags related to this frame. Valid flags are:<br />
+<ul><li>0x01 = FLAG_FIN - signifies that this frame represents the half-close of this stream. See <a href="spdy-protocol-draft1.html#streamhalfclose" style="color:rgb(78,125,191);outline-style:none">Stream half-close</a> below.</li></ul>
+Length: An unsigned 24-bit value representing the number of bytes after the length field. The total size of a data frame is 8 bytes + length. It is valid to have a zero-length data frame.<br />
+<br />
+Data: A variable-length field containing the number of bytes in the payload.
+<h2><a name="TOC-Hello-message" style="color:rgb(78,125,191);outline-style:none"></a><font face="'Courier New'">
+<h3 style="font-family:arial,sans-serif"><a name="TOC-Hello-message1" style="color:rgb(78,125,191);outline-style:none"></a>Hello message</h3>
+</font></h2>
+<font face="'Courier New'"><span style="font-family:Verdana">
+<div style="font-family:arial,sans-serif">After the connection has been established, SPDY employs an asynchronous Hello sequence where each side informs the other about the communication details it knows about.  Unlike most protocols, this Hello sequence is optional and fully asynchronous.  Because it is asynchronous, it does not add a round-trip latency to the connection startup.  But because it is asynchronous and optional, both sides must be prepared for this message to arrive at any time or not at all.</div>
+<div style="font-family:arial,sans-serif"><br />
+</div>
+<div style="font-family:arial,sans-serif">
+<p>To initiate a Hello sequence, either side can send a HELLO control frame.  The Hello frame is optional, but if it is to be sent, it must be the first frame sent.  When a Hello message is received, the receiver is not obligated to reply with a Hello message in return.  The message is therefore completely informational.</p>
+</div>
+<div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">HELLO control message:</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"> </font><font face="'Courier New'"> </font><font face="'Courier New'">+</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">----</font><font face="'Courier New'">---</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">---</font><font face="'Courier New'">+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|       1          </font></span><font face="'Courier New'">|       4     </font><span style="font-family:Verdana"><font face="'Courier New'">|</font></span></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+<br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"> <font face="'Courier New'"> | Flags (8)  |  Length (24 bits)   |</font>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+  |  Unused       |Number of entries |</div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|<br />
+  |          ID/Value Pairs          |<br />
+  |             ...                  |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font><font face="Arial, Verdana, sans-serif"><br />
+</font></font><span style="font-family:arial,sans-serif">HELLO message fields:<br />
+<br />
+Control bit: The control bit is always 1 for this message.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Version: The SPDY version number.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Type: The message type for a HELLO message is 4.</span></div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><font>Unused: 16 bits of unused space, reserved for future use.</font></div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><br />
+Number of entries: A 16-bit value representing the number of ID/value pairs in this message.<br />
+<br />
+ID: A 32-bit ID number. <font face="'Courier New'" style="font-family:arial,sans-serif">The following IDs are valid:<br />
+<ul><li>
+1 - HELLO_BANDWIDTH_TO_YOU allows the sender to send its expected upload bandwidth on this channel.  This
+number is an estimate. The value should be the integral number of kilobytes per second that the sender predicts
+as an expected maximum upload channel capacity.</li>
+<li>
+2 - HELLO_BANDWIDTH_FROM_YOU allows the sender to send its expected download bandwidth on this channel. This
+number is an estimate. The value should be the integral number of kilobytes per second that the sender predicts as
+an expected maximum download channel capacity.</li>
+<li>3 - HELLO_ROUND_TRIP_TIME allows the sender to send its expected round-trip-time on this channel. The round trip time is defined as the minimum amount of time to send a control frame from this client to the remote and receive a response. The value is represented in milliseconds.</li>
+<li>
+4 - HELLO_MAX_CONCURRENT_STREAMS allows the sender to inform the remote endpoint the maximum number of concurrent
+streams which it will allow. By default there is no limit. For implementors it is recommended that this value be
+no smaller than 100.
+</li></ul>
+</font>Value: A 32-bit value.</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><font><br />
+</font>The message is intentionally expandable for future information which may improve client-server communications. The sender does not need to send every type of ID/value. It must only send those for which it has accurate values to convey. When multiple ID/value pairs are sent, they should be sent in order of lowest id to highest id.<br />
+<br />
+</div>
+<h2 style="font-family:arial,sans-serif"><a name="TOC-Streams" style="color:rgb(78,125,191);outline-style:none"></a>Streams</h2>
+</div>
+</div>
+</div>
+</span></font></div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Streams are independent sequences of bi-directional data cut into frames.  Streams can be created either by the client or the server, can concurrently send data interleaved with other streams, and can be cancelled.  The usage of streams with HTTP is such that a single HTTP request/response occupies a single stream, and the stream is not reused for a second request.  This is because streams can be independently created without incurring a round-trip.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Upon stream initiation, streams allow for each side to transmit a fixed-length list of name/value pairs to the other endpoint.</div>
+<h3 style="font-size:12pt"><a name="TOC-Stream-creation" style="color:rgb(78,125,191);outline-style:none"></a>Stream creation</h3>
+<p style="font-weight:normal">A stream is created by sending a control packet with the type set to SYN_STREAM(1).  If the server is initiating the stream, the Stream-ID must be even.  If the client is initiating the stream, the Stream-ID must be odd.  0 is not a valid Stream-ID. Stream-IDs from each side of the connection must increase monotonically as new streams are created.  E.g. Stream 2 may be created after stream 3, but stream 7 must not be created after stream 9.<br /></p>
+<p style="margin:0px;font-family:arial,sans-serif">Upon receipt of a SYN_STREAM frame, the server replies with a SYN_REPLY frame.  The client does not need to wait for a SYN_REPLY before sending any data frames.</p>
+<p style="margin:0px;font-family:arial,sans-serif"><br />
+</p>
+<p style="margin:0px;font-family:arial,sans-serif">If the endpoint receiving a SYN_STREAM does not want to accept the new stream, it can immediately respond with a FIN_STREAM control frame.  Note, however, that the initiating endpoint may have already sent data on the stream as well; this data must be ignored.</p>
+<br />
+<br />
+SYN_STREAM control message:
+<div style="margin:6px;padding:0px;font-family:Verdana;font-size:10pt;background-color:rgb(255,255,255);min-height:1100px;line-height:normal">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"> </font><font face="'Courier New'"> </font><font face="'Courier New'">+</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">----</font><font face="'Courier New'">---</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">---</font><font face="'Courier New'">+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|       1          </font></span><font face="'Courier New'">|       1     </font><span style="font-family:Verdana"><font face="'Courier New'">|</font></span></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">  | Flags (8)  |  Length (24 bits)   |</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New', sans-serif">  +----------------------------------+</font></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New', sans-serif">  |X|          Stream-ID (31bits)    |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Courier New">  +----------------------------------+</span></div>
+<div style="margin-top:0px;margin-bottom:0px;text-align:left"><font face="'Courier New'">  | Pri | Unused    |   NV Entries   |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|<br />
+  |     Name/value header block      |<br />
+  |             ...                  |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<p style="margin:0px;font-family:arial,sans-serif"><br />
+</p>
+<p style="margin:0px;font-family:arial,sans-serif">SYN_STREAM message fields:<br />
+<br />
+Flags: Flags related to this frame. Valid flags are:<br />
+</p>
+<ul><li><span style="font-family:arial,sans-serif">0x01 = FLAG_FIN - signifies that this frame represents the half-close of this stream. </span><span style="font-family:arial,sans-serif;border-collapse:collapse">When set, it indicates that the sender will not produce any more data frames in this stream.</span>
+</li></ul>
+<p style="margin:0px;font-family:arial,sans-serif">Length: An unsigned 24 bit value representing the number of bytes after the length field. The total size of a SYN_STREAM frame is 8 bytes + length. The length for this frame must be greater than or equal to 8.<br />
+<br />
+Priority: A 2-bit priority field. If an endpoint has initiated multiple streams, the priority field represents which streams should be given first precidence. Servers are not required to strictly enforce the priority field, although best-effort is assumed. 0 represents the lowest priority and 3 represents the highest priority. The highest-priority data is that which is most desired by the client.<br />
+<br />
+Unused: 14 bits of unused space, reserved for future use.<br />
+<br />
+NV entries: (16 bits) The number of name/value pairs that follow.</p><p style="margin:0px;font-family:arial,sans-serif"><br /></p>
+<p style="margin:0px;font-family:arial,sans-serif">The <a href="spdy-protocol-draft1.html#nameheaderblock">Name/value block</a> is described below.</p>
+<br />
+<p style="margin:0px;font-family:arial,sans-serif">SYN_REPLY control message:</p>
+<p style="margin:0px"> </p>
+<div style="margin-top:0px;margin-bottom:0px">  <font face="'Courier New'">+----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|        1        </font></span><font face="'Courier New'">|        2     </font><span style="font-family:Verdana"><font face="'Courier New'">|</font></span></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">  | Flags (8)  |  Length (24 bits)   |</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New', sans-serif">  +----------------------------------+</font></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New', sans-serif">  |X|          Stream-ID (31bits)    |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Courier New">  +----------------------------------+</span></div>
+<div style="margin-top:0px;margin-bottom:0px;text-align:left"><font face="'Courier New'">  | Unused        |    NV entries    |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|<br />  |     Name/value header block      |<br />  |              ...                 |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><br />
+</font></div>
+<span style="font-family:arial,sans-serif">SYN_REPLY message fields:<br />
+<br />
+Flags: Flags related to this frame. Valid flags are:</span><br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">0x01 = FLAG_FIN - signifies that this frame represents the half-close of this stream. <span style="border-collapse:collapse">When set, it indicates that the sender will not produce any more data frames in this stream.</span>.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Length: An unsigned 24-bit value representing the number of bytes after the length field. The total size of a SYN_STREAM frame is 8 bytes + length. The length for this frame must be greater than or equal to 8.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Unused: 16 bits of unused space, reserved for future use.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">NV entries: (16 bits) The number of name/value pairs that follow.</span>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">The <a href="https://sites.google.com/a/chromium.org/dev/spdy/spdy-protoco#nameheaderblock" style="color:rgb(78,125,191);outline-style:none">Name/value block</a> is described below.</div>
+<h3 style="font-family:arial,sans-serif"><a name="nameheaderblock" style="color:rgb(78,125,191);outline-style:none">Name/value header block format</a></h3>
+<p style="margin:0px;font-family:arial,sans-serif"><font size="2">Both the SYN_STREAM and SYN_REPLY frames contain a Name/value header block.  The header block used by both the request and the response is the same.  It is designed so that headers can be easily appended to the end of a list and also so that it can be easily parsed by receivers.  Each numeric value is 2 bytes.</font></p>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;text-align:left"><font face="'Courier New'"> </font><font face="'Courier New'"> </font><font face="'Courier New'">+</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">----</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">  |     Length of name (int16)       |</div><div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  |           Name (string)          |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  |     Length of value  (int16)     |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px;text-align:left">  |          Value   (string)        |</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+<br /><div style="margin-top:0px;margin-bottom:0px">  |           (repeats)              |</div></font></div><div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<p style="margin:0px;font-family:arial,sans-serif">Each header name must have at least one value. The length of each name and value must be greater than zero.  Although sending of names or values of zero length is invalid, receivers of zero-length name or zero-length values must ignore the pair and continue.</p>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<p style="margin:0px"><br />
+</p>
+<p style="margin:0px">Duplicate header names are not allowed.  To send two identically named headers, send a header with two values, where the values are separated by a single NUL (0) byte.  Senders must not send multiple, in-sequence NUL characters.  Receivers of multiple, in-sequence NUL characters must ignore the name/value pair.</p>
+<br />
+</div>
+<p style="margin:0px;font-family:arial,sans-serif">Strings are utf8 encoded and are not NUL terminated.<br />
+</p>
+<p style="margin:0px;font-family:arial,sans-serif"><br />
+</p>
+<p style="margin:0px;font-family:arial,sans-serif">The entire contents of the name/value header block is compressed using zlib deflate.  There is a single zlib stream (context) for all name value pairs in one direction on a connection.   SPDY uses a SYNC_FLUSH between frame which uses compression. The stream is initialized with the following dictionary (without line breaks, NULL terminated):</p><p style="margin:0px 0px 0px 40px;font-family:arial,sans-serif">optionsgetheadpostputdeletetraceacceptaccept-charsetaccept-encodingaccept-<br />languageauthorizationexpectfromhostif-modified-sinceif-matchif-none-matchi<br />f-rangeif-unmodifiedsincemax-forwardsproxy-authorizationrangerefererteuser<br />-agent10010120020120220320420520630030130230330430530630740040140240340440<br />5406407408409410411412413414415416417500501502503504505accept-rangesageeta<br />glocationproxy-authenticatepublicretry-afterservervarywarningwww-authentic<br />ateallowcontent-basecontent-encodingcache-controlconnectiondatetrailertran<br />sfer-encodingupgradeviawarningcontent-languagecontent-lengthcontent-locati<br />oncontent-md5content-rangecontent-typeetagexpireslast-modifiedset-cookieMo<br />ndayTuesdayWednesdayThursdayFridaySaturdaySundayJanFebMarAprMayJunJulAugSe<br />pOctNovDecchunkedtext/htmlimage/pngimage/jpgimage/gifapplication/xmlapplic<br />ation/xhtmltext/plainpublicmax-agecharset=iso-8859-1utf-8gzipdeflateHTTP/1<br />.1statusversionurl</p><p style="margin:0px 0px 0px 40px;font-family:arial,sans-serif"><br /></p><p style="margin:0px 0px 0px 40px;font-family:arial,sans-serif"><font color="#FF0000">TODO(mbelshe): Remove the NULL termination on the dictionary; not useful.  (thanks CostinM)</font></p><p style="margin:0px 0px 0px 40px;font-family:arial,sans-serif"><font color="#FF0000">TODO(mbelshe): Remove the empty block (4 bytes) inserted in the stream after a SYNC_FLUSH.  (thanks, CostinM)<br /></font><br /></p>
+</div>
+</div>
+</div>
+</div>
+</font></div>
+<h2 style="font-family:arial,sans-serif"><a name="TOC-Stream-data-exchange" style="color:rgb(78,125,191);outline-style:none"></a>Stream data exchange</h2>
+</div>
+</div>
+</div>
+</div>
+<p style="font-family:arial,sans-serif">Once a stream is created, it is used to send arbitrary amounts of data in either direction.  When either side has finished sending data it can send a frame with the FIN_FLAG set. (See "TCP connection teardown" below.)<br />
+</p>
+<h3 style="font-family:arial,sans-serif"><a name="streamhalfclose" style="color:rgb(78,125,191);outline-style:none">Stream half-close</a></h3>
+<h3 style="font-family:arial,sans-serif"><a name="streamhalfclose" style="color:rgb(78,125,191);outline-style:none"></a></h3>
+<h3 style="font-family:arial,sans-serif"><a name="streamhalfclose" style="color:rgb(78,125,191);outline-style:none"></a></h3>
+<span style="font-family:arial,sans-serif">When one side of the stream sends a control or data frame with the FLAG_FIN flag set, the stream is considered to be half-closed from that side. The sender of the FLAG_FIN is indicating that no further data will be sent from the sender on this stream. When both sides have half-closed, the stream is considered to be closed.</span>
+<h3 style="font-family:arial,sans-serif"><a name="streamhalfclose" style="color:rgb(78,125,191);outline-style:none"></a></h3>
+</div>
+<h3><a name="TOC-Stream-close" style="color:rgb(78,125,191);outline-style:none"></a>Stream close</h3>
+<p>There are 3 ways that streams can be terminated: normal termination, abrupt termination, and TCP connection teardown.</p>
+<h4><a name="TOC-Normal-termination" style="color:rgb(78,125,191);outline-style:none"></a>Normal termination</h4>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">Normal stream termination occurs when both sides of the stream have half-closed the stream.</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<h4><a name="TOC-Abrupt-termination" style="color:rgb(78,125,191);outline-style:none"></a>Abrupt termination</h4>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">Either the client or server can send a FIN_STREAM control packet at any time.  Upon receipt of the FIN_STREAM, both sides must ignore further data received on the stream and both sides must stop transmitting to the stream.  The FIN_STREAM is intended for abnormal stopping of a stream.</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">FIN_STREAM control frame:</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"> </font><font face="'Courier New'"> </font><font face="'Courier New'">+</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">---</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">---</font><font face="'Courier New'">+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|       1        </font></span><font face="'Courier New'">|      3     </font><span style="font-family:Verdana"><font face="'Courier New'">|</font></span></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +-------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">  | Flags (8)  |         8        |</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New', sans-serif">  +-------------------------------+</font></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New', sans-serif">  |X|          Stream-ID (31bits) |</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Courier New">  +-------------------------------+</span></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font><font face="'Courier New', sans-serif">  |          Status code          | </font></font></div>
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Courier New"><font>  +-------------------------------+</font></span></div>
+<div style="margin-top:0px;margin-bottom:0px"><font><br />
+</font></div>
+</font><span style="font-family:arial,sans-serif">FIN_STREAM message fields:<br />
+<br />
+Flags: Flags related to this frame. Valid flags are:</span><br style="font-family:arial,sans-serif" />
+<ul><li><span style="font-family:arial,sans-serif">0x01 = FLAG_FIN - <span style="border-collapse:collapse">When set, it indicates that the sender will not produce any more data frames in this stream.</span> See "Stream half-close" above.</span></li></ul>
+<span style="font-family:arial,sans-serif">Length: An unsigned 24-bit value representing the number of bytes after the length field. For FIN_STREAM control frames, this value is always 8.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Status code: (32 bits) An indicator for why the stream is being terminated.</span><font face="'Courier New'" style="font-family:arial,sans-serif"><font>The following status codes are defined:<br />
+</font></font>
+<ul><li><span style="font-family:arial,sans-serif">1 - PROTOCOL_ERROR. This is a generic error, and should only be used if a more specific error is not available. The receiver of this error will likely abort the entire session and possibly return an error to the user.</span></li>
+<li><span style="font-family:arial,sans-serif">2 - INVALID_STREAM should be returned when a frame is received for a stream which is not active. The receiver of this error will likely log a communications error.</span></li><li><span style="font-family:arial,sans-serif">3 - REFUSED_STREAM.  This is error indicates that the stream was refused before any processing has been done on the stream.  For non-indepotent methods this means that request can be retried.</span></li></ul>
+<span style="font-family:arial,sans-serif"><div style="margin-top:0px;margin-bottom:0px">Note:  0 is not a valid status code for a FIN_STREAM.</div><div style="margin-top:0px;margin-bottom:0px"><br /></div>TODO - Define more specific errors.</span><br />
+<br />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<h4 style="margin:0px"><a name="TOC-TCP-connection-teardown" style="color:rgb(78,125,191);outline-style:none"></a>TCP connection teardown</h4>
+<br />
+<p style="margin:0px">If the TCP connection is torn down while unterminated streams are active (no FIN_STREAM frames have been sent or received for the stream), then the endpoint must assume that the stream was abnormally interrupted and may be incomplete.</p>
+</div>
+</div>
+</div>
+<p style="margin:0px"><br />
+</p>
+<p style="margin:0px">If a client or server receives data on a stream which has already been torn down, it must ignore the data received after the teardown.</p>
+<h2><a name="dataflow" style="color:rgb(78,125,191);outline-style:none">Data flow</a></h2>
+<span style="font-weight:normal;font-family:arial,sans-serif"><font size="2">Because TCP provides a single stream of data on which SPDY multiplexes multiple logical streams, it is important for clients and servers to interleave data messages for concurrent sessions.<br />
+<br />
+</font></span>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">Implementors should note that sending data in smallish chunks will result in lower end-user latency for a page as this allows the browser to begin parsing metadata early, and, in turn, to finalize the page layout. Sending large chunks yields a small increase in bandwidth efficiency at the cost of slowing down the user experience on pages with many resources.</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif"><br />
+<h2><a name="TOC-Other-control-frames" style="color:rgb(78,125,191);outline-style:none"></a>Other control frames</h2>
+<div>
+<h3><a name="TOC-NOOP" style="color:rgb(78,125,191);outline-style:none"></a><b>NOOP</b></h3>
+</div>
+<div>The NOOP control frame is a no-operation frame.  It can be sent from the client or the server.  Receivers of a NO-OP frame should simply ignore it.</div>
+<div><br />
+</div>
+<div>NOTE: This control frame may ultimately be removed.  It has been implemented for experimentation purposes.</div>
+<div><br />
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">NOOP control message:</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"> </font><font face="'Courier New'"> </font><font face="'Courier New'">+</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">----</font><font face="'Courier New'">---</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">-</font><font face="'Courier New'">---</font><font face="'Courier New'">+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|       1          </font></span><font face="'Courier New'">|       5     </font><span style="font-family:Verdana"><font face="'Courier New'">|<br />  +----------------------------------+<br /></font></span><font><font face="'Courier New'">  | 0 (Flags)  |    0 (Length)       |</font></font><br /></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font><br /><div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><b><span style="font-family:Verdana;font-weight:normal">
+<div style="margin-top:0px;margin-bottom:0px">
+<div><font face="Arial, Verdana, sans-serif"><br />
+</font><span style="font-family:arial,sans-serif">Control-bit: The control bit is always 1 for this message.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Version: The SPDY version number.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Type: The message type for a NOOP message is 5.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Length: This frame carries no data, so the length is always 0.</span></div>
+<div style="font-family:arial,sans-serif">
+<h3><a name="TOC-PING" style="color:rgb(78,125,191);outline-style:none"></a><b>PING</b></h3>
+</div>
+<div style="font-family:arial,sans-serif">
+<p>The PING control frame is a mechanism for measuring a minimal round-trip time from the sender.  It can be sent from the client or the server.  Receivers of a PING frame should send an identical frame to the sender as soon as possible (if there is other pending data waiting to be sent, PING should take highest priority).  Each ping sent by a sender should use a unique ID.</p>
+</div>
+</div>
+<div style="font-family:arial,sans-serif">NOTE: This control frame may ultimately be removed.  It has been implemented for experimentation purposes.<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">PING  control message:</div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|       1          </font></span><font face="'Courier New'">|       6     </font><span style="font-family:Verdana"><font face="'Courier New'">|</font></span></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">  | 0 (flags) |     4 (length)       |</div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|<br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><span style="font-family:Verdana">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px">  |            32-bit ID             |</div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|</font></div>
+</div>
+</span></font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><br />
+</font></div>
+<span style="font-family:arial,sans-serif">Control bit: The control bit is always 1 for this message.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Version: The SPDY version number.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Type: The message type for a PING message is 6.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Length: This frame is always 4 bytes long.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">ID: A unique ID for this ping.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Note: If a sender uses all possible PING ids (e.g. has sent all 2^32 possible IDs), it can "wrap" and start re-using IDs.</span></div>
+</div>
+</div>
+</span></b></font></div>
+</div></font></div>
+</div>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<div>
+<h3><a name="TOC-GOAWAY" style="color:rgb(78,125,191);outline-style:none"></a><b>GOAWAY</b></h3>
+</div>
+<div>The GOAWAY control frame is a mechanism to tell the remote side of the connection that it should no longer use this session for further requests.  It can be sent from the client or the server. Once sent, the sender agrees not to initiate any new streams on this session. Receivers of a GOAWAY frame must not send additional requests on this session, although a new session can be established for new requests.  The purpose of this message is to allow the server to gracefully stop accepting new requests (perhaps for a reboot or maintenance), while still finishing processing of previously established requests.</div>
+<div><br />
+</div>
+<div>There is an inherent race condition between a client sending requests and the server sending a GOAWAY message.  To deal with this case, the GOAWAY message contains a last-stream identifier indicating the last stream which was accepted in this session.  If the client issued requests for sessions after this stream-id, they were not accepted by the server and should be re-issued later at the client's discretion.</div>
+<div><br />
+</div>
+<div>NOTE: This control frame may ultimately be removed.  It has been implemented for experimentation purposes.</div><div><br /></div><div>NOTE: (mnot@mnot.org suggests that mandatory GOAWAY could be useful to ensure graceful closure of sessions.  This would help if the last request on a session was a POST, and the server closes, the client can't know whether the request was sent or not.  Requiring a GOAWAY before closing would notify the client exactly which requests had been processed and which had not.)</div>
+<div><br />
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">GOAWAY control message:</div>
+<div style="margin-top:0px;margin-bottom:0px">  <font face="'Courier New'">+----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px"><span style="font-family:Verdana"><font face="'Courier New', sans-serif">  |1|       1          </font></span><font face="'Courier New'">|       7     </font><span style="font-family:Verdana"><font face="'Courier New'">|</font></span></div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">  | 0 (flags) |     4 (length)       |</div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|<br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><span style="font-family:Verdana">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">
+<div style="margin-top:0px;margin-bottom:0px">  |       Last-good-stream-ID        |</div>
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'">  +----------------------------------|</font></div>
+</div>
+</span></font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font face="'Courier New'"><br />
+</font></div>
+<span style="font-family:arial,sans-serif">Control bit: The control bit is always 1 for this message.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Version: The SPDY version number.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Type: The message type for a GOAWAY message is 7.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Length: This frame is always 4 bytes long.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">Last-good-stream-Id: The last stream id which was accepted by the sender of the GOAWAY message.</span><br /><br /><font size="3"><b>SUBRESOURCE</b></font><br /><br />The subresource control frame is an optional control
+frame to advise the receiver of resources that will be needed.  If the
+url and method in the name value pairs do not match those that are associated with the stream id then this control message must be ignored.<br /><br />Control frame<br /><font face="'Courier New'"><div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+</div>
+<div style="margin-top:0px;margin-bottom:0px">  |C| Version(15bits) |      8       |</div>
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+</div>
+<div style="margin-top:0px;margin-bottom:0px">  | Flags (8)  |  Length (24 bits)   |</div>
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+<br />  |0| Stream id (31 bits)            |<br />  |----------------------------------|<br />  |  Unused (16 bits) | NV Entries   |<br />  |----------------------------------|<br /></div>
+<div style="margin-top:0px;margin-bottom:0px">  | Key value pairs                  |</div>
+<div style="margin-top:0px;margin-bottom:0px">  +----------------------------------+<br /><br /><br /></div></font>Length: An unsigned 24 bit value representing the number of bytes after
+the length field. The total size of a SUBRESOURCE frame is 8 bytes +
+length. The length for this frame must be greater than or equal to 8.<br /><br />Stream-id is the stream-id for the stream that the subresources are associated with<br /><br /><p style="margin:0px;font-family:arial,sans-serif">NV entries: The number of name/value pairs that follow.</p>
+<p style="margin:0px;font-family:arial,sans-serif"><br />
+</p>
+<p style="margin:0px;font-family:arial,sans-serif">The <a href="https://sites.google.com/a/chromium.org/dev/spdy/spdy-protoco#nameheaderblock">Name/value block</a> is the same as a SYN_REPLY, but url and method are mandatory fields.</p><p style="margin:0px;font-family:arial,sans-serif"><br /></p><p style="margin:0px;font-family:arial,sans-serif">If a sender is using the SUBRESOURCE control frame to inform the client of streams that the will be created (<span><span><span>X-Associated-Content)</span></span></span></p><p style="margin:0px;font-family:arial,sans-serif"> (e.g. a server creating a stream to send an image used on a webpage) then the SUBRESOURCE message must be sent before the data frame where the receiver could discover the additional resource.<br /></p><div style="margin-top:0px;margin-bottom:0px"><br /></div><span style="font-family:arial,sans-serif"><h2><a name="TOC-Server-Push"></a>Server Push</h2><div>This section needs much work; it currently documents the prototyped protocol, but is not ready for broad implementation.</div><div><br /></div><div>Because SPDY enables both clients and servers to create streams, a server may decide to initiate a stream to the client.  Generally, this should be done if the server has knowledge that the client will need a resource before the client has requested it.  Servers should use this feature with care, because if the resource is cacheable, and the client already has a cached copy of the resource, this stream may be wasteful.  Further, servers should inform clients of the pending pushed resource as early as possible to avoid races between the server pushing the stream and the client requesting it (based on having discovered need for the resource from other downloaded content).  Not all content is push-able from the server.  Only resources fetched via the HTTP GET method can be server-pushed.</div><div><br /></div><div>Note:  Race conditions can only be avoided with the client if the client uses a single SPDY session to the server.</div><div><br /></div><div><b>Server Implementation</b></div><div>When the server intends to push resources to the client, it should append a header, "X-Associated-Content" to the SYN_REPLY for the resource which will also contain pushed content.  This SYN_REPLY MUST be sent prior to initiating the server-pushed streams.</div><div><br /></div><div>For each pushed resource listed in the X-Associated-Content header, the server may create streams by sending a SYN_STREAM frame.  This is the same as client-side stream initiation, except for that the server will append a header called "Path" which contains the path of the resource requested.</div><div><br /></div><div><b>Client Implementation</b></div><div>When fetching a resource the client has 3 possibilities:</div><div><ol><li>the resource is not being pushed</li><li>the resource is being pushed, but the data has not yet arrived</li><li>the resource is being pushed, and the data has started to arrive</li></ol><div>When a SYN_REPLY frame which contains a X-Associated-Content header is received, the client MUST NOT issue GET requests for those resources and instead wait for the pushed content from the server.  Similarly, if the client would have made a request for a resource but a X-Associated-Content header has been received for that resource, and yet the pushed stream has not arrived, the client MUST wait for the data to be pushed.</div><div><br /></div><div>When a SYN frame is received which contains a path previously specified in an X-Associated-Content header, the client SHOULD buffer the received data from the stream as is appropriate for the client.</div><div><br /></div><div><b>Flaws in this specification:</b></div></div><div><ul><li>The syntax of the X-Associated-Content header needs to be redone.</li><li>Incorporate the SUBRESOURCE control frame into this specification.</li><li>The "Path" header in the SYN_STREAM should be changed to "Url" and be a fully qualified path.</li><li>Need to implement flow control on pushes</li><li>Need to specify error case when the client cannot buffer.</li></ul></div><div><br /></div><div><br /></div><div><br /></div></span>
+<h2><a name="TOC-Future-work-experiments" style="color:rgb(78,125,191);outline-style:none"></a>Future work/experiments</h2>
+The following are thoughts/brainstorms for future work and experiments.<br />
+<ul><li>Caching<br />
+Since we're proposing to do almost everything over an encrypted channel, we're making caching either difficult or impossible.<br />
+We've had some discussions about having a non-secure, static-only content channel (where the resources are signed, or cryptographic hashes of the insecure content are sent over a secure link), but have made no headway yet...<br />
+<br />
+</li>
+<li>DoS potential</li></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;margin-left:40px">The potential for DoS of the server (by increasing the amount of state) is no worse than it would be for TCP connections. In fact, since more of the state is managed in userspace, it is easier to detect and react to increases in resource utilization. The client side, however, does have a potential for DoS since the server may now attempt to use client resources which would not normally be considered to be large per stream state.</div>
+<div style="margin:6px;padding:0px;font-family:Verdana;font-size:10pt;background-color:rgb(255,255,255);min-height:1100px;line-height:normal">
+<div style="margin-left:40px"><span style="font-family:arial,sans-serif">More investigation needs to be done about attack modes and remediation responses.</span><br />
+</div>
+<ul style="font-family:arial,sans-serif"><li>Stream capacity.<br />
+</li></ul>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<div style="margin-left:40px">Today, HTTP has no knowledge of approximate client bandwidth, and TCP only slowly and indirectly discovers it as a connection warms up. However, by the time TCP has warmed up, the page is often already completely loaded. To ensure that bandwidth is utilized efficiently, SPDY allows the client to tell the server its approximate bandwidth. The HELLO message is part of this, but measurement, reporting and all of the other infrastructure and behavioral modifications are lacking.<br />
+</div>
+<ul><li>Server-controlled connection parameters.</li></ul>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<div style="margin-left:40px">The "server" -- since either side may be considered a "server" in SPDY, "server" refers here to the side which receives requests for new sessions -- can inform the other side of reasonable connection or stream limits which should be respected. As with stream capacity, the HELLO message provides a container for signaling this, but no work has yet been done to figure out what values should be set, when, and what behavioral changes should be expected when the value does change.</div>
+<ul><li><span style="background-color:rgb(255,255,255)">
+<div style="margin-top:0px;margin-bottom:0px">Prefetching/server push<br />
+</div>
+</span></li></ul>
+<span style="background-color:rgb(255,255,255)">
+<div style="margin-top:0px;margin-bottom:0px">
+<blockquote style="border-style:none;border-width:medium;margin:0pt 0pt 0pt 40px;padding:0px">
+<div style="margin-top:0px;margin-bottom:0px">If the client can inform the server (or vice versa) how much bandwidth it is willing to allocate to various activities, then the server can push or prefetch resources without a) impacting the activities that the user wants to perform; or b) being too inefficient. While this approach still has inefficiencies (the server still send sparts of resources that the client already has before the client gets around to sending a FIN to the server), it doesn't seem to be grossly inefficient when coupled with the client telling the server how much slack (bandwidth) it is is willing to give to the server. However, this means that the client must be able to dynamically adjust the slack that it provides for server push or prefetching, for example, if it sees an increase in PING time.<br />
+</div>
+</blockquote>
+</div>
+</span>
+<ul><li><span style="background-color:rgb(255,255,255)">
+<div style="margin-top:0px;margin-bottom:0px">Re-prioritization of streams</div>
+</span></li></ul>
+<blockquote style="border-style:none;border-width:medium;margin:0pt 0pt 0pt 40px;padding:0px">
+<div style="margin-top:0px;margin-bottom:0px">Users often switch between multiple tabs in the browser. When the user switches tasks, the protocol should allow for a change in priority as the user now wants different data at a higher priority. This would likely involve creating priority groups so that the relative priority of resources for a tab can be managed all at once instead of having to make a number of changes proportional to the number of requests (which is 100% likely to be the same or larger!)</div>
+</blockquote>
+<ul><li>Uni-directional (but associated) streams</li></ul>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-left:40px">It may be a mistake to make a connection-analogue in the stream. It is perhaps better to allow each side to make a unidirectional stream, and provide data about which stream it may be associated with. This offers a much easier-to-comprehend association mechanism for server push.<br />
+</div>
+<ul><li><span style="font-family:arial,sans-serif">Flow control</span></li></ul>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-left:40px">Each side can announce how much data or bandwidth it will accept for each class of streams. If this is done, then speculative operations such as server push can soak up a limited amount of the pipe (especially important if the pipe is long and thin). This may allow for the elimination of more complex "is this already in the cache" or "announce what I have in my cache" schemes which are likely costly and complex.<br />
+</div>
+<br />
+<ul><li>Use of gzip compression</li></ul>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-left:40px">The use of gzip compression should be stateful only across headers in the channel. Essentially, separate gzip contexts should be maintained for headers versus data.<br />
+</div>
+<ul><li>DNS data</li></ul>
+<div style="font-family:arial,sans-serif">
+<div style="margin-left:40px">It is suboptimal that the browser must discover new hostnames and then look them up in cases where it is fetching new resources controlled by the same entity. For example, there shouldn't be a need to do another DNS lookup for a resource from static.foo.com. when the browser has already resolved xxx.foo.com. In these cases, it would seemingly make sense to send (over the SPDY channel) the DNS data (signed in such a way that the user-agent can verify that it is authoritative).<br />
+</div>
+<ul><li>Redirect to a different IP while retaining the HOST header</li></ul>
+<div style="margin-left:40px">For large sites or caches, it may be advantageous to supplement DNS frontend load balancing with the ability to send the user to a sibling that is less loaded, but also able to serve the request. This is not possible today with HTTP, as redirects must point to a different name (or use an IP, which amounts to the same thing), so that cookies, etc. are treated differently. This feature would likely be tied to the DNS data feature, or a more interesting verification mechanism would need to exist.<br />
+</div>
+<ul><li>New headers</li>
+<ul><li>Request headers:</li>
+<ul><li>Never been to this site before header.  When the server receives this header, it is used as permission to open multiple, server-initiated streams carrying subresource content. If sent, then the server can freely push all the resources necessary for the page.</li></ul>
+<li>Response</li>
+<ul><li><span style="font-size:small"><span style="font-size:13px">Subresource headers</span></span></li></ul></ul><li>Mark Nottingham notes that having the method/uri/version in separate headers, rather than at the front of the block, may make it harder for servers to quickly access this information. Being compressed hurts too.</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="spdy-protocol-draft1/controlframetypes.html" dir="ltr">ControlFrameTypes</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/spdy/spdy-protocol/spdy-protocol-draft1">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9M15LS6dAcTiIMMpG_3NL-PBb0cwgdEyp4eNIU-eqGJM8wtYyoypA-06DG5EW_1M-Yt3aYUNbINFe4ozDyPHjVomQ8jD2otEdrqBjhnkl5EDxTFyw/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

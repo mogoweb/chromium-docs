@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/smart-pointer-guidelines","deleted":false,"title":"Smart Pointer Guidelines","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/smart-pointer-guidelines\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Smart Pointer Guidelines","locale":"en","wuid":"wuid:gx:50c59f7a711f4569","revision":15,"path":"/developers/smart-pointer-guidelines","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"smart-pointer-guidelines","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Smart Pointer Guidelines - The Chromium Projects" />
+<meta itemprop="name" content="Smart Pointer Guidelines - The Chromium Projects" />
+<meta property="og:title" content="Smart Pointer Guidelines - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Smart Pointer Guidelines - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Smart Pointer Guidelines</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h3><a name="TOC-What-are-smart-pointers-"></a><b style="font-family:Times;font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap"><font size="3">What are smart pointers?</font><font size="4"> </font><font size="2"> </font></span></b></h3>
+<b style="font-family:Times;font-weight:normal"><span style="font-size:small;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Smart pointers are a specific kind of "scoping object".  They are like regular pointers but can automatically deallocate the object they point to when they go out of scope.  Since C++ is not a garbage collected language, such functionality is important.  The pattern where scoping objects are used to automatically manage the lifetime of heap-allocated objects is called RAII - Resource Acquisition Is Initialization.</span><br />
+<br />
+<span style="font-size:small;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Here's some sample use of scoped_ptr, the most common type of smart pointer:</span></b>
+<div><b style="font-weight:normal"><font size="2"><font face="Arial"><span style="white-space:pre-wrap"><br />
+</span></font><font face="courier new, monospace"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">// We put a pointer into a smart pointer at construction time.</span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">scoped_ptr&lt;base::Value&gt; value(base::JSONReader::Read(data));</span></font></font></b>
+<div><b style="font-weight:normal"><span style="white-space:pre-wrap"><font face="courier new, monospace" size="2">scoped_ptr&lt;Foo&gt; foo_ptr(new Foo(...));</font></span></b></div>
+<div><b style="font-weight:normal"><span style="white-space:pre-wrap"><font face="courier new, monospace" size="2">// ...Or by using reset().</font></span></b></div>
+<div><b style="font-weight:normal"><span style="white-space:pre-wrap"><font face="courier new, monospace" size="2">scoped_ptr&lt;Bar&gt; bar_ptr;  // Like "Bar* bar_ptr = NULL;".</font></span></b></div>
+<div><b style="font-weight:normal"><span style="white-space:pre-wrap"><font face="courier new, monospace" size="2">bar_ptr.reset(new Bar(...));  // Now |bar_ptr| is non-NULL and owns the object.</font></span></b></div>
+<div><b style="font-weight:normal"><font face="courier new, monospace" size="2"><span style="white-space:pre-wrap"><br />
+</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">// We can test the smart pointer directly or use get() to see the raw pointer underneath.</span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">if (!value)</span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">  return false;</span></font></b></div>
+<div><font size="2"><font face="courier new, monospace"><b style="font-weight:normal"><span style="white-space:pre-wrap">Foo* raw_ptr = foo_ptr.get();<br />
+</span><br />
+</b><b style="font-weight:normal"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">// We can call through the smart pointer as if it were a pointer.</span><br />
+</b></font><b style="font-weight:normal"><font face="courier new, monospace"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">DictionaryValue* dict = NULL;</span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">if (!value-&gt;GetAsDictionary(&amp;dict))</span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">  return false;</span><br />
+</font><br />
+</b></font>
+<h3><a name="TOC-Why-do-we-use-them-"></a><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap"><font size="3">Why do we use them?</font></span></b></h3>
+<font size="2"><b><font face="Arial" style="font-weight:normal"><span style="white-space:pre-wrap">Smart pointers ensure we properly destroy an object even if its creation and destruction are widely separated.  They make functions simpler and safer by ensuring that no matter how many different exit paths exist, local objects are always cleaned up correctly.  They help enforce that exactly one object owns another object at any given time, preventing both leaks and double-frees.</span></font><br />
+<br />
+</b></font>
+<h3><a name="TOC-What-types-of-smart-pointers-exist-"></a><b><span style="font-weight:bold;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="3">What types of smart pointers exist?</font></span></b></h3>
+<font size="2"><b><span style="font-weight:normal;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">While scoped_ptr is the most common smart pointer, others exist.  ScopedVector is basically a std::vector that owns its contained pointers.  scoped_refptr is used for reference-counted objects, though normally you should avoid these (see below).  Other more esoteric ones exist.  Look in <a href="http://src.chromium.org/viewvc/chrome/trunk/src/base/memory/">src/base/memory</a> for both the standard and more esoteric pointers.  Note that WeakPtr is also a class that works like a pointer, but isn't used for automatically freeing objects like these other cases -- instead it's used when someone else owns the pointer (see below).</span><br />
+<span style="font-weight:normal;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></b></font>
+<h3><a name="TOC-When-do-we-use-which-smart-pointer-"></a><b><span style="font-weight:bold;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="3">When do we use which smart pointer?</font></span></b></h3>
+<b style="font-size:small">
+<ul><li style="font-weight:normal"><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Owned objects</span><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> - use scoped_ptr/ScopedVector.  Use these for non-reference-counted, heap-allocated objects that you own.</span></b></li>
+<li style="font-weight:normal"><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Non-owned objects</span><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> - use raw pointers or WeakPtr.  If other code owns the object, but you need to know when it dies, you can use WeakPtr, which will be automatically NULLed on destruction.  This way you can test the pointer (with get()) to see if it's still alive.  (You still need to test -- blindly dereferencing a NULL WeakPtr has the same effect as dereferencing a NULL pointer.)  Note that if you need to take some action immediately before or after the object is destroyed, you'll likely be better-served with some sort of callback or notification instead of a WeakPtr.  If you're using multiple threads, WeakPtrs must only be dereferenced on the same thread where they were created (usually by a WeakPtrFactory).</span></b></li>
+<li style="font-weight:normal"><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Ref-counted objects</span><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> - use scoped_refptr; but better yet, rethink your design.  Reference-counted objects make it difficult to understand ownership and destruction order, especially when multiple threads are involved.  There is almost always another way to design your object hierarchy to avoid refcounting.  Avoiding refcounting in multithreaded situations is usually easier if you restrict each class to operating on just one thread, and use PostTask() and the like to proxy calls to the correct thread.  base::Bind(), WeakPtr, and other tools make it possible to automatically cancel calls to such an object when it dies.  Note that too much of our existing code uses refcounting, so just because you see existing code doing it does not mean it's the right solution.  (Bonus points if you're able to clean up such cases.)</span></b></li>
+<li><b><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Platform-specific types <span style="font-weight:normal">- use one of the many platform-specific helpers, such as base::win::ScopedHandle, base::win::ScopedComPtr, or base::mac::ScopedCFTypeRef.  Note that these may have slightly different usage patterns than scoped_ptr; for example, they might be assigned as outparams via .receive()/.Receive().</span></span></b></li></ul>
+</b><span style="background-color:transparent;vertical-align:baseline">
+<h3><a name="TOC-What-are-the-calling-conventions-involving-different-kinds-of-pointers-"></a><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap"><font size="3">What are the calling conventions involving different kinds of pointers?</font></span></b></h3>
+<div style="font-size:small">
+<ul><li><span style="white-space:pre-wrap"><font face="Arial">If a function </font><b style="font-family:Arial">takes</b><font face="Arial"> a scoped_ptr, that means it takes ownership of the argument.  Callers need to use Pass() to indicate that they're passing ownership if the object being passed is not a temporary:
+
+</font><font face="courier new, monospace">// Foo() takes ownership of |bar|.
+void Foo(scoped_ptr&lt;Bar&gt; bar);
+
+...
+scoped_ptr&lt;Bar&gt; bar_ptr(new Bar());
+Foo(bar_ptr.Pass());              // Pass() makes |bar_ptr| NULL.
+Foo(scoped_ptr&lt;Bar&gt;(new Bar()));  // No need to use Pass() on temporaries.
+
+</font></span></li>
+<li><span style="white-space:pre-wrap"><font face="arial, sans-serif">If a function </font><b style="font-family:arial,sans-serif">returns</b><font face="arial, sans-serif"> a scoped_ptr, that means the caller takes ownership of the returned object.  Usage of Pass() is similar to above.
+
+</font><font face="courier new, monospace">// Foo takes ownership of |bar|, and the caller takes ownership of the returned
+// object.
+scoped_ptr&lt;Bar&gt; Foo(scoped_ptr&lt;Bar&gt; bar) {
+  if (cond) {
+    return bar.Pass();                 // Transfers ownership of |bar| back to
+                                       // the caller.
+  }
+  return scoped_ptr&lt;Bar&gt;(new Bar()));  // No Pass() necessary on temporaries.
+  // Note that on this codepath, |bar| gets deleted here.
+}
+
+</font></span></li>
+<li><span style="white-space:pre-wrap"><font face="arial, sans-serif">If a function takes or returns a raw pointer, it may mean no ownership is transferred, or it may not.  Much of Chromium was written before scoped_ptr::Pass() existed, or by people unfamiliar with using it to indicate ownership transfers, and thus takes or returns raw pointers but transfers ownership in the process.  Because the compiler can't enforce correct behavior here, this is less safe.  Consider cleaning up such code to use smart pointers.  Note that RefCounted objects are often returned as bare pointers -- but as previously noted, you should normally avoid those.</font></span></li></ul>
+</div>
+</span>
+<h3><a name="TOC-What-about-passing-or-returning-a-smart-pointer-by-reference-"></a><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap"><font size="3">What about passing or returning a smart pointer by reference?  </font></span></b></h3>
+<b style="font-size:small;font-weight:normal"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Don't do this.  You should especially never see scoped_ptr&lt;&gt;*.  This is almost certainly a misunderstanding of what a scoped_ptr does. </span></b><span style="font-size:small"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">We also typically don’t return smart pointers by reference.</span></span></div><div><span style="font-size:small"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br /></span></span></div><div><span style="font-size:small"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The one exception is functions can takes a const</span></span><span style="font-size:small"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> scoped_refptr&amp; as a parameter which may avoid extra refcount churn. This is also done (though more rarely) for WeakPtr.</span></span></div><div><b style="font-size:small;font-weight:normal">
+<br />
+</b>
+<h3><a name="TOC-I-want-to-use-an-STL-container-to-hold-pointers.-Can-I-use-smart-pointers-"></a><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap"><font size="3">I want to use an STL container to hold pointers.  Can I use smart pointers?</font></span></b></h3>
+</div>
+<div><b style="font-weight:normal"><font size="2"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">As you may recall from Effective STL, putting smart pointers into STL containers doesn’t work, because STL copies the smart pointers behind your back, which can end up freeing the objects that they point to.  For the common case of a vector that owns pointers, use ScopedVector.  For other cases, we often use raw pointers and clean up manually.  The helpers in <a href="http://src.chromium.org/viewvc/chrome/trunk/src/base/stl_util.h?view=markup">base/stl_util.h</a> can be useful here.</span><br />
+</font></b></div>
+<div><b style="font-weight:normal"><font size="2"><br />
+</font></b>
+<h3><a name="TOC-General-references-on-smart-pointers:"></a><b style="font-weight:normal"><span style="font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap"><font size="3">General references on smart pointers:</font></span></b></h3>
+<b style="font-weight:normal"><font size="2">
+<ul><li><b style="font-weight:normal"><a href="http://stackoverflow.com/questions/106508/what-is-a-smart-pointer-and-when-should-i-use-one" style="font-family:Times"><span style="font-family:Arial;color:rgb(17,85,204);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">StackOverflow guide to smart pointers</span></a></b></li>
+<li><b style="font-weight:normal"><a href="http://en.wikipedia.org/wiki/Smart_pointer" style="font-family:Times"><span style="font-family:Arial;color:rgb(17,85,204);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Wikipedia article on smart pointers</span></a></b></li>
+<li><b style="font-weight:normal"><a href="http://www.webkit.org/coding/RefPtr.html" style="font-family:Times"><span style="font-family:Arial;color:rgb(17,85,204);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Guide to smart pointer usage in WebKit</span></a></b></li></ul>
+</font></b></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/smart-pointer-guidelines">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9y7a4XeAr_kSSDFdQ_YVGJ5ifHL-qltmc5AdKFaMXXslxwDNLtUXKln_XAyLb0zIqjelpcNhzWW8qu591mfe7hIhB2wOd3W1-vR0Z_iL0m3IGs1iP/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

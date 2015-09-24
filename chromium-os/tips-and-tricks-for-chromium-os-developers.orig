@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/tips-and-tricks-for-chromium-os-developers","deleted":false,"title":"Tips And Tricks for Chromium OS Developers","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/tips-and-tricks-for-chromium-os-developers\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os","parentWuid":"wuid:gx:83df2ab1f8880ba","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Tips And Tricks for Chromium OS Developers","locale":"en","wuid":"wuid:gx:4fb4457815cb4c0d","revision":53,"path":"/chromium-os/tips-and-tricks-for-chromium-os-developers","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"tips-and-tricks-for-chromium-os-developers","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Tips And Tricks for Chromium OS Developers - The Chromium Projects" />
+<meta itemprop="name" content="Tips And Tricks for Chromium OS Developers - The Chromium Projects" />
+<meta property="og:title" content="Tips And Tricks for Chromium OS Developers - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Tips And Tricks for Chromium OS Developers - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Tips And Tricks for Chromium OS Developers</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:400px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-1"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-How-to-get-a-text-editor-on-the-release-image"><strong>2 </strong>How to get a text editor on the release image</a></li><li class="goog-toc"><a href="#TOC-How-to-get-more-commands-available-on-the-release-image"><strong>3 </strong>How to get more commands available on the release image</a></li><li class="goog-toc"><a href="#TOC-How-to-set-up-git-bash-completion-on-Ubuntu"><strong>4 </strong>How to set up git bash completion on Ubuntu</a></li><li class="goog-toc"><a href="#TOC-How-to-set-up-repo-bash-completion-on-Ubuntu"><strong>5 </strong>How to set up repo bash completion on Ubuntu</a></li><li class="goog-toc"><a href="#TOC-How-to-modify-my-prompt-to-tell-me-which-git-branch-I-m-in"><strong>6 </strong>How to modify my prompt to tell me which git branch I'm in</a></li><li class="goog-toc"><a href="#TOC-How-to-search-the-code-quickly"><strong>7 </strong>How to search the code quickly</a></li><li class="goog-toc"><a href="#TOC-How-to-refer-to-bugs-concisely"><strong>8 </strong>How to refer to bugs concisely</a></li><li class="goog-toc"><a href="#TOC-How-to-enable-a-local-user-account"><strong>9 </strong>How to enable a local user account</a></li><li class="goog-toc"><a href="#TOC-How-to-configure-repo-to-sync-private-repositories"><strong>10 </strong>How to configure repo to sync private repositories</a></li><li class="goog-toc"><a href="#TOC-How-to-find-a-list-of-branches-that-I-ve-created-with-repo"><strong>11 </strong>How to find a list of branches that I've created with repo</a></li><li class="goog-toc"><a href="#TOC-Making-sudo-a-little-more-permissive"><strong>12 </strong>Making sudo a little more permissive</a></li><li class="goog-toc"><a href="#TOC-How-to-share-files-for-inside-and-outside-chroot"><strong>13 </strong>How to share files for inside and outside chroot</a></li><li class="goog-toc"><a href="#TOC-How-to-create-a-cros_workon-repository"><strong>14 </strong>How to create a cros_workon repository</a></li><li class="goog-toc"><a href="#TOC-How-to-split-my-change-into-two-or-any-number-of-separate-changelists-for-upload"><strong>15 </strong>How to split my change into two (or any number of) separate changelists for upload</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+</div>
+<div>
+<div>This page contains tips and tricks for developing on Chromium OS.<br />
+<br />
+The
+ free-form content on this page is contributed by developers. Before 
+adding content to this page, consider whether the content might 
+fit better in a different document, such as the <a href="http://www.chromium.org/chromium-os/developer-guide">Chromium OS Developer Guide</a> or the <a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/developer-faq">Chromium OS Developer FAQ</a>:<br />
+<ul><li><b>Content that belongs in this document:</b></li>
+<ul><li>tips that developers can use to optimize their workflow, but that aren't strictly required</li>
+<li>instructions to help developers explore/understand the build environment in greater depth</li></ul></ul>
+<ul><li><b>Content that does not belong in this document:</b></li>
+<ul><li>things that every developer needs to know right away when they start developing (put such information in the <a href="http://www.chromium.org/chromium-os/developer-guide">Chromium OS Developer Guide</a>)</li>
+<li>things
+
+ that only a very small subset of developers need to know (put such 
+information on a page dedicated to that small subset of developers)</li></ul></ul>
+</div>
+<div>
+<div><b>Note:</b> The tips on this page generally assume that you've followed the instructions in the <a href="http://www.chromium.org/chromium-os/developer-guide">Chromium OS Developer Guide</a> to build your image.</div>
+</div>
+</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<div>
+<div>
+<h2><a name="TOC-How-to-get-a-text-editor-on-the-release-image"></a>How to get a text editor on the release image</h2>
+<div>Try running <code style="color:rgb(153,0,0)">qemacs</code>.  The <span style="font-family:monospace;color:rgb(153,0,0)">qemacs</span><span style="color:rgb(153,0,0)"> </span>editor is available, even on release images (though to get to the shell, remember that you need to be in developer mode).  Yes, it's not <code style="color:rgb(0,96,0)">vi</code>.  Yes, it's not <code style="color:rgb(0,96,0)">nano</code>.  ...but at least it's something.  Some future version of Chromium OS may include <span style="font-family:monospace;color:rgb(0,96,0)">vi</span> (maybe even instead of <span style="font-family:monospace;color:rgb(0,96,0)">qemacs</span>) through <code style="color:rgb(0,96,0)">busybox</code>.</div>
+<div><br />
+</div>
+<div>Quick reference for those not used to <span style="font-family:monospace;color:rgb(0,96,0)">emacs</span>:</div>
+<div>
+<ul><li>Ctrl-S: search for text</li>
+<li>Ctrl-X, Ctrl-S: save the file</li>
+<li>Ctrl-X, Ctrl-C: quit qemacs</li></ul>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+</div>
+<h2><a name="TOC-How-to-get-more-commands-available-on-the-release-image"></a>How to get more commands available on the release image</h2>
+<h3><a name="TOC-Wish-you-had-more-commands-availabl" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>If you're using the shell in a Chromium OS device (requires developer mode, or a system where you've set a custom chronos password), you may find that you're missing commands you wish you had.  Try putting <code style="color:rgb(0,96,0)">busybox</code> on a USB key or an SD Card.  I formatted by USB key with <code style="color:rgb(0,96,0)">ext3</code> and named it <code style="color:rgb(0,96,0)">utils</code> (and that is assumed in these instructions) using the Disk Utility that comes with Ubuntu (go to the System menu at the top of the screen, then Administration).  Since <span style="font-family:monospace;color:rgb(0,96,0)">busybox</span> is built as part of a normal build (it's used in the factory image), you can copy it to your USB key like this (run from outside the chroot).  NOTE: this assumes that you've followed all the instructions to build a custom Chromium OS image from the <a href="https://www.chromium.org/chromium-os/developer-guide">Chromium OS Developer Guide</a>:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">sudo chown root.root /media/utils</code></div>
+<div><code style="color:rgb(0,96,0)">sudo chmod o+rx /media/utils</code></div>
+<div><code style="color:rgb(0,96,0)">sudo cp ~/chromiumos/chroot/build/${BOARD}/bin/busybox /media/utils/</code></div>
+<div><code style="color:rgb(0,96,0)">sudo chmod o+rx /media/utils/busybox</code></div>
+<div></div>
+</div>
+<br />
+<div>Then, you can go crazy and add symlinks for whatever your favorite <span style="font-family:monospace;color:rgb(0,96,0)">busybox</span> commands are:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">for cmd in less vi zip zcat; do</code></div>
+<div><span><code style="color:rgb(0,96,0)">  sudo ln -s busybox /media/utils/</code></span><code style="color:rgb(0,96,0)">$cmd</code></div>
+<div><code style="color:rgb(0,96,0)">done</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+Unmount your USB key:</div>
+<div><br />
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">sudo umount /media/utils</code></div>
+<div></div>
+</div>
+<br />
+<div>Plug your USB key into your Chromium OS device.  Make sure that the browser has started (i.e., you're not still on the login screen) so that Chromium OS will mount your USB key to <code style="color:rgb(153,0,0)">/media/utils</code>.  You can get access to your commands with:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<code style="color:rgb(153,0,0)">sudo mount -o remount,exec /media/utils<br /></code><code style="color:rgb(153,0,0)">export PATH="$PATH:/media/utils"</code>
+<div></div>
+</div>
+<div><br />
+</div>
+If you want a list of all of the commands that <span style="font-family:monospace;color:rgb(153,0,0)">busybox</span> supports, you can just run <span style="font-family:monospace;color:rgb(153,0,0)">busybox</span> to get a list.  If you want to run a <span style="font-family:monospace;color:rgb(153,0,0)">busybox</span> command without making a symlink, just type <span style="font-family:monospace;color:rgb(153,0,0)">busybox</span> first.  Like: <span style="font-family:monospace;color:rgb(153,0,0)">busybox netstat</span>.</div>
+<div><br />
+</div>
+<div><b>SIDE NOTE</b>: If you didn't build Chromium OS, it's possible that you can run a <span style="color:rgb(0,96,0);font-family:monospace">busybox</span> binary obtained from some other source.  You'll have the best luck if the <span style="color:rgb(0,96,0);font-family:monospace">busybox</span> that you get was statically linked.</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<div>
+<h2><a name="TOC-How-to-set-up-git-bash-completion-on-Ubuntu"></a>How to set up git bash completion on Ubuntu</h2>
+<h3><a name="TOC-How-do-I-set-up-git-bash-completion" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>Add the following lines to your <code style="color:rgb(0,96,0)">~/.bashrc</code>:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">if [ -f /etc/bash_completion ]; then</code></div>
+<div><code style="color:rgb(0,96,0)"> . /etc/bash_completion</code></div>
+<div><code style="color:rgb(0,96,0)">fi</code></div>
+<div></div>
+</div>
+<br />
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-set-up-repo-bash-completion-on-Ubuntu"></a>How to set up repo bash completion on Ubuntu</h2>
+<h3><a name="TOC-How-do-I-set-up-repo-bash-completio" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>Get a copy of <a href="http://git.chromium.org/gitweb/?p=chromiumos/platform/dev-util.git;a=blob_plain;f=host/repo_bash_completion;hb=master">repo_bash_completion</a> and copy it to your home directory (e.g., under ~/etc).  Then, add the following line to your <code style="color:rgb(0,96,0)">~/.bashrc</code>:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">[ -f "$HOME/etc/repo_bash_completion" ] &amp;&amp; . "$HOME/etc/repo_bash_completion"</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-modify-my-prompt-to-tell-me-which-git-branch-I-m-in"></a>How to modify my prompt to tell me which git branch I'm in</h2>
+<h3><a name="TOC-How-do-I-modify-my-prompt-to-tell-m" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>Add the following to your <code style="color:rgb(0,96,0)">~/.bash_profile</code>: </div>
+<div><br />
+</div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div>
+<div><code style="color:rgb(0,96,0)">export PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '</code></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-search-the-code-quickly"></a>How to search the code quickly</h2>
+<div>When you <a href="https://www.chromium.org/developers/how-tos/install-depot-tools">installed depot_tools</a>, you got a tool called <code>git-gs</code> that's useful for searching your code.  According to the <a href="https://www.chromium.org/developers/how-tos/depottools">depo_tools info page</a>, <code>git-gs</code> is a "Wrapper for <span style="font-family:monospace;color:rgb(0,96,0)">git grep</span> with relevant source types".  That means it should be the fastest way to search through your code.</div>
+<div><br />
+</div>
+<div>You can use it to search the <code>git</code> project associated with the current directory by doing:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git gs ${SEARCH_STRING}</code></div>
+<div></div>
+</div>
+<br />
+<div>If you want to search all <span style="font-family:monospace;color:rgb(0,96,0)">git</span> projects in the <code>repo</code> project associated with the current directory:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>repo forall -c git gs ${SEARCH_STRING}</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div><b>SIDE NOTE</b>: ...or, you can use the <a href="http://code.google.com/p/chromium-os/source/search" style="color:rgb(0,102,204);outline-style:none">Chromium OS code search</a> to search the full code.</div>
+<div><br />
+</div>
+</div>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-refer-to-bugs-concisely"></a>How to refer to bugs concisely</h2>
+<div>If you have a bug number and want to send it to someone else in an email, you can use the "crbug" shortcut.  So, to refer to bug 1234, you'd refer to:</div>
+<div><span>    <a href="http://crbug.com/1234">http://crbug.com/1234</a></span><br />
+</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-enable-a-local-user-account"></a>How to enable a local user account</h2>
+<div>This is not to be confused with how to <a href="https://www.chromium.org/chromium-os/developer-guide#TOC-Set-the-chronos-user-password">enable the chronos account</a>.  This set of instructions allows you to login to the browser as something other than guest without having any network connectivity.  <b>Most people don't need to do this</b>.</div>
+<div><br />
+</div>
+<div>
+<div>
+<div>The local user account allows login with no password even if you can not connect to the Internet. If you are customizing Chromium OS and having trouble logging in due to your customizations, it may be handy to be able to bypass authentication and log yourself in as a test user. This is disabled by default for security reasons, but if you want to enable it for a backdoor user USERNAME, enter the following from inside the <span style="font-family:monospace;color:rgb(153,0,255)">~/trunk/src/scripts</span> directory:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px"><code style="color:rgb(0,96,0)"><font color="#9900ff">./enable_localaccount.sh USERNAME</font></code></div>
+</div>
+</div>
+<div><br />
+</div>
+</div>
+<div>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-configure-repo-to-sync-private-repositories"></a>How to configure repo to sync private repositories</h2>
+<h3><a name="TOC-How-do-I-configure-repo-to-sync-pri" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>
+<div>Create a file called .repo/local_manifest.xml and add your private project into it. </div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></div>
+<div><code style="color:rgb(0,96,0)">&lt;manifest&gt;</code></div>
+<div><code style="color:rgb(0,96,0)">  &lt;remote  name   = "private"</code></div>
+<div><code style="color:rgb(0,96,0)">           fetch  = "ssh://gitrw.chromium.org"</code></div>
+<div><code style="color:rgb(0,96,0)">           review = "http://review.chromium.org" /&gt;</code></div>
+<div><br />
+</div>
+<div><code style="color:rgb(0,96,0)">  &lt;project path   = "src/thirdparty/location"</code></div>
+<div><code style="color:rgb(0,96,0)">           name   = "nameofgitrepo"</code></div>
+<div><code style="color:rgb(0,96,0)">           remote = "private" /&gt;</code></div>
+<div><code style="color:rgb(0,96,0)">&lt;/manifest&gt;</code></div>
+</div>
+<div><br />
+</div>
+<div>If you want to pull in from a different git server you will need to add a different remote for the project. Please type <code style="color:rgb(0,96,0)">repo manifest -o tmp.xml</code> to dump your current manifest to see an example. More documentation on the manifest file format is available on the <a href="http://android.git.kernel.org/?p=tools/repo.git;a=blob;f=docs/manifest_xml.txt;hb=HEAD" rel="nofollow" style="color:rgb(0,102,204);outline-style:none">repo Manifest format docs</a>.</div>
+</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<div>
+<h2><a name="TOC-How-to-find-a-list-of-branches-that-I-ve-created-with-repo"></a>How to find a list of branches that I've created with repo</h2>
+<h3><a name="TOC-How-do-I-find-a-list-of-branches-th" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>See the <code style="color:rgb(0,96,0)">repo branches</code> command.</div>
+<div>
+<div><br /></div></div><div><div>
+<div style="color:rgb(0,0,0)">
+<hr />
+</div>
+<h2 style="color:rgb(0,0,0)"><a name="TOC-Making-sudo-a-little-more-permissive"></a>Making sudo a little more permissive</h2>
+<p><font color="#ff0000"><b>If you are at Google, you will also need to follow the instructions on the <a href="https://sites.google.com/a/google.com/chromeos/resources/ubuntu-workstation-notes">internal workstation notes</a> page for finishing the sudoers setup</b>.</font></p><p>To set up the Chrome OS build environment, you should turn off the tty_tickets option for sudo, because it is not compatible with  <code>cros_sdk</code>. The following instructions show how:</p></div><div>
+<div class="sites-codeblock sites-codesnippet-block"><code>cd /tmp</code><br />
+<code>cat &gt; ./sudo_editor &lt;&lt;EOF</code><br />
+<code>#!/bin/sh</code><br />
+<code>echo Defaults \!tty_tickets &gt; \$1          # Entering your password in one shell affects all shells </code><br />
+<code>echo Defaults timestamp_timeout=180 &gt;&gt; \$1 # Time between re-requesting your password, in minutes</code><br />
+<code>EOF</code><br />
+<code>chmod +x ./sudo_editor </code><br />
+<code>sudo EDITOR=./sudo_editor visudo -f /etc/sudoers.d/relax_requirements</code></div>
+<div><br />
+</div><div>Note: See the <a href="http://www.gratisoft.us/sudo/sudoers.man.html" target="_blank">sudoers man page</a> for full detail on the options available in sudoers.</div><br /></div><div><br /></div><div><hr /></div><div><div><h2 style="color:rgb(34,34,34);font-family:Arial,Helvetica,sans-serif;font-size:20px"><a name="TOC-How-to-share-files-for-inside-and-outside-chroot"></a>How to share files for inside and outside chroot</h2><h3 style="color:rgb(51,51,51);font-family:Arial,sans-serif"><a name="TOC-How-do-I-share-files-for-inside-and" style="font-size:13px"></a></h3>The <code>cros_sdk</code> command supports mounting additional directories into your chroot environment.  This can be used to share editor configurations, a directory full of recovery images, etc.</div><div><br /></div><div>You can create a <code>src/scripts/.local_mounts</code> file listing all the directories (outside of the chroot) that you'd like to access inside the chroot.  For example:<br /><div class="sites-codeblock sites-codesnippet-block"><font color="#000000"><font color="#000000"><code><font color="#000000"># source(path outside chroot) destination(path inside chroot)</font></code><br /></font><code><font color="#000000">/usr/share/vim/google</font></code><br /><code><font color="#000000">/home/YOURID/Downloads /Downloads</font></code></font><br /></div><br />Each line of <code>.local_mounts</code> refers to a directory you'd like to mount, and where you'd like it mounted.  If there is only one path name, it will be used as both the source and the destination directory.  If there are two paths listed on one line, the first is considered to be the path <code>OUTSIDE</code> the chroot and the second will be the path <code><font color="#9900ff">INSIDE</font></code> the chroot.  The source directory must exist; otherwise, <code>cros_sdk</code> will give off an ugly python error and fail to enter the chroot.<br /><br />Note: For security and safety reasons, all directories mounted via <code>.local_mounts</code> will be read-only.<br /><br /><br /></div></div><div>
+<hr />
+<h2><a name="TOC-How-to-create-a-cros_workon-repository"></a>How to create a cros_workon repository</h2>
+<div><font color="#ff0000">(TODO: Under construction by dianders, 2011-01-10)</font></div>
+<div><font color="#ff0000">(TODO: some of this probably belongs in a "background" section).</font></div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<h4><a name="TOC-First:-A-brief-review-of-Chromium-OS-software-package-management..."></a>First: A brief review of Chromium OS software package management...</h4>
+<div style="color:rgb(0,0,0)">Chromium OS uses <a href="http://www.gentoo.org/">Gentoo</a> <a href="http://www.gentoo.org/proj/en/portage">Portage</a> for software package management.  Gentoo maintains an official list of available software packages, called the <a href="http://packages.gentoo.org/" style="color:rgb(0,102,204);outline-style:none">Portage tree</a>.  All packages in this tree are available to the Chromium OS developer... but they are not all guaranteed to work with - or even compile for - Chromium OS.</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div style="color:rgb(0,0,0)">The Portage tree is a two-level hierarchy.  The top level is a collection of categories (e.g., <code>sys-apps</code> or <code>dev-python</code>), with each category having a list of associated packages (e.g., <code>sys-apps/upstart</code> or <code>dev-python/django</code>).</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div>Each package has a corresponding <i style="color:rgb(0,0,0)">ebuild</i> file that contains all information to maintain the package.  There are some ebuilds that install binary packages, or just specify dependencies, such as the Chromium OS top-level 'meta-ebuild': <code style="color:rgb(0,96,0)">chromeos/chromeos</code>.  However, most ebuilds specify (1) how to obtain, configure, and build the package's source code, (2) how and where to install the executables, and (3) other packages upon which the package depends, both at compile-time and at run-time.  Portage also uses ebuild files to handle package options, package versioning and for which computer architectures (<code style="color:rgb(0,0,0)">arm</code>, <code style="color:rgb(0,0,0)">x86</code>, <code style="color:rgb(0,0,0)">amd64<span style="font-family:Arial,Verdana,sans-serif;color:rgb(0,0,0)">, </span>mips</code>, etc.) a package is build-able and stable:</div>
+<div style="color:rgb(0,0,0)">
+<ul><li>Package options are handled by so-called <i>USE flags</i>, that can be passed to an ebuild to turn on or off various package options (i.e. 'build this package <i>using</i> this option').  These options can cause a package to depend on additional packages, or change how the source code is compiled.</li>
+<li>The version number of the package built by a particular ebuild is always explicit in the ebuild file's name (e.g., <code style="color:rgb(0,96,0)">net-wireless/wpa_supplicant/wpa_supplicant-0.7.2-r39.ebuild</code>).  The ebuild version number almost always directly corresponds to the version number of the corresponding upstream package.</li>
+<li>Most ebuilds have a <code>KEYWORDS</code> field, which lists the architectures for which the package can be <i>built</i>, and for which the package is considered <i>stable</i>.  In Portage, an unstable architecture is marked with a tilde ('~').  For example, <code>KEYWORDS="~arm x86"</code> means <i>stable for x86, unstable for arm</i>.</li></ul>
+</div>
+<div style="color:rgb(0,0,0)">The tool <code>emerge</code> is the used to build a portage package.  The first task for <code>emerge</code> is to search the Portage tree to determine which ebuild to use, for a given package.  For a single package, there are often several ebuilds in the tree, each with a different version number.  Using target-specific portage settings found in <code>make.conf</code> and <code>package.keywords</code>, <code>emerge</code> examines the ebuilds' version numbers and their <code>KEYWORDS</code> fields to select an appropriate ebuild.  In some cases, there is no appropriate ebuild, and <code>emerge</code> will fail with an error.  In general, <code>emerge</code> will select the ebuild with the highest version number that is stable for the chosen architecture.</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div style="color:rgb(0,0,0)">After selecting an ebuild for the package, <code>emerge</code> computes a dependency graph containing the package's explicit dependencies and their dependencies, etc.  Assuming it can find matching ebuilds for all of these prerequisite packages, <span style="color:rgb(0,96,0);font-family:monospace">emerge</span> will then start building them all in parallel.</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div style="color:rgb(0,0,0)">
+<div>In most cases a source code archive for a package is retrieved from its official 'upstream' maintainers (for example, <code style="color:rgb(0,96,0)">x11-base/xorg-server</code> retrieves its source directly from <code style="color:rgb(0,96,0)">anongit.freedesktop.org</code>).  The source code archive retrieved for a particular versioned ebuild is always of a fixed version.  However, the Gentoo package maintainers often find a need to modify the original upstream source code, for example, to apply critical security fixes, or to fix architecture-specific or cross-compilation issues.  In these cases, the ebuild will apply a series of patches to the retrieved upstream source code before building it.  These patches are usually stored in a package specific 'files/' subdirectory.  Eventually (hopefully), upstream will accept these patches (or otherwise resolve the original issues), and the Gentoo package maintainers will create a new ebuild that retrieves a newer source code archive, applying new patches to fix any regressions, and so on...</div>
+</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div style="color:rgb(0,0,0)">For Chromium OS we always try to use unmodified packages from the same version of the Portage tree.  In the Chromium OS source tree, the local copy of this version Portage tree is at <code>src/third_party/portage</code>.  However, it is not always possible to use only these packages for the following reasons:</div>
+<div style="color:rgb(0,0,0)">
+<ol><li><span>L</span>ike the main Gentoo maintainers, the Chromium OS team will often need to maintain a collection of patches to further modify upstream source code to fix issues or add features before they are available in the main Portage tree (or even, often, before they are available in the original upstream source code).</li>
+<li>Similarly, sometimes the package's source code is correct, but the ebuild itself doesn't quite work as required.</li>
+<li>Our version of the Portage tree is relatively constant and does not track the daily changes to the upstream Portage tree.  Often, we need a newer version of a package that only exists in a newer version of the Portage tree.</li>
+<li>There are some software components of Chromium OS that are Chromium OS specific, and don't have a corresponding package in the Portage tree.</li>
+<li>Chromium OS runs on many different hardware platforms (also referred to as <i>boards</i>), some that require board specific software packages.</li>
+</ol>
+</div>
+<div style="color:rgb(0,0,0)"></div>
+<div style="color:rgb(0,0,0)">To address these issues, we use <i>overlays</i> to modify and extend the base Portage tree.  The most important overlay is the Chromium OS overlay, located at <code>src/third_party/</code><code>chromiumos-overlay</code>.  In addition, each of the different supported hardware platforms has its own board-specific overlay (e.g. <code style="color:rgb(0,96,0)">src/overlays/overlay-x86-generic</code>).  Lastly, some vendors may want to add additional packages to a private overlay (in <code style="color:rgb(0,96,0)">src/private-overlays</code>) to further customize a Chromium OS image for a particular vendor-specific board.</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div style="color:rgb(0,0,0)">
+<div style="color:rgb(0,0,0)">Thus, packages (and their ebuilds) can be located in any of the following places:</div>
+<div>
+<ol style="list-style-type:decimal"><li style="color:rgb(0,0,0)"><code style="color:rgb(0,96,0)">src/third_party/portage/</code> - the Portage tree</li>
+<li style="color:rgb(0,0,0)"><span style="color:rgb(0,96,0);font-family:monospace">src/third_party/chromiumos-overlay/</span> - the Chromium OS overlay</li>
+<li><span style="color:rgb(0,96,0);font-family:monospace">src/overlays/overlay-${BOARD}/</span> - a board specific overlays</li>
+<li><span style="color:rgb(0,96,0);font-family:monospace">src/private-overlays/${PRIVATE-OVERLAY}/ </span>- a vendor-board specific private overlay</li>
+</ol>
+</div>
+</div>
+<div style="color:rgb(0,0,0)">Taken together, the overlays contain:</div>
+<div style="color:rgb(0,0,0)">
+<ol><li>Packages from the Chromium OS version of the Portage tree</li>
+<li>New, unmodified, upstream portage packages that don't exist in our version of the Portage tree.</li>
+<li>Upstream portage packages with modified ebuilds, some of which also include Chromium OS-specific source code patches. </li>
+<li>Chromium OS-specific packages.  In particular, all of the packages in the <code style="color:rgb(0,96,0)">chromeos/</code> and <code style="color:rgb(0,96,0)">chromeos-base/</code> categories.  These packages mostly retrieve their source code archives from the Chromium OS git server (git.chromium.org). <span style="color:rgb(255,0,0)">(TODO: verify)</span></li>
+<li>Packages that were originally based on upstream portage packages, but which have diverged significantly from the original source over time.  Instead <span>of maintaining an enormous </span>ever growing set of unwieldy patches, these packages retrieve their source code archives from the Chromium OS git server (git.chromium.org). <span style="color:rgb(255,0,0)">(TODO: verify)</span></li>
+</ol>
+</div>
+<div>
+<h4 style="color:rgb(0,0,0)"><a name="TOC-So-this-was-supposed-to-be-a-FAQ-about-cros_workon..."></a>So, this was supposed to be a FAQ about cros_workon...</h4>
+<div style="color:rgb(0,0,0)">Right, so remember those ebuilds that fetch source code archives from git.chromium.org?</div>
+<div style="color:rgb(0,0,0)">Well, those ebuilds invariably inherit from the "cros-workon" eclass.  This adds some additional functionality to the ebuild.</div>
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)">(TODO: what is that additional functionality)</span></div>
+<div>
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)"><br />
+</span></div>
+<div><span style="color:rgb(255,0,0)"><span style="color:rgb(0,0,0)">In particular, the cros_workon ebuild will fetch a specific version.</span></span></div>
+<div><span style="color:rgb(255,0,0)">(TODO: from where exactly does it fetch the source repo/branch/SHA-1)</span></div>
+</div>
+<div><font color="#ff0000"><br />
+</font></div>
+<div style="color:rgb(0,0,0)">Well, it is also possible to configure the build system to fetch the code from the local filesystem instead of the release branch of git.chromium.org.</div>
+</div>
+<div>
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)">(TODO: how does this work)</span></div>
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)"><span style="color:rgb(0,0,0)">
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)">(TODO: what are -9999 ebuilds)</span></div>
+<div><span style="color:rgb(255,0,0)"><br />
+</span></div>
+</span></span></div>
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)"><br />
+</span></div>
+<div style="color:rgb(0,0,0)">
+<div style="color:rgb(0,0,0)"><span style="color:rgb(255,0,0)">(TODO: The actually instructions for creating a new <b>cros_workon-able</b> package)</span></div>
+</div>
+</div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+</div>
+</div>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-to-split-my-change-into-two-or-any-number-of-separate-changelists-for-upload"></a>How to split my change into two (or any number of) separate changelists for upload</h2>
+<h3><a name="TOC-How-do-I-split-my-change-into-two-o" style="color:rgb(0,102,204);outline-style:none"></a></h3>
+<div>Usually when submitting your changes into a revision control system, it is considered best practice to break your submissions into the smallest possible logical chunks and then submit one changelist per chunk.  Each chunk should work fine without future chunks, but may depend on previous chunks.  For instance, you may be able to submit your change to add a new API in a separate changelist from your change that uses the API.</div>
+<div><br />
+</div>
+<div>This has several advantages:</div>
+<div>
+<ul><li>It documents which parts of your change are related to what goal.</li>
+<li>It makes it easy for someone to revert part of your change without reverting the whole thing (if there are problems).</li>
+<li>It makes it easy for someone to cherry-pick your changes later.</li></ul>
+<div>Note that most developers will still develop their entire change at once, then only break things apart during submission.</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>It turns out that <code style="color:rgb(0,96,0)">repo</code> and <code style="color:rgb(0,96,0)">git-cl</code> are not really optimized for this workflow.  Why?</div>
+<div>
+<ul><li>The <span style="font-family:monospace;color:rgb(0,96,0)">git-cl</span> command always munges all of the changes in your branch into one big changelist.  It does not easily allow you to create multiple changelists from a branch.</li>
+<li>The <span style="font-family:monospace;color:rgb(0,96,0)">repo</span> command always creates branches from the mainline (AKA the remote master).  This makes it impossible to use <span style="font-family:monospace;color:rgb(0,96,0)">repo</span> to create branches that depend on one another.</li></ul>
+<div>...but, luckily, you can work around that by using <span style="font-family:monospace;color:rgb(0,96,0)">git</span> directly.</div>
+</div>
+<div><br />
+</div>
+<div><font color="#ff0000">TODO: This is probably not the perfectly ideal way to do things, but will work.  Can someone optimize?</font></div>
+<div><font color="#ff0000"><br />
+</font></div>
+<div><font color="#ff0000">TODO: I haven't actually tested all of these steps.  They are based on an email plus my (poor) understanding of git.  Can someone test, then remove this TODO?</font></div>
+<h3><a name="TOC-Do-all-your-work-in-one-big-branch"></a>Do all your work in one big branch</h3>
+<h4><a name="TOC-Do-all-your-work-in-one-big-branch" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>I'll assume that you initially did all of your work in one big branch.  AKA, you started the branch like this:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><span style="font-family:monospace;color:rgb(0,96,0);line-height:13px"><code style="color:rgb(0,96,0)">repo start ${BRANCH_NAME} ${CROS_WORKON_PROJECT}</code></span></div>
+<div></div>
+</div>
+<br />
+<div>...and then made a bunch of changes.</div>
+<h3><a name="TOC-Create-a-new-branch-for-your-first-submission"></a>Create a new branch for your first submission</h3>
+<h4><a name="TOC-Create-a-new-branch-for-your-first-" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>To keep things simple, we're going to leave our first branch alone and create new branches for our submission.  We'd like to eventually get to a structure that looks like this (if we wanted to do N separate uploads, each of which was dependent on the previous ones):</div>
+<div><br />
+</div>
+<div><font face="'courier new', monospace">master</font></div>
+<div><font face="'courier new', monospace">  \_____${BRANCH_NAME}_A</font></div>
+<div><font face="'courier new', monospace">          \_______________${BRANCH_NAME}_B</font></div>
+<div><br />
+</div>
+<div>...so the first step is to create "<font face="'courier new', monospace">${BRANCH_NAME}_A</font>".  We can use <code style="color:rgb(0,96,0)">repo start</code> to do this one.  Remember, that I'm assuming <code style="color:rgb(0,96,0)">${CROS_WORKON_PROJECT}</code> is the name of your project.</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px"><code style="color:rgb(0,96,0)">repo start ${BRANCH_NAME}<b>_A</b> ${CROS_WORKON_PROJECT}</code></div>
+</div>
+<div><br />
+</div>
+<div>The rest of the instructions are going to assume that you've changed into the directory that your project lives.  If you want to use repo to help you find it, you can do:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">cd `repo forall ${CROS_WORKON_PROJECT} -c 'pwd'`</code></div>
+<div></div>
+</div>
+<br />
+<h3><a name="TOC-Get-the-relevant-changes-into-branch-A"></a>Get the relevant changes into branch A</h3>
+<h4><a name="TOC-Get-the-relevant-changes-into-branc" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>
+<div>There are probably better ways to this this, but one way to get the changes from your big branch into branch A is to use <code style="color:rgb(0,96,0)">git cherry-pick</code>.  First, use <code style="color:rgb(0,96,0)">git log</code> to figure out what changes you want:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git log ${BRANCH_NAME}</code></div>
+<div></div>
+</div>
+<br />
+<div>For instance, in my example, I see this (using <code style="color:rgb(0,96,0)">--format=short</code>):</div>
+</div>
+<div><br />
+</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">commit d7b250822f98bda19f62072555beb66602bed29d</code></div>
+<div><code style="color:rgb(0,96,0)">Author: Me &lt;me@...&gt;</code></div>
+<div><br />
+</div>
+<div><code style="color:rgb(0,96,0)">    Change 4</code></div>
+<div><br />
+</div>
+<div><code style="color:rgb(0,96,0)">commit 0c577cee881471d6509c91eba8eeeb0c8bec1551</code></div>
+<div><font color="#006000" face="monospace">
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><code style="color:rgb(0,96,0)">Author: Me &lt;me@...&gt;</code></div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><code style="color:rgb(0,96,0)"><br />
+</code></div>
+</font></div>
+<div><code style="color:rgb(0,96,0)">    Change 3</code></div>
+<div><br />
+</div>
+<div><code style="color:rgb(0,96,0)">commit 0a7285d2d09159e540fb89f086f58a457b5f583f</code></div>
+<div><font color="#006000" face="monospace"><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">
+<div><code style="color:rgb(0,96,0)">Author: Me &lt;me@...&gt;</code></div>
+<div><code style="color:rgb(0,96,0)"><br />
+</code></div>
+</span></font></div>
+<div><code style="color:rgb(0,96,0)">    Change 2</code></div>
+<div><br />
+</div>
+<div><code style="color:rgb(0,96,0)">commit dd1ee8d9a9d3148cf4403c339ab18f094304d2fa</code></div>
+<div><font color="#006000" face="monospace"><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">
+<div><code style="color:rgb(0,96,0)">Author: Me &lt;me@...&gt;</code></div>
+<div><code style="color:rgb(0,96,0)"><br />
+</code></div>
+</span></font></div>
+<div><code style="color:rgb(0,96,0)">    Change 1</code></div>
+<div></div>
+</div>
+<br />
+</div>
+<div>Now, use <code style="color:rgb(0,96,0)">git cherry-pick</code> to pick the changes you want.  ...so if I wanted change #1 and #3, I could do:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git cherry-pick dd1ee8d9a9d3148cf4403c339ab18f094304d2fa</code></div>
+<div><code style="color:rgb(0,96,0)">git cherry-pick 0c577cee881471d6509c91eba8eeeb0c8bec1551 </code></div>
+<div></div>
+</div>
+<br />
+<h3><a name="TOC-Create-branch-B"></a>Create branch B</h3>
+<h4><a name="TOC-Create-branch-B" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>Now, you'll want to create branch B as a subbranch of branch A.  You can do that like:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git branch ${BRANCH_NAME}_B ${BRANCH_NAME}_A</code></div>
+<div><code style="color:rgb(0,96,0)">git checkout </code><span style="font-family:monospace;color:rgb(0,96,0)">${BRANCH_NAME}_B</span></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Get-the-relevant-changes-into-branch-B"></a>Get the relevant changes into branch B</h3>
+<h4><a name="TOC-Get-the-relevant-changes-into-branc1" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>We'll use the same cherry-picking technique to get things into branch B.  Let's imagine that I want change #2 and #4:</div>
+<div><br />
+</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div>
+<div><code style="color:rgb(0,96,0)">git cherry-pick 0a7285d2d09159e540fb89f086f58a457b5f583f</code></div>
+<div><code style="color:rgb(0,96,0)">git cherry-pick d7b250822f98bda19f62072555beb66602bed29d </code></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+</div>
+<h3><a name="TOC-Double-check-that-you-ve-got-everything"></a>Double-check that you've got everything</h3>
+<h4><a name="TOC-Double-check-that-you-ve-got-everyt" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>At this point, your branch B should have everything that was in the original branch.  There's a <code style="color:rgb(0,96,0)">git diff</code> command you can do to verify that:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git diff ${BRANCH_NAME}..${BRANCH_NAME}_B</code></div>
+<div></div>
+</div>
+<br />
+<div>
+<h3><a name="TOC-Upload-for-code-review"></a>Upload for code review</h3>
+<h4><a name="TOC-Upload-for-code-review" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>To upload the first part for code review, just do:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_A</code></div>
+<div><code style="color:rgb(0,96,0)">git cl upload</code></div>
+</div>
+<div><br />
+</div>
+<div>To upload the second part for code review, just do:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_B</code></div>
+<div><code style="color:rgb(0,96,0)">git cl upload ${BRANCH_NAME}_A  # sends diff from </code><code style="color:rgb(0,96,0)">${BRANCH_NAME}_A </code><code style="color:rgb(0,96,0)">to </code><code style="color:rgb(0,96,0)">${BRANCH_NAME}_B</code></div>
+<div></div>
+</div>
+<br />
+<div>It is <b><i><font color="#e69138">very important</font></i></b> in this case that you mention in your second upload that this change depends on the first one.  You should actually include the URL pointing to the first code review in the changelist comments of the second change.  If you don't do this, your reviewers will be very confused.  <b>Even better</b> is if you can actually wait to start the code review for branch B until after the code for branch A has been committed.</div>
+<h3><a name="TOC-Make-changes-re-upload"></a>Make changes, re-upload</h3>
+<h4><a name="TOC-Make-changes-re-upload" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>To upload additional changes to branch A (the first changelist), you can do:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_A</code></div>
+<div><code style="color:rgb(0,96,0)"><br />
+</code></div>
+<div><code style="color:rgb(0,96,0)"># ... make changes ...</code></div>
+<div><code style="color:rgb(0,96,0)"><br />
+</code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">git cl upload</span></div>
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_B</code></div>
+<div><code style="color:rgb(0,96,0)">git rebase </code><span style="font-family:monospace;color:rgb(0,96,0)">${BRANCH_NAME}_A</span><span style="font-family:monospace;color:rgb(0,96,0)">     # Incorporate branch A's changes into branch B</span></div>
+<div></div>
+</div>
+<br />
+<div>To upload additional changes to branch B, you can do:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_B</code></div>
+<div><code style="color:rgb(0,96,0)"><br />
+</code></div>
+<div><code style="color:rgb(0,96,0)"># ... make changes ...</code></div>
+<div><code style="color:rgb(0,96,0)"><br />
+</code></div>
+<div><font color="#006000" face="monospace"><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><code style="color:rgb(0,96,0)">git cl upload ${BRANCH_NAME}_A  # sends diff from </code><code style="color:rgb(0,96,0)">${BRANCH_NAME}_A </code><code style="color:rgb(0,96,0)">to </code><code style="color:rgb(0,96,0)">${BRANCH_NAME}_B</code></span></font></div>
+<div></div>
+</div>
+<br />
+<h3><a name="TOC-Push"></a>Push</h3>
+<h4><a name="TOC-Push" style="color:rgb(0,102,204);outline-style:none"></a></h4>
+<div>When you're ready to push branch A, it's pretty easy:</div>
+<div><br />
+</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div>
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_A</code></div>
+</div>
+<div><code style="color:rgb(0,96,0)">git cl push</code></div>
+<div></div>
+</div>
+<br />
+<div>To push branch B (which you can't do until after you've pushed branch A), you need to rebase it to master.  <font color="#ff0000">TODO: Can someone confirm that this is the right set of steps for Chromium OS?</font></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git checkout cros/master</code></div>
+<div><code style="color:rgb(0,96,0)">git pull</code></div>
+<div>
+<div><code style="color:rgb(0,96,0)">git checkout ${BRANCH_NAME}_B</code></div>
+</div>
+<div><code style="color:rgb(0,96,0)">git rebase --onto cros/master ${BRANCH_NAME}_A</code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">git cl push</span></div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<h2><a name="TOC-1"></a><font size="2"><span style="font-weight:normal"><br />
+</span></font></h2>
+<div>
+<hr />
+</div>
+<div><br />
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/tips-and-tricks-for-chromium-os-developers">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq94OuyBtm4j9zIgMIcUwM2vH96PFVakdPeH8XMvJ2x8GRpO17ssAhBJ0jum1ikVmakboKNQ31W82SpG0wLl6kCzvWndW1tFna29Zql4UMJ3MPuqt9Z/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

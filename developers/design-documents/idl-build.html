@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/idl-build","deleted":false,"title":"IDL build","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/idl-build\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"IDL build","locale":"en","wuid":"wuid:gx:7223da10ffb42d6d","revision":17,"path":"/developers/design-documents/idl-build","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"idl-build","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="IDL build - The Chromium Projects" />
+<meta itemprop="name" content="IDL build - The Chromium Projects" />
+<meta property="og:title" content="IDL build - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>IDL build - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.1.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">IDL build</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="idl-build.html#TOC-Steps"><strong>1 </strong>Steps</a></li><li class="goog-toc"><a href="idl-build.html#TOC-GYP"><strong>2 </strong>GYP</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Performance"><strong>3 </strong>Performance</a><ol class="goog-toc"><li class="goog-toc"><a href="idl-build.html#TOC-Details"><strong>3.1 </strong>Details</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Further-optimizations"><strong>3.2 </strong>Further optimizations</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Cautions"><strong>3.3 </strong>Cautions</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Rejected-optimizations"><strong>3.4 </strong>Rejected optimizations</a><ol class="goog-toc"><li class="goog-toc"><a href="idl-build.html#TOC-Compile-multiple-files-in-a-single-process-in-sequence-or-via-multiprocessing-"><strong>3.4.1 </strong>Compile multiple files in a single process (in sequence or via multiprocessing)</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Fork-multiple-processes"><strong>3.4.2 </strong>Fork multiple processes</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Cache-IR"><strong>3.4.3 </strong>Cache IR</a></li><li class="goog-toc"><a href="idl-build.html#TOC-Compute-public-dependencies-precisely"><strong>3.4.4 </strong>Compute public dependencies precisely</a></li></ol></li><li class="goog-toc"><a href="idl-build.html#TOC-References"><strong>3.5 </strong>References</a></li></ol></li></ol></div></div></div></div></div>
+<br />
+</div>
+<div>The IDL build is a significant source of <a href="../generated-files.html">generated files</a>, and a complex use of the build system (GYP or GN); see their documentation for possible issues.</div>
+<h2><a name="TOC-Steps"></a>Steps</h2>
+<div>...</div>
+<h2><a name="TOC-GYP"></a>GYP</h2>
+<div>
+<div>Components other than bindings do not need to know about the internal organization of the bindings build. Currently the components <code>core</code> and <code>modules</code> depend on <code>bindings,</code> specifically <code>bindings_core</code> (in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/core/">bindings/core</a>) and <code>bindings_modules</code> (in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/modules/">bindings/modules</a>), due to cyclic dependencies <span style="font-size:10pt;background-color:transparent"><code>core</code> ⇄ <code>bindings_core</code> and </span><span style="font-size:10pt;background-color:transparent"><code>modules</code> ⇄ <code>bindings_modules</code>. These sh</span><span style="font-size:10pt;background-color:transparent">ould just include </span><span style="font-size:10pt;background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/core/core.gypi">bindings/core/core.gypi</a> or </span><span style="font-size:10pt;background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/modules/modules.gypi">bindings/modules/modules.gypi</a>, respectively, and depend on top-level targets, currently:</span></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>bindings/core/v8/generated.gyp:bindings_core_v8_generated</code></div>
+<div><code>bindings/modules/v8/generated.gyp:bindings_modules_v8_generated</code></div>
+<div>
+<div></div>
+</div>
+</div>
+<br />
+<div>GYP files (.gyp and .gypi) are arranged as follows:</div>
+<div>
+<div><span style="font-size:10pt;background-color:transparent"><b><br />
+</b></span></div>
+<div><span style="font-size:10pt;background-color:transparent"><b>.gyp:</b> </span><span style="font-size:10pt;background-color:transparent">There's a generated.gyp file in each directory that generates files (outputting to </span><code style="font-size:10pt;background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/out/Debug/gen/blink/bindings/">gen/blink/bindings</a>/$dir</code><span style="font-size:10pt;background-color:transparent">), namely core, core/v8, modules, and modules/v8; these correspond to global info (core and modules) and actual V8 bindings (core/v8 and modules/v8). There's also </span><span style="background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/scripts.gyp">scripts/scripts.gyp</a>, for precaching in scripts (lexer/parser tables, compiling templates).</span></div>
+<div><br />
+</div>
+<div><b>.gypi:</b> The .gypi files are named (as usual) as:</div>
+</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-size:10pt;background-color:transparent"><code>foo/foo.gypi        # main, public: list of static files and configuration variables</code></span></div>
+<div><code>foo/generated.gypi  # list of generated files</code></div>
+<div></div>
+</div>
+<br />
+<div>There is one bindings-specific complexity, namely idl.gypi<span style="font-size:10pt;background-color:transparent"> files (<a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/core/idl.gypi">core/idl.gypi</a> and <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/modules/idl.gypi">modules/idl.gypi</a>), </span><span style="font-size:10pt;background-color:transparent">due to having to categorize the IDL files for the build (see </span><span style="background-color:transparent"><a href="http://www.chromium.org/developers/web-idl-interfaces#TOC-Build">Web IDL interfaces: Build</a>).</span></div>
+</div>
+<div><br />
+</div>
+<div>There are relatively long lists<span style="font-size:10pt;background-color:transparent"> of .gypi includes in the .gyp files, which are due to factoring for componentization, and are longer than desired due to </span><span style="font-size:10pt;background-color:transparent">layering violations, namely <code>bindings_core</code> → <code>bindings_modules</code> (Bug </span><span style="background-color:transparent"><a href="https://code.google.com/p/chromium/issues/detail?id=358074">358074</a></span><span style="font-size:10pt;background-color:transparent">): </span><span style="font-size:10pt;background-color:transparent">these make the (bad) dependencies explicit.</span></div>
+</div>
+<h2><a name="TOC-Performance"></a>Performance</h2>
+<div><i>For build performance in compiling a single IDL file, see <a href="http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Performance">IDL compiler: Performance</a></i></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">Build performance is one of the </span><a href="http://www.chromium.org/developers/design-documents/idl-compiler#TOC-Goals" style="background-color:transparent;font-size:10pt">IDL compiler goals</a><span style="background-color:transparent;font-size:10pt">, though secondary to correctness and performance of the generated code.</span></div>
+<div><br />
+</div>
+<div>The primary concern is minimizing <i>full build time</i> (notably full bindings generation and compilation); the secondary concern is maximizing <i>incrementality</i> of the build (only do full rebuilds when necessary). These priorities are because full builds are common (e.g., on build bots and for any compiler code changes), and changes to individual IDL files are also common, which should only rebuild that file's bindings and any dependents, not trigger a full rebuild.</div>
+<div><br />
+</div>
+<div>Current performance (as of Blink <a href="https://src.chromium.org/viewvc/blink?revision=168630">r168630</a> in March 2014) is acceptable: on a fast Linux workstation with 16 cores, full regeneration takes ~3 seconds (~50 seconds of user time, ~80 ms/IDL file), and full rebuilds on IDL changes only occur if a dependency IDL file (partial interface or implemented interface) is touched, which is infrequent.</div>
+<div><br />
+</div>
+<div>The coarsest way to profile a full build – which is sufficient for verifying coarse improvements – is to do a build (using ninja), then <code>touch idl_compiler.py</code> and <a href="http://en.wikipedia.org/wiki/Time_(Unix)"><code>time(1)</code></a> another build (most finely the targets should be <span style="font-size:10pt;background-color:transparent"><code>bindings_core_v8_generated bindings_modules_v8_generated</code></span><span style="font-size:10pt;background-color:transparent"> but (for ninja) it's fine for the target to be </span><code style="font-size:10pt;background-color:transparent">chrome</code><span style="font-size:10pt;background-color:transparent">)</span><span style="font-size:10pt;background-color:transparent">; "user time" is most relevant. This should only rebuild the bindings, but not recompile or do any other steps, like linking. Note that build system (like ninja) has some overhead, so you want to compare to an empty build, and that touching some other files may trigger other steps.</span></div>
+<div><br />
+</div>
+<div>In the overall build, bindings compilation and linking are more significant factors, but are difficult to improve: minimizing includes and minimizing and simplifying generated code are the main approaches.
+</div>
+<div><br />
+</div>
+<div><span style="background-color:transparent;font-size:10pt">The main improvement would be precise computation of dependencies to minimize full rebuilds, so only dependent files are rebuild if a dependency is touched (Bug </span><span style="background-color:transparent"><a href="https://code.google.com/p/chromium/issues/detail?id=341748">341748</a></span><span style="font-size:10pt;background-color:transparent">), but this would require GYP changes.</span></div>
+<h3><a name="TOC-Details"></a>Details</h3>
+<div>IDL build performance contains various components:</div>
+<ul><li><i>(Preliminary):</i> Build file generation (GYP runtime)</li>
+<li>Build system time (ninja runtime)</li>
+<li>Overall IDL file recompile time (including auxiliary steps and parallelization)</li>
+<li>Individual IDL file compile time (bindings generation time, IDL → C++)</li>
+<li>C++ compile time (bindings compile time, C++ → object code)</li></ul>
+<div>Build performance criteria of the IDL build are the time for the following tasks:</div>
+<ul><li>Generate build files (gyp time)</li>
+<li>Run build system (both empty build and overhead on regeneration or recompile)</li>
+<li>Generate all bindings</li>
+<li>Compile all generated bindings</li>
+<li>Incremental regeneration</li>
+<li>Incremental recompile</li></ul>
+<div>The key techniques to optimize these are:</div>
+<ul><li>Generate build files: avoid computations in <code>.gyp</code> files, particularly <i>O</i>(<i>n</i><sup>2</sup>) ones</li>
+<li>Run build system: minimize size and complexity of generated build files (avoid excess dependencies)</li>
+<li>Generate all bindings: parallelize build, and optimize individual IDL compilation time</li>
+<li>Compile all bindings: <b>FIXME ???</b> <i>(minimize includes, shard aggregated bindings?)</i></li>
+<li>Incremental regeneration: compute dependencies precisely (to avoid full regeneration)</li>
+<li>Incremental recompile: <b>FIXME ???</b></li></ul>
+<div>Compilation of multiple IDL files is embarrassingly parallel, as files are almost completely independent (code generation is independent, and reading in is independent other than reading in implemented or referenced interfaces, which is currently minor, and global information, which is handled in a separate step). Thus with enough cores or a distributed build, compilation is very fast: assuming one core per IDL file, full recompile should take 0.1 seconds, plus distribution overhead.</div>
+<h3><a name="TOC-Further-optimizations"></a>Further optimizations</h3>
+<div>The main areas at the overall build level that suggest further optimization are as follows. These would not help significantly with full rebuilds, but would improve incrementality. These are thus possible, but not high priorities.</div>
+<div>
+<ul><li><span style="background-color:transparent;font-size:10pt">Precise computation of dependencies, rather than conservative computation (Bug XXX)</span></li></ul>
+<span style="background-color:transparent;font-size:10pt">This would minimize full rebuilds, and decrease the size of generated build files: currently if a dependency IDL file (partial interface or implemented interface) is touched, <i>all</i> bindings are regenerated (conservatively). Instead, precise computation of dependencies would mean only the dependent files are rebuilt, so 1 or 2 files instead of 600. Further, this would reduce the size of the generated build files, because instead of the conservative list of </span><span style="background-color:transparent;font-size:10pt">about 60 dependencies x 600 main IDL files = 36,000 dependencies, this would have about 100 (some dependencies are implemented interfaces that are used multiple times); this would speed up build time due to lower overhead of reading and checking these dependencies.</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">This would require new features in GYP, to allow per-file dependency computation in rules.</span></div>
+<div>
+<ul><li><span style="background-color:transparent;font-size:10pt">Split global computations as individual compute public information steps and a consolidation step</span></li></ul>
+<div>This would speed up incremental builds a bit, by minimizing the global computation, but may slow down full rebuilds significantly, due to launching <i>O</i>(<i>n</i>) processes.</div>
+<div><br />
+</div>
+<div>Currently global computations are done in a single step, which processes all IDL files. Thus touching any IDL file requires reading all of them to recompute the global data. This could be replaced by a 2-step processes: compute the public data one file at a time (<i>n</i> processes), then have a consolidation step that reads these all in and produces the overall global data. Further, if the public data does not change (as is usually the case), the consolidation step need not run. <span style="background-color:transparent;font-size:10pt">This would thus speed up incremental builds. However, this would require </span><i style="background-color:transparent;font-size:10pt">n</i><span style="background-color:transparent;font-size:10pt"> additional processes, so it would slow down full rebuilds.</span></div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Cautions"></a>Cautions</h3>
+<div>Certain mistakes that significantly degrade build performance are easily made; all of these have either occurred or been proposed.</div>
+<div>
+<ul><li>Touching or regenerating global dependency targets</li></ul>
+<div>Be careful to use "write only on diff" (correctly) for all global dependency targets.</div>
+<div><br />
+</div>
+<div>Touching a global dependency<span style="background-color:transparent;font-size:10pt"> </span><span style="background-color:transparent;font-size:10pt">(a file or target that is a dependency of all IDL files) </span><span style="background-color:transparent;font-size:10pt">causes a full recompile: if a global dependency changes,</span><span style="background-color:transparent;font-size:10pt"> </span><i style="background-color:transparent;font-size:10pt">all</i><span style="background-color:transparent;font-size:10pt"> IDL files must be recompiled. </span><span style="background-color:transparent;font-size:10pt">Global dependency files are primarily the compiler itself, but also (for now) all dependency IDL files, since we compute dependencies conservatively in the build, not precisely. Global dependency targets (files generated in the preliminary steps) are primarily the global context, but also the generated global constructor IDL files, as these are partial interfaces (hence dependencies, hence treated as global dependencies). </span><span style="background-color:transparent;font-size:10pt">Touching any IDL file requires recomputing the global context and these generated global files. </span><span style="background-color:transparent;font-size:10pt">However, most changes to IDL files do not change the global dependencies (global context and global constructors), since they only change private information, and thus should not trigger full rebuilds. </span><span style="background-color:transparent;font-size:10pt">The "write only on diff" option, supported by some build systems, notably ninja, means that if these files do not change, we do not regenerate the targets, hence avoiding a full rebuild. If this is missed, touching any IDL file cause full regeneration.</span></div>
+<ul><li>Excess processes :: source of <i>O</i>(<i>n</i>) process overhead</li></ul>
+<div>Avoid launching processes per-IDL file: preferably only 1 process for the actual compilation, avoiding per-file caching steps.</div>
+<div><br />
+</div>
+<div>Launching processes is relatively expensive, particularly on Windows. For global steps this is <i>O</i>(1) in the number of IDL files, so adding an extra global build step is cheap, but for compiling individual IDL files this is <i>O</i>(<i>n</i>), so it's faster to have 1 process per IDL file, i.e., compile each file in a single step. Thus any changes that add a process per IDL file are expensive. These include: splitting global computations into "compute per file one process at a time, then consolidate in one step" (turns <i>O</i>(<i>n</i>) computation in 1 process into <i>O</i>(<i>n</i>) computation in <i>n</i> + 1 processes); splitting the compile into "compute IR, then compile IR" (turns <i>n</i> processes into 2<i>n</i> processes).</div>
+<ul><li>Doing redundant work :: source of <i>O</i>(<i>n</i><sup>2</sup>) algorithms</li></ul>
+<div>Compute global data in a single preliminary step.</div>
+<div><br />
+</div>
+Computed data that is needed by more than one IDL file should generally be done a single time, most simply in the global context computation step (or a GYP variable); getting this wrong can turn <i>O</i>(<i>n</i>) work into O(<i>n</i><sup>2</sup>) work. For example, public information about an interface should be computed once, rather than computing it every time it is used.</div>
+<div><br />
+</div>
+<div>However, in some cases redundant work is preferable to adding extra processes. For example, there is some redundancy in the front end, since some files (notably implemented interfaces) are read during the compile of several IDL files, but this is relatively rare (about <span style="background-color:transparent;font-size:10pt">30/600=5%</span><span style="background-color:transparent;font-size:10pt"> of files are read multiple times) and cheap (actual parsing is cheap relative to parser initialization), and fixing it would require a separate per-file caching step, which would increase the number of processes.</span></div>
+<div>
+<ul><li><i>O</i>(<i>nk</i>) and <i>O</i>(<i>n</i><sup>2</sup>) work or data in build files</li></ul>
+<div>Use precise (not conservative) computations and static lists in GYP, and be careful of GYP rules.</div>
+<div><br />
+</div>
+<div>GYP rules generate actions; for the IDL build this is the <code>binding</code> rule in the <code>individual_generated_bindings</code> target, which generates one action per IDL file. Thus any work this does or data this generates is scaled by <i>n</i>. This is an issue for dependencies: the <code>inputs</code> are used for all generated actions, and thus currently include all dependency files, which generates <i>O</i>(<i>nk</i>) data (currently about 60 dependencies x 600 main IDL files = 36,000 input lines in the actions, instead of ~100 (some dependencies are implemented interfaces that are used multiple times)), which slows down both gyp runtime and the build (ninja) runtime, as it needs to read and check all these dependencies. Further, any <i>O</i>(<i>n</i>) work in the inputs, notably calling a Python script that runs a global computation, results in <i>O</i>(<i>n</i><sup>2</sup>) work at gyp runtime.</div>
+</div>
+<div><br />
+</div>
+<div><span style="background-color:transparent;font-size:10pt">See also </span><a href="https://code.google.com/p/chromium/issues/detail?id=350317" style="background-color:transparent;font-size:10pt">350317</a><span style="background-color:transparent;font-size:10pt">: Reduce size of individual_generated_bindings.ninja​​.</span></div>
+<div><br />
+</div>
+<div>Work can be reduces to <i>O</i>(1) if instead of using a Python script to compute dependencies dynamically (at gyp runtime), one determines the dependencies statically (when writing the <code>.gyp, .gypi</code> files). This is a key reason that there are multiple variables with lists of IDL files: this allows gyp to just expand the variables, rather than running a computation (and obviates the need for a separate Python script).</div>
+<h3><a name="TOC-Rejected-optimizations"></a>Rejected optimizations</h3>
+<div>Some intuitively appealing optimizations don't actually work well or at all; these are discussed here. These generally have little impact (or negative impact) and involve significant complexity in the build or compiler.</div>
+<h4><a name="TOC-Compile-multiple-files-in-a-single-process-in-sequence-or-via-multiprocessing-"></a>Compile multiple files in a single process (in sequence or via multiprocessing)</h4>
+<div>Python and library initialization can be further sped up by processing multiple IDL files in a single compiler run (a single compilation process). However, this significantly complicates the build due to needing to manually distribute the input files to various build steps, ideally one per available core. This interacts poorly with GYP (GYP rules are designed for a single input file and the corresponding output), and is only useful if you cannot fully distribute the build, and thus is not done.</div>
+<div><br />
+</div>
+<div>Note that <a href="http://docs.python.org/2/library/multiprocessing.html">multiprocessing</a> or multithreading Python would not allow a single Python process to compile all files in parallel (thus minimizing initialization time), since the Python interpreter is not concurrency safe (hence not multithreaded; concretely this is due to the <a href="http://docs.python.org/2/glossary.html#term-global-interpreter-lock">Global Interpreter Lock</a>, GIL), and the actual parsing and templating are done in Python. A multiprocessing Python process could launch separate (OS) processes to compile individual files, but this offers no advantage over the build system doing it, and is more complex.</div>
+<div>
+<h4><a name="TOC-Fork-multiple-processes"></a>Fork multiple processes</h4>
+</div>
+<div>One could start a single Python process, which then forks others once it has initialized to reduce startup time (both of Python and of the libraries): either one per input file or distributing among them. This allows both parallelization and minimal initialization, so it would increase speed. However, this is platform dependent (<code>fork()</code> is not available on Windows, and would need to be replaced by <code>spawn()</code> or <a href="http://docs.python.org/2/library/subprocess.html"><code>subprocess</code></a>), and would<span style="background-color:transparent;font-size:10pt"> move substantial build complexity into the compiler from the build system, hence avoided since this level of performance is not required.</span></div>
+<h4><a name="TOC-Cache-IR"></a>Cache IR</h4>
+<div>The IR is computed multiple times for a few IDL files, namely implemented interfaces that are implemented by several IDL interfaces and targets of <code>[PutForwards]</code>. This is redundant work, so caching them would avoid this duplication. However, this would require splitting compilation into two steps – generate IR in one step, then compile IR in the second – and thus double the number of processes, which would slow down the build significantly, particularly on Windows. This can be worked around, at the expense of complicating the build, by only doing the caching for dependencies (or indeed only for implemented interfaces) and then checking for a cached IR file before reading the IDL file onself, but this is significant complexity for little benefit.</div>
+<h4><a name="TOC-Compute-public-dependencies-precisely"></a>Compute public dependencies precisely</h4>
+<div>Currently if the <i>global</i> context changes, <i>all</i> bindings are generated. This is conservative and simple, which is why we do it this way, but it causes excess full rebuilds: if the public data of one IDL file changes (e.g., its <code>[ImplementedAs]</code>), only bindings that actually depend on that public information (namely: use that interface) need to be rebuilt. Thus if IDL files depended on the public information of individual files, rather than on the global context, we could have more incremental rebuilds.</div>
+<div><br />
+</div>
+<div>This is not done because it would add significant complexity for little benefit (changes to public data are rare, and generally require a significant rebuild anyway), and <span style="background-color:transparent;font-size:10pt">would require GYP changes (above) for file-by-file dependency computation in rules.</span></div>
+<div>
+<h3><a name="TOC-References"></a>References</h3>
+<ul><li><a href="https://code.google.com/p/chromium/issues/detail?id=341748">Issue 341748: Improve bindings build</a>: tracking bug for build rewrite (2014)</li></ul>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/idl-build">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9TQm2TQht028yv4aanQB1bXECevpv5Kh6Z0dhrMVb0VAHVtwavej9G6mLDQAaYBx-wIkNcY1XjXBH3GNB9j0_U7PYl6V87dRRjywx7N2wTXmzVCxc/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

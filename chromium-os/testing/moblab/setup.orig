@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/testing","deleted":false,"title":"Testing Home","dir":"ltr"},{"path":"/chromium-os/testing/moblab","deleted":false,"title":"MobLab","dir":"ltr"},{"path":"/chromium-os/testing/moblab/setup","deleted":false,"title":"Setting Up MobLab","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/chromium-os/testing/moblab/setup\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/testing/moblab","parentWuid":"wuid:gx:5588e293ccd896e3","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Setting Up MobLab","locale":"en","wuid":"wuid:gx:727cebe334f5dfd7","revision":13,"path":"/chromium-os/testing/moblab/setup","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"setup","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Setting Up MobLab - The Chromium Projects" />
+<meta itemprop="name" content="Setting Up MobLab - The Chromium Projects" />
+<meta property="og:title" content="Setting Up MobLab - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Setting Up MobLab - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1406590956457/chromium-os/testing/moblab/setup/image01.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1406590956457/chromium-os/testing/moblab/setup/image01.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/testing" dir="ltr">Testing Home</A>‎ &gt; ‎<A href="/chromium-os/testing/moblab" dir="ltr">MobLab</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Setting Up MobLab</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">This document is designed to walk you through setting up a MobLab configuration at your site.
+<div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Before-Setting-Up-MobLab"><strong>1 </strong>Before Setting Up MobLab</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-MobLab-requirements"><strong>1.1 </strong>MobLab requirements</a></li><li class="goog-toc"><a href="#TOC-Peripherals-required"><strong>1.2 </strong>Peripherals required</a></li></ol></li><li class="goog-toc"><a href="#TOC-Setting-up-MobLab"><strong>2 </strong>Setting up MobLab</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Setting-up-the-boto-key-for-partners"><strong>2.1 </strong>Setting up the boto key for partners</a></li><li class="goog-toc"><a href="#TOC-Setting-up-the-boto-key-for-Google-Users"><strong>2.2 </strong>Setting up the boto key for Google Users</a></li></ol></li><li class="goog-toc"><a href="#TOC-Appendix"><strong>3 </strong>Appendix</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Setting-up-SSH-Access-from-a-Remote-Machine"><strong>3.1 </strong>Setting up SSH Access from a Remote Machine</a></li><li class="goog-toc"><a href="#TOC-Commands-for-copying-the-boto-key-to-MobLab-from-a-local-machine"><strong>3.2 </strong>Commands for copying the boto key to MobLab from a local machine</a></li><li class="goog-toc"><a href="#TOC-Configuring-Additional-MobLab-Settings"><strong>3.3 </strong>Configuring Additional MobLab Settings</a></li></ol></li></ol></div></div></div></div></div>
+<br />
+</div>
+<h2><a name="TOC-Before-Setting-Up-MobLab"></a>Before Setting Up MobLab</h2>
+<div>Please see the list of <a href="http://www.chromium.org/chromium-os/testing/moblab/overview-of-moblab#h.ieg5mxii7nbd" target="_blank">Required Hardware</a> for specifications. </div>
+<h3><a name="TOC-MobLab-requirements"></a>MobLab requirements</h3>
+<div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">External Internet access for automatic system updates and for archiving log files.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Proxy support may be necessary depending on the network setup.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">SSH keys, for remote access to the MobLab server.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Access to a private Google Cloud Storage bucket for downloading images (your Google representative will set this up for you) </span></li></ul>
+</div>
+<h3><a name="TOC-Peripherals-required"></a>Peripherals required</h3>
+</div>
+<div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Monitor</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Display cable (DVI or DP)</span></li>
+<li><span style="font-size:10pt;background-color:transparent">USB keyboard and mouse</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Ethernet switch or hub (optional - only needed with more than 1 DUT)</span></li>
+<li><span style="font-size:10pt;background-color:transparent">An Ethernet cable for each device to test, plus one for MobLab</span></li>
+<li><span style="font-size:10pt;background-color:transparent">An USB Ethernet adapter (2.0 or 3.0) for each device to test, plus two for MobLab (see</span><span style="font-size:13.3333px"> </span><a href="http://www.chromium.org/chromium-os/testing/moblab/overview-of-moblab#h.ieg5mxii7nbd" style="font-size:13.3333px" target="_blank">Required Hardware</a><span style="font-size:13.3333px"> for specifications). </span></li>
+<li><span style="font-size:10pt;background-color:transparent">One or more Chrome devices to test</span></li></ul>
+</div>
+<h2><a name="TOC-Setting-up-MobLab"></a>Setting up MobLab</h2>
+</div>
+<div>
+<div>This section contains instructions for the following tasks:</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Correctly connect the different parts of MobLab</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Obtain the IP address of each device</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Ensure all the Chrome OS devices should be running in developer mode.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Set up the boto key on MobLab</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Connecting and booting MobLab</span></li></ul>
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/testing/moblab/setup/image01.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1406590956457/chromium-os/testing/moblab/setup/image01.png" /></a></div>
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/testing/moblab/setup/image00.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1406590968371/chromium-os/testing/moblab/setup/image00.png" /></a></div>
+<br />
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">Connect the devices according to one of the diagrams below depending on how many DUTs are being tested.
+<div style="display:block;text-align:left">
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/testing/moblab/setup/image03.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1406591088615/chromium-os/testing/moblab/setup/image03.png" /></a></div>
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/testing/moblab/setup/image02.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1406591115004/chromium-os/testing/moblab/setup/image02.png" /></a></div>
+<br />
+</div>
+</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Connect a USB keyboard to the MobLab for the initial setup.  You can remove the keyboard after setup is complete.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">To boot up MobLab, press the backlit power button on the front panel of the Chromebox.  In the Chrome OS welcome screen, verify that Ethernet is selected as the type of network by clicking on the bottom right corner. On the menu, it should show “Connected to Ethernet”.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Either log in or click browse as a Guest.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Verify that the MobLab device (Chromebox) and all hosts (devices under test (DUTs)) are running the correct images.  The MobLab device must be running the MobLab server and hosts must have test images installed. </span><span style="font-size:10pt;background-color:transparent">Partners can access test images </span><a href="https://www.google.com/chromeos/partner/fe/#release" style="font-size:10pt;background-color:transparent">here</a><span style="font-size:10pt;background-color:transparent">. For instructions on installing Chrome OS, see t</span><span style="font-size:10pt;background-color:transparent">he <a href="http://www.chromium.org/chromium-os/developer-guide">Chromium OS Developer Guide</a>.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Verify that all the devices are running in developer mode.  For existing devices, instructions can be found <a href="http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices">here</a>.  On Chromeboxes, there is a physical switch on the back of the device.  On most Chromebooks, Developer mode is enabled in the following manner:</span></li>
+<ol><li><span style="font-size:10pt;background-color:transparent">Invoke Recovery mode: Hold down the ESC and Refresh (F3) keys and press the Power button.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">To enter Dev-mode, at the Recovery screen press Ctrl-D (there's no prompt - you have to know to do it). It will ask you to confirm, then reboot into dev-mode.</span></li>
+</ol>
+<li><span style="font-size:10pt;background-color:transparent">Ensure that the MobLab device is connected and obtain its IP address (you will need the IP address of the MobLab for remotely accessing it later).</span></li>
+<ol><li><span style="font-size:10pt;background-color:transparent">At the MobLab login screen, use the following command to access the developer console of MobLab:  <code>Ctrl+Alt+F2</code></span></li>
+<li><span style="font-size:10pt;background-color:transparent">You will be prompted for localhost login.  Type “root”.  You should not be prompted for a password.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Type the following command to get the IP address:  <code>ifconfig</code></span></li>
+<li><span style="font-size:10pt;background-color:transparent">You will get output with several IP addresses.  The IP address of the MobLab is the IP address that is NOT one of the following.</span></li>
+</ol>
+</ol>
+<span style="font-size:10pt;background-color:transparent"><span>    <span>    <span>    <span>    </span></span></span></span>127.0.0.1 ← this is the IP address of the local host</span><br />
+<span style="font-size:10pt;background-color:transparent"><span>    <span>    <span>    <span>    </span></span></span></span>192.168.231.XXX ← this is the IP addresses of the DUT inside the subnet</span><br />
+<span style="font-size:10pt;background-color:transparent"><span>    <span>    <span>    <span>    </span></span></span></span>The remaining IP address should be that of the MobLab.</span><br />
+<ol>
+<ol start="5"><li><span style="font-size:10pt;background-color:transparent">Exit the developer console using the following command: </span><span style="font-size:10pt;background-color:transparent"><code>Ctrl+alt+F1</code></span></li>
+</ol>
+</ol>
+<ol>
+<ol start="5">
+</ol>
+</ol>
+<ol start="8">
+<li><span style="font-size:10pt;background-color:transparent">Ensure each of the DUTs is connected and obtain their IP addresses.  For each DUT, use the steps in the previous step to enter VT2 and get the IP address.</span></li>
+<ol><li><span style="font-size:10pt;background-color:transparent">Note that the IP address of the DUT is as follows:</span></li>
+</ol>
+</ol>
+<span style="font-size:10pt;background-color:transparent"><span>    <span>    <span>    <span>    </span></span></span></span>192.168.231.XXX ← IP addresses of the DUT inside the subnet</span><br />
+<ol start="9">
+<li><span style="font-size:10pt;background-color:transparent">Insert a USB stick (at least 64 GB) that has been formatted according to the instructions in section, "Formatting External Storage for MobLab" below.</span></li></ol><div><div><ol start="5">
+</ol>
+<div>
+<h3><a name="TOC-Setting-up-the-boto-key-for-partners"></a>Setting up the boto key for partners</h3>
+<div>
+<div>Access to the Google Cloud Storage bucket is enabled by a boto key.  To install the key on the MobLab server, you upload it through the Autotest Front End (AFE). You obtain the key by syncing your local source tree with the git repository for the private board overlay or by obtaining a boto key from their Google contact.</div>
+<div><br />
+</div>
+<div>To install the key:</div>
+<div><ol><li><span style="font-size:10pt;background-color:transparent">Get the boto file from the private overlay for your MobLab project.  If you have your own tree, the boto key can be obtained from the following folder:</span></li>
+</ol>
+</div>
+<div><span style="white-space:pre"> </span>   ~/trunk/src/private-overlays/overlay-&lt;board_name&gt;-private/googlestorage_account.bot</div>
+<div>
+<ol start="2"><li><span style="font-size:10pt;background-color:transparent">Access the AFE from any networked machine by going to http://&lt;moblab_server_IPaddress&gt; in a web browser, where moblab_server_IPaddress is the external IP address of the MobLab server (assigned by your ISP).</span></li>
+<li><span style="font-size:10pt;background-color:transparent">In the top right hand corner of the screen, click on “MobLab Setup” to access the “MobLab Setup” page.</span></li>
+</ol>
+<div>
+<div style="text-align:center;display:block"><a href="http://www.chromium.org/chromium-os/testing/moblab/setup/Screenshot%20from%202014-09-02%2017_21_38.png?attredirects=0" imageanchor="1"><img border="0" height="200" src="http://www.chromium.org/_/rsrc/1409812160302/chromium-os/testing/moblab/setup/Screenshot%20from%202014-09-02%2017_21_38.png?height=200&amp;width=166" width="166" /></a></div>
+<br />
+</div>
+<ol start="4"><li><span style="font-size:10pt;background-color:transparent">Click on “Boto Key” to access the boto key page.  Upload the boto key file.</span></li></ol><div style="text-align:center"><img border="0" height="116" src="http://www.chromium.org/_/rsrc/1409812204503/chromium-os/testing/moblab/setup/Screenshot%20from%202014-09-02%2017_21_50.png?height=116&amp;width=200" style="font-size:10pt;background-color:transparent" width="200" /></div><div style="text-align:left"><span style="font-size:10pt;background-color:transparent">      5. Click on "Config Settings". Configure image_storage_server with your project bucket(gs://chromeos-moblab-&lt;project&gt;/) or partner bucket(gs://chromeos-moblab-&lt;partner&gt;/). Please be sure that the bucket string has "/" at the end of the string.</span></div>
+</div>
+</div>
+<div>
+<ol start="5">
+</ol>
+</div>
+<h3><a name="TOC-Setting-up-the-boto-key-for-Google-Users"></a>Setting up the boto key for Google Users</h3>
+<div>If you are a Google user, you should have a boto key which can be accessed at the location below.  Follow the rest of the instructions above.</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Copy your boto key from ~/.boto on your machine or in your source tree at src/private-overlays/chromeos-overlay/googlestorage_account.boto.</span></li></ul>
+</div>
+<h2><a name="TOC-Appendix"></a>Appendix</h2>
+</div>
+<h3><a name="TOC-Setting-up-SSH-Access-from-a-Remote-Machine"></a>Setting up SSH Access from a Remote Machine</h3>
+<div>This process will walk you through how to set up ssh access into MobLab (i.e. for boto key access on the MobLab)</div>
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">From a remote machine with access to the Chrome OS source tree, download the ssh keys from the Chromium git repository at the following link:  </span><span style="font-size:10pt;background-color:transparent">https://chromium.googlesource.com/chromiumos/chromite/+/master/ssh_keys</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Copy both keys into ~/.ssh/ on the remote machine where you want to enable SSH access to the MobLab server.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Edit the SSH configuration file  (~/.ssh/config) on the remote device as follows:</span></li>
+</ol>
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>Host &lt;moblab_server_IPaddress&gt;</code></div>
+<div><code>CheckHostIP no</code></div>
+<div><code>StrictHostKeyChecking no</code></div>
+<div><code>IdentityFile %d/.ssh/testing_rsa</code></div>
+<div><code>Protocol 2</code></div>
+<div></div>
+</div>
+<ol start="4"><li><span style="font-size:10pt;background-color:transparent">Save the file.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Test ssh access using the following commands:</span></li>
+</ol>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>$ ssh moblab@&lt;moblab_server_IPaddress&gt;</code></div>
+<div><code>$ exit</code></div>
+</div>
+<h3><a name="TOC-Commands-for-copying-the-boto-key-to-MobLab-from-a-local-machine"></a>Commands for copying the boto key to MobLab from a local machine</h3>
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">From a machine where you have ssh access to MobLab (configured as above), run the following command to add the boto key.</span></li>
+</ol>
+</div>
+<div><code><span>    <span> </span></span>$ scp &lt;botofilepath&gt; moblab@[moblab_server_IPaddress]:/home/moblab/.boto</code></div>
+<br />
+<h3><a name="TOC-Configuring-Additional-MobLab-Settings"></a>Configuring Additional MobLab Settings</h3>
+<ol><li><span style="font-size:10pt;background-color:transparent">MobLab settings can be adjusted by going to the “MobLab Setup” page accessed by clicking in the top right corner of the AFE.  Note that saving any settings will reboot the MobLab.</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/chromium-os/testing/moblab/setup">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9pmvuYNw3QznTS34lQd1CkXEzjA299Y1Od7SYrd3cmnImPICenftnFU51gsDLisAtY9tEEsduDn1MPguQHWfajF0cVy2hvm0K_cKWG16QHUWY86o0/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

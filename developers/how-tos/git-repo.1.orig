@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/git-repo","deleted":false,"title":"Layout of the chromium git repository","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/git-repo\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Layout of the chromium git repository","locale":"en","wuid":"wuid:gx:3aa10aeeebbea5fd","revision":34,"path":"/developers/how-tos/git-repo","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"git-repo","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Layout of the chromium git repository - The Chromium Projects" />
+<meta itemprop="name" content="Layout of the chromium git repository - The Chromium Projects" />
+<meta property="og:title" content="Layout of the chromium git repository - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Layout of the chromium git repository - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1360808666697/developers/how-tos/git-repo/repo_layout.png?height=400&amp;width=277" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1360808666697/developers/how-tos/git-repo/repo_layout.png?height=400&amp;width=277" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Layout of the chromium git repository</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><table border="0" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:0px">
+<tbody>
+<tr>
+<td style="width:215.36363649368286px;height:415.36363649368286px">  
+<div style="display:block;text-align:left;margin-right:auto"><a href="https://www.chromium.org/developers/how-tos/git-repo/repo_layout.png?attredirects=0" imageanchor="1"><img border="0" height="400" src="https://www.chromium.org/_/rsrc/1360808666697/developers/how-tos/git-repo/repo_layout.png?height=400&amp;width=277" width="277" /></a></div>
+</td>
+<td style="width:55.36363649368286px;height:415.36363649368286px"> </td>
+<td style="width:692.3636364936829px;height:415.36363649368286px"> <br />
+<br />
+<br />
+<br />
+The chromium git repository contains three heads:<br />
+<ul><li><b>refs/heads/git-svn</b>, which tracks revisions imported from the subversion repository</li>
+<li><b>refs/heads/master</b>, which adds to the subversion history information to enable git submodules.</li><li><b>refs/heads/lkgr</b>, which adds to the subversion history information to enable git submodules at svn revisions selected as lkgr (not all of which may be in <b>refs/heads/master)</b>.</li></ul>
+<div>Here's a brief explanation of how the repository is populated:</div>
+<div>
+<ol><li><font face="courier new, monospace">svn update </font>is run to get the latest changes from the subversion repository.</li>
+<li><a href="http://code.google.com/searchframe#OAMlx_jo-ck/src/tools/deps2git/deps2git.py" style="font-family:arial,sans-serif">deps2git.py</a><span style="font-family:arial,sans-serif"> is run to generate the </span><a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.DEPS.git" style="font-family:arial,sans-serif">.DEPS.git</a><span style="font-family:arial,sans-serif"> file from the </span><a href="http://code.google.com/searchframe#OAMlx_jo-ck/src/DEPS" style="font-family:arial,sans-serif">DEPS</a><span style="font-family:arial,sans-serif"> file.</span></li>
+<li><font face="arial, sans-serif">The </font><a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.DEPS.git" style="font-family:arial,sans-serif">.DEPS.git</a> file is committed back to the subversion repository.</li>
+<li><font face="courier new, monospace">git-svn fetch </font><font face="arial, sans-serif">is run to fetch new subversion history (including changes to <a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.DEPS.git">.DEPS.git</a> from the previous step) onto the <b>refs/heads/git-svn</b> branch of the git repository.</font></li>
+<li><font face="courier new, monospace">git merge --no-commit</font><font face="arial, sans-serif"> is run to merge the<b> </b>existing <b>refs/heads/master</b> and the new <b>refs/heads/git-svn</b>.</font></li>
+<li>Prior to committing the merge, deps2submodules.py is run to read <a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.DEPS.git" style="font-family:arial,sans-serif">.DEPS.git</a> and regenerate the <a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.gitmodules">.gitmodules</a> file and other submodule-related <a href="http://git-scm.com/book/ch6-6.html#Starting-with-Submodules">payload</a>.</li>
+<li><b>refs/heads/master</b> is updated to point to the new merge+edit commit.</li><li>If <a href="http://chromium-status.appspot.com/lkgr">lkgr</a> has changed since the last time:</li><ol><li>The <b>lkgr</b> branch is checked out.</li><li><font face="courier new, monospace">git merge --no-commit</font><font face="arial, sans-serif"> is run to merge the<b> </b>existing <b>refs/heads/lkgr</b> and `<span style="font-family:courier new,monospace">git svn rev-find $LKGR`</span> (which finds a commit in <b>refs/heads/git-svn)</b>.</font></li><li><a href="http://code.google.com/searchframe#OAMlx_jo-ck/src/tools/deps2git/deps2git.py" style="font-family:arial,sans-serif">deps2git.py</a><span style="font-family:arial,sans-serif"> is run to generate the </span><a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.DEPS.git" style="font-family:arial,sans-serif">.DEPS.git</a><span style="font-family:arial,sans-serif"> file from the </span><a href="http://code.google.com/searchframe#OAMlx_jo-ck/src/DEPS" style="font-family:arial,sans-serif">DEPS</a><span style="font-family:arial,sans-serif"> file.</span></li><li>deps2submodules.py is run to read <a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.DEPS.git" style="font-family:arial,sans-serif">.DEPS.git</a> and regenerate the <a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromium/src.git;a=history;f=.gitmodules">.gitmodules</a> file and other submodule-related <a href="http://git-scm.com/book/ch6-6.html#Starting-with-Submodules">payload</a>.</li><li><b>refs/heads/lkgr</b> is updated to point to the new merge+edit commit.</li></ol>
+</ol>
+<div><br />
+</div>
+</div>
+</td>
+</tr>
+<tr style="height:20px">
+<td colspan="3">
+<hr />
+</td>
+</tr>
+<tr>
+<td> 
+<div dir="ltr">
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/git-repo/working_dir_layout.png?attredirects=0" imageanchor="1"><img border="0" height="174" src="https://www.chromium.org/_/rsrc/1341348385577/developers/how-tos/git-repo/working_dir_layout.png?height=174&amp;width=400" width="400" /></a></div>
+<br />
+</div>
+</td>
+<td> </td>
+<td>Here's what a typical checkout looks like, when using the default ('managed') behavior of gclient.  Note:<br />
+<ul><li>The <b>master</b> and <b>git-svn</b> branches in the remote repository become <b>refs/remotes/origin/master</b> and <b>refs/remotes/origin/git-svn</b> in the local checkout.</li>
+<li><b>refs/remotes/origin/master</b> will always point to a merge commit containing the git submodule data.</li>
+<li><b>refs/remotes/origin/git-svn</b> will always point to the familiar linear history containing only changes imported from subversion.</li></ul>
+<div>With this topology, git logs and visual tools will behave differently than they did when history was purely linear.  In particular, <font face="courier new, monospace">git log</font> will show merge commits interspersed with the subversion history; and <font face="courier new, monospace">git log --graph</font> will show an unreadable "subway map" of branches.  But all is not lost -- there are a couple of tricks you can use to see the linear history of subversion commits.  This list is by no means comprehensive:</div>
+<div>
+<ul><li><font face="courier new, monospace">git log --first-parent master</font><font face="arial, sans-serif"> will show a single merge commit at HEAD, followed by uninterrupted subversion history.</font></li>
+<li><font face="courier new, monospace">git log master^</font><font face="arial, sans-serif"> will omit the merge commit at HEAD, and show only the subversion history.</font></li></ul>
+<div>If you're having trouble with your git checkout, here are some <a href="http://code.google.com/p/chromium/wiki/UsingNewGit?ts=1341879470&amp;updated=UsingNewGit#Troubleshooting_tips_for_the_git_submodule_transition">troubleshooting tips</a>.</div>
+</div>
+<div></div>
+</td>
+</tr>
+<tr style="height:20px">
+<td colspan="3">
+<hr />
+</td>
+</tr>
+<tr>
+<td> 
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/git-repo/post_sync.png?attredirects=0" imageanchor="1"><img border="0" height="261" src="https://www.chromium.org/_/rsrc/1341348758924/developers/how-tos/git-repo/post_sync.png?height=261&amp;width=400" width="400" /></a></div>
+</td>
+<td> </td>
+<td><br />
+This is what a checkout will typically look like after running <font face="courier new, monospace">gclient sync</font>.  The red objects show the new git history which was fetched from the remote repository.  It includes a couple of commits imported from subversion, and a new merge commit containing updated git submodule data.  Note that gclient automatically fast-forwards the <b>master</b> branch to <b>origin/master</b>, but it leaves the <b>work</b> branch untouched.<br />
+<br />
+<b>At this point, you will most likely want to update your 'work' branch to incorporate the new commits.</b>  There are typically two ways to do this (these commands assume you currently have the <b>work</b> branch checked out):<br />
+<ul><li><font face="courier new, monospace">git rebase master</font></li>
+<li><font face="courier new, monospace">git merge master</font></li></ul>
+<div>Which method you use depends on whether you use vi or emacs -- which is to say, it is a matter of personal preference, hotly debated, and beyond the scope of this documentation to elaborate.</div>
+<div><br />
+</div>
+<div></div>
+</td>
+</tr>
+<tr style="height:20px">
+<td colspan="3">
+<hr />
+</td>
+</tr>
+<tr>
+<td> 
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/git-repo/bad_git_svn.png?attredirects=0" imageanchor="1"><img border="0" height="228" src="https://www.chromium.org/_/rsrc/1341353021220/developers/how-tos/git-repo/bad_git_svn.png?height=228&amp;width=400" width="400" /></a></div>
+</td>
+<td> </td>
+<td> <b style="font-size:large">IMPORTANT</b><font size="4"> </font><font size="4"><b>CHANGES TO GIT-SVN BEHAVIOR</b><br />
+</font><font size="2"><br />
+If you <b>ever</b> run <font face="courier new, monospace">git svn fetch</font> or <font face="courier new, monospace">git svn pull</font><font face="arial, sans-serif">, you need to read this!<br />
+<br />
+Previously, it was OK for </font><font face="courier new, monospace">git svn fetch/pull</font><font face="arial, sans-serif"> to import new subversion commits onto </font><b style="font-family:arial,sans-serif">refs/remotes/origin/master</b><font face="arial, sans-serif">.  However, if you do that now, you will wind up  with the screwed up topology pictured left, where there is a merge commit stranded in the middle of the svn history.  If you then rebase/merge your <b>work</b> branch, well... it gets ugly.</font><br />
+<br />
+<font face="arial, sans-serif">To avoid this situation, you need to set up git-svn to import to the </font><b style="font-family:arial,sans-serif">refs/remotes/origin/git-svn</b><font face="arial, sans-serif"> branch:</font><br />
+<br />
+<font face="arial, sans-serif">    </font><font face="courier new, monospace">$ git config svn-remote.svn.fetch trunk/src:refs/remotes/origin/git-svn</font><br />
+</font></td>
+</tr>
+<tr>
+<td> 
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/git-repo/good_git_svn.png?attredirects=0" imageanchor="1"><img border="0" height="261" src="https://www.chromium.org/_/rsrc/1341354040852/developers/how-tos/git-repo/good_git_svn.png?height=261&amp;width=400" width="400" /></a></div>
+</td>
+<td> </td>
+<td><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+With the new configuration, <font face="courier new, monospace">git svn fetch</font><font face="arial, sans-serif"> will create a topology like this, where the new commits (in red) are added to the existing subversion-only history.  There is now one more important step...</font></td>
+</tr>
+<tr>
+<td> 
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/git-repo/good_git_svn_2.png?attredirects=0" imageanchor="1"><img border="0" height="219" src="https://www.chromium.org/_/rsrc/1341354042640/developers/how-tos/git-repo/good_git_svn_2.png?height=219&amp;width=400" width="400" /></a></div>
+</td>
+<td> </td>
+<td><br />
+<br />
+<br />
+You need to merge/rebase your <b>master</b> branch with the new subversion commits.  That will result in the topology to the left, where the blue objects denote the result of rebase/merge (the dashed line will exist if you merge, but not if you rebase).<br />
+<br />
+At this point, you can merge/rebase your <b>work</b> branch with the <b>master</b> branch, exactly as you would do after a <font face="courier new, monospace">gclient sync</font>.</td>
+</tr>
+</tbody>
+</table>
+<br /></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Attachments" title="Attachments"><div class="sites-translucent sites-symbol" aria-hidden="true">Č</div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="https://ssl.gstatic.com/sites/p/56e332/system/app/images/spinner.gif" /></span><div class="sites-attachments-update-text">Updating...</div></div></div><div class="sites-attachments-separator"></div>
+<div id="attachment-wuid:gx:5f3ff89cd9c96379"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/how-tos/git-repo/bad_git_svn.png?attredirects=0">bad_git_svn.png</a> <div class="sites-translucent">(89k)</div></div><div class="sites-attachments-author">Stefan Zager, <div class="sites-translucent">Jul 3, 2012, 3:03 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:5f3ff89cd9c96379">v.1</a></div><div id="attachment-download-wuid:gx:5f3ff89cd9c96379" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/how-tos/git-repo/bad_git_svn.png?attredirects=0&amp;d=1" aria-label="Download bad_git_svn.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:367b8b2ca8948ff1"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/how-tos/git-repo/good_git_svn.png?attredirects=0">good_git_svn.png</a> <div class="sites-translucent">(93k)</div></div><div class="sites-attachments-author">Stefan Zager, <div class="sites-translucent">Jul 3, 2012, 3:20 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:367b8b2ca8948ff1">v.1</a></div><div id="attachment-download-wuid:gx:367b8b2ca8948ff1" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/how-tos/git-repo/good_git_svn.png?attredirects=0&amp;d=1" aria-label="Download good_git_svn.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:914add6b6791695"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/how-tos/git-repo/good_git_svn_2.png?attredirects=0">good_git_svn_2.png</a> <div class="sites-translucent">(103k)</div></div><div class="sites-attachments-author">Stefan Zager, <div class="sites-translucent">Jul 3, 2012, 3:20 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:914add6b6791695">v.1</a></div><div id="attachment-download-wuid:gx:914add6b6791695" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/how-tos/git-repo/good_git_svn_2.png?attredirects=0&amp;d=1" aria-label="Download good_git_svn_2.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:77f7f50afde9917b"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/how-tos/git-repo/post_sync.png?attredirects=0">post_sync.png</a> <div class="sites-translucent">(100k)</div></div><div class="sites-attachments-author">Stefan Zager, <div class="sites-translucent">Jul 3, 2012, 1:52 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:77f7f50afde9917b">v.1</a></div><div id="attachment-download-wuid:gx:77f7f50afde9917b" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/how-tos/git-repo/post_sync.png?attredirects=0&amp;d=1" aria-label="Download post_sync.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:71919c515e1d5000"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/how-tos/git-repo/repo_layout.png?attredirects=0">repo_layout.png</a> <div class="sites-translucent">(139k)</div></div><div class="sites-attachments-author">Robbie Iannucci, <div class="sites-translucent">Feb 13, 2013, 6:24 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:71919c515e1d5000">v.2</a></div><div id="attachment-download-wuid:gx:71919c515e1d5000" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/how-tos/git-repo/repo_layout.png?attredirects=0&amp;d=1" aria-label="Download repo_layout.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:43ba0c36b9d1d0e6"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/how-tos/git-repo/working_dir_layout.png?attredirects=0">working_dir_layout.png</a> <div class="sites-translucent">(75k)</div></div><div class="sites-attachments-author">Stefan Zager, <div class="sites-translucent">Jul 3, 2012, 1:46 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:43ba0c36b9d1d0e6">v.3</a></div><div id="attachment-download-wuid:gx:43ba0c36b9d1d0e6" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/how-tos/git-repo/working_dir_layout.png?attredirects=0&amp;d=1" aria-label="Download working_dir_layout.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div style="height: 10px"></div>
+</div>
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/git-repo">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9DOnWp6pmYh-WOlVBF_gwv_7osy_HMiIHVGBTvu0Jyd6rL3kebBKblp4ubarhK8J_gZHKVB_iX7ePAqGpAzRkwabkUHIymNY4O1TrnPMl6FlKEiop/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

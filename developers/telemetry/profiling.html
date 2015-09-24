@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/telemetry","deleted":false,"title":"Telemetry: Introduction","dir":"ltr"},{"path":"/developers/telemetry/profiling","deleted":false,"title":"Telemetry: Profiling","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/telemetry/profiling\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/telemetry","parentWuid":"wuid:gx:41281b648975fc3c","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Telemetry: Profiling","locale":"en","wuid":"wuid:gx:7a03eb1766ed6b75","revision":30,"path":"/developers/telemetry/profiling","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"profiling","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Telemetry: Profiling - The Chromium Projects" />
+<meta itemprop="name" content="Telemetry: Profiling - The Chromium Projects" />
+<meta property="og:title" content="Telemetry: Profiling - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Telemetry: Profiling - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../telemetry.1.html" dir="ltr">Telemetry: Introduction</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Telemetry: Profiling</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span>
+<p dir="ltr" style="text-align:left;line-height:1.15;margin-top:0pt;margin-bottom:0pt"><br />
+</p>
+<div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:350px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="profiling.html#TOC-Tracing"><strong>1 </strong>Tracing</a></li><li class="goog-toc"><a href="profiling.html#TOC-CPU-Profiling---Linux-Android-and-Mac"><strong>2 </strong>CPU Profiling - Linux / Android and Mac</a><ol class="goog-toc"><li class="goog-toc"><a href="profiling.html#TOC-Linux-Android"><strong>2.1 </strong>Linux / Android</a></li><li class="goog-toc"><a href="profiling.html#TOC-perf"><strong>2.2 </strong>perf</a></li><li class="goog-toc"><a href="profiling.html#TOC-VTune"><strong>2.3 </strong>VTune</a></li><li class="goog-toc"><a href="profiling.html#TOC-gprof"><strong>2.4 </strong>gprof</a></li><li class="goog-toc"><a href="profiling.html#TOC-systrace"><strong>2.5 </strong>systrace</a></li><li class="goog-toc"><a href="profiling.html#TOC-Mac"><strong>2.6 </strong>Mac</a></li></ol></li><li class="goog-toc"><a href="profiling.html#TOC-Memory-Profiling---Linux-Android"><strong>3 </strong>Memory Profiling - Linux / Android</a><ol class="goog-toc"><li class="goog-toc"><a href="profiling.html#TOC-Linux-Android-C-C-"><strong>3.1 </strong>Linux / Android (C/C++)</a></li><li class="goog-toc"><a href="profiling.html#TOC-Android-Memory-Report"><strong>3.2 </strong>Android Memory Report</a></li><li class="goog-toc"><a href="profiling.html#TOC-Android-Java"><strong>3.3 </strong>Android Java</a></li></ol></li><li class="goog-toc"><a href="profiling.html#TOC-Network-Profiling---Linux-Android"><strong>4 </strong>Network Profiling - Linux / Android</a><ol class="goog-toc"><li class="goog-toc"><a href="profiling.html#TOC-Linux-Android1"><strong>4.1 </strong>Linux / Android</a></li></ol></li><li class="goog-toc"><a href="profiling.html#TOC-Manual-Profiling---Android"><strong>5 </strong>"Manual" Profiling - Android</a></li></ol></div></div></div></div><span style="font-family:Arial;font-size:15px;white-space:pre-wrap;line-height:1.15;background-color:transparent"><b style="color:rgb(255,0,0)">Warning: </b>Use these directions at your own risk: </span><span style="font-size:15px;white-space:pre-wrap;line-height:1.15"><font face="courier new, monospace" style="background-color:transparent">--profiler </font><font face="arial, sans-serif" style="background-color:transparent">is deprecated and </font><font><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/telemetry/telemetry/core/platform/tracing_controller.py" style="font-family:courier new,monospace;background-color:rgb(238,238,238)">platform/tracing_controller.py</a><font face="arial, sans-serif" style="background-color:rgb(255,255,255)"> should be used instead for scenarios requiring long-term support for profiling data collection.</font></font></span></div>
+</span><span>
+<h2 dir="ltr" style="line-height:1.15;margin-top:10pt;margin-bottom:0pt"><a name="TOC-Tracing"></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Tracing</span></h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">On all platforms, Telemetry can gather an </span><a href="../how-tos/trace-event-profiling-tool.html" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">about:tracing</span></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> trace for each page in the page_set. To do so, simply pass the </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--profiler=trace</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> flag. For example:</span></p>
+<div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_benchmark --profiler=trace page_cycler tools/perf/page_sets/typical_25.json </code><br />
+<div></div>
+</div>
+<font size="3"><br />
+Instructions for opening the results will be printed.</font>
+<div><br />
+</div>
+<h2 dir="ltr" style="line-height:1.15;margin-top:10pt;margin-bottom:0pt"><a name="TOC-CPU-Profiling---Linux-Android-and-Mac"></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">CPU Profiling - Linux / Android and Mac</span></h2>
+<h3 dir="ltr" style="line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-Linux-Android"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Linux / Android</span></h3>
+<p><span style="font-weight:normal;background-color:transparent;font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">In order for Linux profilers to display call graph information correctly, it is necessary to first build with </span><span style="font-weight:normal;background-color:transparent;font-size:15px;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap">profiling=1.</span><span style="font-weight:normal;background-color:transparent;font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap"> To do so:</span></p>
+<br />
+<br />
+</span>
+<div class="sites-codeblock sites-codesnippet-block"><code>$ # Linux </code><br />
+<code>$ GYP_DEFINES='profiling=1' gclient runhooks </code><br />
+<code><br />
+$ # Android </code><br />
+<code>$ GYP_DEFINES="OS=android profiling=1 release_extra_cflags=-fno-omit-frame-pointer disable_pie=1" \<br />
+gclient runhooks </code><br />
+<br />
+<code>$ ninja -C out/Release chrome</code><br />
+</div>
+<span><br />
+</span>
+<h3><a name="TOC-perf"></a><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">perf</span></h3>
+<span style="background-color:transparent;font-weight:normal;font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">On Linux and Android, Telemetry can gather a </span><a href="https://perf.wiki.kernel.org/index.php/Tutorial" style="line-height:1.15;background-color:transparent;font-size:10pt;font-weight:normal;text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">perf</span></a><span style="background-color:transparent;font-weight:normal;font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap"> profile for each page in the page_set. To do so, pass the </span><span style="background-color:transparent;font-weight:normal;font-size:15px;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap">--profiler</span><span style="background-color:transparent;font-weight:normal;font-size:15px;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap">=perf</span><span style="background-color:transparent;font-weight:normal;font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap"> flag. For example:</span>
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_benchmark --profiler=perf kraken</code></div>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Instructions for opening the results will be printed.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><br />
+</p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">If the page_set you are profiling includes cross-origin navigations, it is necessary to pass </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--page-repeat=2</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> so that renderer process is not swapped out mid-profile on the second run. For example:</span></p>
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_benchmark --profiler=perf --page-repeat=2 page_cycler tools/perf/page_sets/intl_ar_fa_he.json</code></div>
+<h3><a name="TOC-VTune"></a><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);vertical-align:baseline;white-space:pre-wrap;background-color:transparent">VTune</span></h3>
+<p><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span style="color:rgb(0,0,0);font-weight:normal;vertical-align:baseline;background-color:transparent">On x86 builds (including Android on x86) Telemetry can collect an <a href="https://software.intel.com/en-us/intel-vtune-amplifier-xe">Intel VTune</a></span><span style="color:rgb(0,0,0);font-weight:normal;vertical-align:baseline;background-color:transparent"> profile for each page in the page_set. This requires VTune to be installed on your home system. To collect a profile, pass the </span><span style="color:rgb(0,0,0);font-weight:normal;font-family:Courier New;vertical-align:baseline;background-color:transparent">--profiler</span><span style="color:rgb(0,0,0);font-weight:normal;font-family:Courier New;vertical-align:baseline;background-color:transparent">=vtune</span><span style="color:rgb(0,0,0);font-weight:normal;vertical-align:baseline;background-color:transparent"> flag. For example:</span><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-weight:normal;white-space:normal"> </span></span></p>
+<span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-weight:normal;white-space:normal"><code>$ tools/perf/run_benchmark --profiler=vtune kraken</code></div>
+<br style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-weight:normal;white-space:normal" />
+<p dir="ltr" style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-weight:normal;white-space:normal;line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">You can then open the results in the VTune GUI. Instructions for opening the results will be printed.</span></p>
+</span>
+<h3><a name="TOC-gprof"></a><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">gprof</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">While not explicitly supported by Telemetry. It is possible to gather a </span><a href="http://sourceware.org/binutils/docs/gprof/" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">gprof</span></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> profile for the entire measurement run when running in single process mode. To do so, first build with profiling enabled, </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">-fno-omit-frame-pointer</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> and without position independent code:</span></p>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><code>$ GYP_DEFINES='profiling=1' gclient runhooks</code></span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><code>$ ninja -C out/Release chrome</code></span></p>
+</div>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Then run with </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">CPUPROFILE</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> in the environment and </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--single-process</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">. For example:</span></p>
+<div class="sites-codeblock sites-codesnippet-block"><code>$ CPUPROFILE=/tmp/myprofile tools/perf/run_benchmark --extra-browser-args=--single-process sunspider</code></div>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">View the profile like so:</span></p>
+<div class="sites-codeblock sites-codesnippet-block">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><code>$ cpprof --gv out/Release/chrome /tmp/myprofile</code></span></p>
+<div></div>
+</div>
+<br />
+<div>
+<h3><a name="TOC-systrace"></a><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">systrace</span></h3>
+</div>
+<div><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span style="color:rgb(0,0,0);background-color:transparent;vertical-align:baseline">Telemetry also supports recording an Android <a href="http://developer.android.com/tools/help/systrace.html">Systrace</a> while running measurements:</span></span></div>
+<div><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span style="color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><br />
+</span></span></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span style="color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><span style="font-family:Courier New;line-height:17px"><code>$ tools/perf/run_benchmark --profiler=android-systrace kraken</code></span></span></span></div>
+<div></div>
+</div>
+<span style="font-size:15px;font-family:Arial;color:rgb(153,153,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span style="color:rgb(0,0,0);background-color:transparent;vertical-align:baseline"><span style="font-family:Courier New;line-height:17px"><br />
+</span></span></span>
+<div>
+<div><font face="Arial"><span style="font-size:15px;white-space:pre-wrap">The resulting trace file can be opened in Chrome by going to <a href="../how-tos/trace-event-profiling-tool.html">about:tracing</a> and clicking on "Load".</span></font></div>
+</div>
+<h3 dir="ltr" style="line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-1"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></h3>
+<h3 dir="ltr" style="line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-Mac"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Mac</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">On mac, Telemetry can gather an </span><a href="http://developer.apple.com/library/mac/#documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Instruments</span></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> profile for each page in the page_set. To do so, pass the </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--profiler</span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">=iprofiler</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> flags. For example:</span></p>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><code>$ tools/perf/run_benchmark --profiler=iprofiler octane</code></span></p>
+</div>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Instructions for opening the results will be printed. Once in Instruments, if symbols are not resolved, go to “File &gt; Re-Symbolicate Document...” and browse to the *.dsym files for Chromium Framework and Chromium Helper.</span></p>
+<br />
+<h2 dir="ltr" style="line-height:1.15;margin-top:10pt;margin-bottom:0pt"><a name="TOC-Memory-Profiling---Linux-Android"></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Memory Profiling - Linux / Android</span></h2>
+<h3 dir="ltr" style="line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-Linux-Android-C-C-"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Linux / Android (C/C++)</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">On special instrumented builds of linux Android, Telemetry can gather TCMalloc heap dumps that can be then fed to </span><a href="http://dev.chromium.org/developers/deep-memory-profiler" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Deep Memory Profiler</span></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> . Please check that page for:</span></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">GYP_DEFINES for both platforms.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">linux: environment variables</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">android: system properties (note: requires a rooted device)</span></p>
+</li></ul>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Run any measurement with </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--profiler</span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">=tcmalloc-heap </span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> flags. For example:</span></p>
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_benchmark -v --browser=android-content-shell --profiler=tcmalloc-heap memory.top_25</code></div>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Once the measurement completes, the dump files will be in </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">/tmp/{RANDOM}.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Follow instructions from the </span><a href="http://dev.chromium.org/developers/deep-memory-profiler" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Deep Memory Profiler</span></a><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">to generate the data and graphs.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Note: depending on the page set, there’ll be multiple directories under </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">/tmp/{RANDOM}, </span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">one per page in the set. In each folder, there’ll be a mix of dumps per browser and renderer processes for that particular page. You may want to analyse the browser process across the entire page set, rather than just a particular page. To do so:</span></p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">There’s a file called “browser.pid” on each one of the page directories.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Copy (or move) all dump files for that pid to say, “browser/”.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Run dmprof on that folder.</span></p>
+</li>
+</ol>
+<br />
+<h3 dir="ltr" style="line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-Android-Memory-Report"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Android Memory Report</span></h3>
+<p dir="ltr" style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-weight:normal;white-space:normal;line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Telemetry can gather high level "memory report" for each page in the page_set. To do so, pass the </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--profiler=android-memreport</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> flags. At the end of the test, it will print a link to the HTML page that was generated.
+This profile gives an overview of all memory (including mapped files, read-only, dirty, clean pages, etc..) but without any backtrace like the ones above. It does not require any instrumented build, as it gathers all information directly from /proc/PID/maps, etc..</span></p>
+<p dir="ltr" style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-weight:normal;white-space:normal;line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></p>
+<h3 dir="ltr" style="line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-Android-Java"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Android Java</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Telemetry can gather “heap profiles” for the java side for each page in the page_set. To do so, pass the </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">--profiler=</span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">java-heap</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> flags. For example:</span></p>
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_benchmark -v --browser=android-content-shell --profiler=java-heap </code><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">memory.top_25</span><br style="color:rgb(0,96,0);font-family:monospace;font-size:10pt" />
+</div>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The dump files will then be fetched in </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">/tmp/{RANDOM} </span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">in the host, already converted to “hprof” format which can be used by tools like </span><a href="http://www.eclipse.org/mat/" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Eclipse’s MAT</span></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">. </span><a href="http://android-developers.blogspot.co.uk/2011/03/memory-analysis-for-android.html" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">This post </span></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> from the android team contains useful instructions. Please note: android has a “zygote” process that contains pre-loaded resources for all apps. These resources will show up in the heap profile: they are actually shared across all apps, they aren't exclusive to the process being profiled.</span></p>
+<div><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></div>
+<div><span style="vertical-align:baseline">
+<h2 dir="ltr" style="background-color:transparent;font-size:15px;white-space:normal;font-family:Arial,Verdana,sans-serif;line-height:1.15;margin-top:10pt;margin-bottom:0pt"><a name="TOC-Network-Profiling---Linux-Android"></a><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Network Profiling - Linux / Android</span></h2>
+<h3 dir="ltr" style="background-color:transparent;font-size:15px;white-space:normal;font-family:Arial,Verdana,sans-serif;line-height:1.15;margin-top:8pt;margin-bottom:0pt"><a name="TOC-Linux-Android1"></a><span style="font-size:15px;font-family:Trebuchet MS;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Linux / Android</span></h3>
+<div style="background-color:transparent;font-size:15px;white-space:pre-wrap"><span style="background-color:transparent;font-family:Arial;vertical-align:baseline">Telemetry can gather “tcpdump” network captures for each page in the page_set. To do so, pass the </span><span style="background-color:transparent;font-family:Courier New;vertical-align:baseline">--profiler=</span><span style="background-color:transparent;font-family:Courier New;vertical-align:baseline">tcpump</span><span style="background-color:transparent;font-family:Arial;vertical-align:baseline"> flags. For example:</span></div>
+<div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_benchmark --browser=android-content-shell --profiler=tcpdump memory_measurement memory.top_25</code></div>
+<div style="background-color:transparent;font-size:15px;white-space:pre-wrap"><span style="background-color:transparent;font-family:Arial;vertical-align:baseline"><span style="font-family:Courier New;line-height:17px"><br />
+</span></span></div>
+<div style="background-color:transparent;font-size:15px;white-space:pre-wrap"><span style="background-color:transparent;vertical-align:baseline"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline">The dump files will then be fetched in </span><span style="font-family:Courier New;background-color:transparent;vertical-align:baseline">/tmp/{RANDOM},</span><span style="background-color:transparent;vertical-align:baseline"><font face="Arial"> and then can be opened in tools such as <a href="http://www.wireshark.org/">Wireshark</a>.</font></span></span></div>
+<div style="background-color:transparent"><font face="Arial" style="font-size:15px;white-space:pre-wrap">On android, "tcpdump" binary will be downloaded from <a href="http://www.chromium.org/developers/telemetry/upload_to_cloud_storage">cloud storage</a> and installed in the device automatically.
+</font><span style="font-size:15px;white-space:pre-wrap"><font face="Arial"><br />
+</font></span></div>
+<div style="background-color:transparent">
+<h2 dir="ltr" style="font-size:15px;line-height:1.15;margin-top:10pt;margin-bottom:0pt"><a name="TOC-Manual-Profiling---Android"></a><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">"Manual" Profiling - Android</span></h2>
+<span style="font-size:15px;white-space:pre-wrap"><font face="Arial">
+Sometimes it's useful to drive the browser "manually" in order to run a specific profiler during a regular browsing session. This command:
+<br />
+</font></span></div>
+<div style="background-color:transparent"></div>
+</span></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="background-color:transparent;vertical-align:baseline">
+<div><span style="font-size:15px;white-space:pre-wrap"><font face="courier new, monospace"><code>$ tools/perf/record_android_profile.py --browser=android-chrome --profiler=perf</code></font></span></div>
+</span></div>
+<div></div>
+</div>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br />
+</span>
+<div><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Will launch the browser and the associated profiler and wait until you hit enter. It will then fetch all profile data from the device and print instructions on how to open them.</span></div>
+<div><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></div>
+<div><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">You can also use <a href="../how-tos/trace-event-profiling-tool/recording-tracing-runs.html">adb_profile_chrome</a> to record a perf profile from a running browser:</span></div>
+<div><br />
+</div>
+<div><span style="background-color:transparent;vertical-align:baseline">
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="font-family:courier new,monospace;font-size:15px;white-space:pre-wrap;background-color:transparent"><code>$ tools/android/adb_profile_chrome --browser=build --time 5 --perf<br />
+</code></span></div>
+</span></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/telemetry/profiling">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9Fn9olLBDayk1l4Jh-KIh3YTLnS0YvEdaxw6v2Km1-G8iM7loyngEntNqq5jfGgpsZfQCDDT_Lj5cN_s3ynexMowH50t_lZlrzEK9i5tBMKCLQWSP/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

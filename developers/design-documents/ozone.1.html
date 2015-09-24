@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/ozone","deleted":false,"title":"Ozone Overview","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/ozone\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Ozone Overview","locale":"en","wuid":"wuid:gx:6f1c4184d220f532","revision":71,"path":"/developers/design-documents/ozone","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"ozone","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Ozone Overview - The Chromium Projects" />
+<meta itemprop="name" content="Ozone Overview - The Chromium Projects" />
+<meta property="og:title" content="Ozone Overview - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Ozone Overview - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1396307876689/developers/design-documents/ozone/IMG_20140331_151619.jpg?height=240&amp;width=320" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1396307876689/developers/design-documents/ozone/IMG_20140331_151619.jpg?height=240&amp;width=320" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.1.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Ozone Overview</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><span style="font-size:10pt;background-color:transparent">Ozone is a platform abstraction layer beneath the Aura window system that is used for low level </span><span style="font-size:10pt;background-color:transparent">input and graphics. Once complete, the abstraction will support </span><span style="font-size:10pt;background-color:transparent">underlying systems ranging from embedded SoC targets to new </span><span style="font-size:10pt;background-color:transparent">X11-alternative window systems on Linux such as Wayland or Mir to </span><span style="font-size:10pt;background-color:transparent">bring up Aura Chromium by providing an implementation of the platform interface.</span></div><div><h2><a name="TOC-Guiding-Principles"></a>Guiding Principles</h2></div><div><div>Our goal is to enable<span style="font-size:10pt;background-color:transparent"> chromium to be used in a wide variety of projects by making porting to new platforms easy. To support this goal, ozone follows the following principles:</span></div><ol><li><span style="font-size:10pt;background-color:transparent"><b>Interfaces, not ifdefs.</b> Differences between platforms are handled by calling a platform-supplied object through an interface instead of using conditional compilation. Platform internals remain encapsulated, and the public interface acts as a firewall between the platform-neutral upper layers (aura, blink, content, etc) and the platform-specific lower layers. The platform layer is relatively centralized to minimize the number of places ports need to add code.</span></li><li><b style="font-size:10pt;background-color:transparent">Flexible interfaces.</b><span style="font-size:10pt;background-color:transparent"> The platform interfaces should encapsulate just what chrome needs from the platform, with minimal constraints on the platform's implementation as well as minimal constraints on usage from upper layers. An overly prescriptive interface is less useful for porting because fewer ports will be able to use it unmodified. Another way of stating is that the platform layer should provide mechanism, not policy.</span></li><li><span style="font-size:10pt;background-color:transparent"><b style="font-size:10pt">Runtime binding of platforms</b><font size="2">. Avoiding conditional compilation in the upper layers allows us to build multiple platforms into one binary and bind them at runtime. We allow this and provide a command-line flag to select a platform (<code>--ozone-platform</code>) if multiple are enabled.</font></span><span style="background-color:transparent"><font size="2"> Each platform has a unique build define (e.g. </font><code><font size="2">ozone_platform_foo</font></code><font size="2">) that can be turned on or off independently.</font></span></li><li><b style="font-size:10pt;background-color:transparent">Easy out-of-tree platforms. </b><span style="font-size:10pt;background-color:transparent">Most ports begin as forks. Some of them later merge their code upstream, others will have an extended life out of tree. This is OK, and we should make this process easy to encourage ports, and to encourage frequent gardening of chromium changes into the downstream project. If gardening an out-of-tree port is hard, then those projects will simply ship outdated and potentially insecure chromium-derived code to users. One way we support these projects is by providing a way to inject additional platforms into the build without patching any gyp files.</span></li></ol><h2><a name="TOC-Ozone-Platform-Interface"></a>Ozone Platform Interface</h2></div>
+<div>Ozone moves platform-specific code behind the following interfaces: </div>
+<div>
+<ul><li><span style="font-size:10pt"><span style="color:rgb(0,96,0);font-family:monospace">PlatformWindow</span></span> represents a window in the windowing system underlying chrome. Interaction with the windowing system (resize, maximize, close, etc) as well as dispatch of input events happens via this interface. Under aura, a <code>PlatformWindow</code> corresponds to a <code>WindowTreeHost</code>. Under mojo, it corresponds to a <code>NativeViewport</code>. On bare hardware, the underlying windowing system is very simple and a platform window corresponds to a physical display.</li><li><span style="font-size:10pt"><code>SurfaceFactoryOzone</code> is used to create surfaces for the Chrome compositor to paint on using EGL/GLES2 or Skia.</span></li><li><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace;background-color:transparent">GpuPlatformSupport &amp; GpuPlatformSupportHost</span><span style="font-size:10pt;background-color:transparent"> provide the platform code access to IPC between the browser &amp; GPU processes. Some platforms need this to provide additional services in the GPU process such as display configuration.</span></li><li><span style="color:rgb(0,96,0);font-family:monospace">CursorFactoryOzone</span> is used to load &amp; set platform cursors.</li></ul><div><b>ChromeOS-specific interfaces</b></div><ul><li><span style="color:rgb(0,96,0);font-family:monospace">NativeDisplayDelegate </span>is used on ChromeOS to support display configuration &amp; hotplug.</li></ul>
+</div>
+<h2><a name="TOC-Ozone-in-Chromium"></a>Ozone in Chromium</h2>
+<div>Our implementation of Ozone required changes concentrated in these <span style="font-size:10pt">areas:</span></div>
+<div>
+<ul><li><font size="2">Cleaning up extensive assumptions about use of X11 throughout the tree, protecting this code behind the </font><code style="font-size:10pt">USE_X11</code> ifdef<font size="2">, and adding a new </font><code style="font-size:10pt">USE_OZONE</code><font size="2"> path that works in a relatively platform-neutral way by delegating to the interfaces described above.</font></li><li><span style="font-size:10pt;background-color:transparent">a <code>WindowTreeHostOzone </code>to send events into Aura and participate </span><span style="font-size:10pt;background-color:transparent">in display management on the host system, and</span></li>
+<li><span style="font-size:10pt">an Ozone-specific flavor of <code>GLSurfaceEGL</code> which delegates </span><span style="font-size:10pt">allocation of accelerated surfaces and refresh syncing to </span><span style="font-size:10pt">the provided implementation of <code>SurfaceFactoryOzone</code>.</span></li></ul>
+</div>
+<h2><a name="TOC-Porting-with-Ozone"></a>Porting with Ozone</h2>
+<div>Users of the Ozone abstraction need to do the following, at minimum:</div>
+<div>
+<ul><li><span style="font-size:10pt">Write a subclass of <code>PlatformWindow</code>. This class (I'll call </span><span style="font-size:10pt">it <code>PlatformWindowImpl)</code> is responsible for window system integration. It can use </span><span style="font-size:10pt"><code>MessagePumpLibevent</code> to </span><span style="font-size:10pt">poll for events from file descriptors and then invoke </span><span style="font-size:10pt"><code>PlatformWindowDelegate::DispatchEvent</code> to dispatch each event.</span></li><li><span style="font-size:10pt">Write a subclass of <code>SurfaceFactoryOzone</code> that handles allocating </span><span style="font-size:10pt">accelerated surfaces. I'll call this <code>SurfaceFactoryOzoneImpl</code></span><span style="font-size:13.3333px">.</span></li><li><span style="color:rgb(0,96,0);font-family:monospace"><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13.6000003814697px">Write a subclass of </span>CursorFactoryOzone<span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13.6000003814697px"> </span></span>to manage cursors, or use the <span style="color:rgb(0,96,0);font-family:monospace;font-size:13.6000003814697px">BitmapCursorFactoryOzone</span> implementation if only bitmap cursors need to be supported.</li>
+<li><span style="font-size:10pt;background-color:transparent">Write a subclass of </span><font color="#006000" face="monospace" style="font-size:10pt;background-color:transparent">OzonePlatform</font><span style="font-size:10pt;background-color:transparent"> </span><font color="#006000" face="monospace" style="font-size:10pt;background-color:transparent"><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">that owns instances of your </span>SurfaceFactoryOzone <span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">and </span>CursorFactoryOzone</font><span style="font-size:10pt;background-color:transparent"> and provide a static constructor function for this object. This constructor will be called when your platform is selected and the returned object will be used to provide implementations of all the ozone platform interfaces.</span></li></ul>
+<div>
+<h2><a name="TOC-Adding-an-Ozone-Platform-to-the-build-instructions-for-out-of-tree-ports-"></a>Adding an Ozone Platform to the build (instructions for out-of-tree ports)</h2>
+</div>
+</div>
+<div>The recommended way to add your platform to the build is as follows. This walks through creating a new ozone platform called <span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">foo.</span></div>
+<div>
+<ol><li>Check out your code at <code>src/ozone-foo</code>.</li>
+<li>Create a file called <code>src/ozone-foo/supplement.gypi</code> with the following contents:
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>{
+  'variables':  {
+    'ozone_platform_foo%': 1,
+  },
+  'conditions': [
+    ['&lt;(ozone_platform_foo) == 1', {
+      'variables':  {
+        'external_ozone_platform_deps': [
+          '&lt;(DEPTH)/ozone-foo/foo.gyp:foo',
+        ],
+        'external_ozone_platforms': [
+          'foo'
+        ],
+        'ozone_platform%': 'foo',
+      },
+    }],
+  ],
+}</code></div></pre>
+</li>
+<li>Create a file called <span style="color:rgb(0,96,0);font-family:monospace">src/ozone-foo/foo.gyp </span>with the following contents:<br />
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>{
+  'targets': [
+    {
+      'target_name': 'foo',
+      'type': 'static_library',
+      'dependencies': [
+        '&lt;(DEPTH)/base/base.gyp:base',
+        '&lt;(DEPTH)/ui/gfx/gfx.gyp:gfx',
+        '&lt;(DEPTH)/ui/events/events.gyp:events',
+        # additional dependencies for your platform
+      ],
+      'include_dirs': [
+        '..',
+      ],
+      'sources': [
+        'ozone_platform_foo.cc',
+        'ozone_platform_foo.h',
+        'surface_factory_foo.cc',
+        'surface_factory_foo.h',
+        'event_factory_foo.cc',
+        'event_factory_foo.h',
+        # additional source files for your platform
+      ],
+    },
+  ]
+}</code></div></pre>
+</li>
+<li>Write a constructor function for your platform. It must be called <span style="color:rgb(0,96,0);font-family:monospace">ui::CreateOzonePlatformFoo. </span>Put this function in the source file for your OzonePlatform subclass.
+<pre>OzonePlatform* CreateOzonePlatformFoo() { return new OzonePlatformFoo; }</pre>
+</li>
+</ol>
+</div>
+<div>
+<h2><a name="TOC-Building-with-Ozone-ChromeOS---waterfall-"></a>Building with Ozone (ChromeOS - <a href="http://build.chromium.org/p/chromium.chromiumos/waterfall?builder=Linux+ChromiumOS+Ozone+Builder&amp;builder=Linux+ChromiumOS+Ozone+Tests+%281%29&amp;builder=Linux+ChromiumOS+Ozone+Tests+%282%29&amp;reload=none">waterfall</a>)</h2><h2><a name="TOC-Building-running-chrome-do-this-from-the-src-directory-:GYP_DEFINES-use_ozone-1-chromeos-1-gclient-runhooksninja--C-out-Debug-chrome.-out-Debug-chrome---disable-setuid-sandbox---ozone-platform-test---ozone-dump-file-tmp-chrome.png---ui-disable-threaded-com"></a><div style="font-size:13.6px;font-weight:normal">Building &amp; running chrome (do this from the src directory):</div><div style="font-size:13.6px;font-weight:normal"><br /></div><div><div style="font-size:13.6px;font-weight:normal"><div class="sites-codeblock sites-codesnippet-block"><code>GYP_DEFINES="use_ozone=1 chromeos=1" gclient runhooks<br />ninja -C out/Debug chrome<br />./out/Debug/chrome --disable-setuid-sandbox --ozone-platform=test --ozone-dump-file=/tmp/chrome.png --ui-disable-threaded-compositing</code></div></div></div></h2><h2><a name="TOC-Building-with-Ozone-Embedded---waterfall-"></a>Building with Ozone (Embedded - <a href="http://build.chromium.org/p/chromium.fyi/builders/Ozone%20ECS%20Linux">waterfall</a>)</h2>
+</div>
+<div>The following targets are currently working for embedded builds:</div>
+<div>
+<ul><li>content_shell</li>
+<li>various unit tests<br />
+</li></ul>
+<div>
+<div>The following targets are currently NOT supported:</div>
+<div>
+<ul><li>ash_shell</li>
+<li>chrome</li></ul>
+</div>
+<div>
+<ul></ul>
+</div>
+</div>
+<div>Building &amp; running content_shell (do this from the src directory):</div>
+</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>GYP_DEFINES="embedded=1" gclient runhooks<br />
+ninja -C out/Debug content_shell<br />
+./out/Debug/content_shell --disable-setuid-sandbox --ozone-platform=test --ozone-dump-file=/tmp/content_shell.png --ui-disable-threaded-compositing</code></div></div><h2><a name="TOC-1"></a><div style="font-size:13.600000381469727px;font-weight:normal"></div></h2><h2><a name="TOC-2"></a><div></div></h2><h2 style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)"><a name="TOC-Building-with-Ozone-Linux-Desktop---bug-"></a>Building with Ozone (Linux Desktop - <a href="http://crbug.com/295089">bug</a>)</h2>This is not supported by any of the in-tree platforms. Please see above and try a ChromeOS or embedded build for now.<div><br /></div><div>Note: The Ozone-wayland project has a desktop build for the wayland display protocol. See their <a href="https://github.com/01org/ozone-wayland">project page</a> for instructions.</div><div><h2><a name="TOC-GYP-Configuration-notes:"></a><font size="4">GYP Configuration notes:</font></h2><div><ul>
+<li>You can turn properly implemented ozone platforms on and off with <span style="color:rgb(0,96,0);font-family:monospace">GYP_DEFINES</span>. For example<br />
+<code>GYP_DEFINES="embedded=1 ozone_platform_gbm=0 ozone_platform_test=0 ozone_platform_egltest=0"<br />
+</code>will turn off the current default platforms. This will result in a smaller binary and faster builds. To turn ALL platforms off by default, set <span style="color:rgb(0,96,0);font-family:monospace">ozone_auto_platforms=0</span>.</li></ul>
+</div>
+<h2><a name="TOC-Running-with-Ozone"></a>Running with Ozone</h2><div>Specify the platform you want to use at runtime using the <code>--ozone-platform</code> flag. Disabling the setuid sandbox may be required during development.</div><div><br /></div><div>For example, to run content_shell with the GBM platform:</div><div><br /></div><div><code>content_shell --disable-setuid-sandbox </code><span style="color:rgb(0,96,0);background-color:transparent;font-size:10pt"><code>--ozone-platform=gbm</code></span></div><p>If no platform is specified, the "test" platform is selected by default. This platform dumps images to a file and will not output to the screen. You can set the image path by specifying <code>--ozone-dump-file=/path/to/image.png</code> on the command line:</p><p><code>content_shell --disable-setuid-sandbox </code><span style="font-size:10pt;background-color:transparent;color:rgb(0,96,0)"><code>--ozone-platform=test --ozone-dump-file=/tmp/ozone.png</code></span></p><p>Caveats:</p><ul><li>content_shell always runs at 800x600 resolution</li><li>For the GBM platform, you may need to terminate your X server (or any other display server) prior to testing.</li></ul><h2><a name="TOC-Ozone-Platforms"></a>Ozone Platforms</h2><div>Internal platforms:</div><div><ul><li><span style="font-size:10pt;background-color:transparent">gbm - Linux direct rending with acceleration via mesa GBM &amp; linux DRM/KMS (EGL/GLES2 accelerated rendering &amp; modesetting in GPU process)</span></li><li>test - Draws graphical output to a PNG image (no GPU support; software rendering only)<br /></li><li>caca - Draws graphical output to text using libcaca <span style="font-size:13.3333px">(no GPU support; software rendering only)</span>. In case you ever wanted to test embedded content shell on tty. Add <code>libcaca</code> to your favourite Chromium development workstation and build like so:</li></ul></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>GYP_DEFINES="embedded=1 ozone_platform_caca=1" </code></span><span style="color:rgb(0,96,0);font-family:arial,sans-serif;font-size:10pt;background-color:transparent"><code>gclient runhooks</code></span></div></div><div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>ninja -C out/Debug content_shell</code></span></div></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>out/Debug/content_shell --disable-setuid-sandbox --ozone-platform=caca </code></span></div></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code><br /></code></span></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px">Note: traditional TTYs are not the ideal browsing experience.<br /><br /><div style="display:block;text-align:left;margin-right:auto"><a href="ozone/IMG_20140331_151619.jpg%3Fattredirects=0" imageanchor="1"><img border="0" height="240" src="../../_/rsrc/1396307876689/developers/design-documents/ozone/IMG_20140331_151619.jpg%3Fheight=240&amp;width=320" width="320" /></a></div><br /></blockquote><font color="#006000" face="monospace"><div><font color="#006000" face="monospace"><br /></font></div><br /></font><div><div><h2><a name="TOC-External-platform-projects:"></a><span style="font-size:13.600000381469727px;font-weight:normal">External platform projects:</span></h2></div></div><div><ul><li><a href="https://01.org/ozone-wayland">ozone-wayland</a> - wayland display protocol</li></ul><div><h2><a name="TOC-Communication"></a>Communication</h2><div>There is a public mailing list:<span style="background-color:transparent;font-size:10pt"> <a href="https://groups.google.com/a/chromium.org/forum/#!forum/ozone-dev">ozone-dev@chromium.org</a></span></div></div></div><h2><a name="TOC-Coming-Soon"></a>Coming Soon</h2>
+<div>The Ozone abstraction was first designed for the Ash window <span style="font-size:10pt">management approach where Chromium controls the entire display. </span><span style="font-size:10pt">This is not sufficient to fully support a foreign multi-window </span><span style="font-size:10pt">desktop.  We are currently working with contributors from Intel to </span><span style="font-size:10pt">generalize Ozone sufficiently so that it is adequate for DesktopAura-style </span><span style="font-size:10pt">Chromium ports such as a port of Aura Chromium to the Wayland platform.</span></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/ozone">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq91TlsDYItJwQ43_OBtve7v7jzTKJrCdfApBEiDgqlx6PaQQqiAQfmUs-NyATgDgIUb9ElwhKT54Heo5tllIZoFoqlh0rDWNyqkgWibxPm-OoGKfvJ/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

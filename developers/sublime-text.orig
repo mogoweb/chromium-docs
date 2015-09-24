@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/sublime-text","deleted":false,"title":"Using Sublime Text as your IDE","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/sublime-text\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Using Sublime Text as your IDE","locale":"en","wuid":"wuid:gx:5cf51ee52468830c","revision":17,"path":"/developers/sublime-text","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"sublime-text","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Using Sublime Text as your IDE - The Chromium Projects" />
+<meta itemprop="name" content="Using Sublime Text as your IDE - The Chromium Projects" />
+<meta property="og:title" content="Using Sublime Text as your IDE - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Using Sublime Text as your IDE - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1348732868982/developers/sublime-text/SublimeExample.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1348732868982/developers/sublime-text/SublimeExample.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Using Sublime Text as your IDE</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h4 style="font-family:Trebuchet MS,arial,sans-serif;font-size:1.2em;color:rgb(165,164,165)"><a name="TOC-1"></a>
+</h4><h2><a name="TOC-2"></a><a href="http://www.chromium.org/developers/sublime-text/SublimeExample.png?attredirects=0" imageanchor="1"><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-What-is-Sublime-Text-"><strong>1 </strong>What is Sublime Text?</a></li><li class="goog-toc"><a href="#TOC-Installing-Sublime-Text-2"><strong>2 </strong>Installing Sublime Text 2</a></li><li class="goog-toc"><a href="#TOC-Preferences"><strong>3 </strong>Preferences</a></li><li class="goog-toc"><a href="#TOC-Project-files"><strong>4 </strong>Project files</a></li><li class="goog-toc"><a href="#TOC-Navigating-the-project"><strong>5 </strong>Navigating the project</a></li><li class="goog-toc"><a href="#TOC-Enable-source-code-indexing"><strong>6 </strong>Enable source code indexing</a></li><li class="goog-toc"><a href="#TOC-Building-with-ninja"><strong>7 </strong>Building with ninja</a></li><li class="goog-toc"><a href="#TOC-Example-plugin"><strong>8 </strong>Example plugin</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Compile-current-file-using-Ninja"><strong>8.1 </strong>Compile current file using Ninja</a></li><li class="goog-toc"><a href="#TOC-Format-selection-or-area-around-cursor-using-clang-format"><strong>8.2 </strong>Format selection (or area around cursor) using clang-format</a></li></ol></li><li class="goog-toc"><a href="#TOC-Other-useful-packages"><strong>9 </strong>Other useful packages</a></li></ol></div></div></div></div></div><img border="0" src="http://www.chromium.org/_/rsrc/1348732868982/developers/sublime-text/SublimeExample.png" /></a></h2>
+<br />
+<h2><a name="TOC-What-is-Sublime-Text-"></a><font color="#000000">What is Sublime Text?</font></h2>
+<div><span style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">It's a fast, powerful and easily extensible code editor.  Check out some of the demos on the site for a quick visual demonstration.</span></div>
+<div><span style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">Some of its benefits include:</span></div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">
+<ul><li style="list-style-position:outside;list-style-type:circle">Project support.</li>
+<li style="list-style-position:outside;list-style-type:circle">Theme support.</li>
+<li style="list-style-position:outside;list-style-type:circle">Works on Mac, Windows and Linux.</li>
+<li style="list-style-position:outside;list-style-type:circle">No need to close and re-open during a <code>gclient sync</code>.</li>
+<li style="list-style-position:outside;list-style-type:circle">Supports many of the great editing features found in popular IDE's like Visual Studio, Eclipse and SlickEdit.</li>
+<li style="list-style-position:outside;list-style-type:circle">Doesn't go to lunch while you're typing.</li>
+<li style="list-style-position:outside;list-style-type:circle">The UI and keyboard shortcuts are pretty standard (e.g. saving a file is still Ctrl+S on Windows).</li>
+<li style="list-style-position:outside;list-style-type:circle">It's inexpensive and you can evaluate it (fully functional) for free.</li></ul>
+</div>
+<div>
+<h2><a name="TOC-Installing-Sublime-Text-2"></a><font color="#000000">Installing Sublime Text 2</font></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Download and install from here: <a href="http://www.sublimetext.com/" style="color:rgb(54,8,96)">http://www.sublimetext.com/</a></div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Help and general documentation is available here: <a href="http://www.sublimetext.com/docs/2/" style="color:rgb(54,8,96)">http://www.sublimetext.com/docs/2/</a></div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><i>Assuming you have access to the right repositories, you can also install Sublime via apt-get on Linux.</i></div>
+<h2><a name="TOC-Preferences"></a><font color="#000000">Preferences</font></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Sublime configuration is done via JSON files.  So the UI for configuring the text editor is simply a text editor.  Same goes for project files, key bindings etc.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">To modify the default preferences, go to the Preferences menu and select Settings-Default.  Note that if you would rather like to make these settings user specific, select <font face="courier new, monospace">Settings - User</font> as this applies there as well.  The difference is that the default settings file already contains many settings that you might want to modify.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Here are some settings that you might want to change (look these variables up in the settings file and modify their value, you should not have to add them):</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-size:small"><font face="courier new, monospace"><code>    "rulers": [80],</code></font></span></div>
+<div><font face="courier new, monospace"><code>    "tab_size": 2,</code></font></div>
+<div><code>
+<div style="font-family:courier new,monospace">    "trim_trailing_white_space_on_save": true,</div>
+<div>    "ensure_newline_at_eof_on_save": true,</div><div>    "translate_tabs_to_spaces" : true</div>
+</code></div>
+</div>
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">The settings take effect as soon as you save the file.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">If you've got a big monitor and are used to viewing more than one source file at a time, you can use the View-&gt;Layout feature to split the view up into columns and/or rows and look at multiple files at the same time.  There's also the Shift+F11, distraction free view that allows you to see nothing but code!  ?8-D  Sublime also supports dragging tabs out into new windows as Chrome supports, so that might be useful as well.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><i>One thing to be aware of when editing these JSON files is that Sublime's JSON parser is slightly stricter than what you might be used to from editing e.g. GYP files.  In particular Sublime does not like it if you end a collection with a comma.  This is legal: <font face="courier new, monospace">{"foo", "bar"}</font> but not this: <font face="courier new, monospace">{"foo", "bar", }</font>.  You have been warned.</i></div>
+<h2><a name="TOC-Project-files"></a><span style="color:rgb(0,0,0)">Project files</span></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Like configuration files, project files are just user editable JSON files.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Here's a very simple project file that was created for WebRTC and should be saved in the parent folder of the trunk folder (name it <font face="courier new, monospace">webrtc.sublime-project</font>).  It's as bare bones as it gets, so when you open this project file, you'll probably see all sorts of files that you aren't interested in.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div>
+<div><code>{</code></div>
+<div><span style="white-space:pre"> </span><code>"folders":</code></div>
+<div><span style="white-space:pre"> </span><code>[</code></div>
+<div><span style="white-space:pre"> </span><code>{</code></div>
+<div><span style="white-space:pre"> </span><code>"path": "trunk"</code></div>
+<div><span style="white-space:pre"> </span><code>}</code></div>
+<div><span style="white-space:pre"> </span><code>]</code></div>
+<div><code>}</code></div>
+</div>
+<div></div>
+</div>
+<br />
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Here is a slightly more advanced example that has exclusions to reduce clutter.  This one was made for Chrome on a Windows machine and has some Visual Studio specific excludes.  Save this file in the same directory as your .gclient file and use the .sublime-project extension (e.g. <font face="courier new, monospace">chrome.sublime-project</font>) and then open it up in Sublime.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div><code>{</code></div>
+<div><span style="white-space:pre"> </span><code>"folders":</code></div>
+<div><span style="white-space:pre"> </span><code>[</code></div>
+<div><span style="white-space:pre"> </span><code>{</code></div>
+<div><span style="white-space:pre"> </span><code>"path": "src",</code></div>
+<div><span style="white-space:pre"> </span><code>"name": "src",</code></div>
+<div><span style="white-space:pre"> </span><code>"file_exclude_patterns": [</code></div>
+<div><span style="line-height:19px;white-space:pre"> </span><code style="line-height:19px">"*.vcproj",</code></div>
+<div><span style="white-space:pre"> </span><code>"*.vcxproj",</code></div>
+<div><span style="white-space:pre"> </span><code>"*.sln",</code></div>
+<div><span style="white-space:pre"> </span><code>"*.gitignore",</code></div>
+<div><span style="white-space:pre"> </span><code>"*.gitmodules",</code></div>
+<div><span style="white-space:pre"> </span><code>"*.vcxproj.*"</code></div>
+<div><span style="white-space:pre"> </span><code>],</code></div>
+<div><span style="white-space:pre"> </span><code>"folder_exclude_patterns": [</code></div>
+<div><span style="white-space:pre"> </span><code>  "build",</code></div>
+<div><span style="white-space:pre"> </span><code>  "out",</code></div>
+<div><span style="white-space:pre"> </span><code>  "third_party",</code></div>
+<div><span style="white-space:pre"> </span><code>  ".git",</code></div>
+<div><span style="white-space:pre"> </span><code>  "Debug",</code></div>
+<div><span style="white-space:pre"> </span><code>  "Release"</code></div>
+<div><span style="white-space:pre"> </span><code>]</code></div>
+<div><span style="white-space:pre"> </span><code>}</code></div>
+<div><span style="white-space:pre"> </span><code>]</code></div>
+<div><code>}</code></div>
+</div>
+<h2><a name="TOC-Navigating-the-project"></a><font color="#000000">Navigating the project</font></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Here are some basic ways to get you started browsing the source code.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<ul><li style="list-style-position:outside;list-style-type:circle"><b>"Goto Anything" or Ctrl+P</b> is how you can quickly open a file or go to a definition of a type such as a class.  Just press Ctrl+P and start typing.</li>
+<li style="list-style-position:outside;list-style-type:circle"><b>Open source/header file:</b> If you're in a header file, press Alt+O to open up the corresponding source file and vice versa.  For more similar features check out the <font face="courier new, monospace">Goto-&gt;Switch File</font> submenu.</li>
+<li style="list-style-position:outside;list-style-type:circle"><b>"Go to definition"</b>: Right click a symbol and select "Navigate to Definition".  A more powerful way to navigate symbols is by using the Ctags extension and use the Ctrl+T,Ctrl+T shortcut.  See the section about source code indexing below.</li></ul>
+</div>
+<h2><a name="TOC-Enable-source-code-indexing"></a><span style="color:rgb(0,0,0)">Enable source code indexing</span></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">For a fast way to look up symbols, we recommend installing the CTags plugin.  we also recommend installing Sublime's Package Control package manager, so let's start with that.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<ul><li style="list-style-position:outside;list-style-type:circle">Install the Sublime Package Control package: <a href="http://wbond.net/sublime_packages/package_control" style="color:rgb(54,8,96)">https://packagecontrol.io/installation</a></li>
+<li style="list-style-position:outside;list-style-type:circle">Install Exuberant Ctags and make sure that ctags is in your path: <a href="http://ctags.sourceforge.net/" style="color:rgb(54,8,96)">http://ctags.sourceforge.net/</a></li>
+<ul><li style="list-style-position:outside;list-style-type:circle">On linux you should be able to just do: <font face="courier new, monospace">sudo apt-get install ctags</font></li></ul>
+<li style="list-style-position:outside;list-style-type:circle">Install the Ctags plugin: Ctrl+Shift+P and type "Package Control: Install Package"</li></ul>
+<div>Once installed, you'll get an entry in the context menu when you right click the top level folder(s) in your project that allow you to build the Ctags database.  If you're working in a Chrome project however, <b>do not do that at this point</b>, since it will index much more than you actually want.  Instead, do one of:</div>
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<ol><li>Create a batch file (e.g. ctags_builder.bat) that you can run either manually or automatically after you do a gclient sync:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>ctags --languages=C++ --exclude=third_party --exclude=.git --exclude=build --exclude=out -R -f .tmp_tags &amp; ctags --languages=C++ -a -R -f .tmp_tags third_party\platformsdk_win7 &amp; move /Y .tmp_tags .tags</code></div>
+This takes a couple of minutes to run, but you can work while it is indexing.<br />
+<br />
+</li>
+<li>Edit the CTags.sublime-settings file for the ctags plugin so that it runs ctags with the above parameters.  <b>Note</b>: the above is a batch file - don't simply copy all of it verbatim and paste it into the CTags settings file :-)</li>
+</ol>
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Once installed, you can quickly look up symbols with Ctrl+t, Ctrl+t etc.  More information here: <a href="https://github.com/SublimeText/CTags" style="color:rgb(54,8,96)">https://github.com/SublimeText/CTags</a></div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">One more hint - Edit your <font face="courier new, monospace">.gitignore</font> file (under <font face="courier new, monospace">%USERPROFILE%</font> or <font face="courier new, monospace">~/</font>) so that git ignores the <font face="courier new, monospace">.tags</font> file.  You don't want to commit it. :)</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">If you don't have a .gitignore in your profile directory, you can tell git about it with this command:</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><span style="font-size:small">
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#222222" face="courier new, monospace"><span style="line-height:normal">Windows: git config --global core.excludesfile %USERPROFILE%\.gitignore</span></font><br />
+</code><span style="color:rgb(34,34,34);font-family:courier new,monospace;line-height:normal">Mac, Linux: git config --global core.excludesfile ~/.gitignore</span></div>
+</span></div>
+<h2><a name="TOC-Building-with-ninja"></a><span style="color:rgb(0,0,0)">Building with ninja</span></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Assuming that you've got ninja properly configured and that you already have a project file as described above, here's how to build Chrome using ninja from within Sublime.  For any other target, just replace the target name.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Go to Tools-&gt;Build System-&gt;New build system and save this as a new build system:</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"></div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div><code>{</code></div>
+<div><span style="white-space:pre"> </span><code>"cmd": ["ninja", "-C", "out\\Debug", "chrome.exe"],</code></div>
+<div><span style="white-space:pre"> </span><code>"working_dir": "${project_path}\\src",</code></div>
+<div><span style="white-space:pre"> </span><code>"file_regex": "^(.*)\\(([0-9]*)\\)(\\s:\\s)(.*)"</code></div>
+<div><code>}</code></div>
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><i>On Linux and Mac, fix the targets up appropriately, fwd slash instead of backslash, no .exe, etc</i></div><div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><i><br /></i></div><div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><font size="3">Linux example:</font></div><div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><i><br /></i></div><div><div class="sites-codeblock sites-codesnippet-block"><code style="line-height:19px"><div>{</div><div> // Pass -j1024 if (and only if!) building with GOMA.</div><div> "cmd": ["ninja", "-C", "out/Debug", "blink", "-j1024"],</div><div> "working_dir": "${project_path}/src",</div><div> // Ninja/GN build errors are build-dir relative, however file_regexp</div><div> // is expected to produce project-relative paths, ignore the leading</div><div> // ../../ to make that happen.</div><div> // ../../(file_path):(line_number):(column):(error_message)</div><div> "file_regex": "^../../([^:\n]*):([0-9]+):?([0-9]+)?:? (.*)$"</div><div>}</div></code></div></div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div><div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Further <a href="http://docs.sublimetext.info/en/latest/reference/build_systems.html">build system documentation</a> or <a href="http://sublimetext.info/docs/en/reference/build_systems.html">older documentation</a> (as of Nov 2014 older is more complete).</div><div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br /></div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">This will make hitting Ctrl-B build chrome.exe (really quickly, thanks to ninja), F4 will navigate to the next build error, etc.  If you're using Goma, you can play with something like: <font face="courier new, monospace">"cmd": ["ninja", <b><i>"-j", "200",</i></b> "-C", "out\\Debug", "chrome.exe"],</font>.</div>
+<p style="color:rgb(86,85,85);line-height:19px"><font face="Lucida Grande, Lucida Sans Unicode, Arial, sans-serif">You can also add build variants so that you can also have quick access to building other targets like </font><font face="courier new, monospace">unit_tests</font><font face="Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"> or </font><font face="courier new, monospace">browser_tests</font><font face="Lucida Grande, Lucida Sans Unicode, Arial, sans-serif">. You build description file could look like this:</font></p>
+<pre><div class="sites-codeblock sites-codesnippet-block"><font color="#006000">{
+  "cmd": ["ninja", "-j200", "-C", "out\\Debug", "chrome.exe"],
+  "working_dir": "${project_path}\\src",
+  "file_regex": "^(.*)\\(([0-9]*)\\)(\\s:\\s)(.*)",
+  "variants":
+  [
+    {
+      "cmd": ["ninja", "-j200", "-C", "out\\Debug", "unit_tests.exe"],
+      "name": "unit_tests"
+    },
+    {
+      "cmd": ["ninja", "-j200", "-C", "out\\Debug", "browser_tests.exe"],
+      "name": "browser_tests"
+    }
+  ]
+}</font><font color="#565555"><span style="line-height:19px">
+</span></font></div><p><font face="arial, sans-serif">This way, you have separate key binding to start the unit or browser tests target build as follows:</font></p><div class="sites-codeblock sites-codesnippet-block"><font face="arial, sans-serif"><code>  { "keys": ["ctrl+shift+u"], "command": "build", "args": {"variant": "unit_tests"} },
+  { "keys": ["ctrl+shift+b"], "command": "build", "args": {"variant": "browser_tests"} }</code></font></div></pre>
+<p><font color="#000000">And keep using </font><span style="background-color:rgb(239,239,239);color:rgb(0,96,0);font-family:monospace;line-height:13px;white-space:pre">"ctrl+b"</span> for a regular, <span style="background-color:rgb(239,239,239);color:rgb(0,96,0);font-family:monospace;line-height:13px;white-space:pre">"chrome.exe"</span> build. Enjoy!</p><h2><a name="TOC-Example-plugin"></a><font color="#000000">Example plugin</font></h2>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Sublime has a Python console window and supports Python plugins.  So if there's something you feel is missing, you can simply add it.</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">Here's an example plugin (Tools-&gt;New Plugin) that runs cpplint (assuming depot_tools is in the path) for the current file and prints the output to Sublime's console window (Ctrl+`):</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(86,85,85);line-height:19px;font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div>
+<div><code>import sublime, sublime_plugin</code></div>
+<div><code>import subprocess</code></div>
+<div><br />
+</div>
+<div><code>class RunLintCommand(sublime_plugin.TextCommand):</code></div>
+<div><code>  def run(self, edit):</code></div>
+<div><code>      command = ["cpplint.bat", self.view.file_name()]</code></div>
+<div><code>      process = subprocess.Popen(command, shell=True,</code></div>
+<div><code>            stdout=subprocess.PIPE,</code></div>
+<div><code>            stderr=subprocess.PIPE)</code></div>
+<div><code>      print process.communicate()[1]﻿</code></div>
+</div>
+<div></div>
+</div>
+<br />
+</div><div>Or, in Sublime Text 3:</div>
+<div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px">from __future__ import print_function</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><br /></span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px">import sublime, sublime_plugin</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px">import subprocess</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><br /></span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px">class RunLintCommand(sublime_plugin.TextCommand):</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><span style="white-space:pre"> </span>def run(self, edit):</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><span style="white-space:pre"> </span>print("AMI: %s" % self.view.file_name())</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><span style="white-space:pre"> </span>command = ["/home/fischman/src/depot_tools/cpplint.py", self.view.file_name()]</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><span style="white-space:pre"> </span>process = subprocess.Popen(command, shell=False,  stdout=subprocess.PIPE, stderr=subprocess.PIPE)</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><span style="white-space:pre"> </span>output, error = process.communicate()</span></font></div><div style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:19px"><span style="white-space:pre"> </span>if error:</span></font></div><div style="background-color:rgb(239,239,239)"><code><span style="line-height:19px"><span style="white-space:pre"> </span>print(error)</span></code></div></div><div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">Save this file as run_lint.py (Sublime will suggest the right location when you save the plugin - Packages\User).</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">You can run the command via the console like so:</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">
+<div class="sites-codeblock sites-codesnippet-block"><code>view.run_command('run_lint')</code></div>
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">Note that here's an interesting thing in how Sublime works.  CamelCaps are converted to lower_case_with_undescore format.  Note also that although the documentation currently has information about "runCommand" member method for the view object, this too is now subject to that convention.</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">Taking this a step further, you can create a keybinding for your new plugin.  Here's an example for how you could add a binding to your User key bindings (Preferences-&gt;Key Bindings - User):</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif">
+<div>
+<div><code>[</code></div>
+<div><code>    {  </code></div>
+<div><code>        "keys": ["ctrl+shift+l"], "command": "run_lint"  </code></div>
+<div><code>    }</code></div>
+<div><code>]</code></div>
+</div>
+<div></div>
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">Now, when you hit Ctrl+Shift+L, cpplint will be run for the currently active view.  Here's an example output from the console window:</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>D:\src\cgit\src\content\browser\browsing_instance.cc:69:  Add #include &lt;string&gt; for string  [build/include_what_you_use] [4]</code></div>
+<div><code>Done processing D:\src\cgit\src\content\browser\browsing_instance.cc</code></div>
+<div><code>Total errors found: 1</code></div>
+<div></div>
+</div>
+<br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">As a side note, if you run into problems with the documentation as I did above, it's useful to just use Python's ability to dump all properties of an object with the dir() function:</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px"><br />
+</div>
+<div style="color:rgb(86,85,85);font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;line-height:19px">
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>&gt;&gt;&gt; dir(view)</code></div>
+<div><code>['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__len__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'add_regions', 'begin_edit', 'buffer_id', 'classify', 'command_history', 'em_width', 'encoding', 'end_edit', 'erase', 'erase_regions', 'erase_status', 'extract_completions', 'extract_scope', ... &lt;snip&gt;</code></div>
+</div>
+</div>
+<h3><a name="TOC-Compile-current-file-using-Ninja"></a>Compile current file using Ninja</h3><p>As a more complex plug in example, look at the attached python file: <font face="courier new, monospace"><a href="http://www.chromium.org/developers/sublime-text/compile_current_file.py?attredirects=0">compile_current_file.py</a></font>. This plugin will compile the current file with Ninja, so will start by making sure that all this file's project depends on has been built before, and then build only that file.</p><p><span style="font-size:10pt">First, it confirms that the file is indeed part of the current project (</span>by making sure it's under the <font face="courier new, monospace">&lt;project_root&gt;</font> folder, which is taken from the <font face="courier new, monospace">self.view.window().folders()</font> array, the first one seems to always be the project folder when one is loaded)<span style="font-size:10pt">. Then it looks for the file in all the </span><font face="courier new, monospace" style="font-size:10pt">.ninja</font><span style="font-size:10pt"> build files under the </span><font face="courier new, monospace" style="font-size:10pt">&lt;project_root&gt;\out\&lt;target_build&gt;</font><span style="font-size:10pt">, </span><span style="font-size:10pt">where </span><span style="font-size:10pt;font-family:courier new,monospace">&lt;target_build&gt;</span><span style="font-size:10pt"> must be specified as an argument to the </span><span style="font-size:10pt;font-family:courier new,monospace">compile_current_file</span><span style="font-size:10pt"> command. Using the proper target for this file compilation, it starts Ninja from a background thread and send the results to the output.exec panel (the same one used by the build system of Sublime Text 2). So you can use key bindings like these two, to build the current file in either Debug or Release mode:</span></p><div class="sites-codeblock sites-codesnippet-block"><p><code>  { "keys": ["ctrl+f7"], "command": "compile_current_file", "args": {"target_build": "Debug"} },</code><br /><span style="font-size:10pt"><code>  { "keys": ["ctrl+shift+f7"], "command": "compile_current_file", "args": {"target_build": "Release"} },</code></span></p><div style="font-size:10pt"></div></div><p>If you are having trouble with this plugin, you can set the python logging level to DEBUG in the console and see some debug output.</p><h3><a name="TOC-Format-selection-or-area-around-cursor-using-clang-format"></a>Format selection (or area around cursor) using clang-format</h3><div>Copy buildtools/clang_format/scripts/clang-format-sublime.py to ~/.config/sublime-text-3/Packages/User/ (or -2 if still on ST2) and add something like this to Preferences-&gt;Key Bindings - User: </div><div><div class="sites-codeblock sites-codesnippet-block"><div style="font-size:10pt"></div></div><div class="sites-codeblock sites-codesnippet-block"><span style="background-color:transparent"><font color="#006000" face="monospace">"keys": ["ctrl+shift+c"], "command": "clang_format",</font></span></div><p><span style="font-family:Trebuchet MS,arial,sans-serif;font-size:1.2em;background-color:transparent">Miscellaneous tips</span></p></div>
+<div>
+<ul style="color:rgb(86,85,85);line-height:19px"><li style="font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;list-style-position:outside;list-style-type:circle">To synchronize the project sidebar with the currently open file, right click in the text editor and select "Reveal in Side Bar".  Alternatively you can install the <b>SyncedSideBar</b> sublime package (via the Package Manager) to have this happen automatically like in Eclipse.</li>
+<li style="font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;list-style-position:outside;list-style-type:circle">If you're used to hitting a key combination to trigger a build (e.g. Ctrl+Shift+B in Visual Studio) and would like to continue to do so, add this to your <font face="courier new, monospace">Preferences-&gt;Key Bindings - User</font><font face="arial, sans-serif"> file:</font></li>
+<ul style="font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><li style="list-style-position:outside;list-style-type:circle"><font face="courier new, monospace">{ "keys": ["ctrl+shift+b"], "command": "show_panel", "args": {"panel": "output.exec"} }</font></li></ul>
+<li style="font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif;list-style-position:outside;list-style-type:circle">Install the<b> Open-Include</b> plugin (Ctrl+Shift+P, type:"Install Package",  type:"Open Include").  Then just put your cursor inside an <font face="courier new, monospace">#include</font> path, hit Alt+D and voila, you're there.</li>
+<ul style="font-family:Lucida Grande,Lucida Sans Unicode,Arial,sans-serif"><li style="list-style-position:outside;list-style-type:circle">If you want to take that a step further, add an entry to the right-click context menu by creating a text file named "<font face="courier new, monospace">context.sublime-menu</font><font face="arial, sans-serif">"</font> under "<font face="courier new, monospace">%APPDATA%\Sublime Text 2\Packages\User</font><font face="arial, sans-serif">" with the following content:</font><br />
+<font face="courier new, monospace">[ { "command": "open_include", "caption": "Open Include" } ]</font></li></ul></ul><div style="color:rgb(86,85,85);line-height:19px"><h2 style="color:rgb(0,0,0);line-height:normal"><a name="TOC-Other-useful-packages"></a><font color="#000000">Other useful packages</font></h2></div><div><font color="#000000" style="line-height:19px">Assuming you've installed Package Control already </font><font color="#000000" style="color:rgb(86,85,85);line-height:19px">(</font><span style="background-color:transparent;line-height:19px"><a href="https://packagecontrol.io/installation">https://packagecontrol.io/installation</a>) you can easily install more packages via:</span></div><div><ol><li><span style="line-height:19px">Open Command Palette (Ctrl-Shift-P)</span></li><li><span style="line-height:19px">Type "Package Control: Install Package" (note: given ST's string match is amazing you can just type something like "instp" and it will find it :-)).</span></li></ol><div><span style="line-height:19px">A few recommended packages:</span></div></div><div><ul><li><span style="line-height:19px"><a href="https://github.com/jdc0589/CaseConversion">Case Conversion</a> (automatically swap casing of selected text -- works marvel with multi-select -- go from a kConstantNames to ENUM_NAMES in seconds)</span></li><li><span style="line-height:19px">CTags (see detailed setup info above).</span></li><li><span style="line-height:19px">Git</span></li><li><span style="line-height:19px">Open-Include</span></li><li><span style="line-height:19px"><a href="https://github.com/duydao/Text-Pastry">Text Pastry</a> (insert incremental number sequences with multi-select, etc.)</span></li><li><span style="line-height:19px">Wrap Plus (auto-wrap a comment block to 80 columns with Alt-Q)</span></li></ul></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Attachments" title="Attachments"><div class="sites-translucent sites-symbol" aria-hidden="true">Č</div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="http://www.gstatic.com/sites/p/56e332/system/app/images/spinner.gif" /></span><div class="sites-attachments-update-text">Updating...</div></div></div><div class="sites-attachments-separator"></div>
+<div id="attachment-wuid:gx:5ee145717e1ec886"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">compile_current_file.py <div class="sites-translucent">(9k)</div></div><div class="sites-attachments-author">Marc-André Decoste, <div class="sites-translucent">Oct 12, 2012, 6:28 AM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:5ee145717e1ec886">v.4</a></div><div id="attachment-download-wuid:gx:5ee145717e1ec886" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/sublime-text/compile_current_file.py?attredirects=0&amp;d=1" aria-label="Download compile_current_file.py" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div style="height: 10px"></div>
+</div>
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/sublime-text">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9sAFQeAekJtP6NLWwPf8g-y6EEcENjzXhq62jRQAHnaV-MVgv7RJwZoDAA73XVUyGXGPsQUpjRWK9-Oe4L9EGoW3njMg0duxb22eVmaozWEKrOy6p/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

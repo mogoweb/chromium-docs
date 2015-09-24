@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/developer-information-for-chrome-os-devices","deleted":false,"title":"Developer Information for Chrome OS Devices","dir":"ltr"},{"path":"/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge","deleted":false,"title":"Samsung Series 5 550 Chromebook and Series 3 Chromebox","dir":"ltr"},{"path":"/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge/coreboot-vmx-hack","deleted":false,"title":"Hacking VMX Support Into Coreboot (lumpy \u0026 stumpy)","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge/coreboot-vmx-hack\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge","parentWuid":"wuid:gx:53b7dadd11c2bf5c","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Hacking VMX Support Into Coreboot (lumpy \u0026 stumpy)","locale":"en","wuid":"wuid:gx:27ee45faf57df2dc","revision":6,"path":"/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge/coreboot-vmx-hack","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"coreboot-vmx-hack","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Hacking VMX Support Into Coreboot (lumpy &amp; stumpy) - The Chromium Projects" />
+<meta itemprop="name" content="Hacking VMX Support Into Coreboot (lumpy &amp; stumpy) - The Chromium Projects" />
+<meta property="og:title" content="Hacking VMX Support Into Coreboot (lumpy &amp; stumpy) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Hacking VMX Support Into Coreboot (lumpy &amp; stumpy) - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4c0f552cb393ed23" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/developer-information-for-chrome-os-devices" dir="ltr">Developer Information for Chrome OS Devices</A>‎ &gt; ‎<A href="/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge" dir="ltr">Samsung Series 5 550 Chromebook and Series 3 Chromebox</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Hacking VMX Support Into Coreboot (lumpy &amp; stumpy)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Background"><strong>1 </strong>Background</a></li><li class="goog-toc"><a href="#TOC-Prepare-The-Device"><strong>2 </strong>Prepare The Device</a></li><li class="goog-toc"><a href="#TOC-Extracting-The-BIOS"><strong>3 </strong>Extracting The BIOS</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Extracting-Coreboot"><strong>3.1 </strong>Extracting Coreboot</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Extracting-Coreboot-RAM-Stage"><strong>3.1.1 </strong>Extracting Coreboot RAM Stage</a></li><li class="goog-toc"><a href="#TOC-Decompressing-Coreboot-RAM-Stage"><strong>3.1.2 </strong>Decompressing Coreboot RAM Stage</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Hacking-Coreboot"><strong>4 </strong>Hacking Coreboot</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Locate-wrmsr"><strong>4.1 </strong>Locate wrmsr</a></li><li class="goog-toc"><a href="#TOC-Nopping-The-wrmsr"><strong>4.2 </strong>Nopping The wrmsr</a></li></ol></li><li class="goog-toc"><a href="#TOC-Repacking-The-BIOS-Image"><strong>5 </strong>Repacking The BIOS Image</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Repacking-Coreboot"><strong>5.1 </strong>Repacking Coreboot</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Rebuilding-Coreboot-RAM-Stage"><strong>5.1.1 </strong>Rebuilding Coreboot RAM Stage</a></li><li class="goog-toc"><a href="#TOC-Updating-Coreboot"><strong>5.1.2 </strong>Updating Coreboot</a></li></ol></li><li class="goog-toc"><a href="#TOC-Updating-The-BIOS-Image"><strong>5.2 </strong>Updating The BIOS Image</a></li></ol></li><li class="goog-toc"><a href="#TOC-Flashing-The-New-BIOS"><strong>6 </strong>Flashing The New BIOS</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Hardware-Preparation"><strong>6.1 </strong>Hardware Preparation</a></li><li class="goog-toc"><a href="#TOC-Write-The-BIOS"><strong>6.2 </strong>Write The BIOS</a></li><li class="goog-toc"><a href="#TOC-Check-VMX-Support"><strong>6.3 </strong>Check VMX Support</a></li><li class="goog-toc"><a href="#TOC-Enable-Write-Protect"><strong>6.4 </strong>Enable Write Protect</a></li></ol></li></ol></div></div></div></div>
+<p><font color="#ff0000" size="4"><b>If you are not using Samsung 5 550 (lumpy) or a Samsung 3 Chromebox (stumpy), back away slowly now.  These instructions WILL NOT WORK for any other device.<br />
+<br />
+This document is intended for people who don't mind getting their hands dirty, voiding warranties, or possibly bricking their devices.  If any of those thing scare you, just walk away.</b></font></p>
+<h2><a name="TOC-Background"></a>Background</h2>
+<p>The BIOS that shipped on earlier devices (such as stumpy and lumpy) had minor misfeatures in them where they would disable VMX support in the read-only firmware stage.  That means there is no way to use those virtualization extensions once you booted.  Putting into dev mode won't help, nor will installing an alternative OS.</p>
+<p>This document attempts to guide you through the process of binary patching your BIOS.  This way VMX support won't be disabled while it is loaded.  Instead, the kernel itself will take care of enabling/disabling it.  This way you can leverage that hardware functionality to use KVM or other such technologies.  The <a href="https://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/running-virtual-machines-on-your-chromebook" style="font-size:10pt">Virtual Machine</a> explains more.</p>
+<p>If you're still here, and you have a lumpy or stumpy device, and you want to hack your BIOS (coreboot) to keep VMX (hardware virtualization insns) support from being disabled at boot, then let's get into it.</p>
+<h2><a name="TOC-Prepare-The-Device"></a>Prepare The Device</h2>
+<p>Make sure your device is in dev mode already and you can get a root shell.  See the <a href="https://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge">Samsung Series 5 550 Chromebook and Series 3 Chromebox</a> page for details on how to do this.</p>
+<p>You should also see what version of firmware you're running.  All the example output below is taken from a Chromebox.  This will be invaluable if you ask for assistance.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ crossystem | grep fwid
+fwid                   = Google_Stumpy.2.102.0          # Active firmware ID
+ro_fwid                = Google_Stumpy.2.102.0          # Read-only firmware ID</code></div>
+<p>Note that while most of these commands can be run on the device, some will require tools that are available in the Chromium OS SDK (like cbfstool and a compiler/assembler).  So you should extract the bios on the device, and then do all the other commands on your development system.  You can transfer the file via scp.</p>
+<h2><a name="TOC-Extracting-The-BIOS"></a>Extracting The BIOS</h2>
+<p>Now that you're in dev mode, extract the BIOS from the read-only SPI flash using flashrom.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre"># Run this on the device.
+$ cd /tmp
+$ PATH+=:/sbin:/usr/sbin:/usr/local/sbin
+$ sudo flashrom -r bios.bin
+# Now scp the bios.bin off the device and do follow up commands
+# in your ChromiumOS sdk chroot.</code></div>
+<p>The BIOS can be read with fmap_decode.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ fmap_decode bios.bin
+fmap_signature="0x5f5f464d41505f5f" fmap_ver_major="1" fmap_ver_minor="0" fmap_base="0x0000000000000000" fmap_size="0x800000" fmap_name="FMAP" fmap_nareas="27"
+area_offset="0x00000000" area_size="0x00180000" area_name="SI_ALL" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00000000" area_size="0x00001000" area_name="SI_DESC" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00001000" area_size="0x0017f000" area_name="SI_ME" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00180000" area_size="0x00680000" area_name="SI_BIOS" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00180000" area_size="0x00001000" area_name="RW_VPD" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00181000" area_size="0x00067000" area_name="RW_UNUSED" area_flags_raw="0x01" area_flags="static"
+area_offset="0x001e8000" area_size="0x00018000" area_name="RW_SHARED" area_flags_raw="0x01" area_flags="static"
+area_offset="0x001e8000" area_size="0x00004000" area_name="RW_ENVIRONMENT" area_flags_raw="0x01" area_flags="static"
+area_offset="0x001ec000" area_size="0x00010000" area_name="RW_MRC_CACHE" area_flags_raw="0x01" area_flags="static"
+area_offset="0x001fc000" area_size="0x00004000" area_name="DEV_CFG" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00200000" area_size="0x00100000" area_name="RW_SECTION_A" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00200000" area_size="0x00010000" area_name="VBLOCK_A" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00210000" area_size="0x000effc0" area_name="FW_MAIN_A" area_flags_raw="0x01" area_flags="static"
+area_offset="0x002fffc0" area_size="0x00000040" area_name="RW_FWID_A" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00300000" area_size="0x00100000" area_name="RW_SECTION_B" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00300000" area_size="0x00010000" area_name="VBLOCK_B" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00310000" area_size="0x000effc0" area_name="FW_MAIN_B" area_flags_raw="0x01" area_flags="static"
+area_offset="0x003fffc0" area_size="0x00000040" area_name="RW_FWID_B" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00400000" area_size="0x00170000" area_name="RO_UNUSED_1" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00570000" area_size="0x00020000" area_name="RO_VPD" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00590000" area_size="0x000e0000" area_name="RO_UNUSED_2" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00670000" area_size="0x00190000" area_name="RO_SECTION" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00670000" area_size="0x00000800" area_name="FMAP" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00670800" area_size="0x00000040" area_name="RO_FRID" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00670840" area_size="0x0000f7c0" area_name="RO_PADDING" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00680000" area_size="0x00080000" area_name="GBB" area_flags_raw="0x01" area_flags="static"
+area_offset="0x00700000" area_size="0x00100000" area_name="BOOT_STUB" area_flags_raw="0x01" area_flags="static"</code></div>
+<p>Here we see all the wonderful sub-sections of the BIOS.  The one we really care about is the last part -- the BOOT_STUB.</p>
+<h3><a name="TOC-Extracting-Coreboot"></a>Extracting Coreboot</h3>
+<p>Using the details from the last line from the fmap_decode output, we can use dd to extract coreboot.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ eval `fmap_decode bios.bin | grep BOOT_STUB`
+$ dd if=bios.bin ibs=$((area_offset)) skip=1 | dd bs=$((area_size)) iflag=fullblock of=coreboot.bin</code></div>
+<p>You can verify this actually worked by running the cbfstool (part of coreboot, and in the Chromium OS sdk chroot).</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ cbfstool coreboot.bin print
+Updating CBFS master header to version 2
+coreboot.bin: 1024 kB, bootblocksize 10498, romsize 1048576, offset 0x0
+Alignment: 64 bytes, architecture: x86
+
+Name                           Offset     Type         Size
+cmos_layout.bin                0x0        cmos layout  1223
+pci8086,0106.rom               0x500      optionrom    65536
+fallback/romstage              0x10540    stage        34084
+fallback/coreboot_ram          0x18ac0    stage        79377
+fallback/payload               0x2c140    payload      106157
+u-boot.dtb                     0x46040    unknown      8144
+(empty)                        0x48040    null         622424
+mrc.bin                        0xdffc0    unknown      102924
+(empty)                        0xf9240    null         17526</code></div>
+<h4><a name="TOC-Extracting-Coreboot-RAM-Stage"></a>Extracting Coreboot RAM Stage</h4>
+<p>We want the coreboot_ram stage there.  Let's extract it using cbfstool.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ cbfstool coreboot.bin extract -n fallback/coreboot_ram -f coreboot_ram.lz 
+Updating CBFS master header to version 2
+coreboot.bin: 1024 kB, bootblocksize 10498, romsize 1048576, offset 0x0
+Alignment: 64 bytes
+
+Found file fallback/coreboot_ram at 0x18ac0, type stage, size 79377
+Warning: only 'raw' files are safe to extract.
+Successfully dumped the file.</code></div>
+<h4><a name="TOC-Decompressing-Coreboot-RAM-Stage"></a>Decompressing Coreboot RAM Stage</h4>
+<p>You might have noticed we called the output file here coreboot_ram.lz instead of just coreboot_ram.  That's because the stage is compressed by LZMA.  That means we need to decompress it first.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ dd if=coreboot_ram.lz ibs=$((0x1c)) skip=1 | lzma -dc &gt; coreboot_ram.bin</code></div>
+<p>We skip 0x1c bytes there because that's the CBFS stage header information.  This should be constant across all images.</p>
+<p>Now, finally, we have the raw x86 code that gets executed during initial boot.</p>
+<h2><a name="TOC-Hacking-Coreboot"></a>Hacking Coreboot</h2>
+<p>You can do a sanity check to make sure we've got the right file by using objdump and disassembling the code.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ objdump -D -b binary -m i386 coreboot_ram.bin
+coreboot_ram.bin:     file format binary
+
+Disassembly of section .data:
+
+00000000 &lt;.data&gt;:
+       0:   fa                      cli    
+       1:   2e 0f 01 15 37 01 10    lgdtl  %cs:0x100137
+       8:   00 
+       9:   ea 10 00 10 00 10 00    ljmp   $0x10,$0x100010
+      10:   b8 18 00 00 00          mov    $0x18,%eax
+      15:   8e d8                   mov    %eax,%ds
+      17:   8e c0                   mov    %eax,%es
+      19:   8e d0                   mov    %eax,%ss
+      1b:   8e e0                   mov    %eax,%fs
+      1d:   8e e8                   mov    %eax,%gs
+      1f:   b0 13                   mov    $0x13,%al
+      21:   e6 80                   out    %al,$0x80
+      23:   fc                      cld    
+...
+</code></div>
+<p>Your output might not look *exactly* like that (some of the number constants might be different).  The first few instruction names should be the same though (a cli, then a lgdtl, then a ljmp, then a bunch of mov's).  If your output doesn't resemble this, then you should abort and seek help.</p>
+<h3><a name="TOC-Locate-wrmsr"></a>Locate wrmsr</h3>
+<p>Buried in that output somewhere is the magic insn sequence that turns off VMX on us.  This is done by writing to the 0x3a machine specific register using the wrmsr instruction.  Let's scan the output for it.</p>
+<p>The key sequence to look for is a mov insn that stores 0x3a in the eax register, followed by a call insn to a small func that does a rdmsr+wrmsr, followed by some more movs/calls and then a cpuid insn.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ objdump -D -b binary -m i386 coreboot_ram.bin | less
+...
+   26d4d:   57                      push   %edi
+   26d4e:   31 d2                   xor    %edx,%edx
+   26d50:   b8 3a 00 00 00          mov    $0x3a,%eax           &lt;-- store of 0x3a into eax
+   26d55:   e8 ba ff ff ff          call   0x26d14              &lt;-- call to local func (see below)
+   26d5a:   ba 0f 00 00 00          mov    $0xf,%edx            &lt;-- two move insns
+   26d5f:   b8 e2 00 00 00          mov    $0xe2,%eax
+   26d64:   e8 ab ff ff ff          call   0x26d14              &lt;-- call to same local func
+   26d69:   b8 01 00 00 00          mov    $0x1,%eax
+   26d6e:   89 df                   mov    %ebx,%edi
+   26d70:   0f a2                   cpuid                       &lt;-- cpuid call
+   26d72:   89 fb                   mov    %edi,%ebx
+   26d74:   81 e1 00 00 00 02       and    $0x2000000,%ecx
+   26d7a:   74 0c                   je     0x26d88
+   26d7c:   31 d2                   xor    %edx,%edx
+   26d7e:   b8 3c 01 00 00          mov    $0x13c,%eax
+   26d83:   e8 8c ff ff ff          call   0x26d14              &lt;-- more calls to same local func
+   26d88:   ba 1f 00 00 00          mov    $0x1f,%edx
+   26d8d:   b8 01 06 00 00          mov    $0x601,%eax
+   26d92:   e8 7d ff ff ff          call   0x26d14              &lt;-- more calls to same local func
+...
+
+# here is the func that is being called (address matches)
+...
+   26d14:   55                      push   %ebp                 &lt;-- function prologue
+   26d15:   89 c1                   mov    %eax,%ecx
+   26d17:   89 c5                   mov    %eax,%ebp
+   26d19:   57                      push   %edi
+   26d1a:   56                      push   %esi
+   26d1b:   89 d6                   mov    %edx,%esi
+   26d1d:   0f 32                   rdmsr                       &lt;-- the rdmsr call
+   26d1f:   83 fe 1f                cmp    $0x1f,%esi
+   26d22:   77 11                   ja     0x26d35
+   26d24:   89 f1                   mov    %esi,%ecx
+   26d26:   bf 01 00 00 00          mov    $0x1,%edi
+   26d2b:   d3 e7                   shl    %cl,%edi
+   26d2d:   85 f8                   test   %edi,%eax
+   26d2f:   75 18                   jne    0x26d49
+   26d31:   09 f8                   or     %edi,%eax
+   26d33:   eb 10                   jmp    0x26d45
+   26d35:   8d 4e e0                lea    -0x20(%esi),%ecx
+   26d38:   bf 01 00 00 00          mov    $0x1,%edi
+   26d3d:   d3 e7                   shl    %cl,%edi
+   26d3f:   85 fa                   test   %edi,%edx
+   26d41:   75 06                   jne    0x26d49
+   26d43:   09 fa                   or     %edi,%edx
+   26d45:   89 e9                   mov    %ebp,%ecx
+   26d47:   0f 30                   wrmsr                       &lt;-- the wrmsr call
+   26d49:   5e                      pop    %esi                 &lt;-- function epilog
+   26d4a:   5f                      pop    %edi
+   26d4b:   5d                      pop    %ebp
+   26d4c:   c3                      ret
+...
+</code></div>
+<p>Above you can see the "bad" call to the wrmsr function happens at offset 0x26d55.</p>
+<h3><a name="TOC-Nopping-The-wrmsr"></a>Nopping The wrmsr</h3>
+<p>We now have the right offset, so let's patch that particular insn to be a nop instead! :)</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ dd if=/dev/zero bs=5 count=1 | tr '\0' $'\x90' | dd conv=notrunc of=coreboot_ram.bin obs=$((0x26d55)) seek=1</code></div>
+<p>This will write five 0x90 bytes (the hex for the nop insn) to the offset of the call insn.  Let's see our handy work by consulting objdump.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ objdump -D -b binary -m i386 coreboot_ram.bin | less
+...
+   26d4d:   57                      push   %edi
+   26d4e:   31 d2                   xor    %edx,%edx
+   26d50:   b8 3a 00 00 00          mov    $0x3a,%eax           &lt;-- same 0x3a store into eax
+   26d55:   90                      nop
+   26d56:   90                      nop
+   26d57:   90                      nop                         &lt;-- 5 nops where there was a call
+   26d58:   90                      nop
+   26d59:   90                      nop
+   26d5a:   ba 0f 00 00 00          mov    $0xf,%edx            &lt;-- same mov insns as before
+   26d5f:   b8 e2 00 00 00          mov    $0xe2,%eax
+   26d64:   e8 ab ff ff ff          call   0x26d14
+...
+</code></div>
+<p>You can see that we have successfully executed our gambit!</p>
+<h2><a name="TOC-Repacking-The-BIOS-Image"></a>Repacking The BIOS Image</h2>
+<p>We've broken everything down and made our small change.  Let's rebundle everything so we can deploy the fix on our device.</p>
+<h3><a name="TOC-Repacking-Coreboot"></a>Repacking Coreboot</h3>
+<p>We have to get creative now.  It's easier if we just let the cbfstool repack the code since it includes compressed data and checksums in the headers and other fun stuff rather than trying to do it manually using dd.</p>
+<h4><a name="TOC-Rebuilding-Coreboot-RAM-Stage"></a>Rebuilding Coreboot RAM Stage</h4>
+<p>First rebuild the input ELF using the modified binary code.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ data_size=`hexdump -v -e '"%#_ax %_u\n"' coreboot_ram.bin | awk '$NF != "nul" { a = $1 } END { print a }'`
+$ data_size=$(( (data_size + 0x1000) &amp; ~(0x1000 - 1) ))
+$ mem_size=$(( `wc -c &lt; coreboot_ram.bin` - data_size ))
+$ dd if=coreboot_ram.bin of=coreboot_ram.s.bin bs=$((data_size)) count=1
+$ printf '.incbin "coreboot_ram.s.bin"\n.comm b,%s+%s,1\n' ${mem_size} 0x44000 &gt; coreboot_ram.s
+$ as --32 coreboot_ram.s -o coreboot_ram.o
+$ ld -m elf_i386 coreboot_ram.o -o coreboot_ram.elf -e 0x100000 -Ttext 0x100000</code></div>
+<h4><a name="TOC-Updating-Coreboot"></a>Updating Coreboot</h4>
+<p>Now delete the existing stage from coreboot, and then add the new one.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ cp coreboot.bin coreboot.bin.new
+$ cbfstool coreboot.bin.new remove -n fallback/coreboot_ram
+$ cbfstool coreboot.bin.new add-stage -f coreboot_ram.elf -n fallback/coreboot_ram -c lzma</code></div>
+<p>If you look at the cbfstool print output, you might notice that the order of the components has changed (the ram stage now comes later and there is an empty hole where the ram stage used to be).  That's not a problem -- coreboot is smart enough to dynamically scan the CBFS structure for the ram stage.</p>
+<h3><a name="TOC-Updating-The-BIOS-Image"></a>Updating The BIOS Image</h3>
+<p>This part is easiest to do with dd again.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ eval `fmap_decode bios.bin | grep BOOT_STUB`
+$ cp bios.bin bios.bin.new
+$ dd if=coreboot.bin.new of=bios.bin.new obs=$((area_offset)) seek=1 ibs=$((area_size)) count=1</code></div>
+<h2><a name="TOC-Flashing-The-New-BIOS"></a>Flashing The New BIOS</h2>
+<p>This is the only part where things can go wrong and possibly brick your device.  Make sure your device is fully plugged in before attempting this process (like the lumpy -- don't run it on battery).</p>
+<p>The details of each step below can be found in the <a href="https://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge" style="font-size:10pt">Samsung Series 5 550 Chromebook and Series 3 Chromebox</a> page.  Consult that as you go.</p>
+<h3><a name="TOC-Hardware-Preparation"></a>Hardware Preparation</h3>
+<ol><li>Open the case</li>
+<ol><li>You'll now have to disassemble your device (which most likely voids your warranty).  </li>
+</ol>
+<li>Disable write protect</li>
+<ol><li>You'll have to locate the Write Protect jumper and enable it.</li>
+<li>This will make the BIOS read-write so you can update it.</li>
+<li>Once things have been updated, you can undo this so your BIOS is read-only again.</li>
+</ol>
+<li>Reassemble the device</li>
+<ol><li>Now that you've done toggled the jumper, you need to reassemble the device and power it up.</li>
+</ol>
+<li>Check the write protect</li>
+<ol><li>Run crossystem and look at the wpsw_cur field; it should be 0.</li>
+</ol>
+<li>Plug your system in to be safe!</li>
+<ol><li>For the Chromebook laptop, make sure the battery is charged, and the power supply is connected.</li>
+<li>For the Chromebox, try and plug it into a battery backup (UPS), and don't try this during a storm :).</li>
+</ol>
+</ol>
+<h3><a name="TOC-Write-The-BIOS"></a>Write The BIOS</h3>
+<p>With the new bios.bin.new file in hand, let's use flashrom to update things.  Obviously you'll need to scp this file back to the device and run flashrom there.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom -w bios.bin.new</code></div>
+<p>Then read it back out to verify things worked</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom -r bios.bin.check
+$ md5sum bios.bin.new bios.new.check</code></div>
+<p>If the md5 hashes match, then you're ready to cross your fingers and reboot!</p>
+<p>If you saw any weird errors, then do not power off the device.  Try and reprogram the original BIOS instead.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom -w bios.bin</code></div>
+<h3><a name="TOC-Check-VMX-Support"></a>Check VMX Support</h3>
+<p>Now follow the normal <a href="https://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/running-virtual-machines-on-your-chromebook">Virtual Machine</a> document.  You should be able to use kvm and other fun things on your device now.</p>
+<p>Note that if the initial reboot worked, you actually have to power off the device (not just reboot) in order for the relevant software registers to fully reset themselves.</p>
+<h3><a name="TOC-Enable-Write-Protect"></a>Enable Write Protect</h3>
+<p>Now that you've made sure everything works, you should re-enable the write protection on your BIOS.  Follow the Hardware Preparation steps above to remove the physical jumper.</p>
+<p>You'll also have to run some software steps once you reboot.  This tells the flash to re-enable write protection on itself.  We only want to do this for the 2nd half of the flash though and not the entire thing.</p>
+<p>First get the current status.  It should look something like:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom --wp-status
+flashrom v0.9.4  : .............
+WP: status: 0x0000
+WP: status.srp0: 0
+WP: status.srp1: 0
+WP: write protect is <b>disabled</b>.
+WP: write protect range: <b>start=0x00000000, len=0x00000000</b></code></div>
+<p>Now get the flash size:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom --get-size
+flashrom v0.9.4  : .............
+<b>8388608</b></code></div>
+<p>Take that value and divide it by two and use that to re-enable write protection:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom --wp-range $((8388608/2)) $((8388608/2))
+flashrom v0.9.4  : .............
+<b>SUCCESS</b>
+
+$ sudo flashrom --wp-enable
+flashrom v0.9.4  : .............
+<b>SUCCESS</b></code></div>
+<p>Finally double check the result:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="white-space:pre">$ sudo flashrom --wp-status
+flashrom v0.9.4  : .............
+WP: status: 0x0098
+WP: status.srp0: 1
+WP: status.srp1: 0
+WP: write protect is <b>enabled</b>.
+WP: write protect range: <b>start=0x00400000, len=0x00400000</b></code></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/developer-information-for-chrome-os-devices/samsung-sandy-bridge/coreboot-vmx-hack">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9HNjQCPuZ2tSu4fc_9V5FeNeyvJjs6HMg1CaXNfra4HVCw50FqoKLWiTVr_8Bp1Ge0R-WK0RqX1Sj3PzMtfINPOORPfLauVRsjfqrzglIJteh8O-Q/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs/verified-boot-data-structures","deleted":false,"title":"Verified Boot Data Structures","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/verified-boot-data-structures\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/chromiumos-design-docs","parentWuid":"wuid:gx:2eb69dd73ece341e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Verified Boot Data Structures","locale":"en","wuid":"wuid:gx:7df15264c28ab3d7","revision":15,"path":"/chromium-os/chromiumos-design-docs/verified-boot-data-structures","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"verified-boot-data-structures","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Verified Boot Data Structures - The Chromium Projects" />
+<meta itemprop="name" content="Verified Boot Data Structures - The Chromium Projects" />
+<meta property="og:title" content="Verified Boot Data Structures - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Verified Boot Data Structures - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1284155588711/chromium-os/chromiumos-design-docs/verified-boot-data-structures/vbpublickey.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1284155588711/chromium-os/chromiumos-design-docs/verified-boot-data-structures/vbpublickey.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/chromiumos-design-docs" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Verified Boot Data Structures</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-Basic-Guidelines"><strong>2 </strong>Basic Guidelines</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Structures-are-versioned"><strong>2.1 </strong>Structures are versioned</a></li><li class="goog-toc"><a href="#TOC-Key-structures-keep-track-of-their-own-key-version-and-algorithm"><strong>2.2 </strong>Key structures keep track of their own key version and algorithm</a></li><li class="goog-toc"><a href="#TOC-The-public-key-and-signature-headers-know-how-to-find-their-data"><strong>2.3 </strong>The public key and signature headers know how to find their data</a></li><li class="goog-toc"><a href="#TOC-Common-structures-are-reused"><strong>2.4 </strong>Common structures are reused</a></li></ol></li><li class="goog-toc"><a href="#TOC-Major-structures"><strong>3 </strong>Major structures</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Key-block"><strong>3.1 </strong>Key block</a></li><li class="goog-toc"><a href="#TOC-Firmware-image"><strong>3.2 </strong>Firmware image</a></li><li class="goog-toc"><a href="#TOC-Kernel-image"><strong>3.3 </strong>Kernel image</a></li></ol></li><li class="goog-toc"><a href="#TOC-Root-of-trust"><strong>4 </strong>Root of trust</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Normal-boot"><strong>4.1 </strong>Normal boot</a></li><li class="goog-toc"><a href="#TOC-Recovery-boot"><strong>4.2 </strong>Recovery boot</a></li></ol></li></ol></div></div></div></div><h2><a name="TOC-Introduction"></a>Introduction</h2>As the <a href="https://chromium.googlesource.com/chromiumos/platform/vboot_reference/" target="_blank">verified boot library</a> has evolved to meet the needs of firmware, kernel boot, and security, we’ve discovered some parts of it can be made easier to work with.  This document describes the refactoring of the verified boot library to address these issues.<br /><h2><a name="TOC-Basic-Guidelines"></a>Basic Guidelines</h2><h3><a name="TOC-Structures-are-versioned"></a>Structures are versioned</h3>Versioning allows readers to check for older/newer structures. <br /><br />This feature lets us add fields to the structures without necessarily breaking old readers and provides an upgrade path for newer readers to handle old structures.  Versioning structures will resolve the issue where kernel and firmware must be updated in unison.<br /><br />Structures have a major and minor version number.<br /><ul><li>ReaderMajor != StructureMajor - fundamental change in struct; do not attempt to parse</li><li>ReaderMinor == StructureMinor - all is well</li><li>ReaderMinor &lt; StructureMinor - reading a newer file; fields have been added to the struct, but the existing reader will be able to ignore them and still function</li><li>ReaderMinor &gt; StructureMinor - reading an older file; reader won’t find the fields added since version StructureMinor, and should use default values for those fields</li></ul><h3><a name="TOC-Key-structures-keep-track-of-their-own-key-version-and-algorithm"></a>Key structures keep track of their own key version and algorithm</h3>While public keys generally have some internal structure, it’s not always apparent. We can use various sizes and algorithms for different keys, so we’ve defined a <code><b>VbPublicKey</b></code> structure that simply encapsulates the public key data along with its size and algorithm:<br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/vbpublickey.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155588711/chromium-os/chromiumos-design-docs/verified-boot-data-structures/vbpublickey.png" /></a></div><br /><code><b>VbSignature</b></code> structures are very similar, but instead of the algorithm and version they only remember the length of data they signed.  A signature data blob is usually a hash that has been encrypted with a private key. The corresponding public key must be used to extract the original hash. In some cases we may also use a VbSignature structure for a nonencrypted hash.<br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/vbsignature.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155606105/chromium-os/chromiumos-design-docs/verified-boot-data-structures/vbsignature.png" /></a></div><br /><h3><a name="TOC-The-public-key-and-signature-headers-know-how-to-find-their-data"></a>The public key and signature headers know how to find their data</h3>Given a pointer to the <code>VbPublicKey</code> or <code>VbSignature</code> header, you can find the corresponding data, which may not be immediately following the header itself.  This lets us put the header structs as sub-structs in the major structures (preambles, etc.), followed by the data, without needing to pass in data pointers separately.<br /><br />Functions should take header pointers rather than raw data wherever possible.<br /><h3><a name="TOC-Common-structures-are-reused"></a>Common structures are reused</h3>Keys, signatures, and key blocks are used by firmware and kernel algorithms.  Common code for generating and parsing is reused.<br /><h2><a name="TOC-Major-structures"></a>Major structures</h2><h3><a name="TOC-Key-block"></a>Key block</h3>At the beginning of a firmware or kernel image is a <b>key block</b> that contains the subkey used to sign the rest of the data in the image. The subkey itself is signed by some higher key, which is presumably more secure or robust.<br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/keyblock.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155628310/chromium-os/chromiumos-design-docs/verified-boot-data-structures/keyblock.png" /></a></div><br />The key block itself is either signed (by Google) or simply checksummed (for self-signed developer images), so only one of the two VbSignatures is used to validate it. The reason we have two VbSignatures in the key block header is so that we can build one image that can be validated in either way, which makes testing and development much simpler.<br /><br />This key block structure is identical for firmware and kernel images, so the code to create and verify it can be shared.<br /><h3><a name="TOC-Firmware-image"></a>Firmware image</h3>A firmware image consists of a key block, a firmware <b>preamble</b>, and the firmware body.  The key block, preamble, and body do not directly point to each other, so they can be read into separate blocks of memory. The firmware preamble is signed by the key block, and contains the signature of the firmware body plus another subkey which will be used to validate the kernel image.<br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/firmware.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155649415/chromium-os/chromiumos-design-docs/verified-boot-data-structures/firmware.png" /></a></div><br /><h3><a name="TOC-Kernel-image"></a>Kernel image</h3>A kernel image consists of a key block, a kernel preamble, and the kernel body.  The key block, preamble, and body do not directly point to each other, so they can be read into separate blocks of memory.<br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/kernel.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155667604/chromium-os/chromiumos-design-docs/verified-boot-data-structures/kernel.png" /></a></div><br /><h2><a name="TOC-Root-of-trust"></a>Root of trust</h2>When the device is first powered on, it begins execution from a read-only section of flash memory. In addition to (hopefully) secure code, that read-only region contains the primary root keys needed to validate all the rest of the signed images. The structure that locates the root keys and various other read-only components is the GoogleBinaryBlockHeader, or “<b>GBB</b>”.<br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/readonly.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155697374/chromium-os/chromiumos-design-docs/verified-boot-data-structures/readonly.png" /></a></div><br />There are two primary keys in the GBB. The <b>root key</b> is used in the normal boot sequence to sign the read/write firmware, which contains subkeys to sign the kernel, and so forth. In recovery mode, only the read-only firmware is executed (because the read/write firmware may have been erased), so the kernel image on the removable drive is signed by the <b>recovery key</b>.<br /><br />There are a total of six separate keypairs involved in the complete boot process (see diagrams below):<br /><h3><a name="TOC-Normal-boot"></a>Normal boot</h3><ol><li>Read-only firmware looks in the GBB, finds the root key in read-only memory.</li><li>The root key validates the read/write firmware’s keyblock, which contains the<b> firmware data key</b>.</li><li>The firmware data key validates the firmware preamble (which contains the <b>kernel subkey</b>) and the read/write firmware body.</li><li>The read/write firmware begins execution.</li><li>The read/write firmware uses the kernel subkey to validate the kernel’s keyblock, which contains the <b>kernel data key</b>.</li><li>The kernel data key validates the kernel preamble and the kernel blob.</li><li>The kernel begins execution.</li><li>The kernel image contains the hash of hashes, which is used to validate the bundle of hashes used by the block-based rootfs validation scheme.</li><li>The filesystem driver uses the bundle of hashes to validate each block of the rootfs as is read off the disk.</li></ol><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/VerifiedBootDataStructures.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1330555063393/chromium-os/chromiumos-design-docs/verified-boot-data-structures/VerifiedBootDataStructures.png" /></a></div><br /><div><h3><a name="TOC-Recovery-boot"></a>Recovery boot</h3><ol><li>Read-only firmware looks in the GBB, finds the recovery key in read-only memory.</li><li>The recovery key validates the kernel’s keyblock, which contains the <b>recovery kernel data key</b>. Although it serves the same purpose as the kernel subkey in normal boot, it uses a larger key because the read/write firmware is not used as an intermediate step.</li><li>The recovery kernel data key validates the kernel preamble and the kernel blob.</li><li>The kernel begins execution.</li><li>The kernel image contains the hash of hashes, which is used to validate the bundle of hashes used by the block-based rootfs validation scheme.</li><li>The filesystem driver uses the bundle of hashes to validate each block of the rootfs as it is read from the removable media.</li></ol><div style="display:block;text-align:left"><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot-data-structures/recovery.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1284155742228/chromium-os/chromiumos-design-docs/verified-boot-data-structures/recovery.png" /></a></div><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/verified-boot-data-structures">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq93sRGUTh5HlhJMwaLkaMstiLTAqTq0biGCGulsB-fgHQHsPITabrJK86U_sE5_dTW9BuGotCech9BHWfQcM6inO_vpbMDXUs2QZQiCCr2CMQa77FX/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/gpu-command-buffer","deleted":false,"title":"GPU Command Buffer","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/gpu-command-buffer\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"GPU Command Buffer","locale":"en","wuid":"wuid:gx:67be4f6199cbd3ff","revision":14,"path":"/developers/design-documents/gpu-command-buffer","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"gpu-command-buffer","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="GPU Command Buffer - The Chromium Projects" />
+<meta itemprop="name" content="GPU Command Buffer - The Chromium Projects" />
+<meta property="og:title" content="GPU Command Buffer - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>GPU Command Buffer - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">GPU Command Buffer</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>This are mostly just notes on the GPU command buffer</div>
+<div><br />
+</div>
+The GPU Command Buffer system is the way in which Chrome talks to the GPU either OpenGL or OpenGL ES (or OpenGL ES emulated through ANGLE). It is designed to have an API that emulates the OpenGL ES 2.0 API enforcing the restrictions of that API and working around incompatibilities in drivers and platforms. 
+<div>
+<h2><a name="TOC-Goals:"></a>Goals:</h2>
+<div>The #1 goal of the command buffer system is security. Graphics systems in OSes have gaping security holes. 2 simple examples are you can allocate a texture or a buffer and the memory returned is left as is. That memory is often left over from other applications and could contain passwords, images or other data that should not be visible to the calling app. Similarly there are many API functions that are buggy or have poorly designed APIs that make them easy to call in ways that would crash the browser. The #1 goal of the GPU process is to prevent these problems. </div>
+</div>
+<div><br />
+</div>
+<div>The #2 goal is compatibility across systems. From the POV of clients there should be no differences in behavior across systems. In some cases that means enforcing restrictions that are not there on the actual system. Examples include disabling advanced GLSL features. Others involve working around bugs by re-writing shaders or other techniques.</div>
+<div><br />
+</div>
+<div>The #3 goal is speed. Speed is why a command buffer implementation was chosen. The client can write commands very quickly with little or no communication with the service and only once in a while tell the service it has written more commands. For example, another implementation could have used a separate IPC for each OpenGL ES 2.0 function but that would arguably be too slow. The command buffer gets another speed boost because it effectively parallelizes calls into the OS graphics API. A call like glUniform or glDrawArrays might be a very expensive call but because of the command buffer the client just writes a few bytes into the command buffer and is done. The GPU process calls the real OpenGL function on another process which effectively makes the program multi-core.</div>
+<div><br />
+</div>
+<div><span style="font-size:20px;font-weight:bold">Implementation:</span></div>
+<div><br />
+</div>
+<div>The basic implementation is a "command buffer". A client (the render process, pepper plugin, etc..) writes commands into some shared memory. It updates a 'put' pointer through IPC telling the GPU process how far it has written into that buffer. The GPU process or service then read commands from that buffer. For each command it validates the command, its arguments, and whether or not the arguments are appropriate for the current state of the OSes graphics API and only then makes the actual call into the OS. This means even a compromised renderer running native code, writing its own commands, can hopefully not get the GPU process to call the graphics system in such a way as to compromise the system.</div>
+<div><br />
+</div>
+<div>When writing new service side code, please keep that in mind. Never design a new command that requires the client to be well behaved. Assume the client can go rogue. For example, make sure the service's bookkeeping will never be wrong no matter what the client does.</div>
+<div><br />
+</div>
+<div><span style="font-size:20px;font-weight:bold">API Layers:</span></div>
+<div>
+<h3><a name="TOC-Life-of-a-GL-call-in-Chrome"></a>Life of a GL call in Chrome</h3><div>In simple terms:</div><div>gl2.h-&gt;gles2_c_lib.cc-&gt;GLES2Implemetation-&gt;GLES2CmdHelper...SharedMemory...-&gt;GLES2DecoderImpl-&gt;ui/gfx/gl/gl_bindings-&gt;OpenGL</div><div><br /></div><div>There is an interface, CommandBuffer, that is responsible for coordinating communication between GLES2CmdHelper and GLES2DecoderImpl. It has methods for creating and deleting shared memory as well as communicating the current state back and forth. Specifically sending the latest 'put' pointer from the client through AsyncFlush() or Flush() and for getting the lastest 'get' pointer through the results of 'Flush'</div><div><br /></div><div>An implementation of CommandBuffer called CommandBufferService directly talks to GLES2DecoderImpl. If you had a single threaded single process chrome you could pass an instance of CommandBufferService to GLES2CmdHelper and the ideas is things would just work. In the the real multi-process chrome there is another implementation, ComamdBufferProxy which uses IPC to talk from the client to the service through GpuCommandBufferStub to GpuScheduler to CommandBufferService.</div><div><br /></div><div><span style="font-size:16px;font-weight:bold">Client side code: </span></div>
+</div>
+<div>Note: Everything in src/gpu/command_buffer/client and src/gpu/command_buffer/common must compile WITHOUT EXTRA LIBRARIES as they are used in the untrusted Pepper plugin</div>
+<div><br />
+</div><div>These define the public OpenGL ES 2.0 interface</div>
+<div>src/third_party/khronos/GLES2/gl2.h</div>
+<div>
+<div>src/third_party/khronos/GLES2/gl2ext.h</div>
+</div>
+<div><br />
+</div>
+<div>This defines the C interface. Most of this is auto generated</div>
+<div>src/gpu/command_buffer/client/gles2_c_lib.cc </div>
+<div>
+<div>src/gpu/command_buffer/client/gles2_c_lib_autogen.h </div>
+</div>
+<div><br />
+</div>
+<div>This is the actual client side implementation that writes commands into the command buffer. Most of this is auto generated.</div>
+<div>src/gpu/command_buffer/client/gles2_implementation.cc</div>
+<div>
+<div>src/gpu/command_buffer/client/gles2_implementation_autogen.h</div>
+</div>
+<div><br />
+</div>
+<div>This is a mostly auto generated class to help with formatting commands.</div>
+<div>src/gpu/command_buffer/client/gles2_cmd_helper.h</div>
+<div>
+<div>src/gpu/command_buffer/client/gles2_cmd_helper_autogen.h</div>
+</div>
+<div><br />
+</div>
+<div>These define the actual format of the commands</div>
+<div>src/gpu/command_buffer/common/cmd_buffer_common.h</div>
+<div>src/gpu/command_buffer/common/gles2_cmd_format.h</div>
+<div>
+<div>src/gpu/command_buffer/common/gles2_cmd_format_autogen.h</div>
+</div>
+<h3><a name="TOC-Service-side-code:"></a>Service side code:</h3>
+<div>This is the code that reads the commands, validates and calls OpenGL.</div>
+<div>src/gpu/command_buffer/service/gles2_cmd_decoder.cc</div>
+<div>
+<div>src/gpu/command_buffer/service/gles2_cmd_decoder_autogen.cc<br /><h2><a name="TOC-3-ways-of-transferring-data"></a>3 ways of transferring data</h2></div><div>There are 3 ways of transferring data through the command buffer.</div><h3><a name="TOC-1-In-a-command-itself"></a>#1) In a command itself</h3><div>Commands can either have a hard coded length (glUniform4f for example takes exactly a location and 4 floats) or they can have a variable length (glUniform4fv takes N sets of 4 floats). The data is inserted after the command in the command buffer and the length of the command itself is updated to contain that data.</div><div><br /></div><div>Advantages: </div><div>* Easy. Fire and forget</div><div><br /></div><div>Disadvantages:</div><div>* Commands have a maximum length of 1meg - 1</div><div>* Commands can only be as long as the command buffer itself.</div><h3><a name="TOC-2-In-shared-memory"></a>#2) In shared memory</h3><div>Some commands transfer data in shared memory. TexImage2D for example, the client puts data into a shared memory. The command itself has an shared memory id and an offset into that shared memory as well as either an explicit or implicit size. For TexImage2D the size is implicit.</div><div><br /></div><div>Advantages:</div><div>* Can transfer any size</div><div>* Can pre-allocate the shared memory and fill any time (glMapTexSubImage2D for example)</div><div><br /></div><div>Disadvantages:</div><div>* Must check with the server when it has actually used the contents of the shared memory.</div><h3><a name="TOC-3-In-a-bucket"></a>#3) In a bucket</h3><div>Buckets are a kind of abstractions of #2. You define a bucket by size (1 command) you then transfer the data into the bucket through shared memory (n commands), finally you issue the command you really wanted to issue (ShaderSource, CompressedTeximage2D, ...) and reference the bucket.</div><div><br /></div><div>The problem buckets attempt to solve is. Imagine you are trying to implement TexImage2D and you only have 1meg of shared memory and you are asked to send a 3meg texture. You can't call TexImage2D with your 3 meg of data since you only have 1 meg so instead you call TexImage2D with no data to define your texture and then call TexSubImage2D 3 times to transfer your data. GLES2Implementation actually does this.</div><div><br /></div><div>Now imagine you are trying to implement ShaderSource. You are passed a 3 meg string and you only have 1meg of shared memory. There is no ShaderSubSource function so you can't use the previous solution. Instead, you create a bucket of 3 meg, transfer the data to that bucket 1meg a time, then issue the ShaderSource command referencing the bucket.</div><div><br /></div><div>Advantages:</div><div>* Do not need a "SubData" command implemented </div><div>* Can handle data larger than shared memory</div><div><br /></div><div>Disadvantages:</div><div>* Slower. Data has to be copied out of shared memory and into a bucket.</div><div><br /></div><div><span style="font-size:20px;font-weight:bold">Adding a command:</span></div></div>
+<div>Here are some terse notes for adding a new command:</div>
+<div>
+<ol><li>Add your function to src/gpu/command_buffer/cmd_buffer_functions.txt<br /><br />Note: See examples. For new enums, GLenumTypeOfEnum. For GLint, GLintptr or GLsizei, if negative is disallowed GLxxxNotNegative. For resources GLidTypeOfResource<br /><br /></li>
+<li>Add your function to _FUNCTION_INFO in src/gpu/command_buffer/build_gles2_cmd_buffer.py<br />
+<br />
+Copy a function that is similar to yours.<br />
+<br />
+</li>
+<li>run build_gles2_cmd_buffer.py from the command_buffer directory<br />
+<br />
+Note: we don't currently run this as part of the build as this lets us easily see the changes during code review.<br />
+<br />
+</li>
+<li>Add your function to src/third_party/gl2ext.h if you want it callable as an OpenGL like function.<br />
+<br />
+If you only need it callable from WebGraphicsContext3DCommandBufferImpl then you don't need to do this step.<br />
+<br />
+</li>
+<li>If your function adds any new GL ENUMs to other functions (most commonly glGetInteger, glTexImage2D, etc.) <br />
+<br />
+</li>
+<ol><li>Add them in src/gpu/command_buffer/service/function_info.cc<br />
+<br />
+In particular, add them only if your functionally is available and if they are requested. See code in function_info.cc<br />
+<br />
+</li>
+<li>Add them in src/gpu/command_buffer/common/gles2_cmd_utils.cc<br />
+<br />
+<ul><li>for glGetInteger enums add them to GLES2Util:GLGetNumValuesReturned</li>
+<li>for texture and buffer formats see ElementsPerGroup, BytesPerElement</li>
+<li>for texture and renderbuffer formats see GetChannelsForFormat</li>
+</ul><br />
+</li>
+</ol>
+<li>See these CLs as examples<br /></li><ul><li><a href="http://codereview.chromium.org/8772033/">http://codereview.chromium.org/8772033/</a></li></ul></ol></div>
+<div><font size="3"><b>Texture issues</b></font>
+</div><div><br /></div><div>In order to prevent a user program from reading uninitialized vram all textures must be cleared before being used. In order to increase the speed of programs that upload a lot of textures this clearing happens lazily. If you call glTexImage(..., null) the command buffer will create the texture level and mark it as unclear. Before any read or write to that texture the command buffer will clear it.</div><div><br /></div><div>If you add functions that update textures you need to call the code that clears an uncleared level by calling TextureManager::ClearTextureLevel for the level in question. You can see examples of this in GLES2DecoderImpl::DoTexImage2D, GLES2DecoderImpl::DoCopyTexSubImage2D, etc..</div>
+<h2><a name="TOC-OpenGL-Quirks-to-be-aware-of"></a>OpenGL Quirks to be aware of<br /></h2><div><ul><li>There are N * M texture binding points. <br /><br />The reference pages for OpenGL ES 2.0 were derived from OpenGL 1.0 written in 1993 when maybe there was only 1 texture allowed and talk about 2 binding points, GL_TEXTURE_2D, and GL_TEXTURE_CUBE_MAP.  But, glActiveTexture select the active texture slot, each one has these binding points. To give an example<br /><br /><font face="'courier new', monospace">GLuint textures[2];<br />glGenTextures(2, textures);<br />texture0 = textures[0];<br />texture1 = textures[1];<br />glBindTexture(GL_TEXTURE_2D, texture0);<br />glActiveTexture(GL_TEXTURE1);<br />glBindTexture(GL_TEXTURE_2D, texture1);<br />glActiveTexture(GL_TEXTURE0);<br /><br />// This command will effect texture0 not texture1<br />glTexImage2D(GL_TEXTURE_2D, ....<br /></font><br />As more texture targets are added there are more binding points.<br /><br /></li><li>glGenXXX only reserves a name, it does not create a resource.<br /><br />In other worlds<br /><br /><font face="'courier new', monospace">GLuint tex;<br />glGenTextures(1, &amp;tex);<br />printf("%s\n", glIsTexture(tex) ? "true" : "false");  // prints false<br />glBindTexture(GL_TEXTURE_2D, tex);<br />printf("%s\n", glIsTexture(tex) ? "true" : "false");  // prints true<br /></font><br />This is a arguably a bug in the command buffer right now though there is code to work around it. You'll see we create internal tracking objects on glGenXXX but they are marked as invalid until glBindXXX time (except for Queries)<br /><br /></li><li>glBindXXX creates objects.<br /><br />You do NOT have to call glGenXXX before calling glBindXXX. You can make up any ids you like on your own for buffers, framebuffers, renderbuffers and textures and GL will automatically create an object for you when you call glBindXXX.<br /><br />Note: This is not true for Queries, Programs and Shaders.<br /><br /></li><li>Resources are ref counted.<br /><br />This has many issues. In general, calling glDeleteXXX does 2 things. It released the 'id' so the 'id' if used again, will generate a new resource.  It releases the references in the current context's state and the current context's bound objects BUT NO WHERE ELSE.<br /><br />So: glDeleteTextures will free the ids for those textures and clear the references from this contexts texture units and from the current framebuffer object. It will NOT clear the references from other framebuffer objects nor other contexts.<br /><br />Programs and Shaders are far more quirky. <br /><br /></li><li>Framebuffer objects can not be shared across contexts.<br /><br />First all objects are declared as shared by then Appendix C of the OpenGL spec says that FBOs can no actually be shared.<br /><br /></li><li>Texture id 0 is the default texture.<br /><br />There's no such thing as turning off textures in OpenLG ES 2.0. Binding texture id = 0 just binds the default texture. All the normal texture commands can effect this default texture.</li></ul></div><h2><a name="TOC-OpenGL-ES-2.0-incompatibilities"></a>OpenGL ES 2.0 incompatibilities</h2>
+<h3><a name="TOC-Client-side-arrays"></a>Client side arrays</h3>
+<div>Client side arrays refers to the ability to store vertex data in client side memory and have OpenGL reference it directly. The command buffer itself does not support this. All vertex data must be put in an OpenGL buffer. </div>
+<div><br />
+</div>
+<div>To keep compatibility the client side class, GLES2Implementation, emulates client side arrays by tracking the OpenGL attribute state and at draw time, copying any client side arrays into a buffer, updating the vertex attributes to use this buffer, issuing the draw call, then restoring the vertex attribute state.  This is a very slow operation and because there is no way to know when the client has changed any of its data those buffers must be updated with every draw call. For this reason, and because more modern versions of OpenGL require it, client side array emulation is compiled out for everything except Native Client.</div>
+<h3><a name="TOC-GL_FIXED"></a>GL_FIXED</h3><div>OpenGL ES 2.0 is required to support GL_FIXED as an attribute type (an argument to glVertexAttribPointer). Desktop GPUs do not support this.</div><div><br /></div><div>The command buffer has optional support for this. Turning it on requires calling glEnableFeatureCHROMIUM("pepper3d_support_fixed_attribs"); as one of the first calls into GL. This makes the command buffer keep it's own copy of all GL buffers. At DrawXXX time, any attributes that are of type GL_FIXED are pulled out of their respective buffers, converted to float and copied to a temp buffer. The attributes are changed to point to this temp buffer. Then the draw happens and the attributes are reset to their previous state.</div><div><br /></div><div>Clearly this is slow and requires lots of memory.  It is there solely to help port OpenGL ES 2.0 apps to NaCl and to pass the OpenGL ES 2.0 conformance tests.</div><div><br /></div>
+<div><span style="font-size:20px;font-weight:bold">Refactoring Ideas:</span></div>
+<h3><a name="TOC-Separating-decoding-the-command-buffer-from-emulating-OpenGL-ES-2.0"></a>Separating decoding the command buffer from emulating OpenGL ES 2.0</h3>
+<div>Currently those 2 responsibilities are mixed together in GLES2DecoderImpl. There has been some discussion of separating them. A few issues off the top of my head</div>
+<h4><a name="TOC-1-Validating-shared-memory"></a>#1) Validating shared memory</h4>
+<div>As one example the command for TexImage2D gets passed a shared memory id, an offset and a size. Before the real glTexImage2D is called the service needs to validate that the id is a valid shared memory id, that the offset and size are whole contained inside that shared memory, that the call go glTexImage2D is going to only reference memory instead that shared memory region. To do that requires potentially knowing various state that would normally be not efficiently query-able given a separated OpenGL ES emulation. It's possible the needed state could be easily exposed through separate functions or else maybe changing TexImage2D and similar commands so the size is explicit 'size' instead of implicit 'width * height * type * format'.</div>
+<h4><a name="TOC-2-Dealing-with-resource-ids"></a>#2) Dealing with resource ids</h4>
+<div>OpenGL ES 2.0 uses int ids for resources. The client uses one set of ids and the service a different set. A mapping from a client id to the service id is kept by the service. In order to avoid a round trip from client to server to manage those ids, for clients context that are not sharing resources, the ids are completely managed on the client and just their usage is communicated to the service. The service makes up a service id to associate with a given client id as needed. Under the current design this works. If the command buffer code was separated from the OpenGL ES 2.0 emulation code a new method of managing these ids would need to be inserted, possibly requiring a double mapping, mapping a client id to a command buffer service id and mapping a command buffer service id to the OpenGL ES 2.0 emulation id. Again, their may be ways to design out that issue.</div>
+<h3><a name="TOC-Moving-functionally-from-GLES2DecoderImpl-to-the-various-resource-managers"></a>Moving functionally from GLES2DecoderImpl to the various resource managers</h3>
+<div>GLES2DecoderImpl is HUGE. Nearly 8000 lines. There's been talk of moving large chunks of functionality to the various resource managers. For example, move all handling of the texture functions, TexImage2D, TexSubImage2D, TexParameter, CopyTexImage2D, CopyTexSubImage2D, CompressedTexImage2D, CompressedTexSubImage2D, GenTexture, DeleteTexture, IsTexture, TexStorage2DEXT from GLES2DecoderImpl to TextureManager. </div>
+<div><br />
+</div>
+<div>I'd love to see that happen. Unfortunately I expect it's not a small amount of work. In particular fixing up all the unit tests</div>
+<div><br />
+</div>
+<div>Still, it seems like it would be a much cleaner implementation to go that route.</div>
+<h3><a name="TOC-Separate-command-generation-from-OpenGL-ES"></a>Separate command generation from OpenGL ES</h3><div>build_gles2_cmd_buffer.py has a nearly 1 to 1 mapping of OpenGL ES functions to commands. Ideally the commands in the command buffer would be separate from the OpenGL api so that it would be easier to add any command needed and not have to expose it as an OpenGL ES extension.</div><h3><a name="TOC-Remove-legacy-code"></a>Remove legacy code</h3>
+<div>Originally the command buffer commands were going to be the public API to the gpu process with the OpenGL ES API as a wrapper. Most game consoles allow you to work directly with command buffers which is one reason for their performance. Being able to work directly with command buffers means you can pre-compute command buffers and patch them on the fly as needed which in turn means your code and do the minimal amount of work and therefore gain a lot of speed. Eventually it was decided not to expose the command buffer commands directly but there is still code based on the original design that could be removed.</div><h4><a name="TOC-low-level-commands"></a>low-level commands</h4><h4><a name="TOC-Implemented-in-src-gpu-command_buffer-client-cmd_buffer_helper.cc-src-gpu-command_buffer-common-cmd_buffer_common.h-and-src-gpu-command_buffer-service-common_decoder.cc-are-functions-that-implement-JUMP-CALL-and-RETURN.-These-functions-intern-influence-som"></a><span style="font-weight:normal">Implemented in src/gpu/command_buffer/client/cmd_buffer_helper.cc, src/gpu/command_buffer/common/cmd_buffer_common.h and  src/gpu/command_buffer/service/common_decoder.cc are functions that implement JUMP, CALL and RETURN. These functions intern influence some of the design constraints of the rest of the system. They are not needed unless command buffers are a public interface and could be removed.</span></h4><h4><a name="TOC-3-types-of-commands"></a>
+3 types of commands</h4><div>build_gles2_cmd_buffer.py generates 3 versions of many functions. One for each of the data transfer modes above. For example TexImage2D, TexImage2DImmediate and TexImage2DBucket are respectively the transfer buffer implementation of TexImage2D, the data-in-the-command-buffer version of TexImage2D and the bucket version of TexImage2D. When the command buffer was the public interface it seemed important to have all 3 as they each have their pluses and minuses. Now though only the commands used by GLES2Implementation are needed. Maybe the code that generates all 3 versions should be retired.</div><h4><a name="TOC-remove-_CMD_ID_TABLE"></a>remove _CMD_ID_TABLE</h4><div> in build_gles2_cmd_buffer.py _CMD_ID_TABLE's sole purpose is to make sure the ids of commands do not change. This was important when commands were going to be a public API. It no longer matters and can be removed and commands and change ids any time.</div><h4><a name="TOC-size-in-entries"></a>size in entries</h4><div>Left over from the O3D code, the command buffer works on CommandBufferEntry units. Each unit is 32 bits and sizes of commands and command data is calculated in those units. There's a lot of superfluous math involved in converting to an from those units. If instead the code was refactored so that the size of commands was in bytes all of that extra math code could disappear.</div><div>  </div><div><br /></div><div><br /></div><div><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/gpu-command-buffer">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9pW2euRoh4pBEt4dfd7CxxU0BtcqUgXUpj6ddr5HxNx3D7P5p0Ky6ocvxEIn6tTya8XN113uxLwKEW82c3cJzK0jdZZX7FTdZKEXzHW3Pmanhip1j/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

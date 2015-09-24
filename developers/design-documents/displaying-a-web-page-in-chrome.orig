@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/displaying-a-web-page-in-chrome","deleted":false,"title":"How Chromium Displays Web Pages","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/displaying-a-web-page-in-chrome\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"How Chromium Displays Web Pages","locale":"en","wuid":"wuid:gx:7ccbb2dbcb426124","revision":27,"path":"/developers/design-documents/displaying-a-web-page-in-chrome","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"displaying-a-web-page-in-chrome","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="How Chromium Displays Web Pages - The Chromium Projects" />
+<meta itemprop="name" content="How Chromium Displays Web Pages - The Chromium Projects" />
+<meta property="og:title" content="How Chromium Displays Web Pages - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>How Chromium Displays Web Pages - The Chromium Projects</title>
+<meta itemprop="image" content="https://docs.google.com/drawings/pub?id=1gdSTfvLxbJDbX8oiWo5LTwAmXmdMQvjoUhYEhfhj0-k&amp;w=473&amp;h=211" />
+<meta property="og:image" content="https://docs.google.com/drawings/pub?id=1gdSTfvLxbJDbX8oiWo5LTwAmXmdMQvjoUhYEhfhj0-k&amp;w=473&amp;h=211" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">How Chromium Displays Web Pages</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<p>
+      This document describes how web pages are displayed in Chromium from the bottom up. Be sure you have read the <a href="http://www.chromium.org/developers/design-documents/multi-process-architecture">multi-process architecture</a> design document. You will especially want to understand the block diagram of major components. You may also be interested in <a href="http://www.chromium.org/developers/design-documents/multi-process-resource-loading">multi-process resource loading</a> for how pages are fetched from the network.
+      </p>
+<h2><a name="TOC-Conceptual-application-layers"></a>Conceptual application layers</h2><div><div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><div></div><div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://docs.google.com/drawings/pub?id=1gdSTfvLxbJDbX8oiWo5LTwAmXmdMQvjoUhYEhfhj0-k&amp;w=473&amp;h=204" imageanchor="1"><img border="0" src="https://docs.google.com/drawings/pub?id=1gdSTfvLxbJDbX8oiWo5LTwAmXmdMQvjoUhYEhfhj0-k&amp;w=473&amp;h=211" /></a></div><div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><font size="1">(The original Google Doc for this illustration is http://goo.gl/MsEJX which is open for editing by any @chromium.org)</font></div><br /></div></div><div><br /></div><div>Each box represents a conceptual application layer. No layer should have knowledge of or dependencies on any higher-level layers.</div><div><ul><li><b>WebKit:</b> Rendering engine shared between Safari, Chromium, and all other WebKit-based browsers. The <b>Port</b> is a part of WebKit that integrates with platform dependent system services such as resource loading and graphics.</li><li><b>Glue:</b> Converts WebKit types to Chromium types. This is our "WebKit embedding layer." It is the basis of two browsers, Chromium, and test_shell (which allows us to test WebKit).</li><li><b>Renderer / Render host: </b>This is Chromium's "multi-process embedding layer." It proxies notifications and commands across the process boundary.</li><li><b>WebContents: </b>A reusable component that is the main class of the Content module. It's easily embeddable to allow multiprocess rendering of HTML into a view. See the <a href="http://www.chromium.org/developers/content-module">content module pages</a> for more information.</li><li><b style="font-size:10pt">Browser:</b><span style="font-size:10pt"> Represents the browser window, it contains multiple WebContentses.</span></li><li><b>Tab Helpers</b>: Individual objects that can be attached to a WebContents (via the WebContentsUserData mixin). The Browser attaches an assortment of them to the WebContentses that it holds (one for favicons, one for infobars, etc).</li></ul></div><h2><a name="TOC-WebKit"></a>WebKit</h2>
+We use the <a href="http://webkit.org/" rel="nofollow">WebKit</a> open-source project to lay out web pages. This code is pulled from Apple and stored in the <span style="font-family:courier new,monospace">/third_party/WebKit</span> directory. WebKit consists primarily of "WebCore" which represents the core layout functionality, and "JavaScriptCore" which runs JavaScript. We only run JavaScriptCore for testing purposes, normally we replace it with our high performance V8 JavaScript engine. We do not actually use the layer that Apple calls "WebKit," which is the embedding API between WebCore and OS X applications such as Safari. We normally refer to the code from Apple generically as "WebKit" for convenience.
+
+<h3><a name="TOC-The-WebKit-port"></a>The WebKit port</h3>
+<p>At the lowest level we have our WebKit "port." This is our implementation of required platform-specific functionality that interfaces with the platform-independent WebCore code. These files are located in the WebKit tree, typically in <font face="'courier new', monospace">chromium</font> directories or as Chromium-suffixed files. Much of our port is not actually OS-specific: you could think of it as the "Chromium port" of WebCore. Some parts, like font rendering, must be handled differently for each platform.</p>
+<ul>
+<li>Network traffic is handled by our <a href="http://www.chromium.org/developers/design-documents/multi-process-resource-loading" style="color:rgb(0,102,204);outline-style:none">multi-process resource loading</a> system rather than being handed off to the OS directly from the render process.</li>
+<li>Graphics uses the Skia graphics library developed for Android. This is a cross-platform graphics library and handles all images and graphics primitives except for text. Skia is located in <span style="font-family:courier new,monospace">/</span><span><span style="font-family:courier new,monospace">t</span></span><span style="font-family:courier new,monospace">hird_party/skia</span>. The main entrypoint for graphics operations is <span style="font-family:courier new,monospace">/webkit/port/platform/graphics/GraphicsContextSkia.cpp</span>. It uses many other files in the same directory as well as from <span style="font-family:courier new,monospace">/base/gfx</span>.</li>
+</ul>
+<h3><a name="TOC-The-WebKit-glue"></a>The WebKit glue</h3>
+
+The Chromium application uses different types, coding styles, and code layout than the third-party WebKit code. The WebKit "glue" provides a more convenient embedding API for WebKit using Google coding conventions and types (for example, we use std::string instead of <span style="font-family:courier new,monospace">WebCore::String</span> and <span style="font-family:courier new,monospace">GURL</span> instead of <span style="font-family:courier new,monospace">KURL</span>). The glue code is located in <span style="font-family:courier new,monospace">/webkit/glue</span>. The glue objects are typically named similar to the WebKit objects, but with "Web" at the beginning. For example, <span style="font-family:courier new,monospace">WebCore::Frame</span> becomes <span style="font-family:courier new,monospace">WebFrame</span>.
+
+
+<p>The WebKit "glue" layer insulates the rest of the Chromium code base from WebCore data types to help minimize the impact of WebCore changes on the Chromium code base.  As such, WebCore data types are never used directly by Chromium.  APIs are added to the WebKit "glue" for the benefit of Chromium when it needs to poke at some WebCore object.</p>
+<p>The "test shell" application is a bare-bones web browser for testing our WebKit port and glue code. It uses the same glue interface for communicating with WebKit as Chromium does. It provides a simpler way for developers to test new code without having many complicated browser features, threads, and processes. This application is also used to run the automated WebKit tests. However, the downside of the "test shell" is that it doesn't exercise WebKit as Chromium does, in a multi-process way. The content module is embedded in an application called "content shell" which will soon be running the tests instead.</p>
+<h2><a name="TOC-The-render-process"></a>The render process</h2>
+<div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><a href="http://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome/rendering%20renderer2.png?attredirects=0" style="border-width:0px;background-color:transparent"></a><div style="text-align:center;display:block"><a href="http://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome/rendering%20renderer2.png?attredirects=0" style="border-width:0px;background-color:transparent"></a><a href="http://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome/Renderingintherenderer-v2.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1342584100941/developers/design-documents/displaying-a-web-page-in-chrome/Renderingintherenderer-v2.png" /></a></div><br /></div><div style="text-align:left;display:block;margin-right:auto;margin-left:auto">Chromium's render process embeds our WebKit port using the glue interface. It does not contain very much code: its job is primarily to be the renderer side of the <a href="http://www.chromium.org/developers/design-documents/inter-process-communication">IPC</a> channel to the browser..</div>
+<p>The most important class in the renderer is the <span style="font-family:courier new,monospace">RenderView</span>, located in <span style="font-family:courier new,monospace">/content/renderer/render_view_impl.cc</span>. This object represents a web page. It handles all navigation-related commands to and from the browser process. It derives from <span style="font-family:courier new,monospace">RenderWidget</span> which provides painting and input event handling. The <span style="font-family:courier new,monospace">RenderView</span> communicates with the browser process via the global (per render process) <span style="font-family:courier new,monospace">RenderProcess</span> object.</p>
+<div><span style="font-weight:bold">FAQ: </span><span><span style="font-weight:bold">What's the difference between RenderWidget and RenderView?</span></span><span style="font-style:italic"> </span><span style="font-family:courier new">RenderWidget</span> maps to one <span style="font-family:courier new">WebCore::Widget</span> object by implementing the abstract interface in the glue layer called <span style="font-family:courier new,monospace">WebWidgetDelegate</span>.. This is basically a Window on the screen that receives input events and that we paint into. A <span style="font-family:courier new">RenderView</span> inherits from <span style="font-family:courier new">RenderWidget</span> and is the contents of a tab or popup Window. It handles navigational commands in addition to the painting and input events of the widget. There is only one case where a <span style="font-family:courier new">RenderWidget</span> exists without a <span style="font-family:courier new">RenderView</span>, and that's for select boxes on the web page. These are the boxes with the down arrows that pop up a list of options. The select boxes must be rendered using a native window so that they can appear above everything else, and pop out of the frame if necessary. These windows need to paint and receive input, but there isn't a separate "web page" (<span style="font-family:courier new,monospace">RenderView</span>) for them.</div>
+<h3><a name="TOC-Threads-in-the-renderer"></a>Threads in the renderer</h3>
+Each renderer has two threads (see the <a href="http://www.chromium.org/developers/design-documents/multi-process-architecture" style="outline-style:none;color:rgb(85,26,139)">multi-process architecture</a> page for a diagram, or <a href="http://www.chromium.org/developers/design-documents/threading">threading in Chromium</a> for how to program with them). The render thread is where the main objects such as the <span style="font-family:courier new,monospace">RenderView</span> and all WebKit code run. When it communicates to the browser, messages are first sent to the main thread, which in turn dispatches the message to the browser process. Among other things, this allows us to send messages synchronously from the renderer to the browser. This happens for a small set of operations where a result from the browser is required to continue. An example is getting the cookies for a page when requested by JavaScript. The renderer thread will block, and the main thread will queue all messages that are received until the correct response is found. Any messages received in the meantime are subsequently posted to the renderer thread for normal processing.<br />
+<h2><a name="TOC-The-browser-process"></a>The browser process</h2>
+<div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><a href="http://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome/rendering%20browser.png?attredirects=0" style="border-width:0px;background-color:transparent"><img src="http://www.chromium.org/_/rsrc/1220197831473/developers/design-documents/displaying-a-web-page-in-chrome/rendering%20browser.png" style="border-width:0px" /></a></div>
+<span style="font-size:13px;font-weight:normal"><br />
+</span>
+<h3><a name="TOC-Low-level-browser-process-objects"></a>Low-level browser process objects</h3>
+<p>All <a href="http://www.chromium.org/developers/design-documents/inter-process-communication" style="outline-style:none;color:rgb(85,26,139)">IPC</a> communication with the render processes is done on the I/O thread of the browser. This thread also handles all <a href="http://www.chromium.org/developers/design-documents/multi-process-resource-loading">network communication</a> which keeps it from interfering with the user interface.</p>
+<p>When a <span style="font-family:courier new">RenderProcessHost</span> is initialized on the main thread (where the user interface runs), it creates the new renderer process and a <span style="font-family:courier new">ChannelProxy</span> <a href="http://www.chromium.org/developers/design-documents/inter-process-communication" style="outline-style:none;color:rgb(85,26,139)">IPC</a> object with a named pipe to the renderer. This object runs on the I/O thread of the browser, listening to the named pipe to the renderer, and automatically forwards all messages back to the <span style="font-family:courier new,monospace">RenderProcessHost</span> on the UI thread. A <span style="font-family:courier new,monospace">ResourceMessageFilter</span> will be installed in this channel which will filter out certain messages that can be handled directly on the I/O thread such as network requests. This filtering happens in <span style="font-family:courier new,monospace">ResourceMessageFilter::OnMessageReceived</span>.</p>
+<p>The <span style="font-family:courier new,monospace">RenderProcessHost</span> on the UI thread is responsible for dispatching all view-specific messages to the appropriate <span style="font-family:courier new,monospace">RenderViewHost</span> (it handles a limited number of non-view-specific messages itself). This dispatching happens in <span style="font-family:courier new,monospace">RenderProcessHost::OnMessageReceived</span>.</p>
+<h3><a name="TOC-High-level-browser-process-objects"></a>High-level browser process objects</h3>
+<p>View-specific messages come into <span style="font-family:courier new,monospace">RenderViewHost::OnMessageReceived</span>. Most of the messages are handled here, and the rest get forwarded to the <span style="font-family:courier new,monospace">RenderWidgetHost</span> base class. These two objects map to the <span style="font-family:courier new,monospace">RenderView</span> and the <span style="font-family:courier new,monospace">RenderWidget</span> in the renderer (see "The Render Process" above for what these mean). Each platform has a view class (<font face="courier new, monospace">RenderWidgetHostView[Aura|Gtk|Mac|Win]</font>) to implement integration into the native view system.</p>
+<p>Above the <span style="font-family:courier new,monospace">RenderView<span style="font-family:Arial">/</span>Widget</span> is the <span style="font-family:courier new,monospace">WebContents</span> object, and most of the messages actually end up as function calls on that object. A <span style="font-family:courier new,monospace">WebContents</span> represents the contents of a webpage. It is the top-level object in the content module, and has the responsibility of displaying a web page in a rectangular view. See the <a href="http://www.chromium.org/developers/content-module">content module pages</a> for more information.</p><p>The <font face="courier new, monospace">WebContents</font> object is contained in a <font face="courier new, monospace">TabContentsWrapper</font>. That is in <font face="courier new, monospace">chrome/</font> and is responsible for a tab.</p><p><font size="4"><b>Illustrative examples</b></font></p>
+Additional examples covering navigation and startup are in <a href="http://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code">Getting Around the Chromium Source Code</a>.<br />
+<h3><a name="TOC-Life-of-a-set-cursor-message"></a>Life of a "set cursor" message</h3>
+Setting the cursor is an example of a typical message that is sent from the renderer to the browser. In the renderer, here is what happens.<br />
+<ul>
+<li>Set cursor messages are generated by WebKit internally, typically in response to an input event. The set cursor message will start out in <span style="font-family:courier new,monospace">RenderWidget::SetCursor</span> in <span style="font-family:courier new,monospace">content/renderer/render_widget.cc</span>.</li>
+<li>It will call <span style="font-family:courier new,monospace">RenderWidget::Send</span> to dispatch the message. This method is also used by <span style="font-family:courier new,monospace">RenderView</span> to send messages to the browser. It will call <span style="font-family:courier new,monospace">RenderThread::Send</span><span>.</span></li>
+<li>This will call the <span style="font-family:courier new,monospace">IPC::SyncChannel</span> which will internally proxy the message to the main thread of the renderer and post it to the named pipe for sending to the browser.</li>
+</ul>
+<p>Then the browser takes control:</p>
+<ul>
+<li>The <span style="font-family:courier new,monospace">IPC::ChannelProxy</span> in the <span style="font-family:courier new,monospace">RenderProcessHost</span> receives all message on the I/O thread of the browser. It first sends them through the <span style="font-family:courier new">ResourceMessageFilter</span> that dispatches network requests and related messages directly on the I/O thread. Since our message is not filtered out, it continues on to the UI thread of the browser (the <span style="font-family:courier new,monospace">IPC::ChannelProxy</span> does this internally).</li>
+<li><span style="font-family:courier new,monospace">RenderProcessHost::OnMessageReceived</span> in <span style="font-family:courier new,monospace">content/browser/renderer_host/render_process_host_impl.cc</span> gets the messages for all views in the corresponding render process. It handles several types of messages directly, and for the rest forwards to the appropriate <span style="font-family:courier new,monospace">RenderViewHost</span> corresponding to the source <span style="font-family:courier new,monospace">RenderView</span> that sent the message.</li>
+<li>The message arrives at <span style="font-family:courier new,monospace">RenderViewHost::OnMessageReceived</span> in <span style="font-family:courier new,monospace">content/browser/renderer_host/render_view_host_impl.cc</span>. Many messages are handled here, but ours is not because it's a message sent from the <span style="font-family:courier new,monospace">RenderWidget</span> and handled by the <span style="font-family:courier new,monospace">RenderWidgetHost</span>.</li>
+<li>All unhandled messages in <span style="font-family:courier new,monospace">RenderViewHost</span> are automatically forwarded to the <span style="font-family:courier new,monospace">RenderWidgetHost</span>, including our set cursor message.</li>
+<li>The message map in <span style="font-family:courier new,monospace">content/browser/renderer_host/render_view_host_impl.cc</span> finally receives the message in <span style="font-family:courier new,monospace">RenderWidgetHost::OnMsgSetCursor</span> and calls the appropriate UI function to set the mouse cursor.</li>
+</ul>
+<h3><a name="TOC-Life-of-a-mouse-click-message"></a>Life of a "mouse click" message</h3>
+<p>Sending a mouse click is a typical example of a message going from the browser to the renderer.</p>
+<ul>
+<li>The Windows message is received on the UI thread of the browser by <span style="font-family:courier new,monospace">RenderWidgetHostViewWin::OnMouseEvent</span> which then calls <span style="font-family:courier new,monospace">ForwardMouseEventToRenderer</span> in the same class.</li>
+<li>The forwarder function packages the input event into a cross-platform <span style="font-family:courier new,monospace">WebMouseEvent</span> and ends up sending it to the <span style="font-family:courier new,monospace">RenderWidgetHost</span> it is associated with.</li>
+<li><span style="font-family:courier new,monospace">RenderWidgetHost::ForwardInputEvent</span> creates an IPC message <span style="font-family:courier new,monospace">ViewMsg_HandleInputEvent</span>, serializes the <span style="font-family:courier new,monospace">WebInputEvent</span> to it, and calls <span style="font-family:courier new,monospace">RenderWidgetHost::Send</span>.</li>
+<li>This just forwards to the owning <span style="font-family:courier new,monospace">RenderProcessHost::Send</span> function, which in turn gives the message to the <span style="font-family:courier new,monospace">IPC::ChannelProxy</span>.</li>
+<li>Internally, the <span style="font-family:courier new,monospace">IPC::ChannelProxy</span> will proxy the message to the I/O thread of the browser and write it to the named pipe of the corresponding renderer.</li>
+</ul>
+<p>Note that many other types of messages are created in the <span style="font-family:courier new,monospace">WebContents</span>, especially navigational ones. These follow a similar path from the <span style="font-family:courier new,monospace">WebContents</span> to the <span style="font-family:courier new,monospace">RenderViewHost</span>.</p>
+<p>Then the renderer takes control:</p>
+<ul><li><span style="font-family:courier new,monospace">IPC::Channel</span> on the main thread of the renderer reads the message sent by the browser, and <span style="font-family:courier new,monospace">IPC::ChannelProxy</span> proxies to the renderer thread.</li><li><span style="font-family:courier new,monospace">RenderView::OnMessageReceived</span> gets the message. Many types messages are handled here directly. Since the click message is not, it falls through (with all other unhandled messages) to <span style="font-family:courier new,monospace">RenderWidget::OnMessageReceived</span> which in turn forwards it to <span style="font-family:courier new">RenderWidget::OnHandleInputEvent</span>.</li><li>The input event is given to <span style="font-family:courier new,monospace">WebWidgetImpl::HandleInputEvent</span> where it is converted to a WebKit <span style="font-family:courier new,monospace">PlatformMouseEvent</span> class and given to the <span style="font-family:courier new,monospace">WebCore::Widget</span> class inside WebKit.</li></ul>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Attachments" title="Attachments"><div class="sites-translucent sites-symbol" aria-hidden="true">Č</div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="http://www.gstatic.com/sites/p/56e332/system/app/images/spinner.gif" /></span><div class="sites-attachments-update-text">Updating...</div></div></div><div class="sites-attachments-separator"></div>
+<div id="attachment-wuid:gx:5a35f853f740fc9d"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="http://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=Y2hyb21pdW0ub3JnfGRldnxneDo1YTM1Zjg1M2Y3NDBmYzlk">Renderingintherenderer v2.ai</a> <div class="sites-translucent">(426k)</div></div><div class="sites-attachments-author">Brett Wilson, <div class="sites-translucent">Jul 17, 2012, 9:01 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:5a35f853f740fc9d">v.1</a></div><div id="attachment-download-wuid:gx:5a35f853f740fc9d" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/design-documents/displaying-a-web-page-in-chrome/Renderingintherenderer%20v2.ai?attredirects=0&amp;d=1" aria-label="Download Renderingintherenderer v2.ai" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:5d407a940efea107"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="http://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=Y2hyb21pdW0ub3JnfGRldnxneDo1ZDQwN2E5NDBlZmVhMTA3">Renderingintherenderer.ai</a> <div class="sites-translucent">(530k)</div></div><div class="sites-attachments-author">Brett Wilson, <div class="sites-translucent">Jul 21, 2008, 9:27 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:5d407a940efea107">v.1</a></div><div id="attachment-download-wuid:gx:5d407a940efea107" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/design-documents/displaying-a-web-page-in-chrome/Renderingintherenderer.ai?attredirects=0&amp;d=1" aria-label="Download Renderingintherenderer.ai" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div style="height: 10px"></div>
+</div>
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/displaying-a-web-page-in-chrome">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9hHWXoc5kF6-hvywY5mTAXiMuHU8UkimgTpaqeoJdfxk36VH28mNTPtbiUD7QjZK2yaNhNxLzkELIOHmP86hSZswXekrRSF8DkUi_jUb6xwa8KSrx/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

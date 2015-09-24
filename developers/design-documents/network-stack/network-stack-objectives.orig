@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/network-stack","deleted":false,"title":"Network Stack","dir":"ltr"},{"path":"/developers/design-documents/network-stack/network-stack-objectives","deleted":false,"title":"Network Stack Objectives","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/network-stack-objectives\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/network-stack","parentWuid":"wuid:gx:1e5bf38b977efb4d","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Network Stack Objectives","locale":"en","wuid":"wuid:gx:7cd56eeb155cf5ae","revision":198,"path":"/developers/design-documents/network-stack/network-stack-objectives","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"network-stack-objectives","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Network Stack Objectives - The Chromium Projects" />
+<meta itemprop="name" content="Network Stack Objectives - The Chromium Projects" />
+<meta property="og:title" content="Network Stack Objectives - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Network Stack Objectives - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="/developers/design-documents/network-stack" dir="ltr">Network Stack</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Network Stack Objectives</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><h1><a name="TOC-1"></a><font><font>
+<h3><a name="TOC-2"></a><span style="font-size:x-large;font-weight:normal"><div></div></span></h3></font></font></h1><h2><a name="TOC-Q2-2014-Objectives"></a>Q2 2014 Objectives</h2><h3><a name="TOC-Blink"></a>Blink</h3><div><ul><li>Make WebSocket scalable</li><ul><li><span style="font-size:10pt;background-color:transparent">Switch WebSocket to new stack in Chromium</span></li><li><span style="font-size:10pt;background-color:transparent">Ensure that WS/HTTP2 mapping work with HTTP2 spec</span></li><li>Revive upgrade success rate experiment</li><li>Make permessage-compress spec ready for IESG review</li></ul><li>Extend XMLHttpRequest for streaming use cases</li><ul><li>Streams API standardization</li></ul><li><span style="font-size:10pt;background-color:transparent">Optimize networking APIs</span></li><li><span style="font-size:10pt;background-color:transparent">Promises Blink bindings</span></li></ul></div><h2><a name="TOC-Q4-2011-Objectives"></a>Q4 2011 Objectives</h2><h4><a name="TOC-Performance"></a>Performance</h4><ul><li>SPDY<br /></li><li>mobile tuning<br /></li><li>DNS resolver</li><li>HTTP pipelining prototype<br /></li></ul><h4><a name="TOC-SSL"></a><b>SSL</b></h4><ul><li>captive portals support</li><li>origin-bound certificates</li><li>DOMCrypt API<br /></li></ul><h4><a name="TOC-Developer-productivity"></a><b>Developer productivity</b></h4><ul><li>analysis view of net-internals logs<br /></li><li>API cleanup<br /></li></ul><h2><a name="TOC-Q2-2011-Objectives"></a>Q2 2011 Objectives</h2><h4><a name="TOC-Improve-test-coverage"></a>Improve test coverage</h4><ul><li>Add tests of SSL client authentication (wtc)</li><li>Set up automated test environment for HTTP Negotatie and NTLM authentication (asanka, cbentzel)</li><li>Add drag-n-drop, fine-grained cancels tests to Downloads (rdsmith,ahendrickson,asanka)</li></ul><h4><a name="TOC-Fix-bugs-and-clean-up-refactor-code"></a>Fix bugs and clean up / refactor code</h4><ul><li>Clean up network stack API, threading model, etc. (willchan, wtc)</li><li>Use base, net, and crypto as DLLs on Windows (rvargas)</li><li>Refactor Socket classes to support server, UDP, and other transport sockets (mbelshe, willchan)<br /></li><li>Finish Downloads System major refactors (dataflow, file determination, state granularity) (ahendrickson, rdsmith)</li><li>Fix Download incorrect name problems -- see http://crbug.com/78200 (asanka)</li><li>Fix Downloads error detection and cache interface (ahendrickson)</li><li>Substantially reduce downloads crashers.  Tentative Goal: halve "crashes touching downloads directory / total downloads initiated" metric (rdsmith, others)</li></ul></div><div><h4><a name="TOC-Improve-network-performance-features"></a>Improve network performance / features</h4><ul><li>SPDY (willchan)</li><li>NSS certificate verification and revocation checking (wtc)</li><li>SSL client authentication to destination server through HTTPS proxy (mattm, wtc)</li><li>WPAD over DHCP (joi)<br /></li><li>Roll out Anti-DDoS functionality (joi)</li><li>[Stretch] Add Download resumption after error (ahendrickson)</li></ul><div><b>Documentation</b></div></div><div><ul><li>Write design document for HTTP authentication (cbentzel)</li></ul></div><div><h2><a name="TOC-Q1-2011-Objectives"></a>Q1 2011 Objectives</h2><div><font><font size="2">Improve test coverage<br /></font></font><ul><font><font size="2"><li><span style="font-weight:normal">Set up test environment for HTTP Negotiate and NTLM authentication (asanka, cbentzel, wtc)<font color="#ff0000"> - 0.1 Have a manual test environment. Started work on automated test environment at the very end of the quarter</font></span></li><li><span style="font-weight:normal">Write new tests, enable and deflake existing ones for the download subsystem (rdsmith, ahendrickson) <font color="#ff0000">-- 0.8 Existing tests deflaked (major accomplishment), some new tests but not many.</font></span></li><li><span style="font-weight:normal">Add tests of SSL client authentication (wtc)</span><span style="font-weight:normal;font-size:13px;background-color:transparent"><span style="font-family:Arial;white-space:pre-wrap;font-size:small"> <font color="#ff0000">-- 0.0 Did not work on it.</font></span></span></li></font></font></ul><font><font size="2">Fix bugs and clean up / refactor code<br /></font></font><ul><font><font size="2"><li><span style="font-weight:normal">Fix download subsystem bugs - crashes, corruption, etc. (rdsmith, ahendrickson)<font color="#ff0000"> -- 0.6 Fixed several bugs, but didn't get anywhere near as far with this as intended.</font></span></li><li><span style="font-weight:normal">Clean up download subsystem code (rdsmith, ahendrickson)<font color="#ff0000"> -- 0.7  Control flow much cleaner, main path deraced.  Two important refactors not done last quarter (dataflow, file determination); will be highpri this quarter.</font></span></li><li><span style="font-weight:normal">Refactor safebrowsing code (lzheng)</span></li><li><span style="font-weight:normal"><span style="font-weight:bold"><span style="font-weight:normal">Fix HTTP authentication bugs - </span><span style="font-weight:normal">background tabs, authentication freezes/crashes, Negotiate authentication failures on Unix. (asanka, cbentzel) <font color="#ff0000">- 0.7 Addressed a lot of key remaining issues, such as background tab. </font></span></span></span></li><li><span style="font-weight:normal"><span style="font-weight:bold"><span style="font-weight:normal">Clean up network stack API - URLRequestContext, etc. (willchan)</span></span></span></li><li><span style="font-weight:normal"><span style="font-weight:bold"><span style="font-weight:normal">Use base as a DLL, a prerequisite for using net as a DLL (rvargas) <font color="#ff0000">- 0.7 working on getting projects to compile cleanly</font></span></span></span></li></font></font></ul><font><font size="2">Improve network performance / features<br /></font></font><ul><font><font size="2"><li><span style="font-weight:normal">TLS enhancements - OCSP stapling in NSS and integration with Windows CryptoAPI, Snap Start (wtc, agl, rsleevi)</span><font><font><font size="2"><span style="font-weight:normal"><font color="#ff0000"> -- 0.7 OCSP stapling turned on for Linux and Windows, but not Mac OS X. Finished implementation of Snap Start.<br /></font></span></font></font></font></li><li><span style="font-weight:normal">Add extension API for HTTP authentication prompt (stretch) (asanka, cbentzel)<font color="#ff0000"> - 0.0 did not start</font></span></li><li><span style="font-weight:normal">Make SPDY faster (mbelshe, willchan)</span></li><li><span style="font-weight:normal"><span style="font-family:Arial;white-space:pre-wrap">Relax <span style="border-collapse:collapse;font-family:arial,sans-serif;font-size:13px;white-space:normal">single-writer, multi-reader</span> locking of the http cache, allowing readers to start reading the parts of a resource that the writer has written (rvargas, gavinp) <font color="#ff0000">- 0.0, No progress.</font></span></span></li><li><span style="font-weight:normal"><span style="font-family:Arial;white-space:pre-wrap">Add server hint &amp; prefetching support - Link: header and link rel=prefetch. (gavinp) <font color="#ff0000">- 0.5, link rel=prefetch is supported, link header is not. </font></span></span></li><li><font face="Arial"><span style="font-weight:normal;white-space:pre-wrap">Release binary exploration protection for safebrowsing (lzheng)</span></font></li><li><font face="Arial"><span style="font-weight:normal;white-space:pre-wrap">Continue disk cache performance and reliability experiments (rvargas) <font color="#ff0000">- 0.8, One is done, the other one is blocked on infrastructure.</font></span></font></li><li><font face="Arial"><span style="font-weight:normal;white-space:pre-wrap">Implement offline (network disconnected) detection for Mac and Linux (eroman)</span></font></li></font></font></ul></div><h2><a name="TOC-Q4-2010-Objectives"></a>Q4 2010 Objectives</h2><div><div style="margin:0px"><span style="font-weight:normal;font-size:13px;background-color:transparent"><div><b>Improve test coverage</b></div><div><ul><li>Implement <a href="http://code.google.com/p/web-page-replay/">http://code.google.com/p/web-page-replay/</a> to provide more complete network stack coverage and catch performance regressions (tonyg,mbelshe) -- <font color="#ff0000">0.5 lots of good progress; up and running, not yet done!</font></li><li><a href="http://www.chromium.org/developers/design-documents/http-authentication">Improve tests for HTTP authentication</a>. (cbentzel, wtc) - <font color="#ff0000">0.2 Added unit tests and manual system-level tests, but still need automated system level tests</font><font color="#cc0000">.</font></li><li><a href="http://www.chromium.org/developers/design-documents/ssl-client-authentication">Add tests for SSL client authentication</a>. (wtc)<span style="font-family:Arial;white-space:pre-wrap;font-size:small"> <font color="#ff0000">-- 0.2. (by rsleevi) Implemented a better way to trust a test root CA that doesn't require changing the system certificate store. Regenerated test certificates to have long validity periods.</font></span></li></ul></div></span><h2 style="font-family:Times;font-weight:normal;background-color:transparent"><a name="TOC-Fix-bugs-and-clean-up-refactor-code1"></a><span style="font-size:small;font-family:Arial;font-weight:bold;white-space:pre-wrap">Fix bugs and clean up / refactor code</span></h2><ul style="font-family:Times;font-weight:normal"><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Fix bugs (everyone)</font></span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Improve network diagnostics (about:net-internals) to help fix bugs (mmenke, eroman)</font></span></li><li style="list-style-type:disc;font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2"><span style="background-color:transparent;color:rgb(0,0,0)">Clean up / support previously neglected code (Downloads </span><span style="background-color:rgb(255,255,255)"><font color="#ff0000">(rdsmith: 0.6)</font></span><span style="background-color:transparent;color:rgb(0,0,0)">, SafeBrowsing<span style="color:rgb(255,0,0)">(lzheng: 0.6)</span>, HTTP Auth, etc) (rdsmith, lzheng, ahendrickson, cbentzel)</span></font></span></li><li style="list-style-type:disc;font-family:Arial;background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Clean up valgrind reported issues in network tests (everyone) <font color="#ff0000">-- 0.3. Fixed some, but still have plenty more to fix.</font></font></span></li><li style="list-style-type:disc;font-family:Arial;background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Better modularize the network stack (willchan,eroman) <font color="#ff0000">-- 0.2. Lots of discussion, not many changes happened yet. A little work towards new URLRequestContexts</font></font></span></li></ul><h2 style="font-family:Times;font-weight:normal;background-color:transparent"><a name="TOC-Improve-network-performance-features1"></a><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:bold;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Improve network performance / features</font></span></h2><ul style="font-family:Times;font-weight:normal;background-color:transparent"><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Continue running cache experiments (request throttling, performance, reliability) (rvargas)</font></span><span style="white-space:pre-wrap;font-size:small"> -- <font color="#ff0000">0.9 Constant monitoring of the experiments and changes made as appriopriate.</font></span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Relax SWMR locking of the http cache (rvargas, gavinp)</font></span><span style="white-space:pre-wrap;font-size:small"> -- <font color="#ff0000">0.5 Work is under way, but nothing checked in yet.</font></span></li><li style="list-style-type:disc;font-family:Arial;background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Continue supporting SPDY development (mbelshe, etc) -- <font color="#ff0000">0.6 SPDY up and running on all google.com.  External partners starting to experiment.</font></font></span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">TLS latency enhancements (False Start, Snap Start, etc) (agl, wtc)</font></span><span style="white-space:pre-wrap;font-size:small"> <font color="#ff0000">-- 0.6. Added a certificate verification result cache.  False Start is enabled in M8, thanks to agl's hard work.  OCSP stapling works on Linux.</font></span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Better support prefetching mechanisms (Link: and X-Purpose headers, link rel=prefetch, resource prediction, preconnection) (gavinp, jar)</font></span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Continue work towards HTTP pipelining (vandebo) </font></span><span style="color:rgb(255,0,0);white-space:pre-wrap;font-size:small">-- 0.0. No progress.</span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Finish user certificate import and native SSL client authentication (wtc)</font></span><span style="white-space:pre-wrap;font-size:small"> <font color="#ff0000">-- 0.6. No progress on user certificate import.  Finished native SSL client authentication (rsleevi wrote the original patch), which completed the switchover to NSS for SSL.</font></span></li><li style="list-style-type:disc;font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Detect network disconnectivity and handle it better (eroman)</font></span></li></ul></div></div><h2><a name="TOC-Q3-2010-Objectives"></a>Q3 2010 Objectives</h2></div><div>Annotations on the status of each objective (at the close of the quarter) <font color="#ff0000">shown in red</font>.</div><h3><a name="TOC-High-level"></a>High level</h3><div><div><ul><li>Measure performance.</li><li>Improve performance.</li><li>Investigate and fix bugs.</li><li>Enterprise features.</li></ul><h3><a name="TOC-Specific-items"></a>Specific items</h3><div><b>Feature work and bug fixes for SSL library / crypto. (wtc, agl, rsleevi, davidben)</b></div></div><div><ul><li>Bring the NSS SSL library to feature parity with Windows Vista's SChannel. <font color="#ff0000">-- 0. Did not have time to work on this. Postponed to Q1 2011. Will work on native SSL client auth for NSS in Q4 2010.</font></li><li>Tackle long-standing bugs in Chrome's crypto and certificate code.  <font color="#ff0000">-- 0.3. Fixed some certificate verification bugs in NSS and Chrome. Didn't have time to tackle the major items such as thread-safe certificate cache and certificate verification result cache.</font></li><li><a href="http://code.google.com/p/chromium/issues/detail?id=148">Certificate enrollment with the HTML &lt;keygen&gt; tag</a>.  <font color="#ff0000">-- 0.7. davidben added UI and fixed many bugs in certificate enrollment. Remaining work is to <a href="http://code.google.com/p/chromium/issues/detail?id=37142">support all formats of application/x-x509-user-cert responses</a>, and then to test with various CAs.</font></li></ul><div><b>Feature work on download handling (ahendrickson)</b></div><div><ul><li>Resume partially completed downloads, including across Chrome restarts. <font color="#ff0000">-- 0.5?; preliminary CL sent out (<a href="http://codereview.chromium.org/3127008/show">http://codereview.chromium.org/3127008/show</a>)</font></li><li>Measure Chrome versus IE download performance to see whether it is in fact slower in chrome (user reports suggest this is the case). <font color="#ff0000">-- 0</font></li></ul><div><b>Improvements to cookie handling (rdsmith)</b></div></div><div><ul><li>Implement alternate eviction algorithm and measure impact (to reduce the cookies evicted while browsing). <font color="#ff0000">-- 1</font></li><li>(Stretch) <a href="http://code.google.com/p/chromium/issues/detail?id=44083">Restrict access of CookieMonster to IO Thread</a>. <font color="#ff0000">-- 0</font></li></ul><div><b>URL Prefetching (gavinp)</b></div><div><ul><li><a href="http://code.google.com/p/chromium/issues/detail?id=13505">Implement link rel=prefetch</a> and measure impact. <font color="#ff0000">-- 1.0; implemented, measurement shows 10% improvement of PLT</font><br /></li><li>Implement link HTTP headers and measure impact. <font color="#ff0000">-- 0.5; preliminary code reviews sent out.</font></li></ul><div><b>HTTP cache (rvargas, gavinp)</b></div><div><ul><li>Simultaneous streaming readers on ranges in a cache entry (to support video prefetch for YouTube). <font color="#ff0000">-- 0</font></li><li>Experiment with <a href="http://code.google.com/p/chromium/issues/detail?id=10727">request throttling at the cache layer</a> <font color="#ff0000">-- 1.0</font></li></ul><div><b>HTTP authentication (cbentzel)</b></div></div></div><div><ul><li>Integrated Authentication on all platforms. <font color="#ff0000">-- 0.9; NTLM on Linux/OSX not supported without auth prompt.</font></li><li>Add full proxy authentication support to <a href="http://code.google.com/p/chromium/issues/detail?id=47069">SocketStream</a> and <a href="http://code.google.com/p/chromium/issues/detail?id=46620">SPDY</a>. <font color="#ff0000">-- 0</font></li><li><a href="http://code.google.com/p/chromium/issues/detail?id=35021">System level tests for NTLM/Negotiate</a>. <font color="#ff0000">-- 0</font></li></ul><div><b>Simulated Network Tester (cbentzel, klm, tonyg)</b></div></div><div><ul><li>Implement basic pagecycler test over a DummyNet connection <font color="#ff0000">-- 0.7; work in progress for webpage replay (</font><a href="http://code.google.com/p/web-page-replay/wiki/GettingStarted">http://code.google.com/p/web-page-replay/wiki/GettingStarted</a>)</li><li>Record and playback of Alexa 500 rather than static pages from 10 years ago.  <font color="#ff0000">-- 0</font></li><li>(stretch): Minimize false positives enough to make this a standard buildbot.  <font color="#ff0000">-- 0</font></li></ul></div><div><b>Network Diagnostics (rdsmith, mmenke, eroman)</b></div></div><div><ul><li>Improve error pages to better communicate network error <font color="#ff0000">-- 0.7; new error codes for proxy and offline, and reworked some other confusing ones. Updated text in the works.</font></li><li>Improve error page to link to system network configurator <font color="#ff0000">-- 0; need to figure out sandboxable solution.</font></li><li>Improve network diagnostics tool for configuration problems <font color="#ff0000">-- 0; no changes</font></li></ul></div><div><b>Proxy handling</b></div><div><ul><li><a href="http://code.google.com/p/chromium/issues/detail?id=48930">Extension API for changing proxy settings</a> (pamg) <font color="#ff0000">-- 0.5</font></li><li><a href="http://code.google.com/p/chromium/issues/detail?id=11746">Execute PAC scripts out of process</a> (eroman) <font color="#ff0000">-- 0; punted</font></li></ul><div><b>Implement HTTP pipelining (vandebo)</b></div></div></div></div><div><ul><li><a href="http://crbug.com/8991">crbug.com/8991</a></li></ul></div><div><b>WebKit/Chrome network integration (tonyg)</b></div><div><ul><li>Support the WebTiming spec. <font color="#ff0000">-- 1.0; landed in Chrome 6.</font></li><li><a href="http://code.google.com/p/chromium/issues/detail?id=32407">Enable persisting disk cache of pre-parsed javascript</a>. <font color="#ff0000">-- 0</font></li><li>Pass all of the BrowserScope tests <font color="#ff0000">-- 0.9; ToT chromium scores 91/100 on the tests</font></li></ul><div><b>SafeBrowsing (lzheng)</b></div></div><div><ul><li><a href="http://code.google.com/p/chromium/issues/detail?id=47318">Add end to end tests for safe-browsing</a> <font color="#ff0000">-- 1.0</font></li><li>Extract the safe browsing code to its own library that can be re-used by other projects<font color="#ff0000"> -- 0</font></li></ul></div><div><br /></div>
+<hr />
+<h2><a name="TOC-Past-objectives"></a>Past objectives</h2>
+<div>Annotations on the status of each objective (at the close of the quarter) <font color="#ff0000">shown in red</font>.</div>
+<div>
+<div>
+<div>
+<h3><a name="TOC-Milestone-6-branch-cut-July-19-2010-."></a>Milestone 6 (branch cut July 19 2010).</h3>
+<h4><a name="TOC-Run-PAC-scripts-out-of-process-Move-the-evaluation-of-proxy-auto-config-scripts-out-of-the-browser-process-to-a-sandboxed-process-for-better-security.-eroman-Ended-up-doing-multi-threaded-PAC-execution-instead-to-address-performance-problems-associated-wit"></a><span style="font-weight:normal">
+<div>
+<h4><a name="TOC-Run-PAC-scripts-out-of-process"></a>Run PAC scripts out of process</h4>
+</div>
+<div><a href="http://code.google.com/p/chromium/issues/detail?id=11746" style="color:rgb(0,102,204);outline-style:none">Move the evaluation of proxy auto-config scripts out of the browser process</a> to a sandboxed process for better security. (eroman)</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Ended up doing multi-threaded PAC execution instead, to address performance problems associated with speculative requests + slow DNS (crbug.com/11079)</font></div>
+</span></h4>
+<h4><a name="TOC-Cache-pre-parsed-JavaScript"></a>Cache pre-parsed JavaScript</h4>
+</div>
+<div>The work on the HTTP cache side is done. Need to write the code for <a href="http://code.google.com/p/chromium/issues/detail?id=32407" style="color:rgb(71,18,100);outline-style:none">WebKit and V8 use the interface</a> and measure the performance impact. (tonyg, rvargas)</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Done. M6 has pre-parsed JS in the memory cache ON by default. It has pre-parsed JS in the disk cache is OFF by default (--enable-preparsed-js-caching).</font></div>
+<h4><a name="TOC-Switch-to-NSS-for-SSL-on-Windows"></a>Switch to NSS for SSL on Windows</h4>
+<div>Use NSS for SSL on Windows by default. We need to modify NSS to <a href="http://code.google.com/p/chromium/issues/detail?id=37560">use Windows CryptoAPI for SSL client authentication</a>. (wtc)</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Done. NSS is being used for SSL on all platforms.</font></div>
+<h4><a name="TOC-Improve-the-network-error-page"></a>Improve the network error page</h4>
+<div>The network error page should <a href="http://code.google.com/p/chromium/issues/detail?id=40431">help the user diagnose and fix the problem</a> (see also <a href="http://code.google.com/p/chromium/issues/detail?id=18673">issue 18673</a>), rather than merely displaying a network error code. (eroman, jar, jcivelli)</div>
+<div><br />
+</div>
+<div><font color="#ff0000">The UI of the error page has not been improved, however some user-level connectivity tests have been added to help diagnose when a chronic network error is happening (chrome://net-internals/#tests).</font></div>
+<div>
+<h4><a name="TOC-Implement-SSLClientSocketPool-This-allows-us-to-implement-late-binding-of-SSL-sockets-and-is-a-prerequisite-refactor-for-speculative-SSL-pre-connection-and-pipelining.-vandebo-Done.-HTTP-authentication-Implement-the-Negotiate-SPNEGO-authentication-scheme-o"></a><span style="font-weight:normal">
+<div>
+<h4><a name="TOC-Implement-SSLClientSocketPool"></a>Implement SSLClientSocketPool</h4>
+<div>This allows us to implement <a href="http://code.google.com/p/chromium/issues/detail?id=30357" style="color:rgb(0,102,204);outline-style:none">late binding of SSL sockets</a> and is a prerequisite refactor for speculative SSL pre-connection and pipelining. (vandebo)</div>
+</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Done.</font></div>
+<div>
+<div>
+<h4><a name="TOC-HTTP-authentication"></a>HTTP authentication</h4>
+</div>
+<div>
+<ul><li>Implement the <a href="http://code.google.com/p/chromium/issues/detail?id=33033">Negotiate (SPNEGO) authentication scheme on Linux and Mac</a> using GSS-API. (ahendrickson)<br />
+<font color="#ff0000">Almost completed.</font></li>
+<li>Create <a href="http://code.google.com/p/chromium/issues/detail?id=35021">system-level tests for NTLM and Negotiate authentication</a>. (cbentzel)<br />
+<font color="#ff0000">Hasn't been started yet.</font></li></ul>
+<h4><a name="TOC-HTTP-cache-improvements"></a>HTTP cache improvements</h4>
+</div>
+</div>
+<div>
+<ul><li>Improve the coordination between the memory cache (in WebCore) and disk cache (in the network stack). For example, <span style="font-family:arial,sans-serif;border-collapse:collapse">memory cache accesses should count as HTTP cache accesses so that the HTTP cache knows how to better maintain its LRU ordering. (rvargas)<br />
+<font color="#ff0000">Still needs investigation.</font></span></li>
+<li>Define good cache performance metrics. Measure HTTP cache's hit/miss rates, including "near misses". (rvargas)<br />
+<span style="font-family:arial,sans-serif;border-collapse:collapse;color:rgb(255,0,0)">Still needs investigation.</span></li>
+<li>Make the <a href="http://code.google.com/p/chromium/issues/detail?id=26729" style="color:rgb(0,102,204);outline-style:none">HTTP cache</a> and <a href="http://code.google.com/p/chromium/issues/detail?id=26730" style="color:rgb(0,102,204);outline-style:none">disk cache</a> fully asynchronous. Right now the HTTP cache is serving the metadata synchronously, which may block the IO thread.<br />
+<font color="#ff0000">Done.</font></li>
+<li>Throttle the requests.<br />
+<font color="#ff0000">This was dependent on making the disk cache fully asynchronous, which only just got finished.</font></li></ul>
+</div>
+</span></h4>
+</div>
+<div>
+<div>
+<div>
+<h4><a name="TOC-Network-internals-instrumentation-logging-and-diagnostics"></a>Network internals instrumentation, logging, and diagnostics</h4>
+<div>
+<ul><li><a href="http://code.google.com/p/chromium/issues/detail?id=37421">Create a chrome://net page for debugging the network stack</a>. (eroman)</li>
+<ul><li>This will replace about:net-internals and about:net.</li>
+<li>Allow tracing of network requests and their internal states.</li>
+<li>Diagnosing performance problems.</li>
+<li>Getting more information from users in bug reports.</li>
+<li>Exploring and resetting internal caches.</li></ul></ul>
+<div><font color="#ff0000">Done. Replaced the defunct about:net with the new about:net-internals. Instruments a lot more tracing information, support for active and passive logging, and log generation for bug reports.</font></div>
+<div>
+<h4><a name="TOC-Define-Chromium-extensions-API-for-networking"></a>Define Chromium extensions API for networking</h4>
+</div>
+<div>Define an API for Chromium extensions to access the network stack. We already defined an API that exposes proxy settings to extensions. (willchan)</div>
+</div>
+</div>
+</div>
+</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Some drafts were circulated for network interception APIs, but work hasn't been started yet.</font></div>
+<div><font color="#ff0000">The proxy settings API has been revived, and Pam is starting on it.</font></div>
+<div>
+<h4><a name="TOC-SafeBrowsing"></a>SafeBrowsing</h4>
+<div>This is a stretch goal because we may not have time to work on this in Q2.<br />
+<ul><li>Refactor SafeBrowsing code into an independent library that can be shared with other SafeBrowsing clients.<br />
+<font color="#ff0000">Not started, however an owner was found.</font></li>
+<li>Integrate with SafeBrowsing test suite.<br />
+<font color="#ff0000">Work in progress.</font></li></ul>
+<h4><a name="TOC-IPv6"></a>IPv6</h4>
+</div>
+</div>
+<div>
+<ul><li>The AI_ADDRCONFIG flag for getaddrinfo is ignored on some platforms, causing us to issue DNS queries for IPv6 addresses (the AAAA DNS records) unnecessarily. AI_ADDRCONFIG also does not work for loopback addresses. We should find out when to pass AF_UNSPEC with AI_ADDRCONFIG and when to pass AF_INET to getaddrinfo, so we get the best host name resolution performance. (jar)</li>
+<li>Implement IPv6 extensions to <a href="http://code.google.com/p/chromium/issues/detail?id=35050" rel="nofollow" style="color:rgb(71,18,100);outline-style:none">FTP</a>. (gavinp)<br />
+<font color="#ff0000">Done. Support for EPSV.</font></li></ul>
+</div>
+<div>
+<div>
+<h4><a name="TOC-Speculative-TCP-pre-connection"></a>Speculative TCP pre-connection</h4>
+</div>
+<div>Jim Roskind has an incomplete <a href="http://codereview.chromium.org/38007" style="color:rgb(0,102,204);outline-style:none">changelist</a> that shows where the necessary hooks are for TCP pre-connection. (jar)</div>
+</div>
+<div>
+<ul><li>First do this for search (pre-connect while user types a query)</li>
+<li>Eventually pre-connect based on DNS sub-resource history so that we pre-connect for sub-resource acquisition before containing page even arrives.</li>
+<li>Preliminary implementation behind flag will facilitate SDPY benchmarking of feature.</li></ul>
+<div><font color="#ff0000">Initial implementation has landed; it is off by default, but can be enabled with these flags:</font></div>
+</div>
+<div><font color="#ff0000">--enable-preconnect</font></div>
+<div><font color="#ff0000">--preconnect-despite-proxy</font></div>
+<h4><a name="TOC-Improve-WebKit-resource-loading"></a>Improve WebKit resource loading</h4>
+<div>Improve resource loading so we can pass all of the <a href="http://www.browserscope.org/?category=network&amp;v=top">network tests on Browserscope</a> (Chromium issues <a href="http://code.google.com/p/chromium/issues/detail?id=13505">13505</a>, <a href="http://code.google.com/p/chromium/issues/detail?id=40014">40014</a>, <a href="http://code.google.com/p/chromium/issues/detail?id=40019">40019</a> and WebKit <a href="https://bugs.webkit.org/show_bug.cgi?id=20710">bug 20710</a>). Most of the work will be in WebKit. (gavinp, tonyg).</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Work in progress.</font></div>
+<div>
+<h4><a name="TOC-Certificate-UI-Linux-certificate-management-UI.-summer-intern-Work-in-progress.-UI-for-keygen-certificate-enrollment-on-Linux-and-Windows:-right-now-keygen-finishes-silently.-summer-intern-Work-in-progress-by-summer-intern."></a><span style="font-weight:normal">
+<div>
+<h4><a name="TOC-Certificate-UI"></a>Certificate UI</h4>
+</div>
+<div>
+<ul><li><a href="http://code.google.com/p/chromium/issues/detail?id=19991" style="color:rgb(0,102,204);outline-style:none">Linux certificate management UI</a>. (summer intern?)<br />
+<font color="#ff0000">Work in progress.</font></li>
+<li>UI for <a href="http://code.google.com/p/chromium/issues/detail?id=148" style="color:rgb(0,102,204);outline-style:none">&lt;keygen&gt; certificate enrollment</a> on Linux and Windows: right now &lt;keygen&gt; finishes silently. (summer intern?)<br />
+<font color="#ff0000">Work in progress by summer intern.<br /></font></li></ul><div><font color="#ff0000"><br /></font></div></div></span></h4></div><div><div><div><div><hr /></div><h2><a name="TOC-Future"></a>Future</h2>
+<div>
+<div>
+<h4><a name="TOC-Prioritizing-HTTP-transactions"></a>Prioritizing HTTP transactions</h4>
+</div>
+<div>
+<div>
+<h4><a name="TOC-Support-loading-resources-in-the-background-for-example-for-updating-the-thumbnails-in-the-New-Tab-Page-without-impacting-real-time-performance-if-the-user-is-doing-something-else.-Support-dynamically-adjusting-priorities.-If-the-user-switches-tabs-the-new"></a><span style="font-weight:normal">
+<div>
+<ul><li>Support loading resources in the background (for example, for updating the thumbnails in the New Tab Page) without impacting real-time performance if the user is doing something else.</li>
+<li>Support dynamically adjusting priorities. If the user switches tabs, the newly focused tab should get a priority boost for its network requests.</li></ul>
+<h4><a name="TOC-Other-HTTP-performance-optimizations"></a>Other HTTP performance optimizations</h4>
+<div>
+<ul><li>Reuse HTTP keep-alive connections under more conditions</li>
+<li>Resume SSL sessions under more conditions</li></ul>
+<h4><a name="TOC-New-unit-tests-and-performance-tests"></a>New unit tests and performance tests</h4>
+Some parts of the network stack, such as SSL, need more unit tests. Good test coverage helps bring up new ports. In addition, any bugs that get fixed should get unit tests to prevent regression.<br />
+<br />
+We should <a href="http://code.google.com/p/chromium/issues/detail?id=6754" style="color:rgb(0,102,204);outline-style:none">add performance tests</a> to measure the performance of the network stack and track it over time.</div>
+</div>
+</span></h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-Fix-SSLUITests"></a><b><b><b><b>Fix SSLUITests</b></b></b></b></h4><div>All the <a href="http://code.google.com/p/chromium/issues/detail?id=40932">SSLUITests are marked as flaky</a> now.</div><h4><a name="TOC-Better-histograms"></a><b><b><b><b>Better histograms</b></b></b></b></h4>
+<div><span style="font-weight:bold"><b><span style="font-weight:normal">We need better histograms for networking.<br />
+<h4><a name="TOC-Integrate-loader-specific-parts-of-WebKit-into-the-network-stack"></a><b><b>Integrate loader-specific parts of WebKit into the network stack</b></b></h4>
+</span></b></span></div>
+<div>Parts of WebKit that throttle and prioritize resource load requests could be moved into the network stack. We can disable WebCore's queuing, and get more context about requests (flesh out the ResourceType enum).</div>
+<div><span style="font-weight:bold"><span style="font-weight:normal">
+<h4><a name="TOC-Captive-portalsAvoid-certificate-name-mismatch-errors-when-visiting-an-HTTPS-page-through-a-captive-portal.HTTP-pipelining-We-should-implement-an-optional-pipelining-mode.-HTTP-authentication-support-NTLMv2-on-Linux-and-Mac-We-also-need-to-review-the-inter"></a><span style="font-weight:normal">
+<div>
+<h4><a name="TOC-Captive-portals"></a>Captive portals</h4><div><a href="http://code.google.com/p/chromium/issues/detail?id=71736">Avoid certificate name mismatch errors</a> when visiting an HTTPS page through a captive portal.</div><h4><a name="TOC-HTTP-pipelining"></a>HTTP pipelining</h4>
+</div>
+<div>We should implement an <a href="http://code.google.com/p/chromium/issues/detail?id=8991" style="color:rgb(0,102,204);outline-style:none">optional pipelining mode</a>.</div>
+<div>
+<div>
+<h4><a name="TOC-HTTP-authentication1"></a>HTTP authentication</h4>
+</div>
+<div>
+<ul><li><a href="http://code.google.com/p/chromium/issues/detail?id=22532" style="color:rgb(0,102,204);outline-style:none">support NTLMv2 on Linux and Mac</a></li></ul>
+We also need to review the interaction between HTTP authentication and disk cache. For example, <a href="http://code.google.com/p/chromium/issues/detail?id=454" style="color:rgb(0,102,204);outline-style:none">cached pages that were downloaded with authentication should not be retrieved without authentication</a>.</div>
+</div>
+</span></h4>
+<h4><a name="TOC-FTP"></a>FTP</h4>
+</span></span></div>
+<div>
+<ul><li>reusing control connections</li>
+<li>caching directory listings.</li></ul>
+We need to be able to <a href="http://code.google.com/p/chromium/issues/detail?id=11227">request FTP URLs through a proxy</a>.<br />
+<h4><a name="TOC-Preference-service-for-network-settings"></a>Preference service for network settings<br />
+</h4>
+</div>
+<div><span style="font-family:arial;font-size:13px;color:rgb(0,104,28);font-weight:bold;white-space:nowrap"><span style="color:rgb(0,0,0);font-family:Arial;font-size:12px;font-weight:normal;white-space:normal">We strive to use the system network settings so that users can control the network settings of all applications easily. However, there will be some configuration settings specific to our network stack, so we need to have our own preference service for those settings. See also <a href="http://code.google.com/p/chromium/issues/detail?id=266">issue 266</a>, in which some Firefox users demand that we not use the WinInet proxy settings (the de facto system proxy settings) on Windows.</span></span></div>
+<div><span style="font-family:arial;font-size:13px;color:rgb(0,104,28);font-weight:bold;white-space:nowrap"><span style="color:rgb(0,0,0);font-family:Arial;font-size:12px;font-weight:normal;white-space:normal"><span style="font-family:Arial,Verdana,sans-serif;font-size:13px">
+<h4><a name="TOC-Share-code-between-HTTP-SPDY-and-WebSocket"></a>Share code between HTTP, SPDY, and WebSocket</h4>
+<div>A lot of code was copied from net/http to net/socket_stream for WebSocket support. We should find out if some code can be shared.</div><h4><a name="TOC-WPAD-over-DHCP"></a>WPAD over DHCP</h4><div>Support <a href="http://code.google.com/p/chromium/issues/detail?id=18575">WPAD over DHCP</a>.</div><div><br /></div></span></span></span></div><div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/network-stack-objectives">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq96ZZo4z8uuD85QTKDE0l2XPuZiCjG-G8Iypb3oYBHh81wuVi_-YaHj6urraT4OwHS_UDejsevDbyMVmBPVf8a1SARUAi1cQL2awpHIghK3F-ayyBq/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

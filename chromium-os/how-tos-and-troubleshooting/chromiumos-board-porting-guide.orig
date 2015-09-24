@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting","deleted":false,"title":"How Tos and Troubleshooting","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting/chromiumos-board-porting-guide","deleted":false,"title":"Chromium OS Board Porting Guide","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/chromiumos-board-porting-guide\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/how-tos-and-troubleshooting","parentWuid":"wuid:gx:72ecb36fa9c83ecd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium OS Board Porting Guide","locale":"en","wuid":"wuid:gx:7e4480805729adc","revision":25,"path":"/chromium-os/how-tos-and-troubleshooting/chromiumos-board-porting-guide","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"chromiumos-board-porting-guide","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium OS Board Porting Guide - The Chromium Projects" />
+<meta itemprop="name" content="Chromium OS Board Porting Guide - The Chromium Projects" />
+<meta property="og:title" content="Chromium OS Board Porting Guide - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium OS Board Porting Guide - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/how-tos-and-troubleshooting" dir="ltr">How Tos and Troubleshooting</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium OS Board Porting Guide</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Private-Boards-advanced-"><strong>1.1 </strong>Private Boards (advanced)</a></li></ol></li><li class="goog-toc"><a href="#TOC-Naming"><strong>2 </strong>Naming</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Board-Variants-advanced-"><strong>2.1 </strong>Board Variants (advanced)</a></li></ol></li><li class="goog-toc"><a href="#TOC-Bare-Framework"><strong>3 </strong>Bare Framework</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Architecture"><strong>3.1 </strong>Architecture</a></li><li class="goog-toc"><a href="#TOC-src-overlays-overlay--BOARD-"><strong>3.2 </strong>src/overlays/overlay-$BOARD/</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-make.conf"><strong>3.2.1 </strong>make.conf</a></li><li class="goog-toc"><a href="#TOC-toolchain.conf"><strong>3.2.2 </strong>toolchain.conf</a></li><li class="goog-toc"><a href="#TOC-metadata-layout.conf"><strong>3.2.3 </strong>metadata/layout.conf</a></li><li class="goog-toc"><a href="#TOC-profiles-base-advanced-"><strong>3.2.4 </strong>profiles/base/ (advanced)</a></li><li class="goog-toc"><a href="#TOC-profiles-base-parent"><strong>3.2.5 </strong>profiles/base/parent</a></li><li class="goog-toc"><a href="#TOC-profiles-sub-profile-advanced-"><strong>3.2.6 </strong>profiles/&lt;sub-profile&gt;/ (advanced)</a></li></ol></li><li class="goog-toc"><a href="#TOC-scripts-advanced-"><strong>3.3 </strong>scripts/ (advanced)</a></li><li class="goog-toc"><a href="#TOC-src-third_party-chromiumos-overlay-eclass-cros-board.eclass"><strong>3.4 </strong>src/third_party/chromiumos-overlay/eclass/cros-board.eclass</a></li></ol></li><li class="goog-toc"><a href="#TOC-Board-Variant-Framework-advanced-"><strong>4 </strong>Board Variant Framework (advanced)</a></li><li class="goog-toc"><a href="#TOC-Testing-Initial-Build"><strong>5 </strong>Testing Initial Build</a></li><li class="goog-toc"><a href="#TOC-make.conf:-Global-Build-Settings"><strong>6 </strong>make.conf: Global Build Settings</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Linux-Kernel-Settings"><strong>6.1 </strong>Linux Kernel Settings</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-CHROMEOS_KERNEL_SPLITCONFIG"><strong>6.1.1 </strong>CHROMEOS_KERNEL_SPLITCONFIG</a></li><li class="goog-toc"><a href="#TOC-CHROMEOS_KERNEL_ARCH"><strong>6.1.2 </strong>CHROMEOS_KERNEL_ARCH</a></li></ol></li><li class="goog-toc"><a href="#TOC-Global-USE-Feature-Selection"><strong>6.2 </strong>Global USE Feature Selection</a></li><li class="goog-toc"><a href="#TOC-Userland-Device-Driver-Selection"><strong>6.3 </strong>Userland Device Driver Selection</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-INPUT_DEVICES"><strong>6.3.1 </strong>INPUT_DEVICES</a></li><li class="goog-toc"><a href="#TOC-VIDEO_DEVICES"><strong>6.3.2 </strong>VIDEO_DEVICES</a></li></ol></li><li class="goog-toc"><a href="#TOC-Compiler-Settings"><strong>6.4 </strong>Compiler Settings</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-ARM_FPU"><strong>6.4.1 </strong>ARM_FPU</a></li><li class="goog-toc"><a href="#TOC-MARCH_TUNE"><strong>6.4.2 </strong>MARCH_TUNE</a></li><li class="goog-toc"><a href="#TOC-CFLAGS"><strong>6.4.3 </strong>CFLAGS</a></li><li class="goog-toc"><a href="#TOC-CXXFLAGS"><strong>6.4.4 </strong>CXXFLAGS</a></li><li class="goog-toc"><a href="#TOC-LDFLAGS"><strong>6.4.5 </strong>LDFLAGS</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Buildbot-Configs"><strong>7 </strong>Buildbot Configs</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-chromite-buildbot-cbuildbot_config.py"><strong>7.1 </strong>chromite/buildbot/cbuildbot_config.py</a></li></ol></li><li class="goog-toc"><a href="#TOC-Google-Storage-Integration"><strong>8 </strong>Google Storage Integration</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-googlestorage_account.boto"><strong>8.1 </strong>googlestorage_account.boto</a></li><li class="goog-toc"><a href="#TOC-googlestorage_acl.-"><strong>8.2 </strong>googlestorage_acl.*</a></li></ol></li></ol></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>You've got a wonderful new platform that you'd like to run Chromium OS on, but have no idea how to get there from here?  Fret not my fellow traveler, for this document shall be your guide.  We promise it'll be <span style="background-color:transparent;font-size:10pt">a wondrous and enlightening journey.</span></p>
+<p>An overlay is the set of configuration files that define how the build system will build a Chromium OS disk image.  Configurations will be different depending on the board and architecture type, and what files a developer wants installed on a given disk image.  Every command in the build process takes a required `<span style="color:rgb(0,96,0);font-family:monospace">--board</span>` parameter, which developers should pass the overlay name to.</p>
+<p>On your first run through this document for creating your first platform, you can skip the sections labeled <i>(advanced)</i>.  This will let you focus on the minimum bits to get running, and then you can revisit once you're more comfortable with things.</p>
+<h3><a name="TOC-Private-Boards-advanced-"></a>Private Boards <i>(advanced)</i></h3>
+<p>This guide covers doing a public build (one that will be released to the world). There is a <a href="http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/chromiumos-board-porting-guide/private-boards">separate guide</a> (meant as an add-on to this one) for creating a private board.  Setting up a private board is useful for when you want to keep your project details a secret before launch, or if your board contains proprietary drivers or firmware that can't be released publicly.</p>
+<h2><a name="TOC-Naming"></a>Naming</h2>
+<p>Possible board names follow a simple specification:</p>
+<ul><li>must have no upper case letters</li>
+<ul><li>normalization to lower case keeps things simple</li></ul>
+<li>must start with a letter [a-z]</li>
+<li>may contain as many letters [a-z] or numbers [0-9] as you like</li>
+<li>should contain no more than one dash</li>
+<ul><li>technically there is no limit, but the more dashes you add, the uglier it gets</li></ul>
+<li>must not contain any other character</li>
+<ul><li>e.g. characters such as, but not limited to, + or % or @ or _ or / or . or : or ... are invalid</li></ul>
+<li>must avoid words that are used with generic (board independent) configurations</li>
+<ul><li>e.g. "release" or "canary" or "firmware" or "factory" or "pfq" or "paladin" or "incremental" or "asan" or ...</li>
+<li>see <a href="http://git.chromium.org/gitweb/?p=chromiumos/chromite.git;a=blob;f=buildbot/cbuildbot_config.py">cbuildbot_config.py</a> in the chromite repo for more examples (look at the CONFIG constants at the top)</li>
+<ul><li>you can also run <code>`cbuildbot -l -a`</code> to get a feel for the "group" names</li></ul></ul>
+<li>should not be generic terms</li>
+<ul><li>e.g. "board" or "boat" or "car" or "airplane" or "computer" or ...</li></ul>
+<li>should be clever</li>
+<li>must not be phonetically similar to an existing board</li>
+<ul><li>it is not worth the hassle when talking or writing to try and figure out what people mean</li>
+<li>it might make it harder for non-native speakers to differentiate</li>
+<li>e.g. with "red" and "read", or "pour" and "pored", or "accept" and "except", or "flaunt" and "flout"</li></ul>
+<li>should be pronounceable in conversation</li>
+<ul><li>no one likes to talk about the XK123A-Z03 board -- that's just boring</li></ul>
+<li>must not pick a name that Google intends to use with a Chrome OS board</li>
+<ul><li>don't worry, it's unlikely</li></ul></ul>
+<p>Settled on a name?  Hopefully it's nifty.</p>
+<h3><a name="TOC-Board-Variants-advanced-"></a>Board Variants <i>(advanced)</i></h3>
+<p><span style="font-size:10pt">Often times you will have a base/reference board on which you will build other boards/devices, and you want to customize each in ways that are incompatible with the others.  The board variant framework is designed to handle this setup.  Note: at the moment, the variant framework is only one level deep.  So you cannot do a variant of a variant.  A need for this has not been found, so we haven't worried about it.</span></p>
+<p>When it comes to naming, you will take the existing reference board name and add on the new project's name separated by an underscore.  Both projects must follow the naming convention laid out in the above section.</p>
+<p>As an example, Google has a reference board named <code>daisy</code>.  Using that base, other board variations have been created such as the <code>snow</code> board.  Thus the final board name is <code>daisy_snow</code>.</p>
+<h2><a name="TOC-Bare-Framework"></a>Bare Framework</h2>
+<p>Let's start by laying the ground work for the board.  We won't worry about the fine details (like custom set of packages or flags or ...) at this point.  We just want a board that the build system will recognize and be able to produce a generic set of artifacts.  Once we have that, we'll start customizing things.</p>
+<h3><a name="TOC-Architecture"></a>Architecture</h3>
+<p>Be aware that we assume your board falls under one of the main (currently supported) architectures:</p>
+<ul><li>amd64 (x86_64) -- 64-bit Intel/AMD processors</li>
+<li>arm -- 32-bit ARM processors</li>
+<li>x86 (i386/i486/i586/i686) -- 32-bit Intel/AMD/etc... processors</li></ul>
+If you're using a different architecture, please see the <a href="http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/chromiumos-architecture-porting-guide">Chromium OS Architecture Porting Guide</a> first.
+<h3><a name="TOC-src-overlays-overlay--BOARD-"></a>src/overlays/overlay-$BOARD/</h3>
+<p>This is the main location for per-board customization.  Let's start off with a simple overlay:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>overlay-$BOARD/<br />
+|-- make.conf                # Global board customizations (USE/CFLAGS/etc...)<br />
+|-- metadata/<br />
+|   `-- layout.conf          # Gentoo repo syntatic sugar<br />
+|-- profiles/<br />
+|   `-- base/<br />
+|       `-- parent           # Parent profile for this board (common arch/OS settings)<br />
+`-- toolchain.conf           # Toolchains needed to compile this board</code></div>
+<p>Most of these files are one or two lines.  Let's go through them one at a time.</p>
+<h4><a name="TOC-make.conf"></a>make.conf</h4>
+<p>This file can be used to customize global settings for your board.  In this first go, we'll leave it empty.  It's ok ... we'll come back.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ touch make.conf</code></div>
+<h4><a name="TOC-toolchain.conf"></a>toolchain.conf</h4>
+<p>For standard architectures, you only need one line here.  Pick the one that matches the architecture for your board.</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="text-align:center"> <b>architecture</b></td>
+<td style="text-align:center"> <b>tuple</b></td>
+</tr>
+<tr>
+<td> amd64 (64-bit)</td>
+<td> x86_64-cros-linux-gnu</td>
+</tr>
+<tr>
+<td> arm (armv7)</td>
+<td> armv7a-cros-linux-gnueabi</td>
+</tr>
+<tr>
+<td> x86 (32-bit)</td>
+<td> i686-pc-linux-gnu</td>
+</tr>
+</tbody>
+</table>
+<p>Example file for an x86_64 board:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ cat toolchain.conf</code><br />
+<code>x86_64-cros-linux-gnu</code></div>
+<p>Note that if you do need more than one toolchain, you can list as many as you like (one per line). But the first entry must be the default one for your board.</p>
+<h4><a name="TOC-metadata-layout.conf"></a>metadata/layout.conf</h4>
+<p>Don't worry about the content of this file.  Simply copy &amp; paste what you see below, and then update the <code>repo-name</code> field to match your $BOARD.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ cat metadata/layout.conf<br />
+masters = portage-stable chromiumos<br />
+profile-formats = portage-2<br />
+repo-name = <b>lumpy</b><br />
+thin-manifests = true<br />
+use-manifests = true</code></div>
+<h4><a name="TOC-profiles-base-advanced-"></a>profiles/base/ <i>(advanced)</i></h4>
+<p>This is the "base" profile (aka the default) for your board.  It allows you to customize a wide array of settings.  You really only need to create one file (the <code>parent</code> file; see the next section).</p>
+<p>Most commonly this directory is used to control USE and KEYWORDS on a per-package basis (via the <code>package.use</code> and <code>package.keywords</code> files respectively), or profile-specific tweaks in <code>make.defaults</code> that you don't want to keep in <code>make.conf</code> (since it's specific to a profile). See the portage(5) man page for all the gory details.</p>
+<h4><a name="TOC-profiles-base-parent"></a>profiles/base/parent</h4>
+<p>This will vary based on your architecture.</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="text-align:center"><b style="text-align:center">architecture</b></td>
+<td style="text-align:center"><b>parent profile</b></td>
+</tr>
+<tr>
+<td> amd64</td>
+<td>chromiumos:default/linux/<i>amd64</i>/10.0/chromeos</td>
+</tr>
+<tr>
+<td> arm</td>
+<td>chromiumos:default/linux/<i>arm</i>/10.0/chromeos</td>
+</tr>
+<tr>
+<td> x86</td>
+<td>chromiumos:default/linux/<i>x86</i>/10.0/chromeos</td>
+</tr>
+</tbody>
+</table>
+<p>Example file for an x86_64 board:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ cat profiles/base/parent</code><br />
+<code>chromiumos:default/linux/amd64/10.0/chromeos</code></div>
+<h4><a name="TOC-profiles-sub-profile-advanced-"></a>profiles/&lt;sub-profile&gt;/ (<i>advanced)</i></h4>
+<p>Sometimes you will want to take an existing board and try out some tweaks on it.  Perhaps you want to use a different kernel, or change one or two USE flags, or use a different compiler settings (like more debugging or technology like ASAN).  You could create a board variant, but that is more for different boards, and is much more heavy handed.</p>
+<p>To create a sub-profile, simply make a new directory under the profiles/ and name it whatever you like.  Many Google based systems have one called <code>kernel-next</code> and we use this to easily test the new development kernel tree.</p>
+<p>You should then create a <code>parent</code> file in there like so:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ cat profiles/kernel-next/parent</code><br />
+<code>../base</code></div>
+<p>This says the sub-profile will start off using the existing base profile (so you don't have to duplicate all the settings you've already put into that directory).  From here, you can add any files like you would any other profile directory.</p>
+<p>Now to select this new profile, you use the <code>--profile</code> option when running <code>setup_board</code>.  You can either blow away the existing build dir (if one exists), or tell the system to simply rewrite the configs to point to the new profile.  You'll have to make the decision using your knowledge of the profile (whether it means a lot of changes or just swapping of one or two packages).</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code># Recreate from scratch.</code><br />
+<code>$ ./setup_board --profile=kernel-next --board=lumpy --force<br />
+</code><br />
+<code># Or just rewrite the configs to use the new profile.</code><br />
+<code>$ ./setup_board --profile=kernel-next --board=lumpy --regen_configs</code></div>
+<h3><a name="TOC-scripts-advanced-"></a><font size="2">scripts/ (advanced)</font></h3><div>This folder contains scripts used during <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;background-color:transparent">build_image</span><span style="font-family:monospace;background-color:transparent"><font size="2">, to tweak the packages that are allowed on the final image. The scripts of interest here are </font></span></div><div><ul><li><span style="font-size:small;font-family:monospace;background-color:transparent">build_kernel_image.sh -- Sourced by the main build_kernel_image.sh script for board specific modifications.</span></li><li><span style="font-size:small;font-family:monospace;background-color:transparent">board_specific_setup.sh -- Sourced by the main build_image.sh script for board specific modifications.</span></li><li><span style="font-size:small;font-family:monospace;background-color:transparent">disk_layout.json -- Used by boards that need a different disk partition than the default one.</span></li></ul></div><h3><a name="TOC-src-third_party-chromiumos-overlay-eclass-cros-board.eclass"></a>src/third_party/chromiumos-overlay/eclass/cros-board.eclass</h3>
+<p>Since we need some central location to store all the possible board names, we have the cros-board.eclass.  It should be pretty self-explanatory.</p>
+<p>We actively welcome commits to this file.  Simply upload a CL to gerrit that adds your fun board and we'll gladly take a look for you.</p>
+<h2><a name="TOC-Board-Variant-Framework-advanced-"></a>Board Variant Framework <i>(advanced)</i></h2>
+<p>Rather than create an entire hardware board from scratch every time a new project comes along, companies will often take existing projects and make tweaks to fit the new one.  It's a common industry practice which allows for rapid expansion into more areas.  Since these boards are pretty close to each other, it'd be annoying to have to duplicate the entire board settings just to make a handful of changes.  The variant framework was designed to address this.</p>
+<p>Basically, refer to the sections above for creating a new board overlay.  However, this time name it slightly different.  If the base board is named <code>daisy</code> and the variant is named <code>snow</code>, we would create the directory <code>overlay-variant-daisy-snow</code>.  Yes, the separator is now a dash rather than an underscore.</p>
+<p>You will still need to create at least these files (see the previous section for what to put into them):<br />
+</p>
+<ul><li><code>make.conf</code></li>
+<ul><li>Note: You only need to put stuff specific to your variant; the parent board will be loaded before the variant is read</li></ul>
+<li><code>metadata/layout.conf</code></li>
+<ul><li>Usually you can just copy the version verbatim from the parent board and update the <code>repo-name</code> field</li></ul></ul>
+The base board overlay will be set as the parent of this variant automatically.  So settings/packages that exist in there will be the starting point for this variant.
+<h2><a name="TOC-Testing-Initial-Build"></a>Testing Initial Build</h2>
+<p>Since your board should be all set up and ready to go, let's test it.  All operations will be done inside the chroot (so run `cros_sdk` to get in first).</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<font style="color:rgb(153,0,255)"><code>$ ./setup_board --board=$BOARD</code><br />
+<code>&lt;random build output&gt;</code><br />
+<code>$ ./build_packages --board=$BOARD</code><br />
+<code>&lt;lots of build output&gt;</code></font></div>
+<p>Those should both have worked and produced a generic build for that architecture (using your $BOARD name).  Let's set about customizing the build now.</p>
+<p>Note: as you make changes below to your overlay, re-running <code>build_packages</code> again will rebuild packages that have changed based on your USE flags.  But other changes (like compiler settings or kernel configs) will not trigger automatic rebuilds.  Only new package builds will use the new settings.  Once you're happy with all your settings though, you can re-run <code>setup_board</code> with the <code>--force</code> flag.  Then running <code>build_packages</code> will build everything from scratch with the latest settings.</p>
+<h2><a name="TOC-make.conf:-Global-Build-Settings"></a>make.conf: Global Build Settings</h2>
+<p>This file contains a few key variables you'll be interested in.  Since each of these can be a large topic all by themselves, this is just an overview.</p>
+<p>You can set variables like you would in a shell script (<code>VAR="value"</code>), as well as expand them (<code>FOO="${VAR} foo"</code>).  But do not try to use shell commands like <code>if [...]; then</code> or sub-shells like <code>$(...)</code> or <code>`...`</code> as things will fail.</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="text-align:center;width:326px;height:15px"><b>Setting</b></td>
+<td style="text-align:center;width:678px;height:15px"><b>Meaning</b></td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> CHROMEOS_KERNEL_SPLITCONFIG</td>
+<td style="width:678px;height:15px"> The kernel defconfig to start with</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> CHROMEOS_KERNEL_ARCH</td>
+<td style="width:678px;height:15px"> The kernel $ARCH to use (normally you do not need to set this)</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> USE</td>
+<td style="width:678px;height:15px"> Global control of features (e.g. alsa or ldap or opengl or sse or ...)</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> INPUT_DEVICES</td>
+<td style="width:678px;height:15px"> List of drivers used for input (e.g. keyboard or mouse or evdev or ...)</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> VIDEO_CARDS</td>
+<td style="width:678px;height:15px"> List of drivers used for video output (e.g. intel or armsoc or nouveau or ...)</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> ARM_FPU</td>
+<td style="width:678px;height:15px"> The FPU technology to use (ARM only)</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> MARCH_TUNE</td>
+<td style="width:678px;height:15px"> The common set of compiler flags used to optimize for your processor (e.g. -mtune/-march)</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> CFLAGS</td>
+<td style="width:678px;height:15px"> Compiler flags used to optimize when building C code</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> CXXFLAGS</td>
+<td style="width:678px;height:15px"> Compiler flags used to optimize when building C++ code</td>
+</tr>
+<tr>
+<td style="width:326px;height:15px"> LDFLAGS</td>
+<td style="width:678px;height:15px"> Linker flags used to optimize when linking objects (normally you do not need to set this)</td>
+</tr>
+</tbody>
+</table>
+<h3><a name="TOC-Linux-Kernel-Settings"></a>Linux Kernel Settings</h3>
+<h4><a name="TOC-CHROMEOS_KERNEL_SPLITCONFIG"></a>CHROMEOS_KERNEL_SPLITCONFIG</h4>
+<p>The kernel is automatically compiled &amp; installed by the build system.  In order to configure it, you have to start with a defconfig file as the base (it can later be refined by various USE flags).  This value allows you to control exactly that.</p>
+<p>You can specify the relative path (to the root of the kernel tree) to your defconfig.  This is useful if you are using a custom kernel tree rather than the official Chromium OS Linux kernel tree.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ grep CHROMEOS_KERNEL_CONFIG make.conf</code><br />
+<code>CHROMEOS_KERNEL_CONFIG="arch/arm/configs/bcmrpi_defconfig"</code></div>
+<p>Or you can specify a Chromium OS config base.  We have one for each major platform/SoC that ships in an official Chrome OS device, and we have architecture generic configs.  You can find the full list by browsing the <a href="https://chromium.googlesource.com/chromiumos/third_party/kernel/+/master/chromeos/config/">chromeos/config/ directory in the kernel tree</a>.  Unlike a defconfig, splitconfigs are much smaller fragments which start with a common base and then enable/disable a few options relative to that.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ grep </code><code>CHROMEOS_KERNEL_SPLITCONFIG make.conf</code><br />
+<font size="2"><code>CHROMEOS_KERNEL_SPLITCONFIG="</code></font><code>chromeos-pinetrail-i386</code><font size="2"><code>"</code></font></div>
+<h4><a name="TOC-CHROMEOS_KERNEL_ARCH"></a>CHROMEOS_KERNEL_ARCH</h4>
+<p>The kernel build system normally detects what architecture you're using based on your overall profile.  For example, if you have an amd64 board overlay setup, the build knows it should use ARCH=x86_64.</p>
+<p>However, there arises edge cases where you want to run a kernel architecture that is different from the userland.  For example, say you wanted to run a 64-bit x86_64 kernel, but you wanted to use a 32-bit i386 userland.  If your profile is normally setup for an x86 system, you can set this variable to x86_64 to get a 64-bit kernel.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ grep CHROMEOS_KERNEL_ARCH make.conf</code><br />
+<code>CHROMEOS_KERNEL_ARCH="x86_64"</code></div>
+<h3><a name="TOC-Global-USE-Feature-Selection"></a>Global USE Feature Selection</h3>
+<p>One of the strengths of the Gentoo distribution is that you can easily control general feature availability in your builds by changing your USE settings.  For example, if you don't want audio, you can disable alsa &amp; oss.  Or if you don't want <a href="http://en.wikipedia.org/wiki/LDAP">LDAP</a>, you can disable that.  All of the ebuild files (the package scripts used to build/install code) have logic to check each setting that is optional so you don't have to.</p>
+<p>The downside, as you can imagine, is that with thousands and thousands of packages, the number of possible USE flags is vast.  There are also some optional settings which only make sense with one or two packages (global vs local USE flags).  So weeding through which USE flags exactly matter can be a bit of a monstrous task.</p>
+<h3><a name="TOC-Userland-Device-Driver-Selection"></a>Userland Device Driver Selection</h3>
+<p>An extension to the USE flag system are so called USE-expanded variables.  This helps reduce the global USE flag noise a bit by having specially named variables with specific meaning.  In this case, we'll discuss device inputs (keyboards/mouse/etc...) and video outputs.</p>
+<p>The exact driver availability (and naming convention) depends on what graphic system you intend to use.  The X project tends to have the widest selection but is a larger overall install size, while DirectFB tends to have smaller selection of drivers but be much smaller.  We'll focus on X here as that is the main system that Chromium supports.</p>
+<h4><a name="TOC-INPUT_DEVICES"></a>INPUT_DEVICES</h4>
+<div>TBD</div>
+<h4><a name="TOC-VIDEO_DEVICES"></a>VIDEO_DEVICES</h4>
+<div>TBD</div>
+<h3><a name="TOC-Compiler-Settings"></a>Compiler Settings</h3>
+<p>Everyone likes optimizations.  Faster is better, right?  Here's the nuts and bolts of it.</p>
+<p>While picking out flags to use, keep in mind that Chromium OS uses <a href="http://gcc.gnu.org/">GCC</a> for its compiler suite.  It also uses the <a href="http://en.wikipedia.org/wiki/Gold_(linker)">gold linker</a>.  So see the respective documentation.</p>
+<h4><a name="TOC-ARM_FPU"></a>ARM_FPU</h4>
+<p>This is for ARM targets only.  Any value that GCC accepts to the -mfpu= flag is valid.  This will be used by various packages (mostly Chromium) to select FPU-specific optimizations.</p>
+<p>Typical values are neon and vfpv3-d16.  If you have an ARMv7, pick between these two values.  If you don't have an ARMv7, then you should already know the answer to this question :).</p>
+<h4><a name="TOC-MARCH_TUNE"></a>MARCH_TUNE</h4>
+<p>You should put compiler optimizations that target your specific cpu into this variable.  Commonly, this means:</p>
+<ul><li>-march=&lt;arch&gt; -- see the <a href="http://gcc.gnu.org/onlinedocs/gcc/Submodel-Options.html">GCC manual</a> for complete lists of possible values here</li>
+<ul><li>This selects the minimum <b>required</b> processor/architecture that the code will run on</li>
+<li><i>armv7-a</i> is common for ARMv7 parts</li>
+<li><i>core2</i> is common for Intel Core2 parts</li>
+<li><i>corei7</i> is common for Intel Core i7 parts</li></ul>
+<li>-mtune=&lt;arch&gt; -- see the <a href="http://gcc.gnu.org/onlinedocs/gcc/Submodel-Options.html">GCC manual</a> for complete lists of possible values here</li>
+<ul><li>This selects the processor that the code will be optimized best for without requiring it</li>
+<li>If you don't specify this, then the -march setting will be used</li>
+<li><i>cortex-a8</i> or <i>cortex-a9</i> or <i>cortex-a15</i> are common for ARM parts</li></ul>
+<li>-mfpu=${ARM_FPU} (ARM only)</li>
+<ul><li>By setting the ARM_FPU variable, you can expand it here.</li></ul>
+<li>-mfloat-abi=hard (ARM only)</li>
+<ul><li>Keep in mind that Chromium OS assumes you are using the hard float ABI.  While it is certainly possible to get things working with a soft float ABI, you shouldn't waste your time.  Join us in the future and migrate away from the old &amp; slow soft float ABI (this also includes the softfp ABI -- it's just as bad).</li></ul>
+<li>-mmmx / -msse / -msse2 / etc...</li>
+<ul><li>There are a variety of machine-specific optimization flags that start with -m that you might want to try out</li></ul></ul>
+<h4><a name="TOC-CFLAGS"></a>CFLAGS</h4>
+<p>If you have flags that you want to use only when compiling C code, use this variable.  Otherwise, things will default to <code>-O2 -g -pipe</code>.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ grep CFLAGS make.conf</code><br />
+<code>CFLAGS="${CFLAGS} ${MARCH_TUNE}"</code></div>
+<h4><a name="TOC-CXXFLAGS"></a>CXXFLAGS</h4>
+<p>If you have flags that you want to use only when compiling C++ code, use this variable.  Otherwise, things will default to <code>-O2 -g -pipe</code>.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ grep CXXFLAGS make.conf</code><br />
+<code>CXXFLAGS="${CXXFLAGS} ${MARCH_TUNE}"</code></div>
+<h4><a name="TOC-LDFLAGS"></a>LDFLAGS</h4>
+<p>If you have flags that you want to send directly to the linker for all links, use this variable.</p>
+<p>These should take the form as given to the compiler driver.  i.e. use <code>-Wl,-z,relro</code> rather than <code>-z relro</code>.</p>
+<p>You can find common settings in the <a href="http://sourceware.org/binutils/docs/ld/Options.html">GNU Linker manual</a>.</p>
+<h2><a name="TOC-Buildbot-Configs"></a>Buildbot Configs</h2>
+<p>Presumably you'd like to be able to easily (and cleanly) produce artifacts for your board. In our <a href="https://chromium.googlesource.com/chromiumos/chromite">chromite repo</a>, we have a tool called <a href="https://chromium.googlesource.com/chromiumos/chromite/+/master/scripts/cbuildbot.py">cbuildbot</a> that takes care of all that for us. Normally it's run by <a href="http://buildbot.net/">buildbot</a> on a <a href="http://build.chromium.org/p/chromiumos/waterfall">waterfall</a> to produce all the goodness, but there's no requirement that buildbot be the tool you use. You can even <a href="http://www.chromium.org/chromium-os/build/local-trybot-documentation">run it locally</a>.</p>
+<h3><a name="TOC-chromite-buildbot-cbuildbot_config.py"></a>chromite/buildbot/cbuildbot_config.py</h3>
+<p>At any rate, you'll need to update this <a href="https://chromium.googlesource.com/chromiumos/chromite/+/master/cbuildbot/cbuildbot_config.py">master file</a> to add your new board configs. There are a few classes of configs to be familiar with:</p>
+<ul><li>$BOARD-paladin: used by the <a href="http://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/commit-queue-overview">Chromium OS CQ</a> -- not needed if you aren't an official Chrome OS device</li>
+<li>$BOARD-full: a public build of the build</li>
+<li>$BOARD-release: a private build of the board</li>
+<li>$BOARD-firmware: build just the firmware (bootloader/etc...) for the board</li>
+<li>$BOARD-factory: build the factory install shim -- used to create an image for programming devices in the factory/RMA/etc...</li></ul>
+<p>The file should be largely self-documenting.</p>
+<h2><a name="TOC-Google-Storage-Integration"></a>Google Storage Integration</h2>
+<p>Sometimes you'll want to host large files or prebuilt binary packages for your repo, but you don't want to give out access to everyone in the world. You can great some boto config files, and the build scripts will automatically use them when they're found.</p>
+<h3><a name="TOC-googlestorage_account.boto"></a>googlestorage_account.boto</h3>
+<p>Create this file in the root of the overlay. This file stores the access credential (in cleartext) for the role account.</p>
+<h3><a name="TOC-googlestorage_acl.-"></a>googlestorage_acl.*</h3>
+<p>These are the ACL files used by gsutil to apply access for people. Used whenever you want to upload files and grant access to people who have the boto file.</p><p>The TXT format is documented in the <a href="http://www.chromium.org/chromium-os/build/gsutil-faq">gsutil FAQ</a>. The JSON format is not yet used. Support for the XML format has been dropped.</p></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/chromium-os/how-tos-and-troubleshooting/chromiumos-board-porting-guide/private-boards" dir="ltr">Creating Private Board Overlays</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/chromiumos-board-porting-guide">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXukca4jaDOG9SuQz_G8t7HlMoOXvVzWMkvMsBCUd0JV8Fb53rgPERO0fdJpotXiFarCU-FjWyvvtlL26RQdxn2iiiftTNYrlQUAHSV-R1GTo8H62hdiZqsUJdQBf4I7Lsn1duN2/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

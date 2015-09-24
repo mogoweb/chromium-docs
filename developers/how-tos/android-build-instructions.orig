@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/android-build-instructions","deleted":false,"title":"Android Build Instructions","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/how-tos/android-build-instructions\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Android Build Instructions","locale":"en","wuid":"wuid:gx:612a6951d8a4aab7","revision":9,"path":"/developers/how-tos/android-build-instructions","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"android-build-instructions","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Android Build Instructions - The Chromium Projects" />
+<meta itemprop="name" content="Android Build Instructions - The Chromium Projects" />
+<meta property="og:title" content="Android Build Instructions - The Chromium Projects" />
+<meta name="description" content="Build instructions for Chromium for Android" />
+<meta itemprop="description" content="Build instructions for Chromium for Android" />
+<meta id="meta-tag-description" property="og:description" content="Build instructions for Chromium for Android" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Android Build Instructions - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Android Build Instructions</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Prerequisites"><strong>1 </strong>Prerequisites</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Get-the-code"><strong>1.1 </strong>Get the code</a></li><li class="goog-toc"><a href="#TOC-Optional-Check-out-LKGR"><strong>1.2 </strong>(Optional) Check out LKGR</a></li><li class="goog-toc"><a href="#TOC-Configure-your-build"><strong>1.3 </strong>Configure your build</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Configure-GYP"><strong>1.3.1 </strong>Configure GYP</a></li><li class="goog-toc"><a href="#TOC-Configure-GN"><strong>1.3.2 </strong>Configure GN</a></li></ol></li><li class="goog-toc"><a href="#TOC-You-can-also-specify-target_cpu-values-of-x86-and-mipsel-.-Re-run-gn-args-on-that-directory-to-edit-the-flags-in-the-future.-See-the-GN-build-configuration-page-for-other-flags-you-may-want-to-set."><strong>1.4 </strong>You can also specify target_cpu values of "x86" and "mipsel". Re-run gn args on that directory to edit the flags in the future. See the GN build configuration page for other flags you may want to set.</a></li><li class="goog-toc"><a href="#TOC-Install-Java-JDK"><strong>1.5 </strong>Install Java JDK</a></li><li class="goog-toc"><a href="#TOC-Install-build-dependencies"><strong>1.6 </strong>Install build dependencies</a></li><li class="goog-toc"><a href="#TOC-Install-Google-Play-Services"><strong>1.7 </strong>Install Google Play Services</a></li></ol></li><li class="goog-toc"><a href="#TOC-Build-and-install-the-APKs"><strong>2 </strong>Build and install the APKs</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Plug-in-your-Android-device"><strong>2.1 </strong>Plug in your Android device</a></li><li class="goog-toc"><a href="#TOC-Build-the-full-browser"><strong>2.2 </strong>Build the full browser</a></li><li class="goog-toc"><a href="#TOC-For-GN-builds-substitute-out-Release-with-the-name-you-have-given-to-your-build-directory.-"><strong>2.3 </strong>(For GN builds, substitute out/Release with the name you have given to your build directory.)</a></li><li class="goog-toc"><a href="#TOC-Build-Content-shell"><strong>2.4 </strong>Build Content shell</a></li><li class="goog-toc"><a href="#TOC-Build-WebView-shell"><strong>2.5 </strong>Build WebView shell</a></li></ol></li><li class="goog-toc"><a href="#TOC-Running"><strong>3 </strong>Running</a></li><li class="goog-toc"><a href="#TOC-Debugging"><strong>4 </strong>Debugging</a></li><li class="goog-toc"><a href="#TOC-Testing"><strong>5 </strong>Testing</a></li><li class="goog-toc"><a href="#TOC-Miscellaneous"><strong>6 </strong>Miscellaneous</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Using-Oracle-JDK"><strong>6.1 </strong>Using Oracle JDK</a></li><li class="goog-toc"><a href="#TOC-Rebuilding-libchrome.so-for-a-particular-release"><strong>6.2 </strong>Rebuilding libchrome.so for a particular release</a></li></ol></li></ol></div></div></div></div></div><h2><a name="TOC-1"></a><br /></h2><h2><a name="TOC-Prerequisites"></a>Prerequisites</h2>A Linux build machine capable of building <a href="https://code.google.com/p/chromium/wiki/LinuxBuildInstructionsPrerequisites">Chrome for Linux</a>. Other (Mac/Windows) platforms are not supported for Android.<br /><h3><a name="TOC-Get-the-code"></a>Get the code</h3>First, check out and install the <a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up">depot_tools package</a>.<div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><span style="font-size:10pt;background-color:transparent">Then create your source directory and get the code:</span><div><br /><div class="sites-codeblock sites-codesnippet-block"><code>$ mkdir ~/chromium &amp;&amp; cd ~/chromium</code><br /><code>~/chromium$ fetch --nohooks android   # This will take 30 minutes on a fast connection</code></div><h3><a name="TOC-Optional-Check-out-LKGR"></a>(Optional) Check out LKGR</h3>If you want a single build of Chromium in a known good state, sync to the LKGR ("last known good revision"). You can find it <a href="http://chromium-status.appspot.com/lkgr">here</a>, and the last 100 <a href="http://chromium-status.appspot.com/revisions">here</a>. Run:</div><div><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ gclient sync --nohooks -r &lt;lkgr-sha1&gt;</code></div><br />This is not needed for a typical developer workflow; only for one-time builds of Chromium.<br /><h3><a name="TOC-Configure-your-build"></a>Configure your build</h3><div>Android builds can be run with GN or GYP. They are both meta-build systems that generate nina files for the Android build. Currently GYP is what official builds are produced from, is somewhat better tested, and will support more configurations. We are in the process of switching to GN, but some of the scripts below may not work yet. Both builds are regularly tested on the build waterfall.</div><h4><a name="TOC-Configure-GYP"></a>Configure GYP</h4>If you are using GYP, next to the .gclient file, create a a file called <span style="font-size:13.3333330154419px;background-color:transparent"><code>chromium.gyp_env</code></span><span style="font-size:10pt;background-color:transparent"> with the following contents:</span></div><div><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ echo "{ 'GYP_DEFINES': 'OS=android', }" &gt; chromium.gyp_env</code></div><br />If you wish to *build for x86 targets*:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ echo "{ 'GYP_DEFINES': 'OS=android target_arch=ia32', }" &gt; chromium.gyp_env</code></div><br />If you wish to *build for MIPS targets*:<br /><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ echo "{ 'GYP_DEFINES': 'OS=android target_arch=mipsel', }" &gt; chromium.gyp_env</code><br /></div><br /><b>NOTE:</b> If you are using the <code>GYP_DEFINES</code> environment variable, it will override any settings in this file. Either clear it or set it to the values above before running <code>gclient runhooks</code>.<br /><br />See <a href="https://code.google.com/p/chromium/codesearch#chromium/src/build/android/developer_recommended_flags.gypi&amp;sq=package:chromium&amp;type=cs&amp;q=file:android/developer_recommended_flags.gypi&amp;l=1">build/android/developer_recommended_flags.gypi</a> for other recommended GYP settings.<br /><br />Once chromium.gyp_env is ready, you need to run the following command to update projects from gyp files. You may need to run this again when you have added new files, updated gyp files, or sync'ed your repository.<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ gclient runhooks</code></div><h4 style="font-size:13.3333px"><a name="TOC-Configure-GN"></a>Configure GN</h4><div style="font-size:13.3333px">If you are using GN, create a build directory and set the build flags with:</div><div><div style="font-size:13.3333px"><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ gn args out/Default</code></div><br />You can replace <span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333px;line-height:13.3333px">out/Default</span><span style="font-size:13.3333px;background-color:transparent"> with another name you choose inside the </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333px;line-height:13.3333px">out</span><span style="font-size:13.3333px;background-color:transparent"> directory. Do not use GYP's </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333px;line-height:13.3333px">out/Debug</span><span style="font-size:13.3333px;background-color:transparent"> or </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333px;line-height:13.3333px">out/Release</span><span style="font-size:13.3333px;background-color:transparent"> directories, as they may conflict with GYP builds.</span></div><div style="font-size:13.3333px"><br /></div><div style="font-size:13.3333px">This command will bring up your editor with the GN build args. In this file add:</div><br style="font-size:13.3333px" /><div class="sites-codeblock sites-codesnippet-block"><code><span style="font-size:13.3333px">target_os = "android"</span><br /><span style="font-size:13.3333px">target_cpu = "arm"  # (default)</span><br /><span style="font-size:13.3333px;line-height:13.3333px">is_debug = true  # </span></code><font color="#006000" face="monospace"><span style="font-size:13.3333px;line-height:13.3333px">(default)<br /></span></font><br /><font color="#006000" face="monospace"><span style="font-size:13.3333px;line-height:13.3333px"># Other args you may want to set:</span></font><br /><font color="#006000" face="monospace"><span style="font-size:13.3333px;line-height:13.3333px">is_component_build = true</span></font><br /><font color="#006000" face="monospace"><span style="font-size:13.3333px;line-height:13.3333px">is_clang = true</span><br /><span style="font-size:13.3333px;line-height:13.3333px">symbol_level = 1  # Use -g1 rather than -g2</span></font></div><br style="font-size:13.3333px" /></div><h3><a name="TOC-You-can-also-specify-target_cpu-values-of-x86-and-mipsel-.-Re-run-gn-args-on-that-directory-to-edit-the-flags-in-the-future.-See-the-GN-build-configuration-page-for-other-flags-you-may-want-to-set."></a><span style="font-size:13.3333px;font-weight:normal;background-color:transparent">You can also specify </span><span style="font-size:13.3333px;font-weight:normal;color:rgb(0,96,0);font-family:monospace;line-height:13.3333px;background-color:transparent">target_cpu</span><span style="font-size:13.3333px;font-weight:normal;background-color:transparent"> values of </span><span style="font-size:13.3333px;font-weight:normal;color:rgb(0,96,0);font-family:monospace;line-height:13.3333px;background-color:transparent">"x86"</span><span style="font-size:13.3333px;font-weight:normal;background-color:transparent"> and </span><span style="font-size:13.3333px;font-weight:normal;color:rgb(0,96,0);font-family:monospace;line-height:13.3333px;background-color:transparent">"mipsel"</span><span style="font-size:13.3333px;font-weight:normal;background-color:transparent">. Re-run gn args on that directory to edit the flags in the future. See the </span><a href="http://www.chromium.org/developers/gn-build-configuration" style="font-size:13.3333px;font-weight:normal;background-color:transparent">GN build configuration</a><span style="font-size:13.3333px;font-weight:normal;background-color:transparent"> page for other flags you may want to set.</span></h3><h3><a name="TOC-Install-Java-JDK"></a>Install Java JDK</h3>You should be able to build Chrome Android with Open JDK 1.6 or 1.7.<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ sudo apt-get install openjdk-7-jdk</code></div><br />Make also sure that OpenJDK is selected as default:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>sudo update-alternatives --config javac</code><br /><code>sudo update-alternatives --config java</code><br /><code>sudo update-alternatives --config javaws</code><br /><code>sudo update-alternatives --config javap</code><br /><code>sudo update-alternatives --config jar</code><br /><code>sudo update-alternatives --config jarsigner</code><br /></div><br />If you prefer to use Oracle Java JDK, see "Using Oracle JDK" below.<br /><h3><a name="TOC-Install-build-dependencies"></a>Install build dependencies</h3>Update the system packages required to build by running:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ src/build/install-build-deps-android.sh </code><br /></div><div><br /></div>This will prompt you to accept Terms of Service for Android SDK packages.<br /><h3><a name="TOC-Install-Google-Play-Services"></a>Install Google Play Services</h3>This is necessary before gclient runhooks:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium$ src/third_party/android_tools/sdk/tools/android update sdk --no-ui --filter 57</code></div><br /><h2><a name="TOC-Build-and-install-the-APKs"></a>Build and install the APKs</h2>If the <code>adb_install_apk.py</code> script below fails, make sure aapt is in your PATH. If not, add aapt's path to your PATH environment variable (it should be <code>/path/to/src/third_party/android_tools/sdk/build-tools/{latest_version}/</code>)<br /><br /><h3><a name="TOC-Plug-in-your-Android-device"></a>Plug in your Android device</h3>Make sure your Android device is plugged in, and USB Debugging is enabled.<br /><br />To enable USB Debugging:<br /><ul><li><span style="font-size:10pt;background-color:transparent">Navigate to Settings &gt; About Phone &gt; Build number</span></li><li><span style="font-size:10pt;background-color:transparent">Click 'Build number' 7 times</span></li><li><span style="font-size:10pt;background-color:transparent">Now navigate back to Settings &gt; Developer Options</span></li><li><span style="font-size:10pt;background-color:transparent">Enable 'USB Debugging' and follow the prompts</span></li></ul>You may also be prompted to allow access to your PC once your device is plugged in.<br /><br />You can check if the device is connected by running:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>third_party/android_tools/sdk/platform-tools/adb wait-for-devices</code></div></div><div><br />If it terminates immediately, the device is plugged in. If it hangs, the device is not yet connected.<br /><h3><a name="TOC-Build-the-full-browser"></a>Build the full browser</h3><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ ninja -C out/Release chrome_public_apk</code><br /><code>~/chromium/src$ build/android/adb_install_apk.py out/Release/apks/ChromePublic.apk</code><br /></div><h3><a name="TOC-For-GN-builds-substitute-out-Release-with-the-name-you-have-given-to-your-build-directory.-"></a><font size="2"><span style="font-weight:normal">(For GN builds, substitute </span></font><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333px;line-height:13.3333px;font-weight:normal;background-color:transparent">out/Release</span><span style="font-weight:normal;font-size:small;background-color:transparent"> with the name you have given to your build directory.)</span></h3><h3><a name="TOC-Build-Content-shell"></a>Build Content shell</h3>Wraps the content module (but not the /chrome embedder). See <span style="font-size:13.3333330154419px"><a href="http://www.chromium.org/developers/content-module">http://www.chromium.org/developers/content-module</a></span> for details on the content module and content shell.<br /><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ ninja -C out/Release content_shell_apk</code><br /><code>~/chromium/src$ build/android/adb_install_apk.py out/Release/apks/ContentShell.apk</code><br /></div><br />this will build and install an Android apk under <code>out/Release/apks/ContentShell.apk</code>. For GYP, replace <code>Release</code> with <code>Debug</code> above if you want to generate a Debug app. If you are using GN, substitute the name you initially gave to your build directory.<br /><br />If you use custom out dir instead of standard out/ dir, use CHROMIUM_OUT_DIR env.  <br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>&gt; export CHROMIUM_OUT_DIR=out_android</code></div><h3><a name="TOC-Build-WebView-shell"></a>Build WebView shell</h3><a href="http://developer.android.com/reference/android/webkit/WebView.html">Android WebView</a> is a system framework component. Since Android KitKat, it is implemented using Chromium code (based off the <a href="http://dev.chromium.org/developers/content-module">content module</a>). It is possible to test modifications to WebView using a simple test shell. The WebView shell is a view with a URL bar at the top (see <a href="https://code.google.com/p/chromium/codesearch#chromium/src/android_webview/test/shell/src/org/chromium/android_webview/test/AwTestContainerView.java">code</a>) and is <b>independent</b> of the WebView <b>implementation in the Android system</b> (the WebView shell is essentially a standalone unbundled app).  As drawback, the shell runs in software rendering mode only.<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ ninja -C out/Release android_webview_apk</code><br /><code>~/chromium/src$ build/android/adb_install_apk.py out/Release/apks/AndroidWebView.apk</code><br /></div><br />If, instead, you want to build the complete Android WebView framework component and test the effect of your chromium changes in other Android app using the WebView, you should follow the <a href="http://www.chromium.org/developers/how-tos/build-instructions-android-webview">Android AOSP + chromium WebView instructions</a></div><div><br /><h2><a name="TOC-Running"></a>Running</h2>Prepare the environment:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ . build/android/envsetup.sh</code></div><br />Set <a href="http://www.chromium.org/developers/how-tos/run-chromium-with-flags">command line flags</a> if neccessary.<br /><br />For Content shell:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ build/android/adb_run_content_shell  http://example.com</code></div><br />For Chrome public:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ build/android/adb_run_chrome_public  http://example.com</code></div><br />For Android WebView shell:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ build/android/adb_run_android_webview_shell http://example.com</code></div><div><br /></div><h2><a name="TOC-Debugging"></a>Debugging</h2>For Content shell:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ build/android/adb_gdb_content_shell</code><br /></div><br />For Chrome public:<br /><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ build/android/adb_gdb_chrome_public</code><br /></div><br />For Android WebView shell:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>~/chromium/src$ build/android/adb_gdb_android_webview_shell http://example.com</code><br /></div><br /><h2><a name="TOC-Testing"></a>Testing</h2>For information on running tests, see <a href="https://code.google.com/p/chromium/wiki/AndroidTestInstructions">AndroidTestInstructions</a>.<br /><br /><h2><a name="TOC-Miscellaneous"></a>Miscellaneous</h2><h3><a name="TOC-Using-Oracle-JDK"></a>Using Oracle JDK</h3><ul><li><span style="font-size:10pt;background-color:transparent">Visit <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html</a></span></li><li><span style="font-size:10pt;background-color:transparent">Accept the license agreement</span></li><li><span style="font-size:10pt;background-color:transparent">Download jdk-6uXX-linux-x64.bin (where XX is the latest minor version)</span></li><li><span style="font-size:10pt;background-color:transparent">If you don't have an Oracle account and don't want to create one, you can have a look at <a href="http://bugmenot.com/view/oracle.com">http://bugmenot.com/view/oracle.com</a></span></li></ul>Here is how to configure Oracle Java JDK to be the default on Ubuntu:<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>mv ~/Downloads/jdk-6u*-linux-x64.bin /tmp/</code><br /><code>chmod 755 /tmp/jdk-6u*-linux-x64.bin</code><br /><code>cd /usr/lib/jvm</code><br /><code>sudo /tmp/jdk-6u*-linux-x64.bin -noregister</code><br /><br /><code># Set it as default.</code><br /><code>sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.6.*/bin/javac 50000</code><br /><code>sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.6.*/bin/java 50000</code><br /><code>sudo update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.6.*/bin/javaws 50000</code><br /><code>sudo update-alternatives --install /usr/bin/javap javap /usr/lib/jvm/jdk1.6.*/bin/javap 50000</code><br /><code>sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.6.*/bin/jar 50000</code><br /><code>sudo update-alternatives --install /usr/bin/jarsigner jarsigner /usr/lib/jvm/jdk1.6.*/bin/jarsigner 50000</code><br /><code>sudo update-alternatives --config javac</code><br /><code>sudo update-alternatives --config java</code><br /><code>sudo update-alternatives --config javaws</code><br /><code>sudo update-alternatives --config javap</code><br /><code>sudo update-alternatives --config jar</code><br /><code>sudo update-alternatives --config jarsigner</code></div><br />Also make sure <code>/usr/bin/java</code> is first in your PATH. i.e.<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>which java</code></div><br />should return <code>/usr/bin/java</code>.<br /><h3><a name="TOC-Rebuilding-libchrome.so-for-a-particular-release"></a>Rebuilding libchrome.so for a particular release</h3>In the case where you want to modify the native code for an existing release of Chrome for Android (v25+) you can do the following steps. Note that in order to get your changes into the official release, you'll need to send your change for a codereview using the regular process for committing code to chromium.<br /><ol><li><span style="font-size:10pt;background-color:transparent">Open Chrome on your Android device and visit chrome://version</span></li><li><span style="font-size:10pt;background-color:transparent">Copy down the id listed next to "Build ID:"</span></li><li><span style="font-size:10pt;background-color:transparent">Go to <a href="http://storage.googleapis.com/chrome-browser-components/BUILD_ID_FROM_STEP_2/index.html">http://storage.googleapis.com/chrome-browser-components/BUILD_ID_FROM_STEP_2/index.html</a></span></li><li><span style="font-size:10pt;background-color:transparent">Download the listed files and follow the steps in the README.</span></li></ol></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/how-tos/android-build-instructions">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9R_lAiMdnOF0BA2efPIaXOQ7Jlssh-eNXbqzzFOc1qCczhRWhLPn9Sp3hcUt2PP_cC84B9l0x_rYXSnTzDt6Y2SMekvHLon76g-c6MCM4Xh4XRJga/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

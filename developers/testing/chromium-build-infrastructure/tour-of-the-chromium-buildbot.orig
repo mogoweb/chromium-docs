@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/chromium-build-infrastructure","deleted":false,"title":"Chromium build infrastructure","dir":"ltr"},{"path":"/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot","deleted":false,"title":"Tour of the Chromium Buildbot Waterfall","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing/chromium-build-infrastructure","parentWuid":"wuid:gx:565711f289883ee0","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Tour of the Chromium Buildbot Waterfall","locale":"en","wuid":"wuid:gx:15eb6ba9af976111","revision":52,"path":"/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"tour-of-the-chromium-buildbot","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Tour of the Chromium Buildbot Waterfall - The Chromium Projects" />
+<meta itemprop="name" content="Tour of the Chromium Buildbot Waterfall - The Chromium Projects" />
+<meta property="og:title" content="Tour of the Chromium Buildbot Waterfall - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Tour of the Chromium Buildbot Waterfall - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1373016376231/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/waterfall.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1373016376231/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/waterfall.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎<A href="/developers/testing/chromium-build-infrastructure" dir="ltr">Chromium build infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Tour of the Chromium Buildbot Waterfall</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="margin-top:0px;margin-bottom:0px">Chromium uses <a href="http://buildbot.net" style="border-collapse:separate;font-size:13px">buildbot</a> to run continuous builds and tests. The most useful is the <a href="http://build.chromium.org" target="_blank">Chromium Continuous</a> master. From the top section you'll see other masters linked. Each can display a waterfall and <a href="http://build.chromium.org/p/chromium">console view</a>. The Chromium Buildbot waterfall shows the status of many tests. That waterfall shows a lot of information that can be hard to understand at first, so let's take a quick tour. </div>
+<div style="margin-top:0px;margin-bottom:0px"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Basics"><strong>1 </strong>Basics</a></li><li class="goog-toc"><a href="#TOC-Slaves-"><strong>2 </strong>Slaves </a></li><li class="goog-toc"><a href="#TOC-Build-Steps-"><strong>3 </strong>Build Steps </a></li><li class="goog-toc"><a href="#TOC-Builders-vs-Testers"><strong>4 </strong>Builders vs Testers</a></li><li class="goog-toc"><a href="#TOC-Changes"><strong>5 </strong>Changes</a></li><li class="goog-toc"><a href="#TOC-Tree-state"><strong>6 </strong>Tree state</a></li><li class="goog-toc"><a href="#TOC-Seeing-More-and-Seeing-Less"><strong>7 </strong>Seeing More and Seeing Less</a></li><li class="goog-toc"><a href="#TOC-Sheriffs-"><strong>8 </strong>Sheriffs </a></li><li class="goog-toc"><a href="#TOC-Sources"><strong>9 </strong>Sources</a></li><li class="goog-toc"><a href="#TOC-Adding-new-build-configurations-and-tests-to-the-main-Chromium-waterfall-Commit-Queue"><strong>10 </strong>Adding new build configurations and tests to the main Chromium waterfall &amp; Commit Queue</a></li><li class="goog-toc"><a href="#TOC-Builder-setup"><strong>11 </strong>Builder setup</a></li><li class="goog-toc"><a href="#TOC-Other-views"><strong>12 </strong>Other views</a></li><li class="goog-toc"><a href="#TOC-Glossary"><strong>13 </strong>Glossary</a></li></ol></div></div></div></div><br />
+<h2><a name="TOC-Basics"></a>Basics</h2>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="display:block;margin-right:auto;margin-left:auto;text-align:center">
+<div style="text-align:-webkit-auto">The buildbot master process is watching the Subversion and git repository, telling slaves to start building and testing new revisions, and serves the "waterfall" page that shows all the results. (For network reasons, Chromium actually has a separate machine showing the waterfall, delayed by up to two minutes. Usually this doesn't matter, but every once in a while it can lead to confusion.). Every time a new revision is discovered, the master triggers builders as each serve a different purpose. "Testing" builders are triggered when a "building" builder doing compilation archives its build. For example, all "XP Tests (dbg)(N)" and "Vista Tests (dbg)(N)" are triggered when "Chromium Builder (dbg)" is done archiving its build.</div>
+<div style="text-align:-webkit-auto">
+<h2><a name="TOC-Slaves-"></a>Slaves </h2>
+Let's take a look at the <a href="http://build.chromium.org/p/chromium/waterfall" target="_blank">waterfall page</a>. For now, skip over the header (green, red, yellow, etc.) and the box at the top with lots of links and horizontal stripes (we'll come back to them later), and look down at the row of grey boxes with "changes" at the left. Those boxes show one column per build slave.</div>
+<div style="text-align:-webkit-auto"><span style="font-size:10pt"><br />
+</span></div>
+<div style="text-align:-webkit-auto"><span style="font-size:10pt">The main waterfall page shows only the builders, machines that build the executables and then distribute them to numerous machines to run various kinds of tests.</span></div>
+<div style="text-align:-webkit-auto"><span style="font-size:10pt"><br />
+</span></div>
+<div style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px">
+<div style="text-align:left"><span style="font-size:10pt">
+<div style="display:block;text-align:left;margin-right:auto">
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/waterfall.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1373016376231/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/waterfall.png" /></a></div>
+<br />
+</div>
+<div style="display:block;text-align:left;margin-right:auto"><br />
+</div>
+<div style="display:block;text-align:left;margin-right:auto"><span style="font-size:10pt;text-align:-webkit-auto">"Memory" slaves run tests using ASAN to check memory correctness, "Perf" slaves are running performance tests, and "GPU" slaves run tests related to GPU usage. "Tree closers" automatically close the tree (preventing people from committing new changes) when they fail; "FYI" testers are considered less important, so failures there shouldn't close the tree.</span></div>
+<div style="display:block;text-align:left;margin-right:auto"><span style="font-size:10pt;text-align:-webkit-auto"><br />
+</span></div>
+<div style="display:block;text-align:left;margin-right:auto">Click on one of the platform names next to a row of colored boxes in the big grey box at the top, and then on "waterfall" at the left, to see the testing slaves working on that platform, for example <a href="http://build.chromium.org/p/chromium.win/waterfall" target="_blank">Windows</a>. T<span style="font-size:10pt">he set of slaves changes pretty often, so any list we could put here would go out of date quickly, but the names are generally pretty good at describing what kinds of machines they are and what kinds of tests they're running. </span><span style="font-size:10pt">A "dbg" slave is running a Debug build rather than a Release build. Some machines both build and test, but "builder" machines only build the executables, then upload them to "tests" machines to run the tests.</span></div>
+<br />
+</span></div>
+</div>
+<div style="display:inline;float:right;margin-top:5px;margin-right:10px;margin-bottom:5px;margin-left:10px"><br />
+<a href="http://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/waterfall.png?attredirects=0" imageanchor="1" style="border-collapse:separate;font-family:Verdana;font-size:13px;color:rgb(0,0,0)"><br />
+</a><br />
+</div>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+<h2><a name="TOC-Build-Steps-"></a>Build Steps </h2>
+Now look down one of the columns, starting at the grey box with the slave's name. Each box shows one step in that slave's build/test sequence, with the oldest one at the bottom and the current or latest one just below the name box. Just above the name box is the slave's current activity, and above that is the final result of the last build/test sequence that finished. <br />
+<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">A yellow build step is still in progress, green finished successfully, red finished with errors, orange finished with warnings, and purple had an internal Buildbot error. <br />
+<br />
+</div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px">
+<tbody>
+<tr>
+<td style="width:84px;height:15px"><b>Step name</b></td>
+<td style="width:124px;height:15px"><b>Script </b></td>
+<td style="width:409px;height:15px"><b>Description</b></td>
+<td style="width:145px;height:15px"><b>When is it orange?</b></td>
+<td style="width:298px;height:15px"><b>When it is red...</b></td>
+</tr>
+<tr>
+<td style="width:84px;height:15px">svnkill</td>
+<td style="width:124px;height:15px">taskkill</td>
+<td style="width:409px;height:15px">Kill any leftover svn processes before starting a new test cycle.</td>
+<td style="width:145px;height:15px">N/A</td>
+<td style="width:298px;height:15px">N/A; contact trooper</td>
+</tr>
+<tr>
+<td style="width:84px;height:15px">update scripts</td>
+<td style="width:124px;height:15px">gclient sync</td>
+<td style="width:409px;height:15px">Update the internal buildbot scripts on the slave.</td>
+<td style="width:145px;height:15px">N/A</td>
+<td style="width:298px;height:15px">svn server failure; contact trooper</td>
+</tr>
+<tr>
+<td style="width:84px;height:31px">update</td>
+<td style="width:124px;height:31px">gclient sync </td>
+<td style="width:409px;height:31px">Update the checkout with gclient. This also runs the hooks like gyp to generate the make/vcproj/xcodeproj files.</td>
+<td style="width:145px;height:31px">N/A</td>
+<td style="width:298px;height:31px">svn server failure or DEPS breakage; contact trooper</td>
+</tr>
+<tr>
+<td style="width:84px;height:31px">taskkill</td>
+<td style="width:124px;height:31px">kill_processes.py</td>
+<td style="width:409px;height:31px">Kill a bunch of other possible leftover processes (test_shell.exe, ui_tests.exe, etc.) that would interfere with a clean run.</td>
+<td style="width:145px;height:31px">N/A</td>
+<td style="width:298px;height:31px">N/A; contact trooper</td>
+</tr>
+<tr>
+<td>gclient_revert</td>
+<td>gclient_safe_revert.py</td>
+<td>Revert any changes if a checkout exists.</td>
+<td>N/A</td>
+<td>svn server failure or broken checkout; contact trooper</td>
+</tr>
+<tr>
+<td>cleanup_temp</td>
+<td>cleanup_temp.py</td>
+<td>Remove any leftover temp files.</td>
+<td>N/A</td>
+<td>N/A; contact trooper</td>
+</tr>
+<tr>
+<td style="width:84px;height:31px">check deps</td>
+<td style="width:124px;height:31px">checkdeps.py </td>
+<td style="width:409px;height:31px">Ensure that source dependencies stay clean. It's done by parsing .cc and .h files according to rules to DEPS files.</td>
+<td style="width:145px;height:31px">N/A</td>
+<td style="width:298px;height:31px">A bad change; revert</td>
+</tr>
+<tr>
+<td style="width:84px;height:31px">compile</td>
+<td style="width:124px;height:31px">compile.py</td>
+<td style="width:409px;height:31px">Build the executables</td>
+<td style="width:145px;height:31px">N/A</td>
+<td style="width:298px;height:31px">A bad change; revert<br />
+</td>
+</tr>
+<tr>
+<td style="width:84px;height:15px">archive build</td>
+<td style="width:124px;height:15px">archive_build.py</td>
+<td style="width:409px;height:15px">Save the executables and symbols into "snapshots"</td>
+<td style="width:145px;height:15px">N/A</td>
+<td style="width:298px;height:15px">N/A</td>
+</tr>
+<tr>
+<td style="width:84px;height:63px">extract build</td>
+<td style="width:124px;height:63px">extract_build.py</td>
+<td style="width:409px;height:63px">Extract an archive build on a tester from the corresponding "builder"</td>
+<td style="width:145px;height:63px">Failed to fetch the url requested. The last archived build is used instead.</td>
+<td style="width:298px;height:63px">Failed to fetch any build; the slave probably needs to be restarted, contact a trooper</td>
+</tr>
+<tr>
+<td style="width:84px;height:47px">(various tests)</td>
+<td style="width:124px;height:47px">runtest.py, debuger_unittests.py, chrome_tests.py, etc</td>
+<td style="width:409px;height:47px">See <a href="http://www.chromium.org/developers/testing">testing information</a></td>
+<td style="width:145px;height:47px">Only FLAKY_ tests failed</td>
+<td style="width:298px;height:47px">Tests failed; revert.</td>
+</tr>
+<tr>
+<td style="width:84px;height:47px">layout tests</td>
+<td style="width:124px;height:47px">webkit_test.py</td>
+<td style="width:409px;height:47px">Run <a href="http://www.chromium.org/developers/testing/webkit-layout-tests">html based tests from webkit</a></td>
+<td style="width:145px;height:47px">Tests marked as FAIL passed, no test unexpectedly failed. See test_expectations in layout test doc.</td>
+<td style="width:298px;height:47px">Unexpected layout test failure. It's usually related to a Webkit roll.</td>
+</tr>
+<tr>
+<td style="width:84px;height:31px">BVT tests</td>
+<td style="width:124px;height:31px">wait_for_bvt.sh and others</td>
+<td style="width:409px;height:31px">Run tests on actual ChromiumOS hardware</td>
+<td style="width:145px;height:31px">N/A</td>
+<td style="width:298px;height:31px">Tests failed or machine broke.</td>
+</tr>
+<tr>
+<td style="width:84px;height:47px">Reliability tests</td>
+<td style="width:124px;height:47px">reliability_tests.py</td>
+<td style="width:409px;height:47px">Run <a href="http://www.chromium.org/developers/how-tos/reliability-tests">distributed tests</a> to find non-deterministic crashes. It is green when only "known crashers" happens</td>
+<td style="width:145px;height:47px">Fails to grab the summary of the test runs for the expected build.</td>
+<td style="width:298px;height:47px">New stack traces appeared in crashes. </td>
+</tr>
+</tbody>
+</table>
+<div><br />
+If you click on the "stdio" link for a step, you can see the exact command that was run and the environment it was run in in blue, and any output it produced in black. stderr is in red.<br />
+<br />
+Most of the tests are pretty straightforward, but performance test output can be complicated at times. See the <a href="http://www.chromium.org/developers/testing/chromium-build-infrastructure/performance-test-plots">Guide to Perf Test Plots</a> for more about that. <br />
+<h2><a name="TOC-Builders-vs-Testers"></a>Builders vs Testers</h2>
+<div>A tester doesn't compile, so <b>you can't clobber it</b>. It simply extracts its build from a builder. Testers are triggered when the corresponding builder finishes.</div>
+<h2><a name="TOC-Changes"></a>Changes</h2>
+Each time someone commits a change to the svn repository, the build master tries to get the slaves to start their build and test sequences. (If they're already busy, the change is queued, which means that more than one change is included in a single run if they're coming in faster than the slaves can test.) The "changes" column at the left of the waterfall shows who committed a patch and when. If you hover over that link, you'll see a summary of the change; click on it to see a little more information. The times at the very left are in Pacific time. <br />
+<br />
+At the start of each run (that is, at the bottom of each series of steps for a slave), there's a yellow box holding the build number. Clicking on that build-number link shows more information about the run, including in principle the "blamelist" of changes that went into it. Every now and then, though, that list of changes is off by one. If you need to know for sure, look at the results of the "update" step to see exactly what gclient sync pulled in. <br />
+<h2><a name="TOC-Tree-state"></a>Tree state</h2>
+<div>The "tree" is the sum of the various source repositories used to build the project, being Chromium, ChromiumOS, NativeClient, etc. In Chromium case, it's chrome/src/ plus everything listed in its <a href="http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?view=markup" target="_blank">DEPS</a> file, and a bit more for Google Chrome like trademarked graphics. The tree can be "<font color="#38761D">open</font>", "<span style="background-color:rgb(255,255,255)"><font color="#CC0000">closed</font></span>" or "<font color="#F1C232">throttled</font>". The normal state is open. When tests break, the tree is closed by putting the word "closed" in the tree status; <a href="http://src.chromium.org/viewvc/chrome/trunk/src/PRESUBMIT.py?view=markup" target="_blank">PRESUBMIT.py</a> checks the status and will block commits, and the build sheriff will act to fix the tree. When the tree is throttled, commits are only allowed with specific permission from the build sheriff, generally because the sheriff wants to make sure the tree is stable before opening it up to unlimited commits.</div>
+<h2><a name="TOC-Seeing-More-and-Seeing-Less"></a>Seeing More and Seeing Less</h2>
+Tucked away down at the very bottom of the waterfall page is a set of small links, of which two are particularly useful. The [next page] link takes you to the next screenful of the waterfall, which is backward in time to earlier builds. The [help] link, among other things, shows you a list of all the slaves attached to this master. You can choose which ones you'd like to see, then bookmark the resulting URL so you can get that view easily next time. </div>
+<div><br />
+<span style="font-size:20px;font-weight:bold"><b>Banner and Box</b></span></div>
+<div><br />
+</div>
+<div>Now back to the top of the waterfall. At the very top is a banner showing the current state of the tree. If the tree is closed because of build or test failures, it should be mentioned here. If there's an announcement about a new build process, expected downtime, or some other aspect of Chromium development, it'll generally be shown here, too. <br />
+<br />
+Below that is an oval box. It has a number of handy links at the left -- try them to see where they go. It also has four rows of colored boxes, which show the pass/fail status of the last completed runs for several categories of slaves. If you click on one of those category names, you'll go to a partial waterfall view that shows only the related slaves. Hovering over a colored box shows you the name of the slave it's summarizing, and clicking on the box will go to a waterfall view with only that one slave. <br />
+<h2><a name="TOC-Sheriffs-"></a>Sheriffs </h2>
+The last thing in the oval is a list of this week's build sheriffs. Although every developer is responsible for running tests before committing patches and watching the tree for problems afterward, the sheriffs have overall responsibility in case someone else is away or not paying attention. <br />
+<h2><a name="TOC-Sources"></a>Sources</h2>
+All the source for Chromium's buildbot setup is found in our Subversion repository. See <a href="http://www.chromium.org/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source">Getting the Buildbot Source</a> if you'd like to take a look or help develop it.</div>
+<h2><a name="TOC-Adding-new-build-configurations-and-tests-to-the-main-Chromium-waterfall-Commit-Queue"></a>Adding new build configurations and tests to the main Chromium waterfall &amp; Commit Queue</h2><div>Since every additional configuration that closes the tree has a cost for all the developers to maintain it, there are some guidelines for new botsto the main waterfall and commit queue:</div><div><ul><li><span style="background-color:transparent"><font size="2">all the code for this configuration must be in Chromium's public </font>repository<font size="2"> or brought in through src/DEPS</font></span></li><li>setting up the build should be <span style="color:rgb(34,34,34);font-family:arial,sans-serif">straightforward for a Chromium developer familiar with existing configurations</span></li><li>tests should use the existing test harnesses</li><li><span style="color:rgb(34,34,34);font-family:arial,sans-serif">it should be possible for any committer to replicate any testing run; i.e. tests and their data must be in the public repository</span></li><li><span style="color:rgb(34,34,34);font-family:arial,sans-serif">cycle time needs to be under 40 minutes for trybots, and half an hour on buildbot</span></li></ul><div>If a configuration has tests that depend on code in other repositories, then it could have its own buildbot master. The team responsible for a separate configuration would sheriff that separate tree. Teams would generally find it more maintainable to have a configuration on the main Chromium tree that observes the above guidelines, even if it only contains a subset of the full code and tests. Whenever a regression is found that only reproduces on the separate team's Buildbot master, the separate team's goal should be to write a regression test that runs on the main Chromium waterfall to catch those failures in Chromium, too.</div></div><div><br /></div><div>Please email chrome-eng-review@google.com to signoff on new build configurations.</div><div><br /></div><div><span style="font-size:10pt;background-color:transparent">When adding new tests for existing build configs, see </span><a href="http://www.chromium.org/developers/testing/adding-tests-to-the-main-waterfall" style="font-size:10pt;background-color:transparent">Adding new tests to the Main Waterfall</a>.</div><h2><a name="TOC-Builder-setup"></a>Builder setup</h2>
+For some builders, there exist no trybots. In order to debug compile failures, you need to setup a similar compile environment locally:
+<div>
+<ul><li><a href="http://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/linux-builder-dbg-shlib">Linux Builder (dbg-shlib)</a></li></ul>
+</div>
+<h2><a name="TOC-Other-views"></a>Other views</h2>
+<div>The <a href="http://build.chromium.org/p/chromium">console view</a> is the default one. Marc-Antoine is also looking for people willing to use the <a href="http://build.chromium.org/p/chromium/json/help" target="_blank">json interface</a> to create a cool live interface in Javascript. Contact him for more details.</div>
+<div>
+<div style="margin-top:0px;margin-bottom:0px">
+<h2><a name="TOC-Glossary"></a>Glossary</h2>
+<div>It's important to use the right words so here are the official definitions:</div>
+<ul><li style="border-collapse:separate;font-size:13px"><b>buildbot master</b>: the process that observes the source code repository, triggers builds on the slaves and serves the waterfall and console web pages.</li>
+<li style="border-collapse:separate;font-size:13px"><b>buildbot builder</b>: a column in the waterfall or console view, doing a series of build steps. The build steps involve compiling and/or running tests.</li>
+<li><b style="border-collapse:separate;font-size:13px">buildbot slave</b>: an actual machine (often a VM) connected to a builder. In the case of the <a href="http://www.chromium.org/developers/testing/try-server-usage" style="border-collapse:separate;font-size:13px">try server</a>, multiple slaves are connected to one builder. In general there is a 1:1 mapping between a slave and a builder so they can usually be used interchangeably.</li>
+<li style="border-collapse:separate;font-size:13px"><b>build step</b>: a shell invocation like <i>compile </i>or<i> update sources</i>. Each builder has a determined series of build steps that are executed on the slave.</li>
+<li style="border-collapse:separate;font-size:13px"><b>"a tester"</b>: a buildbot builder that only runs tests, it gets its binaries from the extract step.</li>
+<li style="border-collapse:separate;font-size:13px"><b>"a builder"</b>: a builder has a double-meaning, it can be a buildbot builder but also only buildbot builders that run the compile step.</li>
+<li style="border-collapse:separate;font-size:13px"><b>"an incremental builder"</b>: a builder that does incremental compiles.</li>
+<li style="border-collapse:separate;font-size:13px"><b>"a full builder"</b>: a builder that does full compiles, it does a clobber on every compile (deleting all build products), starting fresh.</li>
+<li style="border-collapse:separate;font-size:13px"><b>clobber</b>: the act of doing a full builder, versus an incremental build. E.g.: rm -rf out; make</li></ul>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="display:block;margin-right:auto;margin-left:auto;text-align:center">
+<div style="text-align:-webkit-auto"></div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/linux-builder-dbg-shlib" dir="ltr">Linux Builder (dbg-shlib)</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9lfhLrFcQb2w72qxg4-WQUF7G8fbjuxMrOE9K6yLivWS1-lFcdvxp_CiNLX-ZVUkkSTiwLrqg9R7FnDmRgMLLsp_0XtYvtd6kCDCdmaN-aOgNMUJO/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

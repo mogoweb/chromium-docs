@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/build","deleted":false,"title":"Chromium OS Build","dir":"ltr"},{"path":"/chromium-os/build/using-remote-trybots","deleted":false,"title":"Chromium OS Remote Trybots","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/build/using-remote-trybots?pli%3D1\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/build","parentWuid":"wuid:gx:7c2378e91050b97e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium OS Remote Trybots","locale":"en","wuid":"wuid:gx:32e554940be16de1","revision":12,"path":"/chromium-os/build/using-remote-trybots","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"using-remote-trybots","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium OS Remote Trybots - The Chromium Projects" />
+<meta itemprop="name" content="Chromium OS Remote Trybots - The Chromium Projects" />
+<meta property="og:title" content="Chromium OS Remote Trybots - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium OS Remote Trybots - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/build" dir="ltr">Chromium OS Build</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium OS Remote Trybots</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-Instructions-For-Using-the-Remote-Trybot"><strong>2 </strong>Instructions For Using the Remote Trybot</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-To-patch-in-a-gerrit-CL"><strong>2.1 </strong>To patch in a gerrit CL</a></li><li class="goog-toc"><a href="#TOC-To-patch-in-a-rietveld-CL"><strong>2.2 </strong>To patch in a rietveld CL</a></li><li class="goog-toc"><a href="#TOC-To-patch-in-a-local-change:"><strong>2.3 </strong>To patch in a local change:</a></li><li class="goog-toc"><a href="#TOC-Testing-on-a-release-branch"><strong>2.4 </strong>Testing on a release branch</a></li></ol></li><li class="goog-toc"><a href="#TOC-Other-useful-flags"><strong>3 </strong>Other useful flags</a></li><li class="goog-toc"><a href="#TOC-Finding-your-trybot-runs-on-the-waterfall"><strong>4 </strong>Finding your trybot runs on the waterfall</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p><b>Sorry, but this is only available to Google employees at the moment. Make sure you've joined the <a href="https://groups.google.com/a/google.com/d/forum/chromeos-team">chromeos-team group</a>.</b></p>
+<p>Remote trybots allow you to perform a trybot run of multiple configs/boards in parallel on remote servers.  A trybot allows you to emulate a buildbot run with a set of your changes. The changes are patched to tip of tree (TOT).  It supports running of Paladin, incremental, and full buildbot configurations.</p>
+<p>It supports patching of both gerrit CL's and changes you've committed locally but haven't uploaded.</p>
+<p>The remote trybot waterfall is located at <a href="https://uberchromegw.corp.google.com/i/chromiumos.tryserver" style="color:rgb(46,73,135)!important">https://uberchromegw.corp.google.com/i/chromiumos.tryserver</a>.</p>
+<h2><a name="TOC-Instructions-For-Using-the-Remote-Trybot"></a>Instructions For Using the Remote Trybot</h2>
+<p>Run the following from within your repo source checkout:</p>
+<div>
+<ol><li><span style="text-align:-webkit-auto;background-color:transparent;font-size:10pt"><b><font color="#ff0000">IMPORTANT!</font></b><font color="#000000"> run </font></span><font face="'courier new', monospace" style="text-align:-webkit-auto;background-color:transparent;font-size:10pt;color:rgb(0,0,0)"><span style="background-color:rgb(238,238,238)"><font color="#274e13">repo sync chromiumos/chromite</font></span> </font><span style="text-align:-webkit-auto;background-color:transparent;font-size:10pt;color:rgb(0,0,0)">to get latest version of cbuildbot.</span></li>
+<li><span style="text-align:-webkit-auto;background-color:transparent;font-size:10pt;color:rgb(0,0,0)">Run </span><font face="'courier new', monospace" style="text-align:-webkit-auto;font-size:10pt;color:rgb(0,0,0);background-color:rgb(238,238,238)">cbuildbot --list</font><span style="text-align:-webkit-auto;background-color:transparent;font-size:10pt;color:rgb(0,0,0)"> to see a list of common configs to run with.  Use the<font face="'courier new', monospace"> </font></span><font face="'courier new', monospace" style="text-align:-webkit-auto;font-size:10pt;color:rgb(0,0,0);background-color:rgb(238,238,238)">--all</font><span style="text-align:-webkit-auto;background-color:transparent;font-size:10pt;color:rgb(0,0,0)"> flag to see all possible configs.  The possible configurations are also displayed on the trybot waterfall.</span></li>
+</ol>
+<h3><a name="TOC-To-patch-in-a-gerrit-CL"></a>To patch in a gerrit CL</h3>
+<p><b>3a.</b> Run</p>
+</div>
+<div style="text-align:-webkit-auto"><font face="'courier new', monospace"><font color="#274e13" style="background-color:rgb(238,238,238)">
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote -g [*]&lt;cl_1&gt; [-g ...] config [config...]</code></div>
+</font></font></div>
+<div style="text-align:-webkit-auto">
+<p>Substitute [config [config...]] with a space-separated list of your desired configs. Prepend a '*' to the CL ID to indicate it's an internal CL. The CL ID can be a Gerrit Change-ID or a change number.</p>
+</div>
+<p>An example:</p>
+<div style="text-align:-webkit-auto"><span style="background-color:rgb(238,238,238)"><font color="#274e13">
+<div class="sites-codeblock sites-codesnippet-block"><font face="'courier new', monospace"><code>cbuildbot --remote </code></font><span style="font-family:Courier New;white-space:pre-wrap"><code>-g 4168 -g *1234 alex-paladin x86-alex-release</code></span></div>
+</font></span>
+<p><span style="background-color:transparent;color:rgb(32,32,32);white-space:pre-wrap"><font face="arial, sans-serif">This runs a tryjob for the alex-paladin and x86-alex-release configs in parallel.  It p</font></span>atches in two CL's: 1) an external CL using a Gerrit change number 2) an internal CL using a Gerrit change number. In case a CL has several patches associated with it, the latest patch is used.</p>
+</div>
+<p>Note that specifying the same configuration multiple times <b>is</b> permitted. This will cause multiple instances of the same config to be tried in parallel.</p>
+<h3><a name="TOC-To-patch-in-a-rietveld-CL"></a>To patch in a rietveld CL</h3>
+<p><b>3b.</b> Run</p>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;line-height:normal;text-align:-webkit-auto"><font face="'courier new', monospace"><font color="#274e13" style="background-color:rgb(238,238,238)">
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote --rietveld-patches=id[:subdir1]...idN[:subdirN]</code></div>
+</font></font></div>
+<p><span style="font-size:10pt;background-color:transparent">For example, this patches CL </span><span style="background-color:transparent"><a href="https://codereview.chromium.org/356903002">356903002</a> into Chrome's /src directory and tries one bot:</span></p><div style="text-align:-webkit-auto"><span style="background-color:rgb(238,238,238)"><div class="sites-codeblock sites-codesnippet-block"><font><code><span style="line-height:normal">cbuildbot --remote </span><span style="line-height:normal;color:rgb(0,0,0);font-family:Courier New;white-space:pre-wrap"><code>--rietveld-patches=</code></span><span style="line-height:13.3333311080933px;white-space:pre-wrap">356903002</span><span style="line-height:normal"> x86-generic-tot-chrome-pfq-informational</span></code></font><span style="text-align:-webkit-auto;white-space:pre-wrap;background-color:rgb(238,238,238)"><font color="#006000" face="monospace">
+</font></span></div></span></div><p><span style="font-size:10pt;background-color:transparent">This patches </span><a href="https://codereview.chromium.org/11659002" style="font-size:10pt;background-color:transparent">11659002</a><span style="font-size:10pt;background-color:transparent"> into chromium/src/tools/gyp and tries two bots:</span></p><div style="text-align:-webkit-auto"><span style="background-color:rgb(238,238,238)"><div class="sites-codeblock sites-codesnippet-block"><font style="line-height:normal"><code>cbuildbot --remote </code></font><span style="font-family:Courier New;line-height:normal;white-space:pre-wrap"><code>--rietveld-patches=</code></span><span style="text-align:-webkit-auto;white-space:pre-wrap;background-color:rgb(238,238,238)"><font color="#006000" face="monospace">11659002:src/tools/gyp x86-alex-paladin x86-alex-release
+</font></span></div></span></div><p><span style="font-size:10pt;background-color:transparent">If you are asked for a username and password check your ~/.netrc. If you don't see entries for chromium.googlesource.com you need to </span><a href="https://chromium.googlesource.com/new-password" style="font-size:10pt;background-color:transparent">generate a new password</a><span style="font-size:10pt;background-color:transparent">.</span></p><p><span style="font-size:10pt;background-color:transparent">Internal rietveld CLs are not yet supported.</span></p>
+<div>
+<h3><a name="TOC-To-patch-in-a-local-change:"></a><span style="font-family:Arial,Verdana,sans-serif;line-height:normal;color:rgb(0,0,0)">To patch in a local change:</span></h3>
+<div style="font-family:Arial,Verdana,sans-serif;line-height:normal">
+<p><b>3c.</b> To patch in a local patch, run:</p>
+</div>
+<div style="font-family:Arial,Verdana,sans-serif;line-height:normal"><font face="'courier new', monospace" style="color:rgb(0,0,0);background-color:transparent">
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote -p &lt;project1&gt;[:&lt;branch1&gt;] [-p ...] config [config..]</code></div>
+</font>
+<p>Specify the name of the project (not the path, look for projectname in .git/config) and optionally the project branch. If no branch is specified the current branch of the project will be used.</p>
+</div>
+<p>An example:</p>
+<div style="font-family:Arial,Verdana,sans-serif;line-height:normal;color:rgb(0,0,0);background-color:transparent"><font face="'courier new', monospace" style="background-color:transparent">
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote -p chromiumos/chromite -p chromiumos/overlays/chromiumos-overlay:my_branch x86-generic-paladin amd64-generic-paladin</code></div>
+</font></div>
+<p><font color="#000000">This patches in any commits in project chromiumos/chromite's current branch and on branch 'my_branch' in project chromiumos/overlays/chromiumos-overlay.</font></p>
+<h3><a name="TOC-Testing-on-a-release-branch"></a><font color="#000000">Testing on a release branch</font></h3>
+<p><b style="color:rgb(0,0,0)">3d. </b><span style="color:rgb(0,0,0)">To test patches for a release branch (i.e., R20, R21) use the --branch (-b) option with -g:</span></p>
+<div style="font-family:Arial,Verdana,sans-serif;line-height:normal"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><font color="#006000" face="monospace">cd &lt;repo_root&gt;/chromiumos/chromite</font></div>
+<div><font color="#006000" face="monospace">git checkout <b>cros/master</b></font></div>
+<div><span style="font-family:monospace;line-height:13px;color:rgb(0,96,0)"><code>cbuildbot --remote <b>-b </b></code></span><font color="#006000" face="monospace"><b>release-R20-2268.B</b> </font><span style="font-family:monospace;line-height:normal;color:rgb(0,96,0)">-g 4168 alex-paladin</span></div>
+</div>
+</div>
+<p>Local patches (-p) to branches are not yet supported.<br />
+<span style="background-color:transparent;font-size:10pt">Non-release branches such as factory, u-boot, etc. are not yet supported.</span></p>
+<p><b>3e</b>. To create an official release using tryjobs from a branch:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(40,55,105);font-family:Droid Sans,serif">
+<div style="text-align:-webkit-auto;background-color:transparent"><code>cd &lt;repo_root&gt;/chromiumos/chromite</code></div>
+<div style="text-align:-webkit-auto;background-color:transparent"><code>git checkout cros/master</code></div>
+<div style="text-align:-webkit-auto;background-color:transparent"><code>cbuildbot --remote --buildbot -b stabilize-4731.62.B butterfly-release</code></div>
+</div>
+<p><span style="line-height:normal;color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;background-color:transparent;text-align:-webkit-auto;font-size:10pt">In the case where you would like all boards built (*-release[-group]), just list each try config separated by spaces.</span></p>
+<p><span style="background-color:transparent;line-height:normal"><font color="#000000" face="Arial, Verdana, sans-serif">Caveats</font></span>:</p>
+<div>
+<ul><li style="list-style-position:outside;list-style-type:square">Every time you launch a set of builders, each builder (except x86-mario-release, which is the master builder) will look at whether it has built the previous release. If the previous release was not built, the builder will build the last release.</li>
+<li style="list-style-position:outside;list-style-type:square">If you launch the same set of builders for a release every time, the above logic will work great, because all of the builders will build the same code, even if the trybot server is busy and we can't actually launch all of the bots at once.</li>
+<li style="list-style-position:outside;list-style-type:square">If you try to switch what boards are built on a branch, the above logic can cause problems. For example, if you first build "spring" for a branch, and then, a few days later, try to create a new release with "parrot" instead, the builder will try to "catch up" and build the previous release, ignoring any new changes that have been checked into the branch since the spring release.</li>
+<li style="list-style-position:outside;list-style-type:square">To avoid the above problem when adding new boards to a branch, it is a good idea to first launch builds for the master builder (x86-mario-release) and then, after the ManifestVersionedSync stage has completed, launch the new builders you want to build.</li></ul>
+Need build daisy from a branch:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote --buildbot -b stabilize-4731.62.B daisy_spring-release</code></div>
+</div>
+<div>Now we've landed more changes on stabilize-4731.62.B in order to fix something for parrot:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote --buildbot -b stabilize-4731.62.B x86-mario-release</code></div>
+</div>
+<div>wait until the "ManifestVersionedSync" step has completed on this job, then:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>cbuildbot --remote --buildbot -b stabilize-4731.62.B parrot-release</code></div>
+</div>
+<div><br />
+</div>
+<div><b style="background-color:transparent">4. </b>Wait for the result (fail/pass) emails from the remote trybot server. </div>
+<div><br />
+</div>
+<div><b>5. </b>Optionally download the archived artifacts that the trybot uploaded by clicking on the link in the result email.</div>
+<h2><a name="TOC-Other-useful-flags"></a>Other useful flags</h2>
+<div><span style="color:rgb(39,78,19);font-family:courier new,monospace;background-color:rgb(238,238,238)">--remote-description</span></div>
+<div><span style="color:rgb(39,78,19);font-family:courier new,monospace;background-color:rgb(238,238,238)"><br />
+</span></div>
+<div><span style="font-family:Times New Roman;font-size:medium"><span style="font-size:13px;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">Attach an optional description to a --remote run to make it easier to identify the results when it finishes.(eg: “testing CL:1234 after fixing NameError”).<br /></span></span></div><div><span style="font-family:Times New Roman;font-size:medium"><span style="font-size:13px;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap"><br /></span></span></div><div><div><h2 style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><a name="TOC-Finding-your-trybot-runs-on-the-waterfall"></a><font size="4">Finding your trybot runs on the waterfall</font></h2><div><font color="#222222" face="arial, sans-serif" size="2">The trybot waterfall is organized by bot category. </font><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small;background-color:transparent">Generally, bot names are &lt;board&gt;-&lt;category&gt;[-group]. E.g., for x86-alex-pre-cq, the category is "pre-cq". For x86-alex-no-vmtest-pre-cq, the category is "no-vmtest-pre-cq". For pineview-release-group, the category is "release".</span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small;background-color:transparent"><br /></span></div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small">When you launch your tryjob, cbuildbot will print a link showing where to find your run. For example:</div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small"><br /></div></div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small"><div>$ cbuildbot -g 288223 --remote rambi-no-vmtest-pre-cq x86-alex-release</div><div>Verifying patches...</div><div>Submitting tryjob...</div><div>Tryjob submitted!</div><div>Go to <a href="https://uberchromegw.corp.google.com/i/chromiumos.tryserver/waterfall?committer=davidjames@google.com&amp;builder=no-vmtest-pre-cq&amp;builder=release" style="color:rgb(17,85,204)" target="_blank">https://uberchromegw.corp.google.com/i/chromiumos.tryserver/waterfall?committer=davidjames@google.com&amp;builder=no-vmtest-pre-cq&amp;builder=release</a> to view the status of your job.</div></div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small"><br /></div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small">If you want to double check the exact category name of any bot, you can look it up either by launching a tryjob with it (see above), or, for advanced users, by looking in chromite/cbuildbot/config_dump.json (the template is listed as "_template") under the bot name.</div></div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small"><div><span style="background-color:transparent"><font color="#222222" face="arial, sans-serif" size="2"><br /></font></span></div></div><div style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small"><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/build/using-remote-trybots">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9SJ15hevWJ5kSsxzqW3M1ddZAEKY8Dt2-d8y6JQ_sGJT3dESFTIwVyYNlbIhYYlEaStY6qme5X2_Yp2vbXm0-HlAjxVekfA7QEGpnxUnO-wR9Z-tF/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

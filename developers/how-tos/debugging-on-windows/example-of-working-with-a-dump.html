@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/debugging-on-windows","deleted":false,"title":"Debugging Chromium on Windows","dir":"ltr"},{"path":"/developers/how-tos/debugging-on-windows/example-of-working-with-a-dump","deleted":false,"title":"Example of working with a dump.","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/debugging-on-windows/example-of-working-with-a-dump\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos/debugging-on-windows","parentWuid":"wuid:gx:527515b958e22f7b","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Example of working with a dump.","locale":"en","wuid":"wuid:gx:40042b351e0cc6c6","revision":4,"path":"/developers/how-tos/debugging-on-windows/example-of-working-with-a-dump","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"example-of-working-with-a-dump","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Example of working with a dump. - The Chromium Projects" />
+<meta itemprop="name" content="Example of working with a dump. - The Chromium Projects" />
+<meta property="og:title" content="Example of working with a dump. - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Example of working with a dump. - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../../how-tos.1.html" dir="ltr">How-Tos</A>‎ &gt; ‎<A href="https://www.chromium.org/developers/how-tos/debugging-on-windows" dir="ltr">Debugging Chromium on Windows</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Example of working with a dump.</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>Let's say that you are looking at a crash dump, so following the first command from <a href="https://www.chromium.org/developers/how-tos/debugging-on-windows#TOC-Common-commands-when-working-with-a-crash">this page</a> you do:</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; !analyze -v</div>
+</code>
+</font>
+</div>
+<br />
+<div>Part of what the command prints is:</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>FAULTING_IP: </div>
+<div>YCWebCameraSource+14c7e</div>
+<div>1c414c7e 8b01            mov     eax,dword ptr [ecx]</div>
+<br />
+<div>EXCEPTION_RECORD:  ffffffff -- (.exr 0xffffffffffffffff)</div>
+<div>ExceptionAddress: 1c414c7e (YCWebCameraSource+0x00014c7e)</div>
+<div>   ExceptionCode: c0000005 (Access violation)</div>
+<div>  ExceptionFlags: 00000000</div>
+<div>NumberParameters: 2</div>
+<div>   Parameter[0]: 00000000</div>
+<div>   Parameter[1]: 00000000</div>
+<div>Attempt to read from address 00000000</div>
+<br />
+<div>CONTEXT:  00000000 -- (.cxr 0x0;r)</div>
+<div>eax=00000000 ebx=0465c528 ecx=00000000 edx=00000500 esi=0465c498 edi=00000000</div>
+<div>eip=77c2e1a4 esp=0465c370 ebp=0465c4f0 iopl=0         nv up ei pl nz ac po nc</div>
+<div>cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00200212</div>
+<br />
+<div>PROCESS_NAME:  chrome.exe</div>
+<div>ERROR_CODE: (NTSTATUS) 0xc0000005 - The instruction at 0x%08lx referenced memory at 0x%08lx. The memory could not be %s.</div>
+<div>EXCEPTION_CODE: (NTSTATUS) 0xc0000005 - The instruction at 0x%08lx referenced memory at 0x%08lx. The memory could not be %s.</div>
+<div>EXCEPTION_PARAMETER1:  00000000</div>
+<div>EXCEPTION_PARAMETER2:  00000000</div>
+<div>READ_ADDRESS:  00000000 </div>
+<br />
+<div>FOLLOWUP_IP: </div>
+<div>YCWebCameraSource+14c7e</div>
+<div>1c414c7e 8b01            mov     eax,dword ptr [ecx]</div>
+<br />
+<div>BUGCHECK_STR:  APPLICATION_FAULT_NULL_POINTER_READ_INVALID_POINTER_READ_BEFORE_CALL</div>
+<br />
+<div>STACK_TEXT:  </div>
+<div>0465cab8 00000000 0465cbc4 096052c0 1c414fe1 YCWebCameraSource+0x14c7e</div>
+</code>
+</font>
+</div>
+<br />
+<div>which basically says that there is an attempt to read from NULL:</div>
+<br />
+<div>YCWebCameraSource+14c7e</div>
+<div>1c414c7e 8b01            mov     eax,dword ptr [ecx]</div>
+<br />
+<div>and ECX is 0.</div>
+<br />
+<div>The problematic part is the last one: the stack is a single line of text, inside a DLL that you know nothing about. Moving on to the next command,</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; .ecxr</div>
+<div>eax=0bd00048 ebx=000000f0 ecx=00000000 edx=00000500 esi=0465cbc4 edi=00000140</div>
+<div>eip=1c414c7e esp=0465cabc ebp=000000f0 iopl=0         nv up ei pl nz na po nc</div>
+<div>cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00210202</div>
+<div>YCWebCameraSource+0x14c7e:</div>
+<div>1c414c7e 8b01            mov     eax,dword ptr [ecx]  ds:002b:00000000=????????</div>
+</code>
+</font>
+</div>
+<br />
+<div>confirms what we already know as the debugger loads the context when the exception was received. The stack window shows only one line of text.</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; k</div>
+<div>  *** Stack trace for last set context - .thread/.cxr resets it</div>
+<div>ChildEBP RetAddr  </div>
+<div>WARNING: Stack unwind information not available. Following frames may be wrong.</div>
+<div>0465cab8 00000000 YCWebCameraSource+0x14c7e</div>
+</code>
+</font>
+</div>
+<br />
+<div>Looking at the registers show the reason: EBP is 0xF0, which is not a pointer to the stack. ESP looks fine, so let's see what's there using the next command from the list:</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; dds esp</div>
+<div>0465cabc  00000000</div>
+<div>0465cac0  0465cbc4</div>
+<div>0465cac4  096052c0</div>
+<div>0465cac8  1c414fe1 YCWebCameraSource+0x14fe1</div>
+<div>0465cacc  0b7b0000</div>
+<div>0465cad0  00000140</div>
+<div>0465cad4  000000f0</div>
+<div>0465cad8  00000500</div>
+<div>0465cadc  09710000</div>
+<div>0465cae0  00000140</div>
+<div>0465cae4  000000f0</div>
+<div>0465cae8  000003c0</div>
+<div>0465caec  00000000</div>
+<div>0465caf0  00000000</div>
+<div>0465caf4  00000140</div>
+<div>0465caf8  1c40c24e YCWebCameraSource+0xc24e</div>
+<div>0465cafc  0b7b0000</div>
+<div>0465cb00  00000140</div>
+<div>0465cb04  000000f0</div>
+<div>0465cb08  00000000</div>
+<div>0465cb0c  00000500</div>
+<div>0465cb10  09710000</div>
+<div>0465cb14  00000140</div>
+<div>0465cb18  000000f0</div>
+<div>0465cb1c  00000000</div>
+<div>0465cb20  000003c0</div>
+<div>0465cb24  0465e074</div>
+<div>0465cb28  09158124</div>
+<div>0465cb2c  091561c8</div>
+<div>0465cb30  00000000</div>
+<div>0465cb34  09605848</div>
+<div>0465cb38  0b8007c8</div>
+</code>
+</font>
+</div>
+<br />
+<div>A few pointers to code close to the address that crashed, which is good because it means the control flow before the crash is reasonable. But clearly that code is not using EBP to maintain stack frames (more on that later). So see what else is on the stack:</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; dds</div>
+<div>0465cb3c  0b800960</div>
+<div>0465cb40  000003c0</div>
+<div>0465cb44  091561c8</div>
+<div>0465cb48  00022009</div>
+<div>0465cb4c  80004005</div>
+<div>0465cb50  1c4238f8 YCWebCameraSource+0x238f8</div>
+<div>0465cb54  09605848</div>
+<div>0465cb58  00000000</div>
+<div>0465cb5c  000000b2</div>
+<div>0465cb60  096052c0</div>
+<div>0465cb64  00000000</div>
+<div>0465cb68  00000000</div>
+<div>0465cb6c  00000140</div>
+<div>0465cb70  000000f0</div>
+<div>0465cb74  00000140</div>
+<div>0465cb78  000000f0</div>
+<div>0465cb7c  00000500</div>
+<div>0465cb80  00022009</div>
+<div>0465cb84  0b7b0000</div>
+<div>0465cb88  00000001</div>
+<div>0465cb8c  1c4238f8 YCWebCameraSource+0x238f8</div>
+<div>0465cb90  096046c8</div>
+<div>0465cb94  00000000</div>
+<div>0465cb98  0465cc28</div>
+<div>0465cb9c  00000140</div>
+<div>0465cba0  000000f0</div>
+<div>0465cba4  000003c0</div>
+<div>0465cba8  00021808</div>
+<div>0465cbac  09710000</div>
+<div>0465cbb0  00000002</div>
+<div>0465cbb4  557cf400</div>
+<div>0465cbb8  11d31a04</div>
+</code>
+</font>
+</div>
+<br />
+<div>Note that issuing the command without an argument just continues where the last invocation left of. Furthermore, just hitting enter repeats the last command so after this point is a matter of keep hitting enter. Which is good because in this case interesting things happen after a long time:</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; </div>
+<div>0465f22c  f15f2bff</div>
+<div>0465f230  0465f27c</div>
+<div>0465f234  772b9b03 msvcrt!free+0x65</div>
+<div>0465f238  01700000</div>
+<div>0465f23c  00000000</div>
+<div>0465f240  772b9b10 msvcrt!free+0x84</div>
+<div>0465f244  f1a4c16f</div>
+<div>0465f248  00000000</div>
+<div>0465f24c  0170b3f8</div>
+<div>0465f250  00000000</div>
+<div>0465f254  00000000</div>
+<div>0465f258  0465f238</div>
+<div>0465f25c  ffffffff</div>
+<div>0465f260  00000000</div>
+<div>0465f264  0465f244</div>
+<div>0465f268  82eaa80b</div>
+<div>0465f26c  0465f98c</div>
+<div>0465f270  772dc265 msvcrt!_except_handler4</div>
+<div>0465f274  82eaa80b</div>
+<div>0465f278  fffffffe</div>
+<div>0465f27c  772b9b10 msvcrt!free+0x84</div>
+<div>0465f280  732343a5 devenum!ATL::CComObject&lt;CCreateSwEnum&gt;::`scalar deleting destructor'+0x3d</div>
+<div>0465f284  0170b3f8</div>
+<div>0465f288  73234566 devenum!ATL::CComObject&lt;CCreateSwEnum&gt;::Release+0x23</div>
+<div>0465f28c  03290d90</div>
+<div>0465f290  031f0b50</div>
+<div>0465f294  0465f4bc</div>
+<div>0465f298  6fb647db chrome_6faf0000!media::GetDeviceNamesDirectShow+0x3ab</div>
+<div>0465f29c  6fb647e5 chrome_6faf0000!media::GetDeviceNamesDirectShow+0x3b5</div>
+<div>0465f2a0  0465f2b8</div>
+<div>0465f2a4  6faf22b5 chrome_6faf0000!tcmalloc::FL_Push+0x71</div>
+<div>0465f2a8  01192308</div>
+</code>
+</font>
+</div>
+<br />
+<div>After a while of seeing symbols from various DLLs go through the stack we start to see symbols from Chrome. The last part looks relatively good. Note that at address 0465f298  there is a pointer to Chrome code, and more importantly, 4 bytes before there is a pointer to another place in the stack, some bytes after the current position: 0465f294  0465f4bc. This is the typical pattern of a call to a function that use EBP to track stack frames. Time to use the next command from the list:</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; k = 0465f294  0465f294  0465f294  </div>
+<div>ChildEBP RetAddr  </div>
+<div>WARNING: Frame IP not in any known module. Following frames may be wrong.</div>
+<div>0465f294 6fb647db 0x465f294</div>
+<div>0465f4bc 07554180 chrome_6faf0000!media::GetDeviceNamesDirectShow+0x3ab</div>
+<div>0465f4cc 6fb643d2 0x7554180</div>
+<div>0465f4e8 6fb64386 chrome_6faf0000!media::VideoCaptureDeviceFactory::EnumerateDeviceNames+0x45</div>
+<div>0465f4f4 6fb55ece chrome_6faf0000!base::internal::Invoker&lt;&gt;</div>
+<div>0465f5d4 6fb5552d chrome_6faf0000!base::MessageLoop::RunTask+0x50a</div>
+<div>0465f718 6fb62bad chrome_6faf0000!base::MessageLoop::DoWork+0x359</div>
+<div>0465f744 6fb5503a chrome_6faf0000!base::MessagePumpDefault::Run+0xc7</div>
+<div>0465f768 6fb54f2d chrome_6faf0000!base::MessageLoop::RunHandler+0x6e</div>
+<div>0465f794 6fb54ec4 chrome_6faf0000!base::MessageLoop::Run+0x65</div>
+<div>0465f79c 6fb5291e chrome_6faf0000!base::Thread::Run+0xb</div>
+<div>0465f928 6fb52509 chrome_6faf0000!base::Thread::ThreadMain+0x26e</div>
+<div>0465f94c 778a850d chrome_6faf0000!base::`anonymous namespace'::ThreadFunc+0xcb</div>
+<div>0465f958 77c5bf39 kernel32!BaseThreadInitThunk+0xe</div>
+<div>0465f99c 77c5bf0c ntdll!__RtlUserThreadStart+0x72</div>
+<div>0465f9b4 00000000 ntdll!_RtlUserThreadStart+0x1b</div>
+</code>
+</font>
+</div>
+<br />
+<div>Strictly speaking the format that I just used is not correct, but the debugger does a decent job figuring out what I want just complaining about the first frame. The good part is that now we have a stack that looks reasonable. Time to go up and try to get something better.</div>
+<br />
+<div>The pattern that we just saw, a pointer a few bytes ahead followed by a symbol should repeat itself... as in the pointer should point to another pointer followed by a symbol. Se if we search up on the debugger output for 0465f294 we should get to the previous frame. If there is no match, it means that either we reached a function call that doesn't use EBP, or we are following stale data from the stack (traces of something that happened before, and has not been overwritten yet, but it is not the current call sequence).</div>
+<br />
+<div>And that's exactly what happens in this case. But going up and following stack manually a few times provides a better stack. Remember that the goal is not to get a perfect stack trace but to get enough information to do something about it. We already know that get the actual stack will be impossible because close to the crash point there's no EBP and no symbols. But the type of symbols that you see going through while executing dds gives you a rough idea of how the flow ends up at the code that crashes.</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="'courier new', monospace" size="2">
+<code>
+<div>0:006&gt; k = 0465e0ac  0465e0ac  0465e0ac  </div>
+<div>ChildEBP RetAddr  </div>
+<div>WARNING: Frame IP not in any known module. Following frames may be wrong.</div>
+<div>0465e0ac 76ec7543 0x465e0ac</div>
+<div>0465e11c 76ec4fdf combase!CServerContextActivator::CreateInstance+0x18b</div>
+<div>0465e15c 76ec7610 combase!ActivationPropertiesIn::DelegateCreateInstance+0x5c</div>
+<div>0465e1b0 76ec7334 combase!CApartmentActivator::CreateInstance+0x75</div>
+<div>0465e1d4 76ec6d52 combase!CProcessActivator::CCICallback+0x3b</div>
+<div>0465e1f4 76ec72cf combase!CProcessActivator::AttemptActivation+0x2c</div>
+<div>0465e22c 76ec73a9 combase!CProcessActivator::ActivateByContext+0x97</div>
+<div>0465e25c 76ec4fdf combase!CProcessActivator::CreateInstance+0x5d</div>
+<div>0465e29c 76ec50d7 combase!ActivationPropertiesIn::DelegateCreateInstance+0x5c</div>
+<div>0465e4fc 76ec4fdf combase!CClientContextActivator::CreateInstance+0xdd</div>
+<div>0465e53c 76ec5ba6 combase!ActivationPropertiesIn::DelegateCreateInstance+0x5c</div>
+<div>0465ede8 76ebc9c2 combase!ICoCreateInstanceEx+0xfb6</div>
+<div>(Inline) -------- combase!CComActivator::DoCreateInstance+0x11a</div>
+<div>(Inline) -------- combase!CoCreateInstanceEx+0x14e</div>
+<div>0465ee3c 732352c3 combase!CoCreateInstance+0x169</div>
+<div>0465eef0 70cedfbd devenum!CDeviceMoniker::BindToObject+0x1ac</div>
+<div>0465f0e0 70ce59df chrome_6faf0000!media::VideoCaptureDeviceWin::GetDeviceFilter+0x234</div>
+<div>0465f3ac 70ce56a2 chrome_6faf0000!media::GetDeviceSupportedFormatsDirectShow+0x335</div>
+<div>0465f3c0 6fb64995 chrome_6faf0000!media::VideoCaptureDeviceFactoryWin::GetDeviceSupportedFormats+0x20</div>
+<div>0465f44c 6fb648c1 chrome_6faf0000!content::VideoCaptureManager::ConsolidateDevicesInfoOnDeviceThread+0xc1</div>
+<div>0465f46c 6fb64883 chrome_6faf0000!base::internal::RunnableAdapter&lt;&gt;::Run+0x2e</div>
+<div>0465f488 6fb64848 chrome_6faf0000!base::internal::InvokeHelper&lt;&gt;::MakeItSo+0x25</div>
+<div>0465f4b8 6fb64800 chrome_6faf0000!base::internal::Invoker&lt;&lt;media::VideoCaptureDevice::N+0x33</div>
+<div>0465f4cc 6fb643d2 chrome_6faf0000!base::Callback&lt;&gt;::Run+0x17</div>
+<div>0465f4e8 6fb64386 chrome_6faf0000!media::VideoCaptureDeviceFactory::EnumerateDeviceNames+0x45</div>
+<div>0465f4f4 6fb55ece chrome_6faf0000!base::internal::Invoker&lt;2,base::internal::BindState&lt;&gt;::Run+0x10</div>
+<div>0465f5d4 6fb5552d chrome_6faf0000!base::MessageLoop::RunTask+0x50a</div>
+<div>0465f718 6fb62bad chrome_6faf0000!base::MessageLoop::DoWork+0x359</div>
+<div>0465f744 6fb5503a chrome_6faf0000!base::MessagePumpDefault::Run+0xc7</div>
+<div>0465f768 6fb54f2d chrome_6faf0000!base::MessageLoop::RunHandler+0x6e</div>
+<div>0465f794 6fb54ec4 chrome_6faf0000!base::MessageLoop::Run+0x65</div>
+<div>0465f79c 6fb5291e chrome_6faf0000!base::Thread::Run+0xb</div>
+<div>0465f928 6fb52509 chrome_6faf0000!base::Thread::ThreadMain+0x26e</div>
+<div>0465f94c 778a850d chrome_6faf0000!base::`anonymous namespace'::ThreadFunc+0xcb</div>
+<div>0465f958 77c5bf39 kernel32!BaseThreadInitThunk+0xe</div>
+<div>0465f99c 77c5bf0c ntdll!__RtlUserThreadStart+0x72</div>
+<div>0465f9b4 00000000 ntdll!_RtlUserThreadStart+0x1b</div>
+</code>
+</font>
+</div>
+<br />
+<div>Note how this stack is slightly different right where the previous stack started, but it flows nicely into a sequence of com calls. There's usually no point in going too deep into code we don't control, so that is all we need in this case.</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/debugging-on-windows/example-of-working-with-a-dump">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq93CFt_w5rcuXio-aWTP9JThhfhHD7TIL_Q6lbHK6QAjlStjjUobHDZii-zZP-Vogp0AqdKPacDfhivP_emAWwtMnihTyQjKcTrYD-TxIyuqJ_Ccxp/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

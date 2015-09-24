@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/debugging-on-os-x","deleted":false,"title":"Debugging Chromium on Mac OS X","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/debugging-on-os-x\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Debugging Chromium on Mac OS X","locale":"en","wuid":"wuid:gx:46b03b9c1fb617f6","revision":57,"path":"/developers/how-tos/debugging-on-os-x","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"debugging-on-os-x","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Debugging Chromium on Mac OS X - The Chromium Projects" />
+<meta itemprop="name" content="Debugging Chromium on Mac OS X - The Chromium Projects" />
+<meta property="og:title" content="Debugging Chromium on Mac OS X - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Debugging Chromium on Mac OS X - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Debugging Chromium on Mac OS X</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h4><a name="TOC-Resources:"></a><span style="font-size:10pt;font-weight:normal;text-decoration:underline">Resources:</span><span style="text-decoration:underline"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-3"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Resources:"><strong>1 </strong>Resources:</a></li><li class="goog-toc"><a href="#TOC-Disabling-ReportCrash"><strong>2 </strong>Disabling ReportCrash</a></li><li class="goog-toc"><a href="#TOC-Processing-Apple-Crash-Reports"><strong>3 </strong>Processing Apple Crash Reports</a></li><li class="goog-toc"><a href="#TOC-Debugging-the-renderer-process"><strong>4 </strong>Debugging the renderer process</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-a-Run-Chrome-in-a-single-process"><strong>4.1 </strong>(a) Run Chrome in a single process</a></li><li class="goog-toc"><a href="#TOC-b-or-Attach-XCode-s-debugger-to-a-renderer-process-after-launch"><strong>4.2 </strong>(b) or, Attach XCode's debugger to a renderer process after launch</a></li></ol></li><li class="goog-toc"><a href="#TOC-Debugging-out-of-process-tests:"><strong>5 </strong>Debugging out-of-process tests:</a></li><li class="goog-toc"><a href="#TOC-UI-Debugging"><strong>6 </strong>UI Debugging</a></li><li class="goog-toc"><a href="#TOC-Building-with-Ninja-Debugging-with-Xcode"><strong>7 </strong>Building with Ninja, Debugging with Xcode</a></li><li class="goog-toc"><a href="#TOC-Temporarily-disabling-the-Sandbox"><strong>8 </strong>Temporarily disabling the Sandbox</a></li><li class="goog-toc"><a href="#TOC-Tips-on-Debugging-the-Renderer-Sandbox"><strong>9 </strong>Tips on Debugging the Renderer Sandbox</a></li><li class="goog-toc"><a href="#TOC-Breakpoints-Not-Getting-Hit-in-gdb"><strong>10 </strong>Breakpoints Not Getting Hit in gdb</a></li><li class="goog-toc"><a href="#TOC-Debugging-in-Release-Mode"><strong>11 </strong>Debugging in Release Mode</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Preserving-symbols-in-Release-builds"><strong>11.1 </strong>Preserving symbols in Release builds</a></li></ol></li><li class="goog-toc"><a href="#TOC-Using-DTrace"><strong>12 </strong>Using DTrace</a></li><li class="goog-toc"><a href="#TOC-Testing-other-locales"><strong>13 </strong>Testing other locales</a></li><li class="goog-toc"><a href="#TOC-Memory-Heap-Inspection"><strong>14 </strong>Memory/Heap Inspection</a></li><li class="goog-toc"><a href="#TOC-Working-with-minidumps"><strong>15 </strong>Working with minidumps</a></li><li class="goog-toc"><a href="#TOC-CrMallocErrorBreak"><strong>16 </strong>CrMallocErrorBreak</a></li></ol></div></div></div></div></span></h4>The <a href="http://developer.apple.com/technotes/tn2004/tn2124.html">Mac OS X Debugging Magic Technote</a> contains a wealth of information about various debugging options built in to OS X.<br /><br />IMPORTANT: By default, Xcode has the "Load Symbols Lazily" preference set. As a result, any symbols not in the main static library (99% of our code) won't be visible to set breakpoints. The result is that you set breakpoints in the editor window and they're ignored entirely when you run. The fix, however, is very simple! Uncheck the "Load Symbols Lazily" checkbox in the "Debugging" panel in preferences. Now all your breakpoints will work, at the expense of a little longer load time in gdb. Well worth it, if you ask me.<div><br /></div><div>ALSO IMPORTANT: If you include <font face="courier new, monospace">fast_build=1</font> in your <font face="courier new, monospace">GYP_DEFINES</font>, there is an excellent chance the symbols you'll need for debugging will be stripped! You may save yourself a lot of heartache if you remove this, rerun <font face="courier new, monospace">gyp_chromium</font> and rebuild before proceeding.<br /><h2><a name="TOC-Disabling-ReportCrash"></a><b><span style="font-size:medium">Disabling ReportCrash</span></b></h2><p><span style="font-family:arial,sans-serif;font-weight:normal;font-size:13px"><font face="Arial, Verdana, sans-serif">Mac OS X helpfully tries to write a crash report every time a binary crashes – which happens for example when a test in unit_tests fails. Since Chromium's debug binaries are huge, this takes forever. If this happens, "ReportCrash" will be the top cpu consuming process in Activity Monitor. You should disable ReportCrash while you work on Chromium. Run </font><font face="'courier new', monospace">man ReportCrash</font><font face="Arial, Verdana, sans-serif"> to learn how to do this on your version of OS X. On 10.8, the command is<br /><br /></font></span><font face="'courier new', monospace"><span style="font-weight:normal;font-size:13px"><font>    </font></span><font size="2"><span style="font-weight:normal">launchctl unload -w /System/Library/LaunchAgents/com.apple.ReportCrash.plist<br /></span></font></font><font face="'courier new', monospace"><span style="font-size:16px;font-weight:bold"><span style="font-weight:normal;font-size:13px">    </span><font size="2"><span style="font-weight:normal">sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist<br /></span></font></span></font></p><p><span style="font-size:13px;font-weight:normal"><span style="font-family:arial,sans-serif"><br /></span></span><span style="font-size:13px;font-weight:normal"><span style="font-family:arial,sans-serif">Yes, you need to run this for both the normal user and the admin user.</span></span><span style="font-size:13px;font-weight:normal"><span style="font-family:arial,sans-serif"><br /></span></span></p><h2><a name="TOC-Processing-Apple-Crash-Reports"></a><span style="font-family:Arial,Verdana,sans-serif"><b><span style="font-size:medium">Processing Apple Crash Reports</span></b></span></h2><p>If you get a Google Chrome crash report caught by ReportCrash/OS X, it will not have symbols (every frame will be ChromeMain). To get a symbolized stack trace, use the internal <a href="http://goto.google.com/crsym">crsym</a> tool by simply pasting the contents of an entire Apple crash report.</p><h2><a name="TOC-Debugging-the-renderer-process"></a>Debugging the renderer process</h2>XCode's built in gdb wrapper doesn't allow you to debug more than one process at once and doesn't deal very well with debugging Chrome's subprocesses directly. There are two different ways around this:<div></div><h3><a name="TOC-a-Run-Chrome-in-a-single-process"></a>(a) Run Chrome in a single process</h3><div>(NOTE: this option is not recommended any more -- Chrome's single-process mode is neither supported nor tested.)</div><div><ol><li>Edit the Executable settings for the Chromium app (make it the current executable, then choose Project &gt; Edit Active Executable).</li><li>Switch to the Arguments tab and press the "+" button under the arguments list</li><li>Type "<font face="'courier new', monospace">--single-process</font>" in the list.</li></ol><div>From now on Chromium will launch in single-process mode when invoked through this Xcode project, and the debugger will work fine. This obviously changes the apps behavior slightly, but for most purposes the differences aren't significant. If they are, though, you'll need to…</div></div><h3><a name="TOC-b-or-Attach-XCode-s-debugger-to-a-renderer-process-after-launch"></a>(b) or, Attach XCode's debugger to a renderer process after launch</h3><div>1. Launch the main executable from the Terminal (<b>not</b> through XCode) and pass in the <font face="'courier new', monospace">--renderer-startup-dialog<span style="font-family:Arial,Verdana,sans-serif"> flag on the command line.   On OS X this causes the renderer to print a message with its PID and then call pause() immediately up on startup.  This has the effect of pausing execution of the renderer until the process receives a signal (such as attaching the debugger).</span></font></div><div><br /></div><div>e.g. <br /><font face="'courier new', monospace">$ ~/dev/chrome//src/xcodebuild/Debug/Chromium.app/Contents/MacOS/Chromium --renderer-startup-dialog<br /></font><br /></div><div>the output should look like:</div><div><div><font face="'courier new', monospace">...</font></div><div><font face="'courier new', monospace">[33215:2055:244180145280185:WARNING:/Users/Shared/bla/chrome/src/chrome/renderer/renderer_main.cc(48)] Renderer (33215) paused waiting for debugger to attach @ pid</font></div><div><font face="'courier new', monospace">...</font></div><div><br /></div><div>So <i>33215</i> is the PID of the renderer process in question.</div><div><br /></div><div>2. Open chrome.xcodeproj in XCode and select Run -&gt; Attach To Process -&gt; Process ID .. </div><div>3. Click OK and off you go...</div><h2><a name="TOC-Debugging-out-of-process-tests:"></a><span style="font-size:16px;font-weight:bold">Debugging out-of-process tests:</span></h2><div><font size="2">Similar to debugging the renderer process, simply attaching gdb to a out-of-process test like <font face="'courier new', monospace">browser_tests</font><font face="arial, sans-serif"> will not hit the test code. In order to debug a browser test, you need to run the test binary with </font></font> "<font face="'courier new', monospace">--single_process</font>" (note the underscore in  <font face="'courier new', monospace">single_process</font><font face="arial, sans-serif">). Because you can only run one browser test in the same process, you're probably going to need to add </font><font face="'courier new', monospace">--gtest_filter</font><font face="arial, sans-serif"> as well. So your command will look like this:</font></div><div><font face="arial, sans-serif"><br /></font></div><div><font face="'courier new', monospace">/path/to/src/xcodebuild/Debug/browser_tests --single_process --gtest_filter=GoatTeleporterTest.DontTeleportSheep</font></div><h2><a name="TOC-UI-Debugging"></a><span style="font-size:16px;font-weight:bold">UI Debugging</span></h2>For UI Debugging, F-Script Anywhere is very useful. Read <a href="https://www.chromium.org/developers/f-script-anywhere">https://sites.google.com/a/chromium.org/dev/developers/f-script-anywhere</a> for more information.<h2><a name="TOC-Building-with-Ninja-Debugging-with-Xcode"></a>Building with Ninja, Debugging with Xcode</h2><div>See <a href="https://www.chromium.org/developers/how-tos/debugging-on-os-x/building-with-ninja-debugging-with-xcode">the instructions</a> that discuss that scenario.</div><h2><a name="TOC-Temporarily-disabling-the-Sandbox"></a>Temporarily disabling the Sandbox</h2><div>Disabling the sandbox can sometimes be useful when debugging, this can be achieved by passing the <font face="'courier new', monospace">--no-sandbox</font> flag on the command line.  This will, for example, allow writing out debugging information to a file from the Renderer Process.</div><div><br /></div><div>e.g. <br /><font face="'courier new', monospace">$ ~/dev/chrome//src/xcodebuild/Debug/Chromium.app/Contents/MacOS/Chromium --no-sandbox<br /></font></div><div><br /></div><h2><a name="TOC-Tips-on-Debugging-the-Renderer-Sandbox"></a>Tips on Debugging the Renderer Sandbox</h2><div>Launch chrome with the -<font face="'courier new', monospace">-enable-sandbox-logging</font> flag. This will cause a message to be printed to /var/log/system.log every time an operation is denied by the Sandbox (you can use Console.app to watch logfiles).  This is really useful for debugging and can often provide an explanation for very puzzling problems.</div><div><br /></div><div>You can also get the Sandbox to send a <i>SIGSTOP</i> to a process when the sandbox denies functionality.  This allows you to attach with a debugger and continue the execution from where it left off:</div><div><br /></div><div><span style="font-size:13px;border-collapse:collapse"><font face="'courier new', monospace">$ sandbox-exec -p '(version 1) (allow default) (deny file-write* (regex "foo") (with send-signal SIGSTOP))' touch foo</font></span></div><div><font face="'courier new', monospace"><span style="border-collapse:collapse"><br /></span></font></div><h2><a name="TOC-Breakpoints-Not-Getting-Hit-in-gdb"></a>Breakpoints Not Getting Hit in gdb</h2><div>If a breakpoint you set isn't causing the debugger to stop, try one of these solutions:</div><div><ul><li>Uncheck "Load symbols lazily" In the XCode-&gt;Preferences-&gt;Debugging dialog.</li><li>Manually insert a call to <font face="'courier new', monospace">Debugger()</font> in the code, this will forcefully break into the Debugger.</li></ul></div><h2><a name="TOC-Debugging-in-Release-Mode"></a>Debugging in Release Mode</h2><div><font face="arial, sans-serif"><span style="border-collapse:collapse">See "Preserving symbols in Release builds" below.</span></font></div><h3><a name="TOC-Preserving-symbols-in-Release-builds"></a>Preserving symbols in Release builds</h3></div><div>Profiling tools like Shark and 'sample' expect to find symbol names in the binary, but in Release builds most symbols are stripped out. You can preserve symbols by temporarily changing the build process, by adding <font face="courier new, monospace">mac_strip_release=0</font> to your GYP_DEFINES, rerunning gclient runhooks, and rebuilding (changing this define only relinks the main binary, it doesn't recompile everything).</div><div><br /></div><div><div><i>(The above "Debugging in Release Mode" trick with the .dSYM file might work for Shark/sample too; I haven't tried it yet. —snej)</i></div><h2><a name="TOC-Using-DTrace"></a>Using DTrace</h2>jgm's awesome introductory article:<br /><a href="http://www.mactech.com/articles/mactech/Vol.23/23.11/ExploringLeopardwithDTrace/index.html" rel="nofollow">http://www.mactech.com/articles/mactech/Vol.23/23.11/ExploringLeopardwithDTrace/index.html<br /></a><br />Defining static probes on OS X:<br /><a href="http://www.macresearch.org/tuning-cocoa-applications-using-dtrace-custom-static-probes-and-instruments" rel="nofollow">http://www.macresearch.org/tuning-cocoa-applications-using-dtrace-custom-static-probes-and-instruments<br /></a><br /><br /><a href="http://www.brendangregg.com/dtrace.html#Examples" rel="nofollow">http://www.brendangregg.com/dtrace.html#Examples<br /></a><a href="http://blogs.sun.com/bmc/resource/dtrace_tips.pdf" rel="nofollow">http://blogs.sun.com/bmc/resource/dtrace_tips.pdf<br /></a><br /><br />DTrace examples on OS X: /usr/share/examples/DTTk<br /><br />To get truss on Mac OS X, use dtruss. That requires root, so I often sudo dtruss -p and attach to a running nonroot program.<br /></div><div><br /></div><h2><a name="TOC-Testing-other-locales"></a>Testing other locales</h2><div>To test Chrome in a different locale, change your system locale via the System Preferences.  (Keep the preferences window open so that you can change the locale back without needing to navigate through menus in a language you may not know.)</div><h2><a name="TOC-Memory-Heap-Inspection"></a>Memory/Heap Inspection</h2><div>There are several low-level command-line tools that can be used to inspect what's going on with memory inside a process.</div><div><br /></div>'<b>heap</b>' summarizes what's currently in the malloc heap(s) of a process. (It only works with regular malloc, of course, but Mac Chrome still uses that.) It shows a number of useful things:<br /><ul><li>How much of the heap is used or free</li><li>The distribution of block sizes</li><li>A listing of every C++, Objective-C and CoreFoundation class found in the heap, with the number of instances, total size and average size.</li></ul>It identifies C++ objects by their vtables, so it can't identify vtable-less classes, including a lot of the lower-level WebCore ones like StringImpl. To work around this I temporarily added the 'virtual' keyword to WebCore::RefCounted's destructor method, which forces every ref-counted object to include a vtable pointer identifying its class.<br /><br />'<b>malloc_history</b>' identifies the stack backtrace that allocated every malloc block in the heap. It lists every unique backtrace together with its number of blocks and their total size. It requires that the process use malloc stack logging, which is enabled if the environment variable MallocStackLogging is set when it launches. The 'env' command is handy for this:<br /><blockquote style="margin:0 0 0 40px;border:none;padding:0px">$ env MallocStackLogging=1 Chromium.app/Contents/MacOS/Chromium</blockquote>Then in another shell you run<br /><blockquote style="margin:0 0 0 40px;border:none;padding:0px">$ malloc_history <span style="text-decoration:underline">pid</span> -all_by_size</blockquote>Watch out: the output is <i>big</i>. I ran malloc_history on a fairly bloated heap and got 60MB of text.<br /><br />'<b>leaks</b>' finds malloc blocks that have no pointers to them and are probably leaked. It doesn't require MallocStackLogging, but it's more useful if it's on because it can then show the backtrace that allocated each leaked block. (So far I've seen only trivial leakage in Chrome.)<br /><br />'<b>vmmap</b>' shows all the virtual-memory regions in the process's address space. This is less useful since it doesn't say anything about individual malloc blocks (except huge ones) but it can be useful for looking at things like static data size, mapped files, and how much memory is paged out. I recommend the "-resident" flag, which shows how much of each allocation is currently paged into RAM. See the man page for details.<br /><br /><div>Notes:<br /><ul><li>These are not going to be very useful on stripped binaries, and they're less useful in release builds.</li><li>All of these except vmmap take several <i>minutes</i> to run, apparently because of the number of symbols in Chrome. They spend most of their time pegging one CPU down inside system code that's reading symbol tables from the binary. Be patient.</li><li>There are GUI apps in /Developer that do a lot of the same things, such as Instruments, MallocDebug and Shark. I (snej) personally find the command-line tools easier to understand, but YMMV.</li></ul></div><h2><a name="TOC-Working-with-minidumps"></a><font size="3"><b>Working with minidumps</b></font></h2><div><font size="2"><a href="https://www.chromium.org/developers/crash-reports">See this page.</a></font></div><h2><a name="TOC-CrMallocErrorBreak"></a><b style="font-size:10pt"><span style="font-size:medium">CrMallocErrorBreak</span></b></h2><div><div><font size="2">If you are looking at a crash report that ends in <font face="courier new, monospace">CrMallocErrorBreak</font>, then either a <font face="courier new, monospace">malloc</font> or <font face="courier new, monospace">free</font> call has failed with the given stacktrace. Chromium overrides the empty function <font face="courier new, monospace">malloc_error_break</font> in OS X's Libc with </font><span style="font-family:courier new,monospace;font-size:small">CrMallocErrorBreak</span><span style="font-size:small">. The system calls this function as a debugging aide that we've made fatal because it catches useful memory errors. Specifically, </span><font face="courier new, monospace" style="font-size:small">CrMallocErrorBreak</font><span style="font-size:small"> will be called (resulting in a crash) under the following circumstances:</span></div></div><div><ul><li><font size="2">Attempting to free a pointer that was not allocated.</font></li><li><font size="2">Attempting to free the same pointer more than once.</font></li><li><font size="2">Freeing a pointer of size 0.</font></li><li><font size="2">Freeing an unaligned pointer.</font></li><li><font size="2">An internal checksum of the object being freed does not match. This usually indicates heap corruption!</font></li><li><font size="2">Invalid checksums on the small or tiny free list. The system maintains a list of small allocations that it reuses to speed up things like allocations in a loop. A checksum mismatch usually indicates a use-after-free, double-free, or heap corruption.</font></li><li><font size="2">Extra-large allocation failures. Normally all failures to allocate go through <span style="font-family:courier new,monospace">CrMallocErrorBreak</span> but are not fatal because that is the job of Chromium's OOM killer. Extra-large allocations go through a different path and are sometimes killed here instead.</font></li></ul><div><font size="2">If you get a crash report that that ends in </font><span style="font-family:courier new,monospace;font-size:small">CrMallocErrorBreak</span><font size="2">, it is likely not an issue with this feature. It is instead surfacing a (sometimes serious) bug in your code or other code that is stomping on your code's memory. Using Chromium's memory tools (ASan, HeapCheck, and Valgrind) is a good start, if you can reproduce the problem.</font></div></div><div><font size="2"><br /></font></div><div><b><font size="3">Enabling high-DPI (aka "HiDPI" or "Retina") modes on standard-DPI hardware.</font></b></div><div><b><font size="3"><br /></font></b></div><div><font size="2">Under Mac OS X 10.7 and above it's possible to fake "HiDPI" modes on standard-DPI hardware.  This can be useful in testing up-scaling codepaths or high-DPI resources.</font></div><div><ol><li><font size="2">Configure the OS to offer HiDPI modes:</font></li><ul><li><span style="font-size:small">EITHER follow Apple's instructions to enable high resolution modes:</span><span style="font-size:small;color:rgb(80,0,80);font-family:arial"> </span><a href="http://developer.apple.com/library/mac/#documentation/GraphicsAnimation/Conceptual/HighResolutionOSX/Testing/Testing.html" style="font-size:small">http://developer.apple.com/library/mac/#documentation/GraphicsAnimation/Conceptual/HighResolutionOSX/Testing/Testing.html</a><span style="font-size:small">.</span></li><li><font size="2" style="font-size:10pt">OR run the command-line: </font><span style="font-size:10pt"><font face="courier new, monospace">sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool YES</font></span></li></ul><li><font face="arial, sans-serif">Open the System Preferences -&gt; Displays panel, select Scaled mode and scroll to the bottom to see modes marked "(HiDPI)".</font></li></ol></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/how-tos/debugging-on-os-x/building-with-ninja-debugging-with-xcode" dir="ltr">Building with Ninja, Debugging with Xcode</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/debugging-on-os-x">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9PO5GUGI4sed0sleJ1Ri-zy9u9ehp0OVRaEjnvJ23lvLj7RH740Jx_2cot-xHGUoLnKGDNT-mxcZGFYKrHm6pprr9Roefu1Fye31jB0ZHIEB5sq9T/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

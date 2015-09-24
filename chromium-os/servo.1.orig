@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/servo","deleted":false,"title":"Servo","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/servo\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os","parentWuid":"wuid:gx:83df2ab1f8880ba","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Servo","locale":"en","wuid":"wuid:gx:14f838a4e50534ab","revision":29,"path":"/chromium-os/servo","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"servo","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Servo - The Chromium Projects" />
+<meta itemprop="name" content="Servo - The Chromium Projects" />
+<meta property="og:title" content="Servo - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Servo - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1410554530438/chromium-os/servo/servo_v2_top.jpg?height=400&amp;width=291" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1410554530438/chromium-os/servo/servo_v2_top.jpg?height=400&amp;width=291" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Servo</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-Connecting-Servo"><strong>2 </strong>Connecting Servo</a></li><li class="goog-toc"><a href="#TOC-Using-Servo"><strong>3 </strong>Using Servo</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Single-Step-Debugging-with-Servo-GDB-and-OpenOCD"><strong>3.1 </strong>Single-Step Debugging with Servo, GDB, and OpenOCD</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Useful-Commands"><strong>3.1.1 </strong>Useful Commands</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Board-Images"><strong>4 </strong>Board Images</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>Servo is a debug board used for Chromium OS test and development. It connects to most Chrome devices through a debug header on the mainboard. The debug header is used primarily during development and is often removed before a device is released to consumers. If you have a production device the debug header might need reworking before servo can be connected.</p>
+<p>Servo is a key enabler for automated testing, including <a href="https://www.chromium.org/for-testers/faft">automated firmware testing</a>. <span style="font-size:10pt;background-color:transparent">It provides:</span></p>
+<ul><li><span style="font-size:10pt;background-color:transparent">Software access to device GPIOs, through hdctools</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Access to EC and CPU UART ports, for convenient debugging </span></li>
+<li><span style="font-size:10pt;background-color:transparent">Reflashing of EC and system firmware, for easy recovery of bricked systems</span></li></ul>
+<p><span style="font-size:13.3333339691162px">For example, it can act as a USB host to simulate connection and removal of external USB devices. It also provides JTAG support.</span></p>
+<p><span style="font-size:10pt;background-color:transparent">Though servo boards are not publicly distributed or sold (by Google), detailed information on </span><a href="https://www.chromium.org/chromium-os/servo/chromium_os_servo_v2.tar.gz?attredirects=0" style="font-size:10pt;background-color:transparent">Servo V2 block diagram, BOM, schematic and layout</a><span style="font-size:10pt;background-color:transparent"> is available</span><span style="font-size:10pt;background-color:transparent">.</span></p>
+<h2><a name="TOC-Connecting-Servo"></a>Connecting Servo</h2>
+<div><span style="font-size:13.3333339691162px">In a typical debug setup, you connect servo to the debug header on a Chrome device, and to a host machine through the HOST_IN USB port. See the annotated </span><a href="https://www.chromium.org/for-testers/faft/Servo2_with_labels.jpg?attredirects=0" style="font-size:13.3333339691162px">FAFT setup image</a><span style="font-size:13.3333339691162px"> for details. </span></div>
+<div><span style="font-size:13.3333339691162px"><br />
+</span></div>
+<div><span style="font-size:13.3333339691162px">Most newer Chrome OS mainboards attach to servo with a 50-pin flex cable. The </span><a href="https://www.chromium.org/chromium-os/servo/chromium_os_yoshi_flex.tar.gz?attredirects=0" style="font-size:13.3333339691162px">schematic and layout for this cable</a><span style="font-size:13.3333339691162px"> is also available. The standard DUT-side debug header is an </span><span style="font-size:10pt;color:rgb(34,34,34);font-family:arial,sans-serif;background-color:transparent"><a href="http://www3.panasonic.biz/ac/ae/search_num/index.jsp?c=detail&amp;part_no=AXK750347G">AXK750347G</a> from Panasonic, though shorter variants are sometimes used.</span></div>
+<div><span style="font-size:10pt;color:rgb(34,34,34);font-family:arial,sans-serif;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;color:rgb(34,34,34);font-family:arial,sans-serif;background-color:transparent">The basic steps to connect servo are:</span></div>
+<div>
+<ol><li><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent">Check the direction printed on the flex cable.</span></li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent">Connect the DUT end to the debug header on the Chrome device, metal side down.</span></li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent">Connect the Servo end to the header on the servo board, metal side up. Make sure to engage the black bottom clip of the header on the servo board by pushing it inwards after inserting the ribbon cable. This will hold the ribbon cable in place and press the contacts.</span></li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent">Use a USB cable to connect the servo board to your Linux workstation.</span></li>
+</ol>
+</div>
+<p>You should be able to use the power button on servo to power the Chrome device on and off.</p>
+<h2><a name="TOC-Using-Servo"></a>Using Servo</h2>
+<p>To use servo, on your Linux workstation you need to <a href="https://www.chromium.org/chromium-os/developer-guide">build Chromium OS</a> and create a chroot environment.</p>
+<p>The hdctools (Chrome OS Hardware Debug &amp; Control Tools) package contains several tools needed to work with servo. Make sure the latest version is installed in your chroot:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#9900ff" face="courier new, monospace">sudo emerge hdctools</font></code></div>
+<p>On your workstation, servod must also be running to communicate with servo:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#9900ff" face="courier new, monospace">sudo servod -b $BOARD &amp;</font></code></div>
+</div>
+<p>With servod running, dut-control commands can be used to probe and change various controls. For a list of commands, run dut-control with no parameters:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#9900ff" face="courier new, monospace">dut-control</font></code></div>
+</div>
+<p>You can toggle GPIOs by specifying the control and the state. For example, to perform a DUT cold reset:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#9900ff" face="courier new, monospace">dut-control cold_reset:on</font></code></div>
+<div><code><font color="#9900ff" face="courier new, monospace">sleep 1</font></code></div>
+<div><code><font color="#9900ff" face="courier new, monospace">dut-control cold_reset:off</font></code></div>
+</div>
+<p>Higher-level controls may set several sub-controls in sequence. For example, to transition a DUT to recovery mode:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#9900ff" face="courier new, monospace">dut-control power_state:rec</font></code></div>
+</div>
+<p>To access the CPU or EC UARTs, first check the port mapping with dut-control, then attach a terminal emulator program to the port:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="color:rgb(153,0,255);font-family:courier new,monospace;line-height:1;font-size:10pt;background-color:transparent">dut-control cpu_uart_pty</span></div>
+<div><span style="background-color:transparent"><code><font color="#9900ff" face="courier new, monospace">dut-control ec_uart_pty</font></code></span></div>
+<div><span style="background-color:transparent"><code><font color="#9900ff" face="courier new, monospace">minicom -D /dev/pts/$PORT</font></code></span></div>
+</div>
+<p>Servo can also be used for flashing firmware. To flash EC firmware:</p>
+<div style="line-height:13.3333320617676px"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="line-height:13.3333320617676px"><span style="line-height:13.3333320617676px;font-size:10pt;background-color:transparent"><code><font color="#9900ff" face="courier new, monospace">sudo emerge openocd</font></code></span></div>
+<div style="line-height:13.3333320617676px"><span style="line-height:13.3333320617676px;font-size:10pt;background-color:transparent"><code><font color="#9900ff" face="courier new, monospace">/mnt/host/source/src/platform/ec/util/flash_ec --board=$BOARD --image=$IMAGE</font></code></span></div>
+</div>
+<div><br />
+</div>
+The procedure for flashing system firmware may vary slightly by platform. Here is a typical command sequence for flashing system firmware on Baytrail-based Chrome devices:
+<div><br />
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#9900ff" face="courier new, monospace">dut-control spi2_buf_en:on spi2_buf_on_flex_en:on spi2_vref:pp1800 cold_reset:on</font></code></div>
+<div><code><font color="#9900ff" face="courier new, monospace">sudo flashrom -V -p ft2232_spi:type=servo-v2 -w $IMAGE</font></code></div>
+<div><code><font color="#9900ff" face="courier new, monospace">dut-control spi2_buf_en:off spi2_buf_on_flex_en:off spi2_vref:off cold_reset:off</font></code></div>
+</div>
+<p><span style="font-size:13.3333339691162px;background-color:transparent">To set up servo to run automated tests</span><span style="font-size:13.3333339691162px;background-color:transparent">, connect the servo board and the test device to the network via Ethernet, and load a Chromium OS image onto USB memory stick. The networking and build image steps are not described here; see </span><a href="http://www.chromium.org/for-testers/faft" style="font-size:13.3333339691162px;background-color:transparent">FAFT</a><span style="font-size:13.3333339691162px;background-color:transparent"> for details on configuring servo to run automated tests. For information on writing tests</span>, see the <a href="https://chromium.googlesource.com/chromiumos/third_party/autotest/+/master/server/cros/servo/">servo library code</a> in the <a href="https://chromium.googlesource.com/chromiumos%2Fthird_party%2Fautotest">Chromium OS autotest repo</a>.</p>
+</div>
+<div>
+<h3><a name="TOC-Single-Step-Debugging-with-Servo-GDB-and-OpenOCD"></a>Single-Step Debugging with Servo, GDB, and OpenOCD</h3>
+</div>
+<div>Using the Servo along with GDB and OpenOCD, you can single-step debug via JTAG on TI EC targets. For example, here's how you would get setup for samus.</div>
+<div><br />
+</div>
+<div>1. Start up servod for the target which you will attach to and enable JTAG access.</div>
+<div><br />
+</div>
+<div></div>
+<div>
+<div style="line-height:13.3333320617676px"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="line-height:13.3333320617676px"><span style="line-height:13.3333320617676px;font-size:10pt;background-color:transparent"><font color="#9900ff" face="courier new, monospace"><code>sudo servod -b samus &amp;</code></font></span></div>
+<div style="line-height:13.3333320617676px"><span style="line-height:13.3333320617676px;font-size:10pt;background-color:transparent"><font color="#9900ff" face="courier new, monospace"><code>dut-control jtag_buf_on_flex_en:on jtag_buf_en:on</code></font></span></div>
+</div>
+</div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal"><br /></span></div><div>
+<span style="font-size:13.3333330154419px;font-weight:normal">2.</span><span style="font-size:13.3333330154419px;background-color:transparent"> Now that servod is up and running, we need to launch OpenOCD. There are some configuration files present and we need to instruct OpenOCD to use the configuration file for the Servo V2.</span></div><div><span style="font-size:13.3333330154419px;background-color:transparent"><br /></span></div><div><div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>cd src/platform/ec/chip/lm4/openocd</code></div>
+<div><code>sudo openocd -f servo_v2.cfg</code></div>
+</div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal"><br />
+</span></div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal">Successful Output</span></div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>Open On-Chip Debugger 0.8.0 (2015-03-11-15:39)</code></div>
+<div><code>Licensed under GNU GPL v2</code></div>
+<div><code>For bug reports, read</code></div>
+<div><span style="white-space:pre"> </span><code>http://openocd.sourceforge.net/doc/doxygen/bugs.html</code></div>
+<div><code>Info : only one transport option; autoselect 'jtag'</code></div>
+<div><code>adapter speed: 500 kHz</code></div>
+<div><code>flash_emerged_link</code></div>
+<div><code>Info : clock speed 500 kHz</code></div>
+<div><code>Info : JTAG tap: lm3s.cpu tap/device found: 0x4ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x4)</code></div>
+<div><code>Info : lm3s.cpu: hardware has 6 breakpoints, 4 watchpoints</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div><span style="font-size:13.3333330154419px">Once you see a line indicating the number of breakpoints, you should be ready to attach with gdb. When OpenOCD launches, it starts up a gdbserver listening on port 3333 by default. This can be </span>overridden by setting the <code>gdb_port</code> option in the configuration file.<span style="font-size:13.3333330154419px"> For more information, consult the <a href="http://openocd.org/doc/html/GDB-and-OpenOCD.html" target="_blank">OpenOCD User's guide</a>.</span></div>
+<br />
+<div>
+3. Now that OpenOCD is up and running, we can launch GDB and load the symbols from our EC ELF file. Make sure to use the correct gdb binary from the toolchain.</div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal"><br />
+</span></div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>arm-none-eabi-gdb -ex “target extended-remote localhost:3333” -s &lt;path to&gt;/build/samus/ec.RO.elf</code></div>
+</div>
+<div><br />
+</div>
+<div>4. Once GDB launches and the connection has been established correctly, set the number of breakpoints according to the output received earlier from launching OpenOCD.</div>
+<div><br />
+</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>set remote hardware-breakpoint-limit 6</code></div>
+<div><code>set remote hardware-watchpoint-limit 4</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>At this point you can now halt or reset the target, set breakpoints, step through functions, and even single step through assembly instructions.</div>
+<div><br />
+</div>
+<div>You send commands to the target using the "<code>monitor</code>" command. Here's how you would halt, reset, or resume the target.</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>monitor halt</code></div>
+<div><code>monitor reset</code></div>
+<div><code>monitor resume</code></div>
+</div>
+<h4><a name="TOC-Useful-Commands"></a>Useful Commands</h4>
+<div>Within GDB, here are some commands that you may find useful. For more information, consult the <a href="http://www.gnu.org/software/gdb/documentation/" target="_blank">GDB documentation</a>.</div>
+<div><br />
+</div>
+<div>
+<div>Set the layout to split mode which shows you the disassembly, source, and the gdb command window. (You can use ‘<code>C-x o</code>’ to switch between the panes and ‘<code>layout next</code>’ to cycle the layouts)</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>layout split</code></div>
+</div>
+<div><br />
+</div>
+<div>Set breakpoints on functions or addresses (Tab complete works here for loaded symbols)</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>break gesture_chipset_suspend</code></div>
+<div><code>break *0x1234</code></div>
+<div></div>
+</div>
+<br />
+<div>Print breakpoints</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>info break</code></div>
+</div>
+<div><br />
+</div>
+<div>Dump registers</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>info reg</code></div>
+<div><code>info reg pc</code></div>
+</div>
+<div><br />
+</div>
+<div>Print variables</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>p var</code></div>
+</div>
+<div><br />
+</div>
+<div>Step</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>s</code></div>
+</div>
+<div><br />
+</div>
+<div>Step exactly 1 assembly instruction</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>si</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>Run until the current stack frame returns</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>finish</code></div>
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Board-Images"></a>Board Images</h2>
+<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://www.chromium.org/chromium-os/servo/servo_v2_top.jpg?attredirects=0" imageanchor="1"><img border="0" height="400" src="https://www.chromium.org/_/rsrc/1410554530438/chromium-os/servo/servo_v2_top.jpg?height=400&amp;width=291" style="color:rgb(0,0,0);font-size:10pt;background-color:transparent" width="291" /></a>    <a href="https://www.chromium.org/chromium-os/servo/servo_v2_bot.jpg?attredirects=0" imageanchor="1" style="font-size:10pt"><img border="0" height="400" src="https://www.chromium.org/_/rsrc/1410554549536/chromium-os/servo/servo_v2_bot.jpg?height=400&amp;width=288" width="288" /></a></div>
+<p><a href="https://www.chromium.org/chromium-os/servo/810-10010-03_20120227_servo_SCH_0.pdf?attredirects=0">Servo V2 Board Schematic</a></p>
+<p><a href="https://www.chromium.org/chromium-os/servo/chromium_os_servo_v2.tar.gz?attredirects=0">Servo V2 Block Diagram + BOM + Schematic + Layout</a></p>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Attachments" title="Attachments"><div class="sites-translucent sites-symbol" aria-hidden="true">Č</div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="https://ssl.gstatic.com/sites/p/56e332/system/app/images/spinner.gif" /></span><div class="sites-attachments-update-text">Updating...</div></div></div><div class="sites-attachments-separator"></div>
+<div id="attachment-wuid:gx:4140693e99c79c8e"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><span class="sites-symbol sites-color-adobe-pdf" aria-label="Adobe PDF" title="Adobe PDF">Ċ</span></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=Y2hyb21pdW0ub3JnfGRldnxneDo0MTQwNjkzZTk5Yzc5Yzhl">810-10010-03_20120227_servo_SCH_0.pdf</a> <div class="sites-translucent">(2762k)</div></div><div class="sites-attachments-author">Shawn N, <div class="sites-translucent">Sep 12, 2014, 1:41 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:4140693e99c79c8e">v.1</a></div><div id="attachment-download-wuid:gx:4140693e99c79c8e" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/chromium-os/servo/810-10010-03_20120227_servo_SCH_0.pdf?attredirects=0&amp;d=1" aria-label="Download 810-10010-03_20120227_servo_SCH_0.pdf" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:7bb1d677dc22c0a1"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">LICENSE <div class="sites-translucent">(11k)</div></div><div class="sites-attachments-author">Shawn N, <div class="sites-translucent">Sep 12, 2014, 1:41 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:7bb1d677dc22c0a1">v.1</a></div><div id="attachment-download-wuid:gx:7bb1d677dc22c0a1" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/chromium-os/servo/LICENSE?attredirects=0&amp;d=1" aria-label="Download LICENSE" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:36c156fb13781feb"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">chromium_os_servo_v2.tar.gz <div class="sites-translucent">(4432k)</div></div><div class="sites-attachments-author">Shawn N, <div class="sites-translucent">Sep 12, 2014, 1:40 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:36c156fb13781feb">v.1</a></div><div id="attachment-download-wuid:gx:36c156fb13781feb" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/chromium-os/servo/chromium_os_servo_v2.tar.gz?attredirects=0&amp;d=1" aria-label="Download chromium_os_servo_v2.tar.gz" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:2530193a38476329"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="File" title="File">ċ</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name">chromium_os_yoshi_flex.tar.gz <div class="sites-translucent">(827k)</div></div><div class="sites-attachments-author">Shawn N, <div class="sites-translucent">Sep 14, 2014, 12:21 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:2530193a38476329">v.1</a></div><div id="attachment-download-wuid:gx:2530193a38476329" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/chromium-os/servo/chromium_os_yoshi_flex.tar.gz?attredirects=0&amp;d=1" aria-label="Download chromium_os_yoshi_flex.tar.gz" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:7e99630a999d2a84"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/chromium-os/servo/servo_v2_bot.jpg?attredirects=0">servo_v2_bot.jpg</a> <div class="sites-translucent">(1578k)</div></div><div class="sites-attachments-author">Shawn N, <div class="sites-translucent">Sep 12, 2014, 1:42 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:7e99630a999d2a84">v.1</a></div><div id="attachment-download-wuid:gx:7e99630a999d2a84" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/chromium-os/servo/servo_v2_bot.jpg?attredirects=0&amp;d=1" aria-label="Download servo_v2_bot.jpg" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div id="attachment-wuid:gx:219e9e6a8c132390"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/chromium-os/servo/servo_v2_top.jpg?attredirects=0">servo_v2_top.jpg</a> <div class="sites-translucent">(1389k)</div></div><div class="sites-attachments-author">Shawn N, <div class="sites-translucent">Sep 12, 2014, 1:42 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:219e9e6a8c132390">v.1</a></div><div id="attachment-download-wuid:gx:219e9e6a8c132390" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/chromium-os/servo/servo_v2_top.jpg?attredirects=0&amp;d=1" aria-label="Download servo_v2_top.jpg" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div style="height: 10px"></div>
+</div>
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/servo">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq92LexC22cLLwu5lfdPHa1pqNE6JepiRp_kG84jmix-rWVARFX2dlciu-J031rvU3W3lC9Onzh0BZdsUcv6wQU2mHgw0fHSH3Txt-VYCJFKkv_isib/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

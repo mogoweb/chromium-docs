@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/dns-prefetching","deleted":false,"title":"DNS Prefetching","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/dns-prefetching\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"DNS Prefetching","locale":"en","wuid":"wuid:gx:1743e04e8d27cc59","revision":7,"path":"/developers/design-documents/dns-prefetching","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"dns-prefetching","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="DNS Prefetching - The Chromium Projects" />
+<meta itemprop="name" content="DNS Prefetching - The Chromium Projects" />
+<meta property="og:title" content="DNS Prefetching - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>DNS Prefetching - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">DNS Prefetching</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div class="sites-embed-align-left-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Problem"><strong>1 </strong>Problem</a></li><li class="goog-toc"><a href="#TOC-Solution"><strong>2 </strong>Solution</a></li><li class="goog-toc"><a href="#TOC-Architecture"><strong>3 </strong>Architecture</a></li><li class="goog-toc"><a href="#TOC-Manual-Prefetch"><strong>4 </strong>Manual Prefetch</a></li><li class="goog-toc"><a href="#TOC-DNS-Prefetch-Control"><strong>5 </strong>DNS Prefetch Control</a></li><li class="goog-toc"><a href="#TOC-Browser-Startup"><strong>6 </strong>Browser Startup</a></li><li class="goog-toc"><a href="#TOC-Omnibox"><strong>7 </strong>Omnibox</a></li><li class="goog-toc"><a href="#TOC-Effectiveness"><strong>8 </strong>Effectiveness</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Typical-Usage"><strong>8.1 </strong>Typical Usage</a></li><li class="goog-toc"><a href="#TOC-Network-Usage"><strong>8.2 </strong>Network Usage</a></li><li class="goog-toc"><a href="#TOC-Cache-Eviction"><strong>8.3 </strong>Cache Eviction</a></li></ol></li></ol></div></div></div></div>
+<h2><a name="TOC-1"></a>
+</h2>
+<h2><a name="TOC-Problem"></a>
+    Problem<br />
+</h2>
+<div style="margin-top:0px;margin-bottom:0px">
+DNS resolution time can lead to a significant amount of user perceived
+latency. The time that DNS resolution takes is highly variable.
+ Latency delays range from around 1ms (locally cached results) to
+commonly reported times of several seconds. <br />
+<div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<h2><a name="TOC-Solution"></a>
+                Solution
+              </h2>
+              DNS prefetching is an attempt to resolve domain names before a user tries to follow a link. This is done using the computer's normal DNS resolution mechanism; no connection to Google is used. Once
+a domain name has been resolved, if the user does navigate to that
+domain, there will be no effective delay due to DNS resolution time.
+ The most obvious example where DNS prefetching can help is when a user
+is looking at a page with many links to various domains, such as a
+search results page.  When we encounter hyperlinks in pages, we extract
+the domain name from each one and resolving each domain to an IP
+address.  All this work is done in parallel with the user's reading of
+the page, using minimal CPU and network resources.  When a user clicks
+on any of these pre-resolved names, they will on average save about 200
+milliseconds in their navigation (assuming the user hadn't already
+visited the domain recently). More importantly than the average
+savings, users won't tend to experience the "worst case" delays for DNS
+resolution, which are regularly over 1 second.<br />
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<h2><a name="TOC-Architecture"></a>
+<b>Architecture</b>
+</h2>
+<span style="font-weight:normal">Chromium's
+implementation of DNS prefetching does not use the browser's network
+stack at all.  Instead, it relies on external threads to resolve the
+names, thereby warming the DNS cache of the operating system
+(completely ignoring any cache in the application network stack).  The
+advantage of this approach was that it was completely compatible with
+all network stacks (it is external), and prevented accidental
+regressions on the main network stack.  </span>
+<div style="margin-top:0px;margin-bottom:0px">
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+Since some DNS resolutions can take a long time, it is paramount that
+such delays in one resolution should not cause delays in other
+resolutions.  Toward this end (on Windows, where there is no native
+support for asynchronous DNS resolution), Chromium currently employs 8
+completely asynchronous worker threads to do nothing but perform DNS
+prefetch resolution. Each worker thread simply waits on a queue, gets
+the next requested domain name, and then blocks on a synchronous
+Windows resolution function.   Eventually the operating system responds
+with a DNS resolution, the thread then discards it (leaving the OS
+cache warmed!), and waits for the next prefetch request.  With 8
+threads, it is rare than more than one or two threads will block
+extensively, and most resolution proceed rather quickly (or as quickly
+as DNS can service them!).  On Debug builds, the
+"about:histograms/DNS.PrefetchQueue" has current stats on the queueing
+delay.<br />
+<h2><a name="TOC-Manual-Prefetch"></a>
+<b>Manual Prefetch<br />
+</b>
+</h2>
+<span style="border-collapse:collapse;font-family:arial,sans-serif">Chromium
+uses the "href" attribute of hyperlinks to find host names to prefetch.
+However, some of those hyperlinks may be redirects, for example if the
+site is trying to count how many times the link is clicked.  In those
+situations, the "true" targeted domain is not necessarily discernible
+by examining the content of a web page, and so Chromium not able to
+prefetch the final targeted domain. </span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<span style="border-collapse:collapse">To improve the speed of redirects, content authors can add the following tag to their page:</span>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:Verdana">
+<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:courier new,monospace">
+<span style="border-collapse:collapse">&lt;link rel="dns-prefetch" href="<a href="http://the_worlds_best_vendor.com/" rel="nofollow" title="//the_worlds_best_vendor.com">//host_name_to_prefetch.com</a>"&gt;</span>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:Verdana">
+<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<span style="border-collapse:collapse">The
+above "link rel" tag has no impact on the visual rendering of the page,
+but causes Chromium to prefetch the DNS resolution of
+"host_name_to_prefetch.com" as though there was an actual href targeted
+at a path in that domain. The double slashes indicate that the URL
+starts with a host name (as specified in <a href="http://www.ietf.org/rfc/rfc1808.txt" rel="nofollow" title="RFC 1808">RFC 1808</a>). It is equivalent (but unnecessary) to use a full URL such as "http://host_name_to_prefetch.com/".</span>
+</div>
+</div>
+<h2><a name="TOC-DNS-Prefetch-Control"></a>
+<b>DNS Prefetch Control<br />
+</b>
+</h2>
+<div style="margin-top:0px;margin-bottom:0px">
+<span style="font-family:arial,sans-serif">By default, Chromium does not prefetch host names in hyperlinks that
+appear in HTTPS pages. This restriction helps prevent an eavesdropper
+from inferring the host names of hyperlinks that appear in HTTPS pages
+based on DNS prefetch traffic. The one exception is that Chromium may
+periodically re-resolve the domain of the HTTPS page itself.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">
+An inquisitive content author (for example, a commenter on a blog) may
+abuse DNS prefetching to attempt to monitor viewing of content
+containing links. For example, links with novel subdomains, when
+resolved during a prefetch, may notify a domain's resolver that a link
+was viewed, even if it was not clicked.  In some such cases, the
+authority serving the content (such as a blog owner, or webmail server)
+may wish to preclude such abusive monitoring.</span><br style="font-family:arial,sans-serif" />
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">
+To allow webmasters to control whether DNS prefetch is enabled or
+disabled, Chromium includes a DNS Prefetch Control mechanism. It can be
+used to turn DNS prefetch on for HTTPS pages, or turn it off for HTTP
+pages.</span><br style="font-family:arial,sans-serif" />
+</div>
+<br style="font-family:arial,sans-serif" />
+</div>
+<div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<span style="border-collapse:collapse">Chromium watches for an HTTP header of the form "X-DNS-Prefetch-Control"
+(case insensitive) with a value of either "on" or "off."  This setting changes the default behavior for the rendered content. A "meta
+http-equiv" tag of the same name can be used to make policy changes within a
+page. If a page explicitly opts out of DNS prefetch, further
+attempts to opt in are ignored.</span>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;font-family:arial,sans-serif">
+<span style="border-collapse:collapse">For example, the following page from <a href="https://content_author.com/" rel="nofollow" style="color:rgb(0,0,222)" target="_blank" title="https://content_author.com/"><u>https://content_author.com/</u></a> would cause Chromium to prefetch "b.com" but not "a.com", "c.com", or </span><span style="border-collapse:collapse">"d.com". </span>
+</div>
+<span style="border-collapse:collapse;font-family:Verdana"><br />
+<span style="font-family:courier new,monospace">&lt;a href="</span><a href="http://www.google.com/url?q=http%3A%2F%2Fa.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEYnDzIlRjJbXDcx3Cax_hkvntAFQ" style="color:rgb(0,0,222);font-family:courier new,monospace" target="_blank"><u>http://a.com</u></a><span style="font-family:courier new,monospace">"&gt; A) Default HTTPS: No prefetching &lt;/a&gt;</span><br style="font-family:courier new,monospace" />
+<span style="font-family:courier new,monospace">
+                    &lt;meta http-equiv="x-dns-prefetch-control" content="on"&gt;</span><br style="font-family:courier new,monospace" />
+<span style="font-family:courier new,monospace">
+                    &lt;a href="</span><a href="http://www.google.com/url?q=http%3A%2F%2Fb.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFq7tUq50NgFVyTsk2WMeiRf6l6WQ" style="color:rgb(0,0,222);font-family:courier new,monospace" target="_blank"><u>http://b.com</u></a><span style="font-family:courier new,monospace">"&gt; B) Manual opt-in: Prefetch domain resolution. &lt;/a&gt;</span><br style="font-family:courier new,monospace" />
+<span style="font-family:courier new,monospace">
+                    &lt;meta http-equiv="x-dns-prefetch-control" content="off"&gt;</span><br style="font-family:courier new,monospace" />
+<span style="font-family:courier new,monospace">
+                    &lt;a href="</span><a href="http://www.google.com/url?q=http%3A%2F%2Fc.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFTPfaTERg_4COAyTmt8OqdKsFsCA" style="color:rgb(0,0,222);font-family:courier new,monospace" target="_blank"><u>http://c.com</u></a><span style="font-family:courier new,monospace">"&gt; C) Manual opt-out: Don't prefetch domain resolution &lt;/a&gt;</span><br style="font-family:courier new,monospace" />
+<span style="font-family:courier new,monospace">
+                    &lt;meta http-equiv="x-dns-prefetch-control" content="on"&gt;</span><br style="font-family:courier new,monospace" />
+<span style="font-family:courier new,monospace">
+                    &lt;a href="</span><a href="http://www.google.com/url?q=http%3A%2F%2Fd.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEJTYzjWlVmnzIooEfteTYJZzXmzA" style="color:rgb(0,0,222);font-family:courier new,monospace" target="_blank"><u>http://d.com</u></a><span style="font-family:courier new,monospace">"&gt; D) Already opted out: Don't prefetch domain resolution. &lt;/a&gt;</span><br style="font-family:courier new,monospace" />
+<br />
+</span><span style="border-collapse:collapse;font-family:arial,sans-serif">Child frames also inherit the DNS prefetch control opt-out setting from their parent. The DNS prefetch control setting applies only to hyperlinks and not to the manual prefetch mechanism. </span><br style="font-family:arial,sans-serif" />
+<div>
+<div style="margin-top:0px;margin-bottom:0px">
+<h2><a name="TOC-Browser-Startup"></a>
+<b>Browser Startup</b><br />
+</h2>
+<div style="margin-top:0px;margin-bottom:0px">
+Chromium automatically remembers the first 10 domains that were
+resolved the last time the Chromium was started, and automatically
+starts to resolve these names <b>very</b> early in the startup process.  As
+a result, the domains for a user's home page(s), along with any
+embedded domains (or anything the user "always" visits just after
+startup), are generally resolved before much of Chromium has ever
+loaded.  When Chromium finally starts to try to load and render those
+pages, there is typically no DNS induced latency, and the application
+effectively "starts up" (becoming usable) faster.  Average startup
+savings are 200ms or more, with common acceleration over 1 second.<br />
+</div>
+<h2><a name="TOC-Omnibox"></a>
+                    Omnibox
+                    </h2>
+<div style="margin-top:0px;margin-bottom:0px">
+Prefetching is also used in Chromium's omnibox, where URL and/or search
+queries are entered. The omnibox automatically proposes an action,
+either of the form of a search query, or a URL navigation, as the user
+types in text.  This proposed action is considered the autocompletion
+of what the user is typing.  Each time the omnibox makes a proposal
+(suggests an autocompletion), the domain for the underlying URL is
+automatically pre-resolved.  This means that when a user is entering a
+search query, while they type the query (typically when they enter a
+space between words), Chromium will automatically prefetch the
+resolution of the domain in their search provider's URL.  Assuming they
+haven't done a search in a while, this can save a user an average of
+over 100ms in getting a search result, if not more. Similarly, if the
+URL is a "common" URL that they've typed in the past (e.g., their
+favorite web site; bank;  email provider; their company; etc.), the
+savings in resolution time can be quite significant. </div>
+</div>
+<h2><a name="TOC-Effectiveness"></a>
+                    Effectiveness
+                    </h2>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">
+<h3><a name="TOC-Typical-Usage"></a>
+<b>Typical Usage</b><br />
+</h3>
+If a user resolved a domain name to an IP address recently, their
+operating system will remember (cache) the answer, and then resolution
+time can be as low as 0-1ms (a thousandth of a second).  If the
+resolution is not locally cached and needs to "go out over the
+network," then a bare minimum for resolution time is about 15 ms,
+assuming a nearby firewall (home router?) has a cached answer to the
+question.  Most common names like google.com and yahoo.com are resolved
+so often that most local ISP's name resolvers can answer in closer to
+80-120ms.  If the domain name in question is an uncommon name, then a
+query may have to go through numerous resolvers up and down the
+hierarchy, and the delay can average closer to 200-300ms.  More
+interestingly, for any of these queries that access the internet,
+dropped packets, and overworked (under provisioned) name resolvers,
+regularly increases the total resolution time to between 1 and 10
+seconds. </div>
+<h3><a name="TOC-Network-Usage"></a>
+<b>Network Usage</b>
+</h3>
+</div>
+DNS resolutions use a hierarchical system, where each level in the
+hierarchy has a cache, to remember previous resolutions.  As a result,
+extra resolutions don't generally speaking cause end-to-end internet
+usage.  The resolutions only go as far as needed toward the
+"authoritative" resolver, stopping when they reach a resolver that
+already has the resolution in a cache.  In addition, DNS resolution
+requests are very light weight.  Each request typically involves
+sending a single UDP packet that is under 100 bytes out, and getting
+back a response that is around 100 bytes.  This minimal impact on
+network usage is compensated by a significant improvement in user
+experience.<br />
+</div>
+<div>
+<h3><a name="TOC-Cache-Eviction"></a>
+                    Cache Eviction
+                    </h3>
+The local machine's DNS cache is pretty limited.  Current estimates for
+the number of resolutions remembered on a Windows XP box are in the
+range of 50-200 domain names.  As a result, if "too many" resolutions
+are made, then some "necessary" resolutions might be "evicted" from the
+cache to make room for the new prefetches.  Chromium tries to model the
+underlying cache, and guess when there is a chance that a "soon to be
+needed" domain resolution has been evicted.  When Chromium decides an
+eviction may have taken place, it can automatically resolve the domain
+name again, ensuring it is either reloaded into the cache, or marked as
+"recently used" so that it won't be evicted for a "while."  Cache
+evictions caused by Chromium can have a negative impact on other
+applications that don't (yet) use prefetching techniques to keep the
+underlying cache "warm." 
+<div style="margin-top:0px;margin-bottom:0px">
+<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+Many large internet sites (google.com, yahoo.com, etc.) commonly mark
+the domain names resolutions with an expiration time in the
+neighborhood of 5 minutes. They probably set the expiration time to be
+short so that they can better respond to changes in supply and demand
+for their services.  This in turn tends cause cache evictions.  As a
+result, most applications tend to face the problem of cache eviction,
+and already employ various methods to reduce the impact. </div>
+<div>
+<div style="margin-top:0px;margin-bottom:0px">
+<br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+        The "about:histograms/DNS" and "about:dns" pages contain more information about DNS prefetch activity.
+      </div>
+<div style="margin-top:0px;margin-bottom:0px">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/dns-prefetching">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9cmcvaN2LQmn2T6t8Ag8ZFgdkqz395V97KJ5JFxsqp6vSimOTlPHymyMttINSfwOo-K9XhdgzuCL-PYQgzLu298mgOOtPna7JTZuA5yTlb65FvBJa/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

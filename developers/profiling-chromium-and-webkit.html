@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/profiling-chromium-and-webkit","deleted":false,"title":"Profiling Chromium and Blink","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/profiling-chromium-and-webkit\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Profiling Chromium and Blink","locale":"en","wuid":"wuid:gx:78b36d6925174167","revision":46,"path":"/developers/profiling-chromium-and-webkit","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"profiling-chromium-and-webkit","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Profiling Chromium and Blink - The Chromium Projects" />
+<meta itemprop="name" content="Profiling Chromium and Blink - The Chromium Projects" />
+<meta property="og:title" content="Profiling Chromium and Blink - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Profiling Chromium and Blink - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Profiling Chromium and Blink</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">There are a few ways to profile Chromium and Blink.  Here are some of the tools that work well for diagnosing performance problems.
+<div>See also the <a href="deep-memory-profiler.html">Deep memory profiler</a>.<br />
+<div>
+<h2><a name="TOC-Built-In-Tools"></a><font size="5">Built-In Tools</font></h2>
+</div>
+<div>For JavaScript issues, the built in profiler works very well.  To use this open up the Chrome Dev Tools (right click, Inspect Element) and select the 'Profiles' tab.</div>
+<div><br />
+</div>
+<div>For a broader understanding of Chromium speed and bottlenecks, as well as understanding how posted-task and threads interact in aggregate, there is a cross-platform, task-level profiler built in.  Profiler results can be seen in about:profiler (or equivalently chrome://profiler)  For more details, visit  (<a href="http://www.chromium.org/developers/threaded-task-tracking">http://www.chromium.org/developers/threaded-task-tracking</a>).</div>
+<div><br />
+</div>
+<div>See chrome://tracing for timelines showing TRACE_EVENT activity across all the different threads; originally used for GPU performance, and will probably require you to add TRACE_EVENT calls to the features you're interested in outside of compositing &amp; rendering (this was named about://gpu through M14).</div>
+<div><br />
+</div>
+<h2><a name="TOC-C-"></a><font size="5">C++</font></h2>
+<div>For native C++ code the tools depend on the OS.</div>
+<div>Note that basic printf debugging and using a general debugger (such as gdb) may be sufficient for some purposes. However, more specialized tools are available.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Linux"></a><span style="font-size:x-large">Linux</span></h2>
+<p>See <a href="https://code.google.com/p/chromium/wiki/LinuxProfiling">LinuxProfiling</a> for alternative discussion.</p>
+<h3><a name="TOC-gperftools"></a>gperftools</h3>
+<div><span style="font-size:10pt">The </span><a href="https://code.google.com/p/gperftools/" style="font-size:10pt">gperftools</a><span style="font-size:10pt"> project, from which we get TCMalloc, also includes a very nice profiler: </span><a href="https://gperftools.googlecode.com/git/doc/cpuprofile.html" style="font-size:10pt">Google CPU Profiler</a><span style="font-size:10pt">.</span></div>
+<div>
+<ul><li>Add <code>profiling=1 release_extra_cflags=-fno-omit-frame-pointer linux_disable_pie=1</code> to your <code>GYP_DEFINES</code> then rerun gyp (<code>build/gyp_chromium</code>) and rebuild. This will ensure that even your Release builds will have the necessary flags to be able to capture callstacks. </li>
+<li>Note that if you get profiler-related linker errors, you may need to avoid using <code>component=shared_library</code>. </li></ul>
+<span style="font-size:10pt;background-color:transparent">Assuming you already have a </span><code style="font-size:10pt;background-color:transparent">GYP_DEFINES</code><span style="font-size:10pt;background-color:transparent"> line in your configuration file, adding the following line after it should work:</span></div>
+<div><br />
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>GYP_DEFINES+=" profiling=1 release_extra_cflags=-fno-omit-frame-pointer linux_disable_pie=1"</code></div>
+</div>
+<ul><li>Chromium will accept four new command line flags:</li><ul><li><span style="font-size:10pt;background-color:transparent"><code style="font-size:13.3333px">--enable-profiling</code><br style="font-size:13.3333px" />This nay be necessary to have any profiling at all.</span></li><li><code>--profiling-file</code><br />
+This is a template for where the pprof data gets generated. It can contain the substrings <code>{pid}</code> and <code>{count}</code> which will be replaced by the pid of the process and the count of the profile run w/in a process. Chromium also adds a <code>{type}</code> substring replacement for the process type. The default is <code>chrome-profile-{type}-{pid}</code></li>
+<li><code>--profiling-at-start</code><br />
+When specified profiling will be enabled from the very beginning of the program. An optional string argument can be given which can specify a process type to profile (e.g., zygote, renderer). This works for the renderer (Blink) (<code>--profiling-at-start=renderer</code>) as well if you also add <code>--no-sandbox</code>, so that the samples can be written out to disk.</li>
+<li><code>--profiling-flush</code><br />
+This causes the profile data to be flushed periodically. Typically this isn't needed as the data is flushed at exit, but sometimes there are bugs that prevent the atexit handlers from getting run. This is more often the case when <code>--single-process</code> is specified. It's also useful when profiling the renderer, as the renderer is more likely to be terminated quickly.</li></ul>
+<li><span style="font-size:10pt">The perf data is generated by default in the current directory, so to avoid making a mess of the source tree, it's safest to run Chromium from outside the source directory, such as via:</span></li></ul>
+<span style="font-size:10pt">
+<div class="sites-codeblock sites-codesnippet-block"><code>src/out/Release/chrome</code></div>
+</span><br />
+<ul><li><span style="font-size:10pt">You can turn profiling on and off:</span></li>
+<ul><li>...from within the program by using the <code>chrome/common/Profiling</code> class;</li>
+<li>...interactively via a new menu item (checkbox), Menu<b style="font-family:Times New Roman;font-size:medium;font-weight:normal"><span style="font-size:19px;font-family:Calibri;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">→</span></b>Tools<b style="font-family:Times New Roman;font-size:medium;font-weight:normal"><span style="font-size:19px;font-family:Calibri;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">→</span></b>Profiling Enabled.</li></ul>
+<li>By default, only the browser process (Chromium) is profiled. To profile the renderer (Blink), either run in single-process mode via:</li></ul>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>src/out/Release/chrome --single-process</code></div>
+</div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="font-size:13.3333330154419px;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:13.3333330154419px;background-color:transparent">or run without sandbox: via:</span></div>
+<div><span style="font-size:13.3333330154419px;background-color:transparent"><br />
+</span></div>
+</blockquote>
+<div>
+<div>
+<div style="font-size:13.3333330154419px">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>src/out/Release/chrome --no-sandbox [--profiling-at-start=renderer]</code></div>
+</div>
+</div>
+<h4><a name="TOC-pprof"></a>pprof</h4>
+<div>Use <code>pprof</code> to analyze the results:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>pprof src/out/Release/chrome chrome-profile-browser-NNN</code></div>
+</div>
+<div><br />
+</div>
+<div>Some tips:</div>
+<div>
+<ul><li>pprof defaults to interactive use; you can use flags to just output a file.</li></ul>
+</div>
+<div>You should be able to increase (or decrease) the sampling frequency (defaults to 100 Hz = every 10 milliseconds) via the <span style="font-size:10pt">CPUPROFILE_FREQUENCY environment variable, but </span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div>For nice viewing, output in <a href="http://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT format</a> and view with one of these programs: <a href="https://code.google.com/p/jrfonseca/wiki/XDot">XDot</a> (packaged in Ubuntu), <a href="http://zvtm.sourceforge.net/zgrviewer.html" style="font-size:10pt">ZGRViewer</a>.</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>pprof --dot src/out/Release/chrome chrome-profile-browser-NNN &gt; NNN.dot</code></div>
+</div>
+<div>(if using <code>--focus</code>, there will also be an <code>"After ..."</code> line, so trim off the first two lines.)</div>
+<div><br />
+</div>
+<div>You can also pipe directly to xdot if you don't want a temporary file:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>pprof --dot src/out/Release/chrome chrome-profile-browser-NNN | </code><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">xdot -</span></div>
+</div>
+<div><br />
+</div>
+<h4><a name="TOC-test_shell"></a>test_shell</h4>
+<div>Previously you could control when the profiler starts and stops from within test_shell (from <span style="font-size:10pt"><a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=41218">revision 41218</a> </span><span style="font-size:10pt">until </span><a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=132841" style="font-size:10pt">revision 132841</a><span style="font-size:10pt">)</span><span style="font-size:10pt">. This can help a lot when trying to isolate a certain action without polluting the profile with a lot of startup/shutdown code.  To do this:</span></div>
+</div>
+<div>
+<ul><li>Compile test_shell with profiling enabled (same as above)</li>
+<li>Run test_shell without the CPUPROFILE environment variable set and pass in the --profiler flag (for example, "out/Release/test_shell --profiler"</li>
+<li>Start the profile by running "(new chromium.Profiler).start()", stop it by running "(new chromium.Profiler).stop()".  This can be done from JavaScript inside the page or by typing "javascript:(new chromium.Profiler).start()" into the URL bar and hitting enter</li></ul>
+<div>The profile will be saved in a file called "chrome-profile" in the working directory.  You can't stop and restart the profiler without blowing away the previously stored data currently.</div>
+<div><br />
+</div>
+<h3><a name="TOC-perf"></a>perf</h3>
+<div>You can also use the standard Linux <a href="http://en.wikipedia.org/wiki/Perf_(Linux)">perf</a> tool:</div>
+<div>
+<ul><li><font face="'courier new', monospace">ps aux | grep chromium</font> to find a particular browser/renderer/gpu process</li>
+<li><font face="'courier new', monospace">perf record -f -g -p &lt;pid&gt;</font> to capture that process</li>
+<li><font face="'courier new', monospace">perf report</font> for the profile output</li>
+<li><font face="'courier new', monospace">perf annotate "&lt;fully qualified function name&gt;"</font> for assembly language and (very approximate?) per-instruction cycle counts</li></ul>
+<div>By default this saves "perf.data" in the current working directory, which can be renamed. perf report may be able to run on older data, but perf annotate will be inaccurate if you've since rebuilt the executable.</div>
+</div>
+<div><br />
+</div>
+<div><font size="5">Chrome OS</font></div>
+<p><font size="1">Profiling for Chrome OS is very similar to Linux, with a couple of key differences</font></p>
+<div>
+<ul><li><font size="1">The default directory for the profile output is that of the chrome executable, which is read only. So you'll either need to run chrome from elsewhere (an sshfs'd mount of your development directory) or specify the --profiling-file option.</font></li>
+<li><font size="1">You need to run the pprof program on your desktop so it will need access to not only the profile output and chrome executable but the .so's that chrome depends on. To address this you can sshfs your chromeos machine's root folder back to your desktop and provide a search path to it when you run pprof. So:</font></li>
+<ul><li><font size="1">On your desktop</font></li>
+<ul><li><font size="1">Build chrome with profiling=1, inside chroot:<br />
+</font><span style="font-family:arial,sans-serif">
+<div class="sites-codeblock sites-codesnippet-block"><code>declare -x EXTRA_BUILD_ARG</code><code>S="profiling=1"</code></div>
+</span></li>
+<li><font size="1">Push it to the device</font></li>
+<li><font size="1"><i>nkostylev</i>: I was unable to generate pprof graph with meaningful function names for Chrome build inside chroot even though executable contained all symbols. Using chrome build outside of chroot works fine</font></li>
+<ul><li><font size="1">Outside of chroot, update GYP_DEFINES, include sysroot=&lt;path to chroot&gt; i.e.<br />
+</font>
+<div class="sites-codeblock sites-codesnippet-block"><code>GYP_DEFINES="chromeos=1 target_arch=ia32 profiling=1 sysroot=/usr/local/home/username/chromiumos/chroot/build/x86-mario"</code></div>
+</li>
+<li><font size="1">Re-run gclient runhooks, build Chrome Release build</font><br />
+<div class="sites-codeblock sites-codesnippet-block"><code>gclient runhooks</code><br />
+<code>make BUILDTYPE=Release out/Release/chrome -j 15</code></div>
+</li>
+<li><font size="1">Inside chroot, set up the environment</font><br />
+<div class="sites-codeblock sites-codesnippet-block"><code>declare -x BOARD=x86-mario</code><br />
+<code>declare -x BUILDTYPE=Release</code><br />
+<code>declare -x CHROME_ORIGIN=LOCAL_BINARY</code><br />
+<code>declare -x FEATURES="-usersandbox" </code><br />
+<code>declare -x USE="-build_tests"</code><br />
+<code>declare -x BUILD_OUT=out</code></div>
+</li>
+<li><font size="1">Push chromeos-chrome to the device</font></li></ul></ul>
+<li><font size="1">On your chromeos machine</font></li>
+<ul><li><font size="1">Modify /sbin/session_manager_setup.sh to pass the --profiling-file=/tmp/chrome-profile-{pid} as one of the arguments to chrome.</font></li>
+<li><font size="1">Enable / disable profiling, or specify --profiling-at-start or call Profiling::Start() / Profiling::Stop() from your code</font></li></ul>
+<li><font size="1">On your desktop</font></li>
+<ul><li><font size="1">mkdir /tmp/c</font></li>
+<li><font size="1">sshfs chronos@{chronos-ip}:/ /tmp/c</font></li>
+<li><font size="1">pprof <span style="border-collapse:collapse;font-family:arial,sans-serif">--lib_prefix=/tmp/c/lib,/tmp/c/usr/lib,/tmp/c/opt/google/chrome/chromeos </span><i>{chrome executable}</i> /tmp/c/tmp/chrome-profile-<i>{pid}</i></font></li>
+<ul><li><i><font size="1">Note: There should be a way to use the debug symbols from your build root instead of the libraries from the device itself, but it's left as an exercise for the interested student.</font></i></li></ul></ul></ul></ul>
+</div>
+<h3><a name="TOC-OS-X"></a><span style="font-size:x-large">OS X</span></h3>
+<div>DTrace and the pre-packaged "CPU Sampler" tool in XCode work well.  Shark or the command-line sample work also, though they both will spend an exceedingly long time processing symbols if you are running Leopard (10.5).  Anecdotally this is much faster in Snow Leopard (10.6)</div>
+<div><br />
+</div>
+<h3><a name="TOC-Windows"></a><span style="font-size:x-large">Windows</span></h3>
+<div><a href="http://code.google.com/p/sawbuck/wiki/SyzyProf" target="_blank">SyzyProf</a> is a made-to-order, license-free, instrumenting hierarchical performance profiler that works well with Chrome. The aim with SyzyProf is to allow comprehensive profiling of Chrome code, including profiling over tasks or IPC, as well as integrated profiling over JavaScript in V8 and C++. SyzyProf is implemented as a 20% labor of love by a small group of Chrome developers, and we're looking for more &gt;= 20% help.</div>
+<div><br />
+</div>
+<div>Windows Performance Toolkit (WPT) is a free profiler from Microsoft that can profile CPU consumption, CPU idle time, file I/O, disk I/O, and more. To use WPT you need Windows 7 or higher. Getting started instructions for recording a trace using wprui can be found on <a href="https://randomascii.wordpress.com/2013/04/20/xperf-basics-recording-a-trace-the-easy-way/">this blog post</a>. To record a trace just follow steps 1, 5, and 6. Trace analysis can then be done (be sure to configure <a href="https://www.chromium.org/developers/how-tos/debugging-on-windows">Chrome's symbol server</a>) or the trace can be shared on Google drive by analysis by somebody else.</div>
+<div><br />
+</div>
+<div>I've heard that Purify has a profiler but have no experience with this personally.</div>
+</div>
+<div><br />
+</div>
+<div>AMD Code Analyst is a free profiler that can run inside Visual Studio. It captures frequency counts for functions in every process on the computer. It can optionally capture call-stack information, %CPU, and memory usage statistics; even with the Frame Pointer Omission optimization turned off (build\internal\release_defaults.gypi; under 'VCCLCompilerTool' set 'OmitFramePointers':'false'?), the call stack capture can have lots of bad information, but at least the most-frequent-caller seems accurate in practice.</div>
+<div><br />
+</div>
+<div>Intel's VTune 9.1 does work in the Sampling mode (using the hardware performance counters), but call graphs are unavailable in Windows 7/64.  Note also that drilling down into the results for chrome.dll is extremely slow (on the order of many minutes) and may appear hung.  It does work (I suggest coffee or foosball).  VTune has been essentially supplanted by Intel® VTune™ Amplifier XE, which is an entirely new code base and interface, AFAIK.</div>
+<div><br />
+</div>
+<div>Very Sleepy (<a href="http://www.codersnotes.com/sleepy">http://www.codersnotes.com/sleepy</a>) is a light-weight standalone profiler that seems to works pretty well for casual use and offers a decent set of features.</div>
+<h2><a name="TOC-Android"></a>Android</h2>
+<div>Similarly to Linux, perf is the recommended tool to profile native code on Android. First, make sure you have built the browser with the set of GYP_DEFINES described above. Then, use the following wrapper script to launch the browser and follow the instructions:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">$ tools/perf/record_android_profile.py --browser=android-chromium-testshell --profiler=perf<br />
+Press enter to start profiling...<br />
+&gt;&gt; Starting profiler perf<br />
+Press enter or CTRL+C to stop<br />
+</font></div>
+</div>
+<div><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt"><br />
+</span></div>
+<div>The script will automatically pull the profiling data from the device and print out instructions for viewing it. Note that several files will be generated: one for the browser process and ones for each renderer process.</div>
+<div><br />
+</div>
+<div>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">To view the profile, run:<br />
+tools/telemetry/bin/prebuilt/android/perfhost report --symfs /tmp/tmpjySSsF -n -i /tmp/tmpjySSsF/perf.browser0<br />
+To view the profile, run:<br />
+tools/telemetry/bin/prebuilt/android/perfhost report --symfs /tmp/tmpjySSsF -n -i /tmp/tmpjySSsF/perf.renderer0</font></div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-GPU-profiling"></a><font size="4">GPU profiling</font></h4>
+<div>Both nVidia PerfHUD and Microsoft PIX are freely available. They may not run without making minor changes to how the graphics contexts are set up; check with the chrome-gpu team for current details.</div>
+<div><br />
+</div>
+<div>The OpenGL Profiler for OSX allows real-time inspection of the top GL performance bottlenecks, as well as call traces.  In order to use it with Chrome/Mac, you must pass --disable-gpu-sandbox on the command line.  Some people have had more luck attaching it to the GPU process after-the-fact than launching Chrome from within the Profiler; YMMV.</div>
+<div><br />
+</div>
+<div>GPUView is a Windows tool that utilizes ETW (Event Tracing for Windows) for visualizing low-level GPU, driver and kernel interactions in a time-based viewer.  It's available as part of the Microsoft Windows Performance Toolkit, in 
+<span style="font-family:monospace,Courier New;line-height:19px;background-color:rgb(249,249,249)">%ProgramFiles</span><font face="'courier new', monospace"><span style="line-height:19px;background-color:rgb(249,249,249)">%</span>\Windows Kits\8.1\Windows Performance Toolkit\GPUView. </font><font face="arial, sans-serif"> There's a </font><font face="'courier new', monospace">README.TXT</font><font face="arial, sans-serif"> in there with basic instructions, or see </font><a href="http://graphics.stanford.edu/~mdfisher/GPUView.html">http://graphics.stanford.edu/~mdfisher/GPUView.html</a>. Traces for loading into GPUView can be recorded with wprui (see the Windows section).</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/profiling-chromium-and-webkit">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9sSTMG6GQFb2G9xcIX2RU9JW4_swovePQL_kGQzHPguLWlB76dwXAeLE2IAj-3bqXSfj-DIoxdq-frAfVsQa0xmsgHjbWWPuaJb713TjnFLHYLkCZ/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

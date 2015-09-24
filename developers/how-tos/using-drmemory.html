@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/using-drmemory","deleted":false,"title":"Using Dr. Memory","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/using-drmemory\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Using Dr. Memory","locale":"en","wuid":"wuid:gx:53326579d5270d58","revision":45,"path":"/developers/how-tos/using-drmemory","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"using-drmemory","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Using Dr. Memory - The Chromium Projects" />
+<meta itemprop="name" content="Using Dr. Memory - The Chromium Projects" />
+<meta property="og:title" content="Using Dr. Memory - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Using Dr. Memory - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../how-tos.1.html" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Using Dr. Memory</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:320px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="using-drmemory.html#TOC-Dr.-Memory-is-a-new-open-source-tool-for-finding-memory-errors---similar-to-Memcheck-Valgrind-but-with-Windows-support-including-detection-of-Windows-handle-leaks-and-GDI-usage-errors."><strong>1 </strong>Dr. Memory is a new open-source tool for finding memory errors - similar to Memcheck (Valgrind) but with Windows support, including detection of Windows handle leaks and GDI usage errors.</a></li><li class="goog-toc"><a href="using-drmemory.html#TOC-OK-I-ve-found-a-real-bug"><strong>2 </strong>OK, I've found a real bug</a></li><li class="goog-toc"><a href="using-drmemory.html#TOC-drmemory_light-vs-drmemory_full"><strong>3 </strong>drmemory_light vs drmemory_full</a></li><li class="goog-toc"><a href="using-drmemory.html#TOC-Suppressing-error-reports-from-the-bots"><strong>4 </strong>Suppressing error reports from the bots</a></li><li class="goog-toc"><a href="using-drmemory.html#TOC-Running-Chromium-under-Dr.-Memory-on-a-given-set-of-URLs"><strong>5 </strong>Running Chromium under Dr. Memory on a given set of URLs</a></li><li class="goog-toc"><a href="using-drmemory.html#TOC-Running-your-custom-command-line-under-Dr.-Memory"><strong>6 </strong>Running your custom command line under Dr. Memory</a></li><li class="goog-toc"><a href="using-drmemory.html#TOC-Feedback-"><strong>7 </strong>Feedback?</a></li></ol></div></div></div></div><h3><a name="TOC-Dr.-Memory-is-a-new-open-source-tool-for-finding-memory-errors---similar-to-Memcheck-Valgrind-but-with-Windows-support-including-detection-of-Windows-handle-leaks-and-GDI-usage-errors."></a>Dr. Memory is a new open-source tool for finding memory errors - similar to Memcheck (Valgrind) but with Windows support, including detection of Windows handle leaks and GDI usage errors.</h3><div><div>Dr. Memory is running on the MFYI waterfall <a href="http://build.chromium.org/p/chromium.memory.fyi/waterfall?builder=Chromium+Windows+Builder+(DrMemory)&amp;builder=Windows+Unit+(DrMemory)&amp;builder=Windows+Browser+(DrMemory)+(1)&amp;builder=Windows+Browser+(DrMemory)+(2)&amp;reload=none">MFYI waterfall</a> where it finds bugs in Chromium on Windows.</div><div><br /></div><div>If you want to try Dr. Memory on your machine, please do the following:</div><div><ul><li>First of all, you need Windows.  Win7 x64 is preferred.  DrMemory supports Linux, but the support is not as robust.</li></ul><ul><li><a href="build-instructions-windows.1.html">Build</a> Chromium tests on Windows in either Release or Debug configuration (you can save some time by building only the small tests like <font face="'courier new', monospace">googleurl</font>, <font face="'courier new', monospace">ipc</font>, <font face="'courier new', monospace">base</font>, <font face="'courier new', monospace">net</font> to start with).  Release runs faster.  For either Release or Debug, build with the following setting in order to disable inlining and FPO for better callstacks by placing this in your <font face="'courier new', monospace">~/.gyp/include.gypi</font> file:<br /><font size="2" style="color:rgb(56,118,29)"><span style="font-family:courier new,monospace"><div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px"><div style="font-family:courier new,monospace"><div>{</div>  'variables': {</div><div style="font-family:courier new,monospace">    'build_for_tool': 'drmemory',</div></div><div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px"><div style="font-family:courier new,monospace">  },<br />}</div></div></span></font><font size="2">or<br /><span style="font-family:courier new,monospace">  set GYP_DEFINES=build_for_tool=drmemory<br /></span><span style="font-family:courier new,monospace"><span style="font-size:13px;font-family:Courier New,courier,monotype;white-space:pre"><font size="2">  gclient runhooks</font></span></span><br /><div style="font-family:arial"><br /></div></font></li><li>The Dr. Memory binaries are downloaded from Google Storage automatically (on Windows) into the <span style="background-color:transparent;font-size:10pt"><span style="font-family:courier new,monospace">third_party/drmemory</span> directory.</span><br /><br /></li><li>Now you can run chromium tests like this:<br /><font face="'courier new', monospace">tools\valgrind\chrome_tests.bat -t <i>&lt;test&gt;</i> --tool drmemory_light # only search for unaddressable accesses and uses-after-free<br /><span style="font-family:Arial,Verdana,sans-serif">or</span><br /></font><font face="'courier new', monospace">tools\valgrind\chrome_tests.bat -t </font><i style="font-family:courier new,monospace">&lt;test&gt;</i><font face="'courier new', monospace"> --tool drmemory_full  # search for uninits and leaks etc as well</font><br /><span style="font-family:arial,sans-serif">Alternatively, if you prefer Cygwin, you can also use </span><font face="'courier new', monospace">tools/valgrind/chrome_tests.sh</font><span style="font-family:arial,sans-serif"> with the same arguments.  Just be aware that the bots use the .bat script.<br /><br /></span></li><li>You can use --build-dir to select between Debug and Release, for example: <font face="courier new, monospace">tools\valgrind\chrome_tests.bat -t base_unittests --tool drmemory_light --build-dir=out\Release</font></li></ul><ul><li>It will print you some error reports at the end.</li></ul><div>If for some reason you cannot reproduce a bot failure on your Windows machine, look for the exact command that started the tests and run that. For example, here is one variation of the test command that catches some memory bugs that the above commands may not catch:</div><div><br /></div><div><font face="courier new, monospace">  </font><span style="background-color:transparent"><font face="courier new, monospace">src\tools\valgrind\chrome_test</font></span><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent">s.bat --brave-new-test-launcher --test-launcher-bot-mode --test &lt;test&gt;</span><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"> --tool drmemory_full --target Release --build-dir src\out</span></div><h3><a name="TOC-OK-I-ve-found-a-real-bug"></a>OK, I've found a real bug</h3><div>Great!</div><div>Please file a crbug and add the <a href="http://code.google.com/p/chromium/issues/list?q=Stability%3DDrMemory" target="_blank">Stability-DrMemory</a> label.</div><div><br /></div><div><h3><a name="TOC-drmemory_light-vs-drmemory_full"></a>drmemory_light vs drmemory_full</h3><div>Light: searches for unaddressable accesses like OOB or use-after-frees, handle leaks, and graphical library usage errors, incurring a moderate execution slowdown.</div><div>Full: additionally searches for uninitialized reads but adds a large slowdown.</div><div><br /></div><div>More on the "full" mode:</div><div>If you're familiar with the Valgrind guts you probably know that tools like Valgrind and Dr. Memory need to intercept and handle all system calls to know precisely what data is uninitialized, what is read and so on.</div><div>In contrast to the open-source Linux kernel with just a hundred system calls or so, on Windows we have an open-ended problem of handling undocumented system calls.<br />We're trying hard to do that but we haven't finished yet.  We have some heuristics that work pretty well to ignore errors stemming from system libraries making system calls as opposed to Chromium code, but if you do see an error report that you believe is a false positive,<span style="background-color:transparent;font-size:10pt"> please create a short reproducer and file it into our </span><a href="http://code.google.com/p/drmemory/issues/list?can=2&amp;q=Bug%3DFalsePositive" style="background-color:transparent;font-size:10pt">issue tracker</a><span style="background-color:transparent;font-size:10pt">.</span></div><h3><a name="TOC-Suppressing-error-reports-from-the-bots"></a>Suppressing error reports from the bots</h3></div><div><b>TODO(rnk): When the DrMemory bots have moved to the chromium.memory.fyi waterfall, this information will be moved into the <a href="../tree-sheriffs/sheriff-details-chromium/memory-sheriff.html">memory sheriff</a> page.</b></div><div><b>timurrrr: most of this info sounds DrMemory-specific, do we really want to put it onto the "common" page?</b></div><div><b><br /></b></div><div>The DrMemory suppression file is at <font face="'courier new', monospace">tools/valgrind/drmemory/suppressions[_full].txt</font>.<br />Generally speaking, suppressions in these files are maintained in exactly the same way as those for all of the other memory tools we use for Chromium, except that DrMemory uses a slightly different suppression format.</div><div><br /></div><div>When the bot generates a report, follow the link to the bot's stdio and search for "<font face="'courier new', monospace">hash=#</font>" to find the report quickly.  You should see something similar to:</div><div><pre style="font-weight:bold"><span style="font-family:Courier New,courier,monotype;font-weight:normal"><font size="2">UNADDRESSABLE ACCESS: reading 0x00000000-0x00000004 4 byte(s)
+# 0 TestingProfile::FinishInit           [chrome\test\base\testing_profile.cc:211]
+# 1 TestingProfile::TestingProfile       [chrome\test\base\testing_profile.cc:164]
+# 2 BrowserAboutHandlerTest_WillHandleBrowserAboutURL_Test::TestBody </font></span><span style="font-family:Courier New,courier,monotype;font-weight:normal;font-size:small"> [chrome\browser\browser_about_handler_unittest.cc:110]
+</span><span style="font-family:Courier New,courier,monotype;font-weight:normal;font-size:small"># 3 testing::Test::Run                   [testing\gtest\src\gtest.cc:2162]</span></pre><pre style="font-weight:bold"><span style="font-family:Courier New,courier,monotype;font-weight:normal"><font size="2">Note: @0:00:08.656 in thread 1900
+Note: instruction: mov    (%ebx) -&gt; %esi
+Suppression (error hash=#30459DB8320B1FA3#):
+{
+UNADDRESSABLE ACCESS
+name=&lt;insert_a_suppression_name_here&gt;
+*!TestingProfile::FinishInit
+*!TestingProfile::TestingProfile
+*!BrowserAboutHandlerTest_WillHandleBrowserAboutURL_Test::TestBody
+*!testing::Test::Run
+}</font></span></pre><p><font face="arial, sans-serif" size="2">As a starting point, you can copy the suppression (the portion between the curly brackets <b>not including the brackets</b>) into the </font><font face="'courier new', monospace" size="2">suppressions.txt</font><font face="arial, sans-serif" size="2"> file and then widen it so it covers any similar reports on other bots.<br />The curly brackets are <b>not </b>part of the suppression as in all the other memory tools!  DrMemory suppressions are separated by blank lines instead, so make sure your suppression does not run into an existing suppression.</font></p><p><font face="arial, sans-serif" size="2">Each frame from the stack trace is of the form "&lt;module&gt;!&lt;function&gt;".  For functions from Chrome, we generally link the code statically into many different binaries, so we always use a wildcard for the module.<br />For third party code, it is generally helpful to identify which DLL the frame came from, especially since we often do not have debug info for windows system libraries.</font></p><p><font face="arial, sans-serif" size="2">As in the other tool suppression formats, '</font><font face="'courier new', monospace" size="2">*</font><font face="arial, sans-serif" size="2">' is a single frame variable-width wildcard, '</font><font face="'courier new', monospace" size="2">?</font><font face="arial, sans-serif" size="2">' is a single-character wildcard, and '</font><font face="'courier new', monospace" size="2">...</font><font face="arial, sans-serif" size="2">' will match any number of frames.</font></p><p><font face="arial, sans-serif" size="2">DrMemory has support for a handful of other pattern matching mechanisms.<br />In particular, if you paste the instruction from the report on a line starting with "</font><font face="'courier new', monospace" size="2">instruction=</font><font face="arial, sans-serif" size="2">", you can match the exact instruction producing the report.<br />The </font><font face="'courier new', monospace" size="2">instruction=</font><font face="arial, sans-serif" size="2"> qualifier is mostly useful when suppressing bit-level false positive uninitialized reads in third party libraries where we don't have an accurate callstack and want to make a tight suppression.</font></p><p><font face="arial, sans-serif" size="2">Once you have your suppression, you can test that it suppresses the existing reports using </font><font face="'courier new', monospace" size="2">tools/valgrind/waterfall.sh</font><font face="arial, sans-serif" size="2"> as you would with the other memory tools.</font></p></div><h3><a name="TOC-Running-Chromium-under-Dr.-Memory-on-a-given-set-of-URLs"></a><span style="font-size:16px;font-weight:bold">Running Chromium under Dr. Memory on a given set of URLs</span></h3><div>First, put the list of <font size="2">URLs into <span style="white-space:pre-wrap"><font face="'courier new', monospace">tools\valgrind\reliability\url_list.txt</font></span>, one URL per line without the http:// prefix. You can also put in the local URLs like <span style="white-space:pre-wrap"><font face="'courier new', monospace">file://c:\mypath\repro.htm</font></span></font></div><div>Then, run</div><div><span style="font-family:courier new,monospace">tools\valgrind\chrome_tests.bat -t reliability --tool drmemory --</span><span style="font-family:courier new,monospace">tool_flags="-no_check_uninitialized -no_count_leaks"</span></div><div><br /></div><div>If you're searching for some stability/security bugs, you may consider running Chromium in the single process mode to increase the probability of the report by applying this patch:</div><div><pre style="white-space:pre-wrap;max-width:80em;padding-left:0.7em"><font face="'courier new', monospace" size="2">Index: tools/valgrind/chrome_tests.py<br />===================================================================<br />--- tools/valgrind/chrome_tests.py      (<a href="http://code.google.com/p/chromium/source/detail?r=96002" style="color:rgb(0,0,204)">revision 96002</a>)<br />+++ tools/valgrind/chrome_tests.py      (working copy)<br />@@ -271,7 +271,8 @@<br />   # Valgrind timeouts are in seconds.<br />   UI_VALGRIND_ARGS = ["--timeout=7200", "--trace_children", "--indirect"]<br />   # UI test timeouts are in milliseconds.<br />-  UI_TEST_ARGS = ["--ui-test-action-timeout=120000",<br />+  UI_TEST_ARGS = ["--single-process=yes",<br />+                  "--ui-test-action-timeout=120000",<br />                   "--ui-test-action-max-timeout=280000"]<br /><br />   def TestAutomatedUI(self):</font><span style="font-family:arial,sans-serif;font-size:12px"><br /></span></pre></div><h3><a name="TOC-Running-your-custom-command-line-under-Dr.-Memory"></a>Running your custom command line under Dr. Memory</h3>Sometimes you may need to run your own program or your own custom command line under Dr. Memory. For example, if you want to prefix your own "chrome.exe --my-flags" command with Dr. Memory, do the following:<br /> <code>tools\valgrind\drmemory.bat chrome.exe -- --my-flags  # don't forget to increase the timeouts</code><br />If the command line runs Chrome, you may consider increasing the timeouts by appending</div><div><span style="color:rgb(0,96,0);font-family:monospace">--ui-test-action-timeout=120000 --ui-test-action-max-timeout=280000 --ui-test-terminate-timeout=120000</span><br /><div>to the commandline.</div><div><font size="3"><b><br /></b></font></div><div><span style="font-size:16px;font-weight:bold">Random notes for the curious ones</span></div><div>You can find the Dr. Memory suppression file for Chrome at <font face="'courier new', monospace">tools\valgrind\drmemory\suppressions[_full].txt</font></div><div><font face="'courier new', monospace"><br /></font>The report files are parsed and re-formatted to be more familiar for Valgrind users (see <font face="'courier new', monospace">tools\valgrind\drmemory_analyze.py</font>).</div></div></div><div><br /></div><div>Excluded tests are listed in <font face="courier new, monospace">tools\valgrind\gtest_exclude</font> - see <a href="using-valgrind.1.html">Using Valgrind</a> more for information.</div><div><br /></div><h3><a name="TOC-Feedback-"></a>Feedback?</h3><div>Drop drmemory-team@ a message</div><div><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/using-drmemory">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9RpvnS8kcFZ2dkctrifhfaZJRYxxmzgbh3207daRAb5YNPev1JeLYxK24octU7kqsQgRKoaG7jTh_8R0KJfmut8o2d75whZeX-ot5k2_UfYZYpAR6/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

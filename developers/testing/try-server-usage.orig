@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/try-server-usage","deleted":false,"title":"Try Server usage","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/testing/try-server-usage\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Try Server usage","locale":"en","wuid":"wuid:gx:6cc38cc1928aef00","revision":116,"path":"/developers/testing/try-server-usage","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"try-server-usage","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Try Server usage - The Chromium Projects" />
+<meta itemprop="name" content="Try Server usage - The Chromium Projects" />
+<meta property="og:title" content="Try Server usage - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Try Server usage - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Try Server usage</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+The try server lets committers try uncommitted patches on multiple platform in an automated way.<br />
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="#TOC-Workflow"><strong>2 </strong>Workflow</a></li><li class="goog-toc"><a href="#TOC-How-to-specify-a-subset-of-tests-to-run"><strong>3 </strong>How to specify a subset of tests to run</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Examples"><strong>3.1 </strong>Examples</a></li></ol></li><li class="goog-toc"><a href="#TOC-Troubleshooting-failed-try-jobs"><strong>4 </strong>Troubleshooting failed try jobs</a></li><li class="goog-toc"><a href="#TOC-FAQ"><strong>5 </strong>FAQ</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-I-m-modifying-a-DEPS-will-it-work-"><strong>5.1 </strong>I'm modifying a DEPS, will it work?</a></li><li class="goog-toc"><a href="#TOC-I-m-modifying-a-GYP-file-will-it-work-"><strong>5.2 </strong>I'm modifying a GYP file, will it work?</a></li><li class="goog-toc"><a href="#TOC-I-m-modifying-gyp-scripts-under-src-tools-gyp-will-it-work-"><strong>5.3 </strong>I'm modifying gyp scripts under src/tools/gyp, will it work?</a></li><li class="goog-toc"><a href="#TOC-Get-detailed-command-line-help"><strong>5.4 </strong>Get detailed command-line help</a></li><li class="goog-toc"><a href="#TOC-Disable-automatic-try-on-gcl-upload"><strong>5.5 </strong>Disable automatic try on gcl upload</a></li><li class="goog-toc"><a href="#TOC-I-have-an-awesome-patch-for-depot_tools-"><strong>5.6 </strong>I have an awesome patch for depot_tools!</a></li><li class="goog-toc"><a href="#TOC-How-can-I-see-what-will-happen-before-I-submit-the-job-"><strong>5.7 </strong>How can I see what will happen before I submit the job?</a></li><li class="goog-toc"><a href="#TOC-apply_issue-failed"><strong>5.8 </strong>apply_issue failed</a></li><li class="goog-toc"><a href="#TOC-compiling-failed"><strong>5.9 </strong>compiling failed</a></li><li class="goog-toc"><a href="#TOC-My-patch-includes-updated-webkit-baselines-binary-files-and-it-s-not-working"><strong>5.10 </strong>My patch includes updated webkit baselines (binary files) and it's not working</a></li><li class="goog-toc"><a href="#TOC-I-want-to-cancel-my-job-should-I-press-the-Stop-button-"><strong>5.11 </strong>I want to cancel my job, should I press the 'Stop' button?</a></li><li class="goog-toc"><a href="#TOC-Run-the-try-job-only-on-one-platform"><strong>5.12 </strong>Run the try job only on one platform</a></li><li class="goog-toc"><a href="#TOC-Run-the-try-job-for-real-Chrome-OS"><strong>5.13 </strong>Run the try job for "real" Chrome OS</a></li><li class="goog-toc"><a href="#TOC-My-patch-is-in-Blink-only"><strong>5.14 </strong>My patch is in Blink only</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-GIT"><strong>5.14.1 </strong>GIT</a></li><li class="goog-toc"><a href="#TOC-GCL"><strong>5.14.2 </strong>GCL</a></li></ol></li><li class="goog-toc"><a href="#TOC-Simultaneously-patch-code-in-the-WebKit-and-Chromium-repositories"><strong>5.15 </strong>Simultaneously patch code in the WebKit and Chromium repositories</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-GIT1"><strong>5.15.1 </strong>GIT</a></li><li class="goog-toc"><a href="#TOC-GCL1"><strong>5.15.2 </strong>GCL</a></li></ol></li><li class="goog-toc"><a href="#TOC-Submit-a-try-job-for-another-person-e.g.-non-committer-"><strong>5.16 </strong>Submit a try job for another person (e.g. non-committer)</a></li><li class="goog-toc"><a href="#TOC-I-need-to-hack-on-a-try-slave-for-a-few-hours-"><strong>5.17 </strong>I need to hack on a try slave for a few hours?</a></li><li class="goog-toc"><a href="#TOC-What-is-the-difference-between-git-try-and-git-cl-try-"><strong>5.18 </strong>What is the difference between 'git try' and 'git cl try'?</a></li><li class="goog-toc"><a href="#TOC-Where-can-I-find-the-results-of-webkit-layout-tests-for-a-try-bot-build-"><strong>5.19 </strong>Where can I find the results of webkit layout tests for a try bot build?</a></li></ol></li></ol></div></div></div></div></div>
+<ul><li>The try server is a standard <a href="http://www.chromium.org/developers/testing/chromium-build-infrastructure/getting-the-buildbot-source">buildbot</a> plus a set of slaves, currently Linux (Ubuntu), Mac, and Windows.</li>
+<li>The try server can be used with<font color="#274e13"> <font face="arial, sans-serif"><code>git cl try</code></font></font> (preferred), or <a href="http://www.chromium.org/developers/how-tos/depottools">gcl try</a> and <a href="http://code.google.com/p/chromium/wiki/UsingGit#Trybots" rel="nofollow" target="_blank">git-try</a>, both are front ends for <code>trychange.py</code>.</li>
+<li>It can also be used via the web interface by clicking on the "Try more bots" link in Rietveld.</li>
+<li>Any committer can use the try server.</li>
+<ul><li>Non-committers with <a href="http://www.chromium.org/getting-involved/become-a-committer#TOC-Try-job-access">try job access</a> may also run try jobs. See <a href="http://www.chromium.org/getting-involved/become-a-committer#TOC-Try-job-access">become-a-commiter#TOC-try-job-access</a> for getting access.</li>
+<li>External contributors can ask a committer to try the job for them and have the result email directly into their inbox.</li>
+<li>If you do not have sufficient permissions, attempts to use try servers (such as via the web interface) will result in immediate failure.</li></ul>
+<li>File limitations are:</li>
+<ul><li>Patches must be less than 20MB.</li>
+<li>Binary files are not supported.</li>
+<li>Text files with CRLF will have issues too.</li></ul>
+<li>Try server waterfalls: <a href="http://build.chromium.org/p/tryserver.chromium.gpu/waterfall">gpu</a> <a href="http://build.chromium.org/p/tryserver.chromium.linux/waterfall">linux</a> <a href="http://build.chromium.org/p/tryserver.chromium.mac/waterfall">mac</a> <a href="http://build.chromium.org/p/tryserver.chromium.win/waterfall">win</a></li>
+<ul><li>You can limit the builds shown by e.g. time or committer; see <a href="http://build.chromium.org/p/tryserver.chromium.linux/waterfall/help">waterfall help (tryserver.chromium.linux)</a>.</li></ul>
+<li><span style="font-size:10pt">See the </span><a href="http://www.chromium.org/developers/testing/try-server-usage/design" style="font-size:10pt">Design doc: Try server</a><span style="font-size:10pt">.</span></li></ul>
+<h2><a name="TOC-Workflow"></a>Workflow</h2>
+<div>
+<ul><li>The developer explicitly requests a job to be run with <code><code>git cl try</code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">, </span>git try</code>,  or <code>gcl try</code>.</li>
+<li>The try server will schedule <i>one job per platform</i> that you can follow live on the <a href="http://build.chromium.org/p/tryserver.chromium/" target="_blank">waterfall</a>.</li>
+<li>The job revision will default to <a href="http://chromium-status.appspot.com/lkgr">http://chromium-status.appspot.com/lkgr</a>. This can be overridden with the tools with <code>--revision</code>.</li>
+<li>On each job end</li>
+<ul><li>An email will be sent to the email specified in the job. It is usually specified implicitly.</li>
+<li>The corresponding review on <a href="http://codereview.chromium.org/">http://codereview.chromium.org/</a> will have its try job status updated live.</li></ul>
+<li>On <font face="'courier new', monospace"><code>gcl commit</code></font> / <font face="'courier new', monospace"><code>git cl dcommit</code></font> (Not always), a <code>PRESUBMIT.py</code> will enforce that the job succeeded.</li></ul>
+</div>
+<h2><a name="TOC-How-to-specify-a-subset-of-tests-to-run"></a>How to specify a subset of tests to run</h2>
+<div>
+<div><code>-b, --bot</code> to specify the bot</div>
+<div><code>-b, --bot</code> is <b>additive</b>, except that if you don't specify it at all you'll get default bots</div>
+<div>
+<div><br />
+</div>
+</div>
+<div>Allowed uses:</div>
+<div>Specify multiple builders using the default tests:</div>
+<div><code>  -b buildername1 -b buildername2 -b buildername3<br />
+</code></div>
+<div>
+<br />
+</div>
+<div>
+<div><code>-m, --master</code> to specify a tryserver master.</div>
+<div><br />
+</div>
+<div>For Linux and Android builders, the master is <font face="verdana, sans-serif"><code>tryserver.chromium.linux</code></font>, for Mac and iOS - <code>tryserver.chromium.mac</code>, and for Windows - <code>tryserver.chromium.win</code>. Note, that all the builders specified with <code>-b</code> will be launched on the same master. Issue separate <code>git cl try</code> command for each master.</div>
+</div>
+<h3><a name="TOC-Examples"></a>Examples</h3>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>git cl try -b win_chromium_rel -m tryserver.chromium.win</code></div>
+</div>
+</div>
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>git cl try -b linux_blink_rel -m </code><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:13.3333320617676px">tryserver.blink</span></div>
+<div>
+<div>
+<div>
+<h2><a name="TOC-Troubleshooting-failed-try-jobs"></a>Troubleshooting failed try jobs</h2>
+<div>Please, before contacting maruel, please look at these items:</div>
+<div>
+<ul><li>Did it fail at the Update step?</li>
+<ul><li>Did your patch contain CRLF files? You can look at the 'patch' link in the 'update' step.</li>
+<ul><li>Too bad for you. Create a separate commit to fix the file in the tree and try again with --revision 123</li></ul>
+<li>Did you get GYP failures in the update 'stdio'?</li>
+<ul><li>Maybe you screwed the GYP file.</li></ul>
+<li>Did you get "HUNK", "fuzzing" or "offset" messages in the update 'stdio'?</li>
+<ul><li>The files you are modifying have been modified on the tree. Maybe LKGR is more <b>recent</b> or <b>older</b> than your checkout. You can look at the build link in the email in the <b>Build Properties</b> section, search for the number beside <b>revision</b>. Maybe try specifying --revision on your try.</li></ul></ul>
+<li>Did it fail at the Compile step?</li>
+<ul><li>Maybe your code is broken?</li>
+<ul><li>Yes, that is a possibility. Sorry 'bout that.</li></ul>
+<li>Maybe someone else broke the slave?</li>
+<ul><li>That happens. Especially on Windows. Please try again and alert me with the build status url. You can use the --bot win flag to not try needlessly on other platforms.</li></ul>
+<li>Maybe a clobber is required. There are command-line options to request clobber (most likely just -c).</li></ul>
+<li>Did it fail an unrelated test?</li>
+<ul><li>Maybe it was broken at that revision on the main waterfall. Please look up the revision and take a look on the main waterfall.</li>
+<li>Maybe the tree slave is broken?</li>
+<ul><li>That happens. Please try again and alert me with the build status url.</li></ul></ul>
+<li>I get no email!</li>
+<ul><li>Did you get a warning message when sending your job? By default, it sends it to your checkout credential.</li></ul>
+<li>'gcl try' fails</li>
+<ul><li>Send an email to &lt;tryserver at chromium dot 0rg&gt;.</li></ul>
+<li>The try server is soo slow</li>
+<ul><li>When a clobber is needed, a full rebuild takes time.</li>
+<li>Maybe someone changed a GYP and forgot to update the <b>svn:ignore<span style="font-weight:normal">?</span></b></li>
+<ul><li>If you feel like getting a peer bonus, please fix the property accordingly, otherwise ping &lt;tryserver at chromium dot 0rg&gt;.</li></ul></ul>
+<li>The try server needs a clobber</li>
+<ul><li>That happens, usually ask to someone knowledgeable on irc to fix it for you or ping maruel if no answer.</li>
+<li>You can also request a clobber using command-line flags (usually -c).</li></ul>
+<li>error message: 'hostname nor servname provided, or not known'</li>
+<ul><li>If you're using the try server from outside of Google, it will fail to look up the hostname and should then fall back to using svn to enqueue the try job.  If svn fails, unfortunately, you'll only see the error message about the hostname, so you won't realize that svn is the problem.  </li>
+<li>To fix, try this first: <span style="font-family:arial,sans-serif;border-collapse:collapse">svn ls svn://<a href="http://svn.chromium.org/chrome-try" style="color:rgb(7,77,143)" target="_blank">svn.chromium.org/chrome-try</a></span></li>
+<li>If that last step didn't work, maybe you're using git try on Windows?  In that case, you may have a mismatch where the tools are using a mix of depot_tools svn and cygwin svn.  In that case, also type /usr/bin/<span style="font-family:arial,sans-serif;border-collapse:collapse">svn ls svn://<a href="http://svn.chromium.org/chrome-try" style="color:rgb(7,77,143)" target="_blank">svn.chromium.org/chrome-try</a></span></li></ul>
+<li>Anything else?</li>
+<ul><li>Please update this guide.</li></ul></ul>
+<div><font size="4"><b>Requesting new bots</b></font></div>
+<div><span style="font-size:small;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:small;background-color:transparent"><a href="https://code.google.com/p/chromium/issues/entry?template=Build%20Infrastructure">File a bug</a> to get a bot request going.  Do this as early as possible and provide as many details as you can.</span></div>
+<h2><a name="TOC-FAQ"></a>FAQ</h2>
+<h3><a name="TOC-I-m-modifying-a-DEPS-will-it-work-"></a>I'm modifying a DEPS, will it work?</h3>
+<div>Yes.</div>
+<h3><a name="TOC-I-m-modifying-a-GYP-file-will-it-work-"></a>I'm modifying a GYP file, will it work?</h3>
+<div>Yes.</div>
+<h3><a name="TOC-I-m-modifying-gyp-scripts-under-src-tools-gyp-will-it-work-"></a>I'm modifying gyp scripts under src/tools/gyp, will it work?</h3>
+<div>Yes, but you have to use 
+<code>--no_search</code>, otherwise patch will fail saying it cannot find files to patch.</div>
+<h3><a name="TOC-Get-detailed-command-line-help"></a>Get detailed command-line help</h3>
+<div>Use: <span style="color:rgb(0,96,0);font-family:monospace;font-size:small">git try -h   </span><span style="font-family:arial,sans-serif">(git will redirect --help to man which fails for git-try)</span></div>
+<div>Or: <span style="color:rgb(0,96,0);font-family:monospace;font-size:small">trychange.py --help</span></div>
+<h3><a name="TOC-Disable-automatic-try-on-gcl-upload"></a><span style="font-size:16px;font-weight:bold">Disable automatic try on gcl upload</span></h3>
+<div>To do this for '<font face="'courier new', monospace">gcl try</font>': <span style="font-family:arial,sans-serif;border-collapse:collapse">create a file at  '</span><span style="border-collapse:collapse"><font face="'courier new', monospace">~/.gcl_upload_no_try</font></span><span style="font-family:arial,sans-serif;border-collapse:collapse">'</span></div>
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse">For '</span><span style="border-collapse:collapse"><font face="'courier new', monospace">git try</font></span><span style="font-family:arial,sans-serif;border-collapse:collapse">' : Edit </span><span style="border-collapse:collapse"><font face="'courier new', monospace">src/codereview.settings</font></span><span style="font-family:arial,sans-serif;border-collapse:collapse"> thusly: </span><span style="font-family:arial,sans-serif;border-collapse:collapse">"</span><span style="border-collapse:collapse"><font face="'courier new', monospace">TRY_ON_UPLOAD: False</font></span><span style="font-family:arial,sans-serif;border-collapse:collapse">"</span></div>
+<h3><a name="TOC-I-have-an-awesome-patch-for-depot_tools-"></a>I have an awesome patch for depot_tools!</h3>
+<div>Use the same way to contribute code that for chromium in general, e.g. <code>gcl </code>or <code>git-cl</code>.</div>
+<div><font face="arial, sans-serif">
+</font></div>
+<h3><a name="TOC-How-can-I-see-what-will-happen-before-I-submit-the-job-"></a>How can I see what will happen before I submit the job?</h3>
+<div>Use the <span style="font-size:10pt"><code>--dry_run</code> flag (which implies</span><span style="font-size:10pt"> </span><code style="font-size:10pt">--verbose</code><span style="font-size:10pt">) to (a) see what your patch is and (b) not actually submit the job when using git try or gcl try.</span></div>
+<h3><a name="TOC-apply_issue-failed"></a>apply_issue failed</h3>
+<p>By default the trybot will patch your change against HEAD, so there might be differences in the files you are modifying between the revision you've been working on and HEAD. The easiest way to fix this is check which revision you were using, and then pass it to the try job with --revision, e.g.<span style="font-size:10pt;background-color:transparent">, </span><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace;background-color:transparent">git cl try -rHEAD</span><span style="font-size:10pt;background-color:transparent">. </span></p>
+<p>If this still doesn't work and:</p>
+<ol><li>you are using git</li>
+<li>master is not upstream of the branch you are trying</li>
+</ol>
+then its possible there are uncommitted changes between your branch and master, causing the apply_issue to fail.  In this case, use  <code>git try</code>  instead of  <code>git cl try</code>  as follows:
+<p><code>    git try --upstream_branch=origin/master</code></p>
+<p>Keep in mind that this means your branch cannot be committed until all upstream branches are committed first, even if the trybots succeed.</p>
+<h3><a name="TOC-compiling-failed"></a>compiling failed</h3>
+<div>
+<div>Possible issues:</div>
+<div>
+<ul>
+<li><span style="font-size:10pt">Incremental build failure, slightly less probable but still happens occasionally. Try with <code>-c, --clobber</code></span></li>
+<li><span style="font-size:10pt">The slave has a broken checkout and needs a complete checkout removal, rarely happens but still does. Reply to the try job email.</span></li>
+<li><span style="font-size:10pt">Your patch is broken. Please don't completely rule this possibility out yet. :)</span></li></ul>
+</div>
+</div>
+<h3><a name="TOC-My-patch-includes-updated-webkit-baselines-binary-files-and-it-s-not-working"></a>My patch includes updated webkit baselines (binary files) and it's not working</h3>
+<div>Correct! The try servers do not currently support binary patches. </div>
+<h3><a name="TOC-I-want-to-cancel-my-job-should-I-press-the-Stop-button-"></a>I want to cancel my job, should I press the 'Stop' button?</h3>
+<div>No! DON'T EVER DO THAT. This button is for maintainers and is quite tricky to use correctly. Just let it go.</div>
+<div><br />
+</div>
+<div>Why! you ask. You may stop it during the update step and leave the svn checkout locked, breaking the following tries. You may stop it during compilation, corrupting the PDB database, breaking the following jobs. You may stop it during ui_tests, leaving zombies around. You may stop it during unit_tests, leaving temp files around.</div>
+<h3><a name="TOC-Run-the-try-job-only-on-one-platform"></a>Run the try job only on one platform</h3>
+<div>Use <font face="'courier new', monospace"><code>--bot win</code></font> or whatever 'builder' name you want to use from the waterfalls.</div>
+<h3><a name="TOC-Run-the-try-job-for-real-Chrome-OS"></a>Run the try job for "real" Chrome OS</h3>
+<div>As of June 2014 the Chrome try server provides chromium.chromeos builders, which are 64-bit Linux builds of Chromium with OS_CHROMEOS=1. This means the CQ and try server will not compile or test 32-bit Intel or ARM Chrome OS builds. But you can try your changes on the Chrome OS side with cbuildbot. See <a href="http://www.chromium.org/chromium-os/build/using-remote-trybots?pli=1#TOC-To-patch-in-a-rietveld-CL">How to patch in a Reitveld CL</a> in the Chromium OS remote trybot docs.</div>
+<h3><a name="TOC-My-patch-is-in-Blink-only"></a>My patch is in Blink only</h3>
+<div>We highly recommend you to use git. See <a href="http://code.google.com/p/chromium/wiki/UsingWebKitGit">http://code.google.com/p/chromium/wiki/UsingWebKitGit</a>.</div>
+<h4><a name="TOC-GIT"></a>GIT</h4>
+<p>Go in src/third_party/WebKit and use <font color="#000000" face="Arial, Verdana, sans-serif"><code>git-try</code></font>. If you want to diff against a specific branch, use <font color="#000000" face="Arial, Verdana, sans-serif"><code>git-try --</code></font><font color="#006000" face="monospace">upstream_branch=&lt;branch&gt;</font>.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>cd src/third_party/WebKit ; git-try --bot mac_layout,win_layout,linux_layout</code></div>
+<h4><a name="TOC-GCL"></a>GCL</h4>
+<div><span>Since <code>gcl try</code> will fail if you don't specify a chromium change, you can use <code>trychange.py</code> directly. Use it from the </span><span style="color:rgb(0,96,0);font-family:monospace">src</span><span> directory of your Chromium checkout:</span></div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block"><code>trychange.py --sub_rep=third_party/WebKit --bot mac_layout,win_layout,linux_layout</code></div>
+<div><br />
+</div>
+<div>See <code>trychange.py --help</code> for more details.</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<h3><a name="TOC-Simultaneously-patch-code-in-the-WebKit-and-Chromium-repositories"></a>Simultaneously patch code in the WebKit and Chromium repositories</h3>
+<h4><a name="TOC-GIT1"></a>GIT</h4>
+<div>Use <code>--sub_rep</code>. Don't know what <code>--sub_rep</code> is? Then try <code>git-try --help</code>.</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block"><code>cd src ; git-try --sub_rep third_party/WebKit/ --bot mac_layout,win_layout,linux_layout</code></div>
+<h4><a name="TOC-GCL1"></a>GCL</h4>
+<div>Use <code style="color:rgb(0,96,0)">--sub_rep</code>. Don't know what <code style="color:rgb(0,96,0)">--sub_rep</code> is? Then try <code style="color:rgb(0,96,0)">gcl help try</code>.</div>
+<h3><a name="TOC-Submit-a-try-job-for-another-person-e.g.-non-committer-"></a>Submit a try job for another person (e.g. non-committer)</h3>
+<div>Use Rietvield WebUI with the "Try more bots" link. Alternatively, you can use:</div>
+<div><br />
+</div>
+</div>
+</div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt">git cl patch -b new-branch-name Rietveld-issue-id<br />
+</span><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt">git cl issue Rietveld-issue-id<br />
+</span><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt">git cl try</span></div>
+<p><font color="#000000"><font face="arial, sans-serif">Where </font></font><span style="background-color:transparent"><font color="#006000" face="monospace">new-branch-name</font></span><font color="#000000" style="background-color:transparent;font-size:10pt"><font face="arial, sans-serif"> and </font></font><span style="background-color:transparent"><font color="#006000" face="monospace">Rietveld-issue-id</font></span><font color="#000000" style="background-color:transparent;font-size:10pt"><font face="arial, sans-serif"> should be replaced accordingly (give it a new branch name and link it with the id for the non-committer's CL on </font></font><span style="font-family:arial,sans-serif;background-color:transparent;font-size:10pt">Rietveld</span><span style="font-family:arial,sans-serif;background-color:transparent;font-size:10pt">).</span></p>
+<h3><a name="TOC-I-need-to-hack-on-a-try-slave-for-a-few-hours-"></a><span style="font-family:arial,sans-serif">I need to hack on a try slave for a few hours?</span></h3>
+<p><span style="font-family:arial,sans-serif">Sorry, only Googlers can do this for now. You can get more information <a href="http://goto.google.com/chrometryserver">at the internal link</a>.</span></p>
+<h3><a name="TOC-What-is-the-difference-between-git-try-and-git-cl-try-"></a><span style="font-family:arial,sans-serif">What is the difference between 'git try' and 'git cl try'?</span></h3>
+<ul><li><span style="color:rgb(0,96,0);font-family:monospace">git try</span><span style="font-family:arial,sans-serif"> runs the try job on your local changes. This causes a diff file to be committed in a special repository. This file is read by the Try Server and the slave applies it during the <code>update</code> step.</span></li>
+<li><span style="color:rgb(0,96,0);font-family:monospace">git cl try</span><span style="font-family:arial,sans-serif"> runs the try job on your changes already uploaded to the codereview tool. The Try Server instructs the slave to download the patch by itself in the <code>apply_issue</code> step.</span></li></ul>
+<h3><a name="TOC-Where-can-I-find-the-results-of-webkit-layout-tests-for-a-try-bot-build-"></a><span style="font-family:arial,sans-serif">Where can I find the results of webkit layout tests for a try bot build?</span></h3>
+<p><font face="arial, sans-serif">Under the builder's build results page, look for the step entitled <b>archive_webkit_tests_results</b>. A zip archive of the entire results directory is available the <b>(zip)</b> link under this step.</font></p>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/testing/try-server-usage/design" dir="ltr">Design doc: Try server</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/testing/try-server-usage">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9dhFgjkoHC4u9M2yZCzUl9kPppCs16LOW4HqlZ6Dt0jgCV9YEtVBOUwxRIvPCALYWUSzDmeSKhjpADQJOl1OKcIFvBBWCK89P8yW4DlCE3kO-v1I0/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

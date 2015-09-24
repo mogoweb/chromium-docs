@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/testing","deleted":false,"title":"Testing Home","dir":"ltr"},{"path":"/chromium-os/testing/autotest-design-patterns","deleted":false,"title":"Autotest Design Patterns","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/testing/autotest-design-patterns\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/testing","parentWuid":"wuid:gx:2e2ee5668f423109","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Autotest Design Patterns","locale":"en","wuid":"wuid:gx:69a540b8e8439e9a","revision":31,"path":"/chromium-os/testing/autotest-design-patterns","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"autotest-design-patterns","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Autotest Design Patterns - The Chromium Projects" />
+<meta itemprop="name" content="Autotest Design Patterns - The Chromium Projects" />
+<meta property="og:title" content="Autotest Design Patterns - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Autotest Design Patterns - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/testing" dir="ltr">Testing Home</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Autotest Design Patterns</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:300px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Adding-retries-to-Flaky-tests"><strong>1 </strong>Adding retries to Flaky tests</a></li><li class="goog-toc"><a href="#TOC-Wrapping-a-GTest-test-in-Autotest"><strong>2 </strong>Wrapping a GTest test in Autotest</a></li><li class="goog-toc"><a href="#TOC-Wrapping-a-Browerstest-in-Autotest"><strong>3 </strong>Wrapping a Browerstest in Autotest</a></li><li class="goog-toc"><a href="#TOC-Wrapping-a-Telemetry-test-in-Autotest"><strong>4 </strong>Wrapping a Telemetry test in Autotest</a></li><li class="goog-toc"><a href="#TOC-Locally-Testing-a-Wrapped-Telemetry-Test:"><strong>5 </strong>Locally Testing a Wrapped Telemetry Test:</a></li><li class="goog-toc"><a href="#TOC-Logging-into-Chrome-from-an-Autotest-using-Telemetry-"><strong>6 </strong>Logging into Chrome from an Autotest (using Telemetry)</a></li><li class="goog-toc"><a href="#TOC-Rebooting-a-machine-in-a-server-side-test"><strong>7 </strong>Rebooting a machine in a server-side test</a></li><li class="goog-toc"><a href="#TOC-Running-a-client-side-test-as-part-of-a-server-side-test"><strong>8 </strong>Running a client side test as part of a server side test</a></li><li class="goog-toc"><a href="#TOC-Writing-code-to-automatically-generate-a-label-for-a-DUT"><strong>9 </strong>Writing code to automatically generate a label for a DUT</a></li><li class="goog-toc"><a href="#TOC-Use-Chrome-Driver-in-ChromeOS-Autotest-Test"><strong>10 </strong>Use Chrome Driver in ChromeOS Autotest Test</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-About-Chrome-Driver"><strong>10.1 </strong>About Chrome Driver</a></li><li class="goog-toc"><a href="#TOC-Chrome-Driver-Binary"><strong>10.2 </strong>Chrome Driver Binary</a></li><li class="goog-toc"><a href="#TOC-How-to-use-Chrome-Driver-in-an-Autotest-test"><strong>10.3 </strong>How to use Chrome Driver in an Autotest test</a></li></ol></li></ol></div></div></div></div></div>
+<br />
+</div>
+<div>This is a collection of patterns to help aid test developers in finding useful parts of Autotest and common pathways when writing tests.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Adding-retries-to-Flaky-tests"></a>Adding retries to Flaky tests</h2>
+<div>We have a mechanism to retry tests that have flaky failures. A retries count can be specified, and if a test fails with <span style="font-family:courier new,monospace;font-size:10pt">TestFailRetry</span><span style="font-size:10pt"> then it will be re-attempted until it either passes or the number of failed retries reaches the retry count, in which case the test will be considered failed.</span></div>
+<div><br />
+</div>
+<div>To add retries to your test, you need to do two things. </div>
+<div>
+<ol><li><span style="font-size:10pt">Add a </span><font face="courier new, monospace" style="font-size:10pt">RETRIES = X</font><font face="arial, sans-serif" style="font-size:10pt"> attribute to the control file for the test you would like to retry, where X is an integer giving the maximum number of times the test should be retried. For an example of a control file that </font><font face="arial, sans-serif" style="font-size:10pt">uses retries, see </font><a href="https://gerrit.chromium.org/gerrit/#/c/46575/" style="font-size:10pt">https://gerrit.chromium.org/gerrit/#/c/46575/</a></li>
+<li><font face="arial, sans-serif" style="font-size:10pt">Modify your test so that it throws a </font><font face="courier new, monospace" style="font-size:10pt">TestFailRetry</font><font face="arial, sans-serif" style="font-size:10pt"> exception for failures that should be retried. Any other failure exceptions will bypass the retry mechanism and cause the test to fail immediately despite retries. The simplest and most general way to do this is to catch all test exceptions and rethrow them as a TestFailRetry (see examples in </font><a href="https://gerrit.chromium.org/gerrit/#/c/46803/" style="font-size:10pt">https://gerrit.chromium.org/gerrit/#/c/46803/</a><span style="font-size:10pt"> ), but where it is possible to distinguish between failures that you want to retry and failures that you don't want to retry, a more fine grained approach is recommended.</span></li>
+</ol>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Wrapping-a-GTest-test-in-Autotest"></a>Wrapping a GTest test in Autotest</h2>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Wrapping-a-Browerstest-in-Autotest"></a>Wrapping a Browerstest in Autotest</h2>
+<div><br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Wrapping-a-Telemetry-test-in-Autotest"></a>Wrapping a Telemetry test in Autotest</h2>
+<div><br />
+</div>
+<div>
+<div>Telemetry is replacing Pyauto as the new performance testing framework for Chrome as well as the new key way to write tests that interact with the UI. Writing a test that uses telemetry is a 2 step process:</div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div>
+<ul><li><span style="font-size:10pt">Write a telemetry test or benchmark in the chromium source.</span></li>
+<ul><li>Telemetry's source code, tests, and performance benchmarks are all platform independent. Thus they all exist within the chromium not the chromium-os source.</li>
+<li>If one wants to write a new test, they first should add it as a new telemetry test.</li>
+<li>They can run these tests locally against their Chrome-OS machines but provided the arguments --browser=cros-chrome and --remote=&lt;IP&gt; to the telemetry run_tests script that kicks off your new tests.</li>
+<li>Once the test works and is checked in, it can be ran as a new autotest test.</li>
+<ul><li>It will take a day or two for the chrome tip-of-tree to be rev-ed into the next build </li></ul>
+<li>Please see <a href="http://dev.chromium.org/developers/telemetry">http://dev.chromium.org/developers/telemetry</a> for more information.</li></ul>
+<li>Write an autotest test to kick off the new telemetry test.</li>
+<ul><li>Once your new telemetry test/benchmark is checked into chrome and working you need to write an autotest server-side test to kick it off.</li>
+<li>In your new test script you need the following code:</li></ul></ul>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>from autotest_lib.server.cros import telemetry_runner</code></div>
+<div><code><br />
+</code></div>
+<div><code>
+<div>def run_once(self, host=None):</div>
+<div>        """Run the telemetry scrolling benchmark.</div>
+<div><br />
+</div>
+<div>        @param host: host we are running telemetry on.</div>
+<div>        """</div>
+<div>        telemetry = telemetry_runner.TelemetryRunner(host)</div>
+<div>        result = telemetry.run_telemetry_test('my_new_telemetry_test')<br />
+</div>
+<div>        <br />
+</div>
+<div>        # OR<br />
+</div>
+<div>        result = telemetry.run_telemetry_benchmark('my_new_telemetry_benchmark', 'my_page_set')<br />
+</div>
+<div><br />
+</div>
+<div>        # If collecting performance keyvals to be sent to the perf database:<br />
+</div>
+<div>        <span style="line-height:1;font-size:10pt">result = telemetry.run_telemetry_benchmark('my_new_telemetry_benchmark', 'my_page_set', keyval_writer=self)</span></div>
+</code></div>
+</div>
+</div>
+</div>
+<div></div>
+</div>
+<div>
+<ul>
+<ul><li>Alternatively there currently exists a telemetry_benchmarks test and to add a new benchmark you simple need to add a new control file to this test. I.E. for octane, you add a control file named control.octane and kick off the telemetry_benchmarks test with the current parameters:</li></ul></ul>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">def run_benchmark(machine):<br />
+    host = hosts.create_host(machine)<br />
+    job.run_test("telemetry_benchmarks", host=host, benchmark="octane", page_sets=["octane.json"])<br />
+<br />
+parrallel_simple(run_benchmark, machine)</span></div>
+</div>
+<div></div>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<ul></ul>
+</div>
+<h2><a name="TOC-Locally-Testing-a-Wrapped-Telemetry-Test:"></a><font size="4">Locally Testing a Wrapped Telemetry Test:</font></h2>
+<div>Because the telemetry runner code requires the full lab infrastructure, you need to set up a local autotest frontend and devserver in order to locally test your telemetry changes.</div>
+<div>
+<ol><li>First set up a local AFE and database by following the instructions here: <a href="http://www.chromium.org/chromium-os/testing/autotest-developer-faq/setup-autotest-server">http://www.chromium.org/chromium-os/testing/autotest-developer-faq/setup-autotest-server</a></li>
+<li>Kick off a local devserver.<br />
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">cd src/platform/dev # From you local chromium-os checkout<br />
+<br />
+# Kick off the devserver<br />
+./devserver.py --static_dir=static</span></div>
+</div>
+<div></div>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<ul></ul>
+</div>
+</li>
+<li><font color="#222222" face="arial, sans-serif">Edit your local AFE to use your local devserver.</font></li>
+<ol><li><font color="#222222" face="arial, sans-serif">Add the following to src/third_party/autotest/files/shadow_config.ini:<br />
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">[CROS]<br />
+dev_server: http://[YOUR IP ADDRESS]:8080</span></div>
+</div>
+<div></div>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<ul></ul>
+</div>
+</font></li>
+</ol>
+<li><font color="#222222" face="arial, sans-serif">Restart apache and kick off the scheduler:</font>
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">sudo /etc/init.d/apache2 restart<br />
+<br />
+/usr/local/autotest/scheduler/monitor_db.py /usr/local/autotest/results</span></div>
+</div>
+</div>
+</li>
+<li>Add your device to your setup (this requires you to be able to log into your machine as root).<br />
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">src/third_party/autotest/files/cli/atest host create [ip of your host]</font></div>
+</div>
+<div></div>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<ul></ul>
+</div>
+</li>
+<li>Setup a device with the image you want (important as the database will label your machine with its current image). Do this by kicking off the dummy suite.<br />
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">src/third_party/autotest/files/site_utils/run_suite.py --board=[board] --build=[image you want to use] --suite=dummy</span></div>
+</div>
+<div></div>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<ul></ul>
+</div>
+</li>
+<li>Now you should be able to kick off your server side telemetry tests through the AFE (go to localhost in your browser)! But in case your new test doesn't show up, run test importer. Then refresh the create job's page with cntl+shift+r<br />
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">src/third_party/autotest/files/utils/test_importer.py</span></div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+Note that the test will try to ssh to the dev_server, so make sure that 'ssh YOUR_IP_ADDRESS' works without prompting a password. If it doesn't, you'll need to setup public keys for your local machine. Following these steps:
+<ol>
+<li>First generate RSA ssh keys, see <a href="https://help.github.com/articles/generating-ssh-keys" style="color:rgb(17,85,204);font-family:arial,sans-serif" target="_blank">this link</a><font color="#222222" face="arial, sans-serif"> if you don't know how to. Assume you've created ~/.ssh/id_rsa,pub and ~/.ssh/id_rsa</font></li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> Add the following to ~/.ssh/config</span><br />
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">Host YOUR_IP_ADDRESS<br />
+ User YOUR_USER_NAME   <br />
+IdentityFile /path/to/home/.ssh/id_rsa</font></div>
+</div>
+</div>
+</li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> Add the content of ~/.ssh/id_rsa to ~/.ssh/authorized_keys</span>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">cat ~/.ssh/id_rsa &gt;&gt; ~/.ssh/authorized_keys</font></div>
+</div>
+</div>
+</li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> Restart ssh-agent</span><br />
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">username@localhost~$ killall ssh-agent; eval `ssh-agent`</font></div>
+</div>
+</div>
+</li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> Allow ssh to your local machine using RSA keys</span><br />
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace"><span style="font-size:10pt">username@localhost</span>~$ sudo vim /etc/ssh/sshd_config<br />
+<br />
+# Turn on RSAAuthentication<br />
+RSAAuthentication yes</font></div>
+</div>
+</div>
+</li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> Restart ssh server</span><br />
+<div>
+<div><div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace"><span style="font-size:10pt">username@localhost</span><span style="font-size:10pt">~$ </span>sudo service ssh restart</font></div>
+</div>
+</div>
+</li>
+<li><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> Test you can ssh to your local machine without password</span><br />
+<div>
+<div><div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace"><span style="font-size:10pt">username@localhost</span><span style="font-size:10pt">~$ </span>ssh YOUR_IP_ADDRESS</font></div>
+</div>
+</div>
+</li>
+</ol>
+<h2><a name="TOC-Logging-into-Chrome-from-an-Autotest-using-Telemetry-"></a><font size="4">Logging into Chrome from an Autotest (using Telemetry)</font></h2>
+<div><font size="2"><span style="font-weight:normal">From an Autotest, you can use Telemetry to log into and out of Chrome using context management in Python (the "with/as" construct).  To do so, your autotest must include the following import:</span></font></div>
+<div><font size="2"><span style="font-weight:normal"><br />
+</span></font></div>
+<div><font size="2"><span style="font-weight:normal">
+<div class="sites-codeblock sites-codesnippet-block"><code>from autotest_lib.client.common_lib.cros import chrome</code></div>
+</span></font></div>
+<div><font size="2"><span style="font-weight:normal"><br />
+</span></font></div>
+<div><font size="2"><span style="font-weight:normal">and then use the "with/as" construct like so:</span></font></div>
+<div><font size="2"><span style="font-weight:normal"><br />
+</span></font></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><font size="2"><code>with chrome.Chrome() as cr:</code></font></div>
+<div><font size="2"><code>    do_stuff()  # Will be logged into Chrome here.</code></font></div>
+<div><font size="2"><code># Will be logged out at this point.</code></font></div>
+</div>
+<div><font size="2"><br />
+</font></div>
+<div><font size="2">In this example, <font face="courier new, monospace">cr</font> is a Telemetry Browser object.  Wrapping your code inside of a "with/as" ensures that Chrome will be logged in at the start of the construct, and logged out at the end of the construct.</font></div>
+<div><font size="4"><br />
+</font></div>
+<h2><a name="TOC-Rebooting-a-machine-in-a-server-side-test"></a>Rebooting a machine in a server-side test</h2>
+<div>This handles the simple reboot case:
+</div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>def run_once(self, host=None):</code></div><div><code>    host.reboot()</code></div><div><code style="line-height:1;font-size:10pt">    # If the reboot fails, it will raise </code><span style="background-color:transparent;line-height:1;font-size:10pt"><code>error.AutoservRebootError</code></span></div><div><span style="background-color:transparent;line-height:1;font-size:10pt"><code>    # If you need to recover from a reboot failure, note that calls</code></span></div><div><span style="background-color:transparent;line-height:1;font-size:10pt"><code>    # to host.run() will almost certainly fail with a timeout.</code></span></div></div>
+<div><br /></div><div>If you have custom code that brings the DUT down, and then brings it back up again, you will need to use a slightly different flow:</div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>def run_once(self, host=None):</code></div><div><code>    boot_id = host.get_boot_id()</code></div><div><code>    self._trigger_complicated_dut_restart()</code></div><div><code>    host.wait_for_restart(old_boot_id=boot_id)</code></div><div></div></div><br />
+<h2><a name="TOC-Running-a-client-side-test-as-part-of-a-server-side-test"></a>Running a client side test as part of a server side test</h2>
+<div>Inside a server job you can utilize the host object to create a client object to run tests.
+</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>def run_once(self, host, job_repo_url=None):</code></div>
+<div>
+<div><code>    client_at = autotest.Autotest(host)</code></div>
+<div><code>    client_at.run_test('sleeptest')</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>*The status of this test is communicated through the status.log, if this test fails, the overall run of the job will be considered a failure.</div>
+<div><br />
+</div><h2><a name="TOC-Writing-code-to-automatically-generate-a-label-for-a-DUT"></a>Writing code to automatically generate a label for a DUT</h2><div>Many tests have requirements for specific hardware characteristics, specified by setting DEPENDENCIES.  So, imagine there's a new <i>fubar</i> class of device present on some new hardware.  You have tests that exercise the driver for the new devices.  Obviously, your test shouldn't run unless a <i>fubar</i> device is present.  So, your control file will say this:</div><div><br /></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>DEPENDENCIES = "fubar"</code></div><div></div></div><div><br /></div>Alternatively, imagine that there are three kinds of <i>fubar</i>, types A, B, with the possibility of other types that might be added in future.  There are boards with types A and B to be tested.  You then have two control files, one for each type.<div><br /></div><div>For Type A:</div><div><div class="sites-codeblock sites-codesnippet-block"><code>DEPENDENCIES = "fubar_type:type_a"</code><br /><div></div></div><div><br /></div>For Type B:<br /><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>DEPENDENCIES = "fubar_type:type_b"</code><br /></div><div></div></div><br /><div><span style="background-color:transparent;font-size:10pt">These hardware characteristics are meant be detected automatically when the DUT is added into the lab database.</span><span style="background-color:transparent;font-size:10pt">  To make the detection happen, you have to write detection code.  Here's how to do it.</span></div><div><br /></div><div>The detection function must be added as a method in class <code>CrosHost</code>, found in file <span style="background-color:transparent;font-size:10pt">server/hosts/cros_host.py.  The method must be decorated with <code>@label_decorator</code>.  The return value is a string with the label name as it will appear in the <code>DEPENDENCIES</code> setting.</span></div><div><span style="background-color:transparent;font-size:10pt"><br /></span></div><div>A sample of a simple binary label:</div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><span style="background-color:transparent;font-size:10pt"><code>@label_decorator('fubar')</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>def has_fubar(self):</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    result = self.run('test -d /sys/class/fubar', ignore_status=True)</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    if result.exit_code != 0:</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>        return None</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    return 'fubar'</code></span></div><div></div></div><span style="background-color:transparent;font-size:10pt"><div><br /></div>A sample of a label with multiple values:</span><div></div><div class="sites-codeblock sites-codesnippet-block"><div><span style="background-color:transparent;font-size:10pt"><code>@label_decorator('fubar_type')</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>def get_fubar_type(self):</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    result = self.run('get_fubar_type', ignore_status=True)</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    typestring = result.stdout.strip()</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    if typestring == 'Type A':</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>        return 'fubar_type:type_a'</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    if typestring == 'Type B':</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>        return 'fubar_type:type_b'</code></span></div><div><span style="background-color:transparent;font-size:10pt"><code>    # typestring 'Type C' is a proposed industry standard, but</code></span></div><div><font color="#006000" face="monospace">    # it hasn't been finalized.  There may be other as yet</font></div><div><font color="#006000" face="monospace">    # unknown types</font><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt"> in the future.</span></div><div><span style="background-color:transparent;font-size:10pt"><code>    return None</code></span></div><div></div></div><span style="background-color:transparent;font-size:10pt"><div><span style="background-color:transparent;font-size:10pt"><br /></span></div><div><span style="background-color:transparent;font-size:10pt">One point about labels with multiple values bears emphasis:</span><span style="background-color:transparent;font-size:10pt">  </span><span style="background-color:transparent;font-size:10pt">It may be that you will find that some valid values of a label aren't yet needed for any test.  In that case, return <code>None</code> for the unused case.</span><span style="background-color:transparent;font-size:10pt">  </span><b style="background-color:transparent;font-size:10pt">Do not return a label value that is not needed by any existing test.</b><span style="background-color:transparent;font-size:10pt"> Generally, adding labels is easy, but removing labels is hard.  So, don't create a label name until you know </span><b style="background-color:transparent;font-size:10pt">exactly</b><span style="background-color:transparent;font-size:10pt"> where and how it will be used.</span></div></span><span style="background-color:transparent;font-size:10pt"><div><br /></div></span>
+<h2><a name="TOC-Use-Chrome-Driver-in-ChromeOS-Autotest-Test"></a>Use Chrome Driver in ChromeOS Autotest Test</h2>
+<div><span>
+<h3><a name="TOC-About-Chrome-Driver"></a><span style="font-size:21px;font-family:Trebuchet MS;background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">About Chrome Driver</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font face="arial, sans-serif" size="2"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Chrome Driver is a standalone server which implements WebDriver's wire protocol for Chromium. Through Chrome Driver, you can easily interact with Chromium browser with the power of browser automation provided by WebDriver. A list of WebDriver calls you can make can be found in </span><a href="http://selenium.googlecode.com/svn/trunk/docs/api/py/webdriver_remote/selenium.webdriver.remote.webdriver.html" style="text-decoration:none"><span style="color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Selenium 2.0 Documentation</span></a><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">. Some useful calls include:</span></font></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.2999999523162842;margin-top:0pt;margin-bottom:0pt;text-align:justify"><font face="arial, sans-serif" size="2"><a href="http://selenium.googlecode.com/svn/trunk/docs/api/py/_modules/selenium/webdriver/remote/webdriver.html#WebDriver.get" style="text-decoration:none"><span style="color:rgb(17,85,204);font-weight:bold;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">get</span></a><span style="vertical-align:baseline;white-space:pre-wrap">(</span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">url</span><span style="vertical-align:baseline;white-space:pre-wrap">): Loads a web page in the current browser session.</span></font></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.2999999523162842;margin-top:2pt;margin-bottom:8pt;text-align:justify"><font face="arial, sans-serif" size="2"><a href="http://selenium.googlecode.com/svn/trunk/docs/api/py/_modules/selenium/webdriver/remote/webdriver.html#WebDriver.execute_script" style="text-decoration:none"><span style="color:rgb(17,85,204);font-weight:bold;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">execute_script</span></a><span style="vertical-align:baseline;white-space:pre-wrap">(</span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">script</span><span style="vertical-align:baseline;white-space:pre-wrap">, </span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">*args</span><span style="vertical-align:baseline;white-space:pre-wrap">): Synchronously Executes JavaScript in the current window/frame.</span></font></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.2999999523162842;margin-top:2pt;margin-bottom:8pt;text-align:justify"><font face="arial, sans-serif" size="2"><a href="http://selenium.googlecode.com/svn/trunk/docs/api/py/_modules/selenium/webdriver/remote/webdriver.html#WebDriver.find_element_by_name" style="text-decoration:none"><span style="color:rgb(17,85,204);font-weight:bold;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">find_element_by_name</span></a><span style="vertical-align:baseline;white-space:pre-wrap">(</span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">name</span><span style="vertical-align:baseline;white-space:pre-wrap">): Finds an element by name.</span></font></p>
+</li></ul>
+<h3><a name="TOC-Chrome-Driver-Binary"></a><span style="font-size:21px;font-family:Trebuchet MS;background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">Chrome Driver Binary</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font face="arial, sans-serif" size="2">All ChromeOS test images shall have Chrome Driver binary installed in /usr/local/chromedriver/. The binary is updated to the same version of Chrome in that test image. That is, you will always be using the latest build of Chrome Driver. </font></span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font face="arial, sans-serif" size="2">If your test expects to run against a “stable” build of Chrome Driver binary, you will need to write your own code in your test to download the desired binary and replace the binary in /usr/local/chromedriver/.</font></span></p>
+<br />
+<h3><a name="TOC-How-to-use-Chrome-Driver-in-an-Autotest-test"></a><span style="font-size:21px;font-family:Trebuchet MS;background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">How to use Chrome Driver in an Autotest test</span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Writing a test that uses Chrome Driver to interact with Chrome is easy. There is </span><a href="https://chromium.googlesource.com/chromiumos/third_party/autotest/+/master/client/common_lib/cros/chromedriver.py" style="text-decoration:none"><span style="font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">a wrapper class</span></a><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> for using Chrome Driver available in ChromeOS/Autotest. The wrapper class, as a context manager type, and handles the following tasks for you:</span></font></p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">Logs in ChromeOS using Telemetry.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">Starts Chrome Driver with Remote mode on the Device under Test (DUT) and connects  to the remote debug port of the Chrome instance after log in.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">Exposes a driver instance for you to make any Chrome Driver calls.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">Shutdowns Chrome Driver process, and logs out of ChromeOS.</font></span></p>
+</li>
+</ol>
+<font size="2"><br />
+</font>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">To write a test, you can follow the example of test </span><a href="https://chromium.googlesource.com/chromiumos/third_party/autotest/+/master/client/site_tests/desktopui_UrlFetchWithChromeDriver/desktopui_UrlFetchWithChromeDriver.py" style="text-decoration:none"><span style="font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">desktopui_UrlFetchWithChromeDriver</span></a><span style="font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">. All you need to do to get started are basically:</span></font></p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">import the wrapper class</font></span></p>
+</li>
+</ol>
+<div class="sites-codeblock sites-codesnippet-block"><font size="2"><span style="font-family:Verdana;color:rgb(0,0,136);background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>from</code></span><span style="font-family:Verdana;background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code> autotest_lib</code></span><span style="font-family:Verdana;color:rgb(102,102,0);background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>.</code></span><span style="font-family:Verdana;background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>client</code></span><span style="font-family:Verdana;color:rgb(102,102,0);background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>.</code></span><span style="font-family:Verdana;background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>common_lib</code></span><span style="font-family:Verdana;color:rgb(102,102,0);background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>.</code></span><span style="font-family:Verdana;background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>cros </code></span><span style="font-family:Verdana;color:rgb(0,0,136);background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code>import</code></span><span style="font-family:Verdana;background-color:rgb(238,238,238);vertical-align:baseline;white-space:pre-wrap"><code> chromedriver</code></span></font></div>
+<ol start="2" style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-family:Arial;background-color:transparent;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">Create an instance of the Chrome Driver, and make calls.</font></span></p>
+</li>
+</ol>
+</span>
+<div class="sites-codeblock sites-codesnippet-block"><span>
+<p style="line-height:1.5;margin-top:0pt;margin-bottom:0pt;text-indent:36pt"><font size="2"><span style="font-family:Verdana;color:rgb(0,0,136);vertical-align:baseline;white-space:pre-wrap"><code>with</code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><code> chromedriver</code></span><span style="font-family:Verdana;color:rgb(102,102,0);vertical-align:baseline;white-space:pre-wrap"><code>.</code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><code>chromedriver</code></span><span style="font-family:Verdana;color:rgb(102,102,0);vertical-align:baseline;white-space:pre-wrap"><code>()</code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-family:Verdana;color:rgb(0,0,136);vertical-align:baseline;white-space:pre-wrap"><code>as</code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><code> chromedriver_instance</code></span><span style="font-family:Verdana;color:rgb(102,102,0);vertical-align:baseline;white-space:pre-wrap"><code>:</code></span></font></p>
+<p style="line-height:1.5;margin-top:0pt;margin-bottom:0pt;text-indent:36pt"><font size="2"><span style="font-family:Verdana;color:rgb(102,102,0);vertical-align:baseline;white-space:pre-wrap"><code>    </code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><code>driver </code></span><span style="font-family:Verdana;color:rgb(102,102,0);vertical-align:baseline;white-space:pre-wrap"><code>=</code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><code> chromedriver_instance</code></span><span style="font-family:Verdana;color:rgb(102,102,0);vertical-align:baseline;white-space:pre-wrap"><code>.</code></span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><code>driver</code></span></font></p>
+<p style="line-height:1.5;margin-top:0pt;margin-bottom:0pt;text-indent:36pt"><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><font size="2"><code>    # Here you can make standard Chrome Driver calls through the driver instance.</code></font></span></p>
+</span>
+<p><span><span style="font-family:Verdana;vertical-align:baseline;white-space:pre-wrap"><font size="2"><code>           # For example, browse a given url with |driver.get(url)|</code></font></span></span></p>
+</div>
+</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/testing/autotest-design-patterns">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9KIZ0KhQjkAVhtBnH0tcoX_k6uMpkjO-kGXE4S6JU1uAEVaAiM4y3_F5H9NM5dCr3KbIYgJ5I1R-mZsgZjkskw8u8-vDbsEixIwyWiQEf4QEmMcsj/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/ui-localization","deleted":false,"title":"UI Localization (aka Translations)","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/ui-localization?pli%3D1\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"UI Localization (aka Translations)","locale":"en","wuid":"wuid:gx:6a25a2a364eb9304","revision":36,"path":"/developers/design-documents/ui-localization","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"ui-localization","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="UI Localization (aka Translations) - The Chromium Projects" />
+<meta itemprop="name" content="UI Localization (aka Translations) - The Chromium Projects" />
+<meta property="og:title" content="UI Localization (aka Translations) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>UI Localization (aka Translations) - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">UI Localization (aka Translations)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div dir="ltr">
+<div dir="ltr">
+<div style="border:2px solid red;padding:8px;text-align:center">
+<b>If you find an error in an existing translation, please <a href="http://code.google.com/p/chromium/issues/entry?template=Translation%20Issue">file a bug</a> using the translation template.  CC "chromelocalization@google.com".  Thank you!</b></div>
+<div style="border:2px solid green;padding:8px;margin-top:16px;text-align:center"><b>
+<span style="font-weight:normal">
+<div dir="ltr">You can also help <a href="http://davidplanella.org/chromium-opens-to-community-translations-in-launchpad/" style="outline-style:none;outline-width:initial;outline-color:initial">provide translations</a> for the chromium-browser package on Ubuntu.</div>
+</span></b></div>
+</div>
+<div dir="ltr"><br />
+</div>
+<div dir="ltr"><h2 style="font-family:arial,sans-serif"><a name="TOC-1"></a><b><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-How-to-add-a-string"><strong>1 </strong>How to add a string</a></li><li class="goog-toc"><a href="#TOC-How-to-add-an-Android-Java-string"><strong>2 </strong>How to add an Android/Java string</a></li><li class="goog-toc"><a href="#TOC-How-to-add-a-new-grd-p-file"><strong>3 </strong>How to add a new grd(p) file</a></li><li class="goog-toc"><a href="#TOC-Workflow-for-how-strings-get-translated-for-Google-Chrome"><strong>4 </strong>Workflow for how strings get translated for Google Chrome</a></li><li class="goog-toc"><a href="#TOC-Caveats"><strong>5 </strong>Caveats</a></li><li class="goog-toc"><a href="#TOC-Writing-good-message-descriptions"><strong>6 </strong>Writing good message descriptions</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Why-do-we-need-message-descriptions-"><strong>6.1 </strong>Why do we need message descriptions?</a></li><li class="goog-toc"><a href="#TOC-What-information-should-I-provide-in-the-message-description-"><strong>6.2 </strong>What information should I provide in the message description?</a></li><li class="goog-toc"><a href="#TOC-What-does-this-look-like-in-practice-"><strong>6.3 </strong>What does this look like in practice?</a></li></ol></li></ol></div></div></div></div></b></h2></div>
+<div dir="ltr"><h2><a name="TOC-How-to-add-a-string"></a><b>How to add a string</b></h2>
+<ol>
+<li>Add the string to the grd file (<font face="'courier new', monospace">generated_resources.grd</font>, <font face="'courier new', monospace">webkit_strings.grd</font>, <font face="'courier new', monospace">chromium_strings.grd</font> or <font face="'courier new', monospace">google_chrome_strings.grd</font>).  See below in the "Overview of files" section for guidance on which file to add the string to.</li><li>**Very important info on writing good message descriptions - <a href="https://www.chromium.org/developers/design-documents/ui-localization?pli=1#TOC-Writing-good-message-descriptions">see section below</a>.</li><li>Surround the string with an appropriate <font face="'courier new', monospace">&lt;if&gt;</font> clause to ensure that it's only included it on platforms where it's actually used (e.g. Mac and Linux). Strings used on all platforms can omit the<font face="'courier new', monospace"> &lt;if&gt;</font> clause.</li>
+<li>The next time you build the solution, this will automatically add the en-US string to en-US.dll.</li>
+<li>In your code, include <font face="'courier new', monospace">ui/base/l10n/l10n_util.h</font> and <font face="'courier new', monospace">grit/generated_resources.h</font>.</li>
+<li>To get the string, use <font face="'courier new', monospace">l10n_util::GetStringUTF16</font>.  Alternately, you can use <font face="'courier new', monospace">l10n_util::GetStringFUTF16</font> which will replace placeholders $1 through $4 with the extra arguments of <span style="font-family:courier new,monospace">GetStringFUTF16</span>.  Note that we generally prefer to use UTF-16 encoded strings for user-visible text.</li>
+</ol><div><span style="font-size:13.3333px">The base messages (en-US) will be translated to supported locales by an internal Google Localization process, and translations will appear in the associated .xtb files after ~a couple of weeks.</span></div><div dir="ltr"><h2><a name="TOC-How-to-add-an-Android-Java-string"></a><b>How to add an Android/Java string</b></h2><ol><li>Add the string to the grd file in the Java folder (e.g. <font face="'courier new', monospace">content/public/android/java/strings/android_content_strings.grd</font>).  Strings should be named in all caps with the prefix <font face="courier new, monospace">IDS_</font>.  For example: <font face="courier new, monospace">IDS_MY_STRING</font>.</li><li>**Very important info on writing good message descriptions - <a href="https://www.chromium.org/developers/design-documents/ui-localization?pli=1#TOC-Writing-good-message-descriptions">see section below</a>.</li><li>At build time, an Android-style strings.xml file will be generated in the out directory.</li><li>You can reference these strings in Java code using the standard <font face="courier new, monospace">R.string.my_string</font> syntax, or in Android layouts using <font face="courier new, monospace">@string/my_string</font>.  Note: the name is lowercase and the <font face="courier new, monospace">IDS_</font> prefix is stripped.</li></ol><div>The base messages (en-US) will be translated to supported locales by an internal Google Localization process, and translations will appear in the associated .xtb files after ~a couple of weeks.</div></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><br /></div></div></blockquote><div dir="ltr"><div dir="ltr"><h2><a name="TOC-How-to-add-a-new-grd-p-file"></a><b>How to add a new grd(p) file</b></h2><ul><li><span style="font-size:10pt;background-color:transparent">This should be rare.  We want to be very careful about expanding the number of grd(p) files in our source tree.</span></li><li><span style="font-size:10pt;background-color:transparent">New grdp files need to be referenced from a parent grd file.</span></li><li><span style="font-size:10pt">New grd files need to be added to </span><font face="courier new, monospace"><span style="font-size:10pt">/src/tools/gritsettings/resource_ids,</span></font> IF the resources will be referenced from C++ code (won't compile without - this doesn't impact translation process).</li><li><span style="font-size:10pt">New grd files need to be added to <font face="courier new, monospace">/src/tools/gritsettings/translation_expectations.pyl</font></span> (or &lt;message&gt;s won't be translated).</li><li><span style="font-size:10pt;background-color:transparent">If your new grd(p) will result in new XTB files after translation, you must commit placeholder .xtb files, or Chrome won't compile. The placeholders need to have a basic xml structure.</span></li><ul><li><span style="background-color:transparent"><span style="font-size:13.3333px"> Here's a handy way to create the xtbs: </span></span></li></ul></ul></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div dir="ltr"><div><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent">&gt; for lang in fr de en-GB etc; do echo '&lt;?xml version="1.0" ?&gt;&lt;!DOCTYPE translationbundle&gt;&lt;translationbundle lang="'$lang'"&gt;&lt;/translationbundle&gt;' &gt; foo_strings_$lang.xtb; done</span></div></div></blockquote></blockquote><div dir="ltr"><div dir="ltr">
+<h2><a name="TOC-Workflow-for-how-strings-get-translated-for-Google-Chrome"></a><b>Workflow for how strings get translated for Google Chrome</b></h2>
+<ol>
+<li>Strings get added to a grd(p) file in en-US.</li>
+<li>[BlackCloudOfMagic] Translators are provided with the new strings</li><li>&lt;internal link&gt; Further internal detail about this semi-automated process <a href="https://sites.google.com/a/google.com/chrome-pmo/tasks/l13n">here</a>.  &lt;/internal link&gt;</li>
+<li>[BlackCloudOfMagic] Translations are created and dumped to xtb files</li>
+<li>Changes to xtb files are checked into the Chromium source tree<br />
+</li>
+</ol><h2><a name="TOC-Caveats"></a><b>Caveats</b></h2><div>    Strings are included on all platforms by default and will needlessly increase the download size if not used.  It's important to judiciously surround strings with an appropriate <font face="'courier new', monospace">&lt;if&gt;</font> clauses  to ensure that they are only included on the platforms where they're actually used.<br /></div><div><br /></div><div><hr /></div><div><b style="font-size:13.3333330154419px"><br /></b></div><h2><a name="TOC-Writing-good-message-descriptions"></a><b><font size="4">Writing good message descriptions</font></b></h2><div><b style="font-size:13.3333330154419px"><br /></b></div><div><font size="2">The message description added to the grd(p) file with your string is currently the only context our translators receive when translating UI strings.  We would all like to do our best to ensure that the user experience with Chromium is as natural as possible, no matter the language.  So let's try to give the translators as much clear context as possible.  <span style="font-family:Arial;white-space:pre-wrap;background-color:transparent">The following includes what information is needed in a good description, placeholder information, max chars limit, as well as some examples of what these should look like.</span></font></div><div><font size="2"><span style="font-family:Arial;white-space:pre-wrap;background-color:transparent"><br /></span></font></div><div><font size="2"><span style="font-family:Arial;white-space:pre-wrap;background-color:transparent">IE: (The translator would only see what is in bold)</span></font></div><div><font size="2"><span style="font-family:Arial;white-space:pre-wrap;background-color:transparent"><br /></span></font></div><div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial" size="2"><div>&lt;message name="IDS_BOOKMARK_BUBBLE_PAGE_BOOKMARKED" <b>desc="In Title Case: Title of the bubble after bookmarking a page."</b>&gt;</div><div>    <b>Bookmark Added!</b></div><div>&lt;/message&gt;</div><div><br /></div><div>(NOTE: Translators also see "meaning" if added to a message, but we only want to use this in special cases where there are duplicate identical source messages - but they have different contexts/restrictions, so we want them translated separately.) </div></font></span></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><span><h3 style="line-height:1.7181818181818183;margin-top:14pt;margin-bottom:0pt"><a name="TOC-Why-do-we-need-message-descriptions-"></a><span style="font-family:Arial;font-weight:bold;white-space:pre-wrap;line-height:1.71818181818182;background-color:transparent"><font size="3">Why do we need message descriptions?</font></span></h3></span></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><b><br />The problem</b>: Currently, the translators often have no context when they translate -- they see each string in isolation and in random order, so they don't even know which feature it could be associated with, where it might appear on a page, or what action it triggers. Without context, they can't know how to translate appropriately. <br /><b><br />The solution</b>: Message descriptions can help provide context and other essential information, which in turn increases the speed, accuracy, and quality of translations, and, ultimately, improves user satisfaction.</blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><br /><br /></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><h3><a name="TOC-What-information-should-I-provide-in-the-message-description-"></a><b>What information should I provide in the message description?</b></h3></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><ul><li><span style="font-size:10pt;background-color:transparent">Where is the text located? (e.g., button, title, link, pull-down menu)</span></li><li><span style="font-size:10pt;background-color:transparent">What triggers the message and/or what is the result? What page or text comes before and after?</span></li><li><span style="font-size:10pt;background-color:transparent">What do the placeholders stand for? Will this message replace a placeholder in another message? Do they need to be arranged in a certain way?</span></li><li><span style="font-size:10pt;background-color:transparent">Is this a verb or a noun? If an adjective, what does it refer to?</span></li><li><span style="font-size:10pt;background-color:transparent">Who is the message intended for?</span></li><li><span style="font-size:10pt;background-color:transparent">Are there any specific character limits that must not be exceeded? (e.g., for mobile products where UI space is restricted)</span></li></ul></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px">How should line breaks be dealt with? Are there character limitations per line? Keep in mind that the translators will not know the product as well as you do, and they work on multiple products and projects. Also, they're not engineers. So make sure that the description will be understandable by a more general audience and doesn't contain too much technical detail. Imagine giving this description out of context to a person not on your project, say your Aunt. Would they still understand it?<br /><span><span style="vertical-align:baseline"><font style="font-family:Arial;font-weight:bold;white-space:pre-wrap;background-color:transparent"><font size="2"><br /></font></font></span></span></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><h3><a name="TOC-What-does-this-look-like-in-practice-"></a><span><span style="vertical-align:baseline"><font style="font-family:Arial;font-weight:bold;white-space:pre-wrap;background-color:transparent"><font size="3">What does this look like in practice?</font></font></span></span></h3></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><span><span style="vertical-align:baseline"><br /><b>Source Message</b>: "US city or zip"<br /><b>Original Description</b>: The message is shown in gray in the empty search box for a movie showtimes location. The content of the message should be localized by country to mean city or postal code (or simply city). Its purpose is to tell the user what kind of input will produce results.<br /><b>Comment</b>:  This is very informative description, that clearly explains the context and also gives specific instructions on how the message should be adapted for another (non-US) locale.<br /><br /><b>Source Message</b>: "Apply"<br /><b>Original Description</b>: Button label for the apply button.<br /><b>Comment</b>:  Provides the context, but the translator will also need to know what is going to be applied.<br /><b>Better Description</b>: Button label; clicking the button will apply the selected label names to the message thread.<br /><br /><b>Source Message</b>: "read Gmail attachment previews"<br /><b>Original Description</b>: Displayed in the Settings panel which lists the various permissions that this app requires. Must start with a lowercase.<br /><b>Comment</b>:  Providing the translators with instructions is good, but they also need to know the reason. Why does this need to be lowercase? Different languages have different conventions around capitalization, so we need to know the reason behind the instruction. Also, what is the context? Will any text come before or after?<br /><b>Better Description</b>: Displayed in the Settings panel which lists the various permissions that this app requires. Should start with a lowercase because it will be listed with other permissions, all separated by a comma.<br /><br /><b>Source Message</b>: "Zoom"<br /><b>Original Description</b>: The "Zoom" menu command. It brings up help on how to zoom. Try to limit menu commands to 10 characters.<br /><b>Comment</b>: Very nice description in Mobile Maps. Tells us what it does, what it triggers and what the character limit should be to keep consistency across similar messages.<br /><br /><b>Source Message</b>: "We could not send your message. A space alien ate it. Please try again in a few minutes."<br /><b>Comment</b>: Should we translate the "space alien" part, or should it be changed to an appropriate equivalent for that locale? Should it be funny? By default, the translators will probably translate the message literally, so if they should get creative, the message description should let them know that.<br /><b>Better Description</b>: An error message. This reason given is meant to be funny, so please use an appropriate silly reason for the error, and not necessarily a direct translation.</span></span></blockquote><div><div><div><br /></div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/design-documents/ui-localization/mac-notes" dir="ltr">Mac Notes</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/ui-localization">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9NHkfM2dblJEk3E7bGMkhEYupOKIokhQZZAzOE_A61Y_CYElghPJXiMd_RFbvD4sLM_QDVKDASvDbrramt3IhOlptR7PwJGm3gJAuu7OPMssnT9Xu/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/depottools","deleted":false,"title":"Using depot_tools","dir":"ltr"},{"path":"/developers/how-tos/depottools/presubmit-scripts","deleted":false,"title":"Presubmit Scripts","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/depottools/presubmit-scripts\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos/depottools","parentWuid":"wuid:gx:649260f5502dd347","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Presubmit Scripts","locale":"en","wuid":"wuid:gx:48fc2a91ae03fa88","revision":16,"path":"/developers/how-tos/depottools/presubmit-scripts","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"presubmit-scripts","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Presubmit Scripts - The Chromium Projects" />
+<meta itemprop="name" content="Presubmit Scripts - The Chromium Projects" />
+<meta property="og:title" content="Presubmit Scripts - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Presubmit Scripts - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../../how-tos.1.html" dir="ltr">How-Tos</A>‎ &gt; ‎<A href="../depottools.1.html" dir="ltr">Using depot_tools</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Presubmit Scripts</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="presubmit-scripts.html#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="presubmit-scripts.html#TOC-Bypassing-tests"><strong>2 </strong>Bypassing tests</a></li><li class="goog-toc"><a href="presubmit-scripts.html#TOC-Design"><strong>3 </strong>Design</a></li><li class="goog-toc"><a href="presubmit-scripts.html#TOC-Writing-tests"><strong>4 </strong>Writing tests</a><ol class="goog-toc"><li class="goog-toc"><a href="presubmit-scripts.html#TOC-InputApi"><strong>4.1 </strong>InputApi</a></li></ol></li><li class="goog-toc"><a href="presubmit-scripts.html#TOC-Caveats"><strong>5 </strong>Caveats</a></li><li class="goog-toc"><a href="presubmit-scripts.html#TOC-Details-and-Example"><strong>6 </strong>Details and Example</a></li></ol></div></div></div></div><h3><a name="TOC-Overview"></a>Overview</h3><p><code>gcl</code> and <code>git-cl</code> will check for and run presubmit scripts before you upload and/or commit your changes.  Presubmit scripts are a way of applying automatic verification to your changes before they are reviewed and/or before they are committed.</p><p>Presubmit scripts can perform automated checks on the files in your change and the description of your change, and either fail your attempt to upload or commit, show a warning that you must acknowledge before uploading/committing, or simply show an informational message as part of the output of <code>gcl</code>.</p><p>Examples of things presubmit scripts may be useful for include:</p><ul><li>Ensuring your change is linked to a bug via a BUG= line.</li><li>Ensuring you have run <a href="http://src.chromium.org/viewvc/chrome/trunk/tools/depot_tools/cpplint.py?view=markup" target="_blank">cpplint.py</a> or automatically running cpplint for you.</li><li>Enforcing coding conventions.</li><li>Preventing you from breaking dependency rules e.g. by including a header that code in your directory is not supposed to depend upon.</li><li>Warning you if you haven't built your client and/or run unit tests within the last X hours.</li></ul>Generally you want the same tests for upload and committing, but there are exceptions.<div>Firstly, the commit bot can autofix various problems, so these problems only need to be checked on commit (to check that they have been fixed), not on upload (another good reason to use the commit queue!). Secondly, you can skip slow tests on upload and only run them on commit, if running these every time slows development too much, but this can result in problems only being caught at the last minute, and thus requiring last-minute changes after you think they're good to go.<br /><h3><a name="TOC-Bypassing-tests"></a>Bypassing tests</h3><p>To skip the scripts on upload, use the <code>--bypass-hooks</code> flag, as in:</p><div class="sites-codeblock sites-codesnippet-block"><code>git cl upload --bypass-hooks</code></div><p>To skip the scripts on commit, use <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">--bypass-hooks</span><span style="font-size:10pt"> and </span><a href="../../contributing-code/direct-commit.html" style="font-size:10pt">directly commit</a><span style="font-size:10pt"> your change.</span></p><p><span style="font-size:10pt">You should only do these if necessary, as the presubmit scripts are there for a reason, but they're not perfect.</span></p><p><span style="font-size:10pt">If you have trouble with a presubmit script, it's preferable to <i>fix it,</i> rather than simply bypassing it. See </span><a href="../depottools.html#TOC-Sending-patches" style="font-size:10pt">depot_tools: sending patches</a> for how to contribute.</p><h3><a name="TOC-Design"></a>Design</h3><p>When you run <code>gcl upload</code> or <code>gcl commit</code>, <code>gcl</code> will look for all files named <code>PRESUBMIT.py</code> in folders enclosing the files in your change, up to the repository root.</p><p>For each such file, it will load the file into the Python interpreter and then call either the <code>CheckChangeOnUpload</code> or <code>CheckChangeOnCommit</code> function depending on whether you are calling [gcl upload] or [gcl commit].</p><p>The same applies to <code>git-cl upload</code>, <code>git-cl dcommit</code> and <code>git-cl push</code>.</p><p>Please note that presubmit scripts are a best-effort kind of thing; they do not prevent users from submitting without running the scripts, since one can always dcommit, and in fact there is a <span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace">--bypass-hooks</span> (formerly <span style="font-size:10pt;font-family:courier new,monospace"><code>--no_presubmit</code></span><span style="font-size:10pt">) flag to gcl that skips presubmit checks. Further,</span><span style="font-size:10pt"> since they use the local copy of the <code>PRESUBMIT.py</code> files, users must sync their repos before the latest presubmit checks will run when they upload or submit.</span></p><p><span style="font-size:10pt">More subtly, presubmit scripts do not guarantee invariants: even if presubmit scripts pass prior to submission to CQ, once all changes land, the scripts may fail! </span><span style="font-size:10pt;background-color:transparent">This is because 2 changes may individually pass the tests, and the patches both apply cleanly together, but the combined change does not pass tests. </span><span style="background-color:transparent;font-size:10pt">Since presubmit/precommit scripts run at upload or at start of CQ steps, if two such changes are in the CQ at the same time, they can both pass, both be enqueued, and both land, at which point the tests start failing. </span><span style="background-color:transparent;font-size:10pt">A common example is change 1 adding a new test, and change 2 changing existing tests. After they both land, there is a new test in the old style (from change 1), which is out of sync with the new tests (from change 2).</span></p><h3><a name="TOC-Writing-tests"></a>Writing tests</h3><p>To create a new test, either create a new <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">PRESUBMIT.py</span><span style="font-size:10pt"> script or edit an existing one, adding a new function for your test.</span></p><p><span style="font-size:10pt">To check your changes, first commit locally (else <code>git-cl</code> will complain about the dirty tree), then:</span></p><p>To test the upload checks (i.e., to run <code>CheckChangeOnUpload</code>):</p><div class="sites-codeblock sites-codesnippet-block"><code>git cl upload</code></div><p>To test the submit checks (i.e., to run <code>CheckChangeOnCommit</code>):</p><div class="sites-codeblock sites-codesnippet-block"><code>git cl presubmit</code></div><p><span style="font-size:10pt">The functions must match these method signatures. You do not need to define both functions if you're only interested in one type of event, and if you want to run the same tests in both events, just have them both call a single underlying function:</span></p><div class="sites-codeblock sites-codesnippet-block"><code>def CheckChangeOnUpload(input_api, output_api):</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>pass</code><br /><br /><code>def CheckChangeOnCommit(input_api, output_api):</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>pass</code></div><p><span style="font-size:10pt">The </span><code style="font-size:10pt">input_api</code><span style="font-size:10pt"> parameter is an object through which you can get information about the change. Using the </span><code style="font-size:10pt">output_api</code><span style="font-size:10pt"> you can create result objects.</span></p><p>Both <code>CheckChangeOnXXX</code> functions must return a list or tuple of result objects, or an empty list or tuple if there is nothing to report. The types of result objects you may use are <code>output_api.PresubmitError</code> (a critical error), <code>output_api.PresubmitPromptWarning</code> (a warning the user must acknowledge before the command will continue) and <code>output_api.PresubmitNotifyResult</code> (a message that should be shown). Each takes a message parameter, and optional "items" and "long_text" parameters.</p><h4><a name="TOC-InputApi"></a>InputApi</h4><p>The <code>input_api</code> parameter is an object of type <code>presubmit.InputApi</code>; see <a href="https://code.google.com/p/chromium/codesearch#chromium/tools/depot_tools/presubmit_support.py&amp;q=%22class%20InputApi%22" style="font-size:10pt"><code>class InputApi</code></a> in <a href="https://code.google.com/p/chromium/codesearch#chromium/tools/depot_tools/presubmit_support.py" style="font-size:10pt"><code>presubmit_support.py</code></a> <span style="font-size:10pt">for implementation.</span></p><p>This object can be used to transform from local to repository paths and vice versa, and to get information on the files in the change that are contained in the same directory as your <code>PRESUBMIT.py</code> file or subdirectories thereof.</p><p>The <code>input_api.change</code> object represents the change itself. Using this object you can retrieve the description of the change, any key-value pairs in the description (e.g. BUG=123), and details on all of the files in the change (not just the ones contained by the directory your <span style="font-family:courier new,monospace"><code>PRESUBMIT.py</code></span> file resides in).</p><p>An <span style="font-family:courier new,monospace"><code>input_api.canned_checks</code></span> object contains a set of ready-made checks that you can easily add to your presubmit script.</p><p>The <code>os/os.path</code> module is available as <code>input_api.os_path</code>, so you do not need to import this yourself.</p><p>Files in the API are represented by an <span style="font-family:courier new,monospace"><code>AffectedFile</code></span> object through which you can query the <span style="font-family:courier new,monospace"><code>LocalPath()</code></span>, <span style="font-family:courier new,monospace"><code>ServerPath()</code></span>, and the <span style="font-family:courier new,monospace"><code>Action()</code></span> being performed ('A', 'M' or 'D').</p><p>The <code>input_api.is_committing</code> attribute indicates whether the CL is being committed or just uploaded. This is particularly useful if you wish the same test to be run for both upload and committing, but with different behavior. <span style="font-size:10pt">A common pattern is to prompt a warning on upload, but an error on committing, which allows a CL to be uploaded and reviewed even if the test fails, but not committed (without dcommit). This can be done as follows:</span></p><div class="sites-codeblock sites-codesnippet-block"><span style="font-size:10pt"><code>if input_api.is_committing:</code></span><br /><span style="font-size:10pt"><code>  message_type = output_api.PresubmitError</code></span><br /><span style="font-size:10pt"><code>else:</code></span><br /><span style="font-size:10pt"><code>  message_type = output_api.PresubmitPromptWarning</code></span></div><h3><a name="TOC-Caveats"></a>Caveats</h3><p>It is possible to run arbitrary Python code in the presubmit scripts. To avoid side effects and hard-to-debug errors, it is safest to run tests in subprocesses. The InputApi object provides various facilities to assist with this; see example below.<br /></p><div><span style="font-size:10pt">Please note that you should not use any functions or attributes on the API objects that begin with an underscore (_) as these are private functions that may change, whereas all public functions will be retained through future versions of the API.</span></div><h3><a name="TOC-Details-and-Example"></a>Details and Example</h3><p>The most detailed documentation for the presubmit API is in its <a href="http://src.chromium.org/viewvc/chrome/trunk/tools/depot_tools/presubmit_support.py?view=markup" target="_blank">implementation code</a>.</p><p>The <a href="http://src.chromium.org/viewvc/chrome/trunk/tools/depot_tools/presubmit_canned_checks.py?view=markup" target="_blank">canned checks</a> are good examples of what you can do with the presubmit API.</p><p>An example simple file might be as follows:</p><div class="sites-codeblock sites-codesnippet-block"><code>def CheckChange(input_api, output_api):</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>results = []</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>results += input_api.canned_checks.CheckDoNotSubmit(input_api, output_api)</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>results += input_api.canned_checks.CheckChangeHasNoTabs(input_api, output_api)</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>results += input_api.canned_checks.CheckLongLines(input_api, output_api)</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font># Require a BUG= line and a HOW_TO_TEST= line.</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>if not input_api.change.BUG or not input_api.change.HOW_TO_TEST:</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">        </font>results += [output_api.PresubmitError(</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">            </font>'Must provide a BUG= line and a HOW_TO_TEST line.')]</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>return results</code><br /><br /><code>def CheckChangeOnUpload(input_api, output_api):</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>return CheckChange(input_api, output_api)</code><br /><br /><code>def CheckChangeOnCommit(input_api, output_api):</code><br /><code><font color="#000000" face="Arial, Verdana, sans-serif">    </font>return CheckChange(input_api, output_api)</code></div><br />A simple example of a custom command (call from <code>CheckChangeOnUpload</code> or <code>CheckChangeOnCommit</code>) is:<div><br /><div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>def MyTest(input_api, output_api):</code></div><div><div><code>  test_path = input_api.os_path.join(input_api.PresubmitLocalPath(), 'my_test.py')</code></div><div><code>  cmd_name = 'my_test'</code></div><div><code>  if input_api.platform == 'win32':</code></div><div><code>    # Windows needs some help.</code></div><div><code>    cmd = [input_api.python_executable, test_path]</code></div><div><code>  else:</code></div><div><code>    cmd = [test_path]</code></div><div><code>  test_cmd = input_api.Command(</code></div><div><code>    name=cmd_name,</code></div><div><code>    cmd=cmd,</code></div><div><code>    kwargs={},</code></div><div><code>    message=output_api.PresubmitPromptWarning)</code></div><div><code>  if input_api.verbose:</code></div><div><code>    print('Running ' + cmd_name)</code></div><div><code>  return input_api.RunTests([test_cmd])</code></div></div></div><div><br /><div>You can look at existing scripts for examples (<a href="https://code.google.com/p/chromium/codesearch#search/&amp;q=file:PRESUBMIT.py&amp;sq=package:chromium&amp;type=cs" style="font-size:10pt">search: PRESUBMIT.py</a>). <a href="http://src.chromium.org/viewvc/chrome/trunk/src/PRESUBMIT.py?view=markup" style="font-size:10pt;color:rgb(0,102,204)" target="_blank">Chromium's PRESUBMIT.py</a><span style="font-size:10pt"> and </span><a href="http://src.chromium.org/cgi-bin/gitweb.cgi?p=chromium.git;a=blob;f=PRESUBMIT.py;hb=HEAD" style="font-size:10pt" target="_blank">Chromium-os PRESUBMIT.py</a><span style="font-size:10pt"> are detailed examples, while the </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/PRESUBMIT.py" style="font-size:10pt">Blink bindings PRESUBMIT.py</a> is a very simple example.</div></div></div></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/depottools/presubmit-scripts">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9Ee4V5oESqUwNWFA52UK9cBwuzvRDwlMHOtCdjc53pgPS0cd-Hd5YkPoQC7uj4ZsAOSygG-2NoGR4wbPJU7Fy5rObp1GeZ9NtO0aGSmSVfjv_XZCs/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

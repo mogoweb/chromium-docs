@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/rendering-benchmarks","deleted":false,"title":"Rendering Benchmarks (aka Smoothness benchmarks)","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/rendering-benchmarks\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Rendering Benchmarks (aka Smoothness benchmarks)","locale":"en","wuid":"wuid:gx:346781dc63976f9","revision":26,"path":"/developers/design-documents/rendering-benchmarks","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"rendering-benchmarks","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Rendering Benchmarks (aka Smoothness benchmarks) - The Chromium Projects" />
+<meta itemprop="name" content="Rendering Benchmarks (aka Smoothness benchmarks) - The Chromium Projects" />
+<meta property="og:title" content="Rendering Benchmarks (aka Smoothness benchmarks) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Rendering Benchmarks (aka Smoothness benchmarks) - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.1.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Rendering Benchmarks (aka Smoothness benchmarks)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><b style="font-family:Times New Roman;font-size:medium;font-weight:normal"><h2 dir="ltr"><a name="TOC-Contact:-nduca-ernstm"></a><b style="font-size:medium;font-weight:normal"><span style="font-size:15px;font-family:Arial;background-color:transparent;font-style:italic;vertical-align:baseline;white-space:pre-wrap">Contact: nduca, ernstm</span></b></h2></b><h3 dir="ltr"><a name="TOC-Chrome-now-has-an-awesome-rendering-benchmark-system-for-GPU-and-rendering-related-benchmarks.-It-works-on-all-chrome-flavors-even-android-and-CrOS-even-in-their-content_shell-forms."></a><span style="font-weight:normal">Chrome now has an awesome rendering benchmark system for GPU and rendering related benchmarks. </span>It works on all chrome flavors, even android and CrOS, even in their content_shell forms<span style="font-weight:normal">.</span></h3><h3 dir="ltr"><a name="TOC-We-use-the-following-terminology:action:-an-interaction-with-a-web-page-that-we-want-to-measure.-e.g.-scrolling-or-simply-waiting-for-a-few-secondspage-set:-a-collection-of-web-pages-and-associated-actionsmetric:-computes-high-level-statistical-measures-e."></a><div style="font-size:medium;font-family:arial,sans-serif;font-weight:normal;white-space:pre-wrap">We use the following terminology:</div><div style="font-size:medium;font-family:arial,sans-serif"><ul><li><span style="white-space:pre-wrap;background-color:transparent">action:<span style="font-weight:normal"> an interaction with a web page that we want to measure. e.g. scrolling, or simply waiting for a few seconds</span></span></li><li><span style="white-space:pre-wrap;background-color:transparent">page set:<span style="font-weight:normal"> a collection of web pages and associated actions</span></span></li><li><span style="white-space:pre-wrap;background-color:transparent">metric:<span style="font-weight:normal"> computes high-level statistical measures (e.g. means and medians) from raw data (e.g. traces).</span></span></li><li><span style="white-space:pre-wrap;background-color:transparent">measurement:<span style="font-weight:normal"> loads the pages from a page set, executes the associated actions, collects raw data, and computes final results using a metric.</span></span></li><li>benchmark:<span style="font-weight:normal"> bundles together a measurement and a page_set</span></li></ul></div></h3><h3 dir="ltr"><a name="TOC-To-run-the-rendering-benchmarks-you-need:"></a> <span style="font-weight:normal">To run the rendering benchmarks you need:</span></h3><h3 dir="ltr"><a name="TOC-A-chrome-checkout-get-the-code-A-chrome-build.-Just-canary-or-a-stable-will-work.-Or-download-a-continuous-build-from-http:-commondatastorage.googleapis.com-chromium-browser-continuous-index.htmlpython.Once-you-ve-got-these-things-you-re-ready-to-go.-To-ru"></a><ul><li><span style="font-weight:normal">A chrome checkout (<a href="../how-tos/get-the-code.1.html">get the code</a>)</span></li><li><span style="font-weight:normal">A chrome build. Just canary or a stable will work. Or download a continuous build from <a href="http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html">http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html</a></span></li><li><span style="font-weight:normal">python.</span></li></ul><div><div style="font-family:arial,sans-serif;font-size:medium;font-weight:normal;white-space:pre-wrap"><span style="background-color:transparent;font-family:Arial,Verdana,sans-serif">Once you've got these things, you're ready to go. To run our top 25 page set through our smoothness measurement (which tests scrolling speed for sites that scroll, or interaction speed for sites that have interactions):</span></div></div></h3><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><span style="background-color:rgb(239,239,239)"><font color="#006000" face="monospace"><span style="line-height:13px">./run_benchmark</span></font></span><span style="font-size:10pt;background-color:rgb(239,239,239);color:rgb(0,96,0);font-family:monospace;line-height:13px"> </span><span style="font-size:10pt;background-color:rgb(239,239,239);color:rgb(0,96,0);font-family:monospace;line-height:13px">--browser=canary smoothness.top_25</span></div></div></blockquote><div><h3><a name="TOC-To-measure-impl-side-painting-on-important-mobile-sites:"></a><span style="font-family:arial,sans-serif;font-size:medium;font-weight:normal;white-space:pre-wrap;background-color:transparent">To measure impl-side painting on important mobile sites:</span></h3></div><br /><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><font size="3" style="white-space:pre-wrap;font-family:Arial"><font face="arial, sans-serif"><div><span style="background-color:rgb(239,239,239);color:rgb(0,96,0);font-family:monospace;line-height:13px;font-size:10pt">t</span><span style="color:rgb(0,96,0);font-family:monospace;background-color:rgb(243,243,243)">ools/perf/</span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13px;line-height:13px;white-space:normal;background-color:rgb(239,239,239)">run_benchmark</span><span style="color:rgb(0,96,0);font-family:monospace;background-color:rgb(243,243,243)"> --browser=canary smoothness.key_mobile_sites</span></div></font></font></blockquote><font size="3" style="background-color:transparent"><font face="arial, sans-serif" style="background-color:transparent"><div style="white-space:pre-wrap;font-family:Arial"><span style="color:rgb(0,96,0);font-family:monospace"><br /></span></div></font></font><div style="font-family:arial,sans-serif;font-size:medium;white-space:pre-wrap">To measure the key mobile sites on an attached android device:</div><div style="font-family:arial,sans-serif;font-size:medium;white-space:pre-wrap"><br /></div><div style="font-family:arial,sans-serif;font-size:medium;white-space:pre-wrap"><blockquote style="font-family:Arial,Verdana,sans-serif;font-size:13px;white-space:normal;margin:0px 0px 0px 40px;border:none;padding:0px"><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;background-color:rgb(239,239,239)">tools/perf/</span><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;background-color:rgb(239,239,239)">run_benchmark</span><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;background-color:rgb(239,239,239)"> --browser=android-chrome smoothness.top_25</span></blockquote><div style="font-family:Arial,Verdana,sans-serif;font-size:13px;white-space:normal"><div></div></div></div><div style="font-family:arial,sans-serif;font-size:medium;white-space:pre-wrap"><span style="font-family:Arial;background-color:transparent"><br /></span></div><div style="font-size:13.3333330154419px"><div><h3><a name="TOC-To-run-the-smoothness-measurement-on-a-Chrome-OS-device-with-IP-address-CHROMEBOOK_IP-from-a-host-machine-with-a-chromium-checkout-do-this:"></a><span style="font-weight:normal">To run the smoothness measurement on a Chrome OS device with IP address </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:medium;font-weight:normal;white-space:pre-wrap">$CHROMEBOOK_IP</span><span style="font-weight:normal"> from a host machine with a chromium checkout, do this:</span></h3></div><div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;background-color:rgb(239,239,239)"><code>tools/perf/</code></span><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;background-color:rgb(239,239,239)"><code>run_benchmark</code></span><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px"><code><span style="background-color:rgb(239,239,239)"> --browser=cros-chromeos --remote=$CHROMEBOOK_IP smoothness.top_25</span></code></span></blockquote><div><div></div></div></div></div><div style="font-size:13.3333330154419px"><br /></div><font size="3" style="background-color:transparent"><font face="arial, sans-serif" style="background-color:transparent"><div style="white-space:pre-wrap"><span style="font-family:Arial;background-color:transparent"><br /></span></div><div style="white-space:pre-wrap"><span style="font-family:Arial;background-color:transparent">Lets break down this command a bit:</span></div></font></font><div><ul><li><font face="arial, sans-serif" style="background-color:transparent;white-space:pre-wrap;font-size:medium"><b><code>tools/perf</code></b> is where we keep our rendering benchmarks. It </font><font face="arial, sans-serif" style="background-color:transparent;white-space:pre-wrap;font-size:medium">contains benchmarks, which are written in Python.</font><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium">
+</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><b><code>run_benchmark</code></b> is the script we use to run a specific benchmark. Benchmarks are a combination of a "measurement" (e.g. numbers to compute) and a list of pages to compute those numbers for.
+
+</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><b><code>--browser=canary</code></b> tells the script to use Chrome Canary, if it is installed on the system. If you don't have canary [e.g. you're on Linux] it'll fail and tell you to give it another browser.</span></li><ul><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><code>--browser=list</code> - for all browsers that the script thinks it can use. Pass --browser=list -vvv if you're not seeing a browser you expect to see.</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><code>--browser=system</code> - the stable chrome install on your system</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><code>--browser=debug</code> or <code>release</code> - chromium from out/Debug or out/Release, if it was found</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><code>--browser=content-shell-debug</code> - a content shell build found in out/Debug</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><code>--browser=android-chrome</code> - chrome detected on an attached android device via adb</span></li><li><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><code>--browser=cros-chrome --remote=$CHROMEBOOK_IP</code> - chrome running on your chromebook</span></li><li><span style="background-color:transparent;font-family:Arial;font-size:medium;white-space:pre-wrap"><code>--browser=exact --browser-executable=&lt;path to build&gt;</code> - </span><span style="background-color:transparent;font-family:Arial;font-size:medium;white-space:pre-wrap">your tests will work with any chrome build &gt;= M18!
+
+</span></li></ul><li><font face="Arial" size="3"><span style="white-space:pre-wrap"><b><code>smoothness.top_25</code></b> is one of our canned benchmarks to run. If you type <code>./run_benchmark</code>, you'll see a list of other benchmarks that we support. There are a lot, and you can add more. :)
+
+</span></font></li><li><font face="Arial" size="3"><span style="white-space:pre-wrap"><b><code>tools/perf/page_sets/top_25.py</code></b> is a list of 25 pages that get a tremendous amount of volume on desktop, and hence are important for us to not regress. This pageset is used by a variety of benchmarks, from smoothness to thread times. There are other sets of pages too, for example <code>key_desktop_sites<font color="#000000" face="Arial">, </font></code><code>key_mobile_sites,</code> and <code>tough_scrolling_cases</code>.  Some have hundreds or thousands of sites. Some have only a few.
+
+</span></font></li><li><font face="Arial" size="3"><span style="white-space:pre-wrap">If you want to have a benchmark that computes smoothness, but for a different pageset, then just copy an existing benchmark's .py file and make a new one from it that points at your favorite pageset.</span></font></li></ul><div><font face="Arial" size="3"><span style="white-space:pre-wrap">When you run a benchmark, you'll get some output that looks like this:</span></font></div></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap"><br /></span></font></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><font color="#006000" face="monospace"><div style="line-height:13px"><span style="font-size:medium;background-color:rgb(243,243,243);white-space:pre-wrap">Pages: [http___www.youtube.com]</span></div><div><span style="background-color:rgb(243,243,243);line-height:13px;white-space:pre-wrap"><font size="3">*RESULT frame_times: frame_times= [16.900000,17.280000,17.340000,16.810000,17.400000,17.500000,17.020000,16.820000,17.070000,17.190000,17.560000,17.670000,17.450000,17.570000,17.270000,17.410000,17.590000,17.530000,17.240000,17.550000,17.190000,17.140000,17.090000,17.500000,17.540000,17.000000,17.300000,17.600000,17.430000,17.070000,17.070000,17.760000,17.090000,16.950000,17.020000,17.040000,16.780000,17.060000,17.700000,17.850000,17.230000,17.090000,17.110000,17.110000,17.610000,17.200000,16.990000,17.180000,17.140000,17.130000,17.430000,17.080000,17.100000,17.100000,17.970000,17.150000,17.600000,17.400000,17.140000,16.920000,17.790000,16.780000,17.440000,16.860000,17.720000,17.700000,17.610000,16.940000,17.200000,16.980000,17.260000,17.310000,17.380000,16.960000,17.000000,17.500000,17.240000,17.170000] ms
+Avg frame_times: 17.267564ms
+Sd  frame_times: 0.279332ms
+*RESULT jank: jank= 19.4673 
+*RESULT mean_frame_time: mean_frame_time= 17.268 ms
+*RESULT mostly_smooth: mostly_smooth= 1.0 
+RESULT telemetry_page_measurement_results: num_failed= 0 count
+RESULT telemetry_page_measurement_results: num_errored= 0 count</font></span></div></font></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><font color="#006000" face="monospace" size="3"><span style="line-height:13px;white-space:pre-wrap"><div><br /></div></span></font></blockquote><div><div><font face="Arial" size="3"><div style="white-space:pre-wrap">These are some key statistics for that page as it scrolled, in the default mode for that platform. But, lets say you wanted to run chrome with some extra commandline arguments. For this, <code>--extra-browser-args</code> is your friend:</div></font></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><font size="3"><div style="font-family:Arial"><span style="white-space:pre-wrap"><code>tools/perf/run_benchmark --browser=canary smoothness.top_25 tools/perf/page_sets/top_25.json --extra-browser-args="--force-llamas-to-have-parachutes --use-rainbows-instad-of-omnibox"</code></span></div><div style="font-family:Arial"><span><code><br /></code></span></div></font></blockquote><font size="3">Fun! Remember, unless you pass <code>--disable-gpu-vsync</code>, scrolling goes only as fast as your screen. So, for screen with 60 Hz refresh, 16.6 is usually a good thing.</font><br /><div><div><div><h3 style="font-family:Arial;white-space:pre-wrap"><a name="TOC-Smoothness-Metrics"></a><span style="background-color:transparent"><font size="3">Smoothness Metrics</font></span></h3><div style="white-space:pre-wrap"><span style="white-space:normal"><font face="arial, sans-serif" size="3">These are the most important smoothness metrics:</font></span></div><div style="white-space:pre-wrap"><ul><li><b style="font-family:arial,sans-serif;font-size:medium;background-color:transparent;color:rgb(34,34,34)">mean_frame_time</b><span style="font-family:arial,sans-serif;font-size:medium;background-color:transparent;color:rgb(34,34,34)">: arithmetic mean of frame times</span></li><li><span style="background-color:transparent;color:rgb(34,34,34)"><font face="arial, sans-serif" size="3"><b>jank</b>: absolute discrepancy of frame time stamps, where discrepancy is a measure of irregularity. It quantifies the worst jank. For a single pause, discrepancy corresponds to the length of this pause in milliseconds.  Consecutive pauses increase the discrepancy. The metric is important because even if the mean and 95th percentile are good, one long pause in the middle of an interaction is still bad.</font></span></li><li><span style="background-color:transparent;color:rgb(34,34,34)"><font face="arial, sans-serif" size="3"><b>mostly_smooth</b>: were 95 percent of the frames hitting 60 fps; boolean value (1/0).</font></span></li><li><b style="font-family:arial,sans-serif;font-size:medium;background-color:transparent;color:rgb(34,34,34)">frame_times</b><span style="font-family:arial,sans-serif;font-size:medium;background-color:transparent;color:rgb(34,34,34)">: list of raw frame times, helpful to understand the above 3 metrics</span></li><li><span style="font-family:arial,sans-serif;font-size:medium;background-color:transparent;color:rgb(34,34,34)"><b>mean_pixels_approximated:</b> percentage of pixels that was approximated (checkerboarding, low-resolution tiles, etc.).</span></li></ul></div></div><div><h3 style="font-family:Arial;white-space:pre-wrap"><a name="TOC-Rasterize_And_Record-Metrics"></a><span style="font-family:Arial,Verdana,sans-serif;white-space:normal;background-color:transparent"><font size="3">Rasterize_And_Record Metrics</font></span></h3><h3 style="font-family:Arial;font-size:medium;white-space:pre-wrap"><a name="TOC-Throughout-the-metrics-you-will-see-the-words-paint-record-and-raster.-These-have-very-precise-meanings:"></a><span style="font-family:Arial,Verdana,sans-serif;white-space:normal;background-color:transparent;font-weight:normal">Throughout the metrics, you will see the words <i>paint</i>, <i>record</i>, and <i>raster</i>. These have very precise meanings:</span></h3><div><ul><li><font size="3"><b>paint:</b> Time dumping WebKit's rendering structures into the compositor's rendering structures in software mode and regular compositing modes. T</font><span style="font-size:medium;background-color:transparent">his is the time spent to walk the webkit tree AND software-rasterize its 2D ops AND any time required to do image decodes</span></li><li><font size="3"><b>record: </b></font><span style="font-size:medium">(impl-side painting mode only). This is the time to JUST walk the WebKit tree and dump it into an SkPicture.</span></li><li><font size="3"><b>raster: </b></font><span style="font-family:arial,sans-serif;font-size:medium;background-color:transparent">(impl-side painting mode only). </span><span style="font-family:arial,sans-serif;font-size:medium;background-color:transparent">This is the time to rasterize SkPictures to tiles. If we had a decode cache miss, will include time servicing the image cache miss.</span></li></ul><div><font face="arial, sans-serif" size="3">In some sense impl-side painting splits paint into raster + record.</font></div><div><font face="arial, sans-serif" size="3"><br /></font></div><div><font face="arial, sans-serif" size="3">rasterize_and_record measurement calculates the time spent in raster and record. It automatically enables impl-side painting and only works on platforms that support this feature.</font></div></div><div><font face="arial, sans-serif" size="3"><br /></font></div><div style="white-space:pre-wrap"></div></div><div><b style="background-color:transparent;font-family:Arial;font-size:medium;white-space:pre-wrap">How it works</b></div></div><div><span style="white-space:pre-wrap;font-family:Arial;font-size:medium;background-color:transparent"><br /></span></div><div><font face="Arial" size="3"><div style="white-space:pre-wrap"><a href="../telemetry.1.html" style="background-color:transparent">Telemetry</a><span style="background-color:transparent"> performance testing framework</span></div></font></div><div><span style="background-color:transparent;font-family:Arial;white-space:pre-wrap;font-size:medium"><br /></span></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap">Page scrolling is done by telemetry's "scroll" action, <code>tools/telemetry/telemetry/internal/actions/scroll.py</code>. On chrome, it boots the browser with <code>--enable-gpu-benchmarking-extension</code>, which exposes a <code>beginSmoothScrollBy(numPixels, function() { callback })</code> API to javascript that simulates scrolling as would be done by the user. We then use it to move a page down.</span></font></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap">Other synthetic gestures, such as pinch-to-zoom or swipe, are available. See the <a href="https://docs.google.com/a/chromium.org/document/d/1VZ0FhQVc5e2HA9_mJ3HRQlXylCMgNiEJx9kVXe7yTfE/edit?usp=sharing">Synthetic Gestures in Chrome</a> document for a full list of gestures and how they're implemented in Chrome.</span></font></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap"><br /></span></font></div><div><font size="3"><span style="white-space:pre-wrap"><font face="Arial">The smoothness </font><font face="Arial">measurement <code>tools/perf/measurements/smoothness.py</code> captures a trace from this interaction, and extracts the time stamps of frames that were generated. Specifically, the </font><code style="font-family:Arial">BenchmarkInstrumentation::ImplThreadRenderingStats</code><font face="Arial"> and </font><code style="font-family:Arial">BenchmarkInstrumentation::MainThreadRenderingStats</code><font face="Arial"> events are analyzed. These events are issued from </font><code style="font-family:Arial">cc/debug/benchmark_instrumentation.cc</code><font face="Arial"> based on data collected through </font><code style="font-family:Arial">cc/debug/rendering_stats_instrumentation.h</code><font face="Arial">. The smoothness metric </font><code style="font-family:Arial">tools/perf/metrics/smoothness.py</code><font face="Arial"> is then used to calculate the metrics described above (mean_fram_time, jank, etc.).</font></span></font></div><div><br /></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap">Telemetry provides a way to separate out the measurement process from the interaction process from the actual pages being tested. We then maintain a number of important lists of web pages (page sets), some synthetic some real, in <code>tools/perf/page_sets</code>, grouped by their kind of importance. <code>top_25</code>, <code>key_desktop_sites</code> and <code>key_mobile_sites</code> are likely of particular interest to users.</span></font></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap"><br /></span></font></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap">Telemetry provides a mechanism to very reliably record a web page and then replay it many times in that exact recorded state. We (Chrome team) cannot make our recordings public since the assets the recording are the property of the site owners. However, we have exposed a utility that anyone can use to make their own recordings:</span></font></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap"><br /></span></font></div><div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;background-color:rgb(239,239,239)">tools/perf/record_wpr --browser=system tools/perf/page_sets/top_25.json<br /></span></blockquote></div><div><span style="font-family:Arial;font-size:medium;white-space:pre-wrap"><br /></span></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap">This will place a file called <code>top_25.wpr</code> in <code>tools/perf/page_sets/data</code> that is an archive of the data required to replay those pages back over-and-over again without deviation.</span></font></div><div><font face="Arial" size="3"><span style="white-space:pre-wrap"><br /></span></font></div><h2><a name="TOC-Adding-credentials-to-test-live-sites-that-require-a-logged-in-user"></a><font face="Arial" size="3"><span style="white-space:pre-wrap">Adding credentials to test live sites that require a logged in user</span></font></h2><div><span style="white-space:pre-wrap;font-family:Arial;font-size:medium">As part of GPU testing, we often want to measure the performance of a site like Gmail, or Facebook, that sit behind a login.  We do not give out logins for these, but if you have your own, you can put a </span><code style="white-space:pre-wrap">credentials.json</code><span style="white-space:pre-wrap;font-family:Arial;font-size:medium"> in <code>tools/perf/page_sets/data</code> or <code>~/.telemetry-credentials</code> in the style of <code>tools/telemetry/examples/credentials_example.json</code> with the right logins and telemetry will automatically then login to gmail or facebook for you.  Patches are welcome to add support for other sites as well.</span></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/rendering-benchmarks">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXukca4jaDOG9SuQz_G8t7HlAg63Crxa4BduXS0cPSItaAa2tEUjf25zkUjt7rxcxyCfj4AWa47UFy0zruowe-qfbDevf_7mHjYoOEKK15djr1oKc5tJ1V4wYgl8VG11qrXfvrst/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

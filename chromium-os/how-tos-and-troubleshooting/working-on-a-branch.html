@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting","deleted":false,"title":"How Tos and Troubleshooting","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting/working-on-a-branch","deleted":false,"title":"Working on a Chromium OS Branch","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/working-on-a-branch\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/how-tos-and-troubleshooting","parentWuid":"wuid:gx:72ecb36fa9c83ecd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Working on a Chromium OS Branch","locale":"en","wuid":"wuid:gx:292cb5e6bf8372c6","revision":40,"path":"/chromium-os/how-tos-and-troubleshooting/working-on-a-branch","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"working-on-a-branch","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Working on a Chromium OS Branch - The Chromium Projects" />
+<meta itemprop="name" content="Working on a Chromium OS Branch - The Chromium Projects" />
+<meta property="og:title" content="Working on a Chromium OS Branch - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Working on a Chromium OS Branch - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../chromium-os.1.html" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="../how-tos-and-troubleshooting.1.html" dir="ltr">How Tos and Troubleshooting</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Working on a Chromium OS Branch</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><i>This applies to commits to Chromium OS repositories. For changes to Chromium repository branches, see the information about <a href="../../developers/how-tos/drover.html">Drover</a>; for Blink, see <a href="../../developers/experimental-branches.html">experimental branches</a>.</i></div>
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Note:-When-to-update-ebuilds-when-merging-changes"><strong>1 </strong>Note: When to update ebuilds when merging changes</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-cros_merge_to_branch"><strong>2 </strong>cros_merge_to_branch</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Checking-out-the-whole-tree-with-repo-"><strong>3 </strong>Checking out the whole tree (with repo)</a><ol class="goog-toc"><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Testing-w-remote-trybot"><strong>3.1 </strong>Testing w/remote trybot</a></li></ol></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Checking-out-a-single-repository-with-repo-"><strong>4 </strong>Checking out a single repository (with repo)</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Checking-out-a-single-repository-with-git-"><strong>5 </strong>Checking out a single repository (with git)</a><ol class="goog-toc"><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Cloning-a-new-repository"><strong>5.1 </strong>Cloning a new repository</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Setting-your-author-committer-settings"><strong>5.2 </strong>Setting your author/committer settings</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Start-a-new-branch"><strong>5.3 </strong>Start a new branch</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Make-your-changes"><strong>5.4 </strong>Make your changes</a></li><li class="goog-toc"><a href="working-on-a-branch.html#TOC-Publish-your-commits-to-gerrit"><strong>5.5 </strong>Publish your commits to gerrit</a></li></ol></li></ol></div></div></div></div>
+<h3><a name="TOC-Note:-When-to-update-ebuilds-when-merging-changes"></a>Note: When to update ebuilds when merging changes</h3>
+<p>This works the same on branches as on trunk: If you're merging a change to code that's built as part of a <code>cros_workon</code> package, or to a <code>.ebuild</code> file for a <code>cros_workon</code> package, the package will be uprev-ed automatically. If you're changing a non-<code>cros_workon</code> package, you must uprev the corresponding <code>.ebuild</code> file on the branch, just as you do when making changes to non-<code>cros_workon</code> packages on trunk.</p>
+<h2><a name="TOC-cros_merge_to_branch"></a>cros_merge_to_branch</h2>
+<p>The easiest way to create a change from a change you already committed on ToT in Chrome OS is using <code>cros_merge_to_branch</code>. If you're inside the chroot, it'll be in your $PATH.  Otherwise, you can run it directly from <code>~/chromite/bin/cros_merge_to_branch</code>.</p>
+<p>Example usage:</p>
+<div style="font-style:normal;font-family:arial,sans-serif;color:rgb(34,34,34)"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>cros_merge_to_branch</code><code> 32027 </code><code>3</code><code>2030 32031</code><code> R25</code></div>
+</div>
+<p>This creates Gerrit changes for R25 from CL's 32027, 32030, and 32031 in less than 10 seconds. After running, you can check Gerrit to actually commit the changes (check your open commits for R25-* branch). You can also run these changes through a <a href="https://www.chromium.org/chromium-os/build/using-remote-trybots">try-bot</a> (make sure to specify the branch with -b with the remote try-bot). For more advanced usage information, use --help, or ping sosa@ or vapier@.</p>
+<p><span style="font-size:10pt">You should run with --dry-run the first time around to not actually upload your change until you are sure about how to use the tool. Note this tool accepts gerrit change numbers or change-id's, however, since the former is guaranteed to be unique, it is advised you use those instead.</span></p>
+<h2><a name="TOC-Checking-out-the-whole-tree-with-repo-"></a>Checking out the whole tree (with repo)</h2>
+<p><font color="#ff0000">You must have different checkouts (yes, new chroots in a completely new directory) for every branch you are working on</font>. This is to ensure all the prebuilts work automatically for you. You 
+have to pass the -b &lt;branch_name&gt; option to repo during init and 
+you will follow exactly the same workflow described in the <a href="../developer-guide.1.html">Chromium OS Developer Guide</a> (i.e cros_workon + repo start etc)</p>
+<p><b>If you have an existing repo checkout</b>: You can run <font face="courier new, monospace">repo init</font> with <font face="courier new, monospace">--reference</font> to re-use the objects of your existing checkout, to reduce sync time. Note that an absolute path is required (<font face="courier new, monospace" size="2">../../foo</font> won't work) and that it must be the topmost directory of the existing repo checkout, i.e. the one that contains the <font face="courier new, monospace">.repo</font> directory.</p>
+<p>You can find the exact name of the branch by browsing the <a href="https://chromium.googlesource.com/chromiumos/manifest/+refs">manifest repo</a>.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>mkdir release-R23-2913.B/<br />
+cd release-R23-2913.B/<br />
+repo init -u &lt;URL&gt; -b &lt;branchname&gt; [-g minilayout] [--reference /path/to/existing/checkout]<br />
+repo sync</code>
+</div>
+<p><font color="#ff0000">NOTE: For older branches (e.g. R22 and earlier), you'll need to specify -m minilayout.xml instead of -g minilayout.</font></p>
+<p>Example (<font color="#ff0000">See <a href="http://goto/chromeos-building">http://goto/chromeos-building</a> if you are doing an internal build and replace the manifest.git link with the appropriate one</font>)</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>repo init \<br />
+   -u https://chromium.googlesource.com/chromiumos/manifest.git \<br />
+   -b release-R23-2913.B \<br />
+   --repo-url https://chromium.googlesource.com/external/repo.git</code>
+</div>
+<p>Next, follow steps in the <a href="../developer-guide.html#TOC-Get-the-source">developer's guide</a> to sync/edit/modify files i.e repo sync, cros_work start, repo start, etc. After you've cherry-picked/made the changes you want, upload the changes for review. If cherry-picking/etc..., make sure to recreate the ChangeID in the log message so that you get a new one -- simply delete the line and git will create a new one for you.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>repo upload</code>
+</div>
+<h3><a name="TOC-Testing-w-remote-trybot"></a>Testing w/remote trybot</h3>
+<p>Before you commit the change, test it! Launch a tryjob to verify it actually builds properly. See <a href="https://www.chromium.org/chromium-os/build/using-remote-trybots">Using Remote Trybots</a> for more information.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>cd &lt;repo_root&gt;/chromiumos/chromite</code><br />
+<code>git checkout cros/master</code><br />
+<code>cbuildbot --remote -g &lt;review_id&gt; -b &lt;branchname&gt; alex-paladin daisy-paladin</code>
+</div>
+<h2><a name="TOC-Checking-out-a-single-repository-with-repo-"></a>Checking out a single repository (with repo)</h2>
+<p>If you don't have a full repo checked out already and want to do a quick one-off merge, you can still check out the much smaller buildtools group:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>repo init \<br />
+   -u https://chromium.googlesource.com/chromiumos/manifest.git \<br />
+   --repo-url https://chromium.googlesource.com/external/repo.git \<br />
+   -g buildtools</code></div>
+<p>This will get you chromite and all the tools it includes -- i.e. cros_merge_to_branch.  Make sure you pass the --nomirror option so it will fetch the single git repo needed to cherry-pick &amp; upload the CL.</p>
+<p>Finally, use cbuildbot with --remote to run remote trybots.  See the section above for more info.</p>
+<h2><a name="TOC-Checking-out-a-single-repository-with-git-"></a>Checking out a single repository (with git)</h2>
+<p>If you want to push up a few changes without checking out the entire tree, then you can use git to do just that.</p>
+<p>You can re-use an existing repo checkout if you like (but make sure you clean up when you're done).  Let's assume you're going to make a new checkout to keep things clean though.</p>
+<h3><a name="TOC-Cloning-a-new-repository"></a>Cloning a new repository</h3>
+<p>Find the git url you care about.  You can get it by going into your repo checkout and look at <font face="courier new, monospace">.git/config</font> (the url field). You'll need to use the -review variant of the URL to push to the special refs/for/* refs.  Let's demonstrate with the chromite git tree.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>git clone </code><code><span style="white-space:pre">https://chromium-review.googlesource.com</span>/chromiumos/chromite.git</code></div>
+<p>If you want to speed things up, you can use the --reference option to re-use a local tree. </p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git clone <span style="white-space:pre">https://chromium-review.googlesource.com</span>/chromiumos/chromite.git </code><code>--reference ~/chromiumos/chromite/.git</code></div>
+<h3><a name="TOC-Setting-your-author-committer-settings"></a>Setting your author/committer settings</h3>
+<p>If your normal user information is not your chromium.org e-mail, you'll need to set it in the new repo.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git config user.name "Awesome Developer"<br />
+git config user.email ${USER}@chromium.org</code></div>
+<h3><a name="TOC-Start-a-new-branch"></a>Start a new branch</h3>
+<p>Let's assume you want to work on the R23 branch.  You need the full name of the branch, and then create a new local branch to work on with that info.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>git branch -a | grep R23<br />
+</code></div>
+<p>That shows us the full branch name is "remotes/cros/release-R23-2913.B", so we can do:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>git checkout -b R23 remotes/cros/release-R23-2913.B</code></div>
+<h3><a name="TOC-Make-your-changes"></a>Make your changes</h3>
+<p>This part is where the real work happens :).  Use git's cherry-pick feature, or make the changes by hand, or apply patches, or whatever you want.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code># When the editor pops up, make sure to delete the old ChangeID line<br />
+# so that a new one will automatically be generated for you.<br />
+git cherry-pick -x -e &lt;SHA1&gt;</code></div>
+<h3><a name="TOC-Publish-your-commits-to-gerrit"></a>Publish your commits to gerrit</h3>
+<p>Now for the last step.  If you didn't create a new clone, you might have to change "origin" to "cros", or replace it with the full git url.  The "R23" is whatever you called the local branch, and the "release-R23-2913.B" is exactly what the official branch name is called -- make sure it's correct as gerrit will allow you to push to anything.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git push origin R23:refs/for/release-R23-2913.B</code></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/working-on-a-branch">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9AgfdeWdEpWqOtQ9MrSvED6tjd2rHcl202z4n54y4ptDPdzBX5PAi6arMQIyLaBpno-jTJH40I6LHe7hJnvHHywffv2s0UhCxbF_jFdG5WgP7Q4oI/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

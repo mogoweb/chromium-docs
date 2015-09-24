@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/developer-guide","deleted":false,"title":"Chromium OS Developer Guide","dir":"ltr"},{"path":"/chromium-os/developer-guide/go-in-chromium-os","deleted":false,"title":"Go in Chromium OS","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/developer-guide/go-in-chromium-os\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/developer-guide","parentWuid":"wuid:gx:27255a11f3a32ed5","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Go in Chromium OS","locale":"en","wuid":"wuid:gx:3af0f41c6eb2bfad","revision":31,"path":"/chromium-os/developer-guide/go-in-chromium-os","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"go-in-chromium-os","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Go in Chromium OS - The Chromium Projects" />
+<meta itemprop="name" content="Go in Chromium OS - The Chromium Projects" />
+<meta property="og:title" content="Go in Chromium OS - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Go in Chromium OS - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/developer-guide" dir="ltr">Chromium OS Developer Guide</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Go in Chromium OS</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Recommended-organization-of-code-for-Go-projects-in-Chromium-OS:"><strong>1 </strong>Recommended organization of code for Go projects in Chromium OS:</a></li><li class="goog-toc"><a href="#TOC-Recommendations-for-local-development-and-builds:"><strong>2 </strong>Recommendations for local development and builds:</a></li><li class="goog-toc"><a href="#TOC-Setting-up-ebuilds-for-third-party-Go-packages:"><strong>3 </strong>Setting up ebuilds for third party Go packages:</a></li><li class="goog-toc"><a href="#TOC-Setting-up-ebuilds-for-Chromium-OS-Go-projects:"><strong>4 </strong>Setting up ebuilds for Chromium OS Go projects:</a></li><li class="goog-toc"><a href="#TOC-Location-of-ebuilds-and-repositories:"><strong>5 </strong>Location of ebuilds and repositories:</a></li><li class="goog-toc"><a href="#TOC-Useful-functions-and-variables:"><strong>6 </strong>Useful functions and variables:</a></li></ol></div></div></div></div>
+This page provides information on using <a href="http://golang.org">Go</a> in Chromium OS, including recommendations for project organization, importing and managing third party packages, and writing ebuilds.
+<br /><br />
+<h2><a name="TOC-Recommended-organization-of-code-for-Go-projects-in-Chromium-OS:"></a><b><font size="4">Recommended organization of code for Go projects in Chromium OS:</font></b></h2>
+
+Projects should generally follow the official recommendation to organize their Go workspaces: <a href="http://golang.org/doc/code.html">golang.org/doc/code.html</a>
+<br />
+These are some additional recommendations and naming conventions for organizing Go project workspaces in Chromium OS:
+<ul>
+<li>
+	If the Go project is in its own git repository, it should be set up such that the root of the repository is a workspace.
+	<ul>
+<li>It should have a single directory path <code>"src/&lt;project name&gt;/"</code> at the top level of the repository.</li>
+<li>This way, import paths for packages in the project always begin with <code>"&lt;project name&gt;/"</code>.</li>
+</ul>
+<br />
+</li>
+<li>
+	If the project provides useful Go library packages for other projects to import, put all such packages under <code>"src/chromiumos/"</code>.
+	<ul>
+<li>This way, import paths for Chromium OS specific common Go packages always begin with <code>"chromiumos/"</code> prefix.</li>
+</ul>
+<br />
+</li>
+<li>
+	When adding Go code to an existing project already containing code in other languages, create a top level directory called <code>"go"</code> in the repository and use that as the Go workspace.
+	<ul>
+<li>Follow the rest of the recommendation for new projects above (e.g. all code should be under <code>"go/src/&lt;project&gt;/"</code> or <code>"go/src/chromiumos/"</code>).</li>
+</ul>
+<br />
+</li>
+<li>
+<b>IMPORTANT:</b> Do not use <code>"go get"</code> or vendor third party packages to individual project repositories.
+	<ul>
+<li>Instead, mirror external repositories to the Chromium Git server and write an ebuild (in <code>"chromiumos-overlay/dev-go"</code>) that installs the third party packages to <b><code>"/usr/lib/gopath"</code></b>.</li>
+</ul>
+</li>
+</ul>
+<br />
+<h2><a name="TOC-Recommendations-for-local-development-and-builds:"></a><b><font size="4">Recommendations for local development and builds:</font></b></h2>
+
+Set the <a href="http://golang.org/cmd/go/#hdr-GOPATH_environment_variable">GOPATH environment variable</a> to contain two elements:
+<ol>
+<li>Path to the local Go workspace (directory containing <code>"src/&lt;project&gt;/"</code>).</li>
+<li>Path to all locally installed (emerged) Go packages: <b><code>"/usr/lib/gopath"</code></b>.</li>
+</ol>
+<br />
+
+When compiling for host, invoke the Go command as <code>"x86_64-pc-linux-gnu-go"</code>, or simply, <code>"go"</code>.
+<ul>
+<li>The host compiler is included in the <code>chromium-os-sdk</code> and is installed automatically when a chroot is created.</li>
+<li>
+	A few useful utilities like <code>"gofmt"</code>, <code>"godoc"</code>, <code>"govet"</code>, and <code>"golint"</code> are also in the SDK and installed in the chroot.
+	<ul>
+<li><code>"repo upload"</code> is configured to warn when trying to upload a change containing any Go files not formatted with <code>gofmt</code>.</li>
+</ul>
+</li>
+</ul>
+<br />
+
+Go cross compiler for a board is installed automatically when <code>"setup_board"</code> is run in the chroot.
+<ul>
+<li>
+	The cross-compiling Go command is determined by the toolchain target tuple for the board:
+	<ul>
+<li>Use <code>"x86_64-cros-linux-gnu-go"</code> for <code>amd64</code> targets (e.g. "panther").</li>
+<li>Use <code>"i686-pc-linux-gnu-go"</code> for <code>x86</code> targets (e.g. "x86-zgb").</li>
+<li>Use <code>"armv7a-cros-linux-gnueabi-go"</code> for <code>arm</code> targets (e.g. "daisy").</li>
+</ul>
+</li>
+<li>The cross compilers are configured to enable full Cgo support (i.e. they automatically use the correct cross-gcc for compiling the C parts).</li>
+</ul>
+<br />
+<h2><a name="TOC-Setting-up-ebuilds-for-third-party-Go-packages:"></a><b><font size="4">Setting up ebuilds for third party Go packages:</font></b></h2>
+<b>IMPORTANT:</b> Mirror third party repositories on <a href="https://chromium.googlesource.com">Chromium Git</a>.
+<ul>
+<li>Use <code>"external/"</code> as the top level prefix for the mirror.</li>
+<li>Embed full path of the original repository in the mirror path.</li>
+<li>For example, external repository "<a href="https://github.com/golang/glog">github.com/golang/glog</a>" is mirrored at "<a href="https://chromium.googlesource.com/external/github.com/golang/glog">chromium.googlesource.com/external/github.com/golang/glog</a>".</li>
+</ul>
+<br />
+
+Write an ebuild to fetch and install third party packages to <b><code>"/usr/lib/gopath"</code></b>.
+<ul>
+<li>
+	Example: <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/dev-go/glog/glog-0.0.1.ebuild">dev-go/glog/glog-0.0.1.ebuild</a>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>	# Copyright 2015 The Chromium OS Authors. All rights reserved.
+	# Distributed under the terms of the GNU General Public License v2.
+
+	EAPI=5
+
+	# Disable cros-workon auto-uprev since this is an external package.
+	# Must manage commit/tree hashes manually.
+	CROS_WORKON_BLACKLIST="1"
+	CROS_WORKON_COMMIT="44145f04b68cf362d9c4df2182967c2275eaefed"
+	CROS_WORKON_TREE="ff88a8670fe235f678315b4ede0378ba88585a54"
+	CROS_WORKON_PROJECT="external/github.com/golang/glog"
+	CROS_WORKON_DESTDIR="${S}/src/github.com/golang/glog"
+
+	CROS_GO_PACKAGES=(
+		"github.com/golang/glog"
+	)
+
+	inherit cros-workon cros-go
+
+	DESCRIPTION="Leveled execution logs for Go"
+	HOMEPAGE="https://github.com/golang/glog"
+
+	LICENSE="BSD-Google"
+	SLOT="0"
+	KEYWORDS="*"
+	IUSE=""
+	RESTRICT="binchecks strip"
+
+	DEPEND=""
+	RDEPEND=""</code></div></pre>
+</li>
+<li>Use <code>CROS_WORKON_DESTDIR</code> to place the imported package tree at the appropriate location inside <code>"${S}"</code>.</li>
+<li>Use <code>CROS_GO_PACKAGES</code> to list the packages to install, and inherit eclass <code>"cros-go"</code>.</li>
+<li>The installed packages can now be imported using their usual import paths, i.e. <pre><div class="sites-codeblock sites-codesnippet-block"><code>	import "github.com/golang/glog"</code></div></pre></li>
+</ul>
+<br />
+
+A single ebuild can install any combination of packages from multiple upstream repositories:
+<ul>
+<li>
+<code>CROS_WORKON_PROJECT</code>, <code>CROS_WORKON_COMMIT</code>, <code>CROS_WORKON_TREE</code>, and <code>CROS_WORKON_DESTDIR</code> variables can be arrays, and can be used to construct a combined source tree from multiple repositories under <code>"${S}"</code>.
+	<ul>
+<li>For detailed usage information on <code>CROS_WORKON_*</code> variables, see <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/eclass/cros-workon.eclass">chromiumos-overlay/eclass/cros-workon.eclass</a>.</li>
+</ul>
+</li>
+<li>Bundling related packages together in a self contained group installed by a single ebuild can make project dependencies simpler.</li>
+<li>Use common sense and judgement. Resist monolithic ebuilds that install dozens of packages from as many repositories. On the other extreme, do not write separate ebuilds to install different packages from the same repository.</li>
+</ul>
+<br />
+<h2><a name="TOC-Setting-up-ebuilds-for-Chromium-OS-Go-projects:"></a><b><font size="4">Setting up ebuilds for Chromium OS Go projects:</font></b></h2>
+<b>IMPORTANT:</b> Never use <code>"go get"</code> from an ebuild. Instead, write ebuilds for external dependencies and let Portage make them available under <b><code>"/usr/lib/gopath"</code></b>.
+<br />
+<br />
+
+If a project is only providing common <code>"chromiumos/"</code> Go packages for use by other projects, its ebuild only needs to fetch and install the package files to <b><code>"/usr/lib/gopath"</code></b>.
+<ul>
+<li>
+	Example: <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/dev-go/seccomp/seccomp-9999.ebuild">dev-go/seccomp/seccomp-9999.ebuild</a>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>	# Copyright 2015 The Chromium OS Authors. All rights reserved.
+	# Distributed under the terms of the GNU General Public License v2.
+
+	EAPI=5
+
+	CROS_WORKON_PROJECT="chromiumos/platform/go-seccomp"
+	CROS_WORKON_LOCALNAME="../platform/go-seccomp"
+
+	CROS_GO_PACKAGES=(
+		"chromiumos/seccomp"
+	)
+
+	inherit cros-workon cros-go
+
+	DESCRIPTION="Go support for Chromium OS Seccomp-BPF policy files"
+	HOMEPAGE="http://chromium.org/chromium-os/developer-guide/chromium-os-sandboxing"
+
+	LICENSE="BSD-Google"
+	SLOT="0"
+	KEYWORDS="~*"
+	IUSE=""
+	RESTRICT="binchecks strip"
+
+	DEPEND=""
+	RDEPEND=""</code></div></pre>
+<ul>
+<li>The seccomp package is located in <code>"chromiumos/platform/go-seccomp"</code> repo at <code>"src/chromiumos/seccomp/"</code>.</li>
+<li>This package can now be imported by other projects using <pre><div class="sites-codeblock sites-codesnippet-block"><code>	import "chromiumos/seccomp"</code></div></pre></li>
+</ul>
+</li>
+<li>Note that a single ebuild can install multiple related packages inside <code>"/usr/lib/gopath/src/chromiumos/..."</code>.</li>
+<li>Also, multiple ebuilds can install packages inside <code>"/usr/lib/gopath/src/chromiumos/..."</code> as long as there's no conflict for package paths.</li>
+<li>Use <code>RDEPEND</code> to add other ebuilds that provide dependencies that the packages in this ebuild import. This will ensure that those other dependencies are also made available and remain available as long as the packages from this ebuild are installed in <b><code>"/usr/lib/gopath"</code></b>.</li>
+</ul>
+<br />
+
+For a typical Go project that needs to build and install executables:
+<ul>
+<li>
+	Example: <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/dev-go/golint/golint-0.0.1.ebuild">dev-go/golint/golint-0.0.1.ebuild</a>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>	# Copyright 2015 The Chromium OS Authors. All rights reserved.
+	# Distributed under the terms of the GNU General Public License v2.
+
+	EAPI=5
+
+	# Disable cros-workon auto-uprev since this is an external package.
+	# Must manage commit/tree hashes manually.
+	CROS_WORKON_BLACKLIST="1"
+	CROS_WORKON_COMMIT="1dc973e526beec42f14ad7273ad036751bd4a833"
+	CROS_WORKON_TREE="d46153dbbdc68ef1dde6c6661cccdb7eac1072b0"
+	CROS_WORKON_PROJECT="external/github.com/golang/lint"
+	CROS_WORKON_DESTDIR="${S}/src/github.com/golang/lint"
+
+	CROS_GO_BINARIES=(
+		"github.com/golang/lint/golint"
+	)
+
+	inherit cros-workon cros-go
+
+	DESCRIPTION="A linter for Go source code"
+	HOMEPAGE="http://github.com/golang/lint"
+
+	LICENSE="BSD-Google"
+	SLOT="0"
+	KEYWORDS="*"
+	IUSE=""
+	RESTRICT="binchecks strip"
+
+	DEPEND="dev-go/go-tools"
+	RDEPEND=""</code></div></pre>
+</li>
+<li>If the project needs to import packages from outside its own repository, list those dependencies in the <code>DEPEND</code> variable (but not in <code>RDEPEND</code>, as these are strictly build time only dependencies).</li>
+<li>Always specify the binaries using <code>"CROS_GO_BINARIES"</code> variable. This will pick the correct compiler for cross-compiling, and invoke it with appropriate <code>GOPATH</code> and flags. (e.g. <code>"emerge-daisy"</code> will automatically use the arm cross-compiler, import packages from <code>"/build/daisy/usr/lib/gopath"</code>, and build PIE binaries).</li>
+</ul>
+<br />
+
+A single ebuild can install executable binaries, as well as provide Go packages for other projects to import.
+<ul>
+<li>
+	Example: <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/dev-go/go-tools/go-tools-0.0.1.ebuild">dev-go/go-tools/go-tools-0.0.1.ebuild</a>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>	# Copyright 2015 The Chromium OS Authors. All rights reserved.
+	# Distributed under the terms of the GNU General Public License v2.
+
+	EAPI=5
+
+	# Disable cros-workon auto-uprev since this is an external package.
+	# Must manage commit/tree hashes manually.
+	CROS_WORKON_BLACKLIST="1"
+	CROS_WORKON_COMMIT="605d5bf7f53c886f0b33afe425db6664d1ed899c"
+	CROS_WORKON_TREE="55bd547e0e400e44ba4655c6c1d4095f72af085a"
+	CROS_WORKON_REPO="https://go.googlesource.com"
+	CROS_WORKON_PROJECT="tools"
+	CROS_WORKON_DESTDIR="${S}/src/golang.org/x/tools"
+
+	CROS_GO_PACKAGES=(
+		"golang.org/x/tools/go/exact"
+		"golang.org/x/tools/go/types"
+		"golang.org/x/tools/go/gcimporter"
+	)
+
+	CROS_GO_BINARIES=(
+		"golang.org/x/tools/cmd/godoc"
+		"golang.org/x/tools/cmd/vet:govet"
+	)
+
+	inherit cros-workon cros-go
+
+	DESCRIPTION="Packages and tools that support the Go programming language"
+	HOMEPAGE="http://golang.org/x/tools"
+
+	LICENSE="BSD-Google"
+	SLOT="0"
+	KEYWORDS="*"
+	IUSE=""
+	RESTRICT="binchecks strip"
+
+	DEPEND=""
+	RDEPEND=""</code></div></pre>
+<ul>
+<li>This builds and installs the <code>"godoc"</code> and <code>"govet"</code> tools. It also provides the packages required to build <code>"dev-go/golint"</code> above.</li>
+</ul>
+</li>
+<li>
+	Use the <code>DEPEND</code>/<code>RDEPEND</code> variables carefully in a combination ebuild like this one:
+	<ul>
+<li>If a dependency package is needed to build the executables, put it in <code>DEPEND</code>.</li>
+<li>If a dependency package is imported by the Go packages installed by this ebuild, put it in <code>RDEPEND</code>.</li>
+<li>If a dependency package is imported by both the executables built by this ebuild and the Go packages installed by this ebuild, put it in both <code>DEPEND</code> and <code>RDEPEND</code>.</li>
+</ul>
+</li>
+</ul>
+<br />
+<h2><a name="TOC-Location-of-ebuilds-and-repositories:"></a><b><font size="4">Location of ebuilds and repositories:</font></b></h2>
+<ul>
+<li>Ebuilds for third party Go packages and tools should go in <code>"chromiumos-overlay/dev-go"</code>. Their repositories should be mirrored under "<a href="https://chromium.googlesource.com">chromium.googlesource.com/external/</a>".</li>
+<li>Ebuilds for Chromium OS specific common Go packages (import paths beginning with <code>"chromiumos/"</code>) should also go to <code>"chromiumos-overlay/dev-go"</code>. Their repositories should go to an appropriate place in the tree (e.g. "<a href="https://chromium.googlesource.com/chromiumos/platform/go-seccomp">chromium.googlesource.com/chromiumos/platform/go-seccomp</a>").</li>
+<li>For other Chromium OS Go projects, use <code>"chromiumos-overlay/dev-go"</code> only if it's a generic helper tool or utility for development. Otherwise, pick a more appropriate category and overlay for the project.</li>
+</ul>
+<br />
+<h2><a name="TOC-Useful-functions-and-variables:"></a><b><font size="4">Useful functions and variables:</font></b></h2>
+
+The cros-go eclass is defined here: <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/eclass/cros-go.eclass">chromiumos-overlay/eclass/cros-go.eclass</a>
+<dl>
+<dt><code>CROS_GO_WORKSPACE</code></dt>
+<dd>
+	Path to the Go workspace, default is <code>"${S}"</code>. Set this variable if the workspace is not at the top of the repository. For example, if all Go packages in the repository are under <code>"go/src/&lt;project&gt;"</code>, set this variable to <code>"${S}/go"</code>.
+	<br /><br />
+</dd>
+<dt><code>CROS_GO_BINARIES</code></dt>
+<dd>
+	Go executable binaries to build and install. Package paths are relative to <code>"${CROS_GO_WORKSPACE}/src"</code>. Each path must contain a <code>package "main"</code>. The last component of the package path will become the name of the executable. The executable name can be overridden by appending a colon to the package path, followed by an alternate name. For example:
+	<pre><div class="sites-codeblock sites-codesnippet-block"><code>	CROS_GO_BINARIES=(
+		"golang.org/x/tools/cmd/godoc"
+		"golang.org/x/tools/cmd/vet:govet"
+	)</code></div></pre>
+	will build and install <code>"godoc"</code> and <code>"govet"</code> binaries.
+	<br /><br />
+</dd>
+<dt><code>CROS_GO_PACKAGES</code></dt>
+<dd>
+	Go packages to install in <b><code>"/usr/lib/gopath"</code></b>. Package paths are relative to <code>"${CROS_GO_WORKSPACE}/src"</code>. Packages are installed in <b><code>"/usr/lib/gopath"</code></b> such that they can be imported later from Go code using the exact paths listed here. For example:
+	<pre><div class="sites-codeblock sites-codesnippet-block"><code>	CROS_GO_PACKAGES=(
+		"golang.org/x/tools/go/types"
+	)</code></div></pre>
+	will install package files from <code>"${CROS_GO_WORKSPACE}/src/golang.org/x/tools/go/types"</code> to <code>"/usr/lib/gopath/src/golang.org/x/tools/go/types"</code> and other Go projects can use the package with
+	<pre><div class="sites-codeblock sites-codesnippet-block"><code>	import "golang.org/x/tools/go/types"</code></div></pre>
+<br />
+</dd>
+<dt><code>cros_go</code></dt>
+<dd>
+	Wrapper function for invoking the Go tool from an ebuild. It provides the following functionality:
+	<ul>
+<li>The correct cross-compiler is automatically detected and used. For example, when running <code>"emerge-daisy"</code>, <code>"armv7a-cros-linux-gnueabi-go"</code> will be used to build Go packages and binaries.</li>
+<li>The <code>GOPATH</code> variable is setup automatically. For example, when running <code>"emerge-daisy"</code>, Go packages will be looked up in the local workspace, as well as in <code>"/build/daisy/usr/lib/gopath"</code>.</li>
+<li>When cross-compiling Go packages that use Cgo, the correct C/C++ cross-compilers for the target are automatically detected and used.</li>
+</ul>
+	For most ebuilds, setting the <code>CROS_GO_BINARIES</code> variable should be enough to build and install Go binaries. Implementation of <code>CROS_GO_BINARIES</code> uses the <code>cros_go</code> wrapper internally.
+	</dd>
+</dl></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/developer-guide/go-in-chromium-os">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9coEjBvfp1RrPAH4dw1dPDIzUZXwzxjp2GJ1aevhxRMZzOgmarM3kLiho7LCMyXrtTZD7OAg8qIT7IEBuw0CBXtOSizyJuCLZ8fPwDXB7U8f7rtEf/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

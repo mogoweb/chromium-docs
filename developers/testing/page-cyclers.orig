@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/page-cyclers","deleted":false,"title":"Page Cycler Tests","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/testing/page-cyclers\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Page Cycler Tests","locale":"en","wuid":"wuid:gx:478f51db51e82a17","revision":21,"path":"/developers/testing/page-cyclers","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"page-cyclers","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Page Cycler Tests - The Chromium Projects" />
+<meta itemprop="name" content="Page Cycler Tests - The Chromium Projects" />
+<meta property="og:title" content="Page Cycler Tests - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Page Cycler Tests - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Page Cycler Tests</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span style="font-family:arial,sans-serif;border-collapse:collapse"><b><div><span style="font-weight:normal"><span style="font-size:medium">This page details the internals of the page cycler test system. If you are looking for information on how to update the expectations as a result of a new, acceptable performance regression, see the page regarding <a href="http://dev.chromium.org/developers/testing/chromium-build-infrastructure/performance-test-plots">performance plots</a>.</span></span></div><h3><a name="TOC-Quickstart"></a>Quickstart</h3><div><b style="font-size:10pt"><div style="display:inline!important"><span style="font-weight:normal">1. Get a Chromium source checkout and build a copy of Chromium.</span></div></b></div><div><span style="font-weight:normal">2. Run Chromium as: ./chromium --enable-file-cookies --js-flags="--expose_gc"</span></div><div><span style="font-weight:normal">3. Open src/tools/page_cycler/acid3/start.html in Chromium.</span></div><div><span style="font-weight:normal">4. Press the Start button.</span></div></b></span><h3><a name="TOC-Overview-at-a-glance"></a><span style="font-family:arial,sans-serif;border-collapse:collapse"><b>Overview at a gl</b></span><span style="font-family:arial,sans-serif;border-collapse:collapse"><b>ance</b></span></h3><div><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif">A page cycler test consists of 3 pieces: the <a href="https://code.google.com/p/chromium/codesearch/#chromium/src/tools/perf/run_measurement">run_measurement</a> program, a <a href="https://code.google.com/p/chromium/codesearch/#chromium/src/tools/perf/page_sets/">page set</a>, and the page cycler data you're testing (which is stored in <a href="http://go/read-src-internal">src-internal</a> (sorry, non-Googlers :( )).  The test program accesses the test data as a file:// web page and writes the test results to stdout.  Chrome's build and test infrastructure is responsible for running that test program with the test data.  That same infrastructure then parses the test output to produce perf charts and measure our perf against a list of perf expectations stored in-tree.  If the actual results differ significantly from the expected results, an alert is triggered on <a href="http://build.chromium.org/buildbot/waterfall/console" style="color:rgb(42,93,176)" target="_blank">the build waterfall</a>.</div><h3><a name="TOC-The-test-program"></a><b>The test program</b></h3><div style="font-family:arial,sans-serif">The run_measurement program is located in <a href="http://src.chromium.org/viewvc/chrome/trunk/src/tools/perf/" style="color:rgb(42,93,176)" target="_blank">src/tools/perf/</a>.  The program understands how to launch your Chrome build, navigate to a set of URLs, wait for some condition that signals the test is complete, and retrieve the test results from the current Chrome process.</div><h3><a name="TOC-Sample-output"></a>Sample output</h3><div class="sites-codeblock sites-codesnippet-block"><code>$ tools/perf/run_measurement --browser=release page_cycler tools/perf/page_sets/typical_25.json</code><br /><br /><code>Pages: [http___www.nick.com_games,http___www.rei.com_,...,http___www.fda.gov]</code><br /><code>HISTOGRAM V8.MemoryExternalFragmentationTotal_by_url: http___www.nick.com_games= {"buckets":[{"count":1,"high":45,"low":44},{"count":1,"high":49,"low":48},{"count":1,"high":52,"low":51},{"count":1,"high":61,"low":60}],"count":4,"flags":1,"name":"V8.MemoryExternalFragmentationTotal","params":{"bucket_count":100,"max":101,"min":1,"type":"HISTOGRAM"},"pid":16178,"sum":203.0}</code><br /><code>Avg V8.MemoryExternalFragmentationTotal_by_url: 50.923247percent</code><br /><code>Sd  V8.MemoryExternalFragmentationTotal_by_url: 5.898667percent<br /></code>...<br /><div><div><code>RESULT times_by_url: http___www.nick.com_games= [915,501,515,424,421,411,471,531,428,526] ms<br /></code></div><div><code>Avg times_by_url: 514.300000ms</code></div><div><code>Sd  times_by_url: 148.326255ms<br />...</code></div></div><div><div><code>WARNING:root:Errored pages:</code></div><div><span style="font-size:10pt"><code>http://arstechnica.com/</code></span></div></div></div><h3><a name="TOC-Tips"></a>Tips</h3><ul><li><span style="font-size:10pt">You might also find the --pageset-repeat option useful if you need </span><span style="font-size:10pt">more or less iterations. </span></li><li><span style="font-size:10pt">typical_25 is a good default page set to start with because it is an up-to-</span><span style="font-size:10pt">date collection of 25 typical web sites. There are a lot of other </span><span style="font-size:10pt">suites in that directory, and the older, classic suites like moz and </span><span style="font-size:10pt">morejs are in tools/perf/page_sets/page_cycler/.</span></li><li><span style="font-size:10pt">To get stable results:</span></li><ol><li><span style="font-size:10pt">Disable frequency scaling / power boost in the BIOS</span></li><li><span style="font-size:10pt">Run nothing other than a terminal, text editor, and the chrome instance</span></li><li><span style="font-size:10pt">Navigate to the start page of a test suite (i.e. data/page_cycler/alexa_us/start.html), set "Iterations" to 1 and click Start (</span><span style="font-size:10pt">Without throwing away a first run the variance was much higher as things (font caches, etc) got loaded into the process.)</span></li><li><span style="font-size:10pt">Navigate the same tab back to start.html (thus keeping within the same render process), set "Iterations" to 5 and click Start</span></li><li><span style="font-size:10pt">Use those results</span></li></ol><li><span style="font-size:10pt">If you want to ignore the first (noisy) result of each iteration, you </span><span style="font-size:10pt">can hack tools/perf/measurements/page_cycler.py to pass </span><span style="font-size:10pt">discard_first_result=True (I wish we had a command line option to do </span><span style="font-size:10pt">that).</span></li><li><span style="font-size:10pt">To debug a specific test run </span><span style="color:rgb(0,96,0);font-family:monospace;line-height:13.333332061767578px;background-color:rgb(239,239,239)">run_measurement</span> with <span style="color:rgb(0,96,0);font-family:monospace;line-height:13.333332061767578px;background-color:rgb(239,239,239)">--interactive</span>, that way the browser window will remain open and allow one to interact with it.</li></ul><h3><a name="TOC-Output-meanings"></a>Output meanings</h3><div>The <code>Pages:</code> output lists a url for each test page. We measure each such URL multiple times.</div><div>We have HISTOGRAM and RESULT outputs.</div><div>Many outputs have a _by_url variant that appears for each URL.</div><div>Each output with multiple samples shows an <code>Avg</code> (arithmetic mean) and <code>Sd</code> (standard deviation) for its samples.</div><div><br /></div><div><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="text-align:center;width:88px;height:15px">Kind<br /></td><td style="text-align:center;width:242px;height:15px">Output</td><td style="text-align:center;width:413px;height:15px"><a href="https://code.google.com/p/chromium/codesearch/#chromium/src/tools/perf/trace-info.json">Meaning</a><br /></td></tr><tr><td style="width:88px;height:15px">HISTOGRAM</td><td style="width:242px;height:15px">V8.MemoryExternalFragmentationTotal</td><td style="width:413px;height:15px">Total <a href="http://en.wikipedia.org/wiki/Fragmentation_(computing)#External_fragmentation">external memory fragmentation</a> after each GC in percent.</td></tr><tr><td style="width:88px;height:15px">HISTOGRAM</td><td style="width:242px;height:15px">V8.MemoryHeapSampleTotalCommitted</td><td style="width:413px;height:15px">The total size of committed memory used by V8 after each GC in KB.</td></tr><tr><td style="width:88px;height:15px">HISTOGRAM</td><td style="width:242px;height:15px">V8.MemoryHeapSampleTotalUsed</td><td style="width:413px;height:15px">The total size of live memory used by V8 after each GC in KB.</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">times</td><td style="width:413px;height:15px">Time from "pressing enter" in the URL bar to the onload event?</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_final_size_browser</td><td style="width:413px;height:15px">Virtual Memory Size (address space allocated) of browser process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_resident_set_size_final_size_browser</td><td style="width:413px;height:15px">Resident Set Size (physically resident memory) of browser process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_peak_size_browser</td><td style="width:413px;height:15px">The peak Virtual Memory Size (address space allocated) usage achieved by the browser process.</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">resident_set_size_peak_size_browser</td><td style="width:413px;height:15px">The peak Resident Set Size (physically resident memory) usage achieved by the browser process.</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_final_size_renderer</td><td style="width:413px;height:15px">Virtual Memory Size (address space allocated) of renderer process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_resident_set_size_final_size_renderer</td><td style="width:413px;height:15px">Resident Set Size (physically resident memory) of renderer process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_final_size_total</td><td style="width:413px;height:15px">Virtual Memory Size (address space allocated) of GPU process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">vm_resident_set_size_final_size_total</td><td style="width:413px;height:15px">Resident Set Size (physically resident memory) of all processes</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">commit_charge</td><td style="width:413px;height:15px">System commit charge (commited memory pages)</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">processes</td><td style="width:413px;height:15px">Number of processes used by chrome</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">read_operations_browser</td><td style="width:413px;height:15px">Number of IO read operations by the browser process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">write_operations_browser</td><td style="width:413px;height:15px">Number of write IO operations by browser process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">read_bytes_browser</td><td style="width:413px;height:15px">Number of IO bytes read by the browser process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">write_bytes_browser</td><td style="width:413px;height:15px">Number of IO bytes written by the browser process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">read_operations_renderer</td><td style="width:413px;height:15px">Number of IO read operations by the renderer process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">write_operations_renderer</td><td style="width:413px;height:15px">Number of write IO operations by renderer process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">read_bytes_renderer</td><td style="width:413px;height:15px">Number of IO bytes read by the renderer process</td></tr><tr><td style="width:88px;height:15px">RESULT</td><td style="width:242px;height:15px">write_bytes_renderer</td><td style="width:413px;height:15px">Number of IO bytes written by the renderer process</td></tr></tbody></table></div><div><br /></div><div>The HISTOGRAMS are formatted as a JSON string. For example:</div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>{</code></div><div><code>    "count": 5,</code></div><div><code>    "name": "V8.MemoryHeapSampleTotalUsed",</code></div><div><code>    "buckets": [</code></div><div><code>        {</code></div><div><code>            "count": 1,</code></div><div><code>            "low": 10281</code></div><div><code>            "high": 11702,</code></div><div><code>        },</code></div><div><code>        {</code></div><div><code>            "count": 1,</code></div><div><code>            "low": 11702</code></div><div><code>            "high": 13320,</code></div><div><code>        },</code></div><div><code>        {</code></div><div><code>            "count": 1,</code></div><div><code>            "low": 13320</code></div><div><code>            "high": 15161,</code></div><div><code>        },</code></div><div><code>        {</code></div><div><code>            "count": 1,</code></div><div><code>            "low": 15161</code></div><div><code>            "high": 17257,</code></div><div><code>        },</code></div><div><code>        {</code></div><div><code>            "count": 1,</code></div><div><code>            "low": 17257</code></div><div><code>            "high": 19642,</code></div><div><code>        }</code></div><div><code>    ],</code></div><div><code>    "pid": 3124,</code></div><div><code>    "params": {</code></div><div><code>        "max": 500000,</code></div><div><code>        "bucket_count": 50,</code></div><div><code>        "type": "HISTOGRAM",</code></div><div><code>        "min": 1000</code></div><div><code>    },</code></div><div><code>    "flags": 1,</code></div><div><code>    "sum": 109271</code></div><div><code>}</code></div></div><div><span style="border-collapse:collapse"><br /></span></div>The params describe how the buckets are arranged, but I can't decipher how. (e.g. each of the visible buckets has the same ratio between high and low, ~1.138, but 1.138<sup>50</sup>==641, which isn't related to 500000.)  Also, what are the flags?</span></div><div><br /></div><div>The times arrays in this run have 10 entries, but the histograms usually have fewer samples. (but occasionally more??) What's up with that?<br /><span style="border-collapse:collapse"><h2 style="font-family:arial,sans-serif"><a name="TOC-About-the-previous-version-of-the-page-cycler"></a><b>About the previous version of the page cycler</b></h2><div style="font-family:arial,sans-serif"><b>The test data</b></div><div style="font-family:arial,sans-serif"><br /></div><div style="font-family:arial,sans-serif">The URL Chrome is navigated to by the page_cycler_test program is where the page cycler data comes in.  Examples of this page cycler data include:</div><div style="font-family:arial,sans-serif">- the <a href="http://src.chromium.org/viewvc/chrome/trunk/src/tools/page_cycler/database/" style="color:rgb(42,93,176)" target="_blank">database page cycler test</a>, which measures times to run Web SQL DB operations</div><div style="font-family:arial,sans-serif">- the <a href="http://src.chromium.org/viewvc/chrome/trunk/deps/page_cycler/acid3/" style="color:rgb(42,93,176)" target="_blank">acid3 page cycler</a>, which measures the time to run the Acid3 tests to completion</div><div style="font-family:arial,sans-serif"><br /></div><div style="font-family:arial,sans-serif">More page cyclers are run in Chromium's standard tests, but they are unavailable to the public.  These include the moz, intl1, intl2, morejs, and dhtml page cyclers.  Each of these page cyclers measure the time from when navigation started to when the onload handler runs, but from the onload handler, layout is forced to ensure that the time required to run layout is included in the total time.  Note the difference with the acid3 and database page cyclers, which observe other events besides triggering from onload and forcing the page layout.</div><div style="font-family:arial,sans-serif"><br /></div><div style="font-family:arial,sans-serif">If you run your local copy of Chrome with the flags '--enable-file-cookies --js-flags="--expose_gc"' and navigate to a page cycler's start.html page, you can run these tests on your machine.</div><div style="font-family:arial,sans-serif"><br /></div><div style="font-family:arial,sans-serif"><div><b>Test data directory structure</b></div><div><b><span style="font-family:sans-serif;font-weight:normal;font-size:13px;line-height:19px"><pre style="white-space:pre-wrap;word-wrap:break-word;padding-top:1em;padding-right:1em;padding-bottom:1em;padding-left:1em;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:dashed;border-right-style:dashed;border-bottom-style:dashed;border-left-style:dashed;border-top-color:rgb(47,111,171);border-right-color:rgb(47,111,171);border-bottom-color:rgb(47,111,171);border-left-color:rgb(47,111,171);color:black;background-color:rgb(249,249,249);line-height:1.1em"> - page_cycler/
+    - common/ : a required directory with reusable code for page cycler data sets
+      - start.js : used to setup the page cycling, store cookies and load webpages
+      - head.js : required for report.html to properly generate data
+      - report.html : template for timing reports upon completion of tests
+    - sample/ : a sample page cycler data set
+      - pages.js : contains directory paths (e.g. page1, page2, ...) for each URL included in
+                   the cycle
+      - <b>start.html</b> : loads pages.js and start.js; load this file to begin this page cycle.
+                     If you open start.html?auto=1&amp;iterations=5, it will automatically begin
+                     the cycle otherwise a form is presented where you can manually enter the
+                     number of iterations.
+      - start.js
+      - page1/ : a directory represents a url to be included in the cycle, should be listed in
+                 pages.js
+        - index.html : URL that gets loaded by the page cycler, must include head.js 
+        - ... : Other files needed to properly render index.html
+      - page2/ : ...
+      - page3/ : ... 
+      - page4/ : ... </pre></span></b></div></div><div style="font-family:arial,sans-serif"><b><span style="font-weight:normal"><h2><a name="TOC-Page-cycler-test-data-output"></a><span style="font-size:small">Page cycler test data output</span></h2><div><span style="font-size:small">Here is an example of the final report we see if we run the acid3 page cycler in our browser directly:</span></div></span></b></div></span><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><span style="font-family:arial,sans-serif;border-collapse:collapse"><div><b><span style="font-weight:normal"><h2><a name="TOC-Summary"></a>Summary</h2></span></b></div></span><span style="font-family:arial,sans-serif;border-collapse:collapse"><div><b><span style="font-weight:normal"><dl><table border="1"><tbody><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">iterations</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">3</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">pages</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">1</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">milliseconds</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">2429</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">mean per set</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">809.67</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">mean per page</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">809.67</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">timer lag</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">395.00</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">timer lag per page</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">131.67</td></tr></tbody></table></dl></span></b></div></span><span style="font-family:arial,sans-serif;border-collapse:collapse"><div><b><span style="font-weight:normal"><h2><a name="TOC-Complete-Statistics"></a>Complete Statistics</h2></span></b></div></span><span style="font-family:arial,sans-serif;border-collapse:collapse"><div><b><span style="font-weight:normal"><table border="1"><thead><tr><th>Site</th><th>Min</th><th>Max</th><th>Mean</th><th>Std.d</th><th colspan="10">Runs</th></tr></thead><tbody><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif"><a style="color:rgb(42,93,176)">acid3.acidtests.org</a></td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">85.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">2079.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">175.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">90.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">2079</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">265</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">85</td></tr><tr><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">totals:</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">85.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">2079.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">175.00</td><td style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;font-family:arial,sans-serif">90.00<br /></td></tr></tbody></table></span></b></div></span></blockquote><span style="font-family:arial,sans-serif;border-collapse:collapse"><div><b><br /></b></div><div>The page cycler test program receives this data in a different format (using the UITest framework and the automation proxy).  The program then outputs the result data to stdio in a simple format:</div><div><span style="border-collapse:separate;font-family:Times New Roman"><pre><span style="font-family:Courier New,courier,monotype"><font size="2">[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PageCyclerTest
+[ RUN      ] PageCyclerTest.Acid3File
+*RESULT vm_peak_b: vm_pk_b= 13615104 bytes
+*RESULT ws_peak_b: ws_pk_b= 33026048 bytes
+*RESULT vm_peak_r: vm_pk_r= 67616768 bytes
+*RESULT ws_peak_r: ws_pk_r= 66859008 bytes
+*RESULT vm_single_peak_r: vm_spk_r= 67616768 bytes
+*RESULT ws_single_peak_r: ws_spk_r= 66859008 bytes
+RESULT vm_final_b: vm_f_b= 12734464 bytes
+RESULT ws_final_b: ws_f_b= 29773824 bytes
+RESULT vm_final_r: vm_f_r= 67166208 bytes
+RESULT ws_final_r: ws_f_r= 62820352 bytes
+RESULT vm_final_t: vm_f_t= 79900672 bytes
+RESULT ws_final_t: ws_f_t= 92594176 bytes
+RESULT processes: proc_= 2 
+RESULT read_op_b: r_op_b= 23896 
+RESULT write_op_b: w_op_b= 12383 
+RESULT other_op_b: o_op_b= 11728 
+*RESULT total_op_b: IO_op_b= 48007 
+RESULT read_byte_b: r_b= 29044 kb
+RESULT write_byte_b: w_b= 7802 kb
+RESULT other_byte_b: o_b= 193 kb
+*RESULT total_byte_b: IO_b= 37040 kb
+RESULT read_op_r: r_op_r= 7518 
+RESULT write_op_r: w_op_r= 22756 
+RESULT other_op_r: o_op_r= 410 
+*RESULT total_op_r: IO_op_r= 30684 
+RESULT read_byte_r: r_r= 1967 kb
+RESULT write_byte_r: w_r= 6036 kb
+RESULT other_byte_r: o_r= 124 kb
+*RESULT total_byte_r: IO_r= 8128 kb
+RESULT commit_charge: cc= 72880 kb
+Pages: [acid3.acidtests.org]
+*RESULT times: t= [100,106,80,...,120,118] ms
+[       OK ] PageCyclerTest.Acid3File (23047 ms)
+[----------] 1 test from PageCyclerTest (23047 ms total)</font></span></pre><pre><span style="font-family:Courier New,courier,monotype"><font size="2"><span style="font-family:Times New Roman;white-space:normal"><pre><span style="font-family:Courier New,courier,monotype">[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (23047 ms total)
+[  PASSED  ] 1 test.</span></pre></span></font></span></pre></span></div><div><b><br /></b></div><div><b>The perf charts and expectations</b></div><div><b><br /></b></div><div>Our build and test infrastructure runs the page cycler test program and parses the resulting output.  That infrastructure writes the perf data it finds in the output to Chrome's <a href="http://build.chromium.org/buildbot/perf/dashboard/overview.html" style="color:rgb(42,93,176)" target="_blank">perf test plots</a>.  While the test infrastructure has this data it compares the results to our <a href="http://src.chromium.org/viewvc/chrome/trunk/src/tools/perf_expectations/perf_expectations.json" style="color:rgb(42,93,176)" target="_blank">perf expectations</a> and alerts us if there is a significant regression or improvement.  More information about both the perf test plots and expectations can be found on our <a href="http://dev.chromium.org/developers/testing/chromium-build-infrastructure/performance-test-plots" style="color:rgb(42,93,176)" target="_blank">dev site</a>.</div><div><br /></div><div><span style="border-collapse:separate;color:rgb(34,34,34)"><div dir="ltr" style="margin-bottom:0.2em;text-align:left">Each line in the expectations file qualifies a particular metric. For each metric, there's a <font face="'courier new', monospace">delta</font> and a <font face="'courier new', monospace">var</font> expectation. The delta is the amount of the current result less the reference result. The variance is how much the delta is allowed to vary in either direction.</div></span></div><div><br /></div><div><b>What type of files are recommended for test data?</b></div><div><b><br /></b></div><div>In general:</div><div>- all page cyclers should use standard web page assets (html, js, css, images)</div><div>- use relative references instead of absolute references</div><div>- complex web apps testing internal apis need to ensure access is available using the file:// scheme</div><div><br /></div><div>While writing your page cycler, ask yourself:</div><div>- What apis do you want to test that's not covered by the current page cyclers?</div><div>- Is it related to the onload event, or some other signal that you can watch for within js?</div><div><br /></div><div>Finally, any new test data should be stored in src/tools/page_cycler, and the page cycler test program should be updated to support the new test data.</div><div><br /></div><h3><a name="TOC-Analyzing-Results"></a>Analyzing Results</h3><div>When the performance numbers regress, how do you track down where?  See <span style="border-collapse:separate;font-family:Arial,Verdana,sans-serif;font-size:12px"><a dir="ltr" href="http://www.chromium.org/developers/testing/page-cyclers/analyzing-page-cycler-results" style="color:rgb(71,18,100);outline-style:none;outline-width:initial;outline-color:initial">Analyzing Page Cycler Results</a> for one approach.</span></div></span></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/testing/page-cyclers/analyzing-page-cycler-results" dir="ltr">Analyzing Page Cycler Results</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/testing/page-cyclers">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9IEfLZcgBOjHH8Mnb6QF7-3_OQHkWZiL8381tQeNSXD62nlyyWqOk5H4Nb9CenBLeWvjFAigIPJxAkoIKvL5xgzzeFfHYJpAM1yH3UK3OmvxtkKf5/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

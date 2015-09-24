@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/user-experience","deleted":false,"title":"User Experience","dir":"ltr"},{"path":"/user-experience/touch-access","deleted":false,"title":"Accessibility: Touch Access","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/user-experience/touch-access\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/user-experience","parentWuid":"wuid:gx:17b65af8a29a4e9e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Accessibility: Touch Access","locale":"en","wuid":"wuid:gx:81a45350a7ef716","revision":47,"path":"/user-experience/touch-access","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"touch-access","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Accessibility: Touch Access - The Chromium Projects" />
+<meta itemprop="name" content="Accessibility: Touch Access - The Chromium Projects" />
+<meta property="og:title" content="Accessibility: Touch Access - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Accessibility: Touch Access - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1408145933096/user-experience/touch-access/chromeos_touch_accessibility_user_flow.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1408145933096/user-experience/touch-access/chromeos_touch_accessibility_user_flow.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../user-experience.html" dir="ltr">User Experience</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Accessibility: Touch Access</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Now that there are Chromebooks with touch screens, it is important that we have an interface for users with disabilities to be able to interact with a touch screen. It's based on the same ideas used on <a href="http://axslab.com/articles/ios-voiceover-gestures-and-keyboard-commands.php">iOS VoiceOver</a> and <a href="https://support.google.com/accessibility/android/answer/6006598?hl=en">Android TalkBack</a>, but with a few Chrome-specific differences.<div><br /></div><div>Currently iOS and Android provide mobile touch accessibility by allowing users to<span style="background-color:transparent"><font color="#222222" face="arial, sans-serif" size="2"> touch the screen to explore the content currently showing. The user can hear spoken feedback about whatever is under their finger. They may then perform certain gestures to send a click action to the last explored target. There are other gestures to adjust settings such as volume or reading speed, to navigate between items on the page, to enter passthrough mode (where touch events are sent through directly as if accessibility was off</font><font color="#222222" face="arial, sans-serif" size="2">), and to perform many other actions.</font></span><span style="font-size:10pt;background-color:transparent"> </span></div><div><div><br />
+</div>
+<div>Touch accessibility on ChromeOS essentially works like this:</div>
+<div>Users may use a finger  to explore the screen by touch, hearing spoken feedback about the item under their finger. They may then perform certain gestures such as tapping and swiping to send a click to the last explored target, entering passthrough mode (where touch events are sent through directly rather than being intercepted by the accessibility system), adjusting volume, changing tabs, or scrolling.<br />
+<div><br />
+</div>
+<div>
+<div>The feature turns on when spoken feedback is enabled. Currently there's no way to turn touch accessibility on or off independently; for now we're assuming that any users who want spoken feedback on probably want this functionality too, but we could make it a preference later.</div>
+</div>
+<div><br />
+</div>
+<div>The majority of the code exists in the <a href="https://code.google.com/p/chromium/codesearch#chromium/src/ui/chromeos/touch_exploration_controller.h">touch exploration controller</a>. When spoken feedback is enabled, an instance of this class is created and all touch events inputted by the user are rewritten through RewriteEvent. Sometimes these events are discarded, sometimes they are released with a delay, and sometimes they change the user's current state (e.g. from single finger pressed state to touch exploration state).<a href="http://www.chromium.org/"></a></div>
+<div><br />
+</div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="touch-access.html#TOC-Navigating-the-Screen-"><strong>1 </strong>Navigating the Screen </a><ol class="goog-toc"><li class="goog-toc"><a href="touch-access.html#TOC-Touch-Exploration"><strong>1.1 </strong>Touch Exploration</a></li><li class="goog-toc"><a href="touch-access.html#TOC-Clicking-Touch-Explored-Items"><strong>1.2 </strong>Clicking Touch Explored Items</a></li><li class="goog-toc"><a href="touch-access.html#TOC-Gestures"><strong>1.3 </strong>Gestures</a></li><li class="goog-toc"><a href="touch-access.html#TOC-Passthrough-"><strong>1.4 </strong>Passthrough  </a></li></ol></li><li class="goog-toc"><a href="touch-access.html#TOC-Why-A-New-Set-of-Features-"><strong>2 </strong>Why A New Set of Features?</a></li><li class="goog-toc"><a href="touch-access.html#TOC-Implementation:-State-Machine"><strong>3 </strong>Implementation: State Machine</a></li><li class="goog-toc"><a href="touch-access.html#TOC-Future-of-Chrome-Touch-Accessibility"><strong>4 </strong>Future of Chrome Touch Accessibility</a></li></ol></div></div></div></div></div>
+<div>
+<div>
+<div><b>
+<h2><a name="TOC-Navigating-the-Screen-"></a>Navigating the Screen </h2>
+</b></div>
+<h3><a name="TOC-Touch-Exploration"></a><b>Touch Exploration</b></h3>
+<div>
+<ul><li><font style="font-size:10pt;background-color:transparent">When the user is in the touch exploration state, simulated mouse moves are dispatched whenever the finger moves. These mouse moves causes the screen reader (<a href="http://www.chromevox.com/index.html">ChromeVox</a>)</font><span style="font-size:small;background-color:transparent"> to read the name of the object the user is touching. </span></li>
+<li><span style="font-size:small;background-color:transparent">Touch exploration state is entered by holding a finger down for more than 300 ms, or by moving a finger on the screen for longer (grace period ends) or slower (leave the grace area at a low velocity) than it takes to perform a gesture.</span></li>
+<li><span style="background-color:transparent"><font size="2">Once in touch exploration mode, all movements are translated into synthesized mouse move events. This causes hover states and events to be triggered. (e.g. a menu that opens on a mouse hover would open with touch exploration)</font></span></li>
+<ul><li><span style="font-size:10pt;background-color:transparent">The last touch exploration location is stored and updated after every artificial mouse move.</span></li></ul>
+<li>Touch exploration mode is left when the touch exploration finger is lifted or when other fingers are added.</li></ul>
+</div>
+<div>
+<h3><a name="TOC-Clicking-Touch-Explored-Items"></a><b>Clicking Touch Explored Items</b></h3>
+</div>
+<div>
+<ul><li><font size="2">Currently, there are three different ways of clicking on the item that was most recently touched through touch exploration.</font></li></ul>
+<h4><a name="TOC-Single-Tap"></a>          Single Tap</h4>
+</div>
+<div>
+<ul>
+<ul><li>If the user is in touch exploration mode, they can click on the last touch exploration location by lifting their finger and quickly placing it on the screen again within the double tap timeout (300 ms).</li></ul></ul>
+</div>
+<div>
+<h4><a name="TOC-Split-Tap"></a>          Split Tap</h4>
+</div>
+<div>
+<ul>
+<ul><li><font size="2">If the user is in touch exploration mode, they can click without lifting their touch exploration finger by tapping anywhere else on the screen with a second finger.</font></li></ul></ul>
+</div>
+<div>
+<ul>
+<ul><li><font size="2">Details:</font></li>
+<ul><li><font size="2">After a successful split tap has been completed, the user will be back in touch exploration.</font></li>
+<li><font size="2">If either finger moves too far from its original location, no click goes through.</font></li>
+<li><font size="2">If the touch exploration finger is lifted first, a click still goes through when the split tap finger (the second finger) is lifted.</font></li></ul></ul></ul>
+</div>
+<div>
+<h4><a name="TOC-Double-Tap"></a>          Double Tap</h4>
+<ul>
+<ul><li><span style="font-size:10pt;background-color:transparent">If the user double-taps, the second tap is translated as a click to the location of the last successful touch exploration - that allows the user to explore anywhere on the screen, hear its description, then double-tap anywhere to activate it.</span></li></ul></ul>
+</div>
+<div>
+<ul>
+<ul><li><span style="font-size:10pt;background-color:transparent">Details:</span></li>
+<ul><li><span style="font-size:10pt;background-color:transparent">The double tap must be completed 300 ms after the touch exploration is released or else it is considered to be a single tap.</span></li>
+<li>In terms of timing, the second tap must also be completed within 300 ms of the first tap.</li></ul></ul></ul>
+</div>
+<h3><a name="TOC-Gestures"></a><b>Gestures</b></h3>
+</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Gestures can be used to send high-level accessibility commands.</span></li></ul>
+</div>
+<h4><a name="TOC-Swipe-Gestures"></a>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">Swipe Gestures</blockquote>
+</h4>
+<div>
+<ul>
+<ul><li><span style="font-size:10pt;background-color:transparent">The user can perform swipe gestures in one of the four cardinal directions which are then interpreted and used to control the UI. </span></li>
+<li><span style="font-size:10pt;background-color:transparent">A gesture will be registered if:</span></li><ul><li><span style="background-color:transparent">the user places one or more fingers on the screen and moves them all in one of the cardinal directions</span></li><li><span style="background-color:transparent">the distance moved is far enough (outside the "slop region") to determine that the movement was deliberate</span></li><li><span style="background-color:transparent">all fingers are released after the gesture is performed</span></li><li><span style="background-color:transparent"><font size="2">the entire gesture is performed within the grace period (300ms)</font></span></li></ul><li><font size="2">If the grace period expires before all fingers are lifted: </font></li><ul><li><font size="2">If only a single finger was placed down, then touch exploration mode is entered.</font></li><li><font size="2">Otherwise, the system will wait for all fingers to be lifted before processing any more touch events.</font></li></ul><li><span style="font-size:10pt;background-color:transparent">Details:</span></li></ul></ul><ul><ul>
+<ul><li><span style="font-size:10pt;background-color:transparent">One finger swipes are used for navigation on the screen. For example, a swipe right would correspond to the keyboard shortcut <b>Shift+Search+Right</b> (<b>ChromeVox+Right</b>).</span></li><ul><li><span style="font-size:10pt;background-color:transparent">The default for this is <b>up/down: </b>go to next/previous group</span><span style="font-size:10pt;background-color:transparent">, and </span><b style="font-size:10pt;background-color:transparent">left/right</b><span style="font-size:10pt;background-color:transparent">: go to next/previous object </span>(for instance, bullet points), but this can be changed in ChromeVox settings.</li></ul>
+<li><span style="font-size:10pt;background-color:transparent">Two finger swipes are mapped as:</span></li>
+<ul><li><span style="font-size:10pt;background-color:transparent"><b>up</b>: go to top</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>down</b>: read from here</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>left</b>: browser back</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>right</b>: browser forward</span></li></ul>
+<li><span style="font-size:10pt;background-color:transparent">Three finger swipes are mapped as: </span></li>
+<ul><li><span style="font-size:10pt;background-color:transparent"><b>up</b>: page down (scroll by a set amount)</span></li>
+<ul><li><span style="background-color:transparent">note that up is page down because with touch it's like you're literally dragging the page up - which lets you see down the page</span></li></ul>
+<li><span style="font-size:10pt;background-color:transparent"><b>down</b>: page up</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>left</b>/<b>right</b>: scrolls through the tabs</span></li></ul>
+<li>Four finger swipes are mapped as:</li>
+<ul><li><span style="font-size:10pt;background-color:transparent"><b>up</b>: home page</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>down</b>: refresh</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>left</b>/<b>right</b>: decrease/increase brightness (for low vision users)</span></li></ul>
+<li>Note that all of these mappings are not final and will probably be shifted to best help users. Ideally there will eventually be a menu for users to pick their own mappings</li></ul></ul></ul>
+</div>
+<h4><a name="TOC-Side-Slide-Gestures"></a>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">Side Slide Gestures</blockquote>
+</h4>
+<div>
+<ul>
+<ul><li><span style="font-size:10pt;background-color:transparent">Slide gestures performed on the edge of the screen can change settings continuously. </span></li>
+<li><span style="font-size:10pt;background-color:transparent">Currently, sliding a finger along the right side of the will change the volume. </span></li>
+<ul><li><span style="background-color:transparent">Volume control along the edge of the screen is directly proportional to where the user's finger is located on the screen. </span></li>
+<li><span style="background-color:transparent">The top right corner of the screen automatically sets the volume to 100% and the bottom right corner of the screen automatically sets the volume to 0% once the user has moved past slop.</span></li></ul>
+<li><span style="font-size:10pt;background-color:transparent">This could be applied to other settings in the future (brightness, granularity, navigation of headings).</span></li></ul></ul>
+<ul>
+<ul><li>Details:</li>
+<ul><li><span style="font-size:10pt;background-color:transparent">If the user places a finger on the edge of the screen and moves their finger past slop, a slide gesture is performed.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">The user can then slide one finger along an edge of the screen and continuously control a setting. </span></li>
+<li><span style="font-size:10pt;background-color:transparent">Once the user enters this state, the boundaries that define an edge expand so that the user can now adjust the setting within a slightly bigger width along the side of the screen.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">If the user exits this area without lifting their finger, they will not be able to perform any actions, however if they keep their finger down and return to the "hot edge," then they can still adjust the setting. </span></li>
+<li><span style="font-size:10pt;background-color:transparent">In order to perform other touch accessibility movements, the user must lift their finger.</span></li></ul></ul></ul>
+<h3><a name="TOC-Passthrough-"></a><b>Passthrough</b>  <br />
+</h3>
+<ul><li><span style="font-size:10pt;background-color:transparent">Passing finger events as if accessibility is off is useful for smooth scrolling, drag and drop, and pinching. There are currently two implementations for passthrough.</span></li><li><span style="background-color:transparent">Passing finger events through is also useful for anything which implements custom gestures, as mentioned in the "Why A New Set Of Features" section.</span></li><li><span style="background-color:transparent">An earcon will always sound when the user enters passthrough mode, allowing the user to know that passthrough has begun.</span></li><li><span style="background-color:transparent"><br /></span></li></ul>
+<h4><a name="TOC-Relative-Passthrough"></a>
+<div>    Relative Passthrough</div>
+</h4>
+<ul>
+<ul><li>If the user double taps and holds for the passthrough time-out, all following events from that finger is passed through until the finger is released. </li><li>This can be useful if a certain element requires a gesture to operate, allowing the user to touch explore to that element, then perform the gesture without needing to precisely locate the element again.</li><li><span style="font-size:10pt;background-color:transparent">Details</span></li></ul></ul><ul><ul>
+<ul><li>These events are passed through with an offset such that the first touch is offset to be at the location of the last touch exploration location, and every following event is offset by the same amount.</li>
+<li>If any other fingers are added or removed, they are ignored.</li>
+<li>Once the passthrough finger is released, passthrough stops and the user is reset to no fingers down state. </li></ul></ul></ul>
+<h4><a name="TOC-Corner-Passthrough"></a>
+<div>    Corner Passthrough</div>
+</h4>
+<ul>
+<ul><li><span style="font-size:10pt;background-color:transparent">When a user holds a finger in a bottom corner of the screen, any other fingers placed on the screen are passed through.</span></li></ul></ul>
+<div>
+<ul>
+<ul><li>Details:</li>
+<ul><li>The user needs to place their finger on the corner of the screen for 700 ms (passthrough time-out) before passthrough will begin.</li>
+<li>An earcon will play to indicate that passthrough has been activated.</li>
+<li>Once activated, all the events from any subsequent fingers placed on the screen are passed through as long as the finger in the corner stays in the corner and is not released.</li>
+<li>Once the finger in the corner has been released, all the following events are ignored until all the fingers have been released.</li></ul></ul></ul>
+</div>
+<b>Other Details:</b><br />
+<ul><li><span style="font-size:10pt;background-color:transparent">If the user taps and releases their finger, after 300 ms from the initial touch, a single mouse move is fired. This can be used to explore an item on the screen without entering touch exploration state.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Earcons (short sound notifications) are fired whenever the user comes close to moving off the screen or moves onto the screen from the edge. Many touch devices have a smooth bezel around the edge of the screen, making it practically impossible to tell where the touch screen starts by only touch. This earcon helps the user be more aware of whether or not their finger is on the touch part of the screen.</span></li></ul>
+<div><br />
+</div>
+</div>
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Why-A-New-Set-of-Features-"></a>Why A New Set of Features?</h2>
+<div>
+<h3><a name="TOC-1"></a>
+<div></div>
+</h3>
+<div>
+<div>To determine what would be the best direction for new ChromeOS touch accessibility features, there were a few things we needed to consider. First of all, people who were already accustomed to using touch accessibility on mobile had opinions on what functions they believed to be the most useful. Second of all, ChromeOS accessibility was new and only had a few features implemented when we arrived. We surveyed Google employees that used/were interested in accessibility features on mobile, and we asked for their preferences and ideas for the design for ChromeOS.</div>
+</div>
+<div><br />
+</div>
+<div>What we discovered:</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Most commonly used gestures: read next/previous item, read from here, jump to top, scroll by page, go back </span></li>
+<li><span style="font-size:10pt;background-color:transparent">When scrolling, users tended to prefer to go by a page then to scroll smoothly </span></li>
+<li><span style="font-size:10pt;background-color:transparent">Being able to use multiple fingers for gestures was considered to be much simpler and more intuitive than more complicated single finger gestures - especially on a bigger laptop screen </span></li>
+<li><span style="font-size:10pt;background-color:transparent">Passthrough mode was rarely used and users were frustrated by Android's emphasis on it, but it was felt to be necessary - especially when encountering “web apps in the wild” on a Chromebook (apps could be developed needing fancy swipes or multi finger touches, and there is no "internet police" to stop them)</span></li></ul>
+<div>note: the sample size was fairly small, and we hope that we'll be able to collect more user feedback when the first version is released. </div>
+<div><br />
+</div>
+<div>Therefore, we have decided to implement the most useful features borrowed from Android and iOS as well as features completely unique to ChromeOS that took advantage of its own capabilities. <span style="font-size:10pt;background-color:transparent">For example, corner passthrough and side slide gestures wouldn't have worked as well on a tablet or mobile device, but take advantage of the Chromebook's bigger screen to give the user better accessibility.</span></div>
+</div>
+</div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<h2><a name="TOC-Implementation:-State-Machine"></a><span style="background-color:transparent">Implementation</span><b>: State Machine</b></h2>
+<div>
+<div style="display:block;text-align:left">This is a graph of the possible states the user can be in, and all of the user input and timer time-outs that causes the <a href="https://code.google.com/p/chromium/codesearch#chromium/src/ui/chromeos/touch_exploration_controller.h" style="font-size:10pt;background-color:transparent">touch exploration controller</a><span style="background-color:transparent"><font size="2"> to change the user's state. </font>Occasionally<font size="2"> touch presses and releases are dispatched to simulate clicks, and these dispatched events are also shown in this chart.</font></span></div><div style="font-weight:bold;display:block;text-align:left"><a href="touch-access/chromeos_touch_accessibility_user_flow.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../_/rsrc/1408145933096/user-experience/touch-access/chromeos_touch_accessibility_user_flow.png" style="width:80%" /></a></div></div><div><div style="display:block;text-align:left"><span style="font-size:10pt;background-color:transparent">Want to add to this chart? </span><a href="https://docs.google.com/a/google.com/document/d/1L0zKaHM4JUKY1loNEbVlAZy7ktDW4WCeIsD7jNommdo/edit?usp=sharing" style="font-size:10pt;background-color:transparent">For information on the internal account you can use to edit this diagram, click here</a><span style="font-size:10pt;background-color:transparent">.</span></div>
+<br />
+</div>
+<div><br />
+</div>
+<div>
+<h2><a name="TOC-Future-of-Chrome-Touch-Accessibility"></a>Future of Chrome Touch Accessibility</h2>
+<div>Here are some ideas that didn't make it into version one, but would be awesome to implement soon:<br />
+<ul><li>Menu for accessibility settings (detail of navigation by word/line/paragraph, rate of speech, pitch of speech, etc.) </li>
+<li><span style="font-size:10pt;background-color:transparent">Drag and drop gesture to move an object or copy/paste while being able to navigate the screen between locations to find the drop point </span></li>
+<li>Pinch/zoom - for low vision users (currently possible through corner passthrough, but perhaps a three finger hold could zoom in)</li>
+<li>Enabling ChromeVox from anywhere - shortcut gesture recognized with ChromeVox turned off</li>
+<li>Custom gestures - user chooses gesture mappings</li></ul>
+</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/user-experience/touch-access">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXukca4jaDOG9SuQz_G8t7Hld72wkxChoxs2D44V4S5OngNiMCYDnKB7_2ODohWr7kQr1vx0rMMQ273Ca15DRt3LeEClOZZCxciP6kLd_8EETnro9fIbkxE1JXS6RgnjJEfBDTH7/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

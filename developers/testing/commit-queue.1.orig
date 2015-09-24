@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/commit-queue","deleted":false,"title":"Chromium Commit Queue","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/testing/commit-queue\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium Commit Queue","locale":"en","wuid":"wuid:gx:31c23927450dc52e","revision":83,"path":"/developers/testing/commit-queue","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"commit-queue","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium Commit Queue - The Chromium Projects" />
+<meta itemprop="name" content="Chromium Commit Queue - The Chromium Projects" />
+<meta property="og:title" content="Chromium Commit Queue - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium Commit Queue - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium Commit Queue</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-What-is-it-"><strong>1 </strong>What (is it)?</a></li><li class="goog-toc"><a href="#TOC-Design-document"><strong>2 </strong>Design document</a></li><li class="goog-toc"><a href="#TOC-How-does-it-work-"><strong>3 </strong>How (does it work)?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Current-process-for-the-user"><strong>3.1 </strong>Current process for the user</a></li></ol></li><li class="goog-toc"><a href="#TOC-Why-is-it-broken-"><strong>4 </strong>Why (is it broken)?</a></li><li class="goog-toc"><a href="#TOC-Options"><strong>5 </strong>Options</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Is-the-CQ-broken-"><strong>5.1 </strong>Is the CQ broken?</a></li><li class="goog-toc"><a href="#TOC-The-CQ-seems-hung"><strong>5.2 </strong>The CQ seems hung</a></li><li class="goog-toc"><a href="#TOC-Please-Help-I-just-want-to-ask-on-irc-"><strong>5.3 </strong>Please Help! I just want to ask on irc !</a></li><li class="goog-toc"><a href="#TOC-My-patch-failed-to-apply"><strong>5.4 </strong>My patch failed to apply</a></li><li class="goog-toc"><a href="#TOC-What-about-LKGR-"><strong>5.5 </strong>What about LKGR?</a></li><li class="goog-toc"><a href="#TOC-Where-is-the-dashboard-"><strong>5.6 </strong>Where is the dashboard?</a></li><li class="goog-toc"><a href="#TOC-What-s-my-position-on-the-queue-"><strong>5.7 </strong>What's my position on the queue?</a></li><li class="goog-toc"><a href="#TOC-Sending-a-TBR-patch-fast"><strong>5.8 </strong>Sending a TBR patch fast</a></li><li class="goog-toc"><a href="#TOC-Sending-CL-through-CQ-in-dry-run-mode"><strong>5.9 </strong>Sending CL through CQ in dry-run mode</a></li><li class="goog-toc"><a href="#TOC-Picking-custom-trybots"><strong>5.10 </strong>Picking custom trybots</a></li><li class="goog-toc"><a href="#TOC-Try-job-results-aren-t-showing-up-consistently-on-Rietveld"><strong>5.11 </strong>Try job results aren't showing up consistently on Rietveld</a></li><li class="goog-toc"><a href="#TOC-Binary-files-"><strong>5.12 </strong>Binary files?</a></li><li class="goog-toc"><a href="#TOC-My-CL-has-a-bazillion-files-will-it-blend-"><strong>5.13 </strong>My CL has a bazillion files, will it blend?</a></li><li class="goog-toc"><a href="#TOC-Moving-renaming-or-copying-files"><strong>5.14 </strong>Moving, renaming or copying files</a></li><li class="goog-toc"><a href="#TOC-Are-CQ-users-required-to-be-around-when-the-patch-is-landed-"><strong>5.15 </strong>Are CQ users required to be around when the patch is landed?</a></li><li class="goog-toc"><a href="#TOC-What-determines-the-set-of-tests-and-targets-the-try-bots-run-"><strong>5.16 </strong>What determines the set of tests and targets the try bots run?</a></li></ol></li></ol></div></div></div></div><span style="font-size:10pt;background-color:transparent">See also: </span><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/commit-queue-overview" style="font-size:10pt;background-color:transparent">Chromium OS Commit Queue</a><span style="font-size:10pt;background-color:transparent">.</span><div><h2><a name="TOC-What-is-it-"></a>What (is it)?</h2>
+<div>It's a service (aka a bot) that commits <a href="http://code.google.com/p/rietveld/" target="_blank">rietveld</a> changes for you, instead of your <a href="https://www.chromium.org/developers/contributing-code/direct-commit">directly committing</a> the change. <span style="font-size:10pt">It is enabled for the following projects:</span></div>
+<div>
+<ul><li>Chromium changes under <a href="http://src.chromium.org/viewvc/chrome/trunk/src/">chrome/trunk/src</a></li>
+<li>Chromium tools changes under <a href="http://src.chromium.org/viewvc/chrome/trunk/tools/">chrome/trunk/tools</a>, including build, depot_tools, etc.</li>
+<li>Chromium third parties fetched through DEPS under <a href="http://src.chromium.org/viewvc/chrome/trunk/deps/">chrome/trunk/deps</a>.</li>
+<li>Native Client at <a href="http://src.chromium.org/viewvc/native_client/trunk/src/native_client/">native_client</a></li>
+<li>Blink changes under <a href="https://src.chromium.org/viewvc/blink/trunk">blink/trunk</a></li><li>Skia changes under <a href="https://skia.googlesource.com/skia/+/master" target="_blank">skia/master</a></li></ul>...but not GYP, for instance.</div><div><br />
+<div>If you check the box for a project that is not handled, it will simply not be committed. So the "base url" must be set on your CL.</div>
+</div>
+<h2><a name="TOC-Design-document"></a>Design document</h2>
+<div>The <a href="https://www.chromium.org/developers/testing/commit-queue/design">design doc is in its own page</a> and there's a design doc about the <a href="https://www.chromium.org/developers/testing/commit-queue/integration-with-rietveld">Try Server &lt;-&gt; Rietveld &lt;-&gt; Commit Queue 3-way integration</a>.</div>
+<h2><a name="TOC-How-does-it-work-"></a>How (does it work)?</h2>
+The commit queue is not really a queue at the moment, since it processes the changes <b>out of order</b>. This may be changed eventually. This means a CL can be committed before another CL that was triggered much later. This can happen when a try job is flaky.
+<div>
+<div>
+<h3><a name="TOC-Current-process-for-the-user"></a>Current process for the user</h3>
+<div>
+<ol><li>Upload a review to rietveld where it gets reviewed and LGTM'ed.</li>
+<li>One of:</li>
+<ol><li>Check (select) the 'Commit' checkbox on a Rietveld issue, on the particular patchset that has been approved. Checking the checkbox is the only action required and there will be no immediate feedback in the form of messages, etc, to notify you that something has happened.</li>
+<ul><li>Only the issue owner, someone at @chromium.org or @google.com can check the box.</li>
+<li>Yes, <b>non-Chromium committers are allowed </b>to use the commit queue but cannot LGTM a change.</li></ul>
+<li>At the command line, type <code>git cl set_commit</code></li>
+<li>Have a reviewer use 'Quick LGTM &amp; CQ'.</li>
+</ol>
+<li>Wait an hour. The current list of patches to be queued can be found at <a href="https://codereview.chromium.org/search?closed=3&amp;commit=2">Commit Queue Patches</a>, while CQ progress can be tracked at <a href="https://chromium-status.appspot.com/cq/me">Commit Queue Progress</a>. The commit queue will wait automatically for the tree to reopen.</li>
+<li>Wait for an email from commit-bot@chromium.org with success or failure.</li>
+</ol>
+<h2><a name="TOC-Why-is-it-broken-"></a>Why (is it broken)?</h2>
+<div>
+<div>Please follow these general guidelines:</div>
+<div>
+<ol><li><b style="font-size:10pt">Please report issues to chrome-troopers@google.com .</b><span style="font-size:10pt"><br />In particular, if a try job result fails for a reason unrelated to your CL, please email troopers with a link to the failed build: click on the red bubble and copy that URL; for extra credit copy-paste the failing step. For manually run try jobs you can just forward the failure mail, while for CQ failures you need to do it yourself at present.</span></li>
+<li>If you have a feature request, feel free to file a bug, use label Build-CommitQueue. Be sure to search for <a href="http://code.google.com/p/chromium/issues/list?q=label:Build-CommitQueue">current feature requests</a> first.</li>
+<li>If you feel the try server is too slow, start with <a href="http://crbug.com/109763">http://crbug.com/109763</a>. Be sure to assign the bug to yourself first.</li>
+</ol>
+</div>
+</div>
+<h2><a name="TOC-Options"></a>Options</h2><div><div><font face="courier new, monospace"><span style="background-color:rgb(255,242,204)"><div class="sites-codeblock sites-codesnippet-block"><code>COMMIT=false</code></div></span></font></div><div><span style="font-size:10pt;background-color:transparent">If you are working on experimental code and do not want to risk accidentally submitting it via the CQ, then you can mark it with "COMMIT=false". The CQ will immediately abandon the change if it contains this option.</span></div><div><span style="font-size:10pt;background-color:transparent">To dry run through the CQ please use Rietveld's <a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/G5-X0_tfmok" target="_blank">dry run</a> feature.</span></div><div><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>TBR=&lt;username&gt;</code><code> </code></div>This stands for "to be reviewed". If a change has a TBR line with a valid reviewer, the CQ will skip checks for LGTMs. See <a href="http://www.chromium.org/developers/owners-files#TOC-When-to-use-To-Be-Reviewed-TBR-">guidelines</a> of when it's acceptable to use this.</div><div><br /></div><div><div style="font-size:13.3333330154419px"><div class="sites-codeblock sites-codesnippet-block"><code>NOPRESUBMIT=true</code></div></div><div style="font-size:13.3333330154419px">If you <span style="font-size:13.3333330154419px">want to skip the presubmit check</span> you can add this line <span style="font-size:10pt;background-color:transparent">and the commit queue won't run the presubmit for your change. This should only be used when there's a bug in the PRESUBMIT scripts. Please check that there's a bug filed against the bad script, and if there isn't, file one.</span></div></div><div><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>NOTRY=true</code></div></div><div><div>This should only be used for reverts to green the tree, since it skips try bots and might therefore break the tree. You shouldn't use this otherwise.</div></div><div><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>NOTREECHECKS=true</code></div></div><div><div>If you want to skip the tree status checks, so the CQ will commit a CL even if the tree is closed, add this line to the CL description. <span style="font-size:10pt;background-color:transparent">Obviously this is strongly discouraged, since the tree is closed for a reason. However, in rare cases this is acceptable, primarily to fix build breakages (i.e., your CL will help in reopening the tree).</span></div></div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><div class="sites-codeblock sites-codesnippet-block" style="font-size:13.3333330154419px"><code>NO_DEPENDENCY_CHECKS=true</code></div><span style="background-color:transparent"><div><span style="font-size:10pt;background-color:transparent">The CQ rejects patchsets with open dependencies. </span><span style="background-color:transparent">An open dependency exists when </span><span style="font-size:10pt;background-color:transparent">a CL </span><span style="font-size:10pt;background-color:transparent">depends on another CL that is not yet closed. </span><span style="font-size:10pt;background-color:transparent">You can skip this check with this keyword.</span></div></span></div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><div><div class="sites-codeblock sites-codesnippet-block"><code>CQ_INCLUDE_TRYBOTS=&lt;trybots&gt;</code></div><span style="font-size:10pt;background-color:transparent">This flag allows you to specify some additional bots to run for this CL, in addition to the default bots. </span><span style="font-size:10pt;background-color:transparent">The format for the list of trybots is "master:trybot1,trybot2;master2:trybot3". </span><span style="font-size:10pt;background-color:transparent">This feature only works for recipe based bots right now.</span></div></div></div>
+<h3><a name="TOC-Is-the-CQ-broken-"></a>Is the CQ broken?</h3>
+<div>Take a look at <a href="https://codereview.chromium.org/search?closed=3&amp;commit=2&amp;limit=100&amp;order=modified">https://codereview.chromium.org/search?closed=3&amp;commit=2&amp;limit=100&amp;order=modified</a>. If there are issues older than ~4 hours, they could probably be stuck. Note that the Commit Queue could be stuck only for some issues but not all of them. In case of doubt, contact commit-bot@chromium.org.</div>
+<div><br />
+</div>
+<div>If your CL hasn't been touched after a few minutes of checking the CQ bit, CHECK THE BASE URL ON YOUR ISSUE. If it's not something like <code>svn.chromium.org</code>, <code>src.chromium.org</code>, <code>git.chromium.org</code>, it's likely to be ignored by the Commit Queue. It usually happens for git users with a non-standard remote, fix your upstream branch and create a new issue.</div>
+<h3><a name="TOC-The-CQ-seems-hung"></a>The CQ seems hung</h3>
+<div>Is the tree open?</div>
+<div><span style="font-size:10pt">It commits </span><b style="font-size:10pt">4 CLs every 8 minutes</b><span style="font-size:10pt">, so a maximum rate of 30 commits per hour.</span></div>
+<h3><a name="TOC-Please-Help-I-just-want-to-ask-on-irc-"></a>Please Help! I just want to ask on irc !</h3>
+<div>Please report issues to chrome-troopers@google.com .</div>
+<h3><a name="TOC-My-patch-failed-to-apply"></a>My patch failed to apply</h3>
+<div>See the <a href="https://www.chromium.org/developers/testing/try-server-usage">Try Server FAQ</a>.</div>
+<h3><a name="TOC-What-about-LKGR-"></a>What about LKGR?</h3>
+<div>The Commit Queue has never known, used or cared about LKGR. It always uses HEAD, the tip of tree.</div>
+<h3><a name="TOC-Where-is-the-dashboard-"></a>Where is the dashboard?</h3>
+<div>It's at <a href="https://chromium-status.appspot.com/cq">https://chromium-status.appspot.com/cq</a>. You can go to <a href="https://chromium-status.appspot.com/cq/me">https://chromium-status.appspot.com/cq/me</a> to see yours directly.</div>
+<h3><a name="TOC-What-s-my-position-on-the-queue-"></a>What's my position on the queue?</h3>
+<div>The CLs are processed out of order, so it's not because another is "before" yours that means it'll be committed before yours. You can see the load on the CQ by looking at the number of tests CLs pending:</div>
+<div><a href="https://codereview.chromium.org/search?closed=3&amp;commit=2&amp;limit=1000&amp;order=modified">https://codereview.chromium.org/search?closed=3&amp;commit=2&amp;limit=1000&amp;order=modified</a></div>
+<h3><a name="TOC-Sending-a-TBR-patch-fast"></a>Sending a TBR patch fast</h3>
+<div>You can't wait for review? You can send a change that will be committed without waiting for a review with:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git fetch origin</code></div>
+<div><code>git checkout -b work_fast origin/master</code></div>
+<div><code># Quick, write your fix.</code></div>
+<div><font color="#006000" face="monospace">echo "A copy is available for 100000$USD upon request." &gt;&gt; LICENSE</font></div>
+<div><font color="#006000" face="monospace">git commit -a -m "Fix the license, show new opportunities</font></div>
+<div><font color="#006000" face="monospace"><br />
+</font></div>
+<div><font color="#006000" face="monospace">TBR=danny@chromium.org</font></div>
+<div><font color="#006000" face="monospace">"</font></div>
+<div><code>git cl upload --send-mail -c</code></div>
+</div>
+<div>
+<div><br />
+</div>
+<div>This'll still check for try jobs; see the next section if you can't wait for them, either.</div>
+<div><br />
+</div>
+<div>The important part is to have <b>TBR</b>=foo@chromium.org in the CL description.</div>
+<ul><li><code>--send-mail</code> sends an email right away.</li>
+<li><code>-c</code> sets the commit bit right away, short for <code>--use-commit-queue</code>.</li>
+<li><code>--cc joe@chromium.org,hppo@chromium.org</code> to cc more people instead of putting everyone as reviewer.</li></ul>
+</div>
+<div>Now, did you know there's <code>git cl help upload</code>?</div></div><div><h3><a name="TOC-Sending-CL-through-CQ-in-dry-run-mode"></a><font size="3">Sending CL through CQ in dry-run mode</font></h3></div><div><span style="font-size:13.3333330154419px">To dry run through the CQ please use Rietveld's </span><a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/G5-X0_tfmok" style="font-size:13.3333330154419px" target="_blank">dry run</a><span style="font-size:13.3333330154419px"> feature.</span></div><div><h3><a name="TOC-Picking-custom-trybots"></a><b><font size="3">Picking custom trybots</font></b></h3><div>See the CQ_INCLUDE_TRYBOTS option, above.</div>
+<h3><a name="TOC-Try-job-results-aren-t-showing-up-consistently-on-Rietveld"></a>Try job results aren't showing up consistently on Rietveld</h3>
+<div>If you never had a HTTP 500 on GAE, chances are that <a href="http://code.google.com/status/appengine">you will</a>.</div>
+<h3><a name="TOC-Binary-files-"></a>Binary files?</h3>
+<div>Yes, binary file are supported by try jobs as well as CQ now! Except for PNG files: <a href="http://crbug.com/339068" target="_blank">bug 339068</a>.</div><div>This used to be a bigger problem in the past, but was fixed in <a href="https://code.google.com/p/chromium/issues/detail?id=23608">bug 23608</a>.</div>
+</div>
+</div>
+<h3><a name="TOC-My-CL-has-a-bazillion-files-will-it-blend-"></a>My CL has a bazillion files, will it blend?</h3>
+<div>The CQ was able to commit a CL with 838 files so it is technically possible; <a href="https://codereview.chromium.org/12261012/">https://codereview.chromium.org/12261012/</a>. The likelihood of the CQ failing increases exponentially with the number of files in the CL.</div>
+<h3><a name="TOC-Moving-renaming-or-copying-files"></a>Moving, renaming or copying files</h3>
+<div>Was implemented in <a href="https://code.google.com/p/chromium/issues/detail?id=125984">bug 125984</a> and <a href="https://code.google.com/p/chromium/issues/detail?id=125983" style="font-size:10pt">bug 125983</a><span style="font-size:10pt">. If the diff on Rietveld doesn't look right, use the </span><code style="font-size:10pt">--similarity</code><span style="font-size:10pt"> (defaults to 50%) and disable/enable file copy with </span><code style="font-size:10pt">--find-copies</code><span style="font-size:10pt">/</span><code style="font-size:10pt">--no-find-copies</code><span style="font-size:10pt">. In case of confusing;</span></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git cl help</code></div>
+<div><code>man git diff</code></div>
+</div>
+<h3><a name="TOC-Are-CQ-users-required-to-be-around-when-the-patch-is-landed-"></a>Are CQ users required to be around when the patch is landed?</h3>
+<div>In general, no, as the CQ can land at any time (including very long time), and any breaking patches can be kicked about by the sheriff. After all, that's the job of the sheriff. You will get an email when the CQ commits, so you can jump on your nearest laptop if necessary.</div>
+<div><br />
+</div>
+<div>If you expect your patch to be hard to revert, is touching several files and directories or move files around, you may want to stay around in case there is an incremental build failure or something hard to diagnose.</div>
+<div><br />
+</div>
+<div>Also, if you commit on the weekend, don't expect a build sheriff to back out your crap so keep an eye open when you receive the CQ commit email.</div><div><br /></div><h3><a name="TOC-What-determines-the-set-of-tests-and-targets-the-try-bots-run-"></a>What determines the set of tests and targets the try bots run?</h3><div>This is controlled by a config file (<a href="http://chromium.googlesource.com/chromium/src/+/master/testing/buildbot/chromium_trybot.json">chromium_trybot.json</a> for most trybots). Also see this <a href="https://www.chromium.org/developers/testing/commit-queue/chromium_trybot-json">document</a> for details on the analyze step.</div>
+</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(3):</span>
+<span>
+<a href="/developers/testing/commit-queue/chromium_trybot-json" dir="ltr">Analyze step(s)</a>
+</span>
+<span>
+<a href="/developers/testing/commit-queue/integration-with-rietveld" dir="ltr">Design: 3-way Integration with Rietveld and the Try Server</a>
+</span>
+<span>
+<a href="/developers/testing/commit-queue/design" dir="ltr">Design doc: Chromium Commit queue</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/testing/commit-queue">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ttKrgjuET3OPT9seHTtxcQOduyZ_cTvDKXHwqa8v7UGD9fKi3VHZROz-mlcKYLCMsBP4QvQylaQcNOIL8NNYPJvcTekW2DIP1cPat_qe1GTlg-4i/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

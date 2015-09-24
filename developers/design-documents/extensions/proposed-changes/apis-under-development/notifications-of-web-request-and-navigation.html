@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../../../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/extensions","deleted":false,"title":"Extensions","dir":"ltr"},{"path":"/developers/design-documents/extensions/proposed-changes","deleted":false,"title":"Proposed \u0026 Proposing New Changes","dir":"ltr"},{"path":"/developers/design-documents/extensions/proposed-changes/apis-under-development","deleted":false,"title":"API Proposals (New APIs Start Here)","dir":"ltr"},{"path":"/developers/design-documents/extensions/proposed-changes/apis-under-development/notifications-of-web-request-and-navigation","deleted":false,"title":"Notifications of Web Request and Navigation","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/extensions/proposed-changes/apis-under-development/notifications-of-web-request-and-navigation\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/extensions/proposed-changes/apis-under-development","parentWuid":"wuid:gx:4a1283b73b239cf","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Notifications of Web Request and Navigation","locale":"en","wuid":"wuid:gx:7067af2d0ecf09a8","revision":16,"path":"/developers/design-documents/extensions/proposed-changes/apis-under-development/notifications-of-web-request-and-navigation","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"notifications-of-web-request-and-navigation","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Notifications of Web Request and Navigation - The Chromium Projects" />
+<meta itemprop="name" content="Notifications of Web Request and Navigation - The Chromium Projects" />
+<meta property="og:title" content="Notifications of Web Request and Navigation - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../../../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../../../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Notifications of Web Request and Navigation - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../../../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../../../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../../../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../../../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../../../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../../../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../../../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../../../../design-documents.1.html" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="../../../extensions.1.html" dir="ltr">Extensions</A>‎ &gt; ‎<A href="../../proposed-changes.1.html" dir="ltr">Proposed &amp; Proposing New Changes</A>‎ &gt; ‎<A href="../apis-under-development.1.html" dir="ltr">API Proposals (New APIs Start Here)</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Notifications of Web Request and Navigation</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h2><a name="TOC-Overview"></a>Overview</h2>
+<div>This document describes the following API:</div>
+<div>
+<ul><li><a href="http://code.google.com/chrome/extensions/trunk/experimental.webRequest.html">chrome.webRequest</a>: Monitors events of HTTP requests.</li>
+<li><a href="http://code.google.com/chrome/extensions/trunk/experimental.webNavigation.html">chrome.webNavigation</a>: Monitors events of navigations happening in tab content windows as well as subframes (iframe / frame elements).</li></ul>
+</div>
+<h2><a name="TOC-Use-cases"></a>Use cases</h2>
+<div>An API of detailed Web progress notifications can be used to log traffic data, measure browser performance, etc. Please note that this requirement has been listed in the <a href="http://dev.chromium.org/developers/design-documents/extensions/apiwishlist">API Wish List</a> (the Network item).</div><div><ul><li>Configure proxy for each request.</li><li>Modify headers (e.g. change User-Agent:).</li><li>Block requests to certain servers.</li><li>Log traffic data and measure performance.</li></ul></div>
+<h2><a name="TOC-Could-this-API-be-part-of-the-web-p"></a>Could this API be part of the web platform?</h2>
+<div>To the best of my knowledge, it could not.</div>
+<h2><a name="TOC-Do-you-expect-this-API-to-be-fairly"></a>Do you expect this API to be fairly stable?</h2>
+<div>I think the API will be fairly stable, since the way how HTTP works, as well as how the browser handles Web page navigations, is mature and stable. However, as described in the Open questions section, there may be some improvements in the future.</div>
+<h2><a name="TOC-What-UI-does-this-API-expose-"></a>What UI does this API expose?</h2>
+<div>The API doesn’t expose any UI.</div>
+<h2><a name="TOC-How-could-this-API-be-abused-"></a>How could this API be abused?</h2>
+<div>There may be privacy issues since extensions can collect detailed information about network traffic via this API.</div>
+<h2><a name="TOC-How-would-you-implement-your-desire"></a>How would you implement your desired features if this API didn't exist?</h2>
+<div>Without this API,</div>
+<div>
+<ul><li>I probably cannot monitor HTTP requests.</li>
+<li>To monitor Web navigation events, I would use chrome.tabs.onUpdated, chrome.{tabs,windows}.onCreated and inject content scripts to monitor subframe navigations. But there are still things I cannot know about, e.g., when a navigation is about to occur, accurate timestamp of events, transition type of a navigation, etc.</li></ul>
+</div>
+<h2><a name="TOC-Draft-API-spec"></a>Draft API spec</h2>
+<h3><a name="TOC-Manifest"></a>Manifest</h3>
+<div>In order to use chrome.webRequest or chrome.webNavigation, the "web_progress" permission has to be declared in the permissions section of the extension manifest.</div>
+<div><br />
+</div>
+Moreover, if you would like to receive extra information along with chrome.webRequest.* (please see the description of extraInfoSpec), you need to add hosts (or host match patterns) to the permissions section as well. You can only request extra information for URLs whose hosts are specified in the permissions section. For example:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>{</code><br />
+<code><span>    </span>"name": "My extension",</code><br />
+<code><span>    </span>...</code><br />
+<code><span>    </span>"permissions": [</code><br />
+<code><span><span>    </span>    </span>"web_progress",</code><br />
+<code><span><span>    </span>    </span>"http://www.google.com/"</code><br />
+<code><span>    </span>],</code><br />
+<code><span>    </span>...</code><br />
+<code>}</code><br />
+<br />
+<code>// This isn’t allowed since it requests extra information for any URL.</code><br />
+<code>chrome.webRequest.onBeforeRequest.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, null, ["requestHeaders"]);</code><br />
+<br />
+<code>// This is allowed.</code><br />
+<code>chrome.webRequest.onBeforeRequest.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, {urls: ["http://www.google.com/foo*bar"]},</code>
+<div><code><span>    </span>["requestHeaders"]);</code><br />
+<br />
+<code>// This is allowed too, since it doesn’t request any extra information.</code><br />
+<code>chrome.webRequest.onBeforeRequest.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, {urls: ["http://www.youtube.com/*"]});</code></div>
+</div>
+<div>
+<h3><a name="TOC-chrome.webRequest"></a>chrome.webRequest</h3>
+<h4><a name="TOC-Events"></a><b>Events</b></h4>
+<h4><a name="TOC-onBeforeRequest"></a>onBeforeRequest</h4>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>chrome.webRequest.onBeforeRequest.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, RequestFilter filter,</code></div>
+<div><code><span>    </span>array of string extraInfoSpec); </code><br />
+</div>
+</div>
+<br />
+Fires when a request is about to occur. This is sent before any TCP connection is made. <br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">The ID of the request. Request IDs are unique within a browser session. As a result, they could be used to relate different events of the same request.</blockquote>
+</blockquote>
+<div></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>method (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Standard HTTP method.</div>
+</blockquote>
+</blockquote>
+<div></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the request takes place. Set to null if the request isn’t related to a tab.</div>
+</blockquote>
+</blockquote>
+<div></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>type (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to the request types below for detailed explanation.</div>
+</blockquote>
+</blockquote>
+<div></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the browser was about to make the request.</div>
+</blockquote>
+</blockquote>
+<div></div>
+<div><b><i>filter (optional RequestFilter)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to RequestFilter in the Types section for detailed explanation.</div>
+</blockquote>
+<div><b><i>extraInfoSpec (optional array of string)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Extra information that needs to be passed into the callback function. Each element of extraInfoSpec requires a corresponding string property being added to the details object. Array elements can be:</div></blockquote><div><ul><ul><li><b>"blocking"</b></li></ul></ul><div><b><span style="font-weight:normal"><div><h4><a name="TOC-onBeforeSendHeaders"></a>onBeforeSendHeaders</h4></div><div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px"><div><code style="color:rgb(0,96,0)">chrome.webRequest.onBeforeSendHeaders.addListener(</code><br /><code style="color:rgb(0,96,0)"><span>    </span>function(object details) { ... }, RequestFilter filter,</code></div><div><code style="color:rgb(0,96,0)"><span>    </span>array of string extraInfoSpec); </code><br /></div></div><br />Fires when an HTTP request is about to occur. This may occur after a TCP connection is made to the server, but before any HTTP data is sent. The HTTP request headers are available at this point.<br /><div><b>Parameters</b></div><div><b><i>details (object)</i></b></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div><b><i>requestId (integer)</i></b></div></blockquote><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">The ID of the request. Request IDs are unique within a browser session. As a result, they could be used to relate different events of the same request.</blockquote></blockquote><div></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div><b><i>url (string)</i></b></div></blockquote><div></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div><b><i>timeStamp (Date)</i></b></div></blockquote><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div>The time when the browser was about to make the request.</div></blockquote></blockquote><div></div><div><b><i>filter (optional RequestFilter)</i></b></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div>Please refer to RequestFilter in the Types section for detailed explanation.</div></blockquote><div><b><i>extraInfoSpec (optional array of string)</i></b></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div>Extra information that needs to be passed into the callback function. Each element of extraInfoSpec requires a corresponding string property being added to the details object. Array elements can be:</div></blockquote><div><ul><ul><li><b>"requestLine"</b></li><li><b>"requestHeaders"</b></li><li><b>"blocking"</b></li></ul></ul></div></span></b></div>
+</div>
+<h4><a name="TOC-onRequestSent"></a>onSendHeaders</h4>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webRequest.onSendHeaders.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, RequestFilter filter,</code><br />
+<code><span>    </span>array of string extraInfoSpec);</code><br />
+</div>
+<br />
+Fires just before the headers are sent to the server (after all users of the webrequest api had a chance to modify the request in onBeforeSendHeaders).<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the request.</div>
+</blockquote>
+</blockquote>
+<div></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div></blockquote><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+</blockquote>
+</blockquote>
+<div></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the browser finished sending the request.</div>
+</blockquote>
+</blockquote>
+<div></div>
+<div><b><i>filter (optional RequestFilter)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to RequestFilter in the Types section for detailed explanation.</div>
+</blockquote>
+<div><b><i>extraInfoSpec (optional array of string)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Extra information that needs to be passed into the callback function. Each element of extraInfoSpec requires a corresponding string property being added to the details object. Array elements can be:</div>
+</blockquote>
+<div>
+<ul>
+<ul><li><b>"requestLine"</b></li>
+<li><b>"requestHeaders"</b></li></ul></ul>
+</div>
+<h4><a name="TOC-onHeadersReceived"></a>onResponseStarted</h4>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>chrome.webRequest.onResponseStarted.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, RequestFilter filter,</code></div>
+<div><code><span>    </span>array of string extraInfoSpec);</code></div>
+</div>
+<div><br />
+Fires when the first byte of the response body is received. For HTTP requests, this means that the status line and response headers are available.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the request.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div><div><b><i>ip (string)</i></b></div></blockquote></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div>The server IP address that is actually connected to. Note that it may be a literal IPv6 address.</div></blockquote></div></blockquote><div><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>statusCode (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Standard HTTP status code returned by the server.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the status line and response headers were received.</div>
+</blockquote>
+</blockquote>
+<div><b><i>filter (optional RequestFilter)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to RequestFilter in the Types section for detailed explanation.</div>
+</blockquote>
+<div><b><i>extraInfoSpec (optional array of string)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Extra information that needs to be passed into the callback function. Each element of extraInfoSpec requires a corresponding string property being added to the details object. Array elements can be:</div>
+</blockquote>
+<div>
+<ul>
+<ul><li><b>"statusLine"</b></li>
+<li><b>"responseHeaders"</b></li></ul></ul>
+</div>
+<h4><a name="TOC-onBeforeRedirect"></a>onBeforeRedirect</h4>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webRequest.onBeforeRedirect.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, RequestFilter filter,</code><br />
+<code><span>    </span>array of string extraInfoSpec); </code></div>
+</div>
+<div><br />
+Fires when a server initiated redirect is about to occur.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the request.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The URL of the current request.</div></blockquote></blockquote><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div><b><i>ip (string)</i></b></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div>The server IP address that is actually connected to. Note that it may be a literal IPv6 address.</div></blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>statusCode (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Standard HTTP status code returned by the server.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>redirectUrl (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The new URL.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the browser was about to make the redirect.</div>
+</blockquote>
+</blockquote>
+<div><b><i>filter (optional RequestFilter)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to RequestFilter in the Types section for detailed explanation.</div>
+</blockquote>
+<div><b><i>extraInfoSpec (optional array of string)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Extra information that needs to be passed into the callback function. Each element of extraInfoSpec requires a corresponding string property being added to the details object. Array elements can be:</div>
+</blockquote>
+<div>
+<ul>
+<ul><li><b>"statusLine"</b></li>
+<li><b>"responseHeaders"</b></li></ul></ul>
+</div>
+<h4><a name="TOC-onCompleted"></a>onCompleted</h4>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>chrome.webRequest.onCompleted.addListener(</code><br />
+<code><span>    </span>function(object details) { ... }, RequestFilter filter,</code></div>
+<div><code><span>    </span>array of string extraInfoSpec); </code><br />
+</div>
+</div>
+<br />
+Fires when a request is completed.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the request.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div></blockquote><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div><div><b><i>ip (string)</i></b></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div>The server IP address that is actually connected to. Note that it may be a literal IPv6 address.</div></blockquote></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>statusCode (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Standard HTTP status code returned by the server.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the response was received completely.</div>
+</blockquote>
+</blockquote>
+<div><b><i>filter (optional RequestFilter)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to RequestFilter in the Types section for detailed explanation.</div>
+</blockquote>
+<div><b><i>extraInfoSpec (optional array of string)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Extra information that needs to be passed into the callback function. Each element of extraInfoSpec requires a corresponding string property being added to the details object. Array elements can be:</div>
+</blockquote>
+<div>
+<ul>
+<ul><li><b>"statusLine"</b></li>
+<li><b>"responseHeaders"</b></li></ul></ul>
+</div>
+<h4><a name="TOC-onErrorOccurred"></a>onErrorOccurred</h4>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>chrome.webRequest.onErrorOccurred.addListener(</code></div>
+<div><span style="border-collapse:collapse"><span style="border-collapse:separate"><code>    function(object details) { ... }, RequestFilter filter);</code></span><br />
+</span></div>
+</div>
+<br />
+Fires when an error occurs.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the request.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div></blockquote><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div><div><b><i>ip (string)</i></b></div><blockquote style="margin-top:0pt;margin-right:0pt;margin-bottom:0pt;margin-left:40px;border-top-width:medium;border-right-width:medium;border-bottom-width:medium;border-left-width:medium;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><div>The server IP address that is actually connected to. Note that it may be a literal IPv6 address.</div></blockquote></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>error (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The error description.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the error occurred.</div>
+</blockquote>
+</blockquote>
+<div><b><i>filter (optional RequestFilter)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Please refer to RequestFilter in the Types section for detailed explanation.</div>
+</blockquote>
+<h4><a name="TOC-Event-order"></a><b>Event order</b></h4>
+<div>For any successful request, events are fired in the following order:</div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="border-collapse:collapse"><span style="border-collapse:separate"><code>onBeforeRequest -&gt; onBeforeSendHeaders[1] -&gt; onSendHeaders -&gt;</code><br />
+<code><span>    </span>(onBeforeRedirect -&gt; onBeforeRequest -&gt; </code></span></span><span style="color:rgb(0,96,0);font-family:monospace">onBeforeSendHeaders[1] -&gt;</span><span style="border-collapse:collapse"><span style="border-collapse:separate"><code> </code></span></span><span style="color:rgb(0,96,0);font-family:monospace">onSendHeaders</span><span style="border-collapse:collapse"><span style="border-collapse:separate"><code> -&gt;)* -&gt;<br />    </code></span></span><span style="color:rgb(0,96,0);font-family:monospace">onResponseStarted -&gt; </span><span style="color:rgb(0,96,0);font-family:monospace">onCompleted</span></div><div class="sites-codeblock sites-codesnippet-block">
+<div></div>
+</div>
+<div><br />
+</div><div>[1] Note: onBeforeSendHeaders is only fired for HTTP requests. It will not be fired for e.g. file:/// URLs.</div><div><br /></div>
+<div>The part enclosed in parentheses indicates that there may be zero or more server initiated redirects.</div>
+<div><br />
+</div>
+<div>Any error that occurs during the process results in an onErrorOccurred event. For a specific request, there is no further events fired after onErrorOccurred.</div>
+<h3><a name="TOC-chrome.webNavigation"></a>chrome.webNavigation</h3>
+<h4><a name="TOC-Events1"></a><b>Events</b></h4>
+<h4><a name="TOC-onBeforeNavigate"></a>onBeforeNavigate</h4>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webNavigation.onBeforeNavigate.addListener(function(object details) { ... }); </code></div>
+<br />
+Fires when a navigation is about to occur.</div>
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the navigation is about to occur.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>frameId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>0 indicates the navigation happens in the tab content window; positive value indicates navigation in a subframe. Frame IDs are unique within a tab.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the request to retrieve the document of this navigation. Note that this event is fired prior to the corresponding chrome.webRequest.onBeforeRequest.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the browser was about to start the navigation.</div>
+</blockquote>
+</blockquote>
+<h4><a name="TOC-onCommitted"></a>onCommitted</h4>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webNavigation.onCommitted.addListener(function(object details) { ... });</code></div>
+<br />
+Fires when a navigation is committed. The document (and the resources it refers to, such as images and subframes) might still be downloading, but at least part of the document has been received from the server and the browser has decided to switch to the new document.</div>
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the navigation occurs.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><i><b>url (string)</b></i></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>frameId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>0 indicates the navigation happens in the tab content window; positive value indicates navigation in a subframe.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>transitionType (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div><div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Cause of the navigation. Use the same transition types as those defined for <a href="http://code.google.com/chrome/extensions/history.html#transition_types">chrome.history API</a>.<br /></div></blockquote></div><div><b><i>transitionQualifiers (string)</i></b><br /></div></div><div><div style="margin-left:40px">Zero or more transition qualifiers delimited by "|". Please refer to the qualifier values below for detailed explanation.<br /></div></div><div><div><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+</blockquote>
+</div></div></blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the navigation was committed.</div>
+</blockquote>
+</blockquote>
+<h4><a name="TOC-onDOMContentLoaded"></a>onDOMContentLoaded</h4>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webNavigation.onDOMContentLoaded.addListener(function(object details) { ... });</code></div>
+<br />
+Fires when the page’s DOM is fully constructed, but the referenced resources may not finish loading.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the navigation occurs.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>frameId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>0 indicates the navigation happens in the tab content window; positive value indicates navigation in a subframe.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the page’s DOM was fully constructed.</div>
+</blockquote>
+</blockquote>
+<h4><a name="TOC-onCompleted1"></a>onCompleted</h4>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webNavigation.onCompleted.addListener(function(object details) { ... });</code></div>
+<br />
+Fires when a document, including the resources it refers to, is completely loaded and initialized.</div>
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the navigation occurs.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>frameId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>0 indicates the navigation happens in the tab content window; positive value indicates navigation in a subframe.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the document finished loading.</div>
+</blockquote>
+</blockquote>
+<h4><a name="TOC-onErrorOccurred1"></a>onErrorOccurred</h4>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webNavigation.onErrorOccurred.addListener(function(object details) { ... });</code></div>
+<br />
+Fires when an error occurs.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the navigation occurs.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>url (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>frameId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>0 indicates the navigation happens in the tab content window; positive value indicates navigation in a subframe.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>error (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The error description.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the error occurred.</div>
+</blockquote>
+</blockquote>
+<h4><a name="TOC-onBeforeRetarget"></a>onBeforeRetarget</h4>
+<div class="sites-codeblock sites-codesnippet-block"><code>chrome.webNavigation.onBeforeRetarget.addListener(function(object details) { ... });</code></div>
+<br />
+Fires when a new window, or a new tab in an existing window, is about to be created to host a navigation.<br />
+<div><b>Parameters</b></div>
+<div><b><i>details (object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>sourceTabId (integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which the navigation is triggered.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>sourceUrl (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The URL of the document that is opening the new window.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>targetUrl (string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The URL to be opened in the new window.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>timeStamp (Date)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The time when the browser was about to create a new view.</div>
+</blockquote>
+</blockquote>
+<h4><a name="TOC-Event-order1"></a><b>Event order</b></h4>
+<div>For a navigation that is successfully completed, events are fired in the following order:</div>
+<div class="sites-codeblock sites-codesnippet-block"><code>onBeforeNavigate -&gt; onCommitted -&gt; onDOMContentLoaded -&gt; onCompleted </code></div>
+<br />
+Any error that occurs during the process results in an onErrorOccurred event. For a specific navigation, there is no further events fired after onErrorOccurred.<br />
+<div><br />
+</div>
+<div>Note that it is possible that a new navigation occurs in the same frame before the former navigation completes. As a result, even if a navigation proceeds successfully, the event sequence doesn’t necessarily end with an onCompleted.</div>
+<div><br />
+</div>
+<div>If a navigating frame contains subframes, its onCommitted is fired before any of its children’s onBeforeNavigate; while its onCompleted is fired after any of its children’s onCompleted.</div>
+<h3><a name="TOC-Types"></a>Types</h3>
+<h4><a name="TOC-Request-types"></a>Request types</h4>
+<div>How the requested resource will be used.</div>
+<div>
+<ul><li><b>"main_frame"</b>: The resource is the document of a tab content window.</li>
+<li><b>"sub_frame"</b>: The resource is the document of a subframe (iframe or frame).</li>
+<li><b>"stylesheet"</b>: The resource is a CSS stylesheet.</li>
+<li><b>"script"</b>: The resource is an external script.</li>
+<li><b>"image"</b>: The resource is an image (jpg/gif/png/etc).</li>
+<li><b>"object"</b>: The resource is an object (or embed) tag for a plugin, or a resource that a plugin requested.</li>
+<li><b>"other"</b>: Other kinds of resource.</li></ul>
+</div>
+<h4><a name="TOC-Transition-qualifier-values"></a>Transition qualifier values</h4>
+<div>Any transition type can be augmented by qualifiers, which further define the navigation.<br /></div>
+<div>
+<ul><li><b>"client_redirect"</b>: Redirects caused by JavaScript or a meta refresh tag on the page.</li>
+<li><b>"server_redirect"</b>: Redirects sent from the server by HTTP headers.</li>
+<li><b>"forward_back"</b>: Users use Forward or Back button to navigate among browsing history.</li></ul>
+</div>
+<h4><a name="TOC-RequestFilter"></a>RequestFilter</h4>
+<div><b><i>(object)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>urls (optional array of string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Each element is a URL or URL pattern. Please refer to <a href="http://code.google.com/chrome/extensions/dev/match_patterns.html">content script match patterns</a> for URL pattern definition. Requests that cannot match any of the URLs will be filtered out.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>types (optional array of string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Each element is a request type described above. Requests that cannot match any of the types will be filtered out.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>tabId (optional integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the tab in which requests takes place.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>windowId (optional integer)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The ID of the window in which requests takes place.</div>
+</blockquote>
+</blockquote>
+<h2><a name="TOC-Open-questions"></a>Open questions</h2>
+<h3><a name="TOC-Accessing-request-and-response-bodi"></a>Accessing request and response bodies from extensions?</h3>
+<div>We could support extensions to specify "requestBody" element in the extraInfoSpec array of chrome.webRequest.onBeforeRequest (or onRequestSent), so that an extra property, requestBody, will be added to the details object passed into the event handler. Similarly, we could support extensions to ask for responseBody, too.</div>
+<div><br />
+</div>
+<div>Both requestBody and responseBody are EntityBody objects.</div>
+<h4><a name="TOC-EntityBody"></a>EntityBody</h4>
+<h4><a name="TOC-Methods"></a><b>Methods</b></h4>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>readBytes(integer length, boolean wait, function callback) </code></div>
+</div>
+<div><br />
+</div>
+<div><b>Parameters</b></div>
+<div><b><i>length (integer)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>How many bytes to read.</div>
+</blockquote>
+<div><b><i>wait (boolean)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>If wait is set to false, the browser will respond as soon as possible, returning the bytes it has got currently; otherwise, it won’t invoke the callback function until it collects enough bytes or reaches the end of the entity body.</div>
+</blockquote>
+<div><b><i>callback (function)</i></b></div>
+<div><br />
+</div>
+<div><b>Callback function</b></div>
+<div>It should specify a function that looks like this:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>function (integer actualLength, string base64EncodedData)</code></div>
+</div>
+<div><br />
+</div>
+<div><b><i>actualLength (integer)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>The actual number of bytes that are returned. -1 indicates the end of the entity body has been reached or error occurred. Please note that 0 doesn’t indicate the end of the entity body, if the wait parameter of readBytes() is set to false.</div>
+</blockquote>
+<div><b><i>base64EncodedData (string)</i></b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Base64 encoded bytes. Please note that normally the string length of base64EncodedData is different from actualLength.</div>
+</blockquote>
+<div><br />
+</div>
+<div>Some issues need to be considered:</div>
+<ul><li>An important issue is how to manage the lifetime of request bodies and response bodies properly.</li></ul>
+Please consider the following scenario: an extension requests responseBody to be passed into the handler of chrome.webRequest.onCompleted. In the handler, it calls responseBody.readBytes() to read the content. However, since events are asynchronous, the browser fires onCompleted and proceeds immediately. If it finishes using the response body and discards it, the call of responseBody.readBytes() at the extension side may fail, depending on the timing. This is undesired.<br />
+<br />
+As a result, the browser has to properly manage the lifetime of request bodies and response bodies. One possible approach is to keep track of references to each EntityBody object (either requestBody or responseBody). An entity body maybe be accessed by several EntityBody objects, which are passed to different extensions. If all these EntityBody objects are no longer referenced, the browser knows that the entity body is no long needed by any extension, and it is safe to remove it.<br />
+<ul><li>It may be inconvenient to use an EntityBody object directly. We could also provide helper classes. For example, define TextEntityBody class to convert entity body to a text stream:</li></ul>
+<div class="sites-codeblock sites-codesnippet-block"><code>// entityBody is an EntityBody object, which deals with bytes.</code><br />
+<code>var textEntityBody = new TextEntityBody(entityBody, ‘UTF-8’);</code><br />
+<br />
+<code>// textEntityBody calls entityBody.readBytes() and converts the result to text.</code><br />
+<code>textEntityBody.readText(10, true, function (text, reachEnd) {</code><br />
+<code><span>  </span>// Handle text directly.</code><br />
+<code>});</code>
+<div></div>
+</div>
+<h3><a name="TOC-Synchronous-blocking-notifications-"></a>Synchronous (blocking) notifications?</h3>
+<div>The API proposed above is supposed to be asynchronous (non-blocking) notifications. This is consistent with other chrome.* APIs. More importantly, notification publishers / consumers live in different processes. If we block the publisher side for sending each notifications, it may hurt browser performance.</div>
+<div><br />
+</div>
+<div>However, in some cases we would like to affect the control flow in event handlers. (Please note that this has been listed as a requirement on the <a href="http://dev.chromium.org/developers/design-documents/extensions/apiwishlist">API Wish List</a>, the Navigation Interception item.)</div>
+<div><br />
+</div>
+<div>Consider the following use case: in the callback function of chrome.webRequest.onBeforeRequest we may want to cancel the request or modify the request headers. If the notification is asynchronous, the browser fires the notification and immediately makes the request. There is no way for extensions to make a change.</div>
+<div><br />
+</div>
+<div>One possible solution is to design some functions like "installSyncOnXyzHandler" that installs a short snippet of JavaScript to run synchronously within the browser process for the notifications that may need synchronous responses. However, this may not fit with the overall Chrome architecture where we want to avoid running javascript in the browser process; and the JavaScript snippet in the browser process might need to communicate back to the extension for some of its decisions as well.</div>
+<div><br />
+</div>
+<div>Another feasible solution is to add support for browser to wait for a response from an extension. Take chrome.webRequest.onBeforeRequest as an example, we could reform it the extraInfoSpec parameter to accept an optional string <b>"blocking".</b> If present, then the browser needs to be blocked and wait for a response from the callback function.</div><div>
+<div><br />
+</div>
+<div>If blocking is present, the callback function could optionally return an object to cancel or modify the request:</div>
+<div><b>result (optional object)</b></div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>requestLine (optional string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Modified request line.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>reqeustHeaders (optional string)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Modified request headers.</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div><b><i>cancel (optional boolean)</i></b></div>
+</blockquote>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Set to true to cancel the request.</div></blockquote></blockquote><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><b><i>redirectUrl (optional string)</i></b><br /><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px"><div>Redirects the request to a different URL (only available in onBeforeRequest and onBeforeRedirect).</div></blockquote><blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+</blockquote>
+</blockquote>
+<div><br />
+</div>
+<div>The biggest concern is the impact on browser performance. We have to measure the performance impact very carefully if we really want to make the move.</div>
+<h2><a name="TOC-References"></a>References</h2>
+<div>
+<ul><li><a href="http://msdn.microsoft.com/en-us/library/aa768283%28VS.85%29.aspx" rel="nofollow">DWebBrowserEvents2 Interface of IE</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/aa385121%28v=VS.85%29.aspx" rel="nofollow">WinINet Status Callback</a></li>
+<li><a href="https://developer.mozilla.org/en/nsIWebProgressListener" rel="nofollow">nsIWebProgressListener Interface of Firefox</a></li></ul>
+</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/extensions/proposed-changes/apis-under-development/notifications-of-web-request-and-navigation">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../../../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../../../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9Wne32XR2pvzfv6wDk7X_5-O2P-LF_zPazOK3jxK14o8bjh28Umj42UQz8IkxUnzaNZp8dbMEfVfvMSPJ07sCgcJZrzeDgdg27QZkpH1AGS2JiPmo/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

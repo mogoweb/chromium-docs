@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/testing","deleted":false,"title":"Testing Home","dir":"ltr"},{"path":"/chromium-os/testing/running-smoke-suite-on-a-vm-image","deleted":false,"title":"Running Smoke Suite On a VM Image","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/testing/running-smoke-suite-on-a-vm-image\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/testing","parentWuid":"wuid:gx:2e2ee5668f423109","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Running Smoke Suite On a VM Image","locale":"en","wuid":"wuid:gx:41219f7041b7c974","revision":46,"path":"/chromium-os/testing/running-smoke-suite-on-a-vm-image","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"running-smoke-suite-on-a-vm-image","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Running Smoke Suite On a VM Image - The Chromium Projects" />
+<meta itemprop="name" content="Running Smoke Suite On a VM Image - The Chromium Projects" />
+<meta property="og:title" content="Running Smoke Suite On a VM Image - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Running Smoke Suite On a VM Image - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/testing" dir="ltr">Testing Home</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Running Smoke Suite On a VM Image</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><br />
+<div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-Smoke-Suite-tests"><strong>2 </strong>Smoke Suite tests</a></li><li class="goog-toc"><a href="#TOC-Running-the-Smoke-Test-Suite-on-a-Virtual-Machine-VM-"><strong>3 </strong>Running the Smoke Test Suite on a Virtual Machine (VM)</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Useful-Links:"><strong>3.1 </strong>Useful Links:</a></li><li class="goog-toc"><a href="#TOC-Install-qemu-kvm"><strong>3.2 </strong>Install qemu-kvm</a></li><li class="goog-toc"><a href="#TOC-Build-a-testable-VM-image"><strong>3.3 </strong>Build a testable VM image</a></li><li class="goog-toc"><a href="#TOC-Start-a-VM-image"><strong>3.4 </strong>Start a VM image</a></li><li class="goog-toc"><a href="#TOC-Run-the-autotest-tests-on-the-VM-image"><strong>3.5 </strong>Run the autotest tests on the VM image</a></li><li class="goog-toc"><a href="#TOC-Run-the-autotest-tests-on-the-VM-image-using-cros_run_vm_test"><strong>3.6 </strong>Run the autotest tests on the VM image using cros_run_vm_test</a></li><li class="goog-toc"><a href="#TOC-Run-parallel-tests-on-mulitple-VMs-simultaneously"><strong>3.7 </strong>Run parallel tests on mulitple VMs simultaneously</a></li><li class="goog-toc"><a href="#TOC-Troubleshooting"><strong>3.8 </strong>Troubleshooting</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-No-space-left-on-device"><strong>3.8.1 </strong>No space left on device</a></li><li class="goog-toc"><a href="#TOC-Could-not-set-up-host-forwarding-rule-tcp::9222-:22-"><strong>3.8.2 </strong>Could not set up host forwarding rule 'tcp::9222-:22'</a></li><li class="goog-toc"><a href="#TOC-Could-not-initialize-KVM-will-disable-KVM-support"><strong>3.8.3 </strong>Could not initialize KVM, will disable KVM support</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Updating-a-client-autotest"><strong>4 </strong>Updating a client autotest</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-The-new-way:-Use-cros_workon-with-all-Python-tests"><strong>4.1 </strong>The new way: Use cros_workon with all Python tests</a></li><li class="goog-toc"><a href="#TOC-The-old-way:-emerge-individual-autotest-tests"><strong>4.2 </strong>The old way: emerge individual autotest tests</a></li><li class="goog-toc"><a href="#TOC-Debugging"><strong>4.3 </strong>Debugging</a></li></ol></li></ol></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<div>The VMTest "smoke suite" is a suite of client-side autotests that performs basic sanity checks on a Chromium OS build.</div>
+<div>Each of the tests in the smoke test suite is capable of running in a virtual machine.</div>
+<div>
+<div>This allows the smoke suite to be run as part of the automated build process on a 'buildbot'.</div>
+</div>
+<h2><a name="TOC-Smoke-Suite-tests"></a>Smoke Suite tests</h2>
+<div>
+<div>The Smoke suite currently consists of the following tests (this list is subject to change):</div>
+<div>
+<ul><li>build_RootFilesystemSize</li>
+<li>desktopui_ChromeFirstRender</li>
+<li>desktopui_FlashSanityCheck</li>
+<li>desktopui_KillRestart('^chrome$')</li>
+<li>desktopui_KillRestart('^session_manager$')</li>
+<li>logging_CrashSender</li>
+<li>login_Backdoor('$backdoor')</li>
+<li>login_BadAuthentication</li>
+<li>login_CryptohomeIncognitoMounted('$backdoor')</li>
+<li>login_CryptohomeMounted</li>
+<li>login_LoginSuccess</li>
+<li>platform_FilePerms</li>
+<li>platform_OSLimits</li></ul>
+</div>
+</div>
+<h2><a name="TOC-Running-the-Smoke-Test-Suite-on-a-Virtual-Machine-VM-"></a>Running the Smoke Test Suite on a Virtual Machine (VM)</h2>
+<h3><a name="TOC-Useful-Links:"></a>Useful Links:</h3>
+<div>The instructions on this page should be enough to get you going.  They install a testable Chromium OS image on a VM and run the smoke suite.  However, if you want more details, you can always go to one of the following pages:</div>
+<div>
+<ul><li>Building a testable VM image is much like <a href="https://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:5b56b17fe4491592" target="_blank" class="disabled">building other Chromium OS images</a>.</li>
+<li>However, some extra steps are needed to <a href="https://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:7556b613ead2124b" target="_blank" class="disabled">build a test image</a>.</li>
+<li>Once built, a clone of this <a href="http://www.chromium.org/chromium-os/developer-guide#TOC-Building-an-image-to-run-in-a-virtu" target="_blank">image should be created to run in a VM</a>.</li>
+<li>Here are some instructions to <a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/running-chromeos-image-under-virtual-machines" target="_blank">run the image on a VM</a>.</li>
+<li>Here's how to build and run <a href="https://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:5b56b17fe4491592#TOC-Running-Tests-on-a-Virtual-Machine" target="_blank" class="disabled">autotest tests on the VM</a>.</li></ul>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Install-qemu-kvm"></a>Install qemu-kvm</h3>
+<div>First of all, to run in a vm, you must have vm software installed.</div>
+<div>On Ubuntu Lucid, use apt-get to install qemu-kvm:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code><b>$</b> sudo apt-get install </code><span style="font-family:monospace;line-height:16px;color:rgb(0,96,0)">qemu-kvm</span></div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Build-a-testable-VM-image"></a>Build a testable VM image</h3>
+<div>Next, build the testable VM image.  The following steps assume that:</div>
+<ol><li>depot_tools/repo have been installed and configured.</li>
+<li>Chromium OS source code has been checked out.</li>
+<li>A chroot has been created with make_chroot.</li>
+</ol>
+<div>
+<div><br />
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><span style="color:rgb(0,96,0);font-family:monospace"><b>$</b> cros_sdk    # To enter the chroot</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><br />
+</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><i># Setup the build environment for the target board.  </i></span><span style="font-family:monospace;color:rgb(0,96,0)"><i>${BOARD} could be a specific target platform, or x86-generic.</i></span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><b>(chroot)$</b> ./setup_board --board=${BOARD}</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><br />
+</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><i># Build all the source packages, including those required for running autotests</i></span></div>
+<div><code><i># Optional: "--oldchromebinary" may make your build faster, but will have old Chrome/libcros</i></code></div>
+<div><code><i># NOTE: At the moment, "--withautotest" is the default, so don't worry if you built without it.</i></code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><b>(chroot)$</b> ./build_packages </span><span style="font-family:monospace;color:rgb(0,96,0)">--board=${BOARD}</span></div>
+<div><code><br />
+</code></div>
+<div><code><b><span style="font-weight:normal"><b><span style="font-weight:normal"><i># Build a bootable image</i></span></b></span></b></code></div>
+<div><code><b><span style="font-weight:normal"><b><span style="font-weight:normal"><i># Optional: Include "--noenable_rootfs_verification" if you think you might need to modify your rootfs.</i></span></b></span></b></code></div>
+<div><code><b>(chroot)$</b> ./build_image </code><span style="font-family:monospace;color:rgb(0,96,0)">--board=${BOARD} test</span></div>
+<div><font color="#006000" face="monospace"><br />
+</font></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><i># Clone this image, modify it for test, and make image for use in qemu-kvm Virtual Machine</i></span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><i># Note: because we use "--test_image", an explicit "modify_image_for_test" is not required.</i></span></div>
+<div><code><b>(chroot)$</b> ./image_to_vm.sh </code><span style="font-family:monospace;color:rgb(0,96,0)">--board=${BOARD} </span><span style="font-family:monospace;color:rgb(0,96,0)">--test_image</span></div>
+<div><font color="#006000" face="monospace"><br />
+</font></div>
+<div><code><i># Exit chroot</i></code></div>
+<div><code><b>(chroot)$</b> exit</code></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>The newly created VM image should be in the following path (relative to src/scripts):<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>../build/images/${BOARD}/latest/chromiumos_qemu_image.bin</code></div>
+<span style="font-weight:bold"><br />
+</span></div>
+<div>
+<h3><a name="TOC-Start-a-VM-image"></a>Start a VM image</h3>
+<div>Before launching autotests, its fun to boot up a virtual Chromium OS on your desktop!</div>
+<div><br />
+</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code><b>$</b> ./bin/cros_start_vm --image_path=../build/images/${BOARD}/latest/chromiumos_qemu_image.bin</code></div>
+</div>
+<div></div>
+</div>
+<br />
+<div>However, running autotests is much slower when the VM must render graphics (especially without hardware acceleration).  </div>
+<div>So, we typically start kvm in '-nographic' mode, like this:</div>
+<div><br />
+</div>
+</div>
+</div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="line-height:13px">
+<div><b><code>$</code></b><code> </code><code>./bin/cros_start_vm --no_graphics --image_path=../build/images/${BOARD}/latest/chromiumos_qemu_image.bin</code></div>
+<div><br />
+</div>
+<div><code><i># ssh into port 9222 to access the VM</i></code></div>
+<div><b><code>$</code></b><code> </code><code>ssh root@localhost -p 9222 -o StrictHostKeyChecking=no</code></div>
+<div><code><b>Last login: ... from ... on ...</b></code></div>
+<div><code><b>localhost ~ # </b>exit</code></div>
+<div><code>
+</code><div><b>logout</b></div>
+<div><b>Connection to localhost closed.</b></div>
+</div>
+</span></div>
+<div></div>
+</div>
+<div><br />Note that test images have the root password changed to <b>test0000</b>.<br />
+</div>
+<h3><a name="TOC-Run-the-autotest-tests-on-the-VM-image"></a>Run the autotest tests on the VM image</h3>
+<div>Autotests can be run against the VM via test_that.</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="font-family:monospace;color:rgb(0,96,0);line-height:13px"><code><i># Run the entire smoke suite<br />
+</i></code><b><code>(chroot)$</code></b><code> test_that --board=${BOARD} </code><code>localhost:9222 suite:smoke<br />
+<br />
+<i># Run an individual test from the smoke Suite<br />
+<span style="font-style:normal"><b><code style="color:rgb(0,96,0)">(chroot)$</code></b><code style="color:rgb(0,96,0)"> test_that --board=${BOARD} localhost:9222 </code><code style="color:rgb(0,96,0)">logging_CrashSender</code></span></i></code></div>
+</div>
+<div>
+<div><br />
+</div>
+<div>Don't forget to kill the head-less VM when you are done with it!</div>
+<div>
+<div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div>
+<div><b><code style="color:rgb(0,96,0)">$</code></b><code style="color:rgb(0,96,0)"> </code><code style="color:rgb(0,96,0)">ssh root@localhost -p 9222 -o StrictHostKeyChecking=no</code></div>
+<div><code style="color:rgb(0,96,0)"><b>Last login: ... from ... on ...</b></code></div>
+<div><code style="color:rgb(0,96,0)"><b>localhost ~ #</b> shutdown -H 0</code></div>
+</div>
+<div><code style="color:rgb(0,96,0)"><b>localhost ~ #</b> exit</code></div>
+<div><code style="color:rgb(0,96,0)">
+</code><div><b>logout</b></div>
+<div><b><span style="font-weight:normal"><b>Connection to localhost closed.</b></span></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Run-the-autotest-tests-on-the-VM-image-using-cros_run_vm_test"></a>Run the autotest tests on the VM image using cros_run_vm_test</h3>
+<div>Another script, <span style="font-family:monospace;color:rgb(0,96,0);line-height:13px">bin/cros_run_vm_test</span>, can be used to start the VM, run autotest tests on it, and then shut down the VM, all from a single invocation:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><i># Run the entire smoke suite:</i></code></div>
+<div><code><b>$</b> ./bin/cros_run_vm_test --no_graphics --board=${BOARD} suite:smoke</code></div>
+<div><code><br />
+</code></div>
+<div><code><i># Run an individual test from the suite</i></code></div>
+<div><code><b>$</b> ./bin/cros_run_vm_test </code><code>--no_graphics </code><code>--board=${BOARD} platform_OSLimits</code></div>
+<div></div>
+</div>
+<br />
+</div>
+<h3><a name="TOC-Run-parallel-tests-on-mulitple-VMs-simultaneously"></a>Run parallel tests on mulitple VMs simultaneously</h3>
+<div>There is an ton of overhead involved in running a single autotest test.  To help speed things up, it is possible to run multiple tests in parallel, by spawning multiple VMs, each of which is listening on a different SSH port using <code>bin/cros_run_parallel_vm_test.py</code>.</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><i># Run the smoke test suite... in parallel!</i></code></div>
+<div><code><b>$ </b>./bin/cros_run_parallel_vm_tests.py --board=${BOARD} build_RootFilesystemSize desktopui_ChromeFirstRender \</code></div>
+<div><code>desktopui_FlashSanityCheck desktopui_KillRestart logging_CrashSender \</code></div>
+<div><code>login_Backdoor login_BadAuthentication login_CryptohomeIncognitoMounted \</code></div>
+<div><code>login_CryptohomeMounted login_LoginSuccess platform_FilePerms platform_OSLimits</code></div></div><h3><a name="TOC-Troubleshooting"></a>Troubleshooting</h3>
+<div><h4><a name="TOC-No-space-left-on-device"></a>No space left on device</h4></div><div>If you get an error that looks like this:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>Unhandled OSError: [Errno 28] No space left on device: '/home/autotest/tmp/_autotmp_Woz_Qyharness-fifo'</code></div>
+</div>
+<div><br />
+</div>
+<div>...this may be because you have run out of space on your "stateful partition".  This can happen if you leave the VM running for a long time and errors fill up the /var/log folder.  In my case, this folder contained 250M of data!  You should go into /var/log and cleanup stuff.  </div>
+<div><br />
+</div>
+<div>Use <code>df</code> to determine how much space is available in the stateful partition:</div>
+<div><br />
+</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code><b>localhost ~ #</b> df /mnt/stateful_partition</code></div>
+<div><code><b>Filesystem           1K-blocks      Used Available Use% Mounted on</b></code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"><b>/dev/sda1              2064208    450612   1508740  23% /mnt/stateful_partition</b></span></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>You may be getting lots of errors if you're running a board-specific image with drivers for hardware that is not present on the VM.  If this is the case, try stopping the responsible daemon with <code>stop &lt;daemon_name&gt;.<br /></code><h4><a name="TOC-Could-not-set-up-host-forwarding-rule-tcp::9222-:22-"></a>Could not set up host forwarding rule 'tcp::9222-:22'</h4>If you get this error when running cros_start_vm, make sure that you don't have a VM already running. This should kill it for you.<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>sudo pkill -f qemu</code></div><h4><a name="TOC-Could-not-initialize-KVM-will-disable-KVM-support"></a>Could not initialize KVM, will disable KVM support</h4>
+This is probably because you don't have the kvm module loaded. The VM will run.....very.......slowly.<br /><br /><div class="sites-codeblock sites-codesnippet-block"><code>open /dev/kvm: No such file or directory</code><br /><code>Could not initialize KVM, will disable KVM support</code><br /><code>$ modprobe kvm_intel</code><span><code>    </code></span><code># if you have an AMD machine, use 'kvm_amd'<br /></code></div><br />Note that this module interferes with VirtualBox so you may need to remove it (<code>rmmod kvm_intel</code>) if you want to use this. <code><br /></code></div>
+<h2><a name="TOC-Updating-a-client-autotest"></a><span style="font-size:20px;font-weight:bold">Updating a client autotest</span></h2>
+<div>Autotest tests are usually built and compiled on the autotest server machine.</div>
+<div>A 'client' test is installed on the client by the autotest infrastructure when the test is run.</div>
+<div>The autotest infrastructure is maintained in the <span style="font-size:13px;font-weight:normal"><b>chromeos-base/autotest </b></span><span style="font-size:13px;font-weight:normal">cros_workon </span><span style="font-size:13px;font-weight:normal"><a href="http://www.gentoo.org/proj/en/devrel/handbook/handbook.xml?part=2&amp;chap=1" style="color:rgb(0,102,204);outline-style:none">ebuild</a></span>.</div>
+<div>Individual tests and test suites are in the <b>chromeos-base/autotest-tests</b> ebuild.</div>
+<h3><a name="TOC-The-new-way:-Use-cros_workon-with-all-Python-tests"></a><span style="font-weight:bold">The new way: Use cros_workon with all Python tests</span></h3>
+</div>
+<div>Working on all Python autotests should be simple and fast.</div>
+<div>First <code>cros_workon</code> <code>autotest</code> for the board on which you plan to run tests:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><b>$</b> cros_workon start autotest --board=${BOARD}</code></div>
+<div></div>
+</div>
+<br />
+<div>Now, test_that will detect that you are working on autotests and automatically copy over Python in the autotest source tree to the sysroot.</div><div><br /></div><div>Run test_that as usual:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code><b>(chroot)$ </b>test_that </code><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:13px">--board=${BOARD}</span><span style="font-family:monospace;color:rgb(0,96,0)"> </span><code>localhost:9222 </code><span style="font-family:monospace;color:rgb(0,96,0)">suite:smoke</span></div>
+</div>
+<div><br /></div>
+<h3><a name="TOC-The-old-way:-emerge-individual-autotest-tests"></a>The old way: emerge individual autotest tests</h3>
+<div>
+<div>
+<div>If you have a test with binary dependencies, you must rebuild them explicitly:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px"><code style="color:rgb(0,96,0)"><b>(chroot)$</b> emerge-${BUILD} autotest-tests</code></div>
+</div>
+<div><br />
+</div>
+<div>This can take a very, very long time since it will rebuild ALL tests.</div>
+<div>To speed this up, set the TESTS variable on the command line when runnning emerge to install an individual test:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)"><b>(chroot)$ </b>TESTS=&lt;TestName&gt; emerge-${BOARD} autotest-tests</code></div>
+<div></div>
+</div>
+<br />
+<div>Note that doing this will deactivate all other tests!  This is a problem for test suites.</div>
+<div>To rebuild a whole test suite, specify the suite and all individual tests in the suite.  For example, to rebuild smoke suite:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)"><b>(chroot)$ </b>TESTS='build_RootFilesystemSize desktopui_ChromeFirstRender \</code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">desktopui_FlashSanityCheck desktopui_KillRestart logging_CrashSender \<br />
+</span><span style="font-family:monospace;color:rgb(0,96,0)">login_Backdoor login_BadAuthentication login_CryptohomeIncognitoMounted \</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">login_CryptohomeMounted login_LoginSuccess platform_FilePerms </span><span style="font-family:monospace;color:rgb(0,96,0)">platform_OSLimits' \</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">emerge-${BOARD} autotest-tests</span></div>
+<div></div>
+</div>
+<br />
+<div>Then go grab a coffee...</div>
+</div>
+</div>
+<div dir="ltr"><br />
+</div><div dir="ltr"><h3><a name="TOC-Debugging"></a>Debugging</h3><div>You can use <a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-tips#TOC-We-recommend-that-developers-use-gd">chromium os debugging tps</a> on vm as well.</div></div><div dir="ltr"><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/testing/running-smoke-suite-on-a-vm-image">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9L8SPh1P8ySTa7VrUYoyFhQjcWp-654e-TNVQfa3C3Eo7UVoePAlTgwxJfCIfdFH3TEL_dIhpk78m0WCtqJSXacko-3Z8a2mhqaxG1LPkvdN_soOf/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

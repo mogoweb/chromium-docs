@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting","deleted":false,"title":"How Tos and Troubleshooting","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting/kernel-faq","deleted":false,"title":"Kernel FAQ","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/kernel-faq\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/how-tos-and-troubleshooting","parentWuid":"wuid:gx:72ecb36fa9c83ecd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Kernel FAQ","locale":"en","wuid":"wuid:gx:477fb51745f49328","revision":147,"path":"/chromium-os/how-tos-and-troubleshooting/kernel-faq","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"kernel-faq","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Kernel FAQ - The Chromium Projects" />
+<meta itemprop="name" content="Kernel FAQ - The Chromium Projects" />
+<meta property="og:title" content="Kernel FAQ - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Kernel FAQ - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/how-tos-and-troubleshooting" dir="ltr">How Tos and Troubleshooting</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Kernel FAQ</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-What-commit-message-should-I-use-"><strong>1 </strong>What commit message should I use?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Code-Changes"><strong>1.1 </strong>Code Changes</a></li><li class="goog-toc"><a href="#TOC-Configuration-Changes"><strong>1.2 </strong>Configuration Changes</a></li></ol></li><li class="goog-toc"><a href="#TOC-How-do-I-send-a-patch-upstream-"><strong>2 </strong>How do I send a patch upstream?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Sending-patches-the-easy-way-patman-"><strong>2.1 </strong>Sending patches the easy way (patman)</a></li><li class="goog-toc"><a href="#TOC-Sending-patches-manually"><strong>2.2 </strong>Sending patches manually</a></li></ol></li><li class="goog-toc"><a href="#TOC-Which-copyright-header-should-I-use-"><strong>3 </strong>Which copyright header should I use?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-check-my-patches-are-correct-"><strong>4 </strong>How do I check my patches are correct?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Remove-Chromium-OS-specific-Details"><strong>4.1 </strong>Remove Chromium OS-specific Details</a></li><li class="goog-toc"><a href="#TOC-Check-for-Compliance-with-Linux-Kernel-Requirements"><strong>4.2 </strong>Check for Compliance with Linux Kernel Requirements</a></li><li class="goog-toc"><a href="#TOC-Automating-the-Compliance-Checks"><strong>4.3 </strong>Automating the Compliance Checks</a></li></ol></li><li class="goog-toc"><a href="#TOC-How-do-I-backport-an-upstream-patch-"><strong>5 </strong>How do I backport an upstream patch?</a></li><li class="goog-toc"><a href="#TOC-Kernel-Configuration"><strong>6 </strong>Kernel Configuration</a></li><li class="goog-toc"><a href="#TOC-How-to-quickly-test-kernel-modifications-the-fastest-way-"><strong>7 </strong>How to quickly test kernel modifications (the fastest way)</a></li><li class="goog-toc"><a href="#TOC-How-to-quickly-test-kernel-modifications-the-fast-way-"><strong>8 </strong>How to quickly test kernel modifications (the fast way)</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Dealing-with-a-bad-kernel-installation"><strong>8.1 </strong>Dealing with a bad kernel installation</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Dealing-with-partition-corruption-due-to-bad-kernel-recovery"><strong>8.1.1 </strong>Dealing with partition corruption due to bad kernel recovery</a></li></ol></li><li class="goog-toc"><a href="#TOC-Dealing-with-issues---preparing-the-environment"><strong>8.2 </strong>Dealing with issues - preparing the environment</a></li><li class="goog-toc"><a href="#TOC-SSHD-keys"><strong>8.3 </strong>SSHD keys</a></li><li class="goog-toc"><a href="#TOC-Public-key-authorization"><strong>8.4 </strong>Public key authorization</a></li><li class="goog-toc"><a href="#TOC-iptables-configuration"><strong>8.5 </strong>iptables configuration</a></li><li class="goog-toc"><a href="#TOC-Dealing-with-issues---cleaning-up"><strong>8.6 </strong>Dealing with issues - cleaning up</a></li></ol></li><li class="goog-toc"><a href="#TOC-How-to-test-kernel-modifications-the-slow-way-"><strong>9 </strong>How to test kernel modifications (the slow way)</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Testing-with-an-EFI-BIOS"><strong>9.1 </strong>Testing with an EFI BIOS</a></li><li class="goog-toc"><a href="#TOC-Testing-with-a-legacy-BIOS"><strong>9.2 </strong>Testing with a legacy BIOS</a></li></ol></li><li class="goog-toc"><a href="#TOC-Debugging-messages"><strong>10 </strong>Debugging messages</a></li><li class="goog-toc"><a href="#TOC-Working-on-several-kernel-issues"><strong>11 </strong>Working on several kernel issues</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Modifying-H2C-Bios-kernel-command-line"><strong>11.1 </strong>Modifying H2C Bios kernel command line</a></li></ol></li><li class="goog-toc"><a href="#TOC-Installing-onto-SSD"><strong>12 </strong>Installing onto SSD</a></li><li class="goog-toc"><a href="#TOC-Getting-a-Kernel-Trace"><strong>13 </strong>Getting a Kernel Trace</a></li><li class="goog-toc"><a href="#TOC-Loading-Kernel-modules-from-outside-the-root-filesystem"><strong>14 </strong>Loading Kernel modules from outside the root filesystem</a></li><li class="goog-toc"><a href="#TOC-Blacklisting-Kernel-modules-for-individual-overlays"><strong>15 </strong>Blacklisting Kernel modules for individual overlays</a></li><li class="goog-toc"><a href="#TOC-Building-and-installing-kernel-next-on-a-specific-overlay"><strong>16 </strong>Building and installing kernel-next on a specific overlay</a></li></ol></div></div></div></div>
+
+This document describes the basic workflow to follow, after you've made a change to the Linux Kernel in the Chromium OS sources, to submit a your changes to the Chromium OS repository, and to submit your changes upstream to the official Linux Kernel repository.<br />
+<h2><a name="TOC-What-commit-message-should-I-use-"></a>What commit message should I use?</h2><p>See the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/chromium-os-kernel">Kernel Design page</a> for some more details.</p>
+<h3><a name="TOC-Code-Changes"></a>Code Changes</h3>
+<p>For changes which cannot be submitted upstream to the official Linux Kernel repository, the commit message is important.  We use the following conventions:</p>
+<ul><li>Begin the commit message with <b><font face="'Courier New', monospace">CHROMIUM:</font></b></li>
+<li>If it is architecture specific, add the architecture.  The following are samples of supported architectures: <b><font face="'Courier New', monospace">ARM:</font></b> or <b><font face="'Courier New', monospace">X86:</font></b></li>
+<li>If it is machine specific, add machine-identifying information.  For example, <b><font face="'Courier New', monospace">tegra2:</font></b> or <b><font face="'Courier New', monospace">x86-mario:</font></b>.</li>
+<li>Follow the needed tags with the subject for the commit message.</li>
+<li>Follow the subject line with the body of the commit message.  The message should not only describe <b>what</b>, but also <b>why</b>, you have created the change.  Please include information about the testing that you performed to ensure the code is valid.</li>
+<li><b><font face="'Courier New', monospace">Signed-off-by</font></b> is required, and our gerrit server is a bit picky about the order.  It appears to require this line immediately before the <b><font face="'Courier New', monospace">Change-Id</font></b> line if present.</li></ul>
+<p>An example subject line is: <b><font face="'Courier New', monospace">CHROMIUM: ARM: tegra: Add initial support for aebl</font></b></p>
+<p>Do not include configuration changes (i.e. changes to files within <font face="'Courier New', monospace">chromeos/config</font>) with other code changes. See the next section for these.</p>
+<div>
+<p>Files may not be suitable for submission upstream because they have Chromium OS-specific information, or may be based on other changes which are local to the Chromium OS project.  Such changes may not be upstreamed, but the Chromium OS project team will continue to maintain the changes.</p>
+<div>
+<h3><a name="TOC-Configuration-Changes"></a>Configuration Changes</h3>
+<p>When a commit involves configuration changes, make sure that any code changes are separated out into a different commit. The configuration commit should contain only changes to files within the <font face="'Courier New', monospace">chromeos/config</font> directory tree.</p>
+<p>The commit message should start with <b><font face="'Courier New', monospace">CHROMIUM: config:</font></b></p>
+<p>An example message is: <b><font face="'Courier New', monospace">CHROMIUM: config: enable aebl config</font></b></p>
+<h2><a name="TOC-How-do-I-send-a-patch-upstream-"></a>How do I send a patch upstream?</h2>
+<p>Changes to parts of the kernel which are not purely Chrome OS- specific should be upstreamed where possible. This includes just about any part of the kernel: ARM- and x86-specific changes, driver patches and changes within the main kernel and mm source. You can start with a code review if you like. Take a look on the kernel mailing list to get a feel for how people submit and review patches.</p>
+<p>To upstream, create a remote to track upstream. </p>
+<p>For example the main kernel:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git remote add upstream git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git<br />
+git fetch upstream<br />
+git checkout -b send-upstream upstream/master</code></div>
+<p>You can then create a commit within this branch. This can be done either by cherry-picking the commit from another branch and perhaps changing the commit message:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git cherry-pick my-change<br />
+git commit --amend<br />
+# edit the message and save</code></div>
+<p>or using git am to turn a patch into a commit:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git am my-change.patch</code></div>
+<p>or manually applying a patch, and then committing:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>patch -p1 &lt; my-change.patch</code><br />
+<code>git add ...</code><br />
+<code>git commit</code><br />
+<code># create a suitable message</code></div>
+<h3><a name="TOC-Sending-patches-the-easy-way-patman-"></a>Sending patches the easy way (patman)</h3><div>Patman automates patch creation, checking, change list creation, cover letter, sending to the mailing list, etc. <span style="font-size:10pt;background-color:transparent">You can find patman in the U-Boot tree (src/third_party/u-boot/files/tools/patman). There is also a kernel patch set <a href="https://lkml.org/lkml/2015/5/3/105">here</a> with a newer version. Upstream U-Boot has it also.</span></div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div>Amend your top commit to have the line:</div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>Series-to: LKML &lt;linux-kernel@vger.kernel.org&gt;</code></div><div><code>Series-cc: (anyone you want to Cc all patches in the series to)</code></div></div><div><br /></div><div>Then type:</div><div><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>patman -n</code></div></div><div><br /></div><div>to generate patches, check that they will go to the right place, and send them. Or:</div><div><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><code>patman</code></div></div><div><br /></div><div>to generate patches and send them.</div><div><br /></div><div>Various options are available. Particularly useful ones are:</div><div><ul><li>-m - by default patman sends your patches to relevant maintainers. Use this option to turn that off</li><li>-t - ignore tags in the subject line which cannot be found</li><li>-n - do a dry run</li></ul><div>Full documentation is available in the README (patman -h) or <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=tools/patman/README">here</a>. Take a look at the automated change list creation and the alias support also.</div></div><h3><a name="TOC-Sending-patches-manually"></a>Sending patches manually</h3><p>Like any kernel patch you should use checkpatch.pl to make sure it is clean (see below). Also see <font face="'Courier New', monospace">Documentation/SubmittingPatches</font> in the kernel source tree for instructions. You can use '<b><font face="'Courier New', monospace">git show HEAD</font></b>' to see your patch.</p>
+<p>To send upstream, you can create patch files with '<b><font face="'Courier New', monospace">git format-patch</font></b>', and then email then. This creates a set of patch files named '000n-&lt;something&gt;' where 'n' is incremented starting from 1, and "something" comes from the first line of each change description.</p>
+<p>You can use <b><font face="'Courier New', monospace">get_maintainer.pl</font></b> to figure out who to send it to.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code># turn top commit into a patch<br />
+git format-patch HEAD~<br />
+<br />
+# or perhaps you want to do the top 5 commits<br />
+git format-patch HEAD~5<br />
+# edit patches if you like<br />
+<br />
+./scripts/get_maintainer.pl 0001-mypatch.patch | \<br />
+  sed 's/ *([^)]*) *//g' | \<br />
+  sed 's/"//g' | \<br />
+  sed 's/^\(.*\)$/--cc="\1" /' | \<br />
+  tr -d '\n'<br />
+# spits out a list of --cc addresses<br />
+<br />
+# send out email, with subject prefix PATCH v5 (you can leave this out for default)<br />
+git send-email --to=linux-arm-kernel@lists.infradead.org --cc=... --cc=... --signoff --subject-prefix="PATCH v5" --annotate 0001-my-change.patch<br />
+# Edit the patch as required</code></div>
+</div>
+</div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<p>(<b>Note:</b> <b><font face="'Courier New', monospace">git send-email</font></b> requires <b><font face="'Courier New', monospace">git-email</font></b> to be installed on your host ('<b>sudo apt-get install git-email</b>'), <br />
+or you will get the message "<b><font face="'Courier New', monospace">git: 'send-email' is not a git command. See 'git --help'.</font></b>".<br /><span style="font-size:10pt;background-color:transparent">You also need to configure .gitconfig to use your SMTP server)</span></p>
+</blockquote>
+<p>If you are sending a series of patches it is nice to include a cover letter. This turns up as patch zero in the series. Pass the <b><font face="'Courier New', monospace">--cover-letter</font></b> flag to '<b><font face="'Courier New', monospace">git format-patch</font></b>' and it will create a 0000-subject file which you can edit to contain your cover letter. When you use '<b><font face="'Courier New', monospace">git send-email'</font></b> you can send files 000* to send the cover letter and all your patches as one email set.</p>
+<p>Another flow that might work is to send email directly, without going through '<b><font face="'Courier New', monospace">git format-patch</font></b>'. For example you can email the top five commits to the mailing list with something like:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git send-email --to=... -cc=... --signoff --subject-prefix=... --annotate HEAD~5</code></div>
+<p>The <b><font face="'Courier New', monospace">--annotate</font></b> lets you edit them before they go out, which is probably a good idea in this case!</p><p>When replying to an email thread with an updated patch, use the something like the following to attach your email to the thread:</p><div class="sites-codeblock sites-codesnippet-block"><code>git send-email --thread --no-chain-reply-to --in-reply-to=&lt;message id&gt; --to=... --cc=... --signoff --subject-prefix=... --annotate 0002-...</code></div>
+<p>You can find the message id under the label &lt;Message-Id&gt; in gmail in the 'Show Original' link in the drop down options for the email you want to reply to.</p><p>There is a video here: <a href="http://www.youtube.com/watch?v=LLBrBBImJt4">http://www.youtube.com/watch?v=LLBrBBImJt4</a></p>
+<p>The patch flow throughout the video is:<br />
+<a href="http://www.youtube.com/watch?v=LLBrBBImJt4"></a></p>
+<ol><li><b><font face="'Courier New', monospace">git diff</font></b></li>
+<li><b><font face="'Courier New', monospace">git commit</font></b></li>
+<li><b><font face="'Courier New', monospace">git show</font></b></li>
+<li><b><font face="'Courier New', monospace">git format-patch</font></b></li>
+<li><b><font face="'Courier New', monospace">git send-email</font></b></li>
+</ol>
+<p>Patch checklist: (at 34:30 of the video)</p>
+<ol><li>Kernel builds with patch applied</li>
+<li>Correct "<b><font face="'Courier New', monospace">From:</font></b>" address</li>
+<li>Concise "<b><font face="'Courier New', monospace">Subject:</font></b>"</li>
+<li>Explain the patch</li>
+<li><b><font face="'Courier New', monospace">Signed-off-by</font></b></li>
+<li>Check you have removed <b><font face="'Courier New', monospace">Change ID</font></b>, <b>TEST=</b> and <b><font face="'Courier New', monospace">BUG=</font></b> from the commit message</li>
+</ol>
+<h2><a name="TOC-Which-copyright-header-should-I-use-"></a>Which copyright header should I use?</h2>
+<p>When adding new files to the kernel, please add a regular Google copyright header to them. In particular this is true for any code that will eventually find its way upstream (which should include practically everything we do).</p>
+<p>The main reason for this is that there's no concept of "The Chromium OS Authors" outside of our project, since it refers to the AUTHORS file that isn't bundled with the kernel.</p>
+<div>
+<div><font face="courier new, monospace">/*</font></div>
+<div><font face="courier new, monospace"> * Copyright (C) 2015 Google, Inc.</font></div>
+<div><font face="courier new, monospace"> *</font></div>
+<div><font face="courier new, monospace"> * This software is licensed under the terms of the GNU General Public</font></div>
+<div><font face="courier new, monospace"> * License version 2, as published by the Free Software Foundation, and</font></div>
+<div><font face="courier new, monospace"> * may be copied, distributed, and modified under those terms.</font></div>
+<div><font face="courier new, monospace"> *</font></div>
+<div><font face="courier new, monospace"> * This program is distributed in the hope that it will be useful,</font></div>
+<div><font face="courier new, monospace"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</font></div>
+<div><font face="courier new, monospace"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</font></div>
+<div><font face="courier new, monospace"> * GNU General Public License for more details.</font></div>
+<div><font face="courier new, monospace"> */</font></div>
+</div>
+<h2><a name="TOC-How-do-I-check-my-patches-are-correct-"></a>How do I check my patches are correct?</h2>
+<p>There are two aspects of having correct patches to send upstream: not having Chromium OS-specific details, and meeting all the Linux kernel requirements.</p>
+<p>For the following sections, you will need to have created a <i>patch</i> file using <font face="monospace" style="font-weight:bold">git format-patch.</font>  Also note that you will have to recreate the patch file, and re-check your patch file each time you check in code to your source tree.</p>
+<h3><a name="TOC-Remove-Chromium-OS-specific-Details"></a>Remove Chromium OS-specific Details</h3>
+<p>Verifying these details is as simple as loading the patch file in your favorite editor.  Edit the file manually to become compliant; this will, of course, have no affect on the source or commit message stored by git.</p>
+<div style="text-align:left">
+<ul><li>No <font face="monospace" style="font-weight:bold">CHROMIUM:</font>in the subject line of the patch file.</li>
+<li>No <b><font face="'Courier New', monospace">BUG=</font></b> in the patch file.</li>
+<li>No <b><font face="'Courier New', monospace">TEST=</font></b> in the patch file.</li>
+<li>No <b><font face="'Courier New', monospace">Change-Id:</font></b> in the patch file.</li>
+<li><b><font face="'Courier New', monospace">Signed-off-by:</font></b> is in the patch file.</li></ul>
+</div>
+<p>Once all of the above is true, you can move on to checking for compliance with the Linux Kernel guidelines.</p>
+<h3><a name="TOC-Check-for-Compliance-with-Linux-Kernel-Requirements"></a>Check for Compliance with Linux Kernel Requirements</h3>
+<p>You should use this perl script to check that your patch conforms to the kernel coding standard. It is kept in the linux kernel tree.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>git format-patch HEAD~</code><br />
+<code>scripts/checkpatch.pl 0001-my-change.patch</code><br />
+<code># make improvements</code><br />
+<code>git add ...</code><br />
+<code>git commit --amend</code><br />
+<code># rinse and repeat</code></div>
+<h3><a name="TOC-Automating-the-Compliance-Checks"></a>Automating the Compliance Checks</h3>
+<p>This script might be useful also, as it checks a series of patches, checks for Chrome OS-specific commit tags and prints a summary at the end. Put it in your path and run it from anywhere.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>#! /bin/sh</code><br />
+<br />
+<code>KERNEL=./scripts/</code><br />
+<code>OUT=$(tempfile)</code><br />
+<code>while (( "$#" )); do</code><br />
+<code>    ERRCP=</code><br />
+<code>    ERR=</code><br />
+<code>    "${KERNEL}/checkpatch.pl" $1 || ERRCP=1</code><br />
+<code>    grep BUG= $1 &amp;&amp; ERR="$ERR BUG"</code><br />
+<code>    grep TEST= $1 &amp;&amp; ERR="$ERR TEST"</code><br />
+<code>    grep "Change-Id" $1 &amp;&amp; ERR="$ERR Change-Id"</code><br />
+<code>    grep "Review URL" $1 &amp;&amp; ERR="$ERR Review URL"</code><br />
+<code>    if [ -n "${ERR}" ]; then</code><br />
+<code>        echo "Bad  $1 ($ERR)" &gt;&gt;$OUT</code><br />
+<code>    else</code><br />
+<code>        echo "OK   $1" &gt;&gt;$OUT</code><br />
+<code>    fi</code><br />
+<code>    shift</code><br />
+<code>done</code><br />
+<code>cat $OUT</code></div>
+<h2><a name="TOC-How-do-I-backport-an-upstream-patch-"></a>How do I backport an upstream patch?</h2>
+<p>Let's suppose you've spotted a juicy new commit in Linus's <a href="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=summary">upstream linux kernel</a> tree that you just must have.<br />
+Instead of creating a new branch and manually applying the changes, use <code>git cherry-pick</code> to do it for you.<br />
+In addition, the repository maintainers appreciate it if the cherry-picked commit still contains the original author and git hash of the original upstream commit.<br />
+Use <code>git cherry-pick -x</code> to do this automatically:</p>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><b>NAME</b></code></div>
+<div><code>       git-cherry-pick - Apply the changes introduced by some existing commits</code></div>
+<div><br />
+</div>
+<div><code><b>SYNOPSIS</b></code></div>
+<div><code>       git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff] &lt;commit&gt;...</code></div>
+<div><br />
+</div>
+<div><code><b>DESCRIPTION</b></code></div>
+<div><code>       Given one or more existing commits, apply the change each one introduces, recording a new commit for each. This requires your working tree to be</code></div>
+<div><code>       clean (no modifications from the HEAD commit).</code></div>
+<div><br />
+</div>
+<div><code><b>OPTIONS</b></code></div>
+<div><font color="#006000" face="monospace">       ...</font></div>
+<div><code>       -x</code></div>
+<div><code>           When recording the commit, append to the original commit message a note that indicates which commit this change was cherry-picked from. Append </code><span style="color:rgb(0,96,0);font-family:monospace">the note only for cherry picks without conflicts. Do not use this option if you are cherry-picking from your private branch because the </span><span style="color:rgb(0,96,0);font-family:monospace">information is useless to the recipient. If on the other hand you are cherry-picking between two publicly visible branches (e.g. backporting a </span><span style="color:rgb(0,96,0);font-family:monospace">fix to a maintenance branch for an older release from a development branch), adding this information can be useful.</span></div>
+</div>
+</div>
+<p>First, add Linus's tree as a remote to the chromium-os kernel tree (assuming the chromium-os root is <code>~/chromiumos</code>):</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>cd ~/chromiumos/src/third_party/kernel</code></div>
+<div><code>git remote add linus git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux-2.6.git</code></div>
+<div><code>git remote update</code></div>
+</div>
+<p>This will take a little while as git fetches all upstream commits.  Luckily, git is smart and won't refetch commits already in the chromium-os tree.</p>
+<div>
+<p>Once the tree is updated, take a brief look at whats been happening upstream recently to a particular path (<code>--oneline</code> shows short-form upstream hashes and the brief commit message):</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><code style="color:rgb(0,96,0)">git log --oneline linus/master /path/of/interest</code></div>
+</div>
+</div>
+</div>
+<p>We can view that juicy commit using its upstream hash:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git show </code><span style="color:rgb(0,96,0);font-family:monospace">&lt;upstream_commit_hash&gt;</span></div>
+</div>
+<p>To backport the commit to the chromium-os tree, first start a new branch from the current Tip of Tree (ToT).<br />
+Then cherry-pick with <code>-x</code> to preserve the original author and hash, and <code>-s</code> to sign-off-by the commit:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>repo sync .</code></div>
+<div><code>repo start my_upstream_commit .</code></div>
+<div><code>git cherry-pick -x -s </code><span style="color:rgb(0,96,0);font-family:monospace;line-height:13px"><code>&lt;</code><code>upstream_commit_hash&gt;</code></span></div>
+</div>
+<p>Add TEST= and BUG= lines at the bottom of the patch description. Also, remember to keep the patch subject intact with only an addition of UPSTREAM: or BACKPORT: as a new prefix.  Use UPSTREAM: if you are applying an upstream patch as-is, or BACKPORT: if you had to change the code to make it run with an older kernel version.</p>
+<p>Now, the upstream commit is on its own branch, let's upload it to gerrit, like usual:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>repo upload .</code></div>
+</div>
+<p>This will generate a gerrit change for review.</p>
+<p>After review, submit the patch in gerrit like usual.</p>
+<h2><a name="TOC-Kernel-Configuration"></a><a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/kernel-configuration">Kernel Configuration</a></h2>
+<p>Kernel configuration in Chromium OS has an extra level of indirection from the normal .config file. So do the instructions - <a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/kernel-configuration">see this page for more information</a>.</p>
+<h2><a name="TOC-How-to-quickly-test-kernel-modifications-the-fastest-way-"></a>How to quickly test kernel modifications (the fastest way)</h2>
+<p>Please take a look at doc on <a href="http://dev.chromium.org/chromium-os/how-tos-and-troubleshooting/network-based-development">network-based development</a>. While setting up your environment might appear to be harder and more time consuming, in many cases it will allow to test kernel modifications much faster and easier than the ways described below.</p>
+<h2><a name="TOC-How-to-quickly-test-kernel-modifications-the-fast-way-"></a>How to quickly test kernel modifications (the fast way)</h2>
+<p>Do an incremental build of the kernel:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>(chroot) $ FEATURES="noclean" cros_workon_make --board=${BOARD} --install chromeos-kernel-[3_8|3_10|3_14]</code></div><p>The <b>3.4 kernel</b> is just called <font color="#38761d" size="2">chromeos-kernel</font>.</p><p>Update the kernel on the target:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>(chroot) $ ~/trunk/src/scripts/update_kernel.sh --remote &lt;ip of target&gt;</code></div>
+<p>Note that using cros_workon_make leaves build artifacts in your source directory under the "build" directory.  When you do a regular emerge of the kernel (and are cros_work'ed on) this will slow things down because the entire source directory gets copied.  So delete the "build" directory when you're done.</p>
+<h3><a name="TOC-Dealing-with-a-bad-kernel-installation"></a>Dealing with a bad kernel installation</h3>
+<p>One problem with this fast approach is that it requires an already installed and booted target system.  If you update with a bad kernel so that it no longer boots, this approach is no longer available. The system is generally recoverable by booting physical media (USB stick or SD card) and copying its kernel blob over your kernel partition:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code># Assuming you boot physical media as sdb, and your local disk is sda,</code></div>
+<div><code>$ dd if=/dev/sdb2 of=/dev/sda2</code></div>
+<div></div>
+</div>
+<h4><a name="TOC-Dealing-with-partition-corruption-due-to-bad-kernel-recovery"></a>Dealing with partition corruption due to bad kernel recovery</h4>
+<p>One time I really screwed up my system by recovering (after bad kernel installation) with 'dd if=/dev/sdb of=/dev/sda'.  I forgot the '2' after each drive specification.<br />
+This overwrote my internal partition table with an exact copy of the USB stick's partition table, including the GUIDs.<br />
+When I subsequently tried to boot USB, the system always seemed to boot off the internal disk.  'rootdev -s' reported (internal partition) /dev/sda3.<br />
+After an hour or so, consultation with Bill showed that I really was booting the kernel from /dev/sda2, but the kernel found the matching GUID on sda before even looking at sdb.<br />
+This was recovered with:</p>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>$ a=$(uuidgen)</code></div>
+<div><code>$ cgpt add -i 3 -u $a /dev/sda</code></div>
+</div>
+<div></div>
+</div>
+<p>which generates and installs a new GUID for sda3.</p>
+<h3><a name="TOC-Dealing-with-issues---preparing-the-environment"></a>Dealing with issues - preparing the environment</h3>
+<p>Below are described some problems you might encounter. If instructions above work, you might skip them. We assume that you want to boot using the most recently built image.</p>
+<p>First, to prepare for other steps:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code># cd to the image directory<br />
+(chroot) $ cd ~/trunk/src/build/images/${BOARD}/latest<br />
+<br />
+# produce separate images for every partition<br />
+(chroot) $ ./unpack_partitions.sh chromiumos_image.bin</code>
+</div>
+<h3><a name="TOC-SSHD-keys"></a>SSHD keys</h3>
+<p>If sshd on the target machine complains about missing keys:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code># Mount stateful partition<br />
+(chroot) $ sudo mount -o loop part_1 stateful_partition/<br />
+<br />
+(chroot) $ sudo mkdir -p stateful_partition/etc/ssh/<br />
+<br />
+# Generate and save keys.<br />
+# The paths below correspond to /mnt/stateful_partition/etc/ssh/ssh_host_{rsa,dsa}_key on target.<br />
+# Make sure these are correct for your configuration.<br />
+(chroot) $ sudo ssh-keygen -t rsa -f stateful_partition/etc/ssh/ssh_host_rsa_key<br />
+(chroot) $ sudo ssh-keygen -t dsa -f stateful_partition/etc/ssh/ssh_host_dsa_key<br />
+<br />
+# Unmount the stateful partition<br />
+(chroot) $ sudo umount stateful_partition</code>
+</div>
+<h3><a name="TOC-Public-key-authorization"></a>Public key authorization</h3>
+<p><font face="'Courier New', monospace">update_kernel.sh</font> uses for authorization keys that, depending on your configuration, might not be present in your image. If that's the case, you will be prompted for password during script execution. To fix it, run the following commands in your image directory:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code># Mount root filesystem<br />
+(chroot) $ sudo mount -o loop part_3 rootfs_dir/<br />
+<br />
+(chroot) $ sudo mkdir -p rootfs_dir/root/.ssh/<br />
+(chroot) $ sudo cp ~/trunk/src/scripts/mod_for_test_scripts/ssh_keys/testing_rsa.pub rootfs_dir/root/.ssh/authorized_keys<br />
+<br />
+# Unmount root filesystem<br />
+(chroot) $ sudo umount rootfs_dir/</code></div>
+<h3><a name="TOC-iptables-configuration"></a>iptables configuration</h3>
+<p>Iptables - again, depending on your configuration - might be configured to refuse all the incoming connections, in which case update_kernel.sh will be unable to ssh to your target machine. If you encounter this problem, to fix it:</p>
+<ol><li>Again mount the root filesystem:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>(chroot) $ sudo mount -o loop part_3 rootfs_dir/</code></div>
+</li>
+<li>Edit file <span style="font-family:courier new,monospace">rootfs_dir/etc/init/iptables.conf</span>. Find the following line:<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<code> iptables -P INPUT DROP</code></div>
+</li>
+<li>Change it to:<br />
+<div class="sites-codeblock sites-codesnippet-block"><font><code> iptables -P INPUT ACCEPT</code></font></div>
+</li>
+<li>Save and unmount the filesystem:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>(chroot) $ sudo umount rootfs_dir/</code></div>
+</li>
+</ol>
+<h3><a name="TOC-Dealing-with-issues---cleaning-up"></a>Dealing with issues - cleaning up</h3>
+<p>To build new image after modifications to one or more of the partitions, simply run:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>(chroot) $ ./pack_partitions.sh chromiumos_image.bin</code></div>
+<h2><a name="TOC-How-to-test-kernel-modifications-the-slow-way-"></a>How to test kernel modifications (the slow way)</h2>
+<p><b>Note: </b>there is more information (possibly more useful too) in the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format">disk format</a> document, and more specifically <a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format#TOC-Kernel-partition-format">here</a>.</p>
+<p>Check out the tree somewhere as usual, make the chroot, build packages, build image, blah blah blah. Create a bootable USB key from that image. We'll modify that key with our testing kernel.</p>
+<p>At this point you need to <code>cros_workon</code> the kernel (and clone the kernel tree in case you used mini-layout). See the big picture and instructions in <a href="http://www.chromium.org/chromium-os/developer-guide">Chromium OS Developer Guide</a>, but as a quick reference you are expected to run the following inside <code>chroot</code>:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>~/trunk/src/scripts $ cros_workon start --board=&lt;your platform&gt; chromeos-kernel</code><br />
+<code>~/trunk/src/scripts $ repo sync chromiumos/third_party/kernel</code></div>
+<p>Then, still inside <code>chroot</code>, run this:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>
+~/trunk/src/scripts $ export BUILD_DIR=/tmp/kernel   # pick any new directory you like<br />
+~/trunk/src/scripts $ mkdir ${BUILD_DIR}<br />
+~/trunk/src/scripts $ cp /build/&lt;your platform&gt;/boot/config ${BUILD_DIR}/.config<br />
+~/trunk/src/scripts $ cd ../third_party/kernel/files<br />
+~/trunk/src/third_party/kernel/files $ ARCH=&lt;your target arch&gt; make oldconfig O=${BUILD_DIR}<br />
+~/trunk/src/third_party/kernel/files $ mv .git .git.bak<br />
+~/trunk/src/third_party/kernel/files $ CROSS_COMPILE=/usr/bin/&lt;base_toolchain_name&gt;- \<br />
+                                 ARCH=&lt;your target arch&gt; \<br />
+                                 make -j &lt;num&gt; &lt;image_type&gt;  modules O=${BUILD_DIR}<br />
+~/trunk/src/third_party/kernel/files $ mv .git.bak .git
+</code></div>
+<p>Where</p>
+<div>
+<ul><li><code>&lt;your_target_arch&gt;</code> is <code>arm</code> or <code>x86</code>, depending on your platform</li>
+<li><code>&lt;base_toolchain_name&gt;</code> is <code>armv7a-cros-linux-gnueabi-</code> or <code>i686-pc-linux-gnu-</code>, respectively,</li>
+<li><code>&lt;image_type&gt;</code> is <code>bzImage</code> for <code>x86</code> or <code>uImage</code> for <code>arm</code>,</li>
+<li><code>&lt;num&gt;</code> should be set to an integer which is twice the number of cores on your development machine.</li></ul>
+</div>
+<p>Renaming of the <code>.git</code> directory for the duration for the build is required to prevent mangling the module path by the kernel make. The </p>
+<code>make</code> will produce <code>${BUILD_DIR}/arch/&lt;your_target_arch&gt;/boot/{bzImage|uImage}</code>, which is the kernel image you want to try. The next step varies depending on whether your hardware has an EFI BIOS, legacy BIOS or u-boot. You can ether copy the kernel to your USB stick and tell the bootloader to use your new kernel, possibly with extra debugging arguments, or use netboot/NFS for u-boot equipped targets (see <a href="http://www.chromium.org/network-based-development" target="_blank">network_based_development</a> for details).
+<p>If you need your module to be present on the target, you can scp it from the build location to your target (provided your target is set for <code>ssh</code> access and allows <code>chronos</code> account login).</p>
+<h3><a name="TOC-Testing-with-an-EFI-BIOS"></a>Testing with an EFI BIOS</h3>
+<p>
+Copy the new <code>bzImage</code> file into the <code>/efi/boot/</code> directory on your USB key's partition 12. The <code>/efi/boot/grub.cfg</code> file will look for the kernel called <code>vmlinuz</code>, but you can edit that config file to add a line to look for your test kernel too. For example, here's my USB key's partition 12:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>blackadder$ mount | grep vfat</code><br />
+<code>/dev/sdc12 on /media/disk type vfat (rw,nosuid,nodev,uhelper=hal,shortname=mixed,uid=100135,utf8,umask=077,flush)</code><br />
+<br />
+<code>blackadder$ ls -l /media/disk/efi/boot/</code><br />
+<code>total 6600</code><br />
+<code>-rwx------ 1 wfrichar root  262656 Apr 21 10:21 bootx64.efi*</code><br />
+<code>-rwx------ 1 wfrichar root 2851056 Apr 21 10:12 bzImage*</code><br />
+<code>-rwx------ 1 wfrichar root    1040 Apr 21 08:51 grub.cfg*</code><br />
+<code>-rwx------ 1 wfrichar root 2821296 Apr 19 11:19 vmlinuz*</code><br />
+<br />
+<code>blackadder$ cat /media/disk/efi/boot/grub.cfg </code><br />
+<code>set timeout=10</code><br />
+<code>set default=0</code><br />
+<br />
+<code>menuentry "bzImage normal" {</code><br />
+<code>  linux /efi/boot/bzImage quiet console=tty2 init=/sbin/init boot=local rootwait </code><br />
+<code> root=/dev/sda3 ro noresume noswap i915.modeset=1 loglevel=1</code><br />
+<code>}</code><br />
+<br />
+<code>menuentry "bzImage serial normal" {</code><br />
+<code>  linux /efi/boot/bzImage earlyprintk=serial,ttyS0,115200 console=ttyS0,115200 i </code><br />
+<code>nit=/sbin/init boot=local rootwait root=/dev/sda3 ro noresume noswap i915.modese </code><br />
+<code>t=1 loglevel=7</code><br />
+<code>}</code><br />
+<br />
+<code>menuentry "bzImage serial add_efi_memmap" {</code><br />
+<code>  linux /efi/boot/bzImage add_efi_memmap earlyprintk=serial,ttyS0,115200 console </code><br />
+<code>=ttyS0,115200 init=/sbin/init boot=local rootwait root=/dev/sda3 ro noresume nos </code><br />
+<code>wap i915.modeset=1 loglevel=7</code><br />
+<code>}</code><br />
+<br />
+<code>menuentry "vmlinuz normal" {</code><br />
+<code>  linux /efi/boot/vmlinuz quiet console=tty2 init=/sbin/init boot=local rootwait </code><br />
+<code> root=/dev/sda3 ro noresume noswap i915.modeset=1 loglevel=1</code><br />
+<code>}</code><br />
+<br />
+<code>menuentry "vmlinuz serial debug" {</code><br />
+<code>  linux /efi/boot/vmlinuz earlyprintk=serial,ttyS0,115200 console=ttyS0,115200 i </code><br />
+<code>nit=/sbin/init boot=local rootwait root=/dev/sda3 ro noresume noswap i915.modese </code><br />
+<code>t=1 loglevel=7</code><br />
+<code>}</code></div>
+<p>
+When the USB key boots, I'll see a menu that lets me select which boot path to use.</p>
+<h3><a name="TOC-Testing-with-a-legacy-BIOS"></a>Testing with a legacy BIOS</h3>
+<p>Copy the new <code>bzImage</code> file into the <code>/boot</code> directory on your USB key's partition 3. The /boot/extlinux.conf file will look for the kernel called <code>vmlinuz</code>, but you can edit that config file to add a line to look for your test kernel too. For example, here's my USB key's partition 3:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>blackadder$ mount | grep sdc3</code><br />
+<code>/dev/sdc3 on /media/C-KEYFOB type ext3 (rw,nosuid,nodev,uhelper=hal)</code><br />
+<br />
+<code>blackadder$ ls -l /media/C-KEYFOB/boot</code><br />
+<code>total 6940</code><br />
+<code>lrwxrwxrwx 1 root root      19 Apr 23 01:55 System.map -&gt; System.map-2.6.32.9</code><br />
+<code>-rw-r--r-- 1 root root 1313402 Apr 23 00:12 System.map-2.6.32.9</code><br />
+<code>-rw-r----- 1 root root 2851056 Apr 26 10:30 bzImage</code><br />
+<code>lrwxrwxrwx 1 root root      15 Apr 23 01:55 config -&gt; config-2.6.32.9</code><br />
+<code>-rw-r--r-- 1 root root   74534 Apr 23 00:12 config-2.6.32.9</code><br />
+<code>-rw-r--r-- 1 root root     409 Apr 23 01:53 extlinux.conf</code><br />
+<code>-r--r--r-- 1 root root   14336 Apr 23 01:53 extlinux.sys</code><br />
+<code>lrwxrwxrwx 1 root root      16 Apr 23 01:55 vmlinuz -&gt; vmlinuz-2.6.32.9</code><br />
+<code>-rw-r--r-- 1 root root 2821296 Apr 23 00:12 vmlinuz-2.6.32.9</code><br />
+<br />
+<code>blackadder$ cat /media/C-KEYFOB/boot/extlinux.conf </code><br />
+<code>DEFAULT chromeos-usb</code><br />
+<code>PROMPT 1</code><br />
+<code>TIMEOUT 20</code><br />
+<br />
+<code>label chromeos-usb</code><br />
+<code>  menu label chromeos-usb</code><br />
+<code>  kernel vmlinuz</code><br />
+<code>  append quiet console=tty2 init=/sbin/init boot=local rootwait root=/dev/sdb3 ro noresume noswap i915.modeset=1 loglevel=1</code><br />
+<br />
+<code>label chromeos-test</code><br />
+<code>  menu label chromeos-test</code><br />
+<code>  kernel bzImage</code><br />
+<code>  append console=tty1 init=/sbin/init boot=local rootwait root=/dev/sdb3 ro noresume noswap i915.modeset=1 loglevel=7</code></div>
+<p>When the USB key boots, I can hit TAB to see the list of boot choices, and can pick the one I want by entering the label.</p>
+<h2><a name="TOC-Debugging-messages"></a>Debugging messages</h2>
+<p>With either bootloader, you can debug early kernel failures by increasing the verbosity and location of kernel debug messages. You can modify the config files without rebuilding anything. The default boot args have this:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>quiet console=tty2 loglevel=1</code></div>
+<p>Using args like these instead may be helpful:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>console=tty1 loglevel=7</code></div>
+<h2><a name="TOC-Working-on-several-kernel-issues"></a>Working on several kernel issues</h2>
+<p><code>git</code> supports multiple branches coexisting in the same directory tree, and kernel make system supports placing the kernel build output in a separate directory (using the<code> O=&lt;path&gt; </code>make command line parameter).</p>
+<p>To create separate builds get per kernel git branch, while in the cloned kernel source tree root create a build directory for your current branch, for instance:</p>
+<div style="font-family:Arial,Verdana,sans-serif;color:rgb(0,0,0)">
+<div class="sites-codeblock sites-codesnippet-block"><code>mkdir ../build/&lt;branch_name&gt;</code></div>
+</div>
+<p>and then just add <code>O=../../build/&lt;branch_name&gt;</code> to make invocations described above. Or use the following bash script to take care of all make command line parameters other than make targets:</p>
+<div class="sites-codeblock sites-codesnippet-block" style="font-family:monospace;color:rgb(0,96,0)">
+<code>kmake () {<br />
+  b=$(git branch 2&gt;/dev/null | grep '^\*' | awk '{print $2}')<br />
+  if [ "${b}" == "" ]; then<br />
+    echo "not in a git tree"<br />
+    return<br />
+  fi<br />
+  build_dir="../build/${b}"<br />
+  if [ ! -d "${build_dir}" ]; then<br />
+    echo "build directory ${build_dir} does not exist"<br />
+    return<br />
+  fi<br />
+  make_jobs=$(expr 2 \* $(cat /proc/cpuinfo | grep -c '^processor'))<br />
+  make ARCH=i386 O=${build_dir} -j "${make_jobs}" $*<br />
+}</code></div>
+<h3><a name="TOC-Modifying-H2C-Bios-kernel-command-line"></a>Modifying H2C Bios kernel command line</h3>
+<p>Place kernel blob into a file  (<code style="color:rgb(0,96,0)">&lt;original_kernel&gt;</code>), either using <code>dd</code> on the target or by dismantling <code>chromiumos_image.bin</code> generated by build_image<font color="#000000" face="Arial, Verdana, sans-serif"><span style="border-collapse:separate">. Store the desired kernel command line in a file &lt;new_cmd_line&gt; and then use the following to change the kernel command line:</span></font></p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>vbutil_kernel --repack &lt;modified_kernel&gt; --config &lt;new_cmd_line&gt; \</code><br />
+<code>--signprivate &lt;path_to&gt;/vboot_reference/</code><code>tests/devkeys/&lt;key&gt; \</code><br />
+<code> --oldblob &lt;original_kernel&gt;</code></div>
+<p>
+where<code> &lt;key&gt;</code> is <code>kernel_data_key.vbprivk</code> for the main kernel or<code> </code><code>recovery_kernel_data_key.</code><code>vbprivk</code> for the flash drive based recovery kernel  The keys can be found in the<a href="/"> vboot_reference repository</a>.  Then <code>dd</code> the <code>&lt;modified_kernel&gt;</code> file  back to where <code>&lt;original_kernel&gt;</code> came from.</p>
+</div>
+<div>
+<p>
+The command line to boot a kernel with verified rootfs disabled can be obtain by editing the regular command line as follows:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>vbutil_kernel --verify &lt;original_kernel&gt; --verbose | tail -1 |  sed '</code><br />
+<code>s/dm_verity[^ ]\+//g</code><br />
+<code>s|verity /dev/sd%D%P /dev/sd%D%P ||</code><br />
+<code>s| root=/dev/dm-0 | root=/dev/sd%D%P |</code><br />
+<code>s/dm="[^"]\+" //' &gt; new_cmd_line</code></div>
+</div>
+<h2><a name="TOC-Installing-onto-SSD"></a>Installing onto SSD</h2>
+<p>Instead of booting the kernel from USB as described above, it can be installed directly on the SSD of the target device.  With modern H2C Bios, this requires signing the blob with the development key and booting with the target machine's development mode switch set appropriately.  Also, since there are two kernel/root partition pairs in our partition scheme, we need to select which one we want to use.  Usually we stay with the current pair.</p>
+<p>To sign with the devkey as per the Disk Format doc <a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format#TOC-Quick-development">http://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format#TOC-Quick-development</a>:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>vbutil_kernel --pack new_kern.bin --keyblock /usr/share/vboot/devkeys/kernel.keyblock --signprivate &lt;keys_path&gt;/kernel_data_key.vbprivk --version 1 --config config.txt --bootloader /lib64/bootstub/bootstub.efi --vmlinuz vmlinuz</code></div>
+<p>Transfer <code>new_kern.bin</code> to the target system.  I prefer <code>scp</code>, but it can be placed on USB stick as well.</p>
+<p>Identify the preferred kernel partition.  This will be either <code>sda2</code> or <code>sda4</code>.  <code>rootdev -s</code> will identify the root partition, and that can be used to identify the currently booted kernel partition.</p>
+<div>
+<table border="1" bordercolor="#888888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:56px;height:15px"><br />
+</td>
+<td style="width:81px;height:15px"> Kernel</td>
+<td style="width:87px;height:15px"> Root</td>
+</tr>
+<tr>
+<td style="width:56px;height:20px"> pair A</td>
+<td style="width:81px;height:20px"><code>/dev/sda2</code></td>
+<td style="width:87px;height:20px"><code>/dev/sda3</code></td>
+</tr>
+<tr>
+<td style="width:56px;height:15px"> pair B</td>
+<td style="width:81px;height:15px"><code>/dev/sda4</code></td>
+<td style="width:87px;height:15px"><code>/dev/sda5</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Copy the image to the partition.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>dd if=new_kern.bin of=/dev/sda2</code></div>
+<p><code>dev_debug_vboot</code> can be used to verify the kernel partition has a properly signed image.  Indeed, it will actually tell you in what modes (ie, development, recovery, neither) your kernel will boot.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>localhost ~ # dev_debug_vboot</code></div>
+<div><code> :</code></div>
+<div><code>TEST: verify HD kernel B with firmware A key</code></div>
+<div><code>Key block:</code></div>
+<div><code>  Size:                0x4b8</code></div>
+<div><code>  Flags:               7  !DEV DEV !REC</code></div>
+<div><code> :</code></div>
+</div>
+<p><code>cgpt</code> can be used as an alternative to <code>rootdev</code> above to find the currently preferred kernel partition.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>localhost ~ # cgpt show /dev/sda</code></div>
+<div><code>     start      size    part  contents</code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"> :</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">      4096     32768       2  Label: "KERN-A"</span></div>
+<div><code>                              Type: ChromeOS kernel</code></div>
+<div><code>                              UUID: B87DAA9E-E82E-B449-B93A-5EB0BD81BCEC</code></div>
+<div><code>                              Attr: priority=3 tries=0 successful=1</code></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)"> :</span></div>
+<div><span style="font-family:monospace;color:rgb(0,96,0)">     36864     32768       4  Label: "KERN-B"</span></div>
+<div><code>                              Type: ChromeOS kernel</code></div>
+<div><code>                              UUID: 4581FC5C-58D1-8148-9FC4-E4B983C90782</code></div>
+<div><code>                              Attr: priority=0 tries=0 successful=0</code></div>
+<div><code> :</code></div>
+</div>
+<h2><a name="TOC-Getting-a-Kernel-Trace"></a>Getting a Kernel Trace</h2>
+<p>Run the following commands on the target. This needs to be done just once after an install.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>touch /var/lib/crash_sender_paused<br />
+</code><code>touch /home/chronos/"Consent To Send Stats"</code><br />
+</div>
+<div><code>chown chronos:chronos /var/lib/crash_sender_paused<br />
+</code><code>chown chronos:chronos /home/chronos/"Consent To Send Stats"</code><br />
+</div>
+<div><code>sync; sync; sync<br />
+</code></div>
+</div>
+<p>The crashes will then appear in /var/spool/crash.</p>
+<h2><a name="TOC-Loading-Kernel-modules-from-outside-the-root-filesystem"></a>Loading Kernel modules from outside the root filesystem</h2>
+<p>If you need to load kernel modules from a location other than the root filesystem, module locking must be disabled. Either a kernel command line option can be used:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>lsm.module_locking=0</code></div>
+<p>Or, on images with dm-verity disabled (--noenable_rootfs_verification), the restriction can be disabled via the exposed sysctl:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>echo 0 &gt;/proc/sys/kernel/chromiumos/module_locking</code></div>
+</div>
+<h2><a name="TOC-Blacklisting-Kernel-modules-for-individual-overlays"></a>Blacklisting Kernel modules for individual overlays</h2>
+<p>If you need to blacklist kernel modules for specific overlays. Modify the overlay-&lt;name&gt;/chromeos-base/chromeos-bsp-&lt;name&gt;/chromeos-bsp-&lt;name&gt;-&lt;version&gt;.ebuild file.</p>
+<p>Add the following two lines to the end of the src_install() function:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>insinto "/etc/modprobe.d"</code></div>
+<div><code>doins "${FILESDIR}/&lt;blacklist file&gt;"</code></div>
+</div>
+<p>The ${FILESDIR} variable points to the files/ directory within the chromeos-bsp-&lt;name&gt;/ directory. Within this directory, add your &lt;blacklist file&gt; (ex cros-blacklist.conf).</p>
+<p>For each kernel module you wish to blacklist, add the following line to &lt;blacklist file&gt;:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>blacklist &lt;module name&gt;</code></div>
+</div>
+<p>You can also use # comments within these files to explain why the kernel module needs to be blacklisted.</p><h2><a name="TOC-Building-and-installing-kernel-next-on-a-specific-overlay"></a>Building and installing kernel-next on a specific overlay</h2><div>If given target device is not building kernel-next, you can switch by unmerging the standard kernel and then building kernel-next normally:</div><div><br /></div><div><div class="sites-codeblock sites-codesnippet-block"><div><code>cros_workon --board=${BOARD} stop sys-kernel/chromeos-kernel</code></div><div><code>emerge-${BOARD} --unmerge sys-kernel/chromeos-kernel</code></div><div><font color="#006000" face="monospace">cros_workon --board=${BOARD} start sys-kernel/chromeos-kernel-next</font></div><div><font color="#006000" face="monospace">cros_workon_make --board=${BOARD} sys-kernel/chromeos-kernel-next --install</font></div><div><font color="#006000" face="monospace">~/trunk/src/scripts/update_kernel.sh --board=${BOARD} --remote=hostname...</font></div></div><p><br /></p></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/kernel-faq">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9L_0J_WuwRtdxqQ_BWNumzty0knFjBXlCn4-XiRMogwlRxHOcTHbnv1L8om7XA-pIHtO4C1zMe3MJq6mZnQ65rmHpfzzpv1u8oJ6-jKw77efZSaq-/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

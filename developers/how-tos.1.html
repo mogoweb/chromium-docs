@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"How-Tos","locale":"en","wuid":"wuid:gx:21c4408ba07e936a","revision":33,"path":"/developers/how-tos","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"how-tos","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="How-Tos - The Chromium Projects" />
+<meta itemprop="name" content="How-Tos - The Chromium Projects" />
+<meta property="og:title" content="How-Tos - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>How-Tos - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">How-Tos</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<ul>
+<li>Build instructions: <a href="how-tos/build-instructions-windows.1.html">Windows</a>, <a href="http://code.google.com/p/chromium/wiki/MacBuildInstructions">Mac OS X</a>, <a href="http://code.google.com/p/chromium/wiki/LinuxBuildInstructions">Linux</a>, <a href="http://www.chromium.org/developers/how-tos/build-instructions-chromeos" target="_blank">ChromeOS</a>, <a href="http://code.google.com/p/chromium/wiki/AndroidBuildInstructions">Android</a>, and <a href="how-tos/build-instructions-ios.html">iOS</a></li>
+<li>Debugging instructions: <a href="https://www.chromium.org/developers/how-tos/debugging-on-windows">Windows</a>, <a href="how-tos/debugging-on-os-x.html">Mac OS X</a>, and <a href="http://code.google.com/p/chromium/wiki/LinuxDebugging">Linux</a></li>
+<li><a href="http://code.google.com/p/chromium/wiki/RunningChromeUITests">Running Chrome tests</a></li>
+<li><a href="http://code.google.com/p/chromium/wiki/LinuxDevelopment">Linux Development</a> tips and porting guide</li>
+<li><a href="http://code.google.com/p/chromium/wiki/UsingGit">Using Git</a> for version control and code reviews</li></ul>For more, see this list of sub-pages:<div><div>
+<div id="sites-toc-undefined" jotId="sites-toc-undefined" style="display:block; margin:5px auto 5px 0; text-align:left; width:auto;" class="goog-toc sites-sidebar-nav">
+<h4 class="">Sub-pages list</h4>
+<div class="nav-toc-content" onclick="JOT_SUBPAGE_click(event)" style="text-align: left;">
+<ul jotId="navList">
+<li class="topLevel nav-first"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/-quickly-building-for-cros-arm-x64.1.html" jotId="wuid:gx:7afd2b1b3fea7857" class="sites-navigation-link topLevel">(Quickly!) Building for CrOS (ARM &amp; x64)</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="https://www.chromium.org/developers/how-tos/android-build-instructions" jotId="wuid:gx:612a6951d8a4aab7" class="sites-navigation-link topLevel">Android Build Instructions</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/api-keys.html" jotId="wuid:gx:33e60244249a3d12" class="sites-navigation-link topLevel">API Keys</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/build-instructions-android-webview.html" jotId="wuid:gx:561402fff649547d" class="sites-navigation-link topLevel">Build Instructions (Android WebView)</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/build-instructions-cast.html" jotId="wuid:gx:268c989ba74b6b69" class="sites-navigation-link topLevel">Build Instructions (Cast)</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/build-instructions-chromeos.html" jotId="wuid:gx:3720a75b04ab885d" class="sites-navigation-link topLevel">Build Instructions (Chromium OS on Linux)</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/build-instructions-ios.html" jotId="wuid:gx:f7fb06ba9f03477" class="sites-navigation-link topLevel">Build Instructions (iOS)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:57525376da52c5c6"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/build-instructions-windows.1.html" jotId="wuid:gx:57525376da52c5c6" class="sites-navigation-link topLevel">Build Instructions (Windows)</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/build-instructions-windows/work-around-for-msvs-2013.html" jotId="wuid:gx:33da6b77bd73d6f4" class="sites-navigation-link">Work around for MSVS 2013</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/chrome-frame-getting-started.html" jotId="wuid:gx:5f6590108be4e85f" class="sites-navigation-link topLevel">Chrome Frame</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/chrome-frame-cfinstall.html" jotId="wuid:gx:2e1884af1062f841" class="sites-navigation-link topLevel">Chrome Frame CFInstall script</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/chromium-modularization.html" jotId="wuid:gx:56b72e7efc341b6d" class="sites-navigation-link topLevel">Chromium Modularization</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/closure-compilation.html" jotId="wuid:gx:67be8965a30a3871" class="sites-navigation-link topLevel">Closure Compilation</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/compact-language-detector-cld-data-source-configuration.html" jotId="wuid:gx:6f0be7d132c0095d" class="sites-navigation-link topLevel">Compact Language Detector (CLD) Data Source Configuration</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/component-build.html" jotId="wuid:gx:22209db0759c59a6" class="sites-navigation-link topLevel">Component build / Shared Library / Multi-DLL build</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/cscope-emacs-example-linux-setup.1.html" jotId="wuid:gx:61d44163112962b9" class="sites-navigation-link topLevel">cscope/emacs: example Linux  setup</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/debugging-on-android.html" jotId="wuid:gx:70ecdf1419f7fec6" class="sites-navigation-link topLevel">Debugging Chromium on Android</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:46b03b9c1fb617f6"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/debugging-on-os-x.1.html" jotId="wuid:gx:46b03b9c1fb617f6" class="sites-navigation-link topLevel">Debugging Chromium on Mac OS X</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/debugging-on-os-x/building-with-ninja-debugging-with-xcode.html" jotId="wuid:gx:4d429d1b1c59f35c" class="sites-navigation-link">Building with Ninja, Debugging with Xcode</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel parent" wuid="gx:527515b958e22f7b"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="https://www.chromium.org/developers/how-tos/debugging-on-windows" jotId="wuid:gx:527515b958e22f7b" class="sites-navigation-link topLevel">Debugging Chromium on Windows</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/debugging-on-windows/example-of-working-with-a-dump.html" jotId="wuid:gx:40042b351e0cc6c6" class="sites-navigation-link">Example of working with a dump.</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/debugging-on-windows/graphics-debugging-in-visual-studio-2013.1.html" jotId="wuid:gx:41bd43aea6072001" class="sites-navigation-link">Graphics Debugging in Visual Studio 2013</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/debugging-on-windows/pix-for-windows.1.html" jotId="wuid:gx:5e7bd50113d9e59" class="sites-navigation-link">PIX for Windows</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/debugging-gpu-related-code.html" jotId="wuid:gx:4d149b53afbee62b" class="sites-navigation-link topLevel">Debugging GPU related code</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/editing-the-spell-checking-dictionaries.html" jotId="wuid:gx:6c4b5e01d1bdf180" class="sites-navigation-link topLevel">Editing the spell checking dictionaries</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:46460e89df1f2387"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/enterprise.1.html" jotId="wuid:gx:46460e89df1f2387" class="sites-navigation-link topLevel">Enterprise</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/enterprise/adding-new-policies.html" jotId="wuid:gx:324cfda2e86c6fb7" class="sites-navigation-link">Policy Settings in Chrome</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/enterprise/protobuf-encoded-policy-blobs.1.html" jotId="wuid:gx:3c5f321784542ea1" class="sites-navigation-link">Protobuf-encoded policy blobs</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/enterprise/running-the-cloud-policy-test-server.html" jotId="wuid:gx:6f394580473576bb" class="sites-navigation-link">Running the cloud policy test server</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/get-the-code-v2.html" jotId="wuid:gx:1c302aaaf8bfe44e" class="sites-navigation-link topLevel">Get the Code (Deprecated)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:6bcea0c758de87e3"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/get-the-code.1.html" jotId="wuid:gx:6bcea0c758de87e3" class="sites-navigation-link topLevel">Get the Code: Checkout, Build, Run &amp; Submit</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/committing-and-reverting-changes-manually.html" jotId="wuid:gx:64adbbcadf173002" class="sites-navigation-link">Committing and reverting changes manually</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/gclient-managed-mode.html" jotId="wuid:gx:7a35b043bb7b1b" class="sites-navigation-link">Gclient Managed Mode</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/git-svn.html" jotId="wuid:gx:3e7200178ca2f614" class="sites-navigation-link">How git-svn works</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/multiple-working-directories.html" jotId="wuid:gx:6a22be051809cbb0" class="sites-navigation-link">Managing Multiple Working Directories</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/working-with-branches.html" jotId="wuid:gx:10e8c1ccecc8df04" class="sites-navigation-link">Working with Branches</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/working-with-nested-repos.html" jotId="wuid:gx:1e2c4ce8f6d4c501" class="sites-navigation-link">Working with Nested Third Party Repositories</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/get-the-code/working-with-release-branches.html" jotId="wuid:gx:41af35982011ba91" class="sites-navigation-link">Working with Release Branches</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/getting-around-the-chrome-source-code.html" jotId="wuid:gx:7cbfe01aa72d663d" class="sites-navigation-link topLevel">Getting Around the Chromium Source Code Directory Structure</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:780807bd6c602eb7"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/gpu-wrangling.1.html" jotId="wuid:gx:780807bd6c602eb7" class="sites-navigation-link topLevel">GPU Bots &amp; Pixel Wrangling</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/gpu-wrangling/check_gpu_bots-script.1.html" jotId="wuid:gx:2a3bd74025ca77da" class="sites-navigation-link">check_gpu_bots script</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/gpu-gardening.html" jotId="wuid:gx:54b0627a514dae5e" class="sites-navigation-link topLevel">GPU Gardening</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/file-web-bluetooth-bugs.html" jotId="wuid:gx:1ce1cbe3a390d212" class="sites-navigation-link topLevel">How to file Web Bluetooth bugs</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/make-a-web-standards-proposal.html" jotId="wuid:gx:3bcdf9626a44f083" class="sites-navigation-link topLevel">How to make a web standards proposal</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/drover.html" jotId="wuid:gx:459a5566cc4853fc" class="sites-navigation-link topLevel">How to use drover</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/install-depot-tools.html" jotId="wuid:gx:50926ee6d4123990" class="sites-navigation-link topLevel">Install depot_tools</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/cygwin.html" jotId="wuid:gx:7900547e621be37b" class="sites-navigation-link topLevel">Installing cygwin</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/git-repo.1.html" jotId="wuid:gx:3aa10aeeebbea5fd" class="sites-navigation-link topLevel">Layout of the chromium git repository</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/leak-gdi-object-in-windows.html" jotId="wuid:gx:1e3617cf4ef2799d" class="sites-navigation-link topLevel">Leak GDI Objects in Windows</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/mac-development.html" jotId="wuid:gx:32e241a78a2214fb" class="sites-navigation-link topLevel">Mac Development</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/optimizing-energy-consumption.html" jotId="wuid:gx:4f9ebcb69395679" class="sites-navigation-link topLevel">Optimizing Energy Consumption</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/order-file-development-guide.html" jotId="wuid:gx:78b758b216d9798f" class="sites-navigation-link topLevel">Order file development guide</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/reliability-tests.1.html" jotId="wuid:gx:5acf0bee5edf37d7" class="sites-navigation-link topLevel">Reliability Tests</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/retrieving-crash-reports-on-ios.html" jotId="wuid:gx:78402bfca5730fe3" class="sites-navigation-link topLevel">Retrieving Crash Reports on iOS</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/run-chromium-with-flags.html" jotId="wuid:gx:7482a319cfdeee25" class="sites-navigation-link topLevel">Run Chromium with flags</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/run-mojo-shell.html" jotId="wuid:gx:7239ef59f41ca953" class="sites-navigation-link topLevel">Run Mojo Shell</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/how-to-set-up-visual-studio-debugger-visualizers.html" jotId="wuid:gx:ba0f62b09c03703" class="sites-navigation-link topLevel">Setting up Visual Studio Debugger Visualizers</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/submitting-a-performance-bug.1.html" jotId="wuid:gx:3d8162aabe15e073" class="sites-navigation-link topLevel">Submitting an Awesome Performance Bug</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:33634d51f825446f"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/trace-event-profiling-tool.1.html" jotId="wuid:gx:33634d51f825446f" class="sites-navigation-link topLevel">The Trace Event Profiling Tool (about:tracing)</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/tracing-event-instrumentation.html" jotId="wuid:gx:7dc4322eb0303523" class="sites-navigation-link">Adding Traces to Chromium/WebKit/Javascript</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/anatomy-of-jank.1.html" jotId="wuid:gx:3319ee3cd64f02ed" class="sites-navigation-link">Anatomy of Jank</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/frame-viewer.1.html" jotId="wuid:gx:2295b5aad500fc9a" class="sites-navigation-link">Chrome Frame Viewer Overview and Getting Started</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/using-frameviewer.1.html" jotId="wuid:gx:51159ec9c528f11e" class="sites-navigation-link">FrameViewer How-To</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/saving-skp-s-from-chromium.1.html" jotId="wuid:gx:32bfa5927cc7b6be" class="sites-navigation-link">How to save .skp files from Chromium</a>
+</div></li>
+<li class="parent" wuid="gx:65fbfe83df826b50"><div dir="ltr" style="padding-left: 19px;"><div class="expander"></div><a href="how-tos/trace-event-profiling-tool/memory.1.html" jotId="wuid:gx:65fbfe83df826b50" class="sites-navigation-link">Memory profiling in chrome://tracing</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="how-tos/trace-event-profiling-tool/memory/startup-tracing-with-memory-profiling.html" jotId="wuid:gx:37e80c44d9fc5679" class="sites-navigation-link">Startup tracing with memory profiling</a>
+</div></li>
+</ul>
+</li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/recording-tracing-runs.1.html" jotId="wuid:gx:49397a19d526d7ef" class="sites-navigation-link">Recording Tracing Runs</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/trace-event-profiling-tool/trace-event-reading.1.html" jotId="wuid:gx:7cea0ce3547999cc" class="sites-navigation-link">Understanding about:tracing results</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel parent" wuid="gx:649260f5502dd347"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/depottools.1.html" jotId="wuid:gx:649260f5502dd347" class="sites-navigation-link topLevel">Using depot_tools</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/depottools/gclient.html" jotId="wuid:gx:5ed4a6cdaa48b2de" class="sites-navigation-link">gclient</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/depottools/presubmit-scripts.html" jotId="wuid:gx:48fc2a91ae03fa88" class="sites-navigation-link">Presubmit Scripts</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/using-drmemory.html" jotId="wuid:gx:53326579d5270d58" class="sites-navigation-link topLevel">Using Dr. Memory</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/using-r-to-reduce-page-cycler-regressions.html" jotId="wuid:gx:891da8b334f057e" class="sites-navigation-link topLevel">Using R to reduce Page Cycler Regressions</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/using-the-heap-leak-checker.html" jotId="wuid:gx:488a2678fa82d065" class="sites-navigation-link topLevel">Using the heap leak checker</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:32223b310ffa7e9f"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="how-tos/using-valgrind.1.html" jotId="wuid:gx:32223b310ffa7e9f" class="sites-navigation-link topLevel">Using Valgrind</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="how-tos/using-valgrind/get-valgrind.html" jotId="wuid:gx:2f5796611935a9ce" class="sites-navigation-link">Get Valgrind</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/visualstudio-tricks.html" jotId="wuid:gx:2460b30be5610d46" class="sites-navigation-link topLevel">VisualStudio Tricks</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="how-tos/webkit-gardening.html" jotId="wuid:gx:7c358756ec899cd0" class="sites-navigation-link topLevel">webkit-gardening</a>
+</div></li>
+</ul>
+</div>
+</div>
+<br /></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

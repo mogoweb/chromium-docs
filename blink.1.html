@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/blink","deleted":false,"title":"Blink","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/blink\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":null,"parentWuid":null,"siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Blink","locale":"en","wuid":"wuid:gx:1c15db3ef1df1880","revision":114,"path":"/blink","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"blink","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Blink - The Chromium Projects" />
+<meta itemprop="name" content="Blink - The Chromium Projects" />
+<meta property="og:title" content="Blink - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Blink - The Chromium Projects</title>
+<meta itemprop="image" content="https://docs.google.com/a/chromium.org/drawings/d/sHkMQklVRGdCFQN-MUtxsng/image?w=364&amp;h=238&amp;rev=1&amp;ac=1" />
+<meta property="og:image" content="https://docs.google.com/a/chromium.org/drawings/d/sHkMQklVRGdCFQN-MUtxsng/image?w=364&amp;h=238&amp;rev=1&amp;ac=1" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+</div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Blink</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p>Blink is the <a href="http://en.wikipedia.org/wiki/Web_browser_engine">rendering engine</a> used by Chromium.</p>
+<h2 style="text-align:center"><a name="TOC-Blink-s-Mission:"></a><font size="3"><a name="mission"></a>Blink's Mission:</font></h2>
+<p style="text-align:center"><font size="3"><i>To improve the open web through 
+<br />
+technical innovation and good citizenship</i></font></p>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="blink.1.html#TOC-Blink-s-Mission:"><strong>1 </strong>Blink's Mission:</a></li><li class="goog-toc"><a href="blink.1.html#participating"><strong>2 </strong>Participating</a><ol class="goog-toc"><li class="goog-toc"><a href="blink.1.html#TOC-Discussions"><strong>2.1 </strong>Discussions</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Watching-for-new-features"><strong>2.2 </strong>Watching for new features</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Committing-and-reviewing-code"><strong>2.3 </strong>Committing and reviewing code</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Developing-Blink"><strong>2.4 </strong>Developing Blink</a></li><li class="goog-toc"><a href="blink.1.html#TOC-How-do-I-port-Blink-to-my-platform-"><strong>2.5 </strong>How do I port Blink to my platform?</a></li></ol></li><li class="goog-toc"><a href="blink.1.html#new-features"><strong>3 </strong>Web Platform Changes: Guidelines</a><ol class="goog-toc"><li class="goog-toc"><a href="blink.1.html#TOC-Scope"><strong>3.1 </strong>Scope</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Policy-for-shipping-and-removing-web-platform-API-features"><strong>3.2 </strong>Policy for shipping and removing web platform API features</a></li><li class="goog-toc"><a href="blink.1.html#trivial-changes"><strong>3.3 </strong>Trivial Changes</a></li><li class="goog-toc"><a href="blink.1.html#vendor-prefixes"><strong>3.4 </strong>Vendor Prefixes</a></li></ol></li><li class="goog-toc"><a href="blink.1.html#TOC-Web-Platform-Changes:-Process"><strong>4 </strong>Web Platform Changes: Process</a><ol class="goog-toc"><li class="goog-toc"><a href="blink.1.html#launch-process"><strong>4.1 </strong>Launch Process: New Features</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Launch-Process:-Deprecation"><strong>4.2 </strong>Launch Process: Deprecation</a></li><li class="goog-toc"><a href="blink.1.html#TOC-API-Owners"><strong>4.3 </strong>API Owners</a></li><li class="goog-toc"><a href="blink.1.html#api-review"><strong>4.4 </strong>API Review</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Feature-Dashboard"><strong>4.5 </strong>Feature Dashboard</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Guiding-Principles-for-Process"><strong>4.6 </strong>Guiding Principles for Process</a></li></ol></li><li class="goog-toc"><a href="blink.1.html#testing"><strong>5 </strong>Testing</a></li><li class="goog-toc"><a href="blink.1.html#architectural-changes"><strong>6 </strong>Architectural Changes</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Sub-Teams"><strong>7 </strong>Sub Teams</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Binding-TeamLayout-TeamMemory-TeamPaint-TeamStyle-TeamWeb-Components-TeamAnimation-TeamWorker-Team"><strong>8 </strong>Binding TeamLayout TeamMemory TeamPaint TeamStyle TeamWeb Components TeamAnimation TeamWorker Team</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Developer-FAQ"><strong>9 </strong>Developer FAQ</a></li><li class="goog-toc"><a href="blink.1.html#TOC-Subpage-Listing"><strong>10 </strong>Subpage Listing</a></li></ol></div></div></div></div></div>
+<h2><a name="TOC-1"></a><br />
+</h2>
+<h2><a name="participating"></a>Participating</h2>
+Blink is an inclusive open-source community that values fostering a supportive culture. We welcome participation from anyone who shares <a href="blink.1.html#mission">our mission</a>.
+
+<h3><a name="TOC-Discussions"></a>Discussions</h3>
+Transparency is one of the core values of Blink. Our goal is for anyone to be able to participate, regardless of organizational affiliation. There are a number of areas where discussions take place:
+
+<ul>
+<li><strong>Chromium Bug Tracker</strong>: We use bugs to track and discuss desired features. We use Chromium's bug tracker, and mark our bugs with the "Cr-Blink" label. <span style="font-family:Times;font-size:medium"><span style="font-size:13px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Click the star next to a bug’s name to receive email updates, and file new bugs </span><a href="http://crbug.com/new" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">here</span></a><span style="font-size:13px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">.</span></span></li>
+<li><strong>Code Reviews</strong>: We use Rietveld, Chromium's code review tool, to comment on implementation strategies for changes we've decided to implement.</li>
+<li><strong>#blink</strong>: We hang out on the #blink IRC channel on Freenode to have quick, informal discussions and answer questions. For more substantive discussion, a format with a permanent record is preferred.</li>
+<li><strong><a href="https://groups.google.com/a/chromium.org/group/blink-dev/topics" target="_blank">blink-dev@chromium.org</a></strong> is a general list for discussions relevant to the design and implementation of the project. The mailing list is analogous to chromium-dev and is the most high-traffic of the communication channels. There are also several more targeted sub-lists for discussion of specific areas of the codebase, which you can find <a href="developers/technical-discussion-groups.html">here</a>. None of these lists are appropriate for web development inquiries.</li>
+</ul>
+<h3 dir="ltr" style="line-height:1.15;margin-top:14pt;margin-bottom:4pt"><a name="TOC-Watching-for-new-features"></a><span style="font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="3">Watching for new features</font></span></h3>
+<span style="font-size:10pt">For web developers interested in tracking new features, the signal-to-noise ratio of discussion forums might be too low to be useful. There are several dedicated channels for staying up-to-date on new features:</span>
+<div>
+<ul><li><span style="font-size:10pt"><b>Beta Chromium blog posts</b>: For each new Chrome Beta release (~every six weeks), the Chrome team publishes a blog post outlining changes to the web platform and the Chrome Apps &amp; Extensions APIs. Here's an example of one of these </span><a href="http://blog.chromium.org/2013/04/chrome-27-beta-speedier-web-and-new.html" style="font-size:10pt">posts</a><span style="font-size:10pt">.</span></li>
+<li><a href="http://chromestatus.com/" style="font-size:10pt"><b>chromestatus.com</b></a>: A<span style="font-size:10pt"> dashboard where we track new feature development. Learn more in the </span><a href="blink.html#feature-dashboard" style="font-size:10pt">“Feature Dashboard” section</a><span style="font-size:10pt"> below.</span></li>
+<li><a href="http://bit.ly/blinkintents"><b>bit.ly/blinkintents</b></a>: A Google Spreadsheet that lists all <a href="blink.html#launch-process">"Intent" threads</a> and their approval status.</li>
+<li><span style="font-size:10pt"><b>Chrome Developer Relations</b>: Chrome DevRel posts about new features on both Twitter (</span><a href="https://twitter.com/ChromiumDev" style="font-size:10pt">@ChromiumDev</a><span style="font-size:10pt">) and Google+ (</span><a href="https://plus.google.com/+GoogleChromeDevelopers" style="font-size:10pt">+GoogleChromeDevelopers</a><span style="font-size:10pt">).</span></li>
+<li><span style="font-size:10pt"><b>Blink launch tracking bugs</b>: These bugs track new features on the Chromium issue tracker. You can find launch bugs by applying the filter </span><a href="https://code.google.com/p/chromium/issues/list?q=Type%3DLaunch-OWP" style="font-size:10pt">Type=Launch-OWP</a><span style="font-size:10pt"> (OWP for “open web platform”).</span></li>
+<li><span style="font-size:10pt"><a href="https://groups.google.com/a/chromium.org/forum/?fromgroups#!forum/blink-reviews" style="font-weight:bold;font-size:10pt">blink-reviews@chromium.org</a>:</span><span style="font-size:10pt"> a high-traffic list for Blink code reviews. The code for all new features gets reviewed on this list.</span></li>
+<li><b><a href="https://chromium.googlesource.com/chromium/blink">Blink source tree</a></b>: The current source of Blink. You can also <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/">search and browse the code online</a>. </li></ul>
+<h3><a name="TOC-Committing-and-reviewing-code"></a>Committing and reviewing code</h3>
+The <a href="http://dev.chromium.org/getting-involved/become-a-committer" target="_blank">process for becoming a committer</a> or an OWNER is the same as for the larger Chromium project, and code changes are approved by <a href="http://dev.chromium.org/developers/owners-files" target="_blank">OWNERS</a>. Experience with the <a href="https://chromium.googlesource.com/chromium/blink">codebase</a> from working on WebKit will be taken into account to accelerate the process of becoming an OWNER.
+<h3><a name="TOC-Developing-Blink"></a>Developing Blink</h3>
+Blink is implemented on top of an abstract platform and thus cannot be run by itself.  The <a href="developers/content-module.html" target="_blank">Chromium Content module</a> provides the implementation of this abstract platform required for running Blink.  Developing for the Content module is covered in the <a href="http://www.chromium.org/developers" target="_blank">Chromium developer docs.</a>  Testing your changes can be done with a build of Content Shell or a full Chromium build. For some tips and suggestions on debugging Blink, see the page on <a href="blink/getting-started-with-blink-debugging.html">Getting Started with Blink Debugging</a>.</div>
+<div><br />
+</div>
+<div>Note that Blink code must conform to <a href="http://dev.chromium.org/blink/coding-style">Blink Coding Style Guidelines</a> NOT <a href="developers/coding-style.html">Chromium Coding Style</a>.
+<h3><a name="TOC-How-do-I-port-Blink-to-my-platform-"></a>How do I port Blink to my platform?</h3>
+Blink runs on an abstract platform inside a sandbox and therefore has few operating-system-specific dependencies.  This design has two consequences: (1) Blink cannot run alone, and (2) porting to other platforms happens at a different layer. Instead of adding platform-specific code to Blink, you should use Chromium’s content layer, which provides an implementation of this virtual platform on a wide variety of operating systems including Windows, Linux, Mac OS X, and Android.  A separate project called the <a href="https://code.google.com/p/chromiumembedded/" target="_blank">Chromium Embedded Framework</a> is probably the easiest way to use Chromium (and thus Blink) on your platform.
+<h2><a name="new-features"></a>Web Platform Changes: Guidelines</h2>
+<p>In addition to making the web platform faster and more secure, improving the web platform also means adding new functionality and removing cruft. To fulfill our good citizenship mission, we need to be careful to change the web-facing API in a transparent, responsible, and compatible manner.  We measure success as moving the open web platform forward as a whole, not just moving one implementation forward.
+
+</p>
+<p>In practice, we strive to ensure that the features we ship by default have <strong>open standards</strong>.  As we work on features, we track their progress in the web standards community with the <a href="http://www.chromestatus.com/features" target="_blank">Chromium Features Dashboard</a>, which lets us be transparent about the status of each feature and about how we make decisions about which features to enable by default for the open web.</p>
+<h3><a name="TOC-Scope"></a>Scope</h3>
+These guidelines cover non-trivial changes that are exposed to the open web or in some other way have implications for web developers, including changes that add or remove functionality or APIs.  Changes that <font face="arial, sans-serif">are not exposed to the open web (e.g., user interface features, extension APIs, or testing infrastructure) are outside the scope of this policy.</font></div>
+<div><font face="arial, sans-serif">
+<h3><a name="TOC-Policy-for-shipping-and-removing-web-platform-API-features"></a>Policy for shipping and removing web platform API features</h3>
+<div>As browser implementers, we find that there’s often tension between (a) moving the web forward and (b) preserving compatibility. On one hand, the web platform API surface must evolve to stay relevant. On the other hand, the web’s primary strength is its reach, which is largely a function of interoperability. By definition, when any vendor ships a new feature (or is the first to remove an obsolete feature), the API change is not yet interoperable, so cross-browser compatibility is sacrificed, even if briefly. This section outlines our approach to resolving this tension.</div>
+<div><br />
+</div>
+<div><b><font size="2">Evaluating “compatibility risk”</font></b></div>
+<br />
+<div>Compatibility risk is the likelihood that a change will break (a) cross-browser interoperability and/or (b) existing web content loaded in Chromium.</div>
+<div><br />
+</div>
+<div>Cross-browser compatibility risk is the risk that browsers will not eventually converge on an interoperable implementation of the API. Interoperability at a given time point is not a well-formed concept, because unless every browser shipped new features at exactly the same time then there is a period of non-interoperability. In practice, we forecast “compatibility risk” (a) by observing the public behavior of others in the web ecosystem. Heuristics that decrease risk a priori for an unshipped feature include, in rough order of importance:</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Other vendors already shipping compatible implementations</span></li>
+<li><span style="font-size:10pt;background-color:transparent">A mature specification in the relevant standards body</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Positive signals from other browser vendors</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Lack of negative signals from other browser vendors</span></li>
+<li><span style="font-size:10pt;background-color:transparent">A small API footprint</span></li></ul>
+</div>
+<div>Compatibility with existing web content is important too. We use the usage data from http://chromestatus.com/metrics and feedback from web developers to guage the exent of this type of compatibility risk. Content risk is especially common with API removal, but is also a factor when adding new features (e.g. <a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/BytHPljnifk/PiKCn3Ix6IIJ">Unprefixed CSS Animations</a>).</div>
+<div><br />
+</div>
+<div><b><font size="2">Evaluating “moving the web forward”</font></b></div>
+<div><br />
+</div>
+<div>A change to Blink’s API surface is said to “move the web forward” if it either (a) enables developers to build compelling applications for a large number of users, both now and in the future, and/or (b) reduces code complexity in Blink or Chromium.</div>
+<div><br />
+</div>
+<div>Bucket (a) is subjective and changes over time. In 2014, we believe the most important changes for developers---and, by extension, users---are those that make the web more performant and easier to use on mobile devices. For more information, see the <a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Z5OzwYh3Wfk/IWooaY5FZowJ">2014 Blink goals brainstorming thread</a>.</div>
+<div><br />
+</div>
+<div>Bucket (b) is important to make sure that the web’s progress is not overly constrained by its legacy. Simplifying the codebase allows us to make performance improvements, more quickly add more important features, and reduce binary size. In most cases, we believe these benefits will extend to other browsers as well.</div>
+<div><br />
+</div>
+<div><b><font size="2">Balancing “moving the web forward” and “compatibility risk”</font></b></div>
+<div><br />
+</div>
+<div>To manage the project-wide tension between moving the web forward and preserving compatibility, we ask of each proposed API change: does this individual change strike the right balance between making the web better and minimizing compatibility risk?</div>
+<div><br />
+</div>
+<div>In an ideal world, all changes would both drastically move the web forward and involve zero compatibility risk. In practice, this is rarely the case; features fit somewhere else on this chart:</div>
+<div><br />
+</div>
+<div><span><br />
+<span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><img height="238px;" src="https://docs.google.com/a/chromium.org/drawings/d/sHkMQklVRGdCFQN-MUtxsng/image?w=364&amp;h=238&amp;rev=1&amp;ac=1" style="border:none" width="364px;" /></span></span></div>
+<div><br />
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Blink’s willingness to accept a change is largely determined by the change’s location on the chart above:</span></div>
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">If a change has low compatibility risk and significantly moves the web forward, Blink usually welcomes it (e.g., <a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/vjyd8It--3Y">shipping unprefixed CSS Transforms</a>).</span></li>
+<li><span style="font-size:10pt;background-color:transparent">If a change has low compatibility risk but isn’t expected to significantly move the web forward, Blink usually still welcomes it. Occasionally, Blink will reject changes in this bucket to avoid technical complexity (e.g., <a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/ScKw9zYRkBc">not shipping our old implementation of CSS Variables</a>).</span></li>
+<li><span style="font-size:10pt;background-color:transparent">If a change has high compatibility risk and isn’t expected to significantly move the web forward, Blink will usually not welcome it (e.g., <a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/n1LP6cE2or4">not shipping canvas supportsContext</a>).</span></li>
+<li><span style="font-size:10pt;background-color:transparent">If a change has high compatibility risk but is expected to significantly move the web forward, Blink will sometimes welcome it after careful, publicly-explained consideration (e.g. <a href="https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/ay9tVGRa8Rg/GQpvRbrgflgJ">shipping Shadow DOM</a>). In such cases, the implementer is expected to:</span></li>
+<ul><li><span style="font-size:10pt;background-color:transparent">Propose an editor’s draft (or equivalent) to the relevant standards group.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Discuss the feature publicly with implementers of other browser engines.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Take on an active commitment to shepherd the feature through the standards process, accepting the burden of possible API changes.</span></li></ul>
+</ol>
+</div>
+<div>Of course, equal minds can disagree about the fuzzier aspects of these policies. For example, if a change increases runtime performance but consumes more battery, does it “move the web forward”? Or: what combination of the heuristics above precisely constitutes “high” compatibility risk?</div>
+<div><br />
+</div>
+<div>To equitably resolve these kinds of questions on a per-change basis, Blink has <a href="blink.html#launch-process">a well-defined process</a> for discussing and approving web-facing API changes. It consists of code reviews, announcements to blink-dev, and formal API review meetings. The most formal requirement of the process is that API changes must receive an LGTM from at least three different <a href="blink.html#TOC-API-Owners">API owners</a> before enabled by default on trunk. The API owners are responsible for making sure the policy described above is applied appropriately on a per-change basis.</div>
+</font>
+<h3><a name="trivial-changes"></a>Trivial Changes</h3>
+<p>Trivial platform changes do not need to meet the requirements above.  For example, changes to existing APIs to improve compliance with web standards or to fix bugs are welcome. Trivial changes should be labeled as such in their code review. They should be small fixes that have low risk of disrupting web developers.
+
+</p>
+<p>If we’re unsure about the extent to which a change will impact web developers, we may ask the contributor proposing the change to provide data quantifying the impact.  If a project member questions whether a change is trivial, we will err on the side of caution and ask the contributor to meet the requirements above.
+</p>
+<h3><a name="vendor-prefixes"></a>Vendor Prefixes</h3>
+Historically, browsers have relied on vendor prefixes (e.g., <code>-webkit-feature</code>) to ship experimental features to web developers. This approach can be harmful to compatibility because web content comes to rely upon these vendor-prefixed names.  Going forward, instead of enabling a feature by default with a vendor prefix, we will instead keep the (unprefixed) feature behind the “enable experimental web platform features” flag in <code>about:flags</code> until the feature is ready to be enabled by default. Mozilla has already embarked on a <a href="http://lists.w3.org/Archives/Public/public-webapps/2012OctDec/0731.html" target="_blank">similar policy</a> and the W3C CSS WG formed a rough consensus around <a href="http://www.w3.org/blog/CSS/2012/08/30/resolutions-53/">a complementary policy</a>.
+<h2><a name="TOC-Web-Platform-Changes:-Process"></a>Web Platform Changes: Process</h2>
+<h3><a name="launch-process"></a>Launch Process: New Features</h3>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+<div><span style="color:rgb(34,34,34);font-family:arial;font-size:small">1.</span><b style="color:rgb(34,34,34);font-family:arial;font-size:small"> Decide if your change needs to go through this process.</b></div>
+</div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="vertical-align:baseline">
+<ul><li style="font-size:13px;white-space:pre-wrap">If your change does not affect functionality exposed to the open web, you may skip the rest of this process. <i>(The "open web" is accessible by entering a URL in the omnibox on a fresh Chrome install.)</i></li>
+<li style="font-size:13px;white-space:pre-wrap"><span style="vertical-align:baseline">If you consider your change to be</span><a href="blink.html#trivial-changes" style="font-size:10pt;text-decoration:none"><span style="color:rgb(0,0,0);vertical-align:baseline"> </span><span style="color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline">trivial</span></a><span style="vertical-align:baseline">, assert so in your patch. If your reviewer does not object, you may skip the rest of this process.</span></li>
+<li><span style="white-space:pre-wrap">If your change cannot be implemented in Blink but still exposes functionality to the open web:</span></li>
+<ul><li><span style="white-space:pre-wrap">Add an entry on chromestatus.com.</span></li>
+<li><span style="white-space:pre-wrap">Send a "Web-Facing Change PSA" email to chromium-dev (CC blink-dev).</span></li>
+<li><span style="white-space:pre-wrap;font-size:10pt">Skip the rest of this process.</span></li></ul>
+<li><font size="2"><span style="white-space:pre-wrap">Else, continue!</span></font></li></ul>
+</span></blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+<div><span style="color:rgb(34,34,34);font-family:arial;font-size:small">2.</span><b style="color:rgb(34,34,34);font-family:arial;font-size:small"> Email blink-dev using the <a href="https://docs.google.com/a/chromium.org/document/d/1vlTlsQKThwaX0-lj_iZbVTzyqY7LioqERU8DK3u3XjI/edit#bookmark=id.uptkx07pm53s" style="color:rgb(17,85,204)">“Intent to Implement” template</a>. </b></div>
+</div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="background-color:transparent;vertical-align:baseline">
+<ul><li style="font-size:13px;white-space:pre-wrap"><span style="background-color:transparent;vertical-align:baseline">If appropriate, </span><span style="background-color:transparent;font-weight:bold;vertical-align:baseline"><a href="http://www.chromestatus.com/admin/features/new">create an entry</a> on <a href="http://chromestatus.com/">chromestatus.com</a> and/or <a href="https://code.google.com/p/chromium/issues/entry?template=OWP%20Launch%20Tracking">file an OWP launch tracking bug</a></span><span style="background-color:transparent;vertical-align:baseline">.</span></li>
+<ul><li><span style="background-color:transparent"><span style="white-space:pre-wrap">In general, all non-trivial API changes need a bug and an entry. Small tweaks do not.</span></span></li>
+<ul><li><span style="background-color:transparent"><span style="white-space:pre-wrap">You should file an OWP launch tracking bug if you expect Blink leads and/or web developers will be interested in starring to follow along with the feature's development (e.g. <a href="https://code.google.com/p/chromium/issues/detail?id=166003">the Chrome for Android Web Audio OWP launch tracking bug</a> was starred by 70+ people).  OWP Launch tracking bugs kick off any necessary reviews like privacy and security and so are generally required.</span></span></li>
+<li style="font-size:13px;white-space:pre-wrap"><span style="background-color:transparent">You should create an entry on chromestatus.com if you think web developers or other browser implementors will be interested in seeing this in the Chrome release notes.  If you have a chromestatus.com entry you can replace the body template with just a link to your chromestatus.com entry (since the information is mostly redundant).</span></li><li style="font-size:13px;white-space:pre-wrap"><span style="background-color:transparent">Most changes should kick off a <a href="https://github.com/w3ctag/spec-reviews/issues">TAG review</a>.</span></li></ul>
+<li style="font-size:13px;white-space:pre-wrap"><span style="background-color:transparent;vertical-align:baseline">You'll need to use an @chromium.org account for chromestatus.com. If you don't have one, please fill out <a href="https://docs.google.com/a/chromium.org/forms/d/1djZD0COt4NgRwDYesNLkYAb_O8YL39eEvF78vk06R9c/viewform">this form</a>.</span></li>
+<li style="font-size:13px;white-space:pre-wrap"><span style="background-color:transparent">If you have trouble with chromestatus.com, please </span><a href="https://github.com/GoogleChrome/chromium-dashboard/issues?state=open" style="background-color:transparent">open an issue on GitHub</a><span style="background-color:transparent">.</span></li></ul>
+<li style="font-size:13px;white-space:pre-wrap"><span style="font-family:arial;font-size:small">No formal approval is needed to proceed with implementation, but it's in your interest to build consensus: code cannot be checked into trunk without an LGTM in code review, and opposition on the "Implement" thread will likely resurface when you try to ship.</span></li>
+<li style="font-size:13px;white-space:pre-wrap"><span style="font-family:arial;font-size:small">Typically API OWNERS or other interested folks will reply with feedback within a week. If you don't get any feedback, that's fine. Feel free to move forward with implementation.</span></li>
+<li style="font-size:13px;white-space:pre-wrap"><span style="font-family:arial;font-size:small">You can collapse steps 2, 3, 4 and skip to step 5 by sending an "Intent to Implement and Ship" email. Follow the instructions in the </span><span style="font-size:small;white-space:normal;color:rgb(34,34,34);font-family:arial"><a href="https://docs.google.com/a/chromium.org/document/d/1vlTlsQKThwaX0-lj_iZbVTzyqY7LioqERU8DK3u3XjI/edit" style="color:rgb(17,85,204)">“Intent to Implement” template</a>.</span></li></ul>
+</span></blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+<div><span style="color:rgb(34,34,34);font-family:arial;font-size:small">3.</span><b style="color:rgb(34,34,34);font-family:arial;font-size:small"> Implement your change as a <a href="blink/runtime-enabled-features.html">Runtime-Enabled Feature</a>.</b></div>
+</div>
+<div>
+<div><span><font color="#222222" face="arial" size="2"><b><br />
+</b></font></span></div>
+</div>
+<div>
+<div><span style="color:rgb(34,34,34);font-family:arial;font-size:small">4. </span><b><span style="color:rgb(34,34,34);font-family:arial;font-size:small">Email blink-dev using the <a href="https://docs.google.com/a/chromium.org/document/d/1vlTlsQKThwaX0-lj_iZbVTzyqY7LioqERU8DK3u3XjI/edit#bookmark=id.w8j30a6lypz0" style="color:rgb(17,85,204)">“Intent to Ship” template</a>. Wait for LGTMs from at least 3 </span><a href="blink.1.html#TOC-API-Owners" style="font-family:Arial;font-size:15px;background-color:transparent;line-height:1.15;text-decoration:none"><span style="font-size:13px;color:rgb(17,85,204);background-color:transparent;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">API Owners</span></a></b><b style="color:rgb(34,34,34);font-family:arial;font-size:small">.</b></div>
+</div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="font-family:arial;font-size:small;background-color:transparent">
+<ul><li><span style="background-color:transparent">An in-person meeting will be scheduled if either a) 7 days pass without 3 LGTMs or b) an OWNER requests one.</span></li>
+<li><span style="background-color:transparent"><span style="white-space:pre-wrap">We clear the "unresolved intents" queue on Tuesdays, so usually you can expect a reply on or before the Tuesday after you send your intent.</span></span></li></ul>
+</span></blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+<div><span style="color:rgb(34,34,34);font-family:arial;font-size:small">5. </span><b style="color:rgb(34,34,34);font-family:arial;font-size:small">Enable by default.</b></div>
+</div>
+</blockquote>
+<div>
+<h4><a name="TOC-2"></a>
+<div style="font-weight:normal"></div>
+<blockquote style="font-weight:normal;margin:0px 0px 0px 40px;border:none;padding:0px">
+<div></div>
+</blockquote>
+</h4>
+<h3><a name="TOC-Launch-Process:-Deprecation"></a>Launch Process: Deprecation</h3>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Decide if your feature needs to go through this process.</span></p>
+</li>
+</ol>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<ul><li><span style="font-size:10pt;line-height:1.15;background-color:transparent;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">You can skip 2-5 if you’re removing a trivial feature (e.g. a </span><span style="font-size:10pt;line-height:1.15;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">quirk that is exclusive to WebKit, like </span><a href="https://groups.google.com/a/chromium.org/forum/#!searchin/blink-dev/rangeexception/blink-dev/5mNHirgyOzM/JJFGx6HUn7IJ" style="font-size:10pt;line-height:1.15;font-family:Arial;font-weight:bold;text-decoration:none"><span style="color:rgb(17,85,204);font-weight:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">RangeException</span></a><span style="font-size:10pt;line-height:1.15;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">)</span><span style="font-size:10pt;line-height:1.15;background-color:transparent;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">.</span></li>
+<li><span style="background-color:transparent;color:rgb(34,34,34);font-family:Arial;font-size:10pt;line-height:1.15;white-space:pre-wrap">(In general, you don't need to be overly cautious removing features because Canary, Dev, and Beta users will complain if you break the web. That will give you a chance to revert your change before it reaches Stable. But if your reviewer suggests going through the rest of this process, do it.)</span></li></ul>
+</div>
+</blockquote>
+<div>
+<ol start="2" style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Carefully consider whether you can jump straight to deprecation without first measuring the feature's usage in the wild.</span></p>
+</li>
+</ol>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<ul><li><span style="font-family:Arial;font-size:10pt;line-height:1.15;white-space:pre-wrap"><span style="color:rgb(34,34,34);font-family:arial,sans-serif;line-height:normal;white-space:normal">If you're sure you're not going to cause compatibility problems, then you don't need to measure. If you're unsure, then measuring is probably a good idea.</span></span></li>
+<li><span style="font-family:Arial;font-size:10pt;line-height:1.15;white-space:pre-wrap">To measure:</span></li>
+<ul><li><span style="font-size:10pt;line-height:1.15;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">Add your feature to the </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/page/UseCounter.h&amp;sq=package:chromium&amp;type=cs&amp;q=file:UseCounter.h%20Feature" style="font-size:10pt;line-height:1.15;font-family:Arial;text-decoration:none"><span style="color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">UseCounter::Feature enum</span></a><span style="font-size:10pt;line-height:1.15;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">.</span></li>
+<li><span style="font-family:Arial;font-size:10pt;line-height:1.15;white-space:pre-wrap">Add MeasureAs=[your enum value here] to the feature's IDL definition.*</span></li></ul></ul>
+</blockquote>
+<div>
+<ol start="3" style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Email blink-dev using the </span><a href="https://docs.google.com/a/chromium.org/document/d/1Z7bbuD5ZMzvvLcUs9kAgYzd65ld80d5-p4Cl2a04bV0/edit" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">"Intent to Deprecate" template</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">.</span></p></li></ol><span style="background-color:transparent;font-family:arial;font-size:small;white-space:pre-wrap"><ul><ul><li><span style="background-color:transparent">No formal approval is needed to proceed with deprecation, but it's in your interest to build consensus: code cannot be checked into trunk without an LGTM in code review, and opposition on the "Deprecate" thread will likely resurface when you try to remove.</span></li>
+<li><span style="background-color:transparent">Typically API OWNERS or other interested folks will reply with feedback within a week. If you don't get any feedback, that's fine. Feel free to move forward with deprecation.</span></li></ul></ul>
+</span>
+<ol start="4" style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Deprecate: notify developers and measure usage.</span></p>
+</li>
+</ol>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<ul><li><span style="font-size:10pt;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">If you haven't, add your feature to the </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/page/UseCounter.h&amp;sq=package:chromium&amp;type=cs&amp;q=file:UseCounter.h%20Feature" style="font-size:10pt;text-decoration:none"><span style="font-family:Arial;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">UseCounter::Feature enum</span></a><span style="font-size:10pt;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">.</span></li>
+<li><span style="font-family:Arial;font-size:10pt;white-space:pre-wrap">Instrument your code by either:</span></li>
+<ul><li><span style="font-family:Arial;font-size:10pt;white-space:pre-wrap">Adding DeprecateAs=[your enum value here] to the feature's IDL definition.*^ See window.performance.webkitGetEntries, for example.</span></li>
+<li><span style="font-size:10pt;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">Adding a call to UseCounter::countDeprecation somewhere relevant (as we did for the </span><a href="http://src.chromium.org/viewvc/blink/trunk/Source/core/page/ContentSecurityPolicy.cpp?r1=149184&amp;r2=149193" style="font-size:10pt;text-decoration:none"><span style="font-family:Arial;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">prefixed Content Security Policy headers</span></a><span style="font-size:10pt;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">).</span></li></ul>
+<li><span style="font-size:10pt;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">Notify developers by adding a clever deprecation message to the big switch in </span><a href="http://src.chromium.org/viewvc/blink/trunk/Source/core/page/UseCounter.cpp#l120" style="font-size:10pt;text-decoration:none"><span style="font-family:Arial;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">UseCounter::deprecationMessage</span></a><span style="font-size:10pt;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">. This will print a deprecation warning in the DevTools console.</span></li></ul>
+</blockquote>
+<div>
+<ol start="5" style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Email blink-dev using the </span><a href="https://docs.google.com/a/chromium.org/document/d/1Z7bbuD5ZMzvvLcUs9kAgYzd65ld80d5-p4Cl2a04bV0/edit#bookmark=id.cvoy7bb78bkl" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">"Intent to Remove" template</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">. Wait for LGTMs from ≥3 </span><a href="blink.html#TOC-API-Owners" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">API OWNERS</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">
+</span></p>
+</li>
+</ol>
+<ol start="6" style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Remove.</span></p>
+</li>
+</ol>
+<p><span style="font-size:10pt">^ DeprecateAs is intended to replace MeasureAs in the IDL file. Specifying both is redundant. </span></p>
+<p><span style="font-size:10pt">* It takes 12-18 weeks to hit Stable once you enable instrumentation. See <a href="https://groups.google.com/a/chromium.org/d/msg/blink-dev/bs3NIiqnc8Q/2kF7HNr4kSAJ">this thread</a> for a discussion of which usage percentages are safe to remove.</span></p>
+<div style="color:rgb(34,34,34);font-family:arial,sans-serif">
+<div><b>Lessons from the first year of deprecations and removals </b>(<a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/1wWhVoKWztY">thread</a>)</div>
+<ul><li><span style="font-size:10pt;background-color:transparent">We should weigh the benefits of removing an API more against the cost it has. %pageviews by itself is not the only metric we care about.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">The cost of removing an API is not accurately reflected by the UseCounter for older, widely implemented APIs. It's more likely that there's a longer-tail of legacy content that we're breaking.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">We shouldn't remove APIs that have small value on the path towards a removal that has significant value. Getting rid of attribute nodes *is* valuable and would benefit the platform. Getting rid of half the attribute node methods is not. So we should evaluate the usage of all the APIs we need to remove together in order to get there. Also, if we remove them, we should remove them all in the same release. Breaking people once is better than breaking them repeatedly in small ways.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">We should be more hesitant to remove older, widely implemented APIs.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">For cases where we're particularly concerned about the compatibility hit, we should do the removal behind a flag so that we can easily reenable the API on stable as we don't know the compat hit until the release has been on stable for a couple weeks.</span></li></ul>
+</div>
+<h3><a name="TOC-API-Owners"></a>API Owners</h3>
+<p style="font-size:13px;font-weight:normal"><span style="background-color:transparent">Here's </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/OWNERS" style="background-color:transparent" target="_blank">the current list of API OWNERS</a><span style="background-color:transparent">.</span></p><p style="font-size:13px;font-weight:normal">All members of the project are responsible for enforcing that new features follow the project’s policies. Project members who feel that a feature is violating the policy should raise the issue first with the contributor and, if that doesn’t resolve the issue, with the project’s public mailing list.</p>
+<p style="font-size:13px;font-weight:normal">To complement this project-wide responsibility, we have a set of API owners who are listed in the OWNERS file of the API directory, a directory that contains the files that control the API we expose to the web (e.g., the WebIDL files, CSSNames.in). When reviewing changes to these files, the API owners should ensure that the changes meet the project’s guidelines for new features.</p>
+<h3><a name="api-review"></a>API Review</h3>
+<p style="font-size:13px;font-weight:normal">API Review meetings will be scheduled when API discussion over email is insufficient (per the <a href="blink.html#launch-process">Launch Process</a>). API owners and contributors of features under discussion are welcome to attend. The purpose of the API Review meeting is to provide a high-bandwidth forum for discussion between API owners and feature implementors. The group makes decisions by consensus; at least three project OWNERS must be present for quorum. <span style="font-size:10pt">After the meeting the organizer will send notes, including any decisions, to blink-dev.</span></p>
+<h3><a name="TOC-Feature-Dashboard"></a>Feature Dashboard</h3>
+<p style="font-size:13px;font-weight:normal">To improve transparency, we track development of new features on our <a href="http://www.chromestatus.com/features" target="_blank">Feature Dashboard</a>. For each feature, the dashboard tracks our implementation status, the feature's progress through the standards process, our understanding of the opinion of other browser vendors and other key metrics.</p>
+<p style="font-size:13px;font-weight:normal">We associate each value with a shade of red or green, corresponding to how the value reflects our web citizenship. For example, “opposition from another browser vendor” is red and “a similar implementation in another browser” is green. Viewed in aggregate, these colors provide a quick snapshot of the project’s overall web citizenship.</p>
+<p style="font-size:13px;font-weight:normal">The dashboard data itself is also a useful high-level record of when features were implemented and a peek at what’s coming next. If you’d like to monitor lower-level changes as they happen, check out our <a href="https://chromium.googlesource.com/chromium/blink" target="_blank">Gitiles</a> and <a href="http://src.chromium.org/viewvc/blink/">SVN logs</a>.</p>
+<h3><a name="TOC-Guiding-Principles-for-Process"></a>Guiding Principles for Process</h3>
+<div>
+<ul><li><span style="background-color:transparent;font-size:10pt;line-height:1.15;white-space:pre-wrap">Minimize compatibility risk for released features.</span></li>
+<li><span style="background-color:transparent;font-family:Arial;line-height:1.15;white-space:pre-wrap;font-size:10pt">Minimize process burden once a change has been LGTMed by API owners.</span></li>
+<li><span style="background-color:transparent;font-family:Arial;line-height:1.15;white-space:pre-wrap;font-size:10pt">Minimize ambiguity.</span></li>
+<li><span style="background-color:transparent;font-family:Arial;line-height:1.15;white-space:pre-wrap;font-size:10pt">Block bad engineering investments upfront.</span></li>
+<li><span style="background-color:transparent;font-family:Arial;line-height:1.15;white-space:pre-wrap;font-size:10pt">Block incomplete features from being runtime-enabled.</span></li>
+<li><span style="background-color:transparent;font-family:Arial;line-height:1.15;white-space:pre-wrap;font-size:10pt">Create an audit trail, not necessarily a single approval funnel for all changes.</span></li>
+<li><span style="background-color:transparent;font-family:Arial;line-height:1.15;white-space:pre-wrap;font-size:10pt">Prefer email over meetings.</span></li></ul>
+</div>
+<h2><a name="testing"></a>Testing</h2>
+<p>Openness and interoperability are core to the web platform’s philosophy and success. We are committed to delivering features that are interoperable. In addition to the checks and balances in our release process, we prioritize testing as a way to promote compatibility across browsers. It is our intention to increase our investment in testing over time.
+
+</p>
+<p>In 2012, we submitted a comprehensive <a href="http://demo.unipro.ru/shadow/" target="_blank">Shadow DOM conformance test suite</a> to the W3C. We’ll continue to create conformance test suites like these, so that implementations for new features are interoperable from the beginning. To incentivize this, the feature dashboard has a column for conformance tests. If a feature has a test suite, its cell in that column is green. Otherwise, it’s red.
+
+</p>
+<p>Going forward, we’ll be <a href="https://lists.webkit.org/pipermail/webkit-dev/2013-March/024055.html" target="_blank">working</a> with the W3C and the broader web community to share more tests and testing infrastructure as a way to encourage interoperability. 
+
+</p>
+<p>We’ve also been collaborating with Adobe to host <a href="http://testthewebforward.org/sydney-2013.html" target="_blank">Test the Web Forward</a> events, where web developers and spec authors work together to write conformance tests that all browsers are evaluated against. So far (April 2013) there have been four such events, the most recent hosted by Google in Sydney. We're committed to this effort and are currently organizing the next event in Tokyo.
+
+</p>
+<p>If you encounter a bug in Blink or a browser interoperability issue, please file a bug <a href="https://code.google.com/p/chromium/issues/entry?template=Defect%20report%20from%20developer" target="_blank">here</a>.
+</p>
+<h2><a name="architectural-changes"></a>Architectural Changes</h2>
+<p>With Blink we’re excited about the freedom to dream big for the Web.  When Chromium started, our goal was to change as little of WebKit as possible, easing integration with the WebKit codebase.  With Blink we are excited to make large-scale architectural changes to the code, without having to worry about breaking other consumers of WebKit.
+
+</p>
+<p>One change we’re planning is adding <a href="developers/design-documents/oop-iframes.html" target="_blank">“out-of-process iframes”</a>.  These allow Chromium to separate individual parts of a page into separate sandboxed processes.  Implementing this will require large restructuring of how iframes are handled in WebKit. Some of this restructuring is incompatible with other WebKit ports and has thus been delayed until now.
+
+</p>
+<p>As another example, we’d like to fix our networking code to be faster and simpler.  Our current networking code in WebKit is limited by old Mac WebKit API obligations which cannot be changed.  Chromium has worked around some of these limitations over the years, but these work-arounds have proven fragile and have long been a source of bugs.  With Blink, we’re excited to refresh this networking code without forcing other WebKit consumers to break their WebKit API obligations.
+
+</p>
+<p>Finally we’d like to explore even larger ideas like moving the entire Document Object Model (DOM) into JavaScript.  This has the potential to make JavaScript DOM access dramatically faster, but will involve a very large re-write of WebKit’s DOM implementation—something that would be difficult in WebKit which has two supported JavaScript engines.
+
+</p>
+<p>Some of the other changes we're considering:
+</p>
+<ul>
+<li>Teach WebCore about multi-process history (currently it assumes same-process synchronous History access)
+</li>
+<li>Delete the Widget tree (a Mac WebKit1 constraint)
+</li>
+<li>Split WebCore into modules
+</li>
+<li><span style="background-color:transparent;font-size:10pt">Experiment with moving the DOM into the JS heap</span></li>
+<li>Increase multicore use (e.g., html parser, style engine, javascript parser)
+</li>
+<li>Remove obscure parts of the DOM and make backwards-incompatible changes to obscure parts of the DOM that benefit performance or remove complexity.
+</li>
+<li>Use a modern, faster tcmalloc throughout all of Mac chrome
+</li>
+<li>Experiment with incremental or parallel layout
+</li>
+<li>Fix memory leaks by removing the ScriptValue/ScriptState abstractions now that there’s only one JavaScript engine.
+</li>
+<li>Remove custom JavaScript bindings code
+</li>
+<li>Bring WebCore up to speed with DOM3 Events / [DOM] UI Events.
+</li></ul>
+<div>Changes previously considered and now done:</div>
+<div>
+<ul><li>Move code to use the sandbox Platform API directly instead of WebCore/platform where possible</li>
+<li>Establish a simpler, stricter tree-gardening system that does not require 2 full time engineers per day</li>
+<li>Replace WebKitIDL with WebIDL</li></ul>
+</div>
+<h2><a name="TOC-Sub-Teams"></a>Sub Teams</h2><div>The larger Blink team is divided in to a set of sub-teams each specializing in a particular part of the problem space and code base.</div><h2><a name="TOC-Binding-TeamLayout-TeamMemory-TeamPaint-TeamStyle-TeamWeb-Components-TeamAnimation-TeamWorker-Team"></a><ul style="font-size:13.3333330154419px;font-weight:normal"><li><a href="blink/binding-team.html">Binding Team</a></li><li><a href="blink/layout-team.1.html">Layout Team</a></li><li><a href="blink/memory-team.html">Memory Team</a></li><li><a href="developers/paint-team.1.html">Paint Team</a></li><li><a href="blink/style-team.html">Style Team</a></li><li><a href="blink/webcomponents-team.html">Web Components Team</a></li><li><a href="http://www.chromium.org/blink/animation-team">Animation Team</a></li><li><a href="blink/worker-team.html">Worker Team</a></li></ul></h2><h2><a name="TOC-Developer-FAQ"></a>Developer FAQ</h2>
+<p>You can find answers to some of the most common web developer-facing questions in the <a href="blink/developer-faq.html">Blink Developer FAQ.</a></p>
+<h2><a name="TOC-Subpage-Listing"></a>Subpage Listing</h2>
+<div>
+<div id="sites-toc-undefined" jotId="sites-toc-undefined" style="display:block; margin:5px auto 5px 0; text-align:left; width:1024px;" class="goog-toc sites-sidebar-nav">
+<h4 class="">Subpage Listing</h4>
+<div class="nav-toc-content" onclick="JOT_SUBPAGE_click(event)" style="text-align: left;">
+<ul jotId="navList">
+<li class="topLevel nav-first"><div dir="ltr" style="padding-left: 19px;"><a href="blink/activedomobject.html" jotId="wuid:gx:4e4567b5ac7b5fc3" class="sites-navigation-link topLevel">ActiveDOMObject</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/animation-team.html" jotId="wuid:gx:687c215a08f0902c" class="sites-navigation-link topLevel">Animation Team</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/binding-team.html" jotId="wuid:gx:eac22a79dac85f5" class="sites-navigation-link topLevel">Binding Team</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/blinkrollbot.html" jotId="wuid:gx:30f7e08a94ee87fa" class="sites-navigation-link topLevel">Blink AutoRollBot (ARB)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:36ba231ef4777c25"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="blink/coding-style.1.html" jotId="wuid:gx:36ba231ef4777c25" class="sites-navigation-link topLevel">Blink Coding Style Guidelines</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/coding-style/layout-test-style-guidelines.html" jotId="wuid:gx:50fe3577f275fb65" class="sites-navigation-link">Layout Test Style Guidelines</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/blink-network-stack.html" jotId="wuid:gx:5e13ba49d0d5faf8" class="sites-navigation-link topLevel">Blink Network Stack</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/blink-post-merge-faq.html" jotId="wuid:gx:64a8728783013918" class="sites-navigation-link topLevel">Blink post-merge FAQ</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/blink-testing-and-the-w3c.html" jotId="wuid:gx:1bf071defbd9d2c0" class="sites-navigation-link topLevel">Blink, Testing, and the W3C</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/blink-in-js.html" jotId="wuid:gx:7b443a3f68cb59b4" class="sites-navigation-link topLevel">Blink-in-JavaScript</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/conversion-cheatsheet.html" jotId="wuid:gx:496bcd74adac06d0" class="sites-navigation-link topLevel">Conversion Cheatsheet</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/deprecating-features.html" jotId="wuid:gx:2623570221b0e400" class="sites-navigation-link topLevel">Deprecating Features</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/developer-faq.1.html" jotId="wuid:gx:2cee4ce51e5fa60f" class="sites-navigation-link topLevel">Developer FAQ</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/dom-exceptions.html" jotId="wuid:gx:23d767775e88a714" class="sites-navigation-link topLevel">DOM Exceptions</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/blink-gc.html" jotId="wuid:gx:24c2f953c72d15a6" class="sites-navigation-link topLevel">Garbage Collection for Blink C++ objects (a.k.a. Oilpan)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:73ea63eeb14ccc17"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="blink/gardening.1.html" jotId="wuid:gx:73ea63eeb14ccc17" class="sites-navigation-link topLevel">Gardening Blink</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/gardening/triaging-gasper-alerts.html" jotId="wuid:gx:29fd382685230cd8" class="sites-navigation-link">Triaging Gasper Alerts</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/getting-started-with-blink-debugging.html" jotId="wuid:gx:1fb748e95ababf46" class="sites-navigation-link topLevel">Getting Started with Blink Debugging</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/how-repaint-works.html" jotId="wuid:gx:41b62e0cc71ecde3" class="sites-navigation-link topLevel">How repaint works</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/importing-the-w3c-tests.html" jotId="wuid:gx:47b52a24f61527db" class="sites-navigation-link topLevel">Importing Tests from the W3C (and contributing back)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:2d1d6255eb362bfb"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="blink/layout-team.1.html" jotId="wuid:gx:2d1d6255eb362bfb" class="sites-navigation-link topLevel">Layout Team</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/layout-team/eliminating-simple-text.html" jotId="wuid:gx:7eef6bb0f085fd12" class="sites-navigation-link">Eliminating Simple Text</a>
+</div></li>
+<li class="parent" wuid="gx:7e0fac383aa6db23"><div dir="ltr" style="padding-left: 19px;"><div class="expander"></div><a href="blink/layout-team/meeting-notes.1.html" jotId="wuid:gx:7e0fac383aa6db23" class="sites-navigation-link">Layout Team Meeting Notes</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-april-13-2015.html" jotId="wuid:gx:5916c9d743c8000e" class="sites-navigation-link">Monday, April 13, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-april-20-2015.html" jotId="wuid:gx:61a84920ff6a0da0" class="sites-navigation-link">Monday, April 20, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-april-27-2015.html" jotId="wuid:gx:6909b1400a05e1d9" class="sites-navigation-link">Monday, April 27, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-april-6-2015.html" jotId="wuid:gx:42d246dadbdc94a2" class="sites-navigation-link">Monday, April 6, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-august-10-2015.html" jotId="wuid:gx:7091c26ce25782fb" class="sites-navigation-link">Monday, August 10, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-august-17-2015.html" jotId="wuid:gx:1178866a85cd6c95" class="sites-navigation-link">Monday, August 17, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-august-24-2015.html" jotId="wuid:gx:12c9b840a081a314" class="sites-navigation-link">Monday, August 24, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-august-3-2015.html" jotId="wuid:gx:196f7914e11d8358" class="sites-navigation-link">Monday, August 3, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-august-31-2015.html" jotId="wuid:gx:5240eaeaca3a3b6b" class="sites-navigation-link">Monday, August 31, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-february-2.html" jotId="wuid:gx:16b1133af3c39d30" class="sites-navigation-link">Monday, February 2, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-february-23-2015.html" jotId="wuid:gx:570a591693db1e7a" class="sites-navigation-link">Monday, February 23, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-february-9.html" jotId="wuid:gx:5806170fe785f27e" class="sites-navigation-link">Monday, February 9, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-july-13-2015.html" jotId="wuid:gx:505e8dec71112971" class="sites-navigation-link">Monday, July 13, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-july-20-2015.html" jotId="wuid:gx:47a92f5c4d2d2836" class="sites-navigation-link">Monday, July 20, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-june-1-2015.html" jotId="wuid:gx:3c1bf24b92a1403" class="sites-navigation-link">Monday, June 1, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-june-22-2015.html" jotId="wuid:gx:3641b9696596dc4f" class="sites-navigation-link">Monday, June 22, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-june-8-2015.html" jotId="wuid:gx:762259513d359857" class="sites-navigation-link">Monday, June 8, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-march-16-2015.html" jotId="wuid:gx:55c97052de4fc59a" class="sites-navigation-link">Monday, March 16, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/march-2-2015.html" jotId="wuid:gx:56bf0245739d6a1" class="sites-navigation-link">Monday, March 2, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-march-23-2015.html" jotId="wuid:gx:65254c24b3b82e55" class="sites-navigation-link">Monday, March 23, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-march-30-2015.html" jotId="wuid:gx:6a58d6058a4f7298" class="sites-navigation-link">Monday, March 30, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-march-9-2015.html" jotId="wuid:gx:16d573c57cb93150" class="sites-navigation-link">Monday, March 9, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-may-4-2015.html" jotId="wuid:gx:562346219017aacf" class="sites-navigation-link">Monday, May 4, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/monday-september-14-2015.html" jotId="wuid:gx:2692c7f23185f1f9" class="sites-navigation-link">Monday, September 14, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/20150107.html" jotId="wuid:gx:6bc40bd502f10f0" class="sites-navigation-link">Q1 OKRs - Wednesday, January 7, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/thursday-april-2-2015.html" jotId="wuid:gx:2287f3ffc89fa83c" class="sites-navigation-link">Thursday, April 2, 2015: Q1/Q2 OKRs</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/thursday-june-4-2015.html" jotId="wuid:gx:1cedab8cda0797d7" class="sites-navigation-link">Thursday, June 4, 2015: Mid-Q2 OKR Check-in</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/may-28-2015.html" jotId="wuid:gx:5036cc49a21cff41" class="sites-navigation-link">Thursday, May 28, 2015: Layout Moose post BlinkOn Sync Up</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/20141209.html" jotId="wuid:gx:47e6ab5dd64e8957" class="sites-navigation-link">Tuesday, December 9, 2014</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/tuesday-june-16-2015.html" jotId="wuid:gx:3946fd636e5483c3" class="sites-navigation-link">Tuesday, June 16, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/tuesday-may-26-2015.html" jotId="wuid:gx:533eb67675b1023b" class="sites-navigation-link">Tuesday, May 26, 2015</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/meeting-notes/wednesday-february-18.html" jotId="wuid:gx:53b3481b7c761fc0" class="sites-navigation-link">Wednesday, February 18, 2015</a>
+</div></li>
+</ul>
+</li>
+<li class="parent" wuid="gx:4d478445169e830a"><div dir="ltr" style="padding-left: 19px;"><div class="expander"></div><a href="blink/layout-team/okrs.1.html" jotId="wuid:gx:4d478445169e830a" class="sites-navigation-link">Objectives and Key Results</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/okrs/2015q1.html" jotId="wuid:gx:4d6e231d507e6664" class="sites-navigation-link">2015 Q1</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/okrs/2015q2.html" jotId="wuid:gx:532ca28289aad7f3" class="sites-navigation-link">2015 Q2</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 57px;"><a href="blink/layout-team/okrs/2015q3.html" jotId="wuid:gx:5568dfde69135964" class="sites-navigation-link">2015 Q3</a>
+</div></li>
+</ul>
+</li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/layout-team/potential-projects.html" jotId="wuid:gx:4ee345b2d12b1955" class="sites-navigation-link">Roadmap / Potential Projects</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/memory-team.html" jotId="wuid:gx:37e1f138f9633a3b" class="sites-navigation-link topLevel">Memory Team</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/public-c-api.html" jotId="wuid:gx:51093533ac185b14" class="sites-navigation-link topLevel">Public C++ API</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/runtime-enabled-features.html" jotId="wuid:gx:6768aaffbdf7df35" class="sites-navigation-link topLevel">Runtime Enabled Features</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:69f6d952aadcce70"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="blink/serviceworker.1.html" jotId="wuid:gx:69f6d952aadcce70" class="sites-navigation-link topLevel">ServiceWorker</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/serviceworker/getting-started.html" jotId="wuid:gx:49daade5836ad5f1" class="sites-navigation-link">Getting Started</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/serviceworker/service-worker-faq.1.html" jotId="wuid:gx:4d1169d13b2e9e55" class="sites-navigation-link">Service Worker Debugging</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/serviceworker/testing.html" jotId="wuid:gx:4a553dde341a3c41" class="sites-navigation-link">Service Worker Testing</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel parent" wuid="gx:e74c640843f85cb"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="blink/slimming-paint.1.html" jotId="wuid:gx:e74c640843f85cb" class="sites-navigation-link topLevel">Slimming Paint (a.k.a. Redesigning Painting and Compositing)</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/slimming-paint/historical-documents.html" jotId="wuid:gx:2803ffc2e8c9c03e" class="sites-navigation-link">Historical documents</a>
+</div></li>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/slimming-paint/try-bots.html" jotId="wuid:gx:2a15c492cfbe8052" class="sites-navigation-link">Try bots</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/style-team.html" jotId="wuid:gx:ccdc5edb720c5ef" class="sites-navigation-link topLevel">Style Team</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/unittesting.1.html" jotId="wuid:gx:10473f1bc1c219af" class="sites-navigation-link topLevel">Unit Testing in Blink</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/v8-bindings.html" jotId="wuid:gx:5fed03daacb4a6e7" class="sites-navigation-link topLevel">V8 Bindings, Promises</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/webcomponents-team.html" jotId="wuid:gx:6a33481a89a268cd" class="sites-navigation-link topLevel">Web Components Team (Planned to become Web Components Project)</a>
+</div></li>
+<li class="topLevel parent" wuid="gx:31e328bf2dc4270"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="blink/webidl.1.html" jotId="wuid:gx:31e328bf2dc4270" class="sites-navigation-link topLevel">Web IDL in Blink</a>
+</div><ul>
+<li class=""><div dir="ltr" style="padding-left: 38px;"><a href="blink/webidl/blink-idl-extended-attributes.html" jotId="wuid:gx:f83b08a2f1eedc" class="sites-navigation-link">Blink IDL Extended Attributes</a>
+</div></li>
+</ul>
+</li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/web-workers.html" jotId="wuid:gx:22aec45340105a8a" class="sites-navigation-link topLevel">Web Workers: Process types and Threads in Blink/Chromium</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/webcrypto.html" jotId="wuid:gx:792708ddd857c3d" class="sites-navigation-link topLevel">WebCrypto</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/when-will-a-fix-ship-in-chrome-stable-or-canary.1.html" jotId="wuid:gx:7bbe41d71d2ccd85" class="sites-navigation-link topLevel">When will a fix ship in Chrome (stable or canary)?</a>
+</div></li>
+<li class="topLevel"><div dir="ltr" style="padding-left: 19px;"><a href="blink/worker-team.html" jotId="wuid:gx:6da4ef0e4fec92fd" class="sites-navigation-link topLevel">Worker Team</a>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+<br />
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(33):</span>
+<span>
+<a href="system/app/pages/subPages%3Fpath=%252Fblink.html" rel="nofollow">View All</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/blink">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

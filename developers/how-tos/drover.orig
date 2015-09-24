@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/drover","deleted":false,"title":"How to use drover","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/drover\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"How to use drover","locale":"en","wuid":"wuid:gx:459a5566cc4853fc","revision":44,"path":"/developers/how-tos/drover","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"drover","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="How to use drover - The Chromium Projects" />
+<meta itemprop="name" content="How to use drover - The Chromium Projects" />
+<meta property="og:title" content="How to use drover - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>How to use drover - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">How to use drover</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h2><a name="TOC-What-is-Drover-"></a>What is Drover?</h2>
+<div>Drover is a tool, included with <a href="https://www.chromium.org/developers/how-tos/install-depot-tools" style="color:rgb(17,85,204);text-decoration:none">depot tools</a>, that allows developers (<b>should be a <a href="https://www.chromium.org/getting-involved/become-a-committer" style="color:rgb(17,85,204);text-decoration:none">committer</a></b>) to rapidly merge and revert changes on our svn trunk/branches without any previously checked out working copy.  A typical drover command merge/revert with no conflicts, takes about 1 minute to run from start to finish.</div>
+<h2><a name="TOC-Merging-Notes"></a>Merging Notes</h2>
+<div><i>Merging to a branch and don't know the branch number? The TPM (release manager) approving the merge will have it. </i>
+<div>After merging to a release branch, try to watch <span style="color:rgb(34,34,34);font-family:arial,sans-serif"><a href="http://goto.google.com/stablebuilders">http://go/stablebuilders</a> (for stable branches) and <a href="http://goto.google.com/branchbuilders">http://go/branchbuilders</a> (for dev/beta branches) to make sure everything's all right.</span></div>
+<h2><a name="TOC-Git-Drover"></a>Git Drover</h2><div><code>git-drover</code> will be a new drover for working with git repositories. It is not:</div><div><ul><li>The way to do all merges/reverts in the "post git migration" world.<br />If you are working with a repository that is still svn-based (e.g. blink), see the old SVN Drover instructions below.</li><li>The way to do anything that is not a merge/revert of a git commit (e.g. DEPS rolls).<br />Those changes should follow the normal commit workflow, or use other tools made for the job (e.g. <code>roll-dep</code>)</li></ul></div>
+<h3><a name="TOC-Status"></a>Status</h3>
+<div>As of today (June 5, 2015) git-drover is not available. Follow <a href="https://code.google.com/p/chromium/issues/detail?id=404755">https://code.google.com/p/chromium/issues/detail?id=404755</a> for updates.</div>
+<div><span>
+<div>
+<h3><a name="TOC-Requirements-recommendations"></a>Requirements/ recommendations</h3>
+<div style="font-size:13.63636302948px">
+<ul><li><span style="font-family:arial,sans-serif;font-size:13.63636302948px;background-color:transparent"><span style="font-family:Arial,Verdana,sans-serif;font-size:13px">Note that these instructions assume you have a working depot_tools and chromium checkout as described in the </span><a href="http://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html" style="font-family:Arial,Verdana,sans-serif;font-size:13px">depot_tools tutorial</a><span style="font-family:Arial,Verdana,sans-serif;font-size:13px">.</span></span></li>
+<li><span style="font-family:arial,sans-serif;font-size:13.63636302948px;background-color:transparent">You'll need your <a href="http://www.chromium.org/chromium-os/developer-guide/gerrit-guide">git (netrc) credentials</a>.</span></li>
+<li><span style="font-family:arial,sans-serif;border-collapse:collapse">You'll also need your chromium.org credentials (for code reviews).</span></li></ul>
+</div>
+</div>
+<h3><a name="TOC-Usage"></a>Usage</h3>
+</span><div><font color="#ff0000" size="4"><b>*** IF YOU ARE TRYING TO MERGE STUFF FOLLOW THE ONLINE GIT-DROVER DOC LINK FOR THE NEEDED STEPS UNTIL GIT-DROVER WORKS ***</b></font></div><div><br /></div>Until the git-drover tool is available, please see <code>man git-drover</code> or the <a href="http://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/git-drover.html">online git-drover doc</a> for instructions to achieve equivalent functionality using other git and depot_tools commands.</div>
+<div><br />
+</div><div><b><font size="3">Troubleshooting</font></b></div><div><b><font size="3"><br /></font></b></div><div><font size="2">If this is the first time you've tried to merge into a branch, you may run into the following error when trying to <font face="courier new, monospace">git cl land</font> the change:</font></div><div><font size="2"><div><font face="courier new, monospace">error: failed to push some refs to 'https://chromium.googlesource.com/a/chromium/src.git'</font></div><div><font face="courier new, monospace">ERROR:git-retry:Process failure was not known to be transient; terminating with return code 1</font></div><div><font face="courier new, monospace">Push failed with exit code 1.</font></div><div><font face="courier new, monospace">To https://chromium.googlesource.com/a/chromium/src.git</font></div><div><font face="courier new, monospace">!<span style="white-space:pre"> </span>HEAD:refs/pending/branch-heads/2311<span style="white-space:pre"> </span>[remote rejected] (prohibited by Gerrit)</font></div><div><br /></div><div>If you see this error, you may not have been added to the <span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:12.8000001907349px;background-color:transparent">chromium-committers gerrit group. File a bug with the </span><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:12.8000001907349px;background-color:transparent">Infra-Git label.</span></div></font></div><div><br /></div><div><b style="font-family:arial,sans-serif;font-size:21px;white-space:pre-wrap;background-color:transparent">Merging Blink revisions into branches using git</b></div><div><span style="font-family:Trebuchet MS;white-space:pre-wrap;font-size:small;background-color:transparent"><br /></span></div><div><span style="font-family:Trebuchet MS;white-space:pre-wrap;font-size:small;background-color:transparent">See </span><a href="https://docs.google.com/a/chromium.org/document/d/11o74oGwPkA58HBIZlDDV_CEbf3r-eUz_PDAh-DyH9iw/edit#heading=h.87eks4ierg7d" style="font-family:Trebuchet MS;white-space:pre-wrap;font-size:small;background-color:transparent">https://docs.google.com/a/chromium.org/document/d/11o74oGwPkA58HBIZlDDV_CEbf3r-eUz_PDAh-DyH9iw/edit#heading=h.87eks4ierg7d</a></div><div><br /></div>
+<h2><a name="TOC-SVN-Drover"></a>SVN Drover</h2>
+<div>
+<h3><a name="TOC-Requirements-recommendations1"></a>Requirements/ recommendations</h3>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif">
+<ul><li>Drover requires SVN 1.5+</li>
+<li>depot_tools should be on the default path</li>
+<li><span style="font-family:arial,sans-serif;border-collapse:collapse">When you first start using drover, it's best to start in an empty directory since it creates unique subdirectories for each revision it merges/reverts to pull down the necessary files to update.</span></li>
+<li><span style="font-family:arial,sans-serif;border-collapse:collapse">You'll need your svn username and password (for svn checkouts)</span></li>
+<li><span style="font-family:arial,sans-serif;border-collapse:collapse">You'll also need your chromium.org credentials (for code reviews)</span></li></ul>
+</div>
+<h3><a name="TOC-Usage1"></a>Usage</h3>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif">
+<ul><li>Revert on trunk</li>
+<ul><li>drover --revert &lt;svn revision&gt; (e.g. drover --revert 12345)</li></ul>
+<li>Merge a change to a release branch</li>
+<ul><li><span style="font-size:10pt;background-color:transparent">drover --merge &lt;svn revision&gt; --branch &lt;branch_id&gt; (e.g. drover --merge 12345 --branch 249)</span></li></ul>
+<li>Merge a change between release branches</li>
+<ul><li>drover --merge &lt;svn revision&gt; --sbranch &lt;src_branch_id&gt; --branch &lt;dest_branch_id&gt; (e.g. drover --merge 12345 --sbranch 249 --branch 249)</li></ul>
+<li>Merge a change to your local copy</li>
+<ul><li>drover --merge &lt;svn revision&gt; --local (e.g. drover --merge 12345 --local)</li></ul>
+<li>Revert a change on a release branch</li>
+<ul><li><span style="font-size:10pt;background-color:transparent">drover --revert &lt;svn revision&gt; --branch &lt;branch_id&gt; (e.g. drover --revert 12345 --branch 249)</span></li></ul></ul>
+<div>Note: If you include --auditor &lt;someone@chromium.org&gt; it will automatically set that person as the reviewer</div></div>
+<h3><a name="TOC-Dealing-with-conflicts"></a>Dealing with conflicts</h3>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif">Conflicts are a natural part of the merging process, especially as the trunk drifts further away from the branch.  Fortunately Drover makes this fairly manageable to resolve, since the tool does all its work in subdirectories under the working directory it was run in (e.g. if you did drover --merge 12345 --branch 249, the working directory it would create would be ./drover_12345_302).  Under that directory you will find all of the source files that drover attempted to update in the change.  So, with that bit of knowledge in mind, the resolution process goes something like this:</div>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif">
+<ul style="border-collapse:collapse;font-family:arial,sans-serif"><li style="margin-left:15px">Mark any conflicts that svn finds as "postpone" (aka "p")</li>
+<li style="margin-left:15px">Once you get to the prompt "Do you want to upload", drop to another shell/ command window (you could also upload here, and resolve before conflict)</li>
+<li style="margin-left:15px">cd to the directory where you ran drover, under their you will find a sub directory for the revision you just checked out (e.g. drover_12345_249)</li>
+<li style="margin-left:15px">cd into that drover_* directory</li>
+<li style="margin-left:15px">Resolve all merge conflicts (a good diff tool, text editor, svn resolve, and svn resolved are you friends)</li>
+<li style="margin-left:15px">All normal svn and gcl commands will work in there (the gcl change is always stored as the revision, e.g. gcl submit 12345 for the previous case)</li>
+<li style="margin-left:15px">After you resolve the conflicts you can return to the original shell, do the upload and then commit</li></ul>
+<h3><a name="TOC-Blink-Merges"></a>Blink Merges</h3>
+<div style="border-collapse:collapse;font-family:arial,sans-serif">Use the following steps:</div>
+<div>
+<ol><li><font face="arial, sans-serif">Create a new directory specifically for blink merges.</font></li>
+<li><font face="arial, sans-serif">In that directory, run</font><span style="border-collapse:collapse"><font face="arial, sans-serif"> </font></span><span style="font-family:courier new,monospace;border-collapse:collapse">svn export https://src.chromium.org/blink/branches/chromium/drover.properties</span><span style="border-collapse:collapse"><font face="arial, sans-serif">. This will create the configuration file you need.</font></span></li>
+<li><font face="arial, sans-serif">Now just do one of the regular drover commands above. The &lt;svn_revision&gt; you specify will refer to the blink svn revision, for reverts it's just the svn revision you landed on to the branch.</font></li>
+</ol>
+</div>
+</div>
+<h3><a name="TOC-So-how-does-Drover-work-why-is-it-so-much-faster-than-normal-merges-reverts-"></a>So how does Drover work, why is it so much faster than normal merges/ reverts?</h3>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><span style="font-size:10pt">The short answer is that a normal merge would 1.) Require that you to checkout *all* of the code using SVN, even if it wasn't being affected by the merge (I've seen this take 1+ hours) 2.) When the merge was applied it would scan all of the code for history/properties changes, even if nothing changed (I've seen this take 10+ minutes for a one line change) 3.) Require that you do separate gcl commands.</span></div>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif">Drover short circuits this by 1.) Only checking out the files/directories on the branch that were involved with the CL that's being merged/reverted 2.) Applies the merges directly to these affected directories individually (i.e. it doesn't let svn creep around the entire code-base). 3.) It integrates with gcl, so when you do the upload it pre-populates the comments and automatically sends the code review to the author of the cl.</div>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><br />
+</div>
+<div style="color:rgb(51,51,51);font-family:Arial,sans-serif">The shallow checkout is accomplished by recursively building the directories using a combination of svn co --depth empties (which is why it requires svn 1.5+) and then svn updates to specifically pull the files affected by the merge.  Next it applies the svn merge command to the individual directories (note: not the files) with instructions not to traverse children, which keeps the scope of the merges small.  Since it kept everything in a single working copy regular svn/gcl commands work like normal on it.</div><div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><br /></div><div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><font size="4"><b>Testing a merge</b></font></div><div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><br /></div><div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><font size="2">The trybots and commit-queue cannot handle merges, so you might want to try to compile locally before committing. Here is a way:</font></div><div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><br /></div><div style="color:rgb(51,51,51)"><font face="courier new, monospace" size="2">in src:</font></div><div style="color:rgb(51,51,51)"><font face="courier new, monospace" size="2">// check out the release branch as per above</font></div><div style="color:rgb(51,51,51)"><font face="courier new, monospace" size="2">// do your merge</font></div><div><font face="courier new, monospace" size="2" style="color:rgb(51,51,51)">$ </font><span style="background-color:transparent"><font color="#333333" face="courier new, monospace" size="2">gclient sync --jobs=20 --force --revision src@HEAD</font></span></div><div><font face="courier new, monospace" size="2"><br /></font></div><div><font face="courier new, monospace" size="2">in src/third_party/WebKit:</font></div><div><font face="courier new, monospace" size="2">// check out the Blink branch as per https://docs.google.com/document/d/11o74oGwPkA58HBIZlDDV_CEbf3r-eUz_PDAh-DyH9iw/edit#heading=h.87eks4ierg7d</font></div><div><font face="courier new, monospace" size="2"><br /></font></div><div><font face="courier new, monospace" size="2">in src:</font></div><div><font face="courier new, monospace" size="2">$ build/gyp_chromium</font></div><div><br /></div><div>Now build as usual.</div><div><br /></div><div style="color:rgb(51,51,51);font-family:Arial,sans-serif"><font size="2"><br /></font></div>
+</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/drover">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9-pYjm08Dl1rI92c8HxpvRM_QIpdFEiarazfrOUOet5kCgCQI6zSJ14g6m4wRlGy_I5U9NZ4pOwnhwot7kceg47UWtDvMbN13-gOpqH67dTwobjtd/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

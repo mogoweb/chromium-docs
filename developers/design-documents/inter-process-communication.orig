@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/inter-process-communication","deleted":false,"title":"Inter-process Communication (IPC)","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/inter-process-communication\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Inter-process Communication (IPC)","locale":"en","wuid":"wuid:gx:661c43f3b2d5b790","revision":18,"path":"/developers/design-documents/inter-process-communication","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"inter-process-communication","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Inter-process Communication (IPC) - The Chromium Projects" />
+<meta itemprop="name" content="Inter-process Communication (IPC) - The Chromium Projects" />
+<meta property="og:title" content="Inter-process Communication (IPC) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Inter-process Communication (IPC) - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Inter-process Communication (IPC)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div dir="ltr"><h2><a name="Overview"> </a></h2>
+<div class="sites-embed-align-left-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#Overview"><strong>1 </strong>Overview</a><ol class="goog-toc"><li class="goog-toc"><a href="#IPC_in_the_browser"><strong>1.1 </strong>IPC in the browser</a></li><li class="goog-toc"><a href="#IPC_in_the_renderer"><strong>1.2 </strong>IPC in the renderer</a></li></ol></li><li class="goog-toc"><a href="#Messages"><strong>2 </strong>Messages</a><ol class="goog-toc"><li class="goog-toc"><a href="#Types_of_messages"><strong>2.1 </strong>Types of messages</a></li><li class="goog-toc"><a href="#Declaring_messages"><strong>2.2 </strong>Declaring messages</a><ol class="goog-toc"><li class="goog-toc"><a href="#Pickling_values"><strong>2.2.1 </strong>Pickling values</a></li></ol></li><li class="goog-toc"><a href="#Sending_messages"><strong>2.3 </strong>Sending messages</a></li><li class="goog-toc"><a href="#Handling_messages"><strong>2.4 </strong>Handling messages</a></li><li class="goog-toc"><a href="#Security_considerations"><strong>2.5 </strong>Security considerations</a></li></ol></li><li class="goog-toc"><a href="#Channels"><strong>3 </strong>Channels</a></li><li class="goog-toc"><a href="#Synchronous_messages"><strong>4 </strong>Synchronous messages</a><ol class="goog-toc"><li class="goog-toc"><a href="#Declaring_synchronous_messages"><strong>4.1 </strong>Declaring synchronous messages</a></li><li class="goog-toc"><a href="#Issuing_synchronous_messages"><strong>4.2 </strong>Issuing synchronous messages</a></li><li class="goog-toc"><a href="#Handling_synchronous_messages"><strong>4.3 </strong>Handling synchronous messages</a></li></ol></li></ol></div></div></div></div>
+<h2><a name="Overview">Overview </a></h2>
+<p>Chromium has a <a href="https://www.chromium.org/developers/design-documents/multi-process-architecture">multi-process architecture</a> which means that we have a lot of processes communicating with each other. Our main inter-process communication primitive is the named pipe.
+On Linux &amp; OS X, we use a <span style="font-family:courier new,monospace">socketpair()</span>. A named pipe is allocated for each renderer process for communication
+with the browser process. The pipes are used in asynchronous mode to
+ensure that neither end is blocked waiting for the other.</p><p>For advice on how to write safe IPC endpoints, please see <a href="https://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc">Security Tips for IPC</a>.</p><p>
+</p><h3><a name="IPC_in_the_browser"> IPC in the browser </a></h3>
+<p>Within the browser, communication with the renderers is done in a
+separate I/O thread. Messages to and from the views then have to be
+proxied over to the main thread using a <code>ChannelProxy</code>.
+The advantage of this scheme is that resource requests (for web pages,
+etc.), which are the most common and performance critical messages, can
+be handled entirely on the I/O thread and not block the user interface.
+These are done through the use of a <code>ChannelProxy::MessageFilter</code> which is inserted into the channel by the <code>RenderProcessHost</code>.
+This filter runs in the I/O thread, intercepts resource request
+messages, and forwards them directly to the resource dispatcher host.
+See <a href="http://dev.chromium.org/developers/design-documents/multi-process-resource-loading">Multi-process Resource Loading</a> for more information on resource loading.
+</p><p>
+</p><h3><a name="IPC_in_the_renderer"> IPC in the renderer </a></h3>
+<p>
+Each renderer also has a thread that manages communication (in this
+case, the main thread), with the rendering and most processing
+happening on another thread (see the diagram in <a href="https://www.chromium.org/developers/design-documents/multi-process-architecture">multi-process architecture</a>).
+Most messages are sent from the browser to the WebKit thread through
+the main renderer thread and vice-versa. This extra thread is to
+support synchronous renderer-to-browser messages (see "Synchronous
+messages" below).
+</p><p>
+</p><h2><a name="Messages"> Messages </a></h2>
+<p>
+</p><h3><a name="Types_of_messages"> Types of messages </a></h3>
+<p>We have two primary types of messages: "routed" and "control."  Control messages are handled by the class that created the pipe.  Sometimes that class will allow others to received message by having a <font color="#006000" face="monospace">MessageRouter</font> object that other listeners can register with and received "routed" messages sent with their unique (per pipe) id.</p><p>For example, when rendering, control messages are not specific to a given view and will be handled by the <code>RenderProcess</code> (renderer) or the <code>RenderProcessHost</code> (browser). Requests for resources or to modify the clipboard are not view-specific so are control messages.  An example of routed messages are a message to ask a view to paint a region.</p><p>Routed messages have historically been used to get messages to a specific <span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">RenderViewHost</span><span style="background-color:transparent;font-size:10pt">. However, technically any class can receive routed messages by using </span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">RenderProcessHost::GetNextRoutingID</span><span style="background-color:transparent;font-size:10pt"> and registering itself with </span><span style="background-color:transparent;color:rgb(0,96,0);font-family:monospace;font-size:10pt">RenderProcessHost::AddRoute</span><span style="background-color:transparent;font-size:10pt">. Currently both </span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">RenderFrameHost</span><span style="background-color:transparent;font-size:10pt"><font face="arial, sans-serif"> and </font></span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">RenderViewHost</span><span style="background-color:transparent;font-size:10pt"> have their own routing IDs.</span></p><p>Independent of the message type is whether the message is sent
+from the browser to the renderer, or from the renderer to the browser.
+Messages sent from the browser to the renderer are called <code>View</code> messages because they are being sent <i>to</i> the <code>RenderView</code>. Messages sent from the renderer to the browser are called <code>ViewHost</code> messages because they are being sent <i>to</i> the <code>RenderViewHost</code>. You will notice the messages defined in <code>render_messages_internal.h</code> are separated into these two categories.
+</p><p>
+Plugins also have separate processes. Like the render messages, there are <code>PluginProcess</code> messages (sent from the browser to the plugin process) and <code>PluginProcessHost</code> messages (sent from the plugin process to the browser). These messages are all defined in <code>plugin_messages_internal.h</code>. The automation messages (for controlling the browser from the UI tests) are done in a similar manner.
+</p><p>
+</p><h3><a name="Declaring_messages"> Declaring messages </a></h3>
+<p>
+Special macros are used to declare messages. The messages sent between the renderer and the browser are all declared in <code>render_messages_internal.h</code>. There are two sections, one for "View" messages sent to the renderer, and one for "ViewHost" messages sent to the browser.
+</p><p>
+To declare a message from the renderer to the browser (a "ViewHost"
+message) that is specific to a view ("routed") that contains a URL and
+an integer as an argument, write:
+</p><pre>IPC_MESSAGE_ROUTED2(ViewHostMsg_MyMessage, GURL, int)</pre>
+<p>To declare a control message from the browser to the renderer (a
+"View" message) that is not specific to a view ("control") that
+contains no parameters, write:
+</p><pre>IPC_MESSAGE_CONTROL0(ViewMsg_MyMessage)</pre>
+<p>
+</p><h4><a name="Pickling_values"> Pickling values </a></h4>
+<p>
+Parameters are serialized and de-serialized to message bodies using the <code>ParamTraits</code> template. Specializations of this template are provided for most common types in <code>ipc_message_utils.h</code>. If you define your own types, you will also have to define your own <code>ParamTraits</code> specialization for it.
+</p><p>Sometimes, a message has too many values to be reasonably put in
+a message. In this case, we define a separate structure to hold the
+values. For example, for the <code>FrameMsg_Navigate</code> message, the <code>CommonNavigationParams</code> structure is defined in <a href="https://code.google.com/p/chromium/codesearch/#chromium/src/content/common/navigation_params.h"><code>navigation_params.h</code></a>. <a href="https://code.google.com/p/chromium/codesearch/#chromium/src/content/common/frame_messages.h"><code>frame_messages.h</code></a> defines the <code>ParamTraits</code> specializations for the structures using the <a href="https://code.google.com/p/chromium/codesearch/#chromium/src/ipc/param_traits_macros.h"><code>IPC_STRUCT_TRAITS</code></a> family of macros.
+</p><p>
+</p><h3><a name="Sending_messages"> Sending messages </a></h3>
+<p>
+You send messages through "channels" (see below). In the browser, the <code>RenderProcessHost</code> contains the channel used to send messages from the UI thread of the browser to the renderer. The <code>RenderWidgetHost</code> (base class for <code>RenderViewHost</code>) provides a <code>Send</code> function that is used for convenience.
+</p><p>
+Messages are sent by pointer and will be deleted by the IPC layer after
+they are dispatched. Therefore, once you can find the appropriate <code>Send</code> function, just call it with a new message:
+</p><pre>Send(new ViewMsg_StopFinding(routing_id_));</pre>
+Notice that you must specify the routing ID in order for the message to
+be routed to the correct View/ViewHost on the receiving end. Both the <code>RenderWidgetHost</code> (base class for <code>RenderViewHost</code>) and the <code>RenderWidget</code> (base class for <code>RenderView</code>) have<code> GetRoutingID()</code> members that you can use.<p>
+</p><h3><a name="Handling_messages"> Handling messages </a></h3>
+<p>
+Messages are handled by implementing the <code>IPC::Listener</code> interface, the most important function on which is <code>OnMessageReceived</code>. We have a variety of macros to simplify message handling in this function, which can best be illustrated by example:
+</p><p>
+</p><pre>MyClass::OnMessageReceived(const IPC::Message&amp; message) {<br />  IPC_BEGIN_MESSAGE_MAP(MyClass, message)<br />    // Will call OnMyMessage with the message. The parameters of the message will be unpacked for you.<br />    IPC_MESSAGE_HANDLER(ViewHostMsg_MyMessage, OnMyMessage)  <br />    ...<br />    IPC_MESSAGE_UNHANDLED_ERROR()  // This will throw an exception for unhandled messages.<br />  IPC_END_MESSAGE_MAP()<br />}<br /><br />// This function will be called with the parameters extracted from the ViewHostMsg_MyMessage message.<br />MyClass::OnMyMessage(const GURL&amp; url, int something) {<br />  ...<br />}</pre>
+<p>
+You can also use <code>IPC_DEFINE_MESSAGE_MAP</code> to implement the function definition for you as well. In this case, do not specify a message variable name, it will declare a <code>OnMessageReceived</code> function on the given class and implement its guts.
+</p><p>
+Other macros:
+</p><p>
+</p><ul><li> <code>IPC_MESSAGE_FORWARD</code>: This is the same as <code>IPC_MESSAGE_HANDLER</code> but you can specify your own class to send the message to, instead of sending it to the current class.
+</li></ul>
+<pre>IPC_MESSAGE_FORWARD(ViewHostMsg_MyMessage, some_object_pointer, SomeObject::OnMyMessage)</pre>
+<ul><li> <code>IPC_MESSAGE_HANDLER_GENERIC</code>: This allows you to write your own code, but you have to unpack the parameters from the message yourself:
+</li></ul>
+<pre>IPC_MESSAGE_HANDLER_GENERIC(ViewHostMsg_MyMessage, printf("Hello, world, I got the message."))</pre><p>
+</p><h3><a name="Security_considerations"> Security considerations </a></h3>
+<p>Security bugs in IPC <span style="font-size:10pt">can have </span><a href="http://blog.chromium.org/2012/05/tale-of-two-pwnies-part-1.html" style="font-size:10pt">nasty consequences</a> (file theft, sandbox escapes, remote code execution). Check out our <a href="https://www.chromium.org/Home/chromium-security/education/security-tips-for-ipc" style="font-size:10pt">security for IPC</a> document for tips on how to avoid common pitfalls.</p><p>
+</p><h2><a name="Channels"> Channels </a></h2>
+<p>
+<code>IPC::Channel</code> (defined in <font color="#38761d">ipc</font><code style="font-family:courier new,monospace">/<font color="#38761d">ipc_channel</font>.h</code>) defines the methods for communicating across pipes. <code>IPC::SyncChannel</code>
+provides additional capabilities for synchronously waiting for
+responses to some messages (the renderer processes use this as
+described below in the "Synchronous messages" section, but the browser
+process never does).
+</p><p>Channels are not thread safe. We often want to send messages
+using a channel on another thread. For example, when the UI thread
+wants to send a message, it must go through the I/O thread. For this,
+we use a <code>IPC::ChannelProxy</code>.
+It has a similar API as the regular channel object, but proxies
+messages to another thread for sending them, and proxies messages back
+to the original thread when receiving them. It allows your object
+(typically on the UI thread) to install a <code>IPC::ChannelProxy::Listener</code>
+on the channel thread (typically the I/O thread) to filter out some
+messages from getting proxied over. We use this for resource requests
+and other requests that can be handled directly on the I/O thread. <code>RenderProcessHost</code> installs a <code>RenderMessageFilter</code> object that does this filtering.
+</p><p>
+</p><h2><a name="Synchronous_messages"> Synchronous messages </a></h2>
+<p>
+Some messages should be synchronous from the renderer's perspective.
+This happens mostly when there is a WebKit call to us that is supposed
+to return something, but that we must do in the browser. Examples of
+this type of messages are spell-checking and getting the cookies for
+JavaScript. Synchronous browser-to-renderer IPC is disallowed to
+prevent blocking the user-interface on a potentially flaky renderer.
+</p><p>
+<b>Danger:</b> Do not handle any synchronous messages in the
+UI thread! You must handle them only in the I/O thread. Otherwise, the
+application might deadlock because plug-ins require synchronous
+painting from the UI thread, and these will be blocked when the
+renderer is waiting for synchronous messages from the browser.
+</p><p>
+</p><h3><a name="Declaring_synchronous_messages"> Declaring synchronous messages </a></h3>
+<p>
+Synchronous messages are declared using the <code>IPC_SYNC_MESSAGE_*</code>
+macros. These macros have input and return parameters (non-synchronous
+messages lack the concept of return parameters). For a control function
+which takes two input parameters and returns one parameter, you would
+append <code>2_1</code> to the macro name to get:
+</p><p>
+</p><pre>IPC_SYNC_MESSAGE_CONTROL2_1(SomeMessage,  // Message name<br />                            GURL, //input_param1<br />                            int, //input_param2<br />                            std::string); //result</pre>
+<p>
+Likewise, you can also have messages that are routed to the view in which case you would replace "control" with "routed" to get <code>IPC_SYNC_MESSAGE_ROUTED2_1</code>. You can also have <code>0</code>
+input or return parameters. Having no return parameters is used when
+the renderer must wait for the browser to do something, but needs no
+results. We use this for certain printing and clipboard operations.
+</p><p>
+</p><h3><a name="Issuing_synchronous_messages"> Issuing synchronous messages </a></h3>
+<p>
+When the WebKit thread issues a synchronous IPC request, the request object (derived from <code>IPC::SyncMessage</code>) is dispatched to the main thread on the renderer through a <code>IPC::SyncChannel</code> object (the same one is also used to send all asynchronous messages). The <code>SyncChannel</code> will block the calling thread when it receives a synchronous message, and will only unblock it when the reply is received.
+</p><p>While the WebKit thread is waiting for the synchronous reply,
+the main thread is still receiving messages from the browser process.
+These messages will be added to the queue of the WebKit thread for
+processing when it wakes up. When the synchronous message reply is
+received, the thread will be un-blocked. Note that this means that the
+synchronous message reply can be processed out-of-order.
+</p><p>Synchronous messages are sent the same way normal messages are,
+with output parameters being given to the constructor. For example:
+</p><p>
+</p><pre>const GURL input_param("http://www.google.com/");<br />std::string result;<br />content::RenderThread::Get()-&gt;Send(new MyMessage(input_param, &amp;result));<br />printf("The result is %s\n", result.c_str());</pre>
+<p>
+</p><h3><a name="Handling_synchronous_messages"> Handling synchronous messages </a></h3>
+<p>
+Synchronous messages and asynchronous messages use the same <code>IPC_MESSAGE_HANDLER</code>,
+etc. macros for dispatching the message. The handler function for the
+message will have the same signature as the message constructor, and
+the function will simply write the output to the output parameter. For
+the above message you would add </p><pre>IPC_MESSAGE_HANDLER(MyMessage, OnMyMessage)</pre>
+to the <code>OnMessageReceived</code> function, and write:
+<p>
+</p><pre>void RenderProcessHost::OnMyMessage(GURL input_param, std::string* result) {<br />  *result = input_param.spec() + " is not available";<br />}</pre></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/inter-process-communication">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9NfjRx812UfzNz7P7eRI3uZNIifGBDh0E2gC9t40yuG8rptYdLJrFC0cN7_6BQu-064FXeobsaOTo_D9eEuCM34J3pVmeaxWxKa0C63LDrkJaVgtH/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

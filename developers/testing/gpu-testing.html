@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/gpu-testing","deleted":false,"title":"GPU Testing","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/testing/gpu-testing\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"GPU Testing","locale":"en","wuid":"wuid:gx:29111064f1155206","revision":31,"path":"/developers/testing/gpu-testing","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"gpu-testing","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="GPU Testing - The Chromium Projects" />
+<meta itemprop="name" content="GPU Testing - The Chromium Projects" />
+<meta property="og:title" content="GPU Testing - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>GPU Testing - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../testing.1.html" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">GPU Testing</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">This set of pages documents the setup and operation of the GPU bots and try servers, which verify the correctness of Chrome's graphically accelerated rendering pipeline.
+<div><br />
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="gpu-testing.html#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Using-the-GPU-Bots"><strong>2 </strong>Using the GPU Bots</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Running-the-GPU-Tests-Locally"><strong>3 </strong>Running the GPU Tests Locally</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Running-Binaries-from-the-Bots-Locally"><strong>4 </strong>Running Binaries from the Bots Locally</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Running-Locally-Built-Binaries-on-the-GPU-Bots"><strong>5 </strong>Running Locally Built Binaries on the GPU Bots</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Adding-New-Tests-to-the-GPU-Bots"><strong>6 </strong>Adding New Tests to the GPU Bots</a><ol class="goog-toc"><li class="goog-toc"><a href="gpu-testing.html#TOC-Updating-and-Adding-New-Pixel-Tests-to-the-GPU-Bots"><strong>6.1 </strong>Updating and Adding New Pixel Tests to the GPU Bots</a></li></ol></li><li class="goog-toc"><a href="gpu-testing.html#TOC-The-GPU-bots-recipe"><strong>7 </strong>The GPU bots' recipe</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Stamping-out-Flakiness"><strong>8 </strong>Stamping out Flakiness</a></li><li class="goog-toc"><a href="gpu-testing.html#TOC-Swarming-Transition-of-Tryservers"><strong>9 </strong>Swarming Transition of Tryservers</a></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<div>The GPU bots run a different set of tests than the majority of the Chromium test machines. The GPU testers are specifically focused on tests which exercise the graphics processor, and whose results are likely to vary between graphics card vendors.</div>
+<div><br />
+</div>
+<div>Most of the tests on the GPU bots are run via the <a href="../telemetry.1.html">Telemetry framework</a>. Telemetry was originally conceived as a performance testing framework, but has proven valuable for correctness testing as well. Telemetry directs the browser to perform various operations, like page navigation and test execution, from external scripts written in Python. The GPU bots launch the full Chromium browser via Telemetry for the majority of the tests. Using the full browser to execute tests, rather than custom test harnesses like content_browsertests, has yielded several advantages: better testing code that is shipped, improved reliability, and improved performance.</div>
+<div><br />
+</div>
+<div>A subset of the tests, called "pixel tests", grab screen snapshots of the web page in order to validate Chromium's rendering architecture end-to-end. Where necessary, GPU-specific results are maintained for these tests. Some of these tests verify just a few pixels, using handwritten code, in order to use the same validation for all brands of GPUs.</div>
+<div><br />
+</div>
+<div><span style="background-color:transparent;font-size:10pt">The GPU bots use the Chrome infrastructure team's new </span><a href="http://src.chromium.org/viewvc/chrome/trunk/tools/build/scripts/slave/README.recipes.md" style="background-color:transparent;font-size:10pt">recipes framework</a><span style="background-color:transparent;font-size:10pt"> for describing what tests to execute. Compared to the legacy buildbot infrastructure, recipes make it easy to add new steps to the bots, change the bots' configuration, and run the tests locally in the same way that they are run on the bots. There is a separate page about the <a href="http://dev.chromium.org/developers/testing/gpu-recipe" target="_blank">GPU recipe</a> describing how it works and how to modify it.</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">The GPU bots use the <a href="isolated-testing.1.html">isolated testing</a> framework to transmit the binaries and data files from the builder to the tester. Running tests via isolates eliminates the Chromium src/ checkout on the test machines, achieving better utilization of the physical hardware containing GPUs.</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">The bots on the <a href="http://build.chromium.org/p/chromium.gpu.fyi/console" target="_blank">chromium.gpu.fyi</a> waterfall are configured to always test top-of-tree ANGLE. This setup is done with a few lines of code in the <a href="http://src.chromium.org/viewvc/chrome/trunk/tools/build/scripts/slave/recipe_modules/gpu/api.py" target="_blank">GPU recipe module</a>; search the code for "ANGLE".</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">These aspects of the bots are described in more detail below, and in linked pages.</span></div>
+<h2><a name="TOC-Using-the-GPU-Bots"></a>Using the GPU Bots</h2>
+<div>Most Chromium developers interact with the GPU bots in two ways:</div>
+<div>
+<ol><li>Sending try jobs to them.</li>
+<li>Observing the bots on the waterfalls.</li>
+</ol>
+<b>The GPU try servers only support try jobs sent from git.</b> Subversion try jobs sent via gcl are not supported. <b>This includes try jobs sent via "git try".</b> You must first upload your CL to the codereview server.</div>
+<div><br />
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>git cl try</div>
+</div>
+</blockquote>
+<div>
+<div><br />
+</div>
+<div>Sends your job to the default set of try servers.</div>
+<div><br />
+</div>
+<div>The GPU tests are part of the default set for both Chromium and Blink CLs. For Chromium CLs, the GPU tests are run as part of the following tryservers' jobs:</div>
+<div>
+<ul><li><a href="http://build.chromium.org/p/tryserver.chromium.linux/builders/linux_chromium_rel_ng" style="font-size:10pt;background-color:transparent" target="_blank">linux_chromium_rel_ng</a><span style="font-size:10pt;background-color:transparent"> on the </span><a href="http://build.chromium.org/p/tryserver.chromium.linux/waterfall" style="font-size:10pt;background-color:transparent" target="_blank">tryserver.chromium.linux</a><span style="font-size:10pt;background-color:transparent"> waterfall</span></li>
+<li><a href="http://build.chromium.org/p/tryserver.chromium.mac/builders/mac_chromium_rel_ng" target="_blank">mac_chromium_rel_ng</a> on the <a href="http://build.chromium.org/p/tryserver.chromium.mac/waterfall" target="_blank">tryserver.chromium.mac</a> waterfall</li>
+<li><a href="http://build.chromium.org/p/tryserver.chromium.win/builders/win_chromium_rel_ng" target="_blank">win_chromium_rel_ng</a> on the <a href="http://build.chromium.org/p/tryserver.chromium.win/waterfall" target="_blank">tryserver.chromium.win</a> waterfall</li></ul>
+<div>For Blink CLs, the GPU tests are run as part of the following tryservers' jobs:</div>
+<div>
+<ul><li><a href="http://build.chromium.org/p/tryserver.blink/builders/linux_blink_rel" target="_blank">linux_blink_rel</a>, <a href="http://build.chromium.org/p/tryserver.blink/builders/mac_blink_rel?numbuilds=200" target="_blank">mac_blink_rel</a> and <a href="http://build.chromium.org/p/tryserver.blink/builders/win_blink_rel?numbuilds=200" target="_blank">win_blink_rel</a> on the <a href="http://build.chromium.org/p/tryserver.blink/waterfall" target="_blank">tryserver.blink</a> waterfall</li></ul>
+<div>Scan down through the steps looking for the text "GPU"; that identifies those tests run on the GPU bots. For each test the "trigger" step can be ignored; the step further down for the test of the same name contains the results.</div>
+</div>
+<div><br />
+</div>
+<div>It's usually not necessary to explicitly send try jobs just for verifying GPU tests. If you want to, you must invoke "git cl try" separately for each tryserver master you want to reference, for example:</div>
+<div><br />
+</div>
+<div><span>    git cl try -b linux_chromium_rel_ng</span><br />
+</div>
+<div>
+<div style="font-size:13.3333330154419px">    git cl try -b mac_chromium_rel_ng<br />
+</div>
+</div>
+<div>
+<div style="font-size:13.3333330154419px">    git cl try -b win_chromium_rel_ng<br />
+</div>
+</div>
+<div><br />
+</div>
+</div>
+<div>Alternatively, the Rietveld UI can be used to send a patch set to these try servers.</div>
+<div><br />
+</div>
+<div>If you find it necessary to try patches against other sub-repositories than Chromium (src/) and Blink (src/third_party/WebKit/), please <a href="http://crbug.com/new" target="_blank">file a bug</a> with label Cr-Internals-GPU-Testing.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Running-the-GPU-Tests-Locally"></a>Running the GPU Tests Locally</h2>
+<div>All of the GPU tests running on the bots can be run locally from a Chromium build. However, figuring out the exact command line to use can be a little tricky. The Release GPU bots all run their tests via <a href="isolated-testing.1.html" target="_blank">isolates</a>, and in this case, the logs from a run on the bots will contain something like</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<pre style="font-family:Courier New,courier,monotype,monospace;font-weight:bold"><span style="font-family:Courier New,courier,monotype;font-weight:normal"><font size="2">run_isolated.py -H b83c4a0bce1c..... -I https://isolateserver.appspot.com</font></span></pre>
+</div>
+</blockquote>
+<div>which doesn't help when trying to figure out the command line to run the test.</div>
+<div><br />
+</div>
+<div>Many of the GPU tests are run via Telemetry. In order to run them, just build the <font face="courier new, monospace">chrome</font> target and then invoke <font face="courier new, monospace">src/content/test/gpu/run_gpu_test.py</font> with the appropriate argument. The tests this script can invoke is in <font face="courier new, monospace">src/content/test/gpu/gpu_tests/</font> . For example:</div>
+<div><br />
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><font face="courier new, monospace" size="2">run_gpu_test.py context_lost <span style="background-color:transparent"> </span><span style="background-color:transparent">--browser=release</span></font></div>
+<div><span style="background-color:transparent"><font face="courier new, monospace" size="2">run_gpu_test.py memory_test --browser=release</font></span></div>
+<div><font face="courier new, monospace" size="2"><span style="background-color:transparent">run_gpu_test.py webgl_conformance --browser=release </span><span style="background-color:transparent">--webgl-conformance-version=1.0.2</span></font></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><font face="courier new, monospace" size="2"><span style="background-color:transparent">run_gpu_test.py maps --browser=release</span></font></div>
+</blockquote>
+<div><br />
+</div>
+<div>The Maps test requires you to authenticate to cloud storage in order to access the Web Page Reply archive containing the test. See <a href="http://www.chromium.org/developers/testing/gpu-recipe#TOC-Cloud-Storage-Credentials" target="_blank">Cloud Storage Credentials</a> for documentation on setting this up.</div>
+<div><br />
+</div>
+<div>Most of the remaining tests are simple executables which can be built and run from the command line:</div>
+<div><br />
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><font face="courier new, monospace">angle_unittests</font></div>
+<div><font face="courier new, monospace">content_gl_tests</font></div>
+<div><font face="courier new, monospace">gl_tests</font></div>
+<div><font face="courier new, monospace">gles2_conform_test</font></div>
+</blockquote>
+<div><br />
+</div>
+<div>You can find the isolates for the various tests in <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/" target="_blank">src/chrome/</a>:</div>
+<div><br />
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/angle_unittests.isolate" target="_blank">angle_unittests.isolate</a></div>
+<div><a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/content_gl_tests.isolate" target="_blank">content_gl_tests.isolate</a></div>
+<div><a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/gl_tests.isolate" target="_blank">gl_tests.isolate</a></div>
+<div><a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/gles2_conform_test.isolate" target="_blank">gles2_conform_test.isolate</a></div>
+<div><a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/tab_capture_performance_tests.isolate" target="_blank">tab_capture_performance_tests.isolate</a></div>
+<div><a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/telemetry_gpu_test.isolate" target="_blank">telemetry_gpu_test.isolate</a></div>
+</blockquote>
+<div><br />
+</div>
+<div>The isolates contain the full or partial command line for invoking the target. The complete command line for any test can be deduced from the contents of the isolate plus the stdio output from the test's run on the bot.</div>
+<h2><a name="TOC-Running-Binaries-from-the-Bots-Locally"></a>Running Binaries from the Bots Locally</h2>
+<div><font size="2">Any binary run remotely on a bot can also be run locally, assuming the local machine loosely matches the architecture and OS of the bot.</font></div><div><font size="2"><br /></font></div><div><font size="2">Before running a remote test locally, you must ensure you have permission to access the isolate server. Full instructions can be <a href="gpu-recipe.html#TOC-Isolate-Server-Credentials">found here</a>. For most cases, you can simply run:</font></div><div><font size="2"><br /></font></div><div><div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">./src/tools/swarming_client/auth.py login --service=https://isolateserver.appspot.com</font></div><div style="font-size:13.3333330154419px"><span style="background-color:transparent"><code><b><i><font color="#660000"><br /></font></i></b></code></span></div></div><div style="font-size:13.3333330154419px"><span style="font-size:small;background-color:transparent">The above link requires that you log in with your @google.com credentials.</span></div><div style="font-size:13.3333330154419px"><span style="font-size:small;background-color:transparent"><br /></span></div><div style="font-size:13.3333330154419px"><span style="font-size:small;background-color:transparent">Once you are authenticated, you can run a remotely built test locally using <font face="courier new, monospace">run_isolated.py</font>. To determine the correct invocation, examine the stdio output for the desired test. In the stdio output, there should be a line which contains an invocation of run_isolated.py, for example:</span></div><div><font size="2"><br /></font></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="background-color:transparent"><code>C:\b\depot_tools\python276_bin\python.exe C:\b\build\slave\<i>[MachineName...]</i>\build\swarming.client\run_isolated.py <b><font color="#ff0000">-H 103570d337d55...... -I https://isolateserver.appspot.com -- maps --show-stdout --output-format=gtest --browser=debug -v --use-devtools-active-port --build-revision a9bf104cf1f9dc70..... --test-machine-name "..." "--extra-browser-args=--enable-logging=stderr --js-flags=--expose-gc" --output-format json</font><font color="#38761d"> </font><i><font color="#660000">--output-dir c:\users\chrome~1.per\appdata\local\temp\...--gtest_output=xml:C:\b\build\slave\...\build\gtest-results\maps_pixel_test\maps_pixel_test.xml</font></i></b></code></span></div>
+<span style="white-space:pre"><font size="2"><font face="arial, sans-serif">or</font><font face="Courier New, courier, monotype">
+</font></font></span>
+<div class="sites-codeblock sites-codesnippet-block"><span style="background-color:transparent"><code>/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/python /b/build/slave/<i>[MachineName...]</i>/build/swarming.client/run_isolated.py <b><font color="#ff0000">-H 95d176433450b2..... -I https://isolateserver.appspot.com -- maps --show-stdout --output-format=gtest --browser=release -v --use-devtools-active-port --build-revision a13b9ad691c91..... --test-machine-name "</font><i style="color:rgb(255,0,0)">...</i><font color="#ff0000">" "--extra-browser-args=--enable-logging=stderr --js-flags=--expose-gc --vmodule=startup_browser_creator=2" --output-format json </font><i><font color="#660000">--output-dir /tmp/...--gtest_output=xml:/b/build/slave/.../build/gtest-results/maps_pixel_test/maps_pixel_test.xml</font></i></b><br /></code></span></div>
+<div><font size="2"><br /></font></div><div><font size="2">Once you have located this command line, copy the program arguments (<b><font color="#ff0000">red above</font></b>). Some arguments which are specific to the test machine (<b><i><font color="#660000">dark red above</font></i></b>) can safely be dropped.</font></div>
+<div><font size="2"><br />
+</font></div>
+<div><font size="2">Once you have the arguments, the test is invoked via:</font></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px"><br /></blockquote>
+<div>
+<div><div class="sites-codeblock sites-codesnippet-block" style="font-size:13.3333330154419px"><span style="font-size:13.3333330154419px;line-height:13.3333330154419px;background-color:transparent"><code>./</code></span><span style="font-size:13.3333330154419px;line-height:13.3333330154419px;background-color:transparent"><code>src/tools/swarming_client/run_isolated.py <b><font color="#ff0000">[ARGUMENTS COPIED EARLIER]</font></b></code></span></div><div><span style="background-color:transparent"><code><b><i><font color="#660000"><br /></font></i></b></code></span></div>Note that this requires downloading a large number of files (everything needed to run the test) and may take a while. Subsequent runs should be able to re-use cached resources and will be significantly faster.<div><h2><a name="TOC-Running-Locally-Built-Binaries-on-the-GPU-Bots"></a>Running Locally Built Binaries on the GPU Bots</h2><p style="font-size:13.3333330154419px">Once you have followed the instructions <span style="font-size:13.3333330154419px;background-color:transparent"> on </span><a href="http://dev.chromium.org/developers/testing/gpu-recipe#TOC-Testing-your-own-isolates-with-the-download_and_test-recipe" style="font-size:13.3333330154419px;background-color:transparent" target="_blank">testing your own isolates</a><span style="font-size:13.3333330154419px;background-color:transparent"> for the GYP_DEFINES and authentication needed to upload isolates to the isolate server, you can also run your locally built tests by invoking run_isolated.py on the bot itself:</span></p><pre style="font-size:13.3333330154419px;font-family:Courier New,courier,monotype,monospace"><span style="font-family:Courier New,courier,monotype"><div style="font-family:Arial,Verdana,sans-serif;white-space:normal"><div class="sites-codeblock sites-codesnippet-block"><font color="#274e13" size="2"><span style="font-family:Courier New,courier,monotype;line-height:normal;background-color:transparent">/usr/bin/python /b/build/slave/<u>[slave name]</u>/build/swarming.client/run_isolated.py</span><span style="background-color:transparent"><code> -H [hash] -I </code></span><span style="background-color:transparent"><code>https://isolateserver.appspot.com -- [test name] [test arguments]</code></span></font></div></div></span></pre></div>
+</div>
+<h2><a name="TOC-Adding-New-Tests-to-the-GPU-Bots"></a>Adding New Tests to the GPU Bots</h2>
+</div>
+<div>The goal of the GPU bots is to avoid regressions in Chrome's rendering stack. To that end, let's add as many tests as possible that will help catch regressions in the product. <span style="font-size:10pt;background-color:transparent">If you see a crazy bug in Chrome's rendering which would be easy to catch with a pixel test running in Chrome and hard to catch in any of the other test harnesses, please, invest the time to add a test!</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;background-color:transparent">As of this writing it isn't as easy as desired to add a new test to one of the Telemetry based harnesses. See </span><span style="background-color:transparent"><a href="http://crbug.com/352807">http://crbug.com/352807</a> . Let's collectively work to address that issue. It would be great to reduce the number of steps on the GPU bots, or at least to avoid significantly increasing the number of steps on the bots. The WebGL conformance tests should probably remain a separate step, but some of the smaller Telemetry based tests (context_lost_tests, memory_test, etc.) should probably be combined into a single step.</span></div>
+<div><span style="background-color:transparent"><br />
+</span></div>
+<div><span style="background-color:transparent">If you are adding a new test to one of the existing tests (e.g., pixel_test), all you need to do is make sure that your new test runs correctly via isolates. See the documentation from the GPU recipe on <a href="http://dev.chromium.org/developers/testing/gpu-recipe#TOC-Testing-your-own-isolates-with-the-download_and_test-recipe" target="_blank">testing your own isolates</a> for the GYP_DEFINES and authentication needed to upload isolates to the isolate server. Most likely the new test will be Telemetry based, and included in the telemetry_gpu_test_run isolate. You can then invoke it via:</span></div>
+<div><span style="background-color:transparent"><br />
+</span></div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="background-color:transparent"><code>./</code></span><span style="background-color:transparent"><code>src/tools/swarming_client/run_isolated.py -H [hash] -I </code></span><span style="background-color:transparent"><code>https://isolateserver.appspot.com -- [test name] [test arguments]</code></span></div></div><h3><a name="TOC-Updating-and-Adding-New-Pixel-Tests-to-the-GPU-Bots"></a>Updating and Adding New Pixel Tests to the GPU Bots</h3>
+<div>Adding new pixel tests which require reference images is a slightly more complex process than adding other kinds of tests which can validate their own correctness. There are a few reasons for this.</div>
+<div>
+<ul><li>Reference image based pixel tests require different golden images for different combinations of operating system, GPU, driver version, OS version, and occasionally other variables.</li>
+<li>The reference images must be generated by the main waterfall. The try servers are not allowed to produce new reference images, only consume them. The reason for this is that a patch sent to the try servers might cause an incorrect reference image to be generated. For this reason, the main waterfall bots upload reference images to cloud storage, and the try servers download them and verify their results against them.</li>
+<li>The try servers will currently fail if they run a pixel test requiring a reference image that doesn't exist in cloud storage. This is deliberate, but needs more thought; see <a href="https://code.google.com/p/chromium/issues/detail?id=349262" target="_blank">Issue 349262</a>.</li>
+<li>Once the GPU try servers are part of the main waterfall, as a consequence, it won't be possible to CQ a patch which adds a new pixel test that requires a new reference image.</li></ul>
+If a reference image based pixel test's result is going to change because of a change in ANGLE or Blink (for example), updating the reference images is a slightly tricky process. Here's how to do it:</div>
+<div>
+<ul><li>Mark the pixel test as failing in the <a href="http://src.chromium.org/viewvc/chrome/trunk/src/content/test/gpu/gpu_tests/pixel.py" target="_blank">pixel test's</a> <a href="http://src.chromium.org/viewvc/chrome/trunk/src/content/test/gpu/gpu_tests/pixel_expectations.py" target="_blank">test expectations</a></li>
+<li>Commit the change to ANGLE, Blink, etc. which will change the test's results</li>
+<ul><li>Note that without the failure expectation, this commit would turn some bots red; a Blink change will turn the GPU bots on the chromium.webkit waterfall red, and an ANGLE change will turn the chromium.gpu.fyi bots red</li></ul>
+<li>Wait for Blink/ANGLE/etc. to roll</li>
+<li>Commit a change incrementing the revision number associated with the test in the <a href="http://src.chromium.org/viewvc/chrome/trunk/src/content/test/gpu/page_sets/pixel_tests.py" target="_blank">page set</a></li>
+<li>Commit a second change removing the failure expectation, once all of the bots on the main waterfall have generated new reference images. This change should go through the commit queue cleanly.</li></ul>
+When adding a brand new pixel test that uses a reference image, the steps are similar, but simpler:</div>
+<div>
+<ul><li>Mark the test as failing in the same commit which introduces the new test</li>
+<li>Wait for the reference images to be produced by all of the GPU bots on the waterfalls (see the <a href="https://console.developers.google.com/storage/chromium-gpu-archive/reference-images/" target="_blank">cloud storage bucket</a>)</li>
+<li>Commit a change un-marking the test as failing</li></ul>
+<div>When making a Chromium-side change which changes the pixel tests' results:</div>
+<div>
+<ul><li>In your CL, both mark the pixel test as failing in the pixel test's test expectations and increment the test's version number in the page set (see above)</li>
+<li>After your CL lands, land another CL removing the failure expectations. If this second CL goes through the commit queue cleanly, you know reference images were generated properly.</li></ul>
+</div>
+In general, when adding a new pixel test, it's better to spot check a few pixels in the rendered image rather than using a reference image per platform. The <a href="http://src.chromium.org/viewvc/chrome/trunk/src/content/test/gpu/gpu_tests/gpu_rasterization.py" target="_blank">GPU rasterization test</a> is a good example of a recently added test which performs such spot checks.</div>
+<h2><a name="TOC-The-GPU-bots-recipe"></a><span style="background-color:transparent">The GPU bots' recipe</span></h2>
+<div>The GPU bots are using the Chrome infrastructure team's new "recipe" infrastructure, which makes it dramatically easier than before to make configuration changes to the bots. See the documentation on the <a href="http://dev.chromium.org/developers/testing/gpu-recipe" target="_blank">GPU bots' recipe</a> for details on how to add new steps to the bots and modify their existing steps.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Stamping-out-Flakiness"></a>Stamping out Flakiness</h2>
+<div>It's critically important to aggressively investigate and eliminate the root cause of any flakiness seen on the GPU bots. The bots have been known to run reliably for days at a time, and any flaky failures that are tolerated on the bots translate directly into instability of the browser experienced by customers. Critical bugs in subsystems like WebGL, affecting high-profile products like Google Maps, have escaped notice in the past because the bots were unreliable. After much re-work, the GPU bots are now among the most reliable automated test machines in the Chromium project. Let's keep them that way.</div>
+<div><br />
+</div>
+<div>Flakiness affecting the GPU tests can come in from highly unexpected sources. Here are some examples:</div>
+<div>
+<ul><li>Intermittent pixel_test failures on Linux where the captured pixels were black, caused by the Display Power Management System (DPMS) kicking in. Disabled the X server's built-in screen saver on the GPU bots in response.</li>
+<li>GNOME dbus-related deadlocks causing intermittent timeouts (<a href="http://crbug.com/309093" target="_blank">Issue 309093</a> and related bugs).</li>
+<li>Windows Audio system changes causing intermittent assertion failures in the browser (<a href="http://crbug.com/310838" target="_blank">Issue 310838</a>).</li>
+<li>Enabling assertion failures in the C++ standard library on Linux causing random assertion failures (<a href="http://crbug.com/328249" target="_blank">Issue 328249</a>).</li>
+<li>V8 bugs causing random crashes of the Maps pixel test (<a href="https://code.google.com/p/v8/issues/detail?id=3022" target="_blank">V8 issue 3022</a>, <a href="https://code.google.com/p/v8/issues/detail?id=3174" target="_blank">3174</a>).</li>
+<li>TLS changes causing random browser process crashes (<a href="http://crbug.com/264406" target="_blank">Issue 264406</a>).</li>
+<li>Isolated test execution flakiness caused by failures to reliably clean up temporary directories (<a href="http://crbug.com/340415" target="_blank">Issue 340415</a>).</li>
+<li>The Telemetry-based WebGL conformance suite caught a bug in the memory allocator on Android not caught by any other bot (<a href="http://crbug.com/347919" target="_blank">Issue 347919</a>).</li>
+<li>context_lost test failures caused by the compositor's retry logic (<a href="http://crbug.com/356453" target="_blank">Issue 356453</a>).</li>
+<li>Multiple bugs in Chromium's support for lost contexts causing flakiness of the context_lost tests (<a href="http://crbug.com/365904" target="_blank">Issue 365904</a>).</li>
+<li>Maps test timeouts caused by Content Security Policy changes in Blink (<a href="http://crbug.com/395914" target="_blank">Issue 395914</a>).</li>
+<li>Weak pointer assertion failures in various webgl_conformance_tests caused by changes to the media pipeline (<a href="https://code.google.com/p/chromium/issues/detail?id=399417" target="_blank">Issue 399417</a>).</li>
+<li>A change to a default WebSocket timeout in Telemetry causing intermittent failures to run all WebGL conformance tests on the Mac bots (<a href="http://crbug.com/403981" target="_blank">Issue 403981</a>).</li>
+<li>Chrome leaking suspended sub-processes on Windows, apparently a preexisting race condition that suddenly showed up (<a href="http://crbug.com/424024" target="_blank">Issue 424024</a>).</li></ul>
+If you notice flaky test failures either on the GPU waterfalls or try servers, please file bugs right away with the label Cr-Internals-GPU-Testing and include links to the failing builds and copies of the logs, since the logs expire after a few days. <a href="../how-tos/gpu-wrangling.html" target="_blank">GPU pixel wranglers</a> should give the highest priority to eliminating flakiness on the tree.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Swarming-Transition-of-Tryservers"></a>Swarming Transition of Tryservers</h2>
+<div>The GPU tryservers have been transitioned from a traditional waterfall model to Chromium's <a href="https://code.google.com/p/swarming/" target="_blank">swarming infrastructure</a>. The benefits of this transition are manifold:</div>
+<div>
+<ol><li>The binaries are built by the regular Chromium trybot builders, eliminating the duplication of the GPU-specific linux_gpu, mac_gpu and win_gpu configurations, and reclaiming some 90 virtual machines.</li>
+<li>The sharding of the test execution is finer-grained. Each individual test may be run on a separate machine, leading to better parallelism and faster cycle times.</li>
+</ol>
+Concretely, the GPU tryserver test bots (for example, mac_gpu_triggered_tests) are being put into the swarming pool, and triggered from the regular Chromium and Blink tryservers. The tests are moving in the following ways:</div>
+<div>
+<ul><li>The tests that were run on mac_gpu_triggered_tests and mac_gpu_retina_triggered_tests are now being run on <a href="http://build.chromium.org/p/tryserver.chromium.mac/builders/mac_chromium_rel_ng" target="_blank">mac_chromium_rel_ng</a>, for Chromium CLs, and <a href="http://build.chromium.org/p/tryserver.blink/builders/mac_blink_rel" target="_blank">mac_blink_rel</a>, for Blink CLs.</li>
+<li>The tests that were run on <a href="http://build.chromium.org/p/tryserver.chromium.gpu/builders/linux_gpu_triggered_tests" target="_blank">linux_gpu_triggered_tests</a> are now being run on <a href="http://build.chromium.org/p/tryserver.chromium.linux/builders/linux_chromium_rel_ng" target="_blank">linux_chromium_rel_ng</a>, for Chromium CLs, and <a href="http://build.chromium.org/p/tryserver.blink/builders/linux_blink_rel" target="_blank">linux_blink_rel</a>, for Blink CLs.</li>
+<li>The tests that were run on <a href="http://build.chromium.org/p/tryserver.chromium.gpu/builders/win_gpu_triggered_tests" target="_blank">win_gpu_triggered_tests</a> are now being run on <a href="http://build.chromium.org/p/tryserver.chromium.win/builders/win_chromium_rel_ng" target="_blank">win_chromium_rel_ng</a>, for Chromium CLs, and <a href="http://build.chromium.org/p/tryserver.blink/builders/win_blink_rel" target="_blank">win_blink_rel</a>, for Blink CLs.</li></ul>
+The trybots analyze the incoming CLs and only build and test those targets which may be affected by that CL. Thus it might be necessary to scan through multiple builds in order to find one which has run the GPU tests. The GPU tests are those whose description contains the specific GPU on which the test was run: for example, "webgl_conformance on NVIDIA GPU on Mac Retina (with patch) on Mac-10.9".</div>
+<div><br />
+</div>
+<div>The <a href="http://build.chromium.org/p/tryserver.chromium.gpu/builders" target="_blank">tryserver.chromium.gpu</a> waterfall has been decommissioned, so there is no longer be a single centralized place to examine the GPU tryservers' results. Instead, the following tools should be used to check their health:</div>
+<div>
+<ol><li>The <a href="http://chromium-try-flakes.appspot.com/" target="_blank">chromium-try-flakes</a> tool. Look for tests that run on the GPU trybots, and the names of the bots which are currently running the GPU tests. If you see a flake, file a bug like <a href="http://crbug.com/444430" target="_blank">this one</a>. This is the most targeted tool for discovering flakiness on the trybots and should be heavily relied upon.</li>
+<li>The <a href="https://chromium-swarm.appspot.com/stats" target="_blank">Swarming Server Stats</a> tool. Examine the bots whose dimensions contain a non-empty GPU. Check the activity on these bots to ensure the number of pending jobs seems reasonable according to historical levels. If you have an @google.com account, you can drill down into the individual bots' history to see the success and failure rates of tests on an individual bot.</li>
+<li>As a last resort, the individual bots like <a href="http://build.chromium.org/p/tryserver.chromium.mac/builders/mac_chromium_rel_ng" target="_blank">mac_chromium_rel_ng</a> can be examined to see if there are any patterns in the failures, such as a particular trybot failing tests all of the time.</li>
+</ol>
+</div>
+<div><br />
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/testing/gpu-testing">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9WSe7VkBO3NlVELAJ4378s9koMOr3FI3kEA9ZrMRv1xQUPmEmvA78jy4e-gFqRZd0qjkeaNxFRJTYI6ZEKSGX21CEqVFs_I7UqrMltVCMima_Z4OP/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/deep-memory-profiler","deleted":false,"title":"Deep Memory Profiler","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/deep-memory-profiler\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Deep Memory Profiler","locale":"en","wuid":"wuid:gx:7ecffd957b4ddbe4","revision":130,"path":"/developers/deep-memory-profiler","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"deep-memory-profiler","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Deep Memory Profiler - The Chromium Projects" />
+<meta itemprop="name" content="Deep Memory Profiler - The Chromium Projects" />
+<meta property="og:title" content="Deep Memory Profiler - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Deep Memory Profiler - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Deep Memory Profiler</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>Deep Memory Profiler (dmprof) is a 1) whole-process, 2) timeline-based and 3) post-mortem memory profiler for Chromium. It's designed to categorize <b>all memory usage in a process without any omission</b>. See the <a href="https://docs.google.com/document/d/1_Cw9FfzdRT2kjozkNK9cZOXedE8-1fGDqnUvdW_tpGs/edit">Design Doc</a> if interested.</p>
+<p>Memory bloat has been a serious issue in Chromium for years. Bloat is harder to fix than leak and errors. We have memory checkers like <a href="http://dev.chromium.org/developers/how-tos/using-valgrind">Valgrind</a> and <a href="http://dev.chromium.org/developers/testing/addresssanitizer">Address Sanitizer</a> for leak and errors, but no handy tools for bloat. Dmprof is an easy-to-use tool for bloat to know “who is the memory eater”. (It would be helpful also for leak.)</p>
+<h3><a name="TOC-Announcement"></a>Announcement</h3>
+<div>Future announcements (e.g. command line changes) will be done in <a href="https://groups.google.com/a/chromium.org/forum/?fromgroups#!forum/dmprof">dmprof@chromium.org</a>. Subscribe it if you're interested.</div>
+<div><br />
+</div>
+<div>
+<div><div class="sites-embed-align-center-wrapping-off"><div class="sites-embed-border-on sites-embed" style="width:900px;"><div class="sites-embed-content sites-embed-type-gviz-chart"><div class="sites-trix-gviz-chart" style="width:900px;height:500px;"><iframe scrolling="no" src="javascript:void(0);" width="900" height="500" title="Memory Usage Breakdown of Chromium (L2: Detailed Breakdown)" frameborder="0" id="iframe1124257147" name="iframe1124257147"></iframe><form id="form1124257147" class="sites-iframe-gviz-form" action="https://docs.google.com/a/chromium.org/spreadsheet/chartiframe" method="post" target="iframe1124257147"><input type="hidden" name="spec" value="{&quot;dataSourceUrl&quot;:&quot;https://docs.google.com/a/chromium.org/spreadsheet/tq?key\u003d0Ajevw6ceMEA7dHZzNHFGRlRKcHItT21XNVlhR3Y3RWc\u0026headers\u003d1\u0026transpose\u003d0\u0026gid\u003d2\u0026range\u003dA1:A24,E1:AT24\u0026merge\u003dCOLS&quot;,&quot;chartName&quot;:&quot;Memory Usage Breakdown of Chromium (L2: Detailed Breakdown)&quot;,&quot;options&quot;:{&quot;hAxis&quot;:{&quot;useFormatFromData&quot;:true,&quot;viewWindowMode&quot;:&quot;pretty&quot;,&quot;title&quot;:&quot;Seconds&quot;,&quot;viewWindow&quot;:{}},&quot;vAxes&quot;:[{&quot;useFormatFromData&quot;:true,&quot;viewWindowMode&quot;:&quot;pretty&quot;,&quot;title&quot;:&quot;MB&quot;,&quot;viewWindow&quot;:{}},{&quot;useFormatFromData&quot;:true,&quot;viewWindowMode&quot;:&quot;pretty&quot;,&quot;viewWindow&quot;:{}}],&quot;useFirstColumnAsDomain&quot;:true,&quot;width&quot;:&quot;900&quot;,&quot;isStacked&quot;:true,&quot;vAxis&quot;:{&quot;format&quot;:&quot;&quot;},&quot;title&quot;:&quot;Memory Usage Breakdown of Chromium (L2: Detailed Breakdown)&quot;,&quot;booleanRole&quot;:&quot;certainty&quot;,&quot;height&quot;:&quot;500&quot;,&quot;animation&quot;:{&quot;duration&quot;:500}},&quot;chartType&quot;:&quot;AreaChart&quot;,&quot;state&quot;:{},&quot;isDefaultVisualization&quot;:true}" /><input type="hidden" name="key" value="0Ajevw6ceMEA7dHZzNHFGRlRKcHItT21XNVlhR3Y3RWc" /></form><script type="text/javascript">document.getElementById('form1124257147').submit();</script></div></div></div></div></div>
+</div>
+<h3><a name="TOC-Sub-profilers"></a>Sub-profilers</h3>
+<div>
+<ul><li><a href="https://www.chromium.org/developers/deep-memory-profiler/cpp-object-type-identifier">C++ Object Type Identifier</a> (a.k.a. Type Profiler)</li></ul>
+</div>
+<h2><a name="TOC-How-to-Use"></a>How to Use</h2>
+<p>Dmprof profiles memory usage post-mortem. You need to 1) get memory dumps while Chrome is running, and then 2) analyze the dumps. The analyzing script <font face="courier new, monospace">dmprof</font> is available in <font face="courier new, monospace"><a href="http://src.chromium.org/viewvc/chrome/trunk/src/tools/deep_memory_profiler/">src/tools/deep_memory_profiler</a></font> of the Chromium source tree, or can be retrieved by downloading and running <a href="http://src.chromium.org/viewvc/chrome/trunk/src/tools/deep_memory_profiler/download.sh"><font face="courier new, monospace">download.sh</font></a>.</p>
+<div><br />
+</div>
+<h3><a name="TOC-Phase-1:-Build-Chromium"></a>Phase 1: Build Chromium</h3>
+<p>You can use dmprof for Chromium <b>static builds</b> with some build options both for <b>Release and Debug builds</b>. Note that it is not available for <b>shared builds</b>.</p>
+<h4><a name="TOC-Linux-and-ChromeOS-Chrome"></a>Linux and ChromeOS-Chrome</h4>
+<ul>
+<li>Release builds - use <font face="courier new, monospace"><b>GYP_DEFINES='$GYP_DEFINES profiling=1 profiling_full_stack_frames=1 linux_dump_symbols=1'</b></font></li>
+<li>Debug builds - use <font face="courier new, monospace"><b>GYP_DEFINES='$GYP_DEFINES profiling=1 disable_debugallocation=1'</b></font></li>
+</ul>
+<h4><a name="TOC-Android"></a>Android</h4><div>Be careful not to overwrite GYP_DEFINES predefined by env_setup.sh.</div>
+<ul>
+<li>Release builds - use <font face="courier new, monospace"><b>GYP_DEFINES='$GYP_DEFINES profiling=1 profiling_full_stack_frames=1 linux_dump_symbols=1 use_allocator="tcmalloc"'</b></font></li>
+<li>Debug builds - use <font face="courier new, monospace"><b>GYP_DEFINES='$GYP_DEFINES profiling=1 disable_debugallocation=1 android_full_debug=1 use_allocator="tcmalloc"'</b></font></li>
+</ul>
+<h4><a name="TOC-ChromeOS-ChromiumOS"></a>ChromeOS / ChromiumOS</h4>
+<ul>
+<li>Release builds - use <font face="courier new, monospace"><b>USE='... deep_memory_profiler'</b></font></li>
+<li>Debug builds - not maintained</li>
+</ul>
+<div><br />
+</div>
+<h3><a name="TOC-Phase-2:-Run-Chromium"></a>Phase 2: Run Chromium</h3>
+<h3><a name="TOC-Remember-the-Process-ID-of-your-target-process-c.f.-about:memory-"></a><span style="background-color:rgb(255,242,204)"><span style="font-size:10pt;font-weight:normal">Remember the Process ID of your target process! (c.f. </span><font face="courier new, monospace" style="font-size:10pt;font-weight:normal">about:memory</font><span style="font-size:10pt;font-weight:normal">)</span></span></h3>
+<h4><a name="TOC-Linux-and-ChromeOS-Chrome1"></a>Linux and ChromeOS-Chrome</h4>
+<p>Run Chromium with a command-line option <font face="courier new, monospace" style="font-size:10pt;font-weight:normal">--no-sandbox</font> and the following environment variables:</p>
+<ol><li><span style="font-family:courier new,monospace;font-size:10pt">HEAPPROFILE=/path/to/prefix</span> (Files like <font face="courier new, monospace">/path/to/prefix.0001.heap</font> are dumped from Chrome.)</li>
+<li><span style="font-family:courier new,monospace;font-size:10pt">HEAP_PROFILE_MMAP=1</span></li>
+<li><span style="font-family:courier new,monospace;font-size:10pt">DEEP_HEAP_PROFILE=1</span></li>
+<li><font face="courier new, monospace" style="font-size:10pt"><span style="font-family:Arial,Verdana,sans-serif">(If you get dumps from a standalone Chromium process periodically, specify </span>HEAP_PROFILE_TIME_INTERVAL=</font><span style="font-size:10pt">&lt;interval seconds between dumping&gt;)</span></li>
+</ol>
+<blockquote style="font-weight:normal;margin:0px 0px 0px 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block"><code>$ HEAPPROFILE=$HOME/prof/prefix HEAP_PROFILE_TIME_INTERVAL=20 HEAP_PROFILE_MMAP=1 DEEP_HEAP_PROFILE=1 out/Release/chrome --no-sandbox</code></div>
+</blockquote>
+<h4><a name="TOC-Android1"></a>Android</h4>
+<div class="sites-codeblock sites-codesnippet-block" style="font-size:10pt"><span style="font-size:10pt"><code># NOTE: the device needs to be rooted!<br />
+adb root<br />
+# Create a world-writable dump directory</code><br />
+<code>adb shell mkdir -p /data/local/tmp/heap</code><br />
+</span><span style="font-size:10pt"><code>adb shell chmod 0777 /data/local/tmp/heap</code><br />
+<code># Set the following system properties<br />
+</code><span style="color:rgb(0,96,0);font-family:monospace">adb shell setprop heapprof </span><span style="color:rgb(0,96,0);font-family:monospace">/data/local/tmp/heap/dumptest</span><br />
+</span><span style="font-size:10pt"><code>adb shell setprop heapprof.mmap 1</code><br />
+</span><span style="font-size:10pt"><code>adb shell setprop heapprof.deep_heap_profile 1</code><br />
+</span><span style="font-size:10pt"><code>adb shell setprop heapprof.time_interval 10</code></span></div>
+<h4><a name="TOC-ChromeOS-ChromiumOS1"></a>ChromeOS / ChromiumOS</h4>
+<p>Prepare a file <font face="courier new, monospace">/var/tmp/deep_memory_profiler_prefix.txt</font> in your device or VM image. Its content should just have a prefix to dumped files <font face="courier new, monospace">/path/to/prefix</font> like:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><font color="#006000" face="monospace">/var/tmp/heapprof</font></div>
+</div>
+<p>If you get dumps from a standalone Chromium process periodically, prepare a file <font face="courier new, monospace">/var/tmp/deep_memory_profiler_time_interval.txt</font> which contains just an integer meaning the interval time to dump:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>60</code></div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Phase-3:-Make-Chromium-dump"></a>Phase 3: Make Chromium dump</h3>
+<h4><a name="TOC-Standalone-automatic-periodical-dump-"></a>Standalone (automatic periodical dump)</h4>
+<p>If you specified "time interval" described above, the Chromium process dumps heap profiles periodically. It depends on the platform how to specify "time interval".</p>
+<h4><a name="TOC-WebDriver-ChromeDriver-"></a>WebDriver (ChromeDriver)</h4>
+<span style="font-size:10pt">A WebDriver (ChromeDriver) API function is available to dump. Try </span><font face="courier new, monospace" style="font-size:10pt">dump_heap_profile()</font><span style="font-size:10pt">:</span>
+<div><br />
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block"><code>dump_heap_profile(reason='Why you want a dump.')</code></div>
+</blockquote>
+<span style="font-size:10pt">
+<div><span style="font-size:10pt"><br />
+</span></div>
+Note that yo</span><span style="font-size:10pt">u may want to copy the dumps from your remote machine if you run ChromeDriver remotely.</span>
+<h4><a name="TOC-Memory-Benchmarking-V8-API"></a>Memory Benchmarking V8 API</h4><div>You can dump heap profiles manually from DevTools (or automatically with your script) when you set the environment variables above and specify the command line option <font face="courier new, monospace">--enable-memory-benchmarking</font> to Chrome.</div><div><br /></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>chrome.memoryBenchmarking.heapProfilerDump("browser" or "renderer", "some reason")</code></div></div><h4><a name="TOC-Telemetry"></a>Telemetry</h4>
+<p>You can use a Telemetry profiler to drive chrome and, if running on android, to also fetch the files from the device. It utilizes the above Memory Benchmarking V8 API internally. See <a href="http://www.chromium.org/developers/telemetry/profiling#TOC-Memory-Profiling---Linux-Android" target="_blank">Telemetry instructions</a>.</p>
+<br />
+<h3><a name="TOC-Phase-4:-Get-the-dumps"></a>Phase 4: Get the dumps</h3>
+<p>Find the dumps at <font face="courier new, monospace">/path/to/prefix.*.heap</font> as specified above. Names of the dumps include Process IDs. For example, <font face="courier new, monospace">prefix.12345.0002.heap</font> for pid = 12345.  '0002' is a sequence number of the dump.</p>
+<p>The dmprof analyzer script (in the Phase 5) needs the executed Chrome binary to extract symbols. If you analyze in the same host with the Chrome process, you don't need special things. If you analyze in a different host from the Chrome process (it's common in Android and ChromeOS), you may need to specify the path to the executed Chrome binary on the host. (See Phase 5 for details.)</p>
+<h4><a name="TOC-Linux-and-ChromeOS-Chrome2"></a>Linux and ChromeOS-Chrome</h4>
+<p>Heap profiles are dumped to the directory where you specified in the environment variable <font face="courier new, monospace">HEAPPROFILE</font>. </p>
+<h4><a name="TOC-Android2"></a>Android</h4>
+<p>Heap profiles are dumped in the device directory where you specified in the property <font face="courier new, monospace">heapprof</font>. Fetch the dump from the device to your host by the following command.</p>
+<div class="sites-codeblock sites-codesnippet-block" style="font-size:10pt"><code>adb pull /data/local/tmp/heap/ .</code></div>
+<p>The dmprof script guesses the path of the Chrome binary on the host if the executed binary was in an Android-specific directory (e.g. <font face="courier new, monospace">/data/app-lib/</font>). If the guess fails, use <font face="courier new, monospace">--alternative-dirs</font> for the dmprof script (in the Phase 5).</p>
+<h4><a name="TOC-ChromeOS-ChromiumOS2"></a>ChromeOS / ChromiumOS</h4>
+<p>Heap profiles are dumped in the device directory where you specified in <font face="courier new, monospace">/var/tmp/deep_memory_profiler_prefix.txt</font>. Fetch them in a certain way like <font face="courier new, monospace">scp</font> from the device / VM.</p>
+<p>The dmprof script doesn't know where is the Chrome binary on the host. Use <font face="courier new, monospace" style="font-size:10pt">--alternative-dirs</font><span style="font-size:10pt"> </span><span style="font-size:10pt">for the dmprof script (in the Phase 5).</span></p>
+<br />
+<h3><a name="TOC-Phase-5:-Analyze-the-dumps"></a>Phase 5: Analyze the dumps</h3>
+<p>Use the dmprof script to analyze with the dumped heap profiles.</p>
+<ol>
+<li>Run the analyzing script dmprof, and redirect its stdout to a CSV file. You can choose a policy with -p option. Details of policies are described below.<br />
+<span style="font-family:courier new,monospace;font-size:10pt">dmprof csv /path/to/first-one-of-the-dumps.heap &gt; result.csv</span></li>
+<li>Copy the CSV into a spreadsheet application, for example, OpenOffice Calc and Google Spreadsheet.</li>
+<li>Draw a (stacked) line chart on the spreadseet for columns from <font face="courier new, monospace">FROM_HERE_FOR_TOTAL</font> to <font face="courier new, monospace">UNTIL_HERE_FOR_TOTAL</font>.  (See <a href="https://docs.google.com/spreadsheet/ccc?key=0Ajevw6ceMEA7dHZzNHFGRlRKcHItT21XNVlhR3Y3RWc">the example</a>.)</li>
+</ol>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>$ dmprof csv dmprof.03511.0001.heap &gt; dmprof.03511.result.csv</code></div>
+</div>
+<p>Or, use this to generate a local html with a graph and a data table:</p>
+<div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace"># Generate a JSON output for your dumps.<br />
+$ tools/deep_memory_profiler/dmprof json /path/to/first-one-of-the-dumps.heap &gt; FOO.json</font><br />
+<font color="#006000" face="monospace"><font color="#006000" face="monospace"><br />
+# Convert the JSON file to a HTML file.</font><br style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif" />
+$ tools/deep_memory_profiler/graph.py FOO.json &gt; graph.html</font>
+</div>
+<p>In case of Android or ChromeOS, you may need to use <font face="courier new, monospace">--alternative-dirs</font> for the dmprof script to specify the path of the Chrome binary on the host instead of the path on the device.</p>
+<h4><a name="TOC-Android3"></a>Android</h4>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>$ dmprof csv --alternative-dirs=/data/app-lib/com.google.android.apps.chrome-1@/home/self/chrome/src/out/Release/lib dmprof.03511.0001.heap</code></div>
+<div><code><br />
+</code></div>
+<div><code>Assuming /data/app-lib/com.google.android.apps.chrome-1 on device as /home/self/chrome/src/out/Release/lib on host</code></div>
+<div><code>...</code></div>
+</div>
+<h4><a name="TOC-ChromeOS-ChromiumOS3"></a>ChromeOS / ChromiumOS</h4>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>$ dmprof csv --alternative-dirs=/opt/google/chrome@/home/self/chromeos/chroot/build/x86-generic/opt/google/chrome dmprof.03511.0001.heap</code></div>
+<div><code><br />
+</code></div>
+<div><code>Assuming /opt/google/chrome on device as /home/self/chromeos/chroot/build/x86-generic/opt/google/chrome on host</code></div>
+<div><code>...</code></div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Phase-6:-Drill-down-into-components-backtraces"></a>Phase 6: Drill down into components / backtraces</h3>
+<div>Given a specific component listed in the graph above, sue the following command to </div>
+<h2><a name="TOC-HEAP_FILE-TCMalloc-.heap-file-COMPONENT-One-of-the-components-displayed-in-the-graph.-POLICY-the-json-file-used-to-generate-the-graph.-tools-deep_memory_profiler-dmprof-expand-HEAP_FILE-POLICY-COMPONENT-32"></a><font size="2"><span style="font-weight:normal">
+<div class="sites-codeblock sites-codesnippet-block"><code># HEAP_FILE =&gt; TCMalloc .heap file<br />
+# COMPONENT =&gt; One of the components displayed in the graph.<br />
+# POLICY =&gt; the json file used to generate the graph.<br />
+tools/deep_memory_profiler/dmprof expand HEAP_FILE POLICY COMPONENT 32</code></div>
+</span></font></h2>
+<h2><a name="TOC-Caveats"></a><br />Caveats</h2><div><h3><a name="TOC-Linux-ChromeOS-Android"></a><span style="background-color:transparent;font-size:10pt">Linux / ChromeOS / Android</span></h3><ul><li><span style="background-color:transparent;font-size:10pt">The total size can be different from RSS reported by ps and /proc/.../stat iin some cases.</span></li><ul><li>RSS by ps and stat doesn't include a part of memory usage. For example, <span style="background-color:transparent;font-size:10pt">the page tables, kernel stack, struct thread_info, and struct</span><span style="background-color:transparent;font-size:10pt"> task_struct (from man ps). The same difference is in smaps and pmap.</span></li><li><span style="background-color:transparent;font-size:10pt">Deep Memory Profiler can double-count page frames (physical pages) which are mapped from different virtual pages in the same process. It hardly happens in Chrome.</span></li></ul></ul><div><br /></div></div><h2><a name="TOC-How-to-read-the-graph"></a>
+How to read the graph</h2>
+<div>Graphs are typical stacked ones which classifies all memory usage into some components.  We have four kinds of graphs from each execution dump based on four built-in "policies": l0, l1, l2, t0.</div>
+<div><br />
+</div>
+<div>We're preparing more breakdown policies.  If you'd like to add a criteria for your component, 1) modify policy.*.json files, 2) modify polices.json and add a policy file or 3) report it to dmprof@chromium.org.</div>
+<div><br />
+</div>
+<div><b><font size="3">Common components</font></b></div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:256px;height:15px"> mustbezero &amp; unhooked-absent</td>
+<td style="width:560px;height:15px"> Should be zero.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> unhooked-anonymous</td>
+<td style="width:560px;height:15px"> VMA is mapped, but no information is recorded. No label is given in /proc/.../maps.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> unhooked-file-exec</td>
+<td style="width:560px;height:15px"> VMA is mapped, but no information is recorded. An executable file is mapped.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> unhooked-file-nonexec</td>
+<td style="width:560px;height:15px"> VMA is mapped, but no information is recorded. A non-executable file is mapped.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> unhooked-file-stack</td>
+<td style="width:560px;height:15px"> VMA is mapped, but no information is recorded. Used as a stack.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> unhooked-other</td>
+<td style="width:560px;height:15px"> VMA is mapped, but no information is recorded. Used for other purposes.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> no-bucket</td>
+<td style="width:560px;height:15px"> Should be small. Out of record because it is an ignorable small blocks.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-unused</td>
+<td style="width:560px;height:15px"> Reserved by TCMalloc, but not used by malloc(). Headers, fragmentation and free-list.</td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div><b><font size="3">Policy "l0"</font></b></div>
+<div><br />
+</div>
+<div>This policy applies the most rough classification.  </div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8</td>
+<td style="width:560px;height:15px"> mmap'ed for V8. It includes JavaScript heaps and JIT compiled code.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-catch-all</td>
+<td style="width:560px;height:15px"> mmap'ed for other purposes.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-used-all</td>
+<td style="width:560px;height:15px"> All memory blocks allocated by malloc().</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div><br />
+</div>
+<div>
+<div><font size="3"><b>Policy "l1"</b></font></div>
+</div>
+<div><br />
+</div>
+<div>It breaks down memory usage into relatively specific components.</div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-heap-newspace</td>
+<td style="width:560px;height:15px"> JavaScript new (nursery) heap for younger objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-heap-coderange</td>
+<td style="width:560px;height:15px"> Code produced at runtime including JIT-compiled JavaScript code.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-heap-pagedspace</td>
+<td style="width:560px;height:15px"> JavaScript old heap and many other object spaces.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-other</td>
+<td style="width:560px;height:15px"> Other regions mmap'ed by V8.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-catch-all</td>
+<td style="width:560px;height:15px"> Any other mmap'ed regions.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-v8</td>
+<td style="width:560px;height:15px"> Blocks allocated from V8.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-skia</td>
+<td style="width:560px;height:15px"> Blocks allocated from Skia.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webkit-catch-all</td>
+<td style="width:560px;height:15px"> Blocks allocated from WebKit.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-unknown-string</td>
+<td style="width:560px;height:15px"> Blocks which are related to std::string.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-catch-all</td>
+<td style="width:560px;height:15px"> Any other blocks allocated by malloc().</td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div><b style="font-size:medium">Policy "l2"</b></div>
+<div><br />
+</div>
+<div>It tries to breakdown memory usage into specific components.  See <a href="http://src.chromium.org/viewvc/chrome/trunk/src/tools/deep_memory_profiler/policy.l2.json?view=markup">policy.l2.json</a> for details, and report to dmprof@chromium.org to add more components.</div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-heap-newspace</td>
+<td style="width:560px;height:15px"> JavaScript new (nursery) heap for younger objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-heap-coderange</td>
+<td style="width:560px;height:15px"> Code produced at runtime including JIT-compiled JavaScript code.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-heap-pagedspace</td>
+<td style="width:560px;height:15px"> JavaScript old heap and many other spaces.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8-other</td>
+<td style="width:560px;height:15px"> Other regions mmap'ed by V8.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-catch-all</td>
+<td style="width:560px;height:15px"> Any other mmap'ed regions.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-fontcache</td>
+<td style="width:560px;height:15px"> Blocks used for FontCache.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-skia</td>
+<td style="width:560px;height:15px"> Blocks used for Skia.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-renderobject</td>
+<td style="width:560px;height:15px"> Blocks used for RenderObject.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-renderstyle</td>
+<td style="width:560px;height:15px"> Blocks used for RenderStyle.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-sharedbuf</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's SharedBuffer.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-XHRcreate</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's XMLHttpRequest (create).</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-XHRreceived</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's XMLHttpRequest (received). </td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-docwriter-add</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's DocumentWriter.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-node-and-doc</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's HTMLElement, Text, and other Node objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-node-factory</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's HTML*Factory.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-element-wrapper</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's createHTML*ElementWrapper.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-stylepropertyset</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's StylePropertySet (CSS).</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-style-createsheet</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's StyleElement::createSheet.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-cachedresource</td>
+<td style="width:560px;height:15px"> Blocks used for WebCore's CachedResource.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-script-execute</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's ScriptElement::execute.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-events-related</td>
+<td style="width:560px;height:15px"> Blocks related to WebCore's events (EventListener and so on)</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-document-write</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's Document::write.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-node-create-renderer</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's Node::createRendererIfNeeded.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-render-catch-all</td>
+<td style="width:560px;height:15px"> Any other blocks related to WebCore's Render.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-setInnerHTML-except-node</td>
+<td style="width:560px;height:15px"> Blocks created by setInnerHTML.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-wtf-StringImpl-user-catch-all</td>
+<td style="width:560px;height:15px"> Blocks used for WTF::StringImpl.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-wtf-HashTable-user-catch-all</td>
+<td style="width:560px;height:15px"> Blocks used for WTF::HashTable.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webcore-everything-create</td>
+<td style="width:560px;height:15px"> Blocks created by WebCore's any create() method.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webkit-from-v8-catch-all</td>
+<td style="width:560px;height:15px"> Blocks created by V8 via WebKit functions.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-webkit-catch-all</td>
+<td style="width:560px;height:15px"> Any other blocks created by WebKit.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-v8-catch-all</td>
+<td style="width:560px;height:15px"> Any other blocks created in V8.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-toplevel-string</td>
+<td style="width:560px;height:15px"> All std::string objects created at the top-level.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-catch-all</td>
+<td style="width:560px;height:15px"> Any other blocks by malloc().</td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div><b style="font-size:medium">Policy "t0"</b></div>
+<div>
+<div><br />
+</div>
+<div>It classifies memory blocks based on their type_info.</div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:256px;height:15px"> mmap-v8</td>
+<td style="width:560px;height:15px"> mmap'ed for V8. It includes JavaScript heaps and JIT compiled code.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> mmap-catch-all</td>
+<td style="width:560px;height:15px"> mmap'ed for other purposes.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-std-string</td>
+<td style="width:560px;height:15px"> std::string objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-WTF-String</td>
+<td style="width:560px;height:15px"> WTF::String objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-no-typeinfo-StringImpl</td>
+<td style="width:560px;height:15px"> No type_info (not allocated by 'new'), but allocated for StringImpl.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-Skia</td>
+<td style="width:560px;height:15px"> Skia objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-WebCore-Style</td>
+<td style="width:560px;height:15px"> WebCore's style objects.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-no-typeinfo-other</td>
+<td style="width:560px;height:15px"> Any other blocks without type_info.</td>
+</tr>
+<tr>
+<td style="width:256px;height:15px"> tc-other</td>
+<td style="width:560px;height:15px"> All objects with other type_info.</td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div>
+<h2><a name="TOC-Cases"></a>Cases</h2>
+<div>
+<ul><li><a href="http://crrev.com/166963"><span style="font-size:10pt">http://crrev.com/</span>166963</a></li></ul>
+</div>
+</div>
+<div><br />
+</div>
+<div></div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/deep-memory-profiler/cpp-object-type-identifier" dir="ltr">C++ Object Type Identifier (a.k.a. Type Profiler)</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/deep-memory-profiler">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9yCv4lGBBewAsmAhu_Lu_n6-g4Dkz3vlmNMf7A3bTlJbDL7JGfk3lV5LOtQg2vCsh5PlyHn9CdDrYYelL0RZVGlSa5A4WYao_DO31uFYNuXL0J1WW/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

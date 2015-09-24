@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/ec-development","deleted":false,"title":"Chromium Embedded Controller (EC) Development","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/ec-development\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os","parentWuid":"wuid:gx:83df2ab1f8880ba","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium Embedded Controller (EC) Development","locale":"en","wuid":"wuid:gx:3ac9dfd5b19509d3","revision":37,"path":"/chromium-os/ec-development","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"ec-development","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium Embedded Controller (EC) Development - The Chromium Projects" />
+<meta itemprop="name" content="Chromium Embedded Controller (EC) Development - The Chromium Projects" />
+<meta property="og:title" content="Chromium Embedded Controller (EC) Development - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium Embedded Controller (EC) Development - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../chromium-os.1.html" dir="ltr">Chromium OS</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium Embedded Controller (EC) Development</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:500px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="ec-development.1.html#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-What-you-will-need"><strong>2 </strong>What you will need</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Getting-the-EC-code"><strong>3 </strong>Getting the EC code</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Code-Overview"><strong>4 </strong>Code Overview</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Firmware-Branches"><strong>5 </strong>Firmware Branches</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Building-an-EC-binary"><strong>6 </strong>Building an EC binary</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Flashing-an-EC-binary-to-a-board"><strong>7 </strong>Flashing an EC binary to a board</a><ol class="goog-toc"><li class="goog-toc"><a href="ec-development.1.html#TOC-Flashing-via-the-servo-debug-board"><strong>7.1 </strong>Flashing via the servo debug board</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Flashing-on-device-via-flashrom"><strong>7.2 </strong>Flashing on-device via flashrom</a></li></ol></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Preventing-the-RW-EC-firmware-from-being-overwritten-by-Software-Sync-at-boot"><strong>8 </strong>Preventing the RW EC firmware from being overwritten by Software Sync at boot</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Using-the-EC-serial-console"><strong>9 </strong>Using the EC serial console</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Host-commands"><strong>10 </strong>Host commands</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Software-Features"><strong>11 </strong>Software Features</a><ol class="goog-toc"><li class="goog-toc"><a href="ec-development.1.html#TOC-Tasks"><strong>11.1 </strong>Tasks</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Hooks"><strong>11.2 </strong>Hooks</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Deferred-Functions"><strong>11.3 </strong>Deferred Functions</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Shared-Memory-Buffer"><strong>11.4 </strong>Shared Memory Buffer</a></li></ol></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Making-Code-Changes"><strong>12 </strong>Making Code Changes</a><ol class="goog-toc"><li class="goog-toc"><a href="ec-development.1.html#TOC-Coding-style"><strong>12.1 </strong>Coding style</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Submitting-changes"><strong>12.2 </strong>Submitting changes</a></li></ol></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Debugging"><strong>13 </strong>Debugging</a><ol class="goog-toc"><li class="goog-toc"><a href="ec-development.1.html#TOC-Serial-Console"><strong>13.1 </strong>Serial Console</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Panicinfo"><strong>13.2 </strong>Panicinfo</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Assembly-Code"><strong>13.3 </strong>Assembly Code</a></li></ol></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Write-Protect"><strong>14 </strong>Write Protect</a><ol class="goog-toc"><li class="goog-toc"><a href="ec-development.1.html#TOC-Hardware-Write-Protect"><strong>14.1 </strong>Hardware Write Protect</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Software-Write-Protect"><strong>14.2 </strong>Software Write Protect</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Ectool"><strong>14.3 </strong>Ectool</a></li><li class="goog-toc"><a href="ec-development.1.html#TOC-Flashrom"><strong>14.4 </strong>Flashrom</a></li></ol></li><li class="goog-toc"><a href="ec-development.1.html#TOC-EC-Version-Strings"><strong>15 </strong>EC Version Strings</a></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>The Chromium OS project includes open source software for embedded controllers (EC) used in recent ARM and x86 based Chromebooks.  This software includes a lightweight, multitasking OS with modules for power sequencing, keyboard control, thermal control, battery charging, and verified boot.  The EC software is written in C and currently supports two different ARM Cortex based controllers. Intel based designs, such as the Chromebook Pixel use the TI<span style="color:rgb(34,34,34)"> Stellaris LM4F</span> (Cortex M4) while the Samsung Chromebook (XE303C12) and HP Chromebook 11 use an ST-Micro STM32F100 (Cortex M3). Some STM32L variants are also supported. Support for additional embedded controllers is ongoing.</p>
+<p><span style="background-color:transparent;font-size:10pt">This document is a guide to help make you familiar with the EC code, current features, and the process for submitting code patches.</span></p>
+<p><span style="background-color:transparent;font-size:10pt">For more see the Chrome OS Embedded Controller </span><a href="https://docs.google.com/presentation/d/1Xa_Z5SjW-soPvkugAR8__TEJFrJpzoZUa9HNR14Sjs8/pub?start=false&amp;loop=false&amp;delayms=3000" style="background-color:transparent;font-size:10pt">presentation</a><span style="background-color:transparent;font-size:10pt"> and </span><a href="http://youtu.be/Ie7LRGgCXC8" style="background-color:transparent;font-size:10pt">video</a><span style="background-color:transparent;font-size:10pt"> from the </span><a href="2014-firmware-summit.1.html" style="background-color:transparent;font-size:10pt">2014 Firmware Summit</a><span style="background-color:transparent;font-size:10pt">.<br /><br /></span></p>
+<div>
+<h2><a name="TOC-What-you-will-need"></a>What you will need</h2>
+<div>
+<ol><li><span style="background-color:transparent;font-size:10pt">A Chromebook with a compatible EC. This includes the Samsung Chromebook (XE303C12) and all Chromebooks shipped after the Chromebook Pixel 2013 (inclusive). See the <a href="developer-information-for-chrome-os-devices.1.html">Chrome OS devices</a> page for a list.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">A Linux development environment.  Ubuntu 14.04 Trusty (x86_64) is well supported. Linux in a VM may work if you have a powerful host machine.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">A <a href="servo.1.html">servo debug board</a> (and header) is highly recommended for serial console and JTAG access to the EC.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">A sense of adventure!</span></li></ol></div></div>
+<div>
+<h2><a name="TOC-Getting-the-EC-code"></a>Getting the EC code</h2>
+<p><span style="background-color:transparent"><font face="Arial" style="white-space:pre-wrap">The code for the EC is open source and is included in the Chromium OS development environment (</font><b style="white-space:pre-wrap"><font face="courier new, monospace">~/trunk/src/platform/ec/</font></b><font face="Arial" style="white-space:pre-wrap">).  See </font><a href="quick-start-guide.html" style="white-space:pre-wrap;font-family:Arial">http://www.chromium.org/chromium-os/quick-start-guide</a><font face="Arial"><span style="white-space:pre-wrap"> for build setup instructions.  If you want instant gratification, you can fetch the source code directly.  However, you will need the tool-chain provided by the Chromium OS development environment to build a binary.</span></font></span></p>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">
+<div class="sites-codeblock sites-codesnippet-block"><code>git clone https://chromium.googlesource.com/chromiumos/platform/ec</code></div>
+</font></span></div>
+</blockquote>
+<div>
+<p><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">The source code can also be broswed on the web at:</font></span></p>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<p><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial"><a href="https://chromium.googlesource.com/chromiumos/platform/ec/">https://chromium.googlesource.com/chromiumos/platform/ec/</a>
+</font></span></p></blockquote><h2><a name="TOC-Code-Overview"></a><span style="white-space:pre-wrap;font-family:Arial;background-color:transparent"><font size="4">Code Overview</font></span></h2>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">The following is a quick overview of the top-level directories in the EC repository:
+</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">
+</span></font></span></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>board</b> - Board specific code and configuration details.  This includes the GPIO map, battery parameters, and set of tasks to run for the device.</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><b style="white-space:pre-wrap">build</b><span style="white-space:pre-wrap"> - Build artifacts are generated here.  Be sure to delete this and rebuild when switching branches and before "emerging" (see Building an EC binary below). <code>make clobber</code> is a convenient way to clean up before building.</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>chip</b> - IC specific code for interfacing with registers and hardware blocks (adc, jtag, pwm, uart etc…)</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>core</b> - Lower level code for task and memory management.</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><b style="white-space:pre-wrap">common</b><span style="white-space:pre-wrap"> - A mix of upper-level code that is shared across boards.  This includes the charge state machine, fan control, and the keyboard driver (among other things).</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>driver</b> - Low-level drivers for light sensors, charge controllers, I2C/onewire LED controllers, and I2C temperature sensors.</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>include</b> - Header files for core and common code.</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>util</b> - Host utilities and scripts for flashing the EC.  Also includes “ectool” used to query and send commands to the EC from userspace.</span></font></span></div>
+<div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><b>test</b> - Unit tests for the EC.  Use “make tests -j $jobs BOARD=$board” to run them against your build target. Set $jobs to the number of cores in your build machine. Please contribute new tests if writing new functionality.</span></font></span></div><div><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><br /></span></font></span></div>
+</blockquote>
+<div>
+<div><h2><a name="TOC-Firmware-Branches"></a>Firmware Branches</h2><div><span style="font-size:10pt;background-color:transparent">Each Chrome device has a firmware branch created when the read-only firmware is locked down prior to launch.  This is done so that updates can be made to the read-write firmware with a minimal set of changes from the read-only.  Some Chrome devices only have build targets on firmware branches and not on cros/master.  Run “<font face="courier new, monospace">git branch -a | grep firmware</font>” to locate the firmware branch for your board.  Note that for devices still under development, the board configuration may be on the branch for the platform reference board.</span></div><div><br /></div><div>To build EC firmware on a branch, just check it out and build it:</div><div><br /></div><div></div></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><div class="sites-codeblock sites-codesnippet-block"><code>git checkout cros/firmware-falco_peppy-4389.B</code></div></blockquote><div><div><br />To make changes on a branch without creating a whole new development environment (chroot), create a local tracking branch:</div><div><br /></div><div></div></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><div class="sites-codeblock sites-codesnippet-block"><code>git branch --track firmware-falco_peppy-4389.B cros/firmware-falco_peppy-4389.B<br /></code><span style="color:rgb(0,96,0);line-height:1;font-size:10pt"><font face="monospace"><br /></font><font face="courier new, monospace">git checkout firmware-falco_peppy-4389.B<br /></font></span><font face="courier new, monospace"><span style="font-size:10pt;line-height:1"><br /><font color="#006000">make clobber<br /></font></span><span style="font-size:10pt;line-height:1"><font color="#006000"><br /></font>&lt;make changes, test, and commit them&gt;<br /></span><span style="font-size:10pt;line-height:1"><br /><font color="#006000">repo upload --cbr .</font></span></font></div></blockquote><div><br /></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">(The --cbr means "upload to the current branch")</blockquote><div><div><br /></div><div>Here is a useful command to see commit differences between branches (change the branch1...branch2 as needed):</div><div><br /></div></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><div class="sites-codeblock sites-codesnippet-block"><code>git log --left-right --graph --cherry-pick --oneline </code><span style="font-size:10pt;background-color:transparent"><code>branch1...branch2</code></span></div></blockquote><div><div><br /></div><div>For example, to see the difference between cros/master and the HEAD of the current branch:</div><div><br /></div><div></div></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><div class="sites-codeblock sites-codesnippet-block"><code>git log --left-right --graph --cherry-pick --oneline </code><span style="font-size:10pt;background-color:transparent"><code>cros/master...HEAD</code></span></div></blockquote><div><br /></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">Note: Use three dots “...” or it won’t work!<br /><br /></blockquote><h2><a name="TOC-Building-an-EC-binary"></a>Building an EC binary</h2>
+<span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">Note: The EC is normally built from within the Chromium OS development chroot to use the correct tool-chain.
+
+Building directly from the EC repository:
+
+</span></font></span></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">
+<div class="sites-codeblock sites-codesnippet-block"><code>cros_sdk
+
+cd ~/trunk/src/platform/ec
+
+make -j BOARD=&lt;boardname&gt;
+</code></div>
+</font></span></div>
+</blockquote>
+<div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">
+</font></span></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">Where &lt;<b>boardname</b>&gt; is replaced by the name of the board you want to build an EC binary for.  For example, the boardname for the Chromebook Pixel is “link”.  The make command will generate an EC binary at  build/&lt;boardname&gt;/ec.bin . The '-j' tells make to build multi-threaded which can be much faster on a multi-core machine.</font></span></div></blockquote><div><p><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">Building via emerge (the build file used when you build Chrome OS):</font></span></p></div>
+<div><p><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">(optional) Run this command if you want to build from local source instead of the most recent stable version:</font></span></p></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial"><div class="sites-codeblock sites-codesnippet-block"><code>cros_workon-&lt;boardname&gt; start chromeos-ec</code></div></font></span></div></blockquote>
+<p><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">Build the EC binary:</font></span></p><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial"><div class="sites-codeblock sites-codesnippet-block"><code>emerge-&lt;boardname&gt; chromeos-ec</code></div></font></span></div></blockquote>
+<div><p><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">Please be careful if doing both local “makes” and running emerge. The emerge can pick up build artifacts from the build sub-directory. It’s best to delete the build directory before running emerge with </span><code style="white-space:pre-wrap">make clobber</code><span style="white-space:pre-wrap"> .
+</span></font></span></p><p><span style="white-space:pre-wrap;font-family:Arial;background-color:transparent;font-size:10pt">The generated EC binary from emerge is found at:</span></p></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent;white-space:pre-wrap"><font size="3"><font face="courier new, monospace" style="font-weight:bold">/build/&lt;boardname&gt;/firmware/ec.bin </font><font face="arial, sans-serif">(in the chroot)</font></font></span></div></blockquote><div><p><span style="background-color:transparent;white-space:pre-wrap"><font face="Arial">The ebuild file used by Chromium OS is found here:</font></span></p></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent;white-space:pre-wrap"><font face="courier new, monospace" size="3"><b>~/trunk/src/third_party/chromiumos-overlay/chromeos-base/chromeos-ec/chromeos-ec-9999.ebuild </b></font></span><span style="background-color:transparent;font-size:10pt">(<a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/chromeos-base/chromeos-ec/chromeos-ec-9999.ebuild">link</a>)</span></div><div><span style="background-color:transparent;font-size:10pt"><br /></span></div></blockquote>
+<div>
+<h2><a name="TOC-Flashing-an-EC-binary-to-a-board"></a>Flashing an EC binary to a board</h2>
+<h3><a name="TOC-Flashing-via-the-servo-debug-board"></a>Flashing via the servo debug board</h3>
+<p><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">If you get an error, you may not have set up the dependencies for servo correctly. The EC (on current Chromebooks) must be powered either by external power or a charged battery for re-flashing to succeed. You can re-flash via servo even if your existing firmware is bad.</span></font></span></p></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><span style="background-color:transparent"><span style="white-space:pre-wrap"><div class="sites-codeblock sites-codesnippet-block"><font color="#274e13" face="arial, sans-serif" size="3"><span style="line-height:1"><code>sudo emerge openocd</code>
+</span><span style="line-height:1">
+<code>~/trunk/src/platform/ec/util/flash_ec --board=&lt;boardname&gt; [--image=&lt;path/to/ec.bin&gt;]</code></span></font></div></span></span></blockquote>
+<p>Note: This command will fail if write protect is enabled.</p>
+<p><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">If you build your own EC firmware with the “make BOARD=&lt;boardname&gt;” command the firmware image will be at:</span></font></span></p>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent"><span style="white-space:pre-wrap"><font face="courier new, monospace" size="3"><b>~/trunk/src/platform/ec/build/&lt;boardname&gt;/ec.bin</b></font></span></span></div></blockquote><div><p><span style="background-color:transparent"><span style="white-space:pre-wrap"><font face="Arial">If you build Chrome OS with build_packages the firmware image will be at:</font></span></span></p></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent"><span style="white-space:pre-wrap"><font face="courier new, monospace" size="3"><b>/build/&lt;boardname&gt;/firmware/ec.bin</b></font></span></span></div></blockquote>
+<div>
+<p>Specifying "--image" is optional. <span style="font-family:Arial;white-space:pre-wrap;background-color:transparent;font-size:10pt"> If you leave off the “--image” argument, the flash_ec script will first look for a locally built ec.bin followed by one generated by emerge.</span></p></div>
+<div>
+<h3><a name="TOC-Flashing-on-device-via-flashrom"></a><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">Flashing on-device via flashrom</span></font></span></h3>
+</div>
+<p><span style="white-space:pre-wrap;font-family:Arial;background-color:transparent;font-size:10pt">Assuming your devices boots, you can flash it using the <b>flashrom</b> utility. Copy your binary to the device and run:</span></p>
+<div></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="white-space:pre-wrap;font-family:Arial;background-color:transparent;font-size:10pt"><code>flashrom -p ec -w &lt;path-to/ec.bin&gt;</code></span></div></div></blockquote><p><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap">Note: “-p internal:bus=lpc” also works on x86 boards...but why would you want to remember and type all that?</span></font></span></p><p><span style="background-color:transparent"><font face="Arial"><span style="white-space:pre-wrap"><br /></span></font></span></p>
+<div>
+<h2><a name="TOC-Preventing-the-RW-EC-firmware-from-being-overwritten-by-Software-Sync-at-boot"></a>Preventing the RW EC firmware from being overwritten by Software Sync at boot</h2>
+<p>A feature called “Software Sync” keeps a copy of the read-write (RW) EC firmware in the RW part of the system firmware image.  At boot, if the RW EC firmware doesn't match the copy in the system firmware, the EC’s RW section is re-flashed.  While this is great for normal use as it makes updating the EC and system firmware a unified operation, it can be a challenge for EC firmware development.  To disable software sync a flag can be set in the system firmware.  Run the following commands from a shell on the device to disable Software Sync and turn on other developer-friendly flags (note that write protect must be disabled for this to work):</p>
+<div></div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>/usr/share/vboot/bin/set_gbb_flags.sh 0x239<br />
+<br />
+reboot</code></div>
+</div>
+</div>
+</blockquote>
+<div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>This turns on the following flags:</div>
+<div><br />
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>GBB_FLAG_DEV_SCREEN_SHORT_DELAY</div>
+</div>
+<div>
+<div>GBB_FLAG_FORCE_DEV_SWITCH_ON</div>
+</div>
+<div>
+<div>GBB_FLAG_FORCE_DEV_BOOT_USB</div>
+</div>
+<div>
+<div>GBB_FLAG_DISABLE_FW_ROLLBACK_CHECK</div>
+</div>
+<div>
+<div>GBB_FLAG_DISABLE_EC_SOFTWARE_SYNC</div>
+</div>
+</blockquote>
+<div>
+<div><br />
+</div>
+<div>The GBB (Google Binary Block) flags are defined in the <a href="https://chromium.googlesource.com/chromiumos/platform/vboot_reference/+/master/firmware/include/gbb_header.h">vboot_reference source</a>. A varying subset of these flags are implemented and/or relevant for any particular board.</div>
+</div>
+<div><br />
+</div>
+<div>
+<h2><a name="TOC-Using-the-EC-serial-console"></a>Using the EC serial console</h2>
+<div>The EC has an interactive serial console available only through the UART connected via servo.  This console is essential to developing and debugging the EC. </div>
+<div><br />
+</div>
+<div><span style="background-color:transparent;font-size:10pt">Find the serial device of the ec console (on your workstation):</span></div>
+<div><br />
+</div>
+<div></div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>dut-control | grep ec_uart</code></div>
+</div>
+</div>
+</blockquote>
+<div>
+<div><br />
+</div>
+<div>Connect to the console:</div>
+<div><br />
+</div>
+<div></div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>socat READLINE /dev/pts/XX</code></div>
+</div>
+</div>
+</blockquote>
+<div>
+<div><br />
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>Where XX is the device number. <span style="background-color:transparent;font-size:10pt">Use 'cu' or 'minicom' if you prefer them over 'socat'.</span></div>
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><br />
+</div>
+</blockquote>
+<div>
+<div>Useful EC console commands:</div>
+<div><br />
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div><b>help</b> - get a list of commands. help &lt;command&gt; to get help on a specific command.</div>
+</div>
+<div>
+<div><b>chan</b> - limit logging message to specific tasks (channels). Useful if you’re looking for a specific error or warning and don’t want spam from other tasks.</div>
+</div>
+<div>
+<div><b>battfake</b> - Override the reported battery charge percentage.  Good for testing low battery conditions (LED behavior for example).  Set “battfake -1” to go back to the actual value.</div>
+</div>
+<div>
+<div><b>fanduty</b> - Override automatic fan control. “fanduty 0” turns the fan off. “autofan” switches back to automated control.</div>
+</div>
+<div>
+<div><b>hcdebug</b> - Display the commands that the host sends to the EC, in varying levels of detail (see include/ec_commands.h for the data structures).</div>
+</div>
+</blockquote>
+<div><br />
+</div><div><br /></div><h2><a name="TOC-Host-commands"></a>Host commands</h2><div><br /></div><div>The way in which messages are exchanged between the AP and EC is <a href="ec-development/ap-ec-communication.html" target="_blank">documented separately</a>.</div><div><br /></div><div><h2><a name="TOC-Software-Features"></a>Software Features</h2><h3><a name="TOC-Tasks"></a>Tasks</h3><div>Most code run on the EC after initialization is run in the context of a task (with the rest in interrupt handlers).   Each task has a fixed stack size and there is no heap (malloc).  All variable storage must be explicitly declared at build-time.  The EC (and system) will reboot if any task has a stack overflow. Tasks typically have a top-level loop with a call to task_wait_event() or usleep() to set a delay in uSec before continuing.  A watchdog will trigger if a task runs for too long.  The watchdog timeout varies by EC chip and the clock speed the EC is running at.</div><div><br /></div><div>The list of tasks for a board is specified in ec.tasklist in the <font face="courier new, monospace">board/$BOARD/</font> sub-directory. Tasks are listed in priority order with the lowest priority task listed first.  A task runs until it exits its main function or puts itself to sleep.  The highest priority task that wants to run is scheduled next.  Tasks can be preempted at any time by an interrupt and resumed after the handler is finished.</div><div><br /></div><div>The console “taskinfo” command will print run-time stats on each task:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">&gt; taskinfo</font></div></div><div><div><font face="courier new, monospace">Task Ready Name         Events      Time (s)  StkUsed</font></div></div><div><div><font face="courier new, monospace">   0 R &lt;&lt; idle &gt;&gt;       00000000   32.975554  196/256</font></div></div><div><div><font face="courier new, monospace">   1 R HOOKS            00000000    0.007835  192/488</font></div></div><div><div><font face="courier new, monospace">   2   VBOOTHASH        00000000    0.042818  392/488</font></div></div><div><div><font face="courier new, monospace">   3   POWERLED         00000000    0.000096  120/256</font></div></div><div><div><font face="courier new, monospace">   4   CHARGER          00000000    0.029050  392/488</font></div></div><div><div><font face="courier new, monospace">   5   CHIPSET          00000000    0.017558  400/488</font></div></div><div><div><font face="courier new, monospace">   6   HOSTCMD          00000000    0.379277  328/488</font></div></div><div><div><font face="courier new, monospace">   7 R CONSOLE          00000000    0.042050  348/640</font></div></div><div><div><font face="courier new, monospace">   8   KEYSCAN          00000000    0.002988  292/488</font></div></div></blockquote><div><div><br /></div><div>The “stack used” column reports the largest size the stack for each task grew since reset (or sysjump).</div><div><br /></div><h3><a name="TOC-Hooks"></a>Hooks</h3><div>Hooks allow you to register a function to be run when specific events occur; such as the host suspending or external power being applied:</div><div><br /></div><div>DECLARE_HOOK(HOOK_AC_CHANGE, ac_change_callback, HOOK_PRIO_DEFAULT);</div><div><br /></div><div>Registered functions are run in the HOOKS task.  Registered functions are called in priority order if more than one callback needs to be run.  There are also hooks for running functions periodically: HOOK_TICK (fires every HOOK_TICK_INVERVAL mSec which varies by EC chip) and HOOK_SECOND. See hook_type in <a href="https://chromium.googlesource.com/chromiumos/platform/ec/+/master/include/hooks.h">include/hooks.h</a> for a complete list.</div><div><br /></div><h3><a name="TOC-Deferred-Functions"></a>Deferred Functions</h3><div>Deferred functions allow you to call a function after a delay specified in uSec without blocking. Deferred functions run in the HOOKS task.  Here is an example of an interrupt handler.  The deferred function allows the handler itself to be lightweight. Delaying the deferred call by 30 mSec also allows the interrupt to be debounced.</div><div><br /></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>static int debounced_gpio_state;</code></div><div><br /></div><div><code>static void some_interrupt_deferred(void)</code></div><div><code>{</code></div><div><span style="white-space:pre"> </span><code>int gpio_state = gpio_get_level(GPIO_SOME_SIGNAL);</code></div><div><br /></div><div><span style="white-space:pre"> </span><code>if (gpio_state == debounced_gpio_state)</code></div><div><span style="white-space:pre"> </span><code>return;</code></div><div><br /></div><div><span style="white-space:pre"> </span><code>debounced_gpio_state = gpio_state;</code><span style="white-space:pre"> </span></div><div><span style="white-space:pre"> </span><code>dispense_sandwich(); /* Or some other useful action. */</code></div><div><code>}</code></div><div><code>/* A function must be explicitly declared as being deferrable. */ </code></div><div><code>DECLARE_DEFERRED(some_interrupt_deferred); </code></div><div><br /></div><div><code>void some_interrupt(enum gpio_signal signal)</code></div><div><code>{</code></div><div><code><span>    </span>hook_call_deferred(some_interrupt_deferred, 30 * MSEC);</code></div><div><code>}</code></div></div><div><br /></div><h3><a name="TOC-Shared-Memory-Buffer"></a>Shared Memory Buffer</h3><div>While there is no heap, there is a shared memory buffer that can be borrowed temporarily (ideally before a context switch).  The size of the buffer depends on the EC chip being used.  The buffer can only be used by one task at a time.  See <a href="https://chromium.googlesource.com/chromiumos/platform/ec/+/master/common/shared_mem.c">common/shared_mem.c</a> for more information.  At present (May 2014), this buffer is only used by debug commands.</div></div><div><br /></div><h2><a name="TOC-Making-Code-Changes"></a>Making Code Changes</h2>
+<div>If you see a bug or want to make an improvement to the EC code please file an issue at <a href="http://crbug.com/new">crbug.com/new</a>. It's best to discuss the change you want to make first on an issue report to make sure the EC maintainers are on-board before digging into the fun part (writing code).</div>
+<div><br />
+</div>
+<div>In general, make more, smaller changes that solve single problems rather than bigger changes that solve multiple problems.  Smaller changes are easier and faster to review.   When changing common code shared between boards along with board specific code, please split the shared code change into its own change list (CL).  The board specific CL can depend on the shared code CL.</div>
+<div><br />
+</div>
+<h3><a name="TOC-Coding-style"></a>Coding style</h3>
+<div><span style="background-color:transparent;font-size:10pt">The EC code follows the Linux Kernel style guide (</span><a href="https://www.kernel.org/doc/Documentation/CodingStyle" style="background-color:transparent;font-size:10pt">https://www.kernel.org/doc/Documentation/CodingStyle</a><span style="background-color:transparent;font-size:10pt">).  Please adopt the same style used in the existing code. Use tabs, not spaces, &lt; 80 column lines etc...</span></div>
+<div><br />
+</div>
+<div>Other style notes:</div>
+<div>
+<ol><li><span style="background-color:transparent;font-size:10pt">Globals should either be static or const. Use them for persistent state within a file or for constant data (such as the GPIO list in board.c). Do not use globals to pass information between modules without accessors. For module scope, accessors are not needed.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">If you add a new #define config option to the code, please document it in <a href="https://chromium.googlesource.com/chromiumos/platform/ec/+/master/include/config.h">include/config.h</a> with an #undef statement and descriptive comment.</span></li>
+<li><span style="background-color:transparent"><font size="2">The Chromium copyright header must be included at the top of new files in all contributions to the Chromium project:</font><br />
+</span></li>
+</ol>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="background-color:transparent;font-size:10pt"><font face="courier new, monospace">/* Copyright (c) &lt;year&gt; The Chromium OS Authors. All rights reserved.</font></span></div>
+<div><span style="background-color:transparent;font-size:10pt"><font face="courier new, monospace"> * Use of this source code is governed by a BSD-style license that can be</font></span></div>
+<div><span style="background-color:transparent;font-size:10pt"><font face="courier new, monospace"> * found in the LICENSE file.</font></span></div>
+<div><span style="background-color:transparent;font-size:10pt"><font face="courier new, monospace"> */<br />
+<br />
+</font></span></div>
+</blockquote>
+<h3><a name="TOC-Submitting-changes"></a>Submitting changes</h3>
+<div>Prior to uploading a new change for review, please run the EC unit tests with:</div>
+<div><br />
+</div>
+<div></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>make -j buildall<br /><br />
+make -j tests</code></div>
+</div>
+</blockquote>
+<div><br />
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>while in the <b><font face="courier new, monospace">~/trunk/src/platform/ec</font></b> directory. These commands will build and run unit tests in an emulator on your host.</div>
+</blockquote>
+<div><br />
+</div>
+<div>Pre-submit checks are run when you try to upload a change-list.  If you wish to run these checks manually first, commit your change locally then run the following command from within the chroot and while in the src/platform/ec directory:</div>
+<div><br />
+</div>
+<div></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>~/trunk/src/repohooks/pre-upload.py</code></div>
+</div>
+</blockquote>
+<div><br />
+</div>
+<div>The pre-submit checks include checking the commit message. Commit messages must have a BUG, BRANCH, and TEST line along with “Signed-off-by: First Last &lt;name@company.com&gt;”. The signed-off-by line is a statement that you have written this code and it can be contributed under the terms of the LICENSE file.</div>
+<div><br />
+</div>
+<div>Please refer to existing commits (git log) to see the proper format for the commit message. If you have configured git properly, running “git commit” with the “-s” argument will add the Signed-off-by line for you.</div><div><br /></div><div><h2><a name="TOC-Debugging"></a>Debugging</h2><div><span style="font-size:10pt;background-color:transparent">While adding printf statements can be handy, there are some other options for debugging problems during development.</span></div><div><br /></div><h3><a name="TOC-Serial-Console"></a>Serial Console</h3><div><span style="font-size:10pt;background-color:transparent">There may already be a message on the serial console that indicates your problem.  If you don’t have a servo connected, the "ectool console" command will show the current contents of the console buffer (the buffer’s size varies by EC chip).  This log persists across warm resets of the host but is cleared if the EC resets.  The “<font face="courier new, monospace">ectool console</font>” command will only work when the EC is not write protected.</span></div><div><br /></div><div>If you have interactive access to the serial console via servo, you can use the read word “rw” and write word “<font face="courier new, monospace">ww</font>” commands to peek and poke the EC's RAM. You may need to refer to the datasheet for your EC chip or the disassembled code to find the memory address you need. There are other handy commands on the serial console to read temperatures, view the state of tasks (taskinfo) which may help.  Type "<font face="courier new, monospace">help</font>" for a list.</div><div><br /></div><h3><a name="TOC-Panicinfo"></a>Panicinfo</h3><div><span style="font-size:10pt;background-color:transparent">The EC may save panic data which persists across resets.  Use the “<font face="courier new, monospace">ectool panicinfo</font>” command or console “<font face="courier new, monospace">panicinfo</font>” command to view the saved data:</span></div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">Saved panic data: (NEW)</font></div></div><div><div><font face="courier new, monospace">=== HANDLER EXCEPTION: 05 ====== xPSR: 6100001e ===</font></div></div><div><div><font face="courier new, monospace">r0 :00000001 r1 :00000f15 r2 :4003800c r3 :000000ff</font></div></div><div><div><font face="courier new, monospace">r4 :ffffffed r5 :00000799 r6 :0000f370 r7 :00000000</font></div></div><div><div><font face="courier new, monospace">r8 :00000001 r9 :00000003 r10:20002fe0 r11:00000000</font></div></div><div><div><font face="courier new, monospace">r12:00000008 sp :20000fd8 lr :000012e1 pc :0000105e</font></div></div></blockquote><div><div><br /></div><div>The most interesting information are the program counter (pc) and the link register (return address, lr) as they give you an indication of what code the EC was running when the panic occurred. “HANDLER EXCEPTIONS” indicate the panic occurred while servicing an interrupt. “PROCESS EXCEPTIONS” occur in regular tasks.  If you see “Imprecise data bus error” listed, the program counter value is incorrect as the panic occurred when flushing a write buffer.  If using a cortex-m based EC, add “CONFIG_DEBUG_DISABLE_WRITE_BUFFER” to your board.h to disable write buffering (with a performance hit) to get a “Precise bus error” with an accurate program counter value.</div><div><br /></div><h3><a name="TOC-Assembly-Code"></a>Assembly Code</h3><div><span style="font-size:10pt;background-color:transparent">If you have a program counter address you need to make sense of, you can generate the assembly code for the EC by checking out the code at the matching commit for your binary (“<font face="courier new, monospace">ectool version</font>”) and running:</span></div><div><br /></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>make BOARD=$board dis</code></div><div></div></div><br /><div>This outputs two files with assembly code:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">build/$board/ec.RO.dis</font></div></div><div><div><font face="courier new, monospace">build/$board/ec.RW.dis</font></div></div></blockquote><div><div><br /></div><div>which (in the case of the LM4 and STM32) are essentially the same, but the RW addresses are offset.</div></div><div><br /></div><div><h2><a name="TOC-Write-Protect"></a>Write Protect</h2><div><span style="font-size:10pt;background-color:transparent">The EC has read-only (RO) and read-write (RW) firmware. Coming out of reset, the EC boots into its RO firmware. The RO firmware boots the host and asks it verify a hash of the RW firmware (software sync). If the RW firmware is invalid, it is updated from a copy in the hosts RW firmware. Once the EC RW firmware is valid, the EC jumps to it (without rebooting). The RO firmware is locked in the factory and is never changed. The RW firmware can be updated later by pushing a new system firmware containing an updated EC RW region.</span></div><div><br /></div><div><span style="font-size:10pt;background-color:transparent">Note that both the RO and RW firmware regions are normally protected once write protect has been turned on. The RW region is unprotected at EC boot until it has been verified by the host. The RW region is protected before the Linux kernel is loaded.</span></div><div><br /></div><h3><a name="TOC-Hardware-Write-Protect"></a>Hardware Write Protect</h3><div><span style="font-size:10pt;background-color:transparent">A hardware-based mechanism is used to prevent the RO firmware from being changed. The most common design is to have an input grounded by a screw. When the screw is inserted, hardware write protect is enabled. This grounded signal can be read by the host chipset and EC. It is also routed to the “write protect” pin on any SPI flash chips containing firmware.</span></div><div><br /></div><h3><a name="TOC-Software-Write-Protect"></a>Software Write Protect</h3><div><span style="background-color:transparent"><font size="2">Software-based write protect state stored in non-</font>volatile<font size="2"> memory. If hardware write protect is enabled, software write protect can be enabled but can’t be disabled. If hardware write protect is disabled, software write protect can be enabled or disabled (note that some implementations require an EC reset to disable software write protect).</font></span></div><div><br /></div><div>The underlying mechanism implementing software write protect may differ between EC chips. However the common requirements are that software write protect can only be disabled when hardware write protect is off and that the RO firmware must be protected before jumping to RW firmware if protection is enabled.</div><div><br /></div><h3><a name="TOC-Ectool"></a>Ectool</h3><div><span style="font-size:10pt;background-color:transparent">Ectool includes commands to enable and disable software write protect.</span></div><div><br /></div><div><font face="courier new, monospace">ectool flashprotect</font> - Print out current flash protection state.</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">Flash protect flags: 0x0000000f wp_gpio_asserted ro_at_boot ro_now all_now</font></div></div><div><div><font face="courier new, monospace">Valid flags:         0x0000003f wp_gpio_asserted ro_at_boot ro_now all_now STUCK<span style="font-size:10pt;background-color:transparent"> INCONSISTENT</span></font></div></div><div><div><font face="courier new, monospace">Writable flags:      0x00000000</font></div></div></blockquote><div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>“Flash protect flags” = Current flags that are set.</div></div><div><div>“Valid flags” = All the options for flash protection.</div></div><div><div>“Writable flags” = The flags that currently can be changed. (In this case, no flags can be changed).</div></div><div><div><br /></div></div><div><div>Flags:</div></div><div><div>wp_gpio_asserted - Whether the hardware write protect GPIO is currently asserted (read only).</div></div><div><div>ro_at_boot - Whether the EC will write protect the RO firmware on the next boot of the EC.</div></div><div><div>ro_now - Protect the read-only portion of flash immediately. Requires hardware WP be enabled.</div></div><div><div>all_now - Protect the entire flash (including RW) immediately. Requires hardware WP be enabled.</div></div><div><div>STUCK - Flash protection settings have been fused and can’t be cleared (should not happen during normal operation. Read only.)</div></div><div><div>INCONSISTENT - One or more banks of flash is not protected when it should be (should not happen during normal operation. Read only.). </div></div></blockquote><div><div><br /></div><div><font face="courier new, monospace">ectool flashprotect enable</font> - Set ro_at_boot flag. The next time the EC is reset it will protect the flash. Note that this requires a cold reset. </div><div><br /></div><div><font face="courier new, monospace">ectool flashprotect enable now</font> - Set ro_at_boot ro_now all_now flags and immediately protect the flash. Note that this will fail if hardware write protect is disabled.</div><div><br /></div><div><font face="courier new, monospace">ectool flashprotect disable</font> - Clear ro_at_boot flag. This can only be cleared if the EC booted without hardware write protect enabled.</div><div><br /></div><div>Note that you must reset the EC to clear write protect after removing the screw. <span style="font-size:10pt;background-color:transparent">If the ro_at_boot flag set and the EC resets with the HW gpio disabled, the EC will leave the flash unprotected (ro_now and all_now flags are not set) but leave ro_at_boot flag set.</span></div><div><br /></div><h3><a name="TOC-Flashrom"></a>Flashrom</h3><div><span style="font-size:10pt;background-color:transparent">Flashrom can also be used to query and enable/disable EC flash protection.</span></div><div><br /></div><div>View the current state of flash protection:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>flashrom -p ec --wp-status</div></div></blockquote><div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">WP: status: 0x00</font></div></div><div><div><font face="courier new, monospace">WP: status.srp0: 0</font></div></div><div><div><font face="courier new, monospace">WP: write protect is disabled.</font></div></div><div><div><font face="courier new, monospace">WP: write protect range: start=0x00000000, len=0x00000000</font></div></div></blockquote><div><div><br /></div><div>Enable protection. This is immediate. The protection range indicates the RO region of the firmware.</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>flashrom -p ec --wp-enable</div></div><div><br /></div><div><div><font face="courier new, monospace">SUCCESS</font></div></div><div><div><br /></div></div><div><div>flashrom -p ec --wp-status</div></div><div><div><br /></div><div><font face="courier new, monospace">WP: status: 0x80</font></div></div><div><div><font face="courier new, monospace">WP: status.srp0: 1</font></div></div><div><div><font face="courier new, monospace">WP: write protect is enabled.</font></div></div><div><div><font face="courier new, monospace">WP: write protect range: start=0x00000000, len=0x0001f800</font></div></div></blockquote><div><div><br /></div><div>Disable protection. Disable can only be done with hardware write protect disabled.</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>flashrom -p ec --wp-disable</div></div><div><div><br /></div></div><div><div><font face="courier new, monospace">FAILED: RO_AT_BOOT is not clear.</font></div></div><div><div><font face="courier new, monospace">FAILED</font></div></div></blockquote><div><div><br /></div><div>Reboot with screw removed. Note that protection is still enabled but the protection range is zero.</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>flashrom -p ec --wp-status</div></div><div><br /></div><div><div><font face="courier new, monospace">WP: status: 0x80</font></div></div><div><div><font face="courier new, monospace">WP: status.srp0: 1</font></div></div><div><div><font face="courier new, monospace">WP: write protect is enabled.</font></div></div><div><div><font face="courier new, monospace">WP: write protect range: start=0x00000000, len=0x00000000</font></div></div><div><div><br /></div></div><div><div>flashrom -p ec --wp-disable</div></div><div><br /></div><div><div><font face="courier new, monospace">SUCCESS</font></div></div></blockquote><div><div><br /></div></div><div><h2><a name="TOC-EC-Version-Strings"></a>EC Version Strings</h2><div>The read-only and read-write sections of the EC firmware each have a version string. This string tells you the branch and last change at which the firmware was built. On a running machine, run "ectool version" from a shell to see version information:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">RO version:    peppy_v1.5.103-7abb4f7</font></div></div><div><div><font face="courier new, monospace">RW version:    peppy_v1.5.129-cd1a1e9</font></div></div><div><div><font face="courier new, monospace">Firmware copy: RW</font></div></div><div><div><font face="courier new, monospace">Build info:    <span style="font-size:10pt;background-color:transparent">peppy_v1.5.129-cd1a1e9 2014-03-07 17:18:27 @build120-m2</span></font></div></div></blockquote><div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div>You can also run the "<font face="courier new, monospace">version</font>" command on the EC serial console for a similar output.</div><div><br /></div><div>The format of the version string is:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>&lt;board&gt;_&lt;branch number&gt;.&lt;number of commits since the branch tag was created&gt;-&lt;git hash of most recent change&gt;</div></div></blockquote><div><div><br /></div><div>If the version is: rambi_v1.6.68-a6608c8</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>board name = rambi</div></div><div><div>branch number = v1.6 (which is for the firmware-rambi branch)</div></div><div><div>number of commits on this branch (since the tag was added) = 68</div></div><div><div>latest git hash = a6608c8</div></div></blockquote><div><div><br /></div><div>The branch numbers (as of May 2014) are:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>v1.0.0<span style="white-space:pre"> </span>cros/master</div></div><div><div>v1.1.0<span style="white-space:pre"> </span>cros/master</div></div><div><div>v1.2.0<span style="white-space:pre"> </span>cros/firmware-link-2695.2.B</div></div><div><div>v1.3.0<span style="white-space:pre"> </span>cros/firmware-snow-2695.90.B</div></div><div><div>v1.4.0<span style="white-space:pre"> </span>cros/firmware-skate-3824.129.B</div></div><div><div>v1.5.0<span style="white-space:pre"> </span>cros/firmware-4389.71.B</div></div><div><div>v1.6.0<span style="white-space:pre"> </span>cros/firmware-rambi-5216.B</div></div></blockquote><div><div><br /></div><div>Hack command to check the branch tags:</div><div><br /></div><div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div class="sites-codeblock sites-codesnippet-block"><div><code>git tag<br /></code><span style="color:rgb(0,96,0);line-height:1;font-size:10pt"><font face="monospace"><br /></font><font face="courier new, monospace">for hash in $(git for-each-ref --format='%(objectname)' refs/tags/); do<br /></font></span><font face="courier new, monospace"><span style="color:rgb(0,96,0);line-height:1;font-size:10pt">    git branch -a --contains $hash | head -1;<br /></span><span style="color:rgb(0,96,0);line-height:1;font-size:10pt">done</span></font></div></div></div></blockquote><div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>(If anyone can come up with something prettier, add a comment).</div></div></blockquote><div><div><br /></div><div>Run “<font face="courier new, monospace">util/getversion.sh</font>” to see the current version string. The board name is passed as an environment variable “BOARD”:</div><div><br /></div><div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div class="sites-codeblock sites-codesnippet-block"><div><code>$ BOARD="cheese" ./util/getversion.sh<br /></code><span style="font-size:10pt;line-height:1"><font color="#006000" face="monospace"><br /></font><font face="courier new, monospace">cheese_v1.1.1755-4da9520</font></span></div></div></div></blockquote><div><br /></div><div><br /></div><div><br /></div><div><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(2):</span>
+<span>
+<a href="ec-development/ap-ec-communication.html" dir="ltr">AP / EC communication</a>
+</span>
+<span>
+<a href="ec-development/ec-image-geometry-spec.1.html" dir="ltr">EC Image Geometry Spec</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/ec-development">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9uNvu5bILjA8EAnukbF5ryHBFYRHtcMbd5W7h-mHBJY5U485gBcvgn_Gyoc32SMejjimuVK5QnpR_B9CsAyusPAAwlgnxBfJbrJ_4lwLR9Cwmxv_x/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

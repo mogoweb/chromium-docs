@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/chaps-technical-design","deleted":false,"title":"Chaps Technical Design","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/chaps-technical-design\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chaps Technical Design","locale":"en","wuid":"wuid:gx:16ca14c9f9661aa8","revision":24,"path":"/developers/design-documents/chaps-technical-design","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"chaps-technical-design","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chaps Technical Design - The Chromium Projects" />
+<meta itemprop="name" content="Chaps Technical Design - The Chromium Projects" />
+<meta property="og:title" content="Chaps Technical Design - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chaps Technical Design - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1351112433096/developers/design-documents/chaps-technical-design/ChapsStack.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1351112433096/developers/design-documents/chaps-technical-design/ChapsStack.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.1.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chaps Technical Design</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-3"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Objective"><strong>1 </strong>Objective</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Rationale"><strong>2 </strong>Rationale</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Audience"><strong>3 </strong>Audience</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Resources"><strong>4 </strong>Resources</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Overview"><strong>5 </strong>Overview</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Staging"><strong>5.1 </strong>Staging</a></li></ol></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Infrastructures"><strong>6 </strong>Infrastructures</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Inter-Process-Communication-IPC-"><strong>6.1 </strong>Inter-Process Communication (IPC)</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Persistence"><strong>6.2 </strong>Persistence</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-TPM-Software-Layers"><strong>6.3 </strong>TPM Software Layers</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Testing"><strong>6.4 </strong>Testing</a></li></ol></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Detailed-Design"><strong>7 </strong>Detailed Design</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-TPM-Interaction"><strong>7.1 </strong>TPM Interaction</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Phase-1---Introduce-chapsd:"><strong>7.1.1 </strong>Phase 1 - Introduce chapsd:</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Phase-2---Replace-openCryptoki:"><strong>7.1.2 </strong>Phase 2 - Replace openCryptoki:</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Phase-3---Do-more-in-software:"><strong>7.1.3 </strong>Phase 3 - Do more in software:</a></li></ol></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Chaps-Classes"><strong>7.2 </strong>Chaps Classes</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Marshalling"><strong>7.3 </strong>Marshalling</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Schema"><strong>7.4 </strong>Schema</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Deployment"><strong>7.5 </strong>Deployment</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Phase-1"><strong>7.5.1 </strong>Phase 1</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Phase-2"><strong>7.5.2 </strong>Phase 2</a></li></ol></li></ol></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Project-Information"><strong>8 </strong>Project Information</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Internationalization-and-Localization"><strong>9 </strong>Internationalization and Localization</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Security-Considerations"><strong>10 </strong>Security Considerations</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Key-Storage-Example"><strong>10.1 </strong>Key Storage Example</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Cryptography"><strong>10.2 </strong>Cryptography</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Random-Numbers"><strong>10.2.1 </strong>Random Numbers</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-PKCS-11-Software-Mechanisms"><strong>10.2.2 </strong>PKCS #11 Software Mechanisms</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Encryption-Authentication-of-Persistent-Objects"><strong>10.2.3 </strong>Encryption / Authentication of Persistent Objects</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Authorization-Data-Hashes"><strong>10.2.4 </strong>Authorization Data Hashes</a></li></ol></li></ol></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Logging-Plan"><strong>11 </strong>Logging Plan</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Testing-Plan"><strong>12 </strong>Testing Plan</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Unit-Integration-Tests"><strong>12.1 </strong>Unit / Integration Tests</a><ol class="goog-toc"><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Client-side-Unit-Tests"><strong>12.1.1 </strong>Client-side Unit Tests</a></li><li class="goog-toc"><a href="chaps-technical-design.1.html#TOC-Daemon-side-Unit-Integration-Tests"><strong>12.1.2 </strong>Daemon-side Unit / Integration Tests</a></li></ol></li></ol></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Objective"></a>Objective</h2>
+<p>Chaps is a PKCS #11 implementation that provides trusted platform module (TPM) backed cryptographic services.  It replaces openCryptoki as the provider of TPM-backed cryptographic services on Chrome OS.  It aims to improve speed and reliability of cryptographic token operations as well as to provide a simpler and more flexible codebase for future enhancements.  Chaps works with a TCG Software Stack (TSS).  On Chrome OS the TrouSerS TSS implementation is used, but Chaps is not limited to working with TrouSerS.  The name "Chaps" has no real significance other than its fitness as a name for a layer above TrouSerS.  </p>
+<p>The following diagram illustrates where Chaps fits in the cryptographic services stack.</p>
+<div>
+<div style="display:block;text-align:left"><a href="chaps-technical-design/ChapsStack.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1351112433096/developers/design-documents/chaps-technical-design/ChapsStack.png" /></a></div>
+</div>
+<div>
+<h2><a name="TOC-Rationale"></a>Rationale</h2>
+<p>The motivation for creating Chaps and phasing out openCryptoki is threefold:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>Stability - There have been numerous bugs and quirks that are difficult to find and sometimes messy to fix. We want a module that is designed to be highly testable and that lends itself to automated testing.</li>
+<li>Performance - TPMs are notoriously slow, and we want to both leverage security and optimize performance.</li>
+<li>Integration - We want a module that integrates well with Chrome OS and how Chrome OS uses TPM-backed cryptographic services.  openCryptoki does not meet this criteria, and some future considerations, such as multi-token scenarios, are not possible with openCryptoki.  We also want code that will be easy to enhance in the future.</li></ul>
+<h2><a name="TOC-Audience"></a>Audience</h2>
+This document is for engineers, system integrators, and security analysts interested in the details of Chrome OS security.</div>
+<div>
+<h2><a name="TOC-Resources"></a>Resources</h2>
+<p>The following resources provide useful background to this document:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li><a href="http://trousers.sourceforge.net/pkcs11.html"><span style="color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap">TrouSers PKCS #11 Interface Docs</span></a>: OpenCryptoki is currently used with a plugin from the TrouSerS project to provide the TPM-specific implementation.  This link provides details on the plugin and the model it implements.</li>
+<li><a href="http://www.rsa.com/rsalabs/node.asp?id=2133"><span style="color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap">PKCS #11: Cryptographic Token Interface Standard</span></a></li>
+<li><a href="http://www.trustedcomputinggroup.org/files/resource_files/6479CD77-1D09-3519-AD89EAD1BC8C97F0/TSS_1_2_Errata_A-final.pdf"><span style="color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap">TCG Software Stack Specification</span></a></li></ul>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<p>Chaps has two major components:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li><span style="font-family:Courier New;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">chapsd</span> - A daemon that receives and handles PKCS #11 calls via the D-Bus.  This daemon is always running and starts at boot.</li>
+<li><span style="font-family:Courier New;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">libchaps.so</span> - A library that exports the PKCS #11 interface and communicates with <span style="font-family:Courier New;vertical-align:baseline;white-space:pre-wrap">chapsd</span>.  An application loads and uses this library like any other PKCS #11 library.</li></ul>
+<p>Chaps reports two slots: (1) a system slot (not currently enabled) and (2) a user slot.  The system slot will always have a token available.  The user slot will have a token available while a user is logged in.  chapsd receives login/logout notifications from cryptohome.  The login notification must provide the user password (or some password-derived value) that will be used as authorization data for TPM-protected keys.  Cryptohome derives the authorization data from the user password and a user-and-system-specific salt value using the scrypt key derivation scheme.</p>
+<p>This diagram shows the Chaps high-level architecture:</p>
+<div style="display:block;text-align:left"><a href="chaps-technical-design/ChapsArchitecture.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1351116430561/developers/design-documents/chaps-technical-design/ChapsArchitecture.png" /></a></div>
+<h3><a name="TOC-Staging"></a>Staging</h3>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>Phase 1 (enabled in Chrome OS version 18) - Introduce chapsd:</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>Marshaling of all PKCS #11 calls from libchaps.so to chapsd.</li>
+<li>chapsd redirection to openCryptoki.</li>
+<li>Integration of libchaps.so with all PKCS #11 applications.</li>
+<li>chapsd runs as chronos to play nice with existing openCryptoki files and facilitate a rollback in the event of unexpected problems.</li></ul>
+<li>Phase 2 (enabled in Chrome OS version 20) - Replace openCryptoki:</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>chapsd implementation (redirection to openCryptoki is removed).</li>
+<li>chapsd runs as a system user named "chaps."</li>
+<li>OpenCryptoki is removed from the system.</li></ul>
+<li>Phase 3 (optional) - Do more in software:</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>TPM-encrypted key store for faster RSA operations.  A TPM-protected symmetric key is used to encrypt a key store outside of the TPM.  This symmetric key will be much faster to load than RSA keys and can be temporarily cached.  The RSA keys are then stored in the key store and the cryptographic operations are performed in software.</li></ul></ul>
+<h2><a name="TOC-Infrastructures"></a>Infrastructures</h2>
+<h3><a name="TOC-Inter-Process-Communication-IPC-"></a>Inter-Process Communication (IPC)</h3>
+All IPC with chapsd is performed using D-Bus.  Both the Chaps client and daemon use dbus-c++ to generate proxy and adaptor classes.<br />
+<h3><a name="TOC-Persistence"></a>Persistence</h3>
+Object data is stored in <span style="font-size:13px;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap">/var/lib/chaps</span> for the system token and in <span style="font-size:13px;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap">~/.chaps</span> for each user.  The object database is implemented using LevelDB.<br />
+<h3><a name="TOC-TPM-Software-Layers"></a>TPM Software Layers</h3>
+The TrouSers library is used to access TPM services from the TSPI layer. <br />
+<h3><a name="TOC-Testing"></a>Testing</h3>
+Unit tests for Chaps use the gtest and gmock frameworks.  End-to-end tests use the autotest framework.<br />
+<h2><a name="TOC-Detailed-Design"></a>Detailed Design</h2>
+<h3><a name="TOC-TPM-Interaction"></a>TPM Interaction</h3>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Phase-1---Introduce-chapsd:"></a>Phase 1 - Introduce chapsd:</h4>
+<p>In Phase 1 all TPM interaction is still controlled by openCryptoki. The introduction of chapsd does not change TPM interaction in any way.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Phase-2---Replace-openCryptoki:"></a>Phase 2 - Replace openCryptoki:</h4>
+<p>All RSA private keys with the attribute CKA_TOKEN set to TRUE will be bound to the TPM (wrapped by the Storage Root Key) and will not be extractable.  All other private data and non-RSA keys are stored encrypted by the User Encryption Key which is protected by the TPM’s SRK but is extractable.  This diagram depicts the key hierarchy:
+
+</p>
+<div style="display:block;text-align:left"><a href="chaps-technical-design/KeyHierarchy.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1351117177175/developers/design-documents/chaps-technical-design/KeyHierarchy.png" /></a></div>
+<h5><a name="TOC-Authorization-Data"></a>Authorization Data</h5>
+<p>Authorization data for the User Authorization Key is derived from the user password using the scrypt scheme.  Salt is stored in a root-accessible file in the user’s home directory and is unique per user account per system.  This ensures that authorization data for the same user on two different systems is different.  The scrypt parameters are tuned to perform the computation in about 100ms.</p>
+<p>All other authorization data is randomly generated and stored encrypted with the User Encryption Key.  This authorization data is not directly encrypted with the User Authorization Key for performance reasons.  This does not reduce security since any attack on the key would require access to the TPM (and so decryption of authorization data by the TPM would be possible).</p>
+<h5><a name="TOC-Migration"></a>Migration</h5>
+<p>Existing TPM-protected keys cannot be migrated to this hierarchy.  The existing hierarchy is supported so that existing keys can continue to be used.  All other data including meta-data associated with TPM-protected keys that was previously stored in the openCryptoki object store can be migrated to the new persistent object store.  This migration will take place when valid openCryptoki object data is found in a user’s home directory and migration has not previously taken place.</p>
+<h5><a name="TOC-Multiple-Users"></a>Multiple Users</h5>
+<p>In the future, simultaneous multiple user logins may need to be supported, and this design must accommodate this scenario.  Each slot maintains a distinct object database, a distinct User Authorization Key and User Encryption Key, and uses a distinct password.  Currently, only the "system" and "user" slots exist, but adding a new user would be as simple as adding another slot.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Phase-3---Do-more-in-software:"></a>Phase 3 - Do more in software: </h4>
+<p>The key hierarchy for Phase 3 is the same as for Phase 2.  The difference is that in Phase 3 some RSA keys can be protected by the User Encryption Key rather than being directly TPM-protected.  Keys that require higher performance and do not require the high security of direct TPM binding are candidates for this.  There is no migration of existing RSA keys because they are not extractable.</p>
+<br />
+<h3><a name="TOC-Chaps-Classes"></a>Chaps Classes</h3>
+Chaps is implemented in C++ and makes wide use of mockable interfaces. This structure allows for a high level of unit test coverage. In general, all classes inherit from an interface class, and when one class interacts with another, it references the interface, not the implementation class.<br />
+<ul><li>ChapsInterface - This interface is the C++ equivalent of the IPC contract between the Chaps client and daemon.  The actual interface used by dbus-c++ is described in XML.  ChapsInterface is implemented on the client side by ChapsProxyImpl and on the daemon side by ChapsServiceRedirect (Phase 1) and ChapsServiceImpl (Phase 2). The following diagram shows the class hierarchy and how the classes interact in practice.</li></ul>
+<p><br />
+</p>
+<div style="display:block;text-align:left"><a href="chaps-technical-design/ClassHierarchy.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1351117305438/developers/design-documents/chaps-technical-design/ClassHierarchy.png" /></a></div>
+<p><br />
+</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>ChapsProxyImpl - This class implements ChapsInterface and forwards all calls to an instance of the dbus-c++ generated proxy class.</li>
+<li>ChapsAdaptor - This class implements the dbus-c++ generated adaptor interface and forwards all dbus calls to a ChapsInterface instance.</li>
+<li>ChapsServiceRedirect - This class implements ChapsInterface and forwards all calls to a PKCS #11 library.  In Phase 1 this class is hooked up to ChapsAdaptor and forwards incoming calls to openCryptoki.  In Phase 2 this class will no longer be used.</li>
+<li>ChapsServiceImpl - This class implements ChapsInterface and provides the actual Chaps implementation (in contrast to ChapsServiceRedirect).  This class is hooked up to ChapsAdaptor (in Phase 2) and serves as the entry point of all calls to chapsd.</li>
+<li>ChapsFactory - This class creates default instances of interface classes. In a test environment, a mock of this class can be configured to create the desired combination of real and mock objects.</li>
+<li>SlotManager / SlotManagerImpl - This mockable class manages the state of all slots, the tokens in them, and maintains a list of sessions for each token.</li>
+<li>Session / SessionImpl - This mockable class represents a session and manages all contextual information for a single session.</li>
+<li>ObjectPolicy - An instance of this class is bound to each object; it enforces all policies specified in PKCS #11 for the particular object type.  There is a subclass of this interface for each object type.</li>
+<li>Object / ObjectImpl - This mockable class represents an object and is optionally persistent.</li>
+<li>ObjectPool / ObjectPoolImpl - This mockable class represents an unordered group of objects. An ObjectPool may or may not be backed by an ObjectStore.</li>
+<li>ObjectStore / ObjectStoreImpl - This mockable class implements a persistent object store.  This is the only class that references the LevelDB API.</li>
+<li>TPMUtility / TPMUtilityImpl - This mockable class interfaces with the TrouSerS library for interaction with the TPM.</li>
+<li>ObjectImporter / OpencryptokiImporter - This mockable class imports objects from an external source. The openCryptoki-specific implementation imports objects from an openCryptoki database.</li></ul>
+<h3><a name="TOC-Marshalling"></a><b>Marshalling</b></h3>
+All marshalling is performed by dbus-c++ with the exception of template arguments (that is, CK_ATTRIBUTE lists), which are serialized using the protobuf library.<br />
+<h3><a name="TOC-Schema"></a>Schema</h3>
+LevelDB is not relational, so a relational schema is not used. Objects are serialized and assigned a unique identifier. The keys in LevelDB are the object identifiers, and the values are serialized object blobs.<br />
+<h3><a name="TOC-Deployment"></a>Deployment</h3>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Phase-1"></a>Phase 1</h4>
+<p>Phase 1 deployment has the following goals:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>The PKCS #11 system is fully functional following each individual CL.  This is necessary because multiple repositories are involved (for example, chaps, cryptohome, chrome, init, …).</li>
+<li>A full rollback is possible at any time.</li></ul>
+<p>The following ordered deployment plan meets these goals:</p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li>Both chapsd and libchaps.so are installed and fully functional.  chapsd runs as chronos:pkcs11 in order to play nice with other applications loading openCryptoki directly.</li>
+<li>An upstart configuration file is added for chapsd so it starts before login and respawns automatically.  It depends on tcsd and dbus.</li>
+<li>Chaps is added as a run-time dependency to the cryptohome ebuild.</li>
+<li>The cryptohome upstart configuration is modified to depend on chapsd.</li>
+<li>Cryptohome is modified to link against Chaps rather than openCryptoki.</li>
+<li>All other modules that use openCryptoki are modified (in any order) to use Chaps.  This includes but is not limited to:</li>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li>NSS in Chrome</li>
+<li>vpn_manager</li>
+<li>flimflam</li>
+<li>wpa_supplicant</li>
+<li>entd
+
+</li>
+</ol>
+</ol>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Phase-2"></a>Phase 2</h4>
+<p>Phase 2 deployment has the following goals:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>The PKCS #11 system is fully functional at all times.</li>
+<li>Migration is seamless to all users.</li>
+<li>A partial rollback is possible for a limited time that will put a migrated user token back in the state it was in before migration.  Modifications since migration will be lost; this works like restoring a backup.</li></ul>
+<p>The following deployment plan meets these goals:</p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li>When a token is migrated, all existing files are left intact and a database record is created to indicate that migration has taken place.  Upon rollback, openCryptoki simply keeps working with these files as it did before migration.</li>
+<li>The switch is in the chapsd upstart configuration: the target library argument is removed to enable Phase 2 logic and is re-added in order to roll back.</li>
+<li>Finally, once confidence is established in the Phase 2 logic, cleanup tasks can be performed that preclude future rollbacks.  These include:</li>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li>Remove all openCryptoki-related files in the user token directory.</li>
+<li>Remove all openCryptoki-related logic from cryptohome code.</li>
+<li>Remove openCryptoki from the build.</li>
+</ol>
+</ol>
+<h2><a name="TOC-Project-Information"></a>Project Information</h2>
+The Chaps code resides in a Chromium OS git repository at <a href="http://git.chromium.org/gitweb/?p=chromiumos/platform/chaps.git;a=summary"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">http://git.chromium.org/gitweb/?p=chromiumos/platform/chaps.git;a=summary</span></a>.<br />
+<h2><a name="TOC-Internationalization-and-Localization"></a>Internationalization and Localization</h2>
+The Chaps library returns the following strings which may need to be translated.  It is assumed that manufacturer ID strings do not require translation.  If a string does not appear in the Chrome OS user interface, it may not require translation.<br />
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>C_GetInfo returns a library description.</li>
+<li>C_GetSlotInfo returns a slot description.</li>
+<li>C_GetTokenInfo returns a token label, token model, and token description.</li></ul>
+<h2><a name="TOC-Security-Considerations"></a>Security Considerations</h2>
+The following table lists some threats that are mitigated by the Chaps system and provides details on how the threat is mitigated.
+<div><br />
+<table style="border:none;border-collapse:collapse;width:624px">
+<colgroup>
+<col width="*" />
+<col width="*" /></colgroup>
+<tbody>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);background-color:rgb(0,0,128);padding:7px"><span style="font-size:13px;font-family:Verdana;color:rgb(255,255,255);vertical-align:baseline;white-space:pre-wrap">Threat</span></td>
+<td style="border:1px solid rgb(0,0,0);background-color:rgb(0,0,128);padding:7px"><span style="font-size:13px;font-family:Verdana;color:rgb(255,255,255);vertical-align:baseline;white-space:pre-wrap">Mitigation</span></td>
+</tr>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);padding:7px">Attacker gains access to a user’s cryptographic token services (for example, creates an unauthorized digital signature).</td>
+<td style="border:1px solid rgb(0,0,0);padding:7px">chapsd only allows connections from authorized uids (chronos, root) using D-Bus policies.</td>
+</tr>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);padding:7px">Attacker owns D-Bus identifier and spoofs cryptographic services.</td>
+<td style="border:1px solid rgb(0,0,0);padding:7px">D-Bus policy only allows the "chaps" user to own the chapsd identifier.</td>
+</tr>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);padding:7px">Attacker gains access to private data and keys by accessing run-time memory of the chapsd process.</td>
+<td style="border:1px solid rgb(0,0,0);padding:7px">chapsd runs as the "chaps" user.</td>
+</tr>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);padding:7px">Attacker gains access to private data and keys by accessing persistent data stored by chapsd.</td>
+<td style="border:1px solid rgb(0,0,0);padding:7px">All private data and keys stored on disk are encrypted with the User Encryption Key and stored in the cryptohome partition.</td>
+</tr>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);padding:7px">Attacker gains access to a user’s TPM-protected resources.</td>
+<td style="border:1px solid rgb(0,0,0);padding:7px">TPM-protected resources are authorized by a secret derived from the user’s password and a root-accessible random salt value.</td>
+</tr>
+<tr style="height:0px">
+<td style="border:1px solid rgb(0,0,0);padding:7px">Attacker stages Chaps persistent data in order to leverage a vulnerability in chapsd to gain control of chapsd.</td>
+<td style="border:1px solid rgb(0,0,0);padding:7px">Chaps persistent data is modifiable only by the "chaps" user (<b style="font-family:Times;font-size:medium;white-space:normal;font-weight:normal">The data needs to be stored in a root-owned directory for this policy to be effective. See <span style="font-size:13px;font-family:Verdana;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap"><a href="http://crosbug.com/30211">crosbug.com/30211</a>).</span></b>
+<br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br />
+If a user is logged in and an attacker gains chapsd privilege, then nothing prevents this attacker from reading all private data and keys that are not TPM-protected and non-extractable or from creating digital signatures using TPM-protected, non-extractable keys. The following are TPM-protected:<br />
+<ul><li>RSA private keys (with modulus 2048 bits or less) that have CKA_TOKEN=TRUE.</li></ul>
+<p>All objects with CKA_PRIVATE=TRUE are encrypted on disk with a TPM-protected key, even if they are not themselves TPM-protected. The following are not themselves TPM-protected (other than the on-disk encryption):</p>
+<ul><li>RSA private keys with modulus larger than 2048 bits.</li>
+<li>RSA private keys with CKA_TOKEN=FALSE.</li>
+<li>All objects that are not RSA private keys (for example, AES keys, data objects).</li></ul>
+<div>
+<h3><a name="TOC-Key-Storage-Example"></a>Key Storage Example</h3>
+</div>
+<p>Suppose you have a certificate with an associated private key used to negotiate 802.1x and/or VPN connections. The following PKCS #11 objects would exist in the Chaps database:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>Certificate: This object is public and is not encrypted.</li>
+<li>Public Key: This object is public and is not encrypted.</li>
+<li>Private Key: This object is private and is encrypted with the User Encryption Key. It holds the following attributes:</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>Authorization Data: This is random and specific to this key.</li>
+<li>Private Key Blob: This is a TPM-wrapped blob.</li></ul>
+<li>Encrypted User Encryption Key: This is encrypted by the User Authorization Key.</li>
+<li>User Authorization Key Blob: This is a TPM-wrapped blob.</li></ul>
+<p>The following information would be in chapsd process memory while the token is loaded:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>User Encryption Key: This has been decrypted using the User Authorization Key and the password-derived secret as authorization data.</li>
+<li>The Certificate, Public Key, and Private Key, as listed above. The Private Key has been decrypted using the User Encryption Key.</li></ul>
+<h3><a name="TOC-Cryptography"></a>Cryptography</h3>
+<p>This section lists each way in which Chaps uses cryptography and gives details as to how it is used. In all cases where cryptography is used in software, Chaps uses the openssl crypto library to provide the underlying algorithm implementations.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Random-Numbers"></a>Random Numbers</h4>
+<p>The openssl cryptographically strong pseudo-random-number-generator (PRNG) is used as a source of random numbers. It is seeded using the default openssl seeding mechanism (/dev/urandom on Chrome OS) in combination with 128 random bytes from the TPM. This seeding occurs only once per chapsd process.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-PKCS-11-Software-Mechanisms"></a>PKCS #11 Software Mechanisms</h4>
+<p>Chaps supports a number of mechanisms in software that are not supported by the TPM (for example, SHA, HMAC, AES). The implementation of these mechanisms pass through directly to openssl, including padding and cipher modes, with the following exceptions:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>The construction of RSA signing data. Chaps constructs the signing data itself and then employs the openssl RSA primitive. This approach guarantees signature compatibility between openssl and a TPM.</li>
+<li>The generation of DES / DES3 keys. Chaps is still using openssl functions such as DES_is_weak_key() and the openssl PRNG.
+
+</li></ul>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Encryption-Authentication-of-Persistent-Objects"></a>Encryption / Authentication of Persistent Objects</h4>
+<p>Private object blobs are encrypted using AES-256-CBC with PKCS padding. An initialization vector (IV) is randomly generated for each encryption operation; it is appended to the encrypted blob. An HMAC-SHA512 mac is appended to each encrypted blob. This mac is verified before the decryption is attempted. Verification uses a version of memcmp that reads and compares all bytes regardless of where a mismatch is found.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Authorization-Data-Hashes"></a>Authorization Data Hashes</h4>
+<p>Once authorization data is derived from the user password or similar using scrypt, it is processed as follows:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>An SHA-1 hash of the authorization data is computed and sent to the TPM. This hash is never stored on disk and is considered as sensitive as the user password.</li>
+<li>An SHA-512 hash of the authorization data is computed and the first byte of the hash is stored in the token database. This allows Chaps to sanity-check incoming authorization data before sending it to the TPM. Only a single byte is stored because it allows a reasonable sanity check but it is not very useful for a brute-force attack against the authorization data or the user password.</li></ul>
+<h2><a name="TOC-Logging-Plan"></a>Logging Plan</h2>
+All errors are logged using the facility provided by base/logging.h.<br />
+<br />
+<h2><a name="TOC-Testing-Plan"></a>Testing Plan</h2>
+Chaps is tested using both unit and integration tests.  All unit tests are run from the ebuild test phase.  The integration tests can be run manually or with the autotest framework.<br />
+<h3><a name="TOC-Unit-Integration-Tests"></a>Unit / Integration Tests</h3>
+<p>The classes generated by dbus-c++ are not suitable for stubbing / mocking for two reasons: </p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>We don’t want dbus code running in the unit test environment. Problems with this approach have been noted on other projects.</li>
+<li>The classes are tightly coupled with types and conventions that are specific to dbus-c++.  </li></ul>
+<p>A C++ interface is defined (ChapsInterface) that is very close to the generated proxy and adaptor interfaces but suitable for using and mocking in a test environment.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Client-side-Unit-Tests"></a>Client-side Unit Tests</h4>
+<p>The client-side code is unit tested by using a mock proxy and calling the PKCS #11 C interface.  Because the code being tested is called by external code, all argument validation and internal state validation is tested thoroughly resulting in a high level of code coverage.</p>
+<h4 style="text-indent:36pt;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Daemon-side-Unit-Integration-Tests"></a>Daemon-side Unit / Integration Tests</h4>
+<p>Phase 1: There are no unit tests per se for the chapsd code in Phase 1 because each layer is either tightly coupled with D-Bus or tightly coupled with openCryptoki.  The chapsd code is tested by a suite that verifies basic functionality of ChapsInterface methods.  This test suite is then run on both a ChapsServiceRedirect instance and on a ChapsProxyImpl instance.  These tests require a configured openCryptoki and, in the ChapsProxyImpl case, a running chapsd instance.  Because of this requirement, the tests must be run on a live system, and they do not run as part of the ebuild test phase.</p>
+<p>Phase 2: The tests from Phase 1 are reused and are run on a ChapsServiceImpl instance and a ChapsProxyImpl instance.  In the case of ChapsServiceImpl, a mock persistence object can be used, and the suite can run as a unit test.  In the case of ChapsProxyImpl, the suite is run as an integration test and requires a running chapsd instance as in Phase 1.  In addition to this, unit tests which are specific to a single class are run for the following classes:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>SlotManager</li>
+<li>Session</li>
+<li>ObjectPolicy</li>
+<li>Object</li>
+<li>ObjectPool</li>
+<li>ObjectStore</li>
+<li>TPMUtility</li></ul>
+<p>For each of these unit tests, any references to other objects are mocks.  The following mocks are available:</p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li>ChapsFactoryMock</li>
+<li>SlotManagerMock</li>
+<li>SessionMock</li>
+<li>ObjectPolicyMock</li>
+<li>ObjectMock</li>
+<li>ObjectPoolMock</li>
+<li>ObjectStoreMock</li>
+<li>ObjectImporterMock</li>
+<li>TPMUtilityMock</li></ul>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/chaps-technical-design">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

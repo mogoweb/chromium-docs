@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting","deleted":false,"title":"How Tos and Troubleshooting","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting/portage-build-faq","deleted":false,"title":"Portage Build FAQ","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/portage-build-faq\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/how-tos-and-troubleshooting","parentWuid":"wuid:gx:72ecb36fa9c83ecd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Portage Build FAQ","locale":"en","wuid":"wuid:gx:125c3bc2c92ecd5a","revision":90,"path":"/chromium-os/how-tos-and-troubleshooting/portage-build-faq","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"portage-build-faq","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Portage Build FAQ - The Chromium Projects" />
+<meta itemprop="name" content="Portage Build FAQ - The Chromium Projects" />
+<meta property="og:title" content="Portage Build FAQ - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Portage Build FAQ - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/how-tos-and-troubleshooting" dir="ltr">How Tos and Troubleshooting</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Portage Build FAQ</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p><font color="#444444"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:350px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="#TOC-How-does-the-cross-compiling-setup-work-"><strong>2 </strong>How does the cross compiling setup work?</a></li><li class="goog-toc"><a href="#TOC-How-does-the-image-build-work-"><strong>3 </strong>How does the image build work?</a></li><li class="goog-toc"><a href="#TOC-Where-do-the-important-files-live-"><strong>4 </strong>Where do the important files live?</a></li><li class="goog-toc"><a href="#TOC-What-are-USE-flags-and-why-do-I-care-"><strong>5 </strong>What are USE flags and why do I care?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-see-and-trim-dependencies-"><strong>6 </strong>How do I see and trim dependencies?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-search-for-a-package-that-I-might-want-to-install-"><strong>7 </strong>How do I search for a package that I might want to install?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-see-a-list-of-all-packages-installed-in-a-root-"><strong>8 </strong>How do I see a list of all packages installed in a root?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-find-out-the-on-disk-package-size-"><strong>9 </strong>How do I find out the on-disk package size?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-figure-out-which-package-a-file-belongs-to-"><strong>10 </strong>How do I figure out which package a file belongs to?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-my-own-ebuild-"><strong>11 </strong>How do I write my own ebuild?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-check-that-my-package-is-present-on-the-download-mirror-"><strong>12 </strong>How do I check that my package is present on the download mirror?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-uprev-an-ebuild-"><strong>13 </strong>How do I uprev an ebuild?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-build-a-debug-package-"><strong>14 </strong>How do I build a debug package?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-use-the-dev-server-"><strong>15 </strong>How do I use the dev server?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-install-a-single-package-using-gmerge-and-the-dev-server-"><strong>16 </strong>How do I install a single package (using gmerge and the dev server)?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-install-a-single-package-without-gmerge-"><strong>17 </strong>How do I install a single package (without gmerge)?</a></li><li class="goog-toc"><a href="#TOC-The-package-I-want-to-install-has-been-masked-.-How-do-I-fix-that-"><strong>18 </strong>The package I want to install has been "masked". How do I fix that?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-build-a-package-without-it-deleting-the-build-directory-eg-to-see-a-kernel-.config-file-"><strong>19 </strong>How do I build a package without it deleting the build directory (eg, to see a kernel .config file)?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-modify-a-portage-package-"><strong>20 </strong>How do I modify a portage package?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-handle-file-collisions-"><strong>21 </strong>How do I handle file collisions?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Moving-files-between-packages"><strong>21.1 </strong>Moving files between packages</a></li><li class="goog-toc"><a href="#TOC-Testing-of-upstream-packages"><strong>21.2 </strong>Testing of upstream packages</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Using-chromeos-version.sh"><strong>21.2.1 </strong>Using chromeos-version.sh</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-What-does-build_packages-actually-do-"><strong>22 </strong>What does build_packages actually do?</a></li><li class="goog-toc"><a href="#TOC-What-is-a-virtual-package-and-how-do-they-work-"><strong>23 </strong>What is a virtual package and how do they work?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Depending-on-a-virtual-package"><strong>23.1 </strong>Depending on a virtual package</a></li><li class="goog-toc"><a href="#TOC-Adding-a-virtual"><strong>23.2 </strong>Adding a virtual</a></li><li class="goog-toc"><a href="#TOC-Virtuals-and-central-management"><strong>23.3 </strong>Virtuals and central management</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overriding-virtual-policies"><strong>23.3.1 </strong>Overriding virtual policies</a></li></ol></li><li class="goog-toc"><a href="#TOC-Old-style-virtuals"><strong>23.4 </strong>Old-style virtuals</a></li></ol></li><li class="goog-toc"><a href="#TOC-When-does-a-dependency-cause-a-rebuild-"><strong>24 </strong>When does a dependency cause a rebuild?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Chrome-OS-specific-notes"><strong>24.1 </strong>Chrome OS specific notes</a></li></ol></li><li class="goog-toc"><a href="#TOC-Where-to-look-for-more-information."><strong>25 </strong>Where to look for more information.</a></li></ol></div></div></div></div></font></p>
+<div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+</div>
+<div><font color="#FF0000">TODO: Needs an introduction that someone who's a bit more of a newbie can understand</font>.</div>
+<div><br />
+</div>
+<div>Good Gentoo documentation:</div>
+<div><br />
+</div>
+<div><a href="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2">Working with Gentoo</a><br />
+</div>
+<div><a href="http://devmanual.gentoo.org/">Gentoo Development Guide</a></div>
+<h3><a name="TOC-How-does-the-cross-compiling-setup-"></a></h3>
+<h2><a name="TOC-How-does-the-cross-compiling-setup-work-"></a>How does the cross compiling setup work?</h2>
+<div>
+<div style="color:red">TODO: this section needs to be aimed more at portage / Chromium OS newbie level.</div>
+<p>Running <code>make_chroot</code> sets up a standard Portage build environment and installs some build dependencies. The portage tree contains build recipes (called ebuilds) for packages. Unlike Debian where the build rules live in the source code, the portage approach is to keep build instructions separate from source code in the portage tree. We use the <i>chromiumos_overlay</i> to keep new ebuilds and changes to existing ebuilds separate from the upstream source.</p>
+<p>Portage is designed to compile packages from source and install them into a root directory. We take advantage of this to make a distinction between <i>host</i> and our <i>target</i> when building. For the host, the root directory where things get installed is <i>/</i>, for a given target board this is <i>/build/&lt;board_name&gt;</i>. You can think of each as a mini Linux system, although they start off with hardly any packages installed.</p>
+<p>In order to cross-compile, you need some tools that are run on the host in order to build individual packages. When we set up the system, we install the <span style="color:rgb(34,34,34);font-family:Arial,Helvetica,sans-serif"><i>virtual/target-chromium-os-sdk</i></span> package to cover these. When additional host tools are needed we can update the package and re-merge it on the host, which will pull in any new tools that are needed -- the <i>build_packages</i> script does this automatically. Notice that since we are updating the host, we use the standard <i>emerge</i> command that installs packages at the root and uses the host's configuration:</p>
+<div class="sites-codeblock sites-codesnippet-block" style="border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;background-color:rgb(239,239,239)"><font color="#006000" face="monospace" style="line-height:13px">sudo emerge -a </font><span style="background-color:transparent;line-height:13px"><font color="#006000" face="monospace">virtual/target-chromium-os-sdk</font></span></div>
+</div>
+<p>We set up a new sysroot per target board that we want to cross compile for. First we make sure that the desired toolchain is installed on the host and set up <i>--sysroot</i> wrappers for the toolchain binaries that set the sysroot on compile. We use the toolchain headers and libraries to bootstrap the board target sysroot in <i>/build/&lt;board_name&gt;</i>. When we set up the board, we can optionally set up a Portage overlay for that individual board. This allows us to customize or add packages on a per-board basis. The board overlay can also include a <i>make.conf</i> that overrides some of our defaults such as compiler <i>CFLAGS</i>.</p>
+<p>When cross-compiling, you also need packages that correspond to the target, such as header files and libraries. Our strategy is to install them in the target's root using the <i>--root-deps</i> option. These are only used for compilation and will not be placed into images that are built via <i>build_image</i>. </p>
+<p>Once a board is set up, we can start building packages for the board target. We use the board target specific version of emerge to do this.</p>
+<div>
+<hr />
+</div>
+<h2><a name="TOC-How-does-the-image-build-work-"></a>How does the image build work?</h2>
+<h3><a name="TOC-How-does-the-image-build-work-"></a></h3>
+<div>Building a full bootable image is a multi-step process.  For a given target, the first step is to build binary packages for all packages needed by Chromium OS using <code>build_packages</code>.  If you look into the details of <span style="color:rgb(0,96,0);font-family:monospace">build_packages</span>, you will see that it works by installing the <span style="color:rgb(0,96,0);font-family:monospace;line-height:13px">virtual/target-os</span> package into a target. For example, to prepare to build an x86-generic image:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px;font-weight:normal;color:rgb(0,0,0);font-size:13px;font-style:normal">
+<div><code style="color:rgb(0,96,0)">emerge-x86-generic -a virtual/target-os</code></div>
+</div>
+<br />
+<div>We've set a portage option to build binary packages as a side-effect of building anything from source.  If you build all of the packages needed by the <span style="color:rgb(0,96,0);font-family:monospace;line-height:13px">virtual/target-os</span> ebuild then we will have a binary package for each of these. </div>
+<div><br />
+</div>
+<div style="font-weight:normal;color:rgb(0,0,0);font-size:13px;line-height:normal">Once <span style="color:rgb(0,96,0);font-family:monospace">build_packages</span> finishes, we'll run <code>build_image</code>.  If we look into the details of <span style="color:rgb(0,96,0);font-family:monospace">build_image</span>, you will see that it works by setting up a loopback-mounted ext3 file system, prepping it for booting, and then installing <span style="color:rgb(0,96,0);font-family:monospace;line-height:13px;font-style:normal">virtual/target-os</span> into it with an option to force using binary packages only. That way we only install the packages and their run-time dependencies and shed all of the build dependencies:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px"><code style="color:rgb(0,96,0)">emerge-&lt;board_name&gt; --root="$ROOT_FS_DIR" --root-deps=rdeps --usepkgonly virtual/target-os</code></div></div>
+<p style="font-weight:normal;font-size:13px;line-height:normal">We use the <code>--root-deps=rdeps</code> option to only install run-time dependencies into the root file system. This discards the build-only dependencies and gives us a clean file system.</p>
+<p style="font-size:13px;font-style:normal;line-height:normal"><b>SIDE NOTE</b><span style="font-weight:normal">: It turns out that for most developers, the above is a bit of a lie.  Most developers don't actually build all binary packages from source when they do a build.  By default, the build system "cheats" and downloads a binary package from the BINHOST if it can find one.  See <a href="http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/portage-build-faq#TOC-What-does-build_packages-actually-do-">What does build_packages actually do</a>.</span></p>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<div>
+<h2><a name="TOC-Where-do-the-important-files-live-"></a>Where do the important files live?</h2>
+<p>Here are a few important directories:</p>
+<p>
+</p>
+<table border="1" cellspacing="0" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-collapse:collapse">
+<tbody>
+<tr>
+<td style="vertical-align:top;width:324px;height:16px"> main set of ebuilds</td>
+<td style="vertical-align:top;width:629px;height:16px"> <code style="color:rgb(0,96,0)">src/third_party/portage-stable/</code></td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:324px;height:16px"> Chromium OS portage overlay</td>
+<td style="vertical-align:top;width:629px;height:16px"> <code style="color:rgb(0,96,0)">src/third_party/chromiumos-overlay/</code></td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:324px;height:16px"> Chromium OS ebuilds<br />
+</td>
+<td style="vertical-align:top;width:629px;height:16px"> <code style="color:rgb(0,96,0)">src/third_party/chromiumos-overlay/</code><span style="border-collapse:separate;font-family:monospace;line-height:13px"><code style="color:rgb(0,96,0)">chromeos</code></span><code style="color:rgb(0,96,0)">-base/</code></td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:324px;height:16px"> target profile (per-package unmask, USE flags, etc)</td>
+<td style="vertical-align:top;width:629px;height:16px"> <code style="color:rgb(0,96,0)">src/third_party/chromiumos-overlay/profiles/targets/</code><span style="border-collapse:separate;font-family:monospace;line-height:13px"><code style="color:rgb(0,96,0)">chromeos</code></span><code style="color:rgb(0,96,0)">/</code><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:324px;height:16px"> host and per-target configs</td>
+<td style="vertical-align:top;width:629px;height:16px"> <code style="color:rgb(0,96,0)">src/third_party/chromiumos-overlay/</code><span style="border-collapse:separate;font-family:monospace;line-height:13px"><code style="color:rgb(0,96,0)">chromeos</code></span><code style="color:rgb(0,96,0)">/config/</code></td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:324px;height:16px"> crossdev autoconf configs <font color="#9900FF">(in chroot)</font></td>
+<td style="vertical-align:top;width:629px;height:16px"> <code style="color:rgb(0,96,0)"><font color="#9900FF">/usr/share/crossdev/include/site/</font></code></td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:324px;height:15px"><font size="2"> board sysroot<font color="#9900FF"> (in chroot)</font></font></td>
+<td style="vertical-align:top;width:629px;height:15px"><font color="#9900FF" size="3"> <code style="color:rgb(0,96,0)"><font color="#9900FF">/build/${BOARD}<br />
+</font></code></font></td>
+</tr>
+</tbody>
+</table>
+<h2><a name="TOC-1"></a>
+<hr />
+</h2>
+<h2><a name="TOC-What-are-USE-flags-and-why-do-I-care-"></a>What are USE flags and why do I care?</h2>
+<p>One of the interesting aspects of the Portage build system is parameterized dependencies and build options. Each package can declare a list of USE flags that can be turned on and off. Turning them on and off can affect the set of packages that they depend on. For example, if a package supports creating optional perl bindings, then it can declare a perl USE flag. If "-perl" is specified then the package can omit creation of the bindings and drop its dependency on perl.</p>
+<h2><a name="TOC-2"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-see-and-trim-dependencies-"></a>How do I see and trim dependencies?</h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-3"></a><font color="#444444"><a name="TOC-How-do-I-see-and-trim-dependencies-" style="color:rgb(0,102,204);outline-style:none;text-decoration:underline"></a></font></h3>
+<div>The easiest way to inspect dependencies is to use the --emptytree and --pretend options for emerge. These options tell you what packages would be installed if you were installing from scratch and you didn't have any of its dependencies yet. The --verbose option will also show the set of USE flags that can be turned on and off for the packages to hopefully trim dependencies:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em">
+<div style="font-size:13px;font-style:normal;font-weight:normal;line-height:13px;color:rgb(0,0,0)"><span style="color:rgb(0,96,0);font-family:monospace">emerge-x86-generic --pretend --emptytree --verbose vim</span></div>
+<div style="font-size:13px;font-style:normal;font-weight:normal;line-height:13px;color:rgb(0,0,0)"><font color="#006000" face="monospace"><br />
+</font></div>
+<div>
+<div><font face="monospace">These are the packages that would be merged, in order:</font></div>
+<div><font face="monospace"><br />
+</font></div>
+<div><font face="monospace">Calculating dependencies... done!</font></div>
+<div><font face="monospace">[ebuild   R   ] sys-apps/sed-4.2 to /build/x86-mario/ USE="-acl -nls -static" 862 kB</font></div>
+<div><font face="monospace">[ebuild   R   ] sys-libs/ncurses-5.7-r3 to /build/x86-mario/ USE="cxx minimal unicode -ada -debug -doc -gpm -profile -trace" 2,388 kB</font></div>
+<div><font face="monospace">[ebuild   R   ] app-editors/vim-core-7.2.303 to /build/x86-mario/ USE="-acl -bash-completion -livecd -nls" 9,475 kBS</font></div>
+<div><span style="font-family:monospace">...</span></div>
+</div>
+</div>
+<div><br />
+</div>
+<div style="color:rgb(0,0,0);font-size:13px;font-style:normal;line-height:normal">To get an idea of the dependency tree and why some packages would be built do parallel_emerge<i> --pretend --emptytree --tree</i> like so:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px;font-weight:normal;font-size:13px;font-style:normal">
+<div style="color:rgb(0,0,0)"><span style="color:rgb(0,96,0);font-family:monospace">parallel_emerge --pretend --emptytree --tree --board=x86-generic vim</span></div>
+<div style="color:rgb(0,0,0)"><br />
+</div>
+<div style="color:rgb(0,0,0)">
+<div><font face="monospace">
+<div>app-editors/vim-7.2.303: (merge) needs</div>
+<div>    app-editors/vim-core-7.2.303</div>
+<div>    sys-apps/sed-4.2</div>
+<div>    sys-libs/ncurses-5.7-r3</div>
+<div>app-editors/vim-core-7.2.303: (merge) needs</div>
+<div>    sys-apps/sed-4.2</div>
+<div>    sys-libs/ncurses-5.7-r3</div>
+<div>app-vim/gentoo-syntax-20090720: (merge) needs</div>
+<div>    app-editors/vim-7.2.303</div>
+<div>sys-apps/sed-4.2: (merge) needs</div>
+<div>    no dependencies</div>
+<div>sys-libs/ncurses-5.7-r3: (merge) needs</div>
+<div>    no dependencies</div>
+</font></div>
+</div>
+</div>
+</div>
+<div>
+<div style="color:rgb(0,0,0);font-size:13px;font-style:normal;line-height:normal"><br />
+</div>
+<div style="color:rgb(0,0,0);font-size:13px;font-style:normal;line-height:normal">
+<hr />
+</div>
+<h2><a name="TOC-How-do-I-search-for-a-package-that-I-might-want-to-install-"></a>How do I search for a package that I might want to install?</h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-4"></a><font color="#444444"><a name="TOC-How-do-I-search-for-a-package-that-" style="color:rgb(0,102,204);outline-style:none;text-decoration:underline"></a></font></h3>
+<p>If you wanted to look for busybox, you can:</p>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px;font-weight:normal;color:rgb(0,0,0);font-size:13px;font-style:normal">
+<div><code style="color:rgb(0,96,0)">emerge --search busybox</code></div>
+</div>
+<h2><a name="TOC-5"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-see-a-list-of-all-packages-installed-in-a-root-"></a>How do I see a list of all packages installed in a root?</h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-6"></a><font color="#444444"><a name="TOC-How-do-I-see-a-list-of-all-packages" style="color:rgb(0,102,204);outline-style:none;text-decoration:underline"></a></font></h3>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px;font-weight:normal;color:rgb(0,0,0);font-size:13px;font-style:normal">
+<div><code style="color:rgb(0,96,0)">equery-&lt;board_name&gt; list '*'</code></div>
+</div>
+<div><br />
+</div>
+<div>
+<h2><a name="TOC-7"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-find-out-the-on-disk-package-size-"></a>How do I find out the on-disk package size?</h2>
+<p>For this, we are primarily interested in getting the size of the package and its runtime dependencies.</p>
+<h3 style="font-weight:normal;font-size:1.4em"><a name="TOC-8"></a><font color="#444444"><a name="TOC-How-do-I-see-a-list-of-all-packages" style="text-decoration:underline"></a></font></h3>
+<div class="sites-codeblock sites-codesnippet-block"><code><span style="line-height:13px"># ignores files in package that match &lt;file mask regex&gt;.</span><br />
+<span style="line-height:13px">qsize -i&lt;file mask regex&gt; package</span></code></div>
+<p><span style="font-size:10pt;line-height:1">Example:</span></p>
+</div>
+</div>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="background-color:transparent;line-height:normal"><font color="#006000" face="monospace"># Calculate size of package excluding debug symbols and development header files.<br />
+</font></span><span style="line-height:normal;color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent"><code>qsize -i '^/usr/lib/debug/' -i '^/usr/include/' platform2</code></span></div><p><span style="font-size:10pt;line-height:1">For an accurate estimate, the above requires manually excluding files that would normally be removed due to the INSTALL_MASK (defined in src/scripts/common.sh). You can also use the more direct method of replicating what <code>build_image</code> does by installing the package into an empty root.</span></p><p><span style="line-height:1;font-size:10pt">Example: Say you want to find out how much space <code>update_engine</code> and its runtime dependencies would take on an empty image.</span></p>
+<div class="sites-codeblock sites-codesnippet-block" style="line-height:13px"><span style="color:rgb(0,96,0);font-size:10pt;line-height:1"><code>export INSTALL_MASK="&lt;DEFAULT_INSTALL_MASK from src/scripts/common.sh&gt;"</code><br />
+</span><span style="color:rgb(0,96,0);font-size:10pt;line-height:1"><code>mkdir /tmp/foo<br />emerge-&lt;board&gt; --root=/tmp/foo --root-deps=rdeps --usepkgonly update_engine<br />du -sh /tmp/foo</code></span></div>
+</div>
+<h2><a name="TOC-9"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-figure-out-which-package-a-file-belongs-to-"></a>How do I figure out which package a file belongs to?</h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-10"></a><font color="#444444"><a name="TOC-How-do-I-figure-out-which-package-a" style="color:rgb(0,102,204);outline-style:none;text-decoration:underline"></a></font></h3>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px;font-weight:normal;color:rgb(0,0,0);font-size:13px;font-style:normal">
+<div><code style="color:rgb(0,96,0)">equery-&lt;board-name&gt; belongs libglog.so.0</code></div>
+<div><code style="color:rgb(0,96,0)">equery belongs /bin/bash<br /></code></div>
+</div>
+<h2><a name="TOC-11"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-write-my-own-ebuild-"></a><b>How do I write my own ebuild?</b></h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-12"></a><font color="#444444"><a name="TOC-How-do-I-write-my-own-ebuild-" style="color:rgb(0,102,204);outline-style:none;text-decoration:underline"></a></font></h3>
+<div>An ebuild file is the recipe to build a package. Since it is written in shell script it is very flexible, but there is a recommended format. Start with one of our existing chromium ebuilds as an example. The ebuild should be named <i>project-version.ebuild</i> and it should live in a directory under an appropriate category. For <span style="font-family:monospace;line-height:13px">chromiumos</span> packages we've been using the <i><span style="font-family:monospace;line-height:13px"><code>chromeos</code></span><code>-base</code></i> category. The man page can be extremely helpful when writing an ebuild:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px"><code style="color:rgb(0,96,0)">man 5 ebuild</code></div>
+</div>
+<div><br />
+</div>
+The board setup process creates an <span style="color:rgb(68,68,68);line-height:20px;font-weight:normal;font-size:13px;font-style:normal"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><span style="font-size:16px"><b><font size="3"><span style="font-size:13px;font-weight:normal"><code style="color:rgb(0,96,0)">ebuild-&lt;board_name&gt;</code></span></font></b></span></span></i></span></span></b></span><span style="color:rgb(68,68,68);line-height:20px;font-weight:normal;font-size:13px;font-style:normal"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"> wrapper that you can use within the chroot just as you do with </span></i></span></span></b></span><span style="color:rgb(68,68,68);line-height:20px;font-weight:normal;font-size:13px;font-style:normal"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><span style="font-size:16px"><b><font size="3"><span style="font-size:13px;font-weight:normal"><code style="color:rgb(0,96,0)">emerge-&lt;boardname&gt;</code></span></font></b></span></span></i></span></span></b></span></span></i></span></span></b></span><br />
+<br />
+<b><i><b><font size="3">
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em;line-height:13px;color:rgb(0,0,0);font-size:13px;font-style:normal;font-weight:normal"><code style="color:rgb(0,96,0)">ebuild-arm-generic openssh-5.2_p1-r3.ebuild compile</code></div>
+</font></b></i></b>
+<p>If you are writing a new package for that does not exist upstream then you will want to upload the files for the package to the localmirror.  See the "download mirror" section below.</p>
+<hr />
+<h2 style="font-weight:normal"><a name="TOC-How-do-I-check-that-my-package-is-present-on-the-download-mirror-"></a><b>How do I check that my package is present on the download mirror?</b></h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-13"></a><font color="#444444"><a name="TOC-How-do-I-write-my-own-ebuild-" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial;text-decoration:underline"></a></font></h3>
+<p>When we download packages for use in Chromium OS, we only download packages that are present on the upstream gentoo mirror or on our localmirror. If your package is not present on either download mirror, then you need to <a href="https://sites.google.com/a/google.com/chromeos/resources/engineering/releng/localmirror">upload it manually to localmirror.</a></p>
+<p>Once you have uploaded your package to the mirror, you can test that it's working by running the following commands:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(211,211,211);border-right-color:rgb(211,211,211);border-bottom-color:rgb(211,211,211);border-left-color:rgb(211,211,211);display:block;padding-top:0.5em;padding-right:0px;padding-bottom:0.5em;padding-left:1em"><font face="monospace"><font color="#006000">rm -f /var/lib/portage/distfiles-target/*<br />
+emerge-arm-generic -F app-laptop/laptop-mode-tools<br />
+</font><br />
+&gt;&gt;&gt; Fetching (1 of 1) app-laptop/laptop-mode-tools-1.57-r2 from chromiumos for /build/x86-generic/<br />
+&gt;&gt;&gt; Downloading 'http://commondatastorage.googleapis.com/chromeos-mirror/gentoo/distfiles/laptop-mode-tools_1.57.tar.gz'<br />
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current<br />
+                                 Dload  Upload   Total   Spent    Left  Speed<br />
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0<br />
+</font><font face="monospace">curl: (22) The requested URL returned error: 404</font><br />
+<span style="font-family:monospace">No digest file available and download failed.</span>
+<div>
+<div><font face="monospace"><br />
+&gt;&gt;&gt; Downloading 'http://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/laptop-mode-tools_1.57.tar.gz'</font></div>
+<div>
+<div><font face="monospace">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</font></div>
+<div>
+<div><font face="monospace">                                 Dload  Upload   Total   Spent    Left  Speed</font></div>
+<div>
+<div><font face="monospace">100   97k  100   97k    0     0   565k      0 --:--:-- --:--:-- --:--:--  647k</font></div>
+<div style="font-family:monospace"><br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2><a name="TOC-14"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-uprev-an-ebuild-"></a><b>How do I uprev an ebuild?</b></h2>
+<h3 style="font-weight:normal;font-size:1.4em;color:rgb(0,0,0);font-style:normal;line-height:normal"><a name="TOC-15"></a><font color="#444444"><a name="TOC-How-do-I-write-my-own-ebuild-" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial;text-decoration:underline"></a></font></h3>
+An ebuild file is the recipe to build a package.  When building a package, portage searches all active overlays, and selects the highest version ebuild that is unmasked for the given architecture.  Once it determines which ebuild to build, it compares its version number against the most recently emerged version (if any) to determine if the package must be upgraded or downgraded. <br />
+<br />
+When you are working on a cros_workon package (one with a 9999 ebuild), you only need to modify the 9999 ebuild - the Commit Queue will auto-uprev the version of the ebuild by copying the 9999 ebuild to an ebuild with the new bumped revision.<br />
+<br />
+But, when you are working on a "non cros_workon" package (i.e a package for whose ebuild doesn't inherit "cros_workon", chromiumos doesn't host a git tree, and autouprev isn't supported) you must manually increase the version number in the ebuild filename. <br />
+<br />
+When upgrading to a new version of the package (i.e. grabbing a newer version from upstream), then increase the ebuild version number (foo-M.m.ebuild). 
+<div><br />
+When changing the ebuild contents (i.e. applying a custom patch or fixing cross-compile issues), then increase the ebuild revision number (foo-M.m-rN.ebuild).</div>
+<div><br />
+</div>
+<div>When uprevving ebuilds, just rename the symlink (by convention, named as <code>*-r#.ebuild</code>).</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>$ ls -l</code></div>
+<div><code>chromeos-bsp-board-0.0.1.ebuild</code></div>
+<div><code>chromeos-bsp-board-0.0.1-r1.ebuild -&gt; chromeos-bsp-board-0.0.1.ebuild</code><br />
+<br />
+</div>
+<div><code>$ git mv </code><span style="background-color:transparent;font-size:10pt"><code>chromeos-bsp-board-0.0.1-r1.ebuild </code></span><span style="background-color:transparent;font-size:10pt"><code>chromeos-bsp-board-0.0.1-r2.ebuild</code></span></div>
+</div>
+<div><br />
+ If updating packages versions (say from PV=0.0.1 to PV=0.1.0 above), rename the base file (i.e., <code>chromeos-bsp-board-0.0.1.ebuild</code>).</div>
+<div><br />
+</div>
+<div>
+<h2><a name="TOC-16"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-build-a-debug-package-"></a>How do I build a debug package?</h2>
+<div><span style="font-weight:normal">There are a few things that are important to get a debug package:</span></div>
+<div>
+<ul><li>Make sure that you are compiling with the right compiler flags. Typically this can be done by setting CFLAGS before you invoke emerge.</li>
+<li>Make sure that the binaries are not stripped, and the build files are not deleted.  You can do that by setting the right FEATURES.</li>
+<li>Tell portage to enable debug options for the package, with USE. </li></ul>
+Putting these together: </div>
+<div><br />
+<span style="color:rgb(68,68,68);line-height:20px;font-size:13px;font-style:normal;font-weight:normal"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal">
+<div class="sites-codeblock sites-codesnippet-block" style="background-color:rgb(239,239,239);border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:13px">
+<div><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><code style="color:rgb(0,96,0)">USE="debug" CFLAGS="-g -O0" </code></span></i></span></span></b></span></span></i></span></span></b></span><code style="color:rgb(0,96,0)">FEATURES="nostrip noclean -splitdebug" emerge-x86-generic -a package-name</code></div>
+</div>
+</span></i></span></span></b></span>
+<div><br />
+</div><div>Note:</div><div><ul><li>by default, we separate the debug symbols from the binary and store it in<font color="#9900ff"> <font face="courier new, monospace"><b>/build/&lt;board name&gt;/usr/lib/debug</b></font></font> in the chroot. You have to set FEATURES="-splitdebug nostrip" to not strip the binary.</li><li>prebuilts binaries produced by the builder do not contain the separate symbols. To install the debug symbols for all packages, you can run <b><font face="courier new, monospace">cros_install_debug_syms --board=$BOARD --all</font></b> in the chroot or always run <b><font face="courier new, monospace">build_packages</font></b> with <font face="courier new, monospace"><b>--withdebugsymbols</b></font><br /> </li></ul></div><h2><a name="TOC-17"></a>
+</h2>
+<h2><a name="TOC-How-do-I-use-the-dev-server-"></a>How do I use the dev server?</h2>
+<div><span style="font-weight:normal">See </span><a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/using-the-dev-server" style="color:rgb(0,0,0);font-size:13px;font-style:normal;font-weight:normal;line-height:normal">Using the dev server</a><span style="font-weight:normal">.</span></div>
+<div><span style="font-weight:normal"><br />
+</span></div>
+<h2><a name="TOC-18"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-install-a-single-package-using-gmerge-and-the-dev-server-"></a>How do I install a single package (using gmerge and the dev server)?</h2>
+<p>See the <a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/using-the-dev-server#TOC-How-to-build-a-single-package-and-i">How to build a single package and install it without doing a full update</a> section of the dev server page.</p>
+<h2><a name="TOC-19"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-install-a-single-package-without-gmerge-"></a>How do I install a single package (without gmerge)?</h2>
+<p>Mount the image from file or USB stick using:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>./mount_gpt_image.sh</code></div>
+<p>Emerge into the mounted system:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>emerge-x86-generic -k --root=/tmp/m package-name</code></div>
+<h2><a name="TOC-20"></a>
+<hr />
+</h2>
+<h2><a name="TOC-The-package-I-want-to-install-has-been-masked-.-How-do-I-fix-that-"></a>The package I want to install has been "masked". How do I fix that?</h2>
+<p>When importing a package with <font face="'courier new', monospace">emerge-&lt;board_name&gt;</font>, you may get an error message about "masked packages". For instance, the response to</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>emerge-x86-generic flashrom</code>
+</div>
+<p>may contain the following:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>!!! All ebuilds that could satisfy "sys-apps/flashrom" have been masked.<br />
+!!! One of the following masked packages is required to complete your request:<br />
+- sys-apps/flashrom-0.9.0 (masked by: ~x86 keyword)</code></div>
+<p>To unmask a package<span style="font-size:10pt">, edit the KEYWORDS field of the ebuild directly and add "amd64 arm x86".  If you see existing entries like "~amd64", simply remove the tilde (~).</span></p>
+<h2><a name="TOC-21"></a>
+<hr />
+</h2>
+<h2><a name="TOC-How-do-I-build-a-package-without-it-deleting-the-build-directory-eg-to-see-a-kernel-.config-file-"></a>How do I build a package without it deleting the build directory (eg, to see a kernel .config file)?</h2>
+<p>Prepend <code>FEATURES=noclean</code> to <code>emerge</code>:</p>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>FEATURES="noclean" emerge-x86-generic -a kernel</code></div>
+<div><code>ls -l /build/x86-generic/tmp/portage/chromeos-base/kernel-0.0.1-r2/work/kernel-0.0.1/.config</code></div>
+</div>
+<hr />
+<h2><a name="TOC-How-do-I-modify-a-portage-package-"></a>How do I modify a portage package?</h2>
+<p>Within Chromium OS the portage repository is considered read-only. This means that if the portage package has a problem then we must create an overlay for it in <b>chromiumos-overlay</b>. A common reason for needing to do this is that the package will not cross compile (for ARM or x86). Here is how to do that:</p>
+<div><b>Note:</b> You must run <code>emerge-${BOARD}</code> inside the chroot, but the <code>repo</code> and <code>git</code> commands should be done outside the chroot.
+<div>
+<ol style="color:rgb(68,68,68);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-weight:normal;line-height:normal"><li>Try emerging the package to see if it builds. We assume that it doesn't (or perhaps builds, but doesn't work properly) which is why you are here.</li>
+<ul><li>
+<div class="sites-codeblock sites-codesnippet-block"><code>(cros-chroot) $ emerge-arm-generic nfs-utils</code><br />
+<br />
+<code> * IMPORTANT: 1 news items need reading for repository 'gentoo'.</code><br />
+<code> * Use eselect news to read news items.</code><br />
+<br />
+<code>Calculating dependencies... done!</code><br />
+<br />
+<code>&gt;&gt;&gt; Emerging (1 of 1) net-fs/nfs-utils-1.1.4-r1 for /build/arm-generic/</code><br />
+<code> * nfs-utils-1.1.4.tar.bz2 RMD160 SHA1 SHA256 size ;-) ...               [ ok ]</code><br />
+<code> * CPV:  net-fs/nfs-utils-1.1.4-r1</code><br />
+<code> * REPO: gentoo</code><br />
+<code> * USE:  arm elibc_glibc kernel_linux tcpd userland_GNU</code><br />
+<code>&gt;&gt;&gt; Unpacking source...</code><br />
+<code>&gt;&gt;&gt; Unpacking nfs-utils-1.1.4.tar.bz2 to /build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work</code><br />
+<code> * Applying nfs-utils-1.1.4-rpcgen-ioctl.patch ...                        [ ok ]</code><br />
+<code> * Applying nfs-utils-1.1.4-ascii-man.patch ...                           [ ok ]</code><br />
+<code> * Applying nfs-utils-1.1.4-mtab-sym.patch ...                            [ ok ]</code><br />
+<code> * Applying nfs-utils-1.1.4-no-exec.patch ...                             [ ok ]</code><br />
+<code>&gt;&gt;&gt; Source unpacked in /build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work</code><br />
+<code>&gt;&gt;&gt; Compiling source in /build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work/nfs-utils-1.1.4 ...</code><br />
+<code> * econf: updating nfs-utils-1.1.4/config.guess with /usr/share/gnuconfig/config.guess</code><br />
+<code> * econf: updating nfs-utils-1.1.4/config.sub with /usr/share/gnuconfig/config.sub</code><br />
+<code>./configure --prefix=/usr --build=x86_64-pc-linux-gnu --host=armv7a-cros-linux-gnueabi --mandir=/usr/share/man --infodir=/usr/share/info --datadir=/usr/share --sysconfdir=/etc --localstatedir=/var/lib --mandir=/usr/share/man --with-statedir=/var/lib/nfs --disable-rquotad --enable-nfsv3 --enable-secure-statd --with-tcp-wrappers --enable-nfsv4 --disable-gss</code><br />
+<code>configure: loading site script /usr/share/config.site</code><br />
+<br />
+<br />
+<code>...</code><br />
+<br />
+<br />
+<code>Making all in locktest</code><br />
+<code>make[2]: Entering directory `/build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work/nfs-utils-1.1.4/tools/locktest'</code><br />
+<code>gcc -DHAVE_CONFIG_H -I. -I../../support/include  -D_GNU_SOURCE -D_GNU_SOURCE  -O2 -pipe -I/build/arm-generic/usr/include/ -I/build/arm-generic/include/ -ggdb -march=armv7-a -mtune=cortex-a8 -mfpu=vfpv3-d16 -mfloat-abi=softfp -MT testlk-testlk.o -MD -MP -MF .deps/testlk-testlk.Tpo -c -o testlk-testlk.o `test -f 'testlk.c' || echo './'`testlk.c</code><br />
+<code>cc1: error: unrecognized command line option "-mfpu=vfpv3-d16"</code><br />
+<code>cc1: error: unrecognized command line option "-mfloat-abi=softfp"</code><br />
+<code>testlk.c:1: error: bad value (armv7-a) for -march= switch</code><br />
+<code>testlk.c:1: error: bad value (cortex-a8) for -mtune= switch</code><br />
+<code>make[2]: *** [testlk-testlk.o] Error 1</code><br />
+<code>make[2]: Leaving directory `/build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work/nfs-utils-1.1.4/tools/locktest'</code><br />
+<code>make[1]: *** [all-recursive] Error 1</code><br />
+<code>make[1]: Leaving directory `/build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work/nfs-utils-1.1.4/tools'</code><br />
+<code>make: *** [all-recursive] Error 1</code><br />
+<code> * ERROR: net-fs/nfs-utils-1.1.4-r1 failed:</code><br />
+<code> *   Failed to compile</code><br />
+<code> * </code><br />
+<code> * Call stack:</code><br />
+<code> *     ebuild.sh, line  54:  Called src_compile</code><br />
+<code> *   environment, line 2648:  Called die</code><br />
+<code> * The specific snippet of code:</code><br />
+<code> *       emake || die "Failed to compile"</code><br />
+<code> * </code><br />
+<code> * If you need support, post the output of 'emerge --info =net-fs/nfs-utils-1.1.4-r1',</code><br />
+<code> * the complete build log and the output of 'emerge -pqv =net-fs/nfs-utils-1.1.4-r1'.</code><br />
+<code> * The complete build log is located at '/build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/temp/build.log'.</code><br />
+<code> * The ebuild environment file is located at '/build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/temp/environment'.</code><br />
+<code> * S: '/build/arm-generic/tmp/portage/net-fs/nfs-utils-1.1.4-r1/work/nfs-utils-1.1.4'</code><br />
+<br />
+<code>&gt;&gt;&gt; Failed to emerge net-fs/nfs-utils-1.1.4-r1 for /build/arm-generic/, Log file:</code></div>
+<br />
+</li></ul>
+<li style="font-family:arial,sans-serif"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font><font color="#444444"><font color="#444444"><font color="#444444">Make
+ sure you have the latest version in portage from gentoo. We don't want 
+old versions since it makes for more work when we update</font></font></font></font></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></li>
+<ul><li style="font-family:arial,sans-serif"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font><font color="#444444"><font color="#444444"><font color="#444444">
+<div class="sites-codeblock sites-codesnippet-block"><code>$ cd ...src/third_party/portage</code><br />
+<code>$ git checkout remotes/cros/gentoo</code><br />
+<code>$ ls net-fs/nfs-utils/</code><br />
+<code>ChangeLog     nfs-utils-1.1.4-r1.ebuild  nfs-utils-1.2.0.ebuild</code><br />
+<code>Manifest      nfs-utils-1.1.5.ebuild     nfs-utils-1.2.1.ebuild</code><br />
+<code>files         nfs-utils-1.1.6-r1.ebuild</code><br />
+<code>metadata.xml  nfs-utils-1.1.6.ebuild</code></div>
+<br />
+</font></font></font></font></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></li></ul>
+<li><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">Use '<code>repo start</code>' to start your modification to chromiumos-overlay</font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span></li>
+<ul><li><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">
+<div class="sites-codeblock sites-codesnippet-block"><code>cd ...src/third_party/chromiumos-overlay/</code><br />
+<code>repo start add-nfs-utils-to-overlay .</code></div>
+<br />
+</font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span></li></ul>
+<li>Copy this package into the corresponding place in <span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">chromiumos-overlay</font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span></li>
+<ul><li>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><code>mkdir net-fs</code><br />
+<code>cp -r ../portage/net-fs/nfs-utils net-fs/.</code></font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span><br />
+<br />
+<span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><code># we want to use the latest ebuild, so remove the others</code><br />
+<code>cd net-fs/nfs-utils</code><br />
+<code>rm nfs-utils-1.1* nfs-utils-1.2.0*</code></font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span></div>
+<br />
+</li></ul>
+<li><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">Upload this change to the review server and go through the process to get it committed</font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span></li>
+<ul><li><span style="color:rgb(68,68,68);line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><b><span style="font-weight:normal"><span style="font-size:13px"><i><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">
+<div class="sites-codeblock sites-codesnippet-block"><code>git commit</code><br />
+<code># Imported nfs-utils from portage</code><br />
+<code>#</code><br />
+<code># TEST=emerge, although it doesn't actually build</code><br />
+<code>git cl upload</code><br />
+<code># ... wait for review</code><br />
+<code># git push</code></div>
+<br />
+</font></span></i></span></span></b></span></font></span></i></span></span></b></span></font></font></span></i></span></span></b></span></li></ul>
+<font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444"><li style="font-family:arial,sans-serif">Use 'repo start' to start your modification to your new overlay package</li>
+</font></font></font></font></font>
+<ul><font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444"><li style="font-family:arial,sans-serif">
+<div class="sites-codeblock sites-codesnippet-block"><code>cd ...src/third_party/chromiumos-overlay/</code><br />
+<code>repo start fix-nfs-utils .</code></div>
+<br />
+</li>
+</font></font></font></font></font></ul>
+<font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444">
+</font></font></font></font></font><font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444">
+<li style="font-family:arial,sans-serif">Add in a patch and modify the ebuild to use it</li>
+</font></font></font></font></font>
+<ul><font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444"><li style="font-family:arial,sans-serif">
+<div class="sites-codeblock sites-codesnippet-block"><code># find or create a patch, put it in the files directory</code><br />
+<br />
+<code># modify the ebuild, e.g. a cross-compile.patch</code><br />
+<br />
+<code>src_prepare() {</code><br />
+<code>    epatch "${FILESDIR}"/${PN}-1.1.4-mtab-sym.patch</code><br />
+<code>    epatch "${FILESDIR}"/${PN}-1.1.4-no-exec.patch</code><br />
+<br />
+<code>    # here is the new one</code><br />
+<code>    epatch "${FILESDIR}"/${PN}-1.1.4-cross-compile.patch</code><br />
+<code>}</code></div>
+</li>
+</font></font></font></font></font></ul>
+<br />
+<font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444">
+</font></font></font></font></font><font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444"><li style="font-family:arial,sans-serif">Check that it builds OK now</li>
+</font></font></font></font></font>
+<ul><font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444">
+<div class="sites-codeblock sites-codesnippet-block"><code>(cros-chroot) $ emerge-arm_generic nfs-utils</code></div>
+</font></font></font></font></font></ul>
+<br />
+<font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444">
+</font></font></font></font></font><li style="font-family:arial,sans-serif"><font><font face="'courier new', monospace"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">Upload this change to the review server and go through the process to get it committed</font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></font></li>
+<ul><li style="font-family:arial,sans-serif"><font><font face="'courier new', monospace"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">
+<div class="sites-codeblock sites-codesnippet-block"><code>git commit</code><br />
+<code># Modifications to nfs-utils to make it build</code><br />
+<code>#</code><br />
+<code># TEST=emerge-arm_generic</code><br />
+<br />
+<code>git cl upload</code><br />
+<code># ... wait for review</code><br />
+<code># git push</code></div>
+</font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></font></li>
+</ul>
+<br />
+<font><font color="#444444"><font face="'courier new', monospace"><font color="#444444"><font color="#444444">
+</font></font></font></font></font><li style="font-family:arial,sans-serif"><font><font face="'courier new', monospace"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="color:rgb(68,68,68);line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444"><span style="line-height:20px"><span style="font-weight:normal"><span style="font-size:13px"><span style="color:rgb(0,0,0);font-style:normal;line-height:normal"><font color="#444444">Relax you are done</font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></span></span></span></span></font></font></li>
+</ol>
+</div>
+<div><font color="#444444" face="arial, sans-serif">
+<hr />
+</font></div>
+<div>
+<h2><a name="TOC-How-do-I-handle-file-collisions-"></a>How do I handle file collisions?</h2>
+<p><font color="#444444" style="font-weight:bold"><span style="font-weight:normal">Sometimes when using <code>build_packages</code> or <code>setup_board</code> you might get an error like this:</span></font></p>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(68,68,68);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-weight:normal;line-height:normal"><code>gtk-doc-am-1.13-r2: &gt;&gt;&gt; Installing (1 of 1) dev-util/gtk-doc-am-1.13-r2</code><br />
+<code>gtk-doc-am-1.13-r2:  * This package will overwrite one or more files that may belong to other</code><br />
+<code>gtk-doc-am-1.13-r2:  * packages (see list below).</code><br />
+<code>gtk-doc-am-1.13-r2:  * </code><br />
+<code>gtk-doc-am-1.13-r2:  * Detected file collision(s):</code><br />
+<code>gtk-doc-am-1.13-r2:  * </code><br />
+<code>gtk-doc-am-1.13-r2:  *     /usr/bin/gtkdoc-rebase</code><br />
+<code>gtk-doc-am-1.13-r2:  * </code><br />
+<code>gtk-doc-am-1.13-r2:  * Searching all installed packages for file collisions...</code><br />
+<code>gtk-doc-am-1.13-r2:  * </code><br />
+<code>gtk-doc-am-1.13-r2:  * Press Ctrl-C to Stop</code><br />
+<code>gtk-doc-am-1.13-r2:  * </code><br />
+<code>gtk-doc-am-1.13-r2:  * dev-util/gtk-doc-1.11</code><br />
+<code>gtk-doc-am-1.13-r2:  *     /usr/bin/gtkdoc-rebase</code><br />
+<code>gtk-doc-am-1.13-r2:  * </code><br />
+<code>gtk-doc-am-1.13-r2:  * Package 'dev-util/gtk-doc-am-1.13-r2' NOT merged due to file</code><br />
+<code>gtk-doc-am-1.13-r2:  * collisions. If necessary, refer to your elog messages for the whole</code><br />
+<code>gtk-doc-am-1.13-r2:  * content of the above message.</code></div>
+<p>
+This tends to happen when files move between packages, or if the upstream Gentoo packages in your chroot become inconsistent.</p>
+</div>
+<h3><a name="TOC-Moving-files-between-packages"></a><font size="2">Moving files between packages</font></h3>
+<p><font size="2">Sometimes you have one package (let's call it "pkgsrc" for short) providing a file but want to change things so that a different package ("pkgdst") now provides that file.  If you were to try to upgrade "pkgdst" and have it install the file but the old "pkgsrc" still installs that file, we get into a bad state.</font></p>
+<p><font size="2">To solve this, we leverage package blockers.  At the simplest level, this is an ebuild dependency syntax that allows you to say "do not allow pkg A to be installed whilst pkg B is installed".  But if you combine the blocker syntax with versions, portage is smart enough to detect that it needs to handle these blocking packages specially and do an automatic upgrade for you.</font></p>
+<p><font size="2">Let's use a real world example.  The package sys-fs/e2fsprogs-libs used to install the libuuid library.  But the upstream developers decided to move it to the sys-apps/util-linux package.  Specifically, the e2fsprogs-libs-1.41.7 release was the last one to include the library while util-linux-2.16 was the first one to include it.</font></p>
+<p><font size="2">So in the util-linux-2.16 ebuild, we declare that at runtime, it cannot be installed simultaneously with e2fsprogs-libs-1.41.7 or older.  Since util-linux does not need e2fsprogs-libs to build libuuid, we don't have to declare the blocker in DEPEND.</font></p>
+<div class="sites-codeblock sites-codesnippet-block"><font size="2"><code>RDEPEND="!&lt;sys-libs/e2fsprogs-libs-1.41.7<br />
+    ...other runtime dependency stuff...</code></font></div>
+<p><font size="2">Since e2fsprogs-libs doesn't actually need libuuid itself in order to build, there is no dependency in that ebuild on a newer util-linux version.  However, let's assume it did.  That'd mean in the e2fsprogs-libs-1.41.8 ebuild, we would write:</font></p>
+<div class="sites-codeblock sites-codesnippet-block"><font size="2"><code>RDEPEND="&gt;=sys-apps/util-linux-2.16<br />
+    ...."<br />
+DEPEND="&gt;=sys-apps/util-linux-2.16<br />
+    ...."</code></font></div>
+<p><font size="2">This is enough information for portage to be able to automatically resolve this blocker for you.  It will make sure that when upgrading util-linux and e2fsprogs-libs, it will first upgrade util-linux, then ignore file collisions that it hits with e2fsprogs-libs (since util-linux is taking ownership of those files), then upgrade e2fsprogs-libs.  If there was a bug and e2fsprogs-libs still tried to install libuuid, portage would throw an error because util-linux now owns those files.</font></p>
+<h3><a name="TOC-Testing-of-upstream-packages"></a><font size="2">Testing of upstream packages</font></h3>
+<p><span style="font-size:10pt">For example, you had tried to </span><code style="font-size:10pt">build_packages</code><span style="font-size:10pt"> or </span><code style="font-size:10pt">emerge</code><span style="font-size:10pt"> after pulling in some new/updated upstream packages.</span></p>
+<p><span style="font-size:10pt">To recover from mixing of upstream packages, you can:<br />
+</span></p>
+<ul><li><span style="font-size:10pt">rebuild your chroot (this can be very painful)</span></li>
+<li><span style="font-size:10pt">track down and unmerge the offending packages individually</span></li></ul>
+</div>
+</div>
+<p>To find out which package provides the offending file and unmerge it, try:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="color:rgb(68,68,68);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-weight:normal;line-height:normal"><code>(cros) equery belongs /usr/bin/gtkdoc-rebase<br />
+ * Searching for /usr/bin/gtkdoc-rebase ...<br />
+dev-util/gtk-doc-am-1.18 (/usr/bin/gtkdoc-rebase)
+<br />
+<br />
+(cros) emerge --unmerge gtkdoc</code></div>
+</div>
+<div>
+<p><span style="font-size:10pt">To deal with moving files between packages, you'll want to utilize blockers.</span></p>
+<h4><a name="TOC-Using-chromeos-version.sh"></a><b>Using chromeos-version.sh</b></h4>
+<p>For non upstream packages in chromiumos-overlay (typically under the chromeos-base namespace), we do not always maintain package versions (so ebuilds are named <code>&lt;pkgname&gt;-0.0.1-rN.ebuild</code>). A <code>chromeos-version.sh</code> script can be used to increment the package version in this case (obviating the need to rename the ebuild). The script should be placed under the <code>files/</code> directory of the ebuild and looks like the following:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>#!/bin/sh</code><br />
+<code>#</code><br />
+<code># Copyright (c) 2014 The Chromium OS Authors. All rights reserved.</code><br />
+<code># Use of this source code is governed by a BSD-style license that can be</code><br />
+<code># found in the LICENSE file.</code><br />
+<code>#</code><br />
+<code># This echo statement sets the package base version (without its -r value).</code><br />
+<code># If it is necessary to add a new blocker or version dependency on this ebuild</code><br />
+<code># at the same time as revving the ebuild to a known version value, editing this</code><br />
+<code># version can be useful.</code><br />
+<br />
+<code>echo 0.0.2</code></div>
+<div><br />
+</div>
+<div>Here, "0.0.2" is the version you want to set the package to. The blocker then looks like the following:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>RDEPEND="!&lt;chromeos-base/pkgname-0.0.2"</code></div>
+</div>
+<br />
+<hr />
+<h2><a name="TOC-What-does-build_packages-actually-do-"></a>What does build_packages actually do?</h2>
+<div><code>emerge-arm-generic virtual/target-os</code></div>
+<p>
+Depending on the options you give, other packages may be emerged also (note that many of these options are the default):</p>
+<ul><li><code>--withdev</code> brings in virtual/target-os-dev which is some extra stuff useful for developers like python, the gmerge utility and some X11 utilities.</li>
+<li><code>--withfactory</code> brings in chromeos-base/chromeos-factoryinstall sets things up for the factory (production)</li>
+<li><code>--withtest</code> brings in virtual/target-os-test which includes test infrastructure like gzip, tar, and ssh server and rsync</li>
+<li><code>--withautotest</code> brings in chromeos-base/autotest-all which brings in the python autotests. These are used to test that the built image functions correctly.</li></ul>
+Each of the packages is defined by an 'ebuild' which defines what needs to be done to build that package. The ebuild includes the package's dependencies - both build dependencies (things needed to build the package on the host) and run-time dependencies (things needed at run-time on the target to run any installed software). You can find most of the ebuild packages in the <code>src/third_party/chromiumos-overlay</code> directory. For example, <code>src/third_party/chromiumos-overlay/virtual/target-os/target-os-1.ebuild</code> is the base ebuild containing all the packages in Chrome OS. This ebuild lists all other top-level Chromium OS packages as explicit dependencies.  Thus, all of Chromium OS is built when building this one package.<br />
+<p>
+A small but important detail is that normally <code>build_packages</code> calls <code>parallel_emerge</code>, a script which builds a number of packages in parallel, taking advantage of multi-core machines. This is why you will see a display showing how many packages are left to build, and how many are currently in progress.</p>
+<p>
+If you are using the minilayout then you will not have downloaded all the source for Chrome OS. So when an ebuild is emerged it may need to download some source. For example, see the ebuild in:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>.../src/third_party/chromiumos-overlay/app-arch/</code></div>
+</div>
+<p>It has some SRC_URI lines describing where the source package can be downloaded from. The file used in case of tar may be something like:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>http://gsdview.appspot.com/chromeos-mirror/gentoo/distfiles/tar-1.23.tar.bz2 </code></div>
+</div>
+<p>This file is cached for you after the first download, in, for example, <code>chroot/var/lib/portage/distfiles-target/tar-1.23.tar.bz2</code>. It contains a tarball of the source code. The next time you emerge, portage will untar it from this location. You may also be interested to know that emerge may apply some patches to the source before it starts building - you can find these in a 'files' subdirectory of app-arch/, in the case of tar. If you look at the ebuild you can even see where it patches these in, using epatch.</p>
+<p>If you want to try this out, type:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>(cros) emerge-arm_generic app-arch/tar</code></div>
+</div>
+<p>You should see it download some source, build it and install it into your target build in <code>chroot/build/arm-generic</code>.</p>
+<p>
+So does <code>build_packages</code> build absolutely everything from source? Wouldn't that take forever? Actually, no. It cheats. There are Chromium OS build servers constantly building binary packages for many common platforms. These pre-built packages are available and normally these are used instead. There is a <code>--usepkg</code> (default true) option for <span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace">build_packages</span><span style="font-size:10pt"> that adds some flags to the emerge command to make it use binary packages. To see what happens in this case, type:</span></p>
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>emerge-x86-generic --getbinpkg --usepkg --with-bdeps y app-arch/tar</code></div>
+</div>
+<p>This time you will probably see it download something like:</p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>http://gsdview.appspot.com/chromeos-prebuilt/board/x86-generic/master-02.12.10.182555/packages/app-arch/tar-1.23-r4.tbz2</code></div>
+</div>
+<p>and then simply install the package as before. The C compiler will not be touched. Again the file is cached, this time in something like <code>chroot/build/arm-generic/packages/app-arch/tar-1.23-r4.tbz2</code>. Next time you run the <code>emerge --usepkg</code> it will not need to download anything.</p>
+<h2><a name="TOC-22"></a>
+<hr />
+</h2>
+<h2><a name="TOC-What-is-a-virtual-package-and-how-do-they-work-"></a>What is a virtual package and how do they work?</h2>
+<p>A virtual package is used in portage when any of several different packages can perform the same function. A classic example is "<span style="color:rgb(0,96,0);font-family:monospace">virtual/editor</span>". There are dozens of editors out there (including the most fabulous one of them all: <strike>vim</strike> <strike>emacs</strike> <strike>nano</strike> ed), all of which work just fine.  It's a matter of preference which one to install. If we want to write our own package that depends on an editor being installed, we don't really care which editor is picked. In order to specify this, we specify a runtime dependency on "<code>virtual/editor</code>".</p>
+<h3><a name="TOC-Depending-on-a-virtual-package"></a>Depending on a virtual package</h3>
+<p>Depending on a virtual package is pretty easy: just add a dependency (either <span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span> or <span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span>) on the virtual, like:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>DEPEND="virtual/editor"</code></div>
+</div>
+</div>
+<h3><a name="TOC-Adding-a-virtual"></a>Adding a virtual</h3>
+<div>Depending on a virtual is very easy, but what about if you want to add a new virtual?  First: create an ebuild inside the virtual category with a "-0" version like <code>mything-0.ebuild</code>. This virtual doesn't do too much except to specify dependencies on all of the possible implementations of the virtual.</div>
+<p>It's easiest to look at two samples.</p>
+<p>First, we'll look at <a href="https://chromium.googlesource.com/chromiumos/overlays/portage/+/master/virtual/editor/editor-0.ebuild">virtual/editor from upstream portage</a>.  The important things to notice are that this ebuild doesn't do anything itself--it just specifies dependencies.  Specifically, it says that any of the editors listed are OK by specifying this as the <span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span> (note the <code>||</code> at the beginning):</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>RDEPEND="|| ( app-editors/nano</code></div>
+<div><span style="white-space:pre"> </span><code>app-editors/dav</code></div>
+<div><span style="white-space:pre"> </span><code>app-editors/e3</code></div>
+<div><span style="white-space:pre"> </span><code>app-editors/easyedit</code></div>
+</div>
+<div><code>    ...</code></div>
+<div><span style="white-space:pre"> </span><code>sys-apps/busybox</code></div>
+<div><span style="white-space:pre"> </span><code>sys-apps/ed )"</code></div>
+</div>
+<p>In this case the ebuild doesn't provide any particular way to choose which editor is chosen--it just specifies all of the options. As long as one of those options is installed, <code>virtual/editor</code> will be happy. If none of those are installed and you try to build <span style="color:rgb(0,96,0);font-family:monospace">virtual/editor</span> (or you depend on it), portage will pick one of the editors and install it (by trying them in order).</p>
+<p>A second example is <a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/virtual/linux-sources/">Chromium OS's virtual/linux-sources ebuild</a>. You can see the important bits here:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>IUSE="-kernel_next"</code></div>
+<div><br />
+</div>
+<div><code>RDEPEND="</code></div>
+<div><span style="white-space:pre"> </span><code>kernel_next? ( sys-kernel/chromeos-kernel-next )</code></div>
+<div><span style="white-space:pre"> </span><code>!kernel_next? ( sys-kernel/chromeos-kernel )</code></div>
+<div><code>"</code></div>
+</div>
+</div>
+<p>You can see that the kernel ebuild specifies a way to choose what implementation via <code>USE</code> flags: you can use this to choose between <code>kernel</code> and <code>kernel-next</code>.</p>
+<h3><a name="TOC-Virtuals-and-central-management"></a>Virtuals and central management</h3>
+<p>You should definitely pay attention to the fact that virtuals are centrally-managed. Said another way: if you need to add another implementation of a virtual (like that nifty new <code>vimacs</code> editor you wrote), you need to go to the virtual itself and add it to the list.</p>
+<p>There is one common (at least in Chromium OS) case where it's not be possible to have things centrally managed.  This happens when you've got an implementation of a virtual that's in your private overlay.  We'll imagine a virtual called <code>virtual/chromeos-firmware</code>.  There might be several public implementations of chromeos-firmware, like:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>sys-boot/chromeos-firmware-seaboard</code><br />
+</div>
+<div><code>sys-boot/chromeos-firmware-mario</code><br />
+</div>
+<div><code>sys-boot/chromeos-firmware-alex</code></div>
+</div>
+<p>
+The <code>virtual/chromeos-firmware</code> ebuild would list all of those as options.  ...but what happens when you've got a new project called <i>sisyphus</i> and you've got a private overlay for it (because you don't want to make all the details public yet).  How do you make this work?</p>
+<div>
+<p>You can do this by overriding the virtual in your private overlay.  Your overlay will have a <i>copy</i> of the <code>virtual/chromeos-firmware</code> ebuild.  However, in your copy the <code>RDEPEND</code> will just be <code>sys-boot/chromeos-firmware-sisyphus</code>.  Now you can put the <code>chromeos-firmware-sisyphus</code> ebuild in your overlay and you're all set!</p>
+<h4><a name="TOC-Overriding-virtual-policies"></a>Overriding virtual policies</h4>
+<p>When portage searches for packages to install, it merges all of the packages in all the overlays.  If the same ebuild (category/package-name) is found in multiple places, it comes down to comparing versions such that the highest version wins (and if the same version is found, then overlays will "whiteout" other overlays based on search order).  But that's a lot to keep straight and is fairly fragile.  If the ebuild in the main tree is revbumped to a version higher than is in an overlay, then bad things could start happening.</p>
+<p>The policy we have in place for versioning of our virtuals is as follows:</p>
+<p style="text-align:center">
+</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<th style="text-align:center">overlay</th>
+<th style="text-align:center">version (PV) </th>
+</tr>
+<tr>
+<td>chromiumos-overlay</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td>overlay-&lt;board&gt;</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td>overlay-variant-<span style="font-size:10pt">&lt;board&gt;</span></td>
+<td style="text-align:center">2.5 </td>
+</tr>
+<tr>
+<td>overlay-&lt;board&gt;-private</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td>overlay-variant-&lt;board&gt;-private</td>
+<td style="text-align:center">3.5 </td>
+</tr>
+</tbody>
+</table>
+<h3><a name="TOC-Old-style-virtuals"></a>Old-style virtuals</h3>
+<p>The above description is for new-style virtuals. There's also old-style virtuals. You shouldn't ever add one of those, but you might still run into them.</p>
+<p>Declaring an old-style virtual is easy, but inflexible. In the <code>profiles/</code> subdir, you will find files named <code>virtuals</code>. It is a simple text file with one virtual per line:<br />
+</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code># Add virtual packages for this profile<br />
+virtual/chromeos-bsp            chromeos-base/chromeos-bsp-null<br />
+virtual/chromeos-bsp-dev        chromeos-base/chromeos-bsp-dev-null</code>
+</div>
+<p>The first element is the name of the virtual while the second element is the package that provides that virtual.  This file format has no other options/extensions available to it.</p>
+<h2><a name="TOC-23"></a>
+<hr />
+</h2>
+<h2><a name="TOC-When-does-a-dependency-cause-a-rebuild-"></a>When does a dependency cause a rebuild?</h2>
+<div>Portage's dependency system can be tricky to understand, especially when it comes to what will cause a package to be rebuilt.</div>
+<div><br />
+</div>
+<div><font color="#ff0000">Important: package manager's dependencies are NOT like make dependencies. If package B depends on package A, it does NOT mean B is re-built when A is updated. It only means when B is pulled in, A is also pulled in.</font></div>
+<div><br />
+</div>
+<div>Just to make sure we're on the same page, there are two types of dependencies:</div>
+<div>
+<ul><li><span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span> - A build-time dependency.  If we have a build-time dependency on a package, it means that the package needs to be installed before we can build.  A good example of this is when we need a header file or static library that is installed by another package.</li>
+<li><span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span> - A run-time dependency.  In this case, we need the dependent package to be present at runtime (like a shared library or a program that we call at runtime), but we don't necessarily need it in order to build. </li></ul>
+</div>
+<div>Often times we will have both a <span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span> and an <span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span> on a package.  A good example of this is when we depend on a ".so" file.  We need the shared library's header file at build time and it's ".so" file at runtime.</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>To think about how everything works, we'll pretend we have three ebuilds:</div>
+<div>
+<ul><li><code>staticlib.ebuild</code> - Provides <code>staticlib.h</code> and <code>staticlib.a</code></li>
+<li><code>dynamiclib.ebuild</code> - Provides <code>dynamiclib.h</code> and <code>dynamiclib.so</code></li>
+<li><code>milliondollarapp.ebuild</code> - Uses staticlib (<span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span>) and dynamiclib (both <span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span> and <span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span>)</li></ul>
+<div>OK, so what happens when we make changes and rebuild things.  Here is what happens:</div>
+</div>
+<div>
+<ul><li>If we change / build staticlib, only staticlib will be build.</li>
+<li>If we change / build dynamiclib, dynamiclib will be built and then milliondollarapp (if is is currently installed).</li>
+<li>If we've never built staticlib or dynamiclib and then we change / build milliondollarapp, we'll first build staticlib and dynamiclib and then milliondollarapp.</li>
+<li>If we've already built staticlib and dynamiclib and then we change / build milliondollarapp, we'll just build milliondollarapp.</li>
+<ul><li>This is true <i>even if</i> we've changed (but not built) staticlib or dynamiclib.</li></ul></ul>
+<div>The above is a little weird, but can be understood by remembering that portage is primarily concerned with speed and correctness.  ...but portage is not super concerned with making sure you have the latest version of every last dependency (as long as you have some version it is happy).  Specifically:</div>
+</div>
+<div>
+<ul><li>If a newer version of a static library is available / installed, that doesn't mean you need to rebuild everything that uses that static library.  They all worked fine with the old version of the static library and will keep working just fine.</li>
+<li>If a newer version of a dynamic library is available (but not installed), there's no particular reason to install it if the old one worked fine.</li>
+<li>If you <i>install</i> a newer version of a dynamic library you'd better rebuild all apps that use it.  It's possible that the newer version included a matching header/shared object change (like changing function call from taking an int32 to an int64) and that the only correct thing to do is to rebuild.</li>
+<ul><li>Note that the same argument <i>can't</i> be made if we only <span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span> on dynamiclib.  In that case a build of dynamiclib <i>wouldn't</i> cause a rebuild of milliondollarapp.</li></ul></ul>
+<div><br />
+</div>
+</div>
+<div>Note that the above examples use a static library and dynamic library as an example.  Hopefully it makes sense that we can map other problems to the same concepts.  For instance, if we had an ebuild that took a whole bunch of other build outputs and created a ".zip" file out of them, that would be just like the static library case.</div>
+<h3><a name="TOC-Chrome-OS-specific-notes"></a>Chrome OS specific notes</h3>
+<div>People working on Chrome OS probably find portage's philosophy (that getting the newest version isn't important) a bit frustrating.  If an engineer syncs down new source code and tries to build a new boot image, the engineer would hope that the image has all of the newest versions of all of the packages.</div>
+<div><br />
+</div>
+<div>We'll take chromeos-bootimage as an example.  This build wants to take the binary output of several other ebuilds (the BCT, the firmware, the flattened device tree, etc) and concatenate them together (with some extra processing) to make a single binary image.  Technically, chromeos-bootimage should only <span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span> on all of the other components.  However, that means that if a new version of the BCT is checked in and then we do a build, portage will not decide to re-build chromeos-bootimage.  Ick.</div>
+<div><br />
+</div>
+<div>As a hack, Chrome OS packages often say that they <span style="color:rgb(0,96,0);font-family:monospace">DEPEND</span> and <span style="color:rgb(0,96,0);font-family:monospace">RDEPEND</span> in cases like chromeos-bootimage.  Now if you build all packages, portage will be sure to rebuild chromeos-bootimage if the BCT ever changes.  This is an awkward way to do things but is the current workaround.  The fabled <span style="color:rgb(0,96,0);font-family:monospace">ABIDEPEND</span> feature of portage (doesn't exist yet) is supposed to fix this and make it so we don't need the hack anymore.</div>
+<div><br />
+</div>
+<div>
+<hr />
+</div>
+<div>
+<div>
+<h2><a name="TOC-Where-to-look-for-more-information."></a>
+<div style="display:inline!important">
+<div style="display:inline!important">
+<div style="display:inline!important">
+<div style="display:inline!important">
+<div style="display:inline!important">Where to look for more information.</div>
+</div>
+</div>
+</div>
+</div>
+</h2>
+</div>
+<div>The <a href="http://devmanual.gentoo.org/" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">Gentoo Development Guide</a> provides plenty of detailed information about <a href="http://en.gentoo-wiki.com/wiki/Portage" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">Portage</a>, the <a href="http://www.gentoo.org/" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial" target="_blank">Gentoo</a> build system. This <a href="http://dev.gentoo.org/~tanderson/pms/eapi-2-approved/pms.html" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">package management specification</a> is a good writeup describing Gentoo ebuild system.</div>
+<div><br />
+</div>
+<div>Instructions for building Chromium OS can be found <a href="https://www.chromium.org/chromium-os/developer-guide" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">here</a>.</div>
+<div><br />
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/portage-build-faq">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9fdHPp70a50NL-1z9da3IswMs6fiDomVjubiHdjwyBEaxpxMMk3ieShP62fRW_kGIndXwmi_pLP6PRsXU9BoDGhvFxLxuCc3dgLjbKhPO2HCJUkAk/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

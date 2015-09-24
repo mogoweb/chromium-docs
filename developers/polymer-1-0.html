@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/polymer-1-0","deleted":false,"title":"Polymer 1.0","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/polymer-1-0\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Polymer 1.0","locale":"en","wuid":"wuid:gx:5e00955d9e1b1eb8","revision":12,"path":"/developers/polymer-1-0","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"polymer-1-0","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/config/pagetemplates/devguidepage","title":"DevGuidePage"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Polymer 1.0 - The Chromium Projects" />
+<meta itemprop="name" content="Polymer 1.0 - The Chromium Projects" />
+<meta property="og:title" content="Polymer 1.0 - The Chromium Projects" />
+<meta name="description" content="Migrating to Polymer 1.0" />
+<meta itemprop="description" content="Migrating to Polymer 1.0" />
+<meta id="meta-tag-description" property="og:description" content="Migrating to Polymer 1.0" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Polymer 1.0 - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Polymer 1.0</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Polymer 1.0 has some key differences from previous versions. This document concisely outlines the major changes of interest to Chromium, informed by our work migrating the Settings UI from 0.5 to 1.0. We assume some basic knowledge of Polymer; you've worked through a tutorial or have been using Polymer 0.5.
+<div><br />
+</div>
+<div>
+<div>The Polymer docs lag behind the tree. Refer to the <a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md" target="_blank">PRIMER.md</a> from the repository that corresponds to the version you’re using. For specific information on developing WebUI with Polymer, see <a href="updating-webui-for-material-design.1.html">Updating WebUI for Material Design</a>.</div>
+</div>
+<div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="polymer-1-0.html#TOC-Polymer-1.0-in-broad-strokes"><strong>1 </strong>Polymer 1.0 in broad strokes</a></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-Getting-started"><strong>2 </strong>Getting started</a></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-Achieving-data-binding-nirvana"><strong>3 </strong>Achieving data binding nirvana</a><ol class="goog-toc"><li class="goog-toc"><a href="polymer-1-0.html#TOC-Binding-to-sub-properties"><strong>3.1 </strong>Binding to sub-properties</a></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-Two-way-binding-to-native-elements"><strong>3.2 </strong>Two-way binding to native elements</a></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-Annotated-computed-properties"><strong>3.3 </strong>Annotated computed properties</a></li></ol></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-Migration-pain-points"><strong>4 </strong>Migration pain points</a><ol class="goog-toc"><li class="goog-toc"><a href="polymer-1-0.html#TOC-Templates"><strong>4.1 </strong>Templates</a></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-Properties-and-observers"><strong>4.2 </strong>Properties and observers</a></li><li class="goog-toc"><a href="polymer-1-0.html#TOC-More-on-binding"><strong>4.3 </strong>More on binding</a></li></ol></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Polymer-1.0-in-broad-strokes"></a>Polymer 1.0 in broad strokes</h2>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Structure of the Polymer call has changed somewhat (<a href="https://chromium.googlesource.com/chromium/src/+/fa6a64ed3ffa3fa27c544478782e14d8642f94a5/chrome/browser/resources/settings/checkbox/checkbox.js" target="_blank">example</a>)</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Structure of the HTML has also changed (<a href="https://chromium.googlesource.com/chromium/src/+/9e500768d8abf6ca4f16550be4c2729312d221b2/chrome/browser/resources/settings/checkbox/checkbox.html" target="_blank">example</a>)</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Properties can be configured with keys: type, value, notify, observer, readOnly, reflectToAttribute, computed</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Can <a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md#type-extension" target="_blank">extend native HTML elements</a>, but not custom elements</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Binding expressions are limited to the ! operator and computed properties</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Mixins are now <a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md#behaviors" target="_blank">behaviors</a></span></li>
+<li><span style="font-size:10pt;background-color:transparent">Use </span><a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md#xscope-styling" style="font-size:10pt;background-color:transparent" target="_blank">custom CSS properties and mixins</a><span style="font-size:10pt;background-color:transparent"> instead of /deep/ and ::shadow</span></li></ul>
+</div>
+</div>
+<h2><a name="TOC-Getting-started"></a>Getting started</h2>
+<div>
+<div>By default, 1.0 uses shady DOM. In Chromium we want shadow DOM, so make sure this line runs <b>before</b> the Polymer library is imported:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>Polymer = { dom: 'shadow' };</code></div></div><h2><a name="TOC-Achieving-data-binding-nirvana"></a>Achieving data binding nirvana</h2>
+<div>
+<div>Data binding doesn't work the same as 0.5; it seems a bit complicated at first but is based on simple rules.</div>
+<div><br />
+</div>
+<div>A host element can bind its published properties to the published properties, attributes or text content of elements in its local DOM. How this plays out depends on the <b>binding annotation used</b> and the configuration of the <b>child element’s properties</b>.</div>
+</div>
+<div><br />
+</div>
+<div>
+<div>To bind a host element’s property to a property of a child element, provide the binding annotation to the corresponding attribute: <code>&lt;foo-child their-property="{{myProperty}}"&gt;&lt;/foo-child&gt;</code></div>
+</div>
+<div><br />
+</div>
+<div>
+<div>Polymer maps the attribute name to the corresponding property by converting dash-case to camelCase. <b>Data binding does not set the attribute of the element, only the property</b>, unless $= is used rather than =, in which case the attribute is set instead of the property. (Separately, an element’s published property may be configured with <code>reflectToAttribute</code>, which would cause the element’s attribute to be set to the serialized value of its corresponding property.)</div><div><br /></div><div><b>How configuration and binding annotation affect direction of data binding:</b></div>
+</div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:85px;height:43px"><b>Child property config</b></td>
+<td style="width:101px;height:43px"><b>notify: false<br />
+readOnly: false</b></td>
+<td style="width:99px;height:43px"><b>notify: true*<br />
+readOnly: false</b></td>
+<td style="width:101px;height:43px"><b>notify: true*<br />
+readOnly: true</b></td>
+<td style="width:115px;height:43px"><b>notify: false<br />
+readOnly: true</b></td>
+</tr>
+<tr>
+<td style="width:85px;height:14px"><b>Binding</b></td>
+<td style="width:101px;height:14px"> </td>
+<td style="width:99px;height:14px"> </td>
+<td style="width:101px;height:14px"> </td>
+<td style="width:115px;height:14px"> </td>
+</tr>
+<tr>
+<td style="text-align:left;width:85px;height:26px"><b>{{curly}}</b></td>
+<td style="width:101px;height:26px">host --&gt; child</td>
+<td style="width:99px;height:26px">host &lt;--&gt; child</td>
+<td style="width:101px;height:26px">host &lt;-- child</td>
+<td style="width:115px;height:26px;background:rgb(204,204,204)">no binding</td>
+</tr>
+<tr>
+<td style="width:85px;height:26px"><b>[[square]] </b></td>
+<td style="width:101px;height:26px">host --&gt; child</td>
+<td style="width:99px;height:26px">host --&gt; child</td>
+<td style="width:101px;height:26px;background:rgb(204,204,204)">silly</td>
+<td style="width:115px;height:26px;background:rgb(204,204,204)">no binding</td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div><span style="font-size:10pt;background-color:transparent">So using curly braces only takes effect when the child’s property is notify: true, and setting the child to notify: true only takes effect when the host uses curly braces.</span></div><div>
+<div><br />
+</div>
+<div>
+<div>In other words:</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent"><b>Host-to-child</b> binding requires: <code>readOnly: false</code></span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>Child-to-host</b> binding requires: {{curly}}, <code>notify: true</code>*</span></li>
+<li><span style="font-size:10pt;background-color:transparent"><b>Two-way</b> binding requires all of the above: <code>{{curly}}, notify: true*, readyOnly: false</code></span></li></ul>
+</div>
+</div>
+</div>
+<div style="font-size:13.3333330154419px;font-weight:normal">* <code>notify: true</code>, or, send a <code>&lt;property&gt;-changed</code> event from your element manually.</div><div style="font-size:13.3333330154419px;font-weight:normal"><br /></div><div style="font-size:13.3333330154419px;font-weight:normal">Using curly braces only when two-way binding is desired will make the intention of your code clearer.</div>
+<h3><a name="TOC-Binding-to-sub-properties"></a>Binding to sub-properties</h3>
+<div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal">Sub-properties can be bound just like properties, but changes may not always propagate as expected.</span></div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal"><br />
+</span></div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal">If a path is changed automatically by a binding, the change propagates normally to other bindings to that path (and its sub-paths).</span></div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal"><br />
+</span></div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal">If a path is changed imperatively, you must use <code>notifyPath(pathValue, newValue)</code> for the bindings to update. A convenience function lets you set the new value and notify all in one: <code>this.set(pathValue, newValue)</code>. See also: <a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md#array-mutation">array mutation</a>.</span></div>
+</div>
+<h3><a name="TOC-Two-way-binding-to-native-elements"></a>Two-way binding to native elements</h3>
+<div>
+<div><code>&lt;foo-child some-property="{{parentValue}}"&gt;</code> is basically sugar for:</div>
+<div><code>&lt;foo-child some-property="{{parentValue::some-property-changed}}"&gt;</code></div>
+<div><span style="font-size:10pt;background-color:transparent">which updates <code>parentValue</code> when <code>some-property-changed</code> is called. That event is called automatically if <code>notify: true</code> is set.</span></div>
+<div><br />
+</div>
+<div>So we can achieve <b>two-way</b> binding<span style="font-size:13.3333330154419px;background-color:transparent"> </span><span style="font-size:13.3333330154419px;background-color:transparent">with native elements</span><span style="font-size:10pt;background-color:transparent"> by taking advantage of native events:</span></div>
+<div><br />
+</div>
+<div><span style="font-size:10pt;background-color:transparent">
+<div class="sites-codeblock sites-codesnippet-block"><code>&lt;input type="checkbox" checked="{{hostChecked::change}}"&gt;</code></div>
+</span></div>
+<div><br />
+</div>
+<div>If we leave out the <code>::event</code> syntax, we only get one-way, <b>host-to-child</b> binding for the native element.</div>
+</div>
+<h3><a name="TOC-Annotated-computed-properties"></a>Annotated computed properties</h3>
+<div><span style="font-size:10pt;background-color:transparent">These are function calls which specify at least one property to observe, so the value is recalculated whenever the parameters change. Used for downward data propagation (host-to-child) when the property need not be part of the API.</span></div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>&lt;x-foo bar="{{getBar(abc, xyz)}}"&gt;</code></div>
+</div>
+</div>
+<div><span style="font-size:13.3333330154419px;font-weight:normal"><br /></span></div><div><span style="font-size:13.3333330154419px;font-weight:normal">Note: <code>getBar</code> is only called after <code>abc</code> and <code>xyz.baz</code> have been defined on the host (e.g. using the <code>value</code> key in <code>properties</code>).</span></div>
+<h2><a name="TOC-Migration-pain-points"></a>Migration pain points</h2>
+<h3><a name="TOC-Templates"></a>Templates</h3>
+<div>
+<div>New template helpers:</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">&lt;template repeat&gt; is replaced by &lt;template is="dom-repeat" items="{{...}}"&gt;.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">&lt;template if&gt; is replaced by &lt;template is="x-if" if="{{...}}"&gt; <a href="https://www.polymer-project.org/1.0/docs/devguide/templates.html#dom-if">with different behavior</a>; use with care.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">&lt;template bind&gt; is gone.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">&lt;template is=”autobind”&gt; is replaced by &lt;template is="dom-bind"&gt;.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">&lt;array-selector&gt; is added.</span></li></ul>
+<div>Attributes in your HTML should use hyphen-casing to set the corresponding camelCased published property.</div><div><br /></div><div>Your stylesheets should be imported within <code>&lt;dom-module&gt;</code> but outside of the <code>&lt;template&gt;</code> element using a special Polymer import:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>&lt;link rel="import" type="css" href="style.css"&gt;</code></div>
+</div>
+</div>
+</div>
+<h3><a name="TOC-Properties-and-observers"></a>Properties and observers</h3>
+<div>
+<div>The <code>properties</code> block replaces the <code>publish</code> block. All properties that use data binding should be defined here. Properties can be assigned a type (Boolean, Number, String, Array, Object), or an object which represents their configuration, similar to 0.5. Some changes to the config object:</div>
+<div>
+<ul><li>The <code>type</code> must be specified.</li>
+<li>Observers must be explicitly specified with the <span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px">observer</span> key.</li>
+<li>Setting <code>notify: true</code> will make the property available for data binding.</li>
+<li><code>reflect</code> is now <code>reflectToAttribute</code>.</li></ul>
+</div>
+<div>Property change observers are <b>no longer set up automatically</b>, and their arguments are in <b>reverse order:</b> (newValue, oldValue).</div>
+<div><br />
+</div>
+<div>An observer that should be triggered by multiple properties can be <a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md#multiple-property-observation" target="_blank">specified separately, in your <code>observers</code> array</a>, e.g.: <code>'oddPropsChanged(prop1, prop3, prop5)'</code></div>
+<div><code><br />
+</code></div>
+<div>The observers array can also specify sub-properties to observe. <b>These aren’t real observers; these sub-properties must be changed by Polymer data binding or using </b><code>set(path, value)</code><b> or </b><code>notifyPath(path, value)</code><b> for the observer to be called.</b> (See "Binding to sub-properties" above). [It seems the observer is also called if the path’s root property is set, but this is not documented.]</div>
+<div><br />
+</div>
+<div>The observers block can also specify wildcard paths (<code>'user.*'</code> observes <code>user</code> and all its sub-properties recursively); the same rules apply; in this case the change handler is a record consisting of <code>{ path, value, base }</code> (where <code>base</code> is the value of the path’s root property).</div>
+</div>
+<h3><a name="TOC-More-on-binding"></a>More on binding</h3>
+<div>
+<div>To bind to attributes (instead of properties), use $=. Prefer $= for <a href="https://github.com/Polymer/polymer/blob/master/PRIMER.md#binding-to-native-element-attributes" target="_blank">native element attributes</a>:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>&lt;a href$="{{link}}"&gt;</code></div>
+</div>
+<div><br />
+</div>
+<div>Text bindings must span the entire tag:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-size:13.3333330154419px"><code>Hello &lt;span&gt;{{world}}&lt;/span&gt; // not </code></span><span style="font-size:13.3333330154419px;background-color:transparent"><code>&lt;span&gt;Hello {{world}}&lt;/span&gt;</code></span></div>
+<div></div>
+</div>
+<div><br />
+</div>
+Event handler attributes don't use {{}} anymore:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>&lt;paper-button on-click="handleClick"&gt;</code></div>
+</div>
+<h3><a name="TOC-1"></a><br />
+</h3></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/polymer-1-0">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9_iv1rshN6H8Xn2VNzCRpXjARPgcYBQywXGvh5sxKLogwFtr9RSJKGbyEvY49TKvu4t11OWUZc7w47GviZxYgnf7NJF4NpB8wdLDCEnHn9aJnTY6b/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

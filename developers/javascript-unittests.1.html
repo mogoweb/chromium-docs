@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/javascript-unittests","deleted":false,"title":"JavaScript Unit tests Cookbook for Chrome Remote Desktop","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/javascript-unittests\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"JavaScript Unit tests Cookbook for Chrome Remote Desktop","locale":"en","wuid":"wuid:gx:4e99471236c72848","revision":19,"path":"/developers/javascript-unittests","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"javascript-unittests","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/config/pagetemplates/devguidepage","title":"DevGuidePage"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="JavaScript Unit tests Cookbook for Chrome Remote Desktop - The Chromium Projects" />
+<meta itemprop="name" content="JavaScript Unit tests Cookbook for Chrome Remote Desktop - The Chromium Projects" />
+<meta property="og:title" content="JavaScript Unit tests Cookbook for Chrome Remote Desktop - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>JavaScript Unit tests Cookbook for Chrome Remote Desktop - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1415144023215/developers/javascript-unittests/QUnit.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1415144023215/developers/javascript-unittests/QUnit.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">JavaScript Unit tests Cookbook for Chrome Remote Desktop</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Key-features"><strong>2 </strong>Key features</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-In-a-nut-shell"><strong>3 </strong>In a nut shell</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-How-do-I-..."><strong>4 </strong>How do I ...</a><ol class="goog-toc"><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Create-a-new-test-case-"><strong>4.1 </strong>Create a new test case?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Run-the-test-locally-"><strong>4.2 </strong>Run the test locally?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Organize-my-test-"><strong>4.3 </strong>Organize my test?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Use-asserts-"><strong>4.4 </strong>Use asserts?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Mock-out-existing-components-"><strong>4.5 </strong>Mock out existing components?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-See-the-coverage-number-"><strong>4.6 </strong>See the coverage number?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Debug-a-test-failure-"><strong>4.7 </strong>Debug a test failure?</a></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Run-my-unit-test-in-the-browser-test-"><strong>4.8 </strong>Run my unit test in the browser test?</a></li></ol></li><li class="goog-toc"><a href="javascript-unittests.1.html#TOC-Documentation-and-Design-Docs"><strong>5 </strong>Documentation and Design Docs</a></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<p>This page explains how easy it is write a JavaScript Unit test for chrome remote desktop using QUnit.</p>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"></div>
+<div style="display:block;text-align:left"><a href="javascript-unittests/QUnit.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../_/rsrc/1415144023215/developers/javascript-unittests/QUnit.png" /></a></div>
+<br />
+</div>
+<h2><a name="TOC-Key-features"></a>Key features</h2>
+<div>
+<ol><li>Code coverage report with blanket.js</li>
+<li>Supports mocks, stubs and spies via sinon.js</li>
+<li>Supports DOM testing.</li>
+<li>Supports Async testing. (Promises, setTimeouts, etc)</li>
+<li>Can be run as a browser test on try-bots and built-bots</li>
+<li>Can be run as a standalone page to facilitate fast development</li>
+<li>Can be debugged easily with the Developer console.</li>
+</ol>
+<div>Currently, the QUnit infrastructure is only used by the chrome remote desktop team.  It can be easily extended to other teams if there are interests</div>
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-In-a-nut-shell"></a>In a nut shell</h2>
+<div>The key components are:</div>
+<div>
+<ol><li><b>QUnit </b>is the overall JavaScript unit testing framework.  It provides a test store, asserts and test reporting.</li>
+<li><b>SinonJS </b>provides a mocking/spying/stubbing framework to make writing test easier.</li>
+<li><b>BlanketJS </b>provides code coverage numbers.</li>
+<li><b>QUnitBrowserTestRunner </b>makes it possible to run the unit test in browser tests.</li>
+</ol>
+</div>
+<h2><a name="TOC-How-do-I-..."></a>How do I ...</h2>
+<h3><a name="TOC-Create-a-new-test-case-"></a>Create a new test case?</h3>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<p><span style="font-size:10pt;font-weight:normal;background-color:transparent">1. Create a new file under </span><span style="font-size:10pt;background-color:transparent"><i>src/remoting/unittests</i></span><span style="font-size:10pt;font-weight:normal;background-color:transparent">, the filed should be named as test_&lt;module_name&gt;.js, here is an example for </span><span style="font-size:10pt;background-color:transparent"><i>test_math.js</i></span></p>
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block"><code>// Copyright 2014 The Chromium Authors. All rights reserved.</code><br />
+<code>// Use of this source code is governed by a BSD-style license that can be</code><br />
+<code>// found in the LICENSE file.</code><br />
+<code>(function() {<br />
+</code><br />
+<code>'use strict';<br />
+</code><br />
+<code>QUnit.module('Math.floor', {</code><br />
+<code>  beforeEach: function() {</code><br />
+<code>    ...</code><br />
+<code>  },</code><br />
+<code>  afterEach: function() {</code><br />
+<span style="color:rgb(0,96,0);font-family:monospace"><code>    ...</code><br />
+</span><code>  }</code><br />
+<code>});</code><br />
+<code><br />QUnit.test('should round down a floating point number', function(assert) {</code><br />
+<span><code>    assert.</code></span><span style="color:rgb(0,96,0);font-family:monospace"><code>equal(Math.floor(1.1), 1);</code><br />
+</span><span style="font-size:10pt;background-color:transparent"><code>});</code></span><br />
+<code><br /><span style="font-size:13.3333330154419px;line-height:13.3333320617676px">QUnit.</span>test('should work for negative numbers', function(assert) {</code><br />
+<span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><code>    assert.</code></span><code>equal(Math.floor(-1.1), 2);</code><br />
+<span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:10pt;background-color:transparent"><code>});</code></span><br />
+<code><br />
+})();</code></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<p>2. Add the file to the <b>'remoting_webapp_unittest_cases'</b> variable in <b><i>src/remoting/remoting_webapp_files.gypi</i></b></p>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block">
+<code># The unit test cases for the webapp</code><br />
+<span style="font-size:10pt;background-color:transparent"><code>'remoting_webapp_unittest_cases': [</code><br />
+<code>    ...,</code><br />
+</span><span style="font-size:10pt;background-color:transparent"><code>    'webapp/unittests/test_math.js',</code><br />
+</span><span style="font-size:10pt;background-color:transparent"><code>],</code></span></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<p>3. Update gyp</p>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)"></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block" style="border:1px solid rgb(211,211,211);display:block;padding:0.5em 0px 0.5em 1em;line-height:1;background-color:rgb(239,239,239)"><code style="color:rgb(0,96,0)">gclient runhooks</code></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<p>4. Build the test</p>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div class="sites-codeblock sites-codesnippet-block"><code>ninja -C out/Debug -j500 remoting_webapp_unittests</code></div>
+</blockquote>
+<div>
+<h3><a name="TOC-Run-the-test-locally-"></a>Run the test locally?</h3>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<h4><a name="TOC-For-the-chrome-remote-desktop-unit-test"></a><span style="font-size:10pt;background-color:transparent">For the chrome remote desktop unit test</span></h4>
+<div><span style="font-size:10pt;background-color:transparent">Go to the source directory</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;background-color:transparent">
+<div class="sites-codeblock sites-codesnippet-block"><code>./remoting/tools/run_webapp_unittests.py</code></div>
+</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+What the script does under the hood is to run the test page in <b><i>Chrome</i></b> with the --<b><i>allow-file-access flag</i></b>.  </span><span style="font-size:10pt;background-color:transparent"><i><b>Blanketjs</b></i></span><span style="font-size:10pt;background-color:transparent"> need to load the source file locally to instrument it for code coverage.</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><span style="font-size:10pt;background-color:transparent">If you make changes to your test code, you don't need to rebuild after this.  Simply edit your test code and hit F5</span></div>
+</blockquote>
+<div>
+<h3><a name="TOC-Organize-my-test-"></a>Organize my test?</h3>
+<p style="font-size:13px;font-weight:normal;margin:0px 0px 0px 40px;border:none;padding:0px"><span style="background-color:transparent">There should be one test file per product file, e.g.</span></p>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<p><span style="background-color:transparent">&lt;product_file_name&gt;_unittest.js</span></p>
+</div>
+<div>
+<p>Group each class into its own module, e.g.</p>
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>QUnit.module('class_name')</code></div>
+<p><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">Create one test case per behavior.  The name of a test should be an English statement in the format of method1() should ... '<br />If a method has multiple behavior, you can create multiple test for it.</span></code></p>
+</div>
+<div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><p><code><span style="font-size:13.3333330154419px;line-height:13.3333320617676px">QUnit.</span>module('class_name');</code></p>
+</div>
+<div>
+<p><code>
+test('method1() should have behavior X', function (assert) {</code></p>
+</div>
+<div>
+<p><code>    // test body</code></p>
+</div>
+<div>
+<p><code>});</code></p><div><p><code><span style="font-size:13.3333330154419px;line-height:13.3333320617676px">QUnit.</span>test('method1() should have behavior Y', function (</code><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:13.3333320617676px">assert</span><span style="color:rgb(0,96,0);line-height:1;font-size:10pt">) {</span></p></div><div><p><code>    // test body</code></p></div><div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"></div><div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:13.333332061767578px;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px"><p><code style="color:rgb(0,96,0)">});</code></p></div>
+</div>
+<div><p><code><span style="font-size:13.3333330154419px;line-height:13.3333320617676px">QUnit.</span>test('method2() should have behavior Z', function (</code><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:13.3333320617676px">assert</span><span style="color:rgb(0,96,0);line-height:1;font-size:10pt">) {</span></p>
+</div>
+<div>
+<p><code>    // test body</code></p>
+</div>
+<div>
+<p><code>});</code></p></div><div>
+</div>
+</div>
+</blockquote>
+<div>
+<h3><a name="TOC-Use-asserts-"></a>Use asserts?</h3>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<p><span style="font-size:13px;font-weight:normal;background-color:transparent"><font face="arial, sans-serif">QUnit is assertion-based.  An assert is claim about the behavior of the piece of code under test.</font></span></p>
+</div>
+<div>
+<p><font face="arial, sans-serif" size="2"><span style="font-weight:normal">The most common asserts are:</span></font></p>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<font face="arial, sans-serif" size="2"><code>ok(condition)</code></font></div>
+<font face="arial, sans-serif" size="2"><br />
+</font><font face="arial, sans-serif" size="2">
+<div class="sites-codeblock sites-codesnippet-block">
+<code>equal(expected, actual)</code></div>
+</font>
+<div>
+<p><font face="arial, sans-serif" size="2"><span style="font-weight:normal">See </span></font><span style="font-weight:normal;font-size:small;background-color:transparent"><font face="arial, sans-serif"><a href="http://api.qunitjs.com/category/assert/">http://api.qunitjs.com/category/assert/</a> for the API refere</font>nce.</span></p>
+</div>
+</blockquote>
+<div>
+<h3><a name="TOC-Mock-out-existing-components-"></a>Mock out existing components?</h3>
+</div>
+<br />
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">SinonJS allows you to mock existing components. SinonJS provides three key functionalities<br />
+<br />
+<b>Spying</b> - <b>Track calls to functions</b><br />
+<b> Stubs</b> - Create functions with<b> pre-programmed behaviors</b>.  When wrapped around existing function with a stub, the original function is not called.<br />
+<b> Mocking</b> - Create functions with <b>pre-programmed behaviors</b> and <b>pre-programmed expectations</b><br />
+<br />
+See <a href="http://sinonjs.org/docs/">http://sinonjs.org/docs/</a> for the API reference.</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+</blockquote>
+<div>
+<div>
+<h3><a name="TOC-See-the-coverage-number-"></a>See the coverage number?</h3>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">Click on </span><b style="font-size:10pt;background-color:transparent"><i>Enable Coverage</i></b><span style="font-size:10pt;background-color:transparent"> in the test page<br />
+</span><a href="javascript-unittests/EnableCoverage.png%3Fattredirects=0" imageanchor="1" style="font-size:10pt"><img border="0" src="../_/rsrc/1415144023215/developers/javascript-unittests/EnableCoverage.png" /></a><br />
+<br />
+</li>
+<li><span style="font-size:10pt;background-color:transparent">The number will be reported inline, with <span style="font-size:10pt;background-color:transparent">uncovered lines displayed with a </span><span style="font-size:10pt;background-color:rgb(230,195,199)">red highlighted background.<br />
+<br />
+<a href="javascript-unittests/Coverage.png%3Fattredirects=0" imageanchor="1" style="font-size:10pt"><img border="0" src="../_/rsrc/1415144023215/developers/javascript-unittests/Coverage.png" /></a></span></span></li>
+</ol>
+</div>
+</blockquote>
+<div>
+<h3><a name="TOC-Debug-a-test-failure-"></a>Debug a test failure?<br />
+</h3>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<p><span style="font-size:13px;font-weight:normal;background-color:transparent">Since the QUnit test runs in the browser, you can debug a test failure just like any web page using the developer console.</span></p>
+</div>
+</blockquote>
+<div>
+<h3><a name="TOC-Run-my-unit-test-in-the-browser-test-"></a>Run my unit test in the browser test?</h3>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<span style="background-color:transparent"><font size="2"><span style="font-weight:normal">You can also run the test under the browser test infrastructure</span></font><br />
+<br />
+<font size="2"><span style="font-weight:normal">
+<div class="sites-codeblock sites-codesnippet-block"><code>./out/Debug/browser_tests --gtest_filter=QUnitBrowserTestRunner.Remoting_Webapp_Js_Unittest</code></div>
+</span></font></span>
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<span style="background-color:transparent"><font size="2"><span style="font-weight:normal"><br />If the test fails, it will print out the test case that fails:<br /><br />
+</span></font></span>
+<div class="sites-codeblock sites-codesnippet-block">
+<font size="2"><span style="font-weight:normal"><code>Value of: passed</code></span></font>
+<span style="font-weight:normal"><code><font size="2">  </font><br /><font size="2">Actual: false</font><font color="#000000" face="Arial, Verdana, sans-serif"><br /></font></code></span><font size="2"><span style="font-weight:normal"><code>Expected: true<br /></code></span></font>
+<font size="2"><span style="font-weight:normal"><code>1 test failed:<br /></code></span></font>
+<font size="2"><span style="font-weight:normal"><code>  base.EventSource.removeEventListener.should work even if the listener is removed during |raiseEvent|<br /></code></span></font>
+<font size="2"><span style="font-weight:normal"><code>    1. expected spy to be called twice but was called once<br /></code></span></font>
+<font size="2"><span style="font-weight:normal"><code>    spy(undefined)<br /></code></span></font>
+<font size="2"><span style="font-weight:normal"><code>        at Object.sinon.assert.fail (file:///usr/local/google/home/kelvinp/enlistments/chromium/src/out/Release/remoting/unittests/sinonjs/sinon-qunit.js:36:11)</code></span></font>
+<br /><font size="2"><span style="font-weight:normal"><code>[  FAILED  ] QUnitBrowserTestRunner.Remoting_Webapp_Js_Unittest, where TypeParam =  and GetParam() =  (1340 ms)</code></span></font>
+</div>
+</blockquote>
+<div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<span style="background-color:transparent"><font size="2"><span style="font-weight:normal"><br />The easiest way to debug the failure is to run the failed module manually in chrome and debug from there.</span></font></span>
+</blockquote>
+<h2><a name="TOC-Documentation-and-Design-Docs"></a>Documentation and Design Docs</h2>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:155px;height:25px">Design docs</td>
+<td style="width:798px;height:25px"> <a href="https://docs.google.com/a/chromium.org/document/d/1SOacnv91zFWEqtietEG6ubh3qDfpds3J3e1Bb1Lfgys/edit?usp=sharing">https://docs.google.com/a/chromium.org/document/d/1SOacnv91zFWEqtietEG6ubh3qDfpds3J3e1Bb1Lfgys/edit?usp=sharing</a></td>
+</tr>
+<tr>
+<td style="width:155px;height:14px">QUnit documentation </td>
+<td style="width:798px;height:14px"> <a href="http://api.qunitjs.com/">http://api.qunitjs.com/</a></td>
+</tr>
+<tr>
+<td style="width:155px;height:28px">BlanketJS documentation</td>
+<td style="width:798px;height:28px"> <a href="http://blanketjs.org/">http://blanketjs.org/</a></td>
+</tr>
+<tr>
+<td style="width:155px;height:28px">SinonJS documentation</td>
+<td style="width:798px;height:28px"> <a href="http://sinonjs.org/docs/">http://sinonjs.org/docs/</a></td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div> </div>
+<div><br />
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/javascript-unittests">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9SGz7sXznjIl-Ig9XKnaq9x66BdGVdTt8cebirrBmWW5NEnalya0DtrlUZSXDhRjiAfCsRSkgUWuMydHuZixYPvf-Q2dJ0KPP2N70fjmPIVCCroLP/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

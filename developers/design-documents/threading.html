@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/threading","deleted":false,"title":"Threading","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/threading\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Threading","locale":"en","wuid":"wuid:gx:79c97c9775a1d3e6","revision":48,"path":"/developers/design-documents/threading","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"threading","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Threading - The Chromium Projects" />
+<meta itemprop="name" content="Threading - The Chromium Projects" />
+<meta property="og:title" content="Threading - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Threading - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Threading</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h2><a name="Overview"> </a></h2>
+<div class="sites-embed-align-left-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="threading.html#Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="threading.html#Existing_threads"><strong>2 </strong>Existing threads</a></li><li class="goog-toc"><a href="threading.html#Keeping_the_browser_responsive"><strong>3 </strong>Keeping the browser responsive</a></li><li class="goog-toc"><a href="threading.html#Getting_stuff_to_other_threads"><strong>4 </strong>Getting stuff to other threads</a><ol class="goog-toc"><li class="goog-toc"><a href="threading.html#base_Callback"><strong>4.1 </strong>base::Callback&lt;&gt;, Async APIs, and Currying</a></li><li class="goog-toc"><a href="threading.html#PostTask"><strong>4.2 </strong>PostTask</a></li><li class="goog-toc"><a href="threading.html#base_Bind"><strong>4.3 </strong>base::Bind() and class methods.</a></li><li class="goog-toc"><a href="threading.html#How_arguments_are_handled_by_base_Bind"><strong>4.4 </strong>How arguments are handled by base::Bind().</a></li></ol></li><li class="goog-toc"><a href="threading.html#Callback_cancellation"><strong>5 </strong>Callback cancellation</a><ol class="goog-toc"><li class="goog-toc"><a href="threading.html#Important_notes_about_cancellation"><strong>5.1 </strong>Important notes about cancellation</a></li><li class="goog-toc"><a href="threading.html#base_WeakPtr_and_Cancellation"><strong>5.2 </strong>base::WeakPtr and Cancellation [NOT THREAD SAFE]</a></li><li class="goog-toc"><a href="threading.html#CancelableTaskTracker"><strong>5.3 </strong>CancelableTaskTracker</a></li><li class="goog-toc"><a href="threading.html#Cancelable_request"><strong>5.4 </strong>Cancelable request (DEPRECATED)</a></li></ol></li></ol></div></div></div></div>
+<h2><a name="Overview">Overview </a></h2>
+<p>Chromium is a very multithreaded product. We try to keep the UI as
+responsive as possible, and this means not blocking the UI thread with
+any blocking I/O or other expensive operations. Our approach is to use
+message passing as the way of communicating between threads. We
+discourage locking and threadsafe objects. Instead, objects live on
+only one thread, we pass messages between threads for communication,
+and we use callback interfaces (implemented by message passing) for most
+cross-thread requests.
+</p>
+<p>
+The <code>Thread</code> object is defined in <code>base/threading/thread.h</code>.
+In general you should probably use one of the existing threads
+described below rather than make new ones. We already have a lot of
+threads that are difficult to keep track of. Each thread has a <code>MessageLoop</code> (see <code>base/message_loop/message_loop.h</code>) that processes messages for that thread. You can get the message loop for a thread using the <code>Thread.message_loop()</code> function.  More details about MessageLoop can be found in <a href="https://docs.google.com/document/d/1_pJUHO3f3VyRSQjEhKVvUU7NzCyuTCQshZvbWeQiCXU/edit#">Anatomy of Chromium MessageLoop</a>.</p>
+<p>
+</p>
+<h2><a name="Existing_threads"> Existing threads </a></h2>
+<p>
+Most threads are managed by the <code>BrowserProcess</code> object,
+which acts as the service manager for the main "browser" process. By
+default, everything happens on the UI thread. We have pushed certain classes of processing
+into these other threads. It has getters for the following threads:
+</p>
+<p>
+</p>
+<ul>
+<li> <b style="font-weight:bold">ui_thread:</b> Main thread where the application starts up.</li><li><b>io_thread:</b> This thread is somewhat mis-named. It
+is the dispatcher thread that handles communication between the browser
+process and all the sub-processes. It is also where all resource
+requests (web page loads) are dispatched from (see <a href="multi-process-architecture.html">Multi-process Architecture</a>).
+</li>
+<li> <b>file_thread:</b> A general process thread for file operations. When you want to do blocking filesystem operations
+(for example, requesting an icon for a file type, or writing downloaded
+files to disk), dispatch to this thread.
+</li>
+<li> <b>db_thread:</b> A thread for database
+operations. For example, the cookie service does sqlite operations on
+this thread. Note that the history database doesn't use this thread yet.
+</li>
+<li> <b>safe_browsing_thread</b>
+</li>
+</ul>
+<p>Several components have their own threads:
+</p>
+<p>
+</p>
+<ul>
+<li> <b>History:</b> The history service object has its own
+thread. This might be merged with the db_thread above. However, we need
+to be sure that things happen in the correct order -- for example, that
+cookies are loaded before history since cookies are needed for the
+first load, and history initialization is long and will block it.
+</li>
+<li><b>Proxy service:</b> See <code>net/http/http_proxy_service.cc<span style="font-family:Arial">.</span></code></li>
+<li> <b>Automation proxy:</b> This thread is used to communicate with the UI test program driving the app.</li></ul>
+<div>
+<h2><a name="Keeping_the_browser_responsive">Keeping the browser responsive</a></h2>
+<p>As hinted in the overview, we avoid doing any blocking I/O on the UI thread to keep the UI responsive.  Less apparent is that we also need to avoid blocking I/O on the IO thread.  The reason is that if we block it for an expensive operation, say disk access, then IPC messages don't get processed.  The effect is that the user can't interact with a page.  Note that asynchronous/overlapped IO are fine.</p>
+<p>Another thing to watch out for is to not block threads on one another.  Locks should only be used to swap in a shared data structure that can be accessed on multiple threads.  If one thread updates it based on expensive computation or through disk access, then that slow work should be done without holding on to the lock.  Only when the result is available should the lock be used to swap in the new data.  An example of this is in PluginList::LoadPlugins (src/content/common/plugin_list.cc). If you must use locks, <a href="http://www.chromium.org/developers/lock-and-condition-variable">here</a> are some best practices and pitfalls to avoid.</p>
+<p>In order to write non-blocking code, many APIs in Chromium are asynchronous. Usually this means that they either need to be executed on a particular thread and will return results via a custom delegate interface, or they take a <span style="color:rgb(0,96,0);font-family:monospace">base::Callback&lt;&gt;</span> object that is called when the requested operation is completed.  Executing work on a specific thread is covered in the PostTask section below.</p>
+</div>
+<p>
+</p>
+<h2><a name="Getting_stuff_to_other_threads"> Getting stuff to other threads </a></h2>
+<p>
+</p>
+<h3><a name="base_Callback" style="font-size:16px">base::Callback&lt;&gt;, Async APIs, and Currying</a></h3>
+<div>A <span style="color:rgb(0,96,0);font-family:monospace">base::Callback&lt;&gt;</span> (see the <a href="http://src.chromium.org/viewvc/chrome/trunk/src/base/callback.h?content-type=text%2Fplain">docs in callback.h</a>) is templated class with a Run() method.  It is a generalization of a function pointer and is created by a call to <span style="color:rgb(0,96,0);font-family:monospace">base::Bind</span>.  Async APIs often will take a <span style="color:rgb(0,96,0);font-family:monospace">base::Callback&lt;&gt; </span>as a means to asynchronously return the  results of an operation.  Here is an example of a hypothetical FileRead API.</div>
+<div>
+<pre>void ReadToString(const std::string&amp; filename, const base::Callback&lt;void(const std::string&amp;)&gt;&amp; on_read);
+
+void DisplayString(const std::string&amp; result) {
+  LOG(INFO) &lt;&lt; result;
+}
+
+void SomeFunc(const std::string&amp; file) {
+  ReadToString(file, base::Bind(&amp;DisplayString));
+};</pre>
+</div>
+<div>In the example above, <span style="color:rgb(0,96,0);font-family:monospace">base::Bind </span>takes the function pointer <span style="color:rgb(0,96,0);font-family:monospace">&amp;DisplayString</span> and turns it into a <span style="color:rgb(0,96,0);font-family:monospace">base::Callback&lt;void(const std::string&amp; result)&gt;</span>. The type of the generated <span style="color:rgb(0,96,0);font-family:monospace">base::Callback&lt;&gt;</span> is inferred from the arguments.  Why not just pass the function pointer directly?  The reason is <span style="color:rgb(0,96,0);font-family:monospace">base::Bind </span>allows the caller to adapt function interfaces and/or attach extra context via Currying (<a href="http://en.wikipedia.org/wiki/Currying">http://en.wikipedia.org/wiki/Currying</a>).  For instance, if we had a utility function <span style="color:rgb(0,96,0);font-family:monospace">DisplayStringWithPrefix </span>that took an extra argument with the prefix, we use <span style="color:rgb(0,96,0);font-family:monospace">base::Bind</span> to adapt the interface as follows.</div>
+<div>
+<pre>void DisplayStringWithPrefix(const std::string&amp; prefix, const std::string&amp; result) {
+  LOG(INFO) &lt;&lt; prefix &lt;&lt; result;
+}
+
+void AnotherFunc(const std::string&amp; file) {
+  ReadToString(file, base::Bind(&amp;DisplayStringWithPrefix, "MyPrefix: "));
+};</pre>
+</div>
+<div>This can be used in lieu of creating an adapter functions a small classes that holds <span style="color:rgb(0,96,0);font-family:monospace">prefix</span> as a member variable.  Notice also that the "MyPrefix: " argument is actually a <font color="#274e13" face="'courier new', monospace">const char*</font>, while <font color="#274e13" face="'courier new', monospace">DisplayStringWithPrefix</font> actually wants a <font color="#274e13" face="'courier new', monospace">const std::string&amp;</font>.  Like normal function dispatch, <span style="color:rgb(0,96,0);font-family:monospace">base::Bind</span>, will coerce parameters types if possible.  See "How arguments are handled by base::Bind()" below for more details about argument storage, copying, and special handling of references.</div>
+<div>
+<h3 style="color:rgb(0,0,0)"><a name="PostTask" style="font-size:16px">PostTask</a></h3>
+</div>
+<p>
+The lowest level of dispatching to another thread is to use the <code>MessageLoop.PostTask</code> and <code>MessageLoop.PostDelayedTask</code> (see <code>base/message_loop/message_loop.h</code>). <span style="font-family:courier new,monospace">PostTask</span> schedules a task to be run on a particular thread.  A task is defined as a <span style="color:rgb(0,96,0);font-family:monospace">base::Closure</span>, which is a typedef for a <span style="color:rgb(0,96,0);font-family:monospace">base::Callback&lt;void(void)&gt;</span>. <span style="color:rgb(0,96,0);font-family:monospace">PostDelayedTask</span> schedules a task to be run after a delay on a particular thread. A task is represented by the base::Closure typedef, which contains a Run() function, and is created by calling base::Bind().  To process a task, the message loop eventually calls <span style="color:rgb(0,96,0);font-family:monospace">base::Closure</span>'s Run function, and then drops the reference to the task object.  Both <span style="font-family:courier new,monospace"><font color="#274e13">PostTask</font></span> and <span style="font-family:courier new,monospace"><font color="#274e13">PostDelayedTask</font></span> take a <span style="font-family:courier new,monospace"><font color="#274e13">tracked_objects::Location</font></span> parameter, which is used for lightweight debugging purposes (counts and primitive profiling of pending and completed tasks can be monitored in a debug build via the url about:objects).  Generally the macro value <span style="font-family:courier new,monospace">FROM_HERE</span> is the appropriate value to use in this parameter. </p>
+<p>
+Note that new tasks go on the message loop's queue, and any delay that is specified is subject to the operating system's timer resolutions. This means that under Windows, very small timeouts (under 10ms) will
+likely not be honored (and will be longer).  Using a
+timeout of 0 in PostDelayedTask is equivalent to calling PostTask, and adds no delay beyond queuing delay. PostTask is also used to do something on the current thread "sometime after the
+current processing returns to the message loop."  Such a continuation on the current thread can be used to assure that other time critical tasks are not starved on this thread.</p>
+<p>The following is an example of a creating a task for a function and posting it to another thread (in this example, the file thread):</p>
+<p>
+</p>
+<pre><pre>void WriteToFile(const std::string&amp; filename, const std::string&amp; data);</pre><pre><span style="font-family:courier new,monospace;white-space:normal;border-collapse:collapse"><pre><font face="'courier new', monospace"><span style="white-space:normal">BrowserThread::PostTask(BrowserThread::FILE, FROM_HERE,<br /></span></font>                        base::Bind(&amp;WriteToFile, "foo.txt", "hello world!"))<span style="font-family:courier new,monospace;white-space:normal;border-collapse:collapse">;</span></pre></span></pre></pre>
+<pre><span style="border-collapse:collapse;white-space:normal"><font face="arial, sans-serif">You should always use </font><font face="'courier new', monospace">BrowserThread</font><font face="arial, sans-serif"> to post tasks between threads.  Never cache MessageLoop pointers as it can cause bugs such as the pointers being deleted while you're still holding on to them.  More information can be found <a href="http://www.chromium.org/developers/design-documents/threading/suble-threading-bugs-and-patterns-to-avoid-them">here</a>.</font></span></pre>
+<p>
+</p>
+<h3><a name="base_Bind">base::Bind() and class methods.</a></h3>
+<p>The base::Bind() API also supports invoking class methods as well.  The syntax is very similar to calling <font face="'courier new', monospace">base::Bind()</font> on a function, except the first argument should be the object the method belongs to. By default, the object that <code>PostTask</code> uses must be a thread-safe reference-counted object. Reference
+counting ensures that the object invoked on another thread will stay
+alive until the task completes.</p>
+<p>
+</p>
+<pre>class MyObject : public base::RefCountedThreadSafe&lt;MyObject&gt; {<br /> public:<br />  void DoSomething(const std::string16&amp; name) {<br />    thread_-&gt;message_loop()-&gt;PostTask(<br />       FROM_HERE, base::Bind(&amp;MyObject::DoSomethingOnAnotherThread, this, name));</pre>
+<pre>  }<br /><br />  void DoSomethingOnAnotherThread(const std::string16&amp; name) {<br />    ...<br />  }</pre>
+<pre> private:<br />  // Always good form to make the destructor private so that only RefCountedThreadSafe can access it.<br />  // This avoids bugs with double deletes.<br />  friend class base::RefCountedThreadSafe&lt;MyObject&gt;;<br /><br />  ~MyObject();</pre>
+<pre>  Thread* thread_;<br />};</pre>
+<pre><span style="font-family:Arial,Verdana,sans-serif;white-space:normal">If you have external synchronization structures that can completely insure that an object will always be alive while the task is waiting to execute, you can wrap the object pointer with base::Unretained() when calling base::Bind() to disable the refcounting.  This will also allow using base::Bind() on classes that are not refcounted.  Be careful when doing this!</span></pre>
+<pre><h3 style="font-family:Arial,Verdana,sans-serif;white-space:normal"><a name="How_arguments_are_handled_by_base_Bind">How arguments are handled by base::Bind().</a></h3></pre>
+<p>
+The arguments given to base::Bind() are copied into an internal <font color="#274e13" face="'courier new', monospace">InvokerStorage</font> structure object (defined in <span style="color:rgb(0,96,0);font-family:monospace">base/bind_internal.h</span>). When the function is finally executed, it will see copies of the arguments.  This is important if your target function or method takes a const reference; the reference will be to a copy of the argument.  If you need a reference to the original argument, you can wrap the argument with <font color="#274e13" face="'courier new', monospace">base::ConstRef()</font>.  Use this carefully as it is likely dangerous if target of the reference cannot be guaranteed to live past when the task is executed.  In particular, it is almost <b>never</b> safe to use <span style="color:rgb(39,78,19);font-family:courier new,monospace">base::ConstRef()</span> to a variable on the stack unless you can guarantee the stack frame will not be invalidated until the asynchronous task finishes.</p>
+<p>
+Sometimes, you will want to pass reference-counted objects as parameters (be sure to use <code>RefCountedThreadSafe</code> and not plain <code>RefCounted</code> as the base class for these objects). To ensure that the object lives throughout the entire request, the <code>Closure</code> generated by <code>base::Bind</code> must keep a reference to it. This can be done by passing <code>scoped_refptr</code> as the parameter type, or by wrapping the raw pointer with make_scoped_refptr():</p>
+<p>
+</p>
+<pre>class SomeParamObject : public base::RefCountedThreadSafe&lt;SomeParamObject&gt; {<br /> ...<br />};<br /><br />class MyObject : public base::RefCountedThreadSafe&lt;MyObject&gt; {<br /> public:<br />  void DoSomething() {<br />    scoped_refptr&lt;SomeParamObject&gt; param(new SomeParamObject);<br />    thread_-&gt;message_loop()-&gt;PostTask(FROM_HERE<br />       base::Bind(&amp;MyObject::DoSomethingOnAnotherThread, this, param));
+  }</pre>
+<pre><span style="font-family:Arial,Verdana,sans-serif;white-space:normal"><pre>  void DoSomething2() {<br />    SomeParamObject* param = new SomeParamObject;<br />    thread_-&gt;message_loop()-&gt;PostTask(FROM_HERE<br />       base::Bind(&amp;MyObject::DoSomethingOnAnotherThread, this, 
+                         make_scoped_refptr(param)));</pre><pre>  }<br /></pre></span><pre>  // Note how this takes a raw pointer. The important part is that
+  // base::Bind() was passed a scoped_refptr; using a scoped_refptr
+  // here would result in an extra AddRef()/Release() pair.
+  void DoSomethingOnAnotherThread(SomeParamObject* param) {</pre>    ...<br />  }<br />};</pre>
+<p>If you  want to pass the object without taking a reference on it, wrap the argument with <font color="#274e13" face="'courier new', monospace">base::Unretained()</font>. Again, using this means there are external guarantees on the lifetime of the object, so tread carefully!</p>
+<p>If your object has a non-trivial destructor that needs to run on a specific thread, you can use the following trait. This is needed since timing races could lead to a task completing execution before the code that posted it has unwound the stack.</p>
+<pre><span style="font-family:Arial,Verdana,sans-serif;white-space:normal"><pre>class MyObject : public base::RefCountedThreadSafe&lt;MyObject, BrowserThread::DeleteOnIOThread&gt; {</pre></span></pre>
+<pre><h2 style="font-family:Arial,Verdana,sans-serif;white-space:normal"><a name="Callback_cancellation" style="color:rgb(85,26,139)">Callback cancellation</a></h2></pre>
+<span style="font-size:13px;font-weight:normal">There are 2 major reasons to cancel a task (in the form of a Callback):</span>
+<div>
+<ul><li>You want to do something later on your object, but at the time your callback runs, your object may have been destroyed.</li>
+<li>When input changes (e.g. user input), old tasks become unnecessary. For performance consideration, you should cancel them.</li></ul>
+<div>See following about different approaches for cancellation.</div>
+</div>
+<div>
+<h3><a name="Important_notes_about_cancellation">Important notes about cancellation</a></h3>
+</div>
+It 's dangerous to cancel a task with <b>owned parameters</b>. See following example. (The example uses <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtr</span> for cancellation, but the problem applies to all approaches).
+<div>
+<pre>class MyClass {
+ public:
+  // Owns |p|.
+  void DoSomething(AnotherClass* p) {
+    ...
+  }
+  WeakPtr&lt;MyClass&gt; AsWeakPtr() {
+    return weak_factory_.GetWeakPtr();
+  }
+ private:
+  base::WeakPtrFactory&lt;MyClass&gt; weak_factory_;
+};
+
+...
+Closure cancelable_closure = Bind(&amp;MyClass::DoSomething, object-&gt;AsWeakPtr(), p);
+Callback&lt;void(AnotherClass*)&gt; cancelable_callback = Bind(&amp;MyClass::DoSomething, object-&gt;AsWeakPtr());
+...
+
+void FunctionRunLater(const Closure&amp; cancelable_closure,
+                      const Callback&lt;void(AnotherClass*)&gt;&amp; cancelable_callback) {
+  ...
+  // Leak memory!
+  cancelable_closure.Run();
+  cancelable_callback.Run(p);
+}</pre>
+In <font color="#006000" face="monospace">FunctionRunLater</font>, both <font color="#006000" face="monospace">Run()</font> calls will leak <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">p</span><span style="font-size:10pt"> </span><span style="font-size:10pt">when </span><font color="#006000" face="monospace" style="font-size:10pt">object</font><span style="font-size:10pt"> is already destructed. Using </span><font color="#006000" face="monospace" style="font-size:10pt">scoped_ptr</font><span style="font-size:10pt"> can fix the bug.</span></div>
+<div>
+<pre>class MyClass {<br /> public:
+  void DoSomething(scoped_ptr&lt;AnotherClass&gt; p) {
+    ...
+  }
+  ...
+};</pre>
+</div>
+<h3><a name="base_WeakPtr_and_Cancellation">base::WeakPtr and Cancellation <font color="#ff0000">[NOT THREAD SAFE]</font></a></h3>
+<p>You can use a <code>base::WeakPtr</code> and <code>base::WeakPtrFactory</code> (in <code>base/memory/weak_ptr.h</code>)
+to ensure that any invokes can not outlive the object they are being
+invoked on, without using reference counting. The base::Bind mechanism has special understanding for <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtr</span> that will disable the task's execution if the <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtr</span> has been invalidated. The <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtrFactory </span>object can be used to generate <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtr</span> instances that know about the factory object. When the
+factory is destroyed, all the <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtr</span> will have their internal "invalidated"
+flag set, which will make any tasks bound to them to not dispatch. By putting the factory as a member of the object being dispatched to,
+you can get automatic cancellation.</p>
+<p><b style="font-size:10pt"><font style="background-color:rgb(255,0,0)"> NOTE: </font> </b><span style="font-size:10pt">This only works when the task is posted to the same thread. Currently there is not a general solution that works for tasks posted to other threads. See the next section about </span><span style="color:rgb(0,96,0);font-family:monospace">CancelableTaskTracker</span> for an alternative solution.</p>
+<p>
+</p>
+<pre>class MyObject {<br /> public:<br />  MyObject() : weak_factory_(this) {}<br /><br />  void DoSomething() {<br />    const int kDelayMS = 100;<br />    MessageLoop::current()-&gt;PostDelayedTask(FROM_HERE,<br />        base::Bind(&amp;MyObject::DoSomethingLater, weak_factory_.GetWeakPtr()),<br />        kDelayMS);<br />  }<br /><br />  void DoSomethingLater() {<br />    ...<br />  }<br /><br /> private:<br />  base::WeakPtrFactory&lt;MyObject&gt; weak_factory_;<br />};</pre>
+<p>
+</p>
+<h3><a name="CancelableTaskTracker">CancelableTaskTracker</a></h3>
+While base::WeakPtr is very helpful to cancel a task, it is not thread safe so can not be used to cancel tasks running on another thread. This is sometimes a performance critical requirement. E.g. We need to cancel database lookup task on DB thread when user changes inputed text. In this kind of situation <code>CancelableTaskTracker</code> is appropriate.
+<div><br />
+</div>
+<div>With <span style="color:rgb(0,96,0);font-family:monospace">CancelableTaskTracker</span> you can cancel a single task with returned TaskId. This is another reason to use <span style="color:rgb(0,96,0);font-family:monospace">CancelableTaskTracker</span> instead of <span style="color:rgb(0,96,0);font-family:monospace">base::WeakPtr</span>, even in a single thread context.</div>
+<div>
+<div><br />
+</div>
+<div><code>CancelableTaskTracker</code> has 2 Post methods doing the same thing as the ones in <code>base::TaskRunner</code>, with additional cancellation support. <br />
+<pre>class UserInputHandler : public base::RefCountedThreadSafe&lt;UserInputHandler&gt; {
+  // Runs on UI thread.
+  void OnUserInput(Input input) {
+    CancelPreviousTask();
+    DBResult* result = new DBResult();
+    task_id_ = tracker_-&gt;PostTaskAndReply(
+        BrowserThread::GetMessageLoopProxyForThread(BrowserThread::DB).get(),
+        FROM_HERE,
+        base::Bind(&amp;LookupHistoryOnDBThread, this, input, result),
+        base::Bind(&amp;ShowHistoryOnUIThread, this, base::Owned(result)));
+  }<br />
+  void CancelPreviousTask() {
+    tracker_-&gt;TryCancel(task_id_);
+  }<br />
+  ...
+
+ private:
+  CancelableTaskTracker tracker_;  // Cancels all pending tasks while destruction.
+  CancelableTaskTracker::TaskId task_id_;
+  ...
+};</pre>
+ Since task runs on other threads, there's no guarantee it can be successfully canceled.</div>
+<div>When <code>TryCancel()</code> is called:</div>
+<div>
+<ul><li>If neither task nor reply has started running, both will be canceled.</li>
+<li>If task is already running or has finished running, reply will be canceled.</li>
+<li>If reply is running or has finished running, cancelation is a noop.</li></ul>
+</div>
+<div>Like <code>base::WeakPtrFactory</code>, <code>CancelableTaskTracker</code> will cancel all tasks on destruction.<br />
+<br />
+<div>
+<h3><a name="Cancelable_request"> Cancelable request (DEPRECATED)</a></h3>
+<div>Note. Cancelable request is deprecated. Please do not use it in new code. For canceling tasks running on the same thread, use WeakPtr. For canceling tasks running on a different thread, use CancelableTaskTracker.</div>
+<div><br />
+</div>
+<div>A cancelable request makes it easier to make requests to another
+thread with that thread returning some data to you asynchronously. Like
+the revokable store system, it uses objects that track whether the
+originating object is alive. When the calling object is deleted, the
+request will be canceled to prevent invalid callbacks.</div>
+<p>Like the revokable store system, a user of a cancelable request
+has an object (here, called a "Consumer") that tracks whether it is
+alive and will auto-cancel any outstanding requests on deleting.
+</p>
+<p>
+</p>
+<pre>class MyClass {<br />  void MakeRequest() {<br />    frontend_service-&gt;StartRequest(some_input1, some_input2, this,
+        // Use base::Unretained(this) if this may cause a refcount cycle.
+        base::Bind(&amp;MyClass:RequestComplete, this));  
+  }</pre>
+<pre>  void RequestComplete(int status) {<br />    ...<br />  }<br /><br /> private:<br />  CancelableRequestConsumer consumer_;<br />};</pre>
+<p>Note that the <span style="color:rgb(0,96,0);font-family:monospace">MyClass::RequestComplete</span>, is bounded with base::Unretained(this) here.</p>
+<p>
+The consumer also allows you to associate extra data with a request. Use <code>CancelableRequestConsumer</code> which will allow you to associate arbitrary data with the handle
+returned by the provider service when you invoke the request. The data
+will be automatically destroyed when the request is canceled.
+</p>
+<p>
+A service handling requests inherits from <code>CancelableRequestProvider</code>.
+This object provides methods for canceling in-flight requests, and will
+work with the consumers to make sure everything is cleaned up properly
+on cancel. This frontend service just tracks the request and sends it
+to a backend service on another thread for actual processing. It would
+look like this:
+</p>
+<p>
+</p>
+<pre>class FrontendService : public CancelableRequestProvider {<br />  typedef base::Callback&lt;void(int)&gt; RequestCallbackType;<br /><br />  Handle StartRequest(int some_input1, int some_input2,<br />      CallbackConsumer* consumer,<br />      const RequestCallbackType&amp; callback) {<br />    scoped_refptr&lt; CancelableRequest&lt;FrontendService::RequestCallbackType&gt; &gt;</pre>
+<pre><span>    <span>    </span></span>request(new CancelableRequest(callback));</pre>
+<pre>    AddRequest(request, consumer);<br /><br />    // Send the parameters and the request to the backend thread.<br />    backend_thread_-&gt;PostTask(FROM_HERE,<br />        base::Bind(&amp;BackendService::DoRequest, backend_, request,
+                   some_input1, some_input2), 0);    </pre>
+<pre>    // The handle will have been set by AddRequest.<br />    return request-&gt;handle();<br />  }<br />};</pre>
+<p>The backend service runs on another thread. It does processing and
+forwards the result back to the original caller. It would look like
+this:
+</p>
+<p>
+</p>
+<pre>class BackendService : public base::RefCountedThreadSafe&lt;BackendService&gt; {<br />  void DoRequest(<br />      scoped_refptr&lt; CancelableRequest&lt;FrontendService::RequestCallbackType&gt; &gt;<br />          request,<br />      int some_input1, int some_input2) {<br />    if (request-&gt;canceled())<br />      return;<br /><br />    ... do your processing ...<br /><br />    // Execute ForwardResult() like you would do Run() on the base::Callback&lt;&gt;.<br />    request-&gt;ForwardResult(return_value);<br />  }<br />};</pre>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="http://www.chromium.org/developers/design-documents/threading/suble-threading-bugs-and-patterns-to-avoid-them" dir="ltr">Subtle Threading Bugs and Patterns to avoid them</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/threading">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq99zqFg74qblTyJd8dcpRbGnEn-7rMWITPc2kbYXUUIYrHW4MJXpcJIrXhT2iDlk7nuPiuuvqpYyDWQkYYte8_-gtFCtsjaHuejGlMjxf73OF2Wv_j/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

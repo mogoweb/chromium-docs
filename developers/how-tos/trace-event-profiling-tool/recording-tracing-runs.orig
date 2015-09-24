@@ -1,0 +1,782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/trace-event-profiling-tool","deleted":false,"title":"The Trace Event Profiling Tool (about:tracing)","dir":"ltr"},{"path":"/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs","deleted":false,"title":"Recording Tracing Runs","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos/trace-event-profiling-tool","parentWuid":"wuid:gx:33634d51f825446f","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Recording Tracing Runs","locale":"en","wuid":"wuid:gx:49397a19d526d7ef","revision":55,"path":"/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"recording-tracing-runs","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Recording Tracing Runs - The Chromium Projects" />
+<meta itemprop="name" content="Recording Tracing Runs - The Chromium Projects" />
+<meta property="og:title" content="Recording Tracing Runs - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Recording Tracing Runs - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1433447236959/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%2012.46.58%20PM.png?height=277&amp;width=400" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1433447236959/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%2012.46.58%20PM.png?height=277&amp;width=400" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎<A href="/developers/how-tos/trace-event-profiling-tool" dir="ltr">The Trace Event Profiling Tool (about:tracing)</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Recording Tracing Runs</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><span style="font-size:10pt;background-color:transparent">When diagnosing performance problems it can be valuable to see what
+Chrome is doing "under the hood." One way to get a more detailed view into
+what's going on is to use the about:tracing tool.</span></div>
+<div>
+    See <a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool">Trace
+    Event Profiling Tool (about:tracing)</a> for more information on what
+    this tool does.<br />
+</div>
+<div>
+<br />
+</div>
+<div>
+<br />
+</div>
+<div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:500px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Capture-a-trace-on-Chrome-desktop"><strong>1 </strong>Capture a trace on Chrome desktop</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Capturing-chrome-desktop-startup"><strong>1.1 </strong>Capturing chrome desktop startup</a></li></ol></li><li class="goog-toc"><a href="#TOC-Capture-a-trace-from-Chrome-on-Android-with-DevTools-"><strong>2 </strong>Capture a trace from Chrome on Android (with DevTools)</a></li><li class="goog-toc"><a href="#TOC-Capture-a-trace-from-Chrome-on-Android-on-the-command-line-"><strong>3 </strong>Capture a trace from Chrome on Android (on the command line)</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-1.-Launch-the-browser"><strong>3.1 </strong>1. Launch the browser</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-2.-Optionally-make-a-screen-recording-optional-"><strong>3.1.1 </strong>2. Optionally, make a screen recording (optional)</a></li><li class="goog-toc"><a href="#TOC-3.-Record-a-trace"><strong>3.1.2 </strong>3. Record a trace</a></li><li class="goog-toc"><a href="#TOC-Look-at-the-usage-documentation-for-adb_trace-and-profile_chrome."><strong>3.1.3 </strong>Look at the usage documentation for adb_trace and profile_chrome.</a></li></ol></li><li class="goog-toc"><a href="#TOC-Tracing-options-for-Android"><strong>3.2 </strong>Tracing options for Android</a></li></ol></li><li class="goog-toc"><a href="#TOC-Making-a-Good-Recording"><strong>4 </strong>Making a Good Recording</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Step-by-step:"><strong>4.1 </strong>Step by step:</a></li></ol></li><li class="goog-toc"><a href="#TOC-Tracing-in-Telemetry"><strong>5 </strong>Tracing in Telemetry</a></li><li class="goog-toc"><a href="#TOC-Slide-deck-of-Android-Tracing-tricks"><strong>6 </strong>Slide deck of Android Tracing tricks</a></li></ol></div></div></div></div></div>
+<br />
+</div>
+<div>
+<br />
+</div>
+<h2><a name="TOC-Capture-a-trace-on-Chrome-desktop"></a>Capture a trace on Chrome desktop</h2>
+<span style="font-size:10pt;background-color:transparent">Sometimes Chromium developers will ask for about:tracing results in a
+        bug report to help us understand what's going on. </span><br />
+<br />
+<b style="font-size:10pt;background-color:transparent">Here's an easy
+        step-by-step guide: <a href="http://www.chromium.org/developers/how-tos/submitting-a-performance-bug">
+        Submitting an Awesome Performance Bug</a></b><br />
+<br />
+<div>
+        The TL;DR:
+    </div>
+<div>
+<div>
+<ol>
+<li>Open a new tab and type "<b>about:tracing</b>" in the
+            Omnibox.</li>
+<li>Press "<b>Record</b>". Choose the "<b>Manually select
+            settings</b>" preset, click the <b>All</b> button above the left column and press
+            "<b>Record</b>".</li>
+<li>Switch back to the tab with the content you're debugging and do
+            whatever it is that's slower than it should be (or behaving
+            incorrectly). A few seconds of the bad activity is usually
+            sufficient.</li>
+<li>Switch back to the tracing tab and press "<b>Stop</b>", then
+            "<b>Save</b>"</li>
+<li>(Optional) If this is for a bug report, upload the output file
+            as an attachment to bug. If the file is bigger than 10MB, zip it
+            first (the files compress well, and files bigger than 10MB can be
+            truncated during upload).</li>
+</ol>
+<div><br />
+</div>
+<b style="font-size:10pt;font-style:italic;background-color:transparent">IMPORTANT:</b><i style="font-size:10pt;background-color:transparent"> Before attaching a trace to a bug keep in mind
+            that it will contain the URL and Title of all open tabs, URLs of
+            subresources used by each tab, extension IDs, hardware identifying
+            details, and other similar information that you may not want to
+            make public.</i>
+</div>
+<div><i style="font-size:10pt;background-color:transparent"><br />
+</i></div>
+<h3><a name="TOC-Capturing-chrome-desktop-startup"></a><i style="font-size:10pt;background-color:transparent">Capturing chrome desktop startup</i></h3>
+</div>
+<blockquote>Assuming $CHROME is set to
+    the command you need on your OS to start chrome, the following will record
+    the first 7 seconds of Chrome's lifetime into /tmp/foo.json<br />
+</blockquote>
+<blockquote>
+<blockquote style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:40px;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-width:initial;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
+<blockquote style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:40px;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-width:initial;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
+</blockquote>
+<div class="sites-codeblock sites-codesnippet-block">
+<blockquote style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:40px;border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;border-width:initial;border-color:initial;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><code>$CHROME --trace-startup --trace-startup-file=/tmp/foo.json
+         --trace-startup-duration=7</code><br />
+</blockquote>
+</div>
+<br />
+</blockquote>
+</blockquote>
+<h2><a name="TOC-Capture-a-trace-from-Chrome-on-Android-with-DevTools-"></a>
+Capture a trace from Chrome on Android (with DevTools)</h2>
+<blockquote>
+<div>
+<br />
+</div>
+</blockquote>
+<blockquote>
+<span style="font-size:13.3333330154419px;background-color:transparent">This also works
+    with tracing the system Android WebView.</span><br />
+<div>
+<br />
+</div>
+<span style="font-size:13.3333330154419px;background-color:transparent">1. Connect
+    DevTools to the Android device. Follow instructions
+    here: </span><a href="https://developer.chrome.com/devtools/docs/remote-debugging" style="font-size:13.3333330154419px;background-color:transparent">developer.chrome.com/devtools/docs/remote-debugging</a><br />
+<span style="font-size:13.3333330154419px;background-color:transparent">2. Go
+    to</span><span style="font-size:13.3333330154419px;background-color:transparent"> </span><code>chrome://inspect?tracing</code><span> </span><span>on
+    desktop chrome. Find the app to be traced, and click on the trace link
+    beside the title.<br />
+</span>
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%2012.46.58%20PM.png?attredirects=0" imageanchor="1"><img border="0" height="277" src="http://www.chromium.org/_/rsrc/1433447236959/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%2012.46.58%20PM.png?height=277&amp;width=400" width="400" /></a></div>
+<br />
+<br />
+<span style="font-size:13.3333330154419px;background-color:transparent">3. Click
+    on "Record" at top left.<br />
+</span>
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%2012.47.34%20PM.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1433447276696/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%2012.47.34%20PM.png" /></a></div>
+<br />
+<br />
+<span style="font-size:13.3333330154419px;background-color:transparent">4. Select
+    trace categories. Hit Record, then Stop.</span><br />
+<a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screenshot%20from%202014-10-14%2010-19-11.png?attredirects=0"><img border="0" height="313" src="http://www.chromium.org/_/rsrc/1415811385124/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screenshot%20from%202014-10-14%2010-19-11.png?height=313&amp;width=400" width="400" /></a><br />
+</blockquote>
+<blockquote>
+<blockquote>
+<div>
+<div>
+<br />
+</div>
+</div>
+</blockquote>
+</blockquote>
+<h2><a name="TOC-Capture-a-trace-from-Chrome-on-Android-on-the-command-line-"></a>
+Capture a trace from Chrome on Android (on the command line)</h2>
+<div></div>
+<blockquote>
+<div>
+<br />
+</div>
+<div>
+        You'll need:</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Your device running Chrome on Android </span></li>
+<li><span style="font-size:10pt;background-color:transparent">USB debugging
+        enabled and the device attached.</span></li>
+<li><a href="http://developer.android.com/guide/developing/tools/adb.html" style="font-size:10pt;background-color:transparent">ADB</a><span style="font-size:10pt;background-color:transparent"> </span></li>
+<li><span style="font-size:10pt;background-color:transparent">Linux or Mac desktop. Sorry Windows friends!</span></li></ul>
+You can use `<span style="color:rgb(51,51,51);font-family:Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:13.6px;line-height:1.45;background-color:rgb(247,247,247)">profile_chrome.py`</span><span style="font-size:10pt;background-color:transparent"> from one of two locations:</span></div>
+<div>
+<ol><li>Chromium source checkout: ./src/tools/profile_chrome.py</li>
+<li><span style="font-size:10pt;background-color:transparent">Standalone </span><a href="https://github.com/johnmccutchan/adb_trace" style="font-size:10pt;background-color:transparent">adb_trace</a><span style="font-size:10pt;background-color:transparent"> script from Github. This code is slightly stale and not recommended.</span></li>
+</ol>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span>Follow these steps to record a
+        trace:</span>
+</div>
+<div>
+<br />
+</div>
+</blockquote>
+<blockquote>
+<h4><a name="TOC-1.-Launch-the-browser"></a><b>1. Launch the browser</b></h4>
+<br />
+Run Chrome normally. <br />
+<br />
+Developers, however, may want to launch from the command line:<br />
+<blockquote><span style="color:rgb(0,96,0);font-size:10pt;background-color:transparent"><code>$ build/android/adb_run_content_shell URL   </code></span><span style="color:rgb(153,153,153);font-family:monospace;font-size:13.3333px;background-color:transparent"># run content shell</span></blockquote>
+<blockquote><code>$ clank/bin/adb_run_chrome URL<span>    <span>          </span></span><span style="color:rgb(153,153,153);font-size:13.3333px"># run clank (Googlers only)</span><span><span><span>   <span>    </span></span></span></span></code></blockquote>
+<h4><a name="TOC-2.-Optionally-make-a-screen-recording-optional-"></a><b>
+        2. Optionally, make a screen recording (optional)
+    </b></h4>
+<div>
+<br />
+</div>
+<div>
+<span><code>    $ </code></span><code>build/android/screenshot.py --video
+    </code></div>
+<div><code>    # or </code></div>
+<span style="font-size:13.3333px"><code>    $ </code></span><span style="font-size:10pt;background-color:transparent"><code>adb shell screenrecord /sdcard/recording.mp4 &amp;&amp; adb pull /sdcard/recording.mp4</code></span>
+<div>
+<div>
+<br />
+</div>
+<h4><a name="TOC-3.-Record-a-trace"></a><b>
+            3. Record a trace</b></h4>
+<h4><a name="TOC-Look-at-the-usage-documentation-for-adb_trace-and-profile_chrome."></a><span style="font-family:arial,sans-serif;font-size:13.3333px;font-weight:normal;background-color:transparent">Look at the </span><a href="https://github.com/johnmccutchan/adb_trace/blob/master/README.md#basics" style="font-family:arial,sans-serif;font-size:13.3333px;font-weight:normal;background-color:transparent">usage documentation for adb_trace and profile_chrome</a>.</h4>
+</div>
+<div>
+<blockquote style="font-size:13.3333330154419px;margin:0px 0px 0px 40px;border:none;padding:0px"><font face="arial, sans-serif"><a href="https://github.com/johnmccutchan/adb_trace/blob/master/README.md#basics">
+<div style="display:block;text-align:left"><img border="0" height="215" src="http://www.chromium.org/_/rsrc/1433450232979/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/Screen%20Shot%202015-06-04%20at%201.37.00%20PM.png?height=215&amp;width=320" width="320" /></div>
+<br />
+</a></font></blockquote>
+</div>
+<div>
+<span style="font-family:arial,sans-serif;font-size:10pt;background-color:transparent">For example:</span></div>
+<div><span style="font-family:arial,sans-serif;font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div>
+<div><font color="#38761d">
+<code>    $ </code><span style="background-color:transparent"><code>build/android/adb_profile_chrome
+            --browser build --time 5 --view</code></span>
+</font></div>
+<div>
+<span style="font-size:10pt;font-family:arial,sans-serif;background-color:transparent">
+<br />
+</span>
+</div>
+<div>
+<span style="font-size:10pt;font-family:arial,sans-serif;background-color:transparent">
+<span>    <span>  
+             </span></span>Note: </span><span style="font-size:10pt;font-family:courier new,monospace;background-color:transparent">build</span><span> </span><span>here
+            refers to the version of Chrome you are tracing. Other valid values
+            are </span><span style="font-size:10pt;font-family:courier new,monospace;background-color:transparent">stable,
+            beta</span><span style="font-size:10pt;background-color:transparent"> (see --help for
+            a full list).</span>
+</div>
+<div>
+<br />
+</div>
+</div>
+</blockquote>
+<h3><a name="TOC-Tracing-options-for-Android"></a><span style="font-size:10pt;background-color:transparent">Tracing options for Android</span></h3>
+<blockquote>You can also use additional command line flags to capture more data. For
+    example:</blockquote>
+<blockquote>
+<div>
+<b>1.
+        Systrace: </b><span style="font-size:10pt;background-color:transparent">--systrace
+        gfx,view,input,freq,sched</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+</blockquote>
+<blockquote>
+<blockquote>
+<div>
+<div>
+<span style="font-size:10pt;background-color:transparent"><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-systrace.png?attredirects=0">
+<img border="0" height="109" src="http://www.chromium.org/_/rsrc/1395161450773/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-systrace.png?height=109&amp;width=400" width="400" /></a></span>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<blockquote>
+<br />
+</blockquote>
+</div>
+</blockquote>
+<blockquote>
+<div>
+<span style="font-size:10pt;background-color:transparent"><span>  
+         <span>    </span></span>Captures data about
+        system-level events. Generally useful categories are</span><br />
+</div>
+</blockquote>
+<blockquote>
+<div>
+<blockquote>
+<br />
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+                sched = Kernel scheduling decisions
+            </blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+                freq = CPU core frequency scaling
+            </blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+                gfx = SurfaceFlinger events, Vsync
+            </blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+                view = Android Framework events
+            </blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+                input = Framework input event processing
+            </blockquote>
+<div>
+<br />
+</div>
+</blockquote>
+</div>
+</blockquote>
+<blockquote>
+<div>
+<span>    </span>adb shell atrace --list_categories
+        <span>shows the
+        rest.</span><br />
+</div>
+</blockquote>
+<blockquote>
+<div>
+<blockquote>
+<div style="background-color:transparent;font-size:10pt;font-weight:bold">
+<br />
+</div>
+</blockquote>
+</div>
+</blockquote>
+<blockquote>
+<div>
+<b>2. IPC
+        messages: </b><span style="font-size:10pt;background-color:transparent">--trace-flow</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+</blockquote>
+<blockquote>
+<blockquote>
+<div>
+<div>
+<span style="font-size:10pt;background-color:transparent"><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-flow.png?attredirects=0">
+<img border="0" height="143" src="http://www.chromium.org/_/rsrc/1395161484341/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-flow.png?height=143&amp;width=400" width="400" /></a></span>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><span>  
+         <span>    </span></span>Adds arrows showing IPC
+        message flows, making it easier t</span><span style="font-family:arial,sans-serif;font-size:10pt;background-color:transparent">o
+        see message traffic.</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+</blockquote>
+<blockquote>
+<div>
+<span>3. More
+        trace categories, e.g.:</span> <span style="font-size:10pt;background-color:transparent">--categories=disabled-by-default-cc.debug.scheduler,*</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+</blockquote>
+<blockquote>
+<blockquote>
+<div>
+<div>
+<span style="font-size:10pt;background-color:transparent"><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-scheduler.png?attredirects=0">
+<img border="0" height="106" src="http://www.chromium.org/_/rsrc/1395161512343/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-scheduler.png?height=106&amp;width=400" width="400" /></a></span>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<div>
+<span><span>  
+             <span>    Adding more trace categories
+            makes</span></span> it possible to see events that are
+            normally disabled. This particular example gives information about
+            why the compositor scheduler decided to run a given action. To see
+            the full list of categories, use </span><span style="font-family:courier new,monospace;font-size:13.3333330154419px;background-color:transparent">--categories=list</span><span>.</span>
+</div>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<b>4. Frame viewer
+        data:</b> <span style="font-size:10pt;background-color:transparent">--trace-frame-viewer</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+</blockquote>
+<blockquote>
+<blockquote>
+<div>
+<div>
+<span style="font-size:10pt;background-color:transparent"><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-frame-viewer.png?attredirects=0">
+<img border="0" height="233" src="http://www.chromium.org/_/rsrc/1395161532925/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/tracing-frame-viewer.png?height=233&amp;width=400" width="400" /></a></span>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><span>  
+         <span>    </span></span>Captures rich layer data
+        from the compositor. This is useful for understanding how the DOM
+        affects the compositor's layer tree structure. When viewing traces like
+        this, make sure to launch Chrome (on the desktop) with
+        the </span>--enable-skia-benchmarking command line flag so that
+        all features are available.
+    </div>
+<div>
+<br />
+</div>
+</blockquote>
+<blockquote>
+<b>5. Perf profiling
+    data:</b> <span style="font-size:10pt;background-color:transparent">--perf<br />
+<br />
+<span>    </span></span><span style="font-family:arial,sans-serif;font-size:10pt;background-color:transparent"><a href="https://perf.wiki.kernel.org/index.php/Main_Page">Perf</a>
+    is a sampling profiler which can help you find performance intensive parts
+    of the source code. The </span><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent">--perf</span><span> </span><span>switch
+    runs perf and automatically combines the data with all other enabled event
+    sources.<br />
+<br />
+</span>
+</blockquote>
+<blockquote>
+<blockquote>
+<div>
+<span><a href="http://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/sunburst.png?attredirects=0">
+<img border="0" height="400" src="http://www.chromium.org/_/rsrc/1403881039503/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs/sunburst.png?height=400&amp;width=396" width="396" /></a></span>
+</div>
+</blockquote>
+</blockquote>
+<blockquote>
+<div>
+<span style="font-size:10pt;background-color:transparent"><span><br />
+</span></span>
+</div>
+<div>
+<span style="font-size:10pt;background-color:transparent"><span>  
+         <span>    You can also view the raw recorded perf data
+        using the command line which is printed out by
+        adb_profile_chrome.</span></span></span>
+</div>
+</blockquote>
+<blockquote>
+<br />
+</blockquote>
+<blockquote>
+<div>
+<br />
+</div>
+</blockquote>
+<div></div>
+<h2><a name="TOC-Making-a-Good-Recording"></a>Making a Good Recording</h2>
+<div>
+<ul>
+<li>Keep the recording to a max of 10 seconds</li>
+<li>Try to keep to 1 activity per recording. If you see two slowdowns,
+        do one recording each. Or leave a second long pause between each.</li>
+<li>Pause and leave the computer completely idle for 2 seconds before
+        and after demonstrating the slowdown. This helps make the slow part
+        obvious in the recording.</li>
+</ul>
+<h3><a name="TOC-Step-by-step:"></a>Step by step:</h3>
+</div>
+<div>
+<br />
+</div>
+<div>
+<ol>
+<li><span style="font-size:10pt;background-color:transparent">Start with only the tab you’re investigating and about:tracing open in
+        a fresh browser session (see below for other methods of figuring out
+        which tab is which if you need multiple).</span></li>
+<li>
+<span>
+        Set up the tab for investigation to right before the point where the
+        problem will occur (e.g. right before an animation is going to be
+        triggered, or right before part of the page that scrolls
+        slowly)</span></li>
+<li>
+<span>
+        Start a tracing run in the about:tracing tab</span></li>
+<li>
+<span>
+        Switch to the tab under investigation</span></li>
+<li>
+<span>
+        Pause for a couple seconds to record empty space on the timeline (makes
+        finding it later easier)</span></li>
+<li>
+<span>
+        Perform the action to trigger the bad performance behavior (e.g. start
+        the animation or scroll the page). Keeping the recorded activity under
+        10 seconds is a good idea.</span></li>
+<li>
+<span>
+        Pause again</span></li>
+<li>
+<span>
+        Switch back to the about:tracing tab and stop the
+        recording.</span></li>
+</ol>
+<span><br />
+</span>
+</div>
+<h2><a name="TOC-Tracing-in-Telemetry"></a><span>Tracing in
+Telemetry</span></h2>
+<div>
+</div>
+<div>
+<span>For more repeatable trace recordings you
+    may want to consider using <a href="http://www.chromium.org/developers/telemetry" style="font-family:Arial">Telemetry</a> to automate the process. In particular
+    the --profiler=trace, --profiler=v8 and --profiler=android-systrace flags
+    will save a trace for each tested page.</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<div>
+<span><br />
+</span>
+</div>
+<h2><a name="TOC-Slide-deck-of-Android-Tracing-tricks"></a><span>Slide deck of Android Tracing
+tricks</span></h2>
+<div>
+<span>This information is already detailed
+    above.</span>
+</div>
+<div>
+<div>
+<span><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:555px;"><div class="sites-embed-object-title" style="display:none;">Google Presentation</div><div class="sites-embed-content sites-embed-type-punch"><iframe src="http://docs.google.com/presentation/d/1poMF7AEu5vd21BzUTIYfm2SXurEMlv2OVDlzs6JNRfg/embed?hl=en&amp;size=m" width="555" height="445" title="Google Presentation" frameborder="0" id="157509731" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></div></div></span>
+</div>
+<span><br />
+</span>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9UoeTAv9A8S7V9N3FUK6DUTTbW8w87CjcbCjYA6DT1Qjm6s4GbH5hrFykOgPBbWmRGddVM2F6K8C59Mv66JA_xsdHAssB1Nhn8XHMeCQK1xLLKVUM/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

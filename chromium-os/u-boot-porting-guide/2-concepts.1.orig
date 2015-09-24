@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/u-boot-porting-guide","deleted":false,"title":"Firmware (U-Boot) Overview and Porting Guide","dir":"ltr"},{"path":"/chromium-os/u-boot-porting-guide/2-concepts","deleted":false,"title":"2. Concepts","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/u-boot-porting-guide/2-concepts\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/u-boot-porting-guide","parentWuid":"wuid:gx:71af0edaddc05358","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"2. Concepts","locale":"en","wuid":"wuid:gx:151eaa800e924a67","revision":41,"path":"/chromium-os/u-boot-porting-guide/2-concepts","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"2-concepts","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="2. Concepts - The Chromium Projects" />
+<meta itemprop="name" content="2. Concepts - The Chromium Projects" />
+<meta property="og:title" content="2. Concepts - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>2. Concepts - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1365705299204/chromium-os/u-boot-porting-guide/2-concepts/Verified%20Boot%20Flow.png?width=100%25" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1365705299204/chromium-os/u-boot-porting-guide/2-concepts/Verified%20Boot%20Flow.png?width=100%25" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/u-boot-porting-guide" dir="ltr">Firmware (U-Boot) Overview and Porting Guide</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">2. Concepts</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<p><br />
+</p>
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Firmware-Image"><strong>1 </strong>Firmware Image</a></li><li class="goog-toc"><a href="#TOC-Bundled-Firmware"><strong>2 </strong>Bundled Firmware</a></li><li class="goog-toc"><a href="#TOC-Firmware-Development"><strong>3 </strong>Firmware Development</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-USB-firmware-download"><strong>3.1 </strong>USB firmware download</a></li><li class="goog-toc"><a href="#TOC-Device-Firmware-Update-DFU-"><strong>3.2 </strong>Device Firmware Update (DFU)</a></li></ol></li><li class="goog-toc"><a href="#TOC-Verified-Boot"><strong>4 </strong>Verified Boot</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Startup-Initialization"><strong>4.1 </strong>Startup Initialization</a></li><li class="goog-toc"><a href="#TOC-U-Boot-and-Embedded-Controller"><strong>4.2 </strong>U-Boot and Embedded Controller</a></li><li class="goog-toc"><a href="#TOC-Recovery-Mode"><strong>4.3 </strong>Recovery Mode</a></li><li class="goog-toc"><a href="#TOC-Developer-Mode"><strong>4.4 </strong>Developer Mode</a></li></ol></li><li class="goog-toc"><a href="#TOC-Keys-and-Signing"><strong>5 </strong>Keys and Signing</a></li><li class="goog-toc"><a href="#TOC-Secondary-Program-Loader-SPL-"><strong>6 </strong>Secondary Program Loader (SPL)</a></li><li class="goog-toc"><a href="#TOC-Flat-Device-Tree"><strong>7 </strong>Flat Device Tree</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-How-Is-the-Device-Tree-Used-"><strong>7.1 </strong>How Is the Device Tree Used?</a></li><li class="goog-toc"><a href="#TOC-Sample-Device-Tree-Nodes"><strong>7.2 </strong>Sample Device Tree Nodes</a></li><li class="goog-toc"><a href="#TOC-Include-Files-for-Flashmap-and-Other-Config-Information"><strong>7.3 </strong>Include Files for Flashmap and Other Config Information</a></li><li class="goog-toc"><a href="#TOC-Additional-Resources"><strong>7.4 </strong>Additional Resources</a></li></ol></li><li class="goog-toc"><a href="#TOC-Environment"><strong>8 </strong>Environment</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Firmware-Image"></a>Firmware Image</h2>
+</div>
+<p>The Chrome OS firmware image has two main sections: Read-Only (RO) and Read-Write (RW). The RO firmware is set at the factory and cannot be updated after manufacturing. The RW firmware can be updated during Chrome OS auto-update (AU).</p>
+<p>If a problem is found in RO firmware, Google creates an update and places it in the RW firmware. During the boot process, the RO firmware checks whether there is an update in the RW section and, if so, jumps to the RW update to execute the new boot code.</p>
+<p>The RO firmware contains the following code:</p>
+<ul><li>U-Boot, including the device tree for this system</li>
+<li>On x86 systems: coreboot</li>
+<li>Google Binary Block (GBB), which contains the following:</li>
+<ul><li>Recovery screen images</li>
+<li>Public keys needed to verify the RW firmware</li>
+</ul>
+<li><span style="font-size:10pt">Firmware ID (a string with the version number and device type)</span></li></ul>
+<div>The RW firmware contains two sections:  A and B. Each section contains the following:</div>
+<div>
+<ul><li>U-Boot, including the device tree for this system (identical to the U-Boot images in RO firmware)</li>
+<li>VBlock, which contains the signatures used to verify the kernel before loading and running it</li>
+<li>Firmware ID</li>
+<li>Embedded Controller image</li>
+<li>Fmap, a data structure that describes the layout and contents of the SPI Flash. This structure is required by the Flashrom tool.</li></ul>
+</div>
+<div style="color:rgb(80,0,80);font-family:arial,sans-serif">On an ARM Samsung Chromebook (Snow), the firmware is 4MB: 2 MB for RO firmware and 2MB for RW firmware. On a Chromebook Pixel (Link), the firmware <span style="color:rgb(34,34,34);font-size:10pt">is 8 MB: 2 MB for coreboot and RO firmware (protected by the</span></div>
+<span style="color:rgb(34,34,34);font-family:arial,sans-serif">write-protect line), 2 MB for Intel ME firmware (protected by </span><span style="color:rgb(34,34,34);font-family:arial,sans-serif">Intel-specific mechanisms), and </span><span style="color:rgb(80,0,80);font-family:arial,sans-serif;font-size:10pt">4 MB for RW firmware.</span>
+<h2><a name="TOC-Bundled-Firmware"></a>Bundled Firmware</h2>
+<div>The <font face="courier new, monospace">cros_bundle_firmware</font> tool is a Python script that uses a set of supplied binary files and a description of the flashmap layout and creates a firmware image. When you run the <font face="courier new, monospace">emerge</font><font face="arial, sans-serif"> Chrome OS bootimage command, the cros_bundle_firmware tool runs twice:  once to create a verified boot image and a second time to create a nonverified boot image for development.</font></div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<div>
+<h2><a name="TOC-Firmware-Development"></a>Firmware Development</h2>
+<p>This section provides practical tips on firmware development.</p>
+<h3><a name="TOC-USB-firmware-download"></a>USB firmware download</h3>
+<p>Commonly, APs support booting from many devices--for example, eMMC, an SD card, serial device.  The AP can also act as a USB device to which a connected PC can send the boot software. This technique is widely used in Chrome OS for firmware development and test, since it allows the system to boot with the new software in a few seconds.</p>
+<p>Following a special procedure, you can reset the AP in a special mode where it waits for the boot software to be sent over USB.  x86 platforms typically do not implement this feature, but it is commonly found on ARM processors. If available, this is the primary method of loading firmware in the development phase.  Typical steps for loading firmware using a USB connection are as follows:</p>
+<ol><li>Connect your workstation via USB to the Chrome OS AP.</li>
+<li>Press the magic button or special key combination on the PC to start the process. (This step can be automated on some platforms.)</li>
+<li>The AP waits for the boot loader to be sent over the USB connection.</li>
+<li>Type the command <font face="courier new, monospace">cros_write_firmware -w usb</font> to send the firmware over the wire.</li>
+<li>The AP boots using the new software.</li>
+</ol>
+<h3><a name="TOC-Device-Firmware-Update-DFU-"></a>Device Firmware Update (DFU)</h3>
+<div>Device Firmware Update (DFU) is a new feature in U-Boot that allows you to send new firmware to a running U-Boot device over a USB cable. To enable this feature, specify the following config options for the U-Boot driver:</div>
+<div>
+<ul><li><font face="courier new, monospace">CONFIG_CMD_DFU</font> - turns on the command so that you can type it</li>
+<li><font face="courier new, monospace">CONFIG_DFU_FUNCTION</font> - turns on the ability to accept the new firmware</li></ul>
+<div>This feature allows Chromebooks to update themselves while the Chromebook is paused at a U-Boot prompt. It is also useful when the AP does not support USB firmware download.</div>
+</div>
+</div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<h2><a name="TOC-Verified-Boot"></a>Verified Boot</h2>
+<p>The first few steps are slightly different, depending on whether the system has an ARM processor or an x86 processor.</p>
+<h3><a name="TOC-Startup-Initialization"></a>Startup Initialization</h3>
+<p>On ARM systems:</p>
+<ol><li><span style="font-size:10pt">An ARM system may have a chip-specific initialization routine.  For example, The Samsung Exynos processor has a BL1 signed image.</span></li>
+<li><span style="font-size:10pt">The Secondary Program Loaderder (SPL) sets up memory, loads U-Boot into memory, and runs it.</span></li>
+</ol>
+<p>On x86 systems:</p>
+<ol><li><span style="font-size:10pt">The system runs Coreboot.  This program functions similarly to the SPL on ARM systems. </span></li>
+<li><span style="font-size:10pt">Coreboot sets up memory, then loads and runs U-Boot.</span></li>
+</ol>
+<h3><a name="TOC-U-Boot-and-Embedded-Controller"></a>U-Boot and Embedded Controller</h3>
+<div>
+<p><span style="font-size:10pt">U-Boot performs the device initialization for the system, as follows:</span></p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li><span style="background-color:transparent;font-size:10pt">U-Boot calls the VbInit() function to start verified boot.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">In the simplest case, the boot consists of one step:  running the code located in the Read-Only (RO) section of the firmware. During this process, U-Boot checks whether there are any updates in the Read/Write (RW) section of the firmware.  If updates are present, U-Boot loads and runs RW firmware.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">The main firmware performs a software sync that checks whether the EC code needs to be updated. If so, the update is sent over I2C, SPI, or LPC to the EC.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">Once the EC code has been sync’ed, execution jumps to the EC code in the RW firmware.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">The kernel is loaded and verified.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">The correct device tree file is selected for the system (ARM only).</span></li>
+<li><span style="background-color:transparent;font-size:10pt">In addition, the kernel contains command line information that U-Boot picks up and passes to the kernel for use during boot. The command line tells the kernel which device to boot from (eMMC, SD, USB) and also contains the Verity parameters that are passed in to the kernel at boot time.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">The system boots the kernel, which uses the root hash (contained in the Verity parameters) to open the root filesystem.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">The system initializes user space and runs X and Chrome.</span></li>
+</ol>
+<h3><a name="TOC-1"></a>
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/chromium-os/u-boot-porting-guide/2-concepts/Verified%20Boot%20Flow.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1365705299204/chromium-os/u-boot-porting-guide/2-concepts/Verified%20Boot%20Flow.png?width=100%25" width="100%" /></a></div>
+<br />
+</h3>
+<h3><a name="TOC-Recovery-Mode"></a>Recovery Mode</h3>
+<p>If the system encounters an error during verified boot--for example, the RW image doesn’t verify, the kernel is corrupt, or the signatures don’t match, the system enters recovery mode. The SPI Flash has a minimum version of the firmware and kernel that be used to boot the system when normal boot mode fails. In recovery mode, the system remains in the RO portion of the firmware and displays a screen that asks the user to insert recovery media to recover the system. The kernel and the root disk used for recovery are signed by Google.</p>
+<h3><a name="TOC-Developer-Mode"></a>Developer Mode</h3>
+<p>A user can also select developer mode, which allows an unsigned kernel to be loaded.  In this mode, verified boot is turned off so that the user can load experimental kernels for testing purposes. </p>
+<h2><a name="TOC-Keys-and-Signing"></a>Keys and Signing</h2>
+<p>Cryptographic keys are inserted into the boot software by the signer program. The signer inserts three types of keys:</p>
+<ul><li><span style="background-color:transparent;font-size:10pt">Developer keys - public keys that anyone can use</span></li>
+<li><span style="background-color:transparent;font-size:10pt">Mass production (MP) keys - secret keys </span></li>
+<li><span style="background-color:transparent;font-size:10pt">Recovery keys - also secret and used by Google in recovery software images</span></li></ul>
+<b style="background-color:transparent;font-size:10pt"><font size="2"><span style="font-weight:normal">Code for the signer is found in the src/platform/vboot_reference directory.</span></font></b><br />
+<p>During verified boot, the following regions hold signing or hash data:</p>
+<ul><li><span style="font-size:10pt">GBB (Google Binary Block) - contains a public key</span></li>
+<li><span style="font-size:10pt">VBlock - contains a public key for the kernel and a key for the firmware</span></li>
+<li><span style="font-size:10pt">Kernel command line - contains the verity hash</span></li></ul>
+<h2><a name="TOC-Secondary-Program-Loader-SPL-"></a>Secondary Program Loader (SPL)</h2>
+<div>The secondary program loader (SPL) is used on ARM systems only. On x86 systems, this bootstrapping function is performed by coreboot. Not all ARM platforms use SPL, but its usage is becoming increasingly common.</div>
+<p>SPL is a small program (about 10 to 30 Kbytes) that loads into the internal SRAM of the AP. This program is loaded when the system starts to perform the following initialization functions:</p>
+<div>
+<ul><li>Set up basic clocks and power</li>
+<li>Start memory running</li>
+<li>Load U-Boot into SDRAM</li>
+<li>Switch control to U-Boot code</li></ul>
+<div>The config variable <font face="courier new, monospace"><code>CONFIG_SPL_BUILD</code></font> is used in Makefiles and source files to indicate whether a particular element should be included in the initial SPL build. This approach enables the same set of source files to be used for both the SPL build and the U-Boot build. The initial SPL setup should perform the bare minimum needed before U-Boot takes control.  For example, you would not need to turn on the clock for the LCD or enable USB because those peripherals are not used before U-Boot executes.</div>
+</div>
+<p>For more information on SPL and other config options for SPL, see the <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=doc/README.SPL;h=4e1cb28800411e0c7f626970bec2326baf45d49c;hb=HEAD" target="_blank">SPL README file</a>.</p>
+<h2><a name="TOC-Flat-Device-Tree"></a>Flat Device Tree</h2>
+<div><b style="font-weight:normal"><font face="arial, sans-serif" size="2"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The </span><span style="background-color:transparent;font-style:italic;vertical-align:baseline;white-space:pre-wrap">flat device tree </span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">(FDT), or simply </span><span style="background-color:transparent;font-style:italic;vertical-align:baseline;white-space:pre-wrap">device tree</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">, is a simple text file that contains a data structure describing the hardware components of the system and how they are connected. This file is compiled into binary format and passed to the operating system at boot time. The device tree consists of a list of </span><span style="background-color:transparent;font-style:italic;vertical-align:baseline;white-space:pre-wrap">nodes</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">, each of which represents a device or a bus in the system. These nodes are grouped hierarchically. </span></font></b><b style="font-weight:normal"><font face="arial, sans-serif" size="2"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">(The tree is "flattened" when it is compiled.) </span></font></b><b style="font-weight:normal"><font face="arial, sans-serif" size="2"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The top-level nodes contain subnodes that are attached to them in some way.  For example, a top-level node could be a peripheral device attached to a bus, and the subnodes would be the devices connected to that bus. </span></font></b></div>
+<p><b style="font-weight:normal"><font size="2"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font face="arial, sans-serif">The device tree file is located in the </font><font face="courier new, monospace">board/<i>vendor_name</i>/dts</font><font face="arial, sans-serif"> directory.</font></span></font></b></p>
+<h3><a name="TOC-How-Is-the-Device-Tree-Used-"></a>How Is the Device Tree Used?</h3>
+<div><b style="font-weight:normal"><font size="2"><span style="font-family:arial,sans-serif;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Both the kernel and U-Boot use the device tree as the basic <i>description</i> of the hardware components and layout.  In addition, for Chrome OS, the device tree provides configuration information.  The following three nodes provide configuration information to Chrome OS:</span><br />
+<br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font face="courier new, monospace">config</font><font face="arial, sans-serif"> - general configuration information</font></span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font face="courier new, monospace">chromeos-config</font></span><span style="font-family:arial,sans-serif;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> - includes information about verified boot</span><br />
+<span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font face="courier new, monospace">flash</font></span><span style="font-family:arial,sans-serif;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">  - specifies the flashmap</span><br />
+<br />
+</font></b>
+<h3><a name="TOC-Sample-Device-Tree-Nodes"></a>Sample Device Tree Nodes</h3>
+<div>Here is an example of nodes for the SPI flash and EC, taken from the device tree for the Exynos5250 board:<br />
+<br />
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>spi@131b00</code><code>00 {</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>  spi-max-frequency = &lt;1000000&gt;;</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>  spi-deactivate-delay = &lt;100&gt;;</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>  cros-ec@0 {</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    reg = &lt;0&gt;;</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    compatible = "google,cros-ec";</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    spi-max-frequency = &lt;5000000&gt;;</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    ec-interrupt = &lt;&amp;gpio 174 1&gt;;</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    optimise-flash-write;</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    status = "disabled";</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>  };</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>};</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><br />
+<p><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt">The main node in the block delimited by this excerpt is the SPI peripheral (labeled </span><font face="courier new, monospace" style="font-size:10pt">spi@131b0000</font><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt">)</span><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt">. The braces following this node contain a list of property/value pairs for the node, and the subnode, which is an additional device attached to the first device.  The </span><font face="courier new, monospace" style="font-size:10pt">spi@131b0000</font><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt"> contains one subnode, the </span><font face="courier new, monospace" style="font-size:10pt">cros-ec</font><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt">, which has its own set of property/value pairs that describe its parameters.</span></p>
+</div>
+</div>
+<h3><a name="TOC-Include-Files-for-Flashmap-and-Other-Config-Information"></a>Include Files for Flashmap and Other Config Information</h3>
+</div>
+<div><b style="font-weight:normal"><font size="2"><span style="font-family:arial,sans-serif;background-color:transparent;font-style:italic;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></font></b></div>
+<div>
+<div style="font-size:small;white-space:pre"><font face="arial, sans-serif">The following include files are found in</font><span style="font-family:monospace"> board/samsung/dts/exynos5250-snow.dts:</span></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><br />
+</div>
+<div style="font-family:monospace;font-size:small;white-space:pre">/dts-v1/;</div>
+<div style="font-size:small;white-space:pre"><span style="font-family:monospace">    /include/ "exynos5250.dtsi" </span><font face="arial, sans-serif">- SoC file; includes nodes for all of the peripherals in the SoC</font></div>
+<div style="font-size:small;white-space:pre"><span style="font-family:monospace">    /include/ "flashmap-exynos-ro.dtsi" </span><font face="arial, sans-serif">- layout of the read-only portion of the flashmap*</font></div>
+<div style="font-size:small;white-space:pre"><span style="font-family:monospace">    /include/ "flashmap-4mb-rw.dtsi" </span><font face="arial, sans-serif">- layout of the 4 MB read/write portion of the flashmap*</font></div>
+<div style="font-size:small;white-space:pre"><span style="font-family:monospace">    /include/ "chromeos-exynos.dtsi"</span><font face="arial, sans-serif"> - exynos-specific configuration for Chrome OS</font></div>
+<div style="font-size:small;white-space:pre"><span style="font-family:monospace">    /include/ "cros5250-common.dtsi" </span><font face="arial, sans-serif">- common board information for Chrome OS-based exynos5250 boards</font></div>
+<p><font face="arial, sans-serif">*For information on the format of the flashmap device tree, see </font><font face="courier new, monospace"><a href="https://chromium.googlesource.com/chromiumos/third_party/u-boot/+/d25429efd1b286223caa994796f3e8b7f041659b/cros/dts/bindings/flashmap.txt" target="_blank">cros/dts/bindings/flashmap.txt</a></font><font face="arial, sans-serif">.</font></p>
+<h3><a name="TOC-Additional-Resources"></a>Additional Resources </h3>
+<p>This section provides a simple overview of how Chrome OS uses the device tree. For additional, detailed information on device trees, consult the following resources:</p>
+<span style="text-align:-webkit-auto">
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:disc;font-family:Arial;color:rgb(51,51,54);background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><font size="2">Device tree spec</font></span></li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;color:rgb(51,51,54);background-color:transparent;vertical-align:baseline"><font size="2"><a href="http://www.google.com/url?q=https%3A%2F%2Fwww.power.org%2Fresources%2Fdownloads%2FPower_ePAPR_APPROVED_v1.0.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzcMLidkaMSc2GmK9IRtDRsX-wN3JA" style="color:rgb(46,73,135)!important"><span style="color:rgb(19,104,241);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">https://www.power.org/resources/downloads/Power_ePAPR_APPROVED_v1.0.pdf</span></a></font></li></ul>
+<li style="list-style-position:outside;list-style-type:disc;font-family:Arial;color:rgb(51,51,54);background-color:transparent;vertical-align:baseline"><font size="2"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Grant Likely paper</span></font></li></ul>
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt">
+<ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><a href="http://www.google.com/url?q=http%3A%2F%2Flwn.net%2FArticles%2F414016%2F&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzes0-PDFBWthUb3qyz58p0t976p3w" style="color:rgb(46,73,135)!important"><span style="color:rgb(17,85,204);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">http://lwn.net/Articles/414016/</span></a></font></li></ul>
+<li style="list-style-position:outside;list-style-type:disc;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><span style="color:rgb(51,51,54);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">Useful video</span></font></li></ul>
+<ul style="margin-top:0pt;margin-bottom:0pt">
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><a href="http://www.youtube.com/watch?v=LSHo3weGFCU" style="color:rgb(46,73,135)!important"><span style="color:rgb(19,104,241);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">http://www.youtube.com/watch?v=LSHo3weGFCU</span></a></font></li></ul>
+<li style="font-family:Arial;font-weight:bold;list-style-position:outside;list-style-type:disc;background-color:transparent;vertical-align:baseline"><span style="color:rgb(51,51,54);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap"><font size="2">device-tree discuss mailing list</font></span></li>
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><a href="http://www.google.com/url?q=https%3A%2F%2Flists.ozlabs.org%2Flistinfo%2Fdevicetree-discuss&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzdD2TX6PGXQLBQki2TE5UeOwUO2dQ" style="color:rgb(46,73,135)!important"><span style="color:rgb(19,104,241);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">https://lists.ozlabs.org/listinfo/devicetree-discuss</span></a></font></li></ul>
+<li style="font-family:Arial;font-weight:bold;list-style-position:outside;list-style-type:disc;background-color:transparent;vertical-align:baseline"><span style="color:rgb(51,51,54);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap"><font size="2">Motivation paper</font></span></li>
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><a href="http://www.google.com/url?q=http%3A%2F%2Fozlabs.org%2F~dgibson%2Fpapers%2Fdtc-paper.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzc_M6KOLeZAvdOH4_CNlD2H_BJbIQ" style="color:rgb(46,73,135)!important"><span style="color:rgb(19,104,241);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">http://ozlabs.org/~dgibson/papers/dtc-paper.pdf</span></a></font></li></ul>
+<li style="font-family:Arial;font-weight:bold;list-style-position:outside;list-style-type:disc;background-color:transparent;vertical-align:baseline"><span style="color:rgb(51,51,54);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap"><font size="2">U-Boot fdt config README</font></span></li>
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><a href="http://www.google.com/url?q=http%3A%2F%2Fgit.denx.de%2Fcgi-bin%2Fgitweb.cgi%3Fp%3Du-boot.git%3Ba%3Dblob%3Bf%3Ddoc%2FREADME.fdt-control%3Bh%3D85bda035043497d8d23aed8a436e24d630c60937%3Bhb%3DHEAD&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzcPg4g8aXXNyQpvX04aa6QaBTc_5A" style="color:rgb(46,73,135)!important"><span style="color:rgb(19,104,241);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">http://git.denx.de/cgi-bin/gitweb.cgi?p=u-boot.git;a=blob;f=doc/README.fdt-control;h=85bda035043497d8d23aed8a436e24d630c60937;hb=HEAD</span></a></font></li></ul>
+<li style="font-family:Arial;font-weight:bold;list-style-position:outside;list-style-type:disc;background-color:transparent;vertical-align:baseline"><span style="color:rgb(51,51,54);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap"><font size="2">Other web sites, including</font></span></li>
+<ul style="font-family:Times New Roman;font-weight:normal;margin-top:0pt;margin-bottom:0pt"><li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><font size="2"><a href="http://www.google.com/url?q=http%3A%2F%2Felinux.org%2FDevice_Trees&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzfaE2CpU2IXrcWiZeWlYCIz8C17Jg" style="color:rgb(46,73,135)!important"><span style="color:rgb(19,104,241);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap">http://elinux.org/Device_Trees</span></a></font></li>
+<li style="list-style-position:outside;list-style-type:circle;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline"><span style="color:rgb(19,104,241);background-color:transparent;font-weight:normal;vertical-align:baseline;white-space:pre-wrap"><font size="2" style="color:rgb(46,73,135)!important"><a href="http://www.google.com/url?q=http%3A%2F%2Fdevicetree.org%2FMain_Page&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzf91iA9Anha_Pw8xeJKBRMERO6SHw" style="color:rgb(46,73,135)!important">http://devicetree.org/Main_Page</a></font></span></li></ul></ul>
+<p><br />
+</p>
+<h2><a name="TOC-Environment"></a>Environment</h2>
+<div>The default environment is defined in the board configuration file (for example,<code> /include/configs/</code><code>smdk5250.h</code>, which in turn includes <code>chromeos.h</code>). This default environment is compiled into U-Boot and is used whenever Chrome OS boots in verified mode. The environment consists of a list of name/value pairs used to hold autoboot settings, selected input and output devices, boot scripts, the kernel load address, and other basic settings.</div>
+<p>The device tree contains a <font face="courier new, monospace">load-environment</font> node that specifies whether the system is running in verified (secure) or nonverified mode. For verified mode, the <font face="courier new, monospace">load-environment</font> variable has a value of 0, since the default environment is used. For nonverified mode, the <font face="courier new, monospace">load-environment</font> variable has a value of 1, which allows a custom environment to be loaded if available (see next paragraph).</p>
+<p>A custom environment can be stored in the SPI flash, NAND flash, and MMC so that it persists between boots. In nonverified mode, the most recently used environment is stored and loaded from SPI flash. Nonverified mode, which enables you to easily load a custom environment, is a useful feature during development, since it allows you to boot from the network or from a USB SD card. U-Boot also provides commands for setting and getting environment variables, which can be accessed through scripts.</p>
+<p><br />
+</p>
+<div><br />
+</div>
+</span>
+<div><font color="#1368f1" face="Arial"><span style="white-space:pre-wrap"><br />
+</span></font></div>
+<div>
+<div><br />
+</div>
+<div>Other sections in <i>U-Boot Porting Guide:</i></div>
+<div>  1.  <a href="https://www.chromium.org/chromium-os/u-boot-porting-guide/1-overview">Overview of the Porting Process</a></div>
+<div>  2.  Concepts (this page)</div>
+<div>  3.  <a href="https://www.chromium.org/chromium-os/u-boot-porting-guide/u-boot-drivers">U-Boot Drivers</a></div>
+</div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=board/samsung/dts/exynos5250-snow.dts;h=013f2c082a90df8d481a3cc3646cab5fab7b0649;hb=refs/heads/chromeos-v2011.12#l17" style="color:rgb(153,153,153);text-decoration:none"> </a></div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/u-boot-porting-guide/2-concepts">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

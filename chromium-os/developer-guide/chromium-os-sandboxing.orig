@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/developer-guide","deleted":false,"title":"Chromium OS Developer Guide","dir":"ltr"},{"path":"/chromium-os/developer-guide/chromium-os-sandboxing","deleted":false,"title":"Chromium OS Sandboxing","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/developer-guide/chromium-os-sandboxing\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/developer-guide","parentWuid":"wuid:gx:27255a11f3a32ed5","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium OS Sandboxing","locale":"en","wuid":"wuid:gx:28008b735a5783d1","revision":3,"path":"/chromium-os/developer-guide/chromium-os-sandboxing","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"chromium-os-sandboxing","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium OS Sandboxing - The Chromium Projects" />
+<meta itemprop="name" content="Chromium OS Sandboxing - The Chromium Projects" />
+<meta property="og:title" content="Chromium OS Sandboxing - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium OS Sandboxing - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/developer-guide" dir="ltr">Chromium OS Developer Guide</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium OS Sandboxing</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p><span style="font-size:10pt;background-color:transparent">Author: Jorge Lucángeli Obes (jorgelo@chromium.org)</span></p><p><span>Non-security perspective: Christopher Wiley (wiley@chromium.org)</span></p><p><span>Last update: 02/09/2015</span></p><p><span><a href="#h.tfp5zcnrfu3x">Best practices for writing secure system services</a></span></p><p><span><a href="#h.11mocyvpopi">Just tell me what I need to do</a></span></p><p><span><a href="#h.xypwieq25u9j">User ids</a></span></p><p><span><a href="#h.t43cwju48hk8">Capabilities</a></span></p><p><span><a href="#h.l7ou90opzirq">Seccomp-BPF</a></span></p><p><span><a href="#h.doij2mnlwx4t">Minijail wrappers</a></span></p><p><span>In Chrome OS, OS-level functionality (such as configuring network interfaces) is implemented by a collection of system services, and provided to Chrome over D-Bus. These system services have greater system and hardware access than Chrome.</span></p><p><span>Separating functionality like this prevents an attacker exploiting the Chrome browser through a malicious website to be able to access OS-level functionality directly. If Chrome were able to directly control network interfaces, a compromise in Chrome would give the attacker almost full control over the system. By having a separate network manager, we can reduce the functionality exposed to an attacker to just querying interfaces and performing pre-determined actions on them.</span></p><p><span style="font-size:10pt;background-color:transparent">Chrome OS uses a few different mechanisms to isolate system services from Chrome and from each other. We use a helper program called Minijail (executable </span><span style="font-size:10pt;background-color:transparent">minijail0</span><span style="font-size:10pt;background-color:transparent">). In most cases, Minijail is used in the service’s init script to set up these mechanisms. In other cases, Minijail wrappers are used if a service wants to apply restrictions to the programs that it launches, or to itself.</span></p><h2><a name="h.tfp5zcnrfu3x"></a><span>Best practices for writing secure system services</span></h2><p><span>Just remember that code has bugs, and these bugs can be used to take control of the code. An attacker can then do anything the original code was allowed to do. Therefore, code should only be given the absolute minimum level of privilege needed to perform its function.</span></p><p><span>Aim to keep your code lean, and your privileges low. Don’t run your service as root. If you need to use third-party code that you didn’t write, you should definitely make sure that you’re not running as root.</span></p><p><span>Use the libraries provided by the system/SDK. In Chrome OS, </span><span><a href="http://www.chromium.org/chromium-os/packages/libchrome">libchrome</a></span><span> and </span><span><a href="http://www.chromium.org/chromium-os/packages/libchromeos">libchromeos</a></span><span> offer a lot of functionality to avoid reinventing the wheel, poorly. Don’t reinvent IPC, use </span><span><a href="http://www.chromium.org/chromium-os/platform#TOC-Inter-Process-Communication-IPC-">D-Bus</a></span><span>. Don’t open listening sockets, connect to the required service. If you need to receive HTTP/HTTPS connections, don’t write your own HTTP server, register a handler with the system web server (</span><span><a href="https://chromium.googlesource.com/chromiumos/platform2/+/master/webserver/" target="_blank">webservd</a></span><span>).</span></p><p><span>Don’t (ab)use shell scripts, shell script logic is harder to reason about and </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCode_injection%23Shell_injection&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFddLzHwozIMyVlO1qYOKnGyd52JA">shell command-injection</a></span><span> bugs are easy to miss. If you need functionality separated from your main service, use normal C++ binaries, not shell scripts. Moreover, when you execute them, consider further restricting their privileges (see section </span><span><a href="#h.doij2mnlwx4t">Minijail wrappers</a></span><span>).</span></p><h2><a name="h.11mocyvpopi"></a><span>Just tell me what I need to do</span></h2><ul><li><span>Create a new user</span><span> for your service: </span><span><a href="https://chromium-review.googlesource.com/#/c/225257/">https://chromium-review.googlesource.com/#/c/225257/</a></span></li><li><span>Optionally, create a new group to control access to a resource and add the new user to that group: </span><span><a href="https://chromium-review.googlesource.com/#/c/242551/">https://chromium-review.googlesource.com/#/c/242551/</a></span></li><li><span>Use Minijail to run your service as the user (and group) created in the previous step. In your init script:</span></li></ul><ul><li><span>exec minijail0 </span><span>-u user</span><span> /full/path/to/binary</span></li><li><span>See section </span><span><a href="#h.xypwieq25u9j">User ids</a></span><span>.</span></li></ul><ul><li><span>If your service fails, you might need to grant it capabilities. See section </span><span><a href="#h.t43cwju48hk8">Capabilities</a></span><span>.</span></li><li><span>Consider sandboxing your service using Seccomp-BPF, see section </span><span><a href="#h.l7ou90opzirq">Seccomp-BPF</a></span><span>.</span></li></ul><h2><a name="h.xypwieq25u9j"></a><span>User ids</span></h2><p><span>The first sandboxing mechanism is user ids. We try to run each service as its own user id, different from the root user, which allows us to restrict what files and directories the service can access, and also removes a big chunk of system functionality that’s only available to the root user. Using the permission_broker service as an example, here’s its Upstart config file (lives in </span><span>/etc/init</span><span>):</span></p><p><span><a href="https://chromium.googlesource.com/chromiumos/platform2/+/master/permission_broker/permission_broker.conf" target="_blank">permission_broker.conf</a></span></p><hr /><p><font face="courier new, monospace"><span>env PERMISSION_BROKER_GRANT_GROUP=devbroker-access<br /><br />start on starting system-services<br />stop on stopping system-services<br />respawn<br /><br />exec minijail0 </span><span>-u devbroker</span><span> -c 0009 /usr/bin/permission_broker \<br />    --access_group=${</span><span>PERMISSION_BROKER_GRANT_GROUP</span><span>}</span></font></p><hr /><p><span>Minijail’s -u argument forces the target program (in this case permission_broker) to be executed as the devbroker user, instead of the root user. This is equivalent of doing </span><span>sudo -u devbroker</span><span>.</span></p><p><span>The user (devbroker in this example) needs to be added to the system using the user eclass, as in this CL (for a different user): </span><span><a href="https://chromium-review.googlesource.com/#/c/242551/">https://chromium-review.googlesource.com/#/c/242551/</a></span></p><p><span>There’s a test in the CQ that keeps track of the users present on the system, so the test has to be updated at the same time the user is added, with another CL (e.g. </span><span><a href="https://chromium-review.googlesource.com/#/c/242552/">https://chromium-review.googlesource.com/#/c/242552/</a></span><span>)  that needs to land at the same time. You can use </span><span>CQ-DEPEND</span><span> for this (</span><span><a href="http://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/commit-queue-overview">http://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/commit-queue-overview</a></span><span>, “How do I specify the dependencies of a change?”).</span></p><h2><a name="h.t43cwju48hk8"></a><span>Capabilities</span></h2><p><span>Some programs, however, require </span><span>some</span><span> of the system access usually granted only to the root user. We use </span><span><a href="http://man7.org/linux/man-pages/man7/capabilities.7.html" target="_blank">capabilities</a></span><span> for this. Capabilities allow us to grant a specific subset of root’s privileges to an otherwise unprivileged process. The link above has the full list of capabilities that can be granted to a process. Some of them are equivalent to root, so we avoid granting those. In general, most processes need capabilities to configure network interfaces, access raw sockets, or performing specific file operations. Capabilities are passed to Minijail using the -c switch.</span></p><p><span>permission_broker, for example, needs capabilities to be able to chown() device nodes.</span></p><p><span><a href="https://chromium.googlesource.com/chromiumos/platform2/+/master/permission_broker/permission_broker.conf" target="_blank">permission_broker.conf</a></span></p><hr /><p><span><font face="courier new, monospace">env PERMISSION_BROKER_GRANT_GROUP=devbroker-access<br /><br />start on starting system-services<br />stop on stopping system-services<br />respawn<br /></font></span></p><p><font face="courier new, monospace"><span># Grant CAP_CHOWN and CAP_FOWNER<br /></span><span>exec minijail0 </span><span>-u devbroker</span><span> </span><span>-c 0009</span><span> /usr/bin/permission_broker \<br />    --access_group=${PERMISSION_BROKER_GRANT_GROUP}</span></font></p><hr /><p><span>Capabilities are expressed using a </span><span>capabilities mask</span><span>, calculated from the index of the capability in </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Flxr.free-electrons.com%2Fsource%2Finclude%2Fuapi%2Flinux%2Fcapability.h&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNF4XnWeFE-X97PViiW2PrVobQrgxA">capability.h</a></span><span>, and changed to a mask as in </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Flxr.free-electrons.com%2Fsource%2Finclude%2Fuapi%2Flinux%2Fcapability.h%23L364&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFB4QwY5p4-W6_5TTWNXsRIUM2__g">CAP_TO_MASK</a></span><span>:</span></p><p><span>#define CAP_TO_MASK(x)      (1 &lt;&lt; ((x) &amp; 31)) </span><span>/* mask for indexed __u32 */</span></p><h2><a name="h.l7ou90opzirq"></a><span>Seccomp-BPF</span></h2><p><span>Access to the filesystem and root-only functionality is not enough to completely isolate a system service. A service running as its own user id and with no capabilities has access to a big chunk of the kernel API. The kernel therefore exposes a huge attack surface to non-root processes, and we would like to restrict what kernel functionality is available for sandboxed processes.</span></p><p><span>The mechanism we use is called </span><span><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.kernel.org%2Fdoc%2FDocumentation%2Fprctl%2Fseccomp_filter.txt&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHpJ09ojStjp4Dvt-xvlXDrkXZinw">Seccomp-BPF</a></span><span>. Minijail can take a policy file that describes what syscalls will be allowed, what syscalls will be denied, and what syscalls will only be allowed with specific arguments. The full description of the policy file language can be found in the </span><span><a href="https://chromium.googlesource.com/chromiumos/platform2/+/master/minijail/syscall_filter.c" target="_blank">source</a></span><span>.</span></p><p><span>Abridged policy for </span><span><a href="https://chromium.googlesource.com/chromiumos/platform/mtpd/+/master/mtpd-seccomp-amd64.policy" target="_blank">mtpd on amd64</a></span><span> platforms:</span></p><hr /><p><span><font face="courier new, monospace"># Copyright (c) 2012 The Chromium OS Authors. All rights reserved.<br /># Use of this source code is governed by a BSD-style license that can be<br /># found in the LICENSE file.<br />read: 1<br />ioctl: 1<br />write: 1<br />timerfd_settime: 1<br />open: 1<br />poll: 1<br />close: 1<br />mmap: 1<br />mremap: 1<br />munmap: 1<br />mprotect: 1<br />lseek: 1<br /># Allow socket(domain==PF_LOCAL) or socket(domain==PF_NETLINK)<br />socket: arg0 == 0x1 || arg0 == 0x10<br /># Allow PR_SET_NAME from libchrome's base::PlatformThread::SetName()<br />prctl: arg0 == 0xf</font></span></p><hr /><p><span>Any syscall not explicit</span><span>l</span><span>y mentioned, when called, results in the process being killed. The policy file can also tell the kernel to fail the system call (returning -1 and setting errno) without killing the process:</span></p><p><span># execve: return EPERM<br />execve: return 1</span></p><p><span>To write a policy file, run the target program under strace and use that to come up with the list of syscalls that need to be allowed during normal execution.</span></p><p><span>The policy file needs to be installed in the system, so we need to add it to the ebuild file:</span></p><p><span><a href="https://chromium.googlesource.com/chromiumos/overlays/chromiumos-overlay/+/master/chromeos-base/mtpd/mtpd-9999.ebuild" target="_blank">mtpd-9999.ebuild</a></span><span>:</span></p><p><span># Install seccomp policy file.<br />insinto /opt/google/mtpd<br />newins "mtpd-seccomp-${ARCH}.policy" mtpd-seccomp.policy<br /></span></p><p><span>And finally, the policy file has to be passed to Minijail, using the -S </span></p><p><a href="https://chromium.googlesource.com/chromiumos/platform/mtpd/+/master/mtpd.conf" target="_blank">mtpd.conf</a>:</p><hr /><p><font face="courier new, monospace"><span># use minijail (drop root, set no_new_privs, set seccomp filter)<br /></span><span>exec minijail0 -u mtp -g mtp -G -n </span><span>-S /opt/google/mtpd/mtpd-seccomp.policy</span><span> -- /opt/google/mtpd/mtpd -minloglevel="${MTPD_MINLOGLEVEL}"</span></font></p><hr /><h2><a name="h.doij2mnlwx4t"></a><span>Minijail wrappers</span></h2><p><span>TODO(jorgelo)</span></p></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/developer-guide/chromium-os-sandboxing">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9Dhu5GeU6HEpyhfG-HO5UQB6EyRkT0tvgVX-7N-ittVRU8wrRLkWcQV0zAs4duSyLK2-EdDSyQakEPr65LysTmu93rkEDfGhuUwUqbOH9Rk4dDFFM/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

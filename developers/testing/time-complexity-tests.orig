@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/time-complexity-tests","deleted":false,"title":"Time Complexity Tests","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/testing/time-complexity-tests\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Time Complexity Tests","locale":"en","wuid":"wuid:gx:1968bd0ff0d73378","revision":14,"path":"/developers/testing/time-complexity-tests","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"time-complexity-tests","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Time Complexity Tests - The Chromium Projects" />
+<meta itemprop="name" content="Time Complexity Tests - The Chromium Projects" />
+<meta property="og:title" content="Time Complexity Tests - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Time Complexity Tests - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Time Complexity Tests</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Test-format"><strong>1 </strong>Test format</a></li><li class="goog-toc"><a href="#TOC-Test-parameters"><strong>2 </strong>Test parameters</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Calibration-procedure"><strong>2.1 </strong>Calibration procedure</a></li><li class="goog-toc"><a href="#TOC-Common-parameters"><strong>2.2 </strong>Common parameters</a></li><li class="goog-toc"><a href="#TOC-Full-list"><strong>2.3 </strong>Full list</a></li></ol></li><li class="goog-toc"><a href="#TOC-Interpreting-output"><strong>3 </strong>Interpreting output</a></li><li class="goog-toc"><a href="#TOC-Testing-procedure"><strong>4 </strong>Testing procedure</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Statistical-tests"><strong>4.1 </strong>Statistical tests</a></li></ol></li><li class="goog-toc"><a href="#TOC-Caveats"><strong>5 </strong>Caveats</a></li></ol></div></div></div></div></div>Time complexity tests verify the order of growth of time complexity <i>T</i>(<i>n</i>) for various operations, generally verifying that this is <i>O</i>(1) or <i>O</i>(<i>n</i>), rather than <i>O</i>(<i>n</i><sup>2</sup>), say.<div>These are a form of performance test (see <a href="https://www.chromium.org/developers/testing/adding-performance-tests">Adding Performance Tests</a>), but since they have a binary answer (satisfies the bound or doesn't), and we are concerned with the overall growth, not the absolute speed, they are instead technically in the Blink <a href="https://www.chromium.org/developers/testing/webkit-layout-tests">Layout Tests</a>, and produce PASS/FAIL.</div><div>These are <b>potentially flaky,</b> and layout test failures <b>break the CQ,</b> so <i>please take extra care in testing and committing these.</i></div><div><br /></div><div>Tests consist of:</div><div><ul><li>Description of what you are testing, and relevant bug or bugs.</li><li>Function whose runtime you are testing.</li><li>Test parameters for what range you assert the growth rate holds, and with what tolerance.</li></ul><h3><a name="TOC-Test-format"></a>Test format</h3><div>These tests are written in JavaScript, and stored in the <code>LayoutTests/perf</code> directory in the Blink tree (as of 2013-April). The library that these tests use is <span style="font-size:10pt"><code><a href="http://src.chromium.org/viewvc/blink/trunk/LayoutTests/resources/magnitude-perf.js">LayoutTests/resources/magnitude-perf.js</a></code></span>.<br /></div>Tests take this form:<br /><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>&lt;!DOCTYPE html&gt;</code></div><div><span style="font-size:10pt"><code>&lt;script src="../resources/magnitude-perf.js"&gt;&lt;/script&gt;</code></span></div><div><code>&lt;script&gt;</code></div><div><div><code>if (window.testRunner)</code></div><div><code>    testRunner.dumpAsText();</code></div><div><br /></div><div><div><code>function setupFoo(magnitude)</code></div><div><code>{</code></div></div><div><code>    // ...</code></div><div><code>}</code></div><div><br /></div><div><code>function testFoo(magnitude)</code></div><div><code>{</code></div><div><code>    // ...</code></div><div><code>}</code></div><div><br /></div><div><div><code>Magnitude.description('Verifies that fooing is linear in the number of bars. See http://crbug.com/42');</code></div><div><code>Magnitude.initialExponent = 0;</code></div><div><code>Magnitude.numPoints = 10;</code></div><div><code>Magnitude.trim = 1;</code></div><div><code>Magnitude.tolerance = 0.10;</code></div><div><span style="font-size:10pt"><code>Magnitude.run(setupFoo, testFoo, Magnitude.LINEAR);</code></span></div><div><span style="font-size:10pt"><code>&lt;/script&gt;</code></span></div></div></div><div></div></div><div><br /></div>You can have several tests in the same file (they should be related); simply have several <code>run</code> commands, each of which can have different parameters. <a href="http://src.chromium.org/viewvc/blink/trunk/LayoutTests/perf/class-list-remove.html"><code>class-list-remove.html</code></a> is a good example with two tests in one file.<h3><a name="TOC-Test-parameters"></a>Test parameters</h3><div><span style="font-size:10pt">You can set some test parameters, specifying what range of magnitudes to test and how strict the tests should be. This is optional, but generally necessary.</span><span style="font-size:10pt"> This is because the tests default to quite strict tolerances, and start testing from <i>n</i> = 1, which is usually too low, since constant terms often dominate for low <i>n</i>.</span></div><div><span style="font-size:10pt">The design reason for requiring parameters is to make the data of "over what range and to what tolerance the growth rate holds" an intrinsic part of the test: by specifying these parameters, someone reading the test file can see at a glance how big input needs to be to be "close enough to infinity", and how noisy the data is.</span></div><div><span style="font-size:10pt">You can also specify more trials, or a different cutoff for overall success, but this is generally not necessary.</span></div><h4><a name="TOC-Calibration-procedure"></a><span style="font-size:10pt">Calibration procedure</span></h4><div><span style="font-size:10pt">To set the parameters:</span></div><div><ul><li>figure out size – over what range is the growth rate valid: from 2<sup>0</sup> to 2<sup>10</sup>? 2<sup>8</sup> to 2<sup>12</sup><span style="font-size:10pt">?</span></li><li>figure out noisiness and tolerance – how many outliers are trimmed before computing the statistic (<code>trim</code>), and what percent deviation from a perfect fit is allowed (<code>tolerance</code>)?</li><li>test locally and on <a href="https://www.chromium.org/developers/testing/try-server-usage">try bots</a></li><li>revise parameters</li><li>test again</li><li>You're shooting for parameters that are lax enough to never fail with current code and bots, but that will fail if code regresses</li></ul><div>When committing, safest is to:</div><div><ul><li><span style="font-size:10pt">Initially list the test in TestExpectations as flaky (even after using your best guesses for parameters; can use bug number for which you are writing the test in below):</span></li></ul></div><div><div class="sites-codeblock sites-codesnippet-block"><code>crbug.com/123 [ Release ] perf/foo.html [ Pass Failure ]</code></div></div><div><ul><li><span style="font-size:10pt">...then keep an eye on it in the </span><a href="https://www.chromium.org/developers/testing/flakiness-dashboard" style="font-size:10pt">flakiness dashboard</a><span style="font-size:10pt"> (specifically, filter by <a href="http://test-results.appspot.com/dashboards/flakiness_dashboard.html#tests=%5Eperf%2F">^perf/</a>, or more narrowly your specific test) for a few days after committing.</span></li><li><span style="font-size:10pt">If there are flaky failures, post a follow-up patch updating parameters.</span></li><li><span style="font-size:10pt">Once reliably passes, post a final patch removing the line from TestExpectations, turning on the test for real.</span></li></ul></div>It is ok, and often a good idea, to add a bit of a margin of error (or extra test runs) if you're concerned about false alarms, but be careful to not make the test so lax that it always passes. The test should fail if something changes for the worse; that's what it's there for.</div><h4><a name="TOC-Common-parameters"></a>Common parameters</h4><div><span style="font-size:10pt">You will primarily vary the parameters </span><span style="font-size:10pt"><code>initialExponent, </code></span><span style="font-size:10pt"><code>numPoints, </code></span><span style="font-size:10pt"><code>trim,</code> and </span><span style="font-size:10pt"><code>tolerance.</code></span><span style="font-size:10pt"> For example:</span></div><div><div></div></div><div class="sites-codeblock sites-codesnippet-block"><div><div><code>Magnitude.initialExponent = 0;</code></div><div><code>Magnitude.numPoints = 10;</code></div><div><code>Magnitude.trim = 1;</code></div><div><code>Magnitude.tolerance = 0.10;</code></div></div><div></div></div><div><br /></div><div>This means:</div><div><ul><li><span style="font-size:10pt">start with <b>initial</b> <i>n</i> = 2<sup>0</sup>;</span></li><li><span style="font-size:10pt">run for 10 <b>points</b> (magnitudes), so up to <i>n</i> = 2</span><sup><span style="font-size:10pt">0 + (10 </span>−<span style="font-size:10pt"> 1)</span></sup><span style="font-size:10pt"> = 2</span><sup style="font-size:10pt">9</sup><span style="font-size:10pt">;</span></li><li><span style="font-size:10pt"><b>trim</b> off the 1 most extreme value (we use </span><a href="http://en.wikipedia.org/wiki/Trimmed_estimator">trimmed estimators</a>, meaning "discard some outliers", to deal with noise);</li><li>succeed if data is within 10% <b>tolerance</b> of perfect fit.</li></ul></div><h4><a name="TOC-Full-list"></a>Full list</h4><div>The parameters are as follows:</div><div><i><br /></i></div><div><i>Range of magnitudes</i></div><div><div><ul><li><span style="font-size:10pt"><code>Magnitude.initialExponent</code></span> – start at <i>n</i> = 2<sup><i>k </i>(initialExponent)</sup></li><li><span style="font-size:10pt"><code>Magnitude.numPoints</code></span> – run for 2<i><sup>k</sup></i>, 2<sup><i>k</i> +1</sup>, 2<sup><i>k</i> + 2</sup>, ... 2<sup><i>k</i> + (numPoints − 1)</sup></li></ul><i><div><div style="font-style:normal">You will usually need to modify these, as for low magnitudes low order terms (especially constants) often dominate, obscuring the high order terms (linear, quadratic, exponential) that we're interested in, but we don't want to test for 2<sup>20</sup> to 2<sup>30</sup>, say, both because this is slow, and has noise from memory management once you get this big. Usually around 2<sup>8</sup> to 2<sup>15</sup> is a good range, but it varies.</div><div style="font-style:normal"><ul></ul></div></div><div><i><br /></i></div>Overall success</i></div></div></div><div><div><div><ul><li><span style="font-size:10pt"><code>Magnitude.numTrials</code></span> – run test (for whole range of magnitudes) numTrial times</li><li><span style="font-size:10pt"><code>Magnitude.successThreshold</code></span> – percentage of trials that must succeed for overall test to succeed</li></ul><div><div><div>Usually leaving these at defaults (3 trials, 50% success threshold) is fine, and instead modify statistical parameters (trim and tolerance).</div><div><br /></div><div>You g<span style="font-size:10pt">enerally want an odd number of trials, so you can use majority rule:</span></div></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">"Never go to sea with two chronometers; take one or three."</blockquote><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">(quoted in Fredrick Brooks, <i>The Mythical Man-Month</i>, p. 64),</blockquote></blockquote><div><div><div>and <span style="font-size:10pt">3 trials is usually enough.</span></div><div><span style="font-size:10pt"><br /></span></div><div><span style="font-size:10pt">50% (majority rule) optimizes the overall trade-off between </span><a href="http://en.wikipedia.org/wiki/Sensitivity_and_specificity" style="font-size:10pt">sensitivity and specificity</a><span style="font-size:10pt"> (true positive rate and true negative rate). If you have the same rate for both, the complimentary rates (</span><span style="font-size:10pt">false negative rate and false positive rate) are attenuated linearly (as powers, i.e., on the log scale) in number of trials needed for success/failure. By "linear attenuation" we mean like "decreasing decibels of noise": if false negative rate is </span><i>α</i> and false positive rate is <i>β,</i> then requiring <i>j</i> successes for overall success or <i>k</i> = (<i>n</i> <span style="font-size:12px">−</span> <i>j</i>) + 1 failures for overall failure makes the false negative rate approximately (ignoring constant factor) <i style="font-size:10pt">α<sup>j</sup></i><span style="font-size:10pt"> and false positive rate approximately </span><i style="font-size:10pt">β<sup>k</sup></i><span style="font-size:10pt">, which in log terms is <i>j </i>log </span><i style="font-size:10pt">α</i><span style="font-size:10pt"> and <i>k</i> log </span><i style="font-size:10pt">β</i><span style="font-size:10pt">. For <i>n</i> = 3 and requiring 2 successes for overall success (hence 2 failures for overall failure), this doubles the attenuation of the false negative and false positive rate, which is usually enough.</span></div><div><br /></div><div>In rare circumstances you may want to change these:</div><div><ul><li>Increase numTrials to increase power if either high false negative rate or high false positive rate;</li><li>decrease successThreshold if very noisy test (lacks specificity), so 2 successes out of 5 trials enough, say;</li><li>increase successThreshold if test not sensitive enough but very reliable, so 4 out of 5 trials needed, say.</li></ul>It's ok to use an even number of trials if you change the success threshold, since you no longer want the same trade-off between sensitivity and specificity.</div></div></div><div><br /></div><div><i>Run time</i></div></div></div></div><div><ul><li><span style="font-size:10pt"><code>Magnitude.millisecondsPerRun</code></span><span style="font-size:10pt"> –</span><span style="font-size:10pt"> how long each run (at a specific magnitude <i>n</i>) runs</span></li></ul><div>At each magnitude, the test is run until this time is used up, then averaged. <span style="font-size:10pt">You can increase this if you have a slow test, or at running at high magnitudes where you're not getting enough iterations to get a good average. Consider if you can instead decrease the maximum magnitude.</span></div></div><div><br /></div><div><i>Statistical parameters</i></div><div><ul><li><span style="font-size:10pt"><code>Magnitude.trim</code></span><span style="font-size:10pt"> –</span><span style="font-size:10pt"> number of extreme values to trim </span>(<a href="http://en.wikipedia.org/wiki/Trimmed_estimator">trimmed estimator</a>)</li><li><span style="font-size:10pt"><code>Magnitude.tolerance</code></span><span style="font-size:10pt"> –</span><span style="font-size:10pt"> succeed if data is within this percentage of model (perfect fit); formally, if maximum deviation is less than this threshold.</span></li></ul></div><div>Given the times for all magnitudes, the test statistic (see below) is computed by first trimming the most extreme values (basically outliers in the times, actually derived values like ratio between successive times), then computed and checked against the tolerance. These default to quite strict values <span style="font-size:10pt">–</span><span style="font-size:10pt"> no trim and 5% tolerance </span><span style="font-size:10pt">– which are quite safe, but usually too strict. You will thus need to relax them and specify how far from model the actual data is. Common reasonable values include:</span></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><span style="color:rgb(0,96,0);font-size:10pt"><code>trim = 1; tolerance = 0.10;</code></span></div><div><span style="color:rgb(0,96,0);font-size:10pt"><code>trim = 2; tolerance = 0.20;</code></span></div><div></div></div>Beware of trimming too much, as you're effectively reducing <code>numPoints</code>!<div>Larger tolerances are ok when testing for <i>O</i>(1) <span style="font-size:10pt">– even values of 100% or more are ok if you're only interested in checking that it's not linear or worse (rather than not log) </span><span style="font-size:10pt">–</span><span style="font-size:10pt"> but if you start getting to 50% (at which point you're not rejecting <i>O</i>(log <i>n</i>)), you have very noisy data.</span></div><div><span style="font-size:10pt"><br /></span></div><h3><a name="TOC-Interpreting-output"></a>Interpreting output</h3><div><span style="font-size:10pt">For linear and polynomial tests </span><span style="font-size:10pt">–</span><span style="font-size:10pt"> </span><i style="font-size:10pt">O</i><span style="font-size:10pt">(</span><i style="font-size:10pt">n</i><span style="font-size:10pt">) and </span><i style="font-size:10pt">O</i><span style="font-size:10pt">(</span><i style="font-size:10pt">n</i><sup>2</sup><span style="font-size:10pt">) </span><span style="font-size:10pt">–</span><span style="font-size:10pt"> the key numbers to look at are the log-ratios (base 2), which are effectively the exponent of the order of growth at that step. Thus for linear growth this should be almost 1, while for quadratic or greater growth it should be 2 or more.</span></div><div><span style="font-size:10pt"><br /></span></div><div><span style="font-size:10pt">For example, given the following data:</span></div><div class="sites-codeblock sites-codesnippet-block"><code>log-ratios (base 2):</code><br /><code>0.44961898695576596,1.4623608881897614,2.432344314952156,2.5037162001090283,1.9487150784480256,1.2812301235421082</code><br /><code>Maximum Absolute Deviation: 1.5037162001090283</code><br /></div><span style="font-size:10pt">...rounding yields:</span><br /><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>log-ratios (base 2):</code></div><div><code>0.45,1.46,2.43,2.50,1.95,1.28</code></div><div><code>Maximum Absolute Deviation: 1.50</code><br /></div></div>...so we see that at first it grows slowly (.45), then super-linearly (1.46), then superquadratically (2.43, 2.50, 1.95 is close), then slows down but still superlinear (1.28), and overall it deviates substantially from linear (2.50 differs from ideal of 1.00 by 1.50, which is the Maximum Absolute Deviation). This is an extreme case (normally there'll be a trend), but shows that this growth isn't linear over this range of inputs.<h3><a name="TOC-Testing-procedure"></a>Testing procedure</h3><div>The code at <span style="font-size:10pt"><code><a href="http://src.chromium.org/viewvc/blink/trunk/LayoutTests/resources/magnitude-perf.js">magnitude-perf.js</a></code></span><span style="font-size:10pt"> is of course the ultimate reference.</span></div><div><span style="font-size:10pt">You can get very detailed diagnostics and intermediate calculations by running in the TestRunner (?), or setting an invalid expectation (e.g., expecting CONSTANT for data you expect to be LINEAR).</span></div><div><span style="font-size:10pt"><br /></span></div><div><span style="font-size:10pt">In outline, testing proceeds as follows.</span></div><div><span style="font-size:10pt">We time the run time of the tested function at exponentially spaced magnitudes, e.g., 2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>, 2<sup>3</sup>, ....</span></div><div><span style="font-size:10pt">We then verify if these times look like the time complexity we're expecting (constant, linear, or polynomial (quadratic or greater)).</span></div><div><span style="font-size:10pt">Tests are <a href="https://en.wikipedia.org/wiki/Robust_statistics">robust</a>, <a href="https://en.wikipedia.org/wiki/Non-parametric_statistics">non-parametric</a> statistical tests, since timing is noisy (so need to be robust), and noise can take various forms (so non-parametric, since no particular model of noise).</span></div><div><span style="font-size:10pt"><br /></span></div><div>In more detail:</div><div><ul><li>Perform the test (across all magnitudes) numTrials number of times.</li><li>During each trial, for each magnitude, compute the run time.</li><li>To compute the run time, run the test function repeatedly, until millisecondsPerRun is up, then divide total run time by number of iterations completed.</li><li>Check that we haven't hit a delay at the end of the test run (if overrun allotted time by more than a full run time), and if so, retry a few times to reduce noise (if possible)</li><li>Given the data, perform a statistical test (see below), returning either success or failure.</li><li>After all trials are done, check if ratio of successes meets successThreshold, and return overall PASS or FAIL.</li></ul></div><h4><a name="TOC-Statistical-tests"></a>Statistical tests</h4><div>Tests are all of the form: "use <a href="http://en.wikipedia.org/wiki/Trimmed_estimator">trimmed</a> <a href="http://en.wikipedia.org/wiki/Maximum_absolute_deviation">maximum absolute deviation</a> (from model) as <a href="http://en.wikipedia.org/wiki/Test_statistic" style="font-size:10pt">test statistic</a>", meaning "compare this value<span style="font-size:10pt"> against tolerance, and succeed if error doesn't exceed tolerance". In detail:</span></div><div><ul><li>Compute absolute deviations from model (e.g., for constant, compare each time against the median; ideally these would all be equal) <span style="font-size:10pt">– this is the first non-parametric part</span></li><li>Trim: discard <code>trim</code> number of extreme values <span style="font-size:10pt">– this is the robust part</span></li><li>Compare max of remaining to <code>tolerance</code> <span style="font-size:10pt">– this is the second non-parametric part</span> <span style="font-size:10pt">– </span>and pass if and only if within tolerance.</li></ul></div><div>For constant, this compares each value against the median.</div><div>(If deviation from median is only 20% or 30% as you vary <i>n</i> from 1 to 1,024, any linear or higher term is very small.)</div><div>For linear and polynomial (quadratic or more), at each step, check what doubling the input does to the time <span style="font-size:10pt">– for linear it should double it, while for polynomial it should quadruple it or more. Taking log (base 2), this says the log of ratios of successive times (equivalently, difference of successive logs) should be 1 (linear) or more than 2 (quadratic or more).</span></div><div>This is effectively looking at slope of successive steps on the <a href="http://en.wikipedia.org/wiki/Log-log_plot">log-log scale</a>, as the slope of a monomial on the log-log scale is its exponent.</div><div><br /></div><div>These are simple tests, not sophisticated ones (we're not doing robust non-parametric linear regressions on the log-log scale, say), but they are thus transparent, and should be sufficient. More sophisticated tests that are still easily implemented include doing Ordinary Least Squares (OLS) on the log-log scale, and doing this iteratively (discarding point with greatest residual and repeating).</div><h3><a name="TOC-Caveats"></a>Caveats</h3><div>When writing tests, watch out for:</div><div><ul><li><b>too strict</b> parameters – yields false positives, setting off false alarms and breaking the commit queue</li><li><b>too lax</b> parameters – yields false negatives, missing regressions</li><li><b>slow tests</b> – these tests are inevitably somewhat slow, because they're asymptotic behavior (hence large values of input); avoid <i>unnecessary</i> slowness (can you test up to a smaller maximum value?)</li><li><b>slow setup</b> – beyond the test itself, the setup can cause overhead. E.g., when testing for <i>O</i>(<i>n</i>) growth, it's easy to do <i>O</i>(<i>n</i>) work <i>n</i> times during setup, which yields a test with <i>O</i>(<i>n</i><sup>2</sup>) startup time!</li><li><b>large magnitudes</b> – at large magnitudes (often around 2<sup>15</sup> or 2<sup>20</sup>), memory management starts to add measurable noise, <span style="font-size:10pt">specifically V8 garbage collection. This is often small relative to linear growth though, but can be significant when checking for constant growth.</span></li><li><b>noisy tests</b> – some functions are simply noisy; if noise is constant or small relative to time of test, signal-to-noise increases and noise is small at large magnitudes. However, when checking for <i>O</i>(1) performance, noise isn't offset by growing signal and may even increase with increasing magnitude.</li></ul></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/testing/time-complexity-tests">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq933WBoGfg7r_vaGMuvrsWBrp55SM9uKGeYqUhJ2fh0Hx7WysIXZ0zCMxMlhioS9h1_C1w2gnBPi_0ghA2XCDXXmDRKhcQj2DjCGDuwxGGSWk7a_tW/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

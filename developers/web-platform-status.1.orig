@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/web-platform-status","deleted":false,"title":"Web Platform Status","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/web-platform-status\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Web Platform Status","locale":"en","wuid":"wuid:gx:4418951564002554","revision":220,"path":"/developers/web-platform-status","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"web-platform-status","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Web Platform Status - The Chromium Projects" />
+<meta itemprop="name" content="Web Platform Status - The Chromium Projects" />
+<meta property="og:title" content="Web Platform Status - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Web Platform Status - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Web Platform Status</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="text-align:center"><font color="#ff0000" size="4">THIS PAGE HAS BEEN DEPRECATED! PLEASE SEE <a href="http://CHROMESTATUS.COM">CHROMESTATUS.COM</a> FOR THE LATEST DATA.</font></div><div><br /></div>Last updated: March 6, 2013<div>DevRel Contact: Eric Bidelman (ericbidelman), Paul Irish (paulirish)</div>
+<div>
+<div></div>
+<div><br />
+</div><div>This page captures the implementation status of HTML5 feature support in Chrome (desktop) and Chrome for Android. <font size="1">The current release of Chrome for Android matches m25, any exceptions to this will be indicated below.</font></div><div><br /></div>
+</div>
+<div>You have a few ways to watch these features more closely: </div><div><ul><li><span style="font-family:arial,sans-serif;line-height:15px;font-size:small">☆</span> the Chromium bug tickets or add yourself to the CC of WebKit tickets. </li><li>Watch the <a href="http://peter.sh/category/last-week/">Last Week in WebKit/Chromium</a> series for weekly updates </li><li>Subscribe to the <a href="https://groups.google.com/a/chromium.org/group/chromium-html5/topics">chromium-html5 discussion group</a> </li></ul></div>
+<div>Many of these features have their own jumpoff point on <a href="http://html5rocks.com/">html5rocks.com</a>, with links to solid tutorials and resources.</div>
+<div>The near-daily-updated <a href="http://tools.google.com/dlpage/chromesxs">Chrome Canary</a> lands these features much sooner than the stable or beta releases. (Though it's pre-alpha, so expect bugs!)</div>
+<div><font size="1"><br />
+</font></div>
+<div><font size="1">Note: In this page there are many references to "m6" and such. This refers to the stable Chrome release of that version.</font> </div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-1"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-File-APIs"><strong>1 </strong>File APIs</a></li><li class="goog-toc"><a href="#TOC-Offline-and-XHR"><strong>2 </strong>Offline and XHR</a></li><li class="goog-toc"><a href="#TOC-Storage"><strong>3 </strong>Storage</a></li><li class="goog-toc"><a href="#TOC-CSS-Presentation"><strong>4 </strong>CSS &amp; Presentation</a></li><li class="goog-toc"><a href="#TOC-Graphics"><strong>5 </strong>Graphics</a></li><li class="goog-toc"><a href="#TOC-Multimedia"><strong>6 </strong>Multimedia</a></li><li class="goog-toc"><a href="#TOC-Web-Components"><strong>7 </strong>Web Components</a></li><li class="goog-toc"><a href="#TOC-Other-Open-Web-Platform-features"><strong>8 </strong>Other Open Web Platform features</a></li><li class="goog-toc"><a href="#TOC-Webforms-"><strong>9 </strong>Webforms </a></li><li class="goog-toc"><a href="#TOC-DOM-APIs"><strong>10 </strong>DOM APIs</a></li><li class="goog-toc"><a href="#TOC-Chrome-Extensions"><strong>11 </strong>Chrome  Extensions</a></li></ol></div></div></div></div><br />
+</div>
+<div>
+<div>
+<div>
+<h2><a name="TOC-File-APIs"></a>File APIs</h2>
+Handle file uploads and file manipulation.<br />
+<div>Availability: Basic File API support in m5.</div>
+<div>Spec: <a href="http://dev.w3.org/2006/webapi/FileAPI/">w3c spec</a></div>
+<div>Notes: Limited form of drag-and-drop available in Firefox 3.6</div>
+<div><br />
+<h4><a name="TOC-File-System"></a>File System</h4>
+<div>Availability: started to land in m8, but only available for apps &amp; extensions. Synchronous APIs are in m9 for web workers.  <code><a href="http://dev.w3.org/2009/dap/file-system/file-dir-sys.html#solveLocalFileSystemURL">window.resolveLocalFileSystemURL()</a></code> and <code><a href="http://dev.w3.org/2009/dap/file-system/file-dir-sys.html#widl-Entry-toURL">Entry.toURL()</a></code> were added in m11.  Stable release for web pages [not apps/extensions] was m13. </div>
+<div><code><font color="#000000" face="Arial, Verdana, sans-serif">                  </font></code></div>
+Spec: <a href="http://dev.w3.org/2009/dap/file-system/file-dir-sys.html">w3c spec</a></div>
+<div>Notes: <a href="https://bug-45982-attachments.webkit.org/attachment.cgi?id=70320">devtools support</a> coming. Needs flag <code style="color:rgb(0,96,0)">--allow-file-access-from-files</code> for testing from file:// URLs.</div>
+<div>Demos: <a href="http://trac.webkit.org/browser/trunk/LayoutTests/fast/filesystem">layouttests</a></div><div>Dev Contact: Eric Uhrhane (ericu)</div>
+<div><br />
+</div></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><div><b>Drag and Drop Directories</b></div></div></div></div><div><div><div><div><br /></div></div></div></div><div><div><div><div><font color="#222222" face="arial, sans-serif">Allows dragging and dropping entire folders using HTML5 Drag and Drop. Extends the DataTransferItem with a method to get a FileEntry/DirectoryEntry.</font></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">(<code>var entry = DataTransferItem.</code></span><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>webkitGetAsEn</code></span><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>try()</code>)</span></div></div></div></div><div><div><div><div>Availability: M21</div></div></div></div><div><div><div><div><font color="#222222" face="arial, sans-serif">Spec: <a href="http://wiki.whatwg.org/wiki/DragAndDropEntries">http://wiki.whatwg.org/wiki/DragAndDropEntries</a></font></div></div></div></div><div><div>Dev Contact: Kinuko Yasuda (kinuko)</div><div><br /></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><b>HTMLInputElement.webkitEntries</b></span></div></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><b><br /></b></span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">Get FileSystem API entries representing user selected files from an <code>&lt;input type="file" multiple&gt;</code>.</span></div><div><div>Availability: M22</div><div><div><div><div><font color="#222222" face="arial, sans-serif">Spec: <a href="http://wiki.whatwg.org/wiki/DragAndDropEntries">http://wiki.whatwg.org/wiki/DragAndDropEntries</a></font></div></div></div></div></div><div><div>Dev Contact: Kinuko Yasuda (kinuko)</div></div><div><br /></div></blockquote><div><div>
+<div><a href="http://dev.w3.org/2009/dap/file-system/file-dir-sys.html"></a>
+<h4><a name="TOC-FileWriter"></a>FileWriter</h4>
+<div>Availability: basic in m8, sync api in m9 for web workers</div>
+<div>Spec: <a href="http://www.w3.org/TR/file-writer-api/">w3c spec</a> </div>
+<div>Tickets: <a href="https://bugs.webkit.org/show_bug.cgi?id=44358">webk.it/44358</a></div>
+<div><a href="https://bugs.webkit.org/show_bug.cgi?id=44358"></a>Dev Contact: Eric Uhrhane (ericu)</div><div><br /></div>
+<h4><a name="TOC-FileReader"></a>FileReader</h4>
+<div>Can read local and parse local files.</div>
+<div>Availability: m7.</div>
+<div>Spec: <a href="http://dev.w3.org/2006/webapi/FileAPI/#dfn-filereader">w3c spec</a></div>
+<div>Demo: <a href="http://slides.html5rocks.com/#drag-in">demo</a></div><div>Dev Contact: Jian Li (jianli)</div><div><br /></div>
+</div>
+</div>
+<div>
+<h4><a name="TOC-BlobBuilder"></a>BlobBuilder</h4>
+<div>Build blobs (files).</div>
+<div>Availability: m8. As of m20, this API is deprecated. Use Blob() constructor instead (see below).</div>
+<div>Demo: <a href="http://html5-demos.appspot.com/static/html5storage/index.html#slide51">demo</a></div>
+<div>Spec: <a href="http://dev.w3.org/2009/dap/file-system/file-writer.html#idl-def-BlobBuilder">w3c spec</a></div>
+</div>
+<div>
+<div>Notes: <code style="color:rgb(0,96,0)">window.createBlobURL()</code> changed to new spec's <code style="color:rgb(0,96,0)">window.createObjectURL()</code> somewhere around m8. As of M10, the call is prefixed under <code>window.webkitURL.createObjectURL()</code>. Chrome 23 unprefixes <code>window.URL</code>.</div>
+<div><br /></div><div><div><h4><a name="TOC-Blob-constructor"></a>Blob() constructor</h4></div><div>Removes the need for BlobBuilder API. Allows you to construc<font size="2">t Blobs directly (</font><code><font size="3">var blob </font></code><span style="font-family:Menlo,monospace;white-space:pre-wrap"><code><font size="3">= new Blob(["1234"], {type: 'text/plain'})</font></code><font size="2">)</font></span></div>Availability: M20<div><div><div><div>Spec: <a href="http://dev.w3.org/2006/webapi/FileAPI/#dfn-Blob">w3c spec</a></div></div></div></div></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><h4><a name="TOC-Blob-constructor-ArrayBufferView-support"></a>Blob() constructor ArrayBufferView support</h4><div><div>Blob() constructor takes ArrayBufferView directly rather than constructing a blob with ArrayBuffer.</div>Availability: M21</div></blockquote><div><div><h4><a name="TOC-Unprefixed-Blob.slice-support"></a>Unprefixed Blob.slice() support</h4><div><div>Blob.slice() is un-prefixed (from webkitSlice()) in M21.</div><div>Availability: M22</div></div><h4><a name="TOC-Typed-Arrays"></a>Typed Arrays</h4>
+<span>Buffers for holding binary data and working with WebGL &amp; Audio API: <code style="color:rgb(0,96,0)">Ar</code><code style="color:rgb(0,96,0)">rayBuffer</code>, <span style="white-space:pre-wrap;line-height:normal"><code style="color:rgb(0,96,0)">Float32Array</code> , </span><span style="white-space:pre-wrap;line-height:normal"><code style="color:rgb(0,96,0)">Int16Array</code>, </span><span style="white-space:pre-wrap;line-height:normal"><code style="color:rgb(0,96,0)">Uint8Array</code>, etc.)</span></span> 
+<div>Availability: m7 for most. <code style="white-space:pre-wrap">DataView</code><span style="font-size:small;font-family:verdana,sans-serif;white-space:pre-wrap"> is m9. </span><code>Float64Array</code> in m13. </div>
+<div>Spec: <a href="https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/TypedArray-spec.html">Khronos</a></div>
+<div><span style="font-family:verdana,sans-serif;font-size:small"><span style="white-space:pre-wrap;line-height:normal">Notes: </span><span style="white-space:pre-wrap;line-height:normal"><code>worker.</code></span></span><code>postMessage(TypedArray|ArrayBuffer)</code> landed in m13 using structured cloning. <code>postMesage(Object|Array)</code> (e.g. any type) landed in M23.</div><div><br /></div>
+<div><br />
+</div>
+<div><b>a[download] attribute</b></div>
+<div><b><br /></b></div></div></div><div><span style="color:rgb(34,34,34);font-family:Droid Sans,arial,sans-serif">When used on an &lt;a&gt;, this attribute signifies that the resource it points to should be downloaded by the browser rather than navigating to it.</span> </div><div>See <a href="http://updates.html5rocks.com/2011/08/Downloading-resources-in-HTML5-a-download">update.html5rocks.com post</a>.</div><div>Availability: M14</div><div>Spec: <a href="http://developers.whatwg.org/links.html#downloading-resources">whatwg</a></div><div>Demo: <a href="http://html5-demos.appspot.com/static/a.download.html">demo</a></div><div><div><div>
+</div>
+</div>
+</div>
+<div><br /></div><div><div><div><div><h2><a name="TOC-Offline-and-XHR"></a><b>Offline and XHR</b></h2>
+<div><b>App Cache</b></div><div><div>
+<h3><a name="TOC-Enables-web-pages-to-work-without-the-user-being-connected-to-the-internet"></a><font size="2" style="font-weight:normal"><span>Enables web pages to work without the user being connected to the internet</span></font></h3>
+<h3><a name="TOC-Notes:-Chrome-s-implementation-is-maxed-at-260MB.-Individual-files-max-out-at-32MB-260MB-8-Availability:-m5.-Dev-tools-support-added-in-m6-Dev-Contact:-Michael-Nordman-michaeln-"></a><font size="2" style="font-weight:normal"><span>Notes: Chrome's implementation is maxed at <span style="border-collapse:collapse;font-family:arial,sans-serif;font-size:13px">260MB. Individual files max out at </span><span style="border-collapse:collapse;font-family:arial,sans-serif;font-size:13px">32MB (260MB/8)</span><br />
+</span><span>Availability: m5. Dev tools support added in m6<br />
+</span><span>Dev Contact: Michael Nordman (michaeln)</span></font></h3><div><font size="2" style="font-weight:normal"><span><br /></span></font></div><div><b>XHR supports xhr.send(ArrayBuffer)</b></div></div></div><div><div><div><div><h4><a name="TOC-Allows-for-sending-a-binary-byte-array-using-xhr.Availability:-targeting-m9Dev-Contact:-Jian-Li-jianli-Spec:-w3-draft"></a><div style="font-weight:normal"><div><div>Allows for sending a binary byte array using xhr.</div>Availability: targeting m9</div><div>Dev Contact: Jian Li (jianli)</div><div>Spec: <a href="http://dev.w3.org/2006/webapi/XMLHttpRequest-2/#dom-xmlhttprequest-send">w3 draft</a></div><div><br /></div></div></h4></div>
+<div>
+<h4><a name="TOC-XHR-supports-xhr.send-Blob-File-"></a>XHR supports xhr.send(Blob|File)</h4>
+<div>Allows for sending a Blob or File using xhr.</div>
+Availability: m7</div>
+<div>Spec: <a href="http://dev.w3.org/2006/webapi/XMLHttpRequest-2/#dom-xmlhttprequest-send">w3 draft</a></div>
+<div>Dev Contact:  Eric Uhrhane (ericu)</div>
+<div>Tickets: <a href="http://crbug.com/51267">crbug.com/51267</a></div>
+<div><br /></div>
+<div><h4><a name="TOC-XHR-supports-xhr.send-FormData-"></a>XHR supports xhr.send(FormData)</h4>Availability: landed m6</div><div>Demo: <a href="http://jsfiddle.net/rUyVq/1/">demo on jsfiddle</a></div><div><br /></div><div><h4><a name="TOC-XHR-supports-xhr.send-ArrayBufferView-"></a>XHR supports xhr.send(ArrayBufferView)</h4><div>Allows for sending a typed array directly rather than sending just its ArrayBuffer.</div>Availability: m22</div><div><br /></div><div><br /></div><div><b>XHR.response, XHR.responseType</b></div>
+<h4><a name="TOC-Allows-reading-an-xhr-response-as-a-blob-arraybuffer-xhr.responseType-arraybuffer-xhr.responseType-blob-"></a><span style="font-weight:normal">Allows reading an xhr response as a blob/arraybuffer (<code>xhr.responseType = 'arraybuffer'</code>,<code> xhr.responseType = 'blob'</code>)</span></h4>
+<div><span><span>Availability: m10. m18 adds </span></span><code>xhr.responseType = 'document'</code> (see <a href="https://developer.mozilla.org/en/HTML_in_XMLHttpRequest">HTML in XMLHttpRequest</a>) and</div><div>restricts the usage of synchronous XHRs (<code>xhr.open(..., false);</code>)  by throwing an error when <code>.responseType</code> is set.</div>
+<div><span><span>Spec: <a href="http://dev.w3.org/2006/webapi/XMLHttpRequest-2/#xmlhttprequest">w3 draft</a></span></span></div>
+<div><span><span>Tickets: <a href="http://crbug.com/52486">crbug.com/52486</a> (arraybuffer works, blob does not)</span></span></div>
+<div><span>Dev Contact: </span>Michael Nordman (michaeln)</div>
+<br />
+<h4><a name="TOC-XMLHttpRequestProgressEvent"></a>XMLHttpRequestProgressEvent</h4>
+<span>Availability: m7</span>
+<div><span style="font-weight:bold"><span style="font-weight:normal">
+<div style="font-family:Verdana,Helvetica,Arial,sans-serif;line-height:16px;font-size:13px"><span><span>Spec: <a href="http://dev.w3.org/2006/webapi/XMLHttpRequest-2/#xmlhttprequest">w3 draft</a></span></span></div>
+<div style="font-family:Verdana,Helvetica,Arial,sans-serif;line-height:16px;font-size:13px"><br />
+</div>
+</span></span></div>
+<div>
+<h4><a name="TOC-navigator.connection"></a>navigator.connection</h4></div></div><div><div>Access the underlying network information (connection info) of the device.</div><div><br /></div><div>Availability: target unknown</div><div>Spec: <a href="http://dev.w3.org/2009/dap/netinfo/">w3 draft</a></div><div>Tickets: <a href="http://webk.it/73528">webk.it/73528</a></div><div>Notes: In Android since 2.2, but not implemented yet desktop browsers.</div><div>Dev Contact: -</div></div><div><br /></div><h4><a name="TOC-navigator.onLine"></a>navigator.onLine</h4>
+<div>Allows an application to check if the user has an active internet connection. Also can register 'online' and 'offline' event handlers. </div>
+<div><br />
+</div>
+<div>Availability: m14</div>
+<div>Tickets: <a href="http://crbug.com/7469"><strike>crbug.com/7469</strike></a></div>
+<div>Notes: <a href="https://developer.mozilla.org/en/Online_and_offline_events">https://developer.mozilla.org/en/Online_and_offline_events</a></div><div>Demo: <a href="http://kinlan-presentations.appspot.com/" target="_blank">http://kinlan-presentations.appspot.com/bleeding-berlin/index.html#16</a></div>
+<div>Dev Contact: adamk</div><div><br /></div><div><div><h4><a name="TOC-navigator.registerProtocolHandler-"></a>navigator.registerProtocolHandler() </h4>Allow web applications to handle URL protocols like mailto:.<br />Availability: m13<br />Tickets: <a href="http://code.google.com/p/chromium/issues/detail?id=11359"><strike>crbug.com/11359</strike></a></div><div>Notes: Protocol whitelist: "mailto", "mms", "nntp", "rtsp", "webcal". Custom protocols require "web+" prefix (e.g. "web+myScheme").</div><div>           There are no plans to implement registerContentHandler.</div><div>Dev Contact: koz</div></div><div><br /></div>
+<h4><a name="TOC-Directory-upload"></a>Directory upload</h4>
+<div>Allow specifying a directory to upload (<code style="color:rgb(0,96,0)">&lt;input type="file" multiple webkitdirectory /&gt;</code>), which is just be an extension of existing form mime-multipart file upload.</div>
+<div>Availability: m8. m21 <a href="http://crbug.com/58977">landed</a> dragging and dropping a folder onto an &lt;input type="file" webkidirectory&gt; element).</div>
+<div>Demo: <a href="http://html5-demos.appspot.com/static/html5storage/index.html#slide47">demo</a></div>
+</div>
+<div>
+<div><br />
+</div>
+<h4><a name="TOC-Websockets"></a>Websockets</h4>
+<div>
+<ul><li>TBD: The return type of send() will be changed to void</li>
+<li>m16: Update to conform to <a href="http://tools.ietf.org/html/rfc6455">RFC 6455 (aka HyBi 13 version)</a> (a few minor changes in handshake from <a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10">HyBi 08 version</a>. See also <a href="http://updates.html5rocks.com/2011/10/WebSockets-updated-to-latest-version-in-Chrome-Canary">HTML5 Rocks post</a>)</li>
+<li>m15: Binary message API (Blob and ArrayBuffer). Added close code and reason to close() and CloseEvent</li>
+<li>m14: New handshake and framing introduced at <a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10">HyBi 08 version</a> excluding binary message API and extension support</li>
+<li>(m6: New handshake (<a href="http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-76">Hixie 76 version</a>), m5: WebSocket in workers, m4: <a href="http://tools.ietf.org/html/draft-hixie-thewebsocketprotocol-75">Hixie 75 version</a>)</li><li>m23: ArrayBufferView support</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+Spec: <a href="http://dev.w3.org/html5/websockets/">W3C editor's draft</a><div>
+<div>
+<div>
+<div>
+<div>
+<div>Protocol Spec: <a href="http://tools.ietf.org/html/rfc6455">RFC 6455</a> + x-webkit-deflate-frame</div>
+<div>Demo: <a href="http://slides.html5rocks.com/#web-sockets">demo</a></div>
+<div>Tickets: <a href="https://bugs.webkit.org/show_bug.cgi?id=50099">WebKit protocol ticket</a></div>
+<div>Planned: Implement permessage-compress extension and mux extension</div>
+<div>Dev Contact: tyoshino</div>
+<div><br />
+</div>
+<h4><a name="TOC-Strict-Transport-Security"></a>Strict Transport Security</h4>
+<div>Header to inform the browser to always request a given domain over SSL, reducing MITM attack surface area.</div>
+<div>Availability: m4</div>
+<div>Spec: <a href="http://tools.ietf.org/html/draft-hodges-strict-transport-sec">ietf spec</a></div>
+<div>Notes: <a href="http://dev.chromium.org/sts">details on STS on chromium.org</a></div>
+<div>
+<div>
+<div>
+<h4 style="font-size:13px"><a name="TOC-a-ping-attribute."></a>a[ping] attribute.</h4><div style="font-size:13px;font-weight:normal">Notify resource on link click. </div><div style="font-size:13px;font-weight:normal">Availability: Chrome 7. </div><div style="font-size:13px;font-weight:normal">Spec: <a href="http://developers.whatwg.org/links.html#ping">html5 spec</a></div><div style="font-size:13px;font-weight:normal">Notes: <a href="http://trac.webkit.org/changeset/68166">webkit changeset</a>. Can be disabled through a command line flag or in about:flags</div><div style="font-size:13px;font-weight:normal"><br /></div><div style="font-size:13px;font-weight:normal"><div><div></div></div></div>
+<h2><a name="TOC-Storage"></a>Storage</h2>
+<div><br />
+</div>
+</div>
+</div>
+<h4><a name="TOC-Web-SQL-Database"></a><b>Web SQL Database</b></h4>
+<div>API exposing an SQLite database </div>
+<div>Availability: m4.</div>
+<div>
+<div>Notes: No spec progress or other implementations (outside of Webkit/Opera) expected.</div>
+<div>Demo: <a href="http://slides.html5rocks.com/#web-sql-db">demo</a></div>
+<div>Dev Contact: Dumitru Daniliuc (dumi)</div>
+<div><br />
+</div>
+</div>
+<div>
+<div>
+<h4><a name="TOC-Database-access-from-workers"></a>Database access from workers</h4>
+Spec: <a href="http://dev.w3.org/html5/webdatabase/#synchronous-database-api">http://dev.w3.org/html5/webdatabase/#synchronous-database-api</a></div>
+<div>Availability: Indeterminate status</div>
+<div><br />
+</div>
+</div>
+<div>
+<div style="font-weight:normal">
+<h4><a name="TOC-Indexed-Database-API-"></a>Indexed Database API <span style="white-space:pre-wrap;font-weight:normal"> </span></h4>
+<span style="font-weight:normal;font-size:small"><span style="font-size:13px">Availability: Landed in m11. (Prefixed as <span><span style="white-space:pre-wrap"><code>webkitIndexedDB </code>pre M24.)</span></span></span></span></div>
+<div style="font-weight:normal"><span style="font-weight:normal;font-size:small">Spec: <a href="http://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html">Draft w3c spec</a><br />
+</span><span style="font-weight:normal;font-size:small">Notes: formerly called WebSimpleDB. </span></div><div><span style="font-size:small;line-height:16px">Demo: <a href="http://html5-demos.appspot.com/static/html5storage/index.html#slide34">Demo</a>, <a href="http://trac.webkit.org/export/70913/trunk/LayoutTests/storage/indexeddb/tutorial.html" style="color:rgb(85,26,139)">LayoutTest IndexedDB tutorial &amp; demo</a></span></div><div><font size="2"><span style="line-height:16px">Dev Contacts: </span></font><span style="color:rgb(119,119,119);font-family:arial,sans-serif">dgrogan, </span><font><font color="#777777" face="arial, sans-serif">jsbell, alecflett</font><br /></font></div><div style="font-weight:normal"><span style="font-weight:normal;font-size:small"><br /></span></div><div style="font-weight:normal"><span style="font-weight:normal;font-size:small">Cross-Browser Status:</span></div><div><ul><li style="font-weight:normal"><span style="font-size:small">Firefox: FF16+ enabled (through 4beta9 as <code>moz_indexedDB</code>; through FF15 as <code>mozIndexedDB<span style="line-height:16px">)</span></code></span></li><li style="font-weight:normal"><span style="font-size:small;line-height:16px">IE: IE10+ (IE10 Platform Preview through 5 as <span style="color:rgb(0,96,0);font-family:monospace;font-size:13px;line-height:normal;white-space:pre-wrap">msIndexedDB)</span></span></li><ul><li style="font-weight:normal">IE10 will not support Array key paths</li></ul><li>Opera implementation is in progress</li></ul></div><div><span style="font-weight:normal;line-height:16px">Known differences between Chrome </span><span style="font-weight:normal;line-height:16px">(as of M</span>25<span style="font-weight:normal;line-height:16px">) </span><span style="font-weight:normal;line-height:16px">and the draft specification (as of July 16, 2012):</span></div><div><div style="font-weight:normal"><ul style="font-family:arial;font-size:small"><li>a "<code>blocked</code>" event will fire against a request created by an <code>open(name, version)</code>, a <code>setVersion(version)</code> or <code>deleteDatabase(name)</code> call even if all other connections are closed in response to a "<code>versionchange</code>" event</li><li>"<code>blocked</code>" events may also fire multiple times against the same <span style="color:rgb(0,96,0);font-family:monospace">deleteDatabase(name)</span> request</li><li>Blobs, Files, and FileLists in values are not supported<i>.</i></li><li>The Sync API is not supported - but neither IE nor Firefox support this either; it is marked as "At Risk" in the spec</li></ul></div><div style="font-weight:normal"><span style="color:rgb(0,0,0);font-weight:normal;font-size:small;line-height:16px"><span style="font-size:13px">Updates in M23 (from M22)</span></span></div><div style="font-weight:normal"><ul style="font-size:small;font-family:arial"><li>The new-style <code>open(name, version).onupgradeneeded</code> API is now supported; the old <code>open(name)</code> followed by <code>setVersion(version)</code> API may still be used for now, but web applications should migrate as soon as possible.</li></ul></div><div style="font-weight:normal"><span style="color:rgb(0,0,0);font-weight:normal;font-size:small;line-height:16px"><span style="font-size:13px">Updates in M22 (from M21)</span></span></div><div><ul><li style="font-family:arial;font-size:small;font-weight:normal"><code>deleteDatabase()</code> and <code>webkitGetDatabaseNames()</code> can now be called from Workers</li><li><code style="font-family:arial;font-size:small;font-weight:normal">IDBKeyRange.upperOpen</code><font face="arial" size="2">/</font><code style="font-family:arial;font-size:small;font-weight:normal">lowerOpen</code><font face="arial" size="2"> flags are now reported correctly when </font><code><font face="arial" size="2">lowerBound()</font></code>/<code><font face="arial" size="2">upperBound() </font></code><font face="arial" size="2">used</font></li><li style="font-family:arial;font-size:small;font-weight:normal">Empty arrays are no longer valid key paths</li><li style="font-family:arial;font-size:small;font-weight:normal">Requests can no longer be issued against transactions when not active (i.e. outside of creation context or callbacks, e.g. from a timeout or non-IDB event)</li><li style="font-family:arial;font-size:small;font-weight:normal">"<code>versionchange</code>" events are no longer fired against connections that are closing</li><li style="font-family:arial;font-size:small;font-weight:normal">Multi-entry indexes with invalid/duplicate subkeys now populated per spec</li></ul><div style="font-weight:normal"><font face="arial" size="2">Updates in M21 (from M20)</font></div><div><ul><li style="font-family:arial;font-size:small;font-weight:normal">Exceptions are now raised when methods are called on deleted objects</li><li style="font-family:arial;font-size:small;font-weight:normal"><a href="https://groups.google.com/a/chromium.org/forum/?fromgroups#!topic/chromium-html5/VlWI87JFKMk" target="_blank">Creating a transaction from within a transaction callback now fails</a></li><li style="font-family:arial;font-size:small;font-weight:normal">Cursor value modifications are now preserved until cursor iterates</li><li style="font-family:arial;font-size:small;font-weight:normal">Error codes should now match the latest spec</li><li style="font-family:arial;font-size:small;font-weight:normal">Nonstandard enumeration API has now been renamed to <code>IDBFactory.webkitGetDatabaseNames()</code></li><li style="font-family:arial;font-size:small;font-weight:normal"><code>IDBTransaction.error</code> and <code>IDBRequest.error</code> are now implemented</li><li style="font-family:arial;font-size:small;font-weight:normal">Support for Array key paths has been implemented</li><li><font face="arial" size="2">Invalid index keys no longer cause </font><code><font face="arial" size="2">add()</font></code>/<code><font face="arial" size="2">put() </font></code><font face="arial" size="2">calls to fail - indexes are skipped</font></li><li style="font-family:arial;font-size:small;font-weight:normal">The <code>IDBObjectStore.autoIncrement</code> property is now available</li><li style="font-family:arial;font-size:small;font-weight:normal"><a href="https://groups.google.com/a/chromium.org/forum/?fromgroups#!topic/chromium-html5/OhsoAQLj7kc" target="_blank"><code>transaction()</code>, <code>openCursor()</code> and <code>openKeyCursor()</code> have been updated to take strings instead of numbers for enum values</a></li></ul></div></div>
+</div>
+<div>
+<h4><a name="TOC-Web-Storage"></a>Web Storage</h4>
+<span>Availability: localStorage in m4, sessionStorage in m5</span>
+<div style="font-weight:normal">Notes: localStorage serves basic use cases. For more comprehensive storage solution, consider IndexedDB. While the spec indicates anything that structured clone algorithm can clone can be stored, all browser implementations currently allow only strings. Chrome's <a href="http://dev-test.nemikor.com/web-storage/support-test/">storage capacity is currently 2.5mb</a>.</div>
+<div style="font-weight:normal">Tickets: <a href="https://bugs.webkit.org/show_bug.cgi?id=41645">webk.it/41645</a><br />
+Dev Contact: Jeremy Orlow (jorlow) -&gt; Michael Nordman (michaeln)<br />
+<br />
+</div>
+<div style="font-weight:normal"><br />
+</div>
+</div>
+<div><b>Quota Management API</b>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><b><br />
+</b></div><div>This API can be used to check how much quota an app/origin is using.</div><div><br /></div>
+Availability: m13: FileSystem (TEMPORARY &amp; PERSISTENT) and WebSQL (temp only). m14 : AppCache and IndexedDB were added (TEMP only)<div>Docs: <a href="http://code.google.com/chrome/whitepapers/storage.html">http://code.google.com/chrome/whitepapers/storage.html</a></div>
+<div>Dev Contact: Kinuko Yasuda (kinuko)</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div style="font-weight:normal"><br />
+</div>
+</div>
+</div>
+<h2><a name="TOC-1"></a><b><br /></b></h2><h2><a name="TOC-CSS-Presentation"></a><b>CSS &amp; Presentation</b></h2>
+<div>
+<div>
+<div>
+<h4><a name="TOC-CSS3-3D-Transforms"></a><br />CSS3 3D Transforms</h4>
+Availability:  m12</div>
+Spec: <a href="http://www.w3.org/TR/css3-3d-transforms/">w3 spec</a></div>
+<div><a href="http://www.w3.org/TR/css3-3d-transforms/"></a>Notes: Associated GPU rendering quirkiness actively being worked on in prep for beta channel release.<br />
+<div>Demo: <a href="http://webkit.org/blog-files/3d-transforms/poster-circle.html">poster circle demo</a></div>
+<div><br />
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<h4><a name="TOC-new-semantic-sectioning-elements"></a>new semantic sectioning elements</h4>
+<span style="font-weight:normal">section</span><span>, </span><span>article</span><span>, </span><span>aside</span><span>, </span><span>nav</span><span>, </span><span>header</span><span>, and <code style="color:rgb(0,96,0)">footer</code> </span><span>elements</span>
+<div>Availability: m5</div>
+</div>
+</div>
+<div>
+<h4><a name="TOC-progress-and-meter-elements"></a>&lt;progress&gt; and &lt;meter&gt; elements</h4>
+Offer a visual display of progress. </div>
+<div>Availability: m6
+<div>Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-progress-element">whatwg spec</a> </div>
+<div>Demo: <a href="http://peter.sh/examples/?/html/meter-progress.html">demo of elements in action</a><br />
+</div>
+</div>
+<div><br />
+</div>
+<h4><a name="TOC-Ruby"></a>Ruby</h4>
+<div>Ruby annotations are short runs of text presented alongside base text, primarily used in East Asian typography as a guide for pronunciation or to include other annotations<br />
+Availability: m4</div>
+<div>Spec: <span style="font-size:small"><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-ruby-element">whatwg html5 spec</a></span></div>
+<div>Notes: <a href="http://blog.whatwg.org/implementation-progress-on-the-html5-ruby-element">description &amp; demo</a> on whatwg blog</div>
+<br />
+<h4><a name="TOC-font-face-webfonts"></a>@font-face webfonts</h4>
+Availability: OTF/TTF support in m4. WOFF in m6. </div>
+<div>Spec: <a href="http://dev.w3.org/csswg/css3-fonts/">w3c editor's draft</a></div>
+<div>Notes: <a href="http://dev.w3.org/csswg/css3-fonts/#unicode-range-desc">unicode-range support</a> planned. Improved handling of text while font asset is being downloaded, also planned.<br />
+</div>
+<div><br />
+<h4><a name="TOC-Gradients"></a><b>Gradients</b></h4>
+</div>
+<div>Availability: w3c <a href="http://webkit.org/blog/1424/css3-gradients/">linear-gradient() syntax</a> as of m10. <a href="http://webkit.org/blog/175/introducing-css-gradients/">original webkit -gradient() syntax</a> as of m3.</div>
+<div>Spec: <a href="http://dev.w3.org/csswg/css3-images/#gradients">w3c image values</a></div>
+<div>Notes: The legacy syntax will be retained for the foreseeable future.</div>
+<div><br />
+</div>
+<h4><a name="TOC-Background-printing"></a>Background printing</h4>
+<div>Opt-in ability to specify a background should be printed</div>
+<div>Availability: landing in m16 with prefix:<code> -webkit-print-background</code></div>
+<div>Discussions: <a href="http://lists.w3.org/Archives/Public/www-style/2011Feb/0626.html">thread feb 2011</a>, <a href="http://lists.w3.org/Archives/Public/www-style/2011Aug/0645.html">csswg minutes august</a>, <a href="http://lists.w3.org/Archives/Public/www-style/2011Aug/0436.html">thread august 2011</a>, <a href="http://wiki.csswg.org/ideas/print-backgrounds">wiki page</a></div>
+<div><br />
+</div><div><b>Scoped style sheets</b></div>
+<div><br />
+</div><div>Boolean attribute for the &lt;style&gt; element (&lt;style scoped&gt;). When present, its styles only apply to the parent element.</div><div><br /></div><div>Availability: m20  (enable webkit experimental feature in about:flags)</div><div>Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#attr-style-scoped">whatwg</a></div><div>Demo: <a href="http://jsbin.com/ozerih/edit#html,live">jsbin</a></div><div><br /></div><div><div><div><h4><a name="TOC-CSS3-Filters"></a>CSS3 Filters</h4><div>Apply (SVG-like) filter effects to arbitrary DOM elements.</div><div><br /></div>Availability:  m19</div>Spec: <a href="https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html">w3 spec</a></div><div><div>Info: <a href="http://updates.html5rocks.com/2011/12/CSS-Filter-Effects-Landing-in-WebKit">http://updates.html5rocks.com/2011/12/CSS-Filter-Effects-Landing-in-WebKit</a></div></div></div><div><br /></div><div><div><h4><a name="TOC-CSS-ShadersApply-OpenGL-shaders-to-arbitrary-DOM-elements.Availability:-m24-enabled-via-about:flags.Spec:-w3-specInfo:-http:-www.adobe.com-devnet-html5-articles-css-shaders.htmlDemos:-http:-adobe.github.com-web-platform-samples-css-customfilters-"></a><div style="font-weight:normal"><div><div><h4><a name="TOC-CSS-Shaders"></a>CSS Shaders</h4><div>Apply OpenGL shaders to arbitrary DOM elements.</div><div><br /></div>Availability:  m24, enabled via about:flags.</div>Spec: <a href="https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html">w3 spec</a></div><div>Info: <a href="http://www.adobe.com/devnet/html5/articles/css-shaders.html">http://www.adobe.com/devnet/html5/articles/css-shaders.html</a></div><div>Demos: <a href="http://adobe.github.com/web-platform/samples/css-customfilters/">http://adobe.github.com/web-platform/samples/css-customfilters/</a></div><div><br /></div></div></h4><h4><a name="TOC-CSS3-Grid-Layout"></a>CSS3 Grid Layout</h4><div>Availability: work is just started behind a flag. No way to enable it.</div><div>Spec: <a href="http://dev.w3.org/csswg/css3-grid-layout/">w3c</a></div><div>Tickets: <a href="http://webk.it/60731">webk.it/60731</a></div><div>Dev Contact: Tony Chang (tony@chromium), Ojan Vafai (ojan@chromium)</div><div><br /></div><h4><a name="TOC-CSS3-Flexbox-Model-the-new-one-"></a>CSS3 Flexbox Model (the new one)</h4><div><div>Note: The old box model (display: -webkit-box) and spec has been replaced by a new one (display: -webkit-flex).</div><div>For now, chrome supports both. But you should use the new one!</div></div><div><br /></div>Availability:  started landing in m18. m21 has the latest and full implementation with a bunch of properties renamed.</div>Spec: <a href="http://www.w3.org/TR/css3-flexbox/">w3 spec</a></div><div>Tickets: <a href="https://bugs.webkit.org/show_bug.cgi?id=62048">webk.it/62048</a></div><div>Demo: <a href="http://html5-demos.appspot.com/static/css/flexbox/index.html">http://html5-demos.appspot.com/static/css/flexbox/index.html</a></div><div>Docs: <a href="https://developer.mozilla.org/en/Using_flexbox">https://developer.mozilla.org/en/Using_flexbox</a></div><div>Dev Contact: Ojan Vafai (ojan)</div><div><br /></div><div><div><div><h4><a name="TOC-CSS3-Regions"></a>CSS3 Regions</h4><div>Magazine-like content flow into specified regions.</div><div><br /></div>Availability:  Partial support in m19  (enable webkit experimental feature in about:flags)</div>Spec: <a href="http://dev.w3.org/csswg/css3-regions/">w3c</a></div><div>Tickets: <a href="https://bugs.webkit.org/show_bug.cgi?id=57312" rel="nofollow">webk.it/57312</a></div></div><div><br /></div><div><div><div><h4><a name="TOC-position:-sticky"></a>position: sticky</h4><div><code>position: sticky</code> is a new way to position elements and is conceptually similar to <span style="color:rgb(0,96,0);font-family:monospace">position: fixed</span>. The difference is that a stickily positioned element behaves like position: relative within its parent, until a given offset threshold is met.</div><div><br /></div>Availability:  M23 (enable webkit experimental feature in about:flags)</div>Proposal: <a href="http://lists.w3.org/Archives/Public/www-style/2012Jun/0627.html">www-style</a></div></div><div>Demo: <a href="http://html5-demos.appspot.com/static/css/sticky.html">http://html5-demos.appspot.com/static/css/sticky.html</a></div>
+<h4><a name="TOC-CSS-Intrinsic-Sizingwidth:-fill-available-width:-min-content-width:-max-content-etc.Availability:-M22-vendor-prefixed-Spec:-w3cMDN:-https:-developer.mozilla.org-en-US-docs-CSS-width"></a><div><div><h4><a name="TOC-CSS-Intrinsic-Sizing"></a>CSS Intrinsic Sizing</h4><span style="font-weight:normal"><code>width: fill-available</code>,<code> width: min-content</code>, <code>width: max-content</code>, etc.</span><div style="font-weight:normal"><br /></div><span style="font-weight:normal">Availability:  ~M22 (vendor prefixed)</span></div><span style="font-weight:normal">Spec: </span><a href="http://dev.w3.org/csswg/css3-writing-modes/#intrinsic-sizing" style="font-weight:normal">w3c</a></div><div style="font-weight:normal">MDN: <a href="https://developer.mozilla.org/en-US/docs/CSS/width">https://developer.mozilla.org/en-US/docs/CSS/width</a></div></h4><h4><a name="TOC-Other-CSS3"></a>Other CSS3</h4><div>
+<b>box-shadow</b>: <font face="courier new, monospace">inset</font> keyword and spread value supported since m4, went unprefixed in m10
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><b>border-radius:</b> went unprefixed in m4</div><div><b>cross-fade(): </b>landing with prefix (<span style="font-family:arial,sans-serif;line-height:18px">-webkit-cross-fade)</span> in m17. <a href="http://peter.sh/files/examples/cross-fading.html">demo</a></div>
+</div>
+</div>
+</div>
+<div>
+<div><b>image-resolution()</b>: <a href="http://trac.webkit.org/changeset/119984">landed</a> for m21 <a href="http://www.w3.org/TR/2012/CR-css3-images-20120417/#image-resolution">spec</a></div><div><b>clip-path: </b><a href="https://plus.google.com/118075919496626375791/posts/2n8PTisLztW">landed</a> for m24. Prefixed -webkit-clip-path. <a href="http://dvcs.w3.org/hg/FXTF/raw-file/tip/masking/index.html#the-clip-path">spec</a></div><div><b>@viewport</b>: <a href="http://dev.w3.org/csswg/css-device-adapt/">spec</a>, bug</div><div><b>@supports: </b><a href="http://www.w3.org/TR/css3-conditional/#at-supports">spec</a>, bug, </div><div><b>CSS viewport % lengths (vw, vh, vmin, vmax): </b><a href="http://www.w3.org/TR/css3-values/">spec</a>, Availability: m20</div>
+<h2><a name="TOC-2"></a><br /></h2><h2><a name="TOC-Graphics"></a>Graphics</h2>
+<h4><a name="TOC-Canvas-"></a><br />Canvas </h4>
+</div>
+<div>Provides an API to draw 2D graphics <br />
+<div style="font-weight:normal">Availability: m1, Safari, Firefox, Opera, IE9</div><div style="font-weight:normal">Notes: Accelerated 2D canvas <a href="http://crbug.com/61526">targeting</a> m14 for windows/linux; perhaps m15 for mac. Currently, available in about:flags.</div><div style="font-weight:normal">webp format: <code>canvas.toDataURL("image/webp")</code> <a href="http://code.google.com/p/chromium/issues/detail?id=63221">added</a> in m17 (WebKit 535), but m18 on Mac.</div><div>In<font size="2" style="font-weight:normal"> M20, <code>canvas.getImageData</code><font face="arial, sans-serif"><code>(...).data</code> returns a  <span style="line-height:18px"><code>Uint8ClampedArray</code> instead of a </span></font></font><font face="arial, sans-serif" size="2"><span style="line-height:18px"><code>CanvasPixelArray</code>.</span></font></div><div style="font-weight:normal">Spec: <a href="http://dev.w3.org/html5/2dcontext/">W3C Last Call Working draft</a></div><div><br />
+</div>
+<div>
+<div>
+<div>
+<h4><a name="TOC-WebGL-Canvas-3D-"></a>WebGL  <span><b>(</b><b>Canvas 3D)</b></span></h4>
+<div>3D rendering via the &lt;canvas&gt; element. </div>
+Availability: m9</div><div>Android Availability: TBD.</div>
+<div>Spec: <a href="https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/WebGL-spec.html">kronos/apple spec</a></div>
+<div>Notes: Originally project developed by Mozilla as a JavaScript API to make OpenGL calls - <a href="http://khronos.org/webgl/wiki/Main_Page">WebGL Wiki</a></div>
+<div>Dev Contact: Vangelis Kokevis (vangelis), Ken Russell (kbr)</div>
+</div>
+<div><br />
+</div>
+<h4><a name="TOC-requestAnimationFrame"></a>requestAnimationFrame</h4>
+<div>Offload animation repainting to browser for optimized performance. </div>
+<div>Spec: <a href="http://webstuff.nfshost.com/anim-timing/Overview.html">webkit draft spec</a></div>
+<div>Availability: m10 , currently prefixed as <code>window.webkitRequestAnimationFrame</code></div>
+<div>Notes: As of FF4, Mozilla's implementation differs and offers lower framerates, but it will be addressed. This method should be used for WebGL, Canvas 2D, and DOM/CSS animation.</div>
+<div>Dev Contact: jamesr</div>
+<h4><a name="TOC-Accelerated-Video:-m10-WebP-image-format-support:-m9.-alpha-and-lossless-added-to-m22."></a><br />
+Accelerated Video:<span style="font-weight:normal"> m10<br />
+</span>WebP image format support<span style="font-weight:normal">: m9. alpha and lossless added to m22.</span></h4><div><span style="font-weight:normal"><br /></span></div>
+</div>
+<h2><a name="TOC-Multimedia"></a>Multimedia</h2>
+<h4><a name="TOC-Video-and-Audio"></a><b><br />Video and Audio</b></h4>
+<div>Natively play video and audio in the browser <br />
+Provides API and built-in playback controls <br />
+Availability: m3. Also Safari 4, Firefox 3.5<br />
+  Codecs: mp4, ogv, and webm ship with Chrome. webm shipped in m6. <br />Dev Contact: Andrew Scherkus (scherkus)</div>
+<div><br /></div><div>
+<div>mediaElem.webkitAudioDecodedByteCount - m11</div>
+<div>mediaElem.webkitVideoDecodedByteCount - m11</div>
+<div>videoElem.webkitDecodedFrameCount - m11</div>
+<div>videoElem.webkitDroppedFrameCount - m11</div></div><div><br /></div>
+<h4><a name="TOC-Web-Audio-API"></a>Web Audio API</h4>
+<div>Availability: dev channel since m12. stable channel in m14. m24 adds the ability for <a href="http://updates.html5rocks.com/2012/09/Live-Web-Audio-Input-Enabled">live mic input</a> (enable in about:flags). m25 <a href="https://code.google.com/p/chromium/issues/detail?id=160176">updated API calls</a> to the latest spec.</div><div>Android availability: TBD (<a href="http://crbug.com/166003">issue 166003</a>)</div>
+<div>Spec: <a href="http://chromium.googlecode.com/svn/trunk/samples/audio/specification/specification.html">W3C Audio Incubator Group Proposal</a></div>
+<div>Notes: enable via about:flags. Also, Mozilla has an alternative <a href="https://wiki.mozilla.org/Audio_Data_API">Audio Data API</a> proposal. M20 included</div><div>support for oscillator nodes.</div>
+<div>Demo: <a href="http://chromium.googlecode.com/svn/trunk/samples/audio/index.html">spec samples</a></div>
+<div>Dev Contact: Chris Rogers (crogers)</div>
+<div><br />
+</div>
+<div><h4><a name="TOC-Media-Source-API"></a>Media Source API</h4><div>Allows appending data to an &lt;audio&gt;/&lt;video&gt; element.</div><div><br /></div><div>Availability: dev channel m23</div><div>Spec: <a href="http://dvcs.w3.org/hg/html-media/raw-file/tip/media-source/media-source.html">w3c spec</a></div><div>Notes: enable via about:flags or run with <code>--enable-media-source</code> flag<font color="#006600" face="Monaco, monospace">.</font></div><div>Demo: <a href="http://html5-demos.appspot.com/static/media-source.html">http://html5-demos.appspot.com/static/media-source.html</a></div><div>Dev Contact: Aaron Colwell (acolwell)</div><div><br /></div><div><h4><a name="TOC-WebRTC"></a>WebRTC</h4><div>Real time communication in the browser. <span style="font-size:10pt">(Note that many online resources refer to 'WebRTC' but just mean getUserMedia!)</span></div><div><br /></div><div>Combines the following APIs: </div><div>- navigator.getUserMedia (aka MediaStream, cross-browser demo: <a href="http://simpl.info/gum">simpl.info/gum</a>) </div><div>- RTCPeerConnection (demos: <a href="http://apprtc.appspot.com">apprtc.appspot.com</a>, <a href="http://simpl.info/pc">simpl.info/pc</a>)</div><div><span style="font-size:10pt">- RTCDataChannel (demo <a href="http://simpl.info/dc">simpl.info/dc</a>) </span></div><div><span style="font-size:10pt"><br /></span></div><div><span style="font-size:10pt">Availability: </span></div><div>- M21 for getUserMedia (prefixed), </div><div>- M23 for RTCPeerConnection (prefixed and flagless from M23)</div><div>- M26 for <span style="font-size:10pt">RTCDataChannel (prefixed, flagless), requires an RTCPeerConnection </span><font face="courier new, monospace" style="font-size:10pt">{ optional:[ { RtpDataChannels: true } ]}</font><span style="font-size:10pt"> constraint and only supports unreliable data channels and text messages.</span></div><div><br /></div><div>Spec: <a href="http://dev.w3.org/2011/webrtc/editor/webrtc.html">w3c spec</a></div><div>Docs: <a href="http://webrtc.org/">webrtc.org</a></div><div>Google group: <a href="https://groups.google.com/forum/?fromgroups#!forum/discuss-webrtc">https://groups.google.com/forum/?fromgroups#!forum/discuss-webrtc</a></div><div><br /></div><div>Notes: </div><div>- webkitRTCPeerConnection is the name for RTCPeerConnection implementation currently in Chrome: other names/implementations are obsolete; prefix will be removed when APIs stabilise</div><div><font face="arial, sans-serif">- for the permission dialog: </font><span style="color:rgb(34,34,34);font-family:arial,sans-serif">Chrome only show the "Always allow" for sites using https, for increased security</span></div></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">- getUserMedia is implemented in Opera and Firefox Stable (video only), and Chrome and Firefox Nightly/Aurora (audio and video); </span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">- RTCPeerConnection and RTCDataChannel are implemented in Firefox Aurora/Nightly</span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">- getUserMedia can be used as input to Web Audio (<a href="http://webaudiodemos.appspot.com/input/index.html" target="_blank">demo</a>, the implementation can be enabled in about:flags)</span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">- Chrome &lt;=&gt; Firefox RTCPeerConnection interop demo (<a href="http://blog.chromium.org/2013/02/hello-firefox-this-is-chrome-calling.html" target="_blank">blog</a>)</span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif">- <a href="http://www.webrtc.org/interop" target="_blank">Firefox/Chrome/W3C Standard API differences</a></span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><br /></span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><b>Resolution Constraints</b> are enabled as of M24: </span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"> - <a href="http://tools.ietf.org/html/draft-alvestrand-constraints-resolution-00#page-4" target="_blank">spec and examples</a></span></div><div> - <a href="http://simpl.info/getusermedia/constraints" target="_blank">demo</a></div><div> </div><div><b>Tab Capture</b> (i.e. ability to get stream of 'screencast') currently available in Chrome Dev channel:</div><div>  - <a href="http://www.chromium.org/developers/design-documents/extensions/proposed-changes/apis-under-development/webrtc-tab-content-capture">proposal</a></div><div>  - <a href="http://developer.chrome.com/trunk/extensions/tabCapture.html" target="_blank">documentation for chrome.tabCapture</a> </div><div><br /></div><div><b>Screen Capture</b> (i.e. ability to capture the contents of the screen) currently available in Chrome <span style="font-family:arial,sans-serif;line-height:18px">26.0.1410.0</span>:</div><div>More info: <a href="https://plus.google.com/118075919496626375791/posts/7U9fkCRM4SM">https://plus.google.com/118075919496626375791/posts/7U9fkCRM4SM</a></div><div><a href="https://html5-demos.appspot.com/static/getusermedia/screenshare.html">Demo</a></div><div><br /></div><div>Demos: <a href="http://www.webrtc.org/running-the-demos#TOC-Demos">Testing WebRTC on Chrome</a><br /></div><div>Code samples: <a href="http://code.google.com/p/webrtc-samples/source/browse/#svn%2Ftrunk" target="_blank">web-rtc samples</a> on code.google.com</div><div>Dev contact: Serge Lachapelle (sergel) </div><div><br /></div><div><h4><a name="TOC-Track-element"></a>Track element</h4><div><div>Add subtitles, captions, screen reader descriptions, chapters and other types of timed metadata to video and audio. Chrome currently supports the WebVTT format for track data.</div></div><div><br /></div><div>Availability: m23</div><div>Specs: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#the-track-element" target="_blank">WHATWG</a>, <a href="http://dev.w3.org/html5/spec/Overview.html#the-track-element" target="_blank">W3C</a>, <a href="http://dev.w3.org/html5/webvtt/#webvtt-cue-timings" target="_blank">WebVTT</a></div><div>Notes: Rendering does not yet include CSS pseudo elements.</div></div><div>Demos: <a href="http://www.html5rocks.com/en/tutorials/track/basics/" target="_blank">HTML5 Rocks article</a><br /></div><div>Dev Contact: Andrew Scherkus (scherkus), Silvia Pfeiffer (silviapf)</div><div><br /></div></div><div><h4><a name="TOC-Encrypted-Media-Extensions"></a>Encrypted Media Extensions</h4><div></div></div><div>Enables playback of encrypted streams in an &lt;audio&gt;/&lt;video&gt; elements.</div><div><br /></div><div><div>Availability: m25: <a href="http://wiki.webmproject.org/encryption/webm-encryption-rfc" target="_blank">WebM Encryption</a> &amp; ISO BMFF Common Encryption (CENC)</div><div>Spec: W3C Editor's Draft: <a href="http://dvcs.w3.org/hg/html-media/raw-file/eme-v0.1b/encrypted-media/encrypted-media.html">v0.1b</a> (m22 and later); <a href="http://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html">latest</a> (object-oriented version not yet implemented)</div><div>Notes: In m25, enable via about:flags or run with <code>--enable-encrypted-media</code> flag. (Enabled by default in m26 and later on desktop and Chrome OS.)</div><div>Demo: <a href="http://downloads.webmproject.org/adaptive-encrypted-demo/adaptive/index.html">http://downloads.webmproject.org/adaptive-encrypted-demo/adaptive/index.html</a></div><div>Dev Contact: David Dorwin (ddorwin)</div></div><div><br /></div><div><br /></div><div><b>JS Web Speech API</b></div><div><br /></div><div>Enables web developers to incorporate speech recognition and synthesis into their web pages.</div><div><br /></div><div>Availability: m25</div><div>Spec: <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">w3c</a></div><div>Info: <a href="http://updates.html5rocks.com/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API">http://updates.html5rocks.com/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API</a></div><div>Dev Contact: gshires</div><div><br /></div><div><br /></div><div><h2><a name="TOC-Web-Components"></a>Web Components</h2></div><div><div><h4><a name="TOC-Shadow-DOM"></a>Shadow DOM</h4></div>Availability: m18 exposed <code>WebKitShadowRoot().</code>Enable Shadow DOM in about:flags.  DevTools support is in m20, behind the DevTools Experiments flag (and setting). m25 removes constructor and exposes <code>element.webkitCreateShadowRoot() </code>by default.<div>Notes: As of m13, elements internally ported to the shadow dom: &lt;progress&gt;, &lt;meter&gt;, &lt;video&gt;, &lt;input type=range&gt;, &lt;keygen&gt;. </div><div>Tickets: <a href="https://bugs.webkit.org/buglist.cgi?query_format=advanced&amp;short_desc_type=substring&amp;short_desc=shadow+dom&amp;long_desc_type=substring&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailtype1=substring&amp;email1=&amp;emailassigned_to2=1&amp;emailreporter2=1&amp;emailcc2=1&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">webkit shadow dom tickets</a></div><div>Notes: More details at <a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the heck is a Shadow DOM?</a>, <a href="https://plus.google.com/103330502635338602217/posts">+Component Model</a></div><div>Dev Contact: dglazkov</div></div><div><br /></div><div><div style="font-weight:bold">&lt;template&gt;</div><div style="font-weight:bold"><br /></div><div style="font-weight:bold"><div style="font-weight:normal">HTML template element to allow creating fragment of inert HTML as a prototype for stamping out DOM.</div><div style="font-weight:normal"><br /></div><div style="font-weight:normal">Spec: <a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html" target="_blank">w3c</a></div><div style="font-weight:normal">Availability: targeting m26</div><div style="font-weight:normal">Info: <a href="http://html5-demos.appspot.com/static/webcomponents/index.html#16">http://html5-demos.appspot.com/static/webcomponents/index.html#16</a></div></div><div>Dev Contact: rafaelw</div></div><div><br /></div><div><div><b>document.register()</b></div><div><br /></div><div>Method for registering (creating) custom elements in script.</div><div><br /></div><div>Availability: <a href="https://bugs.webkit.org/show_bug.cgi?id=100229" style="font-size:10pt;color:rgb(85,26,139)">bug</a></div></div><div><br /></div><div><b>CSS @host at-rule</b></div><div><br /></div><div>Allows styling of the element hosting shadow dom.</div><div><br /></div><div>Spec: <a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html#host-at-rule">spec</a></div><div>Demo: <a href="http://html5-demos.appspot.com/static/webcomponents/index.html#32">demo</a></div><div>Availability: m25</div><div><br /></div><div><b>CSS ::distributed() pseudo element</b></div><div><b><br /></b></div><div>Allows styling of nodes distributed into an insertion point.</div><div><b><br /></b></div><div><div>Spec: <a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html#selecting-nodes-distributed-to-insertion-points">spec</a></div><div>Demo: <a href="http://jsbin.com/acapeh/1/edit">demo</a></div><div>Availability: m26</div></div><div><br /></div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<h2><a name="TOC-Other-Open-Web-Platform-features"></a>Other Open Web Platform features</h2></div>
+</div>
+</div>
+<div>
+<div>
+<h4><a name="TOC-Desktop-notifications"></a><br />Desktop notifications</h4>
+Availability: m5</div>
+<div>Spec: <a href="http://dvcs.w3.org/hg/notifications/raw-file/tip/Overview.html">w3 draft spec</a>, <a href="http://dev.chromium.org/developers/design-documents/desktop-notifications/">design document</a></div>
+<div>Notes: Additional functionality added in m6: in-place replacement of notifications, BiDi support, Worker support, and UI improvement.</div><div>           In M22, <code>createHTMLNotification()</code> was removed because of spec compliance. See <a href="https://plus.google.com/u/0/102860501900098846931/posts/8vWo8hq4pDm">this post</a>. <br />
+Dev Contact: John Gregg (johnnyg) <br />
+</div><div><br /></div><div><h4><a name="TOC-details-summary-"></a>&lt;details&gt;/&lt;summary&gt; </h4></div><div>Interactive widget to show/hide content.</div><div><br /></div><div>Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/interactive-elements.html" target="_blank">WHATWG</a></div><div>Availability: m12</div><div>Demo: <a href="http://kinlan-presentations.appspot.com/bleeding-berlin/index.html#6" target="_blank">http://kinlan-presentations.appspot.com/</a></div><div><br /></div><div><div><h4><a name="TOC-datalist-"></a>&lt;datalist&gt;</h4></div><div>Predefined data/options for controls</div><div><br /></div><div>Spec: <a href="http://www.w3.org/TR/html-markup/datalist.html" target="_blank">W3C</a></div><div>Availability: m20. See <a href="http://updates.html5rocks.com/2012/04/datalist-landed-in-Chrome-Canary">html5rocks.com update</a> for mor info.</div></div><div>Demo: <a href="http://updates.html5rocks.com/2012/04/datalist-landed-in-Chrome-Canary">http://updates.html5rocks.com/2012/04/datalist-landed-in-Chrome-Canary</a></div><div><br /></div><div><h4><a name="TOC-dialog-The-dialog-element-represents-a-part-of-an-application-that-a-user-interacts-with-to-perform-a-task-for-example-a-dialog-box-inspector-or-window.Spec:-WHATWGBug:-webk.it-84635Availability:-Behind-a-flag-in-m25.-Enable-Experimental-WebKit-Features-in"></a><div><h4><a name="TOC-dialog-"></a>&lt;dialog&gt;</h4><div><span style="font-weight:normal">The dialog element represents a part of an application that a user interacts with to perform a task, for example a dialog box, inspector, or window.</span></div><div><span style="font-weight:normal"><br /></span></div><div><span style="font-weight:normal">Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#the-dialog-element">WHATWG</a></span></div><div><span style="font-weight:normal">Bug: <a href="goog_742956014">webk.it/</a></span><span style="font-weight:normal"><a href="https://bugs.webkit.org/show_bug.cgi?id=84635">84635</a></span></div><div><span style="font-weight:normal">Availability: Behind a flag in </span><span style="font-weight:normal">m25. E</span><span style="font-weight:normal">nable "</span><span style="font-weight:normal">Experimental WebKit Features" in about:flags.</span></div><div><span style="font-weight:normal">Dev contact: falken</span></div><div style="font-weight:normal"><br /></div><h4><a name="TOC-Device-Orientation"></a>Device Orientation</h4><div><span style="font-weight:normal">Enables real-time events about the 3 dimensional orientation of the device/laptop</span></div><div><span style="font-weight:normal">Availability: m7, in Intel-based Apple portables (<a href="http://support.apple.com/kb/HT1935">apple.com kb</a>), <a href="https://developer.apple.com/library/safari/#documentation/SafariDOMAdditions/Reference/DeviceOrientationEventClassRef/DeviceOrientationEvent/DeviceOrientationEvent.html">iOS 4.2</a>+</span></div><div><span style="font-weight:normal">Spec: <a href="http://dev.w3.org/geo/api/spec-source-orientation.html">w3c editors draft</a></span></div><div><span style="font-weight:normal">Demo: <a href="http://slides.html5rocks.com/#slide-orientation">demo</a></span></div></div><div><div><div><div><div><div><div><div><h4><a name="TOC-EventSource"></a>EventSource</h4></div></div></div></div></div></div></div></div></h4></div><div><h4><a name="TOC-Also-called-Server-sent-Events-these-are-push-notifications-from-the-server-received-as-DOM-events.Availability:-m6Demo:-html5rocks-article-code-and-demos"></a><div style="font-weight:normal">Also called Server-sent Events, these are push notifications from the server received as DOM events.</div><div style="font-weight:normal">Availability: m6</div><div style="font-weight:normal">Demo: <a href="http://www.html5rocks.com/tutorials/eventsource/basics/">html5rocks article</a>, <a href="http://weblog.bocoup.com/chrome-6-server-sent-events-with-new-eventsource">code and demos</a></div><div><br /></div></h4></div><div><div><div><div><div><div><div><div><b>Fullscreen API</b></div><div><b><br /></b></div><div>Programmatically instruct content on the page to be presented in the browser's full screen (kiosk) mode.</div><div>Availability: m15</div><div>Spec: <a href="http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html">w3c spec</a></div><div>Demo: <a href="http://updates.html5rocks.com/2011/10/Let-Your-Content-Do-the-Talking-Fullscreen-API">html5rocks update</a>, <a href="http://html5-demos.appspot.com/static/fullscreen.html">demo</a></div></div></div></div></div></div></div><div>Dev contact: <span style="color:rgb(119,119,119);font-family:arial,sans-serif">jeremya</span></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<h4><a name="TOC-history.pushState"></a>history.pushState</h4><div style="font-weight:normal">The <a href="http://dev.w3.org/html5/spec-author-view/history.html#dom-history-pushstate" rel="nofollow" style="color:rgb(0,102,204);text-decoration:none">pushState, replaceState, and clearState</a> methods provide applications with programmatic control over session history. </div><div style="font-weight:normal">Availability: m5. <code>history.state</code> was implemented in m18. popstate firing after page load: <a href="http://crbug.com/63040">crbug.com/63040</a></div><div style="font-weight:normal">Documentation: <a href="https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history" target="_blank">MDN</a><br /><br /></div></div></div></div></div></div></div></div></div></div><div><div><div>
+<h4><a name="TOC-Geolocation"></a>Geolocation</h4>
+Enables websites to get geolocation information from browsers </div>
+<div>Availability: m5, also Firefox 3.5</div>
+<div>Dev Contact: Andrei Popescu (andreip) <br />
+<br />
+</div><div><div><h4><a name="TOC-GamePad-API"></a>GamePad API</h4></div><div>Gives JS access to a game controller via USB.</div><div>Availability: targeting m18</div><div>Spec: <a href="http://dvcs.w3.org/hg/webevents/raw-file/default/gamepad.html">W3C Editor's draft</a>  <br />Dev contact: <span style="font-family:arial,sans-serif">scottmg</span></div><div>Notes: <a href="http://crbug.com/72754">Chromium tracking issue</a>. Enabled in about:flags</div></div><div><br /></div><h4><a name="TOC-Battery-Status"></a>Battery Status</h4><div>Allows access to see the battery level of the device's battery</div><div>Availability: unknown</div><div>Spec: <a href="http://dev.w3.org/2009/dap/system-info/battery-status.html">w3c editor's draft</a></div><div>Bugs: <a href="http://webk.it/62698">webk.it/62698</a></div><div>Demo: <a href="http://www.smartjava.org/examples/webapi-battery/">here</a></div>
+<h4><a name="TOC-DOM-MutationObserversProvides-notifications-when-DOM-nodes-are-rearranged-or-modified.Availability:-m18-prefixed-as-WebKitMutationObserver-unprefixed-in-current-FirefoxSpec:-part-of-dom4-w3c-Related-links:-developer.mozilla.orgUseful-library:-Mutation-Summ"></a><div><div style="font-weight:normal"><div><h4><a name="TOC-DOM-MutationObservers"></a><br />DOM MutationObservers</h4></div><div>Provides notifications when DOM nodes are rearranged or modified.</div>Availability: m18, prefixed as WebKitMutationObserver; unprefixed in current Firefox<div>Spec: <a href="http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#mutation-observers">part of dom4 (w3c)</a></div><div>Related links: <a href="https://developer.mozilla.org/en/DOM/DOM_Mutation_Observers">developer.mozilla.org</a></div><div>Useful library: <a href="http://code.google.com/p/mutation-summary/">Mutation Summary</a></div><div>Dev Contact: rafaelw</div></div></div></h4></div><div><div><br /></div><div><b>&lt;iframe&gt; attributes</b></div><div><br /></div></div></div></div><div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><a href="https://developer.mozilla.org/en/HTML/Element/iframe">MDN docs</a></div></blockquote></div><div><br /></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><div><div><b>seamless</b></div><div>The seamless attribute is used to embed and &lt;iframe&gt; in the calling page without scrollbars or borders (e.g. seamlessly). In m26, seamless iframes inherit styles from their embedding parent page.</div></div><div><div>Availability: m20 </div><div>Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-seamless">whatwg</a></div></div><div><div>Info: <a href="http://benvinegar.github.com/seamless-talk/">http://benvinegar.github.com/seamless-talk/</a></div></div></blockquote><div><br /></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><div><b>srcdoc</b></div></div></div></div><div>Gives the content of an iframe as a src context to embed (e.g. <code>&lt;iframe seamless srcdoc="&lt;b&gt;Hello World&lt;/b&gt;"&gt;&lt;/iframe&gt;</code>).</div><div>Note: If both src and srcdoc are set, the latter takes precedence.</div><div>Availability: m20</div><div>Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-srcdoc">whatwg</a></div><div><br /></div><div><b>sandbox</b></div><div>Method of running external site pages with reduced privileges (i.e. no JavaScript) in iframes (<code>&lt;iframe sandbox="allow-same-origin allow-forms" src="..."&gt;&lt;/iframe&gt;</code>)</div><div>Availability: m19</div><div>Spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-iframe-element.html#attr-iframe-sandbox">whatwg</a></div></blockquote><div><div><div><div><br /></div><div><h4><a name="TOC-matchMedia-API-for-testing-if-a-given-media-query-will-apply.Availability:-m9Spec:-w3c-cssom-specNotes:-webkit-changeset"></a><div style="font-weight:normal"><h4><a name="TOC-matchMedia-"></a>matchMedia()</h4></div><div style="font-weight:normal">API for testing if a given media query will apply.</div><div style="font-weight:normal">Availability: m9</div><div style="font-weight:normal">Spec: <a href="http://dev.w3.org/csswg/cssom-view/#dom-window-matchmedia">w3c cssom spec</a></div><div style="font-weight:normal">Notes: <a href="http://trac.webkit.org/changeset/72552">webkit changeset</a></div><div><br /></div></h4></div><div><div><h4><a name="TOC-Pointer-Lock-TAPIFKA-Mouse-Lock-"></a>Pointer Lock (TAPIFKA Mouse Lock)</h4></div><div>Gives access to raw mouse movement, locks the target of mouse events to a single element, eliminates limits of how far mouse movement can go in a single direction, and removes the cursor from view. Obvious use cases are for first person or real time strategy games.<br />Availability: m18 behind flag. On be default in m22 with a refined API similar to requestFullScreen.</div><div>Spec: <a href="http://dvcs.w3.org/hg/webevents/raw-file/default/mouse-lock.html">W3C Editor's draft</a>  </div><div>Documentation: <a href="http://updates.html5rocks.com/2012/02/Pointer-Lock-API-Brings-FPS-Games-to-the-Browser">HTML5 Rocks</a><br /><div>Notes: <a href="http://code.google.com/p/chromium/issues/detail?id=72754">Chromium tracking issue</a></div>Dev contact: scheib</div><div><br /></div></div><div>Note, late breaking changes:</div><div><div>Pointer lock can only work within one document. If you lock in one iframe, you can not have another iframe try to lock and transfer the target... it will error instead. The first iframe has to unlock, then the second iframe can lock.</div><div><br /></div><div>Also, iframes work by default, but sandboxed iframes block pointer lock. Landed recently into WebKit the ability to use &lt;iframe sandbox="allow-pointer-lock"&gt;, but that will not percolate into Chrome until 23.</div></div><div><div><div><div><div><div><div><div><div><div><h4><a name="TOC-Page-Visibility"></a>Page Visibility</h4></div></div></div></div></div></div></div></div></div><div>Provides an API to ask whether the current tab is visibile or not. If you, you might want to throttle back action or set an idle state.</div>Availability: m13, prefixed as <code>document.webkitHidden</code><div><div>Notes: Relatedly, setTimeout/Interval are clamped to 1000ms when in a background tab as of <a href="http://code.google.com/p/chromium/issues/detail?id=66078">m11</a>. Firefox 5 has the <a href="https://developer.mozilla.org/en/DOM/window.setTimeout#Minimum_delay_and_timeout_nesting">same</a> behavior.</div><div><div><div><div><div></div></div></div></div></div></div><div>Spec: <a href="http://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PageVisibility/Overview.html">w3c draft spec</a></div><div>Demo: <a href="http://samdutton.com/pageVisibility">samdutton.com/pageVisibility</a></div><div>Dev Contact: shishir</div></div></div><div><div><div><div><h4><a name="TOC-Workers"></a>Workers</h4>Provides a threading API</div><div><div><div>Availability: Chrome 3, Safari 4, Firefox 3.5. Shared workers available in m4.</div><div>Android Availability: Dedicated workers in m16 (0.16). No shared workers, yet.</div><div>Spec: <a href="http://www.whatwg.org/specs/web-workers/current-work/" style="color:rgb(78,125,191)">WHATWG</a></div><div>Notes: Pre-M15, there was a limit to the number of workers that each page can start, as well as the number of workers that can be running globally across all pages. This was because a new process was started for each worker. As of M15, workers are started in-process, meaning <span style="font-family:arial;font-size:small"> </span><span style="font-family:arial;font-size:small">less memory footprint and faster messaging. Transferrable objects landed in  m17 (see next)</span></div><div>Dev Contact: Dmitry Lomov (dslomov), Drew Wilson (atwilson)<br /></div></div></div></div></div></div><div><br /></div><div><div><h4><a name="TOC-Transferable-Object-messaging-passing"></a>Transferable Object messaging passing</h4>With transferable objects/data, ownership is transferred from one context to another. It is zero-copy, which vastly improves the performance of sending data to a Worker or another window.</div>Availability: m17<div><div>Spec: <a href="http://dev.w3.org/html5/spec/common-dom-interfaces.html#transferable-objects">w3c spec</a></div><div>Notes: landed as prefixed. Unprefixed in M24.</div></div></div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>worker.postMessage(arrayBuffer, [arrayBuffer])</code></div><div><code>window.postMessage(arrayBuffer, targetOrigin, [arrayBuffer])</code></div></div><div>See: <a href="http://updates.html5rocks.com/2011/12/Transferable-Objects-Lightning-Fast">html5rocks update</a>, <a href="http://html5-demos.appspot.com/static/workers/transferables/index.html">demo</a></div><div><br /></div><div><div><h4><a name="TOC-link-load-error-events"></a>&lt;link&gt; load/error events</h4>Specify and onload or onerror event for a stylesheet to load.</div><div><div>Availability: m19?</div><div>Spec: <a href="http://www.w3.org/TR/html5/the-link-element.html#the-link-element" style="color:rgb(78,125,191)">W3C</a></div></div></div><h4><a name="TOC-Touch-Events"></a>Touch Events</h4><div>Android Availability: m16 (0.16)</div><div><br /></div><div><br /></div><div><b>MathML</b></div><div><b><br /></b></div><div>Availability: m24<div>Spec: <a href="http://www.w3.org/TR/MathML3/">w3c spec</a></div></div><div><br /></div><div><br /></div><div><b>JS Internationalization API</b></div><div><br /></div><div>Allows collation (string comparison), number formatting, and date and time formatting for JavaScript applications. More info <a href="http://norbertlindenberg.com/2012/10/ecmascript-internationalization-api/index.html">here</a>.</div><div>Availability: m24</div><div>Spec: <a href="http://www.ecma-international.org/publications/standards/Ecma-402.htm">here</a></div><div><br /></div><div><b>Resource Timing API</b></div><div><b><br /></b></div><div>Availability: m25</div><div>Spec: <a href="http://www.w3.org/TR/2011/WD-resource-timing-20110524/">w3c</a></div><div><br /></div><div><div><b>User Timing API</b></div><div><b><br /></b></div><div>Availability: m25</div><div>Spec: <a href="http://w3c-test.org/webperf/specs/UserTiming/">w3c</a></div></div><div><b><br /></b></div><div><b>Object.observe()</b></div><div>Way to observe changes to JS objects.</div><div>Availability: m25 (behind Enable Experimental JS Features in about:flags)</div><div>Info: <a href="http://updates.html5rocks.com/2012/11/Respond-to-change-with-Object-observe">http://updates.html5rocks.com/2012/11/Respond-to-change-with-Object-observe</a></div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<h2><a name="TOC-Webforms-"></a>Webforms </h2></div><div>Availability:<b> See <a href="http://www.chromium.org/developers/web-platform-status/forms" style="color:rgb(0,102,204);text-decoration:none">HTML5 Forms Status</a> for all details.</b> (Updated as recently as Nov 28th, 2012).</div><div>Includes details in input types (like date and color), input attributes, datalist and more. </div>
+</div>
+</div>
+</div>
+</div>
+<div style="font-size:13px;font-weight:normal">
+<div>
+<div>
+<div></div>
+</div>
+</div>
+</div>
+<div><br /></div><h4><a name="TOC-Autocomplete"></a>Autocomplete</h4></div><div>Provides hints to the autofill implementation to allow Chrome to better provide suggested values to the user.</div><div>Availability: The <code>x-autocompletetype</code> attribute was implemented in Chrome 15. It used <a href="http://wiki.whatwg.org/wiki/Autocomplete_Types#Experimental_Implementation_in_Chrome">token values that are documented here</a>, but later revised. Chrome 24 features an implementation of the <code>autocomplete</code> attribute that <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute">matches the HTML spec</a>.</div><div><br /></div><h4><a name="TOC-formElement.requestAutocomplete-"></a>formElement.requestAutocomplete()</h4><div>Allows a form to be filled out on demand by the browser's autofill.</div><div>Availability: in development.</div><div>Notes: <a href="http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2012-October/037711.html">WHATWG proposal</a>.</div><div>Tickets: <a href="http://code.google.com/p/chromium/issues/detail?id=159537">crbug</a>, <a href="https://bugs.webkit.org/show_bug.cgi?id=100560">webkit meta bug</a><br />
+<h2><a name="TOC-DOM-APIs"></a>DOM APIs</h2>
+<div><br />
+</div>
+<div><a href="http://www.w3.org/TR/selectors-api2/#matchtesting">Element.matchesSelector</a> - m4</div>
+<div>Element.outerHTML - m1</div>
+<div>Element.textContent (faster than innerHTML for plain text) - m1</div>
+<div><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/elements.html#dom-classlist">Element.classList</a> (classList.add/remove methods) - m8</div>
+<div><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/elements.html#embedding-custom-non-visible-data-with-the-data-*-attributes">Element.dataset</a> (Provides easy access to <code style="color:rgb(0,96,0)">data-*</code> attribute values) - m8</div>
+<div><br />
+</div>
+<div>window.onerror event - <a href="http://trac.webkit.org/changeset/76216">m10</a></div>
+<div>crypto.getRandomValues() - m11</div>
+<div>selectionchange event - <a href="http://trac.webkit.org/changeset/79208">m11</a></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Chrome-Extensions"></a><font size="3">Chrome  Extensions</font></h2>
+<div><a href="http://code.google.com/chrome/extensions/trunk/whats_new.html">View the changelog of features landing in Chrome extensions.</a></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><span style="font-size:medium">More resources for going deep with HTML5:</span></div>
+<div>
+<ul><li><a href="http://html5rocks.com/">HTML5 Rocks</a></li><li><a href="https://developer.mozilla.org/en/HTML/HTML5" target="_blank">Mozilla Developer Network</a></li>
+<li><a href="http://html5rocks.com/"></a><a href="http://stackoverflow.com/questions/tagged/html5">StackOverflow: html5</a></li>
+<li><a href="http://webchat.freenode.net/?channels=html5">#html5</a> on freenode</li></ul>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/web-platform-status/forms" dir="ltr">HTML5 Forms Status</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/web-platform-status">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9FPPrt3gHGBaci2m6tO3iioWBFTs2E70aA1Yt3Top9QIvVruvcX3UB1ULfl0rMoCXcWT-2Spv44FpGwbNRuddz4LTsyPeL3zNckwzzmoByMyaVgWU/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

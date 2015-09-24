@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/network-stack","deleted":false,"title":"Network Stack","dir":"ltr"},{"path":"/developers/design-documents/network-stack/http-authentication-throttling","deleted":false,"title":"HTTP Authentication Throttling","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/http-authentication-throttling\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/network-stack","parentWuid":"wuid:gx:1e5bf38b977efb4d","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"HTTP Authentication Throttling","locale":"en","wuid":"wuid:gx:10cdfaa5e82c41f1","revision":4,"path":"/developers/design-documents/network-stack/http-authentication-throttling","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"http-authentication-throttling","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="HTTP Authentication Throttling - The Chromium Projects" />
+<meta itemprop="name" content="HTTP Authentication Throttling - The Chromium Projects" />
+<meta property="og:title" content="HTTP Authentication Throttling - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>HTTP Authentication Throttling - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="/developers/design-documents/network-stack" dir="ltr">Network Stack</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">HTTP Authentication Throttling</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h2><a name="TOC-Problem-statement"></a><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="4">Problem statement</font></span></h2><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Some users get locked out of proxies or servers after entering an invalid username/password combination because Chrome will immediately reissue all pending requests with the same invalid credentials.</font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">To prevent this from happening, only one request should be reissued. If authentication succeeds, all other pending requests can be reissued. If it fails, the user will be presented with another login prompt. If the request is cancelled, another pending request will be reissued.</font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">The downside is that this will introduce an RTT penalty for the other pending requests. However, that penalty will likely be dwarfed by the time to enter username/password, and the penalty is severe enough that the cost is likely worth it.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial"><span style="font-size:15px;white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="4"><span style="white-space:pre-wrap"><b>Implementation Choices</b></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><font size="2"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">There are two general approaches for implementing this.</span><br /><br /><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">a) Do the throttling in the network stack, with no changes to the URLRequest delegates. All pending requests are reissued from the perspective of ResourceDispatcherHost and LoginHandler, but are queued someplace such as HttpAuthController::MaybeGenerateAuthToken [which can complete asynchronously], with the state residing in the HttpAuthCache::Entry. If the authentication request succeeds, all pending requests continue down the network stack. If it fails, pretend that all of the other requests also were rejected by the server or proxy and send a 401 or 407 back up the network stack using the same auth challenge as before.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2"><br /></font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">b) Do the throttling in the LoginHandler, and only restart one URLRequest. To make this happen, we'll need to change LoginHandler so there is one per (domain, scheme, realm) tuple instead of one per URLRequest, and add a LoginHandlerTable to do the discovery/creation. If the outstanding request succeeds, reissue all other pending requests. If it fails, re-show all possible dialogs [one per tab]. If it is cancelled, reissue another pending request or kill the LoginHandler if none remain.</font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2"><br /></font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">Initially a) seemed like a more attractive option. All users of the networking stack would be able to take advantage of the behavior without having to implement their own throttling mechanism. It's also less of a change:  we already do grouping of (domain, scheme, realm) tuples in the HttpAuthCache and have a natural queuing location at HttpAuthController::MaybeGenerateAuthToken.</font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2"><br /></font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent;font-family:Times"><span style="font-family:Arial;color:rgb(0,0,0);background-color:transparent;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">However, it has a number of issues which make it seem like the wrong approach:</font></span></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><ul><li><span style="font-family:Arial;white-space:pre-wrap"><font size="2">If authentication fails, and the user cancels authentication, the pending requests will not contain the correct body of the 401 or 407 response.</font></span></li><li><span style="font-family:Arial;white-space:pre-wrap"><font size="2">The NetLog and developer tools may show a number of requests which were not actually issued.</font></span></li><li><span style="font-family:Arial;white-space:pre-wrap"><font size="2">It's possible that not all consumers of the network stack want this behavior.</font></span></li><li><span style="font-family:Arial;white-space:pre-wrap"><font size="2">Only does throttling for HTTP, not FTP [not sure if this is good or bad].</font></span></li></ul><div><font face="Arial" size="2"><span style="white-space:pre-wrap">As a result, doing the throttling at the LoginHandler level makes more sense. It's also a more natural match for what's actually going on.</span></font></div><div><font face="Arial"><span style="font-size:15px;white-space:pre-wrap"><br /></span></font></div><div><font face="Arial" size="4"><span style="white-space:pre-wrap"><b>LoginHandler throttling</b></span></font></div><div><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">Instead of one LoginHandler per request, there will be one LoginHandler per (domain, scheme, realm).  A LoginHandlerDirectory will maintain a map of LoginHandler's and manage their lifetime, and the LoginHandlerDirectory will be owned by the ResourceDispatcherHost.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">The LoginHandler interface will look like</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">class LoginHandler {</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">  public:</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Adds a request to be handled</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    void AddRequest(URLRequest* request);</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"> </span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Removes a request from being handled, done on cancellation.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    void RemoveRequest(URLRequest* request);</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Called when the user provides auth credentials.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    void OnCredentialsSupplied();</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Called when the user cancels entering auth credentials.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    void OnUserCancel();</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Called when authentication succeeds on a request.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    void OnAuthSucceeded(URLRequest* request);</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Called when authentication fails on a request.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    void OnAuthFailed(URLRequest* request);</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    // Called by LoginHandlerDirectory to see if it should free.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">    bool IsEmpty() const;</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">};</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">The LoginHandler is a state machine, with four states.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">WAITING_FOR_USER_INPUT</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">WAITING_FOR_USER_INPUT_COMPLETE
+TRYING_REQUEST</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">TRYING_REQUEST_COMPLETE</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">with perhaps a Nil or initialization state.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">AddRequest() will always queue the request, but it should not already be in the set of requests.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">If RemoveRequest() is called while in the WAITING_FOR_USER_INPUT or WAITING_FOR_USER_INPUT_COMPLETE state, it will remove from the set and remove a dialog if it is the only request for a particular tab. It will also remove the LoginHandler if it is the last request. If in the TRYING_REQUEST or TRYING_REQUEST_COMPLETE state, the request is simply removed from the set if it is not the currently attempted request. If it is the currently attempted request, then TRYING_REQUEST is re-entered with a different request.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">OnCredentialsSupplied() must be called during WAITING_FOR_USER_INPUT and will transition to WAITING_FOR_USER_INPUT_COMPLETE. This will also choose a request to try and enter TRYING_REQUEST.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">OnUserCancel() must be called during WAITING_FOR_USER_INPUT and will transition to WAITING_FOR_USER_INPUT_COMPLETE. This will cancel auth on all of the pending requests and display the contents of the 401/407 body.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">OnAuthSucceeded() must be called during the TRYING_REQUEST state, and will transition to TRYING_REQUEST_COMPLETE. This will reissue all other pending requests and close out the LoginHandler.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">OnAuthFailed() must be called during the TRYING_REQUEST state, will enter TRYING_REQUEST_COMPLETE, and will go back to WAITING_FOR_USER_INPUT. The pending request is moved back to the main set of pending requests.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial"><span style="font-size:15px;white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="4"><span style="white-space:pre-wrap"><b>Delaying credential entering into HttpAuthCache</b></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial"><span style="font-size:15px;white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">Although the LoginHandler changes described above will throttle most unconfirmed authentication requests, there is still the chance that some will get through.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">While the LoginHandler is in the TRYING_REQUEST state, the username/password are entered into the HttpAuthCache::Entry before hearing back from the server or proxy about whether the results are successful. Any other URLRequest's issued during this period of time will use the unconfirmed username/password.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">If the credentials are entered on a successful response, then this problem goes away. ResourceDispatcherHost issued URLRequest's will likely fail, get a 401, and get added to the queue of pending requests in the appropriate LoginHandler. Other dispatched ones such as URLFetcher will simply fail.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">There is a race I just thought about which might annoy owners, and I don't have a good answer for. Assume that there is an outstanding request A which is waiting to hear back from the proxy if the authentication succeeded. A second request B comes in, notices no username/password in the HttpAuthCache and so does not add preemptive authentication and issues a raw GET. Request A completes successfully, fills in the HttpAuthCache with the credentials, goes back to the LoginHandler, reissues all requests and closes the LoginHandler. Then, Request B returns from the proxy with a 407 response code, since it provided no Authorization header. Since the LoginHandler has been destroyed, a new one is created and the user is presented with a login prompt again.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br /></span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><font face="Arial" size="2"><span style="white-space:pre-wrap">One way to fix that case is to add a PENDING state to the HttpAuthCache::Entry when Request A is issued, and removed when it hears back from the proxy. Request B will be stalled at the MaybeGenerateAuthToken state when the entry is pending, and adds itself to a list in the entry. When it completes, all issues are continued either using preemptive authentication with the credentials in the cache entry [if Request A succeeded] or issued with no credentials if Request A failed. That still may result in a race in the failure case, however.</span></font></div><div style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;background-color:transparent"><br /></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/http-authentication-throttling">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9LBIi7UXOmFiE5pAF8xmyv5XzAc7o8rwRMAo0WYkvMfdsqUBD5U0eYmo5ZhcdF_M-vlx0mVS6KFqnZjGih_vlRRhoghcfqszDLxPOsI3Sz_Se-Jph/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

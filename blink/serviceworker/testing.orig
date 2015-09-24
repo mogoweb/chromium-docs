@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/blink","deleted":false,"title":"Blink","dir":"ltr"},{"path":"/blink/serviceworker","deleted":false,"title":"ServiceWorker","dir":"ltr"},{"path":"/blink/serviceworker/testing","deleted":false,"title":"Service Worker Testing","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/blink/serviceworker/testing\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/blink/serviceworker","parentWuid":"wuid:gx:69f6d952aadcce70","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Service Worker Testing","locale":"en","wuid":"wuid:gx:4a553dde341a3c41","revision":29,"path":"/blink/serviceworker/testing","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"testing","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Service Worker Testing - The Chromium Projects" />
+<meta itemprop="name" content="Service Worker Testing - The Chromium Projects" />
+<meta property="og:title" content="Service Worker Testing - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Service Worker Testing - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:571d8fbd499df20e" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/blink" dir="ltr">Blink</A>‎ &gt; ‎<A href="/blink/serviceworker" dir="ltr">ServiceWorker</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Service Worker Testing</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div><div class="sites-embed-align-right-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-1"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Performance-Tests"><strong>1 </strong>Performance Tests</a></li><li class="goog-toc"><a href="#TOC-Layout-Tests"><strong>2 </strong>Layout Tests</a></li><li class="goog-toc"><a href="#TOC-Layout-Tests-Style"><strong>3 </strong>Layout Tests Style</a></li></ol></div></div></div></div></div>Service Worker has multiple kinds of tests: Content Browser Tests, WebKit Unit Tests, Telemetry Performance Tests, and Blink Layout Tests.</div>
+<h2><a name="TOC-Performance-Tests"></a>Performance Tests</h2>
+<h3><a name="TOC-Issue-372759-is-tracking-the-development-of-Service-Worker-performance-tests."></a><a href="https://code.google.com/p/chromium/issues/detail?id=372759" style="font-size:10pt;font-weight:normal;background-color:transparent">Issue 372759</a><font size="2"><span style="font-weight:normal"> is tracking the development of Service Worker performance tests.</span></font></h3>
+<div>How to run the performance tests:</div>
+<div>
+<ol><li>Build and install the content_shell_apk target per the <a href="https://code.google.com/p/chromium/wiki/AndroidBuildInstructions#Build_Content_shell">Android build instructions</a>.</li>
+<li>Build the forwarder2 target.</li>
+<li>tools/perf/run_benchmark --browser=android-content-shell [--device=xxxx] service_worker.service_worker</li>
+</ol>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">How to update the performance tests:</span></div>
+<div>
+<ol><li>Check out the <a href="https://github.com/coonsta/Service-Worker-Performance">performance test sources</a>. Do development, pull request, etc.</li>
+<li>Run a local server in that directory, for example: twistd -n web --path . --port 8091 (you must use that port number, it appears in the test Python scripts.)</li>
+<li>Build Linux Release Chromium</li>
+<li>tools/perf/record_wpr --browser=release --extra-browser-args='--enable-experimental-web-platform-features' service_worker_page_set<br />Note: If you change the output directory of build (like 'out_desktop'), you can use '--browser=exact --browser-executable=path/to/your/chrome' instead of '--browser=release'.</li>
+<li>Briefly sanity check the tools/perf/page_sets/data/service_worker_nnn.wpr file to see that it doesn't contain requests that should have been handled by a Service Worker (look for GET and browse through the URLs.)</li>
+<li>Add the new SHA1 hash file (use git status to find it) and upload for review, commit as usual. Mention the path and commit hash from step 1.</li>
+</ol>
+</div>
+<h2><a name="TOC-Layout-Tests"></a>Layout Tests</h2>
+<div><span style="font-size:10pt;background-color:transparent">Within Blink Layout Tests, Service Worker has two kinds of tests:</span></div>
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">Ones that test implementation specific aspects such as not crashing or leaking memory. These often rely on Blink-specific testing harnesses like testRunner or internals. Put these tests in a subdirectory called chromium, for example LayoutTests/http/tests/serviceworker/chromium. The purpose of these tests is to ensure the stability and security of our implementation.<br />
+<br />
+</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Ones that test implementation-neutral aspects like whether features conform to the specification. We call these "W3C-style" tests because they use <a href="http://testthewebforward.org/docs/testharness-tutorial.html">the W3C's test harness</a> and don't have recourse to Blink-specific testing hooks. The purpose of these tests is to ensure the functionality of our implementation, and to characterize the behavior of our implementation when reconciling spec, implementation, and other implementations.</span></li>
+</ol>
+</div>
+<div>
+<h2><a name="TOC-Layout-Tests-Style"></a>Layout Tests Style</h2>
+<div>Historically, style was not rigorously enforced for Blink Layout Tests. Service Worker has decided to implement tests in a consistent style. The style guide we have designed is more heavily influenced by the W3C's test harness <span style="font-size:10pt;background-color:transparent">than Blink's style guide because we plan to contribute most of our test suite to the W3C. Where this style guide is not explicit, follow</span><span style="font-size:13.3333330154419px;background-color:transparent"> the </span><a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml" style="font-size:13.3333330154419px;background-color:transparent">Google JavaScript style guide</a><span style="font-size:10pt;background-color:transparent"> because it is at least comprehensive.</span></div><div><br /></div><div>Use the W3C Test Harness <a href="http://testthewebforward.org/docs/test-templates.html#script-test-template-minimal">Script Test Template: Minimal</a> for HTML files:</div><div><br /></div><div><div><font face="courier new, monospace"><code>&lt;!DOCTYPE html&gt;</code></font></div><div><font face="courier new, monospace"><code>&lt;meta charset="utf-8"&gt;</code></font></div><div><font face="courier new, monospace"><code>&lt;title&gt;[Title of Test]&lt;/title&gt;</code></font></div><div><font face="courier new, monospace"><code>&lt;script src="/resources/testharness.js"&gt;&lt;/script&gt;</code></font></div><div><font face="courier new, monospace"><code>&lt;script src="/resources/testharnessreport.js"&gt;&lt;/script&gt;</code></font></div><div><font face="courier new, monospace"><code>&lt;script&gt;</code></font></div><div><font face="courier new, monospace"><code>// Calls to test() or async_test()</code></font></div><div><font face="courier new, monospace"><code>&lt;/script&gt;</code></font></div></div>
+<div><br />
+</div>
+<div>Write variable identifiers and function names in lowercase separated with underscores. Use PascalCase for constructor functions.</div>
+<div><br />
+</div>
+<div>Use single quotes for string literals. Reserve double quotes for attribute values in markup. This makes it easy to be consistent in most situations where JavaScript appears in markup and vice-versa.</div>
+<div><br />
+</div>
+<div>Always quote attributes. Use double quotes. Exception: Use defaults for brevity, for example write &lt;button disabled&gt; and not &lt;button disabled="disabled"&gt;.</div>
+<div><br />
+</div>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>var html_button = '&lt;button onclick="close();"&gt;Bye&lt;/button&gt;';</code></font></div>
+<div><br />
+</div>
+<div>Don't:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>var htmlButton = "&lt;button onclick=close()&gt;Bye&lt;/button&gt;";</code></font></div>
+<h3><a name="TOC-Wrapping-and-Indentation"></a>Wrapping and Indentation</h3>
+<div><span style="font-size:10pt;background-color:transparent"><b>Indent two spaces.</b></span></div>
+<div><br />
+</div>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>for (var w = window; w != window.parent; w = window.parent) {</code></font></div>
+<div><font face="courier new, monospace"><code>  Array.prototype.forEach.call(w.frames, function(frame) {</code></font></div>
+<div><font face="courier new, monospace"><code>      console.log(</code></font></div>
+<div><font face="courier new, monospace"><code>        w.title,</code></font></div>
+<div><font face="courier new, monospace"><code>        frame.contentWindow.title);</code></font></div>
+<div><font face="courier new, monospace"><code>    });</code></font></div>
+<div><font face="courier new, monospace"><code>}</code></font></div>
+<div><br />
+</div>
+<div>When wrapping function arguments, indent two spaces. Object and function literals are not exempt from this (example 1).</div><div><br /></div><div>Exceptions. These indent the arguments <i>four</i> spaces:</div><div><ul><li>When wrapping actual parameters and there's a chained property access of the return value (example 2), indent the arguments four spaces so that the arguments don't line up with the chained property access.</li><li>When wrapping formal parameters of function declarations or function literals (example 3) indent the arguments four spaces so that the arguments don't line up with the function body.</li></ul></div><div><br /></div><div>Do:</div><div><br /></div><div><font face="courier new, monospace"><code>// Example 1</code></font></div><div><font face="courier new, monospace"><code><br /></code></font></div><div><font face="courier new, monospace"><code>items.forEach(function(item) {</code></font></div><div><font face="courier new, monospace"><code>    assert_true(is_expensive(item));</code></font></div><div><font face="courier new, monospace"><code>  });</code></font></div><div><font face="courier new, monospace"><code><br /></code></font></div><div><font face="courier new, monospace"><code><br /></code></font></div><div><font face="courier new, monospace"><code>// Example 2</code></font></div><div><font face="courier new, monospace"><code><br /></code></font></div><div><font color="#006000" face="monospace">service_worker_unregister_and_register(</font></div><div><font color="#006000" face="monospace">    t,</font></div><div><font color="#006000" face="monospace">    'resources/a-very-long-path-to-a-worker.js'</font></div><div><font color="#006000" face="monospace">    'resources/a-very-long-path-to-a-scope')</font></div><div><font color="#006000" face="monospace">  .then(function(registration) {</font></div><div><font color="#006000" face="monospace">      // code</font></div><div><font color="#006000" face="monospace">    });</font></div><div><font color="#006000" face="monospace"><br /></font></div><div><font color="#006000" face="monospace"><br /></font></div><div><font color="#006000" face="monospace">// Example 3</font></div><div><font color="#006000" face="monospace"><br /></font></div><div><font color="#006000" face="monospace">function dispatch_keys_for_cache(</font></div><div><font color="#006000" face="monospace">    cache_id,</font></div><div><font color="#006000" face="monospace">    callbacks,</font></div><div><font color="#006000" face="monospace">    request,</font></div><div><font color="#006000" face="monospace">    query_params) {</font></div><div><font color="#006000" face="monospace">  // code</font></div><div><font color="#006000" face="monospace">}</font></div><div><br /></div><div>Don't:</div><div><br /></div><div><div style="font-size:13.3333330154419px"><font face="courier new, monospace"><code>items.forEach(function(item) {</code></font></div><div style="font-size:13.3333330154419px"><font face="courier new, monospace"><code>  assert_true(is_expensive(item));</code></font></div><div style="font-size:13.3333330154419px"><font face="courier new, monospace"><code>});</code></font></div></div><div><br /></div><div><font color="#ff0000">Note:</font> This is different to the Google JavaScript style guide. It is necessary to have sensible indentation with Promises, which mix functions and long function- or Promise-returning arguments.</div><div><br /></div><div><b>Wrap at 80 columns.</b> Exception: Markup with long attribute values.</div>
+<div><br />
+</div>
+<div><b>Break after opening curly braces.</b> Exception: Anonymous functions that are small enough to fit within a line do not need to break after {.</div>
+<div><br />
+</div>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>clients.forEach(function(client) {</code></font></div>
+<div><font face="courier new, monospace"><code>    client.postMessage('Happy New Year!);</code></font></div>
+<div><font face="courier new, monospace"><code>  });</code></font></div>
+<div><br />
+</div>
+<div>Don't:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>function embiggen(element)</code></font></div>
+<div><font face="courier new, monospace"><code>{</code></font></div>
+<div><font face="courier new, monospace"><code>  element.baggage = new ArrayBuffer(1000000);</code></font></div>
+<div><font face="courier new, monospace"><code>}</code></font></div>
+<div><br />
+</div>
+<div><b>When wrapping chained property accesses, break before the period.</b></div>
+<div><br />
+</div>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>naviga</code><code>tor.serviceWorker.register('worker.js')</code></font></div>
+<div><font face="courier new, monospace"><code>  .then(</code></font><span style="color:rgb(0,96,0);font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>function(worker) {</code></span></div>
+<div><font face="courier new, monospace"><code>      // party time</code></font></div>
+<div><font face="courier new, monospace"><code>    })</code></font></div>
+<div><font face="courier new, monospace"><code>  .catch(poop);</code></font></div>
+<div><br />
+</div>
+<div>Don't:</div>
+<div><br />
+</div>
+<div>
+<div><font face="courier new, monospace"><code>navigator.serviceWorker.register('worker.js')</code></font><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>.then(</code></span></div>
+<div><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>  function(worker) {</code></span></div>
+<div><font face="courier new, monospace"><code>    // party time</code></font></div>
+<div><font face="courier new, monospace"><code>  })</code></font><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>.</code></span></div>
+<div><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>  catch(poop);</code></span></div></div>
+<h3><a name="TOC-Promises"></a>Promises</h3>
+<div><b>When using Promises, prefer a separate .catch to the two-argument form of .then.</b> Exception: You need to test an expected exception, and using .catch separately would be tedious.</div>
+<div><br />
+</div>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>navigator.serviceWorker.register('worker.js')</code></font></div>
+<div><font face="courier new, monospace"><code>  .then(function(worker) {</code></font></div>
+<div><font face="courier new, monospace"><code>      // test code</code></font></div>
+<div><font face="courier new, monospace"><code>    })</code></font></div>
+<div><font face="courier new, monospace"><code>  .then(function(worker) {</code></font></div>
+<div><font face="courier new, monospace"><code>      // moar test code</code></font></div>
+<div><font face="courier new, monospace"><code>    })</code></font></div>
+<div><font face="courier new, monospace"><code>  .catch(unexpected_exception(t));</code></font></div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>navigator.serviceWorker.register('http://insecure.example.com/worker.js')</code></font></div>
+<div>
+<div><font face="courier new, monospace"><code>  .then(</code></font></div>
+<div><font face="courier new, monospace"><code>    unreachable_code(</code></font></div>
+<div><font face="courier new, monospace"><code>      t,</code></font></div>
+<div><font face="courier new, monospace"><code>      'registering a script with an insecure origin should </code></font><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>throw a ' +</code></span></div>
+<div><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent"><code>      'SecurityError'),</code></span></div>
+<div><font face="courier new, monospace"><code>    expected_exception(t, SecurityError))</code></font></div>
+</div>
+<div><font face="courier new, monospace"><code>  .then(function() {</code></font></div>
+<div><font face="courier new, monospace"><code>      // moar test code</code></font></div>
+<div><font face="courier new, monospace"><code>    });</code></font></div>
+<div><br />
+</div>
+<div>Don't:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>navigator.serviceWorker.register('worker.js')</code></font></div>
+<div><font face="courier new, monospace"><code>  .then(function(worker) {</code></font></div>
+<div><font face="courier new, monospace"><code>      // test code</code></font></div>
+<div><font face="courier new, monospace"><code>    })</code></font></div>
+<div><font face="courier new, monospace"><code>  .then(function() {</code></font></div>
+<div><font face="courier new, monospace"><code>      // moar test code</code></font></div>
+<div><font face="courier new, monospace"><code>    },</code></font></div>
+<div><font face="courier new, monospace"><code>    unexpected_exception(t));</code></font></div>
+<h3><a name="TOC-Test-Harness-specific-issues"></a>Test Harness specific issues</h3>
+<div>When writing an async test, use the form that takes a function as the first argument. Capture the test object in the variable 't'. Implement the test in the scope of the anonymous function. This keeps variables touched by async steps of a test isolated which makes the tests more reliable and makes it easier to move tests between files.</div>
+<div><br />
+</div>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>async_test(function(t) {</code></font></div>
+<div><font face="courier new, monospace"><code>    // test code</code></font></div>
+<div><font face="courier new, monospace"><code>  }, '"ready" resolves to the active Service Worker of a controlled document');</code></font></div>
+<div><br />
+</div>
+<div>Don't:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>var t = async_test(</code></font></div>
+<div><font face="courier new, monospace"><code>  '"ready" resolves to the active Service Worker of a controlled document');</code></font></div>
+<div><font face="courier new, monospace"><code>// test code</code></font></div>
+<h3><a name="TOC-Assertions-should-have-messages.-Messages-should-describe-the-desired-behavior-and-use-the-word-should-this-aids-clarity."></a><font size="2"><span style="font-weight:normal">Assertions should have messages. M</span><span style="font-weight:normal">essages should describe the desired behavior and use the word 'should'; this aids clarity.</span></font></h3>
+<div>Do:</div>
+<div><br />
+</div>
+<div><font face="courier new, monospace"><code>assert_equals(</code></font></div>
+<div><font face="courier new, monospace"><code>  navigator.serviceWorker.active,</code></font></div>
+<div><font face="courier new, monospace"><code>  null,</code></font></div>
+<div><font face="courier new, monospace"><code>  'an uncontrolled document should not have an active Service Worker');</code></font></div>
+<div><br />
+</div>
+<div>Don't:</div>
+<div><br />
+</div>
+<div>
+<div><font face="courier new, monospace"><code>assert_equals(</code></font></div>
+<div><font face="courier new, monospace"><code>  navigator.serviceWorker.active,</code></font></div>
+<div><font face="courier new, monospace"><code>  null,</code></font></div>
+<div><font face="courier new, monospace"><code>  'non-null active Service Worker');</code></font></div>
+</div>
+<h3><a name="TOC-To-ensure-test-failures-from-unhandled-exceptions-pinpoint-the-cause-of-the-failure-precisely-asynchronous-callbacks-such-as-event-handlers-and-setTimeout-callbacks-must-use-the-t.step_func-wrapper.-This-ensures-that-exceptions-thrown-during-the-execution-"></a><font size="2"><span style="font-weight:normal">To ensure test failures from unhandled exceptions pinpoint the cause of the failure precisely, asynchronous callbacks, such as event handlers and setTimeout callbacks, must use the <font face="courier new, monospace"><code>t.step_func()</code></font> wrapper</span></font><font size="2" style="font-weight:normal;background-color:transparent">. This ensures that exceptions thrown during the execution of the callback cause the test to fail with a useful stack trace, rather than simply timing out.</font></h3><div><font size="2"><span style="font-weight:normal">Exceptions:</span></font></div><div><ul><li><span style="font-size:small;background-color:transparent">Using the </span><span style="font-size:small;background-color:transparent">wrapper is not necessary within Promise chains when there is a terminal catch</span><span style="font-size:small;background-color:transparent"> handler, since exceptions thrown within a Promise callback are converted to rejections of the Promise chain. </span></li><li><span style="font-size:small;background-color:transparent">The Promise constructor's callback function converts exceptions to rejections; if there is a terminal catch <span style="background-color:transparent">handler the wrapper is not needed.</span> </span></li><li><span style="font-size:small;background-color:transparent">Other synchronous callbacks, like the comparator function for sort, </span><span style="font-size:small;background-color:transparent">do not need their own test_step, since the exception is propagated out.</span></li></ul><div><font size="2">Do:</font></div></div><h3><a name="TOC-async_test-function-t-...-xhr.onreadystatechange-t.step_func-function-...-If-this-throws-step_func-will-fail-the-test.-var-result-JSON.parse-xhr.responseText-assert_equals-result-expected-...-t.done-ServiceWorker-onfetch-should-handle-async-XHRs-"></a><div style="font-size:13px;font-weight:normal"><font face="courier new, monospace"><code>async_test(function(t) {</code></font></div><div style="font-size:13px;font-weight:normal"><font face="courier new, monospace"><code>    ...</code></font></div><div style="font-size:13px;font-weight:normal"><span style="font-family:courier new,monospace;background-color:transparent"><code>    xhr.onreadystatechange = t.step_func(function() {</code></span></div><div style="font-size:13px;font-weight:normal"><span style="font-family:courier new,monospace;background-color:transparent"><span><code>    </code><span><code>    ...</code></span></span><br /></span></div><div style="font-size:13px;font-weight:normal"><span style="font-family:courier new,monospace;font-size:13.3333330154419px;background-color:transparent"><code>        </code></span><span style="font-family:courier new,monospace;font-size:13.3333330154419px;background-color:transparent"><code>// If this throws, step_func will fail the test.</code></span></div><div style="font-size:13px"><font face="courier new, monospace" style="font-weight:normal"><code>        var result = JSON.parse(xhr.responseText);</code></font></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>        assert_equals(result, expected, ...);</code></span></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>        t.done();</code></span></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>      });</code></span></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>  }, 'ServiceWorker onfetch should handle async XHRs');</code></span></div></h3><h3><a name="TOC-Don-t:"></a><div style="font-size:13px;font-weight:normal"><br /></div><div style="font-size:13px;font-weight:normal">Don't:</div><div style="font-size:13px;font-weight:normal"><div></div></div></h3><h3><a name="TOC-async_test-function-t-...-xhr.onreadystatechange-function-...-If-this-throws-the-test-will-time-out.-var-result-JSON.parse-xhr.responseText-assert_equals-...-t.done-ServiceWorker-onfetch-should-handle-async-XHRs-"></a><div style="font-size:13px;font-weight:normal"><font face="courier new, monospace"><code>async_test(function(t) {</code></font></div><div style="font-size:13px;font-weight:normal"><font face="courier new, monospace"><code>    ...</code></font></div><div style="font-size:13px;font-weight:normal"><span style="font-family:courier new,monospace;background-color:transparent"><code>    xhr.onreadystatechange = function() {</code></span></div><div style="font-size:13px;font-weight:normal"><span style="font-family:courier new,monospace;background-color:transparent"><code>        ...</code></span></div><div style="font-size:13px;font-weight:normal"><span style="font-family:courier new,monospace;font-size:13.3333330154419px;background-color:transparent"><code>        </code></span><span style="font-family:courier new,monospace;font-size:13.3333330154419px;background-color:transparent"><code>// If this throws, the test will time out.</code></span></div><div style="font-size:13px"><font face="courier new, monospace" style="font-weight:normal"><code>        var result = JSON.parse(xhr.responseText);</code></font></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>        assert_equals(...);</code></span></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>        t.done();</code></span></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>      };</code></span></div><div style="font-size:13px"><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><code>  }, 'ServiceWorker onfetch should handle async XHRs');</code></span></div></h3><h3><a name="TOC-Service-Worker-specific-issues"></a>Service Worker specific issues</h3>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Register each test with a unique Service Worker scope. (Query strings are convenient for this.) This improves test isolation and stops the test itself from being controlled by a Service Worker. If your test needs to interact with the Service Worker as a client (many do), open an iframe with a URL controlled by the Service Worker.</span></div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><span style="background-color:transparent"><font size="2">Prefix Service Worker scopes with "scope/" when appropriate. This helps prevent </font></span><span style="background-color:transparent"><font size="2">unintentionally </font></span><span style="font-size:small;background-color:transparent">registering a Service Worker that controls resources in the test directory.</span></div>
+<div><br />
+</div>
+<div>Prefix each test by unregistering the Service Worker. If a previous test run failed or was interrupted, it may have left a Service Worker registration in place. Unregistering the existing Service Worker first, if any, improves the reliability of the test.</div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;background-color:transparent">Clean up resources when the test is done: Unregister the test's Service Worker at the end of the test. Remove any iframes.</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div>Don't reuse a Service Worker registration between tests in the same file. This makes the tests more isolated, making it easier to split and combine tests from different files.</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/blink/serviceworker/testing">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9gwQE1_yF6NbBZ0WPm2WSIj_4YproVhzBs9tK9CZkFitDZtAj2otVzSlV_Tif38K1eH5PkmwRSXb2NlcuRmCS8d3U1tIptOdOEDbViQyfIQIIy1nk/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

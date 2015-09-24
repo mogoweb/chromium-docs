@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/using-valgrind","deleted":false,"title":"Using Valgrind","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/using-valgrind\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Using Valgrind","locale":"en","wuid":"wuid:gx:32223b310ffa7e9f","revision":107,"path":"/developers/how-tos/using-valgrind","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"using-valgrind","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Using Valgrind - The Chromium Projects" />
+<meta itemprop="name" content="Using Valgrind - The Chromium Projects" />
+<meta property="og:title" content="Using Valgrind - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Using Valgrind - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Using Valgrind</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Building-Chromium-and-its-tests-to-use-Valgrind"><strong>1 </strong>Building Chromium and its tests to use Valgrind</a></li><li class="goog-toc"><a href="#TOC-Using-Valgrind-with-Chromium-itself"><strong>2 </strong>Using Valgrind with Chromium itself</a></li><li class="goog-toc"><a href="#TOC-Using-Valgrind-with-the-Chromium-test-suite"><strong>3 </strong>Using Valgrind with the Chromium test suite</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Release-Build"><strong>3.1 </strong>Release Build</a></li><li class="goog-toc"><a href="#TOC-Blacklisting-Tests"><strong>3.2 </strong>Blacklisting Tests</a></li><li class="goog-toc"><a href="#TOC-Running-a-Single-Test"><strong>3.3 </strong>Running a Single Test</a></li><li class="goog-toc"><a href="#TOC-Suppressing-Errors"><strong>3.4 </strong>Suppressing Errors</a></li><li class="goog-toc"><a href="#TOC-Filing-Good-Valgrind-Bugs"><strong>3.5 </strong>Filing Good Valgrind Bugs</a></li><li class="goog-toc"><a href="#TOC-Figuring-Out-Which-Test-Caused-a-Warning"><strong>3.6 </strong>Figuring Out Which Test Caused a Warning</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Small-tests-like-base_unittests-net_unittests-unit_tests-"><strong>3.6.1 </strong>Small tests (like base_unittests, net_unittests, unit_tests)</a></li><li class="goog-toc"><a href="#TOC-Larger-tests-e.g.-browser_tests-"><strong>3.6.2 </strong>Larger tests (e.g. browser_tests)</a></li><li class="goog-toc"><a href="#TOC-layout_tests"><strong>3.6.3 </strong>layout_tests</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Valgrind-on-the-Buildbots"><strong>4 </strong>Valgrind on the Buildbots</a></li><li class="goog-toc"><a href="#TOC-Workflow"><strong>5 </strong>Workflow</a></li><li class="goog-toc"><a href="#TOC-Invoking-Valgrind-on-the-Renderer-or-GPU-processes"><strong>6 </strong>Invoking Valgrind on the Renderer or GPU processes</a></li><li class="goog-toc"><a href="#TOC-Where-To-Start"><strong>7 </strong>Where To Start</a></li><li class="goog-toc"><a href="#TOC-Finding-Races"><strong>8 </strong>Finding Races</a></li><li class="goog-toc"><a href="#TOC-Challenges"><strong>9 </strong>Challenges</a></li></ol></div></div></div></div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      The Chromium project uses runtime analysis tools on our test suite to detect memory errors in C++ code.  This lets us find bugs earlier in development.  On Linux and Mac, the tool we use is called <a href="http://valgrind.org" rel="nofollow">Valgrind</a>. This
+page will talk about how Valgrind is used in the Chromium project.  It is
+assumed that you have access to a Mac or Linux system and have some <a href="http://valgrind.org/docs/manual/quick-start.html" rel="nofollow">basic Valgrind knowledge</a>.
+<div><br />
+</div><div><span style="font-size:20px;font-weight:bold">Getting Started</span></div>
+First, make sure the system can build Chromium properly already.</div>
+<div>Second, make sure you have <a href="https://www.chromium.org/developers/how-tos/using-valgrind/get-valgrind" target="_blank">Valgrind binaries in your client</a><span style="font-family:arial,sans-serif">.</span></div><div>
+<div>
+<div>
+<div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif"><br />You should avoid running tests and apps directly under Valgrind because you should set a few environment variables to make Valgrind work as expected.</span></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">You'll probably want to use one of the wrapper scripts described below; they get it right.</span></div>
+<div style="font-family:courier new,monospace"><font face="arial, sans-serif"><br />
+</font></div><h2 style="font-family:courier new,monospace"><a name="TOC-Building-Chromium-and-its-tests-to-use-Valgrind"></a><font face="arial, sans-serif">Building Chromium and its tests to use Valgrind</font></h2><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif"><i>NOTE: Valgrind for some tests </i></span><i style="font-family:arial,sans-serif">is currently broken </i><i style="font-family:arial,sans-serif">on debug builds. If you get an mmap() error, try using a Chromium release build. [8 Sept 2011]</i></div><div><span style="font-family:arial,sans-serif"><i><br /></i></span></div><div><span style="font-family:arial,sans-serif">The only supported configuration for running valgrind is with </span><font face="'courier new', monospace" style="background-color:transparent;font-size:10pt">GYP_DEFINES='build_for_tool=memcheck</font><span style="background-color:transparent;font-size:10pt;font-family:courier new,monospace">'</span><span style="background-color:transparent;font-size:10pt"><font face="arial, sans-serif"> in Release mode. Other options in </font><font face="courier new, monospace">$GYP_DEFINES</font><font face="arial, sans-serif"> must set the platform (like </font><font face="courier new, monospace">aura=1</font><font face="arial, sans-serif"> or </font><font face="courier new, monospace">chromeos=1</font><font face="arial, sans-serif">) rather than tweaking the build tools</font></span><span style="background-color:transparent;font-size:10pt"><font face="arial, sans-serif">. Valgrind is known not to work with shared_library builds and</font></span><span style="background-color:transparent;font-size:10pt;font-family:arial,sans-serif"> may not work correctly with Clang on Linux (for example reporting false positives in memcpy: </span><a href="http://crbug.com/131361" style="background-color:transparent;font-size:12.666666984558105px;font-family:arial,sans-serif;color:rgb(17,85,204)" target="_blank">http://crbug.com/131361</a><span style="background-color:transparent;font-size:10pt">), so </span><font face="courier new, monospace" style="background-color:transparent;font-size:10pt;font-family:courier new,monospace">'clang=1'</font><font face="arial, sans-serif" style="background-color:transparent;font-size:10pt"> is discouraged</font><font face="arial, sans-serif" style="background-color:transparent;font-size:10pt">.</font></div><div><font face="arial, sans-serif" style="background-color:transparent;font-size:10pt"><br /></font></div><div><font face="arial, sans-serif" style="background-color:transparent;font-size:10pt">Sometimes unsupported options work, of course: Debug mode usually works, and Debug mode with an empty </font><font face="courier new, monospace" style="background-color:transparent;font-size:10pt">$GYP_DEFINES</font><font face="arial, sans-serif" style="background-color:transparent;font-size:10pt"> will sometimes work too. </font><span style="background-color:transparent;font-family:arial,sans-serif;font-size:10pt">However, running Valgrind on Debug binaries with default build flags can be 2-3x slower than Release with </span><span style="background-color:transparent;font-size:10pt"><font face="courier new, monospace">build_for_tool=memcheck</font></span><span style="background-color:transparent;font-family:arial,sans-serif;font-size:10pt">.</span></div><div><br /></div></div></div></div><div><div>If you run Valgrind often you may consider creating <span style="font-family:arial,sans-serif">creating the file ~/.gyp/include.gypi containing</span></div></div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><div><div><div><div><div style="font-family:courier new,monospace">{</div></div></div></div></div><div><div><div><font face="'courier new', monospace">  'variables': {</font></div></div></div><div><div><div><font face="'courier new', monospace">    'build_for_tool': 'memcheck',</font></div></div></div><div><div><div><font face="'courier new', monospace">  },</font></div></div></div><div><div><div><font face="'courier new', monospace">
+}</font></div></div></div></blockquote><div><div><span style="font-family:arial,sans-serif">and then run '</span><font face="'courier new', monospace"><b>gclient runhooks</b></font><span style="font-family:arial,sans-serif">' to get GYP to regenerate the build files.</span></div><div><span style="font-family:arial,sans-serif"><br /></span></div><div><br /></div><div style="font-family:courier new,monospace">
+<h2><a name="TOC-Using-Valgrind-with-Chromium-itself"></a><font face="arial, sans-serif">Using Valgrind with Chromium itself</font></h2>
+<span style="font-family:arial,sans-serif">The easiest way to run Chromium under Valgrind is with the wrapper tools/valgrind/valgrind.sh, e.g.</span></div><div><font face="arial, sans-serif" style="font-family:courier new,monospace">     For make:<br /></font>
+<div style="font-family:courier new,monospace;margin-left:40px">sh tools/valgrind/valgrind.sh out/Debug/chromium</div><font face="arial, sans-serif">This will set up the
+environment nicely, and will break into gdb at the first error.</font><br /><font face="arial, sans-serif">Read
+the script to see what it does; to disable the debugger, remove the
+--db-attach-yes option.</font><br /><b><font face="arial, sans-serif">TODO(timurrrr): this section is probably out of date and I know just a couple of developers using </font><font face="courier new, monospace">valgrind.sh</font><font face="arial, sans-serif"> now. Please ping me if you are using it!</font></b></div><div><b><font face="arial, sans-serif">Usually, </font><font color="#666666" face="courier new, monospace">./tools/valgrind/chrome_tests.sh -t cmdline ./out/Debug/chromium</font><font face="arial, sans-serif"> should be fine, unless you need </font><font face="courier new, monospace">--db-attach</font><font face="arial, sans-serif">.</font><br /></b>
+<h2 style="font-family:courier new,monospace"><a name="TOC-Using-Valgrind-with-the-Chromium-test-suite"></a><span style="font-family:arial,sans-serif">Using Valgrind with the Chromium test suite<br />
+</span></h2>
+</div>
+<div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">The easiest way to run Chromium's tests is using the wrapper</span> tools/valgrind/chrome_tests.sh<span style="font-family:arial,sans-serif">, e.g.</span></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif"><br /></span></div>
+<div style="font-family:courier new,monospace">
+<div style="margin-left:40px">tools/valgrind/chrome_tests.sh -t ui_unit<br style="font-family:arial,sans-serif" />
+</div>
+<span style="font-family:arial,sans-serif"><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif"><br /></span></div>This
+takes care of nasty little details. (e.g. it sets some environment
+variables that make memory allocation more Valgrind-friendly, and Valgrind's subprocesses without valgrinding python)</span></div><div><h3><a name="TOC-Release-Build"></a><font face="arial, sans-serif">Release Build</font></h3></div><div><font face="arial, sans-serif">Pass the --build-dir option to chrome_tests, e.g. --build-dir=out/Release</font></div><div>
+<h3><a name="TOC-Blacklisting-Tests"></a><font face="arial, sans-serif">Blacklisting Tests</font></h3>
+<font face="arial, sans-serif">This has moved to the <a href="http://dev.chromium.org/developers/tree-sheriffs/sheriff-details-chromium/memory-sheriff#TOC-Excluding-tests" target="_blank">Memory sheriff</a> page.</font></div><div><h3><a name="TOC-Running-a-Single-Test"></a><font face="arial, sans-serif">Running a Single Test</font></h3><span style="font-family:arial,sans-serif">The chrome_tests.sh accepts the </span><span style="font-family:arial,sans-serif"> <font face="'courier new', monospace">--gtest_filter</font> option (<a href="http://code.google.com/p/googletest/wiki/GoogleTestAdvancedGuide#Selecting_Tests" style="color:rgb(85,26,139);outline-style:none">see the gtest manual</a>) so for you can do things like:</span></div></div><div><span style="font-family:arial,sans-serif"><br /></span></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><font face="courier new, monospace">tools/valgrind/chrome_tests.sh -t ui_unit <b>--gtest_filter=DownloadTest.DownloadMimeType</b></font></div></div></blockquote><div><h3><a name="TOC-Suppressing-Errors"></a><font face="arial, sans-serif">Suppressing Errors</font></h3>
+<font face="arial, sans-serif">This has moved to the <a href="http://dev.chromium.org/developers/tree-sheriffs/sheriff-details-chromium/memory-sheriff#TOC-Suppressing-memory-reports" target="_blank">Memory sheriff</a> page.</font></div><div><font face="arial, sans-serif">Don't forget to remove suppressions as soon as they are not needed!</font></div><div><div><div><div><h3><a name="TOC-Filing-Good-Valgrind-Bugs"></a><font face="arial, sans-serif">Filing Good Valgrind Bugs</font></h3><p style="font-family:arial,sans-serif">This has moved to the <a href="http://dev.chromium.org/developers/tree-sheriffs/sheriff-details-chromium/memory-sheriff#TOC-Filing-good-memory-bugs" target="_blank">Memory sheriff</a> page.</p><h3><a name="TOC-Figuring-Out-Which-Test-Caused-a-Warning"></a><font face="arial, sans-serif">Figuring Out Which Test Caused a Warning<br />
+</font></h3>
+<font face="arial, sans-serif"><div><font face="arial, sans-serif"><b>TODO(timurrrr): move this to Memory sheriff page too.</b></font></div>Sometimes, it may difficult to figure out which test is at fault just from looking at Valgrind results on the buildbot.</font></div><div><span style="font-family:arial,sans-serif"><br /></span><h4><a name="TOC-Small-tests-like-base_unittests-net_unittests-unit_tests-"></a><b><font face="arial, sans-serif">Small tests (like </font><font face="'courier new', monospace">base_unittests</font><font face="arial, sans-serif">, </font><font face="'courier new', monospace">net_unittests</font><font face="arial, sans-serif">, </font><font face="'courier new', monospace">unit_tests</font><font face="arial, sans-serif">)</font></b></h4></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">If you're lucky, one of the functions in the backtrace will have the name of the test suite and test case in it.  Otherwise you'll have to use your knowledge of the codebase or </span><span style="font-family:arial,sans-serif">rerun the test locally </span><span style="font-family:arial,sans-serif">to figure it out.</span></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">There are two ways to rerun:</span></div><div><ul><li><span style="font-family:arial,sans-serif"><strike>either run the chrome_tests.sh wrapper with the --generate_suppressions flag, in which case the error will appear inline with the list of tests (but possibly corrupted if multiple processes are outputting at the same time), or</strike></span> <i>this doesn't work anymore</i></li><li style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">if the report is from an uninitialized data used, try the "--track_origins" flag</span></li><li style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">rerun the tests in tiny shards</span></li></ul></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">To shard gtest-based tests, you can use gtest's environment variables, e.g.</span><br />
+<div style="margin-left:40px">export GTEST_TOTAL_SHARDS=100<br />
+export GTEST_SHARD_INDEX=0<br />
+test=ui<br />
+while test $GTEST_SHARD_INDEX -lt $GTEST_TOTAL_SHARDS<br />
+do<br />
+    sh tools/valgrind/chrome_tests.sh -t $test &gt; ${test}_$GTEST_SHARD_INDEX.log 2&gt;&amp;1<br />
+    GTEST_SHARD_INDEX=`expr $GTEST_SHARD_INDEX + 1`<br />
+done<br style="font-family:arial,sans-serif" />
+</div>
+<span style="font-family:arial,sans-serif">This will run the test program in 100 separate little runs, each of which covers one or just a few tests.  You can then subdivide further if needed by using the </span>--gtest_filter<span style="font-family:arial,sans-serif"> option (<a href="http://code.google.com/p/googletest/wiki/GoogleTestAdvancedGuide#Selecting_Tests">see the gtest manual</a>).<br />
+<br /></span></div><h4><a name="TOC-Larger-tests-e.g.-browser_tests-"></a><b><font face="arial, sans-serif">Larger tests (e.g. </font><font face="'courier new', monospace">browser_tests</font><font face="arial, sans-serif">)</font></b></h4><div><div style="font-family:courier new,monospace"><font face="arial, sans-serif">For browser tests there is a simple way to determine which test caused which warning.</font></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">Each report should contain the name of the test where it happened right before the generated suppression:</span></div><div><pre><font face="'Courier New', courier, monotype" size="2">=====================================================
+ Below is the report for valgrind wrapper PID=12345.
+ It was used while running the `AutomationProxyVisibleTest.WindowGetViewBounds` test.
+ &lt;some text (maybe a few dozens of lines)&gt;
+06:01:31 memcheck_analyze.py [ERROR] FAIL! There were 1 errors: 
+06:01:31 memcheck_analyze.py [ERROR] Command: ...
+  &lt;Error report&gt;
+<b>The report came from the `AutomationProxyVisibleTest.WindowGetViewBounds` test.</b>
+Suppression:
+{
+  &lt;Suppression for the report&gt;
+}</font></pre><pre><h4><a name="TOC-layout_tests"></a><b style="font-family:arial,sans-serif">layout_tests</b></h4><font face="'courier new', monospace">layout_tests</font><span style="font-family:arial,sans-serif"> reports are similar to browser</span><font face="'courier new', monospace">_tests</font><span style="font-family:arial,sans-serif">, but contain the test URL in the report instead:</span></pre></div></div></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><div><div><pre><span style="font-family:courier new,monospace;white-space:normal">tools/valgrind/chrome_tests.sh -t layout_tests</span></pre></div></div></div></div></div></blockquote><font face="arial, sans-serif">...<br /></font><div><div><pre><pre><font face="'Courier New', courier, monotype" size="2">=====================================================
+ Below is the report for valgrind wrapper PID=12345.
+ It was used while running the `css3/selectors3/xml/css3-modsel-170.xml` test.
+ &lt;some text (maybe a few dozens of lines)&gt;
+06:01:31 memcheck_analyze.py [ERROR] FAIL! There were 1 errors: 
+06:01:31 memcheck_analyze.py [ERROR] Command: ...
+  &lt;Error report&gt;
+<b>The report came from the `css3/selectors3/xml/css3-modsel-170.xml` test.</b>
+Suppression:
+{
+  &lt;Suppression for the report&gt;
+}</font></pre></pre><pre><br /></pre><pre><font face="arial, sans-serif">Layout tests may be specified on the command line, passed as-is to content_shell:<br /></font><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><br /><span style="font-family:courier new,monospace;white-space:normal">tools/valgrind/chrome_tests.sh -t layout_tests storage/indexeddb/</span></blockquote></pre><pre><span style="font-family:arial,sans-serif">
+</span><font face="'courier new', monospace">chrome_tests.sh</font><span style="font-family:arial,sans-serif"> implements a stateful sharding system for layout tests; the state lives in a text file named </span><font face="'courier new', monospace">valgrind_layout_chunk.txt</font><span style="font-family:arial,sans-serif">.
+Each time you run </span><font face="'courier new', monospace">chrome_tests.sh -t layout</font><span style="font-family:arial,sans-serif">, it runs the next chunk of fifty minutes or so of layout tests.
+Thus the Valgrind bots running layout tests tend to go red briefly as they hit a test that has a Valgrind error, then green again right away as they move on to the next shard.</span></pre><pre><span style="font-family:arial,sans-serif"><br /></span></pre></div><div style="font-family:courier new,monospace"><span style="font-family:arial,sans-serif">Here's a script showing how to run all layout tests locally, one test per log file.  You can use this on several boxes at once, all starting at different offsets, to try to get through all the tests in a weekend.</span><br />
+<br />
+<div style="margin-left:40px">n=0<br />
+echo $n &gt; valgrind_layout_chunk.txt<br />
+while true<br />
+do<br />
+   time sh tools/valgrind/chrome_tests.sh -t layout -v -n 1 &gt; runlots.$n.log<br />
+   n=`expr $n + 1`<br />
+done</div></div><div>
+<div><h2><a name="TOC-Valgrind-on-the-Buildbots"></a><span style="font-family:arial,sans-serif">Valgrind on the Buildbots</span></h2></div></div></div><div><div><div><div><div>
+<span style="font-family:arial,sans-serif">The </span><a href="http://build.chromium.org" style="font-family:arial,sans-serif">Chromium Buildbot status page</a><span style="font-family:arial,sans-serif"> includes output from many, many buildbots.  The Valgrind ones are cleverly hidden on a separate <a href="http://build.chromium.org/buildbot/memory/waterfall">Memory waterfall</a> and on the right hand side of the Experimental page (where you'll find one Mac and five Linux bots).  Each bot runs a different set of tests through Valgrind. At the moment, the Valgrind bots go red when Valgrind reports an unsuppressed warning or when any of the tests fail.  <br /></span>
+<br style="font-family:arial,sans-serif" />
+<span style="font-family:arial,sans-serif">The Linux layout tests are sometimes red.  (There are about 30000 layout tests, and the Valgrind bot rotates through them in chunks of 200 or so at a time, so it will flicker between red and green as it passes through different areas of the layout tests.)  Most of the layout warnings have bugs filed but only the most common have suppressions.</span></div><div><font face="arial, sans-serif"><br /></font></div><div><font face="arial, sans-serif">We have several Valgrind trybots, see the <a href="https://www.chromium.org/developers/testing/try-server-usage#TOC-Valgrind">try server docs</a> for the details.<br /></font>
+<h2><a name="TOC-Workflow"></a><font face="arial, sans-serif">Workflow</font></h2>
+<span style="font-family:arial,sans-serif">Generally, when you have found a warning with Valgrind, here's what to do:<br />
+</span>
+<ol style="font-family:courier new,monospace"><li><span style="font-family:arial,sans-serif">Search for the stack trace in the bug tracking system and in the suppressions file; maybe it's an old known issue, and the existing suppression just needs widening to handle the optimizer making a different inlining decision, or maybe to handle a change in the signature of one of the functions involved.  One often starts out with a specific suppression, and then has to make it more generic by substituting the "..." wildcard or removing the most distant callers.</span> <span style="font-family:arial,sans-serif"> Or maybe it's a test that's known to crash and you need to also blacklist it under Valgrind, by adding it to e.g. tools/valgrind/gtest_exclude/base_unittests.gtest.txt.</span><br />
+</li>
+<li><span style="font-family:arial,sans-serif">If the culprit is obviously a recent change, talk to the author of the change, and see if they're willing/able to fix it.</span></li>
+<li><span style="font-family:arial,sans-serif">If that doesn't work, but you can fix the bug yourself, go for it.</span><span style="font-family:arial,sans-serif">  If the bug has an entry in the issue tracker, please mark it as 'Started' before you start working on it.  <br />
+</span></li>
+<li><span style="font-family:arial,sans-serif">If you can't resolve the issue, then file a bug (</span><a href="http://code.google.com/p/chromium/issues/list?can=2&amp;q=valgrind" style="font-family:arial,sans-serif">click here</a><span style="font-family:arial,sans-serif"> to see a list of open bugs found using Valgrind). </span></li>
+<li><span style="font-family:arial,sans-serif">If nobody's fixing the bug, and the tree is red because of it, add a suppression for it to bring the tree back to green (otherwise developers will start ignoring the Valgrind red/green status). </span></li></ol><h2><a name="TOC-Invoking-Valgrind-on-the-Renderer-or-GPU-processes"></a><span style="font-size:20px;font-weight:bold">Invoking Valgrind on the Renderer or GPU processes</span></h2><p><span style="font-size:small">If you know that the leak or memory error you're looking for is in the Renderer process, the wrapper tools can also be invoked only for Renderer processes:</span></p></div></div></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><code>out/Debug/chromium --renderer-cmd-prefix="tools/valgrind/valgrind.sh"</code></div></blockquote><p>This will speed up the browser process significantly. Similarly, to invoke valgrind only on the GPU process, use:</p><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><div><div><p><code>out/Debug/chromium --gpu-launcher="tools/valgrind/valgrind.sh"</code><br /></p></div></div></div></div></div></blockquote><div><div><div><div><div><p>Unfortunately, there are a large number of uninitialized memory reads in the NVidia Linux drivers. You can suppress these by adding the following to tools/valgrind/memcheck/suppressions.txt (for a 64-bit Ubuntu machine, YMMV):</p></div></div></div></div></div><div><div class="sites-codeblock sites-codesnippet-block"><code>{</code><br /><code>    bug_Conds_aplenty_in_nvidia_drivers</code><br /><code>    Memcheck:Cond</code><br /><code>    obj:/usr/lib/nvidia-current/libGL*</code><br /><code>}</code><br /><code>{</code><br /><code>    bug_Value8s_ahoy_in_nvidia_drivers</code><br /><code>    Memcheck:Value8</code><br /><code>    obj:/usr/lib/nvidia-current/libGL*</code><br /><code>}</code></div><div><div><div><div><div><div><h2><a name="TOC-Where-To-Start"></a><font face="arial, sans-serif">Where To Start</font></h2><span style="font-family:arial,sans-serif">
+Please be sure to mark any bug you're working on as 'Started' in the<a href="http://crbug.com/" rel="nofollow"> issue tracker</a> before you start working on it.  (And don't pick a bug if someone else has started it.  It's probably ok to pick a bug that was assigned to someone else long ago but hasn't been started.)<br />
+<br />
+Note: </span><span style="font-family:arial,sans-serif">before trying to reproduce Valgrind warnings mentioned in bug reports, </span><span style="font-family:arial,sans-serif">you probably need to delete the Valgrind suppression files, or at least the suppression for that particular bug, else Valgrind won't display it.<br />
+<br />
+Ideas for how to start:<br />
+<br />
+</span><span style="font-family:arial,sans-serif">- Pick one of <a href="http://code.google.com/p/chromium/issues/list?can=2&amp;q=valgrind">the many open Valgrind-related bugs</a>, reproduce it locally, understand it, and fix it.<br />
+<br />
+</span><span style="font-family:arial,sans-serif">- Pick a unit test, run it under Valgrind as discussed above, look at the warnings Valgrind gives, match them up with a bug, and then try to fix that bug.  If you succeed (which is often difficult, since if pointer bugs were easy, they wouldn't still be there), consider removing the suppression from the suppression file in the same changeset as the bug fix.  Be sure to include a link to the bug report (e.g. http://crbug.com/10679) in your changeset description.<br />
+<br />
+- Find tests that fail under Valgrind (but have no Valgrind warnings), and either figure out why they're failing, or file bugs.<br />
+You might start by looking at the Valgrind buildbot logs  (they're buried kind of deep; click on a Valgrind buildbot, click on a green (no Valgrind warnings) run, then click on the tests within the run, and look for FAILED messages.  Then reproduce locally (i.e. run the test normally to verify it passes on your machine, then rerun it under Valgrind to see if it fails without a Valgrind warning; if it does, you've found one.)<br />
+<br />
+- Look for suppressions which are no longer needed (Valgrind produces a list of which ones *have* been used), and both remove them and close the associated bug reports.  Beware, though: some Valgrind warnings don't show up on all hardware, or only show up in one out of twenty runs, so check the bug report carefully and run Valgrind on that test twenty times before marking it closed.</span><br />
+<br />
+<h2><a name="TOC-Finding-Races"></a><font face="arial, sans-serif">Finding Races</font></h2>
+<span style="font-family:arial,sans-serif">The above discussion centered around Valgrind's default tool, Memcheck. <br />Valgrind has other interesting tools, but most of them haven't been tested to work with Chromium.</span><br /><h2><a name="TOC-Challenges"></a><font face="arial, sans-serif">Challenges</font></h2>
+<span style="font-family:arial,sans-serif">Using Valgrind to find bugs in the Chromium source tree is challenging for several reasons:</span><br />
+<ul style="font-family:arial,sans-serif"><li>Running a test under Valgrind is 10x - 20x slower</li>
+<li>The UI tests don't currently shut down gracefully, leading to spurious task leaks, etc.  Evan Stade looked at this for a while.  </li>
+<li>The display manager on the Mac crashes on some machines when you run Chromium under Valgrind!  (We're reporting this to Apple.)<br />
+</li></ul>
+<br />
+<div><h2><a name="TOC-1"></a><font face="arial, sans-serif"><br /></font></h2></div><div></div>
+</div>
+<ul>
+</ul>
+</div>
+</div></div></div></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/how-tos/using-valgrind/get-valgrind" dir="ltr">Get Valgrind</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/using-valgrind">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9VmVTnqYWnHqycrMDy_p9ETRwSkQu2aK-dnsQZG5LKQWpawt0ENcEGFrFOWXI3-2lVWEk8bx2kDb_GNX0QTYAe8OvJpZ2vNHLZlcvkgsA7eKHppAK/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

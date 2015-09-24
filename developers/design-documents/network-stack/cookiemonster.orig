@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/network-stack","deleted":false,"title":"Network Stack","dir":"ltr"},{"path":"/developers/design-documents/network-stack/cookiemonster","deleted":false,"title":"CookieMonster","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/cookiemonster\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/network-stack","parentWuid":"wuid:gx:1e5bf38b977efb4d","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"CookieMonster","locale":"en","wuid":"wuid:gx:5689c02f78f4f875","revision":11,"path":"/developers/design-documents/network-stack/cookiemonster","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"cookiemonster","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/config/pagetemplates/lesleyb-developer-tools","title":"Chrome Developer Tools - draft"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="CookieMonster - The Chromium Projects" />
+<meta itemprop="name" content="CookieMonster - The Chromium Projects" />
+<meta property="og:title" content="CookieMonster - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>CookieMonster - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1292454607024/developers/design-documents/network-stack/cookiemonster/CM-inheritance.svg" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1292454607024/developers/design-documents/network-stack/cookiemonster/CM-inheritance.svg" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="/developers/design-documents/network-stack" dir="ltr">Network Stack</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">CookieMonster</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div><br /></div><div>The CookieMonster is the class in Chromium which handles in-browser storage, management, retrieval, expiration, and eviction of cookies. It does not handle interaction with the user or cookie policy (i.e. which cookies are accepted and which are not).  The code for the CookieMonster is contained in net/base/cookie_monster.{h,cc}.</div><div><br /></div><div>CookieMonster requirements are, in theory, specified by various RFCs. <a href="http://datatracker.ietf.org/doc/rfc6265/">RFC 6265</a> is currently controlling, and supersedes <a href="http://datatracker.ietf.org/doc/rfc2965/">RFC 2965</a>.  However, most browsers do not actually follow those RFCs, and Chromium has compatibility with existing browsers as a higher priority than RFC compliance.  An RFC that more closely describes how browsers normally handles cookies is being considered by the RFC; it is available at <a href="http://tools.ietf.org/html/draft-ietf-httpstate-cookie">http://tools.ietf.org/html/draft-ietf-httpstate-cookie</a>.  The various RFCs should be examined to understand basic cookie behavior; this document will only describe variations from the RFCs.</div></div><div><br /></div><div>The CookieMonster has the following responsibilities:</div><div><div><ul><li>When a server response is received specifying a cookie, it confirms that the cookie is valid, and stores it if so.  Tests for validity include:</li><ul><li>The domain of the cookie must be .local or a subdomain of a public suffix (see <a href="http://publicsuffix.org/">http://publicsuffix.org/</a>--also known as an extended Top Level Domain).</li><li>The domain of the cookie must be a suffix of the domain from which the response was received.</li></ul></ul></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>  We do not enforce the RFC path or port restrictions</div></div></blockquote><div><div><ul><li>When a client request is being generated, a cookie in the store is included in that request if:</li><ul><li>The cookie domain is a suffix of the server hostname.</li><li>The path of the cookie is a prefix of the request path.</li><li>The cookie must be unexpired.</li></ul><li>It enforces limits (both per-origin and globally) on how many cookies will be stored.</li></ul></div></div><div><span style="font-size:medium"><b>CookieMonster Structure</b></span></div><div><span style="font-size:medium"><b><br /></b></span></div><div><span style="font-size:medium">The important data structure relationships inside of and including the CookieMonster are sketched out in the diagram below.</span></div><div><span style="font-size:medium"><div style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div><br /></span></div><div></div><div><span style="font-size:medium"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/network-stack/cookiemonster/CM-inheritance.svg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1292454607024/developers/design-documents/network-stack/cookiemonster/CM-inheritance.svg" /></a></div><br /></span></div><div><span style="font-size:medium">In the above diagram, type relationships are represented as follows:</span></div><div><div><ul><li style="font-size:19px"><span style="font-size:medium">Reference counted thread safe: Red outline</span></li><li style="font-size:19px"><span style="font-size:medium">Abstract base class: Dashed outline</span></li><li style="font-size:19px"><span style="font-size:medium">Inheritance or typedef: Dotted line with arrow, subclass to superclass</span></li><li style="font-size:19px"><span style="font-size:medium">Member variable contained in type: Line with filled diamond, diamond on the containing type end.</span></li><li style="font-size:19px"><span style="font-size:medium">Pointer to object contained in type: Line with open diamond, diamond on the containing type end.</span></li></ul></div></div><div><div style="display:block;text-align:left;font-size:medium"></div><div style="display:block;text-align:left;font-size:medium"></div><div style="display:block;text-align:left;font-size:medium"></div><div style="font-size:medium">The three most important classes in this diagram are:</div><div><ul style="font-size:medium"><li>CookieStore.  This defines the interface to anything that stores cookies (currently only CookieMonster), which are a set of Set, Get, and Delete options.</li><li>CookieMonster.  This adds the capability of specifying a backing store (PersistentCookieStore) and Delegate which will be notified of cookie changes.  </li><li>SQLitePersistentCookieStore.  This implements the PersistentCookieStore interface, and provides the persistence for non-session cookies.  </li></ul><div><div><span style="font-size:medium">The central data structure of a CookieMonster is the cookies_ member, which is a multimap (multiple values allowed for a single key) from a domain to some set of cookies.  Each cookie is represented by a CanonicalCookie(), which contains all of the information that can be specified in a cookie (see diagram and RFC 2695).  When set, cookies are placed into this data structure, and retrieval involves searching this data structure.  The key to this data structure is the most inclusive domain (shortest dot delimited suffix) of the cookie domain that does not name a domain registrar (i.e. "google.com" or "bbc.co.uk", but not "co.uk" or "com").  This is also known as the Effective Top Level Domain plus one, or eTLD+1, for short.  </span></div><div><span style="font-size:medium"><br /></span></div><div><font size="3">Persistence is implemented by the SQLitePersistentCookieStore, which mediates access to an on-disk SQLite database.  On startup, all cookies are read from this database into the cookie monster, and this database is kept updated as the CookieMonster is modified.  The CookieMonster notifies its associated PersistentCookieStore of all changes, and the SQLitePersistentCookieStore batches those notifications and updates the database every thirty seconds (when it has something to update it about) or if the queue gets too large.  It does this by queuing an operation to an internal queue when notified of a change by the CookieMonster, and posting a task to the database thread to drain that queue.  The backing database uses the cookie creation time as its primary key, which imposes a requirement on the cookie monster not to allow cookies with duplicate creation times.  </font></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium">The internal code of the cookie monster falls into four paths: The setter path, the getter path, the deletion path, and the garbage collection path. </span></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium">The setter path validates its input, creates a canonical cookie, deletes any cookies in the store that are identical to the newly created one, and (if the cookie is not immediately expired) inserts it into the store.  The getter path computes the relevant most inclusive domain for the incoming request, and searches that section of the multimap for cookies that match.  The deletion path is similar to the getter path, except the matching cookies are deleted rather than returned.  </span></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium">Garbage collection occurs when a cookie is set (this is expected to happen much less often than retrieving cookies).  Garbage collection makes sure that the number of cookies per-eTLD+1 does not exceed some maximum, and similarly for the total number of cookies.  The algorithm is both in flux and subtle; see the comments in cookie_monster.h for details. </span></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium">This class is currently used on many threads, so it is reference counted, and does all of its operations under a per-instance lock.  It is initialized from the backing store (if such exists) on first use.  </span></div></div></div><div style="font-size:medium"><br /></div><div><b><span style="font-size:medium">Non-Obvious Uses of CookieMonster</span></b></div><div style="font-size:medium"><br /></div></div><div><div><span style="font-size:medium">In this writeup, the CookieMonster has been spoken of as if it were a singleton class within Chrome.  In reality, CookieMonster is *not* a singleton (and this has produced some bugs).  Separate CookieMonster instances are created for:</span></div><div><ul><li><span style="font-size:medium">Use in standard browsing</span></li><li><span style="font-size:medium">Incognito mode (this version has no backing store)</span></li><li><span style="font-size:medium">Extensions (this version has its own backing store; map keys are extension ids)</span></li><li><span style="font-size:medium">Incognito for Extensions.</span></li></ul></div><div><span style="font-size:medium">To decide in each case what kinds of URLs it is appropriate to store cookies for, a CookieMonster has a notion of "cookieable schemes"--the schemes for which cookies will be stored in that monster.  That list defaults to "http" and "https".  For extensions it is set to "chrome-extension".  </span></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium">When file cookies are enabled via --enable-file-cookies, the default list will include "file", and file cookies will be stored in the main CookieMonster.  For file cookies, the key will be either null, or (for UNC names, e.g. //host.on.my.network/path/on/that/host) the hostname in the file cookie.  Currently, the store does not distinguish carefully between file cookies and network cookies.  </span></div><div style="font-size:medium"><br /></div></div><div style="font-size:medium"><b>Implementation Details; Subject to Change Without Notice</b></div><div style="font-size:medium"><b><br /></b></div><div><div><span style="font-size:medium">The call graph of the routines used in the CookieMonster is included below.  It is correct as of revision 59070, but may not apply to later versions.  </span></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/network-stack/cookiemonster/CM-method-calls-new.svg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1292454607024/developers/design-documents/network-stack/cookiemonster/CM-method-calls-new.svg" /></a></div><br /></span></div><div><span style="font-size:medium"><br /></span></div><div><span style="font-size:medium">Key:</span></div><div><ul><li><span style="font-size:medium">Green fill: CookieMonster/CookieStore Public method.</span></li><li><span style="font-size:medium">Grey fill: CookieMonster Private method.</span></li><li><span style="font-size:medium">Red ring: Method take instance lock.</span></li><li><span style="font-size:medium">Dark blue fill: CookieMonster static method.</span></li><li><span style="font-size:medium">Light blue fill: cookie_monster.cc static function</span></li><li><span style="font-size:medium">Yellow fill: CanonicalCookie method.</span></li></ul></div><div style="font-size:medium;font-weight:bold"><br /></div></div><div><div><span style="font-size:medium">The CookieMonster is referenced from many areas of the code, including</span></div><div><span style="font-size:medium">but not limited to:</span></div><div><ul><li><span style="font-size:medium">URLRequestHttpJob: Main path for HTTP request/response.</span></li><li><span style="font-size:medium">WebSocketJob</span></li><li><span style="font-size:medium">Automation Provider</span></li><li><span style="font-size:medium">BrowsingDataRemover: For deleting browsing data.</span></li><li><span style="font-size:medium">ExtensionDataDeleter</span></li><li><span style="font-size:medium">CookieTreeModel: Allows the user to examine and delete specific cookies.</span></li><li><span style="font-size:medium">Plugins</span></li><li><span style="font-size:medium">HttpBridge: For synchronization</span></li></ul></div><div style="font-weight:bold;font-size:medium"><br /></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/cookiemonster">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9r3-j0ybnHogFO2UGttuW9EpmrIzLj7swE2KOMx-YkVf9txRVHCpD04jo5YnCphKvOSatzwg1wSKewDUlpLo2Gb5svVnD3cJ0J8z8Xg73deMGeqPN/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

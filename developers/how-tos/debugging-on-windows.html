@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/debugging-on-windows","deleted":false,"title":"Debugging Chromium on Windows","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/how-tos/debugging-on-windows\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Debugging Chromium on Windows","locale":"en","wuid":"wuid:gx:527515b958e22f7b","revision":72,"path":"/developers/how-tos/debugging-on-windows","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"debugging-on-windows","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Debugging Chromium on Windows - The Chromium Projects" />
+<meta itemprop="name" content="Debugging Chromium on Windows - The Chromium Projects" />
+<meta property="og:title" content="Debugging Chromium on Windows - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Debugging Chromium on Windows - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1423155180708/developers/how-tos/debugging-on-windows/StepIntoSpecific.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1423155180708/developers/how-tos/debugging-on-windows/StepIntoSpecific.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="http://www.chromium.org/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Debugging Chromium on Windows</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:300px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Before-you-start"><strong>1 </strong>Before you start</a><ol class="goog-toc"><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Requirements"><strong>1.1 </strong>Requirements</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Optional"><strong>1.2 </strong>Optional</a></li></ol></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Multi-process-issues"><strong>2 </strong>Multi-process issues</a><ol class="goog-toc"><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Single-process-mode"><strong>2.1 </strong>Single-process mode</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Using-Image-File-Execution-Options"><strong>2.2 </strong>Using Image File Execution Options</a></li></ol></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Chrome-Debug-Log"><strong>3 </strong>Chrome Debug Log</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Debugging-with-Visual-Studio"><strong>4 </strong>Debugging with Visual Studio</a><ol class="goog-toc"><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Attaching-to-the-renderer"><strong>4.1 </strong>Attaching to the renderer</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Semi-automatically-attaching-the-debugger-to-child-processes"><strong>4.2 </strong>Semi-automatically attaching the debugger to child processes</a><ol class="goog-toc"><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Usage"><strong>4.2.1 </strong>Usage</a></li></ol></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Symbol-server"><strong>4.3 </strong>Symbol server</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Don-t-step-into-trivial-functions"><strong>4.4 </strong>Don't step into trivial functions</a></li></ol></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Debugging-with-WinDBG"><strong>5 </strong>Debugging with WinDBG</a><ol class="goog-toc"><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Initial-setup"><strong>5.1 </strong>Initial setup</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Common-commands"><strong>5.2 </strong>Common commands</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Common-commands-when-working-with-a-crash"><strong>5.3 </strong>Common commands when working with a crash</a></li></ol></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-V8-and-Chromium"><strong>6 </strong>V8 and Chromium</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Graphical-Debugging"><strong>7 </strong>Graphical Debugging</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Debugging-on-another-machine"><strong>8 </strong>Debugging on another machine</a></li><li class="goog-toc"><a href="debugging-on-windows.html#TOC-Miscellaneous"><strong>9 </strong>Miscellaneous</a></li></ol></div></div></div></div>
+<div dir="ltr">This page has detailed information to help you debug Chromium on Windows.</div>
+<div dir="ltr"><span style="font-weight:bold"><br />
+</span></div>
+<div dir="ltr"><span style="font-weight:bold">Note:</span> If you've never built or debugged Chromium on Windows, first read the <a href="build-instructions-windows.html" style="color:rgb(0,102,204);outline-style:none">Windows build instructions</a>.</div>
+<h2><a name="TOC-Before-you-start"></a>Before you start</h2>
+<h3><a name="TOC-Requirements"></a>Requirements</h3>
+<div>You can use Visual Studio's built-in debugger or <a href="http://www.microsoft.com/whdc/DevTools/Debugging/default.mspx" rel="nofollow" target="_blank">WinDBG</a> to debug Chromium. Note that if you are using goma to build, much of this will not work; see <a href="https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/2txouusUQ0M">"Unable to set breakpoints in VS when building with goma on Windows"</a>.</div>
+<h3><a name="TOC-Optional"></a>Optional</h3>
+<div>So that you can continue to run release versions of the browser — and avoid incompatible profile changes — while you debug, you should use a different profile for your debug Chromium instance from the release build that you use. You can set the profile by <span style="font-family:inherit">modifying the command line used to launch Chromium from the debugger. To do this, go to</span> the <b>Debugging</b> tab of the properties of the <span style="font-family:courier new,monospace">chrome</span> project, and set <span style="font-family:courier new"><span style="font-family:Arial">the <b>Command Arguments</b> field to <span style="font-family:courier new,monospace">--user-data-dir=<span style="font-style:italic">c:\tmp\my_debug_profile</span></span>. (Replace <span style="font-family:courier new,monospace;font-style:italic">c:\tmp\my_debug_profile</span> with a directory of your choosing.) Another possibility, if you have lots of different checkouts, is to change the path of the shortcut you use for the release build so that it <a href="http://www.chromium.org/developers/creating-and-using-profiles">sets the profile</a>.</span></span></div>
+<div><br />
+</div>
+<div>Tools such as <a href="http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx" rel="nofollow" target="_blank">ProcessExplorer</a>, Spy++/<a href="http://www.windows-spy.com/" rel="nofollow" target="_blank">Winspector Spy</a>, Inspect32, and <a href="http://technet.microsoft.com/en-us/sysinternals/bb896642.aspx" rel="nofollow" target="_blank">FileMon</a> may be of use when debugging different parts of Chromium.</div>
+<div><br />
+</div>
+<h2><a name="TOC-Multi-process-issues"></a>Multi-process issues</h2>
+<p><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px">Chromium can be challenging to debug because of its </span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px"><a href="../design-documents/multi-process-architecture.html" style="color:rgb(0,102,204);outline-style:none">multi-process architecture</a></span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px">. When you select </span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px"><b>Run</b></span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px"> in the debugger, only the main </span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px"><b>Browser</b></span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px"> process will be debugged. The code that actually renders web pages (the </span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px"><b>Renderer</b></span></span><span style="font-size:20px;font-weight:bold"><span style="font-weight:normal;font-size:13px">) and the plugins will be in separate processes that's not (yet!) being debugged.</span></span></p><p><span style="font-size:13px;background-color:transparent">There are a number of approaches to solving this problem.</span></p>
+<h3><a name="TOC-Single-process-mode"></a><span style="font-size:16px">Single-process mode</span></h3>
+<p><span style="font-size:16px;font-weight:bold"><font size="3"><span style="font-size:13px;font-weight:normal">The easiest way to debug issues is to run Chromium in single-process mode. This will allow you to see the entire state of the program without extra work (although it will still have many threads). To use single-process mode, add the command-line flag <code>--single-process </code>to the </span><span style="font-size:13px">Command Arguments</span><span style="font-size:13px;font-weight:normal"> field in the</span><span style="font-size:13px"> Debugging</span><span style="font-size:13px;font-weight:normal"> tab of the properties of the </span><span style="font-size:13px">chrome</span><span style="font-size:13px;font-weight:normal"> project. This approach isn't perfect because some problems won't manifest themselves in this mode. Also, even in single-process mode, worker threads are spawned into new processes.</span></font></span></p>
+<p><span style="font-size:16px;font-weight:bold"><font size="3"><span style="font-size:13px;font-weight:normal"><br />
+<b>Tip: </b>By default, when you load the project, Visual Studio may select </span><span style="font-size:13px">Browser/browser.exe</span><span style="font-size:13px;font-weight:normal"> as the "startup project," and you will notice that </span><span style="font-size:13px">chrome.exe</span><span style="font-size:13px;font-weight:normal"> is not bolded in the list of projects. If this is the case, then just clicking </span><span style="font-size:13px">Debug &gt; Start Debugging</span><span style="font-size:13px;font-weight:normal"> will start a different project, and ignore the command line flag you just provided. To change this, right-click the </span><span style="font-size:13px">chrome.exe</span><span style="font-size:13px;font-weight:normal"> project and choose </span><span style="font-size:13px">Set As Startup Project</span><span style="font-size:13px;font-weight:normal">.</span></font></span></p>
+<h3><a name="TOC-Using-Image-File-Execution-Options"></a><span style="font-size:16px;font-weight:bold">Using Image File Execution Options</span></h3>
+</div>
+</div>
+<div dir="ltr"><br />
+<div dir="ltr">Using Image File Execution Options (IFEO) <font color="#cc0000">will not work</font>,  because <tt>CreateProcess()</tt> returns the handle to the debugger process instead of the intended child process. There are issues too with the sandbox.</div><div dir="ltr"><h2><a name="TOC-Chrome-Debug-Log"></a><span style="background-color:transparent"><font size="4"><b>Chrome Debug Log</b></font></span></h2></div><div dir="ltr"><span style="font-size:10pt;background-color:transparent">Enable Chrome debug logging to a file by passing <font face="courier new, monospace">--enable-logging --v=1</font> command-line flags at startup. </span><span style="font-size:10pt;background-color:transparent">Debug builds place the </span><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">chrome_debug.log</font><span style="font-size:10pt;background-color:transparent"> file in the </span><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">out\Debug</font><span style="font-size:10pt;background-color:transparent"> directory. Release builds place the file in the top level of the user data Chromium app directory, which is OS-version-dependent. For more information, see <a href="../../for-testers/enable-logging.html">logging</a> and <a href="../../user-experience/user-data-directory.html">user data directory</a> details.</span></div><div dir="ltr"><h2><a name="TOC-Debugging-with-Visual-Studio"></a>Debugging with Visual Studio</h2>
+<h3><a name="TOC-Attaching-to-the-renderer"></a>Attaching to the renderer</h3>
+<div>You can also attach to the running child processes with the debugger. Select <b>Tools &gt; Attach to Process</b> and click the <b>chrome.exe</b>
+ process you want to attach to. You can now debug the two processes as if they were one. <b>Use <a href="http://code.google.com/p/chromium/wiki/WindowsVisualStudioMacros#Automatically_grab_chromium_child_processes" target="_blank">this macro</a> or <a href="http://chromium.github.io/vs-chromium/#attach-to-chrome">the vs-chromium plug-in</a> to attach to the right processes</b>.</div>
+<br />
+<div>
+<div>When you are debugging multiple processes, open the <b>Debug &gt; Windows &gt; Processes</b> window to switch between them. 
+
+<br />
+<br />
+</div>
+<div>Sometimes you are debugging something that
+only happens on startup, and want to see the child process as soon as
+it starts. In this case, you can use the <tt>--renderer-startup-dialog</tt>
+command line flag to the browser. <span style="font-weight:bold">Important note:</span> If you use this flag you also have to pass the <span style="font-family:courier new,monospace">--no-sandbox</span> flag, since the sandbox will otherwise prevent the renderer from showing a startup dialog. The browser will pass this along
+to each renderer it starts, which will display a message box as soon as
+it starts. When the dialog appears, visit <span style="font-weight:bold">Tools &gt; Attach to Process</span> and attach to the process showing the Renderer startup dialog. Now you're debugging in the renderer.</div>
+<div><br />
+</div>
+<h3><a name="TOC-Semi-automatically-attaching-the-debugger-to-child-processes"></a>Semi-automatically attaching the debugger to child processes</h3>
+<div>The following flags cause the processes to wait for 60
+seconds in a busy loop for a debugger to attach to the process. Once
+either condition is true, it continues on; no exception is thrown. This is <b>the only reliable way</b> to debug an issue occurring on process startup with Visual Studio.</div>
+<div>
+<h4><a name="TOC-Usage"></a><a>Usage</a></h4>
+<blockquote>
+</blockquote>
+<blockquote><tt><span style="font-family:times new roman,serif"><span style="font-style:italic">chrome.exe</span></span> [--wait-for-debugger-children[=<span style="font-style:italic"><span style="font-family:times new roman,serif">filte<span style="font-style:normal">r</span></span></span>]] [--wait-for-debugger]</tt>
+</blockquote>
+<ul>
+<li><tt><span style="font-style:italic"><span style="font-family:times new roman,serif">filter</span></span> = plugin | renderer</tt></li>
+<li><tt>--wait-for-debugger-children</tt> waits for a debugger in child processes for 60 seconds.</li>
+<li><tt>--wait-for-debugger</tt> waits for a debugger for 60 seconds.</li>
+</ul>
+It should be used with the <a href="http://code.google.com/p/chromium/wiki/WindowsVisualStudioMacros#Automatically_grab_chromium_child_processes" target="_blank">.NET macro</a> to help catch the processes. Alt-P does the job, too.</div>
+<h3><a name="TOC-Symbol-server"></a>Symbol server</h3>
+<div>Save yourself some time and debug an official build! Setup your symbols:</div>
+<div>
+<ol><li>Menu Tools, Options</li>
+<li>Debugging, Symbols</li>
+<li>Add <span style="font-family:courier new">https://msdl.microsoft.com/download/symbols </span>and <font face="'courier new', monospace">https://chromium-browser-symsrv.commondatastorage.googleapis.com</font></li>
+<li>Setup a local cache in a empty directory on your computer, otherwise it'll be very slow.</li>
+</ol>
+Important note: release build debugging is much easier with WinDBG.</div>
+<h3><a name="TOC-Don-t-step-into-trivial-functions"></a><b>Don't step into trivial functions</b></h3>
+<div><b><span style="font-weight:normal">Right click</span></b> and select<b> "Step Into Specific"</b> when the current statement is on a line with multiple function calls.</div>
+<div>
+<div style="display:block;text-align:left"><a href="debugging-on-windows/StepIntoSpecific.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1423155180708/developers/how-tos/debugging-on-windows/StepIntoSpecific.png" /></a></div>
+<div><br />
+</div>
+The debugger can be configured to <b>automatically not step into</b> functions based on regular expression:<br />
+<div>
+<ul><li>For Visual Studio 2013:</li><ul><li>Open <font face="courier new, monospace">C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Packages\Debugger\Visualizers\default.natstepfilter</font></li></ul><li>For older versions of Visual Studio:</li><ul><li>Find the registry location for your version of Visual Studio</li><ul><li>Open regedit</li><li>Edit -&gt; Find "StepOver"</li><ul><li>(You only need to search Keys, and can match whole string only)</li><li>Different visual studio versions have different locations, e.g.:<br />
+<code>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\9.0\NativeDE\StepOver</code></li><li>Check if you have more than one, if so, pick the right version. ;) e.g. VS2008 == VS9.0</li></ul>
+</ul>
+</ul>
+<li>Add regular expressions of functions to not step into, </li>
+<ul><li>colons and angle brackets must be escaped with a \</li>
+<li>You don't need to suffix =nostepinto, it's the default</li>
+<li>Examples:</li>
+<ul><li><code>operator (new|delete).*   - </code>operator new and delete</li>
+<li><code>std\:\:.*                 - </code>Skip everything in std.</li>
+<li><code>WTF\:\:.*Ptr\&lt;.*\&gt;\:\:.*  - </code>all methods on WebKit OwnPtr and variants, ... WTF::*Ptr&lt;*&gt;::*</li></ul></ul>
+<li>Natstepfilter file or Registry is read at start of a debugging session with F5.</li>
+<li>More info: <a href="http://blogs.msdn.com/b/andypennell/archive/2004/02/06/69004.aspx" style="color:rgb(0,102,204);outline-style:none">Andy Pennel's Blog</a>, <a href="http://groups.google.com/group/microsoft.public.vsnet.debugging/msg/26addb1b539883e8" style="color:rgb(0,102,204);outline-style:none">microsoft email thread</a></li></ul>
+<h2><a name="TOC-Debugging-with-WinDBG"></a>Debugging with WinDBG</h2>
+WinDBG
+is a <b>great</b>, <b>free </b>tool. It is more <b>powerful </b>than Visual Studio's built-in debugger, but is harder to use (kind of like gdb on Linux). You can retrieve the <a href="http://msdn.microsoft.com/en-us/windows/hardware/hh852365" rel="nofollow" target="_blank">latest version</a> from Microsoft's web site. You should end up with two versions of the tool: the 32-bit debugger and the 64-bit debugger. Most of the time the one that you should use for Chromium is the 32-bit version.</div>
+<h3><a name="TOC-Initial-setup"></a>Initial setup</h3>
+<div>Once you're started, you may wish to fix a few things:</div>
+</div>
+<div>
+<ol><li>In menu <i>File</i>, <i>Symbol File Path</i>, type this where c:\code\symbols is your local symbol cache:<br />
+<font face="courier new"><br />
+<b><font color="#38761d" size="3">SRV*c:\code\symbols*https://msdl.microsoft.com/download/symbols;SRV*c:\code\symbols*</font></b></font><span style="font-family:courier new,monospace"><b><font color="#38761d" size="3">https://chromium-browser-symsrv.commondatastorage.googleapis.com</font></b><br /><br />
+</span></li>
+<li>Open a few windows from the <i>View</i> menu. </li>
+<li>Use <i>File</i>, <i>Open Executable</i> to launch a process to debug.</li>
+<li>In the command prompt, you may want to use these commands:</li>
+<ol><li><font color="#38761d" face="courier new, monospace" size="3"><b>.asm no_code_bytes</b></font></li>
+<ul><li><span style="background-color:transparent;font-size:10pt">disables display of opcodes</span></li></ul>
+<li><b><font color="#38761d" face="courier new, monospace" size="3">.prompt_allow -sym -dis -ea -reg -src</font></b></li>
+<ul><li><span style="background-color:transparent;font-size:10pt">Disables display of symbol for the current instruction, disassembled instructions, effective address of current instruction, current state of registers and source line for the current instruction</span></li></ul>
+</ol>
+<li>If you want to automatically download source files that match a particular minidump, in the menu <i>File</i>, <i>Source File Path</i> set the value to: <font color="#38761d" face="courier new, monospace" size="3"><b>srv*</b></font></li>
+<ul><li><span style="background-color:transparent;font-size:10pt">If </span><span style="background-color:transparent;font-size:10pt;font-family:arial,sans-serif">you have a local checkout of the source, you can just point <i>Source Path</i> to the root of your code (src). Multiple paths are separated by semicolons.</span></li>
+<li><span style="background-color:transparent;font-size:10pt;font-family:arial,sans-serif">If you want to download the individual source files to a given directory, add the destination to the path like </span><span style="font-size:10pt;background-color:transparent;font-family:arial,sans-serif">so: </span><span style="background-color:transparent"><font color="#38761d" face="courier new, monospace" size="3"><b>srv*c:\path\to\downloaded\sources;c:\my\checkout\src</b></font></span></li></ul>
+<li><span style="font-family:arial,sans-serif">In the menu <i>View</i>, <i>Source language file extensions</i>..., add </span><font color="#38761d" face="courier new, monospace" size="3"><b>cc=C++</b></font><font face="arial, sans-serif"> to have automatic source colors.</font></li>
+<li><font face="arial, sans-serif">Dock the windows as you want them to be and save the workspace so that it is available in the future (<i>File</i> menu). Note that the UI allows multiple "Docks" and each Dock can have multiple tiled panels in it, and each panel can have multiple tabbed windows. You may want to have source files to be </font><span style="font-family:arial,sans-serif">tabbed on the same panel, and visible at the same time as local variables and the stack and command windows. It is useful to realize that by default windbg creates a workspace per debugged executable or minidump, so each target can have its own configuration. The "default" workspace is applied to new targets.</span></li>
+<li>In Windows Explorer, associate <font color="#38761d" face="courier new, monospace" size="3"><b>.dmp</b></font> extension with windbg.exe. You may have to manually add -z to the open command like so: <font color="#38761d" face="courier new, monospace" size="3"><b>"...\windbg.exe" -z "%1"</b></font> to make this work properly. Alternatively, run <font color="#38761d" face="courier new, monospace" size="3"><b>windbg.exe -IA</b></font></li><li>Register as the default just in time debugger: <font color="#38761d" face="courier new, monospace" size="3"><b>windbg.exe -I</b></font></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<div>
+<div>
+<h3><a name="TOC-Common-commands"></a>Common commands</h3>
+<ul>
+<li><tt><font color="#38761d" face="courier new, monospace" size="3"><b>dt this-&gt;member_</b></font></tt></li>
+<ul>
+<li><font face="arial, sans-serif" size="2">Displays the data </font></li>
+</ul>
+</ul>
+<ul>
+<li><tt><font color="#38761d" face="courier new, monospace" size="3"><b>x chrome*!*function_name</b></font></tt> </li>
+<ul>
+<li><font face="arial, sans-serif" size="2">Finds a symbol. </font></li>
+</ul>
+</ul>
+<ul>
+<li><tt><font color="#38761d" face="courier new, monospace" size="3"><b>.open -a [symbol address or complete symbol name found by using x]</b></font></tt> </li>
+<ul>
+<li><font face="arial, sans-serif" size="2">Opens the source file containing the specified symbol. Pretty neat. </font></li>
+</ul>
+</ul>
+<ul>
+<li><tt><font color="#38761d" face="courier new, monospace" size="3"><b>?? [data name]</b></font></tt> </li>
+<ul>
+<li><font face="arial, sans-serif" size="2">Quick evaluation of a C++ symbol (local variable, etc). You don't need to specify <tt>this-&gt;</tt> for member variables but it's slower if you don't.</font></li></ul></ul><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent">dv [/V]</b></li><ul><li><span style="background-color:transparent;font-family:arial,sans-serif;font-size:small">Displays local variables</span></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>dd address</b></font></li><ul><li><font face="arial, sans-serif" size="2">Displays the contents of memory at the given address (as doubles... </font><font color="#38761d" face="courier new, monospace" size="3"><b>dc, dw, dq</b></font><font face="arial, sans-serif" size="2"> etc)</font></li></ul></ul><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent">dt -r1 type address</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">Displays an object of the given type stored at the given address, using 1 level of recursion.</span></li></ul></ul><div><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent">!stl</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">Displays some stl structures (visualizer)</span></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>dt -n &lt;type&gt;</b></font></li><ul><li><font face="arial, sans-serif" size="2">Displays a type forcing the name to the supplied type (when there are problematic characters in the name)</font></li></ul></ul><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent">~*n</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">Freezes all threads</span></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>~4m</b></font></li><ul><li><font face="arial, sans-serif" size="2">Thaws thread number 4</font></li></ul></ul></div><div><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>Ctrl-Shift-I</b></font></li><ul><li><font face="arial, sans-serif" size="2">Sets the selected source line to be the next line to be executed</font></li></ul></ul></div><div><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>F5, Ctrl-Shift-F5, F9, F10, F11</b></font></li><ul><li><font face="arial, sans-serif" size="2">Run, restart, toggle breakpoint, step over, step into.</font></li></ul></ul></div>
+One of the major benefits of WinDBG for debugging Chromium is its ability to automatically debug child processes. This allows you to skip all the complicated instructions above. The easiest way to enable this is to check "<i>Debug child processes also</i>" in the "<i>Open Executable</i>" dialog box when you start debugging or start "<b><font color="#38761d" face="courier new, monospace" size="3">windbg.exe -o</font></b>".  <b>NOTE that on 64-bit Windows you may need to use the <a href="http://www.microsoft.com/whdc/devtools/debugging/install64bit.mspx" target="_blank">64-bit WinDbg</a> for this to work. </b>You can switch dynamically the setting on and off at will with the <font color="#38761d" face="courier new, monospace" size="3"><b>.childdbg 1|0</b></font> command, to follow a particular renderer creation. You can also attach to a running process (<font color="#38761d" face="courier new, monospace" size="3"><b>F6</b></font>) and even detach without crashing the process (<font color="#38761d" face="courier new, monospace" size="3"><b>.detach</b></font>)</div><div><br /></div><h3><a name="TOC-Common-commands-when-working-with-a-crash"></a><b><font size="3">Common commands when working with a crash</font></b></h3><div><ul><li><span style="background-color:transparent"><font color="#38761d" face="courier new, monospace" size="3"><b>!analyze -v</b></font></span></li><ul><li><span style="background-color:transparent;font-size:10pt">Displays a basic crash analysis report.</span></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>.ecxr</b></font></li><ul><li>Switch the context to the exception record.</li></ul></ul><div><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent">dds address</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">Displays symbols following address (as in a stack or vtable)</span></li></ul></ul></div><div><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent"><span style="background-color:transparent">k = address address </span>address</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">Rebuilds a call stack assuming that address is a valid stack frame.</span></li></ul></ul><div><ul><li><span style="background-color:transparent"><font color="#38761d" face="courier new, monospace" size="3"><b>uf symbol</b></font></span></li><ul><li><span style="background-color:transparent"><font face="arial, sans-serif" size="2">Unassembles a function showing source line number.</font></span></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>lm vmchr*</b></font></li><ul><li><font face="arial, sans-serif" size="2">Lists verbose information about all modules with a name that starts with ch</font></li></ul></ul><ul><li><b style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium;background-color:transparent">ln address</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">Lists all symbols that match a given address (dedups a symbol).</span></li></ul></ul><ul><li><b style="background-color:transparent;color:rgb(56,118,29);font-family:courier new,monospace;font-size:medium">.load wow64exts</b></li><ul><li><span style="font-family:arial,sans-serif;font-size:small;background-color:transparent">On a 64-bit debugger, load the 32-bit extensions so that the current architecture can be switched</span></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>.effmach x86</b></font></li><ul><li><font face="arial, sans-serif" size="2">Switches the current architecture to 32-bit.</font></li></ul></ul><ul><li><font color="#38761d" face="courier new, monospace" size="3"><b>.effmach x86; k</b></font><font color="#38761d" face="courier new, monospace" size="3"><b> = @ebp @ebp @ebp</b></font></li><ul><li><font face="arial, sans-serif" size="2">Shows the 32-bit call stack from a 64-bit dump</font></li></ul></ul><div><font face="arial, sans-serif" size="2">For more info, see <a href="http://www.chromium.org/developers/how-tos/debugging-on-windows/example-of-working-with-a-dump">this example of working with a crash dump</a>, consult the program help (really, it's exhaustive!), see <a href="http://windbg.info/doc/1-common-cmds.html">Common windbg commands</a> or use your favorite search engine.</font></div></div></div></div>
+<h2><a name="TOC-V8-and-Chromium"></a>V8 and Chromium</h2>
+<div>V8
+supports many command-line flags that are useful for debugging. V8
+command-line flags can be set via the Chromium command-line flag <tt>--js-flags</tt>; for instance:
+<p style="margin-left:40px"><tt>chrome.exe --js-flags="--trace_exception --heap_stats"</tt></p>
+<p>Note that some V8 command-line flags exist only in the debug build of V8. For a list of all V8 flags try:</p>
+<p style="margin-left:40px"><tt>chrome.exe --js-flags="--help"</tt></p>
+<h2><a name="TOC-Graphical-Debugging"></a>Graphical Debugging</h2>
+<div>GPU Acceleration of rendering can be more easily debugged with tools. See:</div><div><ul><li><a href="debugging-on-windows/graphics-debugging-in-visual-studio-2013.html">Graphics Debugging in Visual Studio 2013</a></li><li><a href="debugging-on-windows/pix-for-windows.html">PIX for Windows</a> (for older version of Visual Studio)</li><li><a href="http://www.chromium.org/developers/design-documents/chromium-graphics/debugging-with-nsight">Graphical debugging with NVIDIA NSight</a></li></ul>
+<div>
+<h2><a name="TOC-Debugging-on-another-machine"></a>Debugging on another machine</h2>
+<div>Sometimes it's useful to debug installation and execution on a machine other than your primary build box. To run the installer on said other machine, first b<span style="font-size:10pt">uild the mini_installer target on your main build machine (e.g., ninja -C out\Debug mini_installer). Next, on the debug machine:</span></div>
+<div>
+<ul><li>Make the build machine's build volume available on the debug machine either by mounting it locally (e.g., Z:\) or by crafting a UNC path to it (e.g., \\builder\src)</li>
+<li>Open up a command prompt and change to a local disk</li>
+<li>Run src\tools\win\<a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/win/copy-installer.bat">copy-installer.bat</a> in the remote checkout by way of the mount (e.g., Z:\PATHTOCHECKOUT\src\...) or UNC path (e.g., \\builder\src\...). This will copy the installer, DLLs, and PDBs into your debug machine's C:\out or C:\build (depending on if you're rocking the component=shared_library build or not)</li>
+<li>Run C:\out\Debug\mini_installer.exe with the flags of your choice to install Chrome. This can take some time, especially on a slow machine. Watch the Task Manager and wait until mini_installer.exe exits before trying to launch Chrome (by way of the shortcut(s) created by the installer)</li>
+<li>For extra pleasure, add C:\out\Debug to your _NT_SYMBOL_PATH environment variable</li></ul>
+<div>Consider reading the documentation at the top of copy-installer.bat to see how you can run it. It tries to be smart and copy the right things, but you may need to be explicit (e.g., "copy-installer.bat out Debug"). It is safe to re-run the script to copy only modified files (after a rebuild, for example).</div>
+</div>
+<h2><a name="TOC-Miscellaneous"></a>Miscellaneous</h2>
+</div>
+</div>
+<ul><li><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=bd02c19c-1250-433c-8c1b-2619bd93b3a2&amp;displaylang=en" rel="nofollow">Application Verifier</a> is a free tool from Microsoft. For the tool to run, you must disable the sandbox (<span style="font-family:courier new,monospace">--no-sandbox</span>) and run all app-verified processes in a debugger. This means that you must run the renderer and plugin processes in a debugger or they will fail in mysterious ways. Use any of the methods mentioned above to attach to the renderer processes when they run.</li>
+</ul>
+<ul>
+<li>To put a breakpoint on <tt>CreateFile()</tt>, add this break point:</li>
+</ul>
+<blockquote><tt>{,,kernel32.dll}_CreateFileW@28</tt>
+</blockquote>
+<ul>
+<ul>
+<li><tt>{,,kernel32.dll}</tt>specifies the DLL (context operator). </li>
+<li><tt>_</tt> prefix means extern "C". </li>
+<li><tt>@28</tt> postfix means <tt>_stdcall</tt> with the stack pop at the end of the function. i.e. the number of arguments in BYTES. </li></ul>
+<li>You can use DebugView from SysInternals or <a href="http://code.google.com/p/sawbuck/">sawbuck</a> to view LOG() messages that normally goes to stderr on POSIX.</li>
+<ul>
+</ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(3):</span>
+<span>
+<a href="http://www.chromium.org/developers/how-tos/debugging-on-windows/example-of-working-with-a-dump" dir="ltr">Example of working with a dump.</a>
+</span>
+<span>
+<a href="debugging-on-windows/graphics-debugging-in-visual-studio-2013.html" dir="ltr">Graphics Debugging in Visual Studio 2013</a>
+</span>
+<span>
+<a href="debugging-on-windows/pix-for-windows.html" dir="ltr">PIX for Windows</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/how-tos/debugging-on-windows">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9dXBX3kCLHddtRhvt-yDqBN9JzsjAJrGctztWGVuSSKklaX40E3Qe4CWgDX-RBr5ohMUTiqAJ9hmIPc-D5wj_qs59s_1O8hzMzZ7J_020jjFWOcKI/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

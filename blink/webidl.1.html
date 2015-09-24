@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/blink","deleted":false,"title":"Blink","dir":"ltr"},{"path":"/blink/webidl","deleted":false,"title":"Web IDL in Blink","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/blink/webidl\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/blink","parentWuid":"wuid:gx:1c15db3ef1df1880","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Web IDL in Blink","locale":"en","wuid":"wuid:gx:31e328bf2dc4270","revision":127,"path":"/blink/webidl","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"webidl","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Web IDL in Blink - The Chromium Projects" />
+<meta itemprop="name" content="Web IDL in Blink - The Chromium Projects" />
+<meta property="og:title" content="Web IDL in Blink - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Web IDL in Blink - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../blink.1.html" dir="ltr">Blink</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Web IDL in Blink</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div></div>
+<div><i>Blink developers (non-bindings development): for general IDL use, see <a href="../developers/web-idl-interfaces.html" style="background-color:transparent;font-size:10pt">Web IDL interfaces</a><span style="background-color:transparent;font-size:10pt">; for configuring bindings, s</span><span style="background-color:transparent;font-size:10pt">ee </span><span style="background-color:transparent;font-size:10pt"><a href="webidl/blink-idl-extended-attributes.html">Blink IDL Extended Attributes</a>; for IDL dictionaries use, see <a href="https://docs.google.com/document/d/1mRB5zbfHd0lX2Y_Hr7g6grzP_L4Xc6_gBRjL-AE7sY8/edit?usp=sharing">IDL dictionaries in Blink</a>.</span></i></div>
+<div><br />
+</div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Basics-of-IDL"><strong>2 </strong>Basics of IDL</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Syntax"><strong>3 </strong>Syntax</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Style"><strong>4 </strong>Style</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Semantics"><strong>5 </strong>Semantics</a><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Types"><strong>5.1 </strong>Types</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-undefined-and-null"><strong>5.2 </strong>undefined and null</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Function-resolution"><strong>5.3 </strong>Function resolution</a></li></ol></li><li class="goog-toc"><a href="webidl.1.html#TOC-File-organization"><strong>6 </strong>File organization</a><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Dependencies"><strong>6.1 </strong>Dependencies</a></li></ol></li><li class="goog-toc"><a href="webidl.1.html#TOC-IDL-extended-attribute-validator"><strong>7 </strong>IDL extended attribute validator</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Tests"><strong>8 </strong>Tests</a><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Reference-tests-run-bindings-tests-"><strong>8.1 </strong>Reference tests (run-bindings-tests)</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Behavior-tests"><strong>8.2 </strong>Behavior tests</a></li></ol></li><li class="goog-toc"><a href="webidl.1.html#TOC-Where-is-the-bindings-code-generated-"><strong>9 </strong>Where is the bindings code generated?</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Limitations-and-improvements"><strong>10 </strong>Limitations and improvements</a><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Syntax-error-causes-infinite-loop"><strong>10.1 </strong>Syntax error causes infinite loop</a></li><li class="goog-toc"><a href="webidl.1.html#TOC-Type-checking"><strong>10.2 </strong>Type checking</a></li></ol></li><li class="goog-toc"><a href="webidl.1.html#TOC-Bindings-development"><strong>11 </strong>Bindings development</a><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Mailing-List"><strong>11.1 </strong>Mailing List</a></li></ol></li><li class="goog-toc"><a href="webidl.1.html#TOC-If-working-on-bindings-you-likely-wish-to-join-the-blink-reviews-bindings-mailing-list."><strong>12 </strong>If working on bindings, you likely wish to join the blink-reviews-bindings mailing list.</a><ol class="goog-toc"><li class="goog-toc"><a href="webidl.1.html#TOC-Build-environment"><strong>12.1 </strong>Build environment</a></li></ol></li><li class="goog-toc"><a href="webidl.1.html#TOC-See-also"><strong>13 </strong>See also</a></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<p><a href="https://heycam.github.io/webidl/">​Web IDL</a> is a language that defines how Blink interfaces are bound to V8. You need to write IDL files (e.g. XMLHttpRequest.idl, Element.idl, etc) to expose Blink interfaces to those external languages. When Blink is built, the IDL files are parsed, and the code to bind Blink implementations to V8 interfaces automatically generated.</p>
+<p>This document describes practical information about how the IDL bindings work and how you can write IDL files in Blink. The syntax of IDL files is fairly well documented in the <a href="https://heycam.github.io/webidl/">​Web IDL spec</a>, but it is too formal to read :-) and there are several differences between the Web IDL spec and the Blink IDL due to implementation issues. For design docs on bindings generation, see <a href="../developers/design-documents/idl-build.html" style="background-color:transparent;font-size:10pt">IDL build</a><span style="background-color:transparent;font-size:10pt"> and </span><a href="../developers/design-documents/idl-compiler.html" style="background-color:transparent;font-size:10pt">IDL compiler</a>.</p>
+<p>For Blink developers, the main details of IDLs are the extended attributes, which control implementation-specific behavior: s<span style="background-color:transparent;font-size:10pt">ee </span><span style="background-color:transparent;font-size:10pt"><a href="webidl/blink-idl-extended-attributes.html">Blink IDL Extended Attributes</a> for extensive details.</span></p>
+<p>Our goal is to converge Blink's IDL and Web IDL. The grammar is almost identical; see below.</p>
+<h2><a name="TOC-Basics-of-IDL"></a>Basics of IDL</h2>
+<p>Here is an example of IDL files:</p><div class="sites-codeblock sites-codesnippet-block"><code>[CustomToV8]</code><br /><code>interface Node {</code><br /><code>    const unsigned short ELEMENT_NODE = 1;</code><br /><code>    attribute Node parentNode;</code><br /><code>    [TreatReturnedNullStringAs=Null] attribute DOMString nodeName;</code><br /><code>    [Custom] Node appendChild(Node newChild);</code><br /><code>    void addEventListener(DOMString type, EventListener listener, optional boolean useCapture);</code><br /><code>};</code></div><p><span style="font-size:10pt;background-color:transparent">Let us introduce some terms:</span></p>
+<ul><li>The above IDL file describes the <code>Node</code> <b>interface</b>.</li>
+<li><code>ELEMENT_NODE</code> is a <b>constant</b> of the <code>Node</code> interface.</li>
+<li><code>parentNode</code> and <code>nodeName</code> are <b>attributes</b> of the <code>Node</code> interface.</li>
+<li><code>appendChild(...)</code> and <code>addEventListener(...)</code> are <b>operations</b> of the <code>Node</code> interface.</li>
+<li><code>type</code>, <code>listener</code> and <code>useCapture</code> are <b>arguments</b> of the <code>addEventListener</code> method.</li>
+<li><code>[CustomToV8]</code>, <code>[TreatReturnedNullStringAs=Null]</code> and <code>[Custom]</code> are <b>extended attributes</b>.</li></ul>
+<p>The <a href="https://heycam.github.io/webidl/">Web IDL spec</a> uses somewhat idiosyncratic terminology; in more common language:</p>
+<ul><li>An 'operation' (Web IDL) is more commonly called a 'method'.</li>
+<li>An 'argument' (Web IDL) is more formally a 'parameter'.</li></ul>
+<p>The key points are as follows:</p>
+<ul><li>An IDL file controls how the bindings code between JavaScript engine and the Blink implementation is generated.</li>
+<li>Extended attributes enable you to control the bindings code more in detail.</li>
+<li>There are ~80 extended attributes, explained in a separate page.</li>
+<li>Extended attributes can be specified on interfaces, methods, attributes and parameters (but not constants, enums, etc.).</li></ul>
+<p>The valid extended attributes depend on what the attach to: interfaces and methods have different extended attributes.</p>
+<p>A simple IDL file template looks like:</p><div class="sites-codeblock sites-codesnippet-block"><code>interface INTERFACE_NAME {</code><br /><code>    const unsigned long value = 12345;</code><br /><code>    attribute Node node;</code><br /><code>    void func(int param, ...);</code><br /><code>};</code></div><p>With extended attributes, this looks like:</p><div class="sites-codeblock sites-codesnippet-block"><code>[</code><br /><code>    EXTATTR,</code><br /><code>    EXTATTR,</code><br /><code>    ...,</code><br /><code>] </code><code>interface INTERFACE_NAME {</code><br /><code>    const unsigned long value = 12345;</code><br /><code>    [EXTATTR, EXTATTR, ...] attribute Node node;</code><br /><code>    [EXTATTR, EXTATTR, ...] void func([EXTATTR, EXTATTR, ...] int param, ...);</code><br /><code>};</code></div>
+<h2><a name="TOC-Syntax"></a>Syntax</h2>
+<p>Blink IDL is a dialect of Web IDL. The lexical syntax is identical, but the phrase syntax is slightly different.</p>
+<p>Implementation-wise, the lexer and parser are written in <a href="http://www.dabeaz.com/ply/">PLY</a> (Python lex-yacc), an implementation of lex and yacc for Python. A standard-compliant lexer is used (Chromium <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/idl_parser/idl_lexer.py" style="font-size:10pt">tools/idl_parser/idl_lexer.py</a><span style="font-size:10pt">).</span><span style="font-size:10pt"> The parser</span><span style="font-size:10pt"> (Blink </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/blink_idl_parser.py" style="font-size:10pt">Source/bindings/scripts/blink_idl_parser.py</a>) derives from a standard-compliant parser (Chromium <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/idl_parser/idl_parser.py" style="font-size:10pt">tools/idl_parser/idl_parser.py</a>).</p>
+<p>Blink deviations from the Web IDL standard can be seen as the BNF production rules in the derived parser. There are a few rules for minor special cases, and two differences of general interest:</p>
+<div>
+<ul><li>Trailing commas are ok in extended attributes (overrides production rule ExtendedAttributes).<br />
+These are often used in vertical lists of extended attributes, but have been rejected from the standard (see W3C <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=22156">Bug 22156</a>).</li>
+<li>Extended attributes can take a list of values, separated by <code>|</code> or <code>&amp;</code>, depending on the attribute (new production rule ExtendedAttributeIdentList).</li></ul>
+</div>
+<p>These are illustrated below:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>[</code></div>
+<div><code>    PerWorldBindings,</code></div>
+<div><code>] interface Baz {</code></div>
+<div><code>    [</code><span style="font-size:10pt"><code>CallWith=ScriptState|ThisValue</code></span><span style="font-size:10pt"><code>] attribute Foo bar;</code></span></div>
+<div><span style="font-size:10pt"><code>};</code></span></div>
+</div>
+<h2><a name="TOC-Style"></a>Style</h2>
+<div>Style guidelines are to generally follow <a href="coding-style.1.html" style="background-color:transparent;font-size:10pt">Blink style</a> for C++, with a few points highlighted, addenda, and exceptions. These are not enforced by a pre-submit test, but do assist legibility:</div>
+<div>
+<ul><li>Include the <a href="coding-style.html#TOC-License">current Blink license header</a> in new files</li><li>For IDL based on standards/specifications:</li><ul><li>Include a comment with the URL of the spec (and specific section, if possible) where the IDL is defined.</li><li>Follow any IDL samples given in specs.</li><li>Keep the order of interface and dictionary members the same as in the spec.</li><li>Document any deviations from the spec with <code>// FIXME</code> comments</li></ul>
+<li>4-space indent (Blink style).</li>
+<li>Avoid line breaks (Blink style), notably:</li>
+<ul><li>Keeping extended attributes of members (attributes, constants, and methods) on the same line as the member.</li>
+<li>Generally keep argument lists of methods on the same line as the definition. Ok to break if it's v. long or for overloaded methods.</li>
+<li>For overloaded methods, it is ok to use line breaks to group arguments. E.g., if one method has arguments (a, b, c) and the other has arguments (a, b, c, d, e, f), it is ok to include a line break between c and d, to clarify the grouping.</li></ul>
+<li>Alphabetize lists of extended attributes.</li>
+<li>For extended attributes on interface, put each on a separate line, with a trailing comma, (so it's easy to add or remove an extended attribute). Note that this is <i>not</i> style used in the standard, which uses a horizontal list on the line before the interface. Please omit the <code>[]</code> list if it's empty. Examples of Blink style:</li></ul>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>[</code></div>
+<div><code>    A,</code></div>
+<div><code>    B,</code></div>
+<div><code>] interface Foo {</code></div>
+<div><code>    ...</code></div>
+<div><code>};</code></div>
+<div><code><br />
+</code></div>
+<div><code>interface Bar {</code></div>
+<div><code>    ...</code></div>
+<div><code>};</code></div>
+</div>
+<ul><li>No spacing for horizontal alignment, except for lists of constants.</li>
+<li>For anonymous special operations, leave a space between the type and the parenthesize argument list; if you don't, the type looks like a function name!</li></ul>
+<div><div class="sites-codeblock sites-codesnippet-block"><br /><br /><code>getter DOMString (unsigned long index); // Not: DOMString(unsigned long index) </code><br /><br /></div><span style="font-size:10pt;background-color:transparent"><ul><li><span style="font-size:10pt;background-color:transparent">No trailing newlines.</span></li><li><span style="font-size:10pt;background-color:transparent">For special operations, the (first) argument to indexed property operations should be called </span><code style="font-size:10pt;background-color:transparent">index</code><span style="font-size:10pt;background-color:transparent">, and the (first) argument to named property operations should be called </span><code style="font-size:10pt;background-color:transparent">name</code><span style="font-size:10pt;background-color:transparent">; the second argument in property setters should be called </span><code style="font-size:10pt;background-color:transparent">value</code><span style="font-size:10pt;background-color:transparent">. For example:</span></li></ul></span>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block"><code>// Indexed property operations </code><br /><code>getter DOMString (unsigned long index); </code><br /><code>setter DOMString (unsigned long index, DOMString value); </code><br /><code>deleter boolean (unsigned long index); </code><br /><br /> <br /><code>// Named property operations </code><br /><code>getter DOMString (DOMString name); </code><br /><code>setter DOMString (DOMString name, DOMString value); </code><br /><code>deleter boolean (DOMString name);</code></div>
+<br />
+<h2><a name="TOC-Semantics"></a>Semantics</h2>
+<div>Web IDL exposes an interface to JavaScript, which is implemented in C++. Thus its semantics bridge these two languages, though it is not identical to either. Web IDL's semantics are much closer to C++ than to JavaScript – in practice, it is a relatively thin abstraction layer over C++. Thus C++ implementations are quite close to the IDL spec, though the resulting interface is somewhat unnatural from a JavaScript perspective: it behaves differently from normal JavaScript libraries.</div>
+<h3><a name="TOC-Types"></a>Types</h3>
+<div><i>See: <a href="http://heycam.github.io/webidl/#idl-types">Web IDL types</a>.</i></div>
+<div><span style="background-color:transparent"><a href="http://heycam.github.io/webidl/#dfn-primitive-type">Primitive types</a> in Web IDL are very close to fundamental types in C++ (booleans, characters, integers, and floats), though note that there is no <code>int</code> type in Web IDL (specs usually use <code>long</code> instead). There are a few other built-in Web IDL types that are not primitive, but not </span><span style="background-color:transparent"><a href="http://en.wikipedia.org/wiki/Composite_type">composite types</a> (like arrays); these include DOMString and Date. There is no official term in the spec; we call these </span><span style="background-color:transparent;font-size:10pt"><a href="http://en.wikipedia.org/wiki/Basic_type">basic types</a>, to contrast with composite types</span><span style="background-color:transparent;font-size:10pt">.</span></div>
+<h3><a name="TOC-undefined-and-null"></a><span style="background-color:transparent">undefined and null</span></h3>
+<div>JavaScript has two special values, <code>undefined</code> and <code>null</code>, which are often confusing and do not fit easily into C++. Indeed, precise behavior of <code>undefined</code> in Web IDL has varied over time and is under discussion (<span style="background-color:transparent;font-size:10pt">see W3C Bug </span><span style="background-color:transparent;font-size:10pt"><a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23532">23532</a> - </span><span style="background-color:transparent;font-size:10pt">Dealing with undefined).</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">Behavior on </span><code>undefined</code> and <code>null</code><span style="background-color:transparent;font-size:10pt"> <b>MUST</b> be tested in layout tests, as these can be passed and are easy to get wrong. If these tests are omitted, there may be crashes (which will be caught by ClusterFuzz) or behavioral bugs (which will show up as web pages or JavaScript libraries breaking).</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div><span style="background-color:transparent;font-size:10pt">For the purposes of Blink, behavior can be summarized as follows:</span></div>
+<div>
+<ul><li><code>undefined</code> and <code>null</code> are valid values for <b>basic types</b>, and are automatically converted.</li>
+<ul><li>Conversion follows <a href="http://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value" style="background-color:transparent;font-size:10pt">ECMAScript type mapping</a><span style="background-color:transparent;font-size:10pt">, which generally implements JavaScript </span><a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-type-conversion-and-testing" style="background-color:transparent;font-size:10pt">Type Conversion</a><span style="background-color:transparent;font-size:10pt">, e.g. </span><a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-toboolean" style="background-color:transparent;font-size:10pt">ToBoolean</a><span style="background-color:transparent;font-size:10pt">, </span><a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tonumber" style="background-color:transparent;font-size:10pt">ToNumber</a><span style="background-color:transparent;font-size:10pt">, </span><a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tostring" style="background-color:transparent;font-size:10pt">ToString</a><span style="background-color:transparent;font-size:10pt">.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">They may be converted to different values, notably </span><code style="background-color:transparent;font-size:10pt">"undefined"</code><span style="background-color:transparent;font-size:10pt"> and </span><code style="background-color:transparent;font-size:10pt">"null"</code><span style="background-color:transparent;font-size:10pt"> for <code>DOMString</code>.</span></li>
+<li><span style="background-color:transparent;font-size:10pt">For numeric types, this can be affected by the extended attributes <code>[Clamp]</code> and <code>[EnforceRange]</code>.</span></li>
+<ul><li><span style="background-color:transparent;font-size:10pt"><code>[Clamp]</code> changes the value so that it is valid.</span></li>
+<li><span style="background-color:transparent;font-size:10pt"><code>[EnforceRange]</code> throws a <code>TypeError</code> on these invalid values.</span></li></ul></ul>
+<li>for <b>interface types</b>, <code>undefined</code> and <code>null</code> are both treated as <code>null</code>, which maps to <code>nullptr</code>.</li>
+<ul><li>for nullable interface types, like <code>Node?</code>, <code>null</code> is a valid value, and thus <code>nullptr</code> is passed to the C++ implementation</li>
+<li>for non-nullable interface types, like <code>Node</code> (no <code>?</code>), <code>null</code> is <i>not</i> a valid value, and a <code>TypeError</code> is thrown, as in JavaScript <a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-toobject">ToObject</a>.</li>
+<ul><li><i style="font-weight:bold">However,</i> this nullability check is <i>not</i> done by default: it is only done if <code>[TypeChecking=Interface]</code> is specified on the interface or member (see Bug <a href="https://code.google.com/p/chromium/issues/detail?id=249598">249598</a>: Throw TypeError when null is specified to non-nullable interface parameter)</li>
+<li>Thus if <code>[<span style="font-size:13.3333330154419px">TypeChecking=Interface</span>]</code> is specified in the IDL, you do <i>not</i> need to have a null check in the Blink implementation, as the bindings code already does this, but if <code>[<span style="font-size:13.3333330154419px">TypeChecking=Interface</span>]</code> is not specified, you <i>do</i> need to have a null check in the Blink implementation.</li></ul>
+</ul>
+<li>for <b>dictionary types</b> (Blink: Dictionary), <code>undefined</code> and <code>null</code> both correspond to an empty dictionary</li>
+<li>for <b>union types</b>, <code>undefined</code> and <code>null</code> are assigned to a type that can accept them, if possible: null, empty dictionary, or conversion to basic type</li>
+<li><b>function resolution</b></li>
+<ul><li><code>undefined</code> affects function resolution, both as an optional argument and for overloaded operations, basically being omitted if trailing (but some exceptions apply). This is complicated (<span style="font-size:10pt;background-color:transparent">see W3C Bug </span><span style="font-size:10pt;background-color:transparent"><a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=23532">23532</a> - </span><span style="font-size:10pt;background-color:transparent">Dealing with undefined) </span>and not currently implemented.<br />
+Further, note that in some cases one wants different behavior for <code>f()</code> and <code>f(undefined)</code>, which requires an explicit overload, not an optional argument; a good example is <code>Window.alert()</code>, namely <code>alert()</code> vs. <code>alert(undefined)</code> (see W3C Bug <a href="https://www.w3.org/Bugs/Public/show_bug.cgi?id=25686">25686</a>).</li>
+<li><code>null</code> affects function resolution for overloaded operations, due to preferring nullable types, but this is the only effect.</li></ul></ul>
+<h3><a name="TOC-Function-resolution"></a>Function resolution</h3>
+<p>Web IDL has <i style="background-color:transparent;font-size:10pt;font-weight:normal">required</i><span style="background-color:transparent;font-size:10pt;font-weight:normal"> arguments and </span><i style="background-color:transparent;font-size:10pt;font-weight:normal">optional</i><span style="background-color:transparent;font-size:10pt;font-weight:normal"> arguments. JavaScript does not: omitted arguments have </span><code style="background-color:transparent;font-size:10pt;font-weight:normal">undefined</code><span style="background-color:transparent;font-size:10pt;font-weight:normal"> value. In Web IDL, omitting optional arguments is </span><i style="background-color:transparent;font-size:10pt;font-weight:normal">not</i><span style="background-color:transparent;font-size:10pt;font-weight:normal"> the same as explicitly passing </span><code style="background-color:transparent;font-size:10pt;font-weight:normal">undefined</code>: they call have different behavior (defined in the spec prose), and internally call different C++ functions implementing the operation.</p>
+<p>Thus if you have the following Web IDL function declaration:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>interface A {</code><br />
+<code>    void foo(long x);</code><br />
+<code> }; </code><br />
+</div>
+<p><span style="background-color:transparent;font-size:10pt">...the JavaScript </span><code style="background-color:transparent;font-size:10pt">a = new A(); a.foo()</code><span style="background-color:transparent;font-size:10pt"> will throw a </span><code style="background-color:transparent;font-size:10pt">TypeError</code><span style="background-color:transparent;font-size:10pt">. This is specified in Web IDL, and thus done by the binding code.</span></p></div><div><p>
+
+However, in JavaScript the corresponding function can be called without arguments:
+</p><div class="sites-codeblock sites-codesnippet-block"><code>function foo(x) { return x }</code><br /><code> foo() // undefined</code></div>
+<p>Note that <code style="background-color:transparent;font-size:10pt">foo()</code><span style="background-color:transparent;font-size:10pt"> and </span><code style="background-color:transparent;font-size:10pt">foo(undefined)</code><span style="background-color:transparent;font-size:10pt"> are almost identical calls (and for this function have identical behavior): it only changes the value of </span><code style="background-color:transparent;font-size:10pt">arguments.length</code>.</p>
+<p><span style="background-color:transparent;font-size:10pt">To get <i>similar</i> behavior in Web IDL, the argument can be explicitly specified as </span><code style="background-color:transparent;font-size:10pt">optional</code><span style="background-color:transparent;font-size:10pt"> (or more precisely, <code>optional</code> with <code>undefined</code> as a default value). However, these do <i>not</i> need to have the same behavior, and do <i>not</i> generate the same code: the spec may define different behavior for these calls, and the bindings call the implementing C++ functions with a different number of arguments, which is resolved by C++ overloading, and these may be implemented by different functions. </span></p></div>
+<p><span style="background-color:transparent;font-size:10pt">For example, given an optional argument such as:</span></p>
+<div><div class="sites-codeblock sites-codesnippet-block"><code>interface A {</code><br /><code>    void foo(optional long x);</code><br /><code> };</code></div><p>
+This results in <span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">a = new A(); a.foo()</span><span style="background-color:transparent;font-size:10pt"> being legal, and calling the underlying Blink C++ function implementing <code>foo</code> with no arguments, while <code>a.foo(undefined)</code> calls the underlying Blink function with one argument.<br />
+</span></p>
+</div>
+<p><span style="background-color:transparent;font-size:10pt">For </span><i style="background-color:transparent;font-size:10pt">overloaded</i><span style="background-color:transparent;font-size:10pt"> operations, the situation is more complicated, and not currently implemented in Blink </span><span style="background-color:transparent;font-size:10pt">(Bug </span><a href="https://code.google.com/p/chromium/issues/detail?id=293561" style="background-color:transparent;font-size:10pt">293561</a><span style="background-color:transparent;font-size:10pt">)</span><span style="background-color:transparent;font-size:10pt">. See the </span><a href="http://heycam.github.io/webidl/#dfn-overload-resolution-algorithm" style="background-color:transparent;font-size:10pt">overload resolution algorithm</a><span style="background-color:transparent;font-size:10pt"> in the spec for details.</span></p><p><span style="background-color:transparent;font-size:10pt">Pragmatically, passing </span><code style="background-color:transparent;font-size:10pt">undefined</code><span style="background-color:transparent;font-size:10pt"> for an optional argument is necessary if you wish to specify a value for a later argument, but not earlier ones, but does not necessarily mean that you mean to pass in </span><code style="background-color:transparent;font-size:10pt">undefined</code><span style="background-color:transparent;font-size:10pt"> explicitly; these instead get the special value "missing".</span></p><p><span style="background-color:transparent;font-size:10pt">Passing <code>undefined</code> to the last optional argument has unclear behavior for the value of the argument, but does mean that it </span><span style="background-color:transparent;font-size:10pt">resolves it to the operation with the optional argument, rather than others. (It then prioritizes nullable types and dictionary types, or unions thereof.) For example:</span></p>
+<div class="sites-codeblock sites-codesnippet-block"><code>interface A {</code><br /><code>    void foo(optional long x);</code><br /><code>    void foo(Node x);</code><br /><code> };</code></div>
+<p><span style="background-color:transparent;font-size:10pt">This results in </span><span style="background-color:transparent;font-size:10pt;color:rgb(0,96,0);font-family:monospace">a = new A(); a.foo(undefined)</span><span style="background-color:transparent;font-size:10pt"> resolving to the first <code>foo</code>, it is not clear if the resulting call is <code>a.foo()</code>, to <code>a.foo</code> with "missing", or (most likely) <code>a.foo(undefined)</code> (here using the first overloaded function): it affect overload resolution, but perhaps not argument values. Note that <code>undefined</code> is also a legitimate value for the argument of <code>Node</code> type, so it would not be illegal, but the overload resolution algorithm first picks optional arguments in this case.</span></p>
+<p><span style="background-color:transparent;font-size:10pt">Note that Blink code implementing a function can also check arguments, and similarly, JavaScript functions can check</span><span style="background-color:transparent;font-size:10pt"> arguments, and access the number of arguments via </span><code style="background-color:transparent;font-size:10pt">arguments.length</code><span style="background-color:transparent;font-size:10pt">, but these are not specified by the <i>language</i> or checked by bindings.</span></p><p><span style="background-color:transparent;font-size:10pt"><b><i>Warning:</i></b> <code>undefined</code> is a <i>valid value</i> for required arguments, and many interfaces <i>depend</i> on this behavior </span><span style="background-color:transparent;font-size:10pt">particularly booleans, numbers, and dictionaries. Explicitly passing <code>undefined</code>, as in <code>a.foo(undefined)</code>, does <i>not</i> cause a type error (assuming <code>foo</code> is unary)</span><span style="background-color:transparent;font-size:10pt"><span style="font-size:10pt">. It is clearer if the parameter is marked as </span><code style="font-size:10pt">optional</code><span style="font-size:10pt"> (this changes semantics: the argument can now also be omitted, not just passed explicitly as </span><code style="font-size:10pt">undefined</code><span style="font-size:10pt">), but this is not always done in the spec or in Blink's IDL files.</span></span></p>
+<div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+</div>
+</blockquote>
+</div>
+<h2><a name="TOC-File-organization"></a>File organization</h2>
+<div>The Web IDL spec treats the Web API as a single API, spread across various IDL fragments. In practice these fragments are <code>.idl</code> files, stored in the codebase alongside their implementation, with basename equal to the interface name. Thus for example the fragment defining the <code>Node</code> interface is written in <code>Node.idl</code>, which is stored in the <code>Source/core/dom</code> directory, and is accompanied by <code>Node.h</code> and <code>Node.cpp</code> in the same directory. In some cases the implementation has a different name, in which case there must be an <code>[ImplementedAs=...]</code> extended attribute in the IDL file, and the <code>.h/.cpp</code> files have basename equal to the value of the <code>[ImplementedAs=...]</code>.</div>
+<div><br />
+</div>
+<div>For simplicity, each IDL file contains a <i>single</i> interface (or callback interface or exception), and contains all information needed for that interface, except for dependencies (below), notably any enumerations, implements statements, typedefs, and callback functions.</div>
+<div><br />
+</div>
+<div>This splitting into separate files is an issue for bindings generation (i.e., IDL file compilation to C++ bindings): to parallelize the build, IDL files are compiled individually, but correctly rebuilding requires correctly computing dependencies.</div>
+<h3><a name="TOC-Dependencies"></a>Dependencies</h3>
+<div><span style="background-color:transparent;font-size:10pt">In principle (as a matter of the Web IDL spec) any IDL file can depend on any other IDL file, and thus changing one file can require rebuilding all the dependents. In practice there are 4 kinds of dependencies (since other required definitions, like enumerations and typedefs, are contained in the IDL file for the interface):</span></div>
+<div>
+<ul><li><code>partial interface</code> – a single interface can be spread across a single main <code>interface</code> statement (in one file) and multiple other <code>partial interface</code> statements, each in a separate file (each <code>partial interface</code> statement is associated with a single main <code>interface</code> statement). In this case the IDL file containing the partial interface has some other name, often the actual interface name plus some suffix, and is generally named after the implementing class for the members it contains. From the point of view of spec authors and compilation, the members are just treated as if they appeared in the main definition. From the point of view of the build, these are awkward to implement, since these are incoming dependencies, and cannot be determined from looking at the main interface IDL file itself, thus requiring a global dependency resolution step.</li>
+<li><code>implements</code> – this is essentially multiple inheritance: an interface can implement multiple other interfaces, and a given interface can be implemented by multiple other interfaces. This is specified by implements statements in the implementing file (these are outgoing dependencies), though from the perspective of the build the interface → .idl filename of that interface data is required, and is global information (because the .idl files are spread across the source tree).</li>
+<li><b>Ancestors</b> – an interface may have a parent, which in turn may have a parent. The immediate parent can be determined from looking at a single IDL file, but the more distant ancestors require dependency resolution (computing an ancestor chain).</li>
+<li><b>Used interfaces (cross dependencies)</b> – a given interface may <i>use</i> other interfaces as <i>types</i> in its definitions; the contents of the used interfaces <i>may</i> affect the bindings generated for the using interface, though this is often a <i>shallow dependency</i> (see below).</li></ul>
+<div>In practice, what happens is that, when compiling a given interfaces, its partial interfaces and the other interfaces it implements are merged into a single data structure, and that is compiled. There is a small amount of data recording where exactly a member came from (so the correct C++ class can be called), and a few other extended attributes for switching the partial/implemented interface on or off, but otherwise it is as if all members were specified in a single <code>interface</code> statement. This is a <b>deep dependency</b> relationship: <i>any</i> change in the partial/implemented interface changes the bindings for the overall (merged) interface, since <i>all</i> the data is in fact used.</div>
+</div>
+<p>Bindings for interfaces in general do <i>not</i> depend on their ancestors, beyond the name of their immediate parent. This is because the bindings just generate a class, which refers to the parent class, but otherwise is subject to information hiding. However, in a few cases bindings depend on whether the interface inherits from some other interface (notably EventHandler or Node), and in a few cases bindings depend on the extended attributes of ancestors (these extended attributes are "inherited"; the list is <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/compute_dependencies.py&amp;q=INHERITED_EXTENDED_ATTRIBUTES">compute_dependencies.INHERITED_EXTENDED_ATTRIBUTES</a>, and consists of extended attributes that affect memory management). There is thus a <b>shallow dependency</b> on ancestors, specifically only on the ancestor chain and on inherited extended attributes, not on the other contents of ancestors.</p>
+<p>On the other hand, the dependencies on used interfaces – so-called <b>cross dependencies</b> – are generally <b>shallow dependency</b> relationships: the using interface does not need to know much about the used interface (currently just the name of the implementing class, and whether the interface is a callback interface or not). Thus <i>almost all changes</i> in the used interface do not change the bindings for the using interface: the public information used by other bindings is minimal. There is one exception, namely the <code>[PutForwards]</code> extended attribute (in standard Web IDL), where the using interface needs to know the type of an attribute in the used interface. This "generally shallow" relationship may change in future, however, as being able to inspect the used interface can simplify the code generator. This would require the using interface to depend on used interfaces, either rebuilding all using interfaces whenever a used interface is changed, or clearly specifying or computing the public information (used by code generator of other interfaces) and depending only on that.</p>
+<h2><a name="TOC-IDL-extended-attribute-validator"></a>IDL extended attribute validator</h2>
+<p>To avoid bugs caused by typos in extended attributes in IDL files, the extended attribute validator was introduced to the Blink build flow to check if all the extended attributes used in IDL files are implemented in the code generator. If you use an extended attribute not implemented in code generators, the extended attribute validator fails, and the Blink build fails.</p>
+<p>A list of IDL attributes implemented in code generators is described in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/IDLExtendedAttributes.txt">IDLExtendedAttributes.txt</a>. If you want to add a new IDL attribute, you need to</p>
+<ol><li>add the extended attribute to Source/bindings/IDLExtendedAttributes.txt.</li>
+<li>add the explanation to the extended attributes document.</li>
+<li>add test cases to run-bindings-tests (explained below).</li>
+</ol><div>Note that the validator checks for known extended attributes and their arguments (if any), but does not enforce correct use of the the attributes. A warning will not be issued if, for example, <code>[Clamp]</code> is specified on an interface.</div>
+<h2><a name="TOC-Tests"></a>Tests</h2>
+<h3><a name="TOC-Reference-tests-run-bindings-tests-"></a>Reference tests (run-bindings-tests)</h3>
+<p><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Tools/Scripts/run-bindings-tests">Tools/Scripts/run-bindings-tests</a> (r-b-t) tests the code generator, including its treatment of extended attributes. Specifically, run-bindings-tests compiles the IDL files in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/tests/idls/">Source/bindings/tests/idls</a>, and then compares the results against reference files in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/tests/results/">Source/bindings/tests/results</a>. For example, run-bindings-tests reads TestObject.idl, and then compares the generated results against V8TestObject.h and V8TestObject.cpp, reporting any differences.</p>
+<p>If you change the behavior of the code generator or add a new extended attribute, please add suitable test cases, preferably <i>reusing</i> existing IDL files (this is to minimize size of diffs when making changes to overall generated bindings). You can reset the run-bindings-tests results using the --reset-results option:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>Tools/Scripts/run-bindings-tests --reset-results</code></div><br /> <br /><span style="font-size:10pt;line-height:normal;background-color:transparent">r-b-t is run in a presubmit script for any changes to Source/bindings: this requires you to update test results when you change the behavior of the code generator, and thus if test results get out of date, the presubmit test will fail: you won't be able to upload your patch via git-cl, and the CQ will refuse to process the patch.</span>
+<p>The objective of run-bindings-tests is to show you and reviewers how the code generation is changed by your patch. <b>If you change the behavior of code generators, you need to update the results of run-bindings-tests.</b></p>
+<p>Despite these checks, sometimes the test results can get out of date; this is primarily due to dcommitting or changes in real IDL files (not in Source/bindings) that are used in test cases<span style="font-size:10pt;background-color:transparent">. If the results are out of date </span><i style="font-size:10pt;background-color:transparent">prior</i><span style="font-size:10pt;background-color:transparent"> to your CL, please rebaseline them separately, before committing your CL, as otherwise it will be difficult to distinguish which changes are due to your CL and which are due to rebaselining due to older CLs.</span></p>
+<p>Note that using real interfaces in test IDL files means changes to <span style="background-color:transparent;font-size:10pt">real IDL files can break run-bindings-tests</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">(e.g., Blink</span><span style="font-size:10pt;background-color:transparent"> </span><a href="https://src.chromium.org/viewvc/blink?revision=174804&amp;view=revision" style="font-size:10pt;background-color:transparent">r174804</a><span style="font-size:10pt;background-color:transparent">/CL </span><a href="https://codereview.chromium.org/292503006/" style="font-size:10pt;background-color:transparent">292503006</a><span style="font-size:10pt;background-color:transparent">: Oilpan: add [WillBeGarbageCollected] for Node., since Node is inherited by test files)</span><span style="font-size:10pt;background-color:transparent">. </span><span style="font-size:10pt;background-color:transparent">This is ok (we're not going to run r-b-t on every IDL edit, </span><span style="font-size:10pt;background-color:transparent">and it's easy to fix), but something to be aware of.</span></p>
+<div>It is also possible for r-b-t to break for other reasons, since it use the developer's local tree: it thus may pass locally but fail remotely, or conversely. For example, renaming Python files can result in outdated bytecode (.pyc files) being used locally and succeeding, even if r-b-t is incompatible with current Python source (.py), as discussed and fixed in CL <span style="font-size:10pt;background-color:transparent"><a href="https://codereview.chromium.org/301743008/">301743008</a>.</span></div>
+<h3><a name="TOC-Behavior-tests"></a>Behavior tests</h3><div>To test behavior, use <a href="../developers/testing/webkit-layout-tests.1.html">"Layout" tests</a>, most simply actual interfaces that use the behavior you're implementing. If adding new behavior, it's preferable to make code generator changes and the first actual use case in the same CL, so that it is properly tested, and the changes appear in the context of an actual change. If this makes the CL too large, these can be split into a CG-only CL and an actual use CL, committed in sequence, but unused features should not be added to the CG.</div><div><br /></div><div>For general behavior, like type conversions, there are some internal tests, like <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/LayoutTests/fast/js/webidl-type-mapping.html" style="font-size:10pt;background-color:transparent">fast/js/webidl-type-mapping.html</a>, which uses <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/testing/TypeConversions.idl" style="font-size:10pt;background-color:transparent">testing/TypeConversions.idl</a>. There are also some other IDL files in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/testing/">testing</a>, like<span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/testing/Internals.idl">testing/Internals.idl</a>.</span></div>
+<h2><a name="TOC-Where-is-the-bindings-code-generated-"></a>Where is the bindings code generated?</h2>
+<p>By reading this document you can learn how extended attributes work. However, the best practice to understand extended attributes is to try to use some and watch what kind of bindings code is generated.</p>
+<p><span style="font-size:10pt">If you change an IDL file and rebuild (e.g., with ninja or Make), the bindings for that IDL file (and possibly others, if there are dependents) will be rebuilt. If the bindings have changed (in ninja), or even if they haven't (in other build systems), it will also recompile the bindings code. Regenerating bindings for a single IDL file is very fast, but regenerating all of them takes several minutes of CPU time.</span></p>
+<p><span style="font-size:10pt">In case of XXX.idl in the Release build, the bindings code is generated in the following files ("Release" becomes "Debug" in the Debug build).</span></p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>out/Release/gen/blink/bindings/V8XXX.{h,cpp}</code></div>
+<h2><a name="TOC-Limitations-and-improvements"></a>Limitations and improvements</h2>
+<p style="font-size:13.3333330154419px">A few parts of the Web IDL spec are not implemented; features are implemented on an as-needed basis. <span style="font-size:10pt;background-color:transparent">See </span><a href="https://code.google.com/p/chromium/issues/list?q=label:Cr-Blink-Bindings" style="font-size:10pt;background-color:transparent">Cr-Blink-Bindings</a><span style="font-size:10pt;background-color:transparent"> for open bugs; please feel free to file bugs or contact bindings developers (</span><a href="https://groups.google.com/a/chromium.org/forum/#!members/blink-reviews-bindings" style="font-size:10pt;background-color:transparent">members of blink-reviews-bindings</a><span style="font-size:10pt;background-color:transparent">, </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/OWNERS" style="font-size:10pt;background-color:transparent">bindings/OWNERS</a><span style="font-size:10pt;background-color:transparent"> or </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/WATCHLISTS&amp;q='bindings'&amp;l=289" style="font-size:10pt;background-color:transparent">WATCHLISTS: 'bindings'</a><span style="font-size:10pt;background-color:transparent">) if you have any questions, problems, or requests.</span></p>
+<p><span style="font-size:10pt;background-color:transparent">Bindings generation can be controlled in many ways, generally by adding an extended attribute to specify the behavior, sometimes by special-casing a specific type, interface, or member. If the existing </span><a href="webidl/blink-idl-extended-attributes.html" style="font-size:10pt;background-color:transparent">extended attributes</a><span style="font-size:10pt;background-color:transparent"> are not sufficient (or buggy), please file a bug and contact bindings developers!</span></p>
+<div>Some commonly encountered limitations and suitable workarounds are listed below. <span style="font-size:10pt;background-color:transparent">Generally limitations can be worked around by using custom bindings, but these should be avoided if possible. </span><span style="font-size:10pt;background-color:transparent">If you need to work around a limitation, please put a <code>FIXME</code> with the bug number (as demonstrated below) in the IDL so that we can remove the hack when the feature is implemented.</span></div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><span style="font-size:10pt;background-color:transparent">A few areas of active refinement (as of 1Q2015) include:</span></div><div><div style="font-size:13.3333330154419px"><ul><li><span style="font-size:13.3333330154419px;background-color:transparent"><b>Dictionaries: </b></span><span style="font-size:13.3333330154419px;background-color:transparent">Bug </span><a href="http://crbug.com/321462" style="font-size:13.3333330154419px;background-color:transparent">321462</a><span style="font-size:13.3333330154419px;background-color:transparent"> tracks a small number of open issues with Blink's implementation of dictionaries - notably, <code>any</code> is not supported as a member type. </span><span style="font-size:13.3333330154419px;background-color:transparent">Blink also supports generic dictionaries (with an arbitrary set of keys) via the </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/v8/Dictionary.h" style="font-size:13.3333330154419px;background-color:transparent">Dictionary</a><span style="font-size:13.3333330154419px;background-color:transparent"> interface, which can be used to work around current implementation limitations or to implement some proposed new syntax such as <code>OpenEndedDictionary&lt;T&gt;</code></span><span style="font-size:13.3333330154419px;background-color:transparent">.</span></li><li><span style="font-size:13.3333330154419px;background-color:transparent"><div style="font-size:13.3333330154419px"><b>Union types:</b> Bug <a href="https://code.google.com/p/chromium/issues/detail?id=240176">240176</a> tracks the small number of open issues with Blink's implementation of union types. Notably typedefs, any, Date and RegExp types are not supported as union members, mixing core/modules types within a union is not supported, and only arrays are matched for sequence types (not any iterable).</div></span></li><li><div><b>iterable&lt;&gt;, maplike&lt;&gt;, setlike&lt;&gt;:</b> Bugs <a href="https://code.google.com/p/chromium/issues/detail?id=401699">401699</a> and <a href="https://code.google.com/p/chromium/issues/detail?id=432683">432683</a> track some of the unfinished work with these newer IDL syntax elements.</div></li></ul><div>The above list is not comprehensive, but gives a flavor of the current work. Again, see <a href="https://code.google.com/p/chromium/issues/list?q=label:Cr-Blink-Bindings" style="font-size:10pt;background-color:transparent">Cr-Blink-Bindings</a><span style="font-size:10pt;background-color:transparent"> for open bugs.</span><span style="font-size:13.3333330154419px;background-color:transparent"> </span></div></div><div style="font-size:13.3333330154419px"></div></div>
+<h3><a name="TOC-Syntax-error-causes-infinite-loop"></a>Syntax error causes infinite loop</h3>
+<div>Some syntax errors cause the IDL parser to enter an infinite loop (Bug <a href="https://code.google.com/p/chromium/issues/detail?id=363830">363830</a>). Until this is fixed, if the compiler hangs, please terminate the compiler and check your syntax.</div>
+<h3><a name="TOC-Type-checking"></a>Type checking</h3><p><span style="font-size:13.3333330154419px;font-weight:normal;background-color:transparent">The bindings do not do full type checking (Bug </span><a href="https://code.google.com/p/chromium/issues/detail?id=321518" style="font-size:13.3333330154419px;font-weight:normal;background-color:transparent">321518</a><span style="font-size:13.3333330154419px;font-weight:normal;background-color:transparent">). They do some type checking, but not all. Notably nullability is not strictly enforced. See </span><code style="font-size:13.3333330154419px;font-weight:normal;background-color:transparent">[TypeChecking]</code> under <b>undefined and null</b> above<span style="font-size:13.3333330154419px;font-weight:normal;background-color:transparent"> to see how to turn on more standard type checking behavior for interfaces and members.</span></p><h2><a name="TOC-Bindings-development"></a>Bindings development <span style="font-size:10pt;font-weight:normal;background-color:transparent"><br /></span></h2><h3><a name="TOC-Mailing-List"></a>Mailing List</h3><h2><a name="TOC-If-working-on-bindings-you-likely-wish-to-join-the-blink-reviews-bindings-mailing-list."></a><span style="font-size:10pt;font-weight:normal;background-color:transparent">If working on bindings, you likely wish to join the </span><a href="https://groups.google.com/a/chromium.org/forum/#!forum/blink-reviews-bindings" style="font-size:10pt;font-weight:normal;background-color:transparent">blink-reviews-bindings</a><span style="font-size:10pt;font-weight:normal;background-color:transparent"> mailing list.</span></h2>
+<h3><a name="TOC-Build-environment"></a>Build environment</h3>
+<p>When working on bindings, please add <code>v8_optimized_debug=0</code> to your <code>GYP_DEFINES</code> (per <a href="https://groups.google.com/a/chromium.org/d/topic/blink-dev/Jj5QBzyQ3Bw/discussion">[blink-dev] 2013-Nov</a>). This defaults to 2, which disables some of the more expensive tests. <span style="background-color:transparent;font-size:10pt">However, when you're changing bindings (or other code directly interacting with V8), it's important to make sure that none of the implicit assumptions in V8 are violated. <i>(</i></span><span style="background-color:transparent;font-size:10pt"><i>You can also set it to 1. This will give you all debugging code, but compiles it at -O1 which makes debugging all the crashes you'll trigger not exactly fun...)</i></span></p>
+<h2><a name="TOC-See-also"></a>See also</h2>
+<div>
+<ul><li><a href="../developers/web-idl-interfaces.html" style="background-color:transparent;font-size:10pt">Web IDL interfaces</a> – overview how-to for Blink developers</li>
+<li><span style="background-color:transparent;font-size:10pt"><a href="webidl/blink-idl-extended-attributes.html">Blink IDL Extended Attributes</a> </span>– reference for Blink developers and bindings developers</li>
+<li><a href="../developers/design-documents/idl-build.html">IDL build</a> – design doc</li>
+<li><a href="../developers/design-documents/idl-compiler.html">IDL compiler</a> – design doc</li></ul>
+</div>
+<br />
+<div>
+<hr />
+<div><br />
+</div>
+<div>Derived from: <a href="http://trac.webkit.org/wiki/WebKitIDL">http://trac.webkit.org/wiki/WebKitIDL</a> <i>Licensed</i><i> under <a href="http://www.webkit.org/coding/bsd-license.html">BSD</a>:</i></div>
+<div><br />
+</div>
+<div>
+<div>
+</div>
+
+BSD License
+
+<p>Copyright (C) 2009 Apple Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+<p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+<p>THIS SOFTWARE IS PROVIDED BY APPLE INC. AND ITS CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="webidl/blink-idl-extended-attributes.html" dir="ltr">Blink IDL Extended Attributes</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/blink/webidl">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXukca4jaDOG9SuQz_G8t7HlrhjN-E7ZUd43grpL2troTetHQ84j8ZYiF6DVNzC2M-fjmXofi5ohx1ZK76uMKxD9ToDY9-wQPlEbCgfTZsMKbAcRcXw4UGi4SKd8LZK8rwePI8xX/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/appmode-mac","deleted":false,"title":"Mac App Mode (draft)","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/appmode-mac\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Mac App Mode (draft)","locale":"en","wuid":"wuid:gx:1508d028dafb6297","revision":19,"path":"/developers/design-documents/appmode-mac","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"appmode-mac","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Mac App Mode (draft) - The Chromium Projects" />
+<meta itemprop="name" content="Mac App Mode (draft) - The Chromium Projects" />
+<meta property="og:title" content="Mac App Mode (draft) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Mac App Mode (draft) - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Mac App Mode (draft)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><h3><a name="TOC-Overview"></a>Overview</h3><div>Chromium provides a way to create a "custom" browser shortcut for any web site (not yet implemented on Mac). Our ultimate goal for the Mac implementation is to make such a shortcut appear to be first-class application. In particular, its UI should consist of a browser displaying the specified web site, but with many "normal" browser features removed (no bookmarks, navigation, a custom menu bar, etc.). Usage examples include Gmail, Reader, Facebook, and so on.</div><h3><a name="TOC-User-experience-requirements"></a>User experience requirements</h3><div>The following are absolutely essential:</div><div><ul><li>A shortcut should appear to be an application to the operating system (Spotlight, Finder, etc.). This also includes it working in the Dock like any other application: click to launch/raise, indicates when running, provides a window list, and present in Cmd-tab list for quick application switching.</li><li>The user should be able to treat a shortcut like any other Application, e.g., install it wherever he/she wishes.</li><li>A shortcut must have a customizable name and icon (and of course web site); the name must be displayed in the menu bar.</li><li>The window displayed by a shortcut must not display the "usual" gadgets, such as the toolbar, bookmark bar, etc.</li><li>A shortcut must be robust and maintenance-free with respect to browser updates, etc. (This presumably also means that shortcuts should be designed to be upgradable, at least in some way, if necessary.)</li></ul></div><div>The following would be nice to have:</div><div><ul><li>A shortcut should function properly with Exposé and Spaces (e.g., a user should be able to "pin" a shortcut to any workspace, in particular to a workspace different from the browser's workspace). [This is not expected to be a problem; see below.]</li><li>A shortcut should have fully customized menus, including in particular the main menu. This means, in particular, that many of the normal browser's menus would simply not be present. [This is somewhat difficult, but do-able in the near future.]</li><li>A shortcut should optionally be able to share cookies, local storage, cache, etc. with their regular Chromium browser.</li></ul></div><h3><a name="TOC-Technical-decisions-and-implementation"></a>Technical decisions and implementation</h3><div><ul><li>We have decided to implement each shortcut as a "shim app", that is, a small application bundle which finds and dynamically loads the Chromium framework.</li><li>With this design, a shortcut truly is a first-class application, albeit one with a tiny binary, and minimal binary contact with Chromium.</li><li>Nearly all nontrivial functionality will be contained in the Chromium framework proper.</li><li>As such, we do not anticipate much of a need to update the shortcut application bundles; however, if necessary, this could be done by code in the Chromium framework.</li><li>The hard technical work for this has already been done.</li><li>The only nontrivial task for the shim app would be to locate Chromium. We plan to do this in several ways (in order of priority): (1) Whenever Chromium runs, it records its location in the defaults system; a shim app can look this up. (2) Look in various standard locations, such as /Applications, ~/Applications, etc. (3) Consult Launch Services or other system databases.</li><li>Note that if all the methods fail, the shim app can simply ask the user to run Chromium to re-record its location.</li><li>Q. When cookies, etc. aren't shared, where should the profile data be stored?</li></ul></div><div>[<i>work in progress, more to come</i> -Trung]</div><h3><a name="TOC-Implementation-plan"></a>Implementation plan</h3><div><ul><li>Phase 1: Design/code the shim app and basic interface between the shim app and the framework. Put the shim app into the build system. Make the shim app display an appropriate (specifiable) name in the main menu. At completion, one should be able to manually create shortcuts which satisfy the essential requirements. [started]</li><li>Phase 2: Design/code the (normal) browser-side code to produce shortcuts (with appropriate URL, name, icon) to be saved in a user-specifiable location (or perhaps leverage drag-and-drop?). It should also have the appropriate behavior when a shortcut is produce from a "live" web page. At completion, shortcuts should be fully usable by the average user.</li><li>Phase 3: Fix up the main menu, etc., and generally tighten up any other behavior. At completion, shortcuts should be very polished and truly look like a first-class application.</li><li>Phase X: Make cookies, local storage, cache, etc. shareable, and make this an optional capability.</li></ul></div><div>[<i>sorry for the mess, work in progress</i> -Trung]</div><div><br /></div><div><br /></div><div><br /></div><div>Old stuff:</div><h3><a name="TOC-This-is-just-a-draft-proposal-at-this-time-to-figure-out-options-and-see-what-might-apply-to-other-platforms."></a><span style="font-size:12px;font-weight:normal"><span style="font-style:italic">This is just a draft proposal at this time, to figure out options, and see what might apply to other platforms.</span></span></h3>
+<h3><a name="TOC-Background"></a><span style="font-size:12px;font-weight:normal"><br />
+</span>Background</h3>
+<div>Gears provides an way to create desktop shortcuts to web sites (<a href="http://code.google.com/apis/gears/api_desktop.html">Desktop.createShortcut()</a>). Chromium expands on this to try and make a "custom" browser for the site. Our ultimate goal for the Mac implementation is to have the shortcut appear to the OS as a first-class application. Its UI consists of a browser displaying the website but with many of the browser features removed (ie-no bookmarks, navigation, etc.). Examples would be "applications" such as Gmail, Reader, etc.</div>
+<div><br />
+<h3><a name="TOC-Expectations"></a>Expectations</h3>
+The desired user experience is:<br />
+<ul><li>The shortcuts should appear to be Applications to the OS (Spotlight, Finder, etc.).</li>
+<li>The shortcut should work in the Dock like any other application: click to launch/raise, indicates when running, provides a window list, and present in cmd-tab list for quick process switching.<br />
+</li>
+<li>The menu bar and window appearance are different from "normal" Chromium</li>
+<ul><li>App name is related to the website the shortcut is for (created by the user? or taken from the shortcut name?)<br />
+</li>
+<li>No bookmarks or navigation menus/items.</li></ul></ul>
+The desired technical details are:<br />
+<ul><li>Share the HTML5 storage so any site/domain storage data is available in both the AppMode and w/in the main browser. ie, offline Gmail is in the same state regardless if the user is using a Gmail "app" or w/in Chromium.<br />
+</li>
+<li>Share the cache so common html/js/images don't have to be re-downloaded, cached by each AppMode the user has.</li>
+<li>Make cookie sharing something that is optional or controlled on a per shortcut basis. This would allow some users to have the Gmail App share its auth cookie with Chromium, but others might chose not to so they could have a Gmail shortcut for one account, and use a different account w/in Chromium.</li></ul>
+</div>
+<div><br />
+<h3><a name="TOC-Possible-Approaches"></a>Possible Approaches</h3>
+<h4><a name="TOC-Shim-Apps-to-sub-load-Chromium"></a>Shim Apps to sub-load Chromium</h4>
+Make each AppMode shortcut a little Cocoa app bundle. The binary itself would be extremely small. When launched, it would find Chromium.app, load it as a bundle, and invoke an exported system to relay the shortcut info. The vended API from w/in Chromium.app would start up Cocoa, WebKit, etc. This would keep the "binary contact" between the shortcuts and Chromium as small as possible so they don't have to be updated w/ new versions of Chromium. The shortcut app would effectively be another instance of Chromium in "browser" mode, maintaining an independent set of renderers, plugin hosts, etc.<br />
+<h4><a name="TOC-Launcher-Apps"></a>Launcher Apps</h4>
+Make each AppMode shortcut a little app that simply launches the Chromium application (if not already running), sends over the shortcut info, and exits.</div>
+<div>
+<h4><a name="TOC-Shortcut-Document"></a>Shortcut Document</h4>
+<div>Rather than creating a separate application, create a new document type that the Finder recognizes as a Chromium document to store the site location. When the user double-clicks the a saved shortcut document, the Finder (through LaunchServices) automatically sends a message to Chromium, launching it first if it's not already running. Chromium responds to the open event by creating a new window with AppMode chrome and disabling the navigation menu items when that window is in the foreground. This window will co-exist in the same browser process as other non-AppMode windows, thus can share the profile and data stores.</div>
+<h4><a name="TOC-Make-A-Full-blown-Copy"></a>Make A Full-blown Copy</h4>
+Rather than trying to load and sub-load parts from another application bundle, have the shortcut be a full copy of the Chromium application.</div>
+<div><br />
+<h3><a name="TOC-Limitations-Issues"></a>Limitations / Issues</h3>
+<h4><a name="TOC-None-of-these-approaches-is-a-obvious-win-they-all-meet-different-parts-of-the-expectations-or-have-different-things-that-would-need-to-be-resolved:"></a><span style="font-size:12px;font-weight:normal">None of these approaches is a obvious win, they all meet different parts of the expectations or have different things that would need to be resolved:</span></h4>
+</div>
+<div><br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;text-align:center">
+<tbody>
+<tr>
+<td colspan="4"><b>UI</b></td>
+</tr>
+<tr>
+<td style="width:175px"><i>Proposal</i></td>
+<td style="width:175px"><i>Apps to Spotlight</i></td>
+<td style="width:175px"><i>Work as app from Dock</i></td>
+<td style="width:175px"><i>AppMode menubar and window</i></td>
+</tr>
+<tr>
+<td>Shim Apps to sub-load Chromium</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Launcher Apps</td>
+<td>✓</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Shortcut Document</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Make a Full-blown Copy</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<br />
+</div>
+<div>
+<br />
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-top-color:rgb(136,136,136);border-right-color:rgb(136,136,136);border-bottom-color:rgb(136,136,136);border-left-color:rgb(136,136,136);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;text-align:center">
+<tbody>
+<tr>
+<td colspan="4"><b>Technical</b></td>
+</tr>
+<tr>
+<td style="width:175px"><i>Proposal</i></td>
+<td style="width:175px"><i>Share HTML5 Storage</i></td>
+<td style="width:175px"><i>Share Cache</i></td>
+<td style="width:175px"><i>Cookie Control</i></td>
+</tr>
+<tr>
+<td>Shim Apps to sub-load Chromium</td>
+<td>TBD - Would require the storage layers support multiple processes actively modifying the on disk storage</td>
+<td>TBD - Same requirement around multiple process support</td>
+<td>TBD - Private cookie store would be easy, opting to share has the same multiple process issue</td>
+</tr>
+<tr>
+<td>Launcher Apps</td>
+<td>✓</td>
+<td>✓</td>
+<td>TBD - Might be able to use a different profile for the window to have different cookies</td>
+</tr>
+<tr>
+<td>Shortcut Document</td>
+<td>✓</td>
+<td>✓</td>
+<td>TBD - Might be able to use a different profile for the window to have different cookies</td>
+</tr>
+<tr>
+<td>Make a Full-blown Copy</td>
+<td>TBD - Would require the storage layers support multiple processes actively modifying the on disk storage</td>
+<td>TBD - Same requirement around multiple process support</td>
+<td>TBD - Private cookie store would be easy, opting to share has the same multiple process issue</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Special-Notes"></a>Special Notes</h3>
+<p><span style="font-weight:bold">Shim Apps to sub-load Chromium</span> does require a long term contract around the interface used to find, load, and invoke the real browser. If we ever needed changes to the Cocoa info.plist or different arguments, we'd have to find ways to handle this without the AppMode stub being updated (as the running user might not have privledges to rewrite it). <br />
+<br />
+<span style="font-weight:bold">Make a Full-blown Copy</span> has a major drawback; the inability to update the shortcut applications. Keystone/Omaha requires a one-to-one mapping from GUID to installed application, and self-generated GUIDs would receive no updates as they don't match the GUID on the server.  So once a copy was made for a short cut, there wouldn't be a way to target it for updates (feature, security, etc).</p>
+<div>
+<div>
+<h3><a name="TOC-Additional-Notes-from-Trung"></a>Additional Notes from Trung</h3><div><font size="3"><span style="font-size:12px"><b>Hybrid solutions:</b> There are a number of possible hybrid solutions. For example, one could make a persistent Launcher App which, instead of quitting immediately after launching, persists and performs tasks such as "forwarding" Dock activations to the main browser process. One should also be able to switch out the main menu on the demand, and such an model would allow a better imitation of a full-fledged application. (One could also imagine other hybrids, e.g., a Launcher App which just opens an embedded Shortcut Document. This has certain <i>flexibility</i> advantages; see below.)</span></font></div><div><font size="3"><span style="font-size:12px"><br /></span></font></div><div><font size="3"><span style="font-size:12px"><b>Launcher/Cop<font face="arial, sans-serif" size="3"><span style="border-collapse:collapse;font-size:13px">y:<span style="font-weight:normal"> Another possible hybrid is a Launcher App which simply launches, for each specific App Mode shortcut, a copy of Chromium with special settings/command-line arguments. This would avoid the major drawback of a true copy, yet provide most of the benefits. (It would still have the drawback of making sharing storage/cache/etc. difficult.) This is very similar to a Shim App, but with no binary contact. It would be lightweight on disk space requirements (though lack of cache sharing might make increase disk space usage); memory usage would hopefully be similar to a Shim App, in that perhaps text pages could be shared, and hopefully lighter than that of a Full-blown Copy.</span></span></font></b></span></font></div><div><font size="3"><span style="font-size:12px"><br /></span></font></div><div><font size="3"><span style="font-size:12px"><b>Flexibility and upgradeability:</b> Regardless of model, it is worth considering how App Mode capabilities may be modified/upgraded (possibly changing models) in the future. In general, Shim and Launcher Apps seem most flexible; upgrading a Shortcut Document might be troublesome. A possible upgrade model is as follows: Upon loading, the Shim/Launcher App locates the primary Chromium application bundle and checks if this bundle contains a more up-to-date Shim/Launcher App. If necessary, it can then update itself, and relaunch. (This assumes that the App Mode data is well-segregated inside the Shim/Launcher App's bundle.)</span></font></div><div><font size="3"><span style="font-size:12px"><br /></span></font></div><div><font size="3"><span style="font-size:12px"><b>"Captivity":</b> A problem with a web app posing as a normal application is that web apps are typically not <i>captive</i>, in the sense that there's usually no clear delineation of where the application ends. For example, in a native mail client, clicking on a link will take one outside the mail program. Likewise, it either has calendar functionality built-in, or it doesn't. With a "Gmail App", things are not so clear. What should happen if one clicks on "Calendar"? If one has a separate "Calendar App" set up, perhaps one would like it to launch or switch to that. Perhaps one would view it as integral to the "Gmail App". Or perhaps one would prefer that it be opened in a regular browser window. (Worse, one might prefer different things for different links, even within the same "site", however sites are delineated. For example, one may want "Docs" to be a separate app, but keep "Calendar" in the same app.) With web apps, of course, there are also usually many external links. Probably one would usually want to open external links in a regular browser window, but it is not clear how to distinguish between the different cases (open in current app, open in different app, open in a regular browser window).</span></font></div><div><font size="3"><span style="font-size:12px"><br /></span></font></div><div><font size="3"><span style="font-size:12px">Shortcut Documents, Launcher Apps, and variants skirt this problem by not truly distinguishing between different App Mode windows and the regular browser. The distinction made is very weak: an "application" is just a window in the regular browser with a few special properties. It is then very easy to open normal browser windows running with one's normal browsing profile. Depending on the approach, there may be no real distinction between an App Mode window running, e.g., Gmail from one running Calendar or Docs.</span></font></div><div><font size="3"><span style="font-size:12px"><br /></span></font></div><div><font size="3"><span style="font-size:12px">The Shim App, etc. approaches which provide more full, separate applications suffer here. For example, if one is in Gmail and one clicks on a link to, say, Flickr, not only does one probably want Flickr to open in a normal browser window (unless one has a Flickr App set up!), but one probably also wants it to open using the profile associated with one's normal browser -- one doesn't typically want to maintain have separate Flickr logins between one's Gmail App and one's normal browser. (On the other hand, one might want distinct Gmail logins!)</span></font></div><div><font size="3"><span style="font-size:12px"><br /></span></font></div><div><font size="3"><span style="font-size:12px"><b>Other considerations:</b> In addition to making the Dock icon, menus, etc. work, it would be good if an App Mode shortcut worked properly with Spaces. In particular, one can assign a particular space to each application (e.g., one space for the "Gmail App" windows and a different space for normal Chromium browser windows). The general lack of API for Spaces means that only Shim Apps, full-blown copies, and perhaps the Launcher/Copy hybrid could work properly with Spaces.</span></font></div><h3><a name="TOC-Questions-from-Trung"></a>Questions from Trung</h3><div><ol><li>The question of "captivity" is essentially the following: What should happen when one clicks on a link from within an App?</li><li>Technical problem: When and how does OS X determine what application is being run? (To what extent can this be set at run time?)</li><li>Technical: Is there any way of convincing Spaces that a given window really belongs to a different application?</li></ol></div>
+</div>
+</div>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/appmode-mac">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

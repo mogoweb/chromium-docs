@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/running-tests","deleted":false,"title":"Running tests at home","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/testing/running-tests\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Running tests at home","locale":"en","wuid":"wuid:gx:412fbc3fa13b033a","revision":21,"path":"/developers/testing/running-tests","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"running-tests","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Running tests at home - The Chromium Projects" />
+<meta itemprop="name" content="Running tests at home - The Chromium Projects" />
+<meta property="og:title" content="Running tests at home - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Running tests at home - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Running tests at home</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div>
+<div><span style="font-size:10pt"><i>This page is about running a test locally.</i>
+<div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Running-basic-tests"><strong>1 </strong>Running basic tests</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Windows"><strong>1.1 </strong>Windows</a></li><li class="goog-toc"><a href="#TOC-Linux"><strong>1.2 </strong>Linux</a></li><li class="goog-toc"><a href="#TOC-Mac"><strong>1.3 </strong>Mac</a></li></ol></li><li class="goog-toc"><a href="#TOC-Running-a-particular-subtest"><strong>2 </strong>Running a particular subtest</a></li><li class="goog-toc"><a href="#TOC-Making-tests-show-visible-output"><strong>3 </strong>Making tests show visible output</a></li><li class="goog-toc"><a href="#TOC-Layout-tests"><strong>4 </strong>Layout tests</a></li><li class="goog-toc"><a href="#TOC-Unit-tests-and-Browser-tests"><strong>5 </strong>Unit tests and Browser tests</a></li><li class="goog-toc"><a href="#TOC-Get-dumps-for-Chromium-crashes-on-Windows"><strong>6 </strong>Get dumps for Chromium crashes on Windows</a></li><li class="goog-toc"><a href="#TOC-Running-unit-tests-in-headless-mode-aka.-ssh-session-"><strong>7 </strong>Running unit tests in headless mode (aka. ssh session)</a></li><li class="goog-toc"><a href="#TOC-Running-browser-tests-in-headless-mode"><strong>8 </strong>Running browser tests in headless mode</a></li></ol></div></div></div></div></div>
+</span></div>
+<h2><a name="TOC-Running-basic-tests"></a>Running basic tests</h2>
+<div>
+<h3><a name="TOC-Windows"></a>Windows</h3>
+</div>
+</div>
+<ol><li><a href="https://www.chromium.org/developers/how-tos/build-instructions-windows">Build</a></li>
+<li>Set the test as the startup project and press F5 to compile it.</li>
+<li>Or in a cmd window, run the test of interest in <font face="'courier new', monospace"><code>src\chrome\Debug</code></font>, e.g. <font face="'courier new', monospace"><code>src\chrome\Debug\base_unittests.exe</code></font></li>
+</ol>
+<h3><a name="TOC-Linux"></a>Linux</h3>
+<ol><li><code>cd</code> <span style="font-family:courier new,monospace"><code>src/</code></span></li>
+<li><a href="http://code.google.com/p/chromium/wiki/LinuxBuildInstructions">Build</a></li>
+<li><span style="font-family:courier new,monospace"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">Run the test of interest, e.g. </span>./out/Debug/base_unittests</code></span></li>
+</ol>
+<div>Many unit tests create a chromium UI, which means they need the ability to create a visible window. To run these tests remotely in a terminal, or to keep them from opening windows in your current desktop session, you can run tests inside Xvfb. To do this, prefix your command line with <span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">xvfb-run -s "-screen 0 1024x768x24"</span><span style="background-color:transparent;font-size:10pt">. For example, to run content_unittests: </span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">xvfb-run -s "-screen 0 1024x768x24" ./out/Debug/content_unittests</span></div>
+</div>
+<h3><a name="TOC-Mac"></a>Mac</h3>
+<div>
+<ol><li><a href="http://code.google.com/p/chromium/wiki/MacBuildInstructions">Build</a> the tests: <b style="font-family:courier new,monospace;color:rgb(38,38,38);font-size:13px;line-height:16px;background-color:rgb(238,238,238)">ninja -C out/{Debug,Release} {test_target}</b></li>
+<li><span style="font-size:10pt;background-color:transparent">Run the appropriate test target: </span><span style="color:rgb(38,38,38);font-size:13px;line-height:16px;background-color:rgb(238,238,238)"><font face="courier new, monospace"><b>./out/{Debug,Release}/{test_target}</b></font></span></li></ol><div><ol>
+</ol>
+</div>
+</div>
+<h2><a name="TOC-Running-a-particular-subtest"></a>Running a particular subtest</h2>
+<span style="background-color:transparent;font-size:10pt;font-weight:normal">The above test executables are built with gtest, so they accept command line arguments to filter which sub-tests to run.  For instance,</span><span style="background-color:transparent;font-size:10pt;font-weight:normal;font-family:courier new,monospace"> <code>base_unittests --gtest_filter=FileUtilTest.*</code></span><div><div><div><div>
+</div>
+<h2><a name="TOC-Making-tests-show-visible-output"></a>Making tests show visible output</h2>
+<span style="background-color:transparent;font-size:10pt;font-weight:normal">Tests that create a visible window do not draw anything into the window by default, in order to run the test faster (with exception of tests that verify pixel output). To force tests to draw visible pixels for debugging, you can use the </span><span style="background-color:transparent;font-size:10pt;font-weight:normal;color:rgb(0,96,0);font-family:monospace">--enable-pixel-output-in-tests</span><span style="background-color:transparent;font-size:10pt;font-weight:normal"> command-line flag. This can be used for both unit tests and browser tests.</span>
+<h2><a name="TOC-Layout-tests"></a>Layout tests</h2>
+Blink has a large suite of tests that typically verify a page is laid out properly.  We use them to verify much of the code that runs within a Chromium renderer.<br />
+To run these tests, build the <font color="#006000" face="monospace">blink_tests</font> target and then run<font color="#38761d"> blink</font><span style="background-color:transparent"><font color="#38761d" face="monospace">/</font><font color="#006000" face="monospace">tools/layout_tests/run_webkit_tests.sh --debug</font></span><span style="background-color:transparent;font-size:10pt"> .</span></div>
+<div><br />
+</div>
+<div>More information about running layout tests or fixing layouts tests can be found on the <a href="https://www.chromium.org/developers/testing/webkit-layout-tests">Layout Tests page</a>.</div>
+<h2><a name="TOC-Unit-tests-and-Browser-tests"></a><font size="4"><b>Unit tests and Browser tests</b></font></h2>
+<div>Most components of chrome have a unit test build target, such as content_unittests for content/ or cc_unittests for cc/, etc. There is the fallback unit_tests target for unit tests built on top of the full chrome stack.</div><div><span style="background-color:transparent;font-size:10pt"><br /></span></div><div><span style="background-color:transparent;font-size:10pt">Unit tests verify some part of the chromium code base in an isolated test environment, and are usually found in files with a _unittest.cc suffix. Browser tests run a full browser, and then execute a test inside the browser instance, and are usually found in files with a _browsertest.cc suffix. </span><span style="background-color:transparent;font-size:10pt">There is more information on browser tests </span><a href="https://www.chromium.org/developers/testing/browser-tests" style="background-color:transparent;font-size:10pt">here</a><span style="background-color:transparent;font-size:10pt">. </span><span style="background-color:transparent;font-size:10pt">To add a new test, you will generally find a similar test and clone it. If you can, strongly prefer writing a unit test over a browser test as they are generally faster and more reliable.</span></div><h2><a name="TOC-Get-dumps-for-Chromium-crashes-on-Windows"></a><font size="4">Get dumps for Chromium crashes on Windows</font></h2><div><span style="font-size:10pt;background-color:transparent">Before running the tests, make sure to run</span><span style="font-size:10pt;background-color:transparent"> </span><font face="'courier new', monospace" style="font-size:10pt;background-color:transparent"><code>crash_service.exe</code></font><span style="font-size:10pt;background-color:transparent">. We use this program to intercept crashes in chromium and write a crash dump in the</span><span style="font-size:10pt;background-color:transparent"> </span><font face="'courier new', monospace" style="font-size:10pt;background-color:transparent">Crash Reports</font><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">folder under the</span><span style="font-size:10pt;background-color:transparent"> </span><font face="'courier new', monospace" style="font-size:10pt;background-color:transparent">User Data</font><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">directory of your chromium profile.</span></div></div><div>
+<div>If you also want<font face="'courier new', monospace"> <code>crash_service.exe</code></font> to intercept crashes for your normal Google Chrome or Chromium build, add the flag <font face="'courier new', monospace"><code>--noerrdialogs</code></font>.</div>
+<div>You can also use the flag <font face="'courier new', monospace"><code>--enable-dcheck</code></font> to get assertion errors in release mode.</div><div><br /></div><div><h2><a name="TOC-Running-unit-tests-in-headless-mode-aka.-ssh-session-"></a><font size="4">Running unit tests in headless mode (aka. ssh session)</font></h2><div>When ssh-ed in to a machine, you don't have a display connected, which means that you normally can't run tests that try to draw to the screen.  However, on Linux, you can run tests in headless mode, e.g.:</div><div><span style="color:rgb(34,34,34)"><font face="courier new, monospace">  </font></span><font color="#222222" face="courier new, monospace">$ python testing/xvfb.py out/Debug/ out/Debug/components_unittests</font></div></div><div><h2><a name="TOC-Running-browser-tests-in-headless-mode"></a><font size="4">Running browser tests in headless mode</font></h2><div>When ssh-ed in to a machine, you don't have a display connected, which means that you normally can't run tests that try to draw to the screen.  However, on Linux, you can run tests in headless mode, like so:</div><div><span style="color:rgb(34,34,34)"><font face="courier new, monospace">  </font></span><span style="color:rgb(34,34,34)"><font face="courier new, monospace">Xvfb :100 -screen 0 1600x1200x24 &amp;</font></span></div><div><font face="courier new, monospace"><span style="color:rgb(34,34,34)">  </span><span style="color:rgb(34,34,34);font-size:10pt;background-color:transparent">DISPLAY=localhost:100 out/Release/browser_tests​ --gtest_filter=FooTest.*</span></font></div></div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/testing/running-tests">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9L8SPh1P8ySTa7VrUYoyFhaVpvtQSdXI7TtHVgSwcyQnUVJrAFSrqinfIosFoUPGUArpJz8d6pareLk8X872dXGU5wqJIKQd9ftibaC8byY0yL7Mr/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/testing","deleted":false,"title":"Testing Home","dir":"ltr"},{"path":"/chromium-os/testing/autotest-developer-faq","deleted":false,"title":"Autotest Developer FAQ","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/chromium-os/testing/autotest-developer-faq\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/testing","parentWuid":"wuid:gx:2e2ee5668f423109","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Autotest Developer FAQ","locale":"en","wuid":"wuid:gx:24f676901a929de8","revision":41,"path":"/chromium-os/testing/autotest-developer-faq","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"autotest-developer-faq","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Autotest Developer FAQ - The Chromium Projects" />
+<meta itemprop="name" content="Autotest Developer FAQ - The Chromium Projects" />
+<meta property="og:title" content="Autotest Developer FAQ - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Autotest Developer FAQ - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/testing" dir="ltr">Testing Home</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Autotest Developer FAQ</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div><a href="/"></a><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:450px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Coding-Style"><strong>1 </strong>Coding Style</a></li><li class="goog-toc"><a href="#TOC-Upstream-Documentation"><strong>2 </strong>Upstream Documentation</a></li><li class="goog-toc"><a href="#TOC-Where-are-useful-libraries-"><strong>3 </strong>Where are useful libraries?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-test-changes-to-the-Autotest-codebase-itself-"><strong>4 </strong>How do I test changes to the Autotest codebase itself?</a></li><li class="goog-toc"><a href="#TOC-I-am-writing-RPCs-what-a-is-good-reference-to-look-at-"><strong>5 </strong>I am writing RPCs, what a is good reference to look at? </a></li><li class="goog-toc"><a href="#TOC-How-do-I-test-changes-to-the-dynamic_suite-infrastructure-"><strong>6 </strong>How do I test changes to the dynamic_suite infrastructure?</a></li><li class="goog-toc"><a href="#TOC-Where-do-I-store-large-files-that-need-to-be-publicly-accessible-for-tests-"><strong>7 </strong>Where do I store large files that need to be publicly accessible for tests?</a></li><li class="goog-toc"><a href="#TOC-What-s-the-fast-way-to-make-a-change-to-a-test-and-iterate-to-see-if-it-now-works-"><strong>8 </strong>What's the fast way to make a change to a test and iterate to see if it now works? </a></li><li class="goog-toc"><a href="#TOC-What-s-the-fast-way-to-see-if-a-test-now-works-with-tip-of-tree-"><strong>9 </strong>What's the fast way to see if a test now works with tip of tree?</a></li><li class="goog-toc"><a href="#TOC-Writing-Autotests"><strong>10 </strong>Writing Autotests</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Where-do-autotests-live-"><strong>10.1 </strong>Where do autotests live?</a></li><li class="goog-toc"><a href="#TOC-A-word-about-imports"><strong>10.2 </strong>A word about imports</a></li><li class="goog-toc"><a href="#TOC-Writing-a-simple-test-"><strong>10.3 </strong>Writing a simple test </a></li><li class="goog-toc"><a href="#TOC-Adding-binaries-for-your-tests-to-call-as-part-of-the-test"><strong>10.4 </strong>Adding binaries for your tests to call as part of the test</a></li><li class="goog-toc"><a href="#TOC-Writing-tests-that-require-that-a-user-is-logged-in"><strong>10.5 </strong>Writing tests that require that a user is logged in</a></li><li class="goog-toc"><a href="#TOC-How-do-I-do-printf-style-debugging-in-tests-"><strong>10.6 </strong>How do I do printf-style debugging in tests?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-performance-test-"><strong>10.7 </strong>How do I write a performance test?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-hardware-qualification-test-"><strong>10.8 </strong>How do I write a hardware qualification test?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-manufacturing-test-"><strong>10.9 </strong>How do I write a manufacturing test? </a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-test-that-interacts-with-the-UI-"><strong>10.10 </strong>How do I write a test that interacts with the UI?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-test-that-uses-Telemetry-"><strong>10.11 </strong>How do I write a test that uses Telemetry?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-bundle-a-bunch-of-tests-into-a-suite-that-can-be-scheduled-and-run-as-a-group-"><strong>10.12 </strong>How do I bundle a bunch of tests into a suite that can be scheduled and run as a group?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-test-that-requires-some-human-interaction-"><strong>10.13 </strong>How do I write a test that requires some human interaction? </a></li><li class="goog-toc"><a href="#TOC-How-do-I-create-a-test-that-requires-running-existing-Linux-utilities-that-are-not-currently-installed-"><strong>10.14 </strong>How do I create a test that requires running existing Linux utilities that are not currently installed? </a></li><li class="goog-toc"><a href="#TOC-How-do-I-create-a-test-that-requires-compiling-code-"><strong>10.15 </strong>How do I create a test that requires compiling code? </a></li><li class="goog-toc"><a href="#TOC-Why-do-I-get-the-error-make:-command-not-found-or-patch:-command-not-found-"><strong>10.16 </strong>Why do I get the error "make: command not found" or "patch: command not found"?</a></li><li class="goog-toc"><a href="#TOC-Why-do-I-get-the-message-Not-building-any-tests-because-the-requested-list-is-empty-when-I-use-TESTS-my_test-"><strong>10.17 </strong>Why do I get the message "Not building any tests, because the requested list is empty" when I use "TESTS=$my_test"?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-use-deps"><strong>10.18 </strong>How do I use deps</a></li><li class="goog-toc"><a href="#TOC-How-can-I-create-my-own-dep-"><strong>10.19 </strong>How can I create my own dep?</a></li><li class="goog-toc"><a href="#TOC-Troubleshooting-your-dep"><strong>10.20 </strong>Troubleshooting your dep</a></li><li class="goog-toc"><a href="#TOC-What-if-my-dep-is-built-by-another-ebuild-"><strong>10.21 </strong>What if my dep is built by another ebuild?</a></li><li class="goog-toc"><a href="#TOC-What-if-I-want-to-make-use-of-a-binary-tool-"><strong>10.22 </strong>What if I want to make use of a binary tool?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-test-that-needs-access-to-large-data-files-like-media-files-"><strong>10.23 </strong>How do I write a test that needs access to large data files, like media files? </a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-test-that-reboots-the-device-"><strong>10.24 </strong>How do I write a test that reboots the device? </a></li><li class="goog-toc"><a href="#TOC-How-do-I-write-a-test-that-measures-power-consumption-"><strong>10.25 </strong>How do I write a test that measures power consumption?</a></li><li class="goog-toc"><a href="#TOC-What-language-can-I-write-my-test-in-"><strong>10.26 </strong>What language can I write my test in?</a></li></ol></li></ol></div></div></div></div></div>
+<br />
+The intent of this document is to provide a quick look up for common features that are used in test development in Autotest. Including typical functions that are used, where to search for other potential useful functions, and how to run pylint/unittest_suite in Autotest.</div><div><br /></div><div>Before you proceed, you should have read through the <a href="http://www.chromium.org/chromium-os/testing/autotest-user-doc">Autotest User Documentation</a>.<br /> 
+<div>
+<h2><a name="TOC-Coding-Style"></a>Coding Style</h2>
+<div>As Autotest is a mature upstream project we follow their style code when it comes to committing changes here as opposed to the Chromium OS style guide. Please refer to the coding style document that is in autotest/CODING_STYLE or view it <a href="https://gerrit.chromium.org/gerrit/gitweb?p=chromiumos/third_party/autotest.git;a=blob;f=CODING_STYLE;">here</a>.</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Upstream-Documentation"></a>Upstream Documentation</h2>
+<div>Upstream is hosted on github at <a href="http://autotest.github.com">http://autotest.github.com</a></div>
+<div><br />
+</div>
+<div>Upstream Wiki <a href="https://github.com/autotest/autotest/wiki">https://github.com/autotest/autotest/wiki</a></div>
+<div><br />
+</div>
+<div>The github website doesn't really let you search through the docs but, you can clone the wiki repo and grep through it:</div>
+<div><br />
+</div>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>git clone https://github.com/autotest/autotest.wiki.git</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>
+<h2><a name="TOC-Where-are-useful-libraries-"></a>Where are useful libraries?</h2>
+<div>Autotest has an import structure that exposes a lot of functionality from a number of different places. Good places to grep for code that may already do what you need is:</div>
+<div><br />
+</div>
+<div>In general we should try to use the same functions in tests that are written rather than creating similar functions. This helps keep the whole frame work in a maintainable state and utilizes code that has been used for a while and is known to work. </div>
+<div>
+<ul><li>client/common_lib</li>
+<li>client/bin</li></ul>
+</div>
+</div>
+<h2><a name="TOC-How-do-I-test-changes-to-the-Autotest-codebase-itself-"></a>How do I test changes to the Autotest codebase itself?</h2>
+<div>Often times when making changes to the Autotest codebase itself, it is difficult to test your change unless you can actually run an instance of the Autotest server locally.</div>
+<div><br />
+</div>
+<div>To quickly get functional Autotest server setup please refer to: <a href="http://www.chromium.org/chromium-os/testing/autotest-developer-faq/setup-autotest-server">Setup Autotest Server</a></div>
+<div><br />
+</div>
+<div>Reasons to run a local Autotest server might include:</div>
+<div>
+<ul><li>Autotest Scheduler work</li>
+<li>Adding or changing RPCs</li>
+<li>Tests that involve common library changes</li>
+<li>GUI/GWT Frontend work.</li></ul>
+<div><br />
+</div>
+</div>
+<h2><a name="TOC-I-am-writing-RPCs-what-a-is-good-reference-to-look-at-"></a>I am writing RPCs, what a is good reference to look at? </h2>
+<div>Looking at the RPC doc from the server itself can be useful.</div>
+<div><br />
+</div>
+<div><a href="http://cautotest/afe/server/rpc_doc">http://cautotest/afe/server/rpc_doc</a></div><div><h2><a name="TOC-How-do-I-test-changes-to-the-dynamic_suite-infrastructure-"></a><br />How do I test changes to the dynamic_suite infrastructure?</h2><div>You'll definitely want a locally-running Autotest server.  For most changes, you will want to start by running the unit tests in server/cros/dynamic_suite as you work.  You may also need to actually run a suite of tests against your Autotest instance.  The 'dummy' suite is ideal, and there are several ways to run it:</div></div><div><ul><li>site_utils/run_suite.py</li><li>cli/atest create_suite_job</li><li>server/autoserv test_suites/dev_harness.py</li></ul><div>In the first two cases, there are a variety of command line options and arguments that allow you to set the build and platform to test, etc.  These pathways will always stage a build (if necessary), pull control files from that build, reimage devices and run the desired test suite.</div><div><br /></div><div>dev_harness.py does not pull control files from a particular build, but rather uses your local source tree.  If you're trying to test changes to suite control files, for example, this is probably the best way to go.  It can also be configured to skip reimaging, so you can iterate faster.  dev_harness.py is pulled in and executed directly by autoserv, so it can't take command line args.  Instead, it's configured using a file called dev_harness_conf that lives adjacent to dev_harness.py.</div></div><h2><a name="TOC-Where-do-I-store-large-files-that-need-to-be-publicly-accessible-for-tests-"></a>Where do I store large files that need to be publicly accessible for tests?</h2>
+<div>Google Storage is used as the general storage facility for large files. Please avoid putting large files in git as it increases everyone's check out size. A good general rule of thumb is: </div><div><br /></div><div>If it is a file larger than 5 megs that will be changing over time, put it in Google Storage.</div><div><br /></div><div>A similar approach is taken as <a href="https://sites.google.com/a/google.com/chromeos/resources/engineering/releng/localmirror">localmirror</a> except we use the Google Storage bucket <b><i>gs://chromeos-test-public</i></b></div><div><b><i><br /></i></b></div><div>To upload your files please follow <a href="https://sites.google.com/a/google.com/chromeos/resources/engineering/releng/localmirror#TOC-How-do-I-get-my-files-in-localmirro">"How to get your files my files to local mirror"</a> but using the bucket <b><i>gs://chromeos-test-public</i></b></div><div><b><i><br /></i></b></div><div><a href="http://sandbox.google.com/storage/?arg=chromeos-test-public">http://sandbox.google.com/storage/?arg=chromeos-test-public</a></div><div><div><div style="font-weight:normal">
+</div>
+</div>
+</div>
+<div style="font-weight:normal">
+<div>
+<div>
+<h2><a name="TOC-What-s-the-fast-way-to-make-a-change-to-a-test-and-iterate-to-see-if-it-now-works-"></a>What's the fast way to make a change to a test and iterate to see if it now works?<span style="font-weight:normal;font-size:13px"> </span></h2>
+The fastest way to develop a test is to <i>not use compiled components</i> in your test.  If you can write a test without cross-compiling code you can modify the test in python/shell on the target and rerun it on the target directly.  This of course also applies to the situation where you want to modify the python/shell parts of a test that has cross-compiled code.  The point is, try to use the least amount of cross-compiled code to write your test as possible.</div>
+</div>
+<div><br />
+</div>
+<div>Assuming you have done this, on the target device's console, su to root.  Then enter the /home/autotest directory on the target (provided you've run run_remote_tests once with it) and modify the test which will be in the tests subdirectory.  You can run /home/autotest:</div>
+<div><br />
+</div>
+<div><span style="font-size:20px"><b><span style="font-weight:normal;font-size:13px">
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="line-height:13px"><code>on_device# cd /home/autotest; ./bin/autotest tests/system_KernelVersion/control</code></div>
+<div><code><br />
+</code></div>
+</div>
+</div>
+</span></b></span></div>
+<div>If you have modified cross-compiled test code, you can use the above instructions but you'll be rebuilding a lot of stuff you don't need. Instead of running build_platform --withautotest, you can instead just run build_autotest.sh directly (which it calls).  This emerges the autotest cross-compiled binaries.  You can also specify precisely which test you want to rebuild to avoid having to build everything (and wait for it all to finish):</div>
+<div><br />
+</div>
+<div><span style="font-size:20px"><b><span style="font-weight:normal;font-size:13px">
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block" style="line-height:13px"><code>inside# ./build_autotest.sh --board=${BOARD} --build=storage_Fio,system_SAT</code></div>
+</div>
+</div>
+</span></b></span></div>
+<div><span style="font-size:20px"><b><span style="font-weight:normal;font-size:13px">
+<div style="display:inline!important">
+<div style="display:inline!important"><br />
+</div>
+</div>
+</span></b></span></div>
+<div><span style="font-size:20px"><b><span style="font-weight:normal;font-size:13px">
+<div style="display:inline!important">
+<div style="display:inline!important">The resulting binaries will be placed in your chroot under <code>${CHROOT}/build/${BOARD}/usr/local/autotest</code>.   They are not installed into an image at this time.  Instead, autotest will copy them over when you run run_remote_tests.sh.</div>
+</div>
+</span></b></span></div>
+</div>
+<div>
+<div><span style="font-size:20px"><span style="font-size:13px">
+<div style="display:inline!important">
+<div style="display:inline!important">
+<h2 style="font-weight:normal"><a name="TOC-What-s-the-fast-way-to-see-if-a-test-now-works-with-tip-of-tree-"></a><b>What's the fast way to see if a test now works with tip of tree?</b></h2>
+</div>
+</div>
+</span></span></div>The best way is to prepare a CL and test it using <a href="http://www.chromium.org/chromium-os/build/local-trybot-documentation">trybots</a>.</div>
+<h2><a name="TOC-Writing-Autotests"></a>Writing Autotests</h2></div><div><h3><a name="TOC-Where-do-autotests-live-"></a>Where do autotests live?</h3>Most tests are checked in under third_party/autotest/files/ (autotest.git chromium-os project). Some may be scattered around other locations. See <a href="http://www.chromium.org/chromium-os/testing/autotest-user-doc#TOC-Q1:-What-autotest-ebuilds-are-out-there-">link</a> to find out the complete list.</div><div><br /></div><div><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">Test cases are not upstreamed to the general autotest repository as most are Chromium OS specific.  They are checked out as part of the regular sync command you used from the Chromium OS repository.</span></code></span></span></font></b></div><div><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">dfdf</span></code></span></span></font></b></div><div><h3><a name="TOC-A-word-about-imports"></a><font size="3">A word about imports</font></h3></div><div>Autotest has an interesting way of imports due to it not being installed properly in PYTHONPATH. This is not an issue on Autotest trunk but Chromium OS has not yet remerged all the work there. </div><div><br /></div><div>When dealing with Autotest internal modules you will need to import/create a <i>common.py</i> file that can relatively reference the root directory of Autotest. You will find these spread throughout the code base and below is a concrete example.</div><div><br /></div><div>If you are working on code under <b>autotest/files/client/common_lib</b> and you wanted to imported something from server you would need to<i> import a common.py</i> that looks similar to the following:</div><div><div class="sites-codeblock sites-codesnippet-block"><pre style="word-wrap:break-word;white-space:pre-wrap"><code>import os, sys
+dirname = os.path.dirname(sys.modules[__name__].__file__)
+client_dir = os.path.abspath(os.path.join(dirname, ".."))
+sys.path.insert(0, client_dir)
+import setup_modules
+sys.path.pop(0)
+setup_modules.setup(base_path=client_dir,
+                    root_module_name="autotest_lib.client")</code></pre></div><div><br /></div>*Notice the relative path that is fed in to the client_dir variable. </div><div><br /></div><div>Once this is in the directory where you want to use the Autotest <br /><div class="sites-codeblock sites-codesnippet-block"><pre style="word-wrap:break-word;white-space:pre-wrap"><code>#!/usr/bin/python</code></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><code>import os, sys</code></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><br /></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><code>import common</code></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><code>from autotest_lib.server import frontend</code></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><br /></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><code>frontend.. etc etc</code></pre></div><br /><pre style="word-wrap:break-word;white-space:pre-wrap"><b>**Note when you are writing a test the framework automatically makes autotest_lib available for you. There is no need to place a copy of common.py in your test directory.</b></pre><pre style="word-wrap:break-word;white-space:pre-wrap"><b> </b></pre></div>
+<h3><a name="TOC-Writing-a-simple-test-"></a><font size="3">Writing a simple test </font></h3><div><font size="6" style="font-size:13px;font-weight:normal"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div>Autotest tests are checked into several locations under third_party/autotest.  </div><div><br /></div><div>There are two flavors of tests: client and server.  All tests are managed by an autotest server machine that is typically the machine where run_remote_tests is invoked.  Client tests execute entirely on the Chromium OS device.  Server tests execute on both server and client or only the server.  Client tests are usually the simplest to write and run.  Server tests are needed, for example, if a test needs to reboot the device or interact with external devices (e.g. to cut off power to the Chromium OS device).</div><div><br /></div><div>Tests are located in 4 locations in the <b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif">third_party/autotest/files/ </span></code></span></span></font></b></div></span></code></span></span></font></b><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important">tree:</div></span></code></span></span></font></b></div><div><ul><li><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important">client/site_tests - These are where most tests live.  These are client tests that are Chromium OS specific.</div></span></code></span></span></font></b></li><li><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important">client/tests - These are client tests that are general Linux tests (not Chromium OS specific).</div></span></code></span></span></font></b></li><li><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important">server/site_tests - These are server tests that are Chromium OS specific.</div></span></code></span></span></font></b></li><li><b style="font-size:20px"><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important">server/tests - These are server tests that are general Linux tests (not Chromium OS specific).</div></div></div></span></code></span></span></font></b></li></ul></div><div><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></font><div><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><font size="6" style="font-size:13px;font-weight:normal"><div><b><span style="font-weight:normal"><span style="font-size:13px"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important">Decide if your test is a client or server test and choose the appropriate directory from the above.  In the sections below we refer to this directory as ${TEST_ROOT} below.</div></div></span></b></div></div></span></span></b></div><div><b><span style="font-weight:normal"><span style="font-size:13px"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><br /></div></div></span></b></div></div></span></span></b></div></font><div style="font-size:13px;font-weight:normal"><div><font size="6"><span style="font-size:13px"><div>Next decide which area your test falls within based on the tracker (<a href="http://code.google.com/p/chromium-os/issues/list">http://code.google.com/p/chromium-os/issues/list</a>).  It should be something like "desktopui", "platform", or "network" for instance.  This name is used to create the test name; e.g. "network_UnplugCable".  Create a directory for your test at $(TEST_ROOT)/$(LOWERCASE_AREA)_$(TEST_NAME).</div><div><br /></div><div>Try to find an example test that does something similar and copy it.  You will create at least 2 files:</div><div><br /></div><div>${TEST_ROOT}/${LOWERCASE_AREA}_${TEST_NAME}/control</div></span></font><div><font size="6"><span style="font-size:13px"><div>${TEST_ROOT}/${LOWERCASE_AREA}_${TEST_NAME}/${LOWERCASE_AREA}_${TEST_NAME}.py</div><div><br /></div></span></font><div><font size="6"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important">Your control file runs the test and sets up default parameters.  The .py file is the actual implementation of the test.  <span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"> <div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><span style="font-size:13px"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><span style="font-size:13px"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important">Inside the control the TEST_CLASS variable should be set to ${LOWERCASE_AREA}.  The naming convention simply exists to make it easier to find other similar tests and measure the coverage in different areas of Chromium OS.  </div> <div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important"></div><div style="display:inline!important">You may also want to add this test to one or more existing test suites to have it run automatically.</div></div></div></span></span></div></div></div></div></div></div></div></div></div></span></code></span></span></div></div></div></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></div></div></div></span></b></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></div></div></span></b></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></div></div></div></span></b></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></font></div><div><font size="6"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><b><font size="3"><span style="font-size:13px"><span style="font-weight:normal"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><b><span style="font-weight:normal"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><span style="font-size:13px"><code><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><span style="font-size:20px"><span style="font-size:13px"><div style="display:inline!important"><div style="display:inline!important"><div style="display:inline!important"><br /></div></div></div></span></span></div></div></div></div></div></div></div></div></div></span></code></span></span></div></div></div></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></div></div></div></span></b></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></div></div></span></b></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></div></div></div></span></b></div></div></div></span></b></div></div></span></b></div></span></code></span></span></font></b></span></font></div><div>After this, you should modify the autotest-tests-9999.ebuild under src/third_party/chromiumos-overlay/chromeos-base/autotest-tests and add your test to IUSE_TESTS or it won't be picked up by autotest when you ask it to build specific tests.</div></div></div></div><div style="font-size:13px;font-weight:normal"><br /></div><div>For more information on writing your test, see the <a href="http://www.chromium.org/chromium-os/testing/autotest-user-doc">user docs</a>.</div></div></div></div></div></div></div><h3><a name="TOC-Adding-binaries-for-your-tests-to-call-as-part-of-the-test"></a><font size="3">Adding binaries for your tests to call as part of the test</font></h3><div style="font-size:13px;font-weight:normal"><div><div>In order to cross-compile, your test's compilation step should be implemented inside the <code>setup()<font face="arial, sans-serif"><font color="#000000"> method of your python code.</font></font></code> A couple of simple examples:</div><div><ul><li>Sources inside the autotest repo as part of the test: gl_Bench</li><li>Sources checked in as a tarball from upstream: hardware_SAT</li><li>Sources checked in other Chromium OS source repo: firmware_VbootCrypto, desktopui_DoLogin</li></ul></div></div><div><i>It is your responsibility to make sure the test will build for all supported platforms as it will cause a build break if it does not.</i></div><div><i><br /></i></div><div>The setup method of all python scripts are built as part of build_autotest.sh (which is called when you build_packages --withautotest).  This script calls all the setup functions of every python test and runs them.  These setup steps are compiled on the host for execution on the target.  The cross-compiler flags are already set so make sure if you have your own Makefile to take in the CC, CFLAGS, etc from the environment rather than hardcode them.</div><div><br /></div><div><i>Note that if you have a </i><code><i>setup() </i></code><i>method, it should create a </i><code><i>src</i></code><i> directory, even if empty, to avoid running the setup method on the target device.</i></div></div><h3><a name="TOC-Writing-tests-that-require-that-a-user-is-logged-in"></a><font size="3">Writing tests that require that a user is logged in</font></h3><div style="font-size:13px;font-weight:normal">If you write a test that requires a user is logged in, have your test subclass site_ui_test.UITest.  Any test that is a subclass of this class will login with the default test account as part</div><div style="font-size:13px;font-weight:normal">of test initialization and logout as part of test cleanup.</div><h3><a name="TOC-How-do-I-do-printf-style-debugging-in-tests-"></a>How do I do printf-style debugging in tests?</h3>
+<div>
+<div><b><span style="font-weight:normal">
+<div>
+<div>
+<div>
+<div><b><span style="font-weight:normal">
+<div style="display:inline!important">
+<div style="display:inline!important">
+<div style="display:inline!important">Use logging.info() to generate log messages.  If you are writing a client-side test, the output unfortunately will not be shown while you are running autoserv (either directly or indirectly by using run_remote_test.sh).  If you want to print out numeric data that would be generally useful for developers to track over time, consider instead making this a performance test.</div>
+</div>
+</div>
+</span></b></div>
+</div>
+</div>
+</div>
+</span></b></div>
+<h3><a name="TOC-How-do-I-write-a-performance-test-"></a>
+<div style="display:inline!important">
+<div style="display:inline!important">
+<div style="display:inline!important"><b>How do I write a performance test?</b></div>
+</div>
+</div>
+</h3>
+<div>A performance test is like any other test except it also logs one or more <i>performance keyvals</i>.  A performance keyval is just an identifier and a floating point number that is written to a keyvals file on the machine where run_remote_tests is invoked.  The identifier should be of the form ${UNITS}_${DESCRIPTION}.  For a simple example, refer to hardware_DiskSize and how it uses self.write_perf_keyval().</div>
+</div>
+<div>
+<h3><a name="TOC-How-do-I-write-a-hardware-qualification-test-"></a>How do I write a hardware qualification test?</h3>
+<div>Hardware qualification tests are like all other tests.  The only difference is that they are referenced in one of the HWQual/config.* files.  If they require no manual setup or steps, they should be added to HWQual/config.auto.  Otherwise, a new config file should be created and instructions on the manual steps should be added to suite_HWQual/README.txt.</div>
+<div><br />
+</div>
+<div>Hardware qualification tests also usually involve a benchmark and a minimum requirement for that benchmark.  The nicest way to do this is to make your test record performance metrics with write_perf_keyval() and then add a constraints list in the HWQual control file that sets the minimum values.  See suite_HWQual/control.auto constraints parameters for examples.</div>
+<div>
+<h3><a name="TOC-How-do-I-write-a-manufacturing-test-"></a>How do I write a manufacturing test?<span style="font-weight:normal;font-size:13px"> </span></h3>
+See how to write a hardware qualification test.  A manufacturing test should be written similarly, however there is not currently (3/3/2010) a suite for manufacturing tests.</div>
+<div>
+<h3><a name="TOC-How-do-I-write-a-test-that-interacts-with-the-UI-"></a>How do I write a test that interacts with the UI?</h3>
+</div>
+<div>This varies widely depending on which UI you would like to interact with.</div>
+<div>
+<div><br />
+</div>
+<div>If you would like to temporarily shut down X:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>from autotest_lib.client.cros import cros_ui<br />
+cros_ui.stop()</code></div>
+</div>
+<div><br />
+</div>
+<div>You can then start it back up by doing:</div>
+<div><br />
+</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>from autotest_lib.client.cros import cros_ui</code></div>
+<div><code>cros_ui.start()</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>If you want to control chrome, use PyAuto. See <a href="http://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:238a01b0dd98e228" class="disabled">PyAuto on ChromiumOS</a> page for more details. desktopui_UrlFetch is a sample autotest test that uses pyauto to control chrome.</div><div><br /></div><div><b>Note: </b>Pyauto is getting deprecated and being replace with Telemetry. Please see below for how to run a Telemetry Test/Benchmark in autotest.</div><div><br /></div><div><h3><a name="TOC-How-do-I-write-a-test-that-uses-Telemetry-"></a>How do I write a test that uses Telemetry?</h3></div><div><a href="http://www.chromium.org/chromium-os/testing/autotest-design-patterns#TOC-Wrapping-a-Telemetry-test-in-Autotest">Please refer to Wrapping a Telemetry test in Autotest</a></div><div><h3><a name="TOC-How-do-I-bundle-a-bunch-of-tests-into-a-suite-that-can-be-scheduled-and-run-as-a-group-"></a>How do I bundle a bunch of tests into a suite that can be scheduled and run as a group?</h3>
+</div>
+<div>See <a href="http://www.chromium.org/chromium-os/testing/test-suites">Test Suites</a></div>
+</div>
+<div>
+<h3><a name="TOC-How-do-I-write-a-test-that-requires-some-human-interaction-"></a>How do I write a test that requires some human interaction?<span style="font-weight:normal;font-size:13px"> </span></h3>
+We call these semi-automated tests.  If you want to write a test that pops up a Chrome window, ask the test engineer some questions or to interact with some web browser functionality, and verify the result, refer to the desktopui_ChromeSemiAuto test.</div>
+<div>
+<h3><a name="TOC-How-do-I-create-a-test-that-requires-running-existing-Linux-utilities-that-are-not-currently-installed-"></a>How do I create a test that requires running existing Linux utilities that are not currently installed?<span style="font-weight:normal;font-size:13px"> </span></h3>
+</div>
+<div>If your test is a server-side test, then you need to add the package to utils/external_packages.py in autotest to get the package installed on the autotest servers.  If you have unittests that import the package also, then you need to additionally add it to virtual/<span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent">target-chromium-os-sdk so that it's in the chroot so that it will be available for your unittests on builders.</span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent"><br /></span></div><div><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:10pt;background-color:transparent">If your test is a client-side test, your path changes based on if the library/utility would be useful outside the context of your test.  If yes, then add it to virtual/target-chromium-os-test to get it included on the test image.  If no </span><span style="font-size:10pt;background-color:transparent">it's better to create a deps directory for the tool which builds it and installs it.  A simple example is hardware_SsdDetection which installs the hdparm utility.  </span><b style="font-size:10pt;background-color:transparent"><span style="font-weight:normal"><i>It is your responsibility to make sure the test will build for all supported platforms as it will cause a build break if it does not.</i></span></b></div><div><br /></div>
+<div>
+<div>
+<div>
+<h3><a name="TOC-How-do-I-create-a-test-that-requires-compiling-code-"></a>How do I create a test that requires compiling code?<span style="font-weight:normal;font-size:13px"> </span></h3>
+In order to cross-compile, your test's compilation step should be implemented inside the <code>setup()<font face="arial, sans-serif"><font color="#000000"> method of your python code.</font></font></code> A couple of simple examples:</div>
+<div>
+<ul><li>Sources inside the autotest repo as part of the test: gl_Bench</li>
+<li>Sources checked in as a tarball from upstream: system_SAT</li>
+<li>Sources checked in other Chromium OS source repo: firmware_VbootCrypto, system_AutoLogin</li></ul>
+</div>
+</div>
+<div><i>It is your responsibility to make sure the test will build for all supported platforms as it will cause a build break if it does not.</i></div>
+<div><br />
+</div>
+<div>Note that if you have a <code>setup() </code>method, it should create a <code>src</code> directory, even if empty, to avoid running the setup method on the target device.</div>
+</div>
+<div><br />
+</div>
+<div>Here's an example.  This is the content of platform_NullTest.py:</div>
+<div><br />
+</div>
+<div>
+<div style="font-size:12px;line-height:12px;text-align:left"></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div style="line-height:12px;text-align:left"><code><font size="3">#!/usr/bin/python</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">#</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3"># Copyright (c) 2012 The Chromium Authors. All rights reserved.</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3"># Use of this source code is governed by a BSD-style license that can be</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3"># found in the LICENSE file.</font></code></div>
+<div style="line-height:12px;text-align:left"><font size="3"><br />
+</font></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">import os</font></code></div>
+<div style="line-height:12px;text-align:left"><font size="3"><br />
+</font></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">from autotest_lib.client.bin import test, utils</font></code></div>
+<div style="line-height:12px;text-align:left"><font size="3"><br />
+</font></div>
+<div style="line-height:12px;text-align:left"><font size="3"><br />
+</font></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">class platform_NullTest(test.test):</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    """</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    Test autotest.</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    """</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    version = 1</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    executable = 'nulltest'</font></code></div>
+<div style="line-height:12px;text-align:left"><font size="3"><br />
+</font></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    def setup(self):</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">        os.chdir(self.srcdir)</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">        utils.make(self.executable)</font></code></div>
+<div style="line-height:12px;text-align:left"><font size="3"><br />
+</font></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">    def run_once(self):</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">        utils.system(self.srcdir + "/" + self.executable + " autotesting",</font></code></div>
+<div style="line-height:12px;text-align:left"><code><font size="3">                     timeout=60)</font></code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>After creating this file (and <span style="color:rgb(0,96,0);font-family:monospace">control</span>, <span style="color:rgb(0,96,0);font-family:monospace">src/Makefile</span><span style="font-family:monospace">, </span><font face="arial, sans-serif">and</font><span style="color:rgb(0,96,0);font-family:monospace"> src/nulltest.c</span><font face="arial, sans-serif">), add a line to the autotest-tests ebuild (</font><font color="#38761d" face="'courier new', monospace" size="2">chromiumos-overlay/chromeos-base/autotest-tests/autotest-tests-9999.ebuild</font><font face="arial, sans-serif">).  Make sure that autotest-tests is in your cros_workon list, then run </font><font color="#38761d" face="'courier new', monospace" size="2">TESTS=platform_NullTest emerge-&lt;board&gt; autotest-tests</font><font face="arial, sans-serif">.  This should compile your C program.  After this, you may run </font><font color="#38761d" face="'courier new', monospace">run_remote_tests --use_emerged</font><font face="arial, sans-serif">.  Don't use gmerge for autotest or autotest-tests.</font></div><h3><a name="TOC-Why-do-I-get-the-error-make:-command-not-found-or-patch:-command-not-found-"></a>Why do I get the error "make: command not found" or "patch: command not found"?</h3><div>These messages come up when autotest tries to run 'make' or 'patch' on the client.  They are not supposed to run there.  Test code is only patched and compiled on the host as describe <a href="http://www.chromium.org/chromium-os/testing/autotest-developer-faq#TOC-How-do-I-create-a-test-that-requires-compiling-code-">above</a>.</div><div>Common mistakes are:</div><div><ul><li><span style="font-size:10pt">failed to first build with 'TESTS=newtest emerge-&lt;board&gt; autotest-tests'.</span></li><li><span style="font-size:10pt">failed to run the run_remote_tests.sh script with --use_emerged.</span></li></ul></div>
+<div>
+<h3><a name="TOC-Why-do-I-get-the-message-Not-building-any-tests-because-the-requested-list-is-empty-when-I-use-TESTS-my_test-"></a>Why do I get the message "Not building any tests, because the requested list is empty" when I use "TESTS=$my_test"?</h3><div>Recently (relative to the creation of most of these notes) autotests-tests was split into several other packages in chromiumos-overlay/chromeos-base/autotest-*.  If $my_test was moved out of autotest-tests into autotest-chrome, for example, you have to cros_workon and emerge autotest-chrome:</div><div><br /></div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>cros_workon start --board &lt;board&gt; autotest-chrome</code></div><div><code>TESTS=$my_test emerge-&lt;board&gt; autotest-chrome</code></div></div><p>In general, you can grep for "tests_${my_tests}" in chromiumos-overlay/chromeos-base/autotest-*/*9999.ebuild to find the package with your test.</p><h3><a name="TOC-How-do-I-use-deps"></a>How do I use deps</h3>
+The deps feature is used to install packages that are required by tests. Sometimes these packages must be compiled from source and installed on the test machine. Rather than include this installation procedure in the test itself, we can create a 'dep' which does this for us. Then the test can specify that it needs this dep to work. Autotest will make sure that the dependency is built and copied to the target.<br />
+<br />
+First take a look at an example: hardware_SsdDetection. You will notice that it does this in the setup method:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>self.job.setup_dep(['hdparm'])</code></div>
+<br />
+This ends up running the python file <code>client/deps/hdparm.py</code>. This will look after building the hdparm utility and making sure it is available for copying to the target. The mechanics of this are explained in the next topic, but imagine using <code>./configure</code> and installing with the <code>client/deps/hdparm</code> directory as the install root.<br />
+<br />
+Within the run_once() method in the test you will see this:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>        dep = 'hdparm'</code><br />
+<code>        dep_dir = os.path.join(self.autodir, 'deps', dep)</code><br />
+<code>        self.job.install_pkg(dep, 'dep', dep_dir)</code></div>
+<br />
+This is the code which actually installs the hdparm utility on the target. It will be made available in the <code>/usr/local/autotest/deps/hdparm</code> directory in this case. When it comes time to run it, you will see this code:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>        path = self.autodir + '/deps/hdparm/sbin/'</code><br />
+<code>        hdparm = utils.run(path + 'hdparm -I %s' % device)</code></div>
+<br />
+This is pretty simple - since the hdparm binary was installed to <code>client/deps/hdparm/sbin/hdparm</code> we can run it there on the target.<br />
+<h3><a name="TOC-How-can-I-create-my-own-dep-"></a>How can I create my own dep?</h3>
+If you have your own tool and want to create a dep for it so that various tests can use it, this section is for you.<br />
+<br />
+First create a subdirectory within deps. Let's call your dep 'harry'. So you will create <code>client/deps/harry</code> and put <code>harry.py</code> inside there.<br />
+<br />
+In harry.py you will want something like the following:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>#!/usr/bin/python</code><br />
+<br />
+<code># Copyright (c) 2011 The Chromium OS Authors. All rights reserved.</code><br />
+<code># Use of this source code is governed by a BSD-style license that can be</code><br />
+<code># found in the LICENSE file.</code><br />
+<br />
+<code>import os</code><br />
+<code>from autotest_lib.client.bin import utils</code><br />
+<br />
+<code>version = 1</code><br />
+<br />
+<code>def setup(tarball, topdir):</code><br />
+<code>    srcdir = os.path.join(topdir, 'src')</code><br />
+<code>    utils.extract_tarball_to_dir(tarball, srcdir)</code><br />
+<code>    os.chdir(srcdir)</code><br />
+<code>    utils.system('patch -p1 &lt; ../fix-wibble.patch')</code><br />
+<code>    utils.configure()</code><br />
+<code>    utils.make()<br />
+</code><code>    utils.make('install')</code><br />
+<br />
+<code># We got the src from http://harry.net/harry-0.24.tar.bz2</code><br />
+<code>pwd = os.getcwd()</code><br />
+<code>tarball = os.path.join(pwd, 'harry-0.24.tar.bz2')</code><br />
+<code>utils.update_version(pwd + '/src', False, version, setup, tarball, pwd)</code></div>
+<br />
+The URL mentioned in the file should be the location where you found your tarball. Download this and put it in the deps directory as well. You will be checking this into the repository as a binary file.<br />
+<br />
+The <code>utils.update_version()</code> call ensures that the correct version of harry is installed. It will call your setup() method to build and install it. If you specify False for the preserve_srcdir parameter then it will always erase the src directory, and call your setup() method. But if you specify True for preserve_srcdir, then update_version() will check the installed version of the src directory, and if it hasn't changed it will not bother installing it again.<br />
+<br />
+You will also see that pwd is set to the current directory. This is <code>client/deps/harry</code> in this case because autotest changes this directory before importing your python module. We unpack into a src subdirectory within that to keep things clean.<br />
+<br />
+When your setup() method is called it should unpack the tarball, configure and build the source, then install the resulting binaries under the same <code>client/deps/harry</code> directory. You can see the steps in the example above - it mirrors a standard GNU UNIX build process. If you need to pass parameters to configure or make you can do that also. Any parameters after 'setup' in the update_version() call are passed to your setup method. <br />
+<br />
+After calling utils.update_version() from within harry.py we will have binaries installed (say in <code>client/deps/harry/sbin/harry</code>) as well as the src directory still there (<code>client/deps/harry/src</code>).<br />
+<br />
+Finally for reasons that we won't go into you should create the file common.py in your directory, like this:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code># Copyright (c) 2011 The Chromium OS Authors. All rights reserved.</code><br />
+<code># Use of this source code is governed by a BSD-style license that can be</code><br />
+<code># found in the LICENSE file.</code><br />
+<br />
+<code>import os, sys</code><br />
+<code>dirname = os.path.dirname(sys.modules[__name__].__file__)</code><br />
+<code>client_dir = os.path.abspath(os.path.join(dirname, "../../"))</code><br />
+<code>sys.path.insert(0, client_dir)</code><br />
+<code>import setup_modules</code><br />
+<code>sys.path.pop(0)</code><br />
+<code>setup_modules.setup(base_path=client_dir,</code><br />
+<code>                    root_module_name="autotest_lib.client")</code></div>
+</div>
+<div>
+<div>
+<p>and you need a file called 'control' too:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code># Copyright (c) 2010 The Chromium OS Authors. All rights reserved.</code><br />
+<code># Use of this source code is governed by a BSD-style license that can be</code><br />
+<code># found in the LICENSE file.</code><br />
+<br />
+<code>job.setup_dep(['fio'])</code></div>
+<h3><a name="TOC-Troubleshooting-your-dep"></a>Troubleshooting your dep</h3>
+If you have created a new dep but run_remote_tests.sh doesn't work and you get an error like:<br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>PackageInstallError: Installation of harry(type:dep) failed : dep-harry.tar.bz2 could not be fetched from any of the repos ['autoserv://']</code></div>
+<br />
+then this section is for you. It explains a little more of the detail of how the dependencies are transfered from server (your workstation) to the client (target).<br />
+<br />
+When you call  self.job.install_pkg(dep, 'dep', self.dep_dir), it causes the autotest client to install the dependency. In this case the client will end up using the autoserv fetcher. Within client/bin/harness_autoserve.py you will see the class AutoservFetcher. It has a method fetch_pkg_file() which calls harness_autoserv.fetch_package() to fetch the package. This issues a AUTOTEST_FETCH_PACKAGE command over the logging connection to autoserv, requesting the package. Yes the logging connection is re-used to support a kind of ftp server for the client!<br />
+<br />
+The server end of autoserv sits in server/autotest.py. Each line of log output coming from the client is examined in client_logger._process_line(). When it sees a line starting with AUTOTEST_FETCH_PACKAGE it calls _send_tarball() which tries to find a matching directory to package up and send. The pkg_name is in a standard format: <code>pkgtype-name.tar.bz2</code> and in this case pkgtype is 'dep'. It will package up the client/deps/&lt;name&gt; directory into a tarball and send it to the client. When this is working you will see something like this message when you run the test:<br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>12:08:06 INFO | Bundling /home/sjg/trunk/src/third_party/autotest/files/client/deps/harry into dep-harry.tar.bz2</code></div>
+<br />
+When it is not working, make sure the directory exists on the server side in the right place.<br />
+<h3><a name="TOC-What-if-my-dep-is-built-by-another-ebuild-"></a>What if my dep is built by another ebuild?</h3>
+The above method is fine for external packages, but it is not uncommon to want to use a byproduct of another ebuild within a test. A good example of this is the Chromium functional tests, which require PyAuto, a test automation framework built by Chromium. In the <code>src/third_party/chromiumos-overlay/chromeos-base/</code><code>chromeos-chrome</code> ebuild you will see:<br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>    if use build_tests; then</code><br />
+<code>        install_chrome_test_resources "${WORKDIR}/test_src"</code><br />
+<code>        # NOTE: Since chrome is built inside distfiles, we have to get</code><br />
+<code>        # rid of the previous instance first.</code><br />
+<code>        rm -rf "${WORKDIR}/${P}/${AUTOTEST_DEPS}/chrome_test/test_src"</code><br />
+<code>        mv "${WORKDIR}/test_src" "${WORKDIR}/${P}/${AUTOTEST_DEPS}/chrome_test/"</code><br />
+<br />
+<code>        # HACK: It would make more sense to call autotest_src_prepare in</code><br />
+<code>        # src_prepare, but we need to call install_chrome_test_resources first.</code><br />
+<code>        autotest_src_prepare</code></div>
+<br />
+You can see that this is creating a deps directory within the build root of chrome, called chrome_test. From the previous section we know that a chrome_test.py file must be installed in this deps directory for this to work. This actually comes from the chromium tree (<code>chrome/src/chrome/test/chromeos/autotest/files/client/deps/chrome_test/chrome_test.py</code> since you asked). This file is very simple:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>#!/usr/bin/python</code><br />
+<br />
+<code># Copyright (c) 2010 The Chromium OS Authors. All rights reserved.</code><br />
+<code># Use of this source code is governed by a BSD-style license that can be</code><br />
+<code># found in the LICENSE file.</code><br />
+<br />
+<code>import common, commands, logging, os</code><br />
+<code>from autotest_lib.client.bin import utils</code><br />
+<br />
+<code>version = 1</code><br />
+<br />
+<code>def setup(top_dir):</code><br />
+<code>    return</code><br />
+<br />
+<code>pwd = os.getcwd()</code><br />
+<code>utils.update_version(pwd + '/src', False, version, setup, None)</code></div>
+<br />
+In this case the directory already contains pre-built binaries, since they were built and copied in by the ebuild above. The setup() method will always be called, but has nothing to do.<br />
+<h3><a name="TOC-What-if-I-want-to-make-use-of-a-binary-tool-"></a>What if I want to make use of a binary tool?</h3>
+See the instructions for including and building the source above, or use the ebuild method if needed. You cannot simply include a pre-built binary (e.g. by checking it into the repository) since this will not work on any platform. All software must be built by the official toolchain for that platform and the only reasonable way to be sure of that is to include the source and build it.<br />
+<h3><a name="TOC-How-do-I-write-a-test-that-needs-access-to-large-data-files-like-media-files-"></a>How do I write a test that needs access to large data files, like media files?<span style="font-weight:normal;font-size:13px"> </span></h3>
+If the data files are posted somewhere else, they may fetched by the test when it starts.  If you add the fetching to the setup() method, this will cause the fetch to occur during build_autotest and cause the fetched results to be put in every packaged build of autotest.  This can cause a large package and might also imply that the media/data may be repackaged.  The same issues apply if you commit the large data files.  Instead it's preferable to fetch the data from the client machine.</div>
+<div><br />
+</div>
+<div>Beware of licensing restrictions on sample data used by a test.</div>
+<div>
+<h3><a name="TOC-How-do-I-write-a-test-that-reboots-the-device-"></a>How do I write a test that reboots the device? </h3>
+See server/site_tests/platform_BootPerfServer, which reboots the device and runs the client test platform_BootPerf which logs performance data about boot time.  Note that your test must be a server test.</div>
+<div>
+<h3><a name="TOC-How-do-I-write-a-test-that-measures-power-consumption-"></a>How do I write a test that measures power consumption?</h3>
+</div>
+<div>See power_IdleServer.  This test cuts power and logs performance data in the form of battery life remaining information.</div>
+<h3><a name="TOC-What-language-can-I-write-my-test-in-"></a>What language can I write my test in?</h3>
+<div>The most straightforward language to use is Python.  Every autotest needs at least some Python code in the control file, and recording performance results, printf-style debugging, and passing up informative error messages all require Python code.  You can also write C/C++ cross-compiled code.  You can even write shell scripts, but do note that you will cause yourself extra pain either when developing your test and/or when diagnosing problems if you choose a language other than Python.</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(3):</span>
+<span>
+<a href="/chromium-os/testing/autotest-developer-faq/autotest-server-usage" dir="ltr">Autotest Server Usage Guide</a>
+</span>
+<span>
+<a href="/chromium-os/testing/autotest-developer-faq/ssh-test-keys-setup" dir="ltr">Setting up SSH Access to your test device.</a>
+</span>
+<span>
+<a href="/chromium-os/testing/autotest-developer-faq/setup-autotest-server" dir="ltr">Setup Autotest Server</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/chromium-os/testing/autotest-developer-faq">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9TgvRO-3LaRtaodyLdjz-6pERc55zkkmI-_Y9BJGh13Z0C8astB3u6_EEvmk07d-pHxMShwSDg7RFrnwIdjIWHuvn9Z5TPPj79g4PiFJD6LHd3DdO/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

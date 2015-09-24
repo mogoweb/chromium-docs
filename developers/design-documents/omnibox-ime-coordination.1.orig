@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/omnibox-ime-coordination","deleted":false,"title":"Omnibox/IME Coordination","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/omnibox-ime-coordination\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Omnibox/IME Coordination","locale":"en","wuid":"wuid:gx:6508a8eaf889b4","revision":10,"path":"/developers/design-documents/omnibox-ime-coordination","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"omnibox-ime-coordination","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Omnibox/IME Coordination - The Chromium Projects" />
+<meta itemprop="name" content="Omnibox/IME Coordination - The Chromium Projects" />
+<meta property="og:title" content="Omnibox/IME Coordination - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Omnibox/IME Coordination - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1317029110924/developers/design-documents/omnibox-ime-coordination/imeomni.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1317029110924/developers/design-documents/omnibox-ime-coordination/imeomni.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Omnibox/IME Coordination</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="background-color:transparent">
+<h2><a name="TOC-Implementation-Status-Update"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Implementation Status Update</span></h2><div><ul><li><span style="font-size:medium;background-color:transparent;font-family:Arial;white-space:pre-wrap">Implemented in M17 on Win</span></li><li><span style="font-size:medium;background-color:transparent;font-family:Arial;white-space:pre-wrap">Implemented in M18 on Chrome OS</span></li><li><span style="font-size:medium;background-color:transparent;font-family:Arial;white-space:pre-wrap">Implemented in M29 on Win (Views implementation, IMM32)</span></li></ul></div><h2><a name="TOC-Objective"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Objective</span></h2>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">We aim to fix the poor interaction between Chrome’s omnibox and the IME (Input Method Editor). The main problem is that IME windows overlap with the omnibox autocomplete results, as pictured below.</span></div><div style="background-color:transparent"><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br /></span></div><div style="background-color:transparent"><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><div style="display:block;margin-right:auto;text-align:left"><div style="display:block;margin-right:auto;text-align:left"><a href="https://www.chromium.org/developers/design-documents/omnibox-ime-coordination/imeomni.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1317029110924/developers/design-documents/omnibox-ime-coordination/imeomni.png" /></a></div><br /></div><br /></span></div><div style="background-color:transparent"><span style="font-family:Arial;font-size:15px;white-space:pre-wrap">This looks unpolished and may be confusing and frustrating to the user.</span></div><div style="background-color:transparent">
+<h2><a name="TOC-Proposed-Solution-and-Plan"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Proposed Solution and Plan</span></h2>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Our proposal is to close the omnibox autocomplete popup window whenever the IME candidate window is open.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">We can easily detect the candidate window on Windows and Chrome OS, so we will implement this design on those platforms. It is likely not possible on Mac and Linux.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">After this design is implemented, we can consider a more sophisticated one. We would most likely experiment on Chrome OS, as we have the most control on that platform. If we implement and enjoy very good reception, we can consider further effort to implement on other platforms.</span><br />
+<h2><a name="TOC-Background"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Background</span></h2>
+<h3><a name="TOC-The-Omnibox"></a><span style="font-size:12pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The Omnibox</span></h3>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Based on its current input, the omnibox pops up </span><span style="font-size:11pt;font-family:Arial;background-color:transparent;font-weight:bold;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">autocomplete results</span><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">, suggestions that may come from browsing history, bookmarks, or Instant Suggest. There is also </span><span style="font-size:11pt;font-family:Arial;background-color:transparent;font-weight:bold;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">inline autocomplete</span><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">, which is an autocomplete result inserted into the text edit area itself. Inline autocomplete seems to be already disabled during IME composition as it would otherwise interfere with composition (see </span><a href="http://crbug.com/64983"><span style="font-size:11pt;font-family:Arial;color:rgb(17,85,204);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">http://crbug.com/64983</span></a><span style="font-size:11pt;font-family:Arial;color:rgb(102,102,102);background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">and </span><a href="http://crbug.com/75651"><span style="font-size:11pt;font-family:Arial;color:rgb(17,85,204);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">http://crbug.com/75651</span></a><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">).</span><br />
+<h3><a name="TOC-The-IME"></a><span style="font-size:12pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The IME</span></h3>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">An IME is used to input text in a more complex manner than the typical direct mapping of keystrokes to characters. For instance, Japanese has too many characters to fit on a keyboard. Using a Japanese IME, the user inputs a reading (“fujisan”) then converts them to the desired characters (“富士山”). The IME presents conversion candidates in a window and in general can present arbitrary UI elements that the application process has little control over.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Text that has been generated through the IME but not yet committed is called </span><span style="font-size:11pt;font-family:Arial;background-color:transparent;font-weight:bold;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">composition text</span><span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> (or pre-edit text).</span><br />
+<h3><a name="TOC-The-Problem"></a><span style="font-size:12pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The Problem</span></h3>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">In Chrome as of M15, the IME’s UI elements are drawn over the omnibox autocomplete results, resulting in a poor user experience. Specific issues include the following:</span>
+<ul><li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The autocomplete results can’t be seen, but are rendered as if the user is expected to make use of them.</span></li>
+<li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The autocomplete results appear to be interactive but are not. IME handles keystrokes, so up/down arrows navigate through IME windows instead of autocomplete results.</span></li>
+<li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The user cannot easily uncover a partially obscured autocomplete result that looks interesting. The correct method, pressing Enter, commits and dismisses the IME, but in practice this is not very intuitive, and requires the user to delete and retype the query if the suggestion is ultimately rejected. Instead of Enter, the user may try to use the mouse (but clicking immediately activates the result instead of making it visible) or hit Escape (this closes that particular IME window but also alters the composition text, so the results change).</span></li>
+<li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Navigating through the IME candidates alters the autocomplete results, since the composition text changes. The user notices these results are updating as if they are useful but cannot use them. This feels unpolished.</span></li></ul>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">IME and Omnibox Instant interaction may also be problematic. Instant is triggered immediately whenever the composition text is updated, which may feel noisy and sluggish to the user.</span><br />
+<h2><a name="TOC-Requirements-and-Scale"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Requirements and Scale</span></h2>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Ideally, we would fix the current poor interaction on all platforms, but our solution is likely implementable only on Windows and Chrome OS.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">We would also prefer the solution to work for all IMEs and all languages. However, universal coverage is not an absolute requirement, and we can keep a solution that works for a large enough group of users and doesn’t introduce new problems to others.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If we attempt a more sophisticated design, we would probably implement on Chrome OS first, with an eye to implementing on other platforms if it has good reception. Ideally, we wouldn’t have different behavior on each platform. But it may be the case that only Chrome OS can be saved, due to the control we have on that platform.</span><br />
+<h2><a name="TOC-Alternatives-Considered"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Alternatives Considered</span></h2>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">We considered several design alternatives. These included the following ideas:</span>
+<ol><li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Place the autocomplete popup below the IME window
+</span><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">  - This solves the overlap but can be unsightly as the IME window can be vertically large. Also, two focal points on screen (autocomplete results and IME candidates) is generally bad UX-wise. There are also questions like whether you switch between the two UI elements.</font></span></li>
+<li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><span style="font-size:11pt">Place IME window inside the autocomplete popup
+</span><font size="2">  - This is about the same as 1.</font></span></li>
+<li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Remove IME panels
+  </span><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><font size="2">- This is invasive and may render some IMEs unusable.</font></span></li>
+<li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><span style="font-size:11pt">Integrate IME suggestions/candidates with autocomplete results
+</span><font size="2">  - This is hard implementation-wise. Some IMEs might not expose their suggestions/candidates in a usable way. We'd have to handle the IME UI ourselves.</font></span></li>
+<li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><span style="font-size:11pt">Request IME use compact/horizontal mode
+</span><font size="2">  - This is more of a wish as most IMEs don't have such a mode.</font></span></li>
+<li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><span style="font-size:11pt">Keep autocomplete results always visible but greyed out during IME composition
+</span><font size="2">  - Some people find this ugly. Also, same issues as 1.</font></span></li>
+<li style="list-style-type:decimal;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><span style="font-size:11pt">Use inline autocomplete during IME composition but not autocomplete popup
+</span><font size="2">  - This solves overlap but loses multiple autocomplete results.</font></span></li>
+</ol>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">However, these have both serious implementation difficulties and UX concerns. Implementation difficulties arise from the limited control over the IME which varies by platform. Furthermore, altering the IME’s native UX risks confusing and annoying the user.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Thus the design and implementation costs are high. If we were to choose one of these solutions, we risk sinking much effort into a solution that might not be usable. Perhaps it would work only for some IMEs or break on future versions of IMEs. Or, it may be implemented and ultimately be poorly received by users.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Another idea is to always close the autocomplete popup during IME composition. However, this is too aggressive. It would prevent users from making use of autocomplete during the input phase before character conversion (for Japanese, when inputting kana before converting to kanji/kana). It would also make little sense for IMEs which usually do not have a composition window open, such as Korean IMEs.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">For reference, Firefox and IE9 seem to always close their suggestions popup during IME composition, but we haven’t looked into this extensively.</span><br />
+<h2><a name="TOC-Detailed-Design"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Detailed Design</span></h2>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">On Windows, we can detect the candidate window using composition attributes or WM_IME_NOTIFY/IMN_OPENCANDIDATE and IMN_CLOSECANDIDATE messages. When the candidate window is open, we suppress the autocomplete popup. The autocomplete results should be fetched anyway, to be displayed immediately when the candidate window closes.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">This only detects the candidate window; some IMEs may display windows other than the candidate window, such as Google Japanese Input, which displays a suggestion window. But we are OK with allowing such popups, as they are not the common case, and removing them might be overly aggressive anyway.</span><br />
+<br />
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">We can also choose whether to enable or disable Instant Search during conversion.</span><br />
+<h2><a name="TOC-UMA-Metrics"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">UMA Metrics</span></h2>
+<span style="font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">We believe our design is a better UX, but want some way to confirm this. At least, we must confirm that it is it rare that an autocomplete result is used while candidate window is open. Unfortunately, getting UMA metrics like the number of times an autocomplete result was selected is impossible, as Chrome's UI design is such that an item from the dropdown is always selected. We still need ideas for measuring the impact of our change.</span><br />
+<h2><a name="TOC-Links"></a><span style="font-size:18pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Links</span></h2>
+<ul><li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><a href="http://code.google.com/p/chromium/issues/detail?id=2924"><span style="font-size:11pt;color:rgb(0,0,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Chromium bug 2924</span></a><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> - Don't let IME candidate window overwrite the autocomplete popup</span></li>
+<li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><a href="http://code.google.com/p/chromium/issues/detail?id=38450"><span style="font-size:11pt;color:rgb(0,0,153);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Chromium bug 38450</span></a><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> - Omnibox autocomplete behavior for Korean is less than optimal (related, but this design doc doesn’t affect this bug)</span></li><li style="list-style-type:disc;font-size:11pt;font-family:Arial;background-color:transparent;text-decoration:none;vertical-align:baseline"><span style="font-size:11pt;background-color:transparent;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><a href="https://code.google.com/p/chromium/issues/detail?id=245578">Chromium bug 245578</a> - IME candidate window overlaps Omnibox suggest.</span></li></ul>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/omnibox-ime-coordination">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXtfSHKvVcqk9cQ5j7RW4S-CjNpknJcWwDiYGaYRA7l5oR4YwkVDuvk_TwpUSmb_dRoyo-yXfq0JDll2C1WTqaiKiL-NuJOI2y1xeAIwHyBe6RhrccHzCXuvj8hcumgeO7Z3JRju/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

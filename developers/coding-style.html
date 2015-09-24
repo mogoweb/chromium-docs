@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/coding-style","deleted":false,"title":"Coding Style","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/coding-style\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Coding Style","locale":"en","wuid":"wuid:gx:17ee0e09e9aefe06","revision":171,"path":"/developers/coding-style","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"coding-style","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Coding Style - The Chromium Projects" />
+<meta itemprop="name" content="Coding Style - The Chromium Projects" />
+<meta property="og:title" content="Coding Style - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Coding Style - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Coding Style</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="coding-style.html#TOC-Other-languages"><strong>1 </strong>Other languages</a><ol class="goog-toc"><li class="goog-toc"><a href="coding-style.html#TOC-C-11"><strong>1.1 </strong>C++11</a></li><li class="goog-toc"><a href="coding-style.html#TOC-C"><strong>1.2 </strong>C</a></li><li class="goog-toc"><a href="coding-style.html#TOC-IDL"><strong>1.3 </strong>IDL</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Jinja"><strong>1.4 </strong>Jinja</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Python"><strong>1.5 </strong>Python</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Web-languages-JavaScript-HTML-CSS-"><strong>1.6 </strong>Web languages (JavaScript, HTML, CSS)</a></li></ol></li><li class="goog-toc"><a href="coding-style.html#Naming"><strong>2 </strong>Naming</a></li><li class="goog-toc"><a href="coding-style.html#Code_Formatting"><strong>3 </strong>Code formatting</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Unnamed-Namespaces"><strong>4 </strong>Unnamed Namespaces</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Exporting-Symbols"><strong>5 </strong>Exporting Symbols</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Inline-functions"><strong>6 </strong>Inline functions</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Logging"><strong>7 </strong>Logging</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Platform-specific-code"><strong>8 </strong>Platform-specific code</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Types"><strong>9 </strong>Types</a></li><li class="goog-toc"><a href="coding-style.html#Method_Signatures"><strong>10 </strong>Method signatures</a></li><li class="goog-toc"><a href="coding-style.html#TOC-File-headers"><strong>11 </strong>File headers</a></li><li class="goog-toc"><a href="coding-style.html#TOC-CHECK-DCHECK-and-NOTREACHED-"><strong>12 </strong>CHECK(), DCHECK(), and NOTREACHED()</a></li><li class="goog-toc"><a href="coding-style.html#TOC-Non-coding-miscellany"><strong>13 </strong>Non-coding miscellany</a></li></ol></div></div></div></div>
+<a name="Introduction"> </a>
+<p>Coding style for the Chromium projects generally follows the <a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.xml">Google C++ Style Guide</a> (but see below for C++11 note). The notes below are usually just extensions beyond what the Google style guide already says.  If this document doesn't mention a rule, follow the Google C++ style.<b> </b>If Google style is flexible on a particular topic, and this document doesn't clarify below, then Chromium style is also flexible on that topic. Objective-C/C++ code should follow the <a href="http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml" style="color:rgb(0,102,204);outline-style:none">Google Objective-C Style Guide</a>. Java files for Android should use the <a href="http://www.chromium.org/developers/coding-style/java" target="_blank">Java Style Guide</a>. If you use emacs, you may find Google's <a href="http://google-styleguide.googlecode.com/svn/trunk/google-c-style.el">style definition for c-mode</a> helpful. </p>
+<p>You may also want to refer to common <a href="http://www.chromium.org/developers/coding-style/cpp-dos-and-donts">C++ Dos and Don'ts</a>. Now that some of those are compile errors on the clang bots, you may want to read <a href="http://www.chromium.org/developers/coding-style/chromium-style-checker-errors">Chromium Style Checker Errors</a>. Cocoa code should be written with the <a href="http://www.chromium.org/developers/coding-style/cocoa-dos-and-donts">Cocoa Dos and Don'ts</a> in mind.</p>
+<p>When working on Blink code, you should use the <a href="../blink/coding-style.html">Blink coding style</a> instead.</p>
+<p>Try to follow any per-file conventions you notice when modifying existing code.</p>
+<p>The remainder of this page covers rules that are specific to the Chromium projects.</p>
+<h2><a name="TOC-Other-languages"></a>Other languages</h2>
+<h3><a name="TOC-C-11"></a>C++11</h3>
+<div>Google style has adopted most C++11 features but Chromium has a more restricted set. The status of C++11 features in Chromium is tracked in the separate <a href="http://chromium-cpp.appspot.com/">C++11 use in Chromium</a> page.</div>
+<div>
+<h3><a name="TOC-C"></a>C</h3>
+</div>
+<p>C code, such as firmware and other specific codebases in Chromium OS, should follow the Linux kernel <a href="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git;a=blob;f=Documentation/CodingStyle;hb=refs/heads/master">Documentation/CodingStyle</a>. Changes to existing C source should maintain consistency with that project's style.</p>
+<h3><a name="TOC-IDL"></a>IDL</h3>
+<div>For IDL files, see <a href="../blink/webidl.html#TOC-Style">Web IDL in Blink: Style</a><span style="font-size:10pt;background-color:transparent">.</span></div>
+<h3><a name="TOC-Jinja"></a>Jinja</h3>
+<p><a href="http://dev.chromium.org/developers/jinja">Jinja</a> templates should follow the <a href="http://dev.chromium.org/developers/jinja#TOC-Style">Jinja Style Guide</a>.</p>
+<h3><a name="TOC-Python"></a>Python</h3>
+Python code should follow <a href="http://www.python.org/dev/peps/pep-0008/" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">PEP-8</a>, except that Chromium:
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">uses two-space indentation instead of four-space indentation, and</span></li>
+<li><span style="font-size:10pt;background-color:transparent">uses MixedCase for method names and function names instead of lower_case_with_underscores.</span></li></ul>
+<span style="font-size:10pt;background-color:transparent">(The rationale for this is mostly legacy reasons: the code was originally written following Google's internal style guideline, the cost of updating all of the code to PEP-8 compliance was not small, and consistency was seen to be a greater virtue than compliance.) </span><a href="how-tos/depottools.html" style="font-size:10pt;background-color:transparent">depot_tools</a><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">contains a local copy of pylint, appropriately configured.</span><br />
+<div><br />
+</div>
+<div>Note that asserts are of limited use, and should <i>not</i> be used for validating input – throw an exception instead. Asserts can be used for validating program logic, especially use of interfaces or invariants (e.g., asserting that a function is only called with dictionaries that contain a certain key). See <a href="https://wiki.python.org/moin/UsingAssertionsEffectively">Using Assertions Effectively</a>.</div>
+<div><br />
+</div>
+<div>See also the Chromium OS <a href="http://www.chromium.org/chromium-os/python-style-guidelines">Python Style Guidelines</a>.</div>
+<div>
+<h3><a name="TOC-Web-languages-JavaScript-HTML-CSS-"></a>Web languages (JavaScript, HTML, CSS)</h3>
+<div>
+<p>When working on Web-based UI features, consult the <a href="http://www.chromium.org/developers/web-development-style-guide">Web Development Style Guide</a> for the Chromium conventions used in JS/CSS/HTML files.</p>
+<p>Internal uses of web languages, notably "layout" tests, should preferably follow these style guides, but it is not enforced.</p>
+<p>
+</p>
+<h2><a name="Naming"> </a>Naming</h2>
+<ul>
+<li>"Chromium" is the name of the project, not the product, and should never appear in code, variable names, API names etc. Use "Chrome" instead.</li>
+<li>Though the Google C++ Style Guide now says to use <font face="'courier new', monospace">kConstantNaming</font> for enums, Chromium was written using <font face="'courier new', monospace">MACRO_STYLE</font> naming.  Continue to use this style for consistency.</li>
+<li>Unit tests and performance tests should be placed in the same directory as the functionality they're testing.</li>
+<li>Functions ending with a <font face="'courier new', monospace">ForTesting</font> suffix will be checked at presubmit time to ensure they're only called in a test situation.</li>
+</ul>
+<p>
+</p>
+<h2>Code formatting<a name="Code_Formatting"></a></h2>
+<ul>
+<li><font face="'courier new', monospace"><font face="arial, sans-serif">Put </font>*<font face="arial, sans-serif"> and </font>&amp;<font face="arial, sans-serif"> by the type rather than the variable name.</font></font><font color="#990000"><br />
+</font></li>
+<li>Always linebreak after a conditional, even if the body is only a <font face="courier new, monospace">return</font> or other simple action.</li>
+<li> Wrap after binary operators, not before. <span style="font-size:10pt;background-color:transparent">Exception: when you have a log line that is longer than 80 characters, subsequent lines should start with the </span><span style="font-size:10pt;font-family:courier new,monospace;background-color:transparent">&lt;&lt;</span><span style="font-size:10pt;background-color:transparent"> operator and should be aligned based on the first </span><span style="font-size:10pt;font-family:courier new,monospace;background-color:transparent">&lt;&lt;</span><span style="font-size:10pt;background-color:transparent"> from the original line:</span></li><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#38761d">VLOG(1) &lt;&lt; "I have a long log message here, with variables like "<br />        &lt;&lt; var1 &lt;&lt; " and var2: " &lt;&lt; var2;</font></p><li><span style="font-size:13.3333330154419px;background-color:transparent">You may wrap before or after the '?' and ':' in ternary operators.  If <span style="font-size:13.3333330154419px">wrapping </span>before, align the '?' and ':' vertically:</span></li></ul></div></div></div><div><div><div><ul><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#38761d">int x = foo ? a<br />            : b;</font></p><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#38761d">int x = foo<br />    ? a<br />    : b;</font></p><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#cc0000">int x = foo<br />    ? a : b;</font></p></ul></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><font face="arial, sans-serif">If </font><span style="font-size:13.3333330154419px">wrapping</span><span style="font-size:13.3333330154419px"> </span><font face="arial, sans-serif">after, wrap after the '?' before wrapping after the ':':</font></div></div></div></blockquote><div><div><div><ul><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#38761d">int x = foo ?<br />    a : b;</font></p><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#38761d">int x = foo ?<br />    a :<br />    b;</font></p><p style="font-size:13.3333330154419px;margin-left:80px;font-family:courier new,monospace"><font color="#cc0000">int x = foo ? a :<br />    b;</font></p></ul>
+<div dir="ltr">
+<div dir="ltr">
+<ul>
+<li>When you derive from a base class, group any overriding functions in your header file in one labeled section.  Use the <font face="'courier new', monospace">override</font> specifier on all these functions.</li>
+<li><span style="font-family:arial,sans-serif">For function declarations and definitions, put each argument on a separate line unless the whole declaration fits on one line.</span></li></ul>
+</div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div dir="ltr">
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">void OK1(TypeA first_argument, </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">TypeB </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">second_argument, </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">TypeC </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">third_argument);</span></div>
+<div><span style="font-family:courier new,monospace;color:rgb(56,118,29)">void OK2(</span><span style="font-family:courier new,monospace;color:rgb(56,118,29)">TypeA </span><span style="font-family:courier new,monospace;color:rgb(56,118,29)">first_argument,</span></div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">         TypeB </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">second_argument,</span></div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">         TypeC </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">third_argument);</span></div>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div dir="ltr">
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">void OK3ReallyLongFunctionName(</span></div>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div dir="ltr">
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">    ReallyLongType really_long_arg,</span></div>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div dir="ltr">
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">    ReallyLongType really_long_arg2);</span></div>
+</div>
+</div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px"><br />
+For function calls, it's OK to collapse args onto fewer lines.  Just make sure in either case that all lines of args begin at the same horizontal position.<br />
+<br />
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="font-size:10pt;color:rgb(56,118,29);font-family:courier new,monospace;background-color:transparent">OK1(first_argument, second_argument,<br />    third_argument, fourth_argument);</span></blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">OK2ReallyLongFunctionName(</span></div>
+</blockquote>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">    </span><span style="color:rgb(56,118,29);font-family:courier new,monospace;font-size:10pt;background-color:transparent">first_argument, second_argument,</span></div>
+<span style="color:rgb(56,118,29);font-family:courier new,monospace">    third_argument, fourth_argument);</span></blockquote>
+</blockquote>
+<div>
+<div dir="ltr">
+<div dir="ltr">
+<ul><li><font face="arial, sans-serif">Prefer </font><font face="'courier new', monospace">(foo == 0)</font><font face="arial, sans-serif"> to </font><font face="'courier new', monospace">(0 == foo)</font><font face="arial, sans-serif">.</font></li>
+<li>Function declaration order should match function definition order.</li>
+<li><span style="font-family:arial,sans-serif">Prefer putting delegate classes in their own header files. Implementors of the delegate interface will often be included elsewhere, which will often cause more coupling with the header of the main class.</span></li>
+<li><font face="arial, sans-serif">Don't use </font><font face="courier new, monospace">else</font><font face="arial, sans-serif"> after </font><span style="font-family:courier new,monospace">return</span><font face="arial, sans-serif">:</font></li></ul>
+</div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div dir="ltr">
+<div><font color="#cc0000" face="courier new, monospace">if (foo)</font></div>
+<div><font color="#cc0000" face="courier new, monospace">  return 1;</font></div>
+<div><font color="#cc0000" face="courier new, monospace">else</font></div>
+<div><font color="#cc0000" face="courier new, monospace">  return 2;</font></div>
+<div><font color="#990000" face="courier new, monospace"><br />
+</font></div>
+<div><font color="#38761d" face="courier new, monospace">if (foo)</font></div>
+<div><font color="#38761d" face="courier new, monospace">  return 1;</font></div>
+<div><font color="#38761d" face="courier new, monospace">return 2;</font></div>
+<div><font color="#38761d" face="courier new, monospace"><br />
+</font></div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">return foo ? 1 : 2;</span></div>
+</div>
+</blockquote>
+<div>
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<h2><a name="TOC-Unnamed-Namespaces"></a>Unnamed Namespaces</h2>
+<div>
+<ul><li>Items local to a .cc file should be wrapped in an unnamed namespace.  While some such items are already file-scope by default in C++, not all are; also, shared objects on Linux builds export all symbols, so unnamed namespaces (which restrict these symbols to the compilation unit) improve function call cost and reduce the size of entry point tables.<br />
+<br />
+<code>namespace {</code><br />
+<br />
+<code>bool helper() { ... };</code><br />
+<br />
+<code>}  // namespace</code></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div dir="ltr">
+<div dir="ltr">
+<h2><a name="TOC-Exporting-Symbols"></a>Exporting Symbols</h2>
+<div>When building shared libraries and DLLs, we need to indicate which functions and classes should be visible outside of the library, and which should only be visible inside the library.</div>
+<div>
+<ul><li>Symbols can be exported by annotating with a <font face="courier new, monospace">&lt;COMPONENT&gt;_EXPORT</font> macro name (where <font face="courier new, monospace">&lt;COMPONENT&gt;</font> is the name of the component being built, e.g., <font face="courier new, monospace">BASE</font>, <font face="courier new, monospace">NET</font>, <font face="courier new, monospace">CONTENT</font>, etc.). Function annotations should precede the return type; class annotations should precede the class name:</li></ul>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">class </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">FOO_EXPORT </span><span style="color:rgb(56,118,29);font-family:courier new,monospace">Foo {</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">  void Bar();</span></div>
+<div><font color="#38761d" face="'courier new', monospace"><span>  void Baz();</span><br />
+</font></div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">  // ...</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">};</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace"><br />
+</span></div>
+<div><font color="#38761d" face="'courier new', monospace">class FooSingleton {</font></div>
+<div><font color="#38761d" face="'courier new', monospace">  FOO_EXPORT Foo&amp; GetFoo();</font></div>
+<div><font color="#38761d" face="'courier new', monospace">  FOO_EXPORT Foo&amp; SetFooForTesting(Foo&amp; foo);</font></div>
+<div><font color="#38761d" face="'courier new', monospace">  void SetFoo(Foo&amp; foo);</font></div>
+<div><font color="#38761d" face="'courier new', monospace">};</font></div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace"><br />
+</span></div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><font face="arial, sans-serif">This results in Foo::Bar, Foo::Baz, FooSingleton::GetFoo, FooSingleton::SetFooForTesting all being available outside of the DLL, but not FooSingleton::SetFoo.</font></blockquote>
+<div>
+<ul><li><font face="arial, sans-serif">Whether something is exported is distinct from whether it is public or private, or even whether it would normally be considered part of the external API.  For example, if part of the external API is an inlined function that calls a private function, that private function must be exported as well.</font></li></ul>
+<div>
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<h2><a name="TOC-Inline-functions"></a>Inline functions</h2>
+</div>
+<ul><li><span style="font-size:10pt">Simple accessors should generally be the only inline functions. These should be named </span><font face="'courier new', monospace" style="font-size:10pt">unix_hacker_style()</font><font face="arial, sans-serif" style="font-size:10pt">.  <b>Virtual functions should never be declared this way</b>.</font></li>
+<li><font face="arial, sans-serif">For more detail, consult the <a href="http://www.chromium.org/developers/coding-style/cpp-dos-and-donts#TOC-Stop-inlining-code-in-headers">C++ Dos and Don'ts section on inlining</a>.</font></li>
+</ul>
+<h2><a name="TOC-Logging"></a><b>Logging</b></h2>
+<div>
+<ul><li><font face="arial, sans-serif" size="2">Remove most logging calls before checking in.  For the rare case when logging needs to stay in the codebase for a while, prefer </font><font face="'courier new', monospace" size="2">DVLOG(1)</font><font face="arial, sans-serif" size="2"> to other logging methods.  This avoids bloating the release executable and in debug can be selectively-enabled at runtime by command-line arguments, like this</font><font face="arial, sans-serif" size="2">: </font><font face="'courier new', monospace" size="2">./chrome --v=2 --vmodule=foo=1,*bar/baz*=3</font><font face="arial, sans-serif" size="2">.  This will globally print all log levels up through 2, but only through 1 for </font><font face="'courier new', monospace" size="2">foo.cc</font><font face="arial, sans-serif" size="2"> and 3 for any module with the string </font><font face="'courier new', monospace" size="2">bar/baz</font><font face="arial, sans-serif" size="2"> in its full pathname.</font></li></ul>
+</div>
+<p>
+</p>
+<h2><a name="TOC-Platform-specific-code"></a>Platform-specific code</h2>
+<ul><li>Platform-specific #ifdefs should use the system specific defines in <span style="font-family:courier new,monospace">build/build_config.h</span> and not other things such as <span style="font-family:courier new,monospace">WIN32</span>.  Code that is specific to Windows or Mac is simple -- just test <font face="'courier new', monospace">OS_WIN</font> or <font face="'courier new', monospace">OS_MACOSX</font>.  But things get subtle from there: ChromiumOS uses the Linux kernel but is different from desktop Linux, and there are also ports to other Unixes (which we don't explicitly support but do make a best-effort attempt to not break).  A summary of the major preprocessor defines:</li>
+<ul><li>Use <span style="font-family:courier new,monospace">OS_POSIX</span> to define something applicable for all non-Windows platforms, including Mac and Linux (for example, pthreads).</li>
+<li>Use <font face="'courier new', monospace">defined(OS_POSIX) &amp;&amp; !defined(OS_MACOSX)</font> for POSIX code that is explicitly not OS X, e.g. converting a path from the system native encoding to Unicode.</li>
+<li>Use <font face="'courier new', monospace">TOOLKIT_GTK</font> for GTK code (as used by desktop Linux; e.g. creating/accessing GtkWidget or showing a native file-picker dialog).</li>
+<li>Use <font face="'courier new', monospace">USE_X11</font> for X11 code (used by desktop Linux/ChromeOS; e.g. dealing with XEvent, to use X extensions). Please do not use <font face="'courier new', monospace">OS_LINUX</font> for GTK or X11 code.</li>
+<li>Use <font face="'courier new', monospace">OS_CHROMEOS</font> code specific to ChromiumOS (such as whether to show the wifi status).</li>
+<li>If you need to do something based on the type of <span style="font-family:courier new,monospace">wchar_t</span>, use <span style="font-family:courier new,monospace">WCHAR_T_IS_UTF16</span> or <span style="font-family:courier new,monospace">WCHAR_T_IS_UTF32</span>.</li></ul>
+<li>For platform-specific #includes, put them below the "regular" includes, separated with a blank line.  Repeat the standard header order in the lower section:</li></ul>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<div><font color="#38761D" face="'courier new', monospace">#include "base/basictypes.h"</font></div>
+</div>
+<div><font color="#38761D" face="'courier new', monospace">#include "base/utf_string_conversions.h"</font></div>
+<div><font color="#38761d" face="'courier new', monospace">#include "build/build_config.h"</font></div>
+<div><font color="#38761D" face="'courier new', monospace">#include "chrome/common/render_messages.h"</font></div>
+<div><font color="#38761D" face="'courier new', monospace"><br />
+</font></div>
+<div><font color="#38761D" face="'courier new', monospace">#if defined(OS_WIN)</font></div>
+<div><font color="#38761d" face="'courier new', monospace">#include &lt;windows.h&gt;</font></div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">#include "base/foo_win.h"</span></div>
+<div><span style="color:rgb(56,118,29);font-family:courier new,monospace">#elif defined(OS_POSIX)<br />
+</span><span style="color:rgb(56,118,29);font-family:courier new,monospace">#include "base/foo_posix.h"<br />
+</span><span style="color:rgb(56,118,29);font-family:courier new,monospace">#endif</span></div>
+</div>
+</div>
+</blockquote>
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<div>
+<div>
+<h2><a name="TOC-Types"></a>Types</h2>
+<div>
+<ul><li><font face="arial, sans-serif" style="font-size:10pt;background-color:transparent">Use </font><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">size_t</font><font face="arial, sans-serif" style="font-size:10pt;background-color:transparent"> for object and allocation sizes, object counts, array and pointer offsets, vector indices, and so on. The signed types are <b>incorrect and unsafe for these purposes</b>. (Integer <b>overflow behavior for signed types is undefined</b> in the C and C++ standards, while the behavior <b>is defined for unsigned types</b>.) The C++ STL is a guide here: they use </font><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">size_t</font><font face="arial, sans-serif" style="font-size:10pt;background-color:transparent"> and </font><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">foo::size_type</font><font face="arial, sans-serif" style="font-size:10pt;background-color:transparent"> for very good reasons.</font></li>
+<ul><li><font face="arial, sans-serif">Interfaces (function prototypes) for these uses should use </font><font face="courier new, monospace">size_t</font><font face="arial, sans-serif">, even if the underlying storage is a smaller unsigned type (e.g. as a space optimization).</font></li></ul>
+<li><font face="arial, sans-serif">Be aware that </font><font face="courier new, monospace">size_t</font><font face="arial, sans-serif"> (object sizes and indices), </font><font face="courier new, monospace">off_t</font><font face="arial, sans-serif"> (file offsets), </font><font face="courier new, monospace">ptrdiff_t</font><font face="arial, sans-serif"> (the difference between two pointer values), </font><font face="courier new, monospace">intptr_t</font><font face="arial, sans-serif">, </font><font face="courier new, monospace">uint32_t</font><font face="arial, sans-serif">, </font><font face="courier new, monospace">uint64_t</font><font face="arial, sans-serif">, and so on are not necessarily the same. Use the right type for your purpose.</font></li>
+<li><font face="arial, sans-serif">When casting to and from different types, use <span style="font-family:courier new,monospace">static_cast&lt;&gt;()</span> when you know the conversion is safe; also consider </font><font face="courier new, monospace">checked_cast</font><font face="arial, sans-serif"><span style="font-family:courier new,monospace">&lt;&gt;()</span> and <span style="font-family:courier new,monospace">saturated_cast</span><span style="font-family:courier new,monospace">&lt;&gt;()</span> in base/numerics/safe_conversions.h, which allow you to enforce via <span style="font-family:courier new,monospace">CHECK()</span> that the cast did not change the value or to clamp out-of-range values, respectively.</font></li>
+<li><font face="arial, sans-serif">Do not use unsigned types to mean "this value should never be &lt; 0". For that, use assertions or run-time checks (as appropriate).</font></li>
+<li><font face="arial, sans-serif">In cases where the exact size of the type matters (e.g. a 32-bit pixel value, a bitmask, or a counter that has to be a particular width), use a sized type like </font><font face="'courier new', monospace">uint32_t</font><font face="arial, sans-serif">.  Also, w</font><font face="arial, sans-serif">hen passing values across network or process boundaries, use explicitly-sized types for safety, since the sending and receiving ends may not have been compiled with the same sizes for things like </font><font face="'courier new', monospace">int</font><font face="arial, sans-serif"> and </font><font face="'courier new', monospace">size_t</font><font face="arial, sans-serif">.  However, avoid letting these sized types bleed through the API of the layer in question.</font></li>
+<li><font face="arial, sans-serif">Always use </font><font face="'courier new', monospace">size_t</font><font face="arial, sans-serif"> directly in preference to </font><font face="'courier new', monospace">std::string::size_type</font><font face="arial, sans-serif"> and similar.</font></li>
+<li><font face="arial, sans-serif">Don't use </font><span style="font-family:courier new,monospace">std::wstring</span><font face="arial, sans-serif">.  Use <span style="font-family:courier new,monospace">string16</span> or <span style="font-family:courier new,monospace">FilePath</span> instead.  (Exception: allowed</font><span style="font-family:arial,sans-serif"> in Windows-only code where it does not touch a cross-platform API if its use is necessary, e.g. to interact with some Windows API.)</span></li></ul>
+</div>
+<p>
+</p>
+<h2><a name="Method_Signatures"> </a>Method signatures</h2>
+<ul>
+<li>After testing, it seems just as fast to return a <span style="font-family:courier new,monospace">std::[w]string</span> by value as by out
+param. So we encourage passing strings out as return values when
+possible for the sake of readability.</li>
+</ul>
+<h2><a name="TOC-File-headers"></a>File headers</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<ul>
+<li>All files in Chromium start with a common license header.  As of May 2013, the header should look like this: </li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-family:courier new,monospace;font-size:10pt">// Copyright $YEAR The Chromium Authors. All rights reserved.</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-family:courier new,monospace;font-size:10pt">// Use of this source code is governed by a BSD-style license that can be</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-family:courier new,monospace;font-size:10pt">// found in the LICENSE file.</span></div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+<div>
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<ul></ul>
+<ul></ul>
+<ul><li><span style="font-size:10pt">Note that there's no </span><font face="courier new, monospace" style="font-size:10pt">(c)</font><span style="font-size:10pt"> after the "Copyright".</span></li>
+<li>The year should be the current year when a new file is created, and should not be changed when the file is updated thereafter.</li>
+<li><span style="font-size:10pt">When adding a new file, <b>don't</b> just copy the header from an existing file, because it may use an outdated style (we don't bother updating old headers).</span></li>
+<li><span style="font-size:10pt">For Chromium OS, replace the "Chromium" by </span><span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:12.800000190734863px">"Chromium OS" or "Chrome OS". Note it's not "ChromiumOS", "ChromeOS", nor "CrOS".</span></li>
+<li>The Chromium project hosts mirrors of some upstream open-source projects.  When contributing to these portions of the repository, retain the existing file headers.</li>
+<li>When writing <font face="courier new, monospace">.h</font> files, use standard include guards (see the Google style guide for naming); do not use <font face="'courier new', monospace">#pragma once</font><font face="arial, sans-serif">.  Include guards are portable and seem to be just as efficient even on platforms that do support </font><font face="'courier new', monospace">#pragma once</font><font face="arial, sans-serif">, so there is no reason to use it.</font></li></ul>
+</div>
+</div>
+</div>
+<h2><a name="TOC-CHECK-DCHECK-and-NOTREACHED-"></a><font face="courier new, monospace">CHECK()</font>, <font face="courier new, monospace">DCHECK()</font>, and <font face="courier new, monospace">NOTREACHED()</font></h2>
+<div>
+<div>The <font face="courier new, monospace">CHECK()</font> macro will cause an immediate crash if its condition is not met. <font face="courier new, monospace">DCHECK()</font> is like <font face="courier new, monospace">CHECK()</font> but is only compiled in on debug builds and thus should be preferred over <span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent">CHECK()</span><span style="font-size:10pt;background-color:transparent"> for speed and code size reasons. </span><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">NOTREACHED()</font><span style="font-size:10pt;background-color:transparent"> is equivalent to </span><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">DCHECK(false)</font><span style="font-size:10pt;background-color:transparent">.</span></div>
+<div>
+<ul><li>Use <font face="courier new, monospace">DCHECK()</font> or <font face="courier new, monospace">NOTREACHED()</font> as assertions, e.g. to document pre- and post-conditions. A <font face="courier new, monospace">DCHECK()</font> means "this condition must <b>always</b> be true", not "this condition is normally true, but perhaps not in exceptional cases." Things like disk corruption or strange network errors are examples of exceptional circumstances that nevertheless should NOT result in <font face="courier new, monospace">DCHECK()</font> failure.</li>
+<li>A consequence of this is that <b>you should not handle <font face="courier new, monospace">DCHECK()</font> failures</b>, even if failure would result in a crash. Attempting to handle a <font face="courier new, monospace">DCHECK()</font> failure is a statement that the <font face="courier new, monospace">DCHECK()</font> can fail, which contradicts the point of writing the <font face="courier new, monospace">DCHECK()</font>. <span style="font-size:10pt;background-color:transparent"> The following kinds of constructs are generally forbidden:</span></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>
+<div>
+<div>
+<div><span style="color:rgb(204,0,0);font-family:courier new,monospace;font-size:12.8000001907349px;background-color:transparent">DCHECK(foo);</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size:12.8000001907349px;background-color:transparent"><font color="#cc0000" face="courier new, monospace">if (!foo) ...  // Can't succeed!</font></span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size:12.8000001907349px;color:rgb(34,34,34);font-family:arial,sans-serif;background-color:transparent"><br />
+</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><span style="font-size:12.8000001907349px;color:rgb(34,34,34);font-family:arial,sans-serif;background-color:transparent">and</span></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><font face="courier new, monospace" style="font-size:10pt;background-color:transparent"><span style="font-size:12.800000190734863px;background-color:transparent"><br />
+</span></font></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><font face="courier new, monospace" style="font-size:10pt;background-color:transparent"><span style="font-size:12.800000190734863px;background-color:transparent"><font color="#cc0000">if (!foo) {</font></span></font></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><font face="courier new, monospace" style="font-size:10pt;background-color:transparent"><font color="#cc0000"><span style="font-size:12.800000190734863px;background-color:transparent">  NOTREACHED();</span></font></font></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><font face="courier new, monospace" style="font-size:10pt;background-color:transparent"><font color="#cc0000"><span style="font-size:12.800000190734863px;background-color:transparent">  return;  // Just "DCHECK(foo);" and keep going instead.</span></font></font></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div><font face="courier new, monospace" style="font-size:10pt;background-color:transparent"><font color="#cc0000"><span style="font-size:12.800000190734863px;background-color:transparent">}</span></font></font></div>
+</div>
+</div>
+</div>
+</div>
+<div><font face="courier new, monospace" style="font-size:10pt;background-color:transparent"><font color="#cc0000"><span style="font-size:12.800000190734863px;background-color:transparent">...</span></font></font></div>
+</blockquote>
+<div>
+<div>
+<div>
+<div>
+<div>
+<ul><li>Use <font face="courier new, monospace">CHECK()</font> if the consequence of a failed assertion would be a security vulnerability, where crashing the browser is preferable.  Because this takes down the whole browser, sometimes there are better options than <font face="courier new, monospace">CHECK()</font>.  For example, if a renderer sends the browser process a malformed IPC, an attacker may control the renderer, but we can simply kill the offending renderer instead of crashing the whole browser.</li>
+<li>You can also temporarily use <font face="courier new, monospace">CHECK()</font> instead of <font face="courier new, monospace">DCHECK()</font> when trying to force crashes in release builds to sniff out which of your assertions is failing.</li>
+<li>Don't use these macros in tests, as they crash the test binary and leave bots in a bad state.  Use the <font face="courier new, monospace">ASSERT_xx()</font> and <font face="courier new, monospace">EXPECT_xx()</font> family of macros, which report failures gracefully and can continue running other tests.</li></ul>
+<div>
+<h2><a name="TOC-Non-coding-miscellany"></a>Non-coding miscellany</h2>
+<ul><li>Use UTF-8 file encodings and LF line endings.</li>
+<li>If you use subversion, configure your <code>~/.subversion/config</code> (or <code>%APPDATA%\Subversion\config</code> on Windows) file to contain the following properties in <a href="http://src.chromium.org/svn/trunk/tools/build/slave/config">/trunk/tools/build/slave/config</a> (<a href="http://src.chromium.org/viewvc/chrome/trunk/tools/build/slave/config" style="font-size:10pt">ViewVC</a>).</li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(5):</span>
+<span>
+<a href="http://www.chromium.org/developers/coding-style/cpp-dos-and-donts" dir="ltr">C++ Dos and Don'ts</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/coding-style/chromium-style-checker-errors" dir="ltr">Chromium Style Checker Errors</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/coding-style/cocoa-dos-and-donts" dir="ltr">Cocoa Dos and Don'ts</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/coding-style/important-abstractions-and-data-structures" dir="ltr">Important Abstractions and Data Structures</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/coding-style/java" dir="ltr">Java</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/coding-style">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9zawZVJS4Sif8OWtdWepikpnnaQyK8w3qDMz7qNNG0_2TdAWM13IZxCcNJIWWhHmE3mzqI4JeiEmTN6QqwBXJsnzcsNXxuIe004G8SH66xu7crtil/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

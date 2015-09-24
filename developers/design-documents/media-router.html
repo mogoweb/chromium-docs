@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/media-router","deleted":false,"title":"Media Router \u0026 Web Presentation API","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/media-router\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Media Router \u0026 Web Presentation API","locale":"en","wuid":"wuid:gx:683a38dc78d01c12","revision":56,"path":"/developers/design-documents/media-router","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"media-router","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Media Router &amp; Web Presentation API - The Chromium Projects" />
+<meta itemprop="name" content="Media Router &amp; Web Presentation API - The Chromium Projects" />
+<meta property="og:title" content="Media Router &amp; Web Presentation API - The Chromium Projects" />
+<meta name="description" content="Media Router Design Document" />
+<meta itemprop="description" content="Media Router Design Document" />
+<meta id="meta-tag-description" property="og:description" content="Media Router Design Document" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Media Router &amp; Web Presentation API - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1423182643815/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1423182643815/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Media Router &amp; Web Presentation API</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">The media router is a component in Chrome responsible for matching clients that wish to render content outside the browser (<i>media sources</i>) with devices and endpoints capable of rendering that content (<i>media sinks</i>).  When a media source is linked with a m<i>edia sink</i> (in general, requiring user permission), a <i>media route</i> is created that allows two-way messaging between the client and the sink.  The media route allows the client to negotiate a peer-to-peer media streaming session with the media sink via messaging (e.g., via <a href="http://www.webrtc.org/" target="_blank">WebRTC</a> or <a href="https://code.google.com/p/chromium/codesearch#chromium/src/chrome/renderer/extensions/cast_streaming_native_handler.h&amp;q=cast_streaming&amp;sq=package:chromium&amp;type=cs" target="_blank">Cast Streaming</a>), aka "mirroring."  The media route can also be used to control remotely rendered media without an associated peer-to-peer media streaming session, aka "flinging".  The media route can be terminated at user or client request, which denies access to the media sink from the application.<div><br /></div><div>The Web <a href="http://www.w3.org/2014/secondscreen/" target="_blank">Presentation API</a> allows a Web application to request display of Web content on a secondary (wired, or wireless) screen.  The content may be rendered locally and streamed to the display or rendered remotely.  The Web application controls the content by two-way messaging.<br /><div><br /></div><div>Note that the non-Blink parts of the media router will be implemented only in desktop Chrome and ChromeOS.  Presentation API functionality will be implemented in Chrome for Android using analogous platform components such as the <a href="https://developer.android.com/guide/topics/media/mediarouteprovider.html" target="_blank">Android Media Route Provider framework</a>.</div><div><br /></div><div>Also note that a separate design is in progress for offscreen rendering, capture, and streaming of WebContents (required for full Presentation API support).<br /><h2><a name="TOC-Objectives"></a>Objectives</h2>
+<div>The objectives of this project:</div>
+<div>
+<ul><li>Allow use of media sinks from a multitude of clients, including:  Web applications via the <a href="http://w3c.github.io/presentation-api/" target="_blank">Presentation API</a>; Chrome apps; the browser itself; and the Chrome OS system shell.</li>
+<li>Support mirroring locally rendered content to external screens, including on-screen and off-screen tabs, Chrome apps windows, and the system desktop.</li>
+<li>Support "flinging" HTML5 documents to remote devices capable of rendering them.</li>
+<li>Support the <a href="https://developers.google.com/cast/docs/reference/chrome/" target="_blank">Cast Chrome Sender SDK</a> on desktop and Android without any user installed extensions.</li>
+<li>Allow new types of media sinks to be added to Chrome by implementing additional Media Route Providers.</li></ul>
+</div>
+<div>The following are non-goals but may be objectives for future work:</div>
+<div>
+<ul><li>Multicast of local content to multiple sinks at once.</li>
+<li>Support for third party media route providers (in Javascript or NaCl) or run-time installation of media route providers.</li>
+<li>Support for sinks that are not primarily intended to render media.</li></ul><h2><a name="TOC-Overview"></a>Overview</h2></div><div><div>The media router consists of four distinct components:</div><div><ol><li>The Chrome Media Router is a browser service exposed in-process via C++ API and is exposed to other processes via a set of two Mojo interfaces:  the Presentation interface and the Media Router API interface.  Its job is to field requests from clients for media sink availability, media route construction/destriction, and media route control via messaging.  It also controls the Media Router Dialog and delegates many functions to the Media Router component extension.</li><li>The Media Router extension is an external component extension responsible for direct interaction with media sinks.  The component extension will initially support use of <a href="http://www.google.com/cast/" target="_blank">Cast</a> and <a href="http://www.dial-multiscreen.org/" target="_blank">DIAL</a> devices with more types of sinks to be added over time.  The component extension interacts with the Chrome Media Router via the Media Router API Mojo service, and uses some chrome.* platform APIs, such as chrome.dial, chrome.cast.channel, and chrome.mdns to implement network level interaction with Cast and DIAL devices.</li><li>Users interact with the Chrome Media Router through the Media Router Dialog.  This WebUI component allows users to choose the destination media sink for new media routes and view and stop active media routes.  It may be pulled up by the user clicking the Cast icon in the browser toolbar, or at the request of a Web application via the Presentation API.</li><li>The Presentation Mojo interface acts as a bridge between the Chrome Media Router and the Blink implementation of the Presentation API (<a href="https://code.google.com/p/chromium/issues/detail?id=412331" target="_blank">launch bug</a>).</li></ol></div><h2><a name="TOC-Architecture"></a>Architecture</h2>
+</div>
+<div>The following diagram illustrates the architecture of the components described above.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"><div style="display:block;text-align:left"></div><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1423182643815/developers/design-documents/media-router/Chrome%20Media%20Router%20Architecture%20%281%29.png" /></a></div></div></div>
+<div><span><span style="vertical-align:baseline;background-color:transparent"><font size="2">
+<h2><a name="TOC-Chrome-Media-Router"></a><font face="Arial"><span style="white-space:pre-wrap">Chrome Media Router</span></font></h2><div><font face="Arial"><span style="white-space:pre-wrap">The Chrome Media Router is a browser-resident service that serves as a media-protocol-agnostic platform for parties interested in media routing. It provides its clients with a set of APIs for media routing related queries and operations, including:</span></font></div>
+<div>
+<ul><li><span style="font-size:13px">Register for notifications when a sink is available that can render a media source.  (Media sources are represented as URIs and can represent local media or remotely hosted content.)</span></li>
+<li>Request routing of media for that source, which will show the user the media router dialog to select a compatible sink.  If the user selects a sink, the media route is returned to the application to allow it to control media playback.</li>
+<li><font face="Arial"><span style="white-space:pre-wrap">Accept media control actions from the Media Router Dialog </span></font><span style="font-family:Arial;white-space:pre-wrap">for an active media route and forwarding them to the associated route provider.</span></li>
+<li><span style="font-family:Arial;white-space:pre-wrap"><span style="font-family:Arial,Verdana,sans-serif;font-size:13px;white-space:normal">Send and receive arbitrary (string) messages between the application the media sink.</span></span></li>
+<li>Terminate media routes, and notify the client and media route provider when that happens.</li></ul>
+</div>
+<div><font face="Arial"><span style="white-space:pre-wrap">The Chrome Media Router, itself, does not directly interact with media sinks. Instead it delegates these requests and responses to a media route provider in the component extension.  The</span></font><span style="background-color:transparent"> Chrome Media Router will contain bookkeeping of established routes, pending route requests, and other related resources, so it does not have to request this information from the route provider each time.</span></div><div><span style="background-color:transparent"><div><br /></div><div>The following pseudocode describes how a client of the Chrome Media Router (through its C++ API) would use it to initiate and control a media sharing session.</div><div><br /></div><div><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">Media Router API Example</h4><div class="sites-embed-content sites-embed-type-text"><div class="sites-embed-content-textbox"><div dir="ltr"><div class="sites-codeblock sites-codesnippet-block">
+<code style="display:block;white-space:pre">
+MediaRouter* media_router = MediaRouterImpl::GetInstance();
+
+// Find out what screens are capable of rendering, e.g.
+// www.youtube.com
+MediaSource youtube_src = MediaSource::ForPresentationUrl("http://www.youtube.com");
+
+// MyMediaSinksObserver should override MediaSinksObserver::OnSinksReceived to handle updates to</code><code style="display:block;white-space:pre">// the list of screens compatible with youtube_src
+MediaSinksObserver* my_observer = new MyMediaSinksObserver(youtube_src);
+media_router-&gt;RegisterObserver(my_observer);
+
+// Ask the user to pick a screen from the list passed to</code><code style="display:block;white-space:pre">// my_observer and capture the sink_id (code not shown)
+
+// Request routing of media for that source.</code><code style="display:block;white-space:pre">// |callback| is passed a MediaRouteResponse&amp; that contains a MediaRoute result if successful.
+media_router-&gt;StartRouteRequest(youtube_src, sink_id, callback);
+
+// The MediaRoute can be used to post messages to the
+// sink. 
+media_router-&gt;PostMessage(media_route.media_route_id,  "some data", "optional_extra_data_json");
+
+// The MediaRoute can be closed which signals the sink
+// to terminate any remote app or media streaming
+// session.
+media_router-&gt;CloseRoute(media_route.media_route_id);
+</code>
+</div></div></div></div></div></div></div><div><br /></div><div><div><span style="background-color:transparent">The Media Router interacts with the component extension via a Mojo service, the Media Router API, that exposes functionality whose implementation is delegated to the extension.</span></div><div><span style="background-color:transparent"><br /></span></div><div><span style="background-color:transparent"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">Media Router API Mojo Interface</h4><div class="sites-embed-content sites-embed-type-text"><div class="sites-embed-content-textbox"><div dir="ltr"><pre><font face="courier new, monospace" size="3"><div class="sites-codeblock sites-codesnippet-block"><code>// Interface for sending messages from the MediaRouter (MR)                                                                                                                               
+// to the Media Router Provider Manager (MRPM).                                                                                                                                           
+interface MediaRouterApiClient {                                                                                                                                                          
+  // Signals the media route manager to route the media located                                                                                                                           
+  // at |source_urn| to |sink_id|.                                                                                                                                                        
+  RequestRoute(int64 request_id, string source, string sink_id);                                                                                                                          
+                                                                                                                                                                                          
+  // Signals the media route manager to close the route specified by |route_id|.                                                                                                          
+  CloseRoute(string route_id);                                                                                                                                                            
+                                                                                                                                                                                          
+  // Signals the media route manager to start querying for sinks                                                                                                                          
+  // capable of displaying |source|.                                                                                                                                                      
+  AddMediaSinksQuery(string source);                                                                                                                                                      
+                                                                                                                                                                                          
+  // Signals the media route manager to stop querying for sinks                                                                                                                           
+  // capable of displaying |source|.                                                                                                                                                      
+  RemoveMediaSinksQuery(string source);                                                                                                                                                   
+                                                                                                                                                                                          
+  // Sends |message| with optional |extra_info_json| via the media route                                                                                                                  
+  // |media_route_id|.                                                                                                                                                                    
+  // |extra_info_json| is an empty string if no extra info is provided.                                                                                                                   
+  PostMessage(string media_route_id, string message, string extra_info_json);                                                                                                             
+};                                                                                                                                                                                        
+                                                                                                                                                                                          
+// Interface for sending messages from the MRPM to the MR.                                                                                                                                
+[Client=MediaRouterApiClient]                                                                                                                                                             
+interface MediaRouterApi {                                                                                                                                                                
+  // Called when the provider manager is ready.                                                                                                                                           
+  OnProviderManagerReady(string extension_id);                                                                                                                                            
+                                                                                                                                                                                          
+  // Called when the Media Route Manager receives a new list of sinks.                                                                                                                    
+  OnSinksReceived(string source,                                                                                                                                                          
+                  array&lt;MediaSink&gt; sinks,                                                                                                                                                 
+                  array&lt;MediaRoute&gt; routes);                                                                                                                                              
+                                                                                                                                                                                          
+   // Called after a MediaRoute is established.                                                                                                                                           
+  OnRouteResponseReceived(int64 request_id, MediaRoute route);                                                                                                                            
+                                                                                                                                                                                          
+  // Called when route establishment fails.                                                                                                                                               
+  OnRouteResponseError(int64 request_id, string error_text);                                                                                                                              
+};                     </code></div></font></pre></div></div></div></div></div></span></div></div></div></span></div><div><span style="background-color:transparent"><br /></span></div><h2><a name="TOC-Media-Router-Component-Extension"></a>Media Router Component Extension</h2><div><span style="background-color:transparent">The component extension manages discovery of and network interaction with individual media sinks. For the purposes of this discussion a sink is a LAN-connected device that speaks the Cast or DIAL protocol, but in theory it could be any other type of endpoint that supports media rendering and two-way messaging. The extension consists of three types of components:</span></div><div><span style="background-color:transparent"><br /></span></div><div><ul><li>Media Route Providers: Each provider is a Javascript bundle that knows how to find and communicate with a specific type of media sink. It communicates with the media sink using HTTP/XHR or via device-specific network protocols (e.g., Cast Channel and Cast Streaming).</li><li>Media Route Provider Manager: This is responsible for dispatching requests from the Chrome Media Router to individual providers. It also registers providers on startup.</li><li>Mirroring Service: If a media source is requested that represents the tab or desktop contents, this service acts on the behalf of the application to initiate the mirroring session. This is handled internally to the component extension and is not exposed to the rest of the browser, it appears to be just another media route.</li></ul><div>A component extension is used rather than implementing functionality directly into the browser since remote display functionality is implemented by first and third parties using a mix of open source and proprietary code, and must be released on a schedule independently of Chrome (i.e. tied to specific hardware release dates). We only plan to open source the DIAL media route provider.</div><div><br /></div><div>The component extension is written in JavaScript using the Closure library and will be available via two public channels; the default, “stable” extension will be installed as an external component without the user needing to visit the Web Store. Users may choose to install a pre-release “beta” extension via the Web Store, which disables the stable version.</div><div><br /></div><div>Initially Media Route Providers will be implemented for Cast and DIAL devices with others to follow. Over time media route providers that do not rely on proprietary protocols will be unbundled and included in the Chromium repository, once script packaging and deployment issues are resolved. <span style="background-color:transparent">As an external component, the extension is installed on the initial run of the browser. It is built around an event page so it registers itself with the Media Router, registers itself with discovery APIs to be notified of display availability, and then suspends. </span><span style="background-color:transparent">The component extension will only be active when there are applications with pending sink availability requests or media routes, or when there is active network traffic between the extension and a media sink.</span></div><div><span style="background-color:transparent"><br /></span></div><div><span style="background-color:transparent">There are several modules to the extension that are loaded on-demand. The main event page bundles are 238kb. </span><span style="background-color:transparent">Updates are independent of Chrome.</span></div></div></font></span></span></div><div>
+<div>
+<h2><a name="TOC-Tab-Desktop-Mirroring-"></a>Tab/Desktop Mirroring </h2>
+</div>
+<div>Tab and desktop mirroring will request routing of a media source with URN like <font face="courier new, monospace">urn:google:tab:3</font> representing tab contents.  When the component extension receives a request to route this source, the media route provider manager will query route providers to enumerate sinks that can render streamed tab contents.  Once a sink is selected by the user, the mirroring service will create the appropriate MediaStream using the <font face="courier new, monospace">chrome.tabCapture</font> extension API.  The MediaStream will then be passed to a Cast Streaming or WebRTC session depending on the preferred protocol of the selected sink.  When the media route is terminated, the associated streaming session and media capture are also terminated.  A similar approach will be used for desktop mirroring but using <font face="courier new, monospace">chrome.desktopCapture</font> instead.</div>
+<h2><a name="TOC-Presentation-API"></a>Presentation API</h2><div>Media routing of Web content will primarily be done through the Presentation API.  Some media sinks (e.g. Cast) can render a subset of Web content natively, or render an equivalent app experience (e.g., via DIAL).  For generic Web documents, we plan on rendering it in an offscreen WebContents and then using the Tab Mirroring approach outlined above.  The design of the offscreen rendering capability will be added later to this document.</div><div><br /></div><div>The Presentation API implementation in Blink will live in content/ and will operate on the frame level. It will delegate the calls to the embedder's Media Router implementation (Android Media Router / Chrome Media Router for Android / Chrome, respectively) via a common PresentationServiceDelegate interface.  A draft Mojo interface follows (not yet complete):</div><div><br /></div><div><div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">PresentationService Mojo interface</h4><div class="sites-embed-content sites-embed-type-text"><div class="sites-embed-content-textbox"><div dir="ltr"><pre><font face="courier new, monospace" size="3"><div class="sites-codeblock sites-codesnippet-block"><code>interface PresentationService {                                                                                                                                                           
+    // Returns the last screen availability state if it’s changed since the last                                                                                                          
+    // time the method was called. The client has to call this method again when                                                                                                          
+    // handling the result (provided via Mojo callback) to get the next update                                                                                                            
+    // about the availability status.                                                                                                                                                     
+    // May start discovery of the presentation screens. The implementation might                                                                                                          
+    // stop discovery once there are no active calls to GetScreenAvailability.                                                                                                            
+    // |presentation_url| can be specified to help the implementation to filter                                                                                                           
+    // out incompatible screens.                                                                                                                                                          
+    GetScreenAvailability(string? presentation_url) =&gt; (bool available);                                                                                                                  
+                                                                                                                                                                                          
+    // Called when the frame no longer listens to the                                                                                                                                     
+    // |availablechange| event.                                                                                                                                                           
+    OnScreenAvailabilityListenerRemoved();                                                                                                                                                
+}; </code></div></font></pre>
+</div></div></div></div></div></div><br /></div><div><br /></div><div>Here is how the presentation API will roughly map to Chrome Media Router API:</div><div><span style="font-size:10pt;background-color:transparent"><font face="arial, sans-serif"><br /></font></span></div><div><span style="font-size:10pt;background-color:transparent"><font face="arial, sans-serif"><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="width:229px;height:14px"> <b>Presentation API</b></td><td style="width:642px;height:14px"><b>Chrome Media Router </b></td></tr><tr><td style="width:229px;height:15px"> <span style="font-family:Arial,Verdana,sans-serif">Adding </span><font face="courier new, monospace">onavailablechange</font><span style="font-family:Arial,Verdana,sans-serif"> listener</span></td><td style="width:642px;height:15px"> <span style="font-size:10pt;font-family:courier new,monospace;background-color:transparent">RegisterObserver()</span><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt;background-color:transparent"><font face="arial, sans-serif">, with result propagated back to the RenderFrame / Presentation API.</font></span></td></tr><tr><td style="width:229px;height:15px"> <span style="font-family:courier new,monospace">startSession</span></td><td style="width:642px;height:15px"> Opens Media Router Dialog (via MediaRouterDialogController) -&gt; User action -&gt; <span style="font-family:courier new,monospace">StartRouteRequest()</span></td></tr><tr><td style="width:229px;height:15px"> <span style="font-family:courier new,monospace">joinSession</span></td><td style="width:642px;height:15px"> <font face="courier new, monospace">StartRouteRequest()</font></td></tr><tr><td style="width:229px;height:15px"> <span style="font-family:courier new,monospace">postMessage</span></td><td style="width:642px;height:15px"> <font face="courier new, monospace">PostMessage()</font></td></tr><tr><td style="width:229px;height:15px"> <span style="font-family:courier new,monospace">close</span></td><td style="width:642px;height:15px"> <font face="courier new, monospace">CloseRoute()</font></td></tr><tr><td style="width:229px;height:15px"> <font face="arial, sans-serif">Adding </font><font face="courier new, monospace">onmessage</font><font face="arial, sans-serif"> listener</font></td><td style="width:642px;height:15px"> <font face="courier new, monospace">RegisterMessageObserver() </font>(tentative)</td></tr><tr><td style="width:229px;height:15px"> <font face="arial, sans-serif">Adding </font><font face="courier new, monospace">onstatechange</font><font face="arial, sans-serif"> listener</font></td><td style="width:642px;height:15px"> <font face="courier new, monospace">RegisterRouteStateChangeObserver() </font>(tentative)</td></tr></tbody></table></font></span></div><div><br /></div><div><div>
+<h2><a name="TOC-Media-Router-Dialog"></a>Media Router Dialog</h2><div><span style="font-size:13px;background-color:transparent">End user control of media routing is done through the Media Router Dialog.  The m</span><font size="2" style="background-color:transparent">edia router dialog is a constrained, tab modal dialog implemented using WebUI. It auto-resizes to fit the currently rendered contents and appears in the top center of the browser. The dialog supports a number of views, including a screen selector, screen status, error/warning messages, and informational messages. To avoid excess whitespace, the dialog appropriately resizes to the current view.</font></div></div><h2><a name="TOC-The-media-router-dialog-is-activated-by-clicking-on-the-Cast-icon-which-is-always-available-to-the-user.-The-Cast-icon-implements-the-action-icon-interface-and-appears-on-either-the-toolbar-action-menu-normally-or-in-the-omnibox-if-there-is-an-available-Ca"></a><span style="background-color:transparent"><font size="2" style="font-weight:normal">The media router dialog is activated by clicking on the Cast icon, which is always available to the user.  The Cast icon implements the action icon interface and appears on either the toolbar action menu (normally) or in the omnibox if there is an available Casting experience (a detected media sink).  <br /><br /><div><a href="http://www.chromium.org/developers/design-documents/media-router/media_router_overflow.jpg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1418943120195/developers/design-documents/media-router/media_router_overflow.jpg" /></a></div><div><br /></div><div></div></font></span></h2><h2><a name="TOC-Clicking-on-the-Cast-icon-brings-up-a-menu-of-available-media-sinks-that-are-compatible-with-the-current-content.-For-Web-documents-not-using-the-Presentation-API-these-will-include-sinks-that-can-render-tab-or-desktop-capture.-For-Web-documents-it-will-in"></a><span style="background-color:transparent"><font size="2" style="font-weight:normal">Clicking on the Cast icon brings up a menu of available media sinks that are compatible with the current content.  For Web documents not using the Presentation API, these will include sinks that can render tab or desktop capture.  For Web documents, it will include media sinks compatible with the URL requested to be presented through the Presentation API (once we are able to declare this URL through the API and proactively filter to compatible displays).</font></span></h2><h2><a name="TOC-Media-Route-providers-may-customize-the-appearance-of-the-active-media-activity-and-inject-custom-controls-into-the-WebUI-subject-to-UX-guidelines-.-We-are-prototyping-this-approach-using-extensionview-.The-Media-Router-Dialog-Controller-keeps-track-of-whe"></a><span style="background-color:transparent"><font size="2" style="font-weight:normal"><br /><div style="display:block;text-align:left"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/media-router/media_router_screen_selector.jpg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1418944081776/developers/design-documents/media-router/media_router_screen_selector.jpg" /></a></div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left">Media Route providers may customize the appearance of the active media activity and inject custom controls into the WebUI (subject to UX guidelines).  We are prototyping this approach using &lt;extensionview&gt;.</div><div style="display:block;text-align:left"><br /></div><br /><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/media-router/media_router_universal_remote.jpg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1418943383223/developers/design-documents/media-router/media_router_universal_remote.jpg" /></a></div></div><br /><br />The Media Router Dialog Controller keeps track of whether or not the initiator tab is currently open. When the tab is closed or navigated away to another URL, the media router dialog is closed.<br /></font><span style="font-size:13px;font-weight:normal"><br />The HTML resources are built using <a href="https://www.polymer-project.org/" target="_blank">custom Polymer elements</a>. Data is passed between the WebUI and backend by calling the following:<br /><br />WebUI: </span></span><span style="font-family:courier new,monospace;font-size:13px;font-weight:normal">chrome.send(functionName);</span><span style="background-color:transparent"><span style="font-size:13px;font-weight:normal"><br />Backend: </span></span><span style="font-family:courier new,monospace;font-size:13px;font-weight:normal">web_ui()-&gt;CallJavascriptFunction(function_name, arg, ...);</span><span style="background-color:transparent"><span style="font-size:13px;font-weight:normal"><br /><br /><div></div><div style="display:block;text-align:left"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/design-documents/media-router/media_router_ui_diagram.jpg?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1418944102075/developers/design-documents/media-router/media_router_ui_diagram.jpg" /></a></div></div><br />The WebUI and controller classes are located in the proposed location:<br /><br /></span></span><span style="font-family:courier new,monospace;font-size:13px;font-weight:normal">chrome/browser/ui/webui/media_router<br /></span><span style="font-size:13px;font-weight:normal;background-color:transparent"><br />The dialog resources, which include HTML, CSS, JS, and image files, are located in the proposed location:<br /><br /></span><span style="font-family:courier new,monospace;font-size:13px;font-weight:normal;background-color:transparent">chrome/browser/resources/media_router</span></h2></div><div><h2><a name="TOC-We-will-use-the-extensionview-HTML-tag-to-embed-the-custom-media-controller-UX.-This-will-allow-the-component-extension-to-flexibly-customize-and-control-the-UX-instead-of-having-the-functionality-implemented-directly-into-the-browser.-ExtensionView-allows"></a><span style="font-size:10pt;font-weight:normal;background-color:transparent">We will use the &lt;extensionview&gt; HTML tag to embed the custom media controller UX. This will allow the component extension to flexibly customize and control the UX instead of having the functionality implemented directly into the browser. </span><span style="font-size:10pt;font-weight:normal;background-color:transparent">ExtensionView allows us to embed a page from the component extension into the Media Router WebUI. We will use the load API to take in the full media controller URL.</span></h2></div><div><div>The extension will utilize <a href="https://developer.chrome.com/extensions/runtime">chrome.runtime.*</a> functionality to message between the controller embedded in the ExtensionView and the extension itself.</div></div>
+<h2><a name="TOC-Offscreen-Rendering"></a>Offscreen Rendering</h2><div>TODO(miu)</div><h2><a name="TOC-Security"></a>Security</h2><div>The entire project should be security reviewed from a holistic and architectural perspective.  Specific security-related aspects:</div><div><ul><li><span style="font-size:10pt;background-color:transparent">The Chrome Media Router will be designed to have a minimal processing of the URIs and messages passed through it (perhaps only checking for syntactic validity).</span></li><li><span style="background-color:transparent"><span style="font-size:10pt">The Media Router Dialog will allow the MRPs to inject custom content into it, so for example, the inline controls for a game can differ from those for a movie.  This content will be rendered out-of-process in an &lt;extensionview&gt; to prevent any escalation of </span>privileges<span style="font-size:10pt"> from compromised content.</span></span></li><li><span style="font-size:10pt;background-color:transparent">The individual platform APIs used by the component extension MRPs (chrome.dial, chrome.mdns, chrome.cast.channel, chrome.cast.streaming) have been security reviewed previously.</span></li></ul></div>
+<h2><a name="TOC-Team-members"></a>Team members</h2>
+<div>
+<ul><li>Mark Foltz &lt;<a href="mailto:mfoltz@chromium.org">mfoltz@chromium.org</a>&gt;, TL</li>
+<li>Jennifer Apacible &lt;<a href="mailto:apacible@chromium.org">apacible@chromium.org</a>&gt;, WebUI</li>
+<li>Derek Cheng &lt;<a href="mailto:imcheng@chromium.org">imcheng@chromium.org</a>&gt;, Media Router</li>
+<li>Haibin Lu &lt;<a href="mailto:haibinlu@chromium.org">haibinlu@chromium.org</a>&gt;, Component extension</li>
+<li>Kevin Marshall &lt;<a href="mailto:kmarshall@chromium.org">kmarshall@chromium.org</a>&gt;, Mojo integration</li>
+<li>Anton Vayvod &lt;<a href="mailto:avayvod@chromium.org">avayvod@chromium.org</a>&gt;, Presentation API, Chrome for Android implementation</li>
+<li>Yuri Wittala &lt;<a href="mailto:miu@chromium.org">miu@chromium.org</a>&gt;, Offscreen rendering</li></ul></div>
+<h2><a name="TOC-Code-location"></a>Code location</h2>
+<div>The patches to implement the Media Router have been developed in an internal repository.  They will be upstreamed into mainline Chromium with the primary code location of </div>
+<div><br />
+</div>
+<div><font face="courier new, monospace">chrome/browser/media/router</font></div><div><br /></div><div><font face="arial, sans-serif">for the media router, and other components living in appropriate locations according to their type.</font></div>
+<div><br /></div><div><br />
+</div></div></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/media-router">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9iKLGOYnYbG73_prBNznh4pKhMTRiNHIOY0xFylDj1rnGS0ZZ349zhTFVRD2KdlEtFLzMUYeG-jseJKDm2Zs1i_UCsQJ6Rm2gL2aTUb5-CC-R9XmB/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

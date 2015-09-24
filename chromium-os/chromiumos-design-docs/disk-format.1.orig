@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs/disk-format","deleted":false,"title":"Disk Format","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/disk-format\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/chromiumos-design-docs","parentWuid":"wuid:gx:2eb69dd73ece341e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Disk Format","locale":"en","wuid":"wuid:gx:50b6350e46c21c15","revision":32,"path":"/chromium-os/chromiumos-design-docs/disk-format","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"disk-format","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Disk Format - The Chromium Projects" />
+<meta itemprop="name" content="Disk Format - The Chromium Projects" />
+<meta property="og:title" content="Disk Format - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Disk Format - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1284148304249/chromium-os/chromiumos-design-docs/disk-format/layout.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1284148304249/chromium-os/chromiumos-design-docs/disk-format/layout.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:571d8fbd499df20e" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/chromiumos-design-docs" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Disk Format</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Abstract"><strong>1 </strong>Abstract</a></li><li class="goog-toc"><a href="#TOC-Boot-process"><strong>2 </strong>Boot process</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-U-Boot"><strong>2.1 </strong>U-Boot</a></li><li class="goog-toc"><a href="#TOC-x86-legacy-BIOS"><strong>2.2 </strong>x86 legacy BIOS</a></li><li class="goog-toc"><a href="#TOC-x86-EFI-BIOS"><strong>2.3 </strong>x86 EFI BIOS</a></li><li class="goog-toc"><a href="#TOC-Google-Chrome-OS-devices"><strong>2.4 </strong>Google Chrome OS devices</a></li><li class="goog-toc"><a href="#TOC-Which-kernel-"><strong>2.5 </strong>Which kernel?</a></li></ol></li><li class="goog-toc"><a href="#TOC-Drive-contents"><strong>3 </strong>Drive contents</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Protective-master-boot-record"><strong>3.1 </strong>Protective master boot record</a></li><li class="goog-toc"><a href="#TOC-GUID-Partition-Table-GPT-"><strong>3.2 </strong>GUID Partition Table (GPT)</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Drive-partitions"><strong>3.2.1 </strong>Drive partitions</a></li><li class="goog-toc"><a href="#TOC-Partition-types"><strong>3.2.2 </strong>Partition types</a></li><li class="goog-toc"><a href="#TOC-Partition-names"><strong>3.2.3 </strong>Partition names</a></li><li class="goog-toc"><a href="#TOC-Partition-alignment"><strong>3.2.4 </strong>Partition alignment</a></li></ol></li><li class="goog-toc"><a href="#TOC-Layout-on-disk"><strong>3.3 </strong>Layout on disk</a></li></ol></li><li class="goog-toc"><a href="#TOC-Secure-boot"><strong>4 </strong>Secure boot</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Trusting-the-GPT"><strong>4.1 </strong>Trusting the GPT</a></li><li class="goog-toc"><a href="#TOC-Selecting-the-kernel"><strong>4.2 </strong>Selecting the kernel</a></li></ol></li><li class="goog-toc"><a href="#TOC-Kernel-partition-format"><strong>5 </strong>Kernel partition format</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Quick-development"><strong>5.1 </strong>Quick development</a></li><li class="goog-toc"><a href="#TOC-Changing-the-kernel-command-line"><strong>5.2 </strong>Changing the kernel command line</a></li></ol></li></ol></div></div></div></div>
+<h2><a name="TOC-Abstract"></a>Abstract</h2>
+This document describes the layout of data on the disk drive for a Chromium OS device and the process by which the OS is booted. <br />
+<br />
+Goals for the drive partitioning scheme are as follows:<br />
+<ul><li>Speed - Support fast boot, where the boot loader is part of the firmware.</li>
+<li>Simplicity - Support autoupdate.</li>
+<li>Robustness - Recover from failed updates or corrupt partitions.</li>
+<li>Openness - Allow developers to run operating systems other than Google Chrome OS.</li></ul>
+Goals for the boot process are as follows:<br />
+<ul><li>Support readily available development platforms so that Chromium OS software can be built and tested without waiting for final hardware/firmware.</li>
+<li>Support a limited selection of off-the-shelf netbooks for internal trials of Chromium OS.</li>
+<li>Provide a secure and verifiable boot path for official Google Chrome OS devices.</li></ul>
+<h2><a name="TOC-Boot-process"></a>Boot process</h2>
+Chromium OS is essentially a specially-tailored GNU/Linux distribution. We want to make as few modifications to the upstream kernel as possible, ideally none. But as with any other GNU/Linux system, the pre-kernel boot process is unavoidably dependent on the hardware, BIOS, and bootloader.<br />
+<h3><a name="TOC-U-Boot"></a>U-Boot</h3>
+Both ARM and (recent) x86 devices use U-Boot as their bootloader. On x86 we use Coreboot to set up RAM and load U-Boot. You can find an overview of the verified boot process in the <a href="https://www.chromium.org/chromium-os/u-boot-porting-guide/2-concepts">U-Boot Porting Guide</a>. U-Boot still uses the EFI partition table described below.<br />
+<h3><a name="TOC-x86-legacy-BIOS"></a>x86 legacy BIOS</h3>
+Legacy boot for x86 Linux has three steps:<br />
+<ol><li>The BIOS looks at the first block of each drive until it finds a Master Boot Record (MBR). This consists of 440 bytes of real-mode code, 6 ignored bytes, 4 instances of 16-byte primary partition records, and 2 signature bytes, 0x55 and 0xAA. That's 512 bytes. BIOS copies this block into RAM and starts executing the first byte. This all happens in x86 Real Mode.</li>
+<li>Those first 440 bytes of MBR code are responsible for bootstrapping the rest of the OS. It searches the four partition table entries, finds a partition flagged as bootable, copies the first 512 bytes  from that partition (the so-called Volume Boot Record or VBR) into RAM, and jumps there. That code then continues the boot process in some unspecified way -- typically that VBR code (as well as the MBR code) is generated by and installed by grub, lilo, syslinux, or some similar bootloader.</li>
+<li>Eventually, the bootloader code identifies the kernel. It also creates a special table in memory called the “zeropage table.” The bootloader initializes fields in that table by making calls to the BIOS via interrupts. After the zeropage table is filled in, a pointer to it is placed in the ESI register and execution continues with the first part of the kernel. At this point, the CPU is still running in Real Mode. The first part of the kernel then switches to protected mode and jumps to the kernel's 32-bit entry point, passing along the pointer to the zeropage table.</li>
+</ol>
+Legacy BIOSes will continue to boot Chromium OS from the MBR. The Chromium OS build process places GPT-aware boot sector code from syslinux in the MBR. That code can specify one GPT partition to boot, indentified by a matching UniquePartitionGUID field in the Partition Entry Array.  We use partition 12 for this purpose. The second-stage syslinux bootloader is installed on that partition, along with its corresponding config file (/syslinux/syslinux.cfg). We have a tool and scripts that can change the boot partition GUID in the MBR when we need to select an alternate boot path.<br />
+<br />
+Virtualized systems (vmware, qemu, etc.) typically have their own legacy BIOS implementations and will use this method to boot Chromium OS images.<br />
+<h3><a name="TOC-x86-EFI-BIOS"></a>x86 EFI BIOS</h3>
+The Extensible Firmware Interface is a BIOS replacement originally developed by Intel® for its Itanium® systems and later expanded to include x86 and other architectures. While not enthusiastically embraced by the Linux kernel developers, it offers some advantages over legacy BIOS and is becoming more widely used, especially for 64-bit x86 systems.<br />
+<br />
+EFI BIOS boots like this:<br />
+</div>
+<ol><li>The BIOS switches into protected mode almost immediately and then switches into 64-bit mode (IA-32e mode).</li>
+<li>The BIOS expects the disks to be formatted using a GUID Partition Table (GPT) which can contain a very large number of partitions, not just four. Each GPT partition is identified by two GUIDs: a type and a unique ID. The BIOS looks for a partition that:</li>
+<ul><li>Has a type of "EFI System Partition" (28732ac1-1ff8-d211-ba4b-00a0c93ec93b)</li>
+<li>Is formatted as a FAT filesystem</li>
+<li>Contains a file named \efi\boot\bootx64.efi</li></ul>
+<li>That bootx64.efi file is the bootloader, which is executed as an 
+application within the EFI BIOS environment (still in 64-bit mode). The bootloader queries the BIOS for system information using a set of registered function calls and creates the zeropage table for the kernel. It then locates the kernel, tells the BIOS that it can free any memory that won't be needed later, switches down to 32-bit mode, and jumps to the kernel at the kernel's 32-bit protected-mode entry point (the same place where the legacy Real Mode code used to jump to).<br />
+</li>
+</ol>
+<div>The Chromium OS build process creates an EFI System Partition (partition 12) and installs a 64-bit version of grub2 as the bootloader (/efi/boot/bootx64.efi), along with its config file (/efi/boot/grub.cfg). 64-bit EFI BIOSes will use this bootloader. It is possible to also install a 32-bit bootloader in the same partition, but we currently do not do that. To change the boot partition, we just need to edit the grub.cfg file. Note that different EFI BIOSes may have different requirements for the pathname of the bootloader.<br />
+<br />
+Most EFI BIOSes contain a "Compatibility Support Module" component which makes them act like legacy BIOSes, so they may boot either way.<br />
+<h3><a name="TOC-Google-Chrome-OS-devices"></a>Google Chrome OS devices</h3>
+Google Chrome OS devices (x86/x86_64/arm) have custom BIOSes that use yet another boot method to ensure that the user is running only the bits that are intended. Instead of a separate bootloader and kernel, there is one binary blob contained in its own GPT partition. That blob is cryptographically signed and the signature is verified before booting. Under normal conditions, the process is:<br />
+<ol><li>The BIOS searches the first drive (only) for a GPT partition identified with our special ChromeOS Kernel Type GUID (fe3a2a5d-4f32-41a7-b725-accc3285a309). There should be two (image A and image B). Attribute bits within each partition table entry select which of the two is the most recent (or valid) one.</li>
+<li>The first 64K bytes of the kernel partition are reserved for the signature header for verified boot. Following that is the 32-bit part of the kernel, a few data structures, and our bootloader stub. BIOS verifies the signature, loads the rest of kernel stuff into memory, and invokes the bootloader stub.</li>
+<li>The bootloader stub is just an EFI application. It sets up any tables the kernel needs in order to continue booting, and jumps to the kernel's 32-bit entry point.</li>
+</ol>
+The Chromium OS build process creates signed kernel images needed by the Chrome OS BIOS and installs them in their own partitions. They are signed with test keys that are found in the source tree. Official releases will of course be signed with private Google keys.<br />
+<h3><a name="TOC-Which-kernel-"></a>Which kernel?</h3>
+For any booting (x86) configuration, there are at least three separate kernels (along with their command lines) on the disk image. Legacy BIOS will use syslinux, which uses its own copy of the chosen kernel that's kept in partition 12. EFI BIOSes will use /boot/vmlinuz from the target rootfs. ChromeOS BIOS uses the signed kernel embedded in its own partition. Our build and update process is carefully crafted to try to keep all three of these kernels in sync. However, if you're fiddling with the kernel and commandline, you may find that your changes are being ignored. This is usually an indication that you're modifying the wrong one. In /proc/cmdline, you should see one of the strings "cros_legacy", "cros_efi", or "cros_secure". These identify which method the kernel used to boot (and that's all they do - we don't use them for any run-time decisions AFAIK).<br />
+<h2><a name="TOC-Drive-contents"></a>Drive contents</h2>
+Bootable Chromium OS drives (removable or not) share a common drive format. In the discussion that follows, “sector” refers to a 512-byte disk sector, addressed by its Logical Block Address (LBA). Although the UEFI specs allow for disk sectors of other sizes, in practice 512 bytes is the norm. We do not use the old Cylinder-Head-Sector addresses at all.<br />
+<h3><a name="TOC-Protective-master-boot-record"></a>Protective master boot record</h3>
+The master boot record is the first sector on the hard drive (LBA 0). As mentioned above, legacy BIOSes will boot from this sector.<br />
+<br />
+To protect the GUID partitions on the drive from legacy OSes, the MBR partition table normally contains a single partition entry of type 0xEE, filling the entire drive. <br />
+<br />
+<h3><a name="TOC-GUID-Partition-Table-GPT-"></a>GUID Partition Table (GPT)</h3>
+The second sector (LBA 1) contains the primary GPT header, followed immediately by 16K (32 sectors) of the primary GUID Partition Entry Array. In conformance with the EFI spec, another copy of these data should be located at the end of the disk as well, with the secondary GPT header in the last accessible sector and the secondary GUID Partition Entry Array immediately preceding it.</div>
+<div>
+<h4><a name="TOC-Drive-partitions"></a>Drive partitions</h4>
+<p>
+GPT allows a large number of partitions on a drive. In an attempt to reduce the effect that later partitioning changes might have on deployed systems, we are trying to enumerate the known partitions first, while leaving room for future growth. Here’s the current layout:</p>
+<table border="1" bordercolor="#888888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:79px;height:15px"> <b>Partition</b><span>   <span>   <span> <br />
+</span></span></span></td>
+<td style="width:201px;height:15px"><b>Usage</b> <br />
+</td>
+<td style="width:802px;height:15px"> <b>Purpose</b></td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 1</td>
+<td style="width:201px;height:15px"> user state, aka "stateful partition"<br />
+</td>
+<td style="width:802px;height:15px"> User's browsing history, downloads, cache, etc. Encrypted per-user.<br />
+</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 2</td>
+<td style="width:201px;height:15px"> kernel A<br />
+</td>
+<td style="width:802px;height:15px"> Initially installed kernel.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 3</td>
+<td style="width:201px;height:15px"> rootfs A<br />
+</td>
+<td style="width:802px;height:15px"> Initially installed rootfs.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 4</td>
+<td style="width:201px;height:15px"> kernel B<br />
+</td>
+<td style="width:802px;height:15px"> Alternate kernel, for use by automatic upgrades.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 5</td>
+<td style="width:201px;height:15px"> rootfs B<br />
+</td>
+<td style="width:802px;height:15px"> Alternate rootfs, for use by automatic upgrades.</td>
+</tr>
+<tr>
+<td style="width:79px;height:34px"> 6</td>
+<td style="width:201px;height:34px"> kernel C<br />
+</td>
+<td style="width:802px;height:34px"> Minimal-size partition for future third kernel. There are rare cases where a third partition could help us avoid recovery mode (AU in progress + random corruption on boot partition + system crash). We decided it's not worth the space in V1, but that may change.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 7</td>
+<td style="width:201px;height:15px"> rootfs C<br />
+</td>
+<td style="width:802px;height:15px"> Minimal-size partition for future third rootfs. Same reasons as above.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 8</td>
+<td style="width:201px;height:15px"> OEM customization<br />
+</td>
+<td style="width:802px;height:15px"> Web pages, links, themes, etc. from OEM.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 9</td>
+<td style="width:201px;height:15px"> reserved</td>
+<td style="width:802px;height:15px"> Minimal-size partition, for unknown future use.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 10</td>
+<td style="width:201px;height:15px"> reserved</td>
+<td style="width:802px;height:15px"> Minimal-size partition, for unknown future use.</td>
+</tr>
+<tr>
+<td style="width:79px;height:15px"> 11</td>
+<td style="width:201px;height:15px"> reserved</td>
+<td style="width:802px;height:15px"> Minimal-size partition, for unknown future use.</td>
+</tr>
+<tr>
+<td style="width:79px;height:16px"> 12</td>
+<td style="width:201px;height:16px"> EFI System Partition<br />
+</td>
+<td style="width:802px;height:16px"> Contains 64-bit grub2 bootloader for EFI BIOSes, and second-stage syslinux bootloader for legacy BIOSes.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the reserved partitions will actually be present on the image, so that the partition numbering remains constant from now on. Each minimal-size partition (including the C kernel and C rootfs) is only 512 bytes, and is shoved into some space lost to filesystem alignment (between the primary partition table and the stateful partition). 64M of empty space is set aside for use by those reserved partitions if they ever need it.</p>
+<p>Bootable USB keys have the same layout, except that kernel B and rootfs B are minimal-size, and partition 1 is limited to 720M. The total USB image size is around 1.5G. When the USB image is installed on a fixed drive, the B image is duplicated from the A image, and partition 1 is made as large as possible so that the entire disk is in use.</p>
+<p>The exact sizes and layouts are managed by a json file.  See the <a href="https://www.chromium.org/chromium-os/developer-guide/disk-layout-format">Disk Layout Format</a> page for more information.</p>
+<h4><a name="TOC-Partition-types"></a>Partition types</h4>
+Each GPT Partition Entry contains a PartitionTypeGUID to identify the purpose of the partition, a UniquePartitionGUID which is specific to an individual partition on an individual drive, a PartitionName (not the same as the filesystem's label, and apparently unused by the Linux kernel or userspace), and some Attributes bits that the Chrome OS BIOS will use to select the bootable image.<br />
+<br />
+There are several standard PartitionTypeGUIDs. We use two of them, and we’ve created three new ones to identify the Chrome OS kernel and rootfs partitions and to reserve partitions for future use.<br />
+<br />
+<table border="1" bordercolor="#888888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:200px;height:16px"> <b>Type</b></td>
+<td style="width:334px;height:16px"> <b>GUID</b></td>
+</tr>
+<tr>
+<td style="width:200px;height:33px"> Linux data (standard)</td>
+<td style="width:334px;height:33px"> ebd0a0a2-b9e5-4433-87c0-68b6b72699c7</td>
+</tr>
+<tr>
+<td style="width:200px;height:29px"> EFI System Partition (standard)</td>
+<td style="width:334px;height:29px"> c12a7328-f81f-11d2-ba4b-00a0c93ec93b</td>
+</tr>
+<tr>
+<td style="width:200px;height:16px"> ChromeOS kernel</td>
+<td style="width:334px;height:16px"> fe3a2a5d-4f32-41a7-b725-accc3285a309</td>
+</tr>
+<tr>
+<td style="width:200px;height:16px"> ChromeOS rootfs<br />
+</td>
+<td style="width:334px;height:16px"> 3cb8e202-3b7e-47dd-8a3c-7ff2a13cfcec</td>
+</tr>
+<tr>
+<td> ChromeOS firmware</td>
+<td> cab6e88e-abf3-4102-a07a-d4bb9be3c1d3</td>
+</tr>
+<tr>
+<td style="width:200px;height:16px"> ChromeOS future use</td>
+<td style="width:334px;height:16px"> 2e0a753d-9e48-43b0-8337-b15192cb1b5e</td>
+</tr>
+</tbody>
+</table>
+<br />
+<h4><a name="TOC-Partition-names"></a>Partition names</h4>
+At various times, Linux has used a number of means to refer to disk partitions. For the kernel command line, it may be by means of parameters like this:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>root=/dev/sda3</code><br />
+<code>root=LABEL=C-ROOT</code><br />
+<code>root=UUID=86f0f84d-e2rd0-41e7-ad44-df4faad61e73</code><br />
+</div>
+<br />
+For userspace mount points, those may correspond to paths like this:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>/dev/sda3</code><br />
+<code>/dev/disk/by-label/C-ROOT</code><br />
+<code>/dev/disk/by-uuid/86f0f84d-e2rd0-41e7-ad44-df4faad61e73</code><br />
+</div>
+<br />
+In those examples, when the kernel refers to a partition by its UUID, that UUID doesn’t come from the GPT. Each filesystem has its own UUID (and label), and that’s what the kernel looks at. Typically using the UUID notation requires starting udev in an initramfs, which takes extra time.<br />
+<br />
+For legacy or standard EFI BIOSes, the /dev/foo<b>N</b> format is used, to keep boot times to a minimum. This must be specified in the bootloader config file.  The Chrome OS BIOS and bootstub passes an additional argument on the kernel command line:<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>kern_guid=064af864-4b97-40c1-95ab-fec261760a19</code><br />
+</div>
+<br />
+This allows the kernel to identify the GPT partition from which it was loaded. The root partition is the next higher partition.</div>
+<div>
+<h4><a name="TOC-Partition-alignment"></a>Partition alignment</h4>
+The filesystem and kernel partitions are all 2MB aligned and sized. However, in the future we may move down to 1MB to be in sync with what other <a href="http://msdn.microsoft.com/en-us/library/dd758814%28v=sql.100%29.aspx" style="font-weight:normal">OSes</a><span style="font-weight:normal"> are doing.
+<h3><a name="TOC-Layout-on-disk"></a>Layout on disk</h3>
+The physical layout of the partitions does not have to match their order in the partition table. In fact, there are reasons why it might be advantageous that it doesn't. For example it may be necessary to resize some partitions, which is made much easier with certain physical layouts. Refer to the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/partition-resizing">Partition Resizing</a> document for details.<br />
+<br />
+Here’s the current fixed-disk layout:<br />
+<div style="display:block;text-align:left"></div>
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format/layout.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1284148304249/chromium-os/chromiumos-design-docs/disk-format/layout.png" /></a></div>
+<br />
+<h2><a name="TOC-Secure-boot"></a>Secure boot</h2>
+Only Chrome OS BIOS will implement secure boot from first power-on. Portions of the firmware are read-only, forming the basis of trust to validate the read/write portions of the firmware. Once the firmware has been validated, we will continue the boot process by reading the kernel from the disk.<br />
+<h3><a name="TOC-Trusting-the-GPT"></a>Trusting the GPT</h3>
+It is not possible to sign the GPT using public key encryption.  The contents of the GPT (in particular, the partition-dependent attributes fields for the kernel GPT entries) will change as autoupdate applies updates and devices reboot and attempt to use newly updated partitions.  Since the GPT is not signed and thus cannot be trusted, all firmware or software that accesses the GPT must pass security review.<br />
+<br />
+Firmware needs to sanity-check all GPT values before using them. Most forms of corrupted or damaged partition tables will just cause the firmware to read a portion of the drive that doesn't contain a valid kernel signature header, in which case the firmware initiates recovery mode. But we must also protect against malicious GPT entries that might open security holes, so if the GPT is suspicious or corrupted in ways that can’t be repaired, we can’t boot this device.<br />
+<h3><a name="TOC-Selecting-the-kernel"></a>Selecting the kernel</h3>
+There are at least two kernel partitions, to support autoupdate and accidental corruption.  Each kernel partition is paired with a rootfs partition; kernel A should only boot rootfs A, kernel B should only boot rootfs B, etc. The kernel partition is separate from the rootfs partition so that:<br />
+<ul><li>The firmware does not need to be able to parse a filesystem in order to read the kernel.  This allows using more exotic filesystems for rootfs in the future.</li>
+<li>The kernel and rootfs can use different algorithms for verified boot.  The kernel is verified using a single signature header; rootfs uses a more complex block-based algorithm.</li></ul>
+The GPT Partition Entry contains a 64-bit Attributes field. Bits 48-63 are available for use by a partition of any given type.<br />
+<br />
+Chrome OS Kernel partitions use the following attribute flags:<br />
+<br />
+<table border="1" bordercolor="#888888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:60px;height:15px"> <b>Bits</b></td>
+<td style="width:158px;height:15px"> <b>Content</b></td>
+<td style="width:468px;height:15px"> <b>Notes</b></td>
+</tr>
+<tr>
+<td style="width:60px;height:15px"> 63-57</td>
+<td style="width:158px;height:15px"> Unused</td>
+<td style="width:468px;height:15px"> </td>
+</tr>
+<tr>
+<td style="width:60px;height:46px"> 56</td>
+<td style="width:158px;height:46px"> Successful Boot Flag<br />
+</td>
+<td style="width:468px;height:46px">Set to 1 the first time the system has successfully booted from this partition (see the File System/Autoupdate design document for the definition of success).</td>
+</tr>
+<tr>
+<td style="width:60px;height:15px"> 55-52</td>
+<td style="width:158px;height:15px"> Tries Remaining</td>
+<td style="width:468px;height:15px">Number of times to attempt booting this partition. Used only when the Successful Boot Flag is 0.</td>
+</tr>
+<tr>
+<td style="width:60px;height:15px"> 51-48</td>
+<td style="width:158px;height:15px"> Priority</td>
+<td style="width:468px;height:15px">4-bit number: 15 = highest, 1 = lowest, 0 = not bootable.</td>
+</tr>
+<tr>
+<td> 47-0</td>
+<td> Reserved by EFI Spec</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<br />
+<br />
+Kernel partitions can be in the following states:<br />
+<br />
+<table border="1" bordercolor="#888888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="text-align:center;width:79px;height:28px"> <b>State</b></td>
+<td style="text-align:center;width:113px;height:28px"> <b>Priority</b></td>
+<td style="text-align:center;width:116px;height:28px"><b> Tries Remaining</b><br />
+</td>
+<td style="text-align:center;width:137px;height:28px"><b> Successful Boot Flag</b><br />
+</td>
+<td style="width:393px;height:28px"> <b>Description</b></td>
+</tr>
+<tr>
+<td style="text-align:center;width:79px;height:15px"> Active</td>
+<td style="text-align:center;width:113px;height:15px"> A, where A&gt;0</td>
+<td style="text-align:center;width:116px;height:15px"> 0</td>
+<td style="text-align:center;width:137px;height:15px"> 1</td>
+<td style="width:393px;height:15px">Kernel that has booted successfully at least once.</td>
+</tr>
+<tr>
+<td style="text-align:center;width:79px;height:31px"> Backup</td>
+<td style="text-align:center;width:113px;height:31px"> B, where A&gt;B&gt;0</td>
+<td style="text-align:center;width:116px;height:31px"> 0</td>
+<td style="text-align:center;width:137px;height:31px"> 1</td>
+<td style="width:393px;height:31px">Another kernel that has booted successfully but has lower priority than the active kernel.</td>
+</tr>
+<tr>
+<td style="text-align:center;width:79px;height:46px"> Updated</td>
+<td style="text-align:center;width:113px;height:46px"> C, where C&gt;A&gt;0</td>
+<td style="text-align:center;width:116px;height:46px"> T&gt;0</td>
+<td style="text-align:center;width:137px;height:46px"> 0</td>
+<td style="width:393px;height:46px"> Newly updated kernel, which has not booted successfully yet.  Since it has higher priority than the active kernel, it will be attempted next boot.</td>
+</tr>
+<tr>
+<td style="text-align:center;width:79px;height:88px"> Not bootable<br />
+</td>
+<td style="text-align:center;width:113px;height:88px"> 0</td>
+<td style="text-align:center;width:116px;height:88px"> 0</td>
+<td style="text-align:center;width:137px;height:88px"> 0</td>
+<td style="width:393px;height:88px"> Kernel partition that is not currently bootable:<br />
+<ul><li>In the process of being autoupdated</li>
+<li>Ran out of boot tries before booting successfully</li>
+<li>Failed its signature check</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<br />
+Using a Google-supplied library (in src/platform/vboot_reference/firmware), the BIOS searches the GPT to find the Chrome OS kernel with the highest Priority value and then runs the following checks on it:<br />
+<ol><li>Check that (Successful Boot Flag == 1) or (Tries Remaining &gt; 0). If Successful Boot Flag == Tries Remaining == 0, lower the Priority to 0 and find the next kernel. This was a kernel that failed its last boot try.</li>
+<li>Check the kernel signature header. If it’s invalid, and (Tries Remaining &gt; 0), set Tries Remaining = Priority = 0 and find the next kernel.</li>
+<li>Begin copying the kernel blob into RAM.</li>
+<li>Check the kernel blob signature as it’s copied. If it’s invalid, set Priority = 0 and find the next kernel.</li>
+<li>If Tries Remaining &gt; 0, decrement the Tries Remaining value in the partition table.</li>
+<li>Invoke the bootstub, which then launches the kernel. </li>
+</ol>
+If no valid kernel is found, we can’t boot this device.<br />
+<br />
+After the OS finishes booting successfully, it will modify its partition table entry, ensuring that Successful Boot Flag == 1 and Tries Remaining == 0. We can edit the other attribute fields manually if we need to change the primary boot partition.<br />
+<br />
+Here’s the flow in graphical form:<br />
+<br />
+<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format/flow.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1284148352980/chromium-os/chromiumos-design-docs/disk-format/flow.png" /></a></div>
+<br />
+<h2><a name="TOC-Kernel-partition-format"></a>Kernel partition format</h2>
+The same library that sanity-checks the GPT and selects the kernel partition also checks the kernel’s cryptographic signature. The kernel partition consists of the following structure:<br />
+<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format/kernel2.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1284148648651/chromium-os/chromiumos-design-docs/disk-format/kernel2.png" /></a></div>
+<br />
+<br />
+The first 64K bytes are the cryptographic signature header blob, which contains the keys and signatures needed to verify the rest of the kernel blob (plus a few pointers and version numbers). The kernel blob consists of the 32-bit part of the Linux kernel, a config file (just the kernel command line string at the moment), a mostly-complete zeropage table, and our bootloader stub to complete the transition from BIOS to kernel.<br />
+<br />
+As it’s verified, the kernel blob is copied into RAM starting at the 32-bit kernel entry location of 0x100000 on x86 (for ARM the address varies by sub-architecture). Once the verification is complete, the bootloader stub is invoked, which finishes initializing the params table and jumps to the kernel.<br />
+<br />
+<h3><a name="TOC-Quick-development"></a>Quick development</h3>
+Developers may want to do a rapid turnaround of the kernel only. This suggested procedure may help:<br />
+<br />
+1.  Install some image onto the hard disk.<br />
+2.  Reboot. It should boot the kernel from partition 4 and mount the rootfs from partition 5, but it could also use partitions 2 and 3, respectively.<br />
+3.  Check this from a console by running<br />
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="margin-left:40px"><code>rootdev -s</code><br />
+</div>
+</div>
+This shows where the rootfs is mounted.</span></div>
+<div>4.  Build the new kernel using <b>emerge-x86-generic kernel</b> or similar.  You'll need the <b>bzImage</b> (aka <b>vmlinuz</b>) file to create the signed kernel partition image. It's usually left in <i>/build/x86-generic/boot/</i><br />
+5.  You'll also need a <i>config.txt</i> file, which will specify the kernel command line. You can make your own, or just reuse the one that's left in <i>src/build/images/&lt;board&gt;/latest/</i> by the last build_image run.<br />
+6.  Create and sign the kernel partition image like this (in chroot):<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>     vbutil_kernel --pack new_kern.bin \</code><br />
+<code>       --keyblock /usr/share/vboot/devkeys/kernel.keyblock \</code><br />
+<code>       --signprivate /usr/share/vboot/devkeys/kernel_data_key.vbprivk \</code><br />
+<code>       --version 1 \</code><br />
+<code>       --config config.txt \</code><br />
+<code>       --bootloader /lib64/bootstub/bootstub.efi \</code><br />
+<code>       --vmlinuz /build/x86-generic/boot/vmlinuz</code><br />
+</div>
+7.  Copy <i>new_kern.bin</i> into partition 4 on the target (from console):<br />
+<div class="sites-codeblock sites-codesnippet-block" style="margin-left:40px"><code>scp USER@SOMEWHERE:new_kern.bin /tmp</code><br />
+<code>sudo dd if=/tmp/new_kern.bin /dev/sda4</code></div>
+8.  Reboot and you should be using your new kernel.<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>     uname -a</code></div>
+<br />
+<h3><a name="TOC-Changing-the-kernel-command-line"></a>Changing the kernel command line</h3>
+<p>
+Sometimes all one needs is to change the kernel command line, for instance to enable or disable the verified rootfs. This can be done as follows (moving the kernel blob between the target and host is required in case the keys are not available on the target):</p>
+<p>
+Move the kernel which needs modifying into a file (using the appropriate source device, <i>&lt;src_part&gt;</i> below is most likely to be <b>sda2</b>, <b>sda4</b>, or <b>sdb2</b> ):</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>sudo dd if=/dev/&lt;src_part&gt; of=/tmp/kernel.old</code></div>
+</div>
+<div>
+<p>Save the old kernel command line to a file:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>vbutil_kernel --verify /tmp/kernel.old --verbose | \</code><br />
+<code>  tail -1 &gt; /tmp/cmd.line.old</code></div>
+<p>Modify the command line as required and save it in a file (say <code>/tmp/cmd.line.new</code>). Repack the kernel blob using the new command line:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>vbutil_kernel --repack /tmp/kernel.new \</code><br />
+<code>  --config /tmp/cmd.line.new \</code><br />
+<code>  --signprivate &lt;private_key&gt; \</code><br />
+<code>  --oldblob /tmp/kern.old</code></div>
+<p>For the recovery kernel on a removeable device, <i>&lt;private_key&gt;</i> above is <b>recovery_kernel_data_key.vbprivk</b> and for the main kernel on the hard drive, the <i>&lt;private_key&gt;</i> is <b>kernel_data_key.vbprivk</b>. The full path to the key file is required, of course.</p>
+<p>Then verify things look OK:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>vbutil_kernel --verify /tmp/kernel.new --verbose </code></div>
+<p>
+Finally get your kernel back to the device it came from:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>sudo dd if=/tmp/kernel.new of=/dev/&lt;src_part&gt;</code></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/disk-format">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq92xoRUatk40f8uXrSqj82VMCwdgSisxZqpNnoIlq3YzCf-Qmxxeh1PMa3JuNcH4f4kAo5RV-UlxNIl45LKuHnMtV2JbwiQ07PAr6-HswNk-2I26Iy/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/threaded-task-tracking","deleted":false,"title":"Thread and Task Profiling and Tracking","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/threaded-task-tracking\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Thread and Task Profiling and Tracking","locale":"en","wuid":"wuid:gx:220a5f8f862e4f2f","revision":43,"path":"/developers/threaded-task-tracking","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"threaded-task-tracking","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Thread and Task Profiling and Tracking - The Chromium Projects" />
+<meta itemprop="name" content="Thread and Task Profiling and Tracking - The Chromium Projects" />
+<meta property="og:title" content="Thread and Task Profiling and Tracking - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Thread and Task Profiling and Tracking - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Thread and Task Profiling and Tracking</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><b><span style="font-size:large">Introduction</span></b></div>
+<div><br />
+</div>
+<div>Within Chromium, tasks are regularly dispatched between various threads, by "posting a task," or between processes, by receiving an IPC directive.  This code structure can make it difficult for a standard instruction profiler to understandably attribute execution costs.  It also makes it difficult to follow the flow of code in a debugger.</div>
+<div><br />
+</div>
+<div>At the <font face="'courier new', monospace">about:profiler</font> internal URL, Chromium provides a profiling and debugging infrastructure: It provides answers to questions such as: What tasks are taking a "long" time? What tasks are called "too often?"  What tasks are suffering "significant" queueing delay?  How busy is each thread? etc.</div>
+<div><br />
+</div>
+<div>This document describes some of the features supported by the <span style="font-family:courier new,monospace">about:profiler </span>infrastructure.</div>
+<div><br /></div><div><br /></div><div>
+<div><span style="font-size:large"><b>Overview</b></span></div>
+<div><br />
+</div>
+<div>The infrastructure described has three basic uses: </div>
+<div>
+<ol><li>performance profiling (to identify potential performance and jank optimizations);</li>
+<li>learning about the codebase (see what tasks run, and when); </li>
+<li>debugging (checking to see task are called the correct number of times).  </li>
+</ol>
+</div>
+<div><br />
+</div>
+<div>Posted-tasks and IPC tasks are tracked, along with their performance characteristics, across the life-cycle of each task.  Information is maintained about where each task was constructed/posted (function name, file and line number), along with the thread that was active when the task created.  After each task has been executed, information about the run of the task is tallied.  Information includes where it executed (thread, process, etc.), as well as counts and durations (time, queueing time, etc.)  All that information is compactly accumulated in real time, while Chromium is running.</div>
+<div><br />
+</div>
+<div>
+<div>The accumulated performance characteristics are all available during a any session.  Additional reference snapshots can be taken at any time during the execution of the browser. The results, as well as deltas between snapshots, can be viewed, sorted, aggregated, and filtered, all within the <font face="'courier new', monospace">about:profiler</font> page.</div>
+</div>
+<div><br />
+</div>
+<div>For learning about the codebase, is is very educational to perform some browsing actions, and then look and see what collection of chromium tasks were fired on various threads. Rather than pouring over the codebase, it is often more educational to look at these lists of tasks.  The <font face="'courier new', monospace"><a href="https://www.chromium.org/developers/how-tos/trace-event-profiling-tool">about:tracing</a></font> support is also extremely useful for more detailed investigation in this regard.</div>
+<div><br />
+</div>
+<div><font size="4"><b><br />
+</b></font></div>
+<div><font size="4"><b>Common Profiling Activities When Trying to Identify Performance Issues</b></font></div>
+<div><br />
+</div>
+<div><b>Overall Performance: Task Execution Counts</b></div>
+<div><br />
+</div>
+<div>The easiest way to improve performance is to do less work.  If you wish to identify tasks that are <font color="#0000ff">running "too often,"</font> you should bring up the <font face="'courier new', monospace">about:profiler</font> page, which will by default sort all entry by the number of times each task was performed (its "count").  The page will have a header above a table  that looks like:</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<table style="border-collapse:collapse;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">
+<thead style="font-family:sans-serif">
+<tr style="background-color:rgb(255,204,153);background-repeat:initial initial">
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">36,224,621</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">13,772,110</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">98,449</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">29,947</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">16 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">17 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">2 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">19 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">682 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">702 unique</td>
+</tr>
+<tr>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Count<span style="color:red">**</span></th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Total run time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Avg run time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Max run time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Avg queue time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Max queue time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Birth thread</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Exec thread</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Process type</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">PID</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Function name</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Source location</th>
+</tr>
+</thead>
+<tbody style="font-family:sans-serif">
+<tr></tr>
+</tbody>
+</table>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div><font face="'courier new', monospace"><br />
+</font></div>
+</div>
+</blockquote>
+<div><font face="arial, sans-serif">The red asterisks in the column heading "Count" indicate that the results are sorted by that column. </font><span style="font-family:arial,sans-serif">The row above the column headings provides an aggregate view of the table that appears below the he</span></div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<div>
+<div>Keep in mind that although high-frequency tasks (tasks with high "Counts") may have a short run times, the overhead for such tasks is not included in their run times. Overhead includes construction, posting to a queue (via locks), getting time slices that other tasks could have enjoyed, cleaning up after a task is executed, etc.  As a result, reduction in the number of tasks, for <b><i>very </i></b>high frequency tasks may be very beneficial to performance.</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><b>CPU Utilization: Where Is The Time Spent?</b></div>
+<div><br />
+</div>
+<div>If you wish to look for<font color="#0000ff"> hot spots</font>, or tasks that are using up a lot of the CPU time, click on the "Total Run Time" column heading to sort on that column.  All times shown are in milliseconds.</div>
+<div><br />
+</div>
+<div>The sorted table will highlight tasks which have total execution time that is large. That statistic means that the product of the number of executions, and the execution per run, was high.  If that task can be made more efficient, it may have a positive impact on overall CPU utilization. <font color="#ff0000"> Caveat: by default, Execution Time is measured with a wall clock</font>, not based on activity of the CPU on the thread. Beware of tasks that block, such as waiting for a DNS resolution.</div>
+</div>
+<div><br />
+</div>
+<div><b>Major Jank or Delay In Responsiveness</b></div>
+<div><br />
+</div>
+<div>When the browser is not responsive, the most common cause is that a task is running too long, and has blocked the ability of some critical thread to respond.  Most obviously, this can happen on the CrBrowserMain (i.e., the UI thread in the browser process).  It is also common to see this caused by a slow task on the Chrome_IOThread (i.e., the thread used for IPC communications with the renderer).  At times, some threads send messages to other threads to get work results, and may be waiting (without officially "blocking") for a posted response, so almost any blocked thread *might* be able to cause jank, but the Chrome_FileThread (i.e., the thread that reads and writes from disk) is a most common culprit.</div>
+<div><br />
+</div>
+<div>To see what tasks have taken an unusually long time to execute, click to sort on the "Max Run Time" column. </div>
+<div><br />
+</div>
+<div>It is often helpful to view the results on various processes separately, as Jank tends to be caused by delays in the Browser process.  To separate out the results, by process, find the drop-down box labeled "Group By" at the top of the page.  Select "Process Type" to cause the browser process to be isolated in its own table.  Once you select that, a second drop down will appear to the immediate right of the first.  You should then select "Exec Thread" in that pull-down.  The top of the page will then look like:</div>
+<div><br />
+</div>
+<div><b style="font-family:sans-serif">Group by: </b><span style="font-family:sans-serif">
+<option value="">---</option>
+<option value="10">Process type</option>
+<option value="11">PID</option>
+<option value="8">Birth thread</option>
+<option value="9">Exec thread</option>
+<option value="12">Function name</option>
+<option value="13">Source location</option>
+<option value="14">File name</option>
+<option value="15">Line number</option>
+<option value="">---</option>
+<option value="10">Process type</option>
+<option value="11">PID</option>
+<option value="8">Birth thread</option>
+<option value="9">Exec thread</option>
+<option value="12">Function name</option>
+<option value="13">Source location</option>
+<option value="14">File name</option>
+<option value="15">Line number</option>
+<option value="">---</option>
+<option value="10">Process type</option>
+<option value="11">PID</option>
+<option value="8">Birth thread</option>
+<option value="9">Exec thread</option>
+<option value="12">Function name</option>
+<option value="13">Source location</option>
+<option value="14">File name</option>
+<option value="15">Line number</option>
+</span><span style="font-family:sans-serif;display:inline!important;float:none"> </span></div>
+<div><br />
+</div>
+<div>Separate tables will now be visible to make it more visible, for each thread, what tasks is taking a "long time."  You'll also notice that since each table only list a single process type and a single execution thread, that the corresponding columns are no longer shown in each table.</div>
+<div><br />
+</div>
+<div>After you have identified a thread that appears to have abnormally slow processes (that might cause jank), it is often helpful to see what tasks were delayed (an that thread!) by such excesses.  </div>
+<div><br />
+</div>
+<div>To see what tasks have been forced to wait, click to sort on the Max Queue Time.  Assuming the observed execution time was long, you'll tyically see a number of tasks that have a commensurate queuing delay.</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><b>Quickly Drill Down</b></div>
+<div><br />
+</div>
+<div>If you know what you wan to look at (example: a specific file; a specific thead; etc), you can instantly filter all your results to only show rows that contain an arbitrary string.  The text box at the top-right of the <font face="'courier new', monospace">about:profiler</font> page provides automatic case-insensitive filtering.</div>
+<div><br />
+</div>
+<div> For example, if you wanted to only see results that contain the word "browser" (perhaps, items running on the "browser" thread), simply enter the text "browser" (without the quotes) into the box at the top right.  Similary, the box could be used to illuminate only lines that contain "sync," or lines that contain only "AnimationContainer::SetMinTimerInterval".</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<div>
+<div><b style="font-size:large">Understanding Profiler Results from</b><span style="font-size:large"> </span><span style="font-family:courier new,monospace"><font size="4">about:profiler</font></span></div>
+<div><br />
+</div>
+<div>When you visit the URL <font face="'courier new', monospace">about:profiler</font>, you'll get a set of lines which might begin with the following (entry and select boxes don't seem to appear in this documentation):</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<table style="font-family:sans-serif" width="100%">
+<tbody>
+<tr>
+<td><b>Group by: </b><span>
+<option value="">---</option>
+<option value="10">Process type</option>
+<option value="11">PID</option>
+<option value="8">Birth thread</option>
+<option value="9">Exec thread</option>
+<option value="12">Function name</option>
+<option value="13">Source location</option>
+<option value="14">File name</option>
+<option value="15">Line number</option>
+</span> <b>Sort by: </b><span>
+<option value="">---</option>
+<optgroup></optgroup>
+<option value="1">Count</option>
+<option value="2">Total run time</option>
+<option value="3">Avg run time</option>
+<option value="4">Max run time</option>
+<option value="5">Total queue time</option>
+<option value="6">Avg queue time</option>
+<option value="7">Max queue time</option>
+<option value="8">Birth thread</option>
+<option value="9">Exec thread</option>
+<option value="10">Process type</option>
+<option value="11">PID</option>
+<option value="12">Function name</option>
+<option value="13">Source location</option>
+<option value="14">File name</option>
+<option value="15">Line number</option>
+<optgroup></optgroup>
+<option value="-1">Count (DESC)</option>
+<option value="-2">Total run time (DESC)</option>
+<option value="-3">Avg run time (DESC)</option>
+<option value="-4">Max run time (DESC)</option>
+<option value="-5">Total queue time (DESC)</option>
+<option value="-6">Avg queue time (DESC)</option>
+<option value="-7">Max queue time (DESC)</option>
+<option value="-8">Birth thread (DESC)</option>
+<option value="-9">Exec thread (DESC)</option>
+<option value="-10">Process type (DESC)</option>
+<option value="-11">PID (DESC)</option>
+<option value="-12">Function name (DESC)</option>
+<option value="-13">Source location (DESC)</option>
+<option value="-14">File name (DESC)</option>
+<option value="-15">Line number (DESC)</option>
+<option value="">---</option>
+<optgroup></optgroup>
+<option value="1">Count</option>
+<option value="2">Total run time</option>
+<option value="3">Avg run time</option>
+<option value="4">Max run time</option>
+<option value="5">Total queue time</option>
+<option value="6">Avg queue time</option>
+<option value="7">Max queue time</option>
+<option value="8">Birth thread</option>
+<option value="9">Exec thread</option>
+<option value="10">Process type</option>
+<option value="11">PID</option>
+<option value="12">Function name</option>
+<option value="13">Source location</option>
+<option value="14">File name</option>
+<option value="15">Line number</option>
+<optgroup></optgroup>
+<option value="-1">Count (DESC)</option>
+<option value="-2">Total run time (DESC)</option>
+<option value="-3">Avg run time (DESC)</option>
+<option value="-4">Max run time (DESC)</option>
+<option value="-5">Total queue time (DESC)</option>
+<option value="-6">Avg queue time (DESC)</option>
+<option value="-7">Max queue time (DESC)</option>
+<option value="-8">Birth thread (DESC)</option>
+<option value="-9">Exec thread (DESC)</option>
+<option value="-10">Process type (DESC)</option>
+<option value="-11">PID (DESC)</option>
+<option value="-12">Function name (DESC)</option>
+<option value="-13">Source location (DESC)</option>
+<option value="-14">File name (DESC)</option>
+<option value="-15">Line number (DESC)</option>
+</span></td>
+<td style="text-align:left"><span style="color:blue;text-decoration:underline">[snapshots]</span> <span style="color:blue;text-decoration:underline">[columns]</span> </td>
+</tr>
+</tbody>
+</table>
+<hr style="font-family:sans-serif" />
+<div style="font-family:sans-serif">
+<div style="margin-top:2ex;margin-bottom:2ex">
+<table style="border-collapse:collapse;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">
+<thead>
+<tr style="background-color:rgb(255,204,153);background-repeat:initial initial">
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">19,402</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">187,008</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">10</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">9,338</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">217</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">9,932</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">15 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">17 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">2 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">18 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">415 unique</td>
+<td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">430 unique</td>
+</tr>
+<tr>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Count<span style="color:red">**</span></th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Total run time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Avg run time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Max run time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Avg queue time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Max queue time</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Birth thread</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Exec thread</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Process type</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">PID</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Function name</th>
+<th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255);background-repeat:initial initial">Source location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">990</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">249</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">28</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">7</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">363</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_CacheThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">disk_cache::InFlightIO::OnIOComplete</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cdisk_cache%5Cin_flight_io.cc&amp;line=62" target="_blank">in_flight_io.cc [62]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">990</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">4,675</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">5</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">255</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">23</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">276</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_CacheThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">disk_cache::InFlightBackendIO::PostOperation</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cdisk_cache%5Cin_flight_backend_io.cc&amp;line=472" target="_blank">in_flight_backend_io.cc [472]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">961</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">249</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">203</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">14</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">net::SpdySession::ReadSocket</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cspdy%5Cspdy_session.cc&amp;line=773" target="_blank">spdy_session.cc [773]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">831</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">4</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">18</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">282</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">CrBrowserMain</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">IPC::ChannelProxy::Send</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cipc_channel_proxy.cc&amp;line=357" target="_blank">ipc_channel_proxy.cc [357]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">561</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">42</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">278</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">CrBrowserMain</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">IPC::ChannelProxy::Context::AddFilter</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cipc_channel_proxy.cc&amp;line=236" target="_blank">ipc_channel_proxy.cc [236]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">470</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3,480</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">7</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1,286</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">986</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">2,960</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">CrBrowserMain</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">IPC::ChannelProxy::Context::OnMessageReceivedNoFilter</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cipc_channel_proxy.cc&amp;line=116" target="_blank">ipc_channel_proxy.cc [116]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">405</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">297</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">30</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">6</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">363</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">WorkerThread-*</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">base::win::ObjectWatcher::DoneWaiting</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cwin%5Cobject_watcher.cc&amp;line=130" target="_blank">object_watcher.cc [130]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">404</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">_IpcMessageHandlerClass::OnDataReceivedACK</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cbrowser%5Crenderer_host%5Cresource_dispatcher_host.cc&amp;line=408" target="_blank">resource_dispatcher_host.cc [408]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">379</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">43</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">2</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">703</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">2,684</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">CrBrowserMain</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">`anonymous-namespace'::ChromeCookieMonsterDelegate::OnCookieChanged</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cbrowser%5Cprofiles%5Cprofile_io_data.cc&amp;line=95" target="_blank">profile_io_data.cc [95]</a></td>
+</tr>
+<tr>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">362</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">1,275</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">2,962</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">CrBrowserMain</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">TaskManagerModel::NotifyBytesRead</td>
+<td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cbrowser%5Ctask_manager%5Ctask_manager.cc&amp;line=971" target="_blank">task_manager.cc [971]</a></td>
+</tr>
+<tr style="background-color:rgb(238,238,238);background-repeat:initial initial">
+<td colspan="12" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">1194 rows<span style="color:red"> (1184 hidden) </span>Show noneShow moreShow all</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<span style="color:blue;text-decoration:underline;font-family:sans-serif">[Reset tracking data]</span></div>
+<div><br />
+</div>
+<div>Before describing the top line, it is significant to clarify what each of the columns presented in any table are.  The columns are:</div>
+<div>
+<ol><li>Count:: The number of times this task was observed to have run.  If the execution thread is "Still running," then it has not completed, and the actual execution thread is unknown (it might not even have started!).</li>
+<li>Total run time: The sum of the run times for all tasks listed on this row.</li>
+<li>Avg run time: The quotient of the Total run time column divided the Count column.</li>
+<li>Max run time: The largest single Run time for the task in this row.</li>
+<li>Avg queue time: The average, over all runs of this task, of the queuing delay the task encountered. If this was an ordinary task, the queuing delay is measured from the birth (construction) of the task, until the task began. If this was a PostDelayedTask, then the delay is measured from when the task was asked to run, until it actually ran. For IPC tasks, the queuin delay is always listed as zero (TBD: make this measure interprocess latency).</li>
+<li>Max queue time: The largest singular queuing delay observed for this row.</li>
+<li>Birth thread: The thread on which this task was constucted.</li>
+<li>Exec Thread: The thread on which this task ran.</li>
+<li>Process type: An enumerated list of process types, currently including "Browser" and "Tab" (meaning Renderer).  It will soon include GPU, Plugin, etc.).</li>
+<li>PID: The operating system Process ID associated with the process.  This can be used to (for example) distinguish various renderer processes.</li>
+<li>Function Name:  Usually the name of function where the task was constructed (not actually the top level function name for the task in this row). If this is an IP task, then it is the name of the IPC routine that handled the incoming request.  On some compilers, this will templete parameters (if applicable), while on other compilers (gcc?), it will only include the name of the templete.  In such cases, there may be indistinguishable rows in the profile.</li>
+<li>Source location: The file and line number for the function where this task was created.  Clicking on the link in this column will open a new window, displaynig the actual source code specified.</li>
+</ol>
+</div>
+<div><br />
+</div>
+<div><b>Top Line Elements</b></div>
+<div><br />
+</div>
+<div>The first line provides pull down boxes to organize and filter what appears in the table(s).  There are currently 4 parts on this headline, such as the following (pulldown and text entry boxes do not appear in this documentation :-(  ):</div><div><br /></div><div><table style="font-family:sans-serif" width="100%"><tbody><tr><td><b>          Group by: </b>  <b>Sort by: </b></td><td style="text-align:left"><span style="color:blue;text-decoration:underline">[snapshots]</span> <span style="color:blue;text-decoration:underline">[columns]</span> </td></tr></tbody></table></div><div><br /></div><div>. The parts are:</div>
+<div>
+<ol><li>Pulldown box (labeled <b>Group by</b>) to select presentation of multiple tables, rather than one table.  If an option is selected (such "Exec" thread) then a separate table is presented for each distinct value of the selected option. When an option is selected, then an additional pulldown is provided, to select funther partitioning of the tables.</li>
+<li>Pulldown box (labeled <b>Sort by</b>) to select the sort order.  Generally, is it easier to click on the column headings to change the sort order, but these pulldown can be used when several levels of sorting are requested.  For instance, you can select a primare sort on Count, and a secondary sort on Total Execution time.</li>
+<li>A link to enable/disable Snapshot mode. When this mode is enabled, additional snapshots of data can be obtained, and a delta between any two snapshots can be selected for examination.</li>
+<li>A link to show a more complete list of columns and options.  You can select this, and then alter whether some columns are shown or not (to make the tables less wide??), or to merge similar rows (example: Merge all similar rows in the same browser type by not distingushing based on PID).  By default, merging of  Worker Threads and PAC (Proxy Auto Config) threads is performed, based on the the "merge similar threads" checkbox.</li>
+<li>An instant filter box.  Any text typed into this box will be matched (case insensitive) against all the information known about the row (i.e., threads, function, location, etc).  Only matching rows will be shown in the table(s).</li>
+</ol>
+</div>
+<div><br />
+</div>
+<div><b>Table Elements</b></div>
+<div><br />
+</div>
+<div>Each table consists of 4 groups of rows.  In addition, if multiple tables are presented, after a "Group by" pulldown is selected, there may be a title for the table. The title for table indicates what rows have been selected for presentation in the table.  For example, a selection to Group by "Exec thread" was selected, then one possible title is "Exec thread = CrBrowserMain".</div>
+<div><br />
+</div>
+<div>The following are the 4 groups of rows in each table (with sample lines taken from the table shown above):</div>
+<div><br />
+</div><div><br /><table style="border-collapse:collapse;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><thead><tr style="font-family:sans-serif;background-color:rgb(255,204,153)"><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">19,402</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">187,008</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">10</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">9,338</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">217</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">9,932</td><td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">15 unique</td><td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">17 unique</td><td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">2 unique</td><td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">18 unique</td><td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">415 unique</td><td align="center" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">430 unique</td></tr><tr style="font-family:sans-serif"></tr></thead></table></div><div><br /></div>
+</div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div>1. Summary row: This singular row presents the aggregate results for all rows present in the table.  For example, it' Count column contains sums the Count column in each row, while its Max exec time columns contains the maixum of all Mac exec time columns in each row.</div></div></div><div><br /></div></blockquote><table style="font-family:sans-serif;border-collapse:collapse;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><thead><tr><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Count<span style="color:red">**</span></th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Total run time</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Avg run time</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Max run time</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Avg queue time</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Max queue time</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Birth thread</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Exec thread</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Process type</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">PID</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Function name</th><th style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;background-color:rgb(224,236,255)">Source location</th></tr></thead><tbody><tr></tr></tbody></table><br /><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div>2. Header Row: This singular row contains the column headings for the table. Headings are only shown for columns that are presented in the table, and tihs list my be varied by selecting various elemens of the Top Line described earlier. Clicking on any elemet of this row will cause the table to be sorted based on that row.  A second click will cause a reverse sort.</div></div></div><div><br /></div></blockquote><div><table style="font-family:sans-serif;border-collapse:collapse;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><tbody><tr><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">990</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">249</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">0</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">28</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">7</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">363</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_CacheThread</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Chrome_IOThread</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">Browser</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px;text-align:left">3036</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px">disk_cache::InFlightIO::OnIOComplete</td><td style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(119,119,119);border-right-color:rgb(119,119,119);border-bottom-color:rgb(119,119,119);border-left-color:rgb(119,119,119);padding-right:4px;padding-left:4px"><a href="http://chromesrc.appspot.com/?path=.%5Cdisk_cache%5Cin_flight_io.cc&amp;line=62" target="_blank">in_flight_io.cc [62]</a></td></tr></tbody></table></div><br /><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div>3. Data Rows: This section may contain 0 or more rows of data, each corresponding to a collection of runs of tasks. The final cell is clickable, and provides quick access to a recent copy of the source code, at the point of interest.</div></div></div><div><br /></div></blockquote><span style="font-family:sans-serif;background-color:rgb(238,238,238)">1194 rows</span><span style="font-family:sans-serif;background-color:rgb(238,238,238);color:red"> (1184 hidden)  </span><span style="font-family:sans-serif;background-color:rgb(238,238,238)">Show none  Show more  Show all</span> <br /><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><br /></div><div><div><div>4..Display Control Row: This singular final row can be used to select, a view of additional or fewer rows of the Data Row section. It contains buttons to request viewing of additional lines, or to reduce viewed lines.  It also shows how many lines a table has.  By default, only the first 30 rows of a single table are visible. When multiple tables are presented, then a smaller initial number of rows are present. </div></div></div></blockquote><div><div><div><ol>
+</ol>
+<div><b><font size="2">Final Link: Reset Tracking data</font></b></div>
+<div><b><font size="2"><br />
+</font></b></div>
+<div><font size="2">At the very bottom of the about:profile page is a link for Reseting Tracking data.  This link sulfaces a useful hack until snapshot functionality can provide the maximum value between two snapshots.  The link can be used to force all data entries in all rows of the browser to zero.  The next snapshot (or page reload) will show all new data, an dwill, as a result, show the max value since the last reset.  The reset is done using various hackery, and minor miscounts are possible.  As a result, this is really a hack.  Once the snapshot facility better supports max, this link will be removed from the UI.</font></div>
+<div><font size="2"><br />
+</font></div>
+<div><b><span style="font-size:large"><br /></span></b></div><div><b><span style="font-size:large">FAQ
+</span></b></div><div><b><span style="font-size:large"><br /></span></b></div>
+<div><b><span style="font-size:large">I'd like to see just the tasks that appear between two distinct points in time.  How do I avoid seeing all the other data?</span></b></div>
+</div>
+<div><br />
+</div>
+<div>On the top line, select the Snapshot link.  When that is selected you will see the data and time of each data collection effort.  Instead of hitting reload, you can click the snapshot button, and acquire another image of the profiler state of the browser.  If you click on any two lines, then you will see the changes that have taken place between those two snapshots.  When you click on only one line, then you'll see the data from startup through that point in time.</div>
+<div><br />
+</div>
+<div>note: Max is not currently supported in the delta between two points.  That feature will be supported RSN.</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><font size="4"><b><br />
+</b></font></div>
+<div><span style="font-size:large"><b>How much does this profiling and analysis impact performance?</b></span></div>
+<div><br />
+</div>
+<div>There is very little measurable performance impact. If you'd like to disable the tracking, use the command line switch <font face="'courier new', monospace">--enable-tracking=0</font></div>
+<div><br />
+</div>
+<div>The implementation attempts to gather all this information across all threads with asymptotically zero locking, zero atomic operations, and a very small amount of memory (that does not grow after all birth locations and associated destruction threads have been observed at least once).  The details of how this achieved is provided in a long comment atop the file <font face="'courier new', monospace">src/base/tracked_objects.h,</font><font face="arial, sans-serif"> as well as a forth-coming video and associated slide presentation.</font></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<div><span style="font-size:large"><b>Basic Debugging Assistance: How did *this* task get posted?</b></span></div>
+<div><br />
+</div>
+<div>When a breakpoint is hit in a debugger on a given thread, the stack often starts with a message loop running a task, and there is very little information about what part of the codebase truly caused that task to be run.   When a newbie developer is trying to follow the flow of events in Chromium, it is often difficult to understand the connection between (for example) the IO Thread, the File Thread, and the Main UI Thread.  The infrastructure for task tracking provides basic information to see through these posted task transitions.</div>
+<div><br />
+</div>
+<div>Assuming you've reached a breakpoint of interest, but the top of the call stack shows a message loop, and the calling of a Run() method, then you are perfectly set up to see the source of any task.  Most debuggers will traverse to the following base class of interest seamlessly, but here is the more complete description of where to look to find the answer (a specific file and line number).</div>
+<div><br />
+</div>
+<div>
+<ol><li>Find the level of the stack that has the Run() method (typically in the <font face="'courier new', monospace">message_loop.cc</font> file), and look at the Task instance that is calling Run().</li>
+<li>The Task instance has a base class <a href="https://code.google.com/p/chromium/codesearch#chromium/src/base/tracking_info.h&amp;q=TrackingInfo&amp;sq=package:chromium&amp;type=cs">TrackingInfo</a>.</li>
+<li>The TrackingInfo base class has an member birth_tally of type <a href="https://code.google.com/p/chromium/codesearch#chromium/src/base/tracked_objects.h&amp;q=Births&amp;sq=package:chromium&amp;type=cs&amp;l=234">Births</a>.</li>
+<li>That Births instance in turn has a base class BirthOnThread, which has a member location_ of type Location.</li>
+<li>Finally, the Location instance will contain the function_name_, the file_name_, and the line_number_ indicating where the task was posted (typically just after construction).</li>
+</ol>
+</div>
+<div><br />
+</div>
+</div>
+<div><br />
+</div>
+<hr />
+<div>Please address comments and suggestions to Jim Roskind a.k.a., jar at chromium.org.</div>
+<div><br />
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/threaded-task-tracking">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq97-iQAy53hwK-79STE5oqa4awnNoe9Vh1CZm3OTHBUxK-h5fC7vWuzRCo4z5LPEZjuA0B6mIo2CvXOAdTGfKyyWTUJS1b_7IfcqGftpLLzx5F8aNN/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

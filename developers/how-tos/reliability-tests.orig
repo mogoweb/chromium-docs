@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/reliability-tests","deleted":false,"title":"Reliability Tests","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/how-tos/reliability-tests\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Reliability Tests","locale":"en","wuid":"wuid:gx:5acf0bee5edf37d7","revision":18,"path":"/developers/how-tos/reliability-tests","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"reliability-tests","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Reliability Tests - The Chromium Projects" />
+<meta itemprop="name" content="Reliability Tests - The Chromium Projects" />
+<meta property="og:title" content="Reliability Tests - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Reliability Tests - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1239730143565/developers/how-tos/reliability-tests/reliability_tests_flow_chart.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1239730143565/developers/how-tos/reliability-tests/reliability_tests_flow_chart.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Reliability Tests</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<h3><a name="TOC-Note:-As-of-1-24-2012-the-reliability-bots-have-been-providing-no-real-results-for-6-12-months.-Even-green-builds-were-returning-warning-codes-that-alerted-to-no-access-to-data.-This-has-been-a-known-issue-while-a-replacement-system-is-constructed.-Please-"></a>Note: As of 1/24/2012, the reliability bots have been providing no real results for 6-12 months.  Even green builds were returning warning codes that alerted to no access to data.  This has been a known issue while a replacement system is constructed.  Please ignore any purple/offline bots for now.</h3><h3><a name="TOC-1"></a><br /></h3><h3><a name="TOC-Understanding-reliability-test-results"></a>
+ Understanding reliability test results
+</h3>
+<br />
+The Chromium Buildbot runs a large scale set of tests called the
+distributed reliability tests.  This system will automatically test new
+builds against thousands of pages from the web.  It will also fuzz-test
+the user interface against thousands of possible user action
+sequences.  The goal of this testing is to catch crashes early, in
+particular crashes that users are likely to see.<br />
+<br />
+The results for each run are available on the <a href="http://build.chromium.org/" title="Buildbot">Buildbot</a>, see the <a href="http://build.chromium.org/buildbot/waterfall/waterfall?builder=Win%20Reliability" title="Chromium Reliability">Win Reliability</a>
+builder.  Because each run takes 30-45 minutes, several changes are
+often batched together in the same run.  To look at the list of changes
+that went into a particular run, click on the "stdio" link of a
+reliability test run and find something like the following near the
+top:
+<div>
+<pre style="font-family:Courier New;margin-right:0px;margin-left:0px"><span style="border-collapse:separate;font-size:13px">Will stage build r15671 and get the complete result of previous build r15668.</span></pre><pre style="margin-right:0px;margin-left:0px"><font size="3"><span style="border-collapse:separate;font-size:13px"><font face="arial, sans-serif">or</font></span></font></pre><pre style="font-family:Courier New;margin-right:0px;margin-left:0px"><span style="border-collapse:separate;font-family:Times New Roman;white-space:normal"><div><font face="'Courier New'"><span style="white-space:pre"><span style="font-family:Times New Roman;white-space:normal"><pre><span style="font-family:Courier New,courier,monotype"><span style="font-size:small">Will get the partial result of current build r15668.<br /></span></span></pre><div><font face="arial, sans-serif" size="3"><span style="font-size:13px;white-space:pre">In either case, it<font face="arial, sans-serif"> </font><font face="arial, sans-serif">t</font><font face="arial, sans-serif">e</font><font face="arial, sans-serif">l</font><font face="arial, sans-serif">l</font><font face="arial, sans-serif">s</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">y</font><font face="arial, sans-serif">o</font><font face="arial, sans-serif">u</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">t</font><font face="arial, sans-serif">h</font><font face="arial, sans-serif">e</font><font face="arial, sans-serif"> corresponding </font><font face="arial, sans-serif">s</font><font face="arial, sans-serif">v</font><font face="arial, sans-serif">n</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">r</font><font face="arial, sans-serif">e</font><font face="arial, sans-serif">vision of the build against which the test was run.</font></span></font></div><div><font face="Arial"><span style="border-collapse:collapse"><br /></span></font></div><div><font face="Arial"><span style="border-collapse:collapse">Similarly, look for the previous successful reliability result and find its revision, then you get the range of changes that turn the test to red.  One way of quickly examining the list of changes that went in between two revisions is to use the following URL template:</span></font></div><div><font face="Arial"><span style="border-collapse:collapse"><pre style="font-family:Courier New;margin-right:0px;margin-left:0px"><span>http://build.chromium.org/buildbot/perf/dashboard/ui/changelog.html?url=/trunk/src&amp;mode=html&amp;range=SUCCESS_REV:FAILURE_REV</span></pre></span></font></div></span></span></font></div></span></pre>
+The reliability tests use a set of criteria to determine whether or not
+the build should fail (i.e. turn red).  "New" crashes, that is crashes
+that are not already marked as known, will trigger a failure. 
+Additionally, if the crash rate is simply too high this will also cause
+the build to fail.<br />
+<br />
+When a new crash occurs during a test, its crash dump is analyzed and a
+stack trace is produced for the functions that were on the stack at the
+point of the crash.  This stack trace is compared against a list of
+known crashes.  If none of the crashes in the known crashes list match
+the crash, the crash is considered new and the build will fail.<br />
+<br />
+This system is not perfect.  Crash stacks for the same crash may change
+or have minor variants, causing them not to match any known crash and
+be incorrectly reported as new.  In other words, false positives are
+possible.  As described below, properly constructing a crash signature
+pattern of the crash is the key to reducing the number of false
+positives.  Over time, the system has proven to work well despite
+occasional false positives. <br />
+<br />
+</div>
+<div>
+<h4><a name="TOC-Okay-so-what-do-I-do-if-the-build-turns-red-"></a><font size="2">Okay, so what do I do if the build turns red?</font>
+</h4>
+<div>Most importantly, don't ignore it.  Please fix it ASAP following
+the instructions in this section.  Contact ace@chromium.org for more questions.</div>
+<div>
+<br />
+</div>
+<div> A red build may be the result of several factors.  It could mean
+that a new crash has been introduced, it could mean that there are too
+many crashes for the product to be considered stable, or it could be a
+false positive.  To help you identify what needs to be done in each
+case, use the following flow chart.  More details on each step are
+explained below.<br />
+</div>
+<div>
+<br />
+</div>
+<div>
+<div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/how-tos/reliability-tests/reliability_tests_flow_chart.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1239730143565/developers/how-tos/reliability-tests/reliability_tests_flow_chart.png" /></a></div>
+<div>
+<br />
+<br />
+ The numbered steps below correspond to the steps in the above flow chart.<br />
+<br />
+</div>
+<ol><li> First, identify what the cause of the build failure was. 
+This will be listed in the reliability test output, which you can find
+by clicking on the "stdio" link of the reliability test run.  If the
+build failed because of an unknown crash, the output will say
+"REGRESSION: NEW crash stack traces found".  If the build failed
+because there were too many crashes, the output will say "REGRESSION:
+Significant increase on crash rate".<br />
+<br />
+</li><li>
+If the failure was due to a significant crash rate increase, it's a
+good idea to close the tree and revert the changes that likely caused
+the issue.  Follow the link near the top of the test output to see the
+list of changes in this run (see previous section for more info).<br />
+<br />
+</li><li>
+If the failure was due to a new crash, first check whether or not the
+crash is a variant of one of the current known crashes.  The known
+crashes list is located at:<br />
+<br />
+ src/chrome/test/data/reliability/known_crashes.txt<br />
+<br />
+Open this file in your favorite text editor.  This file contains crash
+signature patterns for known crashes, based on crash signatures.  Some definitions before proceeding:<br />
+<br />
+<ul><li>
+<b>Crash stack</b>: the call stack of all functions when the crash happened.</li><li><b>Crash signature</b>: a concatenation of all functions in chrome.dll on the crash stack.</li><li>
+<b>Crash signature pattern</b>:
+a pattern intended to match a specific crash signature or a certain
+class of crash signatures.  A pattern is intended to be a generalized,
+yet still identifying, form of a particular crash.  It can be a prefix
+of a crash signature, a substring, or something more complex such as a
+regular expression. </li></ul>
+<br />
+ For more information, see the documentation at the top of known_crashes.txt.<br />
+<br />
+ The crash signature for the new crash will be listed on the reliability test output.  A new crash will look like the following:<br />
+<br />
+<pre><span>INFO: NEW stack trace signature found:<br />file_util::writefile___`anonymous namespace'::savelatertask::run___messageloop::runtask___messageloop::dowork...</span></pre>
+<br />
+Check if there are any crash signature patterns in the known crashes
+list that look very similar to the signature of the new crash.  If
+there are, the current signature pattern in the known crashes list may
+not be general enough.  You may want to make it more general (for
+example, by removing some functions from it) or you my need to add
+another pattern to catch this variant of the crash.<br />
+<br />
+</li><li>
+ If the new crash does not appear to be in the known crashes list, see if there is already a bug on file in the <a href="http://code.google.com/p/chromium/issues" title="Chromium issue tracker">Chromium issue tracker</a>. 
+Try searching for something like the top function on the stack, this
+usually works fairly well.  Try searching all issues, instead of just
+open ones, to see if a bug was already filed and closed (for example as
+WontFix).  Sometimes bugs will be closed due to a lack of
+information/reproducibility.<br />
+<br />
+</li><li> Take a look at the
+severity of the crash, the number of occurrences, and the changes that
+may have caused the crash.  Use your best judgment to determine whether
+or not reverting changes is necessary.<br />
+<br />
+For example, we typically don't revert WebKit merges on account of new
+crashes.  Instead, we usually file bugs and wait for the fixes to go in
+upstream.<br />
+<br />
+</li><li>
+If you decide not to revert any changes, please file a bug.  In the
+bug, mention the revision range in which the crash started occurring
+and, if possible, the most likely change(s) in that range that may have
+caused the crash.  Also include the entire crash stack, as shown on the
+reliability test output, in the bug report.  Please CC
+huanr@chromium.org on the bug.<br />
+<br />
+</li><li>
+ Make sure the known crashes list is updated appropriately.<br />
+<br />
+When adding or updating the known crashes list, try to pick a good
+signature pattern for the crash.  Usually a prefix pattern with the
+first 3-5 functions works well.  That is, the top several functions on
+the stack usually serve as a reasonably good unique identifier for the
+crash.<br />
+<br />
+All or part of the crash signature can be copied directly into the
+known crashes file.  For example, to create a crash signature pattern
+for the prefix of the above example crash, create a pattern like this:<br />
+<br />
+ PREFIX : file_util::writefile___`anonymous namespace'::savelatertask::run<br />
+<br />
+ In this example, any crash with these functions at the top of the stack will be filtered out by this pattern.<br />
+<br />
+ Also, please include a comment above the pattern indicating the issue number for the associated bug.</li></ol>
+<br />
+<div>
+<h4><a name="TOC-Won-t-the-known-crashes-list-get-out-of-date-when-crashes-get-fixed-"></a>
+ Won't the known crashes list get out of date when crashes get fixed?
+ </h4>
+<br />
+Yes.  If a crash is fixed, it should be removed from the known crashes
+file.  Otherwise, the crash could be silently reintroduced.<br />
+<br />
+Cleaning up the known crashes list is currently a manual process. 
+We're thinking about ways to automatically update this list to keep it
+from getting stale.<br />
+<br />
+<h4><a name="TOC-How-can-I-get-more-information-about-a-crash-Google-internal-only-"></a>
+ How can I get more information about a crash? (Google internal only)
+ </h4>
+<br />
+Visit http://chromebot and find the associated run, which will be
+named after the repository revision of the run.  From here you can
+download crash dumps and look at log output.<br />
+<br /></div><div><b>How can I reproduce a crash?</b></div><div><br /></div><div>For site-related crashes, it should be a matter of navigating to the URL that is reported in the log. For UI test crashes, look the "<span style="font-family:monospace;white-space:pre"><span style="font-family:Courier New,courier,monotype"><font size="2">UI sequence: SetUp,newtab,closetab,downloads,...</font></span></span>" line in the log file. You can then run the <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/test/automated_ui_tests/automated_ui_tests.cc?view=markup">automated_ui_tests</a> binary with the flags <font face="'courier new', monospace">--key=Setup,newtab,closetab,downloads,... --gtest_filter=AutomatedUITest.TheOneAndOnlyTest</font> and only that sequence will be run.</div><div>
+<h4><a name="TOC-Questions-"></a>
+ Questions?
+ </h4>
+<br />
+ Ask ace@chromium.org.</div>
+</div>
+</div>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/how-tos/reliability-tests">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ZRCu93qmnF--orys4tQUFqiCcBKgLBJp5zxDTRyazvoMkQFSwe3Xp09TPv9HPEu1F13AcUTM_CpUw_XiI9r3sLjUi0Zt8zlDBnNoOO8aUga_Q56t/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/sane-time","deleted":false,"title":"Sane time","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/sane-time\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Sane time","locale":"en","wuid":"wuid:gx:4d9ebfb44b68f5b5","revision":27,"path":"/developers/design-documents/sane-time","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"sane-time","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Sane time - The Chromium Projects" />
+<meta itemprop="name" content="Sane time - The Chromium Projects" />
+<meta property="og:title" content="Sane time - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Sane time - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Sane time</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p>"...because any sane person knows what day it is!" -- Raz</p>
+<h2><a name="TOC-Background"></a>Background</h2>
+<p>There are cases in Chrome where it is important to have an accurate
+time source.  Although most modern operating systems now automatically
+synchronize computer clocks to some external time source, some
+computers may still have a skewed clock for various reasons: time
+syncing may not be configured correctly, the user may have manually
+set the clock erroneously, etc.  Thus, it is desirable for Chrome
+itself to keep track of time from an external, trusted source and its
+offset from the time on the local computer.</p>
+<p><a href="https://www.chromium.org/developers/design-documents/time-sources">Time Sources</a> discusses a similar problem for Chrome OS devices.</p>
+<h2><a name="TOC-Design"></a>Design</h2>
+<p>We desire that the current real time (in UTC) be known to within a few minutes.  Assuming that the time on any Google server is accurate, and that we can communicate to Google machines securely, we call any time that we receive from a Google server over a secure channel "sane time" (because it's just accurate enough to be considered sane).  Since TLS handshakes include client/server time, and since HTTP responses typically include a date header, we can piggyback on existing connections to Google servers.  Given that we make various requests to Google servers regularly (safe browsing in particular updates every 45 minutes), we can keep sane time updated regularly.</p>
+<p>Retrieving sane time from TLS handshakes has some advantages: sending timestamps is <a href="http://tools.ietf.org/html/rfc5246#section-7.4.1.2">mandated as part of the spec</a> and implemented by the most popular libraries; it is also a simple 32-bit UNIX timestamp and thus requires minimal parsing/conversion code; finally, the <a href="http://en.wikipedia.org/wiki/Round-trip_delay_time">RTT</a> for a handshake should be quite low.  However, there is a proliferation of SSL libraries used by Chrome (NSS, OpenSSL, Secure Transport, SChannel) as well as various versions of SSL/TLS.  Therefore, making the code changes may take some time as it involves multiple third-party libraries, and even then we may not be able to get the timestamp for some libraries.  Also, <a href="http://tools.ietf.org/html/draft-bmoeller-tls-falsestart-00">False Start</a> introduces a complication: we may finish the connection before the handshake is actually finished, but we can't trust the timestamps until the handshake is finished, and so we have to keep track of that separately from the connection state.</p>
+<p>Retrieving sane time from the date header in HTTP (over SSL/TLS) responses is easier, as all the HTTP code is in Chromium.  However, it requires date parsing, it's not always guaranteed to be present, (see section 13.2.3 of <a href="http://www.ietf.org/rfc/rfc2616.txt">RFC 2616</a>) and depending on the actual request, the RTT may be high.  Also, we must be careful to only consider fresh (i.e., non-cached) HTTP requests.</p><p><a href="http://www.rkeene.org/oss/htp/">htpdate</a> is a utility to set the current time from an HTTP header, and <a href="https://github.com/ioerror/tlsdate">tlsdate</a> is a utility to set the current time from a TLS handshake.</p>
+<h4><a name="TOC-What-about-NTP-"></a>What about NTP?</h4>
+<p>NTP is a protocol built expressly for time synchronization.  But relying on it in Chrome has some disadvantages:</p>
+<ul><li>It requires maintaining NTP client code in Chrome, which is a higher burden than the solution outlined here, both in code size and developer time.</li>
+<li>It involves sending a lot of traffic to some set of NTP servers.  The solution outlined here involves no additional network traffic.</li></ul>Another possibility is to rely on the local time if it's already running an NTP client.  This is also problematic, as it involves writing code to detect running NTP clients and verifying that it's sanely configured.<div><h4><a name="TOC-Local-clock-changes"></a>Local clock changes</h4><div>In Chrome, there are two clocks: a wall clock (<font face="courier new, monospace">base::Time</font>) and a non-decreasing clock (<font face="courier new, monospace">base::TimeTicks</font>).  The wall clock is what changes when the local time is changed, so we cannot reliably use it to compare against the server time unless we can detect when it changes (currently not possible).  Furthermore, we have no way of detecting when it changes when Chrome isn't running!</div><div><br /></div><div>The non-decreasing clock, which is usually a tick count since the computer has started, is unaffected when the local time is changed.  However, it becomes meaningless across restarts of Chrome (since the computer may be rebooted between restarts).  Furthermore, it may stop when the computer is put to sleep, so even though it is intended for measure durations, it gives inaccurate results if the computer was asleep for the measured time interval.</div><div><br /></div><div>Chrome can detect when the computer goes to sleep and wakes, but only on some platforms.</div>
+<h2><a name="TOC-Code-changes"></a>Code changes</h2><div>The meta-bug is <a href="http://crbug.com/146090">146090</a>.</div>
+<p>We define a <font face="courier new, monospace">ServerTimeInfo</font> struct that represents time information received from a server:</p>
+<pre>struct ServerTimeInfo {
+  enum SourceType { UNKNOWN, TLS, TLS_FALSE_START, HTTP, HTTPS, FROM_DISK, ... };
+  string server;
+  SourceType source_type;
+  Time server_time;
+  TimeTicks start_ticks, end_ticks;
+}</pre>
+<p><font face="courier new, monospace">server</font> is the hostname of the server from which the time was received.  <font face="courier new, monospace">source_type</font> is the type of the time source -- TLS, HTTPS, etc.  Most of the time we care about time infos from *.google.com and with source type TLS or HTTPS, but sometimes we may still use time infos that are slightly less trusted, e.g. FROM_DISK, if we have no other source.  <font face="courier new, monospace">server_time</font> is the actual timestamp received from the server.  <font face="courier new, monospace">start_ticks</font> is the client time when the request to the server was made, and <font face="courier new, monospace">end_ticks</font> is the client time when the response was received. <font face="courier new, monospace">server_time</font> corresponds to some time in [<font face="courier new, monospace">start_ticks</font>, <font face="courier new, monospace">end_ticks</font>], so ideally the latter interval should be as small as possible.  We use ticks since it's from a monotonic clock (i.e., unrelated to the computer clock, which the user may change).  However, this means that we can't persist <font face="courier new, monospace">ServerTimeInfo</font> structs to disk directly, as ticks are reset on computer start.  But o<font face="arial, sans-serif">ne can serialize a </font><font face="courier new, monospace">ServerTimeInfo</font><font face="arial, sans-serif"> by converting </font><font face="courier new, monospace">start_ticks</font><font face="arial, sans-serif">/</font><font face="courier new, monospace">end_ticks</font><font face="arial, sans-serif"> to Time objects (using the current values of </font><font face="courier new, monospace">Time::now()</font><font face="arial, sans-serif"> and </font><font face="courier new, monospace">TimeTicks::now()</font><font face="arial, sans-serif">) and then serializing those along with </font><font face="courier new, monospace">server_time</font><font face="arial, sans-serif">. However, since the local clock may change between serialization and deserialization, the </font><font face="courier new, monospace">TrustLevel</font><font face="arial, sans-serif"> of the deserialized </font><font face="courier new, monospace">ServerTimeInfo</font><font face="arial, sans-serif"> object should be at most </font><font face="courier new, monospace">UNVERIFIED</font><font face="arial, sans-serif">.</font></p>
+<p>One can approximate the current server time given a <font face="courier new, monospace">ServerTimeInfo:</font></p>
+<pre>// Assume sti.server_time corresponds to the time midway between start_ticks and end_ticks.
+TimeTicks midpoint = sti.start_ticks + (sti.end_ticks - sti.start_ticks) / 2;
+Time server_now = sti.server_time + (TimeTicks::now() - midpoint);</pre>
+<p><font face="arial, sans-serif">Here's a rough outline of what needs to be changed to maintain a clock based on sane time:</font></p>
+<ol><li>Modify <font face="courier new, monospace">SSLInfo</font> to have a <font face="courier new, monospace">ServerTimeInfo</font> member.</li>
+<li>Modify the implementations of <font face="courier new, monospace">SSLClientSocket</font> to fill in the <font face="courier new, monospace">ServerTimeInfo</font> in <font face="courier new, monospace">SSLInfo</font> from the TLS handshake when possible. (This may take a while, so it can be done in parallel with the following steps.)</li>
+<li>Modify <font face="courier new, monospace">URLRequest</font> and related classes to create a <font face="courier new, monospace">ServerTimeInfo</font> from the Date response header (if it exists) and request/response timestamps (they're already being calculated).</li>
+<li>Expose methods to get/create the TLS/HTTP <font face="courier new, monospace">ServerTimeInfo</font>s from <font face="courier new, monospace">URLRequest</font>/<font face="courier new, monospace">URLFetcher</font>.</li>
+<li>Create a <font face="courier new, monospace">SaneTimeTracker</font> class that consumes <font face="courier new, monospace">ServerTimeInfo</font>s and maintains the best known one.  It can have a policy of which ones it'll accept.  For example, it should only accept ones from TLS connections to google.com servers, it should keep the one from the last hour with the smallest tick interval, etc.</li>
+<li>Add a <font face="courier new, monospace">SaneTimeTracker</font> to <font face="courier new, monospace">URLRequestContext</font> and hook it up to any created connections.</li>
+<li>Add a way to propagate <font face="courier new, monospace">ServerTimeInfo</font>s from the "main" <font face="courier new, monospace">SaneTimeTracker</font> to other threads/objects (perhaps similar to <font face="courier new, monospace">NetworkChangeNotifier</font>).</li>
+<li>Add periodic serialization to a pref, and deserialize on startup.</li>
+<li>Add code to detect when the system time changes.  Serialize when that happens.</li><li>Add code to detect when the system goes to sleep and wakes.  Treat this the same way as a restart of Chrome.</li>
+</ol></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/sane-time">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq98nZPjTpJl597MvhjGhnKeL7TMazhh_t_Y2RBw9HZTlJ4HcPoghkPxM6tiIYNYbwmEsoyKcxQknFnrexwjRPglOgg5VTwVL_K1pb55k5X_n_N15aS/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

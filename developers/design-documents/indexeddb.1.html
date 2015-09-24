@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/indexeddb","deleted":false,"title":"IndexedDB Design Doc","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/indexeddb\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"IndexedDB Design Doc","locale":"en","wuid":"wuid:gx:505a4f1472e0d091","revision":27,"path":"/developers/design-documents/indexeddb","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"indexeddb","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="IndexedDB Design Doc - The Chromium Projects" />
+<meta itemprop="name" content="IndexedDB Design Doc - The Chromium Projects" />
+<meta property="og:title" content="IndexedDB Design Doc - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>IndexedDB Design Doc - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.1.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">IndexedDB Design Doc</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><font color="#CC0000"><b><span style="font-size:medium">This is quite outdated.  The fundamental design is still pretty similar to what's described here, but this document is now of limited usefulness.<br /><br /></span></b></font><span style="font-size:medium">Please send any feedback you might have to </span><i><span style="font-size:medium">Jeremy Orlow &lt;jorlow@chromium.org&gt;</span></i><span style="font-size:medium"> or </span><i><span style="font-size:medium">chromium-dev@chromium.org</span></i><span style="font-size:medium">.</span></div><div><b><span style="font-size:medium"><br /></span></b></div><div><b><span style="font-size:medium">Introduction:</span></b></div><div><br /></div><div>The IndexedDB API implements a persistent (across browser/machine restarts) database that is quite stripped down.  It is built upon "Object Stores" (btrees of key-&gt;value pairs) and Indexes (btrees of key-&gt;object store record).  It includes an async API for use in pages and both an async and a sync API for workers.</div><div><br /></div><div>The latest editors draft of the spec can be found here: <a href="http://dev.w3.org/2006/webapi/WebSimpleDB/" rel="nofollow">http://dev.w3.org/2006/webapi/WebSimpleDB/</a>  And there's a lot of discussion currently happening on public-webapps@w3.org.</div><div><br /></div><div>At the time of this writing the following are major changes that will probably happen to the spec in the near term:</div><div><ol><li>The async API will probably be changed to a callback based one.</li><li>The async API should be available from workers.</li><li>Composite indexes will probably be added.</li><li>External indexes will probably be removed (indexes not attached to a object store).</li><li>Inverted indexes will hopefully be added so it's possible to efficiently implement full text search.</li></ol></div><div></div><div><i><br /><br />Note: Most of this design doc is talking about work inside WebKit/WebCore since most of the implementation will exist there.  At the bottom, there is discussion of Chromium specific plumbing.</i></div><div></div><div><br /></div><div><b><span style="font-size:medium">Threading model:</span></b></div><div><br /></div><div>All database processing will happen on a background thread.  The reasons are as follows:  Both workers and pages will be able to access IndexedDB and thus it's possible that two different WebKit threads may have the same database open at the same time.  Database access will result in file IO and we need to ensure that we never block the main thread.  There's no way to re-use worker threads (even if we wanted to) because their lifetimes may be shorter than that of the opened database.  In addition, sharing things across threads is particularly difficult and dangerous in WebKit.  So, the easiest way to mitigate this is to do all database work on its own thread.</div><div><br /></div><div>Up for debate is whether we should have one IndexedDB thread, one per origin, or one per database.  Originally I was leaning towards one per database since threads are cheap and we should let the OS do its thing in terms of IO scheduling, but this may be excessive. Either way, I'd like to design so that we <i>can</i> split things up thread wise if we choose to in the future.</div><div><br /></div><div>A side effect of having all work take place on a background thread is that we can share almost all of the code between the sync and async versions of the API.  To make this simpler, I'm planning on creating a class like what follows to link code running on a background thread to either the sync or async messages happening on the main/worker threads.</div><div><div><br /></div><div><font face="'courier new', monospace">// This is a class that abstracts away the idea of having another thread offer a</font></div><div><font face="'courier new', monospace">// "promise" to give a particular return value, go off and do the processes, and then</font></div><div><font face="'courier new', monospace">// send a message which either triggers asynchronous callbacks or unblocks the thread</font></div><div><font face="'courier new', monospace">// and returns a result.  This class is not threadsafe, so be sure to only call it from</font></div><div><font face="'courier new', monospace">// the thread it's created on.</font></div><div><div><font face="'courier new', monospace">template &lt;typename ResultType&gt;</font></div><div><font face="'courier new', monospace">class AsyncReturn&lt;ResultType&gt; : RefCounted&lt;ResultType&gt; {</font></div><div><div><font face="'courier new', monospace">public:</font></div><div><font face="'courier new', monospace">    // Provide async callbacks to be used in the event of a success or error.</font></div><div><font face="'courier new', monospace">    // You should only call this or syncWaitForResult, and you should only call</font></div><div><font face="'courier new', monospace">    // either one once.</font></div><div><font face="'courier new', monospace">    void setAsyncCallbacks(PassOwnPtr&lt;ScriptExecutionContext::Task&gt; successCallback, </font></div><div><font face="'courier new', monospace">                           PassOwnPtr&lt;ScriptExecutionContext::Task&gt; errorCallback);</font></div><div><font face="'courier new', monospace"><br /></font></div><div><font face="'courier new', monospace">    // Block execution until a result or an exception is returned.  This will run</font></div><div><font face="'courier new', monospace">    // a WorkerRunLoop (sync is only available on workers) with the mode set to only</font></div><div><font face="'courier new', monospace">    // process tasks from our background thread.  You should only call this or</font></div><div><font face="'courier new', monospace">    // setAsyncCallbacks, and you should only call either one once.  If an exception</font></div><div><font face="'courier new', monospace">    // is set, the returned pointer will be 0.</font></div><div><span style="font-family:courier new,monospace">    PassOwnPtr&lt;ResultType&gt; syncWaitForResult(OwnPtr&lt;IDBDatabaseException&gt;*);</span></div><div><font face="'courier new', monospace"><br /></font></div><div><font face="'courier new', monospace">    // Called on success.  If there's anything in the queue, starts a one shot timer</font></div><div><font face="'courier new', monospace">    // on m_timer.</font></div><div><font face="'courier new', monospace">    void setResult(PassOwnPtr&lt;Type&gt;);</font></div><div><font face="'courier new', monospace"><br /></font></div><div><font face="'courier new', monospace">    // Called on error.  If there's anything in the queue, starts a one shot timer on</font></div><div><font face="'courier new', monospace">    // m_timer.</font></div><div><font face="'courier new', monospace">    void setError(PassOwnPtr&lt;IDBError&gt;);</font></div><div><font face="'courier new', monospace"><br /></font></div><div><font face="'courier new', monospace">private:</font></div><div><font face="'courier new', monospace">    // Function called by our timer.  Calls the proper callback.</font></div><div><font face="'courier new', monospace">    void onTimer(Timer*);</font></div><div><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif"><div><font face="'courier new', monospace"><br /></font></div></span></font></div><div><span style="font-family:courier new,monospace">    // Only one of the following should ever be set.  These are necessary even in</span></div><div><span style="font-family:courier new,monospace">    // sync mode because it's possible for syncWaitForResult to be called after</span></div><div><span style="font-family:courier new,monospace">    // the response has reached us.  These are zeroed out again when passed to the</span></div><div><span style="font-family:courier new,monospace">    // callback or returned via syncWaitForResult.</span></div><div><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif"><div><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif"><div><div><font face="'courier new', monospace">    OwnPtr&lt;Foo&gt; m_result;</font></div><div><span style="font-family:courier new,monospace">    OwnPtr&lt;IDBDatabaseError&gt; m_error;</span></div></div></span></font></div><div><font face="'courier new', monospace"><br /></font></div><div><span style="font-family:courier new,monospace">    // When this fires, we'll call the proper callback.  Only for async usage.</span></div><div><font face="'courier new', monospace">    Timer m_timer;</font></div><div><font face="'courier new', monospace"><br /></font></div></span></font></div><div><font face="'courier new', monospace">    // Only one of these is ever used and only during async usage.</font></div><div><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif"><div><font face="'courier new', monospace">    OwnPtr&lt;ScriptExecutionContext::Task&gt; m_successCallback; </font></div><div><font face="'courier new', monospace">    OwnPtr&lt;ScriptExecutionContext::Task&gt; m_errorCallback;</font></div></span></font></div><div><font face="'courier new', monospace"><br /></font></div></div><div><span style="font-family:courier new,monospace">    // Used so we can assert this class is only used in one way or another.</span></div><div><span style="font-family:courier new,monospace">    bool m_asyncUsage;</span></div><div><span style="font-family:courier new,monospace">    bool m_syncUsage;</span></div><div><font face="'courier new', monospace">};</font></div></div></div><div><br /></div><div><br /></div><div><b><span style="font-size:medium">Class structure:</span></b></div><div><br /></div><div>In the spec, each interface has an async and a sync counterpart.  In most cases, they share a common base class.  The sync version has a "Sync" suffix and the async version has a "Request" suffix.  Thus the following is fairly common:</div><div><br /></div><div><font face="'courier new', monospace">interface Foo</font></div><div><font face="'courier new', monospace">Interface FooRequest : Foo</font></div><div><font face="'courier new', monospace">interface FooSync : Foo</font></div><div><br /></div><div>In most cases, FooRequest and FooSync are almost identical except in terms of the return types.  For sync, the methods usually return values.  For the other, they call callbacks which pass the values in as a parameter.  (The current event based API has you set event handlers that are shared by all requests and make a call.  So it is like the callback interface except only one call can be inflight at a time.  Plus the syntax is ugly.)</div><div><br /></div><div>In WebKit, my plan is to call the base class FooBase, but otherwise implement the IDLs exactly as specced.  So, I'll implement things as if the structure was as follows:</div><div><br /></div><div><font face="'courier new', monospace">interface FooBase</font></div><div><font face="'courier new', monospace">interface FooRequest : FooBase</font></div><div><font face="'courier new', monospace">interface FooSync : FooBase</font></div><div><br /></div><div>FooRequest and FooSync are very similar.  The only difference is in their return values and whether they block.  Since we're doing all real work on the background thread anyway, it makes sense for our sync and async APIs to run the same code and simply use the above AsyncReturn class to signal completion in both cases.</div><div><br /></div><div>Both FooRequest and FooSync will have a pointer to a Foo class.  This Foo class will have all the same methods as FooRequest and FooSync except it'll return an AsyncReturn&lt;Type&gt; instance.  FooSync will then call syncWaitForResult() which will run the WorkerRunLoop with the mode set to only accept messages from a background thread (much like WebSockets and sync XHR) while waiting for the response.  FooRequest will call setAsyncCallbacks and use those to call the proper javascript callback when the result is ready.</div><div><br /></div><div>For browsers that use multiple processes (like Chromium) there needs to be some way to detach the central backend from various frontends (in Chromium terms, the browser process and the various renderer processes).  We'll do this by making all the Foo classes abstract interfaces and having the actual implementations be FooImpl classes.</div><div><br /></div><div>Each Foo class will have a .cpp file with a single static method in it: a constructor.  For normal WebKit, that will call FooImpl::create.  For multi-process implementations, they can omit this file from their build and instead have Foo::create return a proxy object which implements the Foo interface but which actually sends messages across processes.</div><div><br /></div><div>So, to recap, for each type of interface in the IDLs (for example, IDBObjectStore____) we'll have the following classes:</div><div><br /></div><div><ul><li>IDBObjectStoreBase  -&gt;  "IDBObjectStore" in the IDL; just a base class with stuff shared between the next two.</li><li>IDBObjectStoreRequest -&gt;  The same in the IDL; the async version of the class.  This and the next one do little more than have a reference to IDBObjectStore and call methods on it.</li><li>IDBObjectStoreSync  -&gt;  The same in the IDL; the sync version of the class.</li><li>IDBObjectStore  -&gt;  Interface for IDBObjectStoreImpl; methods will pretty much match what's exposed in IDL.</li><li>IDBObjectStoreImpl  -&gt;  Implements IDBObjectStore; lives almost entirely on the background thread; will send a message to the AsyncReturn instance on completion.</li></ul></div><div>Because all objects either are tied 100% to the thread they're created on (FooSync/FooRequest/FooBase) or exist completely on the background thread (Foo), object lifetimes and how they're destroyed should be fairly easy.  This is even true in the face of the page cache.  When a page is suspended, we should pause all of it's callbacks.  Ideally, we'd cancel all currently running operations and restart if/when the page comes back, but it's not necessary for correctness.  All in all, the threading model should make page cache integration fairly straightforward.  During early development, however, we'll probably just have canSuspend return false to keep things simple.</div><div><br /></div><div>When we open an indexed database, we'll need to call the chrome client to see if it's allowed.</div><div><br /></div><div>It may make sense to take some parts of workers (like GenericWorkerTask and WorkerRunLoop) and make them a tad more generic and then move them into Platform.</div><div><br /></div><div><br /></div><div><b><span style="font-size:medium">Bindings:</span></b></div><div><br /></div><div>There are currently no examples of methods that take callbacks that aren't implemented as custom functions.  I fear this means I have a lot of custom binding writing in my future.  Hopefully there's some way to modify the code generators to avoid this, though.</div><div><br /></div><div>To keep things simple, during the bootstrapping process I'll only be working on V8 bindings.  Once things start to stabilize API/Spec/code wise, I'll take a shot at JSC bindings.  If they're not fairly straightforward, I might see if someone from the JSC side of the world is interested in helping.</div><div><br /></div><div><br /></div><div><b><span style="font-size:medium">Btree implementation<span style="font-weight:normal;font-size:13px"><b><span style="font-size:medium">/persistance<span style="font-weight:normal;font-size:13px"><b><span style="font-size:medium">:</span></b></span></span></b></span></span></b></div><div><br /></div><div>I often say "btree" but there are many possible ways to implement data persistence.  Either way, it's out of scope for this document at the moment.  The most important thing is to get an implementation working with or without persistance.  Once we're getting close to that goal, then we can start thinking about this.  In the mean time, it's most important to get good feedback to the working group since WebKit already has a good data persistence layer (WebSQLDatabase) and there is no indication anyone else will be shipping an implementation soon.</div><div><br /></div><div><br /></div><div><b><span style="font-size:medium">Chromium side of the implementation:</span></b></div><div><br /></div><div>The communication from WebCore in the renderer to WebCore in the browser is all fairly straightforward (and will look much like how we implemented LocalStorage/SessionStorage), but the reverse needs to happen completely via async callbacks/tasks.  To handle this cleanly/efficiently, we'll need to add some notion of "tasks" to the Chromium WebKit API (like WebCore::GenericWorkerTask and Chromium's Task/RunnableMethod classes).  We'll also have FooProxy classes in WebCore that implement the Foo interface and which proxy all calls through to the WebKit layer, much like in LocalStorage/SessionStorage.</div><div><br /></div><div>Here are the various layers of calls (from renderer to browser):</div><div><font face="'courier new', monospace">WebCore::FooProxy  (implements WebCore::Foo)</font></div><div><font face="'courier new', monospace">WebKit::RendererWebFooImpl  (implements WebKit::WebFoo)</font></div><div><font face="'courier new', monospace">&lt;-- IPC --&gt;</font></div><div><font face="'courier new', monospace">Foo</font></div><div><font face="'courier new', monospace">WebKit::WebFooImpl  (implements WebKit::WebFoo)</font></div><div><font face="'courier new', monospace">WebCore::FooImpl  (implements WebCore::Foo)</font></div><div><br /></div><div>Note the symmetry and how we're essentially just trying to connect WebCore (in the renderer) to WebCore (in the browser process).</div><div><br /></div><div>In addition to the standard set of classes, we'll need a couple special ones.</div><div><ul><li><font face="arial, sans-serif"><b>WebKit::WebAsyncReturn&lt;&gt;</b>   Much like WebCore::AsyncReturn&lt;&gt; except without any of the synchronous waiting functionality.  Returned from all methods.</font></li><li><font face="arial, sans-serif"><b>WebKit::WebTask</b>   Much like WebCore::GenericWorkerTask or Chromium's Task.  Passed into WebKit::WebAsyncReturn&lt;&gt;::setAsyncCallbacks().</font></li><li><b>IndexedDBDispatcher</b>   Lives in the renderer and handles all the reply messages from the browser process.  Each outgoing request is assigned an ID so that we know which WebAsyncReturn object to match it up with.  There's one per renderer process.</li><li><b>IndexedDBDispatcherHost</b>    Lives in the browser and handles all the messages from the renderer process.  It has a reference to the IndexedDB context and can send reply messages back to the renderer process.  There's one per ResourceMessageFilter.</li><li><b>IndexedDBContext</b>   Keeps track of all the IDs for the various WebKit wrappers and contains a hirarchy of Chromium objects which wrap the WebKit objects which wrap the WebCore implementations.  The context is connected to the profile (and threadsafe ref counted).</li></ul></div><div><br /></div><div>Now that you're acquainted with the objects, lets run through an example.  In this case, what happens when IDBDatabaseRequest::openObjectStore() is called:</div><div><ul><li>In WebCore inside the renderer process, openObjectStore will be called on an IDBDatabaseProxy object which implements the WebCore::IDBDatabase interface.</li><li>The proxy will call RendererWebIDBDatabaseImpl::openObjectStore().  (An implementation of the WebIDBDatabase interface.)</li><li>RendererWebIDBDatabaseImpl::openObjectStore() sends an async IPC to the browser process with the RendererWebIDBDatabaseImpl's ID.</li><li>It then creates a RendererWebAsyncReturnImpl&lt;WebIDBObjectStore&gt; object and registers it with the IndexedDBDisptcher.</li><li>RendererWebIDBDatabaseImpl::openObjectStore() then returns that WebAsyncReturn&lt;WebIDBObjectStore&gt; object to its caller (IDBDatabaseProxy).</li><li>IDBDatabaseProxy::openObjectStore() would then instantiate an AsyncReturn&lt;IDBObjectStore&gt; object and two WebTasks.</li><li>Both WebTasks would have pointers to the AsyncReturn&lt;&gt; object.  One would set the result.  The other would set the error.</li><li>WebAsyncReturn&lt;&gt;::setAsyncCallbacks() would be called with the two tasks.</li><li>IDBDatabaseProxy::openObjectStore() would then return the AsyncReturn&lt;&gt; object to its caller.</li><li>That caller would similarly create tasks and pass them into the AsyncReturn&lt;&gt; (but that's just what happens normally; it's not Chromium speciifc).</li></ul><div>So now there's an async message in flight to the browser process and a chain of callbacks/tasks set up to fire a callback or allow execution to continue inside the browser process.</div><ul><li>On the IO thread in the browser, the message comes in.  An IndexedDBDispatcherHost receives the message.  Each method detects whether it's on the IO thread and, if so, redirects it to the WebKit thread.</li><li>The message would then call IndexedDBContext::getIndexedDatabase() with the WebIDBDatabase's ID.</li><li>If the ID doesn't exist, we kill off the renderer since at best there's a major bug or memory corruption, and at worst the renderer is compromised.</li><li>We then call Chromium's IDBDatabase::openObjectStore() method.  (Note that the name is the same as another object in WebCore.  That's fine.  They're in separate namespaces and since the WebKit layer is in between, it isn't confusing in practice.)</li><li>Chromium's IDBDatabase::openObjectStore then calls WebIDBDatabaseImpl::openObjectStore().  (The WebIDBDatabaseImpl is an implementation of WebIDBDatabase that lives in WebKit/chromium/src and provides entry back into WebCore's implementation of the IndexedDB implementation)</li><li>WebIDBDatabaseImpl::openObjectStore() then calls WebCore::IDBDatabase::openObjectStore().  (Which, via the virtual method call, actually calls WebCore::IDBDatabaseImpl::openObjectStore().)</li><li>WebCore's IndexedDB implementation does its thing and returns an AsyncReturn&lt;IDBObjectStore&gt; object.</li><li>WebIDBDatabaseImpl then creates a WebAsyncReturnImpl&lt;WebIDBObjectStore&gt; object that has a pointer to the AsyncReturn&lt;&gt; object and returns it.</li><li>Chromium's IDBDatabase::openObjectStore() then creates two WebTasks.  One for a success/result and one for an error.  These WebTasks wrap Chromium Tasks/RunnableMethods.</li><li>When the WebTasks get a response, they'll wrap it in a WebIDBDatabaseError or a WebIDBObjectStore as appropriate.  They'll then pass the result on to the appropriate WebTask.</li><li>The appropriate Chromium Task will then be called which will fetch the result.  If it's a WebIDBObjectStore, it'll be added to the IndexedDBContext and an ID will be assigned.</li><li>Either the serialized WebIDBDatabaseError or the WebIDBObjectStore's ID will be sent back via the IndexedDBDispatcherHost via an async message.  Either way, it'll include an ID that was sent with the original async request.</li></ul><div>So now a reply message is en route to the renderer.</div><div><ul><li>The IndexedDBDispatcher receives the message.  Based on the ID, it figures out which WebAsyncReturn&lt;&gt; object is associated with it.</li><li>It'll create a RendererWebIDBDatabaseErrorImpl or a RendererWebIDBObejctStoreImpl to wrap the result in.  If it's the latter, it'll be given the ID the browser process created.</li><li>The object is passed into either WebAsyncReturn&lt;&gt;::setResult() or ::setError.</li><li>That then either converts the WebIDBDatabaseError object into a WebCore::IDBDatabaseError or wraps the WebIDBObjectStore in an WebCore::IDBObjectStoreProxy and passes the result into WebCore::AsyncReturn&lt;&gt;::setResult() or ::setError().</li><li>And the rest proceeds as it normally would in WebCore.</li></ul><div>This same process happens for each object type--except for IndexedDatabase since it's a singleton and the entrypoint to the whole API.  It'd be created as follows:</div></div></div><div><ul><li>WebCore::IndexedDatabase::create() is normally part of WebCore/storage/IndexedDatabase.cpp, but Chromium won't compile that file.  Instead, the file with our WebCore::IndexedDatabaseProxy will contain the WebCore::IndexedDatabase::create() implementation.  (Normally WebCore::IndexedDatabase::create() would just call WebCore::IndexedDatabaseImpl::create().)</li><li>WebCore::IndexedDatabase::create() would call WebCore::IndexedDatabaseProxy::create() through the ChromiumBridge.</li><li>IndexedDatabaseProxy::create() would call WebKitClient::CreateIndexedDatabase() which would create a RendererWebIndexedDatabaseImpl and return is synchronously.  IndexedDatabaseProxy would then wrap that class.</li><li>The browser process would create its own IndexedDatabase/WebIndexedDatabase/WebCore::IndexedDatabase lazily on first use.</li></ul><div>Whenever a Proxy object is deleted, it should delete the wrapper it owns.  When the RendererFooImpl is deleted, it should send a message to the browser and the chain of deleting should continue.</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="indexeddb/indexeddbbackup.html" dir="ltr">IndexedDBBackup</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/indexeddb">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq97mmVnxi3sSdgxRgWZKngM6So1WbNeQFGvk3MLu0fSPeMtrWOlVyC5YjymBgzomcLmAwMu1JhFxNOfbmkEn_bzlJ6FJuhCq_p5I0HLsmdaILVkpGR/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

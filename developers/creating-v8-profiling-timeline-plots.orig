@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/creating-v8-profiling-timeline-plots","deleted":false,"title":"Creating V8 profiling timeline plots","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/creating-v8-profiling-timeline-plots\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Creating V8 profiling timeline plots","locale":"en","wuid":"wuid:gx:64b8ce2ffa6d92fb","revision":11,"path":"/developers/creating-v8-profiling-timeline-plots","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"creating-v8-profiling-timeline-plots","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Creating V8 profiling timeline plots - The Chromium Projects" />
+<meta itemprop="name" content="Creating V8 profiling timeline plots - The Chromium Projects" />
+<meta property="og:title" content="Creating V8 profiling timeline plots - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Creating V8 profiling timeline plots - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1410726511821/developers/creating-v8-profiling-timeline-plots/Screen%20Shot%202014-09-14%20at%201.27.21%20PM.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1410726511821/developers/creating-v8-profiling-timeline-plots/Screen%20Shot%202014-09-14%20at%201.27.21%20PM.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Creating V8 profiling timeline plots</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p style="font-family:Times;font-size:medium">For visualization, timeline graphs can be plotted to show where V8 is spending time. This can be used to find bottlenecks and spot things that are unexpected (for example, too much time spent in unoptimized code). Data for the plot are gathered by both sampling and instrumentation. Since the latter distorts the performance, the plot script attempts to undistort the logged timestamps.</p><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/creating-v8-profiling-timeline-plots/Screen%20Shot%202014-09-14%20at%201.27.21%20PM.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1410726511821/developers/creating-v8-profiling-timeline-plots/Screen%20Shot%202014-09-14%20at%201.27.21%20PM.png" /></a></div><br /><div style="display:block;text-align:left"></div><br /><h2 style="color:rgb(85,85,85);font-family:sans-serif"><a name="Profiling_in_Chrome"></a>Profiling in Chrome</h2><div><h3><a name="TOC-Desktop-Chrome"></a>Desktop Chrome</h3></div><span style="font-family:Times;font-size:medium"><div><span style="font-family:Times;font-size:medium">Close all Chrome instances (both Canary and Stable). </span></div><div><span style="font-family:Times;font-size:medium"><br /></span></div>To profile a web site in chrome, pass the same flags to V8 using </span><code>--js-flags</code><span style="font-family:Times;font-size:medium"> and with </span><code>--no-sandbox</code><span style="font-family:Times;font-size:medium"> to enable writing into </span><code>v8.log</code><span style="font-family:Times;font-size:medium">. </span><div><p style="font-family:Times;font-size:medium">For example:</p><pre style="color:rgb(0,96,0);background-color:rgb(224,234,244);border:1px solid rgb(169,206,241);padding-left:1em;padding-top:0.5em;padding-bottom:0.5em;overflow:auto">$ ./chrome --no-sandbox --js-flags="--prof --log-timer-events" mail.google.com &amp; sleep 10; kill $!
+</pre><p style="font-family:Times;font-size:medium">Given that Gmail is already logged into, this profiles the first 10 seconds after starting Chrome and loading Gmail, before Chrome is killed.</p><p style="font-family:Times;font-size:medium">This will create a v8.log file next to the Chrome binary folder.</p><p><font face="Times" size="3">If the plotting script fails stating that the logfile is inconsistent, retry while adding </font><span style="background-color:transparent"><font color="#006000" face="monospace">--logfile=v8-%p.log </font></span><span style="font-family:Times;font-size:medium;background-color:transparent">to the </span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">--js-flags</span><span style="background-color:transparent"><font face="Times" size="3">, which will create a separate file for each process suffixed with the process' pid.</font></span></p><h3><a name="TOC-Chrome-on-Android"></a>Chrome on Android</h3><div><span style="font-family:Times;font-size:medium">Since Android has additional security sandboxing, the renderer process will not be able to write to a file in the application's working directory (even when  </span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">--no-sandbox </span><span style="font-family:Times;font-size:medium;background-color:transparent">is enabled).  You must therefore create a directory which can be written by any user and instruct V8 to log it's output there.</span></div><div><span style="font-family:Times;font-size:medium;background-color:transparent"><br /></span></div><div><span style="font-family:Times;font-size:medium;background-color:transparent">For example: </span></div><div><pre style="background-color:rgb(224,234,244);border:1px solid rgb(169,206,241);padding-left:1em;padding-top:0.5em;padding-bottom:0.5em;overflow:auto"><font color="#006000">$ adb shell mkdir /data/local/tmp/v8-logs/
+$ adb shell chmod 777 /data/local/tmp/v8-logs/
+
+[choose adb_content_shell_command_line or adb_chromium_testshell_command_line below depending upon your target]
+$ ./build/android/adb_content_shell_command_line </font><span style="background-color:transparent"><font color="#006000">--no-sandbox --js-flags=\"</font></span><span style="background-color:transparent"><font color="#006000">--prof --log-timer-events </font></span><span style="background-color:transparent"><font color="#006000">--logfile=/data/local/tmp/v8-logs/v8.log\"</font></span></pre></div><h2><a name="TOC-Now-after-restarting-the-content-shell-chromium-test-shell-the-logs-will-be-available-in-data-local-tmp-v8-logs-v8.log-and-can-be-retrieved-using-adb-pull."></a><font face="Times" size="3"><span style="font-weight:normal">Now, after restarting the content shell / chromium test shell, the logs will be available in /data/local/tmp/v8-logs/v8.log and can be retrieved using </span></font><span style="color:rgb(0,96,0);font-family:monospace;font-size:13px;font-weight:normal">adb pull</span><span style="font-weight:normal;font-family:Times;font-size:medium;background-color:transparent">.<br /><br /></span></h2><h2><a name="TOC-Profiling-in-d8"></a><span style="color:rgb(85,85,85);font-family:sans-serif;background-color:transparent"><font size="4">Profiling in d8</font></span></h2><h2 style="color:rgb(85,85,85);font-family:sans-serif"><a name="TOC-To-profile-a-script-in-d8-run-d8-with-the-appropriate-flags--prof-enables-tick-based-profiling--log-internal-timer-events-enables-timing-the-runtime-of-V8-s-internal-components-such-as-the-GC-parser-compiler-etc.--log-timer-events-implies---log-internal-ti"></a><span style="color:rgb(0,0,0);font-weight:normal;font-family:Times;font-size:medium">To profile a script in d8, run d8 with the appropriate flags</span><ul style="color:rgb(0,0,0);font-weight:normal;font-family:Times;font-size:medium"><li><code>--prof</code> enables tick based profiling</li><li><code>--log-internal-timer-events</code> enables timing the runtime of V8's internal components such as the GC, parser, compiler, etc.</li><li><code>--log-timer-events</code> implies <code>--log-internal-timer-events</code>, but also times external callbacks.</li></ul><p style="color:rgb(0,0,0);font-weight:normal;font-family:Times;font-size:medium">For example</p><pre style="font-size:13px;font-weight:normal;color:rgb(0,96,0);background-color:rgb(224,234,244);border:1px solid rgb(169,206,241);padding-left:1em;padding-top:0.5em;padding-bottom:0.5em;overflow:auto">$ out/native/d8 --prof --log-timer-events imaging-darkroom.js
+</pre><p style="color:rgb(0,0,0);font-weight:normal;font-family:Times;font-size:medium">The log entries will be written into <code>v8.log</code></p><p style="color:rgb(0,0,0);font-weight:normal;font-family:Times;font-size:medium"><code><br /></code></p></h2><h2 style="color:rgb(85,85,85);font-family:sans-serif"><a name="Plotting"></a>Plotting</h2><span style="font-family:Times;font-size:medium">Find the sure you have the </span><code>isolate-***.log </code><span style="font-family:Times;font-size:medium;background-color:transparent">or</span><code style="font-size:10pt;background-color:transparent"> v8.log</code><span style="font-family:Times;font-size:medium;background-color:transparent"> file created during profiling. It was created in the folder you launched that command from. </span></div><div><span style="font-family:Times;font-size:medium"><br /></span></div><div><span style="font-family:Times;font-size:medium">Open </span><span style="background-color:transparent"><font face="Times" size="3"><a href="https://v8.googlecode.com/svn/branches/bleeding_edge/tools/profviz/profviz.html">https://v8.googlecode.com/svn/branches/bleeding_edge/tools/profviz/profviz.html</a> </font></span></div><div><span style="background-color:transparent"><font face="Times" size="3"><br /></font></span></div><div><ul><li><span style="font-family:Times;font-size:medium;background-color:transparent">In the file picker dialog, select the log file you want to view. </span></li><li><span style="font-family:Times;font-size:medium;background-color:transparent">Hit start and wait a few seconds for the plot to generate</span></li><li><span style="font-family:Times;font-size:medium;background-color:transparent">You can modify the range selection and hit Start again to replot.</span></li></ul></div><div><br /></div><div><h2 style="color:rgb(85,85,85);font-family:sans-serif"><a name="Interpretation_of_the_plot_A_cas"></a>Interpretation of the plot. A case study.</h2><p style="font-family:Times;font-size:medium">Let's profile <a href="http://www.google.com/url?sa=D&amp;q=http%3A%2F%2Foctane-benchmark.googlecode.com">Octane's</a> pdfjs benchmark. Due to the nature of the benchmark, having many accesses to typed arrays, we expect a considerable amount of time being spent in external callbacks (which implement typed arrays).</p><p style="font-family:Times;font-size:medium">Figure 1: Using only <code>--prof</code>, the resulting plot only contains the sampling based data. Note that the granularity isn't really enough to get a good picture of all this. The colors of the top-most javascript stack frames show that we are running more and more optimized code.</p><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/creating-v8-profiling-timeline-plots/0-prof-only.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1357715497931/developers/creating-v8-profiling-timeline-plots/0-prof-only.png" /></a></div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left"><div><ul><li><span style="font-size:10pt"><b>GCScavenger</b>: young space GC</span></li><li><span style="font-size:10pt"><b>GCCompactor</b>: old space full GC</span></li><li><span style="font-size:10pt"><b>Execute</b>: time spent executing JS code (as opposed to GC, waiting on native APIs to return, etc.)</span></li><li><span style="font-size:10pt"><b>Code kind:</b> color indicates optimized (green) vs. unoptimized (red, “full code”)</span></li></ul></div></div><br /><p style="font-family:Times;font-size:medium">Figure 2: Adding the option <code>--log-internal-timer-events</code> we still get roughly the same benchmark score, so we can be sure that the resulting plot has not been distorted by a lot by instrumentation. We now have a clearer breakdown of the time spent on this benchmark. We can see that parsing the source takes a sizeable chunk of time, which also leads to an execution pause. We also see that at the beginning, a lot of recompiling (optimizing) is going on. However, we do not see the external callbacks that we are expecting. Without additional instrumentation, those are incorrectly attributed to V8's execution time.</p><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/creating-v8-profiling-timeline-plots/1-plot-internal.png?attredirects=0" imageanchor="1"><img alt="Figure 2" border="0" src="http://www.chromium.org/_/rsrc/1357715519997/developers/creating-v8-profiling-timeline-plots/1-plot-internal.png" /></a></div><br /><p style="font-family:Times;font-size:medium">Figure 3: Using <code>--time-timer-events</code> instead and plotting with <code>DISTORTION=0</code>, we can see that we are indeed spending a lot of time in callbacks. However, the benchmark score is only a fraction of what it should have been. Comparing this plot with previous ones, we can see that it is severely distorted by instrumentation. Heterogeneous sampling ticks, observable by unevenly distributed white gaps, are yet another indication.</p><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/creating-v8-profiling-timeline-plots/2-distorted.png?attredirects=0" imageanchor="1"><img alt="Figure 3" border="0" src="http://www.chromium.org/_/rsrc/1357715649905/developers/creating-v8-profiling-timeline-plots/2-distorted.png" /></a></div><br /><p style="font-family:Times;font-size:medium">Figure 4: Having the distortion parameter automatically calibrated (plot range is manually set for easier comparison), we can see that due to the instrumentation overhead, the benchmark run with instrumentation only executed a fraction of what would have been without instrumentation. The background to this is that Octane benchmarks are repeated until a minimum length of run time has been reached. The un-instrumented run manages to complete more iterations of the benchmark than the instrumented run, in the same length of run time.</p><p style="font-family:Times;font-size:medium">Now that the plot has been undistorted, it almost completely agrees with previous plots in figures 1 and 2.</p><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/creating-v8-profiling-timeline-plots/3-undistorted.png?attredirects=0" imageanchor="1"><img alt="Figure 4" border="0" src="http://www.chromium.org/_/rsrc/1357715702096/developers/creating-v8-profiling-timeline-plots/3-undistorted.png" /></a></div><br /><p style="font-family:Times;font-size:medium">Figure 5: Zooming into the interesting part of the undistorted plot.</p><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/creating-v8-profiling-timeline-plots/4-autoscale.png?attredirects=0" imageanchor="1"><img alt="Figure 5" border="0" src="http://www.chromium.org/_/rsrc/1357715708721/developers/creating-v8-profiling-timeline-plots/4-autoscale.png" /></a></div><div style="display:block;text-align:left"><br /></div><h2><a name="TOC-Other-resources"></a>Other resources</h2><div style="color:rgb(34,34,34);font-family:arial,helvetica,sans-serif"><ul><li><a href="http://code.google.com/p/v8/wiki/V8Profiler" style="color:rgb(17,85,204)" target="_blank">http://code.google.com/p/v8/wiki/V8Profiler</a></li><li><a href="https://developers.google.com/v8/profiler_example" style="color:rgb(17,85,204)" target="_blank">https://developers.google.com/v8/profiler_example</a></li></ul></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/creating-v8-profiling-timeline-plots">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq96twcx5vtCLGYgeRNL29XBwuUoE03Rxso_4GQ1UY__WF0Qgqnp30htqR74SGwpoCh0CgDHvhO9te-Iop1HutC0sGQUvaW65jb_qI4UnsQT8R-UHr0/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

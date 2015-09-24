@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/threading","deleted":false,"title":"Threading","dir":"ltr"},{"path":"/developers/design-documents/threading/suble-threading-bugs-and-patterns-to-avoid-them","deleted":false,"title":"Subtle Threading Bugs and Patterns to avoid them","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/threading/suble-threading-bugs-and-patterns-to-avoid-them\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/threading","parentWuid":"wuid:gx:79c97c9775a1d3e6","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Subtle Threading Bugs and Patterns to avoid them","locale":"en","wuid":"wuid:gx:866b4baec801740","revision":9,"path":"/developers/design-documents/threading/suble-threading-bugs-and-patterns-to-avoid-them","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"suble-threading-bugs-and-patterns-to-avoid-them","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Subtle Threading Bugs and Patterns to avoid them - The Chromium Projects" />
+<meta itemprop="name" content="Subtle Threading Bugs and Patterns to avoid them - The Chromium Projects" />
+<meta property="og:title" content="Subtle Threading Bugs and Patterns to avoid them - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Subtle Threading Bugs and Patterns to avoid them - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="/developers/design-documents/threading" dir="ltr">Threading</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Subtle Threading Bugs and Patterns to avoid them</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><b>The problem</b></div><div style="font-family:arial,sans-serif">We were using a number of patterns that were problematic:</div><div style="font-family:arial,sans-serif"><br /></div><div><ol><li style="font-family:arial,sans-serif"><span style="font-size:10pt">Using</span><font face="'courier new', monospace" style="font-size:10pt"> BrowserThread::GetMessageLoop</font></li><ul style="font-family:arial,sans-serif"><li><span style="font-size:10pt">This isn't safe, since it could return a valid pointer, but since the caller isn't holding on to a lock anymore, the target </span><font face="'courier new', monospace" style="font-size:10pt">MessageLoop </font><span style="font-size:10pt">could be destructed while it's being used</span></li></ul><li style="font-family:arial,sans-serif"><span style="font-size:10pt">Caching of </span><font face="'courier new', monospace" style="font-size:10pt">MessageLoop</font><span style="font-size:10pt"> pointers in order to use them later for </span><font face="'courier new', monospace" style="font-size:10pt">PostTask </font><span style="font-size:10pt">and friends</span></li><ul style="font-family:arial,sans-serif"><li><span style="font-size:10pt">This was more efficient previously (more on that later) since using </span><font face="'courier new', monospace" style="font-size:10pt">BrowserThread::GetMessageLoop</font><span style="font-size:10pt"> involved a lock</span></li><li><span style="font-size:10pt">But it spread logic about the order of thread destruction all over the code.  Code that moved from the IO thread to the file thread and back, in order to avoid doing disk access on the IO thread, ended up having to do an extra hop through the UI thread on the way back to the IO thread since the file thread outlives the IO thread.  Of course, most code learnt this the hard way, after doing the straight forward IO-&gt;file-&gt;IO thread hop and updating the code after seeing reliability or user crashes</span></li><li><span style="font-size:10pt">It made the browser shutdown fragile and hence difficult to update</span></li></ul><li style="font-family:arial,sans-serif"><span style="font-size:10pt">File thread hops using </span><font face="'courier new', monospace" style="font-size:10pt">RefCountedThreadSafe </font><span style="font-size:10pt">objects which have non-trivial destructors</span></li><ul><li><span style="font-family:arial,sans-serif;font-size:10pt">To reduce jank, frequently an object on the UI or IO thread would execute some code on the file thread, then post the result back to the original thread.  We make this easy using </span><font face="courier new, monospace" style="font-size:10pt">base::Callback</font><font face="arial, sans-serif" style="font-family:arial,sans-serif;font-size:10pt"> and </font><font face="'courier new', monospace" style="font-size:10pt">RefCountedThreadSafe</font><font face="arial, sans-serif"><font style="font-size:10pt">,</font><font style="font-size:10pt"> </font></font><font face="arial, sans-serif" style="font-family:arial,sans-serif;font-size:10pt">so this pattern happened often, but it's not always safe: </font><font face="'courier new', monospace" style="font-size:10pt">base::Callback</font><font face="'courier new', monospace" style="font-family:arial,sans-serif;font-size:10pt"> </font><font face="arial, sans-serif" style="font-family:arial,sans-serif;font-size:10pt">holds an extra reference on the object to ensure that it doesn't invoke a method on a deleted object.  But it's quite possible that before the file thread's stack unwinds and it releases the extra reference, that the response task on the original thread executed and released its own additional reference.  The file thread is then left with the remaining reference and the object gets destructed there.  While for most objects this is ok, many have non-trivial destructors, with the worst being ones that register with the UI-thread </font><font face="'courier new', monospace" style="font-size:10pt">NotificationService</font><font face="arial, sans-serif" style="font-family:arial,sans-serif;font-size:10pt">.  Dangling pointers would be left behind and tracking these crashes from ChromeBot or the crash dumps has wasted several days at least for me.</font></li></ul><li style="font-family:arial,sans-serif"><span style="font-size:10pt">Having browser code take different code paths if a thread didn't exist</span></li><ul style="font-family:arial,sans-serif"><li><span style="font-size:10pt">This could be either deceptively harmless  (i.e. execute synchronously when it was normally asynchronous), when in fact it makes shutdown slower because disk access is moved to the UI thread</span></li><li><span style="font-size:10pt">It could lead to data loss, if tasks are silently not posted because the code assumes this only happens in unit tests, when it could occur on browser shutdown as well</span></li></ul></ol></div><div style="font-family:arial,sans-serif"><br /></div><div style="font-family:arial,sans-serif"><b>The solution</b></div></span><span style="border-collapse:collapse;font-family:arial,sans-serif">1+2: Where possible, use <font face="'courier new', monospace">BrowserThread::PostTask.</font></span> Everywhere else, use <font face="'courier new', monospace">scoped_refptr&lt;MessageLoopProxy&gt;</font><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace"><br />BrowserThread::PostTask </font></span><span style="border-collapse:collapse;font-family:arial,sans-serif">and friends (i.e.</span><span style="border-collapse:collapse;font-family:arial,sans-serif"> </span><span style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">PostDelayedTask</font></span><span style="border-collapse:collapse;font-family:arial,sans-serif">,</span><span style="border-collapse:collapse;font-family:arial,sans-serif"> </span><span style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">DeleteSoon</font></span><span style="border-collapse:collapse;font-family:arial,sans-serif">,</span><span style="border-collapse:collapse;font-family:arial,sans-serif"> </span><span style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">ReleaseSoon</font></span><span style="border-collapse:collapse;font-family:arial,sans-serif">) </span><span style="border-collapse:collapse;font-family:arial,sans-serif">are safe and efficient: no locks are grabbed if the target thread is known to outlive the current thread.  The four static methods have the same signature as the ones from <font face="'courier new', monospace">MessageLoop</font>, with the addition of the first parameter to indicate the target thread.</span></blockquote><div><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><br /></div></span><div style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">BrowserThread::PostTask(</font><span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate"><span style="border-collapse:collapse;font-family:courier new,monospace">Browser</span><font face="'courier new', monospace"><span style="border-collapse:collapse">Thread::FILE, FROM_HERE, task);</span></font></span></div><br />Similarly, <font face="'courier new', monospace"><span style="border-collapse:collapse">Me<font size="2">ssageLoopProxy </font></span></font><font size="2">has (non-static) methods with the same signature as the MessageLoop counterparts, but is safe for caching a [reference counting] pointer to. You can obtain a<span style="white-space:pre"><font face="monospace"> </font><font face="courier new, monospace">MessageLoopProxy</font><font face="monospace"> </font></span>via<span style="white-space:pre"><font face="monospace"> </font><font face="courier new, monospace">Thread::message_loop_proxy()</font><font face="arial, sans-serif">, </font><font face="courier new, monospace">BrowserThread::GetMessageLoopProxy()</font></span><font face="arial, sans-serif">, or<span style="white-space:pre"> </span></font><span style="white-space:pre"><font face="courier new, monospace">MessageLoopProxy::CreateForCurrentThread()</font><font face="arial, sans-serif">.</font></span></font></blockquote><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><br /></div><div><span style="font-family:arial,sans-serif">3: If you want to execute a method on another thread and jump back to the original thread, use </span><font face="courier new, monospace">PostTaskAndReply()</font><font face="arial, sans-serif">:</font></div></span></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><span style="border-collapse:collapse"><div><font face="arial, sans-serif"><br /></font></div><div><span style="font-size:10pt"><font face="courier new, monospace">BrowserThread::PostTaskAndReply(BrowserThread::FILE, FROM_HERE,</font></span></div><div><span style="font-size:10pt"><font face="courier new, monospace">                                base::Bind(&amp;Foo::DoStuffOnFileThread, this),</font></span></div><div><span style="font-size:10pt"><font face="courier new, monospace">                                base::Bind(&amp;Foo::StuffDone, this));</font></span></div></span></blockquote><font face="arial, sans-serif"><br /></font><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="font-family:courier new,monospace">PostTaskAndReply()</span><span style="font-family:arial,sans-serif;font-size:10pt"> will make sure that both tasks are destroyed on the thread they were created on, so if they hold the last reference to the object, it will be destroyed on the originating thread. You can also use </span><span style="font-size:10pt"><font face="courier new, monospace">PostTaskAndReplyWithResult() </font><font face="arial, sans-serif">to return a value from the first task and pass it into the second task.</font></span><div><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif">Alternatively, if your object must be destructed on a specific thread, you can use a trait from <span style="font-family:courier new,monospace">Browser</span><font face="'courier new', monospace">Thread</font>:</div></span></div></blockquote><div><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><br /></div></span><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="border-collapse:collapse"><div><div style="font-family:arial,sans-serif"><font face="'courier new', monospace">class Foo : public base::RefCountedThreadSafe&lt;Foo, </font><span style="font-family:Arial,Verdana,sans-serif"><span style="font-family:courier new,monospace">BrowserT</span><span style="font-family:courier new,monospace">hread::DeleteOnIOThread&gt;</span></span></div></div></span></blockquote><span style="border-collapse:collapse"><div><div style="font-family:arial,sans-serif"><br /></div></div><div style="font-family:arial,sans-serif">4: I've removed all the special casing and always made the objects in the browser code behave in one way.  If you're writing a unit test and need to use an object that goes to a file thread (where before it would proceed synchronously), you just need:</div></span></div><div><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><br /></div></span><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><font face="'courier new', monospace">BrowserThread file_thread(BrowserThread::FILE, MessageLoop::current());</font></div></span><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><font face="'courier new', monospace">foo-&gt;StartAsyncTaskOnFileThread();</font></div></span><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><div><font face="'courier new', monospace">MessageLoop::current()-&gt;RunAllPending();</font></div></div></span><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif"><br /></div></span><span style="border-collapse:collapse"><div style="font-family:arial,sans-serif">There are plenty of examples now in the tests.</div></span></blockquote><div style="border-collapse:collapse;font-family:arial,sans-serif"><br /></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><br /></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><b>Gotchas</b></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><b><span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate;font-weight:normal"><div style="border-collapse:collapse;font-family:arial,sans-serif">Even when using <span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate"><span style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">BrowseThread</font></span> or <font face="'courier new', monospace">MessageLoopProxy</font></span>, you will still likely have messages lost (usually resulting in memory leaks) when the target thread is in the process of shutting down: the benefit over <span style="font-family:courier new,monospace;border-collapse:separate">MessageLoop</span> is primarily one of avoiding crashing in unpredictable ways. (See <a href="http://groups.google.com/a/chromium.org/group/chromium-dev/browse_thread/thread/d39f837234cde521/6a1b8f6c6bf8e5db" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">this thread</a> for debate.)</div><div><br /></div></span></b></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace"><span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate"><span style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">BrowseThread</font></span> and <font face="'courier new', monospace">MessageLoopProxy::</font></span>PostTask </font>will silently delete a task if the thread doesn't exist.  This is done to avoid having all the code that uses it have special cases if the target thread exists or not, and to make Valgrind happy.  As usual, the task for <font face="'courier new', monospace">DeleteSoon</font>/<font face="'courier new', monospace">ReleaseSoon </font>doesn't do anything in its destructor, so this won't cause unexpected behavior with them.  But be wary of posted Task objects which have non-trivial destructors or smart pointers as members.  I'm still on the fence about this, since while the latter is theoretical now, it could lead to problems in the future.  I might change it so that the tasks are not deleted when I'm ready for more Valgrind fun.</div><div style="border-collapse:collapse;font-family:arial,sans-serif"><br /></div><div style="border-collapse:collapse;font-family:arial,sans-serif">If you absolutely must know if a task was posted or not, you can check the return value of <font face="'courier new', monospace">PostTask </font>and friends.  But note that even if the task was posted successfully, there's no guarantee that it will run because the target thread could already have a <font face="'courier new', monospace">QuitTask </font>queued up, or be in the early stages of quitting.</div><div style="border-collapse:collapse;font-family:arial,sans-serif"><br /></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><font face="'courier new', monospace">g_browser-&gt;io_thread()</font> and <font face="'courier new', monospace">file_thread()</font> are still around (the former for IPC code, and the latter for Linux proxy code which is in net and so can't use <font face="'courier new', monospace">BrowserThread</font>).  Don't use them unless absolutely necessary.</div><div style="border-collapse:collapse;font-family:arial,sans-serif"><br /></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><br /></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><b>More information</b></div><div style="border-collapse:collapse;font-family:arial,sans-serif"><a href="http://code.google.com/p/chromium/issues/detail?id=25354" style="color:rgb(0,0,204)" target="_blank">http://code.google.com/p/chromium/issues/detail?id=25354</a></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/threading/suble-threading-bugs-and-patterns-to-avoid-them">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXukca4jaDOG9SuQz_G8t7Hlrq9K-u2JH5JqNnQwzix1_ug5ueCb5uPP_igozKwQwW7r_gmHW7bRb2jbifoV5DI6I6OhSuPMixftssHi2r8O3Ob_Ki7o7REEXkLg75iF6ityK6W4/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

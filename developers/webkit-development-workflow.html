@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/webkit-development-workflow","deleted":false,"title":"WebKit development workflow","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/webkit-development-workflow\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"WebKit development workflow","locale":"en","wuid":"wuid:gx:6b4957594b746f67","revision":32,"path":"/developers/webkit-development-workflow","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"webkit-development-workflow","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="WebKit development workflow - The Chromium Projects" />
+<meta itemprop="name" content="WebKit development workflow - The Chromium Projects" />
+<meta property="og:title" content="WebKit development workflow - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>WebKit development workflow - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">WebKit development workflow</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><font size="2"><b>Note</b>: This page is <b>deprecated</b> thanks to the introduction of the <a href="../blink.1.html">Blink project</a>. Please see the <a href="../blink/conversion-cheatsheet.html">Blink Conversion Cheatsheet</a> for the most up-to-date instructions.</font></div>
+<div><br />
+</div>
+<strike>This page describes a possible workflow for developing the Chromium WebKit port on Linux or Mac using git and ninja.</strike>
+<h2><a name="TOC-Setup"></a>Setup</h2>
+<div>
+<ul><li><span style="font-size:10pt">Prerequisites: install git and whatever other tools are required to build Chromium on your platform.</span></li>
+<li><span style="font-size:10pt">Create a bugzilla account for </span><a href="http://bugs.webkit.org/" style="font-size:10pt">http://bugs.webkit.org/</a><span style="font-size:10pt"> preferably using your @chromium.org account as email address.</span></li>
+<li><span style="font-size:10pt">Checkout WebKit. This can be a simple git checkout, but if developing WebKit within a Chromium checkout, it is a bit more complicated. For reference, see </span><a href="http://trac.webkit.org/wiki/UsingGitWithWebKit" style="font-size:10pt">Tips and Tricks for using Git with WebKit</a><span style="font-size:10pt"> for WebKit PoV, </span><a href="https://code.google.com/p/chromium/wiki/UsingNewGit" style="font-size:10pt">New workflow for using Git with Chromium</a><span style="font-size:10pt"> for Chromium PoV, and </span><a href="https://code.google.com/p/chromium/wiki/UsingWebKitGit" style="font-size:10pt">Using WebKit from Git with Chrome</a><span style="font-size:10pt"> if developing WebKit within a Chromium checkout):</span></li></ul>
+</div>
+<div>Check out the code:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git clone git://git.webkit.org/WebKit.git WebKit</code></div>
+</div>
+<div><br />
+</div>
+<div>You can also use the WebKit checked out inside an existing git Chromium tree, whose origin is <code>https://chromium.googlesource.com/external/WebKit_trimmed.git</code></div>
+<div><br />
+</div>
+<div>Configure git:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>cd WebKit</code></div>
+<div><code># cd third_party/WebKit # if within a Chromium checkout</code></div>
+<div><code>git svn init --prefix=origin/ -T trunk http://svn.webkit.org/repository/webkit</code></div>
+<div><code>git config --replace svn-remote.svn.fetch trunk:refs/remotes/origin/master</code></div>
+<div><code>git svn fetch</code></div>
+<div><code>git config --global user.name "Foo Bar"</code></div>
+<div><code>git config --global user.email "foo@chromium.org"</code></div>
+<div><code>git config merge.changelog.driver "perl $(pwd)/Tools/Scripts/resolve-ChangeLogs --merge-driver %O %A %B"</code></div>
+<div><code>git config diff.objcpp.xfuncname "^[-+@a-zA-Z_].*$"</code></div>
+<div><code>git config diff.objcppheader.xfuncname "^[@a-zA-Z_].*$"</code></div>
+<div><code>git config branch.autosetupmerge always</code></div>
+</div>
+<h3><a name="TOC-Login"></a>Login</h3>
+<div>For login, the scripts will automatically use your system keychain (GNOME Keyring on Linux, Keychain on Mac OS X), which is most secure, though it can be fiddly.</div>
+<div>On Linux, first running webkit-patch without anything stored in git configuration and logging in manually stores username and password in the keyring, and then adding username <i>only</i> to git configuration gives automatic sign-in (if you initially log in with username set in git, it won't store all the information correctly and you'll still need to key in username).</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch upload # may need an actual patch/git commit</code></div>
+<div><code># enter credentials, cancel upload</code></div>
+<div><code>git config bugzilla.username "foo@chromium.org"</code></div>
+<div><code>webkit-patch upload # test that you don't need to sign in</code></div>
+</div>
+<div><br />
+</div>
+<div>Alternatively, you can store your password in plain text, which is easier, but insecure:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code># git config bugzilla.password "yourpassword" # insecure, are you really sure you want to do this</code></div>
+</div>
+<h3><a name="TOC-Environment-variables"></a>Environment variables</h3>
+<div>Next we setup some environment variables. You can put these in <code>~/.bashrc</code> or create a separate file such as <code>~/webkit.env</code> to set the variables needed for WebKit development</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>export WEBKIT_DIR=$(pwd)</code></div>
+<div><code>export PATH=$PATH:$WEBKIT_DIR/Tools/Scripts:$WEBKIT_DIR/Source/WebKit/chromium/depot_tools</code></div>
+<div><code>export GYP_GENERATORS=ninja</code></div>
+</div>
+<div><br />
+</div>
+<div>If you also want to use goma on Mac, you'll also need</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>export CC=clang</code></div>
+<div><code>export CXX=clang++</code></div>
+<div><code>export PATH=$PATH:$WEBKIT_DIR/Source/WebKit/chromium/third_party/llvm-build/Release+Asserts/bin</code></div>
+</div>
+<div><br />
+</div>
+<div>On Linux goma only requires the usual goma setup.</div>
+<div><br />
+</div>
+<div>If you want to use clang on Linux, you'll need</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>export CC=clang</code></div>
+<div><code>export CXX=clang++</code></div>
+<div><code>export PATH=$PATH:$WEBKIT_DIR/Source/WebKit/chromium/third_party/llvm-build/Release+Asserts/bin</code></div>
+<div><code>export GYP_DEFINES="clang=1"</code></div>
+</div>
+<div><br />
+</div>
+<div>Now we're ready to pull in the Chromium dependencies</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>update-webkit --chromium</code></div>
+<div></div>
+</div>
+<br />
+<div>Done!</div>
+<h2><a name="TOC-Development"></a>Development</h2>
+<h3><a name="TOC-Checking-out-code"></a>Checking out code</h3>
+<div>First, update your checkout</div>
+<div><br />
+</div>
+<div></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>cd $WEBKIT_DIR</code></div>
+<div><code>git checkout master</code></div>
+<div><code>update-webkit --chromium</code></div>
+</div>
+<div></div>
+<br />
+<div>Then create a branch to work on:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git checkout -b work</code></div>
+<div></div>
+</div>
+<br />
+<div>When you want to update your branch, update master as described above, and then rebase your branch on master:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>cd $WEBKIT_DIR</code></div>
+<div><code>git checkout master</code></div>
+<div><code>update-webkit --chromium</code></div>
+<div><code>git checkout work</code></div>
+<div><code>git rebase master</code></div>
+</div>
+<div></div>
+<br />
+</div>
+<div>The merge driver you configured above will take care of merging the ChangeLog files.</div>
+<h3><a name="TOC-Development1"></a>Development</h3>
+<div>Then you do the actual development. Keep in mind that WebKit uses a different coding style than Chromium: <a href="http://www.webkit.org/coding/coding-style.html">WebKit Coding Style Guidelines</a></div>
+<div>See also <a href="http://www.webkit.org/coding/contributing.html">Contributing Code</a> and especially <a href="http://www.webkit.org/quality/testwriting.html">Writing New Tests</a></div>
+<div><br />
+</div>
+<div>You can compile WebKit like this (the --makeargs parameter is only required when you use goma, otherwise ninja will use a reasonable default)</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>build-webkit --chromium --debug --makeargs=-jXXX</code></div>
+<div></div>
+</div>
+<br />
+<div>And run tests like this:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>new-run-webkit-tests --chromium --debug --no-new-test-results --no-retry-failures</code></div>
+<div><code>run-chromium-webkit-unit-tests --debug<br />
+</code></div>
+<div></div>
+</div>
+<br />
+<div><br />
+</div>
+<div>Note that currently (when?) Linux baselines are for Ubuntu Lucid, Mac baselines for Mac 10.6, and Windows baselines for Win XP. If you don't have these operating systems available, you can try to pass <font face="courier new, monospace">--no-pixel-tests</font><font face="arial, sans-serif"> and hope that the text dumps are enough to catch regressions. On Ubuntu, you can setup a chroot as described here: <a href="https://code.google.com/p/chromium/wiki/UsingALinuxChroot">Using a chroot</a>.</font></div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<div><font face="arial, sans-serif">If you added a new file, you'll need to rerun gyp</font></div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<div><font face="arial, sans-serif">
+<div class="sites-codeblock sites-codesnippet-block"><code>cd Source/WebKit/chromium; ./gyp_webkit</code></div>
+</font></div>
+<div><br />
+</div>
+<div>If you added a file to WebCore, you will need register it with all build systems used in WebKit which is surprisingly difficult and beyond this simple guide.</div>
+<div><br />
+</div>
+<div>If you change the WebCore API, you will need to update exported symbol lists for various platforms as described here: <a href="http://trac.webkit.org/wiki/ExportingSymbols">Exporting Symbols</a></div>
+<h3><a name="TOC-Uploading-your-patch"></a>Uploading your patch</h3>
+<div>Once you're happy with your change, you can upload it to Bugzilla, either manually via the web page, or by<span style="font-size:10pt"> using </span><code style="font-size:10pt">webkit-patch upload</code><span style="font-size:10pt"> -- this automates many tasks, notably posting to the correct bug (or opening a new one if necessary), checking style, and preparing ChangeLogs, and it gives you a chance to review the patch before posting. Note that </span><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace">webkit-patch</span><span style="font-size:10pt"> uses the same convention as git, namely that the command </span><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace">upload</span><span style="font-size:10pt"> comes </span><i style="font-size:10pt">first,</i><span style="font-size:10pt"> followed by options and then arguments.</span></div>
+<div><br />
+</div>
+<div>
+<div>There are many configuration options, which you can list with the <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">help</span><span style="font-size:10pt"> command via:</span></div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch help upload</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+</div>
+</div>
+<div>To post a patch to a new bug, without requesting review (such as for a WIP), use:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch upload --no-review</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>
+<div>This will prompt you for a one line description of your change, which will be used to create a bug on <a href="http://bugs.webkit.org/">http://bugs.webkit.org/</a>. It will also run some basic style checks on your patch, open an editor with ChangeLog entries, and show you the diff before uploading the patch. This will also store the URL <samp>https://bugs.webkit.org/show_bug.cgi?id=<i>BUGID</i></samp> in the ChangeLogs, which will be used automatically determine the bug number on subsequent uploads. (It can also be stored in git commit messages, for instance, where it will also be picked up.)</div>
+<div><br />
+</div>
+<div>You'll need EditBugs permission for the script to work properly (namely to assign the bug to you), else you'll get an error. You can request this (from anyone with EditUser permission) on the mailing list webkit-committers at lists.webkit.org or on #webkit on IRC (freenode).</div>
+<div></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div><span style="font-size:10pt">There are a few conventions for the description/summary, such as using [WIP], or indicating subcomponents with [</span><i style="font-size:10pt">SubComponentName</i><span style="font-size:10pt">] or the like, and regressions with REGRESSION -- see </span><a href="http://www.webkit.org/quality/bugwriting.html" style="font-size:10pt">Bug Reporting Guidelines</a><span style="font-size:10pt">.</span></div>
+<div><br />
+</div>
+<div>There are various other fields you can fill in about the bug, detailed at <a href="http://www.webkit.org/quality/bugwriting.html" style="font-size:10pt">Bug Reporting Guidelines</a>. If you need to set these, it's easiest to use the web page. Of these, <span style="font-size:10pt">the most significant (and only one that can be set via the script) is the component, which you can set via</span><span style="font-size:10pt"> </span><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace">--component=<i>COMPONENT</i></span><span style="font-size:10pt"> -- it may be useful to include this in a script if you generally work on a single component. You can also specify if it is only for a given platform, etc.</span></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>For subsequent uploads, you can just run this again (it will automatically determine the bug number). You likely want to automatically update the ChangeLogs (new date, revised bug description, touched files/functions), via:</div>
+</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch upload --no-review --update-changelogs</code></div>
+</div>
+<div><br />
+</div>
+<div><span style="font-size:10pt">Depending on the files you've touched, some people will get automatically cc'd on the issue. Otherwise, you can look at the files you've changed and try to find a good reviewer yourself, and cc them on the issue, or run</span></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch suggest-reviewers -g UPSTREAM....</code></div>
+<div></div>
+</div>
+<br />
+<div>Once your patch looks good to you and is ready for review, request review by setting the r? flag:</div>
+<div><br />
+</div>
+<div>
+<div></div>
+</div>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch upload</code><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt"> </span><font color="#006000" face="monospace">--update-changelogs</font></div>
+<div></div>
+</div>
+<div><br />
+</div>
+</div>
+<div>You can also set or clear the r (review) and cq (commit queue) flags on Bugzilla by clicking on the "Details" link next to the patch, and using the relevant drop-down.</div>
+<div><br />
+</div>
+<div>On the bug tracker, the EWS (Early Warning System) will pick up your patch and check whether it compiles on a number of different configurations. The cr-linux bot will also execute tests. If anything breaks or there's anything wrong with the patch, substantively or stylistically you will likely get r- (review rejected) from a reviewer; if it's approved, you will get r+ and proceed to committing (see below).</div>
+</div>
+<div><br />
+</div>
+<div>
+<div>If you want to upload your patch to an existing bug, you can specify the bug number on the command line, or manually include the URL <samp>https://bugs.webkit.org/show_bug.cgi?id=<i>BUGID</i></samp> in the ChangeLog (or git commit message):</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch upload </code><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt">--no-review <i>BUGID</i></span></div>
+<div></div>
+</div>
+</div>
+<div>
+<h3><a name="TOC-Description-and-Comment"></a>Description and Comment</h3>
+<div>
+<div>
+<div>You can specify a one-line Description for the patch, and a multi-line Comment, further describing the patch and changes. <code>webkit-patch upload</code> does not automate this or provide an interactive facility (only command line parameters), but a brief script will do.</div>
+<div><br />
+</div>
+<div>To get from git log (making sure you've committed, so it's not the previous, unrelated git message):</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>#!/bin/bash</code></div>
+<div><code>
+<div><br />
+</div>
+<div>if [[ -n $(git status --short) ]]</div>
+<div>then</div>
+<div>  echo "Uncommitted changes, please commit or stash."</div>
+<div>  exit 1</div>
+<div>fi</div>
+<div><br />
+</div>
+</code></div>
+<div><code>DESCRIPTION=`git log --format="%s" HEAD^..`</code></div>
+<div><code>COMMENT=`git log --format="%b" HEAD^..`</code></div>
+<div><code><br />
+</code></div>
+<div><code>webkit-patch upload --description="$DESCRIPTION" --comment="$COMMENT" --update-changelogs</code></div>
+</div>
+<div><br />
+</div>
+<div>To enter interactively:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>#!/bin/bash</code></div>
+<div><code><br />
+</code></div>
+<div><code>echo "Description:"</code></div>
+<div><code>read DESCRIPTION</code></div>
+<div><code>echo "Comment (end with ^D):"</code></div>
+<div><code>COMMENT=`cat`</code></div>
+<div><code><br />
+</code></div>
+<div><code>webkit-patch upload --description="$DESCRIPTION" --comment="$COMMENT" --update-changelogs</code></div>
+</div>
+<div></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>Alternatively, you can use <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">webkit-patch post-commits</span><span style="font-size:10pt"> which does automatically get from git.</span></div>
+</div>
+</div>
+<h3><a name="TOC-Git"></a>Git</h3>
+</div>
+<div><span style="font-size:10pt">There are various git workflows, almost always starting by creating a local branch and switching to it. However, committing style varies.</span></div>
+<div>
+<ul><li><span style="font-size:10pt">Safest and most elaborate is to commit changes to your local branch (as new commits), as this lets you track the history of your own changes and revert to previous versions, and lets you store local notes on changes in the git commit log. </span><code>webkit-patch upload</code> will upload the combined diff, so you're free to make many local commits, only uploading a patch when it's in a good state. Recall that committing all of your changes -- after staging <span style="font-size:10pt">new files with </span><code style="font-size:10pt">git add</code><span style="font-size:10pt"> -- </span>is done via:</li></ul>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git commit --all</code></div>
+</div>
+<ul><li><span style="font-size:10pt">Many people prefer to have a single commit, which they amend. This simplifies local branch management, as you only have a single commit, though you lose your local history, which makes reverting and tracking your own changes impossible for revisions that haven't been upload. Any patch that has been uploaded can simply be downloaded and applied, however. This is done via:</span></li></ul>
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git commit --all --amend</code></div>
+</div>
+</div>
+<div>
+<ul><li>Some people don't even commit changes locally, only needing to <span style="color:rgb(0,96,0);font-family:monospace">git add</span> new files. This makes it impossible to change branches, however, so this is primarily used in simple situations (e.g., only working on one bug, initial diff), or if using tools like git-new-workdir.</li></ul>
+</div>
+<div><span style="font-size:10pt">If you want </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">webkit-patch upload</span><span style="font-size:10pt"> to pick up the bug number from the git commit message (it should pick it up from the ChangeLogs, however), use a message such as:</span></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><i>DESCRIPTION</i></code></div>
+<div><br />
+</div>
+<div><code>https://bugs.webkit.org/show_bug.cgi?id=XXX</code></div>
+<div><code><i>COMMENT</i></code></div>
+<div><code><i>...</i></code></div>
+</div>
+<h4><a name="TOC-post-commits"></a>post-commits</h4>
+<div>Instead of using <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">webkit-patch upload</span><span style="font-size:10pt"> you can alternatively use </span><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace">webkit-patch post-commits</span><span style="font-size:10pt"> for slightly different behavior. </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">post-commits</span><span style="font-size:10pt"> is fundamentally for uploading a branch as a sequence of patches, and thus generates multiple attachments. For simple uses you don't want this behavior and thus must be using the "amend a single commit" workflow to get a single patch, or hack around this (if using multiple revisions on a local branch) by specifying the commitish appropriately, though this is tricky. One advantage is that </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">post-commits</span><span style="font-size:10pt"> will automatically set the Description (and optionally Comment) from the git commit, without needing the auxiliary scripts above. If using</span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div><span style="font-size:10pt">If using the "amend a single commit" workflow, diff against HEAD via:</span></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch post-commits --add-log-as-comment HEAD</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>To only set the Description (no Comment), use:</div>
+<div><br />
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch post-commits HEAD</code></div>
+</div>
+<div>
+<h3><a name="TOC-Manual-operation"></a>Manual operation</h3>
+</div>
+<div>You can manually run the scripts that <span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">webkit-patch</span><span style="font-size:10pt"> runs via:</span></div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><span style="line-height:1;font-size:10pt">check-webkit-style -g HEAD</span></code></div>
+<div><code>prepare-ChangeLog -g HEAD</code></div>
+<div></div>
+</div>
+<br />
+</div>
+<div>The first checks style; the second creates<span style="font-size:10pt"> an updated structure for your ChangeLog entries, though you will still need to merge the old and new entries manually. </span><span style="font-size:10pt">You will need to update the ChangeLog entries for various reasons, such as the date changing, the bug description changing, a</span><span style="font-size:10pt">dding tests, or change additional files or methods; this can be </span><span style="font-size:10pt">tedious to do this manually, hence the script</span></div>
+<h3><a name="TOC-Landing-patches"></a>Landing patches</h3>
+<div>
+<div>It's best to use the commit queue for landing patches. To get on the commit queue, you need to set the cq? flag on the patch (click on Details and set commit-queue to ?) or pass the <code>--request-commit</code> flag to <code>webkit-patch upload</code> or <code>post-commits</code>.</div>
+<div><br />
+</div>
+<div>When you get a <samp>r+/cq+</samp> on your patch, it will be automatically landed, and the commit queue will replace <samp>"Reviewed by nobody (OOPS)!"</samp> in the ChangeLogs with the respective reviewer.</div>
+<div><br />
+</div>
+<div>Sometimes, you will get a <samp>r+/cq-</samp> (LGTM with nits). In that case, you can address the nits, and then you need to manually replace <samp>"Reviewed by nobody (OOPS)!"</samp> in the ChangeLogs with <samp>"Reviewed by Foo Bar"</samp>, and upload that patch with <samp>cq?</samp> (but not requesting another review).</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch post-commits --no-review --request-commit HEAD</code></div>
+<div></div>
+</div>
+<br />
+<div>Once you're a committer, you can then set cq+ yourself, otherwise, any other committer can grant you cq+.</div>
+</div>
+<div><br />
+</div>
+<div>There's a number of situations where you can't use the commit queue, e.g. you might want to roll the chromium DEPS file:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>git checkout -b deps</code></div>
+<div><code>webkit-patch roll-chromium-deps</code></div>
+</div>
+<div><br />
+</div>
+<div>or you want to commit new baselines you created with garden-o-matic:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch land-cowhand</code></div>
+<div></div>
+</div>
+<br />
+<div>or commit a patch from a reviewed bug:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>webkit-patch land-from-bug <i>BUG_ID</i></code></div>
+<div></div>
+</div>
+<br />
+</div>
+<div>
+<h3><a name="TOC-Cleaning-up"></a>Cleaning up</h3>
+</div>
+<div>Once your patch lands, you need to clean up by deleting your local branch. This is necessary because patches are committed outside the git flow (you don't git push them), so git doesn't know that they've been committed. You may want to wait a day or two after landing to make sure the patch didn't break anything and isn't reverted.</div>
+<div><br />
+</div>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><span style="line-height:1;font-size:10pt">git branch -D work</span></code></div>
+<div></div>
+</div>
+<br />
+</div>
+<div></div>
+</div>
+<div>If you have deleted your branch and need to revise the patch, just create a new branch, download the patch from Bugzilla, and apply it. This is also automated; note that you can download <i>reviewed</i> patches from a bug, or a specific attachment.</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="line-height:1;font-size:10pt;color:rgb(0,96,0);font-family:monospace">webkit-patch apply-from-bug </span><i style="line-height:1;font-size:10pt;color:rgb(0,96,0);font-family:monospace">BUGID</i></div>
+<div><span style="color:rgb(0,96,0);font-family:monospace">webkit-patch apply-attachment <i>ATTACHMENT_ID</i></span></div>
+</div>
+<h2><a name="TOC-Testing-your-change-in-chromium"></a>Testing your change in chromium</h2>
+<div>There are two ways to test how chromium does with your change: You can either patch your patch into the WebKit checkout in chromium:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code style="line-height:1;font-size:10pt">webkit-patch apply-attachment --no-update </code><i style="line-height:1;font-size:10pt;color:rgb(0,96,0);font-family:monospace">ATTACHMENT_ID</i></div>
+</div>
+<div><br />
+</div>
+<div>Build Chromium as usual then.</div>
+<div><br />
+</div>
+<div>Or you can build content_shell from within WebKit and test your change there: <a href="http://dev.chromium.org/developers/testing/webkit-layout-tests/content-shell">Running layout tests using the content shell</a></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/webkit-development-workflow">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9775MXDlGmf8vEYAbbnztT2CakhZbp0BbVNmkjmtkxDhpQXG3pjyML0ajQ1R24vxIezuRGfREr1JJ9oGkRRfhYesyS3c-bYSWPEx7opVf5_GlXND4/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

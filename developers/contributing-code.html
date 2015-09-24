@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/contributing-code","deleted":false,"title":"Contributing Code","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/contributing-code\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Contributing Code","locale":"en","wuid":"wuid:gx:4caafdc1a0b4ec7f","revision":120,"path":"/developers/contributing-code","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"contributing-code","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Contributing Code - The Chromium Projects" />
+<meta itemprop="name" content="Contributing Code - The Chromium Projects" />
+<meta property="og:title" content="Contributing Code - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Contributing Code - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Contributing Code</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div dir="ltr">If you want to contribute code to Chromium, there are a few things you can do to make the process flow smoothly.  For Chromium OS, please go <a href="../chromium-os/developer-guide.html">here</a>.</div>
+<div dir="ltr"><br />
+</div>
+<div dir="ltr">Quick start: <a href="https://docs.google.com/a/google.com/present/view?id=0AetfwCoL2lQAZGQ5bXJ0NDVfMGRtdGQ0OWM2" style="color:rgb(0,102,204);outline-style:none">Life of a Chromium Developer</a> slides or a very detailed <a href="http://meowni.ca/posts/chromium-101" target="_blank">guide</a> outlining all the steps you need to check out the code, make a small change and send it out for review.</div>
+<div dir="ltr"><br />
+</div>
+<div dir="ltr"><a href="https://docs.google.com/a/google.com/present/view?id=0AetfwCoL2lQAZGQ5bXJ0NDVfMGRtdGQ0OWM2" style="color:rgb(0,102,204);outline-style:none"></a><b>Note:</b> These instructions apply only if your changes are in <a href="http://src.chromium.org/viewvc/chrome/trunk/src/">Chromium code</a>. If your changes are in a directory that we pull from another repository (e.g. Blink, v8, skia, gtest, gmock), you need to use that project's way of getting code submitted. For example, here is a <a href="http://dev.chromium.org/blink/conversion-cheatsheet" style="font-size:10pt">cheatsheet</a> for contributing to Blink, and here's <a href="https://developers.google.com/chrome-developer-tools/docs/contributing">Chrome DevTools</a>.<span style="font-size:10pt"> Once your change has landed upstream, you need to update Chromium's </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?view=markup" style="font-size:10pt">DEPS file</a><span style="font-size:10pt"> to pull in the new revision (we update Blink very often, so you don't have to take care of this if you're contributing to Blink).</span></div>
+<div dir="ltr">
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:350px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="contributing-code.html#TOC-Communicate"><strong>1 </strong>Communicate</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-Get-your-code-ready"><strong>2 </strong>Get your code ready</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-Review-Tools"><strong>3 </strong>Review Tools</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-Life-of-a-Change-list"><strong>4 </strong>Life of a Change list</a><ol class="goog-toc"><li class="goog-toc"><a href="contributing-code.html#TOC-Create-a-change-list-CL-"><strong>4.1 </strong>Create a change list (CL)</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-Upload-your-change-to-Rietveld"><strong>4.2 </strong>Upload your change to Rietveld</a><ol class="goog-toc"><li class="goog-toc"><a href="contributing-code.html#TOC-Change-List-Description-Structured-Elements"><strong>4.2.1 </strong>Change List Description Structured Elements</a></li></ol></li><li class="goog-toc"><a href="contributing-code.html#TOC-Request-review"><strong>4.3 </strong>Request review</a><ol class="goog-toc"><li class="goog-toc"><a href="contributing-code.html#TOC-Find-a-reviewer"><strong>4.3.1 </strong>Find a reviewer</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-The-review-process"><strong>4.3.2 </strong>The review process</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-Some-review-tips"><strong>4.3.3 </strong>Some review tips</a></li></ol></li><li class="goog-toc"><a href="contributing-code.html#TOC-Approval"><strong>4.4 </strong>Approval</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-Committing-changes"><strong>4.5 </strong>Committing changes</a><ol class="goog-toc"><li class="goog-toc"><a href="contributing-code.html#TOC-Committing-a-patch-for-a-non-committer"><strong>4.5.1 </strong>Committing a patch for a non-committer</a></li><li class="goog-toc"><a href="contributing-code.html#TOC-See-also"><strong>4.5.2 </strong>See also</a></li></ol></li></ol></li><li class="goog-toc"><a href="contributing-code.html#TOC-Experimental-branches"><strong>5 </strong>Experimental branches</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Communicate"></a>Communicate</h2>
+<ul>
+<li>Whether you're writing a new feature or fixing an existing bug, it pays to get a second opinion before you get too far. If it's a new feature idea, post to the appropriate discussion group (<a href="discussion-groups.html">Chromium</a> | <a href="http://dev.chromium.org/chromium-os/discussion-groups">Chromium OS</a>) and propose it.  If it is in the existing code base, it is a good idea to talk to some of the folks in the <a href="http://www.chromium.org/developers/owners-files">OWNERS file</a> for the code you want to change.<br />
+Start by looking for an OWNERS file in the directory of the file you wish to change, then keep moving up the tree until you find one.</li>
+<li>Not all bugs in our <a href="http://code.google.com/p/chromium/issues/list">bug system</a> are assigned, but if the one you're interested in fixing is, send a note to the person it's assigned to and ask if they would like a patch.</li>
+<li>Behavior changes and anything nontrivial (i.e. anything other than simple cleanups and style fixes) should generally be tracked in the bug system. Please <a href="http://code.google.com/p/chromium/issues/list">file a bug</a> and describe what you're doing if there isn't one already.<br />
+</li>
+</ul>
+<h2><a name="TOC-Get-your-code-ready"></a>Get your code ready</h2>
+<ol><li>Code</li>
+<ol><li><span style="font-size:10pt">must conform to the </span><a href="coding-style.html" style="font-size:10pt">Chromium style guidelines</a><span style="font-size:10pt">.</span></li>
+<li>must be tested, preferably with <a href="http://code.google.com/p/googletest/">unit tests</a>.</li>
+<li>should be a reasonable size to review. Giant patches are unlikely to get reviewed quickly.</li>
+</ol>
+<li>Run the unit tests and the UI tests to make sure you haven't broken anything. You can ask someone to pass it to the <a href="testing/try-server-usage.html">try server</a>.</li>
+<li>Legal</li>
+<ol><li>You must complete the <a href="https://code.google.com/legal/individual-cla-v1.0.html" target="_blank">Individual Contributor License Agreement</a>. You can do this online, and it only takes a minute. If you are contributing on behalf of a corporation, you must fill out the <a href="https://code.google.com/legal/corporate-cla-v1.0.html" target="_blank">Corporate Contributor License Agreement</a> and send it to us as described on that page.</li>
+<li>If you've never submitted code before, you must add your (or your organization's) name and contact info to the AUTHORS file (<a href="http://src.chromium.org/svn/trunk/src/AUTHORS" style="color:rgb(85,26,139)">Chromium</a> | <a href="https://chromium.googlesource.com/chromiumos/chromite/+/master/AUTHORS">Chromium OS</a>).</li>
+<li><b>NOTE TO REVIEWERS:</b> Follow the <a href="http://www.chromium.org/developers/contributing-code/external-contributor-checklist">External Contributor Checklist</a>.</li>
+</ol>
+</ol>
+<ul>
+</ul>
+<h2><a name="TOC-Review-Tools"></a>Review Tools</h2>
+<div>Please use <code>git-cl</code> from <a href="http://www.chromium.org/developers/how-tos/install-depot-tools">depot tools</a>. <span style="background-color:transparent;font-size:10pt">For help, run </span><code style="background-color:transparent;font-size:10pt">git cl help</code>.</div>
+<h2><a name="TOC-Life-of-a-Change-list"></a>Life of a Change list</h2>
+<span style="font-weight:bold">
+<h3><a name="TOC-Create-a-change-list-CL-"></a>Create a change list (CL)</h3>
+</span></div>
+<div dir="ltr">Creating a change in git is really just creating a branch.</div>
+<div dir="ltr"><br />
+</div>
+<div dir="ltr">
+<div class="sites-codeblock sites-codesnippet-block"><code>git checkout -b mychange origin/master<br />
+echo "This describes the goat teleporter." &gt; GOATS<br />
+git add GOATS<br />
+git commit</code></div>
+</div>
+<div dir="ltr">
+<h3><a name="TOC-Upload-your-change-to-Rietveld"></a>Upload your change to Rietveld</h3>
+<div><a href="http://code.google.com/p/rietveld/" target="_blank">Rietveld</a> is the open source code review tool we use. We use an AppEngine instance at <a href="http://codereview.chromium.org/">http://codereview.chromium.org</a>.</div>
+<div><br />
+</div>
+<div>Use the <code>git cl upload</code> command:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-family:courier new"><code>git cl upload --send-mail</code></span></div>
+</div>
+<h4><a name="TOC-Change-List-Description-Structured-Elements"></a>Change List Description Structured Elements</h4>
+<p>CL descriptions follow the form:</p>
+<p><code>Summary of change.</code></p>
+<p><font color="#006000" face="monospace">Longer description of change addressing as appropriate: why the change is made,<br /></font><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;background-color:transparent">context if it is part of many changes, description of previous behavior and<br /></span><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;background-color:transparent">newly introduced differences, etc.<br /></span><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;background-color:transparent"><br />Long lines should be wrapped to 80 columns for easier log message viewing in<br /></span><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;background-color:transparent">terminals.</span></p>
+<p><code>BUG=123456</code></p>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div dir="ltr">
+<p><span style="background-color:transparent;font-size:10pt">The issue number from the </span><a href="https://code.google.com/p/chromium/issues/list" style="background-color:transparent;font-size:10pt">issue tracker</a>. See <a href="http://www.chromium.org/developers/contributing-code/-bug-syntax">"BUG" Syntax</a> for more details on supported formats.</p>
+</div>
+</blockquote>
+<div dir="ltr">
+<p><span style="color:rgb(0,96,0);font-size:10pt;background-color:transparent">R=foo@chromium.org</span></p></div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div dir="ltr">
+<p><span style="background-color:transparent;font-size:10pt">Can be specified when creating the CL and using git cl upload --send-mail will send emails directly without visiting the web UI.</span></p>
+</div>
+</blockquote>
+<div dir="ltr">
+<p><code>TEST=Load example.com/page.html a click the foo-button; see crbug.com/123456#c12 for more details.</code></p>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div dir="ltr">
+<p>Optional line providing guidance to humans who verify changes in builds. Refer to a comment on an issue with reproduction steps, or if manual steps are brief simply state them here.</p>
+</div>
+</blockquote>
+<div dir="ltr">
+<h3><a name="TOC-Request-review"></a>Request review</h3>
+<div>Go to the supplied URL or just go to the respective code review page (<a href="http://codereview.chromium.org/" style="color:rgb(0,102,204);outline-style:none">Chromium</a> | <a href="https://chromium-review.googlesource.com/">Chromium OS</a>) and click <b>Issues created by me</b>.  Select the change you want to submit for review and click <span style="font-weight:bold">Edit Issue</span>.  Enter at least one reviewer's email address and click <span style="font-weight:bold">Update Issue</span>.  Now click on <span style="font-weight:bold">Publish+Mail Comments</span>, add any optional notes, and send your change off for review. All Chromium code reviews are automatically cc'd to their respective review groups, so that everyone has an opportunity to see and comment on the changes being made.</div>
+<div><br />
+</div>
+<div><span style="font-style:italic">Note:</span> If you don't see editing commands on the review page, click <b>Log In</b> in the upper right.</div>
+<div><i>Hint:</i> You can add <code>-r reviewer@example.com --send-mail</code> to send the email directly when uploading a change in both gcl and git-cl.</div>
+<div>
+<div dir="ltr"><span style="font-weight:bold">
+<h4><a name="TOC-Find-a-reviewer"></a>Find a reviewer</h4>
+</span></div>
+<div dir="ltr">Ideally, the reviewer is someone who is familiar with the area of code you are touching. If you have doubts, look at the <code>svn blame</code> or <code>git blame</code> for the file to see who else has been editing it. Failing that, ask on <span style="font-family:courier new">#chromium<span style="font-family:Arial,Verdana,sans-serif"> or <span style="font-family:courier new">#chromium-os</span> on <span style="font-family:courier new">irc.freenode.net</span>. You can also just request review from the respective lists (<a href="http://groups.google.com/a/chromium.org/group/chromium-reviews" target="_blank">Chromium</a> | <a href="http://groups.google.com/a/chromium.org/group/chromium-os-reviews" target="_blank">Chromium OS</a>), but more specific review requests will be attended to sooner.  Your review must include one person from the OWNERS file for every directory you change code in.</span></span></div><div dir="ltr"><span style="font-family:courier new"><span style="font-family:Arial,Verdana,sans-serif"><br /></span></span></div><div><span style="font-family:courier new"><span style="font-family:Arial,Verdana,sans-serif">You can also use the </span></span><span style="color:rgb(0,96,0);font-family:monospace">git cl owners</span><span style="font-family:courier new"><span style="font-family:Arial,Verdana,sans-serif"> command to find appropriate owners.</span></span></div>
+<div dir="ltr"></div>
+</div>
+<h4><a name="TOC-The-review-process"></a>The review process</h4>
+Chromium and Chromium OS reviewers try to review code that conforms to these guidelines as quickly as possible. You should hear back within 24-48 hours. Remember though, if you submit a giant patch, or do a bunch of work without discussing it with the relevant people, you may have a hard time convincing anyone to review it! Speak with others early and often. Sometimes, the tree will be locked down and certain types of changes won't be allowed. This is true when we're preparing a release. During times like these, reviewers may be focused on fixing the bugs required to get the release out the door.
+<div><br />
+</div>
+<div>Remember that code reviews are an important part of the engineering process. The reviewer will almost always have suggestions or style fixes for you, and it's important not to take such suggestions personally or as a commentary on your abilities or ideas. This is a process where we work together to make sure that the highest quality code gets submitted!<br />
+<br />
+</div>
+<div>You will likely get email back from the reviewer with comments. Fix these and update the patch set in the issue by uploading again.  <span style="font-family:arial,sans-serif;border-collapse:collapse">The upload will explain that it is updating the current CL </span><span style="font-family:arial,sans-serif;border-collapse:collapse">and ask you for a message explaining the change.</span></div>
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse"><br />
+</span></div>
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse"><b><u>Important</u>: </b>during the lifetime of a review you may want to rebase your change onto a newer source revision to minimize eventual merge pain.  The reviewer-friendly way to do this is to upload the rebase as its own patchset (with no changes <u>other</u> than the rebase), and to only do this when there are no outstanding comments.  In other words, address all the comments from the latest patchset (A), upload a new patchset (B) containing those updates, and only then rebase and upload a patchset (C).  This way your reviewer can view the A/B diff to see all the changes that resulted from the last round of review, and can view the B/C diff to ensure only rebase-related changes were introduced.  Doing things differently (addressing comments and rebasing in a single patchset, or rebasing first and then addressing comments) makes things harder than necessary for your reviewer.</span></div>
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse"><br />
+</span></div>
+<div>
+</div>
+<div><span style="font-family:arial,sans-serif">If you need to update the code on an already uploaded CL, simply </span><span style="font-size:10pt;font-family:arial,sans-serif;border-collapse:collapse">edit the code, commit it again locally, and then run <code>git cl upload</code> again </span><span style="font-size:10pt;font-family:arial,sans-serif;border-collapse:collapse">e.g.</span></div>
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse"><br />
+</span></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse"><code>echo '' &gt;&gt; GOATS</code><br />
+<code>git add GOATS</code><br />
+<code>git commit -m 'add newline fix to GOATS'</code></span></div>
+<div><span style="font-family:arial,sans-serif;border-collapse:collapse"><code>git cl upload</code></span></div>
+</div>
+<div><br />
+</div>
+<div>Once you're ready for another review, use <span style="font-weight:bold">Publish+Mail Comments</span> again to send another notification (you can say something like "new snapshot uploaded" or PTAL "Please Take A/Another Look").</div>
+<div>
+<h4><a name="TOC-Some-review-tips"></a>Some review tips</h4>
+<div>As you work through the review process, you and your reviewer(s) should converse using the code review interface, sending notes using <span style="background-color:transparent;font-size:10pt">Publish+Mail Comments</span><span style="background-color:transparent;font-size:10pt;font-weight:normal">.  Avoid the temptation to respond to review e-mail directly from your email client; doing that won't add your comments to the online record for the issue under review, making it hard for others to later understand the patch history.</span></div><div><span style="background-color:transparent;font-size:10pt;font-weight:normal"><br /></span></div>
+<div>Code authors and reviewers should keep in mind that <b>Chromium is a global project </b>-- contributors and reviewers are often in time zones far apart. Please read these <a href="http://www.chromium.org/developers/contributing-code/minimizing-review-lag-across-time-zones" target="_blank">guidelines on minimizing review lag</a> and take them in consideration both when writing reviews and responding to review feedback.</div>
+<div><br />
+</div>
+<h3><a name="TOC-Approval"></a>Approval</h3>
+<div>When the reviewer is happy with your patch, they will say "LGTM" ("Looks Good To Me"). The reviewer types this exact text (case-insensitive, so "lgtm" also works) in their comment, which is detected by Rietveld and marks approval. If this is accidentally typed, writing "not LGTM" withdraws approval.</div>
+<div><br />
+</div>
+<div>Except in rare cases, you need approval from <a href="http://www.chromium.org/developers/owners-files">OWNERS</a> of all affected files before committing.</div>
+<div><span style="font-size:10pt">In specific cases where it is allowed, you can instead </span><span style="font-size:10pt">list the OWNERS in the </span><code style="font-size:10pt">TBR=</code><span style="font-size:10pt"> "To Be Reviewed" field of the CL description, and they will review it after it has been committed. See the <a href="http://www.chromium.org/developers/owners-files">OWNERS guidelines</a> for discussion of when it is acceptable to TBR an OWNER.</span></div>
+<div><br />
+</div>
+<div>
+<h3><a name="TOC-Committing-changes"></a>Committing changes</h3>
+<div><span style="background-color:transparent;font-size:10pt">The preferred way of committing changes is via the </span><a href="testing/commit-queue.html" style="background-color:transparent;font-size:10pt">commit queue</a><span style="background-color:transparent;font-size:10pt">. This is done by checking the </span><span style="background-color:transparent;font-size:10pt">"commit" check box in</span><span style="background-color:transparent;font-size:10pt"> Rietveld, or from the command line via </span><span style="background-color:transparent;font-size:10pt"><code>git cl set_commit</code>. </span><span style="background-color:transparent;font-size:10pt">The commit queue will then send your patch to the try bots, which will eventually appear as bubbles on the Rietveld issue. If all tests pass, your change will be auto committed. If it fails, click on the red (failure) bubbles for a direct link to the failures. Alternatively, </span><span style="background-color:transparent;font-size:10pt">search the waterfall for your changelist number and clicking into the links where I see the red failure blocks. If the failure appears unrelated to your change, it is OK to check the commit check box again and retry; sometimes the tests or bots are flaky.</span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div><span style="font-size:10pt">Alternatively, it is possible to <a href="http://www.chromium.org/developers/contributing-code/direct-commit">directly commit</a> your change, bypassing the commit queue. This is discouraged, due to not running the tests, and requires more supervision on the part of the committer, but is acceptable or necessary in certain circumstances. </span><span style="background-color:transparent;font-size:10pt">Only committers can commit changes. If you are not a committer, you should try to commit via the commit queue first. If that doesn't work for some reason, ask your reviewer to commit it for you, and add "Contributed by me@example.com" in your change description for clarity.</span></div>
+<div><span style="background-color:transparent;font-size:10pt"><br />
+</span></div>
+<div>
+<h4><a name="TOC-Committing-a-patch-for-a-non-committer"></a>Committing a patch for a non-committer</h4>
+</div>
+<div>
+<ul><li><span style="background-color:transparent;font-size:10pt">See the </span><a href="http://www.chromium.org/developers/contributing-code/external-contributor-checklist" style="background-color:transparent;font-size:10pt">external contributor checklist</a></li></ul>
+</div>
+</div>
+</div>
+<h4><a name="TOC-See-also"></a>See also</h4>
+<ul>
+<li><a href="http://www.chromium.org/developers/committers-responsibility">Committer's responsibility</a>.</li>
+</ul>
+<h2><a name="TOC-Experimental-branches"></a>Experimental branches</h2>
+<div>Most contributions consist of individual patch sets (change lists), which are reviewed and processed through Rietveld. For more complex situations, one can use a remote git branch on the writable git repository; this allows one to use git push and collaborate or just post code dumps. See <a href="https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/ytcz72nXJ5s" style="background-color:transparent;font-size:10pt">[blink-dev] A writable git repo for collaboration and code dumps</a> for details. (Blink) branches should be pushed to: <a href="https://chromium.googlesource.com/experimental/chromium/blink" style="background-color:transparent;font-size:10pt">https://chromium.googlesource.com/experimental/chromium/blink</a>.</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(5):</span>
+<span>
+<a href="http://www.chromium.org/developers/contributing-code/-bug-syntax" dir="ltr">CL "BUG" Syntax</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/contributing-code/direct-commit" dir="ltr">Directly committing code</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/contributing-code/external-contributor-checklist" dir="ltr">External Contributor Checklist</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/contributing-code/minimizing-review-lag-across-time-zones" dir="ltr">Minimizing Review Lag Across Time Zones</a>
+</span>
+<span>
+<a href="http://www.chromium.org/developers/contributing-code/watchlists" dir="ltr">Watchlists</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/contributing-code">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9V6bVSw0P2Q0M1LUFO7AG3boaeFKoscNmnqWMJVrqTu_yEZBobOtEnAv8loipNdv5eU6v9jnBwCvyqcuYLVxWsYnKy10UlIRybntadIjoMKak3a3t/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

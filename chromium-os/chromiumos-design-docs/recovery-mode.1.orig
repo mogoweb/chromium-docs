@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs/recovery-mode","deleted":false,"title":"Recovery Mode","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/recovery-mode\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/chromiumos-design-docs","parentWuid":"wuid:gx:2eb69dd73ece341e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Recovery Mode","locale":"en","wuid":"wuid:gx:51be6684118b936e","revision":7,"path":"/chromium-os/chromiumos-design-docs/recovery-mode","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"recovery-mode","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Recovery Mode - The Chromium Projects" />
+<meta itemprop="name" content="Recovery Mode - The Chromium Projects" />
+<meta property="og:title" content="Recovery Mode - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Recovery Mode - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1271194914265/chromium-os/chromiumos-design-docs/recovery-mode/srjy2ox0dbMkVTv25qW2QdA.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1271194914265/chromium-os/chromiumos-design-docs/recovery-mode/srjy2ox0dbMkVTv25qW2QdA.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:571d8fbd499df20e" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/chromiumos-design-docs" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Recovery Mode</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="#TOC-Design-goals"><strong>2 </strong>Design goals</a></li><li class="goog-toc"><a href="#TOC-Entering-recovery-mode"><strong>3 </strong>Entering recovery mode</a></li><li class="goog-toc"><a href="#TOC-Recovery-website"><strong>4 </strong>Recovery website</a></li><li class="goog-toc"><a href="#TOC-Recovery-installer"><strong>5 </strong>Recovery installer</a></li><li class="goog-toc"><a href="#TOC-Types-of-data-on-a-recovery-storage-device"><strong>6 </strong>Types of data on a recovery storage device</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Recovery-kernel"><strong>6.1 </strong>Recovery kernel</a></li><li class="goog-toc"><a href="#TOC-Recovery-root-filesystem"><strong>6.2 </strong>Recovery root filesystem</a></li><li class="goog-toc"><a href="#TOC-Recovery-data"><strong>6.3 </strong>Recovery data</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Chromium-OS-kernel-rootfs"><strong>6.3.1 </strong>Chromium OS kernel+rootfs</a></li><li class="goog-toc"><a href="#TOC-Chromium-OS-firmware"><strong>6.3.2 </strong>Chromium OS firmware</a></li><li class="goog-toc"><a href="#TOC-Network-configuration"><strong>6.3.3 </strong>Network configuration</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Types-of-recovery-storage-device"><strong>7 </strong>Types of recovery storage device</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Single-recovery-storage-device"><strong>7.1 </strong>Single recovery storage device</a></li><li class="goog-toc"><a href="#TOC-Network-recovery-storage-device"><strong>7.2 </strong>Network recovery storage device</a></li></ol></li><li class="goog-toc"><a href="#TOC-Developer-mode"><strong>8 </strong>Developer mode</a></li><li class="goog-toc"><a href="#TOC-Network-recovery"><strong>9 </strong>Network recovery</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<p>This document describes how recovery mode works in a Chromium-based OS. It assumes the firmware has already booted in recovery mode, and is now searching removable media (a USB key or an SD card) for a valid recovery image.</p>
+<p>In this document, the term "recovery storage device" (or "RSD") refers to a removable drive containing Chromium OS recovery software. In contexts other than that phrase, the term "device" refers to a Chromium OS-based device such as a netbook.</p>
+<p>For background and other relevant information, see the following documents:</p>
+<ul><li><a href="http://dev.chromium.org/chromium-os/chromiumos-design-docs/firmware-boot-and-recovery" title="Firmware Boot &amp; Recovery">Firmware Boot and Recovery</a>: how the firmware gets into recovery mode.</li>
+<li><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/developer-mode">Developer Mode</a>: how developer mode works, including the developer switch.</li>
+<li><a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/filesystem-autoupdate">File System/Autoupdate</a>: how normal updates work.</li>
+<li><a href="http://dev.chromium.org/chromium-os/chromiumos-design-docs/verified-boot" title="Firmware Verified Boot">Firmware Verified Boot</a>: how kernel images are signed.</li>
+<li><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format">Disk Format</a>: disk drive format, used for both the Chromium OS device and the recovery storage device.</li>
+<li>Boot Process (forthcoming): how kernel images are loaded into RAM and executed.</li></ul>
+<h2><a name="TOC-Design-goals"></a>Design goals</h2>
+<p>The recovery software can vary by use case to satisfy a variety of different goals.</p>
+<p>For the average user:</p>
+<ul><li>Only need to support one device model.</li>
+<li>Download the minimum amount of data.</li>
+<li>Should be a way to build a recovery device ahead of time; using this recovery device for a restore should not require the network.</li>
+<li>Minimal interaction required.</li></ul>
+<div>
+<p>For the developer:</p>
+</div>
+<ul><li>Support loading other operating systems.</li></ul>
+<div>
+<p>For manufacturing or corporate settings:</p>
+</div>
+<ul><li>Support a range of device models.</li>
+<li>Centralized management of images to be pushed; updating the image should not require re-flashing many RSDs.</li></ul>
+<div>
+<p>Security:</p>
+</div>
+<ul><li>Content stored locally on the storage device should be used in preference to that on the network.</li>
+<li>Use secure transport to network image server.</li>
+<li>Images are signed (see the <a href="http://dev.chromium.org/chromium-os/chromiumos-design-docs/verified-boot">Firmware Verified Boot</a> document)</li></ul>
+<p>
+Simplicity &amp; Robustness:</p>
+<ul><li>Push complexity from the firmware to the recovery kernel+rootfs, where a full Linux-like environment is available.</li></ul>
+<h2><a name="TOC-Entering-recovery-mode"></a>Entering recovery mode</h2>
+<p>For detailed information about entering recovery mode, see the <a href="http://dev.chromium.org/chromium-os/chromiumos-design-docs/firmware-boot-and-recovery">Firmware Boot and Recovery</a> document. This section is only a brief summary.</p>
+<div>
+<p>Recovery mode can be triggered:</p>
+</div>
+<ul><li>Automatically by the Chromium OS firmware or software, if it determines that the system is corrupt and that the backup firmware/software is also corrupt.<br />
+</li>
+<li>Manually, by the user pressing a Recovery Mode button during boot.</li></ul>
+<p>In either case, if a storage device is present and it contains a signed recovery image, then the firmware doesn't display anything; it assumes the recovery image will display relevant information and tell the user what is going on. </p>
+<div>
+<p>If a storage device is not present, or does not contain a valid recovery image, then the firmware needs to get the user started on the recovery process. To do this, it will display a screen which conveys the following information to the user:</p>
+</div>
+<ul><li>Your netbook has booted into recovery mode.<br />
+</li>
+<li>Don't panic!</li>
+<li>Go to a URL specific to the device model for more instructions: (insert model-specific URL here; the exact URL is still under development - for example, http://chromeos.google.com/recovery/<i>hardware_model_ID</i> or http://goo.gl/recovery/<i>hardware_model_ID</i>)</li></ul>
+<p>That information needs to be accessible in many languages, since we won't know ahead of time what language the user is speaking, and the firmware which displays the screen is non-interactive (does not have access to the keyboard).  One way to do this is to use just a pictograph and a URL.  It is crucial to instill the need for the user to go to another computer to visit the URL specified on the screen.</p>
+<h2><a name="TOC-Recovery-website"></a>Recovery website</h2>
+<div>
+<p>For devices shipping with Google Chrome OS, the recovery website will be a Google-hosted website which provides instructions and installers for creating RSDs.</p>
+<p>
+Instructions will be customized for each device model. For example, if a particular netbook model does not have wired networking, the instructions for that model won't suggest plugging in a network cable. The types of valid external storage devices and their physical locations on the netbook can also be customized per model.</p>
+</div>
+<p>The recovery website will ask the user to get an appropriate storage device, then download a recovery installer (see below) to finish the recovery. It should also download a small config file with the model number of the netbook to be recovered, so that the recovery installer can use that to fetch the right recovery data. </p>
+<h2><a name="TOC-Recovery-installer"></a>Recovery installer</h2>
+<p>This is a small program which helps a user create a RSD.</p>
+<div>
+<p>Since the installer needs to run on any computer, we need multiple versions of it (Windows, Mac, Linux, Chromium OS). The Chromium OS installer will be part of the default Chromium OS install image, so that any Chromium OS device can be used to create a RSD for any other Chromium OS device.</p>
+</div>
+<div>
+<p>The installer will do the following:</p>
+</div>
+<ol><li>Prompt the user to choose a target storage device to use as the RSD.</li>
+<li>Verify the storage device is large enough.</li>
+<li>Download the appropriate recovery software (recovery kernel + recovery root filesystem) and save it to the RSD.<br />
+</li>
+<li>Download the appropriate recovery data (Chromium OS firmware + kernel + rootfs + recovery configuration data) and save it to the RSD.</li>
+<li>Prompt the user to remove the storage device and plug it into the netbook.</li>
+</ol>
+<p>
+For more information about the recovery software and data, see the "Types of Data" section elsewhere in this document.</p>
+<div>
+<p>The following features for the recovery installer are optional for version 1.0, and may be included in future versions:</p>
+</div>
+<ul><li>If the target storage device is big enough for the recovery software, but too small to fit both the recovery software and recovery data, the installer could help the user set up network recovery mode (see below).</li>
+<li>It could offer to back up the existing contents of the storage device before creating the RSD, then restore those contents to the storage device after the recovery is done.</li>
+<li>It could detect the language setting on the source computer, then automatically use that language for all displays and prompts during recovery.</li></ul>
+<p>One potential starting point for a recovery installer is <a href="http://unetbootin.sourceforge.net/">UNetbootin</a>. It already makes recovery / installer images for several OSes, and runs on Windows and Linux.</p>
+<h2><a name="TOC-Types-of-data-on-a-recovery-storage-device"></a>Types of data on a recovery storage device</h2>
+<p>
+The following types of data may be present on a RSD. For information on which kinds of data appear on each type of RSD, see the "Types of recovery storage device" section, below.</p>
+<p>For more information on GUID partition tables and Chromium OS partition types, see <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format">Disk Format</a>.</p>
+<h3><a name="TOC-Recovery-kernel"></a>Recovery kernel</h3>
+<div>
+<p>This is a Chromium OS kernel partition, signed by the same authority as the firmware on the device. It boots the netbook into a more usable / interactive state for the rest of recovery mode.</p>
+</div>
+<p>For Google Chrome OS devices, the kernel is signed by Google. The user will download the recovery kernel from the Google recovery website.</p>
+<p>A different recovery kernel is needed for each processor architecture (x86, ARM).</p>
+<p>Since boot speed is not important, we don't need to optimize the kernel for variants of each processor architecture; we can compile for the lowest common feature set.</p>
+<h3><a name="TOC-Recovery-root-filesystem"></a>Recovery root filesystem</h3>
+<p>This is a Chromium OS rootfs partition, signed by the same authority as the recovery kernel.</p>
+<p>A recovery root filesystem can support a range of models with compatible processor architecture; drivers for multiple types of display and storage can be included. Alternately, if over time the diversity of Chromium OS devices makes the size of the filesystem prohibitively large, we can produce multiple images, each applicable to a subset of devices. In the latter case, the model-specific URL provided by the recovery mode firmware will point the user to the correct image for that device.</p>
+<p>To determine and/or verify which set of recovery data (Chromium OS kernel, rootfs and firmware) is appropriate for the netbook to be recovered, the read-only firmware on the netbook will supply an API for the recovery image to discover the netbook's model number. (See the (forthcoming) System SKU Reporting Specification.) </p>
+<h3><a name="TOC-Recovery-data"></a>Recovery data</h3>
+<p>This data partition contains data for the recovery. It may contain rootfs image(s), firmware image(s), and/or network configuration.</p>
+<h4><a name="TOC-Chromium-OS-kernel-rootfs"></a>Chromium OS kernel+rootfs</h4>
+<p>This is a full Chromium OS kernel+rootfs image.</p>
+<div>
+<p>All images are signed to protect against accidental or intentional corruption.</p>
+</div>
+<ul><li>It may be a Google-signed image provided by the Google Chrome OS update server.<br />
+</li>
+<li>Alternately, it may be a developer-signed image. See Developer Mode below.</li></ul>
+<div>
+<p>Images will have a header that provides the following information: </p>
+</div>
+<ul><li>Chromium OS version</li>
+<li>Signing authority (Google or developer)</li></ul>
+<p>If multiple versions of an image are available from the same location (for example, the data partition on the RSD), the newer version should take precedence.</p>
+<p>
+Images signed by the same authority as the firmware take precedence over images signed with other authorities.  On a Google Chrome OS device, if both a Google-signed image and a developer-signed image are available from the same location (for example, the data partition on the RSD), the Google-signed image should take precedence. This protects normal users. The developer documentation on the Chromium OS website will provide instructions for developers to construct an RSD without a Google-signed image, so that they can load their own OS.</p>
+<h4><a name="TOC-Chromium-OS-firmware"></a>Chromium OS firmware</h4>
+<p>This is firmware for a Chromium OS device.</p>
+<p>It has the same information about versions and signing authority in the filename and/or header as the rootfs, and the same rules of precedence apply if multiple firmware files are present. </p>
+<p>The firmware is likely to be included inside the Chromium OS rootfs.</p>
+<h4><a name="TOC-Network-configuration"></a>Network configuration</h4>
+<div>
+<p>This is configuration data for downloading recovery data over the network. This includes:</p>
+</div>
+<ul><li>order in which to attempt network interfaces (default: wired, then wireless)</li>
+<li>WiFi SSID and WPA key, to support loading recovery data over WiFi (no default; if not present and attempting wireless, prompt user)</li>
+<li>network configuration (gateway, DNS, etc.) (default: use DHCP)</li>
+<li>hostname or IP address of recovery server (default: Google's update server)</li>
+<li>ssh keys for recovery server, to prevent attackers from presenting a simulated server (default: whatever keys we use to sign communication with our update server)</li>
+<li>should the image downloaded from the server be stored to the RSD's data partition for future re-use, or not? (default: yes)</li></ul>
+<h2><a name="TOC-Types-of-recovery-storage-device"></a>Types of recovery storage device</h2>
+<div>
+<p>A recovery storage device is a USB key or SD card containing one or more recovery kernels and recovery root filesystems, and data to support the recovery.</p>
+<p>(Other kinds of external storage devices may be usable in the future.)</p>
+</div>
+<div>
+<p>Depending on the contents of the RSD:</p>
+</div>
+<ul><li>It may support only one model of netbook, or multiple models.</li>
+<li>It may load recovery data (rootfs + firmware) from the RSD itself, or over the network.</li></ul>
+<p>The following subsections describe some typical types of RSDs.</p>
+<h3><a name="TOC-Single-recovery-storage-device"></a>Single recovery storage device</h3>
+<p>This is the most common type of RSD. It contains a single bootable recovery image, and a single set of recovery data. It is self-contained; using it to recover a device does not require access to the network. This is the type of RSD created by a recovery installer. It is the least flexible RSD, since it supports only a single device model.</p>
+<div>
+<div><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/recovery-mode/srjy2ox0dbMkVTv25qW2QdA.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1271194914265/chromium-os/chromiumos-design-docs/recovery-mode/srjy2ox0dbMkVTv25qW2QdA.png" /></a></div>
+</div>
+<h3><a name="TOC-Network-recovery-storage-device"></a>Network recovery storage device</h3>
+<p>This type of RSD loads the Chromium OS software and firmware from a server, rather than storing it directly on the card.</p>
+<p>The recovery software identifies the target device, then downloads matching recovery data from the server.  This allows a single RSD to support multiple target device models.</p>
+<p>The server may be the main Google Chrome OS server provided by Google, or a local server. This is suitable for a larger corporate, commercial, or manufacturing environment. Upgrading the recovery data for a netbook model only requires updating the server, not multiple RSDs. A new model can also be supported without upgrading the RSDs, as long as the network recovery software supports the new model's hardware.</p>
+<div>
+<div><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/recovery-mode/sk78RvI_UcGGddwNUBzsAcA.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1271194947844/chromium-os/chromiumos-design-docs/recovery-mode/sk78RvI_UcGGddwNUBzsAcA.png" /></a></div>
+</div>
+<p>Future versions of this specification may allow a PXE boot style implementation, where the PXE code lives in the recovery kernel instead of the firmware.</p>
+<h2><a name="TOC-Developer-mode"></a>Developer mode</h2>
+<p>A developer can use recovery mode to load their own OS image onto a Google Chrome OS device. To do this, all they need to do is make a RSD which contains developer-signed recovery data in place of the Google-signed recovery data.</p>
+<div>
+<p>See the Developer Mode design document (forthcoming) for more details. Key points:</p>
+</div>
+<ul><li>The device's developer mode switch must be turned on before developer-signed images can be loaded.<br />
+</li>
+<li>If the kernel on the RSD is signed with a different key than the kernel on the destination device, there is a 5-minute delay, during which time the user must interact with the screen and keyboard, and sound is played. This makes it more difficult to discreetly reprogram a device, protecting both users and developers.</li></ul>
+<p>For i18n, the developer mode screens must be displayed in the proper language. If the language is not detected/set by the recovery installer, then recovery needs to have a language selection screen during startup.</p>
+<h2><a name="TOC-Network-recovery"></a>Network recovery</h2>
+<p>If appropriate recovery data for the target netbook is not present on the RSD, the recovery software on the RSD can attempt to download the recovery data from a server on the network.</p>
+<p>To deter spoofing attacks, communication with the server should be done over a secure channel (such as sftp).</p>
+<p>The default behavior is to contact the Google Chrome OS update server, using wired networking in preference to wireless. This can be overridden via a network configuration file on the RSD.</p>
+<p>Network recovery is useful during manufacturing, to load the initial rootfs onto the drive. This procedure would look something like this:</p>
+<ol><li>As each assembled netbook is ready for programming, a tech</li>
+<ol><li>takes an RSD from a bucket and plugs it into the netbook;</li>
+<li>plugs the netbook into external power (and possibly wired network);</li>
+<li>powers on the netbook.</li>
+</ol>
+<li>Recovery mode launches, because the netbook's drive has no bootable image.</li>
+<li>The network configuration file on the RSD points to a manufacturing server. The correct image for the netbook is loaded from the server.</li>
+<li>When the netbook is done recovering, the tech unplugs the RSD and tosses it back in the bucket.</li>
+</ol>
+<p>
+Network recovery is also useful in corporate environments. Tech support can maintain a single server with all appropriate images; each tech stop location only needs a few generic RSDs to support all the models of netbooks. To deploy a new image, only the server needs to be changed.</p></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/recovery-mode">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9dNlEs1_dueKvr7sovWNttvu40rCZMdfhfNriz7aHGOAZ4det97xJgSeLPtr8ilvd7Xm0InZ9R_GMQuUMpzD6ZyJT7DDvIFZDfPrAs7fiF6IkBh-N/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

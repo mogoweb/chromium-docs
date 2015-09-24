@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/memory-usage-backgrounder","deleted":false,"title":"Memory Usage Backgrounder","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/memory-usage-backgrounder\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Memory Usage Backgrounder","locale":"en","wuid":"wuid:gx:68484e6ceed4b7b1","revision":6,"path":"/developers/memory-usage-backgrounder","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"memory-usage-backgrounder","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Memory Usage Backgrounder - The Chromium Projects" />
+<meta itemprop="name" content="Memory Usage Backgrounder - The Chromium Projects" />
+<meta property="og:title" content="Memory Usage Backgrounder - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Memory Usage Backgrounder - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1424826327518/developers/memory-usage-backgrounder/taskmanager.jpg" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1424826327518/developers/memory-usage-backgrounder/taskmanager.jpg" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Memory Usage Backgrounder</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span style="font-size:18px;font-weight:bold">Chromium Memory Usage<br />
+</span>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Here is some background information if you are measuring memory in Chromium.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><b>Multi-Process Model Background</b></div>
+<div style="margin-top:0px;margin-bottom:0px">To understand Chromium's memory usage, let's understand the multi-process model.  Unlike other browsers, Chromium is divided into multiple processes. When Chromium starts up, it will initially have two processes.  One process is the <b>browser process</b> which controls the main browser functionality, and the other is the initial <b>renderer process</b>, which runs the Blink rendering engine and JavaScript (V8).  Each time you open a new tab in Chromium, you'll likely get a new renderer process.  With typical browsing, it is common to see 5-7 chrome.exe processes active.  Further, if you utilize plugins, apps, or extensions, they may also execute within independent processes.  All of Chromium's processes, whether it is a browser process, a renderer process, or a plugin process, will show under the Task Manager as "chrome.exe".</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Here is a screenshot of what you might see from Windows 8 running Chromium:</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/memory-usage-backgrounder/taskmanager.jpg?attredirects=0" imageanchor="1"><img alt="Windows task manager displaying multiple Chrome processes." border="0" src="http://www.chromium.org/_/rsrc/1424826327518/developers/memory-usage-backgrounder/taskmanager.jpg" /></a></div><br /></div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">If you were to look at the above table on Windows XP, the numbers for Memory would be significantly larger.  This is because Windows Vista and higher has updated the primary metric for measuring process memory since Windows XP.  Both operating systems primarily measure a process' <b>working set</b> - that is the number of bytes held in physical memory on behalf of that process. However, the working set is made up of three distinct components:</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<ul style="margin-top:0px;margin-bottom:0px">
+<li style="margin-top:0px;margin-bottom:0px"><b>Private Working Set</b><br />
+Resident pages which are private only to this process</li>
+<li style="margin-top:0px;margin-bottom:0px"><b>Shareable Working Set</b><br />
+Resident pages which may be shared with other processes.</li>
+<li style="margin-top:0px;margin-bottom:0px"><b>Shared Working Set</b><br />
+Resident pages which are currently being shared with other processes.  This is a subset of the Shareable Working Set.</li>
+</ul>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">In Windows XP, each process is measured by its total working set.  In Windows Vista the definition was changed to just be the private working set.  This actually makes more sense, because the total working set will change based on what other processes are currently running. Thus, if you want to measure a reproducible metric for memory, the Private Working Set is generally a better measure.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><b>How to Measure Memory</b></div>
+<div style="margin-top:0px;margin-bottom:0px">It turns out that there are several ways to look at memory.  For Chromium, we really wanted to find a measure which is a true reflection of the actual system resources used by the application. We couldn't use the Total Working Set, because this measure double-counts the shared memory used by each process.  Almost all windows applications benefit from at least some amount of shared memory, and Chromium is no exception.  For example, each process typically loads several Windows DLLs (such as kernel32, ntdll, user32, and more), and these DLLs are shared by Windows across all running processes; double counting this memory within Chromium would make it appear to be 10-50MB larger than it really is.  </div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">The primary metric we selected for Chromium is a measurement which is similar to what Windows uses.  We measure the working set.  However, unlike Windows Task Manager, we consider which memory is shared and which is not.  We also wanted to make sure that if Chromium loads DLLs which no other process uses, that those are counted as memory used specifically by Chromium. The final algorithm for "Private" size is:  Private Working Set + Shareable Working Set - Shared Working Set.  This is close to Window XP's measurement of memory, except for that it also accounts for shared memory.  </div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">The simplest way to look at total memory used by Chromium is to use the <b><span style="font-weight:normal">Chromium </span>about:memory </b>feature. Simply type 'about:memory' into Chromium's URL bar, and you might see something like this:</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/memory-usage-backgrounder/aboutmemory.jpg?attredirects=0" imageanchor="1"><img alt="Chrome&amp;#39;s about:memory page, displaying the breakdown of memory among tabs and other processes." border="0" src="http://www.chromium.org/_/rsrc/1424826391417/developers/memory-usage-backgrounder/aboutmemory.jpg" /></a></div><br /></div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">At the top of the page is a summary of the overall memory usage.  If you just want a single number for Chromium's memory usage, the Private column is the best figure which aggregates all memory used by all Chromium processes.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">The rest of the numbers on the page provide more detailed breakdowns about memory usage within Chromium.  The Summary section provides aggregate information across processes used by the browser, and the Processes section enumerates the memory usage used by each active chrome.exe process.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">When the about:memory page is loaded, Chromium also looks for other browsers (Firefox, Opera, Safari, or IE) that are running and includes them within the summary for a quick comparison.  We use the same metric for measuring each browser (including IE8's multi-process mode).</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><b>How to Measure Memory Part 2</b></div>
+<div style="margin-top:0px;margin-bottom:0px">Looking at an application's Working Set is not the only way to measure memory.  While it does provide a good general measure, what about other system resources consumed which may not show up as part of a process' working set?  As it turns out, there are system resources allocated by any application.  A common resource consumed is GDI memory; this memory will show up in the system's commit charge and may not be reflected in the working set. </div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">To measure this, we need to look at the system's <b>Total Commit Charge</b>.  The total commit charge measures the total amount of memory used by all applications and the system itself. Because this measurement is a system-wide measurement rather than a per-process measurement, it is much trickier to measure.  It is also sensitive to any background processes or services which may run unbeknownst to the user while executing the test.  However, the basic procedure is this:<br />
+<ul style="margin-top:0px;margin-bottom:0px">
+<li style="margin-top:0px;margin-bottom:0px">shut down any unnecessary services</li>
+<li style="margin-top:0px;margin-bottom:0px">reboot</li>
+<li style="margin-top:0px;margin-bottom:0px">measure the Total Commit Charge of the system (1)</li>
+<li style="margin-top:0px;margin-bottom:0px">run the application test (chrome.exe)</li>
+<li style="margin-top:0px;margin-bottom:0px">measure the Total Commit Charge of the system (2)</li>
+<li style="margin-top:0px;margin-bottom:0px">close the application</li>
+<li style="margin-top:0px;margin-bottom:0px">measure the Total Commit Charge of the system (3)</li>
+</ul>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">To verify that the test was valid, measurements (3) and (1) should be almost identical.  The "Total Commit Charge" will be the difference between measurement (2) and (1). </div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">We've executed these tests for Chromium, and it scores reasonably well.  These tests are complicated, and results vary greatly depending on the operating system version, video drivers installed, and hardware configuration. </div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><b>Weaknesses of a Multi-Process Model on Memory Usage</b></div>
+<div style="margin-top:0px;margin-bottom:0px">Using a multi-process model within the browser offers benefits for reliability, robustness, and security of the browser.  Those benefits drove our design toward the multi-process model, and you can read more about them <a href="https://sites.google.com/a/google.com/the-chrome-project/developers/design-documents/process-models" title="here">here</a>.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">However, using multiple processes is somewhat at odds with building a lightweight browser. First off, each process does have some amount of overhead.  The process overhead turns out to be relatively small, however, once you've accounted for the shared memory properly.  The more significant handicaps are the replicated internal components of a browser, such as caches, JavaScript VM heaps, and internal data structures which must be duplicated inside multiple processes.  JavaScript is particularly troublesome because of its garbage collected heap.  Heaps are generally relatively large and must be replicated across each browser process.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="margin-top:0px;margin-bottom:0px">How can Chromium overcome these deficiencies?  In short, it can't :-)  All we can do is to make everything else that much smaller, so that the effects of being multi-process is minimized.  As a result, there are degenerate cases where Chromium uses a lot more RAM than other browsers. The case which is worst is where many tabs are open, each to separate domains with large amounts of JavaScript. But for typical usage, we think Chromium fares well at balancing the benefits of multiple processes and also maintaining memory usage at levels which is lower than some popular browsers.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Note to techies:  Check out single process mode.  To see how Chromium would fare if it were not a multi-process model, you can ditch the multi-process model and run Chromium in 'single process mode' (use the --single-process command line option). </div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><b>Benefits of a Multi-Process Model on Memory Usage</b></div>
+<div style="margin-top:0px;margin-bottom:0px">Despite the obvious negative impact of multiple processes on memory usage, it turns out there are some unique benefits which in the long run may dramatically overshadow the downsides. These are benefits which are simply not available to single-process model browsers.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">The first benefit is that the multi-process browser more readily reclaims unused memory than single-process models.  Here is a quick test to run at home.   Run a Chromium browser, and also a single-process browser side by side.  Open up several tabs - say 10 tabs to different sites. Use each browser a bit. Then, close 9 of the tabs and look at the memory usage of the browser. What you'll notice is that while Chromium is able to give back almost all of the memory used for those tabs, the single-process browsers cannot.  Those same data structures, caches, and Javascript heaps which must be replicated in the multi-process model cannot be purged in the single-process model!  This has a dramatic impact on your browsing experience over time. With Chromium, when you close a tab, it's resources are completely flushed.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Another benefit of the multi-process model is that Chromium can actively help the operating system when memory is tight.  Windows already has a feature where when a foreground application is minimized it will tell Windows that the application's memory can be reclaimed if necessary.  As long as there is plenty of RAM, this has no effect on system performance. However, when RAM is tight, the OS knows to take pages from the minimized application rather than the applications which the user may still be using.  Similarly, Chromium employs this exact same model for active tabs.  It is quite common for some users to have 12-15 tabs open concurrently, but only 2-3 of those tabs to be actively in use.  Some of those tabs may not have been touched for days!  As you use Chromium, it will actively tell Windows that the tabs which are not in use should be paged out first.  Single-process browsers cannot differentiate which memory is in use by which tabs.</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px">Finally, a third benefit to the multi-process browser's memory usage is the ability to selectively cleanup unused memory.  Below is a screenshot of Chromium's  Task Manager.  To activate the Task Manager, click the menu button in the upper right -&gt; More tools -&gt; Task Manager (or just press Shift-Esc).  A screenshot is included below:</div>
+<div style="margin-top:0px;margin-bottom:0px"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px"><div style="display:block;text-align:left"><a href="http://www.chromium.org/developers/memory-usage-backgrounder/chrometaskmanager.jpg?attredirects=0" imageanchor="1"><img alt="Chrome&amp;#39;s task manager showing the CPU and memory usage of its tabs and processes." border="0" src="http://www.chromium.org/_/rsrc/1424826700651/developers/memory-usage-backgrounder/chrometaskmanager.jpg" /></a></div><br /></div>
+<div style="margin-top:0px;margin-bottom:0px">
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">In the unfortunate event that your browser is using more memory than you'd like it to, you can use Chromium's Task Manager to get a glimpse at which tabs are using the most memory.  If you spot an errant plugin process or tab using more than you want, you can kill it using the "End process" button, and instantly reclaim that memory.  Your browser will keep running.  Without the help of multiple processes, this would not be possible.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px"><span style="font-weight:bold">Helping the Operating System<br />
+<span style="font-weight:normal">Windows today uses several hints to help the operating system manage memory.  One of these is reducing the working set when a process is not in use.  For example, if you minimize a windows application, Windows will automatically release the working set of that application to the OS.  If there is plenty of RAM, this has little effect; however, when memory is tight, the OS uses this information to decide which pages to page out first.  (You can test this yourself - run Outlook, and check its memory usage.  Then minimize it.  Watch the working set shrink to a very small size).  </span></span></div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Just as Windows can do this for desktop applications, a multi-process browser can do this for tabs.  When you navigate away from a tab, Chrome uses this as a hint that the resource for that tab are less important than your foreground tab.  Chrome will lower the priority of the now backgrounded tab and also give back a portion of the working set for that tab to the OS. </div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Giving back pages to the OS when there are no RAM constraints is somewhat of a no-op; but when other applications need the memory, Chrome is "nice" and yields its memory so that foreground applications (Chrome or any other app) can be responsive.  Users on low memory machines definitely notice the difference.  Imagine having 15 tabs open, but only being "active" in 2 of them.  You'd rather have those two be snappy than have all 15 compete for RAM.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Likewise, if you leave Chrome idle for periods of time, it will attempt to give back RAM to the operating system.  You aren't using it, so giving it back helps other applications.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px"><span style="font-weight:bold">Partial TODO List For Reducing Memory Usage</span></div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Here is a partial list of things we can do to improve memory usage.  Most of these apply to Blink and Chromium; if possible, please try to fix within the Blink project for maximal re-use of code.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Font management:  The way fonts are cached in memory is fairly sparse.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Strings:  Duplicate strings are bad.  All strings in Blink/Chromium are unicode strings, even if the string could be encoded with a single-byte encoding.  This has been measured to add up to megabytes of extra space.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">History subsystem:  The SQLite DB for history could be optimized.  This will particularly help keep Chromium lean with usage-over-time.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">In Memory Cache:  Chrome currently uses a shared memory cache across all processes.  Maximum size is currently 32MB, partitioned across the active processes.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Javascript:  Since Chrome renderers each generally have their own JavaScript VM, reducing memory usage in Javascript pays benefits repeatedly.  See the V8 project for more information.</div>
+<div style="text-align:left;padding-top:1em;padding-bottom:1em;padding-right:0px;padding-left:0px;margin-top:0px;margin-bottom:0px">Tools:  Better real-time tools is always needed.  The memory_watcher project is currently used for debugging.</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/memory-usage-backgrounder">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ne-y5--HR7rm4GqY0T8DmwuAsU3VyOsN67H_5sIjK7sEYes7cFcYVz0xePk8BxCLfdzv3UEWglwijbro9vnQoO0BR-ZMFP_iAs2vPrzd4akzQW4p/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

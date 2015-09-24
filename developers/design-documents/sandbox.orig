@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/sandbox","deleted":false,"title":"Sandbox","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/sandbox\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Sandbox","locale":"en","wuid":"wuid:gx:776815d7e1b2893e","revision":10,"path":"/developers/design-documents/sandbox","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"sandbox","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Sandbox - The Chromium Projects" />
+<meta itemprop="name" content="Sandbox - The Chromium Projects" />
+<meta property="og:title" content="Sandbox - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Sandbox - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1220197834290/developers/design-documents/sandbox/sbox_top_diagram.PNG" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1220197834290/developers/design-documents/sandbox/sbox_top_diagram.PNG" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Sandbox</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div class="sites-embed-align-left-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Design-principles"><strong>1 </strong>Design principles</a></li><li class="goog-toc"><a href="#TOC-Sandbox-windows-architecture"><strong>2 </strong>Sandbox windows architecture</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-The-broker-process"><strong>2.1 </strong>The broker process</a></li><li class="goog-toc"><a href="#TOC-The-target-process"><strong>2.2 </strong>The target process</a></li></ol></li><li class="goog-toc"><a href="#TOC-Sandbox-restrictions"><strong>3 </strong>Sandbox restrictions</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-The-token"><strong>3.1 </strong>The token</a></li><li class="goog-toc"><a href="#TOC-The-Job-object"><strong>3.2 </strong>The Job object</a></li><li class="goog-toc"><a href="#TOC-The-alternate-desktop"><strong>3.3 </strong>The alternate desktop</a></li><li class="goog-toc"><a href="#TOC-The-integrity-levels"><strong>3.4 </strong>The integrity levels</a></li><li class="goog-toc"><a href="#TOC-Process-mitigation-policies-Win32k-lockdown-"><strong>3.5 </strong>Process mitigation policies (Win32k lockdown)</a></li><li class="goog-toc"><a href="#TOC-App-Container-low-box-token-"><strong>3.6 </strong>App Container (low box token)</a></li></ol></li><li class="goog-toc"><a href="#TOC-Sandbox-policy"><strong>4 </strong>Sandbox policy</a></li><li class="goog-toc"><a href="#TOC-Target-bootstrapping"><strong>5 </strong>Target bootstrapping</a></li><li class="goog-toc"><a href="#TOC-References"><strong>6 </strong>References</a></li></ol></div></div></div></div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+          Security is one of the most important goals for Chromium. The key to security is understanding: we can only truly secure a system if we fully understand its behaviors with respect to the combination of all possible inputs in all possible states. For a codebase as large and diverse as Chromium, reasoning about the combined behavior of all its parts is nearly impossible. The sandbox objective is to provide hard guarantees about what ultimately a piece of code can or cannot do no matter what its inputs are.
+<div><br />
+<div>Sandbox leverages the OS-provided security to allow code execution that cannot make persistent changes to the computer or access information that is confidential. The architecture and exact assurances that the sandbox provides are dependent on the operating system. This document covers the Windows implementation as well as the general design. The Linux implementation is described <a href="https://code.google.com/p/chromium/wiki/LinuxSandboxing">here</a>, the OSX implementation <a href="http://dev.chromium.org/developers/design-documents/sandbox/osx-sandboxing-design">here</a>.</div>
+<div><br />
+</div>
+<div>If you don't feel like reading this whole document you can read the <a href="http://www.chromium.org/developers/design-documents/sandbox/Sandbox-FAQ" target="_blank">Sandbox FAQ</a> instead. A description of what the sandbox does and doesn't protect against may also be found in the FAQ.<br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Design-principles"></a>Design principles</h2>
+<div>
+<ul>
+<li><b>Do not re-invent the wheel</b>: It is tempting to extend the OS kernel with a better security model. Don't. Let the operating system apply its security to the objects it controls. On the other hand, it is OK to create application-level objects (abstractions) that have a custom security model.</li>
+<li><b>Principle of least privilege</b>: This should be applied both to the sandboxed code and to the code that controls the sandbox. In other words, the sandbox should work even if the user cannot elevate to super-user.</li>
+<li><b>Assume sandboxed code is malicious code</b>: For threat-modeling purposes, we consider the sandbox compromised (that is, running malicious code) once the execution path reaches past a few early calls in the <span style="font-family:courier new,monospace">main()</span> function. In practice, it could happen as soon as the first external input is accepted, or right before the main loop is entered.</li>
+<li><b>Be nimble</b>: Non-malicious code does not try to access resources it cannot obtain. In this case the sandbox should impose near-zero performance impact. It's ok to have performance penalties for exceptional cases when a sensitive resource needs to be touched once in a controlled manner. This is usually the case if the OS security is used properly.</li>
+<li><b>Emulation is not security</b>: Emulation and virtual machine solutions do not by themselves provide security. The sandbox should not rely on code emulation, code translation, or patching to provide security.</li>
+</ul>
+</div>
+<h2><a name="TOC-Sandbox-windows-architecture"></a>Sandbox windows architecture</h2>
+<div>The Windows sandbox is a user-mode only sandbox. There are no special kernel mode drivers, and the user does not need to be an administrator in order for the sandbox to operate correctly. The sandbox is designed for both 32-bit and 64-bit processes and has been tested on all Windows OS flavors between Windows 2000 and Windows 10, both 32-bit and 64-bit.</div>
+<div><br />
+</div>
+<div>
+<div>Sandbox operates at process-level granularity. Anything that needs to be sandboxed needs to live on a separate process. The minimal sandbox configuration has two processes: one that is a privileged controller known as the <i><span style="color:rgb(0,0,0)">broker</span></i>, and one or more sandboxed processes known as the <i><span style="color:rgb(0,0,0)">target</span></i>. Throughout the documentation and the code these two terms are used with that precise connotation. The sandbox is provided as a static library that must be linked to both the broker and the target executables.</div>
+<h3><a name="TOC-The-broker-process"></a>The broker process</h3>
+<div>In Chromium, the broker is always the browser process. The broker, is in broad terms, a privileged controller/supervisor of the activities of the sandboxed processes. The responsibilities of the broker process are:</div>
+<div>
+<ol>
+<li>Specify the policy for each target process</li>
+<li>Spawn the target processes</li>
+<li>Host the sandbox policy engine service</li>
+<li>Host the sandbox interception manager</li>
+<li>Host the sandbox IPC service (to the target processes)</li>
+<li>Perform the policy-allowed actions on behalf of the target process</li>
+</ol>
+</div>
+<div>The broker should always outlive all the target processes that it spawned. The sandbox IPC is a low-level mechanism (different from Chromium's IPC) that is used to transparently forward certain windows API calls from the target to the broker: these calls are evaluated against the policy. The policy-allowed calls are then executed by the broker and the results returned to the target process via the same IPC. The job of the interceptions manager is to patch the windows API calls that should be forwarded via IPC to the broker.</div>
+<h3><a name="TOC-The-target-process"></a>The target process</h3>
+<div>In Chromium, the renderers are always target processes, unless the <span style="color:rgb(0,0,0);font-family:courier new,monospace">--no-sandbox</span> command line has been specified for the browser process. The target process hosts all the code that is going to run inside the sandbox, plus the sandbox infrastructure client side:</div>
+<div>
+<ol>
+<li>All code to be sandboxed</li>
+<li>The sandbox IPC client</li>
+<li>The sandbox policy engine client</li>
+<li>The sandbox interceptions</li>
+</ol>
+</div>
+<div>Items 2,3 and 4 are part of the sandbox library that is linked with the code to be sandboxed.</div>
+<div><br />
+</div>
+<div>The interceptions (also known as hooks) are how Windows API calls are forwarded via the sandbox IPC to the broker. It is up to the broker to re-issue the API calls and return the results or simply fail the calls. The interception + IPC mechanism does not provide security; it is designed to provide compatibility when code inside the sandbox cannot be modified to cope with sandbox restrictions. <span style="font-size:13.3333330154419px;background-color:transparent"> </span><span style="background-color:transparent"><span style="font-size:13.3333330154419px">To save </span>unnecessary<span style="font-size:13.3333330154419px"> IPCs, policy is also evaluated in the target process before making an IPC call, although this is not used as a security guarantee but merely a speed optimization.</span></span></div>
+<div><br />
+</div>
+<div>It is the expectation that in the future most plugins will run inside a target process.</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><a href="http://www.chromium.org/developers/design-documents/sandbox/sbox_top_diagram.PNG?attredirects=0"><img border="0" src="http://www.chromium.org/_/rsrc/1220197834290/developers/design-documents/sandbox/sbox_top_diagram.PNG" /></a></div>
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Sandbox-restrictions"></a>Sandbox restrictions</h2>
+<div>
+<div>At its core, the sandbox relies on the protection provided by four Windows mechanisms:</div>
+<div>
+<ul style="margin-right:10px">
+<li style="padding:1px 0px">A restricted token</li>
+<li style="padding:1px 0px">The Windows <span style="font-style:italic">job</span> object</li>
+<li style="padding:1px 0px">The Windows <span style="font-style:italic">desktop</span> object</li>
+<li style="padding:1px 0px">Windows Vista and above: The integrity levels</li><li style="padding:1px 0px">Windows 8 and above: Win32k lockdown process mitigation</li><li style="padding:1px 0px">Windows 8 and above: App Container (low box token)</li>
+</ul>
+<div>These mechanisms are highly effective at protecting the OS, its configuration, and the user's data provided that:</div>
+<div>
+<ul>
+<li>All the securable resources have a better than null security descriptor. In other words, there are no critical resources with misconfigured security.</li>
+<li>The computer is not already compromised by malware.</li>
+<li>Third party software does not weaken the security of the system.</li>
+</ul>
+<h3><a name="TOC-The-token"></a>The token</h3>
+<div>One issue that other similar sandbox projects face is how restricted can the token and job be while still having a properly functioning process. For the Chromium sandbox, the most restrictive token for Windows XP takes the following form:</div>
+<div><br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px"><span style="font-size:medium"><span style="font-size:small"><span style="font-weight:bold">Regular Groups</span></span><br />
+</span></blockquote>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">Logon SID : mandatory<br />
+All other SIDs : deny only, mandatory</blockquote>
+</blockquote>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px"><span style="font-size:medium"><span style="font-size:small"><span style="font-weight:bold">Restricted Groups</span></span></span></blockquote>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">S-1-0-0 : mandatory<br />
+</blockquote>
+</blockquote>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px"><span style="font-weight:bold">Privileges</span><br />
+</blockquote>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">None</blockquote>
+</blockquote>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><br />
+</div>
+<div>With the caveats described above, it is near impossible to find an existing resource that the OS will grant access with such a token. As long as the disk root directories have non-null security, even files with null security cannot be accessed. In Vista, the most restrictive token is the same but it also includes the low integrity level label. The Chromium renderer normally runs with this token, which means that almost all resources that the renderer process uses have been acquired by the Browser and their handles duplicated into the renderer process.</div>
+<div><br />
+</div>
+<div>Note that the token is not derived from anonymous or from the guest token; it is derived from the user's token and thus associated to the user logon. As a result, any auditing that the system or the domain has in place can still be used.</div>
+<div><br />
+</div>
+<div>By design, the sandbox token cannot protect the following non-securable resources:</div>
+<div>
+<ul>
+<li>Mounted FAT or FAT32 volumes: The security descriptor on them is effectively null. Malware running in the target can read and write to these volumes as long it can guess or deduce their paths.</li>
+<li>TCP/IP: The security of TCP/IP sockets in Windows 2000 and Windows XP (but not in Vista) is effectively null. It might be possible for malicious code in the target to send and receive network packets to any host.</li>
+</ul>
+<div>More information about the Windows token object can be found at <a href="http://dev.chromium.org/developers/design-documents/sandbox#TOC-References">[02]</a>.</div>
+<h3><a name="TOC-The-Job-object"></a>The Job object</h3>
+<div>The target process also runs under a Job object. Using this Windows mechanism, some interesting global restrictions that do not have a traditional object or security descriptor associated with them are enforced:</div>
+<div>
+<ul>
+<li>Forbid per-use system-wide changes using <span style="font-family:courier new,monospace">SystemParametersInfo()</span>, which can be used to swap the mouse buttons or set the screen saver timeout</li>
+<li>Forbid the creation or switch of Desktops</li>
+<li>Forbid changes to the per-user display configuration such as resolution and primary display</li>
+<li>No read or write to the clipboard</li>
+<li>Forbid Windows message broadcasts</li>
+<li>Forbid setting global Windows hooks (using <span style="font-family:courier new,monospace">SetWindowsHookEx()</span>)</li>
+<li>Forbid access to the global atoms table</li>
+<li>Forbid access to USER handles created outside the Job object</li>
+<li>One active process limit (disallows creating child processes)</li>
+</ul>
+</div>
+<div>Chromium renderers normally run with all these restrictions active. Each renderers run in its own Job object. Using the Job object, the sandbox can (but currently does not) prevent:</div>
+<div>
+<ul style="margin-right:10px">
+<li style="padding:1px 0px">Excessive use of CPU cycles</li>
+<li style="padding:1px 0px">Excessive use of memory</li>
+<li style="padding:1px 0px">Excessive use of IO</li>
+</ul>
+<div>More information about Windows Job Objects can be found in <a href="">[01]</a>. </div>
+<h3><a name="TOC-The-alternate-desktop"></a>The alternate desktop</h3>
+<div>The token and the job object define a security boundary: that is, all processes with the same token and in the same job object are effectively in the same security context. However, one not-well-understood fact is that applications that have windows on the same desktop are also effectively in the same security context because the sending and receiving of window messages is not subject to any security checks. Sending messages across desktops is not allowed. This is the source of the infamous "shatter" attacks, which is why services should not host windows on the interactive desktop. A Windows desktop is a regular kernel object that can be created and assigned a security descriptor.</div>
+<div><br />
+</div>
+<div>In a standard Windows XP installation, at least two desktops are attached to the interactive windowstation; the regular (default) desktop, and the logon desktop. The sandbox creates a third desktop that is associated to all target processes. This desktop is never visible or interactive and effectively isolates the sandboxed processes from snooping the user's interaction and from sending messages to windows operating at more privileged contexts.</div>
+<div><br />
+</div>
+<div>The only disadvantage of an alternate desktop is that it uses approximately 4MB of RAM from a separate pool, possibly more on Vista.</div>
+<h3><a name="TOC-The-integrity-levels"></a>The integrity levels</h3>
+<div>Integrity levels are available on Windows Vista and later versions. They don't define a security boundary in the strict sense, but they do provide a form of mandatory access control (MAC) and act as the basis of Microsoft's Internet Explorer sandbox. </div><div><br /></div><div>Integrity levels are implemented as a special set of SID and ACL entries representing five levels of increasing privilege: untrusted, low, medium, high, system. Access to an object may be restricted if the object is at a higher integrity level than the requesting token. Integrity levels also implement User Interface Privilege Isolation, which applies the rules of integrity levels to window messages exchanged between different processes on the same desktop.</div><div><br /></div><div>By default, a token can read an object of a higher integrity level, but not write to it. Most desktop applications run at medium integrity (MI), while less trusted processes like Internet Explorer's protected mode and our own sandbox run at low integrity (LI). A low integrity mode token can access only the following shared resources:</div>
+<div>
+<div>
+<ul><li>Read access to most files</li>
+<li>Write access to %USER PROFILE%\AppData\LocalLow</li>
+<li>Read access to most of the registry</li>
+<li>Write access to HKEY_CURRENT_USER\Software\AppDataLow</li>
+<li>Clipboard (copy and paste for certain formats)</li>
+<li>Remote procedure call (RPC)</li>
+<li>TCP/IP Sockets</li>
+<li>Window messages exposed via ChangeWindowMessageFilter</li>
+<li>Shared memory exposed via LI (low integrity) labels</li>
+<li>COM interfaces with LI (low integrity) launch activation rights</li>
+<li>Named pipes exposed via LI (low integrity) labels</li></ul>
+</div>
+</div>
+<div>You'll notice that the previously described attributes of the token, job object, and alternate desktop are more restrictive, and would in fact block access to everything allowed in the above list. So, the integrity level is a bit redundant with the other measures, but it can be seen as an additional degree of defense-in-depth, and its use has no visible impact on performance or resource usage. </div><div><br /></div><div>More information on integrity levels can be found at <a href="http://www.chromium.org/developers/design-documents/sandbox#TOC-References">[03]</a>.</div><div><br /></div><div><h3><a name="TOC-Process-mitigation-policies-Win32k-lockdown-"></a>Process mitigation policies (Win32k lockdown)</h3><div><span style="font-size:13.3333330154419px">Process mitigation policies can be applied to the target process by means of </span><span style="background-color:transparent"><span style="font-size:13.3333330154419px">SetProcessMitigationPolicy.  The sandbox uses this API to set various policies on the target process for enforcing security </span>characteristics<span style="font-size:13.3333330154419px"> such as force enabling high entropy ASLR.</span></span></div><div style="font-size:13.3333330154419px"><span style="font-size:13.3333330154419px;background-color:transparent"><br /></span></div><div style="font-size:13.3333330154419px"><span style="font-size:13.3333330154419px;background-color:transparent">On Windows 8 and above, a new mitigation policy was added, accessible via called ProcessSystemCallDisablePolicy which allows selective disabling of system calls available from the target process.  On Windows 10 there is an additional policy that can be applied called </span><span style="font-size:10pt;background-color:transparent">ProcessFontDisablePolicy.</span></div><div style="font-size:13.3333330154419px"><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><span style="font-size:10pt;background-color:transparent">In Chromium, renderer processes have the </span><span style="background-color:transparent">ProcessSystemCallDisablePolicy set to </span><span style="background-color:transparent">DisallowWin32kSystemCalls which means that calls from user mode that are serviced by win32k.sys are no longer permitted. This significantly reduces the kernel attack surface available from a renderer.  See <a href="https://docs.google.com/document/d/1gJDlk-9xkh6_8M_awrczWCaUuyr0Zd2TKjNBCiPO_G4">here</a> for more details.</span></div><div style="font-size:13.3333330154419px"><h3><a name="TOC-App-Container-low-box-token-"></a>App Container (low box token)</h3><div style="font-size:13.3333330154419px">On Windows 8 and above, the concept of an App Container was added. This is implemented at the kernel level by a Low Box token which is a stripped version of a normal token with limited privilege (normally just SeChangeNotifyPrivilege and SeIncreaseWorkingSetPrivilege), running at Low integrity level and an array of "Capabilities" which can be mapped to allow/deny what the process is allowed to do (see <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh464936.aspx">MSDN</a> for a high level description). The capability most interesting from a sandbox perspective is denying is access to the network, as it turns out network checks are enforced if the token is a Low Box token and the INTERNET_CLIENT Capability is not present.</div><div style="font-size:13.3333330154419px"><br /></div><div style="font-size:13.3333330154419px">The sandbox therefore takes the existing lockdown token and add the Low Box attributes, without granting any Capabilities, so as to gain the additional protection of no network access from the sandboxed process on Windows 8 and above.</div><div><br /></div></div></div>
+<div><span style="font-size:16px;font-weight:bold">Other caveats</span></div>
+</div>
+<div>The operating system might have bugs. Of interest are bugs in the Windows API that allow the bypass of the regular security checks. If such a bug exists, malware will be able to bypass the sandbox restrictions and broker policy and possibly compromise the computer. Under Windows, there is no practical way to prevent code in the sandbox from calling a system service.</div>
+<div><br />
+</div>
+<div>In addition, third party software, particularly anti-malware solutions, can create new attack vectors. The most troublesome are applications that inject dlls in order to enable some (usually unwanted) capability. These dlls will also get injected in the sandbox process. In the best case they will malfunction, and in the worst case can create backdoors to other processes or to the file system itself, enabling specially crafted malware to escape the sandbox. </div>
+<h2><a name="TOC-Sandbox-policy"></a>Sandbox policy</h2>
+<div>
+<div>The actual restrictions applied to a target process are configured by a policy. The policy is just a programmatic interface that the broker calls to define the restrictions and allowances. Four functions control the restrictions, roughly corresponding to the four Windows mechanisms:</div>
+<div>
+<ul>
+<li><span style="font-family:courier new,monospace">TargetPolicy::SetTokenLevel()</span></li>
+<li><span style="font-family:courier new,monospace">TargetPolicy::SetJobLevel()</span></li>
+<li><span style="font-family:courier new,monospace">TargetPolicy::SetIntegrityLevel()</span></li>
+<li><span style="font-family:courier new,monospace">TargetPolicy::SetDesktop()</span></li>
+</ul>
+<div>The first three calls take an integer <span style="font-style:italic">level</span> parameter that goes from very strict to very loose; for example, the token level has 7 levels and the job level has 5 levels. Chromium renderers are typically run with the most strict level in all four mechanisms. Finally, the last (desktop) policy is binary and can only be used to indicate if a target is run on an alternate desktop or not.</div>
+<div><br />
+</div>
+<div>The restrictions are by design coarse in that they affect all securable resources that the target can touch, but sometimes a more finely-grained resolution is needed. The policy interface allows the broker to specify <span style="font-style:italic">exceptions</span>. An exception is a way to take a specific Windows API call issued in the target and proxy it over to the broker. The broker can inspect the parameters and re-issue the call as is, re-issue the call with different parameters, or simply deny the call. To specify exceptions there is a single call: <span style="font-family:courier new,monospace">AddRule</span>. The following kinds of rules for different Windows subsystems are supported at this time:</div>
+<div>
+<ul>
+<li>Files</li>
+<li>Named pipes</li>
+<li>Process creation</li>
+<li>Registry</li>
+<li>Synchronization objects</li>
+</ul>
+</div>
+</div>
+<div>The exact form of the rules for each subsystem varies, but in general rules are triggered based on a string pattern. For example, a possible file rule is:</div>
+<div><br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px"><span style="font-family:courier new,monospace">AddRule(SUBSYS_FILES, FILES_ALLOW_READONLY, L<span><span style="color:rgb(56,118,29)">"c:\\temp\\app_log\\d*.dmp"</span></span>)<br />
+</span></blockquote>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><br />
+</div>
+<div>This rule specifies that access will be granted if a target wants to open a file, for read-only access as long as the file matches the pattern expression; for example c:\temp\app_log\domino.dmp is a file that satisfies the pattern. Consult the header files for an up-to-date list of supported objects and supported actions.</div>
+<div><br />
+</div>
+<div>Rules can only be added before each target process is spawned, and cannot be modified while a target is running, but different targets can have different rules.</div>
+<h2><a name="TOC-Target-bootstrapping"></a>Target bootstrapping</h2>
+<div>Targets do not start executing with the restrictions specified by policy. They start executing with a token that is very close to the token the regular user processes have. The reason is that during process bootstrapping the OS loader accesses a lot of resources, most of them are actually undocumented and can change at any time. Also, most applications use the standard CRT provided with the standard development tools; after the process is bootstrapped the CRT needs to initialize as well and there again the internals of the CRT initialization are undocumented.</div>
+<div><br />
+</div>
+<div>Therefore, during the bootstrapping phase the process actually uses two tokens: the lockdown token which is the process token as is <span style="font-family:courier new"><span style="font-family:Arial">and the initial token which is set as the impersonation token of the initial thread. In fact the actual </span><span><span style="font-family:courier new,monospace">SetTokenLevel</span></span><span style="font-family:Arial"> definition is:</span></span></div>
+<div><br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px"><span style="font-family:courier new,monospace">SetTokenLevel(TokenLevel initial, TokenLevel lockdown)</span></blockquote>
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><br />
+</div>
+<div>After all the critical initialization is done, execution continues at <span style="font-family:courier new,monospace">main()</span> or <span style="font-family:courier new,monospace">WinMain()</span>, here the two tokens are still active, but only the initial thread can use the more powerful initial token. It is the target's responsibility to discard the initial token when ready. This is done with a single call:</div>
+<div><br />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px"><span style="font-family:courier new,monospace">LowerToken()</span></blockquote>
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><br />
+</div>
+<div>After this call is issued by the target the only token available is the lockdown token and the full sandbox restrictions go into effect. The effects of this call cannot be undone. Note that the initial token is a impersonation token only valid for the main thread, other threads created in the target process use only the lockdown token and therefore should not attempt to obtain any system resources subject to a security check.</div>
+<div><br />
+</div>
+<div>The fact that the target starts with a privileged token simplifies the explicit policy since anything privileged that needs to be done once, at process startup can be done before the <span style="font-family:courier new,monospace">LowerToken()</span> call and does not require to have rules in the policy.</div>
+<div>
+<div class="sites-embed-align-center-wrapping-off"><div class="sites-embed-border-on sites-embed" style="width:500px;"><h4 class="sites-embed-title">Important</h4><div class="sites-embed-content sites-embed-type-text"><div class="sites-embed-content-textbox"><div dir="ltr"><span style="font-family:trebuchet ms,sans-serif">Make sure any sensitive OS handles obtained with the initial token are closed before calling LowerToken(). Any leaked handle can be abused by malware to escape the sandbox.</span></div></div></div></div></div>
+<br />
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-References"></a>References</h2>
+<div>
+<ul>
+<li>[01] Richter, Jeffrey "Make Your Windows 2000 Processes Play Nice Together With Job Kernel Objects" <a href="http://www.microsoft.com/msj/0399/jobkernelobj/jobkernelobj.aspx" rel="nofollow">
+</a>
+<br />
+<a href="http://www.microsoft.com/msj/0399/jobkernelobj/jobkernelobj.aspx" rel="nofollow">http://www.microsoft.com/msj/0399/jobkernelobj/jobkernelobj.aspx</a></li>
+<li>[02] Brown, Keith "What Is a Token" (wiki)
+<br />
+<a href="http://alt.pluralsight.com/wiki/default.aspx/Keith.GuideBook/WhatIsAToken.htm" rel="nofollow">http://alt.pluralsight.com/wiki/default.aspx/Keith.GuideBook/WhatIsAToken.htm</a></li>
+<li>[03] Windows Integrity Mechanism Design (MSDN)<br />
+<a href="http://msdn.microsoft.com/en-us/library/bb625963.aspx">http://msdn.microsoft.com/en-us/library/bb625963.aspx</a></li></ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(2):</span>
+<span>
+<a href="/developers/design-documents/sandbox/osx-sandboxing-design" dir="ltr">OSX Sandboxing Design</a>
+</span>
+<span>
+<a href="/developers/design-documents/sandbox/Sandbox-FAQ" dir="ltr">Sandbox FAQ</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/sandbox">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9LDbdPwcQO-JneY94BjJPKB0FQwHj_jURZG3PaQDv7f5NFbGnOMeEN8PGE0RVHsccyv-CZXHfouq4VltNTukMFX9Tv6VnWhnAdxFU_t0IHWtLiy1g/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

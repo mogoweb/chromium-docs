@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/tab-strip-mac","deleted":false,"title":"Tab Strip Design (Mac)","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/tab-strip-mac\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Tab Strip Design (Mac)","locale":"en","wuid":"wuid:gx:3f1513507e55fb49","revision":16,"path":"/developers/design-documents/tab-strip-mac","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"tab-strip-mac","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Tab Strip Design (Mac) - The Chromium Projects" />
+<meta itemprop="name" content="Tab Strip Design (Mac) - The Chromium Projects" />
+<meta property="og:title" content="Tab Strip Design (Mac) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Tab Strip Design (Mac) - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1265923735494/developers/design-documents/tab-strip-mac/dragWithin2.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1265923735494/developers/design-documents/tab-strip-mac/dragWithin2.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../design-documents.html" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Tab Strip Design (Mac)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="display:block;text-align:left">This document describes the design of the tab strip on Mac OS X including tab layout, tab drag and drop, and the tab animations.</div><h2><a name="TOC-Classes"></a>Classes</h2><div>The following classes make up the most important pieces of the implementation of the tab strip:</div><h4><a name="TOC-TabContents"></a>TabContents</h4><div>The cross-platform representation of the contents of a tab. There is a one-to-one correspondence between open tabs and a <font face="'courier new', monospace">TabContents</font> object.</div><h4><a name="TOC-TabStripModel"></a>TabStripModel</h4><div>The cross-platform model for the contents of the tab strip. There is one <font face="'courier new', monospace">TabStripModel</font> per Browser object. It contains the logic for manipulating addition and removal of tabs, as well as more complicated features such as "close all tabs to right". Individual tabs are referenced by index, [0..count()].</div><h4><a name="TOC-TabView"></a>TabView</h4><div>The <font face="'courier new', monospace">NSView</font> responsible for drawing the curved edges of a tab. Also contains all the logic for dragging a tab within and between windows.</div><h4><a name="TOC-TabController"></a>TabController</h4><div>The <font face="'courier new', monospace">NSViewController</font> for managing a single tab in the tab strip. It coordinates a close box, a title and an "icon view", a client-specified <font face="'courier new', monospace">NSView</font> that can be changed, for example, to show a favicon when the page is at rest and a spinner view when the page is loading. The default is a <font face="'courier new', monospace">NSImageView</font>.</div><h4><a name="TOC-TabContentsController"></a>TabContentsController</h4><div>The <font face="'courier new', monospace">NSViewController</font> for managing the web contents of an individual tab, coordinating the native <font face="'courier new', monospace">NSViews</font> for a specific <font face="'courier new', monospace">TabContents</font>.</div><h4><a name="TOC-TabStripController"></a>TabStripController</h4><div><div>The Objective-C controller, Mac specific, for managing the interaction between the <font face="'courier new', monospace">TabStripModel</font> and the Cocoa <font face="'courier new', monospace">TabViews</font> that comprise the user interface. Handles </div><div>positioning and layout of the <font face="'courier new', monospace">TabViews</font> as well as the animations related to tab drag and drop and tab opening/closing. The controller is responsible for switching the visible tab to the correct <font face="'courier new', monospace">TabContents</font>/<font face="'courier new', monospace">TabContentsController</font> based on changes either in the <font face="'courier new', monospace">TabStripModel</font> or in response to a user clicking in a specific <font face="'courier new', monospace">TabView</font>. The controller handles changes from the tab model by registering a C++ observer.</div><div><br /></div><div>To match the model with the corresponding views, the controller keeps several parallel arrays which are normally in sync with the indices of the TabStripModel, but as described below in the section on animations, they sometimes are not. It is very important to not confuse the two array indexes and always use the conversion methods.</div></div><h4><a name="TOC-TabWindowController"></a>TabWindowController</h4><div>The <font face="'courier new', monospace">NSWindowController</font> for a window that participates in dragging a tab between windows. It has the concept of a tab strip and a view that gets switched out when the tab selection changes. The controller also maintains an "overlay window" used during tab dragging so that parts of the window frame can be translucent. It should be reusable in other projects as there is nothing browser-specific about the API.</div><h2><a name="TOC-Tab-Layout"></a>Tab Layout</h2><div>Tab layout is handled primarily by a single method, <font face="'courier new', monospace">-layoutTabsWithAnimation:renegerateSubviews:</font>. This method performs several critical tasks:</div><div><ul><li>Positioning, sizing, and animating the tabs, including not using all available space if rapidly closing tabs</li><li>Positioning and animating the New Tab Button (NTB), including showing and hiding it based on the status of a drag.</li><li>Handling the view z-ordering so tabs appear with a consistent overlap</li><li>Inserting an empty placeholder space during drag and drop</li><li>Animating a newly inserted tab</li></ul><div>Tab layout can be done both with and without animation. For example, there's no need to animate tabs before the initial layout has completed or to animate the first tab in a window. In general, however, any changes caused by user interaction or model changes are done with animations enabled.</div></div><div><br /></div><div>Tabs overlap by a small amount (about 20px) which means z-order becomes important. If not paid attention to, switching tabs and bringing them forward over other tabs can cause a haphazard appearance over time as the z-order becomes inconsistent across the tab strip. In order to address this, the subviews (TabViews) are removed and re-inserted into the view hierarchy in the correct z-order based on the <font face="'courier new', monospace">regenerateSubviews</font> parameter. Regenerating the views needs to be done when the tab model or selection changes, but doesn't need to be done when only the size and position of the tabs change (for instance when the window is resized).</div><div><br /></div><div>In order to size and position tabs correctly, the first order of business is to compute how much space is available which may not be the entire width if the user is quickly closing tabs. When the user closes a tab using the tab's close button, tabs to the right should shift left such that the next tab's close button ends up directly under the mouse. This allows the user to continue clicking rapidly to close a large number of tabs. A requirement for this to work is that the tabs do not change width until the user is done (signified by moving the mouse outside of the tab strip). As a result, during "rapid closure mode" the amount of available space for determining the width of tabs must remain consistent and thus the tabs won't change size even though their positions change during re-layout.</div><div><br /></div><div>The available width is also affected by (zero or more) pinned (fixed-width) tabs, as well as compensating for the amount of overlap between tabs. Finally, space is reserved for both the NTB and the window close/minimize/zoom controls. After space is allocated to pinned tabs, the remaining space is divided evenly among the remaining tabs, ensuring that tabs fit within a min and max width. When tabs get too small, it's the responsibility of the <font face="'courier new', monospace">TabController</font> to handle properly displaying only the elements that fit, such as hiding the title and only displaying the icon. Note that selected tabs have a slightly larger minimum width than unselected tabs, allowing enough room to display the close button.</div><div><br /></div><div>Tab layout is effectively a big for-loop that walks the array of <font face="'courier new', monospace">TabControllers</font>, laying them out in order from left to right with a bit of overlap. The size and positions are set on the corresponding <font face="'courier new', monospace">TabView</font>, or its <font face="'courier new', monospace">animator</font> if animations are requested. In they are, there is also some additional pre-flighting to avoid redundant calls to the animator when the view isn't moving. Once the tabs have been positioned, layout places the NTB at the far right, showing or hiding based on if a drag is in progress.</div><div><br /></div><div>During drag and drop, there's one more component to tab layout: the placeholder. A "placeholder tab" is an empty space representing where the tab would go were it to be dropped at the mouse location. Obviously, there can only be one of these at a time. If there is a placeholder tab (see below for how it's instantiated), leave a blank space corresponding to the width of the tab being dragged before moving on to positioning the next tab. Note that this width can be different than the width of tabs in the current window if the dragged tab comes from another window. Even though a wider placeholder might cause tabs at the far right to spill off the edge, it makes for a much improved user experience as the gap can be better associated with the dragged tab.</div><h2><a name="TOC-Tab-Animations"></a>Tab Animations</h2><div>There are 3 causes of animation in the tab strip:</div><div><ul><li>Tabs moving or resizing in response to model changes or the window resizing</li><li>A new tab</li><li>A closing tab</li></ul><div>Moving and resizing is described above in the section on layout, handled simply by sending the new frame size and position to the <font face="'courier new', monospace">TabView</font>'s <font face="'courier new', monospace">animator</font>. In addition, handling a new tab is actually just a special case of layout. When a tab is identified as being new (new tabs are not visible by default), its <font face="'courier new', monospace">TabView</font> is made visible and positioned just below the tab strip. Then, as a part of normal layout, its <font face="'courier new', monospace">animator</font> is told the final location and it "submarines" into place.</div><div><br /></div><div>In general, there is a one-to-one correspondence between <font face="'courier new', monospace">TabControllers</font>, <font face="'courier new', monospace">TabViews</font>, <font face="'courier new', monospace">TabContentsControllers</font>, and the <font face="'courier new', monospace">TabContents</font> in the <font face="'courier new', monospace">TabStripModel</font>. In the steady-state, the indices line up so an index coming from the model is directly mapped to the same index in the parallel arrays holding the views and controllers. This is also true when new tabs are created (even though there is a small period of animation) because the tab is present in the model while the <font face="'courier new', monospace">TabView</font> is animating into place. As a result, nothing special need be done to handle "new tab" animation.</div><div><div><br /></div><div>This all goes out the window with the "close tab" animation. The animation kicks off in <font face="'courier new', monospace">-tabDetachedWithContents:atIndex:</font> after receiving the notifiation that the tab has been removed from the model. The simplest solution at this point would be to remove the views and controllers as well, however once the <font face="'courier new', monospace">TabView</font> is removed from the view list, the tab z-order code takes care of removing it from the tab strip and there will be no animation. That means if there is to be any visible animation, the <font face="'courier new', monospace">TabView</font> needs to stay around until its animation is complete. In order to maintain consistency among the internal parallel arrays, this means all structures are kept around until the animation completes. At this point, though, the model and our internal structures are out of sync: the indices no longer line up. As a result, there is a concept of a "model index" which represents an index valid in the <font face="'courier new', monospace">TabStripModel</font>. During steady-state, the "model index" is just the same index as the parallel arrays (as above), but during tab close animations, it is different, offset by the number of tabs preceding the index which are undergoing tab closing animation. Therefore, the caller needs to be careful to use the available conversion routines when accessing the internal parallel arrays (e.g., <font face="'courier new', monospace">-indexFromModelIndex:</font>). Care also needs to be taken during tab layout to ignore closing tabs in the total width calculations and in individual tab positioning (to avoid moving them right back to where they were).</div><div><br /></div><div>In order to prevent actions being taken on tabs which are closing, the <font face="'courier new', monospace">TabView</font> itself gets marked so it no longer will send back its select action or allow itself to be dragged. In addition, drags on the tab strip as a whole are disabled while there are tabs closing.</div></div><div><br /></div><div>When the <font face="'courier new', monospace">CAAnimation</font> for the tab close completes, it notifies its delegate, <font face="'courier new', monospace">TabCloseAnimationDelegate</font>. The delegate messages the <font face="'courier new', monospace">TabStripController</font> to remove the tab from all internal data structures and the indices are once again all back in sync.</div><h2><a name="TOC-Tab-Drag-and-Drop"></a>Tab Drag and Drop</h2><h2><a name="TOC-Tab-dragging-is-one-of-the-more-complex-aspects-of-the-tab-strip-and-its-related-classes-but-most-of-the-work-is-actually-done-within-TabView-not-the-tab-strip-s-controller.-There-are-three-basic-phases-to-the-dragging-handled-by-TabView-s-mouseDown:-mouse"></a><span style="font-weight:normal;font-size:13px">Tab dragging is one of the more complex aspects of the tab strip and its related classes, but most of the work is actually done within <font face="'courier new', monospace">TabView</font>, not the tab strip's controller. There are three basic phases to the dragging, handled by TabView's <font face="'courier new', monospace">mouseDown:</font>, <font face="'courier new', monospace">mouseDragged:</font>, and <font face="'courier new', monospace">mouseUp:</font>, but the main driver is a loop within <font face="'courier new', monospace">mouseDown:</font> that runs until the user releases the mouse button. <font face="'courier new', monospace">mouseDown:</font> handles both drags and regular clicks on a <font face="'courier new', monospace">TabView</font>. A simple click sends the view's action to its target, which selects the appropriate tab by updating the model. While the mouse button is down but is moving, the <font face="'courier new', monospace">TabView</font> repeatedly calls <font face="'courier new', monospace">mouseDragged:</font>. Once the mouse button is released, it calls <font face="'courier new', monospace">mouseUp:</font> to clean up and reset for next time.</span></h2><div><span style="font-weight:normal;font-size:13px">The first order of business when dragging a tab is determining if the user wants to move the entire window or if they want to drag one tab among many. The heuristic used here assumes that if there is only one tab in a window and there are no other windows in which this tab can be dropped, dragging the tab acts as if the user is dragging the background title bar. This simply extends the area in which the user can reposition the entire window.</span></div><div><span style="font-weight:normal;font-size:13px"><br /></span></div><div><span style="font-weight:normal;font-size:13px">If the user is dragging a tab with the potential to drop it somewhere else, they can either reposition the tab within the same source window, or they can put the tab into a different destination window. Clearly, if there is only one tab in the source window, the former can not be the case, and it is assumed the destination will be in a different window.</span></div><div><span style="font-weight:normal;font-size:13px"><br /></span></div><div>Assuming there are more than one tab in the source window, the drag begins in the mode of tracking a drag within the same source window. As the user drags the mouse back and forth, the <font face="'courier new', monospace">TabView</font> instructs the window's <font face="'courier new', monospace">TabWindowController</font> to insert a placeholder for the given tab at the appropriate mouse location. Doing so will force a layout which moves the dragged tab to the given location in the window and the tab will appear to "follow" the mouse as it moves back and forth with the other tabs getting out of its way should it overlap them too much. The animation comes for free as a part of the normal layout, described above.</div><div><br /></div><div><div style="display:block;text-align:left"><div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><a href="http://www.chromium.org/developers/design-documents/tab-strip-mac/dragWithin2.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1265923735494/developers/design-documents/tab-strip-mac/dragWithin2.png" /></a></div></div><div style="text-align:left"><br /></div></div><div>If at any time the mouse leaves a certain boundary above or below the tab strip, the dragging code assumes the user wants to "tear" the tab out into its own window. This breaks out of the previous mode and enters the general mode where a tab (now a full-fledged window) can be dropped anywhere on the desktop or into another window. Detaching the tab creates a new <font face="'courier new', monospace">Browser</font>, complete with its own <font face="'courier new', monospace">TabStripModel</font>, containing the <font face="'courier new', monospace">TabContents</font> associated with the original tab. This allow it to maintain all its existing state and render processes (complete with animations!). Creating a new browser creates a new <font face="'courier new', monospace">BrowserWindowController</font> and all of the Cocoa objects that make a normal browser window and is a rather heavy-weight process. The source window is no longer the original from where the tab was dragged, but becomes the newly formed window.</div><div><br /></div><div>In this new mode, the visual appearance of the dragged window changes such that the background of the title bar is translucent but the tab and all the window contents are opaque. If the user moves the tab over a tab strip of a potential destination window, the title bar background disappears entirely to give the appearance that the tab can be part of the destination window. Also, as the user moves the mouse over a potential destination window, it will be brought to the front so its tab strip is not obscured by other windows.</div><div><br /></div><div><div style="display:block;margin-right:auto;margin-left:auto;text-align:center"><a href="http://www.chromium.org/developers/design-documents/tab-strip-mac/translucent.png?attredirects=0" imageanchor="1"><img border="0" src="http://www.chromium.org/_/rsrc/1265923465721/developers/design-documents/tab-strip-mac/translucent.png" /></a></div></div><div><br /></div><div>This change in visual appearance is handled by the <font face="'courier new', monospace">TabWindowController</font> via an "overlay window" which re-parents the views of the tab strip, toolbars, content area, etc into a new (opaque) floating child window while the source window behind it becomes translucent. When the drag completes, the moving of views into the overlay is reversed and everything returns to the actual source window.</div><div><br /></div><div>When the user releases the mouse, there are three cases to check for:</div><div><ul><li>User dropped the tab within the same window without leaving the tab strip</li><li>User dropped the tab in a different window (or possibly the same window but tore it off then put it back)</li><li>User dropped the tab on the desktop</li></ul><div>In the first case, there's nothing complicated to do as everything is within a single <font face="'courier new', monospace">TabStripModel</font>. When moving between windows, the <font face="'courier new', monospace">TabContents</font> of the dragged source window is added to the destination window's model at the given location. Finally, the last case doesn't require anything to be moved around at all because the <font face="'courier new', monospace">TabContents</font> was already moved into the new window when it was initially torn off. In the latter two cases, the overlay window must be cleaned up and the window appearance put back to normal. The ordering can be tricky with shadows and alpha values.</div></div><div><br /></div><div>One goal of the design of the tab dragging code was for it to be application agnostic. None of the classes involved are browser-specific and the <font face="'courier new', monospace">TabView</font> itself only makes calls to the <font face="'courier new', monospace">TabWindowController</font> of either the source or destination windows. Any handling of the Chromium-defined <font face="'courier new', monospace">TabContents</font> objects are performed by the <font face="'courier new', monospace">BrowserWindowController</font>, which clearly isn't intended to be shared. Hopefully one day these classes can move to GTM so they can be more easily re-used by other applications.</div><h2><a name="TOC-New-Tab"></a>New Tab</h2><div><div>The process to create a new tab begins in the model, arriving at the <font face="'courier new', monospace">TabStripController</font> via its C++ observer bridge. First it creates a new <font face="'courier new', monospace">TabContentsController</font> and stores that in an array parallel to the model. Next, it creates a new <font face="'courier new', monospace">TabController</font> and inserts it into a similar parallel array. Note that the act of creating a new tab cancels "rapid closure mode", restoring the available width to the full amount. Finally, the controller broadcasts that the number of tabs has changed, then returns. This allows various parts of the user interface (such as the menu bar) to adjust for the new number of tabs in the key window.</div><div><br /></div><div>Tab layout is performed at different times depending on if the tab is created in the foreground or background. If in the background, layout is done immediately so the new tab appears. However, if the tab is created in the foreground, layout is deferred until the models notifies the controller to select the new tab. This is done because tab selection can change the width of (small) tabs and thus layout always needs to be done on tab selection. Waiting for selection avoids laying out the tabs twice in a row.</div><div><font size="6"><span style="font-size:20px"><b><br /></b></span></font></div><div><span style="font-size:20px;font-weight:bold">Close Tab</span></div></div><div><br /></div><div>The process to close a tab is mostly the reverse of the "new tab" case, only that it's handled in multiple stages to allow for the animation to complete (as described above). The model notifies the controller via its observer bridge that a tab has been detached. Note that there is a notification that the tab is closing, but it is not used in this implementation. If the window should remain open because there are more tabs remaining, being the tab closing animation which will sync up all the data structures upon completion. If closing the final tab in a window, the window will be going away on its own so don't bother with animations and close the tab directly.</div></div><div><br /></div><div>Detaching also happens in the drag and drop case where a tab is being moved between windows.</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/tab-strip-mac">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq90o2Iwa4UjsGi0HGKsIgaewvP-HAYWprh4DD5GOdv3T1nH3PiDkuwYO49xapoXozfESTYV_jdtq-kWIPKI3wL_gq_pt8TSg04jQUppe3catwY-Qhy/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

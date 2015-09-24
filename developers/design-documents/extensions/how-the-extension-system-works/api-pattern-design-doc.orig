@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/extensions","deleted":false,"title":"Extensions","dir":"ltr"},{"path":"/developers/design-documents/extensions/how-the-extension-system-works","deleted":false,"title":"How the Extension System Works","dir":"ltr"},{"path":"/developers/design-documents/extensions/how-the-extension-system-works/api-pattern-design-doc","deleted":false,"title":"APIs as stateless service calls","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/extensions/how-the-extension-system-works/api-pattern-design-doc\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/extensions/how-the-extension-system-works","parentWuid":"wuid:gx:139f62f8afff8e0c","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"APIs as stateless service calls","locale":"en","wuid":"wuid:gx:715a16cf5ea14b3f","revision":53,"path":"/developers/design-documents/extensions/how-the-extension-system-works/api-pattern-design-doc","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"api-pattern-design-doc","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="APIs as stateless service calls - The Chromium Projects" />
+<meta itemprop="name" content="APIs as stateless service calls - The Chromium Projects" />
+<meta property="og:title" content="APIs as stateless service calls - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>APIs as stateless service calls - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="/developers/design-documents/extensions" dir="ltr">Extensions</A>‎ &gt; ‎<A href="/developers/design-documents/extensions/how-the-extension-system-works" dir="ltr">How the Extension System Works</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">APIs as stateless service calls</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><font size="4" style="background-color:rgb(255,255,255)"><b>Note: </b>This is the original proposal and is kept for historical reasons.  It may be made obsolete by more recent documentation.</font></div><div><hr /></div><div>We want to give extensions programmatic APIs to interact with many of the browsers' subsystems. Some examples include: tabs, history, bookmarks, downloads, and the omnibar.</div><div><br /></div><div>An interesting wrinkle in Chrome is that in reality, these data structures exist in another process. Because of this, it's impossible to keep a perfectly consistent view of the world in the extension process. There will at time be conflicts between what the extension thinks the current state of the system is, and what it actually is. We need to design APIs that makes this fundamental problem as easy to deal with as possible.</div><div><br /></div><h2><a name="TOC-Proposal"></a>Proposal</h2><div><div>We could model these APIs as stateless service calls, similar to the way AJAX applications work. Each call will be asynchronous, and just dumb data gets passed back and forth across the void.</div><div><br /></div><div>For example:</div><div><br /></div><div><div><div><span style="font-family:courier new">window.onload = populate;</span></div><div><font face="'courier new', monospace"><br /></font></div><div><span style="font-family:courier new">function populate() {</span></div><div><font face="'courier new', monospace">  <span style="background-color:rgb(255,255,0)">extension.bookmarks.getAllBookmarks</span><span style="background-color:rgb(255,255,0)">(function(results) {</span></font></div><div><font face="'courier new'">    // Assuming something MochiKit-ish is present.</font></div><div><span style="font-family:courier new">    forEach(results, function(bookmark) {</span></div><div><span style="font-family:courier new">      var div = DIV(A(bookmark.title, bookmark.url), " ", A("edit"));</span></div><div><font face="'courier new', monospace">      div.id = "b" + result.id;</font></div><div><font face="'courier new', monospace">      div.lastChild.onclick = bind(edit, result.id);</font></div><div><font face="'courier new', monospace">      return div;</font></div><div><font face="'courier new'">    });</font></div><div><font face="'courier new'">  });</font></div><div><span style="font-family:courier new">}</span></div><div><font face="'courier new', monospace"><br /></font></div><div><span style="font-family:courier new">function edit(id) {</span></div><div><font face="'courier new', monospace">  var newTitle = prompt("Enter new title");</font></div><div><font face="'courier new', monospace">  <span style="background-color:rgb(255,255,0)">extension.bookmarks.updateBookmark</span><span style="background-color:rgb(255,255,255)">(</span>{id: id, title: newTitle}<span style="background-color:rgb(255,255,255)">);</span></font></div><div><font face="'courier new', monospace">}</font></div><div><br /></div><div>The advantages of this approach:</div><div><div><ul><li>Chrome doesn't have to send copies of browser state to any extension process until it is requested.</li><li>Chrome doesn't have to have complex machinery to keep multiple copies of browser state synchronized across processes.</li><li>The API reflects the underlying reality -- that the interaction with the browser is asynchronous.</li><li>Fits a wide variety of applications, so many APIs can follow a similar pattern, making new APIs easier for chrome-team to build and easier for developers to learn.</li><li>This feels like idiomatic JavaScript.</li></ul>The disadvantages:</div><div><div><ul><li>Not object-oriented. The verbs are at the top level and accept nouns as arguments. This could get ugly in cases where a subsystem has many nouns.</li><li>More coupled to JavaScript (bad if we ever wanted to make these APIs available to other languages).</li><li>May encourage us to be lazy with API design by trying to wedge everything into this CRUD idiom.</li></ul><div><br /></div><h2><a name="TOC-Details"></a>Details</h2><h4><a name="TOC-Conflicts"></a>Conflicts</h4><div><div>Without cross-process locking, conflicts can occur in any of our APIs. For example, you can attempt to navigate a tab that has since been closed. My feeling is that conflicts should *not* be treated as exceptions. For simple things, we should just let the last change win. For more complex cases that make no sense, we should print a warning to the console, but not treat it as a fully-fledged error. In the limit, there is nothing the developer can really do about these cases. We can propagate the real state back to the extension via events and the extension can do something about it if it wants (I think in most cases, it won't care).</div><h4><a name="TOC-Constraints"></a>Constraints</h4><div><div>Many of these data models have constraints and side-effects. For example, it doesn't make sense to set a window's zIndex negative, and changing the index of a tab affects the index of other tabs in the same window. Constraints and side-effects in this system would typically be handled by the server side and propagated back to the client by events, if the extension developer had registered to receive them.</div><h4><a name="TOC-Non-data-APIs"></a>Non-data APIs</h4><div><div><div>Some APIs don't fit this model. For example, interacting with the omnibar or receiving requests from content scripts. We'd just have to handle these on a case-by-cases basis. I've outlined some ideas below.</div><div><br /></div><h2><a name="TOC-Alternative-Ideas"></a>Alternative Ideas</h2><div><div>The main alternative is to have a stateful DOM-style API, like this:</div><div><br /></div><div><font face="'courier new', monospace">foreach(<span style="background-color:rgb(255,255,0)">window.extensions.bookmarks</span>, function(bookmark) {</font></div><div><span style="font-family:courier new">  var div = DIV(A(bookmark.title, bookmark.url), " ", A("edit"));</span></div><div><font face="'courier new', monospace">  div.id = "b" + result.id;</font></div><div><font face="'courier new', monospace">  div.lastChild.onclick = bind(edit, bookmark);</font></div><div><font face="'courier new', monospace">  return div;</font></div><div><font face="'courier new', monospace">});</font></div><div><br /></div><div><font face="'courier new', monospace">function edit(bookmark) {</font></div><div><font><font face="'courier new', monospace">  var newTitle = prompt("Enter new title");</font></font></div><div><span style="background-color:rgb(255,255,255)"><font face="'courier new', monospace">  </font></span><span style="background-color:rgb(255,255,0)"><font face="'courier new', monospace">bookmark.title = newTitle;</font></span></div><div><span style="background-color:rgb(255,255,255)"><font face="'courier new', monospace">  </font></span><span style="background-color:rgb(255,255,0)"><font face="'courier new', monospace">bookmark.save();</font></span></div><div><font face="'courier new', monospace">}</font></div><div><font face="'courier new'"><br /></font></div><div><font face="arial, sans-serif">T</font><font face="arial, sans-serif">h</font><font face="arial, sans-serif">e</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">m</font><font face="arial, sans-serif">a</font><font face="arial, sans-serif">i</font><font face="arial, sans-serif">n</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">d</font><font face="arial, sans-serif">o</font><font face="arial, sans-serif">w</font><font face="arial, sans-serif">n</font><font face="arial, sans-serif">s</font><font face="arial, sans-serif">i</font><font face="arial, sans-serif">d</font><font face="arial, sans-serif">e</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">o</font><font face="arial, sans-serif">f</font><font face="arial, sans-serif"> </font><font face="arial, sans-serif">t</font><font face="arial, sans-serif">h</font><font face="arial, sans-serif">i</font><font face="arial, sans-serif">s</font><font face="arial, sans-serif"> approach is that it requires synchronizing the state of the relevant object models between the extension and browser processes, and resolving conflicts. Also, as in my example here, we still might want to have an explicit update step if the operation would require writing to disk in the browser process.</font></div><div><br /></div><div><h2><a name="TOC-API-Hierarchy-Proposal"></a>API Hierarchy Proposal</h2><div><div><font face="'courier new', monospace">chromium.</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">  // An event is a way to register to be notified when something happens. In the rest of this</font></div><div><font face="'courier new'">  // documentation, Events are referred to as first-class, with the following notation:</font></div><div><font face="'courier new'">  //</font></div><div><font face="'courier new'">  //   event name(Arg1Type arg1, Arg2Type arg2, ...);</font></div><div><font face="'courier new'">  //</font></div><div><font face="'courier new'">  // What this means is that the Event in variable "name" wants handlers with the signature:</font></div><div><font face="'courier new'">  //</font></div><div><font face="'courier new'">  //   void handler(Arg1Type arg1, Arg2Type arg2, ...)</font></div><div><font face="'courier new'">  class Event</font></div><div><font face="'courier new'">    void addListener(object callback(...))</font></div><div><font face="'courier new'">    void removeListener(object callback(...))</font></div><div><font face="'courier new'">    bool hasListener(object callback(...))</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">    // Dispatches the event. Mainly this would be used by the framework, but it might be useful</font></div><div><font face="'courier new'">    // to expose to developers.</font></div><div><font face="'courier new'">    void dispatch(...)</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">  // A class that is essentially a client to an extension "server" process. Provides ways to</font></div><div><font face="'courier new'">  // interact with the extension server, usually from a content script, but theoretically from</font></div><div><font face="'courier new'">  // content or another extension.</font></div><div><span style="font-family:courier new">  class Extension</span></div><div><font face="'courier new'">    constructor(int id)</font></div><div><span style="font-family:courier new">    Port connect()</span></div><div><font face="'courier new'">    string getURL(string path)</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">  // One end of a connection between an extension process and a content script (or content, or</font></div><div><font face="'courier new'">  // another extension).</font></div><div><font face="'courier new'">  class Port</font></div><div><font face="'courier new'">    event onmessage</font></div><div><font face="'courier new'">    void postMessage(object args)  // args is any json-compatible type</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">  <a href="https://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:3828aafea64ed4a4" class="disabled">browser.</a></font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new', monospace">  <a href="https://www.chromium.org/developers/design-documents/extensions/proposed-changes/apis-under-development/downloads-api">downloads.</a></font></div><div><span style="font-family:courier new"><br /></span></div><div><span style="font-family:courier new">  <a href="https://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:264da90e341e11c6" class="disabled">bookmarks.</a></span></div><div><span style="font-family:courier new"><br /></span></div><div><span style="font-family:courier new">  <a href="https://www.chromium.org/developers/design-documents/extensions/proposed-changes/apis-under-development/history-api">history.</a></span></div><div><font face="'courier new', monospace"><br /></font></div><div><font face="'courier new'">  // TODO:</font></div><div><span style="font-family:courier new">  thumbnails.</span></div><div><font face="'courier new', monospace">    // I think these all fit the basic CRUD pattern.</font></div><div><font face="'courier new', monospace"><br /></font></div><div><font face="'courier new', monospace">  <a href="https://www.chromium.org/developers/design-documents/extensions/proposed-changes/apis-under-development/omnibox-api">omnibox.</a></font></div><div><font face="'courier new'">    // This one should be really fun to figure out.</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">  // The "self" module is defined differently depending on whether you are inside a content</font></div><div><font face="'courier new'">  // script or not.</font></div><div><font face="'courier new'"><br /></font></div><div><span style="font-family:courier new">  // When in an extension, 'self' is a module, just like 'tabs', 'history', etc, that</span></div><div><span style="font-family:courier new">  // provides access to some meta features.</span></div><div><font face="'courier new'">  self.</font></div><div><span style="font-family:courier new">    // For access to other parts of an extension.</span></div><div><span style="font-family:courier new">    DOMWindow background  // Gets the single background process if there is one</span></div><div><font face="'courier new'">    DOMWindow[] toolstrips  // Gets a list of live toolstrip instances</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new', monospace">    // Fired when somebody first creates a channel to this extension</font></div><div><font face="'courier new', monospace">    Event onconnect(Port port)</font></div><div><font face="'courier new'"><br /></font></div><div><span style="font-family:courier new">  // When in a content script, 'self' is an Extension instance referring to the parent</span></div><div><span style="font-family:courier new">  // extension. Content scripts can use this to talk to their parent without having to</span></div><div><font face="'courier new'">  // know its ID, which should be handy during development.</font></div><div><font face="'courier new', monospace">  Extension self</font></div><div><font face="'courier new'"><br /></font></div><h2><a name="TOC-Examples"></a>Examples</h2><div>Move all google tabs into a new window:</div><div><br /></div><div><div><font face="'courier new', monospace">c</font><font face="'courier new', monospace">h</font><font face="'courier new', monospace">r</font><font face="'courier new', monospace">o</font><font face="'courier new', monospace">m</font><font face="'courier new', monospace">i</font><font face="'courier new', monospace">u</font><font face="'courier new', monospace">m</font><font face="'courier new', monospace">.tabs.getAllTabs(function(tabs) {</font></div><div><font face="'courier new'">  var tabsToMove = [];</font></div><div><font face="'courier new'">  tabs.forEach(function(tab) {</font></div><div><font face="'courier new'">    // Too bad the URL isn't a parsed representation :(</font></div><div><font face="'courier new'">    if (tab.url.indexOf("google.com")) {</font></div><div><font face="'courier new'">      tabsToMove.push(tab);</font></div><div><font face="'courier new'">    }</font></div><div><font face="'courier new'">  }</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">  if (tabsToMove.length &gt; 0) {</font></div><div><font face="'courier new'">    chromium.tabs.createWindow(null, function(newWindow) {</font></div><div><font face="'courier new'">      tabsToMove.forEach(function(tab) {</font></div><div><font face="'courier new'">        chromium.tabs.updateTab({</font></div><div><font face="'courier new'">          id: tab.id,</font></div><div><font face="'courier new'">          windowId: newWindow.id</font></div><div><font face="'courier new'">        });</font></div><div><font face="'courier new'">      });</font></div><div><font face="'courier new'">    });</font></div><div><font face="'courier new'">  }</font></div><div><span style="font-family:courier new">});</span></div><div><font face="'courier new'"><br /></font></div></div><div><br /></div><div>Write out navigation entries to console:</div><div><br /></div><div><font face="'courier new', monospace">c</font><font face="'courier new', monospace">h</font><font face="'courier new', monospace">r</font><font face="'courier new', monospace">o</font><font face="'courier new', monospace">m</font><font face="'courier new', monospace">i</font><font face="'courier new', monospace">u</font><font face="'courier new', monospace">m</font><font face="'courier new', monospace">.tabs.ontabchange.addListener(function(old, new) {</font></div><div><font face="'courier new'">  if (old.url != new.url) {</font></div><div><span style="font-family:courier new">    console.log("navigated to: " + newTab.url);</span></div><div><span style="font-family:courier new">  }</span></div><div><font face="'courier new'">});</font></div><div><font face="'courier new'"><br /></font></div><div>Communication between content scripts and extension:</div><div><br /></div><div><font face="'courier new', monospace">// Content script</font></div><div><font face="'courier new'">var port = chromium.self.connect();</font></div><div><font face="'courier new'">port.onmessage.addListener(function(message) {</font></div><div><font face="'courier new'">  console.log("got message: " + message);</font></div><div><font face="'courier new'">});</font></div><div><font face="'courier new'">port.postMessage({pageUrl: location.href});</font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'"><br /></font></div><div><font face="'courier new'">// Extension</font></div><div><font face="'courier new'">chromium.self.onconnect.addListener(function(port) {</font></div><div><font face="'courier new'">  console.log("received message from: " + port.pageUrl);</font></div><div><font face="'courier new'">  port.postMessage("ack");</font></div><div><font face="'courier new'">});</font></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/extensions/how-the-extension-system-works/api-pattern-design-doc">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9pTzAUbnIPPtnQ0olG_yStTPYbe84pw9LJz8ARgZgE743o3BroTMu2ray4QoDazoXdt45pB60ebfLrpIdUC5U89eUopQaMrTweTNv2gsW1G7kf0il/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

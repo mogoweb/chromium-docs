@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/graphics-and-skia","deleted":false,"title":"Graphics and Skia","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/graphics-and-skia\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Graphics and Skia","locale":"en","wuid":"wuid:gx:79705006427fc2c0","revision":15,"path":"/developers/design-documents/graphics-and-skia","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"graphics-and-skia","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Graphics and Skia - The Chromium Projects" />
+<meta itemprop="name" content="Graphics and Skia - The Chromium Projects" />
+<meta property="og:title" content="Graphics and Skia - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Graphics and Skia - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Graphics and Skia</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Chrome uses Skia for nearly all graphics operations, including text rendering. GDI is for the most part only used for native theme rendering; new code should use Skia.<div><br /></div><div>Also see the section <a href="https://www.chromium.org/developers/design-documents/rendertext">RenderText and Chrome UI text drawing</a> for a more specific discussion of Chrome UI text rendering.<br />
+<br />
+<h3><a name="TOC-Why-Skia-"></a>Why Skia?</h3>
+<ul><li>GDI is not full-featured enough for things like SVG, Canvas, and some of the complex UI things we have in mind.</li>
+<li>Skia is in-house and can be modified to suit our needs.</li>
+<li>There was already a high-quality Webkit/Canvas port to Skia.</li>
+<li>GDI+ is no longer in development by Microsoft and is slower than Skia on most operations, at least on XP. On Vista, it seems that at least some GDI+ operations are hardware accelerated, but software Skia is generally fast enough for our needs.</li>
+<li>GDI+ text rendering is unacceptably different from GDI text rendering (see GDI+ Text, Resolution Independence, and Rendering Methods), and slow to boot.</li></ul>
+<h3><a name="TOC-Background:-What-s-with-all-these-Canvii-"></a>Background: What's with all these Canvii?</h3>
+<h4><a name="TOC-The-lowest-levels"></a>The lowest levels</h4>
+There are a confusing number of Canvas classes in use. At the lowest level is SkCanvas (in third_party/skia/include/SkCanvas.h, it is pretty well documented and you will want to refer to this file a lot in normal usage). This object contains all the methods that are used to draw. Canvases draw into an internalSkDevice, which is a simple wrapper around an SkBitmap object that actually holds the bits.<div><br /></div><div><div>In addition, we have a platform-specific wrapper around the native Skia canvas called SkPlatformCanvas, which allows using platform-specific APIs to draw things such as themes. Its backing store is a SkPlatformDevice, which includes memory that is shared by Skia (who writes into it directly) and Windows, where we create an HBITMAP for the bytes and draw into it using an HDC wrapping the bitmap. In this way, we can use Skia for normal rendering and Windows for theme drawing.</div><div>
+<br />
+The SkPlatformDevice has two functions BeginPlatformPaint (which returns an HDC you can draw into) and EndPlatformPaint that are used to wrap sections of native drawing. They manage the necessary flushing that allow Skia and GDI to see a consistent bitmap. Be very careful when rendering to the returnedHDC, see comments below on this.</div><div><br />
+<h4><a name="TOC-The-application-layer"></a>The application layer</h4>
+For the Webkit layer, SkCanvas and SkPlatformCanvas are the only objects that are used. Callers must manually set up for text drawing, which is OK because all graphics operation go through one graphics layer, GraphicsContext that we have ported to use this scheme.<br />
+<br />
+If you are writing code that will run in the browser process, for example, that draws the tab strip or one of the Destinations views, there is a higher-level option. At this layer, we also support gfx::Canvas (in ui/gfx/canvas.h) which wraps a SkCanvas. It provides text-drawing routines that provide richer functionality than the ones on SkCanvas and also wrappers around some of the common graphics primitive routines that take integer values instead of SkScalar coordinates which are more handy when integrating with most of our graphics code (see "Scalar values" below). These integer wrappers are named with "Int" appended, and a capital first letter (we use Google coding styles, Skia uses a different one for historical reasons) for example, DrawRectInt.<br />
+<br />
+One thing to note is that SkPlatformCanvas is heavier weight than SkCanvas because it has a Windows HDC and an HBITMAP associated with it. If you are doing rendering that does not need to be copied to the screen, you should use an SkCanvas. An example would be a temporary buffer used to render a bitmap into, which is then resampled and composited into the final SkPlatformCanvas before being copied to the screen.
+<div><br />
+<h4><a name="TOC-Which-canvas-should-you-use-"></a>Which canvas should you use?</h4>
+If you do not need to call GDI operations and only copy the canvas to another canvas instead of the screen, use SkCanvas directly. It will be the fastest.<br />
+If you are in the renderer, you must use SkPlatformCanvas if SkCanvas is not enough for you. Inside Webkit, though, you should always use its interface, GraphicsContext, instead.<br />
+All browser-level code that needs more functionality than SkCanvas should use gfx::Canvas. The Views system uses only gfx::Canvas except for intermediate results as described above.<br />
+<br />
+<h3><a name="TOC-Scalar-values"></a>Scalar values</h3>
+Skia uses a custom type, SkScalar, for most of its routines to represent coordinates. Depending on the value of a compiler flag, this is either typedefed to a float for floating-point mode, or an int for fixed-point mode. In fixed-point mode, the high 16-bits represent the whole part of the number, and the low 16-bits represent the fractional part. Although we currently compile with floating-point mode, we want to leave open the option to move to fixed point mode. You should therefore be very careful and not pass integer or floating point values directly to these functions.<br />
+<br />
+The easiest way is to use the *Int functions provided in gfx::Canvas if you are using one of the commonly-used functions that have wrappers. If this is not an option, you must use either SkIntToScalar or SkFloatToScalar to convert your value (an int or float, respectively), to the appropriate SkScalar type. To convert from scalars back to ints, use SkScalarRound.<br />
+<br />
+<br />
+<h3><a name="TOC-The-epic-battle-of-RGBA-and-BGRA"></a>The epic battle of RGBA and BGRA</h3>
+Both Windows and Skia use RGBA color in each 32-bit word. When written to memory on a little-endian machine like a Pentium, this becomes BGRA. While we are fortunate they agree, this still causes some problems when getting data in and out of the system. Many graphics libraries such as libpng and libjpeg expect the data to be in RGB(A) order in memory regardless of machine endianness.<br />
+<br />
+The result is that we have to be careful to swizzle the bytes when interfacing with these systems. Our application-level graphics codecs such as PNGEncoder,PNGDecoder, and JPEGCodec (these are not used by Webkit), support this.<br />
+<br />
+<br />
+<h3><a name="TOC-Opacity"></a>Opacity</h3>
+Using both Windows and Skia to draw into a single buffer is great because it gives us the best of both. Windows, however, doesn't know about the alpha channel. Most GDI operations treat the high 8 bits of each 32-bit word as padding.<br />
+<br />
+<br />
+<h3><a name="TOC-Premulitplied-alpha-channels"></a>Premulitplied alpha channels</h3>
+It is important to know that Skia uses premultiplied colors. This means that the color components have already been multiplied by the alpha channel. Most people are accustomed to having a color and then thinking about a separate opacity value. Premultiplied colors have already been "composited on black," allowing layers to be composited by addition of the color values rather than requiring an additional multiplication by alpha. Therefore, if the alpha is 50%, no color channels can have values greater than 50%.<br />
+<br />
+Since most graphics file formats assume postmultiplied alphas (color values plus a separate opacity of that color), we have to be careful to convert properly between the two formats when reading and writing to these systems.<br />
+<br />
+Use SkPreMultiplyColor to convert from an SkColor to a premultiplied color value (SkPMColor).<br />
+<br />
+<br />
+<h3><a name="TOC-The-case-of-the-disappearing-alpha"></a>The case of the disappearing alpha</h3>
+Windows causes some problems by not knowing about the alpha channel. When drawing with GDI, it inconveniently sets the alpha channel to 0 (transparent). We have two approaches to dealing with this, one for the Webkit port, and the other for the UI. We may merge or enhance these in the future.<br />
+<br />
+<br />
+<h3><a name="TOC-Transparency-in-the-Webkit-port"></a>Transparency in the Webkit port</h3>
+Web pages do not require arbitrary transparency to render properly. The base of the web page is fully opaque. Some image formats can support alpha channels, but these images are composited on top of the opaque background and require no special handling. The only way that a web page can create transparency is by setting a global transparency on an element. Therefore, we don't need to support arbitrary transparency, only compositing layers with a 1-bit mask to separate out the totally transparent regions from the (possibly partially) opaque regions.<br />
+<br />
+New SkPlatformDevices with transparency will have their values filled with a color that is impossible using premultiplied alphas. Webkit draws like normal over the top of this using opaque colors, potentially clearing the alpha channel using text drawing routines. When the layer is being composited, we do color replacements in fixupAlphaBeforeCompositing to reconstruct the correct alpha channel and composite. The thing to realize here is that this operation is destructive and the device will be invalid if used again.<br />
+<br />
+<br />
+<h3><a name="TOC-Transparency-in-the-UI"></a>Transparency in the UI</h3>
+In the UI, we often want to have more complex alpha channels. We give finer-grained control using prepareForGDI and postProcessGDI which are called for a rectangular region before and after GDI calls that may mangle the alpha. It does a similar replacement of transparent values to impossible colors, and then back. It assumes that all pixels written by GDI are supposed to be opaque. If you want more complex operations, you will have to do the rendering to an intermediate buffer and do separate compositing to get what you want.<br />
+<br />
+<br />
+<h3><a name="TOC-Coordinate-transforms"></a>Coordinate transforms</h3>
+Currently, SkDevice syncs Windows' coordinate transform to the current Skia transform whenever you call BeginPlatformPaint. This means that you can call GDI operations without worrying about the current transform (unless you have set up a perspective transform, which Windows doesn't support).<br />
+<br />
+However, this will eventually change. The problem is that Windows does a surprisingly bad job handling transformed graphics operations. For example, in text drawing, character spacing is expressed in terms of integer values in the untransformed coordinate space. If your transform has a positive scaling, the characters will become larger, but there will be visible rounding errors in the character spacing and the characters will appear uneven. Drawing themed controls is even worse, as the nearest-neighbor resampling Windows does will cause parts to expand or contract unevenly.<br />
+<br />
+The eventual solution will be to never transform the GDI coordinates and manually compute the new positions and sizes of text and themed controls that we draw. In some cases, we may need to render to a temporary bitmap and do the resampling ourselves.<br />
+<br />
+<h3><a name="TOC-Useful-tips"></a>Useful tips</h3>
+The SkBitmap class is internally reference counted. To prevent memory errors, it is generally best to copy the objects rather than hold pointers to them. These copies are lightweight so you should not be concerned about performance.<br />
+<br />
+Sometimes you want to temporarily override the transform, clipping, or other canvas parameters for a function. Use the SkCanvas.save() function, which will save the current state on an internal stack. Use SkCanvas.restore() to pop the stack and go back where you were.<br />
+<br />
+When you want to have a partially transparent layer of stuff, you can use the SkCanvas.saveLayerAlpha() function. This will create a new "layer," which will look like an empty, fully transparent canvas that you can draw into. In addition, this saves the same state as save(). Calling restore() will composite the layer back onto the previous layer with the transparency applied that you specified when saving it. If you do not need a global opacity, use thesaveLayer() function (it will still obey the layer's alpha channel).<br />
+<br />
+Clipping regions have one-bit precision. This means that you will not get antialiased edges if you have curves in your clipping region. If you want to draw something with antialiased clipping, and you can get your contents into a bitmap, you can use a bitmap shader to fill a path instead. Filled paths have nice antialiased edges.<br />
+<br />
+<h3><a name="TOC-Using-Skia"></a>Using Skia</h3>
+<h4><a name="TOC-The-basics"></a>The basics</h4>
+The model is that you use an SkCanvas to draw into an SkBitmap with an SkPaint. The SkBitmap (wrapped by an SkDevice) holds the bits, the SkCanvas manages the device and contains the drawing primitives, and the SkPaint holds most of the graphics state such as colors and antialiasing options. Most other graphics libraries combine the graphics state inside the canvas. SkPaint is lightweight and you should not generally worry about creating and destroying them as needed.<br />
+<br />
+To draw a round rect:</div>
+<div><br />
+</div>
+<div><span style="font-family:courier new">// Create the canvas. Note that this is a SkCanvas and not a PlatformCanvas so</span></div>
+<span style="font-family:courier new,monospace">// we won't be able to draw text on it. The canvas first requires a backing store<br />
+// (SkPlatformCanvas doesn't need this since it creates its own backing store).<br />
+SkBitmap backing_store;<br />
+backing_store.setConfig(SkBitmap::kARGB_8888_Config, canvas_width, canvas_height);<br />
+backing_store.setIsOpaque(true); // This will make some things faster if it's opaque.<br />
+backing_store.allocPixels(); // Don't forget to call this or it will be invalid!<br />
+<br />
+<br />
+SkCanvas canvas(backing_store);<br />
+canvas.drawARGB(255, 255, 255, 255); // Fill with white.<br />
+<br />
+<br />
+// Make a rect from (0,0) to (100,75).<br />
+SkRect rect;<br />
+rect.set(SkIntToScalar(0), SkIntToScalar(0),<br />
+SkIntToScalar(100), SkIntToScalar(75));<br />
+<br />
+<br />
+// Create a path with that rect and rounded corners of radius 10.<br />
+SkPath path;<br />
+path.addRoundRect(rect, SkIntToScalar(10), SkIntToScalar(10));<br />
+<br />
+<br />
+// Fill the path (with antialiasing) in 50% transparent green.<br />
+SkPaint paint;<br />
+paint.setStyle(SkPaint::kFill_Style);<br />
+paint.setAntiAlias(true);<br />
+paint.setARGB(128, 0, 255, 0);<br />
+canvas-&gt;drawPath(path, paint);</span><br />
+<div><span style="font-size:14px;font-weight:bold"><br />
+</span></div>
+<div><span style="font-size:14px;font-weight:bold">Using the platform canvas</span></div>
+<div><br /></div><div>
+There is a handy class called SkPlatformCanvasPaint to help you handle WM_PAINT messages. It will automatically do BeginPaint and EndPaint on init/destruction, and will create the bitmap and canvas with the correct size and transform for the dirty rect. The bitmap will be automatically painted to the screen on destruction.<br />
+<br />
+<div><span style="font-family:courier new,monospace">case WM_PAINT: {</span></div>
+<div><span style="font-family:courier new,monospace">  SkPlatformCanvasPaint canvas(hwnd);</span></div>
+<div><span style="font-family:courier new,monospace">  if (!canvas.isEmpty()) {</span></div>
+<div><span style="font-family:courier new,monospace">    ... paint to the canvas ...</span></div>
+<div><span style="font-family:courier new,monospace">  }</span></div>
+<div><span style="font-family:courier new,monospace">  return 0;</span></div>
+<div><span style="font-family:courier new,monospace">}</span></div><div><span style="font-family:courier new,monospace"><br /></span></div><div><b><font face="arial, sans-serif" size="3">Working with a writable Skia tree</font></b></div><div><b><span style="border-collapse:collapse;font-weight:normal"><div style="font-family:arial,sans-serif"><br /></div><div style="font-family:arial,sans-serif">Add this to the custom_deps the .gclient file:</div><div><div style="font-family:arial,sans-serif"><br /></div><div><div><font face="'courier new', monospace">      "src/third_party/skia": "<a href="https://skia.googlecode.com/svn/trunk" style="color:rgb(29,30,206)" target="_blank">https://skia.googlecode.com/svn/trunk</a>",</font></div><div><font face="'courier new', monospace">      "src/third_party/skia/gyp": None,</font></div><div><font face="'courier new', monospace">      "src/third_party/skia/src": None,</font></div><div><font face="'courier new', monospace">      "src/third_party/skia/include": None,</font></div></div></div><div><font face="'courier new', monospace"><span style="font-family:arial,sans-serif"><br /></span></font></div><div><font face="'courier new', monospace"><span style="font-family:arial,sans-serif">This gets you a writable tip-of-tree skia inside chrome. For a specific revision put @&lt;rev#&gt; after trunk in the URL.</span></font></div><div style="font-family:arial,sans-serif"><br /></div></span></b></div><div><font face="arial, sans-serif"><b><br /></b></font></div>
+</div>
+</div></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/graphics-and-skia">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq94QLQi6qydFdWiRRfMVAUi5uQeCWW2AyuL0gUii6Z3f_mix2zJl-odN4dZnUneuvRQO4BZePhesUsgCPbDRq-hjTRZXqVNcRmEl0RpRQh9QzpC8dy/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

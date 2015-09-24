@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/chromium-modularization","deleted":false,"title":"Chromium Modularization","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/chromium-modularization\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium Modularization","locale":"en","wuid":"wuid:gx:56b72e7efc341b6d","revision":8,"path":"/developers/how-tos/chromium-modularization","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"chromium-modularization","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium Modularization - The Chromium Projects" />
+<meta itemprop="name" content="Chromium Modularization - The Chromium Projects" />
+<meta property="og:title" content="Chromium Modularization - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium Modularization - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../how-tos.1.html" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium Modularization</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<div dir="ltr">
+<h2><a name="Background"> </a></h2>
+<div style="display:block;text-align:left">
+<div class="sites-embed-align-left-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="chromium-modularization.html#Background"><strong>1 </strong>Background</a></li><li class="goog-toc"><a href="chromium-modularization.html#Quick_start"><strong>2 </strong>Quick start</a></li><li class="goog-toc"><a href="chromium-modularization.html#Dependencies"><strong>3 </strong>Dependencies</a><ol class="goog-toc"><li class="goog-toc"><a href="chromium-modularization.html#The_From_keyword"><strong>3.1 </strong>The "From" keyword</a></li></ol></li><li class="goog-toc"><a href="chromium-modularization.html#Test_Data"><strong>4 </strong>Test Data</a></li><li class="goog-toc"><a href="chromium-modularization.html#Tooling"><strong>5 </strong>Tooling</a><ol class="goog-toc"><li class="goog-toc"><a href="chromium-modularization.html#Installation"><strong>5.1 </strong>Installation</a></li><li class="goog-toc"><a href="chromium-modularization.html#Basic_Usage"><strong>5.2 </strong>Basic Usage</a></li><li class="goog-toc"><a href="chromium-modularization.html#Advanced_Usage"><strong>5.3 </strong>Advanced Usage</a></li></ol></li></ol></div></div></div></div>
+</div>
+<h2><a name="Background">Background </a></h2>
+<p>
+Chromium is a big project, and it makes sense to modularize. Many
+sub-teams work largely independently, such as the sandbox and V8 teams,
+and the WebKit
+code is merged on regular schedules. It makes sense to modularize such
+that these teams can work independently, yet still share common code.
+</p>
+<p>
+For an overview of the modules that exist, please see <a href="getting-around-the-chrome-source-code.html">Chromium code layout</a>.
+</p>
+<p>
+</p>
+<h2><a name="Quick_start"> Quick start </a></h2>
+<p>
+Say you need to make a change that adds or changes something in <code>base</code> for the benefit of something in <code>chrome</code>.
+</p>
+<p>First you make your change, get it reviewed and checked in. At
+this point, Chromium is still pulling a specific, older revision of base
+without your changes. It does this by pulling in a specific version of <code>webkit</code>, and then specifying that it should use the version of base that the <code>webkit</code> module is currently using (see the "From" syntax below). Nobody will see your change because of this.
+</p>
+<p>
+Then you update the <code>webkit</code> module to pull in your new version of <code>base</code>. First you need to figure out which version your new version is. It's a good idea to first do <code>svn update</code> in <code>base/</code> to make sure everything is up-to-date, then do <code>svn info</code>. You'll see a <code>Revision</code> line that tells you the current revision number of the current module. Put this revision number into the <code>webkit/DEPS</code> file for the <code>base</code> module. Get this change reviewed and submitted.
+</p>
+<p>
+At this point, <code>chrome</code> is still pulling a specific version of <code>webkit</code> that pulls <code>base</code> without your change. Repeat the same procedure as before, but this time, make <code>chrome</code> pull the latest version of <code>webkit</code>.
+Along with this deps file changes should go your corresponding changes
+to Chromium. This allows you to atomically pull in the most recent
+version and update Chromium to be compatible with it.
+</p>
+<p>
+<b>Important tip:</b> On the <a href="http://buildbot.chromium.org/">Chromium buildbot</a>
+page one of the builders is called <b>chrome-release-webkit-latest</b>. This
+pulls Chromium with the most recent version of WebKit. If your change
+introduced incompatibilities between <code>base</code> and <code>chrome</code>,
+this will be red until you check in your corresponding changes to
+Chromium. On the other hand, if you didn't do anything incompatible, if
+this builder is red, that means it's a bad time to sync WebKit to the
+latest Chromium! You should make sure the problem is fixed and the
+builder is green before submitting your change!
+</p>
+<p>
+</p>
+<h2><a name="Dependencies"> Dependencies </a></h2>
+<p>Each project depends on a variety of modules. For example, the
+WebKit project depends on the networking code, our shared base code,
+and some third-party libraries. Chromium and V8 in turn both depend on
+WebKit. (In practice, Chromium depends on everything since we are in the
+Chromium tree). Each project must list the projects it depends on, and
+which version it wants to pull. We do not support transitive
+dependencies, so each project must list all of the projects it depends
+on.
+</p>
+<p>
+A user's <i>client</i> specifies a set of target <i>solutions</i> to check out.
+(Yes, please excuse the Visual Studio jargon.)  In the simplest case, a user's client
+only specifies a single solution, say the <code>chrome</code> solution.  The root 
+directory of each solution has a text file named <code>DEPS</code> that defines
+the set of dependencies for the project.  Users can override these dependencies if
+desired.
+</p>
+<p>
+The contents of the <code>DEPS</code> file is a python associative array, which looks something like the following:
+</p>
+<p>
+</p>
+<pre><span style="background-color:rgb(255,255,255)">deps = {</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">  "breakpad" : "http://google-breakpad.googlecode.com/svn/trunk@189",</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">  "webkit"   : "http://src.chromium.org/chrome/trunk/src</span><span style="background-color:rgb(255,255,255)">/webkit@3395",</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">  "v8"       : "http://v8.googlecode.com/svn/trunk@77829",</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">  ...</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">}</span><br /></pre>
+<p>
+The <code>DEPS</code> file can easily be used to express a dependency on a subversion tag and other subversion servers:
+</p>
+<p>
+</p>
+<pre>deps = {<br />  ...<br />  "breakpad" : "http://google-breakpad.googlecode.com/svn/tags/1.0.29.0",<br />  ...<br />}<br /></pre>
+<p>
+While it is possible for a <code>DEPS</code> file to specify that the trunk of a dependency
+be used, it is intended that a <code>DEPS</code> file instead specify a known good revision
+number or tag.  This ensures that Chromium developers, for example, are insulated
+from activity on the trunk of a dependency.  When the maintainer(s) of the dependency
+decide to make Chromium use the new revision of the dependency, they just need to
+contribute a change to the <code>chrome/DEPS</code> file.
+</p>
+<p>
+</p>
+<h3><a name="The_From_keyword"> The "From" keyword </a></h3>
+<p>
+Given that dependencies are not computed recursively, it can be a pain to maintain
+complex dependency trees manually, especially if modules have multiple overlapping
+dependencies.  To simplify such situations, <code>gclient</code> supports the <code>From</code> keyword
+which can be used to express a dependency in terms of the <code>DEPS</code> file of another
+module.  For example, you could have:
+</p>
+<p>
+</p>
+<pre>deps = {<br />  "breakpad" : "http://google-breakpad.googlecode.com/svn/trunk@189",<br /><span style="background-color:rgb(255,255,255)">  "webkit"   : "http://src.chromium.org/chrome/trunk/src</span><span style="background-color:rgb(255,255,255)">/webkit@3395",</span><br />  "v8"       : From("webkit"),<br />  ...<br />}<br /></pre>
+<p>
+The use of the <code>From</code> keyword above indicates that the version of "v8" to be pulled
+should be determined by inspecting <code>webkit/DEPS</code>.
+</p>
+<p>
+</p>
+<h2><a name="Test_Data"> Test Data </a></h2>
+<p>
+Some modules like <code>webkit</code> have very large amounts of test data.  For these
+modules, a good convention is to define a separate module for the test data.  In
+the case of the <code>webkit</code> module, <code>webkit/DEPS</code> can define a dependency on
+the webkit test data module, but <code>chrome/DEPS</code> can exclude this dependency.
+As a result, Chromium developers are exempted from having to checkout the WebKit
+test data by default, but this also does not inconvenience WebKit developers who
+prefer to check out the test data.  Also, by having the test data in a parallel
+directory, the cost of manually updating just the <span style="font-family:courier new,monospace">webkit</span> directory is minimized.
+</p>
+<p>
+</p>
+<h2><a name="Tooling"> Tooling </a></h2>
+<p>
+To facilitate working with a bunch of separately versioned modules, some tooling is
+needed.
+</p>
+<p>
+</p>
+<h3><a name="Installation"> Installation </a></h3>
+<p>Checkout the <code>depot_tools</code> package, which includes <code>gclient</code>, <code>gcl</code>, and <code>svn</code>:<br />
+<span><br />
+<code>$ </code></span><span style="background-color:transparent"><font color="#006000" face="monospace">git clone https://chromium.googlesource.com/chromium/tools/depot_tools</font></span></p>
+<p><span style="background-color:transparent;font-size:10pt">Add the </span><code style="background-color:transparent;font-size:10pt">depot_tools</code><span style="background-color:transparent;font-size:10pt"> directory to your PATH.</span></p><p>
+</p>
+<h3><a name="Basic_Usage"> Basic Usage </a></h3>
+<p>
+To checkout Chromium the first time, you need to first configure your client:
+</p>
+<p>
+</p>
+<pre><span style="background-color:rgb(255,255,255)">$ gclient config http://src.chromium.org/chrome/trunk/src/chrome</span><br /></pre>
+<p>
+This command generates a basic <code>.gclient</code> file suitable for checking out
+the specified version of <code>chrome</code> and its dependencies.  See the <b>Advanced
+Usage</b> section below for details on customizing your <code>.gclient</code> file.
+</p>
+<p>
+To actually checkout Chromium and to later update your working copy:
+</p>
+<p>
+</p>
+<pre>$ gclient sync<br /></pre>
+<p>
+or,
+</p>
+<p>
+</p>
+<pre>$ gclient update<br /></pre>
+<p>
+This checks out Chromium and each of the dependencies listed in the
+<code>chrome/DEPS</code> file.  The dependencies are placed alongside the <code>chrome</code>
+directory.
+</p>
+<p>
+When run, the <code>gclient sync</code> command looks for a <code>.gclient</code> file in the
+current directory or in a parent directory (walking up the parent directory chain
+until it finds one).  It is an error if that file is not found.
+</p>
+<p>
+</p>
+<h3><a name="Advanced_Usage"> Advanced Usage </a></h3>
+<p>
+The contents of a default <code>.gclient</code> file looks something like:
+</p>
+<p>
+</p>
+<pre>solutions = [<br />  { "name"        : "chrome",<br />    "url"         : "<span style="background-color:rgb(255,255,255)">http://src.chromium.org/chrome/trunk/src/chrome</span>",<br />    "custom_deps" : {}<br />  }<br />]<br /></pre>
+<p>
+An element of the <code>solutions</code> array (a <i>solution</i>) describes a repository
+directory that will be checked out into your working copy.  Each solution may optionally
+define additional dependencies (via its <code>DEPS</code> file) to be checked out alongside the
+solution's directory.  A solution may also specify custom dependencies (via the
+<code>custom_deps</code> property) that override or augment the dependencies specified by the
+<code>DEPS</code> file.
+</p>
+<p>
+Users can edit this file to add new solutions or alter dependencies for a particular
+solution.
+</p>
+<p>
+For example, a V8 developer may wish to checkout the V8 trunk alongside a stable version
+of Chromium.  So, they might setup a <code>.gclient</code> file like so:
+</p>
+<p>
+</p>
+<pre>solutions = [<br />  { "name"        : "chrome",<br />    "url"         : "<span style="background-color:rgb(255,255,255)">http://src.chromium.org/chrome/trunk/src/chrome@5000",</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">    "custom_deps" : {</span><br style="background-color:rgb(255,255,255)" /><span style="background-color:rgb(255,255,255)">      "v8" : "http://v8.googlecode.com/svn/trunk"</span><br />    }<br />  }<br />]<br /></pre>
+<p>
+The above specifies that a particular revision of Chromium, r5000, should be used 
+instead of the Chromium trunk.  It then specifies that the V8 trunk should be used
+instead of the version of V8 specified by <code>chrome/DEPS</code>.
+</p>
+<p>
+The V8 example is somewhat simple since V8 does not itself have other dependencies.
+For modules like <span style="font-family:courier new,monospace">webkit</span>, specifying custom dependencies for each of WebKit's dependencies
+is tedious and could potentially get out of sync with what other developers are using
+(as specified in <code>webkit/DEPS</code>).  So, an alternative approach to working with the
+trunk of another module is to set up a second solution:
+</p>
+<p>
+</p>
+<pre>solutions = [<br />  { "name"        : "chrome",<br />    "url"         : "<span style="background-color:rgb(255,255,255)">http://src.chromium.org/chrome/trunk/src/chrome@5000</span>",<br />    "custom_deps" : {<span><br />      "skia"      : None,<br />      "webkit"    : None,<br />      "v8"        : None</span><br />    }<br />  }<span>,<br />  { "name"        : "webkit",<br />    "url"         : "</span><span style="background-color:rgb(255,255,255)">http://src.chromium.org/chrome/trunk/src/webkit</span><span>",<br />    "custom_deps" : {}<br />  }</span><br />]<br /></pre>
+<p>
+The above <code>.gclient</code> file specifies that the svn URLs given in <code>chrome/DEPS</code> for
+the <span style="font-family:courier new,monospace">skia</span>, <span style="font-family:courier new,monospace">webkit</span>, and <span style="font-family:courier new,monospace">v8</span> modules should be ignored.  Those modules are then fetched
+according to <code>webkit/DEPS</code>.  Both <code>chrome/DEPS</code> and <code>webkit/DEPS</code>, in this 
+example, specify other common dependencies such as <code>base</code>.  The tool will complain if
+the two solutions specify conflicting dependencies.  A user must explicitly ignore a
+dependency that conflicts.
+</p>
+</div>
+</div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/chromium-modularization">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9Zl4bAYi_XX6zsY4pWEY2atYfXbAs323mwuqUUdJN44DdKcAWXdx7KHwAISgvtnwVvIGUiYo-EGJyg0cf6O1DhcpnWFeZPFCaZ_8i3VXg9R6X0JY3/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

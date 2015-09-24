@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/tree-sheriffs","deleted":false,"title":"Tree Sheriffs","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/tree-sheriffs\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Tree Sheriffs","locale":"en","wuid":"wuid:gx:24b52fca28997d96","revision":262,"path":"/developers/tree-sheriffs","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"tree-sheriffs","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/config/pagetemplates/tree-sheriffs-test-","title":"Tree Sheriffs (test)"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Tree Sheriffs - The Chromium Projects" />
+<meta itemprop="name" content="Tree Sheriffs - The Chromium Projects" />
+<meta property="og:title" content="Tree Sheriffs - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Tree Sheriffs - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Tree Sheriffs</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<h2><a name="TOC-I-m-a-new-sheriff-now-what-"></a>I'm a new sheriff, now what?<b><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-I-m-a-new-sheriff-now-what-"><strong>1 </strong>I'm a new sheriff, now what?</a></li><li class="goog-toc"><a href="#TOC-What-is-a-sheriff-"><strong>2 </strong>What is a sheriff?</a></li><li class="goog-toc"><a href="#TOC-What-is-sheriff-o-matic-"><strong>3 </strong>What is sheriff-o-matic?</a></li><li class="goog-toc"><a href="#TOC-What-is-a-trooper-"><strong>4 </strong>What is a trooper?</a></li><li class="goog-toc"><a href="#TOC-What-is-a-gardener-"><strong>5 </strong>What is a gardener?</a></li><li class="goog-toc"><a href="#TOC-Our-7-out-of-8-goal"><strong>6 </strong>Our 7 out of 8 goal</a></li><li class="goog-toc"><a href="#TOC-Sheriffing-Details"><strong>7 </strong>Sheriffing Details</a></li><li class="goog-toc"><a href="#TOC-Common-tasks"><strong>8 </strong>Common tasks</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Closing-or-opening-the-tree"><strong>8.1 </strong>Closing or opening the tree</a></li><li class="goog-toc"><a href="#TOC-Effectively-communicating-tree-closure"><strong>8.2 </strong>Effectively communicating tree closure</a></li><li class="goog-toc"><a href="#TOC-Effectively-communicating-tree-repairs"><strong>8.3 </strong>Effectively communicating tree repairs</a></li></ol></li><li class="goog-toc"><a href="#TOC-Tips-and-tricks"><strong>9 </strong>Tips and tricks</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-It-s-clobberin-time-"><strong>9.1 </strong>It's clobberin' time!</a></li><li class="goog-toc"><a href="#TOC-Forcing-a-build"><strong>9.2 </strong>Forcing a build</a></li><li class="goog-toc"><a href="#TOC-Stopping-a-build"><strong>9.3 </strong>Stopping a build</a></li><li class="goog-toc"><a href="#TOC-Use-chromium-extensions-to-annotate-buildbot-error-pages"><strong>9.4 </strong>Use chromium extensions to annotate buildbot error pages</a></li></ol></li><li class="goog-toc"><a href="#TOC-PFQ-Builds"><strong>10 </strong>PFQ Builds</a></li><li class="goog-toc"><a href="#TOC-Sheriff-schedule"><strong>11 </strong>Sheriff schedule</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Build-sheriff-calendar-authoritative-"><strong>11.1 </strong>Build sheriff calendar (authoritative)</a></li><li class="goog-toc"><a href="#TOC-How-to-swap"><strong>11.2 </strong>How to swap</a></li></ol></li><li class="goog-toc"><a href="#TOC-Useful-urls"><strong>12 </strong>Useful urls</a></li><li class="goog-toc"><a href="#TOC-Random-notes"><strong>13 </strong>Random notes</a></li><li class="goog-toc"><a href="#TOC-Time-Zones"><strong>14 </strong>Time Zones</a></li></ol></div></div></div></div></b></h2>
+<ol><li>Read the <a href="https://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot">tour of the waterfall</a> to understand what you are doing.</li>
+<li>This page</li>
+<li>The relevant page for your sheriffing type:</li>
+<ol><li><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium">Chromium</a> sheriff</li>
+<li><a href="https://www.chromium.org/blink/gardening">Blink</a> sheriff (aka "gardeners")</li>
+<li><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium/memory-sheriff">Memory</a> sheriff</li>
+<li><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os">Chromium OS</a> sheriff</li>
+<li><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-nacl">NaCl</a> sheriff</li>
+<li><a href="https://www.chromium.org/developers/how-tos/gpu-wrangling">GPU</a> pixel wrangler</li>
+<li><a href="http://dev.chromium.org/developers/tree-sheriffs/perf-sheriffs">Chromium Perf</a> sheriff</li>
+</ol>
+</ol>
+</div>
+<h2><a name="TOC-What-is-a-sheriff-"></a>What is a sheriff?</h2>
+<ul><li>Closes and opens the tree</li>
+<li>Tracks down people responsible for breakage</li>
+<li>Backs out broken changes</li>
+<li>When idle, the sheriff:</li>
+<ul><li>improves the tools,</li>
+<li>updates the doc,</li>
+<li>fix flaky tests,</li>
+<li>remove reliability signatures</li></ul></ul>
+<div>Sheriffs should have a strong bias towards actions that keep the tree green and then open. For main waterfall bots that are on the Commit Queue, if a simple revert can fix the problem the sheriff <b>should revert first and ask questions later</b>. For bots that are not covered by the Commit Queue and if the author is online, it's fine to ask them to fix asynchronously (since it shouldn't be blocking anyone, and it's not the author's fault as the change landed through the CQ).</div><h2><a name="TOC-What-is-sheriff-o-matic-"></a>What is sheriff-o-matic?</h2><div><a href="http://sheriff-o-matic.appspot.com">sheriff-o-matic.appspot.com</a> is a tool to automate the work of sheriffing. It shows you just the failures and it automatically intersects regression ranges across the bots for you. Currently it only works for Chromium and Blink trees. Making it work for other trees is a small amount of work: <a href="http://crbug.com/409693">crbug.com/409693</a>. </div><div><br /></div><div><p style="font-size:13.3333330154419px;line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">More on sheriff-o-matic and what to do if it's down: <a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-o-matic">https://sites.google.com/a/chromium.org/dev/developers/tree-sheriffs/sheriff-o-matic</a>.</span></p><div dir="ltr" style="font-size:13.3333330154419px;margin-left:0pt"></div></div>
+<h2><a name="TOC-What-is-a-trooper-"></a>What is a trooper?</h2>
+<div>Troopers know more about maintaining the buildbot masters and slaves themselves. They're the people to look for when the bots need an OS update, a machine goes offline, checkouts are failing repeatedly, and so on.</div>
+<ul><li><b>Chromium troopers: </b>See <a href="https://www.chromium.org/developers/testing/contacting-a-trooper">contacting a trooper</a>.</li>
+<ul><li><span style="font-weight:normal">Refer to the<span> <a href="https://www.google.com/calendar/b/0/embed?src=google.com_iqfka4i9asiva67vlqqf1es094@group.calendar.google.com&amp;ctz=America/Los_Angeles&amp;gsessionid=3aRmNWf_6W2tl9jRTQ3T-Q" target="_blank">rotation calendar</a> to find the current trooper (look in "more details"-&gt;"Guests").</span></span></li></ul>
+<li><b>Chromium OS troopers:</b></li>
+<ul><li>Same list as Chromium troopers (see above)</li></ul>
+<li><font face="Arial"><span style="border-collapse:collapse;white-space:pre-wrap"><b>NaCl troopers</b>: bradnelson, ncbray, TBD</span></font></li></ul>
+<h2><a name="TOC-What-is-a-gardener-"></a>What is a gardener?</h2>
+<p>Gardeners are watchers of particular component interactions. They generally watch a component's release or development and move the version included forward when it is compatible. This is called "<a href="http://dev.chromium.org/developers/how-tos/get-the-code#Rolling_DEPS">rolling DEPS</a>", and consists of committing a CL that changes the (Subversion) revision number in some <a href="https://code.google.com/p/chromium/codesearch#search/&amp;q=file:DEPS"><code>DEPS</code></a> file, particularly the root <a href="https://code.google.com/p/chromium/codesearch#chromium/src/DEPS"><code>DEPS</code></a>, and then seeing if anything breaks. In some cases the DEPS roll also needs to have a <a href="https://www.chromium.org/Home/chromium-clobber-landmines">landmine</a> to force a full rebuild (clobber).</p>
+<p>Of particular interest to the Chromium projects are the gardeners who watch the interaction between Blink, Skia and Chromium, and those who watch the interaction of <a href="https://www.chromium.org/developers/tree-sheriffs/chrome-in-chromeos-gardening">Chromium and ChromiumOS</a><span style="background-color:transparent;font-size:10pt">.</span></p>
+<h2><a name="TOC-Our-7-out-of-8-goal"></a>Our 7 out of 8 goal</h2>
+<ul><li>We have a goal of keeping the tree open 7 hours out of every 8. To achieve this goal, sheriffs need to resolve issues as they arise.
+</li>
+<li>If the tree is closed automatically, the sheriff needs to change the status within a few minutes to let other people know that someone is looking at the failures.</li>
+<li>If the sheriff can keep track of the failures on the tree, and those failures are not catastrophic (e.g. compile failing or thousands of test failing), then the tree should stay open.</li>
+<li>Want to know how you did? Check the status viewer for <a href="http://chromium-status.appspot.com/status_viewer?curView=peak&amp;startTime=TODAY&amp;numDays=60" style="color:rgb(0,102,204);outline-style:none">Chromium</a>, <a href="http://chromiumos-status.appspot.com/status_viewer?curView=peak&amp;startTime=TODAY&amp;numDays=60" style="color:rgb(0,102,204);outline-style:none">Chromium OS</a> or <a href="http://nativeclient-status.appspot.com/status_viewer">NaCl</a>. (7/8 = 87.5%)</li></ul>
+<h2><a name="TOC-Sheriffing-Details"></a>Sheriffing Details</h2>
+<div>See <a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium">Sheriff Details: Chromium</a> to revert changes, disable tests, etc.</div>
+<h2><a name="TOC-Common-tasks"></a>Common tasks</h2>
+<h3><a name="TOC-Closing-or-opening-the-tree"></a>Closing or opening the tree</h3>
+<div>The tree status can be <b>closed</b> or <b>open</b>. These status levels control the activity of the commit queue. If the tree is <b>open</b>, the commit queue run as normal.</div>
+<ol style="list-style-type:decimal"><li>Go to <a href="http://chromium-status.appspot.com/" style="color:rgb(71,18,100);outline-style:none">chromium-status.appspot.com</a> (Chromium) or <a href="http://chromiumos-status.appspot.com/" style="color:rgb(71,18,100);outline-style:none">chromiumos-status.appspot.com</a> (Chromium OS).</li>
+<li>Change the status.</li>
+<ul><li>To close the tree, include the word "closed" in the status.</li>
+<li>To open the tree, include the word "open" in the status.</li></ul>
+</ol>
+<h3><a name="TOC-Effectively-communicating-tree-closure"></a>Effectively communicating tree closure</h3>
+<p>Annotate the tree status with information about what is known about the status of build failures. For example, automatic closure messages such as...</p>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">
+<p>Tree is closed (Automatic: "compile" on "Mac Builder" from 12345: foo@chromium.org)</p>
+</blockquote>
+... should be changed to:
+<div><br />
+</div>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">
+<div>Tree is closed (compile -&gt; johnd)</div>
+<div><br />
+</div>
+</blockquote>
+... to indicate that committer 'johnd' has been notified of the problem and is looking into it. Once a fix has been checked in, sheriffs often use status:
+<div><br />
+</div>
+<blockquote style="border:medium none;margin:0pt 0pt 0pt 40px;padding:0px">
+<div>Tree is closed (cycling green)</div>
+<div><br />
+</div>
+</blockquote>
+... to indicate that a fix/revert has been checked in and the tree will likely be opened soon. Alternatively, if the sheriffs decided to revert first and ask questions later, then the tree status should be changed to:<div><br /></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>Tree is open (reverted r54321)</div></div></blockquote><div><div><div>
+<h3><a name="TOC-Effectively-communicating-tree-repairs"></a>Effectively communicating tree repairs</h3>
+<div>If the tree has been closed for an extended time, particularly if the breakage covered more than one working timezone (US Pacific, US Eastern, Europe, Asia), it is considered best practice to communicate what was needed to fix the breakage. That way the next sheriff knows what's been happening, and people in other timezones know what to do next time it breaks the same way.</div>
+<div><br />
+</div>
+<div>If the fix was simple, it can be listed in the tree-open status message, such as...</div>
+<div><br />
+</div>
+</div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Tree open (rebooted Chromium (dbg) to clear tempfiles)</div>
+</blockquote>
+<div><br />
+</div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>Tree open (svn server came back)</div>
+</blockquote>
+<div><br />
+</div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>
+<div>Tree open (reverted r54321)</div>
+</div>
+</blockquote>
+<div>
+<div><br />
+</div>
+<div>If a more detailed fix was needed, send email to the chromium-dev mailing list explaining what happened. It's a good idea to CC the current and upcoming sheriffs too.</div>
+<div></div>
+<h2><a name="TOC-Tips-and-tricks"></a>Tips and tricks</h2>
+<h3><a name="TOC-It-s-clobberin-time-"></a>It's clobberin' time!</h3>
+<p>Sometimes you just need to clobber some class of bots (win, mac+ninja, linux asan using make, etc.). You can do this by landing a landmine change. Docs are here: <a href="https://www.chromium.org/Home/chromium-clobber-landmines">Chromium Clobber Landmines</a>.</p><p><b>Note:</b> if a specific CL is causing bots to break unless they are clobbered, that CL should be reverted first and fixed to avoid this.</p>
+<div>
+<h3><a name="TOC-Forcing-a-build"></a>Forcing a build</h3>
+<div>To retry the last build, you can force a build.</div>
+<div>
+<ol><li><span style="background-color:transparent;font-size:10pt">Navigate to builder on </span><a href="https://uberchromegw.corp.google.com/i/chromium/" style="background-color:transparent;font-size:10pt">internal waterfall</a></li>
+<ul><li><span style="background-color:transparent;font-size:10pt">From an existing builder URL, you can replace:</span></li>
+<ul><li><b style="background-color:transparent;font-size:10pt">build.chromium.org/p</b><span style="background-color:transparent;font-size:10pt"> </span></li>
+<li><span style="background-color:transparent;font-size:10pt">to:</span></li>
+<li><b style="background-color:transparent;font-size:10pt">chromegw.corp.google.com/i</b></li></ul></ul>
+<li><span style="background-color:transparent;font-size:10pt">Click the name of the builder in the top gray row</span></li>
+<li><span style="background-color:transparent;font-size:10pt">Enter your username and an optional reason</span></li>
+<li><span style="background-color:transparent;font-size:10pt">Click "Force Build".</span></li>
+</ol>
+</div>
+<div><span style="background-color:transparent;font-size:10pt">For Chromium only, if you check the "Clobber" checkbox, it will also delete the build output directory before redoing the compile.</span></div>
+<div> </div>
+<div><b>Note:</b> If this is not a builder (no compile step), then doing a clobber won't do anything. You need to clobber the "Builder" first.</div>
+<h3><a name="TOC-Stopping-a-build"></a>Stopping a build</h3>
+<div>There is an option to stop a build, but <i>do not use it! </i>If you stop the build during the update step, the bot is going to be hosed for sure. Again, don't use this option, and if you feel like using it, talk to the troopers <i>first.</i></div>
+<h3><a name="TOC-Use-chromium-extensions-to-annotate-buildbot-error-pages"></a><b>Use chromium extensions to annotate buildbot error pages</b></h3>
+<div>Install the buildbot error extension to more quickly isolate errors on stdio pages. See <a href="https://www.chromium.org/developers/useful-extensions">Useful extensions for chromium developers</a> for more information.</div>
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-PFQ-Builds"></a>PFQ Builds</h2>
+<div>Documentation is here in the <a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/pre-flight-queue-faq">Pre Flight Queue documentation</a></div>
+<h2><a name="TOC-Sheriff-schedule"></a><b>Sheriff schedule</b></h2>
+<div>
+<h3><a name="TOC-Build-sheriff-calendar-authoritative-"></a>Build sheriff calendar (authoritative)</h3>
+<div>The authoritative list is the on Google Calendar. Here's how to add the sheriff calendar to yours:</div>
+<div>
+<ol><li>Sign in to Google Calendar.<br />
+</li>
+<li>Where it says "Other calendars - Add a friend's calendar" add the address for the calendar you want:</li>
+<ul><li>Chromium: <a href="https://www.google.com/calendar/b/0/render?cid=google.com_r6oah4kurfoe0i3kee16kaitq0@group.calendar.google.com" target="_blank">google.com_r6oah4kurfoe0i3kee16kaitq0@group.calendar.google.com</a></li>
+<li><span style="font-weight:normal">Chromium OS: </span><a href="https://www.google.com/calendar/b/0/render?cid=google.com_69d79f055f0a14nuulm9kse60c@group.calendar.google.com" target="_blank">google.com_69d79f055f0a14nuulm9kse60c@group.calendar.google.com</a></li>
+<li>Chromium OS (non-US West Coast group): <a href="https://www.google.com/calendar/b/0/render?cid=google.com_qvc0pmmoql1n9g73scnubmmh6c@group.calendar.google.com" target="_blank">google.com_qvc0pmmoql1n9g73scnubmmh6c@group.calendar.google.com</a></li>
+<li>Blink: <a href="https://www.google.com/calendar/b/0/render?cid=google.com_h1kjbmjo6p29ta0rluu8eh5qjo@group.calendar.google.com" target="_blank">google.com_h1kjbmjo6p29ta0rluu8eh5qjo@group.calendar.google.com</a></li>
+<li>Memory: <a href="https://www.google.com/calendar/b/0/render?cid=google.com_fv7snsgnk3hgem50fb952aug44@group.calendar.google.com" target="_blank">google.com_fv7snsgnk3hgem50fb952aug44@group.calendar.google.com</a></li>
+<li>NaCl: <a dir="ltr" href="mailto:google.com_necnlf26slgj8ebp8pen4020kk@group.calendar.google.com" rel="nofollow noreferrer" style="font-family:arial,sans-serif;font-size:13px;line-height:16px" target="_blank">google.com_necnlf26slgj8ebp8pen4020kk@group.calendar.google.com</a></li>
+<li>Skia: <a href="https://www.google.com/calendar/b/0/render?cid=google.com_8clojmi0ktf75e95e6v9gijrq0@group.calendar.google.com">google.com_8clojmi0ktf75e95e6v9gijrq0@group.calendar.google.com</a></li>
+<li>GPU: <a href="https://www.google.com/calendar/b/0/render?cid=google.com_0eerjipjjbhlrbgf323lg2mb9o@group.calendar.google.com" style="color:rgb(85,26,139)">google.com_0eerjipjjbhlrbgf323lg2mb9o@group.calendar.google.com</a></li>
+<li>Troopers: <a href="https://www.google.com/calendar/render?cid=google.com_iqfka4i9asiva67vlqqf1es094%40group.calendar.google.com">google.com_iqfka4i9asiva67vlqqf1es094@group.calendar.google.com</a></li>
+<li>Chromium Perf: <span style="color:rgb(0,0,0);font-family:Arial,sans-serif;font-size:12px"><a href="https://www.google.com/calendar/b/0/render?cid=google.com_2fpmo740pd1unrui9d7cgpbg2k@group.calendar.google.com" target="_blank">google.com_2fpmo740pd1unrui9d7cgpbg2k@group.calendar.google.com</a></span></li></ul>
+</ol>
+</div>
+<div>To see who the sheriff is, click an event and look at the guest list. (Yes, it would be nice if it showed the people in the event title, but then there's the issue of the event title and the guest list getting out of sync -- no easy answer.)  To find when a specific person is going to be sheriff, use google calendar's advanced search box (click the down-triangle in the main search box), select the appropriate sheriff calendar, and type the person's username into the "Who" box.</div>
+<div><br />
+</div>
+</div>
+<div>The script/process that updates the calendars can be found in svn://svn.chromium.org/chrome-internal/trunk/tools/build/scripts/tools/sheriff.</div>
+<h3><a name="TOC-How-to-swap"></a>How to swap</h3>
+<div>
+<div>If you need to swap shifts with someone, add them to the rotation so that the buildbot and other tools display the proper people as sheriffs. To do this:</div>
+<ol>
+<li>Find the "meeting" on your calendar for when you are sheriff. Click it so you can edit the details. (Make sure you click the event on <i>your </i>calendar and not the event on the sheriff calendar). </li>
+<li>On the upper right, where Calendar indicates your response, choose "No" for "Are you coming?". Below that, where Guests are listed, click "Add Guest" and "invite" your replacement.</li>
+<li>Finally, hit "Save" at the top.</li>
+<li>Have your replacement repeat this process on their calendar for the days you are taking.</li>
+</ol>
+</div>
+</div>
+<div>
+<div>
+<h2><a name="TOC-Useful-urls"></a>Useful urls</h2>
+<div>
+<ul><li>See <a href="http://code.google.com/p/chromium/wiki/UsefulURLs">http://code.google.com/p/chromium/wiki/UsefulURLs</a></li>
+<li>LKGR status <a href="http://build.chromium.org/p/chromium/lkgr-status/">http://build.chromium.org/p/chromium/lkgr-status/</a></li></ul>
+</div>
+<h2><a name="TOC-Random-notes"></a>Random notes</h2>
+</div>
+</div>
+<div>
+<div>
+<div>
+<ul><li>Every committer is empowered and encouraged to do any of those things when needed, but the sheriff has overall responsibility in case somebody else is away or not paying attention.</li>
+<li>The sheriffs receive gatekeeper emails when the tree is being closed automatically. Please take action on these as soon as you can.</li>
+<li><b>Everyone helps!</b> Everyone has been signed up to be a sheriff. If you're new, and therefore should be added to the team, submit a code review to add yourself (svn://svn.chromium.org/chrome-internal/trunk/tools/build/scripts/tools/sheriff/rotations) or ping mmoss. You can find your time as sheriff at the "Upcoming sheriffs" list at the end of the Sheriff details pages (e.g., for <a href="http://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium#TOC-Upcoming-sheriffs-not-authoritative">Chromium</a>). If you need to change the schedule (you're out sick or on vacation), it's your responsibility to find a replacement for your time slot.</li></ul>
+</div>
+</div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<h2><a name="TOC-Time-Zones"></a>Time Zones</h2>
+<table border="2" cellpadding="4" cellspacing="4" style="border-collapse:collapse">
+<thead>
+<tr>
+<th>PST(CA, WA)</th>
+<th>EST(NY, Montreal)</th>
+<th>UTC(London)</th>
+<th>CET(Munich)</th>
+<th>JST(Tokyo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td bgcolor="#ccffcc"> 4PM</td>
+<td bgcolor="#ffcccc"> 7PM</td>
+<td bgcolor="#ffcccc"> 0AM</td>
+<td bgcolor="#ffcccc"> 1AM</td>
+<td bgcolor="#ccffcc"> 9AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc"> 5PM</td>
+<td bgcolor="#ffcccc"> 8PM</td>
+<td bgcolor="#ffcccc"> 1AM</td>
+<td bgcolor="#ffcccc"> 2AM</td>
+<td bgcolor="#ccffcc">10AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc"> 6PM</td>
+<td bgcolor="#ffcccc"> 9PM</td>
+<td bgcolor="#ffcccc"> 2AM</td>
+<td bgcolor="#ffcccc"> 3AM</td>
+<td bgcolor="#ccffcc">11AM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 7PM</td>
+<td bgcolor="#ffcccc">10PM</td>
+<td bgcolor="#ffcccc"> 3AM</td>
+<td bgcolor="#ffcccc"> 4AM</td>
+<td bgcolor="#ccffcc">12PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 8PM</td>
+<td bgcolor="#ffcccc">11PM</td>
+<td bgcolor="#ffcccc"> 4AM</td>
+<td bgcolor="#ffcccc"> 5AM</td>
+<td bgcolor="#ccffcc"> 1PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 9PM</td>
+<td bgcolor="#ffcccc"> 0AM</td>
+<td bgcolor="#ffcccc"> 5AM</td>
+<td bgcolor="#ffcccc"> 6AM</td>
+<td bgcolor="#ccffcc"> 2PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc">10PM</td>
+<td bgcolor="#ffcccc"> 1AM</td>
+<td bgcolor="#ffcccc"> 6AM</td>
+<td bgcolor="#ffcccc"> 7AM</td>
+<td bgcolor="#ccffcc"> 3PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc">11PM</td>
+<td bgcolor="#ffcccc"> 2AM</td>
+<td bgcolor="#ffcccc"> 7AM</td>
+<td bgcolor="#ffcccc"> 8AM</td>
+<td bgcolor="#ccffcc"> 4PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 0AM</td>
+<td bgcolor="#ffcccc"> 3AM</td>
+<td bgcolor="#ffcccc"> 8AM</td>
+<td bgcolor="#ccffcc"> 9AM</td>
+<td bgcolor="#ccffcc"> 5PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 1AM</td>
+<td bgcolor="#ffcccc"> 4AM</td>
+<td bgcolor="#ccffcc"> 9AM</td>
+<td bgcolor="#ccffcc">10AM</td>
+<td bgcolor="#ccffcc"> 6PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 2AM</td>
+<td bgcolor="#ffcccc"> 5AM</td>
+<td bgcolor="#ccffcc">10AM</td>
+<td bgcolor="#ccffcc">11AM</td>
+<td bgcolor="#ffcccc"> 7PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 3AM</td>
+<td bgcolor="#ffcccc"> 6AM</td>
+<td bgcolor="#ccffcc">11AM</td>
+<td bgcolor="#ccffcc">12PM</td>
+<td bgcolor="#ffcccc"> 8PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 4AM</td>
+<td bgcolor="#ffcccc"> 7AM</td>
+<td bgcolor="#ccffcc">12PM</td>
+<td bgcolor="#ccffcc"> 1PM</td>
+<td bgcolor="#ffcccc"> 9PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 5AM</td>
+<td bgcolor="#ffcccc"> 8AM</td>
+<td bgcolor="#ccffcc"> 1PM</td>
+<td bgcolor="#ccffcc"> 2PM</td>
+<td bgcolor="#ffcccc">10PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 6AM</td>
+<td bgcolor="#ccffcc"> 9AM</td>
+<td bgcolor="#ccffcc"> 2PM</td>
+<td bgcolor="#ccffcc"> 3PM</td>
+<td bgcolor="#ffcccc">11PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 7AM</td>
+<td bgcolor="#ccffcc">10AM</td>
+<td bgcolor="#ccffcc"> 3PM</td>
+<td bgcolor="#ccffcc"> 4PM</td>
+<td bgcolor="#ffcccc">12PM</td>
+</tr>
+<tr>
+<td bgcolor="#ffcccc"> 8AM</td>
+<td bgcolor="#ccffcc">11AM</td>
+<td bgcolor="#ccffcc"> 4PM</td>
+<td bgcolor="#ccffcc"> 5PM</td>
+<td bgcolor="#ffcccc"> 1AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc"> 9AM</td>
+<td bgcolor="#ccffcc">12PM</td>
+<td bgcolor="#ccffcc"> 5PM</td>
+<td bgcolor="#ccffcc"> 6PM</td>
+<td bgcolor="#ffcccc"> 2AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc">10AM</td>
+<td bgcolor="#ccffcc"> 1PM</td>
+<td bgcolor="#ccffcc"> 6PM</td>
+<td bgcolor="#ffcccc"> 7PM</td>
+<td bgcolor="#ffcccc"> 3AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc">11AM</td>
+<td bgcolor="#ccffcc"> 2PM</td>
+<td bgcolor="#ffcccc"> 7PM</td>
+<td bgcolor="#ffcccc"> 8PM</td>
+<td bgcolor="#ffcccc"> 4AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc">12PM</td>
+<td bgcolor="#ccffcc"> 3PM</td>
+<td bgcolor="#ffcccc"> 8PM</td>
+<td bgcolor="#ffcccc"> 9PM</td>
+<td bgcolor="#ffcccc"> 5AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc"> 1PM</td>
+<td bgcolor="#ccffcc"> 4PM</td>
+<td bgcolor="#ffcccc"> 9PM</td>
+<td bgcolor="#ffcccc">10PM</td>
+<td bgcolor="#ffcccc"> 6AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc"> 2PM</td>
+<td bgcolor="#ccffcc"> 5PM</td>
+<td bgcolor="#ffcccc">10PM</td>
+<td bgcolor="#ffcccc">11PM</td>
+<td bgcolor="#ffcccc"> 7AM</td>
+</tr>
+<tr>
+<td bgcolor="#ccffcc"> 3PM</td>
+<td bgcolor="#ccffcc"> 6PM</td>
+<td bgcolor="#ffcccc">11PM</td>
+<td bgcolor="#ffcccc">12PM</td>
+<td bgcolor="#ffcccc"> 8AM</td>
+</tr>
+</tbody>
+</table>
+
+See also IRC commands:
+<dl>
+<dt>trungl-bot: offices</dt>
+<dd>List office names for "time" command</dd>
+<dt>trungl-bot: time <i>office</i></dt>
+<dd>Display local time of specified office, e.g. <tt>trungl-bot: time NYC</tt></dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div></div>
+</div></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(8):</span>
+<span>
+<a href="/developers/tree-sheriffs/chrome-in-chromeos-gardening" dir="ltr">Chrome on ChromeOS Gardening</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/new-chromium-os-faq" dir="ltr">Chromium OS Sheriff FAQ</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/perf-sheriffs" dir="ltr">Perf Sheriffing</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-chromium" dir="ltr">Sheriff Details: Chromium</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-nacl" dir="ltr">Sheriff details: NaCl</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-chromium-os" dir="ltr">Sheriff FAQ: Chromium OS</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-o-matic" dir="ltr">sheriff-o-matic</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-philosophy" dir="ltr">Sheriff Philosophy</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/tree-sheriffs">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9INZXm0lmcgPqNg8NsY1ZXB_VxdjDMUVX6QeXEFP0TYu51HmjmBul-2yKsETq8fSthA31pPqPvhU7hBtMEDLQnp3R5vAaB6hOaZ48CoVv6z1ZA-xj/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

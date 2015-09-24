@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/telemetry","deleted":false,"title":"Telemetry: Introduction","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/telemetry\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Telemetry: Introduction","locale":"en","wuid":"wuid:gx:41281b648975fc3c","revision":117,"path":"/developers/telemetry","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"telemetry","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Telemetry: Introduction - The Chromium Projects" />
+<meta itemprop="name" content="Telemetry: Introduction - The Chromium Projects" />
+<meta property="og:title" content="Telemetry: Introduction - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Telemetry: Introduction - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1430257021496/developers/telemetry/benchmark-organization-diagram.png?attachauth=ANoY7co0_UB25L5hXMJYS44cfqIAj_BfpGl8Z_4b5IcziiUAnlqDk_Oj73kHPcuLckykSzifbyr0gNAUH22AQNEfV25XaMJu5a5bGoYxVJwkPF1Ml-K370x-RaBU6sc4bDan-b-ksV4gW7WlbSi0IxKgJXkcK38W6DuX9ozfqWopTe82ovILDTgJsp0DvsLXgfAoxvd2ssEkCVQn_mJOrdnGOOUaWBjGuQiBMndUUn0deEFawtQlQMyLmhUu2NVBmfYTEutUEhpJ&amp;attredirects=0&amp;height=270&amp;width=400" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1430257021496/developers/telemetry/benchmark-organization-diagram.png?attachauth=ANoY7co0_UB25L5hXMJYS44cfqIAj_BfpGl8Z_4b5IcziiUAnlqDk_Oj73kHPcuLckykSzifbyr0gNAUH22AQNEfV25XaMJu5a5bGoYxVJwkPF1Ml-K370x-RaBU6sc4bDan-b-ksV4gW7WlbSi0IxKgJXkcK38W6DuX9ozfqWopTe82ovILDTgJsp0DvsLXgfAoxvd2ssEkCVQn_mJOrdnGOOUaWBjGuQiBMndUUn0deEFawtQlQMyLmhUu2NVBmfYTEutUEhpJ&amp;attredirects=0&amp;height=270&amp;width=400" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Telemetry: Introduction</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span>
+<div style="text-align:center"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:350px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Telemetry-101"><strong>1 </strong>Telemetry 101</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Design-Principles"><strong>1.1 </strong>Design Principles</a></li><li class="goog-toc"><a href="#TOC-Should-my-test-use-Telemetry-"><strong>1.2 </strong>Should my test use Telemetry?</a></li></ol></li><li class="goog-toc"><a href="#TOC-Code-Concepts"><strong>2 </strong>Code Concepts</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Benchmark"><strong>2.1 </strong>Benchmark</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Measurement"><strong>2.1.1 </strong>Measurement</a></li><li class="goog-toc"><a href="#TOC-Page-Set"><strong>2.1.2 </strong>Page Set</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Next-Steps"><strong>3 </strong>Next Steps</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Run-Telemetry-benchmarks-locally"><strong>3.1 </strong>Run Telemetry benchmarks locally</a></li><li class="goog-toc"><a href="#TOC-Record-a-page-set-with-Web-Page-Replay"><strong>3.2 </strong>Record a page set with Web Page Replay</a></li><li class="goog-toc"><a href="#TOC-Add-a-measurement"><strong>3.3 </strong>Add a measurement</a></li><li class="goog-toc"><a href="#TOC-Feature-guidelines"><strong>3.4 </strong>Feature guidelines</a></li><li class="goog-toc"><a href="#TOC-Profiling-with-Telemetry"><strong>3.5 </strong>Profiling with Telemetry</a></li></ol></li><li class="goog-toc"><a href="#TOC-Contact-Us-or-Follow-Along"><strong>4 </strong>Contact Us or Follow Along</a></li><li class="goog-toc"><a href="#TOC-Frequently-Asked-Questions"><strong>5 </strong>Frequently Asked Questions</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-I-get-an-error-when-I-try-to-use-recorded-page-sets."><strong>5.1 </strong>I get an error when I try to use recorded page sets.</a></li></ol></li></ol></div></div></div></div></div>
+</span>
+<div><a href="http://storage.googleapis.com/chromium-telemetry/snapshots/telemetry.zip">Get Telemetry!</a>
+<h2><a name="TOC-Telemetry-101"></a><font face="Arial" size="3"><span style="white-space:pre-wrap">Telemetry 101</span></font></h2>
+<div>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Telemetry is Chrome's performance testing framework.  It allows you to perform arbitrary actions on a set of web pages and report metrics about it.  The framework abstracts:</font></span></p>
+<ul><li><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Launching a browser with arbitrary flags on any platform.</font></span></li>
+<li><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Opening a tab and navigating to the page under test.</font></span></li>
+<li><font face="Arial" size="2"><span style="white-space:pre-wrap">Fetching data via the Inspector timeline and traces.</span></font></li>
+<li><font face="Arial" size="2"><span style="white-space:pre-wrap">Using </span></font><a href="https://github.com/chromium/web-page-replay" style="font-size:small;line-height:1.15;text-decoration:none;background-color:transparent"><span style="font-family:Arial;color:rgb(17,85,204);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Web Page Replay</span></a><span style="font-size:small;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> to cache real-world websites </span><span style="font-family:Arial;font-size:small;white-space:pre-wrap">so they don’t change when used in benchmarks.</span></li></ul>
+</div>
+<h3><a name="TOC-Design-Principles"></a><font face="Arial" size="2"><span style="white-space:pre-wrap">Design Principles</span></font></h3>
+<div><span><font size="3">
+</font>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Write one performance test that runs on all platforms - Windows, </span><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap">Mac, Linux, Chrome OS, and Android for both Chrome and ContentShell.</span></font></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Runs on browser binaries, without a full Chromium checkout, and without having to build the browser yourself.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Use WebPageReplay to get repeatable test results.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:small;font-weight:normal;white-space:pre-wrap;line-height:1.15;background-color:transparent">Clean architecture for writing benchmarks that keeps measurements and use cases separate.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Run on non-Chrome browsers for comparative studies (not yet implemented).</font></span></p>
+</li></ul>
+</span>
+<h3><a name="TOC-Should-my-test-use-Telemetry-"></a><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Should my test use Telemetry?</span></font></h3>
+<span><font size="3">
+</font>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">It depends, what are you trying to measure?
+Are you trying to verify correctness?  If yes, Telemetry is not for you, but </span><a href="http://www.chromium.org/developers/testing/browser-tests" style="text-decoration:none"><span style="font-family:Arial;color:rgb(17,85,204);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">browser tests</span></a><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> are your friend.</span></font></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><br />
+</span></font></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Telemetry is designed for </span><span style="font-family:Arial;font-weight:bold;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">performance</span><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> tests that:</span></font></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Can be written with pure JS/HTML/CSS.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Use </span><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">real world content</span><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> (rather than synthetic).</span></font></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Could be run on other browsers, not just Chrome.</font></span></p>
+</li></ul>
+</span>
+<h2><a name="TOC-Code-Concepts"></a><span><font face="Arial" size="3"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Code Concepts</span></font></span></h2>
+<span><font size="3">
+</font>
+<div><span style="font-size:small;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Telemetry is a Python wrapper around Chrome's </span><a href="https://developer.chrome.com/devtools/docs/remote-debugging" style="font-size:small;line-height:1.15;text-decoration:none;background-color:transparent"><span style="font-family:Arial;color:rgb(17,85,204);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">DevTools Remote Debugging Protocol</span></a><span style="font-size:small;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">.</span></div>
+<div><span style="font-size:small;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><br />
+</span></div>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">The Telemetry framework lives in </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/telemetry/" style="text-decoration:none"><span style="font-family:Courier New;color:rgb(17,85,204);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">src/tools/telemetry/</span></a><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> and performance benchmarks live in </span><span style="text-decoration:underline;font-family:Courier New;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/perf/" style="text-decoration:none">src/tools/perf/</a></span></font><span style="font-size:small;line-height:1.15;background-color:transparent">.</span></p>
+</span><img height="270" src="http://www.chromium.org/_/rsrc/1430257021496/developers/telemetry/benchmark-organization-diagram.png?attachauth=ANoY7co0_UB25L5hXMJYS44cfqIAj_BfpGl8Z_4b5IcziiUAnlqDk_Oj73kHPcuLckykSzifbyr0gNAUH22AQNEfV25XaMJu5a5bGoYxVJwkPF1Ml-K370x-RaBU6sc4bDan-b-ksV4gW7WlbSi0IxKgJXkcK38W6DuX9ozfqWopTe82ovILDTgJsp0DvsLXgfAoxvd2ssEkCVQn_mJOrdnGOOUaWBjGuQiBMndUUn0deEFawtQlQMyLmhUu2NVBmfYTEutUEhpJ&amp;attredirects=0&amp;height=270&amp;width=400" style="display:inline;margin:5px 10px;float:right" width="400" /><span>
+<h3><a name="TOC-Benchmark"></a><span><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Benchmark</span></font></span></h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2"><font face="Arial">Telemetry has an opinionated definition of a benchmark. A </font><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/telemetry/telemetry/benchmark.py"><font face="courier new, monospace">benchmark</font></a><font face="Arial"> is a wrapper that </font></font></span><span style="font-family:Arial;font-size:small;line-height:14.949999809265137px;white-space:pre-wrap;background-color:transparent">encapsulates a measurement, a page set, and a set of optional browser options.</span><span style="font-size:small;font-family:Arial;white-space:pre-wrap;line-height:1.15;background-color:transparent"> You can run a benchmark with a short, simple command, and the test configuration is baked into the benchmark to ensure its consistency across machines.</span></p>
+</span>
+<h4><a name="TOC-Measurement"></a><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Measurement</span></font></h4>
+<span>
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:small;font-family:Arial;white-space:pre-wrap;line-height:1.15;font-weight:normal;background-color:transparent">A <i>measurement</i></span><span style="font-size:small;font-family:Arial;white-space:pre-wrap;line-height:1.15;background-color:transparent"> (</span><span style="font-size:small;font-family:Arial;line-height:14.949999809265137px;white-space:pre-wrap;background-color:transparent">called <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/telemetry/telemetry/page/page_test.py">PageTest</a> in the code)</span><span style="font-size:small;font-family:Arial;white-space:pre-wrap;line-height:1.15;background-color:transparent"> is "something that can be run on a page." Given a page, a measurement</span><span style="font-size:small;font-family:Arial;line-height:1.15;white-space:pre-wrap;background-color:transparent"> evaluates the page’s performance. It can report many results, including numbers, histograms, traces, or pass/fail.</span></p>
+</span><span>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><span style="background-color:transparent"><font size="2">Measurements should work with any and all page sets. We do this for consistency and to prevent benchmark rot.</font></span></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2"><font face="Arial">Writing good measurements is really hard. Chrome already has a bunch in </font><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/perf/" style="color:rgb(85,26,139);font-family:Courier New;text-decoration:none">src/tools/perf/</a><font face="Arial"> that are ready to go!</font></font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">A code level idea.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Examples: </span><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/perf/measurements/smoothness.py" style="text-decoration:none"><span style="color:rgb(17,85,204);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font face="courier new, monospace">tools/perf/measurements/smoothness.py</font></span></a><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> and </span><span style="text-decoration:underline;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/perf/measurements/memory.py" style="text-decoration:none"><font face="courier new, monospace">tools/perf/measurements/memory.py</font></a></span></font><span style="font-family:Arial;font-size:small;line-height:1.15;background-color:transparent">.</span></p>
+</li></ul>
+</span>
+<h4><a name="TOC-Page-Set"></a><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Page Set</span></font></h4>
+<span>
+<p style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:small;font-family:Arial;white-space:pre-wrap;line-height:1.15;font-weight:normal;background-color:transparent">A <i>page set</i> is a collection of URLs, which can be live sites, WebPageReplay archives, or local HTML files. Pages also have <i>actions</i> associated with them, such as clicking a button, scrolling the page, or performing a swipe gesture.</span></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">A product level idea.</font></span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Examples: <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/perf/page_sets/top_25_pages.py">top 25 websites</a>, international sites with right to left text, <a href="https://code.google.com/p/chromium/codesearch#chromium/src/tools/perf/page_sets/tough_scrolling_cases.py">tough scrolling sites</a>.</font></span></p>
+</li></ul>
+</span></div>
+<div>
+<h2><a name="TOC-Next-Steps"></a><span><font face="Arial" size="3"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Next Steps</span></font></span></h2>
+<span><font size="3">
+</font>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<h3 style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Run-Telemetry-benchmarks-locally"></a><span style="text-decoration:underline;color:rgb(17,85,204);font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2"><a href="http://www.chromium.org/developers/telemetry/run_locally" style="text-decoration:none" target="_blank">Run Telemetry benchmarks locally</a></font></span></h3></li>
+<li style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<h3 style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Record-a-page-set-with-Web-Page-Replay"></a><font size="2"><a href="http://www.chromium.org/developers/telemetry/record_a_page_set" style="text-decoration:none" target="_blank"><span style="color:rgb(17,85,204);font-weight:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Record a page set</span></a><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> with Web Page Replay</span></font></h3>
+</li>
+<li style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<h3 style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Add-a-measurement"></a><span style="text-decoration:underline;color:rgb(17,85,204);font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><a href="http://www.chromium.org/developers/telemetry/add_a_measurement" style="text-decoration:none" target="_blank"><font size="2">Add a measurement</font></a></span></h3>
+</li>
+<li style="list-style-type:disc;background-color:transparent;vertical-align:baseline">
+<h3 style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Feature-guidelines"></a><span style="font-weight:normal"><font face="arial, sans-serif" size="2"><a href="http://www.chromium.org/developers/telemetry/telemetry-feature-guidelines" target="_blank">Feature guidelines</a></font></span></h3>
+</li>
+<li style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<h3 style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a name="TOC-Profiling-with-Telemetry"></a><span style="text-decoration:underline;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;font-weight:normal;background-color:transparent"><font size="2"><a href="http://www.chromium.org/developers/telemetry/profiling" style="text-decoration:none" target="_blank">Profiling with Telemetry</a></font></span></h3>
+</li>
+<li style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<div><span style="text-decoration:underline;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;font-weight:normal;background-color:transparent"><a href="http://www.chromium.org/developers/telemetry/telemetry-profile-generation">Profile generation</a></span></div>
+</li>
+<li style="list-style-type:disc;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<div><span style="text-decoration:underline;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;font-weight:normal;background-color:transparent"><a href="http://www.chromium.org/developers/telemetry/telemetry-unittests">Telemetry unittests</a></span></div>
+</li></ul>
+</span>
+<h2><a name="TOC-Contact-Us-or-Follow-Along"></a><font face="Arial" size="3"><span style="white-space:pre-wrap">Contact Us or Follow Along</span></font></h2>
+<span>
+<p style="margin-top:0pt;margin-bottom:0pt"><span style="line-height:1.15;font-size:small;font-weight:normal;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">If you have questions, please email </span><span style="line-height:1.15;font-size:small;font-weight:normal;text-decoration:underline;font-family:Arial;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><a href="mailto:telemetry@chromium.org" style="font-size:small;line-height:1.15;font-weight:normal;text-decoration:none;background-color:transparent">telemetry@chromium.org</a></span><span style="background-color:transparent;font-weight:normal;line-height:14.949999809265137px;white-space:pre-wrap"><font face="Arial" size="2">.</font></span></p><p style="margin-top:0pt;margin-bottom:0pt"><span style="background-color:transparent;font-weight:normal;line-height:14.949999809265137px;white-space:pre-wrap"><font face="Arial" size="2"><br /></font></span></p>
+</span><span>
+<p dir="ltr" style="margin-top:0pt;margin-bottom:0pt"><font size="2" style="line-height:1.15"><span style="font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">You can keep up with Telemetry related discussions and code reviews by joining the </span><span style="text-decoration:underline;font-family:Arial;color:rgb(17,85,204);vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><a href="https://groups.google.com/a/chromium.org/forum/#!forum/telemetry" style="text-decoration:none">telemetry group</a></span></font><span style="background-color:transparent;line-height:14.949999809265137px;white-space:pre-wrap"><font face="Arial" size="2">.</font></span></p><p style="margin-top:0pt;margin-bottom:0pt"><br /></p><p style="margin-top:0pt;margin-bottom:0pt"><font face="Arial" size="2"><span style="line-height:14.9499998092651px;white-space:pre-wrap">For more details: see us at <a href="https://docs.google.com/document/d/1xdFT6M4lp_qY_GL0GMf4N4eE-uHLGzmMUMWKgIRmyWY/edit#">our office</a> </span></font><span style="font-family:Arial;font-size:small;line-height:14.9499998092651px;white-space:pre-wrap;background-color:transparent">(for Googlers)</span><font face="Arial" size="2" style="background-color:transparent"><span style="line-height:14.9499998092651px;white-space:pre-wrap">. Non-googlers, please </span></font><span style="color:rgb(38,38,38);font-family:arial,sans-serif;font-size:13px;line-height:16px;background-color:transparent">contact </span><a dir="ltr" href="mailto:telemetry@chromium.org" rel="nofollow noreferrer" style="font-family:arial,sans-serif;font-size:13px;line-height:16px;background-color:transparent" target="_blank">telemetry@chromium.org</a><span style="color:rgb(38,38,38);font-family:arial,sans-serif;font-size:13px;line-height:16px;background-color:transparent"> to set up a meeting.</span></p></span>
+<h2><a name="TOC-Frequently-Asked-Questions"></a><font face="Arial" size="3"><span style="white-space:pre-wrap">Frequently Asked Questions</span></font></h2><span>
+<div>
+<h3><a name="TOC-I-get-an-error-when-I-try-to-use-recorded-page-sets."></a><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap">I get an error when I try to use recorded page sets.</span></font></h3>
+</div>
+<p style="margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap"><font face="Arial">The recordings are not included in the Chromium source tree. If you are a Google partner, run </font><font face="courier new, monospace">gsutil config</font><font face="Arial"> to authenticate, then try running the test again. If you don't have gsutil installed on your machine, you can find it in </font><font face="courier new, monospace">src/tools/telemetry/third_party/gsutil/gsutil</font><font face="Arial">.</font></span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap"><font face="Arial"><br />
+</font></span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap"><font face="Arial">If you are not a Google partner</font></span></font><span style="font-size:small;line-height:1.15;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">, you can run on live sites with </span><span style="font-size:small;line-height:1.15;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font face="courier new, monospace">--use-live-sites</font></span><span style="font-size:small;line-height:1.15;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> or </span><a href="http://dev.chromium.org/developers/telemetry/record_a_page_set" style="font-size:small;line-height:1.15;text-decoration:none;background-color:transparent" target="_blank"><span style="font-family:Arial;color:rgb(17,85,204);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">record your own</span></a><span style="font-size:small;line-height:1.15;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> page set archive.</span></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><span style="font-size:small;line-height:1.15;font-family:Arial;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><br />
+</span></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap"><b>I get mysterious errors about device_forwarder failing.</b></span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap"><b><br />
+</b></span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap">Your forwarder binary may be outdated. If you have built the forwarder in src/out that one will be used; if there isn't anything there Telemetry will default to downloading a pre-built binary. Try re-building the forwarder, or alternatively wiping the contents of src/out/ and running run_benchmark, which should download the latest binary.</span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font face="Arial" size="2"><span style="line-height:14.949999809265137px;white-space:pre-wrap"><br />
+</span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><font face="Arial" size="2"><span style="line-height:14.9499998092651px;white-space:pre-wrap"><b>I'm having problems with keychain prompts on Mac. Please help!</b></span></font></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><span style="line-height:14.9499998092651px;white-space:pre-wrap;font-family:Arial;font-size:small;background-color:transparent">Make sure that your keychain is <a href="http://www.chromium.org/developers/telemetry/telemetry-mac-keychain-setup">correctly configured</a>.</span></p>
+<p style="margin-top:0pt;margin-bottom:0pt"><br />
+</p>
+</span></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(12):</span>
+<span>
+<a href="/developers/telemetry/performance-try-bots" dir="ltr">Performance Try Bots</a>
+</span>
+<span>
+<a href="/developers/telemetry/running-telemetry-on-chrome-os" dir="ltr">Running Telemetry on Chrome OS</a>
+</span>
+<span>
+<a href="/developers/telemetry/add_a_measurement" dir="ltr">Telemetry: Add a Measurement</a>
+</span>
+<span>
+<a href="/developers/telemetry/upload_to_cloud_storage" dir="ltr">Telemetry: Cloud Storage</a>
+</span>
+<span>
+<a href="/developers/telemetry/diagnosing-test-failures" dir="ltr">Telemetry: Diagnosing Test Failures</a>
+</span>
+<span>
+<a href="/developers/telemetry/telemetry-feature-guidelines" dir="ltr">Telemetry: Feature Guidelines</a>
+</span>
+<span>
+<a href="/developers/telemetry/telemetry-mac-keychain-setup" dir="ltr">Telemetry Mac Keychain Setup</a>
+</span>
+<span>
+<a href="/developers/telemetry/telemetry-profile-generation" dir="ltr">Telemetry: Profile Generation</a>
+</span>
+<span>
+<a href="/developers/telemetry/profiling" dir="ltr">Telemetry: Profiling</a>
+</span>
+<span>
+<a href="/developers/telemetry/record_a_page_set" dir="ltr">Telemetry: Record a Page Set</a>
+</span>
+<span>
+<a href="/developers/telemetry/run_locally" dir="ltr">Telemetry: Run Benchmarks Locally</a>
+</span>
+<span>
+<a href="/developers/telemetry/telemetry-unittests" dir="ltr">Telemetry: Unit tests</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-attachments">
+<div class="sites-attachments-row"><div class="sites-attachments-icon" style="left:0px;"><span aria-label="Attachments" title="Attachments"><div class="sites-translucent sites-symbol" aria-hidden="true">Č</div></span></div><div id="sites-attachments-update-div" class="sites-attachments-inner-div" style="display:none;"><span class="sites-attachments-update-icon"><img src="http://www.gstatic.com/sites/p/56e332/system/app/images/spinner.gif" /></span><div class="sites-attachments-update-text">Updating...</div></div></div><div class="sites-attachments-separator"></div>
+<div id="attachment-wuid:gx:57ecd367f9a1846a"><div class="sites-attachments-row"><div class="sites-attachments-icon sites-attachments-icon-accessible" style="left:5px"><div class="sites-translucent sites-symbol" aria-label="Image" title="Image">ą</div></div><div class="sites-attachments-inner-div"><div class="sites-attachments-name"><a href="/developers/telemetry/benchmark-organization-diagram.png?attredirects=0">benchmark-organization-diagram.png</a> <div class="sites-translucent">(41k)</div></div><div class="sites-attachments-author">Ethan Kuefner, <div class="sites-translucent">Apr 28, 2015, 2:37 PM</div></div></div><div class="sites-attachments-version sites-attachments-version-accessible"><a href="/system/app/pages/admin/revisions?wuid=wuid:gx:57ecd367f9a1846a">v.1</a></div><div id="attachment-download-wuid:gx:57ecd367f9a1846a" class="sites-attachments-icon sites-attachments-icon-accessible" style="right:0px"><a href="/developers/telemetry/benchmark-organization-diagram.png?attredirects=0&amp;d=1" aria-label="Download benchmark-organization-diagram.png" title="Download" role="button"><span class="sites-symbol" aria-hidden="true">ď</span></a></div></div><div class="sites-attachments-separator"></div></div>
+<div style="height: 10px"></div>
+</div>
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/telemetry">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9L8SPh1P8ySTa7VrUYoyFhWSmniLq3OaG751ywcQJ8mz2RKG-3toByz7KPAzySu0nnBL_U1Yk98u7IMlkm32YNlB4HmLkErJV5hGROMC_-g8b2i0b/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

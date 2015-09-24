@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/memory-bloat","deleted":false,"title":"Efforts against Memory Bloat","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/memory-bloat\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Efforts against Memory Bloat","locale":"en","wuid":"wuid:gx:498706767d4c4e1b","revision":94,"path":"/developers/memory-bloat","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"memory-bloat","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Efforts against Memory Bloat - The Chromium Projects" />
+<meta itemprop="name" content="Efforts against Memory Bloat - The Chromium Projects" />
+<meta property="og:title" content="Efforts against Memory Bloat - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Efforts against Memory Bloat - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Efforts against Memory Bloat</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><span style="font-size:10pt">This page surveys and organizes efforts</span> against memory bloat in Chrome. </div>
+<h2><a name="TOC-Memory-Bloat"></a>Memory Bloat</h2>
+<div>There are two main types of memory issues. One is <i>memory safety</i> issues like use-after-free and buffer-overflow. Many tools are your friends like <a href="https://www.chromium.org/developers/testing/addresssanitizer">ASAN</a> and <a href="https://www.chromium.org/developers/how-tos/using-drmemory">Dr. Memory</a> for memory safety issues. Other memory issues are <i>memory bloat</i> issues that simply mean too large memory usage. We need completely different efforts and toolsets against memory bloat issues than memory safety issues.</div>
+<h3><a name="TOC-Leaks"></a>Leaks</h3>
+<div>Leaks are a part of memory bloat issue. Some leaks can be found by some memory safety tools like Dr. Memory, especially in case malloc'ed objects remain to the end. We however have many other types of practical leaks. For example, forgetting to release a reference-counted pointer to a bulk of objects may practically cause a leak. It cannot be caught as it's eventually released at the very end. Such leaks are observed by tools against memory bloat issues.</div>
+<h3><a name="TOC-Which-is-Bloating:-Native-or-JavaScript-"></a>Which is Bloating: Native or JavaScript?</h3>
+<div>Memory bloat issues are usually observed either in two places: native (C++) heap and/or JavaScript heap. Your first action is to identify which is bloating. A JavaScript value <font face="courier new, monospace">window.performance.memory</font> (visible from DevTools) would help to identify. Chromium is usually blamed when the bloat is observed in native heap, and the Web application is usually in charge of bloat in JavaScript heap. The difficulty is that it's not always, but identifying which is bloating must help to track the issue.</div>
+<h3><a name="TOC-File-a-Bug"></a>File a Bug</h3>
+<div>Please file a bug with a "<a href="https://code.google.com/p/chromium/issues/list?q=Performance%3DMemory">Performance-Memory</a>" label for memory bloat issues.</div>
+<h2><a name="TOC-Efforts-and-Tools"></a>Efforts and Tools</h2>
+<h3><a name="TOC-Categorizing-the-Efforts"></a>Categorizing the Efforts</h3>
+<div>Memory bloat issues are complicated, and we need to observe them from various viewpoints: testing, reproducing, breaking-down, leaking...  The following is a trial to categorize existing efforts.  Feel free to edit the table for better categorization.</div>
+<div><br />
+</div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:240px">Testing and Benchmarking</td>
+<td style="width:300px"><a href="http://dev.chromium.org/developers/memory-bloat#TOC-Chrome-Endure">Chrome Endure</a><br /><a href="http://build.chromium.org/p/chromium.webkit/builders/WebKit%20Linux%20Leak" target="_blank">LeakDetector on Bots</a></td>
+</tr>
+<tr>
+<td>Runtime Bloat Detection</td>
+<td>MemoryPressureListener</td>
+</tr>
+<tr>
+<td style="width:240px">Real-world Data Collection</td>
+<td style="width:300px"><a href="http://dev.chromium.org/developers/memory-bloat#TOC-about:memory-internals">about:memory-internals</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-WANTED:-UMA-based-tool"><font color="#ff0000">WANTED: UMA-based tool</font></a></td>
+</tr>
+<tr>
+<td style="width:240px">Top-down Analysis</td>
+<td style="width:300px"><a href="http://dev.chromium.org/developers/memory-bloat#TOC-about:profiler">about:profiler</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-about:tracing-memory-snapshots">
+about:tracing memory snapshots</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-Deep-Memory-Profiler">Deep Memory Profiler</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-Memory_Watcher">Memory_Watcher</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-memdump-Android-only">memdump</a> (Android only)
+<br />LeakDetector</td>
+</tr>
+<tr>
+<td style="width:240px">Bottom-up Analysis</td>
+<td style="width:300px"><a href="http://dev.chromium.org/developers/memory-bloat#TOC-LeakSanitizer">LeakSanitizer</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-Leak-Finder-for-JavaScript">Leak Finder for JavaScript</a><br />
+<a href="http://dev.chromium.org/developers/memory-bloat#TOC-WANTED:-Tracking-reference-counted-pointers"><font color="#ff0000">WANTED: Tracking reference-counted pointers</font></a></td>
+</tr>
+<tr>
+<td style="width:240px">Life Prolongation</td>
+<td style="width:300px"><a href="http://dev.chromium.org/developers/memory-bloat#TOC-Tab-Discarder">Tab Discarder</a><br />
+Memory Purger<br />
+</td>
+</tr>
+<tr>
+<td style="width:240px">DevTools: for Web-application side</td>
+<td style="width:300px"></td>
+</tr>
+</tbody>
+</table>
+<p><b><font color="#ff0000">Feel free to add your efforts in the list. The description is nice to have its advantage and also DISADVANTAGE (limitation) so that we can easily understand what is missing and needed to reduce memory usage. Just a plan is welcome in the list!</font></b></p>
+<h3><a name="TOC-Testing-and-Benchmarking"></a>Testing and Benchmarking</h3>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-Chrome-Endure"></a><a href="https://www.chromium.org/system/errors/NodeNotFound?suri=wuid:gx:792cff86b7115c80" class="disabled">Chrome Endure</a></h4>
+<div>(to be written...)</div>
+</blockquote>
+<h3><a name="TOC-Runtime-Bloat-Detection"></a>Runtime Bloat Detection</h3>
+<div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-MemoryPressureListener"></a>MemoryPressureListener</h4>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">Implemented  <a href="http://crbug.com/246125">http://crbug.com/246125</a> to replace Memory Purger.</blockquote>
+</div>
+<h3><a name="TOC-Real-world-Data-Collection"></a>Real-world Data Collection</h3>
+<div>Memory bloat issues are happening in the real world, but it is hard to reproduce them in our "lab" (tests and buildbots). The efforts are to reproduce real-world memory bloat issues by collecting more real-world memory usage data.</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<h4><a name="TOC-about:memory-internals"></a>about:memory-internals</h4>
+<div>A page that summarizes memory-related information for easier reporting from users for memory bloat. It's similar in concept to about:network-internals. The page can include detailed information (extensions, process status and more) for a specific bloating situation, but less cases (for example than UMA) because it's not automatic. This page should help us get a better understanding of real-world memory issues reports. It might be kicked by observing memory pressure or memory bloat (see MemoryPressureListener).</div>
+<h4><a name="TOC-WANTED:-UMA-based-tool"></a><font color="#ff0000">WANTED: UMA-based tool</font></h4>
+<div><font color="#ff0000">While memory-internals is a tool to get detailed information of a specific case, we have had a tool to get rough information from all over the world, UMA. It is however difficult to get correlation between memory usage and something from UMA. For example, "Users using this extension have a tendency to bloat." or like that. We need a tool to find such correlation easily.</font></div>
+</blockquote>
+<h3><a name="TOC-Top-down-Analysis"></a>Top-down Analysis</h3>
+<div>"Top-down" means breaking down the entire (or a large part of) memory usage into some parts.</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-about:profiler"></a><a href="https://www.chromium.org/developers/threaded-task-tracking">about:profiler</a></h4>
+<div>
+<div>If you set a CHROME_PROFILER_TIME environment variable to 1, the about:profiler page will then show you the amount of memory, in bytes, allocated in each task, listed in the "duration" columns. You can take a couple of snapshots, show the diff and group by process to find out where the memory is going. Note: confirmed to work on Windows by setting a user variable from the system properties panel.</div>
+</div>
+<h4><a name="TOC-about:tracing-memory-snapshots"></a><a href="https://www.chromium.org/developers/abouttracing-memory-snapshots">about:tracing memory snapshots</a></h4>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>An experimental tool that reports on tcmalloc heap memory usage using the about:tracing TRACE_EVENT macros to generate stacks (instead of real stacks with symbols). Works with release builds without symbols with minimal performance hit, but provides very non-specific stack data. Contact: jamescook@, nduca@</div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-Deep-Memory-Profiler"></a><a href="https://www.chromium.org/developers/deep-memory-profiler">Deep Memory Profiler</a></h4>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>A native (C++-level) memory profiler to breakdown the whole-process memory usage of a long-running process. The goal is to observe and visualize physical memory usage deeper and deeper (e.g. mapped files, mmap and malloc backtraces, C++ object types and more). The limitation is that it works post-mortem and needs a special build (Release with some build options or Debug). It works for Linux and Android for now. Contact: <a href="https://groups.google.com/a/chromium.org/forum/?fromgroups#!forum/dmprof">the dmprof group</a>.</div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-Memory_Watcher"></a><a href="https://www.chromium.org/developers/memory_watcher">Memory_Watcher</a></h4>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>(to be written...)</div>
+<h4><a name="TOC-memdump-Android-only-"></a><a href="http://dev.chromium.org/developers/testing/multi-process-ram-usage-analysis-on-android" style="color:rgb(85,26,139)">memdump</a> (Android only)</h4>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>Multi-process aware version of /proc/&lt;PID&gt;/smaps.</div>
+</blockquote>
+<h3><a name="TOC-Bottom-up-Analysis"></a>Bottom-up Analysis</h3>
+<div>"Bottom-up" means finding individual specific memory problems like leaks, cyclic reference and else. We have some existing leak finding tools like Massif (in <a href="https://www.chromium.org/developers/how-tos/using-valgrind">Valgrind</a>) and <a href="https://www.chromium.org/developers/how-tos/using-the-heap-leak-checker">heap-checker</a> (in gperftools)</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<h4><a name="TOC-LeakSanitizer"></a><a href="https://www.chromium.org/developers/testing/leaksanitizer">LeakSanitizer</a></h4>
+<h4><a name="TOC-LeakSanitizer-is-an-experimental-tool-that-works-similarly-to-Heap-Leak-Checker.-LeakSanitizer-is-fast-and-can-be-used-on-top-of-ASan."></a><span style="font-weight:normal">LeakSanitizer is an experimental tool that works similarly to Heap Leak Checker. LeakSanitizer is fast and can be used on top of ASan.</span></h4>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><b style="font-size:10pt"><a href="https://code.google.com/p/leak-finder-for-javascript/" style="font-size:10pt">Leak Finder for JavaScript</a></b></div>
+<div><br />
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>In JavaScript you cannot have "memory leaks" in the traditional sense, but you can have objects which are unintentionally kept alive and which in turn keep alive other objects and ends up in hogging a huge chunk of memory. Leak Finder for JavaScript detects objects which are considered "memory leaks" according to predefined leak definitions.</div>
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<h4><a name="TOC-WANTED:-Tracking-reference-counted-pointers"></a><font color="#ff0000">WANTED: Tracking reference-counted pointers</font></h4>
+<div><font color="#ff0000">Reference-counted pointers can be sources of "hidden" memory leaks as described above. Some good thing to track such "hidden" leaks by reference-counted pointers would help to eliminate memory leaks.</font>
+</div>
+</blockquote>
+<h3><a name="TOC-Life-Prolongation"></a>Life Prolongation</h3>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-Tab-Discarder"></a><a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/tab-discarding-and-reloading">Tab Discarder</a></h4>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>c.f. <a href="http://www.chromium.org/chromium-os/chromiumos-design-docs/out-of-memory-handling">Chrome OS out-of-memory design doc</a></div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<h4><a name="TOC-Memory-Purger"></a>Memory Purger</h4>
+<div>To be removed: discussed in <a href="http://crbug.com/98238">http://crbug.com/98238</a>.</div></blockquote><h3 style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)"><a name="TOC-DevTools:-for-Web-application-side"></a><a href="https://developers.google.com/chrome-developer-tools/">DevTools</a>: for Web-application side</h3>
+<div>          <a href="https://developers.google.com/chrome-developer-tools/docs/timeline#memory_mode" target="_blank"><b>Timeline Memory view</b></a></div>
+<div><br />
+</div>
+<div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>Here you can track number of live DOM Nodes, Documents and JS event listeners in the inspected render process.</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><br />
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><b><a href="https://developers.google.com/chrome-developer-tools/docs/heap-profiling" target="_blank">JavaScript Heap Profiler</a></b></div>
+<div><br />
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">Allows to take JS heap snapshots, analyze memory graphs and compare snapshots with each other.</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><br />
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><b><a href="http://www.youtube.com/watch?v=x9Jlu_h_Lyw" target="_blank">JavaScript Object Allocation Tracker</a></b></div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div><br />
+</div>
+</blockquote>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>Dynamic version of the JS heap profiler that allows you to see JS object allocation in real time.</div>
+</blockquote>
+</div>
+<h2><a name="TOC-Analysis-Reports-and-Case-Studies"></a>Analysis Reports and Case Studies</h2>
+<div>Let's collect public reports of any kind of memory usage analysis.</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/memory-bloat">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9025yFyxHJZOWiGwrbsIHP_dw0LEyfaBTCqMMwGHBEG5dT4xcF5-1GQak0uKQGZyw3gHRfq_gUpXa-Tw1np9ZCUC71Shn9kMBFchuQ3vOAPL1IiKK/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

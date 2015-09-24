@@ -1,0 +1,1325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/blink","deleted":false,"title":"Blink","dir":"ltr"},{"path":"/blink/coding-style","deleted":false,"title":"Blink Coding Style Guidelines","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/blink/coding-style\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/blink","parentWuid":"wuid:gx:1c15db3ef1df1880","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Blink Coding Style Guidelines","locale":"en","wuid":"wuid:gx:36ba231ef4777c25","revision":46,"path":"/blink/coding-style","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"coding-style","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Blink Coding Style Guidelines - The Chromium Projects" />
+<meta itemprop="name" content="Blink Coding Style Guidelines - The Chromium Projects" />
+<meta property="og:title" content="Blink Coding Style Guidelines - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Blink Coding Style Guidelines - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/blink" dir="ltr">Blink</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Blink Coding Style Guidelines</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><font size="2"><span style="font-weight:normal;font-family:arial,sans-serif">These guidelines are specific to the </span><a href="https://www.chromium.org/blink" style="font-weight:normal;font-family:arial,sans-serif">Blink</a><span style="font-weight:normal;font-family:arial,sans-serif"> project, not to be confused with the general </span><a href="https://www.chromium.org/developers/coding-style" style="font-weight:normal;font-family:arial,sans-serif">Chromium Coding Style Guidelines</a><span style="font-weight:normal;font-family:arial,sans-serif">.</span></font>
+<div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-C-"><strong>1 </strong>C++</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Indentation"><strong>1.1 </strong>Indentation</a></li><li class="goog-toc"><a href="#TOC-Spacing"><strong>1.2 </strong>Spacing</a></li><li class="goog-toc"><a href="#TOC-Line-breaking"><strong>1.3 </strong>Line breaking</a></li><li class="goog-toc"><a href="#TOC-Braces"><strong>1.4 </strong>Braces</a></li><li class="goog-toc"><a href="#TOC-Null-false-and-0"><strong>1.5 </strong>Null, false, and 0</a></li><li class="goog-toc"><a href="#TOC-Floating-point-literals"><strong>1.6 </strong>Floating point literals</a></li><li class="goog-toc"><a href="#TOC-Names"><strong>1.7 </strong>Names</a></li><li class="goog-toc"><a href="#TOC-Other-Punctuation"><strong>1.8 </strong>Other Punctuation</a></li><li class="goog-toc"><a href="#TOC-Pointers-and-References"><strong>1.9 </strong>Pointers and References</a></li><li class="goog-toc"><a href="#TOC-include-Statements"><strong>1.10 </strong>#include Statements</a></li><li class="goog-toc"><a href="#TOC-using-Statements"><strong>1.11 </strong>"using" Statements</a></li><li class="goog-toc"><a href="#TOC-Types"><strong>1.12 </strong>Types</a></li><li class="goog-toc"><a href="#TOC-Classes"><strong>1.13 </strong>Classes</a></li><li class="goog-toc"><a href="#TOC-Comments"><strong>1.14 </strong>Comments</a></li><li class="goog-toc"><a href="#TOC-C--11-Features"><strong>1.15 </strong>C++-11 Features</a></li></ol></li><li class="goog-toc"><a href="#TOC-Python"><strong>2 </strong>Python</a></li><li class="goog-toc"><a href="#TOC-Layout-tests"><strong>3 </strong>Layout tests</a></li><li class="goog-toc"><a href="#TOC-License"><strong>4 </strong>License</a></li><li class="goog-toc"><a href="#TOC-License-for-this-document"><strong>5 </strong>License for this document</a></li><li class="goog-toc"><a href="#TOC-References"><strong>6 </strong>References</a></li></ol></div></div></div></div></div>
+<br />
+</div>
+<h2><a name="TOC-C-"></a>C++</h2>
+<h3><a name="TOC-Indentation"></a>Indentation</h3>
+<ol>
+<li> Use spaces, not tabs. Tabs should only appear in files that require them for semantic meaning, like Makefiles.
+<span> [indentation-no-tabs]</span></li>
+<li> The indent size is 4 spaces.
+<h4><a name="TOC-Right:"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>int main()
+{
+    return 0;
+}</code></div>
+</pre>
+<h4><a name="TOC-Wrong:"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">int main() 
+{
+        return 0;
+}</font></code></div>
+</pre>
+<span> [indentation-4-spaces]<br />
+<br />
+</span></li>
+<li>The contents of an outermost <code>namespace</code> block (and any nested namespaces with the same scope)
+should not be indented. The contents of other nested namespaces should be indented.
+<h4><a name="TOC-Right:1"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// Document.h
+namespace blink {
+
+class Document {
+    Document();
+    ...
+};
+
+namespace NestedNamespace {
+    ...
+}
+
+} // namespace blink
+</code></div>
+<div class="sites-codeblock sites-codesnippet-block"><code>// Document.cpp
+namespace blink {
+
+Document::Document()
+{
+    ...
+}
+
+} // namespace blink</code></div>
+</pre>
+<h4><a name="TOC-Wrong:1"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// Document.h
+namespace blink {
+
+    class Document {
+        Document();
+        ...
+    };
+
+    namespace NestedNamespace {
+    ...
+    }
+
+} // namespace blink</font></code></div><font color="#660000">
+</font></pre>
+<div class="sites-codeblock sites-codesnippet-block">
+<pre><code><font color="#660000">// Document.cpp
+namespace blink {
+
+    Document::Document()
+    {
+        ...
+    }
+
+} // namespace blink</font>
+</code></pre>
+</div>
+ [indentation-namespace]<br />
+<br />
+</li>
+<li>A case label should line up with its switch statement.  The case statement is indented.
+<h4><a name="TOC-Right:2"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>switch (condition) {
+case fooCondition:
+case barCondition:
+    i++;
+    break;
+default:
+    i--;
+}</code></div>
+</pre>
+<h4><a name="TOC-Wrong:2"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">switch (condition) {
+    case fooCondition:
+    case barCondition:
+        i++;
+        break;
+    default:
+        i--;
+}</font></code></div>
+</pre>
+<span> [indentation-case-label]<br />
+<br />
+</span></li>
+<li>Boolean expressions at the same nesting level that span multiple lines should
+have their operators on the left side of the line instead of the right side.
+
+<h4><a name="TOC-Right:3"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>if (attr-&gt;name() == srcAttr
+    || attr-&gt;name() == lowsrcAttr
+    || (attr-&gt;name() == usemapAttr &amp;&amp; attr-&gt;value().domString()[0] != '#'))
+    return;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:3"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">if (attr-&gt;name() == srcAttr ||
+    attr-&gt;name() == lowsrcAttr ||
+    (attr-&gt;name() == usemapAttr &amp;&amp; attr-&gt;value().domString()[0] != '#'))
+    return;</font></code></div>
+</pre>
+<span> [indentation-wrap-bool-op]<br />
+</span></li>
+</ol>
+<h3><a name="TOC-Spacing"></a>Spacing</h3>
+<ol>
+<li>Do not place spaces around unary operators.
+<h4><a name="TOC-Right:4"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>i++;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:4"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">i ++;</font></code></div>
+</pre>
+<span> [spacing-unary-op]<br />
+<br />
+</span></li>
+<li><em>Do</em> place spaces around binary and ternary operators.
+<h4><a name="TOC-Right:5"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>y = m * x + b;
+f(a, b);
+c = a | b;
+return condition ? 1 : 0;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:5"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">y=m*x+b;
+f(a,b);
+c = a|b;
+return condition ? 1:0;</font></code></div>
+</pre>
+<span> [spacing-binary-ternary-op]<br />
+<br />
+</span></li>
+<li>Do not place spaces before comma and semicolon.
+<h4><a name="TOC-Right:6"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>for (int i = 0; i &lt; 10; ++i)
+    doSomething();
+
+f(a, b);</code></div>
+</pre>
+<h4><a name="TOC-Wrong:6"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">for (int i = 0 ; i &lt; 10 ; ++i)
+    doSomething();
+
+f(a , b) ;</font></code></div>
+</pre>
+<span> [spacing-comma-semicolon]<br />
+<br />
+</span></li>
+<li>Place spaces between control statements and their parentheses.
+<h4><a name="TOC-Right:7"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>if (condition)
+    doIt();</code></div>
+</pre>
+<h4><a name="TOC-Wrong:7"></a>Wrong:</h4>
+<div class="sites-codeblock sites-codesnippet-block">
+<pre><code><font color="#660000">if(condition)
+    doIt();</font>
+</code></pre>
+</div>
+ [spacing-control-paren]<br />
+<br />
+</li>
+<li>Do not place spaces between a function and its parentheses, or between a parenthesis and its content.
+<h4><a name="TOC-Right:8"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>f(a, b);</code></div>
+</pre>
+<h4><a name="TOC-Wrong:8"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">f (a, b);
+f( a, b );</font></code></div>
+</pre>
+<span> [spacing-function-paren]<br />
+</span></li>
+</ol>
+<h3><a name="TOC-Line-breaking"></a>Line breaking</h3>
+<ol>
+<li>Each statement should get its own line.
+<h4><a name="TOC-Right:9"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>x++;
+y++;
+if (condition)
+    doIt();</code></div>
+</pre>
+<h4><a name="TOC-Wrong:9"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">x++; y++;
+if (condition) doIt();</font></code></div>
+</pre>
+<span> [linebreaking-multiple-statements]<br />
+<br />
+</span></li>
+<li>An <code>else</code> statement should go on the same line as a preceding close brace if one is present,
+else it should line up with the <code>if</code> statement.
+<h4><a name="TOC-Right:10"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>if (condition) {
+    ...
+} else {
+    ...
+}
+
+if (condition)
+    doSomething();
+else
+    doSomethingElse();</code></div>
+</pre>
+<h4><a name="TOC-Wrong:10"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">if (condition) {
+    ...
+}
+else {
+    ...
+}
+
+if (condition) doSomething(); else doSomethingElse();
+
+if (condition) doSomething(); else {
+    ...
+}</font></code></div>
+</pre>
+<span> [linebreaking-else-braces]<br />
+<br />
+</span></li>
+<li>An <code>else if</code> statement should be written as an <code>if</code> statement when the prior <code>if</code> concludes with a <code>return</code> statement.
+<h4><a name="TOC-Right:11"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>if (condition) {
+    ...
+    return someValue;
+}
+if (condition) {
+    ...
+}</code></div>
+</pre>
+<h4><a name="TOC-Wrong:11"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">if (condition) {
+    ...
+    return someValue;
+} else if (condition) {
+    ...
+}</font></code></div>
+</pre>
+<span> [linebreaking-else-if]</span></li>
+</ol>
+<h3><a name="TOC-Braces"></a>Braces</h3>
+<ol>
+<li> Function definitions: place each brace on its own line.
+
+<h4><a name="TOC-Right:12"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>int main()
+{
+    ...
+}</code></div>
+</pre>
+<h4><a name="TOC-Wrong:12"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">int main() {
+    ...
+}</font></code></div>
+</pre>
+<span> [braces-function]<br />
+<br />
+</span></li>
+<li> Other braces: place the open brace on the line preceding the code block; place the close brace on its own line.
+
+<h4><a name="TOC-Right:13"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>class MyClass {
+    ...
+};
+
+namespace blink {
+...
+}
+
+for (int i = 0; i &lt; 10; ++i) {
+    ...
+}</code></div>
+</pre>
+<h4><a name="TOC-Wrong:13"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">class MyClass 
+{
+    ...
+};</font></code></div>
+</pre>
+<span> [braces-blocks]<br />
+<br />
+</span></li>
+<li>Curly braces are not required for single-line conditionals or loop bodies, but are required for single-statement bodies that span multiple lines.
+<h4><a name="TOC-Right:14"></a>Right:</h4>
+<div class="sites-codeblock sites-codesnippet-block"><code>if (condition)</code><br /><code>    doIt();</code><br /> <br /><code> if (condition) {</code><br /><code>    doIt();</code><br /><code> }</code><br /> <br /><code> if (condition) {</code><br /><code>    myFunction(reallyLongParam1, reallyLongParam2, ...</code><br /><code>        reallyLongParam5);</code><br /><code> }</code></div><br />
+<br />
+<h4><a name="TOC-Wrong:14"></a>Wrong:</h4>
+<span style="font-size:10pt">
+<div class="sites-codeblock sites-codesnippet-block"><font color="#660000"><code><font color="#660000">if (condition)</font></code><br />
+<code>    <font color="#660000">// Single-line comment ignored by compiler</font></code><br />
+<code>   <font color="#660000"> doIt();</font></code><br />
+<br />
+<code><font color="#660000">if (condition)</font></code><br />
+<code>    </code><span style="font-size:10pt"><code><font color="#660000">myFunction(reallyLongParam1, reallyLongParam2, ...</font></code><br />
+<span style="font-size:10pt"><code>        <font color="#660000">reallyLongParam5);</font></code></span></span></font></div>
+<br />
+<br />
+</span><span style="font-size:10pt">[braces-single-line]<br />
+<br />
+</span></li>
+<li>If one part of an if-else statement uses curly braces, the other part must too.<br />
+<br />
+Right:<br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>if (condition)</code><br />
+<code>    doIt();</code><br />
+<code>else</code><br />
+<code>    doSomethingElse();</code><br />
+<br />
+<code>if (condition) {</code><br />
+<code>    doIt();</code><br />
+<code>} else {</code><br />
+<code>    doSomethingElse();</code><br />
+<code>}</code><br />
+<span style="font-size:10pt"><br />
+<code>if (condition) {</code><br />
+<code>    doSomethingWith(reallyLongParam1, ...</code><br />
+<code>        reallyLongParam2);</code><br />
+<code>} else {</code><br />
+<code>    doSomethingElse();<br />}</code></span></div>
+<span style="font-size:10pt"><br />
+Wrong:<br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><font color="#660000"><code><font color="#660000">if (condition) {</font></code><br />
+<code>    <font color="#660000">doIt();</font></code><br />
+<code><font color="#660000">} else</font></code><br />
+<code>    <font color="#660000">doSomethingElse();</font></code><br />
+<br />
+<code><font color="#660000">if (condition)</font></code><br />
+<code>    <font color="#660000">doIt();</font></code><br />
+<code><font color="#660000">else {</font></code><br />
+<code>    <font color="#660000">doSomethingElse();</font></code><br />
+<code><font color="#660000">}</font></code><br />
+<br />
+<code><font color="#660000">if (condition) {</font></code><br />
+<font color="#660000"><code>    <font color="#660000">doSomethingWith(reallyLongParam1, ...</font></code><br /></font>
+<code>        <font color="#660000">reallyLongParam2);</font></code><br />
+<code><font color="#660000">} else</font></code><br />
+<code>    <font color="#660000">doSomethingElse();</font></code></font></div>
+<br />
+<span style="font-size:10pt"><br />
+[braces-must-match]<br />
+<span style="font-size:10pt"><br />
+</span></span></span></li>
+<li>Control clauses without a body should use empty braces:<br />
+<br />
+<b>Right:</b><br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code>for ( ; current; current = current-&gt;next) { }</code></div>
+<br />
+<br />
+<b>Wrong:</b><br />
+<br />
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">for ( ; current; current = current-&gt;next);</font></code></div>
+<br />
+<br />
+[braces-empty-block]</li>
+</ol>
+<h3><a name="TOC-Null-false-and-0"></a>Null, false, and 0</h3>
+<ol>
+<li>Null pointer [zero-null]</li>
+<ol><li>In C++, the null pointer value should be written as <font color="#274e13"><code>nullptr.</code></font></li>
+<li>In C, it should be written as <code>NULL</code>.</li>
+<li><span style="font-size:10pt;background-color:transparent">In Objective-C and Objective-C++, follow the guideline for C or C++, respectively, but use </span><code style="font-size:10pt;background-color:transparent">nil</code><span style="font-size:10pt;background-color:transparent"> to represent a null Objective-C object.<br />
+<br />
+</span></li>
+</ol>
+<li>C++ and C <code>bool</code> values should be written as <code>true</code> and <code>false</code>. Objective-C <code>BOOL</code> values should be written as <code>YES</code> and <code>NO</code>.<span> [zero-bool]<br />
+<br />
+</span></li>
+<li>Tests for true/false and null/non-null should be done without equality comparisons. Checks for zero/non-zero can be compared directly to zero if desired, but this is left to discretion.<br />
+<h4><a name="TOC-Right:15"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>if (condition)
+    doIt();
+    
+if (!ptr)
+    return;
+
+if (count == 0)
+    return;
+
+if (!count)
+    return;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:15"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">if (condition == true)
+    doIt();
+    
+if (ptr == NULL)
+    return;</font></code></div>
+</pre>
+<span> [zero-comparison]<br />
+<br />
+</span></li>
+<li>In Objective-C, instance variables are initialized to zero automatically. Don't add explicit initializations to nil or NO in an init method.<span> [zero-objc-variables]</span></li>
+</ol>
+<h3><a name="TOC-Floating-point-literals"></a>Floating point literals</h3>
+<ol>
+<li>Unless required in order to force floating point math, do not append
+<code>.0</code>, <code>.f</code> and <code>.0f</code> to floating point
+literals.
+
+<h4><a name="TOC-Right:16"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>const double duration = 60;
+
+void setDiameter(float diameter)
+{
+    radius = diameter / 2;
+}
+
+setDiameter(10);
+
+const int framesPerSecond = 12;
+double frameDuration = 1.0 / framesPerSecond;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:16"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">const double duration = 60.0;
+
+void setDiameter(float diameter)
+{
+    radius = diameter / 2.f;
+}
+
+setDiameter(10.f);
+
+const int framesPerSecond = 12;
+double frameDuration = 1 / framesPerSecond; // integer division</font></code></div>
+</pre>
+<span> [float-suffixes]</span></li>
+</ol>
+<h3><a name="TOC-Names"></a>Names</h3>
+<ol>
+<li>Use CamelCase. Capitalize the first letter, including all letters in an acronym, in a class, struct, protocol, or namespace name. Lower-case the first letter, including all letters in an acronym, in a variable or function name.
+<h4><a name="TOC-Right:17"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>struct Data;
+size_t bufferSize;
+class HTMLDocument;
+String mimeType();</code></div>
+</pre>
+<h4><a name="TOC-Wrong:17"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">struct data;
+size_t buffer_size;
+class HtmlDocument;
+String MIMEType();</font></code></div>
+</pre>
+<span> [names-basic]<br />
+<br />
+</span></li>
+<li>Use full words, except in the rare case where an abbreviation would be more canonical and easier to understand.
+<h4><a name="TOC-Right:18"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>size_t characterSize;
+size_t length;
+short tabIndex; // More canonical.</code></div>
+</pre>
+<h4><a name="TOC-Wrong:18"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">size_t charSize;
+size_t len;
+short tabulationIndex; // bizarre</font></code></div>
+</pre>
+<span> [names-full-words]<br />
+<br />
+</span></li>
+<li>Data members in C++ classes should be private.  Static data members should be prefixed by "s_".  Other data members should be prefixed by "m_".
+<h4><a name="TOC-Right:19"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>class String {
+public:
+    ...
+
+private:
+    short m_length;
+};</code></div>
+</pre>
+<h4><a name="TOC-Wrong:19"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">class String {
+public:
+    ...
+
+    short length;
+};</font></code></div>
+</pre>
+<span> [names-data-members]<br />
+<br />
+</span></li>
+<li>Prefix Objective-C instance variables with "_".
+<h4><a name="TOC-Right:20"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>@class String
+    ...
+    short _length;
+@end</code></div>
+</pre>
+<h4><a name="TOC-Wrong:20"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">@class String
+    ...
+    short length;
+@end</font></code></div>
+</pre>
+<span> [names-objc-instance-variables]<br />
+<br />
+</span></li>
+<li>Precede boolean values with words like "is" and "did".
+<h4><a name="TOC-Right:21"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>bool isValid;
+bool didSendData;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:21"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">bool valid;
+bool sentData;</font></code></div>
+</pre>
+<span> [names-bool]<br />
+<br />
+</span></li>
+<li>Precede setters with the word "set". Use bare words for getters. Setter and getter names should match the names of the variables being set/gotten.
+<h4><a name="TOC-Right:22"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>void setCount(size_t); // Sets m_count.
+size_t count(); // Returns m_count.</code></div>
+</pre>
+<h4><a name="TOC-Wrong:22"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">void setCount(size_t); // sets m_theCount
+size_t getCount();</font></code></div>
+</pre>
+<span> [names-setter-getter]<br />
+<br />
+</span></li>
+<li>Precede getters that return values through out arguments with the word "get".
+<h4><a name="TOC-Right:23"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>void getInlineBoxAndOffset(InlineBox*&amp;, int&amp; caretOffset) const;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:23"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">void inlineBoxAndOffset(InlineBox*&amp;, int&amp; caretOffset) const;</font></code></div>
+</pre>
+<span> [names-out-argument]<br />
+<br />
+</span></li>
+<li>Use descriptive verbs in function names.
+<h4><a name="TOC-Right:24"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>bool convertToASCII(short*, size_t);</code></div>
+</pre>
+<h4><a name="TOC-Wrong:24"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">bool toASCII(short*, size_t);</font></code></div>
+</pre>
+<span> [names-verb]<br />
+<br />
+</span></li>
+<li>Leave meaningless variable names out of function declarations. A good rule of thumb is if the parameter type name contains the parameter name (without trailing numbers or pluralization), then the parameter name isn't needed.  Usually, there should be a parameter name for bools, strings, and numerical types.
+<h4><a name="TOC-Right:25"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>void setCount(size_t);
+
+void doSomething(ScriptExecutionContext*);</code></div>
+</pre>
+<h4><a name="TOC-Wrong:25"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">void setCount(size_t count);
+
+void doSomething(ScriptExecutionContext* context);</font></code></div>
+</pre>
+<span> [names-variable-name-in-function-decl]<br />
+<br />
+</span></li>
+<li>Prefer enums to bools on function parameters if callers are likely to be
+passing constants, since named constants are easier to read at the call
+site.  An exception to this rule is a setter function, where the name of the
+function already makes clear what the boolean is.
+<h4><a name="TOC-Right:26"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>doSomething(something, AllowFooBar);
+paintTextWithShadows(context, ..., textStrokeWidth &gt; 0, isHorizontal());
+setResizable(false);</code></div>
+</pre>
+<h4><a name="TOC-Wrong:26"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">doSomething(something, false);
+setResizable(NotResizable);</font></code></div>
+</pre>
+<span> [names-enum-to-bool]<br />
+<br />
+</span></li>
+<li>Objective-C method names should follow the Cocoa naming guidelines —
+they should read like a phrase and each piece of the selector should 
+start with a lowercase letter and use intercaps.<span> [names-objc-methods]<br />
+<br />
+</span></li>
+<li>Enum members should use InterCaps with an initial capital letter.<span> [names-enum-members]<br />
+<br />
+</span></li>
+<li>Prefer const to #define. Prefer inline functions to macros.<span> [names-const-to-define]<br />
+<br />
+</span></li>
+<li>#defined constants should use all uppercase names with words separated by underscores.<span> [names-define-constants]<br />
+<br />
+</span></li>
+<li> Macros that expand to function calls or other non-constant computation: these
+should be named like functions, and should have parentheses at the end, even if 
+they take no arguments (with the exception of some special macros like ASSERT). 
+Note that usually it is preferable to use an inline function in such cases instead of a macro.<br />
+<h4><a name="TOC-Right:27"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>#define WBStopButtonTitle() \
+        NSLocalizedString(@"Stop", @"Stop button title")</code></div>
+</pre>
+<h4><a name="TOC-Wrong:27"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">#define WB_STOP_BUTTON_TITLE \
+        NSLocalizedString(@"Stop", @"Stop button title")
+
+#define WBStopButtontitle \
+        NSLocalizedString(@"Stop", @"Stop button title")</font></code></div>
+</pre>
+<span> [names-define-non-const]<br />
+<br />
+</span></li>
+<li>#define, #ifdef "header guards" should be named exactly the same as the file (including case), replacing the '.' with a '_'.
+<h4><a name="TOC-Right:28"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// HTMLDocument.h
+#ifndef HTMLDocument_h
+#define HTMLDocument_h</code></div>
+</pre>
+<h4><a name="TOC-Wrong:28"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// HTMLDocument.h
+#ifndef _HTML_DOCUMENT_H_
+#define _HTML_DOCUMENT_H_</font></code></div>
+</pre>
+<span> [names-header-guards]</span></li>
+</ol>
+<h3><a name="TOC-Other-Punctuation"></a>Other Punctuation</h3>
+<ol>
+<li>Constructors for C++ classes should initialize all of their members using C++ 
+initializer syntax.  Each member (and superclass) should be indented on a separate 
+line, with the colon or comma preceding the member on that line.
+
+<h4><a name="TOC-Right:29"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>MyClass::MyClass(Document* doc)
+    : MySuperClass()
+    , m_myMember(0)
+    , m_doc(doc)
+{
+}
+
+MyOtherClass::MyOtherClass()
+    : MySuperClass()
+{
+}</code></div>
+</pre>
+<h4><a name="TOC-Wrong:29"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">MyClass::MyClass(Document* doc) : MySuperClass()
+{
+    m_myMember = 0;
+    m_doc = doc;
+}
+
+MyOtherClass::MyOtherClass() : MySuperClass() {}</font></code></div>
+</pre>
+<span> [punctuation-member-init]<br />
+<br />
+</span></li>
+<li>Prefer index over iterator in Vector iterations for a terse, easier-to-read code.
+
+<h4><a name="TOC-Right:30"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>size_t frameViewsCount = frameViews.size();
+for (size_t i = 0; i &lt; frameViewsCount; ++i)
+    frameViews[i]-&gt;updateLayoutAndStyleIfNeededRecursive();</code></div>
+</pre>
+<h4><a name="TOC-Wrong:30"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">const Vector&lt;RefPtr&lt;FrameView&gt; &gt;::iterator end = frameViews.end();
+for (Vector&lt;RefPtr&lt;FrameView&gt; &gt;::iterator it = frameViews.begin(); it != end; ++it)
+    (*it)-&gt;updateLayoutAndStyleIfNeededRecursive();</font></code></div>
+</pre>
+<span> [punctuation-vector-index]</span></li>
+</ol>
+<h3><a name="TOC-Pointers-and-References"></a>Pointers and References</h3>
+<ol>
+<li>Pointer types in non-C++ code — Pointer types should be written with a space between the
+type and the * (so the * is adjacent to the following identifier if any).
+
+<span> [pointers-non-cpp]<br />
+<br />
+</span></li>
+<li>Pointer and reference types in C++ code — Both pointer types and reference types
+should be written with no space between the type name and the * or &amp;.
+
+<h4><a name="TOC-Right:31"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>Image* SVGStyledElement::doSomething(PaintInfo&amp; paintInfo)
+{
+    SVGStyledElement* element = static_cast&lt;SVGStyledElement*&gt;(node());
+    const KCDashArray&amp; dashes = dashArray();</code></div>
+</pre>
+<h4><a name="TOC-Wrong:31"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">Image *SVGStyledElement::doSomething(PaintInfo &amp;paintInfo)
+{
+    SVGStyledElement *element = static_cast&lt;SVGStyledElement *&gt;(node());
+    const KCDashArray &amp;dashes = dashArray();</font></code></div>
+</pre>
+<span> [pointers-cpp]<br />
+<br />
+</span></li>
+<li>An out argument of a function should be passed by reference except in rare cases where the argument is optional (could be null), in which case it should be passed by pointer.
+
+<h4><a name="TOC-Right:32"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>void MyClass::getSomeValue(OutArgumentType&amp; outArgument) const
+{
+    outArgument = m_value;
+}
+
+void MyClass::doSomething(OutArgumentType* outArgument) const
+{
+    doSomething();
+    if (outArgument)
+        *outArgument = m_value;
+}</code></div></pre>
+<h4><a name="TOC-Wrong:32"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">void MyClass::getSomeValue(OutArgumentType* outArgument) const
+{
+    *outArgument = m_value;
+}</font></code></div>
+</pre>
+<span> [pointers-out-argument]</span></li>
+</ol>
+<h3><a name="TOC-include-Statements"></a>#include Statements</h3>
+<ol>
+<li>All implementation files must #include "config.h" first. Header
+files should never include "config.h".
+
+<h4><a name="TOC-Right:33"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// RenderLayer.h
+#include "Node.h"
+#include "LayoutObject.h"
+#include "LayoutView.h"</code></div></pre>
+<h4><a name="TOC-Wrong:33"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// RenderLayer.h
+#include "config.h"
+
+#include "LayoutObject.h"
+#include "LayoutView.h"
+#include "Node.h"</font></code></div>
+</pre>
+<span> [include-config-h]<br />
+<br />
+</span></li>
+<li>All implementation files must #include the primary header second,
+just after "config.h". For example, Node.cpp should include Node.h second. This guarantees that each header's completeness is tested.
+This also assures that each header can be compiled without requiring any other
+header files be included first.
+
+<span> [include-primary]<br />
+<br />
+</span></li>
+<li>Other #include statements should be in sorted order (case sensitive, as
+done by the command-line sort tool or the Xcode sort selection command).
+Don't bother to organize them in a logical order.
+
+<h4><a name="TOC-Right:34"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// HTMLDivElement.cpp
+#include "config.h"
+#include "HTMLDivElement.h"
+
+#include "Attribute.h"
+#include "HTMLElement.h"
+#include "QualifiedName.h"</code></div></pre>
+<h4><a name="TOC-Wrong:34"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// HTMLDivElement.cpp
+#include "HTMLElement.h"
+#include "HTMLDivElement.h"
+#include "QualifiedName.h"
+#include "Attribute.h"</font></code></div>
+</pre>
+<span> [include-others]<br />
+<br />
+</span></li>
+<li>Includes of system headers must come after includes of other headers. This happens to also be checked and ensured by alphabetical order, as <code>&lt;</code> comes after <code>"</code>.
+
+<h4><a name="TOC-Right:35"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// ConnectionQt.cpp
+#include "ArgumentEncoder.h"
+#include "ProcessLauncher.h"
+#include "WebPageProxyMessageKinds.h"
+#include "WorkItem.h"
+#include &lt;QApplication&gt;
+#include &lt;QLocalServer&gt;
+#include &lt;QLocalSocket&gt;</code></div></pre>
+<h4><a name="TOC-Wrong:35"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// ConnectionQt.cpp
+#include "ArgumentEncoder.h"
+#include "ProcessLauncher.h"
+#include &lt;QApplication&gt;
+#include &lt;QLocalServer&gt;
+#include &lt;QLocalSocket&gt;
+#include "WebPageProxyMessageKinds.h"
+#include "WorkItem.h"</font></code></div>
+</pre>
+<span> [include-system]<br />
+<br />
+</span></li>
+<li><span>Includes that target files inside Source/ should use double quotes ("") instead of angle brackets (&lt;&gt;).<br />
+<br />
+<b>Right:</b><br />
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>#include "wtf/text/WTFString.h"</code></div></pre>
+</span>
+<h4><a name="TOC-Wrong:36"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">#include &lt;wtf/text/WTFString.h&gt;</font></code></div></pre>
+<pre><span style="font-family:Arial,Verdana,sans-serif;white-space:normal">[include-double-quotes]</span></pre>
+</li>
+</ol>
+<h3><a name="TOC-using-Statements"></a>"using" Statements</h3>
+<ol>
+<li>In header files, do not use "using" statements in namespace
+(or global) scope.
+
+<h4><a name="TOC-Right:36"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// wtf/Vector.h
+
+namespace WTF {
+
+class VectorBuffer {
+    using std::min;
+    ...
+};
+
+} // namespace WTF</code></div></pre>
+<h4><a name="TOC-Wrong:37"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// wtf/Vector.h
+
+namespace WTF {
+
+using std::min;
+    
+class VectorBuffer {
+    ...
+};
+
+} // namespace WTF</font></code></div>
+</pre>
+<span> [using-in-headers]<br />
+<br />
+</span></li>
+<li>In header files in the WTF sub-library, however, it is acceptable
+to use "using" declarations at the end of the file to import one
+or more names in the WTF namespace into the global scope.
+
+<h4><a name="TOC-Right:37"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// wtf/Vector.h
+
+namespace WTF {
+
+} // namespace WTF
+
+using WTF::Vector;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:38"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// wtf/Vector.h
+
+namespace WTF {
+
+} // namespace WTF
+
+using namespace WTF;</font></code></div></pre>
+<h4><a name="TOC-Wrong:39"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// runtime/JSObject.h
+
+namespace WTF {
+
+} // namespace WTF
+
+using WTF::PlacementNewAdopt;</font></code></div>
+</pre>
+<span> [using-wtf]<br />
+<br />
+</span></li>
+<li>In C++ implementation files, do not use "using" declarations
+of any kind to import names in the standard template library.  Directly qualify
+the names at the point they're used instead.
+
+<h4><a name="TOC-Right:38"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// HTMLBaseElement.cpp
+
+namespace blink {
+
+  std::swap(a, b);
+  c = std::numeric_limits&lt;int&gt;::max()
+
+} // namespace blink</code></div>
+</pre>
+<h4><a name="TOC-Wrong:40"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// HTMLBaseElement.cpp
+
+using std::swap;
+
+namespace blink {
+
+  swap(a, b);
+
+} // namespace blink</font></code></div>
+</pre>
+<h4><a name="TOC-Wrong:41"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// HTMLBaseElement.cpp
+
+using namespace std;
+
+namespace blink {
+
+  swap(a, b);
+
+} // namespace blink</font></code></div>
+</pre>
+<span> [using-in-cpp]<br />
+<br />
+</span></li>
+<li>In implementation files, if a "using namespace" statement is
+for a nested namespace whose parent namespace is defined in the file,
+put the statement inside that namespace definition.
+
+<h4><a name="TOC-Right:39"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// HTMLBaseElement.cpp
+
+namespace blink {
+
+using namespace HTMLNames;
+
+} // namespace blink</code></div>
+</pre>
+<h4><a name="TOC-Wrong:42"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// HTMLBaseElement.cpp
+
+using namespace blink::HTMLNames;
+
+namespace blink {
+
+} // namespace blink</font></code></div>
+</pre>
+<span> [using-nested-namespaces]<br />
+<br />
+</span></li>
+<li>In implementation files, put all other "using" statements
+at the beginning of the file, before any namespace definitions and
+after any "include" statements.
+
+<h4><a name="TOC-Right:40"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>// HTMLSelectElement.cpp
+
+using namespace other;
+
+namespace blink {
+
+} // namespace blink</code></div>
+</pre>
+<h4><a name="TOC-Wrong:43"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">// HTMLSelectElement.cpp
+
+namespace blink {
+
+using namespace other;
+
+} // namespace blink</font></code></div>
+</pre>
+<span> [using-position]</span></li>
+</ol>
+<h3><a name="TOC-Types"></a>Types</h3>
+<ol>
+<li>
+Omit "int" when using "unsigned" modifier. Do not use "signed" modifier. Use "int" by itself instead.
+<h4><a name="TOC-Right:41"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>unsigned a;
+int b;</code></div>
+</pre>
+<h4><a name="TOC-Wrong:44"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">unsigned int a; // Doesn't omit "int".
+signed b; // Uses "signed" instead of "int".
+signed int c; // Doesn't omit "signed".</font></code></div>
+</pre>
+<span> [types-unsigned]</span></li>
+</ol>
+<h3><a name="TOC-Classes"></a>Classes</h3>
+<ol>
+<li>
+Use a constructor to do an implicit conversion when the argument is reasonably thought of as a type conversion and the type conversion is fast. Otherwise, use the explicit keyword or a function returning the type. This only applies to single argument constructors.
+<h4><a name="TOC-Right:42"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>class LargeInt {
+public:
+    LargeInt(int);
+...
+
+class Vector {
+public:
+    explicit Vector(int size); // Not a type conversion.
+    PassOwnPtr&lt;Vector&gt; create(Array); // Costly conversion.
+...</code></div>
+
+</pre>
+<h4><a name="TOC-Wrong:45"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">class Task {
+public:
+    Task(ScriptExecutionContext*); // Not a type conversion.
+    explicit Task(); // No arguments.
+    explicit Task(ScriptExecutionContext*, Other); // More than one argument.
+...</font></code></div>
+</pre>
+<span> [classes-explicit]</span></li>
+</ol>
+<h3><a name="TOC-Comments"></a>Comments</h3><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><b>Use the <a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.html#Comments">Google C++ Style for Comments</a></b>, with the following exceptions:</div></div></blockquote><ol><li>End of line comments may have 1 or 2 spaces before the comment. (Previous style required only 1 space.)<h4><a name="TOC-Right:43"></a>Right:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>f(a, b); // Legacy style required one space, this is still permitted.
+f(a, b);  // Google C++ Style specifies two spaces. Either are OK.<br /></code></div>
+</pre>
+<h4><a name="TOC-Wrong:46"></a>Wrong:</h4>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">int i;    // Aligning with multiple spaces disallowed.
+double f; // This is another comment.</font></code></div>
+</pre>
+<span> [comments-eol]<br /><br /></span></li><li><span style="font-size:10pt;background-color:transparent">Use <code>TODO(name):</code> to denote items that need to be addressed in the future. See <a href="http://google-styleguide.googlecode.com/svn/trunk/cppguide.html#TODO_Comments" target="_blank">TODO Comments</a>. <br /></span><span style="font-size:10pt;background-color:transparent">We used to use <code>FIXME:</code> for such items: don't blanket remove them. Fix the issue instead.<br /></span><span style="font-size:10pt;background-color:transparent"><br /><b>Right:</b></span></li></ol><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><pre style="font-size:10pt;background-color:transparent"><div class="sites-codeblock sites-codesnippet-block"><code>drawJpg(); // TODO(joe): Make this code handle jpg in addition to the png support.</code></div></pre></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><pre style="background-color:transparent"><span style="background-color:transparent"><font face="Arial, Verdana, sans-serif"><span style="font-weight:bold;font-size:10pt">Wrong:
+
+</span><div class="sites-codeblock sites-codesnippet-block"><code><font color="#660000">drawJpg(); // FIXME(joe): Make this code handle jpg in addition to the png support.
+drawJpg(); // FXIME: Make this code handle jpg in addition to the png support.
+drawJpg(); // TODO: Make this code handle jpg in addition to the png support.</font></code></div></font></span></pre><span style="font-size:10pt;background-color:transparent"> [comments-fixme]</span></blockquote><ol>
+</ol>
+<h3><a name="TOC-C--11-Features"></a>C++-11 Features</h3><div>Follow <a href="https://chromium-cpp.appspot.com/" target="_blank">C++11 use in Chromium</a>.</div>
+<h2><a name="TOC-Python"></a>Python</h2>
+<div>Python code should follow <a href="http://www.python.org/dev/peps/pep-0008/">PEP-8</a>, except that there is no limit on line length. This differs from <a href="https://www.chromium.org/developers/coding-style">Chromium coding style</a> (and the <a href="https://www.chromium.org/chromium-os/python-style-guidelines">Chromium OS Python style guidelines</a>) in three respects:</div>
+<div>
+<div>
+<ul><li><span style="font-size:10pt">no limit on line length (unlike PEP-8)</span></li>
+<li><span style="font-size:10pt">uses 4 space indent (like PEP-8)</span></li>
+<li><span style="font-size:10pt">uses <code>function_name, method_name</code> rather than <code>FunctionName, MethodName</code> (like PEP-8).</span></li></ul>
+You can modify the pylintrc that is included with <a href="https://www.chromium.org/developers/how-tos/depottools">depot_tools</a> (and configured for Chromium) with the following line:</div>
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>cat pylintrc | sed -E -e "s/^(indent-string=)('  ')$/\\1'    '/" -e 's/^(max-line-length=)(80)$/\18000/' &gt; ~/blink-pylintrc</code></div>
+...and then call it via:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>pylint --rcfile=~/blink-pylintrc</code></div>
+<br />
+</div>
+<h2><a name="TOC-Layout-tests"></a>Layout tests</h2>
+<div>See <a href="https://www.chromium.org/blink/coding-style/layout-test-style-guidelines">Layout Test Style Guidelines</a></div>
+<h2><a name="TOC-License"></a>License</h2>
+<div>Existing files in Blink use a longer header license block inherited from WebKit, however n<span style="background-color:transparent;font-size:10pt">ew files should follow the </span>Chromium <a href="http://www.chromium.org/developers/coding-style#TOC-File-headers">File Header Style</a><span style="background-color:transparent;font-size:10pt">:</span></div>
+<div><br />
+</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="font-family:courier new,monospace;font-size:10pt"><code>// Copyright 2015 The Chromium Authors. All rights reserved.</code></span></div>
+<div><span style="font-family:courier new,monospace;font-size:10pt"><code>// Use of this source code is governed by a BSD-style license that can be</code></span></div>
+<div><span style="font-family:courier new,monospace;font-size:10pt"><code>// found in the LICENSE file.</code></span></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>To use this license block you must make sure you have completed the <a href="https://www.chromium.org/developers/contributing-code/external-contributor-checklist">External Contributor Checklist</a>.</div>
+<div><br />
+</div>
+<h2><a name="TOC-License-for-this-document"></a>License for this document</h2>
+<div><i style="font-size:10pt">This page began as the <a href="http://www.webkit.org/coding/coding-style.html">WebKit Coding Style Guidelines</a>, Licensed</i><i style="font-size:10pt"> under <a href="http://www.webkit.org/coding/bsd-license.html">BSD</a>:</i></div>
+<div><br />
+</div>
+BSD License<br />
+<br />
+Copyright (C) 2009 Apple Inc. All rights reserved.<br />
+<br />
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br />
+<br />
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br />
+<br />
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br />
+<br />
+THIS SOFTWARE IS PROVIDED BY APPLE INC. AND ITS CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. <br />
+<div><br />
+</div>
+<h2><a name="TOC-References"></a>References</h2>
+<div><br />
+</div>
+<div>
+<div>[1] Comments on comments <a href="https://lists.webkit.org/pipermail/webkit-dev/2011-January/015769.html" style="font-size:10pt">https://lists.webkit.org/pipermail/webkit-dev/2011-January/015769.html</a></div>
+<div><br />
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/blink/coding-style/layout-test-style-guidelines" dir="ltr">Layout Test Style Guidelines</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/blink/coding-style">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9xY3FbeN-Mn_KIx2E3ZQ1K4wxnacxp1YZjFteh9eicIPni5EaA_9TvppXmiDFe73qLtFEi0J-ATDgtL0W2qPI8529Ukyu2m4Whf_qiftoql4M4eq3/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

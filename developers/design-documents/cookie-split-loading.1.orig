@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/cookie-split-loading","deleted":false,"title":"cookie-split-loading","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/cookie-split-loading\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"cookie-split-loading","locale":"en","wuid":"wuid:gx:34ea39b823e8c281","revision":6,"path":"/developers/design-documents/cookie-split-loading","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"cookie-split-loading","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="cookie-split-loading - The Chromium Projects" />
+<meta itemprop="name" content="cookie-split-loading - The Chromium Projects" />
+<meta property="og:title" content="cookie-split-loading - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>cookie-split-loading - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1294854067994/developers/design-documents/cookie-split-loading/objects.svg" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1294854067994/developers/design-documents/cookie-split-loading/objects.svg" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">cookie-split-loading</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Currently, the CookieMonster cookie store is initialized by reading in the cookies from the backing store in a large lump on first access.  This is bad for several reasons:<div><ul><li>It violates the principle that we shouldn't do blocking operations on the IO thread.</li><li>It contributes to perceived user startup time in if a session is being restored (which requires URL accesses, which result in CookieMonster accesses).</li><li>It contributes to variation in web page loading, as the first web page takes substantially longer than later ones.</li></ul>This problem is tracked in <a href="http://crbug.com/52909">Issue 52909</a>.  This document sketches out a proposed solution to this problem.</div><div><br /></div><div><b><font size="4">Requirements</font></b></div><div><ul><li></li><li><font size="2">Minimize startup time (including startup time which includes session restore, i.e. CM access).</font></li><li><font size="2">Minimize stalling of individual set/get cookies.</font></li></ul><div style="font-size:small">I believe that these requirements imply:</div><div style="font-size:small"><ul><li>Basic startup cannot be gated on loading all cookies from persistent backing store.</li><li>Individual page loads cannot be gated on loading the entire cookie store from persistent backing store.  Ideally, individual page loads would only load the cookies from persistent backing store that are needed for that page.</li><li>Full persistent store load should be initiated at startup, but in the background not blocking any processes (as having cookies loaded in memory will result in absolute minimum latency).</li></ul></div><div><b><font size="4">Notes on synchronous vs. asynchronous interfaces to the CookieMonster</font></b></div></div><div><font size="2"><br /></font></div><div><font size="2">(See <a href="http://crbug.com/68657">Issue 68657</a>)</font></div><div><font size="2"><br /></font></div><div><div style="font-size:small">Generally, services on the IO thread provide asynchronous interfaces with callbacks, to avoid the IO thread becoming a bottleneck in providing services for other threads.  For all requests after the initial one, the CookieMonster follows this rule and does not block; all information required for all CookieMonster APIs is in memory. However, the first call to the CookieMonster triggers loading in of the entire persistent backing store, done on-thread, which means that the IO thread blocks on disk operations on the first request to a CookieMonster with a backing store.</div><div style="font-size:small"><br /></div><div style="font-size:small">Giving the CookieMonster an asynchronous interface is a large task, not because of the internal structure of the Cookie, but because of the large number of callers, all of whom would need to be adapted to the new interface.  Issue &lt;xxx&gt; tracks this task.</div><div style="font-size:small"><br /></div><div style="font-size:small">In an ideal world, the current design would not be dependent on async CookieMonster interfaces.  However, a key part of this design is breaking up the loading of the backing store into indepedent pieces, using Task objects, which are spawned off asynchronously in the backing in the absence of incoming reuqests to laod the backing store database.  Combining this with a synchronous interface for those reuqests that need backing store loads would mean doing one of:</div><div style="font-size:small"><ul><li>Loading data inline (in the IO thread) when it is needed for a particular reuqest.  This would probably mean that all load tasks would need to be on the IO thread.</li><li>Completely blocking any IO thread activity while waiting for responses from the DB thread for data load-in.  This violates one of the basic principles of the IO thread (though in theory it's no worse than what we're doing now).</li><li> Running nested message loops, and carefully tracking which requests corresponded to which nesting level of the message loop.  If request B were run while request A had an outstanding load message to the DB thread, this means that request A would be blocked on the completion of request B (because the stack couldn't unwind until that point).</li></ul></div><div style="font-size:small">None of these options is particularly appealing.  Thus it's preferred that this work be done after the CookieMonster has been converted over to having an async interface.  The rest of this design assumes such an interface. </div><div style="font-size:small"><br /></div><div style="font-size:small">[Note that it would be relatively easy to layer an asynchronous  interface (if not behavior) on top of the current synchronous  interface; the async trigger would wrap the sync call and a  PostTask(self) for the callback.  This could allow incremental changes  to the various callers.  When all callers had been converted, the sync  interface could be removed and the async interface made to behave in a  non-blocking manner. ]</div><div style="font-size:small"><br /></div><div><b><font size="4">High Level Design</font></b></div><div style="font-size:small"><br /></div><div><div><font size="2">The cookie monster will get an additional data structure, indexed by domain key (currently eTLD+1) indicating whether or not a particular domain key's set of values has been loaded.  Incoming requests (either set of get) will trigger the loading of the domain key(s) required for those requests if they have not yet been loaded.  In these cases, the incoming request will block (as it currently does if the backing store hasn't been loaded).  All actual database accesses will occur on the DB thread.</font></div><div><font size="2"><br /></font></div><div><font size="2">At CookieMonster construction, a background operation will be invoked to load the entire cookie store.  This will run on the database thread, and will break down into a series of tasks (T) marks each separate task:</font></div><div><ul><li><span style="font-size:small">(T) Get the list of domain keys contained in the persistent backing store.</span></li><li><span style="font-size:small">For each key:</span></li><ul><li><span style="font-size:small">(T) Load all data from that key into memory</span></li><li><span style="font-size:small">(T -- IO thread) Incorporate that loaded data into the cookie monster and mark that key as loaded.</span></li></ul></ul></div><div><font size="2">These are broken up into indiviudal tasks both to avoid freezing the DB thread, and to allow loads of specific keys triggered by particular web page access to "jump the queue" and get pulled in earlier.  </font></div><div style="font-size:small"><br /></div></div></div><div><b><font size="4">Routine Flow Outline</font></b></div><div style="font-size:small"><br /></div><div><font size="2">The primary routines and data structures involved in this design are sketched out below.</font></div><div><div style="display:block;text-align:left;font-size:small"></div><div style="display:block;text-align:left;font-size:small"><a href="https://www.chromium.org/developers/design-documents/cookie-split-loading/objects.svg?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1294854067994/developers/design-documents/cookie-split-loading/objects.svg" /></a></div><div style="display:block;text-align:left;font-size:small"><br /></div><div style="display:block;text-align:left;font-size:small"><div style="display:block;text-align:left">There are two basic "ropes" (since they're potentially cross-thread) of routine invocation: the initial spawn of loading of all of the cookies, and the load-on-demand triggerred by specific requests to the cookie monster.</div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left">The initial spawn occurs from the CookieMonster constructor -&gt; SQLitePersistentCookieStore::SpawnFullLoad -&gt; SQLitePersistentCookieStore::BackingStore::SpawnFullLoad.  Once the rope has reached the DB thread, a full list of all the keys in the SQLite DB is loaded and stored in BackingStore.  Then SpawnFullLoad does a self-dispatch (to the DB thread) of a ChainLoadKeyCookies task for the first key in the list.  ChainLoadKeyCookies will call LoadKeyCookies (which will load in the cookies associated with that key from the backing store and notify the CookieMonster of that load) and will then self-dispatch another instance of ChainLoadKeyCookies. When the last entry in the key list is loaded, ChainLoadKeyCookies will return without any action.  This will (incrementally, allowing other tasks to run on the DB thread) load all the cookies.</div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left">If a request comes into the CookieMonster while this chain is executing, it will check all_loaded_ and keys_loaded_ to detemrine that the relevant data for the request has not been loaded (if the relevant data has already been loaded, it will execute the in-memory lookup inline as current and call the callback with the information). It will then register the callback and operation information into the key-&gt;callback mapping.  If that is the first registration of that key, it will call SQLitePersistentCookieStore::LoadKeyCookies, which will dispatch an invocation to the DB thread of SQLitePersistentCookieStore::BackingStore::LoadKeyCookies.  If LoadKeyCookies determines that the key requested has already been loaded (race with above chain), it will simply exit.</div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left">The tricky part of this design is making sure that there are no races that result in dangling requests.  The invariants that guarantee that this doesn't happen are:</div><div style="display:block;text-align:left"><ul><li>The first entry in the keys-&gt;callback table is always correlated with a LoadKeyCookies dispatch to the DB thread.</li><li>That entry/dispatch will only happen if no previous CompleteLoad for that key has already arrived.</li><li>The only case in which a LoadKeyCookies dispatch will not result in a later CompleteLoad dispatch is if a previous CompleteLoad dispatch for that cookie has already been sent.  </li></ul></div><div style="display:block;text-align:left">So it's possible for a LoadKeyCookies() dispatch to not result in a CompleteLoad() being sent back, but only if there's already one in transit.  Thus, if a callback is registered in the keys-&gt;callback table, it will be executed with maximum latency round trip to DB thread + queue wait time + load time.</div><div><br /></div></div><div style="display:block;text-align:left"><b><font size="4">Object Lifetime Relationships</font></b></div><div style="display:block;text-align:left;font-size:small"><br /></div><div>[Will Chan take note :-}.]</div><div><br /></div><div>Both CookieMonster and PersistentCookieStore are RefCountedThreadSafe objects.  The CookieMonster keeps a reference to the PersistentCookieStore in its store_ pointer; this guarantees that the store lives as long as the Monster does.  </div><div><br /></div><div>Both SpawnFullLoad and LoadKeyCookies will take as arguments scoped_refptrs on the CookieMonster which the PersistentCookieStore (or its backing store) will use for callbacks.  These references will guarantee that the CookieMonster stays alive for the duration of the callback.  </div><div><br /></div><div>If the CookieMonster needs to be torn down, it will call an abort() routine on the PersistentCookieStore, which will break the chain load and release the scoped_refptr&lt;&gt; held on the CookieMonster by that chain load.</div><div><br /></div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/cookie-split-loading">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ej0fxCuSV_f6qgwf-3CM_j7UxjO7v46UOoGWA3lWclnw2afJXMmIT2AqNWKerYK7dRZVLksMs9R8-TQxAZCLxUJgSx_-OA30RdpACuCGPPXMa5jM/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

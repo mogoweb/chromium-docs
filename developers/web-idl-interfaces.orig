@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/web-idl-interfaces","deleted":false,"title":"Web IDL interfaces","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/web-idl-interfaces\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Web IDL interfaces","locale":"en","wuid":"wuid:gx:7bb2b8df7fafc68c","revision":27,"path":"/developers/web-idl-interfaces","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"web-idl-interfaces","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Web IDL interfaces - The Chromium Projects" />
+<meta itemprop="name" content="Web IDL interfaces - The Chromium Projects" />
+<meta property="og:title" content="Web IDL interfaces - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Web IDL interfaces - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Web IDL interfaces</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-IDL"><strong>1 </strong>IDL</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Nulls-and-non-finite-numbers"><strong>1.1 </strong>Nulls and non-finite numbers</a></li><li class="goog-toc"><a href="#TOC-Union-types"><strong>1.2 </strong>Union types</a></li><li class="goog-toc"><a href="#TOC-Extended-attributes"><strong>1.3 </strong>Extended attributes</a></li><li class="goog-toc"><a href="#TOC-Bindings"><strong>1.4 </strong>Bindings</a></li></ol></li><li class="goog-toc"><a href="#TOC-C-"><strong>2 </strong>C++</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Names"><strong>2.1 </strong>Names</a></li><li class="goog-toc"><a href="#TOC-Type-information-ScriptWrappable-"><strong>2.2 </strong>Type information ("ScriptWrappable")</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-History-ScriptWrappable-"><strong>2.2.1 </strong>History (ScriptWrappable)</a></li></ol></li><li class="goog-toc"><a href="#TOC-Garbage-Collection"><strong>2.3 </strong>Garbage Collection</a></li></ol></li><li class="goog-toc"><a href="#TOC-See-Garbage-Collection-for-Blink-C-objects"><strong>3 </strong>See Garbage Collection for Blink C++ objects</a></li><li class="goog-toc"><a href="#TOC-Build"><strong>4 </strong>Build</a></li><li class="goog-toc"><a href="#TOC-Tests"><strong>5 </strong>Tests</a></li><li class="goog-toc"><a href="#TOC-Subtyping"><strong>6 </strong>Subtyping</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Technical-details"><strong>6.1 </strong>Technical details</a></li></ol></li><li class="goog-toc"><a href="#TOC-Inheritance-and-code-reuse"><strong>7 </strong>Inheritance and code reuse</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Examples"><strong>7.1 </strong>Examples</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Sharing-code-with-a-legacy-interface-unprefixing-"><strong>7.1.1 </strong>Sharing code with a legacy interface (unprefixing)</a></li><li class="goog-toc"><a href="#TOC-Changing-inheritance-implements"><strong>7.1.2 </strong>Changing inheritance → implements</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-See-also"><strong>8 </strong>See also</a></li><li class="goog-toc"><a href="#TOC-External-links"><strong>9 </strong>External links</a></li></ol></div></div></div></div></div>
+Web interfaces – exposed as JavaScript objects – are generally specified in <a href="http://heycam.github.io/webidl/">Web IDL</a> (Interface Definition Language), a declarative language (sometimes written without the space as WebIDL). This is the language used in standard specifications, and Blink uses IDL files to specify the interface and generate JavaScript bindings (formally, C++ code that the V8 JavaScript virtual machine uses to call Blink itself). <a href="https://www.chromium.org/blink/webidl">Web IDL in Blink</a> is close to the standard, and the resulting bindings use standard conventions to call Blink code, but there are additional features to specify implementation details, primarily <a href="https://www.chromium.org/blink/webidl/blink-idl-extended-attributes">Blink IDL extended attributes</a>.</div>
+<div><br />
+</div>
+<div>To implement a new Web IDL interface in Blink:</div>
+<div>
+<ul><li><b>Interface:</b> write an IDL file: <code>Foo.idl</code></li>
+<li><b>Implementation:</b> write a C++ file and header: <code>Foo.cpp, Foo.h</code></li>
+<li><b>Build:</b> add files to the build: edit <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/core.gypi&amp;q=file:core/core.gypi">Source/core/core.gypi</a> or <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/modules/modules.gypi">Source/modules/modules.gypi</a></li>
+<li><b>Tests:</b> write unit tests (<a href="https://www.chromium.org/developers/testing/webkit-layout-tests">"layout" tests</a>) in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/LayoutTests/">LayoutTests</a></li></ul>
+The bulk of the work is the implementation, secondarily tests. The interface (IDL file) should require minimal work (ideally just copy-and-paste the spec), assuming nothing unusual is being done, and the build can be forgotten about once you've set it up. Details follow.</div>
+<h2><a name="TOC-IDL"></a>IDL</h2>
+<div>
+<ul><li>Find spec</li>
+<li>Create a new file called Foo.idl in the same directory as you will implement the interface, generally Source/core/* or Source/modules/*</li></ul>
+The initial IDL file should contain:</div>
+<div>
+<ul><li>License header</li>
+<li>Link to the spec</li>
+<li>Link to tracking bug for implementing the interface</li>
+<li>IDL "fragment" copied from the spec</li></ul>
+<div>See <a href="https://www.chromium.org/blink/webidl#TOC-Style">Blink IDL: Style</a> for style guide.</div>
+<div><br />
+</div>
+<div>IDL files contain two types of data:</div>
+<div>
+<ul><li>Blink <i>interface</i> – behavior; ideally should agree with spec, but differences from spec should be reflected in the IDL itself</li>
+<li>Blink <i>implementation</i> – internal-use data, like function names or implementation-specific flags, like memory management.</li></ul>
+</div>
+<div>Note that if Blink behavior differs from the spec, the Blink IDL file should reflect <i>Blink</i> behavior. This makes interface differences visible, rather than hiding them in the C++ implementation or bindings generator.</div>
+<div>Also as a rule, nop data should <i>not</i> be included: if Blink (bindings generator) ignores an IDL keyword or extended attribute, do not include it, as it suggests a difference in behavior when there is none. If this results in a difference from the spec, this is <i>good</i>, as it makes the difference in behavior visible.</div>
+<div><br />
+</div>
+Initially you likely want to comment out all attributes and operations, uncommenting them as you implement them.</div>
+<h3><a name="TOC-Nulls-and-non-finite-numbers"></a>Nulls and non-finite numbers</h3>
+<div>Two points to be careful of, and which are often incorrect in specs, particularly older specs, are <i>nullability</i> and <i>non-finite</i> values (infinities and NaN). These are both to ensure correct type checking. If these are incorrect in the spec – for example, a prose specifying behavior on non-finite values, but the IDL not reflecting this – please file a spec bug upstream, and link to it in the IDL file.</div>
+<div><br />
+</div>
+<div>If null values are valid (for attributes, argument types, or method return values), the type MUST be marked with a ? to indicate nullable, as in <code>attribute Foo? foo;</code></div><div>Note that for arguments (but not attributes or method return values), optional is preferred to nullable (see <a href="http://lists.w3.org/Archives/Public/public-script-coord/2014AprJun/0173.html">Re: removeEventListener with only one passed parameter...</a>).</div>
+<div><br />
+</div>
+<div>Similarly, IEEE floating point allows non-finite numbers (infinities and NaN); if these are valid, the floating point type – <code>float</code> or <code>double</code> – MUST be marked as <code>unrestricted</code> as in <code>unrestricted float</code> or <code>unrestricted double</code> – the bare <code>float</code> or <code>double</code> means <i>finite</i> floating point.</div>
+<div><br />
+</div>
+<div>
+Ref: <a href="http://heycam.github.io/webidl/#idl-double">double</a>, <a href="http://heycam.github.io/webidl/#idl-unrestricted-double">unrestricted double</a>, <a href="http://heycam.github.io/webidl/#es-double">Type mapping: double</a>, <a href="http://heycam.github.io/webidl/#es-unrestricted-double">Type mapping: unrestricted double</a>
+</div>
+<h3><a name="TOC-Union-types"></a>Union types</h3>
+<div>Many older specs use overloading when a union type argument would be clearer. Please match spec, but file a spec bug for these and link to it. <span style="font-size:10pt;background-color:transparent">For example:</span></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>// FIXME: should be void bar((long or Foo) foo);　https://www.w3.org/Bugs/Public/show_bug.cgi?id=123</code></div>
+<div><code>void bar(long foo);</code></div>
+<div><code>void bar(Foo foo);</code></div>
+</div>
+<div><br /></div><div>Also, beware that you can't have multiple nullable arguments in the distinguishing position in an overload, as these are not distinguishing (what does <code>null</code> resolve to?). This is best resolved by using a union type if possible; otherwise make sure to mark only one overload as having a nullable argument in that position.</div><div><br /></div><div>Don't do this:</div><div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>void zork(Foo? x);</code></div><div><code>void zork(Bar? x); // What does zork(null) resolve to?</code></div></div></div><div>Instead do this:</div><div><div></div><div class="sites-codeblock sites-codesnippet-block"><div><code>void zork(Foo? x);</code></div><div><code>void zork(Bar x);</code></div></div></div><div>...but preferably this:</div><div><div><div class="sites-codeblock sites-codesnippet-block"><code>void zork((Foo or Bar)? x);</code></div></div></div>
+<h3><a name="TOC-Extended-attributes"></a>Extended attributes</h3>
+<div>You will often need to add Blink-specific extended attributes to specify implementation details.</div>
+<div><b>Please comment extended attributes – <i>why</i> do you need special behavior?</b></div>
+<div><br />
+</div>
+<h3><a name="TOC-Bindings"></a>Bindings</h3>
+<div>See <a href="https://www.chromium.org/blink/webidl">Web IDL in Blink</a>.</div>
+<h2><a name="TOC-C-"></a>C++</h2>
+<div>Bindings code assumes that a C++ class exists, with methods for each attribute or operation (with some exceptions). Attributes are implemented as <a href="http://en.wikipedia.org/wiki/Property_(programming)">properties</a>, meaning that while in the JavaScript interface these are read and written as attributes, in C++ these are read and written by getter and setter methods.</div>
+<div><br />
+</div>
+<div>For cases where an IDL attribute reflects a content attribute, you do not need to write boilerplate methods to call <span style="font-size:10pt;background-color:transparent"><code>getAttribute()</code> and <code>setAttribute().</code> Instead, use the </span><a href="http://www.chromium.org/blink/webidl/blink-idl-extended-attributes#TOC-Reflect-a-" style="font-size:10pt;background-color:transparent"><code>[Reflect]</code></a><span style="font-size:10pt;background-color:transparent"> extended attribute, and these calls will automatically be generated inline in the bindings code, with optimizations in some cases. However, if you wish to access these attributes from C++ code (say in another class), not just from JavaScript, you will need to write a getter and/or a setter, as necessary.</span></div>
+<h3><a name="TOC-Names"></a>Names</h3>
+<div>
+<div>The class and methods have default names, which can be overridden by the <code>[ImplementedAs]</code> extended attribute; this is <b>strongly discouraged,</b> and method names should align with the spec unless there is very good reason for them to differ (this is sometimes necessary when there is a conflict, say when inheriting another interface).</div>
+<div><br />
+</div>
+<div>Given an IDL file Foo.idl:</div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>interface Foo {</code></div>
+<div><code>    attribute long a;</code></div>
+<div><code>    attribute DOMString cssText;</code></div>
+<div><code>    void f();</code></div>
+<div><code>    void f(long arg);</code></div>
+<div><code>    void g(optional long arg);</code></div>
+<div><code>};</code></div>
+</div>
+<div></div>
+</div>
+<br />
+<div>...a minimal header file Foo.h illustrating this is:</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>class Foo {</code></div>
+<div><code>public:</code></div>
+<div><code>    int a();</code></div>
+<div><code>    void setA(int);</code></div>
+<div><code>    String cssText();</code></div>
+<div><code>    void setCSSText(const String&amp;);</code></div>
+<div><code>    void f();</code></div>
+<div>
+<div><code>    void f(int);</code></div>
+</div>
+<div>
+<div><code>    void g();</code></div>
+<div><code>    void g(int);</code></div>
+</div>
+<div><code>    // Alternatively, can use default arguments:</code></div>
+<div><code>    // void f(int arg=0);</code></div>
+<div><code>};</code></div>
+</div>
+</div>
+<div>
+<ul><li>IDL interfaces assume a class of the same name: <code>class Foo</code>.</li>
+<li>IDL attributes call a getter of the same name, and setter with set prepended and capitalization fixed: <code>a()</code> and <code>setA()</code>. This correctly capitalizes acronyms, so the setter for cssText is <code>setCSSText()</code>. (If you need to add acronyms, these are set in <code>v8_common.ACRONYMS</code>.)</li>
+<li>IDL operations call a C++ method of the same name: <code>f()</code>.</li>
+<li>Web IDL overloading and IDL optional arguments <i>without</i> default values map directly to C++ overloading (optional arguments <i>without</i> default values correspond to an overload either including or excluding the argument).</li><li>IDL optional arguments <i>with</i> default values map to C++ calls with these values filled in, and thus do not require C++ overloading.</li><ul><li><span style="font-size:10pt;background-color:transparent">C++ default values SHOULD NOT be used unless necessary (not yet supported by compiler).</span></li><li>However, currently IDL default values are only partly supported (Bug <a href="https://code.google.com/p/chromium/issues/detail?id=258153">258153</a>), and thus <span style="font-size:10pt;background-color:transparent">C++ default values are used.</span></li><li><span style="font-size:10pt;background-color:transparent">There are various complicated corner cases, like non-trailing optional arguments without defaults, like</span></li><ul><li><span style="font-size:10pt;background-color:transparent"><code>foo(optional long x, optional long y = 0);</code></span></li></ul></ul></ul>
+<h3><a name="TOC-Type-information-ScriptWrappable-"></a>Type information ("ScriptWrappable")</h3>
+<div>Blink objects that are visible in JavaScript need type information, fundamentally because JavaScript is <a href="http://en.wikipedia.org/wiki/Dynamic_typing">dynamically typed</a> (so <i>values</i> have type), concretely because the bindings code uses <a href="http://en.wikipedia.org/wiki/Type_introspection">type introspection</a> for <a href="http://en.wikipedia.org/wiki/Dynamic_dispatch">dynamic dispatch</a> (function resolution of bindings functions): given a C++ object (representing the implementation of a JavaScript object), accessing it from V8 requires calling the correct C++ binding methods, which requires knowing its JavaScript type (i.e., the IDL interface type).</div>
+<div>Blink does not use C++ <a href="http://en.wikipedia.org/wiki/Run-time_type_information">run-time type information</a> (RTTI), and thus the type information must be stored separately.</div>
+<div>
+<div><br />
+</div>
+<div>There are various ways this is done, most simply (for Blink developers) by the C++ class inheriting <code>ScriptWrappable</code> and placing <code>DEFINE_WRAPPERTYPEINFO</code> in the class declaration. Stylistically <code>ScriptWrappable</code> should be the last class, or at least after more interesting classes, and should be directly inherited by the class (not indirectly from a more distant ancestor).</div>
+<div><br />
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Explicitly:</span></div>
+</div>
+<div><br />
+</div>
+<div>Foo.h:</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>#ifndef Foo_h</code></div>
+<div><code>#define Foo_h</code></div>
+</div>
+<div><br />
+</div>
+<div><code>#include "bindings/v8/ScriptWrappable.h"</code></div>
+<div>
+<div><br />
+</div>
+<div><code>namespace WebCore {</code></div>
+</div>
+<div><br />
+</div>
+<div><code>class Foo FINAL : /* maybe others */ public ScriptWrappable {</code></div>
+<div><font color="#006000" face="monospace">    DEFINE_WRAPPERTYPEINFO();</font></div><div><code>    // ...</code></div>
+<div><code>};</code></div>
+<div><br />
+</div>
+<div><code>} // namespace WebCore</code></div>
+<div><br />
+</div>
+<div><code>#endif Foo_h</code></div>
+<div></div>
+</div>
+<br />
+<div><span style="font-size:10pt;background-color:transparent">In case of C++ inheritance, it's preferable to avoid inheriting ScriptWrappable indirectly</span><span style="font-size:10pt;background-color:transparent">, most simply because this creates overhead on a redundant write. In many cases this can be avoided by having an abstract base class that both concrete classes inherit. Stylistically, </span><b style="font-size:10pt;background-color:transparent">FIXME</b></div>
+<div>However, in some cases – notably if both a base class and a derived class implement JS interface types (say, if there is IDL inheritance and the C++ inheritance is the same) – you will need to call <code>ScriptWrappable::init</code> both in the base class and the derived class.</div>
+<div><br />
+</div>
+<div>Thus, to avoid this:</div>
+<div>Foo.h:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="background-color:transparent"><code>class Foo FINAL : public Bar, </code></span><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt">public ScriptWrappable </span><span style="color:rgb(0,96,0);background-color:transparent;line-height:1;font-size:10pt"> { /* ... */ };</span></div>
+<div></div>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Bar.h:</span></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>class Bar : public ScriptWrappable { /* ... */ };</code></div>
+</div>
+<div><br /></div>
+<div>...instead use an abstract base class, and have both concrete classes inherit <code>ScriptWrappable</code> directly:</div>
+<div>
+<div>
+<div>Foo.h:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="background-color:transparent"><code>class Foo FINAL : public FooBarBase, </code></span><span style="color:rgb(0,96,0);font-family:monospace;line-height:1;font-size:10pt">public ScriptWrappable </span><span style="color:rgb(0,96,0);background-color:transparent;line-height:1;font-size:10pt"> { /* ... */ };</span></div>
+<div></div>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Bar.h:</span></div><div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>class Bar FINAL : public FooBarBase, </code><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt">public ScriptWrappable </span><span style="color:rgb(0,96,0);line-height:1;font-size:10pt"> { /* ... */ };</span></div>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">FooBarBase.h:</span></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>class FooBarBase { /* ... */ };</code></div>
+</div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-History-ScriptWrappable-"></a><span style="background-color:transparent">History (ScriptWrappable)</span></h4>
+<ul><li><a href="https://lists.webkit.org/pipermail/webkit-dev/2012-November/thread.html#22686">[webkit-dev] Making more use of ScriptWrappable</a> (Adam Barth, 2012 Nov)</li></ul>
+<h3><a name="TOC-Garbage-Collection"></a>Garbage Collection</h3><h2><a name="TOC-See-Garbage-Collection-for-Blink-C-objects"></a><div style="font-size:13px;font-weight:normal">See <a href="https://www.chromium.org/blink/blink-gc">Garbage Collection for Blink C++ objects</a></div></h2><h2><a name="TOC-Build"></a>Build</h2>
+<div>You need to list the <code>.idl</code> file and <code>.h/.cpp</code> files in the correct GYP variable so that they will be built (bindings generated, Blink code compiled), and then you need to regyp (re-run GYP) to regenerate the build files. Files are listed in a .gypi (GYP Include) file. For core files, this is <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/core.gypi&amp;q=file:core/core.gypi">Source/core/core.gypi</a>.</div>
+<div><br />
+</div>
+<div>There are 3 dichotomies in these <code>.idl</code> files, which affect where you list them in the build:</div>
+<div>
+<ul><li>core vs. modules – which subtree they are in</li>
+<li>main interface vs. dependency – partial interfaces and implemented interfaces do not have individual bindings (<code>.h/.cpp</code>) generated</li>
+<li>testing or not – testing interfaces do not appear in the aggregate bindings</li></ul>
+If you generate an IDL file at build time, there is a 4th dichotomy:</div>
+<div>
+<ul><li>generated or not (static) – generated files need to be treated differently by the build system (passed as command line arguments, rather than listed in a gyp-generated file, since generated files are in the build directory, which is only known at build time, not gyp time).</li></ul>
+</div>
+<div>For core interfaces, the IDL file <b>MUST</b> be listed in the <code>core_idl_files</code> variable (<code>_files</code> is a special suffix that tells GYP to treat these values as paths), <i>or</i> in the <code>core_dependency_idl_files</code> variable, if the IDL file is a <i>partial interface</i> or the target (right side of) an <code>implements</code> statement. This distinction is because partial interfaces and implemented interfaces do not have their own bindings generated, so these IDL files are not directly compiled.</div>
+<div>Testing files <b>MUST</b> instead be listed in the <code>core_testing_idl_files</code> variable; there are currently no core testing dependency files.</div>
+<div><br />
+</div>
+<div>The C++ files should be listed in the <code>core_files</code> variable or an appropriate <code>core_*_files</code> variable, depending on directory, or <code>core_testing_files</code> if a testing interface.</div>
+<div><br />
+</div>
+<div>Modules files are analogous, and placed in <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/modules/modules.gypi">Source/modules/modules.gypi</a>. There are currently no modules testing interface files, but there are modules testing dependency files, which are listed in <code>modules_dependency_idl_files</code> and <code>modules_testing_files</code>.</div>
+<h2><a name="TOC-Tests"></a>Tests</h2>
+<div>Make sure to test:</div>
+<div>
+<ul><li>default objects – create a new object and pass as argument or assign to an attribute</li>
+<li><code>undefined/null</code> – if passed to nullable arguments or set to nullable attributes, should not throw; if passed to non-nullable arguments or set to non-nullable attributes, should throw but not crash</li></ul>
+<h2><a name="TOC-Subtyping"></a>Subtyping</h2>
+<div>
+<div>There are three mechanisms for subtyping in IDL:</div>
+<div>
+<ul><li>inheritance: <code>interface A : B { ... };</code></li>
+<li><a href="http://heycam.github.io/webidl/#idl-implements-statements">implements statements</a>: <code>A implements B;</code></li>
+<li>partial interface: <code>partial interface A { ... };</code></li></ul>
+</div>
+<div>The corresponding C++ implementations are as follows, here illustrated for <code>attribute T foo;</code></div>
+<div>
+<ul><li>inheritance: handled by JavaScript, but often have corresponding C++ inheritance; one of:</li>
+<ul><li><code>class A { ... };</code></li>
+<li><code>class A : B { ... };</code></li></ul>
+<li>implements: C++ class must implement methods, either itself or via inheritance; one of:</li>
+<ul><li><code>class A { public: T foo(); void setFoo(...); ... };</code></li>
+<li><code>class A : B { ... };</code></li>
+<li><i>unless</i> there is a layering violation (an interface in <code>modules</code> implemented in <code>core</code>), in which case put <code>[TreatAsPartial]</code> on the implemented interface definition and implement as static member functions, as in partial interface.</li></ul>
+<li>partial interface: implemented as static member functions in an unrelated class:</li>
+<ul><li><code>class B { static T foo(A&amp; a); static void setFoo(A&amp; a, ...); ... };</code></li></ul></ul>
+</div>
+<div>IDL files SHOULD agree with spec, and almost always MUST do so. It is not ok to change the kind of subtyping or move members between interfaces, and violations SHOULD or MUST be fixed:</div>
+<ul><li>Inheritance is visible to JavaScript (in the prototype chain), so it MUST be correct (it is NOT ok to have non-spec inheritance relationships).</li>
+<li>The distinction between "member of (main) interface definition, member of implemented interface, member of partial interface" is not visible in JavaScript (these are all just properties of the prototype object), so while this SHOULD agree with spec (so Blink IDL agrees with IDL in the spec), this is not strictly required.</li>
+<li>The distinction between "member of (child) interface" and "member of parent interface" is visible in JavaScript (as property on prototype object corresponding to (child) interface vs. property on prototype object corresponding to parent interface), and thus MUST be correct (it is NOT ok to move members between an interface and a parent if this disagrees with spec).</li></ul>
+<h4><a name="TOC-Technical-details"></a>Technical details</h4>
+<div>While members of an interface definition, members of implemented interface, and members of partial interfaces are identical for JavaScript, partial interface members – and members of certain implemented interfaces, namely those with the <code>[TreatAsPartial]</code> extended attribute – are treated differently internally in Blink (see below).</div>
+<div><br />
+</div>
+<div>Inheritance and implements are both <i>interface inheritance</i>. JavaScript has single inheritance, and IDL inheritance corresponds to JavaScript inheritance, while IDL <code>implements</code> provides multiple inheritance in IDL, which does not correspond to inheritance in JavaScript.</div>
+<div><br />
+</div>
+<div>In both cases, by spec, members of the inherited or implemented interface must be implemented on the JavaScript object implementing the interface. Concretely, members of inherited interfaces are implemented as properties on the prototype object of the parent interface, while members of implemented interfaces are implemented as properties of the implementing interface.</div>
+<div><br />
+</div>
+<div>In C++, members of an interface definition and members of implemented interfaces are implemented on the C++ object (referred to as the parameter or variable <code>impl</code>) implementing the JavaScript object. Specifically this is done in the Blink class corresponding to the IDL interface <i>or a base class</i> – the C++ hierarchy is invisible to both JavaScript and the bindings.</div>
+<div><br />
+</div>
+<div>Implementation-wise, inheritance and implements differ in two ways:</div>
+<div>
+<ul><li>Inheritance sets the prototype object (this is visible in JavaScript via <code>getPrototypeOf</code>); <code>implements</code> does not.</li>
+<li>Bindings are not generated for inherited members (JavaScript dispatches these to the parent prototype), but <i>are</i> generated for implemented members.</li></ul>
+For simplicity, in the wrapper (used by V8 to call Blink) the bindings just treat members of implemented interfaces and partial interfaces as if they were part of the main interface: there is no multiple inheritance in the bindings implementation.</div>
+<div><br />
+</div>
+<div>If (IDL) interface A inherits from interface B, then usually (C++) class A inherits from class B, meaning that:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>interface A : B { /* ... */ };</code></div>
+<div></div>
+</div>
+is <i>usually</i> implemented as:
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>class A : B { /* ... */ };</code></div>
+<div></div>
+</div>
+...or perhaps:
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>class A : C { /* ... */ };</code></div>
+<div><code>class C : B { /* ... */ };</code></div>
+<div></div>
+</div>
+<br />
+<div>However, the bindings are agnostic about this, and simply set the prototype in the wrapper object to be the inherited interface (concretely, sets the parentClass attribute in the WrapperTypeInfo of the class's bindings). Dispatch is thus done in JavaScript.</div>
+<div><br />
+</div>
+<div>"A implements B;"</div>
+<div>should mean that members declared in (IDL) interface B</div>
+<div>are members of (C++) classes implementing A.</div>
+<div>impl.</div>
+<div><br />
+</div>
+<div>Partial interfaces formally are type extension (<i>external</i> type extension, since specified in a separate place from the original definition), and in principle are simply part of the interface, just defined separately, as a convenience for spec authors. However in practice, members of partial interfaces are <i>not</i> assumed to be implemented on the C++ object (<code>impl</code>), and are not defined in the Blink class implementing the interface. Instead, they are implemented as static members of a separate class, which take <code>impl</code> as their first argument. This is done because in practice, partial interfaces are type extensions, which often only used in subtypes or are deactivated (via conditionals or as <a href="https://www.chromium.org/blink/runtime-enabled-features">runtime enabled features</a>), and we do not want to bloat the main Blink class to include these.</div>
+<div><br />
+</div>
+<div>Further, in some cases we must use type extension (static methods) for implemented interfaces as well. This is due to componentization in Blink (see <a href="http://www.chromium.org/developers/design-documents/browser-components">Browser Components</a>), currently <code>core</code> versus <code>modules.</code> Code in <code>core</code> cannot inherit from code in <code>modules,</code> and thus if an interface in <code>core</code> implements an interface in <code>modules,</code> this must be implemented via type extension (static methods in <code>modules</code>). This is an exceptional case, and indicates that Blink's internal layering (componentization) disagrees with the layering implied by the IDL specs, and formally should be resolved by moving the relevant interface from <code>modules</code> to <code>core.</code> This is not always possible or desirable (for internal implementation reasons), and thus static methods can be specified via the <code>[TreatAsPartial]</code> extended attribute on the implemented interface.</div>
+</div>
+<h2><a name="TOC-Inheritance-and-code-reuse"></a>Inheritance and code reuse</h2>
+<div>IDL has single inheritance, which maps directly to JavaScript inheritance (prototype chain). C++ has multiple inheritance, and the two hierarchies need not be related.</div>
+<div><br />
+</div>
+<div><b>FIXME:</b> There are issues if a C++ class inherits from another C++ class that implements an IDL interface, as .</div>
+<div>downcasting</div>
+<div><br />
+</div>
+<div>IDL has 3 mechanisms for combining interfaces:</div>
+<div>
+<ul><li>(Single) inheritance</li>
+<li>implements</li>
+<li>partial interface</li></ul>
+<h3><a name="TOC-Examples"></a>Examples</h3>
+</div>
+<h4><a name="TOC-Sharing-code-with-a-legacy-interface-unprefixing-"></a>Sharing code with a legacy interface (unprefixing)</h4>
+<div>...</div>
+<h4><a name="TOC-Changing-inheritance-implements"></a>Changing inheritance → implements</h4>
+<div>Converting a parent to the target of an implements</div>
+<h2><a name="TOC-See-also"></a>See also</h2>
+<div>Other Blink interfaces, not standard Web IDL interfaces:<br />
+<ul><li><a href="https://www.chromium.org/blink/public-c-api">Public C++ API</a>: C++ API used by C++ programs embedding Blink (not JavaScript), including the (C++) "web API"<br />
+</li>
+<li><a href="https://www.chromium.org/developers/design-documents/extensions/proposed-changes/creating-new-apis">Implementing a new extension API</a>: Chrome extensions (JavaScript interfaces used by extensions), also use a dialect of Web IDL for describing interfaces<br />
+</li></ul>
+</div>
+<h2><a name="TOC-External-links"></a>External links</h2>
+</div>
+<div>For reference, documentation by other projects.<br />
+<ul><li>Mozilla Developer Network (MDN)</li>
+<ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/API">Web API reference</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/WebIDL_bindings">WebIDL bindings</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Developer_Guide/Interface_development_guide/IDL_interface_rules">IDL interface rules</a></li></ul>
+<li>W3C Wiki: <a href="http://www.w3.org/wiki/Web_IDL">Web IDL</a></li></ul>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/web-idl-interfaces">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9NnRiQrxbuRuwllMbS1VAZJdJ62L95Ip7R4buB4d4MCuruzbGOYpmY-UwShV-TDqZcjEqCA-v8Q2rMk8Ht11PDcUXMYILYEWjMlRwHmS2bOn4MilF/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

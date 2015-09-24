@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/tree-sheriffs","deleted":false,"title":"Tree Sheriffs","dir":"ltr"},{"path":"/developers/tree-sheriffs/sheriff-details-chromium-os","deleted":false,"title":"Sheriff FAQ: Chromium OS","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/tree-sheriffs/sheriff-details-chromium-os\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/tree-sheriffs","parentWuid":"wuid:gx:24b52fca28997d96","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Sheriff FAQ: Chromium OS","locale":"en","wuid":"wuid:gx:79e029161c9e8b0c","revision":260,"path":"/developers/tree-sheriffs/sheriff-details-chromium-os","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"sheriff-details-chromium-os","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Sheriff FAQ: Chromium OS - The Chromium Projects" />
+<meta itemprop="name" content="Sheriff FAQ: Chromium OS - The Chromium Projects" />
+<meta property="og:title" content="Sheriff FAQ: Chromium OS - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Sheriff FAQ: Chromium OS - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1321031439524/developers/tree-sheriffs/sheriff-details-chromium-os/Screenshot.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1321031439524/developers/tree-sheriffs/sheriff-details-chromium-os/Screenshot.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/tree-sheriffs" dir="ltr">Tree Sheriffs</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Sheriff FAQ: Chromium OS</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-The-purpose-of-sheriffing-is-threefold:"><strong>1 </strong>The purpose of sheriffing is threefold:</a></li><li class="goog-toc"><a href="#TOC-The-expectations-on-a-sheriff-are-as-follows:"><strong>2 </strong>The expectations on a sheriff are as follows:</a></li><li class="goog-toc"><a href="#TOC-What-should-I-do-when-I-report-for-duty-"><strong>3 </strong>What should I do when I report for duty?</a></li><li class="goog-toc"><a href="#TOC-At-the-beginning-of-your-stint-as-Sheriff-please-perform-the-following-tasks:"><strong>4 </strong>At the beginning of your stint as Sheriff, please perform the following tasks:</a></li><li class="goog-toc"><a href="#TOC-What-should-I-do-as-I-prepare-to-end-my-shift-"><strong>5 </strong>What should I do as I prepare to end my shift?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-read-the-waterfall-"><strong>6 </strong>How do I read the waterfall?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-find-out-about-build-failures-"><strong>7 </strong>How do I find out about build failures?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-deal-with-build-failures-"><strong>8 </strong>How do I deal with build failures?</a></li><li class="goog-toc"><a href="#TOC-What-bugs-do-I-file-and-how-do-I-assign-them-"><strong>9 </strong>What bugs do I file, and how do I assign them?</a></li><li class="goog-toc"><a href="#TOC-Ahh-the-tree-is-green.-I-can-go-back-to-my-work-right-"><strong>10 </strong>Ahh, the tree is green.  I can go back to my work, right?</a></li><li class="goog-toc"><a href="#TOC-How-can-I-pick-a-specific-set-of-changes-to-go-through-a-commit-queue-run-"><strong>11 </strong>How can I pick a specific set of changes to go through a commit queue run?</a></li><li class="goog-toc"><a href="#TOC-What-should-I-do-if-I-see-a-commit-queue-run-that-I-know-is-doomed-"><strong>12 </strong>What should I do if I see a commit-queue run that I know is doomed?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-deal-with-a-broken-Chrome-"><strong>13 </strong>How do I deal with a broken Chrome?</a></li><li class="goog-toc"><a href="#TOC-How-can-I-revert-a-commit-"><strong>14 </strong>How can I revert a commit?</a></li><li class="goog-toc"><a href="#TOC-Help-with-specific-failure-catagories"><strong>15 </strong>Help with specific failure catagories</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-How-do-I-investigate-VMTest-failures-"><strong>15.1 </strong>How do I investigate VMTest failures?</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Auto-test-test-failed"><strong>15.1.1 </strong>Auto-test test failed</a></li><li class="goog-toc"><a href="#TOC-Crash-detected"><strong>15.1.2 </strong>Crash detected</a></li><li class="goog-toc"><a href="#TOC-ASAN-error-detected"><strong>15.1.3 </strong>ASAN error detected</a></li><li class="goog-toc"><a href="#TOC-ssh-failed"><strong>15.1.4 </strong>ssh failed</a></li></ol></li><li class="goog-toc"><a href="#TOC-How-to-find-test-results-crash-reports-"><strong>15.2 </strong>How to find test results/crash reports?</a></li><li class="goog-toc"><a href="#TOC-How-do-I-extract-stack-traces-manually-"><strong>15.3 </strong>How do I extract stack traces manually?</a></li><li class="goog-toc"><a href="#TOC-A-buildbot-slave-appears-to-be-down-purple-.-What-do-I-do-"><strong>15.4 </strong>A buildbot slave appears to be down (purple). What do I do?</a></li><li class="goog-toc"><a href="#TOC-platform_ToolchainOptions-autotest-is-failing.-What-do-I-do-"><strong>15.5 </strong>platform_ToolchainOptions autotest is failing. What do I do?</a></li></ol></li><li class="goog-toc"><a href="#TOC-How-do-I-update-sheriff-rotations-change-timezones-add-remove-people-"><strong>16 </strong>How do I update sheriff rotations (change[timezones]/add/remove people)?</a></li><li class="goog-toc"><a href="#TOC-Tips-and-Tricks"><strong>17 </strong>Tips and Tricks</a></li></ol></div></div></div></div><span style="font-family:Arial;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">
+The</span><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-philosophy" style="font-family:Times New Roman;font-size:medium;line-height:18.3999996185303px;text-decoration:none"><span style="font-size:13px;font-family:Arial;color:rgb(0,0,0);font-weight:bold;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:rgb(71,18,100);font-weight:bold;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">thesis on Sheriffing</span></a><span style="font-family:Arial;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">.</span><h2><a name="TOC-The-purpose-of-sheriffing-is-threefold:"></a>The purpose of sheriffing is threefold:</h2>
+<div>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Make sure build blocking failures are identified and addressed in a timely fashion.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Manually watch over our build system in ways automation doesn’t/can’t do.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Give developers a chance to learn a little more about how build works and breaks.</span></p>
+</li>
+</ol>
+</div>
+<h2><a name="TOC-The-expectations-on-a-sheriff-are-as-follows:"></a>The expectations on a sheriff are as follows:</h2>
+<div>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Do not leave the tree unattended</span><span style="vertical-align:baseline;white-space:pre-wrap">; coordinate with your co-sheriffs to ensure this. Normal work hours (for you) only.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-family:Times New Roman;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-family:Arial;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Address tree closure/throttling.</span></p>
+</li>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Promptly update the</span><a href="http://chromiumos-status.appspot.com/" style="text-decoration:none"><span style="color:rgb(0,0,0);font-weight:bold;vertical-align:baseline;white-space:pre-wrap"> </span><span style="color:rgb(71,18,100);font-weight:bold;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">tree status</span></a><span style="vertical-align:baseline;white-space:pre-wrap"> to show you are investigating.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">File or locate bugs.</span><span style="vertical-align:baseline;white-space:pre-wrap"> The tree should not close unless something broke. File new bugs, or update existing ones. Include links to the failed build. Raise priority as needed.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;font-weight:bold;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Find owners for bugs that break your builds.</span><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap"> It’s not the Sheriff’s job to fix things, only to find the right person.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Reopen when ready.</span><span style="vertical-align:baseline;white-space:pre-wrap"> If the next run can reasonably be expected to pass, reopen.</span></p>
+</li>
+</ol>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Watch for build (especially CQ) Failures</span></p>
+</li>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Mark CLs that fail a CQ run with Verified -1.</span><span style="vertical-align:baseline;white-space:pre-wrap"> If done before the CQ run finishes, this prevents innocent CLs from being blamed.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">File bugs for flake that fails a build.</span><span style="vertical-align:baseline;white-space:pre-wrap"> This is how we get build/infrastructure/test flake fixed, so it stops happening. Identify existing bugs where you can, or file new ones. Some bugs are auto filed, this should be called out in waterfalls or logs.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:lower-alpha;font-family:Arial;font-weight:bold;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Identify confusing output</span><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap">. If something about the waterfall or build results don’t make sense, file a bug. </span><span style="vertical-align:baseline;white-space:pre-wrap">BE VERY SPECIFIC</span><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap">. This feedback needs to be actionable.</span></p>
+</li>
+</ol>
+<li dir="ltr" style="list-style-type:decimal;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">While the tree is open, </span><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap">work on</span><a href="https://code.google.com/p/chromium/issues/list?can=2&amp;q=label%3AGardening" style="text-decoration:none"><span style="color:rgb(0,0,0);font-weight:bold;vertical-align:baseline;white-space:pre-wrap"> </span><span style="color:rgb(71,18,100);font-weight:bold;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">gardening tasks</span></a><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap"> </span><span style="vertical-align:baseline;white-space:pre-wrap">-- not your normal work items.</span></p>
+</li>
+</ol>
+</div>
+<div>
+<div>
+<div style="font-family:Times New Roman;font-size:medium;background-color:transparent"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br /></span></div><div style="font-family:Times New Roman;font-size:medium;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">You can find the calendars here:</span></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a href="https://www.google.com/calendar/embed?src=google.com_69d79f055f0a14nuulm9kse60c@group.calendar.google.com" style="text-decoration:none"><span style="color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">US</span></a></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="text-decoration:underline;color:rgb(71,18,100);vertical-align:baseline;white-space:pre-wrap"><a href="https://www.google.com/calendar/embed?src=google.com_qvc0pmmoql1n9g73scnubmmh6c@group.calendar.google.com" style="text-decoration:none">Non-US</a></span></p>
+</li></ul>
+</div>
+<h2><a name="TOC-What-should-I-do-when-I-report-for-duty-"></a>What should I do when I report for duty?</h2>
+</div>
+</div>
+<h2><a name="TOC-At-the-beginning-of-your-stint-as-Sheriff-please-perform-the-following-tasks:"></a><span style="font-size:13px;font-weight:normal">A</span><span style="font-size:13px;font-weight:normal;font-family:Arial;white-space:pre-wrap">t the beginning of your stint as Sheriff, please perform the following tasks:</span></h2>
+<div style="background-color:transparent">
+<ol style="font-family:Times New Roman"><li style="list-style-type:decimal;font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Sign on to irc.freenode.net / #chromium-os, and introduce yourself as an on-duty sheriff.</span></li>
+<li style="list-style-type:decimal;font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Pull up the </span><a href="http://build.chromium.org/p/chromiumos/waterfall?reload=60"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,153);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">public</span></a><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> and </span><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,153);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap"><a href="https://uberchromegw.corp.google.com/i/chromeos/waterfall" target="_blank">internal</a></span><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> Chrome OS buildbot waterfalls.  If the status is out of date, update it.</span></li>
+<li style="list-style-type:decimal;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Triage any buildbot failure messages in your Inbox.</span></li>
+<li style="list-style-type:decimal;font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Read the email from yesterday’s Sheriffs and/or look at the <a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/sheriff-log-chromium-os" target="_blank">Chromium OS sheriff log</a>, and familiarize yourself with the </span><a href="https://code.google.com/p/chromium/issues/list?can=2&amp;q=Hotlist%3DTreeCloser+os%3Dchrome"><span style="font-size:10pt;font-family:Arial;color:rgb(0,102,204);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">TreeCloser issues</span></a><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> they cite.</span></li>
+</ol>
+</div><div><h2><a name="TOC-What-should-I-do-as-I-prepare-to-end-my-shift-"></a>What should I do as I prepare to end my shift?</h2>
+<div><span style="font-family:Times New Roman;font-size:medium">
+<div style="background-color:transparent"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">At the end of your stint as Sheriff, please perform the following tasks:</span>
+<ol><li style="list-style-type:decimal;font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Ensure that TreeCloser issues have been filed </span><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">for any ongoing failures (like a flaky Chrome SEGV that is under investigation) or infrastructure problems (git hangs during sync, say)</span></li>
+<li style="list-style-type:decimal;font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">Update the <a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/sheriff-log-chromium-os" style="white-space:pre-wrap" target="_blank">Chromium OS sheriff log</a> and <a href="mailto:chromium-os-dev@chromium.org?subject=Sheriff%20Handoff"><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,153);background-color:rgb(255,255,255);font-weight:bold;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Email</span><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,153);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,153);background-color:rgb(255,255,255);font-weight:bold;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">chromium-os-dev@ </span></a><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">with the list of issues</span><span style="font-size:10pt;font-family:Arial;color:rgb(0,0,0);background-color:rgb(255,255,255);font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> and a blurb describing anything else of note -- perhaps you just reverted a bad change, and expect a bot to cycle green.</span></li>
+</ol>
+</div>
+</span></div>
+<h2><a name="TOC-How-do-I-read-the-waterfall-"></a>How do I read the waterfall?</h2>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:18pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">What do the different tree statuses (open, throttled, closed) mean and do?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:rgb(0,255,0)">Open</span><span style="vertical-align:baseline;white-space:pre-wrap"> - ToT is believed to be a healthy, with builds that can make it through the commit queue and canary builders without failing. </span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">Commit queue will run unencumbered.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:rgb(255,255,0)">Throttled</span><span style="vertical-align:baseline;white-space:pre-wrap"> - Typically the automatic result of a builder failure. May mean the tree is in a bad state, but often cause by flake. The CQ stops testing new changes. </span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">An already-running CQ run will be allowed to submit changes, if it passes. Further runs of the CQ will only occur if there are patches marked as CQ+2 (normally by you).</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:rgb(255,0,0)">Closed</span><span style="vertical-align:baseline;white-space:pre-wrap"> - ToT has been manually closed. Typically done to avoid adding to an already catastrophic failure or outage. </span><span style="font-style:italic;vertical-align:baseline;white-space:pre-wrap">Commit queue runs will not submit changes.</span></p>
+</li></ul></ul>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">What is the Commit Queue?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;vertical-align:baseline;white-space:pre-wrap">Please read the </span><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/commit-queue-overview" style="text-decoration:none"><span style="font-size:13px;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Commit Queue overview</span></a><span style="font-size:13px;vertical-align:baseline;white-space:pre-wrap">.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">The CQ Master decides success/failure for a given run. You mostly shouldn’t look at slaves except to see failure details. The Master should link to appropriate slaves.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">What is a Canary Build?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">An official build (with a unique version) is prepared and validated by canary builders three times a day.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">The Canary Master decides success/failure for a given run. You mostly shouldn’t look at slaves, except to see failure details. The Master should link to appropriate slaves.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">What is the Pre-CQ?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">The Pre-CQ launches tryjobs to validate CLs before they enter the CQ, but doesn’t do anything other than launch them on standard tryjob servers.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">What is a PFQ builder?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;vertical-align:baseline;white-space:pre-wrap">Please read the </span><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/pre-flight-queue-faq" style="text-decoration:none"><span style="font-size:13px;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Pre Flight Queue FAQ</span></a><span style="font-size:13px;vertical-align:baseline;white-space:pre-wrap">. Contact the Chrome Gardener (listed on waterfall) if it stays red.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">What is ASAN bot?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;vertical-align:baseline;white-space:pre-wrap">Please read </span><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/sheriff-faq-chromium-os-asan-bots" style="text-decoration:none"><span style="font-size:13px;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Sheriff FAQ: Chromium OS ASAN</span></a><span style="font-size:13px;vertical-align:baseline;white-space:pre-wrap">.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:4pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">A toolchain buildbot is failing. What do I do?</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;vertical-align:baseline"><span style="vertical-align:baseline;white-space:pre-wrap">These buildbots test the next version of the toolchain and are being sheriff'd by the toolchain team. Not your problem.</span></li></ul></ul>
+<h2><a name="TOC-How-do-I-find-out-about-build-failures-"></a>How do I find out about build failures?</h2>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Watch the tree status</span><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">. On the waterfall.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Arial;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1;margin-top:0pt;margin-bottom:0pt"><span style="font-weight:bold;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Watch the waterfalls</span><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"> (internal and external)</span></p>
+</li>
+<li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Arial;font-weight:bold;vertical-align:baseline;background-color:transparent">
+<p dir="ltr" style="line-height:1;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Warning emails. </span><span style="font-weight:normal;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">As Sheriff, you’ll get automated emails about various failures. You should always follow up on these emails, and file bugs or close the tree as appropriate.</span></p>
+</li>
+</ol>
+<h2><a name="TOC-How-do-I-deal-with-build-failures-"></a>How do I deal with build failures?</h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">When Sheriffs encounter build failures on the public Chromium OS buildbot, they should follow the following process:</span></p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Update the</span><a href="http://chromiumos-status.appspot.com/" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:#0066cc;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Tree Status Page</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> to say you're working on the problem.</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Example: Tree is throttled (build_packages failure on arm -&gt; johnsheriff)</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">See if you could fix it by reverting a recent patch</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If the build or test failure has a likely culprit, </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">contact the author.  If you can’t, revert!<a href="https://www.chromium.org/developers/tree-sheriffs">Tree Sheriffsi</a></span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Infrastructure failure (repo sync hang, archive build failure, etc)?  </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Contact a <a href="https://www.chromium.org/developers/tree-sheriffs">Trooper</a>!</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:square;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">After contacting a <a href="https://www.chromium.org/developers/tree-sheriffs">Trooper</a>, work with him to file a</span><a href="http://code.google.com/p/chromium-os/issues/list?q=label%253ATreeCloser&amp;order=pri" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:#000099;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">TreeCloser issue</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">.</span></p>
+</li></ul></ul>
+<li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Update the</span><a href="http://chromiumos-status.appspot.com/" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:#0066cc;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Tree Status Page</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> with details on what is broken and who is working on it.</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Example: Tree is throttled (libcros compile error -&gt; jackcommitter, http://crosbug.com/1234).</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Make sure the issue is fixed.</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If the build-breaker is taking more than a 5-10 minutes to land a fix, ask him to revert.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If the build-breaker isn’t responding, perform the revert yourself.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Watch the next build to make sure it completes cleanly.</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Buildbots only send email when they change in status from green to red, and the tree is open. So, if a buildbot is red, it won't send email about failures until it completes successfully at least once.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Sheriffs are responsible for watching buildbots and making sure that people are working on making them green.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If there's any red on the dashboard, the Sheriffs should be watching it closely to make sure that the issues are being fixed.  If there’s not, the Sheriffs should be working to improve the sheriffability of the tree</span></p></li></ul></ol>
+<h2><a name="TOC-What-bugs-do-I-file-and-how-do-I-assign-them-"></a>What bugs do I file, and how do I assign them?</h2>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If a test fails, or a specific component fails to compile, file a bug against that component normally. Assign it to an owner for that component.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If build infrastructure fails, file bug with </span><a href="http://go/cros-build-bug" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">go/cros-build-bug</span></a><span style="font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">, and assign it to the current <a href="http://goto.google.com/cros-infra-deputy">Infrastructure deputy</a>.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1;margin-top:0pt;margin-bottom:0pt"><span style="font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If there is a HW Lab Infrastructure failure (NOT a test failure), </span><a href="http://go/cros-lab-bug" style="text-decoration:none"><span style="font-size:15px;font-family:Arial;color:#1155cc;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">go/cros-lab-bug</span></a><span style="font-size:15px;font-family:Arial;color:#000000;background-color:transparent;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> and assign it to the </span><a href="http://goto.google.com/cros-infra-deputy" style="white-space:pre-wrap;background-color:transparent">Infrastructure deputy</a><span style="white-space:pre-wrap;background-color:transparent">.</span></p>
+</li></ul>
+<h2><a name="TOC-Ahh-the-tree-is-green.-I-can-go-back-to-my-work-right-"></a>Ahh, the tree is green.  I can go back to my work, right?</h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Wrong! </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> When the tree is green, it’s a great time to start investigating and fixing all the niggling things that make it hard to sheriff the tree.</span></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Is there some red-herring of an error message?  Grep the source tree to find out where it’s coming from and make it go away.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Some nice-to-have piece of info to surface in the UI?  Talk to</span><a href="http://chromegw/i/chromeos/chromeos_build_deputy.js"><span style="text-decoration:none;font-size:13px;font-family:Arial;color:rgb(0,0,0);font-weight:normal;font-style:normal;font-variant:normal;vertical-align:baseline;white-space:pre-wrap;background-color:rgb(255,255,255)"> </span></a><a href="http://goto.google.com/cros-infra-deputy"><span style="text-decoration:underline;font-size:13px;font-family:Arial;color:rgb(71,18,100);font-weight:normal;font-style:normal;font-variant:normal;vertical-align:baseline;white-space:pre-wrap;background-color:rgb(255,255,255)">I</span>nfrastructure Deputy</a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> and figure out how to make that happen.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Some test that you wish was written and run in suite:smoke?  Go write it!</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Has the tree been red a lot today?  Get started on your</span><a href="https://sites.google.com/a/google.com/chromeos/resources/tree-closure-postmortems" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">postmortem</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">!</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Still looking for stuff to do?  Try flipping through the</span><a href="https://code.google.com/p/chromium/issues/list?can=2&amp;q=label%3AGardening" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Gardening Tasks</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">.  Feel free to hack on and take any of them!</span></p>
+</li></ul>
+<h2><a name="TOC-How-can-I-pick-a-specific-set-of-changes-to-go-through-a-commit-queue-run-"></a>How can I pick a specific set of changes to go through a commit queue run?</h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">If the tree is broken, and you have a change or set of changes that you believe should fix it, it may be desirable to put just that change or set of changes through the commit queue. This can be accomplished by:</span></p>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Set the tree to </span><span style="font-size:15px;font-weight:bold;vertical-align:baseline;white-space:pre-wrap;background-color:rgb(255,255,0)">Throttled</span><span style="vertical-align:baseline;white-space:pre-wrap">.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:disc;font-size:13px;font-family:Arial;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="vertical-align:baseline;white-space:pre-wrap">Set the Commit-Queue value of the desired CLs to +2 (along with the usual CR+2 and V+1). This will allow the CLs to be picked up by the CQ even when the tree is throttled.</span></p>
+</li></ul>
+<span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">If the CLs pass the commit queue, they will be committed to the tree, and all the usual side-effects of a commit queue run will take place (such as ebuild revbumping and prebuilt generation).</span>
+<h2><a name="TOC-What-should-I-do-if-I-see-a-commit-queue-run-that-I-know-is-doomed-"></a>What should I do if I see a commit-queue run that I know is doomed?</h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If there is a commit queue run that is known to be doomed due to a bad CL and you know which CL is bad, you can </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">manually blame the bad CL</span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> to spare the innocent CLs from being rejected. Go to the Gerrit review page of the bad CL and </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">set verify to -1</span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">. CQ will recognize the gesture and reject only the bad CL(s).</span></p>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If the commit queue run has encountered infrastructure flake and is doomed, most of the time CQ will not reject any CLs (with chromite CLs being the exception).</span></p>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">In other cases where it is not necessary to wait for the full results of the run, you can save developer time and hassle by </span><a href="https://sites.google.com/a/google.com/chromeos/for-team-members/infrastructure/chromeos-admin/manual-cq-intervention" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">aborting the current cq run</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">.</span></p>
+<h2><a name="TOC-How-do-I-deal-with-a-broken-Chrome-"></a>How do I deal with a broken Chrome?</h2><div>If a bug in Chrome escapes the PFQ, you should engage with the Chrome gardener.  He/she will be responsible for finding and then fixing or reverting the Chrome CL that caused the problem.</div><div><br /></div><div>If the Chrome bug is serious enough to be causing failures on the canaries or the CQ, you should temporarily pin Chrome back to the last working version with this procedure:</div><div><ul><li><span style="font-size:10pt;background-color:transparent">Make sure there's a bug filed for the problem you're dealing with.  You'll need the bug number for the next step; call it </span><code style="font-size:10pt;background-color:transparent">$BUG</code><span style="font-size:10pt;background-color:transparent">.</span></li><li><span style="font-size:10pt;background-color:transparent">Get a chroot that's up-to-date with the bug (it must contain the new, broken version of Chrome).  Inside that chroot, run this command:</span></li></ul></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><span style="color:rgb(0,96,0);font-size:13.3333330154419px;line-height:13.3333320617676px;background-color:rgb(239,239,239)"><div class="sites-codeblock sites-codesnippet-block"><code>cros pinchrome --bug $BUG</code></div></span></div></div></blockquote></blockquote><div><ul><li>The command will upload two CLs.  Commit them both to the tree.</li><li><span style="font-size:10pt;background-color:transparent">Once Chrome is fixed, you need to unpin Chrome.  Do that with this command:</span></li></ul></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div class="sites-codeblock sites-codesnippet-block"><code>cros pinchrome --unpin</code></div></div></blockquote></div></blockquote><div><h2><a name="TOC-How-can-I-revert-a-commit-"></a>How can I revert a commit?</h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">If you've found a commit that broke the build, you can revert it using these steps:</span></p>
+<ol style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Find the Gerrit link for the change in question</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a href="http://gerrit.chromium.org/gerrit/#q,status:merged,n,z" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000099;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Gerrit lists recently merged changes</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">. View the change in question.</span></p>
+</li>
+<li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">In some cases (like the PFQ), you can see links to the CL that made it into the build straight from the waterfall.</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Click the “Revert Change” button and fill in the dialog box.</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The dialog box includes some stock info, but </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">you should add on to it</span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">.</span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br />
+</span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">e.g. append a sentence such as: This broke the tree (xxx package on xxx bot).</span></p>
+</li></ul>
+<li dir="ltr" style="list-style-type:decimal;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:bold;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">You are not done. </span><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> This has created an Open change for _you_ go find and submit it.</span></p>
+</li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline">
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Add the author of the change as a reviewer of the revert, but push without an LGTM from the reviewer (just approve yourself and push).</span></p>
+</li></ul>
+</ol>
+<h2><a name="TOC-Help-with-specific-failure-catagories"></a>Help with specific failure catagories</h2>
+<h3><a name="TOC-How-do-I-investigate-VMTest-failures-"></a>How do I investigate VMTest failures?</h3>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div>There are several common reasons why the VMTests fail. First pull up the <u style="font-size:10pt;background-color:transparent">stdio</u><span style="font-size:10pt;background-color:transparent"> link for the VMTest stage, and then check for each of the possibilities below.</span></div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-Auto-test-test-failed"></a>Auto-test test failed</h4>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div><span style="font-size:10pt;background-color:transparent">Once you've got the VMTest stage's stdio output loaded, search for 'Total PASS'. This will get you to the Autotest test summary. You'll see something like</span></div>
+<div>
+<pre style="font-family:Courier New,courier,monotype,monospace;font-size:10px;font-weight:bold"><span style="font-family:Courier New,courier,monotype;font-size:16px;font-weight:normal">Total PASS: 29/33 (87%)</span></pre>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Assuming the number is less than 100%, there was a failure in one of the autotests. Scroll backwards from 'Total PASS' to identify the specific test (or tests) that failed. You'll see something like this:</span></div>
+</div>
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<pre style="text-align:-webkit-auto"><pre style="font-size:12px;white-space:pre-wrap;max-width:80em;padding-left:0.7em">/tmp/cbuildbotXXXXXX/test_harness/all/SimpleTestUpdateAndVerify/&lt;...&gt;/login_CryptohomeMounted            [  FAILED  ]
+<span style="text-align:-webkit-auto;background-color:transparent"><font face="courier new, monospace">/tmp/cbuildbotXXXXXX/test_harness/all/SimpleTestUpdateAndVerify/&lt;...&gt;/</font></span>login_CryptohomeMounted              FAIL: Unhandled JSONInterfaceError: Automation call {'username': 'performancetestaccount@gmail.com', 'password': 'perfsmurf', 'command': 'Login'} received empty response.  Perhaps the browser crashed.</pre></pre>
+</div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">In this case Chrome failed to login for any of the 3 reasons: 1) could not find network, 2) could not get online, 3) could not show webui login prompt. Look for chrome log in /var/log/chrome/chrome, or find someone who works on UI.</div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">(If you're annoyed by the long string before the test name, please consider working on <a href="http://crbug.com/313971" style="color:rgb(71,18,100);outline:none">crbug.com/313971</a>, when you're gardening.)</div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-Crash-detected"></a>Crash detected</h4>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">Sometimes, all the tests will pass, but one or more processes crashed during the test. Not all crashes are failures, as some tests are intended to test the crash system. However, if a problematic crash is detected, the VMTest stdio output will have something like this:</div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<pre style="font-size:12px;white-space:pre-wrap;max-width:80em;padding-left:0.7em;text-align:-webkit-auto">Crashes detected during testing:
+----------------------------------------------------------
+chrome sig 11
+  login_CryptohomeMounted</pre>
+</div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">If there is a crash, proceed to the next section, "How to find test results/crash reports"<a href="https://sites.google.com/" style="color:rgb(71,18,100);outline:none"></a>?</div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-ASAN-error-detected"></a>ASAN error detected</h4>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div>The x86-generic-asan and amd64-generic-asan builders instrument some programs (e.g. Chrome) with code to detect memory access errors. When an error is detected, ASAN prints error information, and terminates the process. Similarly to crashes, it is possible for all tests to pass even though a process terminated.</div>
+<div><br />
+</div>
+<div>If Chrome triggers an ASAN error report, you'll see the message "Asan crash occurred. See asan_logs in Artifacts". As suggested in that message, you should download "asan_logs". See the next section, <span style="font-size:10pt;background-color:transparent">"How to find test results/crash reports" for details on how to download those logs.</span></div>
+<div><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;background-color:transparent">Note: in addition to Chrome, several system daemons (e.g. shill) are built with ASAN instrumentation. However, we don't yet bubble up those errors in the test report. See <a href="http://crbug.com/314678" style="color:rgb(71,18,100);outline:none">crbug.com/314678</a> if you're interested in fixing that.</span></div>
+</div>
+</div>
+</div>
+<h4><a name="TOC-ssh-failed"></a>ssh failed</h4>
+<div style="text-align:start;text-indent:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><span style="font-size:10pt;background-color:transparent">The test framework needs to log in to the VM, in order to do things like execute tests, and download log files. Sometimes, this fails. In these cases, we have no logs to work from, so we need the VM disk image instead.</span></div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><br />
+</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px">You'll know that you're in this case if you see messages like this:</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><br />
+</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px">
+<pre style="font-size:12px;white-space:pre-wrap;max-width:80em;padding-left:0.7em">Connection timed out during banner exchange
+Connection timed out during banner exchange
+Failed to connect to virtual machine, retrying ... </pre>
+</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px">When this happens, look in the build report for "vm_disk" and "vm_image" links. These should be right after the "stdio" link. For example, if you're looking at the <a href="http://chromegw/i/chromeos/builders/lumpy%20nightly%20chrome%20PFQ/builds/3977" style="color:rgb(71,18,100);outline:none" target="_blank">build report</a> for "lumpy nightly chrome PFQ Build #3977" :</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><br />
+</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px">
+<ol style="list-style-type:decimal;font-family:Verdana,Cursor;font-size:10px;font-weight:bold"><li>
+<div style="color:rgb(255,255,255);border-color:rgb(194,157,70);background-color:rgb(255,195,67)"><a href="http://chromegw/i/chromeos/builders/lumpy%20nightly%20chrome%20PFQ/builds/3977/steps/VMTest%20%28attempt%201%29" style="color:rgb(68,68,68);outline:none">VMTest (attempt 1)</a> VMTest (attempt 1) <span style="float:right">( 19 mins, 5 secs )</span></div>
+<ol style="list-style-type:decimal"><li style="background-color:rgb(238,238,238)"><a href="http://chromegw/i/chromeos/builders/lumpy%20nightly%20chrome%20PFQ/builds/3977/steps/VMTest%20%28attempt%201%29/logs/stdio" style="color:rgb(68,68,68);outline:none">stdio</a></li>
+<li><a href="https://storage.cloud.google.com/chromeos-image-archive/lumpy-chrome-pfq/R33-5080.0.0-rc1/failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_disk.bin.8Fet3d.tar" style="color:rgb(68,68,68);outline:none">vm_disk: failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_disk.bin.8Fet3d.tar</a></li>
+<li style="background-color:rgb(238,238,238)"><a href="https://storage.cloud.google.com/chromeos-image-archive/lumpy-chrome-pfq/R33-5080.0.0-rc1/failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_mem.bin.TgS3dn.tar" style="color:rgb(68,68,68);outline:none">vm_memory: failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_mem.bin.TgS3dn.tar</a></li>
+<li><a href="https://storage.cloud.google.com/chromeos-image-archive/lumpy-chrome-pfq/R33-5080.0.0-rc1/vm_test_results_1.tgz" style="color:rgb(68,68,68);outline:none">vm_test_results_1.tgz</a></li>
+</ol>
+</li>
+<li>
+<div style="color:rgb(255,255,255);border-color:rgb(167,114,114);background-color:rgb(233,128,128)"><a href="http://chromegw/i/chromeos/builders/lumpy%20nightly%20chrome%20PFQ/builds/3977/steps/VMTest%20%28attempt%202%29" style="color:rgb(68,68,68);outline:none">VMTest (attempt 2)</a> VMTest (attempt 2) <span style="float:right">( 36 mins, 29 secs )</span></div>
+<ol style="list-style-type:decimal"><li style="background-color:rgb(238,238,238)"><a href="http://chromegw/i/chromeos/builders/lumpy%20nightly%20chrome%20PFQ/builds/3977/steps/VMTest%20%28attempt%202%29/logs/stdio" style="color:rgb(68,68,68);outline:none">stdio</a></li>
+<li><a href="https://storage.cloud.google.com/chromeos-image-archive/lumpy-chrome-pfq/R33-5080.0.0-rc1/failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_disk.bin.uvzLqx.tar" style="color:rgb(68,68,68);outline:none">vm_disk: failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_disk.bin.uvzLqx.tar</a></li>
+<li style="background-color:rgb(238,238,238)"><a href="https://storage.cloud.google.com/chromeos-image-archive/lumpy-chrome-pfq/R33-5080.0.0-rc1/failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_mem.bin.6lSD2q.tar" style="color:rgb(68,68,68);outline:none">vm_memory: failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_mem.bin.6lSD2q.tar</a></li>
+<li><a href="https://storage.cloud.google.com/chromeos-image-archive/lumpy-chrome-pfq/R33-5080.0.0-rc1/vm_test_results_2.tgz" style="color:rgb(68,68,68);outline:none">vm_test_results_2.tgz</a></li>
+</ol>
+</li>
+</ol>
+</div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><span style="font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><span style="font-size:10pt;background-color:transparent">Download the disk and memory images, and then resume the VM using kvm on your workstation.</span></div>
+<p style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><font face="courier new, monospace">$ tar --use-compress-program=pbzip2 -xf \<br />
+</font><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">    </font><span style="font-size:10pt;background-color:transparent"><font face="courier new, monospace">failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_disk.bin.8Fet3d.tar</font></span></p>
+<p style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><font face="courier new, monospace">$ tar </font><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent">--use-compress-program=pbzip2 -x</span><span style="font-size:10pt;background-color:transparent"><font face="courier new, monospace">f \<br />
+</font></span><span style="font-size:10pt;background-color:transparent"><font face="courier new, monospace">    failed_SimpleTestUpdateAndVerify_1_update_chromiumos_qemu_mem.bin.TgS3dn.tar</font></span></p>
+<p style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><font face="courier new, monospace">$ cros_start_vm \<br />
+</font><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">    --image_path=</font><span style="font-size:10pt;background-color:transparent"><font face="courier new, monospace">chromiumos_qemu_disk.bin.8Fet3d \<br />
+</font></span><span style="font-size:10pt;font-family:courier new,monospace;background-color:transparent">    --mem_path=</span><span style="font-size:10pt;background-color:transparent"><font face="courier new, monospace">chromiumos_qemu_mem.bin.TgS3dn</font></span></p>
+<p style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><font face="arial, sans-serif">You should now have a VM which has resumed at exactly the point where the test framework determined that it could not connect.</font></p>
+<p style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px"><span style="font-family:arial,sans-serif;font-size:10pt;background-color:transparent">Note that, at this time, we don't have an easy way to mount the VM filesystem, without booting it. If you're interested in improving that, please see </span><a href="http://crbug.com/313484" style="color:rgb(71,18,100);outline:none;font-family:arial,sans-serif;font-size:10pt;background-color:transparent">crbug.com/313484</a><span style="font-family:arial,sans-serif;font-size:10pt;background-color:transparent">.)</span></p><p><span style="color:rgb(0,0,0);font-family:arial,sans-serif;font-size:10pt;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-transform:none;white-space:normal;word-spacing:0px;background-color:transparent">For more information about troubleshooting VMs, see <a href="http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/running-chromeos-image-under-virtual-machines">how to run Chrome OS image under VMs</a>.</span></p>
+</div>
+</div>
+</div>
+</div>
+<h3><a name="TOC-How-to-find-test-results-crash-reports-"></a>How to find test results/crash reports?</h3>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto"></div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">The complete results from VMTest runs are available on googlestorage, by clicking the [ Artifacts ] link in-line on the waterfall display in the report section:</div>
+</div>
+</div>
+</div>
+<p><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/Screenshot.png?attredirects=0" imageanchor="1" style="color:rgb(71,18,100);outline:none;border-bottom-style:none;background:none transparent"><img border="0" src="https://www.chromium.org/_/rsrc/1321031439524/developers/tree-sheriffs/sheriff-details-chromium-os/Screenshot.png" style="border:0px;padding:0px" /></a></p>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;display:block;margin-right:auto;text-align:left">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<div>From there, you should see a file named chrome.*.dmp.txt that contains the crash log. Example</div>
+<div><br />
+</div>
+<div>
+<div style="display:block;text-align:left"></div>
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/tree-sheriffs/sheriff-details-chromium-os/crash-example.png?attredirects=0" imageanchor="1" style="color:rgb(71,18,100);outline:none;border-bottom-style:none;background:none"><img border="0" src="https://www.chromium.org/_/rsrc/1322696886966/developers/tree-sheriffs/sheriff-details-chromium-os/crash-example.png" style="border:0px;padding:0px" /></a></div>
+</div>
+<div><br />
+</div>
+<div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<div style="text-align:-webkit-auto"><font face="Arial" size="2"><span style="white-space:pre-wrap">If you see a stack trace here, search for issues with a similar call stack and add the google storage link, or file a new issue.</span></font></div>
+<div><font face="Arial" size="2"><span style="white-space:pre-wrap">
+</span></font></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3><a name="TOC-How-do-I-extract-stack-traces-manually-"></a>How do I extract stack traces manually?</h3>
+<div style="font-size:13px;font-weight:normal;line-height:normal">
+<div style="background-color:transparent">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">Normally, you should never need to extract stack traces manually, because they will be included in the Artifacts link, as described above. However, if you need to, here's how:</div>
+</div>
+<div style="margin-top:5px;margin-bottom:0px;margin-right:auto">
+<ol style="text-align:-webkit-auto"><li style="list-style-type:decimal;font-family:Arial;vertical-align:baseline;background-color:transparent"><font size="2"><span style="white-space:pre-wrap">Download and extract the test_results.tgz file from the artifact (above), and find the breakpad .dmp file.</span></font></li>
+<li style="list-style-type:decimal;font-family:Arial;vertical-align:baseline;background-color:transparent"><span style="font-size:small;white-space:pre-wrap;background-color:transparent">Find the build associated with your crash and download the file debug.tgz</span></li>
+<ol><li style="list-style-type:decimal;font-family:Arial;vertical-align:baseline;background-color:transparent"><span style="font-size:small;white-space:pre-wrap;background-color:transparent">Generally the debug.tgz in the artifacts should be sufficient</span></li>
+<li style="list-style-type:decimal;font-family:Arial;vertical-align:baseline;background-color:transparent"><span style="font-size:small;white-space:pre-wrap;background-color:transparent">For official builds, see <a href="https://goto.google.com/chromeos-images">go/chromeos-images</a></span></li>
+<li style="list-style-type:decimal;font-family:Arial;vertical-align:baseline;background-color:transparent"><span style="font-size:small;white-space:pre-wrap;background-color:transparent">TODO: examples of how to find this for cautotest and trybot(?) failures</span></li>
+</ol>
+<li style="list-style-type:decimal;font-family:Arial;vertical-align:baseline;background-color:transparent"><span style="vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font size="2">Untar (tar xzf) this in a directory under the chroot, e.g. ~/chromeos/src/scripts/debug</font></span></li>
+<li style="list-style-type:decimal;vertical-align:baseline;background-color:transparent"><span style="font-family:Arial;font-size:small;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">From </span><span style="font-family:Arial;font-size:small;font-weight:bold;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">inside the chroot</span><span style="font-size:small;vertical-align:baseline;white-space:pre-wrap;background-color:transparent"><font face="Arial">, run the following:
+</font></span><span style="font-size:small;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">minidump_stackwalk </span><span style="font-size:small;font-family:Courier New;font-style:italic;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">[filename]</span><span style="font-size:small;font-family:Courier New;vertical-align:baseline;white-space:pre-wrap;background-color:transparent">.dmp debug/breakpad &gt; stack.txt 2&gt;/dev/null</span></li>
+<li style="list-style-type:decimal;vertical-align:baseline;background-color:transparent"><span style="font-size:small;white-space:pre-wrap;font-family:Arial;background-color:transparent">stack.txt should now contain a call stack!</span></li>
+</ol>
+<div style="text-align:-webkit-auto"><font face="Arial" size="2"><span style="white-space:pre-wrap">If you successfully retrieve a stack trace, search for issues with a similar call stack and add the google storage link, or file a new issue.</span></font></div>
+<div style="text-align:-webkit-auto"><font face="Arial" size="2"><span style="white-space:pre-wrap"><br />
+</span></font></div>
+<div style="text-align:-webkit-auto"><font face="Arial" size="2"><span style="white-space:pre-wrap">Note that in addition to breakpad dmp files, the test_results.tgz also has raw linux core files.  These can be loaded into gdb and can often produce better stack traces than minidump_stackwalk (eg. expanding all inlined frames).</span></font></div>
+</div>
+</div>
+</div>
+</div>
+<h3><a name="TOC-A-buildbot-slave-appears-to-be-down-purple-.-What-do-I-do-"></a>A buildbot slave appears to be down (purple). What do I do?</h3>
+<p><span style="font-weight:normal">Probably nothing. Most of the time, when a slave is purple, that just indicates that it is restarting. Try wait a few minutes and it should go green on its own. If the slave doesn't restart on its own, contact the Deputy and ask them to fix the bot.</span></p>
+<h3><a name="TOC-platform_ToolchainOptions-autotest-is-failing.-What-do-I-do-"></a>platform_ToolchainOptions autotest is failing. What do I do?</h3>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">This test searches through all ELF binaries on the image and identifies binaries that have not been compiled with the correct hardened flags.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">
+</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">To find out what test is failing and how, look at the *.DEBUG log in your autotest directory. Do a grep -A10 FAILED *.DEBUG. You will find something like this:</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#006000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">05/08 09:23:33 DEBUG|platform_T:0083| Test Executable Stack 2 failures, 1 in whitelist, 1 in filtered, 0 new passes FAILED:</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#006000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">/opt/google/chrome/pepper/libnetflixplugin2.so</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#006000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">05/08 09:23:33 ERROR|platform_T:0250| Test Executable Stack 1 failures</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#006000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">FAILED:</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#006000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">/path/to/binary</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br />
+<br />
+</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">This means that the test called "Executable Stack" reported 2 failures, there is one entry in the whitelist of this test, and after filtering the failures through the whitelist, there is still a file. The name of the file is /path/to/binary.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">The "new passes" indicate files that are in the whitelist but passed this time.</span></p>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">To find the owner who wrote this test, do a git blame on this file:</span><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/autotest.git;a=blob;f=client/site_tests/platform_ToolchainOptions/platform_ToolchainOptions.py;h=c1ab0c275a5995c2ad62eb9dd8ba677b5d10e5a2;hb=HEAD" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> </span><span style="font-size:13px;font-family:Arial;color:#471264;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">http://git.chromium.org/gitweb/?p=chromiumos/third_party/autotest.git;a=blob;f=client/site_tests/platform_ToolchainOptions/platform_ToolchainOptions.py;h=c1ab0c275a5995c2ad62eb9dd8ba677b5d10e5a2;hb=HEAD</span></a><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"> and grep for the test name ("Executable Stack" in this case).</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap"><br />
+</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;color:#000000;background-color:#ffffff;font-weight:normal;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Find the change that added the new binary that fails the test, or changed compiler options for a package such that the test now fails, and revert it.  File an issue on the author with the failure log, and CC the owner of the test (found by git blame above).</span></p>
+<h2><a name="TOC-How-do-I-update-sheriff-rotations-change-timezones-add-remove-people-"></a>How do I update sheriff rotations (change[timezones]/add/remove people)?</h2><p>The sheriff rotations are maintained by hand in <a href="https://uberchromegw.corp.google.com/viewvc/chrome-internal/trunk/tools/build/scripts/tools/sheriff/rotations/">https://uberchromegw.corp.google.com/viewvc/chrome-internal/trunk/tools/build/scripts/tools/sheriff/rotations/</a>. Feel free to upload a CL for the chromeos json files :).<br />Note: Chrome does not use repo, so you'll need to use <a href="https://www.chromium.org/developers/contributing-code">git cl</a> to upload CLs.</p><p>Alternatively, <a href="https://code.google.com/p/chromium/issues/entry?template=Build%20Infrastructure">file a bug</a> for the Infra team, and someone will be able to help you out. List the usernames and which rotation you want them added to/removed from.</p><h2><a name="TOC-Tips-and-Tricks"></a>Tips and Tricks</h2>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><a href="https://www.chromium.org/developers/useful-extensions" style="text-decoration:none"><span style="font-size:13px;font-family:Arial;color:rgb(71,18,100);text-decoration:underline;vertical-align:baseline;white-space:pre-wrap">Install helpful extensions</span></a><span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">.</span></p>
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">You can setup specific settings in the buildbot frontend so that you are watching what you want and also having it refresh as you want it.</span></p>
+<br />
+<p dir="ltr" style="line-height:1.15;margin-top:0pt;margin-bottom:0pt"><span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">Navigate to the buildbot frontend you are watching and click on </span><span style="font-size:13px;font-family:Arial;font-weight:bold;font-style:italic;vertical-align:baseline;white-space:pre-wrap">customize</span><span style="font-size:13px;font-family:Arial;font-style:italic;vertical-align:baseline;white-space:pre-wrap">, </span><span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">in the upper left corner. From there you can select what builds to watch and how long between refreshes you want to wait.</span></p>
+<br />
+<span style="font-size:13px;font-family:Arial;vertical-align:baseline;white-space:pre-wrap">If looking at the logs in your browser is painful, you can actually vim the log's URL and vim will wget it and put you in a vim session to view it.</span>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(4):</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-chromium-os/commit-queue-overview" dir="ltr">Chromium OS Commit Queue Overview</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-chromium-os/pre-flight-queue-faq" dir="ltr">Pre Flight Queue FAQ</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-chromium-os/sheriff-faq-chromium-os-asan-bots" dir="ltr">Sheriff FAQ: Chromium OS ASAN bots</a>
+</span>
+<span>
+<a href="/developers/tree-sheriffs/sheriff-details-chromium-os/sheriff-log-chromium-os" dir="ltr">Sheriff Log: Chromium OS</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/tree-sheriffs/sheriff-details-chromium-os">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9lg4Fo4a0mbyne8WbLW8-MbpAnjOebebzlW1xmiVvWMC_EyI4rphtXAwfqeI2sOT6DBiHNJrjMjLvTK8SDggO9xeRiysdBXSqVJkgc75piaUnqv31/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

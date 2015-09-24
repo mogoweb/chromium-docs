@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="http://www.chromium.org/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/spdy","deleted":false,"title":"SPDY","dir":"ltr"},{"path":"/spdy/spdy-whitepaper","deleted":false,"title":"SPDY: An experimental protocol for a faster web","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/spdy/spdy-whitepaper\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/spdy","parentWuid":"wuid:gx:460e62d5b6ba0121","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"SPDY: An experimental protocol for a faster web","locale":"en","wuid":"wuid:gx:60436910fe81f90e","revision":22,"path":"/spdy/spdy-whitepaper","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"spdy-whitepaper","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="SPDY: An experimental protocol for a faster web - The Chromium Projects" />
+<meta itemprop="name" content="SPDY: An experimental protocol for a faster web - The Chromium Projects" />
+<meta property="og:title" content="SPDY: An experimental protocol for a faster web - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="http://www.chromium.org/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>SPDY: An experimental protocol for a faster web - The Chromium Projects</title>
+<meta itemprop="image" content="http://www.chromium.org/_/rsrc/1258490355439/spdy/spdy-whitepaper/soarjOjSeS5hoFYvjtAnxCg.png" />
+<meta property="og:image" content="http://www.chromium.org/_/rsrc/1258490355439/spdy/spdy-whitepaper/soarjOjSeS5hoFYvjtAnxCg.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="http://www.chromium.org/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="http://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../Home.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../chromium-os.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="http://www.chromium.org/spdy" dir="ltr">SPDY</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">SPDY: An experimental protocol for a faster web</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span style="font-family:Verdana">
+<h2 style="font-size:14pt"><a name="TOC-Executive-summary"></a>Executive summary</h2>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2">As part of the <a href="http://code.google.com/speed/" title="&quot;Let's make the web faster&quot;">"Let's make the web faster"</a> initiative, we are experimenting with alternative protocols to help reduce the latency of web pages. One of these experiments is SPDY (pronounced "SPeeDY"), an application-layer protocol for transporting content over the web, designed specifically for minimal latency.  In addition to a specification of the protocol, we have developed a SPDY-enabled Google Chrome browser and open-source web server. In lab tests, we have compared the performance of these applications over HTTP and SPDY, and have observed up to 64% reductions in page load times in SPDY. We hope to engage the open source community to contribute ideas, feedback, code, and test results, to make SPDY the next-generation application protocol for a faster web. <br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<h2 style="font-size:14pt"><a name="TOC-Background:-web-protocols-and-web-latency"></a>Background: web protocols and web latency</h2>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font face="Verdana"><font><span style="background-color:rgb(255,255,255)"><font size="2">Today, HTTP and TCP are the protocols of the web.  TCP is the generic, reliable transport protocol, providing guaranteed delivery, duplicate suppression, in-order delivery, flow control, congestion avoidance and other transport features.  HTTP is the application level protocol providing basic request/response semantics. While we believe that there may be opportunities to improve latency at the transport layer, our initial investigations have focussed on the application layer, HTTP. </font></span></font></font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2"><br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font face="Verdana"><font><span style="background-color:rgb(255,255,255)"><font size="2">Unfortunately, HTTP was not particularly designed for latency.  Furthermore, the web pages transmitted today are significantly different from web pages 10 years ago and demand improvements to HTTP that could not have been anticipated when HTTP was developed. The following are some of the features of HTTP that inhibit optimal performance:</font></span></font></font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px"><font size="2">Single request per connection. Because HTTP can only fetch one resource at a time (HTTP pipelining helps, but still enforces only a FIFO queue), a server delay of 500 ms prevents reuse of the TCP channel for additional requests.  Browsers work around this problem by using multiple connections.  Since 2008, most browsers have finally moved from 2 connections per domain to 6</font>. </li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">Exclusively client-initiated requests. In HTTP, only the client can initiate a request. Even if the server knows the client needs a resource, it has no mechanism to inform the client and must instead wait to receive a request for the resource from the client.</font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">Uncompressed request and response headers. Request headers today vary in size from ~200 bytes to over 2KB.  As applications use more cookies and user agents expand features, typical header sizes of 700-800 bytes is common.</font><font size="2"> <font size="2">For modems or ADSL connections, in which the uplink bandwidth is fairly low, this latency can be significant. </font>Reducing the data in headers could directly improve the serialization latency to send requests.  </font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">Redundant headers. In addition, several headers are repeatedly sent across requests on the same channel. However, headers such as the User-Agent, Host, and Accept* are generally static and do not need to be resent.</font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">Optional data compression. HTTP uses optional compression encodings for data. Content should always be sent in a compressed format. </font></li></ul>
+<h3 style="font-size:12pt"><a name="TOC-Previous-approaches"></a>Previous approaches</h3><span style="font-family:Verdana">
+<div><span style="font-size:small">SPDY is not the only research to make HTTP faster. </span><span style="font-family:Verdana">There have been other proposed solutions to web latency, mostly at the level of the transport or session layer:</span></div></span>
+<div style="margin-top:0px;margin-bottom:0px">
+<ul><li><a href="http://www.sctp.org/" rel="nofollow" style="color:rgb(85,26,139)" target="_blank" title="Stream Control Transmission Protocol"><font size="2">Stream Control Transmission Protocol</font></a><font size="2"> (SCTP) -- a transport-layer protocol to replace TCP, which provides multiplexed streams and stream-aware congestion control.</font></li><li><a href="http://tools.ietf.org/html/draft-natarajan-http-over-sctp-00" rel="nofollow" target="_blank"><span style="font-size:small">HTTP over SCTP</span></a><span style="font-size:small"> -- a proposal for running HTTP over SCTP. <a href="http://www.cis.udel.edu/%7Eleighton/" rel="nofollow" target="_blank">Comparison of HTTP Over SCTP and TCP in High Delay Networks</a> describes a research study comparing the performance over both transport protocols. </span><a href="http://tools.ietf.org/html/draft-natarajan-http-over-sctp-00" rel="nofollow" target="_blank"></a></li><li><font size="2"><a href="http://pdos.csail.mit.edu/uia/sst/">Structured Stream Transport</a></font><font size="2"> (SST) -- </font><span style="font-family:Verdana"><span style="font-family:Verdana"><span style="font-size:small">a protocol which invents "structured streams": lightweight, independent streams to be carried over a common transport. </span></span></span><font size="2">It replaces TCP or runs on top of UDP.</font></li><li><a href="http://www.w3.org/Protocols/MUX/" rel="nofollow" target="_blank" title="Simon Spero's MUX"><font size="2">MUX</font></a><font size="2"> and </font><a href="http://www.w3.org/TR/WD-mux" rel="nofollow" target="_blank" title="Jim Getty's SMUX"><font size="2">SMUX</font></a><font size="2"> -- intermediate-layer protocols (in between the transport and application layers) that provide multiplexing of streams. They were proposed years ago at the same time as HTTP/1.1. </font>
+</li></ul></div><div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+These proposals offer solutions to some of the web's latency problems, but not all. The problems inherent in HTTP (compression, prioritization, etc.) should still be fixed, regardless of the underlying transport protocol. In any case, in practical terms, changing the transport is very difficult to deploy. Instead, we believe that there is much low-hanging fruit to be gotten by addressing the shortcomings at the application layer. Such an approach requires minimal changes to existing infrastructure, and (we think) can yield significant performance gains.
+<h2 style="font-size:14pt"><a name="TOC-Goals-for-SPDY"></a>Goals for SPDY</h2>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font face="Verdana"><font><span style="background-color:rgb(255,255,255)"><font size="2">The SPDY project defines and implements an application-layer protocol for the web which greatly reduces latency. The high-level goals for SPDY are:</font></span></font></font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px"><font size="2">To target a 50% reduction in page load time. Our preliminary results have come close to this target (see below).</font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">To minimize deployment complexity. SPDY uses TCP as the underlying transport layer, so requires no changes to existing networking infrastructure.  </font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">To avoid the need for any changes to content by website authors. The only changes required to support SPDY are in the client user agent and web server applications.</font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2"><font size="2">To bring together like-minded parties interested in exploring protocols as a way of solving the latency problem. We hope to develop this new protocol in partnership with the open-source community and industry specialists.</font></font></li></ul>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2"><br />
+</font></div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2">Some specific technical goals are:</font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px">
+<p style="margin:0px;direction:inherit">To allow many concurrent HTTP requests to run across a single TCP session.</p>
+</li>
+<li style="margin-top:0px;margin-bottom:0px">
+<p style="margin:0px;direction:inherit">To reduce the bandwidth currently used by HTTP by compressing headers and eliminating unnecessary headers.</p>
+</li>
+<li style="margin-top:0px;margin-bottom:0px">
+<p style="margin:0px;direction:inherit">To define a protocol that is easy to implement and server-efficient. We hope to reduce the complexity of HTTP by cutting down on edge cases and defining easily parsed message formats.</p>
+</li>
+<li style="margin-top:0px;margin-bottom:0px">To make SSL the underlying transport protocol, for better security and compatibility with existing network infrastructure. Although SSL does introduce a latency penalty, we believe that the long-term future of the web depends on a secure network connection. In addition, the use of SSL is necessary to ensure that communication across existing proxies is not broken.  </li>
+<li style="margin-top:0px;margin-bottom:0px">To enable the server to initiate communications with the client and push data to the client whenever possible.</li></ul>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b><font size="4">SPDY design and features</font></b></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<p style="margin:0px;direction:inherit">SPDY adds a session layer atop of SSL that allows for multiple concurrent, interleaved streams over a single TCP connection. </p>
+<p style="margin:0px;direction:inherit"><br />
+</p>
+<p style="margin:0px;direction:inherit">The usual HTTP GET and POST message formats remain the same; however, SPDY specifies a new framing format for encoding and transmitting the data over the wire.</p><p style="margin:0px;direction:inherit"><br /></p>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"> <div style="display:block;text-align:left"><a href="spdy-whitepaper/soarjOjSeS5hoFYvjtAnxCg.png%3Fattredirects=0" imageanchor="1"><img border="0" src="../_/rsrc/1258490355439/spdy/spdy-whitepaper/soarjOjSeS5hoFYvjtAnxCg.png" /></a></div></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br /></div><div style="margin-top:0px;margin-bottom:0px;direction:inherit">Streams are bi-directional, i.e. can be initiated by the client and server. </div>
+<p style="margin:0px;direction:inherit"><br />
+</p>
+<p style="margin:0px;direction:inherit">SPDY aims to achieve lower latency through basic (always enabled) and advanced (optionally enabled) features.</p>
+<h3 style="font-size:12pt"><a name="TOC-Basic-features"></a>Basic features</h3>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"></ul>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font color="#3399ff" face="Arial, sans-serif"><font color="#000000" face="Verdana" size="3"><font size="2">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px"><i><b>Multiplexed streams</b></i></li></ul>
+<blockquote style="border-style:none;border-width:medium;margin:0pt 0pt 0pt 40px;padding:10px">
+<p style="margin:0px;direction:inherit">SPDY allows for unlimited concurrent streams over a single TCP connection. Because requests are interleaved on a single channel, the efficiency of TCP is much higher: fewer network connections need to be made, and fewer, but more densely packed, packets are issued.</p>
+</blockquote>
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px">
+<p style="margin:0px;direction:inherit"><i><b>Request prioritization</b></i></p>
+<p style="margin:0px;direction:inherit"><br />
+</p>
+<p style="margin:0px;direction:inherit">Although unlimited parallel streams solve the serialization problem, they introduce another one: if bandwidth on the channel is constrained,<font size="2"> the client may block requests for fear of clogging the channel. To overcome this problem, SPDY implements request priorities</font><font size="3"><font size="2">: the client can request as many items as it wants from the server, and assign a priority to each request. This prevents the network channel from being <font size="2">congested with non-critical resources when a high priority request is pending</font><font size="2">. </font></font></font></p>
+<p style="margin:0px;direction:inherit"><br />
+</p>
+</li>
+<li style="margin-top:0px;margin-bottom:0px"><i><b>HTTP header compression</b></i></li></ul>
+<blockquote style="border-style:none;border-width:medium;margin:0pt 0pt 0pt 40px;padding:10px">SPDY compresses request and response HTTP headers, resulting in fewer packets and fewer bytes transmitted.<br />
+</blockquote>
+<h3 style="font-size:12pt"><a name="TOC-Advanced-features"></a>Advanced features</h3>
+</div>
+</font></font></font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<p style="margin:0px;direction:inherit"><font size="2">In addition, SPDY provides an advanced feature, <i>server-initiated streams</i>. Server-initiated streams can be used to deliver content to the client without the client needing to ask for it. This option is configurable by the web developer in two ways:</font></p>
+<p style="margin:0px;direction:inherit"><font size="2"><br />
+</font></p>
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px"><font size="2"><i><b>Server push</b></i><b>.</b> </font></li></ul>
+<blockquote style="border-style:none;border-width:medium;margin:0pt 0pt 0pt 40px;padding:10px"><font size="2">SPDY experiments with an option for servers to push data to clients via the X-Associated-Content header. This header informs the client that the server is pushing a resource to the client before the client has asked for it.  For initial-page downloads (e.g. the first time a user visits a site), this can vastly enhance the user experience.<br />
+<br />
+</font></blockquote>
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px"><font size="2"><i><b>Server hint</b></i>. </font></li></ul>
+<blockquote style="border-style:none;border-width:medium;margin:0pt 0pt 0pt 40px;padding:10px"><font size="2">Rather than automatically pushing resources to the client, the server uses the </font><font size="2"><font size="2">X-Subresources header to <i>suggest</i> to the client that it should ask for specific resources, in cases where the server knows in advance of the client that those resources will be needed. However, the server will still wait for the client request before sending the content.</font></font><font size="2">  Over slow links, this option can reduce the time it takes for a client to discover it needs a resource by hundreds of milliseconds, and may be better for non-initial page loads.</font></blockquote>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2"><br />
+</font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2">For technical details, see the <a href="spdy-protocol/spdy-protocol-draft1.html" target="_blank">SPDY draft protocol specification</a>. </font></div>
+</div>
+<h2 style="font-size:14pt"><a name="TOC-SPDY-implementation:-what-we-ve-built"></a>SPDY implementation: what we've built</h2>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">This is what we have built:</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin:0px 0pt 0px 1.5em"><li style="margin:0px 0pt">
+<p style="margin:0px;direction:inherit">A high-speed, in-memory server which can serve both HTTP and SPDY responses efficiently, over TCP and SSL. We will be releasing this code as open source in the near future.</p>
+</li>
+<li style="margin:0px 0pt;text-align:left">
+<p style="margin:0px;direction:inherit">A modified Google Chrome client which can use HTTP or SPDY, over TCP and SSL. The source code is at <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/spdy/">http://src.chromium.org/viewvc/chrome/trunk/src/net/spdy/</a>. (Note that code currently uses the internal code name of "flip"; this will change in the near future.)<br />
+</p>
+</li>
+<li style="margin:0px 0pt;text-align:left">
+<p style="margin:0px;direction:inherit">A testing and benchmarking infrastructure that verifies pages are replicated with high fidelity. In particular, we ensure that SPDY preserves origin server headers, content encodings, URLs, etc. We will be releasing our testing tools, and instructions for reproducing our results, in the near future.<br />
+</p>
+</li></ul>
+</div>
+</div>
+</div>
+<h3 style="font-size:12pt"><a name="TOC-Preliminary-results"></a>Preliminary results</h3>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">With the prototype Google Chrome client and web server that we developed, we ran a number of lab tests to benchmark SPDY performance against that of HTTP.<br />
+<br />
+We downloaded 25 of the "top 100" websites over simulated home network connections, with 1% packet loss. We ran the downloads 10 times for each site, and calculated the average page load time for each site, and across all sites. The results show a speedup over HTTP of 27% - 60% in page load time over plain TCP (without SSL), and 39% - 55% over SSL.<br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><i>Table 1: Average page load times for top 25 websites</i></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<table border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="147" style="font-size:1em;line-height:inherit;border-collapse:collapse" width="850">
+<tbody>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%"><br />
+</td>
+<td colspan="2" style="direction:inherit">DSL 2 Mbps downlink, 375 kbps uplink</td>
+<td colspan="2" style="direction:inherit">Cable 4 Mbps downlink, 1 Mbps uplink</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%"><br />
+</td>
+<td style="direction:inherit" width="20%"><b>A</b><b>verage ms</b></td>
+<td style="direction:inherit" width="20%"><b>Speedup</b></td>
+<td style="direction:inherit" width="20%"><b>Average ms</b></td>
+<td style="direction:inherit" width="20%"><b>Speedup</b></td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">HTTP</td>
+<td style="direction:inherit" width="20%">3111.916</td>
+<td style="direction:inherit" width="20%"><br />
+</td>
+<td style="direction:inherit" width="20%">2348.188</td>
+<td style="direction:inherit" width="20%"><br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">SPDY basic multi-domain* connection / TCP<br />
+</td>
+<td style="direction:inherit" width="20%">2242.756<br />
+</td>
+<td style="direction:inherit" width="20%">27.93%<br />
+</td>
+<td style="direction:inherit" width="20%">1325.46<br />
+</td>
+<td style="direction:inherit" width="20%">43.55%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">SPDY basic single-domain* connection / TCP<br />
+</td>
+<td style="direction:inherit" width="20%">1695.72</td>
+<td style="direction:inherit" width="20%">45.51%</td>
+<td style="direction:inherit" width="20%">933.836</td>
+<td style="direction:inherit" width="20%">60.23%</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">SPDY single-domain + server push / TCP<br />
+</td>
+<td style="direction:inherit" width="20%">1671.28</td>
+<td style="direction:inherit" width="20%">46.29%</td>
+<td style="direction:inherit" width="20%">950.764</td>
+<td style="direction:inherit" width="20%">59.51%</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">SPDY single-domain + server hint / TCP<br />
+</td>
+<td style="direction:inherit" width="20%">1608.928</td>
+<td style="direction:inherit" width="20%">48.30%</td>
+<td style="direction:inherit" width="20%">856.356</td>
+<td style="direction:inherit" width="20%">63.53%</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">SPDY basic single-domain / SSL<br />
+</td>
+<td style="direction:inherit" width="20%">1899.744<br />
+</td>
+<td style="direction:inherit" width="20%">38.95%<br />
+</td>
+<td style="direction:inherit" width="20%">1099.444<br />
+</td>
+<td style="direction:inherit" width="20%">53.18<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="20%">SPDY single-domain + client prefetch / SSL<br />
+</td>
+<td style="direction:inherit" width="20%">1781.864<br />
+</td>
+<td style="direction:inherit" width="20%">42.74%<br />
+</td>
+<td style="direction:inherit" width="20%">1047.308<br />
+</td>
+<td style="direction:inherit" width="20%">55.40%<br />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br />
+* In many cases, SPDY can stream all requests over a single connection, regardless of the number of different domains from which requested resources originate. This allows for full parallelization of all downloads. However, in some cases, it is not possible to collapse all domains into a single domain. In this case, SPDY must still open a connection for each domain, incurring some initial RTT overhead for each new connection setup. We ran the tests in both modes: collapsing all domains into a single domain (i.e. one TCP connection); and respecting the actual partitioning of the resources according to the original multiple domains (= one TCP connection per domain). We include the results for both the strict "single-domain" and "multi-domain" tests; we expect real-world results to lie somewhere in the middle.</div>
+<h4 style="font-size:10pt"><a name="TOC-The-role-of-header-compression"></a>The role of header compression</h4>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">Header compression resulted in an ~88% reduction in the size of request headers and an ~85% reduction in the size of response headers. On the lower-bandwidth DSL link, in which the upload link is only 375 Kbps, request header compression in particular, led to significant page load time improvements for certain sites (i.e. those that issued large number of resource requests). We found a reduction of 45 - 1142 ms in page load time simply due to header compression.</div>
+<h4 style="font-size:10pt"><a name="TOC-The-role-of-packet-loss-and-round-trip-time-RTT-"></a>The role of packet loss and round-trip time (RTT)</h4>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">We did a second test run to determine if packet loss rates and round-trip times (RTTs) had an effect on the results. For these tests, we measured only the cable link, but simulated variances in packet loss and RTT. </div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">We discovered that SPDY's latency savings increased proportionally with increases in packet loss rates, up to a 48% speedup at 2%. (The increases tapered off above the 2% loss rate, and completely disappeared above 2.5%. In the real world, packets loss rates are typically 1-2%, and RTTs average 50-100 ms in the U.S.) The reasons that SPDY does better as packet loss rates increase are several: </div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px">SPDY sends ~40% fewer packets than HTTP, which means fewer packets affected by loss.</li>
+<li style="margin-top:0px;margin-bottom:0px">SPDY uses fewer TCP connections, which means fewer chances to lose the SYN packet. In many TCP implementations, this delay is disproportionately expensive (up to 3 s).</li>
+<li style="margin-top:0px;margin-bottom:0px">SPDY's more efficient use of TCP usually triggers TCP's fast retransmit instead of using retransmit timers. </li></ul>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">We discovered that SPDY's latency savings also increased proportionally with increases in RTTs, up to a 27% speedup at 200 ms. The  The reason that SPDY does better as RTT goes up is because SPDY fetches all requests in parallel. If an HTTP client has 4 connections per domain, and 20 resources to fetch, it would take roughly 5 RTs to fetch all 20 items.  SPDY fetches all 20 resources in one RT.<br />
+<br />
+<i>Table 2: Average page load times for top 25 websites by packet loss rate</i><br />
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<table border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="194" style="font-size:1em;line-height:inherit;border-collapse:collapse" width="581">
+<tbody>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%"><br />
+</td>
+<td colspan="2" style="direction:inherit;font-family:arial,sans-serif">Average ms<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">Speedup<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">Packet loss rate<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">HTTP<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">SPDY basic (TCP)<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%"><br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">0%<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1152<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1016<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">11.81%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">0.5%<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1638<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1105<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">32.54%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1%<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">2060<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1200<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">41.75%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1.5%<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">2372<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1394<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">41.23%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">2%<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">2904<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1537<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">47.7%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">2.5%<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">3028<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">1707<br />
+</td>
+<td style="direction:inherit;font-family:arial,sans-serif" width="25%">43.63%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><i><br />
+</i></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font color="#000000" face="Arial,sans-serif">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font face="Verdana"><font face="Arial, sans-serif"><font face="Verdana"><i>Table 3: Average page load times for top 25 websites by RTT</i><br />
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<table border="1" bordercolor="#000000" cellpadding="3" cellspacing="0" height="220" style="font-size:1em;line-height:inherit;border-collapse:collapse" width="582">
+<tbody>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%"><b><br />
+</b></td>
+<td colspan="2" style="direction:inherit"><b>Average ms<br />
+</b></td>
+<td style="direction:inherit" width="25%"><b>Speedup</b><br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%"><b>RTT in ms<br />
+</b></td>
+<td style="direction:inherit" width="25%"><b>HTTP<br />
+</b></td>
+<td style="direction:inherit" width="25%"><b>SPDY basic (TCP)<br />
+</b></td>
+<td style="direction:inherit" width="25%"><br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">20<br />
+</td>
+<td style="direction:inherit" width="25%">1240<br />
+</td>
+<td style="direction:inherit" width="25%">1087<br />
+</td>
+<td style="direction:inherit" width="25%">12.34%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">40<br />
+</td>
+<td style="direction:inherit" width="25%">1571<br />
+</td>
+<td style="direction:inherit" width="25%">1279<br />
+</td>
+<td style="direction:inherit" width="25%">18.59%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">60<br />
+</td>
+<td style="direction:inherit" width="25%">1909<br />
+</td>
+<td style="direction:inherit" width="25%">1526<br />
+</td>
+<td style="direction:inherit" width="25%">20.06%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">80<br />
+</td>
+<td style="direction:inherit" width="25%">2268<br />
+</td>
+<td style="direction:inherit" width="25%">1727<br />
+</td>
+<td style="direction:inherit" width="25%">23.85%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">120<br />
+</td>
+<td style="direction:inherit" width="25%">2927<br />
+</td>
+<td style="direction:inherit" width="25%">2240<br />
+</td>
+<td style="direction:inherit" width="25%">23.47%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">160<br />
+</td>
+<td style="direction:inherit" width="25%">3650<br />
+</td>
+<td style="direction:inherit" width="25%">2772<br />
+</td>
+<td style="direction:inherit" width="25%">24.05%<br />
+</td>
+</tr>
+<tr style="text-align:left">
+<td style="direction:inherit" width="25%">200<br />
+</td>
+<td style="direction:inherit" width="25%">4498<br />
+</td>
+<td style="direction:inherit" width="25%">3293<br />
+</td>
+<td style="direction:inherit" width="25%">26.79%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</font></font></font></div>
+</font></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 style="font-size:14pt"><a name="TOC-SPDY-next-steps:-how-you-can-help"></a>SPDY next steps: how you can help</h2>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">Our initial results are promising, but we don't know how well they represent the real world. In addition, there are still areas in which SPDY could improve. In particular:<br />
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px">Bandwidth efficiency is still low. Although dialup bandwidth efficiency rate is close to 90%, for high-speed connections efficiency is only about ~32%.</li>
+<li style="margin-top:0px;margin-bottom:0px">SSL poses other latency and deployment challenges. Among these are: the additional RTTs for the SSL handshake; encryption; difficulty of caching for some proxies. We need to do more SSL tuning.</li>
+<li style="margin-top:0px;margin-bottom:0px">Our packet loss results are not conclusive. Although much research on packet-loss has been done, we don't have enough data to build a realistic model model for packet loss on the Web. We need to gather this data to be able to provide more accurate packet loss simulations.<br />
+</li>
+<li style="margin-top:0px;margin-bottom:0px">SPDY single connection loss recovery sometimes underperforms multiple connections. That is, opening multiple connections is still faster than losing a single connection when the RTT is very high. We need to figure out when it is appropriate for the SPDY client to make a new connection or close an old connection and what effect this may have on servers.</li>
+<li style="margin-top:0px;margin-bottom:0px">The server can implement more intelligence than we have built in so far. We need more research in the areas of server-initiated streams, obtaining client network information for prefetching suggestions, and so on.</li></ul>
+<br />
+<ul style="margin-top:0px;margin-bottom:0px"></ul>
+To help with these challenges, we encourage you to get involved:<br />
+</div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px"><font size="2">Send feedback, comments, suggestions, ideas to the <a href="http://groups.google.com/group/chromium-discuss?pli=1" title="chromium-discuss discussion group">chromium-discuss discussion group</a>.</font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">Download, build, run, and test the <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/spdy/" title="Google Chrome client code">Google Chrome client code</a>. <br />
+</font></li>
+<li style="margin-top:0px;margin-bottom:0px"><font size="2">Contribute improvements to the code base.</font></li></ul>
+<div><span style="font-size:small"><br />
+</span></div><h2 style="font-size:14pt"><a name="TOC-SPDY-frequently-asked-questions"></a>SPDY frequently asked questions</h2>
+<br />
+<span style="font-weight:normal;font-family:verdana,sans-serif"><font size="2">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b>Q: Doesn't HTTP pipelining already solve the latency problem?<br />
+<br />
+</b></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">A: No. While pipelining does allow for multiple requests to be sent in parallel over a single TCP stream, it is still but a single stream.  Any delays in the processing of anything in the stream (either a long request at the head-of-line or packet loss) will delay the entire stream.  Pipelining has proven difficult to deploy, and because of this remains disabled by default in all of the major browsers.</div>
+</font></span><br style="font-family:verdana,sans-serif" />
+<font size="4" style="font-family:verdana,sans-serif"><span style="font-weight:normal"><font size="2">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><b>Q: Is SPDY a replacement for HTTP?</b></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b><br />
+</b></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><b><span style="font-weight:normal">A: No. SPDY replaces some parts of HTTP, but mostly augments it. At the highest level of the application layer, the request-response protocol remains the same. SPDY still uses HTTP methods, headers, and other semantics. But SPDY overrides other parts of the protocol, such as connection management and data transfer formats.</span><br /><br /></b></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font><span style="font-size:13px;border-collapse:collapse"><div style="margin-top:0px;margin-bottom:0px"><font size="2"><b><font><span style="background-color:rgb(255,255,255)">Q: Why did you choose this name?<br /><br /></span></font></b></font></div>
+<div style="margin-top:0px;margin-bottom:0px"><font size="2"><font><span style="background-color:rgb(255,255,255)">A:
+We wanted a name that captures speed. SPDY, pronounced "SPeeDY",
+captures this and also shows how compression can help improve speed.</span></font></font></div></span><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><br />
+<span style="font-weight:normal"><font size="2">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b>Q: Should SPDY change the transport layer?</b></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b><br />
+</b></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">A: More research should be done to determine if an alternate transport could reduce latency.  However, replacing the transport is a complicated endeavor, and if we can overcome the inefficiencies of TCP and HTTP at the application layer, it is simpler to deploy.</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br />
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2"><b>Q: TCP has been time-tested to avoid congestion and network collapse.  Will SPDY break the Internet?<br />
+<br />
+</b></font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2">A: No.  SPDY runs atop TCP, and benefits from all of TCP's congestion control algorithms.  Further, HTTP has already changed the way congestion control works on the Internet.  For example, HTTP clients today open up to 6 concurrent connections to a single server; at the same time, some HTTP servers have increased the initial congestion window to 4 packets. Because TCP independently throttles each connection, servers are effectively sending up to 24 packets in an initial burst.  The multiple connections side-step TCP's slow-start. SPDY, by contrast, implements multiple streams over a single connection. </font></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><font size="2"><br />
+</font></div>
+</div>
+</font></span></font></font></span></font></div>
+</div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b>Q: What about SCTP?</b></div>
+</font></span></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2">
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b><br />
+</b></div>
+<div style="margin-top:0px;margin-bottom:0px;direction:inherit">A: SCTP is an interesting potential alternate transport, which offers multiple streams over a single connection. However, again, it requires changing the transport stack, which will make it very difficult to deploy across existing home routers. <font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2"><font size="4"><span style="font-weight:normal"><font size="2">Also, SCTP alone isn't the silver bullet; application-layer changes still need to be made to efficiently use the channel between the server and client.</font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></div><div style="margin-top:0px;margin-bottom:0px;direction:inherit"><br /></div><div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b>Q: What about BEEP?</b></div><div style="margin-top:0px;margin-bottom:0px;direction:inherit"><b><br /></b></div><div style="margin-top:0px;margin-bottom:0px;direction:inherit">A: While BEEP is an interesting protocol which offers a similar grab-bag of features, it doesn't focus on reducing the page load time. It is missing a few features that make this possible. Additionally, it uses text-based framing for parts of the protocol instead of binary framing. This is wonderful for a protocol which strives to be as extensible as possible, but offers some interesting security problems as it is more difficult to parse correctly.</div>
+</font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></font></span></font></div>
+</font></span></font></div>
+</div>
+</div>
+</div>
+</span></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/spdy/spdy-whitepaper">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="http://www.chromium.org/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">if (webspace.editorResources['text']) {webspace.editorResources['text'].unshift('\/system\/app\/css\/overlay.css?cb\x3dbeigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard');webspace.editorResources['text'].unshift('\/_\/rsrc\/1441580320000\/system\/app\/themes\/beigeandblue\/standard-css-beigeandblue-ltr-ltr.css');}</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9Xn-C2nZ7Zo0INLtf9Fb_0cJzRsV6kDr14jmEASscEcB3dnKVCpti2xVLIeBwAUHiY6heJIgrkSQUz3HvA6ZJFuzR0-ay1SYKqw6L6TPzZknQZVzF/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

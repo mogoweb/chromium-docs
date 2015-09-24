@@ -1,0 +1,1411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/u-boot-porting-guide","deleted":false,"title":"Firmware (U-Boot) Overview and Porting Guide","dir":"ltr"},{"path":"/chromium-os/u-boot-porting-guide/u-boot-drivers","deleted":false,"title":"3.  U-Boot Drivers","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/u-boot-porting-guide/u-boot-drivers\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/u-boot-porting-guide","parentWuid":"wuid:gx:71af0edaddc05358","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"3.  U-Boot Drivers","locale":"en","wuid":"wuid:gx:54217903d9764022","revision":165,"path":"/chromium-os/u-boot-porting-guide/u-boot-drivers","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"u-boot-drivers","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="3.  U-Boot Drivers - The Chromium Projects" />
+<meta itemprop="name" content="3.  U-Boot Drivers - The Chromium Projects" />
+<meta property="og:title" content="3.  U-Boot Drivers - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>3.  U-Boot Drivers - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../chromium-os.1.html" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="../u-boot-porting-guide.1.html" dir="ltr">Firmware (U-Boot) Overview and Porting Guide</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">3.  U-Boot Drivers</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><font color="#e06666">
+<div style="font-style:italic"></div>
+<div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-1"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Board-Configuration"><strong>1 </strong>Board Configuration</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Driver-Configuration"><strong>2 </strong>Driver Configuration</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Audio-Codec-and-Inter-Integrated-Circuit-Sound-I2S-"><strong>3 </strong>Audio Codec and Inter-Integrated Circuit Sound (I2S)</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Clock"><strong>4 </strong>Clock</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Ethernet"><strong>5 </strong>Ethernet</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-GPIO-"><strong>6 </strong>GPIO </a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Inter-Integrated-Circuit-Communication-I2C-"><strong>7 </strong>Inter-Integrated Circuit Communication (I2C)</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Keyboard"><strong>8 </strong>Keyboard</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-LCD-Video"><strong>9 </strong>LCD/Video</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-NAND"><strong>10 </strong>NAND</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Pin-Multiplexing"><strong>11 </strong>Pin Multiplexing</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Power"><strong>12 </strong>Power</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Pulse-Width-Modulation-PWM-"><strong>13 </strong>Pulse Width Modulation (PWM)</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-SDMMC-and-eMMC"><strong>14 </strong>SDMMC and eMMC</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-SPI"><strong>15 </strong>SPI</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-SPI-Flash"><strong>16 </strong>SPI Flash</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Thermal-Management-Unit-TMU-"><strong>17 </strong>Thermal Management Unit (TMU)</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Timer"><strong>18 </strong>Timer</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Trusted-Platform-Module-TPM-"><strong>19 </strong>Trusted Platform Module (TPM)</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-UART"><strong>20 </strong>UART</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-USB-Host"><strong>21 </strong>USB Host</a></li><li class="goog-toc"><a href="u-boot-drivers.html#TOC-Other-sections-in-U-Boot-Porting-Guide"><strong>22 </strong>Other sections in U-Boot Porting Guide</a></li></ol></div></div></div></div></div>4/11/2013</font>
+<div>
+<div></div>
+<p><font face="arial, sans-serif">This section lists the functional requirements for Chrome OS drivers and describes how to implement the drivers using U-Boot APIs and configuration files. It provides links to useful code samples from the <a href="http://git.denx.de/?p=u-boot.git;a=tree" target="_blank">U-Boot source tree</a>.</font></p>
+</div>
+<div>
+<h2><a name="TOC-Board-Configuration"></a>Board Configuration</h2>
+<p>Each board has a file that contains config options for each board component. For example, the Samsung SMDK5250 (Exynos5250) board is specified in the file <font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/configs/smdk5250.h;h=c0f86228b08a0fb4df48d70180144af2990b76c2;hb=HEAD" target="_blank">include/configs/smdk5250.h</a></font>. This file controls which components are enabled and specifies certain parameters for each board component.</p>
+<h2><a name="TOC-Driver-Configuration"></a>Driver Configuration</h2>
+<div>To add a driver for a particular class of peripheral, you need to do the following:</div>
+<div>
+<ul><li>Implement the APIs specified in the driver <font face="arial, sans-serif">class header file.</font> </li>
+<li>Add config option(s) for the peripheral to the board configuration file in <font face="courier new, monospace">include/configs</font>.</li>
+<li>Add a node for the driver to the <a href="2-concepts.1.html">device tree file</a> (<i>.dts</i>), specifying its properties and values as well as any additional devices that are connected to it.</li></ul>
+The following sections provide details for each class of driver, including performance requirements and implementation tips. For Chrome OS implementations, also see the <a href="https://sites.google.com/a/google.com/chromeos-partners/pages/tech-docs/firmware/main-processor-firmware-specification-v10" target="_blank">Main Processor Firmware Specification</a>.</div>
+<h2><a name="TOC-Audio-Codec-and-Inter-Integrated-Circuit-Sound-I2S-"></a>Audio Codec and Inter-Integrated Circuit Sound (I2S)</h2><div>The audio codec is commonly connected to I2S to provide the audio data and to I2C to set up the codec (for example, to control volume, output speed, headphone and speaker output).</div><h4><a name="TOC-Implementation-Notes"></a>Implementation Notes</h4><p>The <font face="courier new, monospace">sound.c</font> file defines the <font face="courier new, monospace">sound_init()</font> function, which sets up the audio codec and I2S support. Currently, this file supports the Samsung WM8994 audio codec and the Samsung I2S driver. This system would need to be expanded for other architectures to add support for new codec and I2S drivers. The <font face="courier new, monospace">sound_play()</font> file, also defined in <font face="courier new, monospace">sound.c</font>, plays a sound at a particular frequency for a specified period.</p><p>The <font face="courier new, monospace">samsung-i2s.c</font> file defines the <font face="courier new, monospace">i2s_tx_init()</font> function, which sets up the I2S driver for sending audio data to the codec. It also defines <font face="courier new, monospace">i2s_transfer_tx_data(),</font> which transfers the data to the codec.</p><p>The<font face="courier new, monospace"> wm8994.c</font> file defines the <font face="courier new, monospace">wm8994_init()</font> function, which initializes the codec hardware.</p><h4><a name="TOC-Command-Line-Interface"></a>Command Line Interface</h4><div>The console commands <font face="courier new, monospace">sound_init</font> and <font face="courier new, monospace">sound_play</font> can be used to control the audio codec.</div><div><br /></div><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">i</font></span><font face="courier new, monospace" style="font-style:normal">nclude/sound.h</font></td></tr><tr><td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">drivers/sound/sound.c, drivers/sound/wm8994.c,<br />drivers/sound/samsung-i2s.c</font></span></td></tr><tr><td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">drivers/sound/Makefile</font></span></td></tr><tr><td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">drivers/sound/wm8994.c</font></span></td></tr></tbody></table></div><div style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></div><div><h2><a name="TOC-Clock"></a>Clock</h2>
+<div>
+<p>The AP has a number clocks that drive devices such as the eMMC, SPI flash, and display. Although the clock structure can be very complex, with a tree of 50 or more interdependent clocks, U-Boot has a simple clock implementation. With U-Boot, you need to turn on a clock, set its frequency, and then just let it run. </p>
+<h4><a name="TOC-Implementation-Notes1"></a>Implementation Notes</h4>
+</div>
+<div>
+<p>The preferred technique is to create <font face="courier new, monospace">clock.c</font>, which implements the clock functionality. Important clock functions to implement include the following:</p>
+<ul><li><font face="courier new, monospace">clock_set_rate()</font> - sets the rate for a particular clock</li>
+<li><font face="courier new, monospace">clock_start_periph_pll()</font> - starts a peripheral clock at a particular rate</li>
+<li><font face="courier new, monospace">clock_set_enable()</font><font face="arial, sans-serif"> - enable and disable a clock</font></li>
+<li><font face="courier new, monospace">reset_periph()</font><font face="arial, sans-serif"> -  reset a peripheral</font></li>
+<li><font face="courier new, monospace">clock_get_rate()</font> - queries the clock rate</li></ul>
+<div><br />
+</div>
+</div>
+<div><br />
+</div>
+<div><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:243px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:330px;height:14px"><font face="courier new, monospace"><span style="font-style:normal">arch/arm/include/asm/arch-</span>xxxx<span style="font-style:normal">/clock.h</span></font></td>
+</tr>
+<tr>
+<td style="width:243px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:330px;height:14px"> typically in AP directory, e.g., <font face="courier new, monospace" style="font-style:normal">arch/arm/cpu/armv7/arch-</font><font face="courier new, monospace">xxxx</font><font face="courier new, monospace" style="font-style:normal">/clock.c</font></td>
+</tr>
+<tr>
+<td style="width:243px;height:14px"><span style="font-style:normal"><b> Makefile</b></span></td>
+<td style="width:330px;height:14px"> typically, also in AP directory</td>
+</tr>
+<tr>
+<td style="width:243px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:330px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/cpu/tegra20-common/clock.c;h=12987a6893691f8646016ac1e242b71519a811da;hb=HEAD" target="_blank">arch/arm/cpu/tegra20-common/clock.c</a></font></span></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+<h2><a name="TOC-Ethernet"></a>Ethernet</h2>
+<p><font face="arial, sans-serif">An</font> Ethernet connection is often used during development to download a kernel from the network. This connection is also used in the factory to download the kernel and ramdisk.</p>
+<p>U-Boot supports the following network protocols:</p>
+<ul><li><b>TFTP</b> - for downloading a kernel and also for uploading trace data</li>
+<li><b>NFS</b> - also used for downloading a kernel</li>
+<li><b>BOOTP/DHCP</b> -  for obtaining an IP address</li>
+<li><b>ping</b> - for checking network connectivity</li></ul>
+<div>Many x86 devices have a built-in Ethernet port. Another way to provide Ethernet to a system is to connect a USB-to-Ethernet adapter to the USB port. If the device has a built-in port, Ethernet is detected when the board starts up and is available for use. To enable the USB-to-Ethernet connection, use the U-Boot command <code>usb start</code>.</div>
+<p>Another useful feature for development is that when you want to use an NFS root from the network, U-Boot can provide suitable boot arguments to the kernel on the Linux command line.</p>
+<h4><a name="TOC-Implementation-Notes2"></a>Implementation Notes</h4>
+<p>The structure<code><font face="arial, sans-serif"> </font>eth_device</code> in the file <code>net.h</code> describes the Ethernet driver. The board file calls the <code>probe()</code> function, which probes for Ethernet hardware, sets up the <code>eth_device</code> structure, and then calls <code>eth_register()</code>.</p>
+<p>You need to implement the following functions for the Ethernet driver:</p>
+<ul><li><span style="font-size:10pt"><font face="courier new, monospace">init()</font> - brings up the Ethernet device</span></li>
+<li><font face="courier new, monospace">halt()</font> - shuts down the Ethernet device</li>
+<li><font face="courier new, monospace">send()</font> - sends packets over the network</li>
+<li><font face="courier new, monospace">recv()</font> - receives packets over the network</li>
+<li><font face="courier new, monospace">write_hwaddr()</font> - writes the MAC address to the hardware from the <font face="courier new, monospace">ethaddr</font> environment variable. </li></ul>
+<p>For USB Ethernet, the structure <font face="courier new, monospace"><code>ueth_data</code></font> in the file <code>usb_ether.h</code> describes the USB Ethernet driver. The <code>usb_ether.h</code> file also defines a set of three functions that must be implemented for each supported adapter. For example, here are the functions for the Asix adapter:</p>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>#ifdef CONFIG_USB_ETHER_ASIX</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/usb_ether.h;h=7c7aecb30574d4536915f20f262a858470160421;hb=HEAD#l62" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>void asix_eth_before_probe(void);</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/usb_ether.h;h=7c7aecb30574d4536915f20f262a858470160421;hb=HEAD#l63" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>int asix_eth_probe(struct usb_device *dev, unsigned int ifnum,</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/usb_ether.h;h=7c7aecb30574d4536915f20f262a858470160421;hb=HEAD#l64" style="color:rgb(153,153,153);text-decoration:initial"> </a></code><code>                      struct ueth_data *ss);</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/usb_ether.h;h=7c7aecb30574d4536915f20f262a858470160421;hb=HEAD#l65" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>int asix_eth_get_info(struct usb_device *dev, struct ueth_data *ss,</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/usb_ether.h;h=7c7aecb30574d4536915f20f262a858470160421;hb=HEAD#l66" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>                      struct eth_device *eth);</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="line-height:1"><font color="#999999"> </font><font color="#134f5c"> </font></code><code style="line-height:1">#endif</code></div>
+</div>
+</div>
+<div><br />
+The<code><font face="arial, sans-serif"> </font><i>xxx</i>_eth_probe()</code> function probes for the device and must return nonzero if it finds a device. The <code><i>xxx</i>_eth_get_info()</code> function obtains information about the device and fills in the <code>ueth_data</code> structure.</div>
+<p><br />
+</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><b> Header File</b></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/net.h;h=970d4d1fab13df2c093062e1cf015625bb5db558;hb=HEAD" target="_blank"><font face="courier new, monospace">i</font><font face="courier new, monospace">nclude/net.h</font></a><br />
+<font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/usb_ether.h;h=7c7aecb30574d4536915f20f262a858470160421;hb=HEAD" target="_blank">include/usb_ether.h</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Implementation File</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/net/lan91c96.c;h=11d350eb8daeeefdf87724b62c4f0e4039a9e713;hb=HEAD" target="_blank">drivers/net/lan91c96.c</a> </font><font face="arial, sans-serif"><i>(private to driver)</i></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Makefile</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/net/Makefile;h=786a6567a5fc9ba5dbfc2c68262a789c5338a2ea;hb=HEAD" target="_blank">drivers/net/Makefile</a></font>
+</td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Example</b></td>
+<td style="width:334px;height:14px"><a href="http://drivers/usb/eth/asix.c" style="font-family:courier new,monospace" target="_blank">drivers/usb/eth/asix.c</a><i style="font-family:arial,sans-serif"> (specific adapter)</i><br />
+<font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/usb/eth/usb_ether.c;h=f361e8b16857eeb7815f7ae594e83567246bce09;hb=HEAD" target="_blank">drivers/usb/eth/usb_ether.c</a></font><i style="font-family:arial,sans-serif"> (generic interface)</i></td>
+</tr>
+</tbody>
+</table>
+<br />
+<p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+<div>
+<h2><a name="TOC-GPIO-"></a>GPIO </h2>
+</div>
+<div>Modern APs can contain hundreds of GPIOs (General Purpose Input/Output pins). GPIOs can be used to <i>control</i> a given line or to <i>sense</i> its current state. A given GPIO can serve multiple purposes. Also, peripheral pins can often also be used as GPIOs. For example, an AP MMC interface requires 11 pins that can be used as GPIOs if the MMC function is not needed.</div>
+<div>
+<p>A GPIO can be either an <i>input</i> or an <i>output</i>. If an input, its value can be read as 0 or 1. If an output, then its value can be set to 0 or 1.</p>
+</div>
+<div><br />
+</div>
+<h4><a name="TOC-Generic-GPIO-Interface"></a>Generic GPIO Interface</h4>
+<div>U-Boot provides a generic GPIO interface in <code><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/asm-generic/gpio.h;h=bfedbe44596aa31fb2266f7e052a63401f06d181;hb=HEAD" target="_blank">include/asm-generic/gpio.h</a></code>. This interface provides the following functions:<br />
+<br />
+<br />
+</div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="text-align:center;width:405px;height:15px"><b> Function</b></td>
+<td style="text-align:center;width:297px;height:15px"><b> Description</b></td>
+</tr>
+<tr>
+<td style="width:405px;height:16px"> <span style="font-family:courier new,monospace;font-size:small;white-space:pre">int gpio_</span><b style="font-family:courier new,monospace;font-size:small;white-space:pre">request</b><span style="font-family:courier new,monospace;font-size:small;white-space:pre">(unsigned gpio, const char *label);</span></td>
+<td style="width:297px;height:16px"> R<span style="font-family:arial,sans-serif;font-size:small;white-space:pre">equest use of a specific GPIO</span></td>
+</tr>
+<tr>
+<td style="width:405px;height:16px"> <span style="font-family:courier new,monospace;font-size:small;white-space:pre">int gpio_</span><b style="font-family:courier new,monospace;font-size:small;white-space:pre">free</b><span style="font-family:courier new,monospace;font-size:small;white-space:pre">(unsigned gpio);</span></td>
+<td style="width:297px;height:16px"> F<span style="font-family:arial,sans-serif;font-size:small;white-space:pre">rees the GPIO that was in use</span></td>
+</tr>
+<tr>
+<td style="width:405px;height:16px"> <span style="font-family:courier new,monospace;font-size:small;white-space:pre">int gpio_</span><b style="font-family:courier new,monospace;font-size:small;white-space:pre">direction_input</b><span style="font-family:courier new,monospace;font-size:small;white-space:pre">(unsigned gpio);</span></td>
+<td style="width:297px;height:16px"> M<span style="font-family:arial,sans-serif;font-size:small;white-space:pre">akes the GPIO an input</span></td>
+</tr>
+<tr>
+<td style="width:405px;height:32px"> <span style="font-family:courier new,monospace;font-size:small;white-space:pre">int gpio_</span><b style="font-family:courier new,monospace;font-size:small;white-space:pre">direction_output</b><span style="font-family:courier new,monospace;font-size:small;white-space:pre">(unsigned gpio, 
+                          int value);</span></td>
+<td style="width:297px;height:32px"> M<span style="font-family:arial,sans-serif;font-size:small;white-space:pre">akes the specified GPIO an output and sets its 
+ value</span></td>
+</tr>
+<tr>
+<td style="width:405px;height:16px"> <span style="font-family:courier new,monospace;white-space:pre">int gpio_</span><b style="font-family:courier new,monospace;white-space:pre">get_value</b><span style="font-family:courier new,monospace;white-space:pre">(unsigned gpio);</span></td>
+<td style="width:297px;height:16px"> G<span style="font-family:arial,sans-serif;white-space:pre">ets the value of the GPIO (either input or output)</span></td>
+</tr>
+<tr>
+<td style="width:405px;height:16px"> <span style="font-family:courier new,monospace;font-size:small;white-space:pre">int gpio_</span><b style="font-family:courier new,monospace;font-size:small;white-space:pre">set_value</b><span style="font-family:courier new,monospace;font-size:small;white-space:pre">(unsigned gpio, int value);</span></td>
+<td style="width:297px;height:16px"> S<span style="font-family:arial,sans-serif;font-size:small;white-space:pre">ets the value of an output GPIO (0 or 1)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><font size="2"><span style="white-space:pre"><br />
+</span></font></p>
+<div>
+<div></div>
+<div><span style="font-size:10pt">In U-Boot, GPIOs are numbered from 0, with enums specified in the AP header file </span><code style="font-size:10pt">gpio.h</code><span style="font-size:10pt">. For example:</span></div>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+<p><span style="font-family:monospace;font-size:small;white-space:pre">enum gpio_pin {</span></p>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l52" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA0 = 0,   /* pin 0 */</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l53" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA1,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l54" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA2,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l55" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA3,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l56" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA4,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l57" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA5,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l58" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA6,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l59" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PA7,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l60" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PB0,       /* pin 8 */</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l61" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PB1,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD#l62" style="color:rgb(153,153,153);text-decoration:initial"> </a>         GPIO_PB2,</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre">.</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre">.</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre">.</div>
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre">};</div>
+</div>
+</blockquote>
+<div>
+<p>The generic GPIO functions specify the GPIO pin by its number, as described in <font face="courier new, monospace">gpio.h</font>.</p>
+<h4><a name="TOC-Additional-Functions"></a>Additional Functions</h4>
+<div>The generic GPIO interface does not cover all features of a typical AP. For example, custom AP functions are required to specify the following:</div>
+<div>
+<ul><li><b>Drive strength</b> is defined in a chip-specific function.</li>
+<li><b>Pinmux</b> selects which function a pin has (for example, MMC, LCD, GPIO) and what is controlling the pin. The <a href="u-boot-drivers.html#TOC-Pinmux">pinmux module</a> typically handles this function.</li>
+<li><b>Pullup and pulldown</b> functionality is defined in a chip-specific function so that there are no floating lines.</li></ul>
+</div>
+<h4><a name="TOC-Command-Line-Interface1"></a>Command Line Interface</h4>
+<p>The GPIO driver has a corresponding <code>gpio</code> command line interface that can be used to set and get GPIO values. See <font face="courier new, monospace">common/cmd_gpio.c</font> for a list of commands (<font face="courier new, monospace">input</font>, <font face="courier new, monospace">set</font>, <font face="courier new, monospace">clear</font>, <font face="courier new, monospace">toggle</font>). The gpio <font face="courier new, monospace">status</font> command, which you must implement, displays the status of all GPIOs in the system. This useful command should be able to accept both numbers and names for GPIO pins, as defined in <font face="courier new, monospace">gpio.h</font>.</p>
+<p><br />
+</p>
+<div><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:243px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:330px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/gpio.h;h=e2848fec67ba58d038b20f8666ccf693f4beafd1;hb=HEAD" target="_blank">arch/arm/include/asm/arch-tegra20/gpio.h</a></font></span></td>
+</tr>
+<tr>
+<td style="width:243px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:330px;height:14px"> typically in AP directory, e.g., <font face="courier new, monospace"><span style="font-style:normal">drivers/gpio/gpio-</span>xxx<span style="font-style:normal">.c</span></font></td>
+</tr>
+<tr>
+<td style="width:243px;height:14px"><span style="font-style:normal"><b> Makefile</b></span></td>
+<td style="width:330px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/gpio/Makefile;h=9df1e2632f774805b635edd317292cb3196fa6cf;hb=HEAD" target="_blank">drivers/gpio/Makefile</a></font></span></td>
+</tr>
+<tr>
+<td style="width:243px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:330px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/gpio/tegra_gpio.c;h=2417968214d7f075db3cec79af623c21cc16f012;hb=HEAD" target="_blank">drivers/gpio/tegra_gpio.c</a> (?)<br />
+</font></span></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<div><br />
+</div>
+<p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+</div>
+<div>
+<h2><a name="TOC-Inter-Integrated-Circuit-Communication-I2C-"></a>Inter-Integrated Circuit Communication (I2C)</h2>
+<p>The inter-integrated circuit communication (I2C) driver is the most-used driver in U-Boot for Chrome OS.  For example, the I2C driver is used to send and receive data from the following devices:</p>
+<ul><li>PMIC (Power Module)</li>
+<li>Trusted Platform Module (TPM)</li>
+<li>Embedded Controller</li>
+<li>Battery gas gauge</li>
+<li>Battery charger</li>
+<li>LCD/EDID</li>
+<li>Audio codec</li></ul>
+<p><span style="font-size:10pt">Because I2C drivers form a critical part of U-Boot, they should be tested to ensure that a given I2C bus works correctly with multiple slaves and at all supported speeds.  Be sure the driver correctly handles NAK messages from slaves and provides robust error handling.</span></p>
+<h4><a name="TOC-Setup"></a><span style="font-size:10pt">Setup</span></h4>
+<div>
+<p>Ordering of multiple I2C buses (there are usually half a dozen or more) is specified in the device tree file aliases section <span style="font-size:10pt">(for example, see</span><span style="font-size:10pt"> </span><font face="courier new, monospace" style="font-size:10pt">board/samsung/dts/exynos5250-smdk5250.dts</font><span style="font-size:10pt">). Bus numbering is zero-based.</span></p>
+<p><span style="font-size:10pt">The following function is called by the board file to set up I2C ports:</span></p>
+</div>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div></div>
+</blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<p><span style="font-family:monospace;font-size:12px;white-space:pre">void board_i2c_init(const void *blob);</span></p>
+</blockquote>
+<div>
+<div></div>
+</div>
+<span style="font-size:10pt">In this function, </span><code style="font-size:10pt">blob</code><span style="font-size:10pt"> is the device tree.</span><p>Given a node in the device tree, the following function returns the bus number of that node:</p>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<p><code>int i2c_get_bus_num_fdt(int node);</code></p>
+</blockquote>
+<p><span style="font-size:10pt">An I2C bus typically runs at either 100 kHz or 400 kHz.  Ideally the driver should support exactly these speeds.  In no case should the driver exceed the specified speed. The bus speed is specified in the device tree for a given bus.  Although the U-Boot driver header files include functions for setting I2C bus speeds, these functions should not be used directly. Instead, set one speed for each I2C bus in the device tree, choosing the speed that matches the slowest device on a given bus.</span></p>
+<h4><a name="TOC-Communication"></a><span style="font-size:10pt">Communication</span></h4>
+<p>Several of the I2C functions use the concept of a "current bus":</p>
+<ul><li><font face="courier new, monospace">i2c_set_bus_num()</font> sets the current bus number</li>
+<li><font face="courier new, monospace">i2c_get_bus_num()</font> returns the current bus number</li></ul>
+<div>Typically, you follow this pattern:</div>
+<div>
+<ol><li><span style="font-size:10pt">Call <font face="courier new, monospace">i2c_get_bus_num()</font> to obtain the current bus.</span></li>
+<li><span style="font-size:10pt">Store this bus number so that you can restore this state when you are finished with your transaction.  </span></li>
+<li><span style="font-size:10pt">Call <font face="courier new, monospace">i2c_set_bus_num()</font> to set the bus for your current transaction.</span></li>
+<li><span style="font-size:10pt">Perform processing on this bus (sending and receiving data).  </span></li>
+<li><span style="font-size:10pt">Finally, call <font face="courier new, monospace">i2c_set_bus_num() </font>to reset the bus to its original number.</span></li>
+</ol>
+</div>
+<p>The functions<code> i2c_read()</code> and <code>i2c_write()</code> are used to receive and send data from the I2C bus. Because multiple devices share the same bus, the functions require information about both the chip address and the memory address within the chip. For example, the syntax for i2c_read is as follows:</p>
+<p><span style="font-family:monospace;font-size:12px;white-space:pre"><code>int i2c_read(uchar chip, uint addr, int alen, uchar *buffer, int len);</code></span></p>
+<p>where</p>
+<dl><dt><code>chip</code></dt>
+<dd>is the I2C chip address, in the range 0 to 127</dd>
+<dt><code>addr</code></dt>
+<dd>is the memory address within the chip (the register)</dd>
+<dt><code>alen</code></dt>
+<dd>is the length of the address (1 for 7-bit addressing, 2 for 10-bit addressing)</dd>
+<dt><code>buffer</code></dt>
+<dd>is where to read the data</dd>
+<dt><code>len</code></dt>
+<dd>is how many bytes to read</dd>
+</dl>
+<h4><a name="TOC-Command-Line-Interface2"></a>Command Line Interface</h4>
+<div>The I2C bus has a corresponding <code>i2c</code> command line interface that can be used to read and write data.</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><b> Header File</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/i2c.h;h=c60d07583bf68cbcc3b1dc6bf67f41a44585c920;hb=HEAD" target="_blank">i<font>nclude/</font>i2c.h</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Implementation File</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=tree;f=drivers/i2c;hb=HEAD" target="_blank">drivers/i2c/<i>driverName.c</i></a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Makefile</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/i2c/Makefile;h=5dbdbe3672259c0d9a72bd79502fe99990f1cbde;hb=HEAD" target="_blank">drivers/i2c/Makefile</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Example</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/i2c/tegra_i2c.c;h=efc77fa910fcc7dcb969afc99d5c5822b99096f1;hb=HEAD" target="_blank">drivers/tegra_i2c.c</a><br />
+</font></td>
+</tr>
+</tbody>
+</table>
+<div><font color="#666666"><br />
+</font></div>
+<div>
+<p style="text-align:right"><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></font></p>
+</div>
+<div>
+<h2><a name="TOC-Keyboard"></a>Keyboard</h2><p>In Chrome OS, the keyboard is managed by the embedded controller (EC), which reports key presses to the AP using messages. Implementing support in U-Boot for the keyboard driver is different for x86 and ARM systems. On x86 systems, 8042 keyboard emulation is used over ACPI to report key presses. On ARM systems, the Chrome OS EC protocol is used to report key scans. </p><h4><a name="TOC-Implementation-Notes3"></a>Implementation Notes</h4><p><b><i><span>    </span>On x86 Systems</i></b></p><p>On x86 systems, the 8042 protocol is handled by a keyboard driver that communicates with the AP using an x86 I/O port. On these systems, you are responsible for implementing the keyboard driver that reports key presses to the AP.</p><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="width:247px;height:14px"><b> Header File</b></td><td style="width:334px;height:14px"><font face="courier new, monospace">i<font>nclude/</font></font></td></tr><tr><td style="width:247px;height:14px"> <b>Implementation File</b></td><td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/input/keyboard.c;h=614592ef3c18febcf27f23a7ac600208d9db03aa;hb=HEAD" target="_blank">drivers/input/keyboard.c</a><br /><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/input/i8042.c;h=26958aaa3eaca4e9a3dced2bd3d6fc81735a08bb;hb=HEAD" target="_blank">drivers/input/i8042.c</a></font></td></tr><tr><td style="width:247px;height:14px"> <b>Makefile</b></td><td style="width:334px;height:14px"><font face="courier new, monospace">drivers/</font></td></tr><tr><td style="width:247px;height:14px"> <b>Example</b></td><td style="width:334px;height:14px"><font face="courier new, monospace">drivers/<br /></font></td></tr></tbody></table><p><br /></p><p><b><i><span>    </span>On ARM Systems</i></b></p><p>On ARM systems, the <code>cros_ec</code> driver communicates with the EC and requests key scans. Each message contains the state of every key on the keyboard. This design is chosen to keep the EC as simple as possible. On ARM systems, the U-Boot and Linux code provides built-in support for converting key scans into key presses through the input layer (<font face="courier new, monospace">input.c</font> and <font face="courier new, monospace">key_matrix.c</font>).</p><p>The device tree contains a <font face="courier new, monospace">keyboard</font> node that has a <font face="courier new, monospace">linux,</font><font face="arial, sans-serif"> </font><font face="courier new, monospace">keymap</font> property that defines the keycode at each position in the keyboard matrix. You may need to edit this file to reflect your keyboard.</p><p><b><span style="font-style:italic">    </span>Setting up the keyboard driver.</b> Three functions are used to initialize and register a new keyboard driver (see the function <font face="courier new, monospace">tegra_kbc_check()</font> in<font face="arial, sans-serif"> </font><font face="courier new, monospace">tegra-kbc.c</font> for an example of waiting for input and then checking for key presses):</p><ul><li><span style="font-size:10pt"><font face="courier new, monospace">input_init()</font> - initializes a new keyboard driver.</span></li><li><span style="font-size:10pt"><font face="courier new, monospace">read_keys() </font>- called when the input layer is ready for more keyboard input.</span></li><li><span style="font-size:10pt"><font face="courier new, monospace">input_stdio_register()</font> -  registers a new input device (see "Functions Used by Input Devices," below).</span></li></ul><div>    <b>Functions provided by the input layer.</b> The following functions are defined by the input layer (<font face="courier new, monospace">input.c</font>) and must be implemented for your driver: <i>(TRUE? or do they just use these functions?)</i><br /></div><div><ul><li><font face="courier new, monospace">key_matrix_decode()</font> -  converts a list of key scans into a list of key codes.</li><li><font face="courier new, monospace">input_send_keycodes()</font> - sends key codes to the input system for processing by U-Boot.</li></ul><div>Keyboard auto-repeat is handled by the input layer automatically.</div></div><p><span style="font-style:italic">    </span><b>Functions used by input devices<i>.</i></b>  U-Boot supports multiple console devices for input and output. Input devices are controlled by the environment variable <font face="courier new, monospace">stdin</font> which contains a list of devices that can supply input. It is common for this variable to contain both serial input and keyboard input, so you can use either type of input during development.</p><p>An input device has three main functions to implement for use by <font face="courier new, monospace">input_stdio_register()</font>.  Each of these functions communications with the input layer.</p><ul><li><font face="courier new, monospace">getc()</font> - obtains a character and then passes it to <font face="courier new, monospace">input_getc()</font> in the input layer.</li><li><font face="courier new, monospace">tstc()</font> - checks whether a character is present (but does not read it) and then passes the result to <font face="courier new, monospace">input_tst()</font>.</li><li><font face="courier new, monospace">start()</font> - starts the input device; is called by the input system when the device is selected for input.</li></ul><span style="font-size:10pt"><p><span style="font-size:10pt">    <b>Configuration options.</b>  The following configuration options describe how the keyboard is connected to the EC. Include the appropriate option in the board configuration file.<br /></span></p><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="width:333px;height:14px"> <font face="courier new, monospace">CONFIG_CROS_EC</font><span>    </span></td><td style="width:332px;height:14px"> Enable EC protocol</td></tr><tr><td style="width:333px;height:14px"> <font face="courier new, monospace">CONFIG_CROS_EC_I2C</font></td><td style="width:332px;height:14px"> Select the I2C bus for communication with the EC</td></tr><tr><td style="width:333px;height:14px"> <font face="courier new, monospace">CONFIG_CROS_EC_SPI</font></td><td style="width:332px;height:14px"> Select the SPI bus for communication with the EC</td></tr><tr><td style="width:333px;height:14px"> <font face="courier new, monospace">CONFIG_CROS_EC_LPC</font></td><td style="width:332px;height:14px"> Select the LPC bus for communication with the EC</td></tr><tr><td style="width:333px;height:14px"> <font face="courier new, monospace">CONFIG_CROS_EC_KEYB</font></td><td style="width:332px;height:14px"> Enable the keyboard driver</td></tr></tbody></table><br /></span> <br /><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="width:247px;height:14px"><b> Header File</b></td><td style="width:334px;height:14px"><font face="courier new, monospace">i<font>nclude/configs/<i>boardname</i></font></font></td></tr><tr><td style="width:247px;height:14px"> <b>Implementation File</b></td><td style="width:334px;height:14px"><font face="courier new, monospace">drivers/input/cros_ec_keyb.c</font><br /><font face="arial, sans-serif"><i>(uses standard input layer of U-Boot:</i></font><br /><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/input/input.c;h=04fa5f0bd200d2ce45f2a488561290bb21772862;hb=HEAD" target="_blank">drivers/input/input.c</a> </font><font face="arial, sans-serif"><i>and</i></font><br /><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/input/key_matrix.c;h=946a186a1ffaf2ad511cba5e0749efc53ddf8e16;hb=HEAD" target="_blank">drivers/input/key_matrix.c</a>)</font></td></tr><tr><td style="width:247px;height:14px"> <b>Makefile</b></td><td style="width:334px;height:14px"><font face="courier new, monospace">drivers/</font></td></tr><tr><td style="width:247px;height:14px"> <b>Example</b></td><td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/input/tegra-kbc.c;h=88471d3edf253e432458a44fb0c8d5ed29317d47;hb=HEAD" target="_blank">drivers/input/tegra-kbc.c</a><br /></font></td></tr></tbody></table><p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p><h2><a name="TOC-LCD-Video"></a>LCD/Video</h2>
+</div>
+<div>
+<div>The display is used to present several screens to the user.  If the firmware is unable to boot, the screen displays recovery boot instructions for the user. Similarly, when the system enters developer mode, a special screen warns the user before entering this unprotected mode.</div>
+<div><br />
+</div>
+<div><i>(sample screen here)</i></div>
+<h4><a name="TOC-Requirements"></a>Requirements</h4>
+<div>Total wait time to enable the LCD should be as close to zero as possible. Initialization of the LCD can be interspersed with other startup operations, but blocking time during the initialization process should be less than 10 ms.</div>
+<h4><a name="TOC-Implementation-Notes4"></a>Implementation Notes</h4>
+<p><b>Board File. </b>Add a function to the board file, <font face="courier new, monospace">board_early_init_f(),</font> to set up three LCD parameters in the <span style="font-family:courier new,monospace">panel_info</span><font face="arial, sans-serif"> struct</font><span style="font-family:courier new,monospace">.</span></p>
+<ul><li><font face="courier new, monospace">vl_col</font></li>
+<li><font face="courier new, monospace">vl_row</font></li>
+<li><font face="courier new, monospace">vl_bpix</font></li></ul>
+<p>U-Boot allocates memory for your display based on these parameters. (Alternatively, set up the LCD driver in the driver <font face="courier new, monospace">.c</font> file and then add a function to the board file that calls the setup function in your driver <font face="courier new, monospace">.c</font> file.  For an example of this technique, see <font face="courier new, monospace">drivers/video/tegra.c</font>.)</p>
+<div><b><code>lcd_ctrl_init(</code></b><code>)</code><b> function.</b> Sets up the display hardware.  You may want to set up cache flushing in this function to speed up your display.  See <font face="courier new, monospace">lcd_set_flush_dcache()</font>, which is provided for you in <font face="courier new, monospace">common/lcd.c</font>.</div>
+<p><b>Efficient Initialization. </b>Because LCD initialization takes a long time (sometimes as much as .5 to 1 second), you may want to use a function that manages the initialization efficiently and keeps things moving.  For example, see <font face="courier new, monospace">tegra_lcd_check_next_stage()</font> in <font face="courier new, monospace">tegra.c</font>.</p>
+<div><b><code>lcd_enable()</code> function.</b> As its name suggests, this function is used to enable the LCD.  However, it is normally a null operation in Chrome OS because the <font face="courier new, monospace">lcd_check_next_stage()</font> function will enable the LCD.</div>
+<p>U-Boot controls drawing characters and images and scrolling. The driver specifies a basic data structure that describes the screen parameters. <span style="font-family:arial,sans-serif">The generic driver is defined in the </span><font face="courier new, monospace">lcd.h</font><span style="font-family:arial,sans-serif"> file: </span></p>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    typedef struct vidinfo {</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l72" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         ushort  vl_col;         /* Number of columns (i.e. 640) */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l73" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         ushort  vl_row;         /* Number of rows (i.e. 480) */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l74" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         ushort  vl_width;       /* Width of display area in millimeters */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code> </code><code>         ushort  vl_height;      /* Height of display area in millimeters */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code> </code> </div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code> </code><code>         /* LCD configuration register */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l78" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_clkp;        /* Clock polarity */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l79" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_oep;         /* Output Enable polarity */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l80" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_hsp;         /* Horizontal Sync polarity */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l81" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_vsp;         /* Vertical Sync polarity */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l82" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_dp;          /* Data polarity */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l83" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_bpix;        /* Bits per pixel, 0 = 1, 1 = 2, 2 = 4, 3 = 8 */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l84" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_lbw;         /* LCD Bus width, 0 = 4, 1 = 8 */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l85" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_splt;        /* Split display, 0 = single-scan, 1 = dual-scan */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l86" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_clor;        /* Color, 0 = mono, 1 = color */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l87" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_tft;         /* 0 = passive, 1 = TFT */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l88" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code> </div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l89" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         /* Horizontal control register. Timing from data sheet */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l90" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         ushort  vl_wbl;         /* Wait between lines */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l91" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code> </div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l92" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         /* Vertical control register */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l93" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_vpw;         /* Vertical sync pulse width */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l94" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_lcdac;       /* LCD AC timing */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l95" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code>         u_char  vl_wbf;         /* Wait between frames */</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code style="color:rgb(153,153,153);text-decoration:initial"><a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/lcd.h;h=4e36cde838f2de2e7db2621661fed09863430f1b;hb=refs/heads/chromeos-v2011.12#l96" style="color:rgb(153,153,153);text-decoration:initial"> </a> </code><code> } vidinfo_t;</code></div>
+</div>
+</div>
+<div><span style="font-family:arial,sans-serif"><br />
+</span></div>
+<div><span style="font-family:arial,sans-serif">The LCD driver specifies where screen starts in memory; pixel depth, width, and height of screen. It also </span><span style="font-family:arial,sans-serif">declares functions to enable the screen and turn it on, including the backlight.</span></div>
+</div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<div><font face="arial, sans-serif"><br />
+</font></div>
+<div><font face="arial, sans-serif">The ARM and x86 platforms use slightly different APIs. ARM uses</font><font face="courier new, monospace"> lcd.h</font><font face="arial, sans-serif"> and x86 uses </font><font face="courier new, monospace">video.h</font><font face="arial, sans-serif">. The implementation</font><font face="arial, sans-serif"> files for both ARM and X86 are located in the </font><font face="courier new, monospace">drivers/video</font><font face="arial, sans-serif"> directory.<br />
+</font>
+<div><br />
+</div>
+<div>
+<h4><a name="TOC-ARM-Files"></a>ARM Files</h4>
+<i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:244px;height:15px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:331px"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/lcd.h;h=42070d76366e8465a84baf3e90a7e95bff429a62;hb=HEAD" style="font-style:normal;font-family:courier new,monospace" target="_blank">include/lcd.h</a></td>
+</tr>
+<tr>
+<td style="height:15px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td> <a href="http://git.denx.de/?p=u-boot.git;a=tree;f=drivers/video;h=e7574c212fc1aef7e44d7a541a77c648f5519781;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/video</a></td>
+</tr>
+<tr>
+<td style="height:15px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/video/Makefile;h=ebb6da823cee9e945da43e4f76b4549c59cbe7df;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/video/Makefile</a></td>
+</tr>
+<tr>
+<td style="height:31px"> <b style="font-style:normal">Example </b></td>
+<td><font face="courier new, monospace" style="font-style:normal"> CONFIG_LCD___<br />
+</font><font face="courier new, monospace" style="font-style:normal"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/video/tegra.c;h=750a2834383f035109ed2f6bd012f63bbfc64243;hb=HEAD" target="_blank">drivers/video/tegra.c</a></font></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<h4><a name="TOC-x86-Files-"></a>x86 Files </h4>
+<div>On the x86 platform, video has its own U-Boot interface, but the existing coreboot driver will initialize the video without any further modification to U-Boot.</div>
+<div><br />
+</div>
+<i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:245px;height:15px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:332px"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/lcd.h;h=42070d76366e8465a84baf3e90a7e95bff429a62;hb=HEAD" style="font-style:normal;font-family:courier new,monospace" target="_blank">include/video.h</a></td>
+</tr>
+<tr>
+<td style="height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td><span style="font-style:normal"><font face="courier new, monospace"> drivers/video</font></span></td>
+</tr>
+<tr>
+<td style="height:15px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/video/Makefile;h=ebb6da823cee9e945da43e4f76b4549c59cbe7df;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/video/Makefile</a></td>
+</tr>
+<tr>
+<td style="height:14px"> <b style="font-style:normal">Example</b></td>
+<td><span style="font-style:normal"><font face="courier new, monospace"> CONFIG_VIDEO___<br />
+ <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/video/coreboot_fb.c;h=d93bd894a225763791d35f9d00ea562cc32a0c2e;hb=HEAD" target="_blank">drivers/video/coreboot_fb.c </a></font></span></td>
+</tr>
+</tbody>
+</table>
+</i>
+<p><br />
+</p>
+<p style="text-align:right"><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></font></p>
+</div>
+<h2><a name="TOC-NAND"></a>NAND</h2><div>U-Boot provides support for the following types of raw NAND drivers:</div><div><ul><li>MTD - drivers for communicating with a NAND device as a block device. A wide variety of NAND chips are supported.</li><li>ECC - support for error correction and detection</li><li>YAFFS2 - a type of file system used by NAND flash</li><li>UBIFS - another type of file system used by NAND flash</li></ul><p>Chrome OS currently does not use raw NAND flash. Instead, it uses EMMC or SATA drivers, which provide a high-level interface to the underlying NAND flash.</p><p><br /></p><table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px"><tbody><tr><td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">i</font></span><font face="courier new, monospace" style="font-style:normal">nclude/nand.h</font></td></tr><tr><td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">drivers/mtd/nand<br /></font></span></td></tr><tr><td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td><td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">drivers/mtd/Makefile</font></span></td></tr></tbody></table></div><p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p><h2><a name="TOC-Pin-Multiplexing"></a>Pin Multiplexing</h2>
+<p><span style="font-size:10pt">Each AP vendor is responsible for writing the code in</span><span style="font-size:10pt"> </span><code style="font-size:10pt">pinmux.c</code><span style="font-size:10pt">, which uses the device tree to set up the pinmux for a particular driver. </span>U-Boot uses the same pinmux bindings as the kernel. These settings are normally static (that is, the settings are selected once and remain unchanged). </p>
+<h4><a name="TOC-Implementation-Notes5"></a>Implementation Notes</h4>
+<p>For maximum speed, U-Boot should initialize only the pins it uses during its boot. All other pins are left in their default configuration and can be initialized later by the kernel. For example, the WiFi pinmux is not required at boot time and can be initialized later by the kernel.</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:220px;height:28px"><b> Header File</b></td>
+<td style="width:355px;height:28px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/pinmux.h;h=797e158e68ae49b14cf646a76add1d5098eff8da;hb=HEAD" target="_blank">arch/arm/include/asm/arch-tegra20/pinmux.h</a></font></td>
+</tr>
+<tr>
+<td style="width:220px;height:14px"> <b>Implementation File</b></td>
+<td style="width:355px;height:14px"><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:330px;height:14px">typically in AP directory, e.g., <font face="courier new, monospace" style="font-style:normal">arch/arm/cpu/armv7/arch-xxxxx/pinmux.c</font></td>
+</tr>
+</tbody>
+</table>
+</i></td>
+</tr>
+<tr>
+<td style="width:220px;height:14px"> <b>Makefile</b></td>
+<td style="width:355px;height:14px"><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:330px;height:14px"> typically, also in AP directory</td>
+</tr>
+</tbody>
+</table>
+</i></td>
+</tr>
+<tr>
+<td style="width:220px;height:14px"> <b>Example</b></td>
+<td style="width:355px;height:14px"><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:330px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/cpu/tegra20-common/pinmux.c;h=a2a09169e54bc46acbdc0b2bc5f89478a775b2be;hb=HEAD" target="_blank">arch/arm/cpu/tegra20-common/pinmux.c</a></font></span></td>
+</tr>
+</tbody>
+</table>
+</i></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+<div>
+<h2><a name="TOC-Power"></a>Power</h2>
+<p>U-Boot code initializes both the AP power as well as the power to the system peripherals. Power to the AP is initialized using the PMIC (Power Management IC) driver. In addition to PMIC, the drivers/power directory includes subdirectories for power-related drivers for controlling the battery and for the fuel gauge that measures the current amount of power in the battery. (Chrome OS may or may not use these additional drivers.)</p>
+<h4><a name="TOC-Implementation-Notes6"></a>Implementation Notes</h4>
+<div>The board-specific code is located in <font face="courier new, monospace">board/<i>manufacturer</i>/<i>boardname</i>/<i>boardname.c</i></font>  (for example, <font face="courier new, monospace">board/samsung/trats/trats.c</font>). In this file, you implement the following initialization function, which is called by the file <font face="courier new, monospace">arch/arm/lib/board.c</font>:</div>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<p><span style="color:rgb(0,96,0);white-space:pre-wrap;font-size:10pt"><code>int power_init_board(void);</code></span></p>
+</blockquote>
+<div>
+<div><span style="white-space:pre-wrap">This function initializes the AP power through the PMIC and turns on peripherals such as the display and eMMC.  It also checks the battery if needed.
+
+</span></div>
+<div><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">include/power/pmic.h<br />
+include/power/battery.h</font></span></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace">drivers/power/pmic/<br />
+drivers/power/battery/<br />
+drivers/power/fuel_gauge</font></span></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace" style="font-style:normal"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/power/Makefile;h=8c7190156c302b60b9f5b8601bc7e4e7a0594b73;hb=HEAD" target="_blank">drivers/power/Makefile</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:334px;height:14px"><span style="font-family:courier new,monospace;font-size:small;font-style:normal;white-space:pre">CONFIG_POWER_MAX8998 (for PMIC)
+CONFIG_POWER_BATTERY_
+</span><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=board/samsung/trats/trats.c;h=e540190984740da822678724a71ffed0764b1cb2;hb=HEAD" target="_blank">board/samsung/trats/trats.c</a></font></span></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody></tbody>
+</table>
+<br />
+</div>
+<p style="text-align:right"><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></font></p>
+</div>
+<div>
+<h2><a name="TOC-Pulse-Width-Modulation-PWM-"></a>Pulse Width Modulation (PWM)</h2>
+<p>The pulse width modulation (PWM) driver is often used to control display contrast and LCD backlight brightness.</p>
+<h4><a name="TOC-Implementation-Notes7"></a>Implementation Notes</h4>
+<p>This driver requires you to implement generic functions defined in <font face="courier new, monospace">include/pwm.h</font> as well as chip-specific functions defined in the AP directory. Basic functions to implement include the following:</p>
+<div>
+<ul><li><font face="courier new, monospace">pwm_init()</font> - sets up the clock speed and whether or not it is inverted</li>
+<li><font face="courier new, monospace">pwm_config()</font> - sets up the duty and period, in nanoseconds</li>
+<li><font face="courier new, monospace">pwm_enable()</font> - enables the PWM driver</li>
+<li><font face="courier new, monospace">pwm_disable()</font> - disables the PWM driver</li></ul>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/pwm.h;h=13acf85933b3afab39f20e04a5520077864f598b;hb=HEAD" target="_blank"><span style="font-style:normal"><font face="courier new, monospace">i</font></span><font face="courier new, monospace" style="font-style:normal">nclude/pwm.h</font></a> (basic interface)<br />
+<a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/include/asm/arch-tegra20/pwm.h;h=9e03837ccbbc0418c6b7c4d58c187fb4cabc4bce;hb=HEAD" target="_blank"><span style="font-style:normal"><font face="courier new, monospace">arch/arm/include/asm/arch-tegra20/pwm.h</font></span> </a>(AP functions)</td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/cpu/armv7/tegra20/pwm.c;h=b655c5cd06f28d748a56b9c91367529d0a61cca5;hb=HEAD" target="_blank">arch/arm/cpu/armv7/tegra20/pwm.c</a></font></span></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td style="width:334px;height:14px"><font face="arial, sans-serif">typically, also in AP directory</font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:334px;height:14px"><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/cpu/armv7/tegra20/pwm.c;h=b655c5cd06f28d748a56b9c91367529d0a61cca5;hb=HEAD" target="_blank">arch/arm/cpu/armv7/tegra20/pwm.c</a></font></span></td>
+</tr>
+</tbody>
+</table>
+</i></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<div><font color="#666666"><br />
+</font></div>
+<p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+</div>
+<div>
+<h2><a name="TOC-SDMMC-and-eMMC"></a>SDMMC and eMMC<br />
+</h2>
+</div>
+<div>
+<p>The same driver is typically used by both the SDMMC and the eMMC. Secure Digital Multimedia Memory Card (SDMMC) refers to an external SD card. eMMC is an internal mass storage device.<br />
+<br />
+We do not currently use eMMC boot blocks. Chrome OS can boot from an external SD card or from internal eMMC. It is convenient to be able to boot from eMMC for development purposes. </p>
+<p>Chrome OS divides the disk using the EFI partitions table.  The kernel is read directly from the partition without using the file system. Be sure to enable the EFI partition table in the board file using the following option:<br />
+</p>
+<ul><li><font face="courier new, monospace">#define CONFIG_EFI_PARTITION</font></li></ul>
+<h4><a name="TOC-Requirements1"></a>Requirements</h4>
+<p><i>SDMMC</i><br />
+</p>
+<ul><li>4-bit.</li>
+<li>Speed not critical as this device is used only in developer/recovery modes. </li></ul>
+<p><i>eMMC </i><br />
+</p>
+<ul><li><i><span style="font-style:normal">8-bit data width, ideally DDR.</span></i></li>
+<li><i>Speed: </i><i> </i>For reading, 40Mbytes/sec or better is required.  Writing speed is less critical because the eMMC rarely performs write operations in U-Boot.</li></ul>
+<h4><a name="TOC-Implementation-Notes8"></a>Implementation Notes</h4>
+<p>Set up the struct <font face="courier new, monospace">mmc</font> and call <font face="courier new, monospace">mmc_register(mmc)</font> for each MMC device (for example, once for the SDMMC and once for the eMMC).  Important functions to implement include the following:</p>
+<ul><li><font face="courier new, monospace">send_cmd()</font> -  send a command to the MMC device</li>
+<li><font face="courier new, monospace">set_ios()</font> - to set the I/O speed</li>
+<li><font face="courier new, monospace">init()</font> - to initialize the driver</li></ul>
+<p>Some of the functions perform differently depending on which type of device is being initialized.  For example, <font face="courier new, monospace">mmc_getcd()</font> indicates whether an SC card is currently in the slot.  This function always returns TRUE for an eMMC card.</p>
+<p>Key values to set in struct <font face="courier new, monospace">mmc</font> include the following:</p>
+<ul><li><font face="courier new, monospace">voltages</font> - supported voltages</li>
+<li><font face="courier new, monospace">host_caps</font> - capabilities of your chip</li>
+<li><font face="courier new, monospace">f_min</font> - minimum frequency</li>
+<li><font face="courier new, monospace">f_max</font> - maximum frequency</li></ul>
+<div><br />
+</div>
+<i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/mmc.h;h=a13e2bdcf16886a755a8cf8b74974b3425ca373b;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">include/mmc.h</a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=tree;f=drivers/mmc;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/mmc</a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/mmc/Makefile;h=a1dd7302bfc732122fe6620ded02b46dd8c817fd;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/mmc/Makefile</a> </td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:334px;height:14px"><span style="font-family:courier new,monospace;font-size:small;font-style:normal;white-space:pre">CONFIG_TEGRA_MMC
+</span><span style="font-style:normal"><font face="courier new, monospace">drivers/mmc/tegra_mmc.c</font></span></td>
+</tr>
+</tbody>
+</table>
+</i>
+<p style="text-align:right">   </p>
+<p style="text-align:right"> <i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+</div>
+<div>
+<div></div>
+</div>
+<div>
+<h2><a name="TOC-SPI"></a>SPI</h2>
+<div>
+<p>The SPI driver specifies the list of known SPI buses in a structure stored in the <font face="courier new, monospace">drivers/spi/</font> directory (for an example,  see the <font face="courier new, monospace">exynos_spi_slave</font><font face="arial, sans-serif"> structure in </font><font face="courier new, monospace">drivers/spi/exynos_spi.c)</font>. The first field in this structure is another <font face="courier new, monospace">spi_slave structure</font>,<font face="courier new, monospace"> slave</font>, which describes the bus (<font face="courier new, monospace">slave.bus</font>) and chip select (<font face="courier new, monospace">slave.cs</font>) for each SPI slave device.</p>
+<p>Ordering of multiple SPI buses is specified in the device tree file (for example, <font face="courier new, monospace">board/samsung/dts/exynos5250-smdk5250.dts</font>).</p>
+<p>Each device connected to the SPI bus (for example, the EC, touchpad, and SPI flash could all be connected to this bus) contains a reference to the <code>spi_slave structure</code> in its implementation file<i> </i>(for example, see <code><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/mtd/spi/winbond.c;h=f6aab3d32f459d82d0a9e606f4382fe67981160f;hb=HEAD">drivers/mtd/spi/winbond.c</a></code> for the SPI flash chip and <code>drivers/misc/cros-ec.c<font face="arial, sans-serif"> for the EC</font></code>.</p>
+<h4><a name="TOC-Implementation-Notes9"></a>Implementation Notes</h4>
+</div>
+</div>
+<p>Use this function to set up a device on the SPI bus:</p>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>    </code><code>struct spi_slave *spi_setup_slave(unsigned int busnum,           // bus number </code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>                                      unsigned int cs,               // chip select</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/spi/exynos_spi.c;h=be60ada2ba43a17ecda4a8b968b08b791f0af73f;hb=HEAD#l81" style="color:rgb(153,153,153);text-decoration:initial"> </a><code>                                    unsigned int max_hz,           // maximum SCK rate, in Hz</code></div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><code>                                      unsigned int mode)             // mode</code></div>
+</div>
+</div>
+<p>To drop the device from the bus, use this function:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<p><span style="font-family:monospace;font-size:12px;white-space:pre"><code>    </code><code>void spi_free_slave(struct spi_slave *slave)</code></span></p>
+</div>
+Other key functions are used to claim control over the bus (so communication can start) and to release it:
+<div class="sites-codeblock sites-codesnippet-block">
+<p><span style="font-family:monospace;font-size:12px;white-space:pre"><code>    </code><code>int spi_claim_bus(struct spi_slave *slave);</code></span></p>
+<p><span style="font-family:monospace;font-size:12px;white-space:pre"><code>    </code><code>void spi_release_bus(struct spi_slave *slave);</code></span></p>
+</div>
+When a slave claims the bus, it maintains control over the bus until you call the <code>spi_release_bus()</code> function. 
+<div style="font-family:monospace;font-size:small;white-space:pre"><br />
+</div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><b> Header File</b></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/spi.h;h=60e85db9a46e052c97b638c58bb93114a378e3b7;hb=HEAD" rel="nofollow" target="_blank"><font face="courier new, monospace">i</font><font face="courier new, monospace">nclude/spi.h</font></a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Implementation File</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/spi/exynos_spi.c;h=be60ada2ba43a17ecda4a8b968b08b791f0af73f;hb=HEAD" rel="nofollow" target="_blank">drivers/spi/exynos_spi.c</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Makefile</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/spi/Makefile;h=824d357d94818ea9c05fa5b0d437aff181b50195;hb=HEAD" rel="nofollow" target="_blank">drivers/spi/Makefile</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Example</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/spi/exynos_spi.c;h=be60ada2ba43a17ecda4a8b968b08b791f0af73f;hb=HEAD" rel="nofollow" target="_blank">drivers/spi/exynos_spi.c</a><br />
+</font></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:right"><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)"><br />
+back to top</a></i></font></p>
+<h2><a name="TOC-SPI-Flash"></a>SPI Flash</h2>
+<p>The SPI flash stores the firmware and consists of a Read Only section that cannot be changed after manufacturing and a Read/Write section that can be updated in the field.   </p>
+<h4><a name="TOC-Requirements2"></a>Requirements</h4>
+<h4><a name="TOC-Size:-The-SPI-flash-is-typically-4-or-8-Mbytes-with-half-allocated-to-the-Read-Only-portion-and-half-to-the-Read-Write-portion.-"></a><span style="font-weight:normal"><i>Size:</i>  The SPI flash is typically 4 or 8 Mbytes, with half allocated to the Read Only portion and half to the Read/Write portion. <span>    </span></span></h4>
+<h4><a name="TOC-Speed:-Because-this-component-directly-affects-boot-time-it-must-be-fast:-5-Mbytes-second-performance-is-required.-"></a><span style="font-weight:normal"><i>Speed:</i></span> <span style="font-weight:normal">Because this component directly affects boot time, it must be fast: 5 Mbytes/second performance is required. </span></h4>
+</div>
+<div>
+<h4><a name="TOC-Implementation-Notes10"></a>Implementation Notes</h4>
+<p>There are several steps to implementing the SPI flash.  First, define a prototype for your SPI flash, with a name in the form <font face="courier new, monospace">spi_flash_probe_<i>yourDeviceName</i>()</font>. Add this function to <font face="courier new, monospace">spi_flash_internal.h.</font><font face="arial, sans-serif"> </font></p>
+<p><font face="arial, sans-serif">Also, </font>modify <font face="courier new, monospace">spi_flash.c</font>, adding the config option that links your prototype to the #define. For example, for the Winbond SPI flash, these lines link the <font face="courier new, monospace">spi_flash_probe_winbond()</font> prototype to its #define:</p>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>#ifdef CONFIG_SPI_FLASH_WINBOND</code></span></div>
+<div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>        { 0, 0xef, spi_flash_probe_winbond, },</code></span></div>
+<div><span style="color:rgb(34,34,34);font-family:arial,sans-serif"><code>#endif</code></span></div>
+</blockquote>
+<div>
+<p>This code passes in the first byte of the chip's ID (here, <font face="courier new, monospace">0xef</font>). If the ID code matches that of the attached SPI flash, the struct <font face="courier new, monospace">spi_flash</font><span style="font-family:arial,sans-serif"> </span><span style="font-family:arial,sans-serif">is created.</span></p>
+<p>You also need to define the <font face="courier new, monospace">spi_flash</font> structure that describes the SPI flash:</p>
+<pre><div class="sites-codeblock sites-codesnippet-block"><code>struct spi_flash {
+  struct spi_slave *spi;
+  const char       *name;
+  /* Total flash size */
+  u32              size;
+  /* Write (page)  size */
+  u32              page_size;
+  /* Erase (sector) size */
+  u32              sector_size;
+  int              (*read)(struct spi_flash *flash, u32 offset, size_t len, void *buf);
+  int              (*write)(struct spi_flash *flash, u32 offset, size_t len, const void *buf);
+  int              (*erase)(struct spi_flash *flash, u32 offset, size_t len);
+};</code></div>
+</pre>
+<div>In this structure, you set the appropriate fields and either implement the functions for reading, writing, and erasing the SPI flash or use existing functions defined in <font face="courier new, monospace">spi_flash_internal.h</font>.</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div>
+<div>
+<div><br />
+</div>
+</div>
+</div>
+</blockquote>
+<div>
+<br />
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:248px;height:24px"> <b>Header File</b><b>  </b>  </td>
+<td style="width:333px;height:24px"> <font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/spi_flash.h;h=9da90624f23d665fc58c95e37da02096b1adde07;hb=HEAD" target="_blank">include/spi_flash.h</a><br />
+<span style="color:rgb(34,34,34)"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/mtd/spi/spi_flash_internal.h;h=141cfa8b26d75e6e816c7315530854a93035b803;hb=HEAD" target="_blank">drivers/mtd/spi/spi_flash_</a></span><a href="http://internal.h"><span style="color:rgb(34,34,34)">internal.h</span></a></font></td>
+</tr>
+<tr>
+<td style="width:248px;height:21px"> <b>Implementation File</b></td>
+<td style="width:333px;height:21px"> <a href="http://git.denx.de/?p=u-boot.git;a=tree;f=drivers/mtd/spi;hb=HEAD" style="font-family:courier new,monospace" target="_blank">drivers/mtd/spi</a><span style="font-family:courier new,monospace">/</span><i style="font-family:courier new,monospace">yourDriver.c</i></td>
+</tr>
+<tr>
+<td style="width:248px;height:15px"> <b>Makefile</b></td>
+<td style="width:333px;height:15px"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/mtd/spi/Makefile;h=90f83924e2bf23b9ab4c621495ca236c14a19acd;hb=HEAD" style="font-family:courier new,monospace" target="_blank">drivers/mtd/spi/Makefile</a>/<br />
+</td>
+</tr>
+<tr>
+<td style="width:248px;height:22px"> <b>Example</b> <br /></td>
+<td style="width:333px;height:22px"><font face="courier new, monospace">CONFIG_SPI_FLASH</font> and<br />
+<font face="courier new, monospace">CONFIG_SPI_FLASH_winbond<br />
+</font> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/mtd/spi/winbond.c;h=f6aab3d32f459d82d0a9e606f4382fe67981160f;hb=HEAD" style="font-family:courier new,monospace" target="_blank">drivers/mtd/spi/winbond.c</a></td>
+</tr>
+</tbody>
+</table>
+<br />
+<p style="text-align:right"><span><font size="1"><a href="u-boot-drivers.html#TOC-Board-Configuration"><i>back to top</i></a></font></span></p>
+<h2><a name="TOC-Thermal-Management-Unit-TMU-"></a>Thermal Management Unit (TMU)</h2>
+<p>The thermal management unit (TMU) monitors the temperature of the AP. If the temperature reaches the upper limit, the TMU can do one of the following:</p>
+<ul><li>Slow the system down until it cools to a certain point</li>
+<li>Power off the system before it melts</li></ul>
+<p>The <code>dtt</code> command can be used on the console to perform these functions.</p>
+<h4><a name="TOC-Implementation-Notes11"></a>Implementation Notes</h4>
+<p>To implement this driver, you have two tasks:</p>
+<ul><li>Create a TMU driver and connect it to the <code>dtt</code> command by modifying the file <code>common/cmd_dtt.c</code>.</li>
+<li>Set up a thermal trip in your board file. The temperature limits should be defined in the device tree.</li></ul>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><b> Header File</b></td>
+<td style="width:334px;height:14px"><br />
+</td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Implementation File</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=common/cmd_dtt.c;h=cd94423d21910d61055bade1bc285dbed099b9f9;hb=HEAD" target="_blank">common/cmd_dtt.c</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Makefile</b></td>
+<td style="width:334px;height:14px"><br />
+</td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Example</b></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace">board/samsung/smdk5250/smdk5250.c</font></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:right"><i style="font-size:x-small;color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></p>
+<div></div>
+<h2><a name="TOC-Timer"></a>Timer</h2>
+</div>
+</div>
+<div>
+<div>
+<p>The U-Boot timer is measured in milliseconds and increases monotonically from the time it is started.  There is no concept of time of day in U-Boot. </p>
+<h4><a name="TOC-Implementation"></a>Implementation</h4>
+<div>The timer requires two basic functions:</div>
+<div>
+<ul><li><span style="font-size:10pt"><font face="courier new, monospace"><code>timer_init()</code></font><code> - </code></span><span style="font-size:10pt">called early in U-Boot, before relocation</span></li>
+<li><span style="font-size:10pt"><font face="courier new, monospace"><code>get_timer()</code></font><code> </code></span><span style="font-size:10pt">- can be called any time after initialization</span></li></ul>
+</div>
+<h4><a name="TOC-Typical-Use"></a>Typical Use</h4>
+<p>The timer is commonly used in U-Boot while the system is waiting for a specific event or response. The following example shows a typical use of the timer that can be used to ensure that there are no infinite loops or hangs during boot:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<p><code>start = get_timer(0)</code><br />
+<span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;line-height:1"><code>while ( ...) {</code><br />
+<code>
+   if (get_timer (start) &gt; 100){</code></span></p>
+<p><span style="color:rgb(0,96,0);font-family:monospace;font-size:10pt;line-height:1"><code>      debug "%s:Timeout while waiting for response\^");</code><br />
+<code>
+      return -1;</code><br />
+<code>
+   }</code><br />
+<code>
+   .</code><br />
+<code>
+   .</code><br />
+<code>
+   .</code><br />
+<code>
+}</code></span></p>
+</div>
+<p>A <font face="courier new, monospace">base_value</font> is passed into the <font face="courier new, monospace">get_timer() </font>function, and the function returns the elapsed time since that <font face="courier new, monospace">base_value</font> (that is, it subtracts the <font face="courier new, monospace">base_value</font> from the current value and returns the difference).</p>
+<h4><a name="TOC-Other-Uses"></a><span style="font-size:10pt">Other Uses</span></h4>
+<div><span style="font-size:10pt">The <code>timer_get_us()</code> function returns the current monotonic time in microseconds. This function is used in Chrome OS verified boot to obtain the current time. It is also used by bootstage to track boot time (see <font face="courier new, monospace">common/bootstage.c</font>). It should be as fast and as accurate as possible.</span></div>
+<h3><a name="TOC-Delays"></a><span style="font-size:10pt">Delays</span></h3>
+<div><span style="font-size:10pt">The <font face="courier new, monospace">__udelay()</font> function, also implemented in <code>timer.c</code>, is called by U-Boot internally from its <code>udelay<font color="#000000"><font face="arial, sans-serif"> (delay for a period in microseconds)</font></font></code> and <code>mdelay<font color="#000000"><font face="arial, sans-serif"> (delay for a period in milliseconds)</font></font></code> functions (declared in <code>common.h</code>):</span></div>
+</div>
+</div>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<div>
+<div>
+<p><span style="font-size:12px;white-space:pre"><font face="courier new, monospace">void __udelay (unsigned long);</font></span></p></div></div></blockquote><span style="font-size:10pt;white-space:pre">This function introduces a delay for a given number of microseconds. The delay should be as accurate as possible. In no case should the delay occur for less than the specified time.</span><br />
+<div>
+<div>
+<h4><a name="TOC-Command-Line-Interface3"></a><span style="font-size:10pt">Command Line Interface</span></h4>
+<div><span style="font-size:10pt">The <font face="courier new, monospace">time</font> command can be used to time other commands. This feature is useful for benchmarking.</span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div style="text-align:right"><i style="text-align:start">
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:334px;height:14px"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/common.h;h=4ad17eafb9b89a15975b0b8945a1b70c198d8d88;hb=HEAD" target="_blank"><span style="font-style:normal"><font face="courier new, monospace">i</font></span><font face="courier new, monospace" style="font-style:normal">nclude/c</font><font face="courier new, monospace" style="font-style:normal">ommon.h</font></a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace" style="font-style:normal">timer.c</font><font face="arial, sans-serif">, in the AP directory</font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td style="width:334px;height:14px"><br />
+</td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:334px;height:14px"><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:334px;height:14px"><span style="font-style:normal"><font face="courier new, monospace"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=arch/arm/cpu/armv7/s5p-common/timer.c;h=bb0e795e66823d4963acd309ebbdd3e67bf7d4a4;hb=HEAD" target="_blank">arch/arm/cpu/armv7/s5p_common/timer.c</a></font></span></td>
+</tr>
+</tbody>
+</table>
+</i></td>
+</tr>
+</tbody>
+</table>
+</i>
+<p><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></font></p>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p style="text-align:right"><br />
+</p>
+<h2><a name="TOC-Trusted-Platform-Module-TPM-"></a>Trusted Platform Module (TPM)</h2>
+<p>The Trusted Platform Module (TPM) is the security chip that maintains rollback counters for firmware and kernel versions and stores keys for the system. The TPM is normally connected on an LPC, SPI, or I2C bus.</p>
+<div>
+<h4><a name="TOC-Requirements3"></a>Requirements</h4>
+<p>The TPM is a critical contributor to Chromium OS boot time, so it must be as fast as possible. </p>
+<h4><a name="TOC-Implementation1"></a>Implementation</h4>
+<div>All message formatting is handled in <font face="courier new, monospace">vboot_reference</font>, so the functions you must implement for the TPM in U-Boot are for low-level initialization, open/close, and send/receive functionality:<br />
+<br />
+</div>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div></div>
+</blockquote>
+<div class="sites-codeblock sites-codesnippet-block">
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="font-family:courier new,monospace"><code>int tis_init();</code></span></blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px"><span style="font-family:courier new,monospace"><code>int tis_open();</code></span></blockquote>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div><font face="courier new, monospace"><code>int tis_close();</code></font></div>
+<div><span style="font-family:courier new,monospace"><code>int tis_sendrecv(</code></span><span style="font-family:monospace;font-size:small;white-space:pre"><code>const uint8_t *sendbuf, size_t send_size, uint8_t *recvbuf, 
+</code></span><span style="font-family:monospace;font-size:small;white-space:pre"><code>                   size_t *recv_len</code></span><span style="font-family:courier new,monospace"><code>);</code></span></div>
+</blockquote>
+<div>
+<div></div>
+</div>
+</div>
+<br />
+<div>  </div>
+<div></div>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td> <b>Header File</b><b>  </b>  </td>
+<td><font face="courier new, monospace"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/tpm.h;h=6b21e9c7349c298c6fc9253324112db58935f805;hb=HEAD" target="_blank">include/tpm.h</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Implementation File</b></td>
+<td style="width:334px;height:14px"> <font face="courier new, monospace">drivers/tpm/<i>yourDriver.c</i></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Makefile</b></td>
+<td style="width:334px;height:14px"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/tpm/Makefile;h=be11c8b595f1367daffc623aff8aa7c694a36749;hb=HEAD" style="font-family:courier new,monospace" target="_blank">drivers/tpm/Makefile</a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b>Example</b></td>
+<td style="width:334px;height:14px"> <span style="font-family:courier new,monospace">CONFIG_GENERIC_LPC_TPM<br />
+ </span><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/tpm/generic_lpc_tpm.c;h=6c494eb98a339c5b77859bdbc1ccbd8e6a6a6ff5;hb=HEAD" style="font-family:courier new,monospace" target="_blank">drivers/tpm/generic_lpc_tpm.c</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align:right"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="font-size:x-small"><i>back to top</i></a></p>
+<h2><a name="TOC-UART"></a>UART</h2>
+<div>The UART is used for serial communication to drive the serial console, which provides output during the boot process.  This console allows the user to enter commands for testing and debugging.</div>
+<h4><a name="TOC-Requirements4"></a>Requirements</h4>
+<div>
+<ul><li>115K2 baud</li>
+<li>3-wire port (no handshaking)</li></ul>
+</div>
+<h4><a name="TOC-Implementation-Notes12"></a>Implementation Notes</h4>
+<div>You register this driver by setting up a structure (<font face="courier new, monospace">serial_device{}</font>) and then call <font face="courier new, monospace">serial_register()</font>. The AP typically has built-in serial functions that this driver can use.<br />
+<br />
+</div>
+<div></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<pre style="word-wrap:break-word;white-space:pre-wrap"><code>struct serial_device {
+	/* enough bytes to match alignment of following func pointer */
+	char	name[16];
+
+	int	(*start)(void);
+	int	(*stop)(void);
+	void	(*setbrg)(void);
+	int	(*getc)(void);
+	int	(*tstc)(void);
+	void	(*putc)(const char c);
+	void	(*puts)(const char *s);
+#if CONFIG_POST &amp; CONFIG_SYS_POST_UART
+	void	(*loop)(int);
+#endif
+	struct serial_device	*next;
+};</code>
+</pre>
+</div>
+<div></div>
+<div></div>
+</div>
+<br />
+<div><br />
+</div>
+<p>In the final shipping product, the console needs to run in silent mode. For example, this code in the driver tells the console to run in silent mode:</p>
+<font face="courier new, monospace"><span style="color:rgb(34,34,34)"> if (fdtdec_get_config_int(gd-&gt;</span><span style="color:rgb(34,34,34)">fdt_blob, "silent_console", 0))</span></font>
+<div><font face="courier new, monospace"><span style="color:rgb(34,34,34)">         gd-&gt;flags |= GD_FLG_SILENT;</span> </font>
+<div><i><br />
+</i></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:334px;height:14px"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=include/serial.h;h=14f863ed20ec73f67ed2df791ad2ad4b904b689c;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">include/serial.h</a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:334px;height:14px"> <a href="http://git.denx.de/?p=u-boot.git;a=tree;f=drivers/serial;h=82deabb40ad2e94538a483ad8abfe9600b48d330;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/serial/</a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Makefile</b></span></td>
+<td style="width:334px;height:14px"> <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/serial/Makefile;h=5e8b64873d9bb3beff8d9b7c41437908645601d8;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/serial/Makefile</a></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:334px;height:14px"><span style="font-family:courier new,monospace;font-style:normal;font-size:12px;white-space:pre">CONFIG_SYS_NS16550</span>    <a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/serial/serial_ns16550.c;h=c1c0134bcb3fdd8ec7e6c8a93e9f463291b5b9ca;hb=HEAD" style="font-family:courier new,monospace;font-style:normal" target="_blank">drivers/serial/serial_ns16550.c</a></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<div><br />
+</div>
+<div>
+<p style="text-align:right"><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></font></p>
+</div>
+</div>
+<div><font size="1"><br />
+</font></div>
+<div>
+<h2><a name="TOC-USB-Host"></a>USB Host</h2>
+</div>
+<div>
+<p><span style="font-size:10pt">USB host is used by Chrome OS in two ways:</span></p>
+<ul><li><i>In recovery mode:</i>  U-Boot software must be able to detect the presence of a USB storage device and load a recovery image from the device.</li>
+<li><i>For Ethernet connectivity:</i> On Chrome OS platforms without a built-in Ethernet connector, a USB-to-Ethernet adapter can be used to provide an Ethernet connection.</li></ul>
+<div>On x86 systems, USB is often used to connect other peripherals, such as cameras and SD card readers, but Chrome OS does not require U-Boot drivers for these USB peripherals.</div>
+<p>U-Boot supports both the EHCI and OHCI standards for USB. Be sure to test a variety of common USB storage devices to ensure that they work with your U-Boot driver. </p>
+<h4><a name="TOC-USB-Hub"></a>USB Hub</h4>
+<p>In some cases, the USB or AP is connected to a USB hub to expand the number of USB ports. The board file may need to power up this hub and configure it. Be careful to power up the hub only if USB is used by the system.</p><div>
+</div>
+<h4><a name="TOC-EFI-Partition-Table"></a>EFI Partition Table</h4>
+<p>Chrome OS uses an EFI partition table. To enable this table, add the following entry to the board file:</p>
+<ul><li><font face="courier new, monospace" size="2"><code>#define CONFIG_EFI_PARTITION</code></font></li></ul>
+<h4><a name="TOC-Implementation-Notes13"></a>Implementation Notes</h4>
+<p>USB should not be initialized in the normal boot path. Loading a kernel from USB is a slow process (it could take a second or more) as well as a potential security risk. </p>
+<p>The two main functions to implement are the following:</p>
+</div>
+<blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div></div>
+</blockquote>
+<div class="sites-codeblock sites-codesnippet-block">
+<span style="color:rgb(0,96,0);font-family:monospace;font-size:12px;white-space:pre;line-height:1">int ehci_hcd_init(int index, struct ehci_hccr **hccr, struct ehci_hcor **hcor)</span><br /><blockquote style="margin:0px 0px 0px 40px;border:none;padding:0px">
+<div><span style="font-family:monospace;font-size:12px;white-space:pre"><br />
+</span></div>
+</blockquote><span style="color:rgb(0,96,0);font-family:monospace;font-size:12px;white-space:pre;line-height:1">int ehci_hcd_stop(int index)</span>
+</div>
+<div>
+<div>
+<div>
+<p>These functions create (and destroy) the appropriate control structures to manage a new EHCI host controller. Much of this interface is standardized and implemented by U-Boot. You just point U-Boot to the address of the peripheral.</p>
+<h4><a name="TOC-Configuration-Options"></a>Configuration Options</h4>
+</div>
+<p>The configuration options for USB are specified in the board configuration file (for example, <font face="courier new, monospace">include/configs/seaboard.h</font><font face="arial, sans-serif">). </font>There are a number of #defines for different aspects of USB, including the following:</p>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:296px;height:15px">  <font face="courier new, monospace">CONFIG_USB_HOST_ETHER</font></td>
+<td style="width:412px;height:15px">   Enables U-Boot support for USB Ethernet</td>
+</tr>
+<tr>
+<td style="width:296px;height:15px">  <font face="courier new, monospace">CONFIG_USB_ETHER_ASIX</font></td>
+<td style="width:412px;height:15px">   Enables the driver for the ASIX USB-to-Ethernet adapter   </td>
+</tr>
+<tr>
+<td style="width:296px;height:16px">  <font face="courier new, monospace">CONFIG_USB_ETHER_SMSC95XX</font></td>
+<td style="width:412px;height:16px">   Enables the driver for the SMSC95XX USB-to-Ethernet adapter</td>
+</tr>
+<tr>
+<td style="width:296px;height:16px">  <font face="courier new, monospace">CONFIG_USB_EHCI</font></td>
+<td style="width:412px;height:16px">   Enables EHCI support in U-Boot</td>
+</tr>
+<tr>
+<td style="width:296px;height:15px">  <font face="courier new, monospace">CONFIG_USB_EHCI_TEGRA</font></td>
+<td style="width:412px;height:15px">   Enables EHCI for a specific chip</td>
+</tr>
+<tr>
+<td style="width:296px;height:15px">  <font face="courier new, monospace">CONFIG_USB_STORAGE</font></td>
+<td style="width:412px;height:15px">   Enables a USB storage device</td>
+</tr>
+<tr>
+<td style="width:296px;height:15px">  <font face="courier new, monospace">CONFIG_CMD_USB</font><font face="courier new, monospace"> </font>   </td>
+<td style="width:412px;height:15px">   Enables the USB command</td>
+</tr>
+</tbody>
+</table>
+<br />
+<div><br />
+</div>
+<div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><br />
+</div>
+</div>
+<div style="font-family:monospace;font-size:small;white-space:pre"><br />
+</div>
+</div>
+<div><br />
+</div>
+<div><i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:247px;height:14px"><span style="font-style:normal"><b> Header File</b></span></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace" style="font-style:normal"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/usb/host/ehci.h;h=1e3cd793b6091650ed1e7ed61b6bfca3f7046a69;hb=HEAD" target="_blank">drivers/usb/host/ehci.h</a><br />
+<a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/usb/host/ohci.h;h=d977e8ff3ce31ee93990a68990590bafdc3800ea;hb=HEAD" target="_blank">drivers/usb/host/ohci.h</a></font></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Implementation File</b></span></td>
+<td style="width:334px;height:14px"><font face="courier new, monospace" style="font-style:normal">drivers/usb/host/ehci-</font>controllerName.c<br />
+<i>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:334px;height:14px"><font face="courier new, monospace" style="font-style:normal">drivers/usb/host/ohci-</font>controllerName.c</td>
+</tr>
+</tbody>
+</table>
+</i></td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <span style="font-style:normal"><b>Makefile</b></span></td>
+<td style="width:334px;height:14px"> </td>
+</tr>
+<tr>
+<td style="width:247px;height:14px"> <b style="font-style:normal">Example</b></td>
+<td style="width:334px;height:14px"> <font face="courier new, monospace" style="font-style:normal"><a href="http://git.denx.de/?p=u-boot.git;a=blob;f=drivers/usb/host/ehci-tegra.c;h=a1c43f8331787c7cf84e0eabcf0d373ae1ebabe4;hb=HEAD" target="_blank">drivers/usb/host/ehci-tegra.c</a></font></td>
+</tr>
+</tbody>
+</table>
+</i></div>
+<div><br />
+</div>
+<div><br />
+</div>
+<div>
+<p style="text-align:right"><font size="1"><i style="color:rgb(85,26,139)"><a href="u-boot-drivers.html#TOC-Board-Configuration" style="color:rgb(85,26,139)">back to top</a></i></font></p>
+</div>
+</div>
+<div><font size="1"><br />
+</font></div>
+<h2><a name="TOC-Other-sections-in-U-Boot-Porting-Guide"></a>Other sections in <i>U-Boot Porting Guide</i></h2>
+<div><font color="#666666">  1.  <a href="1-overview.1.html">Overview of the Porting Process</a></font></div>
+<div><font color="#666666">  2.  <a href="2-concepts.1.html">Concepts</a></font></div>
+<div><font color="#666666">  3.  U-Boot Drivers (this page)</font></div>
+<div><br /></div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/u-boot-porting-guide/u-boot-drivers">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

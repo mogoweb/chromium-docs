@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/getting-around-the-chrome-source-code","deleted":false,"title":"Getting Around the Chromium Source Code Directory Structure","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/getting-around-the-chrome-source-code\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Getting Around the Chromium Source Code Directory Structure","locale":"en","wuid":"wuid:gx:7cbfe01aa72d663d","revision":52,"path":"/developers/how-tos/getting-around-the-chrome-source-code","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"getting-around-the-chrome-source-code","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Getting Around the Chromium Source Code Directory Structure - The Chromium Projects" />
+<meta itemprop="name" content="Getting Around the Chromium Source Code Directory Structure - The Chromium Projects" />
+<meta property="og:title" content="Getting Around the Chromium Source Code Directory Structure - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Getting Around the Chromium Source Code Directory Structure - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1308680092356/developers/how-tos/getting-around-the-chrome-source-code/Content.png" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1308680092356/developers/how-tos/getting-around-the-chrome-source-code/Content.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Getting Around the Chromium Source Code Directory Structure</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<div style="text-align:left;display:block"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#High_level_overview"><strong>1 </strong>High-level overview</a></li><li class="goog-toc"><a href="#Quick_introduction_to_the_soluti"><strong>2 </strong>Quick introduction to the solution file</a></li><li class="goog-toc"><a href="#Top_level_projects"><strong>3 </strong>Top-level projects</a></li><li class="goog-toc"><a href="#Quick_reference_for_the_director"><strong>4 </strong>Quick reference for the directory tree under "content/"</a></li><li class="goog-toc"><a href="#Quick_reference_for_the_director"><strong>5 </strong>Quick reference for the directory tree under "chrome/"</a></li><li class="goog-toc"><a href="#Quick_reference_for_the_director"><strong>6 </strong>A personal learning plan</a></li><li class="goog-toc"><a href="#TOC-Code-paths-for-common-operations"><strong>7 </strong>Code paths for common operations</a><ol class="goog-toc"><li class="goog-toc"><a href="#Application_startup"><strong>7.1 </strong>Application startup</a></li><li class="goog-toc"><a href="#Tab_startup_initial_navigation"><strong>7.2 </strong>Tab startup &amp; initial navigation</a></li><li class="goog-toc"><a href="#Navigating_from_the_URL_bar"><strong>7.3 </strong>Navigating from the URL bar</a></li><li class="goog-toc"><a href="#Navigations_and_session_history"><strong>7.4 </strong>Navigations and session history</a></li></ol></li></ol></div></div></div></div> </div>
+<h2><a name="High_level_overview">High-level overview </a></h2>
+<p>Chromium is separated into three main parts (excluding other libraries): the browser, the renderer, and Webkit. The browser is the main process and represents all the UI and I/O. The renderer is the (often) per-tab sub-process that is driven by the browser. It embeds Webkit to do layout and rendering.</p>
+<p>You will want to read and become familiar with our <a href="https://www.chromium.org/developers/design-documents/multi-process-architecture">multi-process architecture</a> and <a href="https://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome">how Chromium displays web pages</a>.</p>
+<h2><a name="Quick_introduction_to_the_soluti">Quick introduction to the solution file </a></h2>
+<p>The solution file is <code>chrome/chrome.sln</code>. </p>
+<ul>
+<li>The startup code is in the <code>App/chrome_dll</code> and <code>App/chrome</code> projects. </li>
+<li>Common shared library code is in the <code>Libraries/base</code> project. This code is shared between all projects, and we try to keep it as small as necessary. </li>
+<li>Common browser-specific code is in the <code>Browser/common</code> project, this is shared between the browser and the renderer. </li>
+<li>Webkit code is in the projects in <code>Webkit(readonly)</code>. On top of this is Google's <code>WebKit(ours)/port</code> which interfaces with Windows, and then <code>WebKit(ours)/glue</code> which is our embedding layer. </li>
+<li>The glue talks to the <code>Browser/renderer</code> project, which represents the subprocess where we run each tab. </li>
+<li>The <code>Browser/browser</code> project provides the user interface, storage, network requests, etc. </li></ul>
+<h2><a name="Top_level_projects">Top-level projects </a></h2>
+<p>When you check out Chromium, you will notice a number of top-level directories. <b> </b>These projects are as follows: </p>
+<ul>
+<li><b>android_webview: </b>Provides a facade over src/content suitable for integration into the android platform. NOT intended for usage in individual android applications (APK). <a href="https://docs.google.com/document/d/1a_cUP1dGIlRQFUSic8bhAOxfclj4Xzw-yRDljVk1wB0/edit?usp=sharing" target="_blank">More information</a> about the Android WebView source code organization.</li><li><b>apps</b>: <a href="http://developer.chrome.com/apps/about_apps.html">Chrome packaged apps</a>.</li><li><b>base</b>: Common code shared between all sub-projects. This contains things like string manipulation, generic utilities, etc. Add things here only if it must be shared between more than one other top-level project. </li>
+<li><b>breakpad</b>: Google's open source crash reporting project. This is pulled directly from Google Code's Subversion repository. </li>
+<li><b>build</b>: Build-related configuration shared by all projects.</li><li><b>cc</b>: The Chromium compositor implementation.</li>
+<li><b>chrome</b>: The Chromium browser (see below).</li>
+<li><b>chrome/test/data</b>: Data files for running certain tests.</li><li><b>components</b>:  directory for components that have the Content Module as the uppermost layer they depend on.</li><li><b>content:</b> The core code needed for a multi-process sandboxed browser (see below). <a href="https://www.chromium.org/developers/content-module">More information</a> about why we have separated out this code.</li><li><b>device: </b><span style="color:rgb(38,38,38);font-family:arial,sans-serif;font-size:13px;line-height:16px">Cross-platform abstractions of common low-level hardware APIs.</span></li>
+<li><b>net</b>: The networking library developed for Chromium. This can be used separately from Chromium when running our simple <span style="font-family:courier new,monospace">test_shell</span> in the <code>webkit</code> repository. See also <code>chrome/common/net</code>. </li>
+<li><b>sandbox</b>: The sandbox project which tries to prevent a hacked renderer from modifying the system. </li>
+<li><b>skia</b>: Google's Skia graphics library developed for Android. This is a copy from Android's tree. Our additional classes in <span style="font-family:courier new,monospace">ui/gfx</span> wrap Skia.</li><li><b>sql: </b>Our wrap around sqlite.</li>
+<li><b>testing</b>: Contains Google's open-sourced GTest code which we use for unit testing.</li>
+<li><b>third_party</b>: A bunch of external libraries such as image decoders and compression libraries. There are also some Chrome-specific third-party libraries in <code>chrome/third_party</code>. <a href="https://www.chromium.org/developers/adding-3rd-party-libraries">Adding new packages</a>.</li>
+<li><b>tools</b></li><li><b>ui/gfx</b>: Shared graphics classes. These form the base of Chromium's UI graphics.</li><li><b>ui/views</b>: A simple framework for doing UI development, providing rendering, layout and event handling. Most of the browser UI is implemented in this system. This directory contains the base objects. Some more browser-specific objects are in <span style="font-family:courier new,monospace">chrome/browser/ui/views</span>.</li><li><b>url</b>: Google's open source URL parsing and canonicalization library.</li>
+<li><b>v8</b>: The V8 Javascript library. This is pulled directly from Google Code's Subversion repository.</li>
+<li><b>webkit</b>: All of Chromium's Webkit-related stuff: 
+</li><ul><li><b>appcache</b>:</li><li><b>base</b>:</li><li><b>blob</b>:</li>
+<li><b>build</b>: Project files and configurations for the rest of the projects. </li>
+<li><b>data</b>: Most of the directories contain data used by unit tests of our porting layer. the <b>layout_tests</b> directory is WebKit's layout test suite that we pull directly from Apple. </li>
+<li><b>glue</b>: The glue layer is the embedding layer. It converts between Webcore types and our application's types (mostly STL), and provides more convenient methods that mirror a lot of Webcore's objects we need access to.</li>
+<li><b>tools</b>
+</li><ul>
+<li><b>layout_tests</b>: Scripts for running WebCore's layout tests.</li>
+<li><span style="font-weight:bold">merge</span>: Scripts for helping merge to WebKit's tree.</li>
+<li><b>npapi_layout_test_plugin</b>: A special plug-in used by some of our tests to exercise the plugin layer. </li>
+<li><b>test_shell</b>: A very simple standalone browser. This allows testing of our glue and port code without having to compile and run the very large Chromium application. </li></ul></ul></ul><div><br /></div><div>Here's a diagram of the dependencies. A module that is lower can't include code from a higher module directly (i.e. content can't include a header from chrome), but talks to it using embedder APIs.</div><div><div style="display:block;margin-right:auto;text-align:left"><a href="https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code/Content.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1308680092356/developers/how-tos/getting-around-the-chrome-source-code/Content.png" /></a></div><br /></div>
+<h2><a name="Quick_reference_for_the_director"></a><a name="Quick_reference_for_the_director" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">Quick reference for the directory tree under "content/"</a></h2><div><span style="color:rgb(0,0,0)"><ul><li><b>browser</b>: The backend for the application which handles all I/O and communication with the child processes . This talks to the <code style="color:rgb(0,96,0)">renderer</code> to manage web pages.</li><li><b>common:</b> Files shared between the multiple processes (i.e. browser and renderer, renderer and plugin, etc...). This is the code specific to Chromium (and not applicable to being in <span style="font-family:courier new,monospace">base</span>).</li><li><b>gpu:</b> Code for the GPU process, which is used for 3D compositing and 3D APIs.</li><li><b>plugin:</b> Code for running browser plugins in other processes.</li><li><b>ppapi_plugin:</b> Code for the <a href="https://www.chromium.org/developers/design-documents/pepper-plugin-implementation">Pepper </a>plugin process.</li><li><b>renderer</b>: Code for the subprocess in each tab. This embeds WebKit and talks to <code style="color:rgb(0,96,0)">browser</code> for I/O.</li><li><b>utility:</b> Code for running random operations in a sandboxed process.  The browser process uses it when it wants to run an operation on untrusted data.</li><li><b>worker:</b> Code for running HTML5 Web Workers.</li></ul><div><br /></div></span></div><h2><a name="TOC-Quick-reference-for-the-directory-tree-under-chrome-"></a><font color="#0b5394"><span style="font-size:13px;color:rgb(0,0,0);font-weight:normal"><h2><a name="Quick_reference_for_the_director" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">Quick reference for the directory tree under "chrome/"</a></h2></span></font></h2>
+<ul>
+<li><b>app</b>: The "app" is the most basic level of the program. It is run on startup, and dispatches to either the browser or renderer code depending on which capabilities the current process is in. It contains the projects for <code>chrome.exe</code> and <code>chrome.dll</code>. You won't generally need to change this stuff except for resources like images and strings. 
+<ul>
+<li><b>locales</b>: Projects for building localized DLLs. </li>
+<li><b>resources</b>: Icons and cursors. </li>
+<li><b>theme</b>: Images for the theme of the window. </li></ul></li>
+<li><b>browser</b>: The frontend including the main window, UI, and the backend for the application which handles all I/O and storage. This talks to the <code>renderer</code> to manage web pages. </li><ul><li><b>ui</b> model, view and controller code for UI features and functionality</li></ul>
+<li><b>common</b>: Files shared between the browser and the renderer that is specific to the Chrome module.<ul>
+<li><b>net</b>: Some Chromium-specific stuff on top of the <code>net</code> top-level module. This should be merged with <span style="font-family:courier new,monospace">browser/net</span>.</li></ul></li>
+<li><b>installer</b>: Source files and projects for making the installer (MSI package).</li>
+<li><b><span style="font-weight:normal"><b>renderer</b>: Chrome specific code that runs in the renderer process.  This adds Chrome features like autofill, translate etc to the content module.</span></b></li>
+<li><b>test</b>: 
+<ul>
+<li><b>automation</b>: Used by tests to drive the browser UI, for example, in <code>test/ui</code>, <code>test/startup</code>, etc. This communicates with <code>browser/automation</code> in the browser.</li>
+<li><b>page_cycler</b>: Code for running page cycler tests (for performance measurement). See <code>tools/perf/dashboard</code>.</li>
+<li><b>reliability</b>: Reliability tests for distributed testing of page loads for reliability metrics and crash finding. </li>
+<li><b>selenium</b>: Code for running the selenium tests, which is a third-party test suite for Ajaxy and JavaScript stuff. See <code>test/third_party/selenium_core</code>.</li>
+<li><b>startup</b>: Tests for measuring startup performance. See <code>tools/perf/dashboard</code> and <code>tools/test/reference_build</code>. </li>
+<li><b>ui</b>: UI tests for poking at the browser UI, opening tabs, etc. It uses <code>test/automation</code> for doing most operations. </li>
+<li><b>unit</b>: The base code for the unit tests. The test code for individual tests is generally alongside the code it is testing in a <code>*_unittest.cc</code> file. </li></ul></li>
+<li><b>third_party</b>: Third party libraries that are specific to Chromium. Some other third party libraries are in the top-level <code>third_party</code> library. </li>
+<li><b>tools</b>
+</li><ul>
+<li><b>build</b>: Tools and random stuff related to building. 
+<ul>
+<li><b>buildbot</b>: Buildbot configuration. Buildbot manages our automated build system. See <code>third_pary/buildbot</code>. </li>
+<li><b>win</b>: Windows build stuff, including some <code>.vsprops</code> files used for project properties and scripts.</li></ul></li>
+<li><b>memory</b>: Tools for memory stuff. Currently includes <code>gflags</code> for setting page heap options. </li>
+<li><b>perf/dashboard</b>: Code for converting performance logs (for example <code>test/startup_test</code>) into data and graphs. </li>
+<li><b>profiles</b>: Generator for random history data. Used to make test profiles.</li></ul></ul><div><div><font color="#0b5394" size="4"><b><br /></b></font></div><div><h2><a name="Quick_reference_for_the_director">A personal learning plan</a></h2></div><div>Eventually you’ll have your build setup, and want to get to work.  In a perfect world, we would have all the time we needed to read every line of code and understand it before writing our first line of code.  In practice, we’d have a hard time reading just the checkins that happen in one day if we did nothing else, so none of us will ever be able to read all of the code.  So, what can we do? We suggest you develop your own plan for learning what you need, here are some suggested starting points.</div><div><br /></div><div>Fortunately for us, Chromium has some top quality design docs <a href="https://www.chromium.org/developers/design-documents">here</a>.  While these can go a bit stale (for instance, when following along, you may find references to files that have been moved or renamed or refactored out of existence), it is awesome to be able to comprehend the way that the code fits together overall.</div><div><br /></div><div><b>Read the most important dev docs</b></div><div><a href="https://www.chromium.org/developers/design-documents/multi-process-architecture">multi-process-architecture</a></div><div><a href="https://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome">displaying-a-web-page-in-chrome</a></div><div><a href="https://www.chromium.org/developers/design-documents/inter-process-communication">inter-process-communication</a></div><div><a href="https://www.chromium.org/developers/design-documents/threading">threading</a></div><div><br /></div><div><b>See if your group has any startup docs</b></div><div>There may be some docs that people working on the same code will care about while others don’t need to know as much detail.</div><div><br /></div><div><b>Learn some of the code idioms:</b></div><div><a href="https://www.chromium.org/developers/coding-style/important-abstractions-and-data-structures">important-abstractions-and-data-structures </a></div><div><a href="https://www.chromium.org/developers/smart-pointer-guidelines">smart-pointer-guidelines</a></div><div><a href="https://www.chromium.org/developers/chromium-string-usage">chromium-string-usage</a></div><div><br /></div><div>Later, as time permits, skim all the design docs, reading where it seems relevant.</div><div>Get good at using code search (or your code browsing tool of choice)</div><div>Learn who to ask how the code works <a href="https://www.chromium.org/developers/finding-somebody-who-knows-how-a-piece-of-code-works">hints here</a>.</div><div>Debug into the code you need to learn, with a debugger if you can, log statements and grepping if you cannot.</div><div>Look at the differences in what you need to understand and you currently understand.  For instance, if your group does a lot of GUI programming, then maybe you can invest time in learning GTK+, Win32, or Cocoa programming.</div></div><div><br /></div><h2><a name="TOC-Code-paths-for-common-operations"></a>Code paths for common operations</h2>There is additional information and more examples on <a href="https://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome">how Chromium displays web pages</a>.<br />
+<h3><a name="Application_startup">Application startup </a></h3>
+<ol>
+<li>Our <code>WinMain</code> function is in <code>chrome/app/main.cc</code>, and is linked in the <code>chrome</code> project. </li>
+<li><code>WinMain</code> launches the Google Update Client, which is the installer/autoupdater. It will find the subdirectory for the current version, and load <code>chrome.dll</code> from there. </li>
+<li>It calls <code>ChromeMain</code> in the newly loaded library, which is in <code>chrome_main.cc</code> in the <code>chrome_dll</code> project. </li>
+<li><code>ChromeMain</code> does initialization for common components, and then forwards to either <code>RendererMain</code> in <code>chrome/renderer/renderer_main.cc</code> if the command line flag indicates that this should be a subprocess, or <code>BrowserMain</code> in <code>chrome/browser/browser_main.cc</code> if not to load a new copy of the application. Since this is startup, we're launching the browser.</li>
+<li><code>BrowserMain</code> does common browser initialization. It has different modes for running installed webapps, connecting to the automation system if the browser is being tested, etc. </li>
+<li>It calls <code>LaunchWithProfile</code> in <code>browser_init.cc</code> which creates a new <code>Browser</code> object in <code>chrome/browser/ui/browser.cc</code>. This object encapsulates one toplevel window in the application. The first tab is appended at this time. </li></ol>
+<h3><a name="Tab_startup_initial_navigation">Tab startup &amp; initial navigation </a></h3>
+<ol>
+<li><code>Browser::AddTab</code> in <code>chrome/browser/ui/browser.cc</code> is called to append a new tab. </li>
+<li>It will create a new <code>TabContents</code> object from <code>browser/tab_contents/tab_contents.cc</code></li>
+<li><code>TabContents</code> creates a <code>RenderViewHost</code> (<font face="'courier new', monospace"><font color="#38761D"><code>chrome/browser/renderer_host/render_view_host.cc</code></font></font>) via the <font color="#38761D"><font face="'courier new', monospace"><code>RenderViewHostManager</code></font></font><code>'s</code> Init function in <code>chrome/browser/tab_contents/render_view_host_manager.cc</code>). Depending on the <font face="'courier new', monospace"><font color="#38761D"><code>SiteInstance</code></font></font>, the <font color="#38761D"><font face="'courier new', monospace"><code>RenderViewHost</code></font></font> either spawns a new renderer process, or re-uses an existing <code>RenderProcessHost</code>. <code>RenderProcessHost</code> is the object in the browser that represents a single renderer subprocess.</li>
+<li>The <font color="#38761D"><font face="'courier new', monospace"><code>NavigationController</code></font></font> in <font color="#38761D"><font face="'courier new', monospace"><code>chrome/browser/tab_contents/navigation_controller.cc</code></font></font> which is owned by the tab contents, is instructed to navigate to the URL for the new tab in <code>NavigationController::LoadURL</code>. "Navigating from the URL bar" from step 3 onward describes what happens from this point. </li></ol>
+<h3><a name="Navigating_from_the_URL_bar"></a><a name="Tab_startup_initial_navigation" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">Navigating from the URL bar</a></h3>
+<ol>
+<li>When the user types into or accepts an entry in the URL bar, the autocomplete edit box determines the final target URL and passes that to <code>AutocompleteEdit::OpenURL</code>. (This may not be exactly what the user typed - for example, an URL is generated in the case of a search query.) </li>
+<li>The navigation controller is instructed to navigate to the URL in <code>NavigationController::LoadURL</code>.</li>
+<li>The <code>NavigationController</code> calls <code>TabContents::Navigate</code> with the <code>NavigationEntry</code> it created to represent this particular page transition. It will create a new <code>RenderViewHost</code> if necessary, which will cause creation of a <code>RenderView</code> in the renderer process. A <code>RenderView</code> won't exist if this is the first navigation, or if the renderer has crashed, so this will also recover from crashes. </li>
+<li><code>Navigate</code> forwards to <code>RenderViewHost::NavigateToEntry</code>. The <code>NavigationController</code> stores this navigation entry, but it is marked as "pending" because it doesn't know for sure if the transition will take place (maybe the host can not be resolved).</li>
+<li><code>RenderViewHost::NavigateToEntry</code> sends a <code>ViewMsg_Navigate</code> to the new <code>RenderView</code> in the renderer process.</li>
+<li>When told to navigate, <code>RenderView</code> may navigate, it may fail, or it may navigate somewhere else instead (for example, if the user clicks a link). <code>RenderViewHost</code> waits for a <code>ViewHostMsg_FrameNavigate</code> from the <code>RenderView</code>. </li>
+<li>When the load is "committed" by WebKit (the server responded and is sending us data), the <code>RenderView</code> sends this message, which is handled in <code>RenderViewHost::OnMsgNavigate</code>.</li>
+<li>The <code>NavigationEntry</code> is updated with the information on the load. In the case of a link click, the browser has never seen this URL before. If the navigation was browser-initiated, as in the startup case, there may have been redirects that have changed the URL. </li>
+<li>The <code>NavigationController</code> updates its list of navigations to account for this new information.</li></ol>
+<h3><a name="Navigations_and_session_history">Navigations and session history </a></h3>Each <code>NavigationEntry</code> stores a page ID and a block of history state data. The page ID is used to uniquely identify a page load, so we know which <code>NavigationEntry</code> it corresponds to. It is assigned when the page is committed commit, so a pending <code>NavigationEntry</code> will have a page ID of -1. The history state data is simply a <code>WebCore::HistoryItem</code> serialized to a string. Included on this item are things like the page URL, subframe URLs, and form data. 
+
+<ol>
+<li>When the browser initiates the request (typing in the URL bar, or clicking back/forward/reload) 
+<ol>
+<li>A <code>WebRequest</code> is made representing the navigation, along with extra information like a page ID for bookkeeping. New navigations have an ID of -1. Navigations to old entries have the ID assigned to the <code>NavigationEntry</code> when the page was first visited. This extra information will be queried later when the load commits. </li>
+<li>The main <code>WebFrame</code> is told to load the new request. </li></ol></li>
+<li>When the renderer initiates the request (user clicks a link, javascript changes the location, etc): 
+<ol>
+<li><code>WebCore::FrameLoader</code> is told to load the request via one of its bajillion varied load methods. </li></ol></li>
+<li>In either case, when the first packet from the server is received, the load is committed (no longer "pending" or "provisional"). </li>
+<li>If this was a new navigation, <code>WebCore</code> will create a new <code>HistoryItem</code> and add it to the <code>BackForwardList</code>, a <code>WebCore</code> class. In this way, we can differentiate which navigations are new, and which are session history navigations. </li>
+<li><code>RenderView::DidCommitLoadForFrame</code> handles the commit for the load. Here, the previous page's state is stored in session history, via the <code>ViewHostMsg_UpdateState</code> message. This will tell the browser to update the corresponding <code>NavigationEntry</code> (identified by <code>RenderView's</code> current <code>page ID</code>) with the new history state. </li>
+<li><code>RenderView's</code> current <code>page ID</code> is updated to reflect the committed page. For a new navigation, a new unique <code>page ID</code> is generated. For a session history navigation, it will be the <code>page ID</code> originally assigned when it was first visited, which we had stored on the <code>WebRequest</code> when initiating the navigation. </li>
+<li>A <code>ViewHostMsg_FrameNavigate</code> message is sent to the browser, updating the corresponding <code>NavigationEntry</code> (identified by <code>RenderView's</code> newly updated <code>page ID</code>) with the new URL and other information.</li></ol></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/getting-around-the-chrome-source-code">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq91ssGXQFzcaH2flPFmOak7f9po2as6Aqcd12ZNLTB-0YTsfxbln2e1C3YSXEG1NpkNKRvTF_abs-Dkhwq0ZvMN58llBi6hmi93rBgkqG0A7BszHT8/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

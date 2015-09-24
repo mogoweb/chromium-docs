@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/build","deleted":false,"title":"Chromium OS Build","dir":"ltr"},{"path":"/chromium-os/build/cbuildbot-overview","deleted":false,"title":"Anatomy of a cbuildbot build","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/build","parentWuid":"wuid:gx:7c2378e91050b97e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Anatomy of a cbuildbot build","locale":"en","wuid":"wuid:gx:10c92e0e599385d8","revision":2,"path":"/chromium-os/build/cbuildbot-overview","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"cbuildbot-overview","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Anatomy of a cbuildbot build - The Chromium Projects" />
+<meta itemprop="name" content="Anatomy of a cbuildbot build - The Chromium Projects" />
+<meta property="og:title" content="Anatomy of a cbuildbot build - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Anatomy of a cbuildbot build - The Chromium Projects</title>
+<meta itemprop="image" content="https://lh5.googleusercontent.com/7PKaC1rNMv8lIPqjYsW4hQ-2a8xtem2_d4Xy3srOOGicXh9hOuTfxnghRU4zc4Cag9VwumMW0wqOfP82litgOCPXeVKmdHpPmnQdahWii4i8zeqZ6jnURSCY" />
+<meta property="og:image" content="https://lh5.googleusercontent.com/7PKaC1rNMv8lIPqjYsW4hQ-2a8xtem2_d4Xy3srOOGicXh9hOuTfxnghRU4zc4Cag9VwumMW0wqOfP82litgOCPXeVKmdHpPmnQdahWii4i8zeqZ6jnURSCY" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../chromium-os.1.html" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="../build.1.html" dir="ltr">Chromium OS Build</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Anatomy of a cbuildbot build</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Introduction"><strong>1 </strong>Introduction</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Basic-Stages"><strong>2 </strong>Basic Stages</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Simplified-Build-Flow-Diagram"><strong>3 </strong>Simplified Build Flow Diagram</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Build-Overview"><strong>4 </strong>Build Overview</a><ol class="goog-toc"><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-InitSDK:-Create-or-update-the-chroot"><strong>4.1 </strong>InitSDK: Create or update the chroot</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Uprev:-Tell-Portage-about-new-changes"><strong>4.2 </strong>Uprev: Tell Portage about new changes</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-SetupBoard:-Create-the-board-root"><strong>4.3 </strong>SetupBoard: Create the board root</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-BuildPackages:-Build-all-packages"><strong>4.4 </strong>BuildPackages: Build all packages</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-BuildImage:-Build-all-images"><strong>4.5 </strong>BuildImage: Build all images</a></li></ol></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Test-Overview"><strong>5 </strong>Test Overview</a><ol class="goog-toc"><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-AUTest:-Run-autoupdate-tests-on-real-hardware"><strong>5.1 </strong>AUTest: Run autoupdate tests on real hardware</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-ChromeSDK:-Verify-that-Chrome-compiles-using-the-Simple-Chrome-workflow"><strong>5.2 </strong>ChromeSDK: Verify that Chrome compiles using the Simple Chrome workflow</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-HWTest:-Run-a-test-suite-on-real-hardware"><strong>5.3 </strong>HWTest: Run a test suite on real hardware</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-SignerTest:-Run-various-security-checks-on-the-image"><strong>5.4 </strong>SignerTest: Run various security checks on the image</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-VMTest:-Run-smoke-tests-inside-a-virtual-machine"><strong>5.5 </strong>VMTest: Run smoke tests inside a virtual machine</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-UnitTest:-Run-unit-tests-locally"><strong>5.6 </strong>UnitTest: Run unit tests locally</a></li></ol></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Archive-Overview"><strong>6 </strong>Archive Overview</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Release-Process"><strong>7 </strong>Release Process</a></li><li class="goog-toc"><a href="cbuildbot-overview.html#TOC-Buildbot-files"><strong>8 </strong>Buildbot files</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>This page describes the basic steps involved in a cbuildbot build. It is intended for people who are interested in learning more about how cbuildbot works.</p>
+<p>If you're just looking to use cbuildbot, please see our other documentation:</p>
+<ul><li><a href="https://www.chromium.org/chromium-os/build/using-remote-trybots">Remote trybot</a></li>
+<li><a href="http://www.chromium.org/chromium-os/build/local-trybot-documentation">Local trybot</a></li></ul>
+<table>
+<tbody>
+<tr>
+<td style="width:100%">
+<h2><a name="TOC-Basic-Stages"></a>Basic Stages</h2>
+<div style="display:inline-block;float:right">
+<table border="0" cellspacing="0">
+<tbody><tr>
+<td align="center" valign="top">Report<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#Report" rel="nofollow" target="_blank">stdio</a><br />    [<a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#google-storage" rel="nofollow" target="_blank">Artifacts[x86-generic]: x86-generic-full/R36-5814.0.0-b13319</a>]<br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">UploadTestArtifacts<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#UploadTestArtifacts" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">Archive<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#Archive" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">CPEExport<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#CPEExport" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">DebugSymbols<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#DebugSymbols" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">UploadPrebuilts<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#UploadPrebuilts" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">UnitTest<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#UnitTest" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">VMTest (attempt 1)<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#VMTest%20%28attempt%201%29" rel="nofollow" target="_blank">stdio</a><br />    [<a href="https://storage.cloud.google.com/chromeos-image-archive/x86-generic-full/R36-5814.0.0-b13319/vm%5ftest%5fresults%5f1" target="_blank">vm_test_results_1</a>]<br />    [<a href="https://storage.cloud.google.com/chromeos-image-archive/x86-generic-full/R36-5814.0.0-b13319/vm%5ftest%5fresults%5f1.tgz" target="_blank">vm_test_results_1.tgz</a>]<br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">ChromeSDK<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#ChromeSDK" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">BuildImage<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#BuildImage" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">BuildPackages<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#BuildPackages" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">SyncChrome<br />tag 36.0.1968.0<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#SyncChrome" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">SetupBoard<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#SetupBoard" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">Uprev<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#Uprev" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">InitSDK<br />2014.05.01.051520<br />91<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#InitSDK" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">ReportBuildStart<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#ReportBuildStart" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">Sync<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#Sync" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">CleanUp<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#CleanUp" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">cbuildbot<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#cbuildbot%2flogs%2fpreamble" rel="nofollow" target="_blank">preamble</a><br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#cbuildbot" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">Clear and Clone chromite<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#Clear%20and%20Clone%20chromite" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">Sync buildbot slave files<br /> <a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview.1422040020867#update%5fscripts" rel="nofollow" target="_blank">stdio</a><br /></td>
+</tr>
+<tr>
+<td align="center" valign="top">x86-generic full<br /><a href="http://sites.google.com/a/chromium.org/dev/chromium-os/build/builders/x86-generic%20full/builds/13319" rel="nofollow" target="_blank">Build 13319</a><br />scheduler</td>
+</tr>
+</tbody></table></div>
+<p>A cbuildbot run is composed of multiple stages, some of which run in parallel. The basic stages are shown in the diagram on the right (which should be read from the bottom to the top), and are are described and broken down into three categories (Build, Test, Archive) below. The exact stages depends on the type build config used, and may include newly added stages that are not described here.</p>
+<ul>
+<li>Internal/House Keeping</li><ul><li>update scripts: Run by buildbot to bootstrap itself.</li><li>Clear and Clone chromite: Run by buildbot to get a clean chromite repo (for cbuildbot).</li><li>cbuildbot: Start running cbuildbot itself (which runs all other stages below).</li><li>CleanUp: Tidy up the current Chromium OS checkout (cache files/previous builds/etc...).</li></ul><li>Build</li>
+<ul>
+<li>InitSDK: Create or update the chroot</li>
+<li>Uprev: Update ebuilds to reflect changes that have been submitted by developers.</li>
+<li>SetupBoard: Create the board root (e.g. /build/lumpy), if needed.</li>
+<li>BuildPackages: Build all packages.</li>
+<li>BuildImage: Build all images. Also, if needed, create and upload update payloads, so that the HWTest stage can start as soon as possible
+</li>
+</ul>
+<li>Tests</li>
+<ul>
+<li>AUTest: Run autoupdate tests on real hardware.</li>
+<li>ChromeSDK: Test that it is possible to compile Chrome using the Simple Chrome workflow.</li>
+<li>HWTest: Run a test suite on real hardware.</li>
+<li>SignerTest: Verify that the image passes various security checks and can be signed.</li>
+<li>VMTest: Run smoke tests inside a virtual machine. Also verifies gmerge in a VM.</li>
+<li>UnitTest: Run unit tests locally. Only works with x86 or amd64 targets.</li>
+</ul>
+<li>Archive</li>
+<ul>
+<li>Archive: Build, archive, and upload various artifacts.</li>
+<li>DevInstallerPrebuilts (optional): Upload binary versions of packages so that users in developer mode can download them using the dev installer.</li>
+<li>UploadPrebuilts (optional): Upload prebuilt binaries to Google Storage to speed up developer builds.</li><li>UploadTestArtifacts: Upload artifacts for testing.</li><li>DebugSymbols: Generate &amp; upload breakpad symbols for crash handling at runtime.</li><li>CPEExport: Export <a href="http://cpe.mitre.org/" rel="nofollow">CPE</a> information for security analysis/tracking.</li>
+</ul>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="TOC-Simplified-Build-Flow-Diagram"></a>Simplified Build Flow Diagram</h2>
+<p>The following diagram is a simplified view of a typical build:</p>
+<br />
+<img height="368px;" src="https://lh5.googleusercontent.com/7PKaC1rNMv8lIPqjYsW4hQ-2a8xtem2_d4Xy3srOOGicXh9hOuTfxnghRU4zc4Cag9VwumMW0wqOfP82litgOCPXeVKmdHpPmnQdahWii4i8zeqZ6jnURSCY" width="608px;" />
+<p>In the test/archive phase of cbuildbot, every stage we launch runs in parallel. In the above example, there are 5 stages running in parallel (HWTest, UnitTest, UploadPrebuilts, VMTest, Archive).</p>
+<p>With the exception of the build stages, each step uploads its own artifacts.</p>
+<h2><a name="TOC-Build-Overview"></a>Build Overview</h2>
+<p>The following steps are run in order.</p>
+<h3><a name="TOC-InitSDK:-Create-or-update-the-chroot"></a>InitSDK: Create or update the chroot</h3>
+<p>If the chroot does not exist, or we find the chroot is broken in any way (e.g. we can’t enter the chroot with cros_sdk), we delete the chroot and replace it. Otherwise, this step is basically a no-op.</p>
+<h3><a name="TOC-Uprev:-Tell-Portage-about-new-changes"></a>Uprev: Tell Portage about new changes</h3>
+<p>In this stage, we iterate through all of the stable cros-workon ebuilds and check whether the git hash inside the ebuild is up to date. If not, we update it. Similarly, we also check whether the developer has made changes to the unstable ebuild.</p>
+<h3><a name="TOC-SetupBoard:-Create-the-board-root"></a>SetupBoard: Create the board root</h3>
+<p>Besides running the setup_board script, this step also sets up a shared user password, if applicable.</p>
+<h3><a name="TOC-BuildPackages:-Build-all-packages"></a>BuildPackages: Build all packages</h3>
+<p>This stage just runs the build_packages script. If PGO data is needed, then this step will wait for the PGO data to be ready first.</p>
+<h3><a name="TOC-BuildImage:-Build-all-images"></a>BuildImage: Build all images</h3>
+<p>The build image phase is called “BuildImage”, but it does more than build an image -- it also builds and uploads autotest tarballs and payloads, as shown in the diagram below.</p>
+<img height="270px;" src="https://lh4.googleusercontent.com/bFfBcLIYrsBaiggqU-51RFFdV3siCR8fUU9iV4idvo9qWFphco-w9VrYltJrmANob4wjLK0d4WNAoC8PYOQ3VStSKNY_LxKjwGadlxZfZ9RiAfutBGJrjWiF" width="362px;" />
+<h2><a name="TOC-Test-Overview"></a>Test Overview</h2>
+<p>All of the below tests are optional and run in parallel. Every builder will run a subset of the tests below. (Some builders even run no tests.)</p>
+<h3><a name="TOC-AUTest:-Run-autoupdate-tests-on-real-hardware"></a>AUTest: Run autoupdate tests on real hardware</h3>
+<p>Before launching autoupdate tests, this stage builds and uploads a tarball of the necessary autoupdate artifacts. The actual launching of the test is implemented using the logic from the HWTest stage.</p>
+<h3><a name="TOC-ChromeSDK:-Verify-that-Chrome-compiles-using-the-Simple-Chrome-workflow"></a>ChromeSDK: Verify that Chrome compiles using the Simple Chrome workflow</h3>
+<p>On canaries, we actually build Chrome twice -- once inside the chroot, for use in the build, and once outside the chroot, in the ChromeSDK stage, to help verify that the simple Chrome workflow continues to work.</p>
+<h3><a name="TOC-HWTest:-Run-a-test-suite-on-real-hardware"></a>HWTest: Run a test suite on real hardware</h3>
+<p>This stage launches tests with a timeout. If the timeout is exceeded, we report a warning or an error, depending on configuration.</p>
+<h3><a name="TOC-SignerTest:-Run-various-security-checks-on-the-image"></a>SignerTest: Run various security checks on the image</h3>
+<p>This stage just runs the security check script on the image.</p>
+<h3><a name="TOC-VMTest:-Run-smoke-tests-inside-a-virtual-machine"></a>VMTest: Run smoke tests inside a virtual machine</h3>
+<p>Besides running smoke tests on the image, this stage also verifies that gmerge can merge packages into a VM instance. Once the test results are built, they are uploaded to Google Storage, along with symbolized crash reports.</p>
+<h3><a name="TOC-UnitTest:-Run-unit-tests-locally"></a>UnitTest: Run unit tests locally</h3>
+<p>This stage runs unit tests in parallel. If quick_unit is False, this is accomplished by looking for ebuilds which have the “src_test” clause and merging them with FEATURES=test. If quick_unit is True, we only run tests on ebuilds that have been uprevved in the Uprev stage.</p>
+<h2><a name="TOC-Archive-Overview"></a>Archive Overview</h2>
+<img height="712px;" src="https://lh6.googleusercontent.com/QAEXNOc5XudQU0UJt2sfYPsd6ZWsBTaf97fRfefF-d0Z22u1KwWlhT8cTuv7LsJsU0nf9k_JVVyGI6_PYAFOjw-etihBKPH8W9uTvncVotQqweKyAgAbwr4A" width="574px;" /><br />
+<h2><a name="TOC-Release-Process"></a>Release Process</h2>
+<img height="655px;" src="https://lh4.googleusercontent.com/VmWgu1dJR8ALlV3aR4iWjbRHW99u5vemd3eovZpHIa-ZyKKwQUIJi3nBYDajjGULVVT88RX5Xfjx_7xaHijnCQSKkuknr8AVheXJSSdWTt-HCVb8sDe_WUUmvA" width="700px;" />
+<h2><a name="TOC-Buildbot-files"></a>Buildbot files</h2>
+<p>An edited list of the files under the buildbot subdirectory:</p>
+<ul><li>builderstage.py: Module containing the base class for the stages that a builder runs. All of the stages inherit from this base class, so logic that is common to all stages is placed here.</li>
+<li>cbuildbot_commands.py: Module containing the various individual commands a builder can run. These functions basically just wrap RunCommand -- they provide a friendlier interface so that callers don’t need to build up the command line themselves. These commands are mostly called by cbuildbot_stages.py.</li>
+<li>cbuildbot_config.py: Buildbot configuration for cbuildbot. Tells us what buildbots to run.</li>
+<li>cbuildbot.py: Placeholder file to invoke bin/cbuildbot. See scripts/cbuildbot.py for the source code of cbuildbot.</li>
+<li>cbuildbot_results.py: Classes for collecting results of build stages as they run. Each build stage will record its success/failure status in this singleton object by calling Results.Record(...). This data is later used to build a report, and to determine whether the build was successful.</li>
+<li>cbuildbot_stages.py: Module containing the various stages that a builder runs. All of the stages discussed above are stored in this file.</li>
+<li>constants.py: This module contains constants used by cbuildbot and related code.</li>
+<li>lkgm_manager.py: This module implements the LKGMManager, which is used in both the commit queue and preflight queues. It helps the master track what the slaves are doing, and helps the slaves communicate their status back to the master. The master sends its manifest to the slaves by committing it to git, and the slaves communicate their status back to the master by uploading it to Google Storage.</li>
+<li>manifest_version.py: This module implements the BuildSpecsManager, which is used by canaries. It is simpler than LKGMManager because there is no need for bidirectional master/slave communication -- the slaves just need to know the manifest to use and they are good to go.</li>
+<li>portage_utilities.py: Routines and classes for working with Portage overlays and ebuilds. This library is used in several places, including during the Uprev stage.</li>
+<li>remote_try.py: Class for launching remote tryjobs.</li>
+<li>repository.py: Routines and classes for working with git repositories. This is useful, for example, for syncing the source code.</li>
+<li>trybot_patch_pool.py: Classes for managing patches passed into a remote trybot run, and filtering them as appropriate.</li>
+<li>validation_pool.py: This module implements the core logic of the commit queue.</li>
+</ul></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/build/cbuildbot-overview">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9LBIi7UXOmFiE5pAF8xmyv2MkHeQepQkJXlTy3hX6WKPWMQ5N48s2lznXSFUqu0rtNfGOkaapqJHtf4n_JR8IYRX2Aejopi79L_uAUT6IYiOTgKbh/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

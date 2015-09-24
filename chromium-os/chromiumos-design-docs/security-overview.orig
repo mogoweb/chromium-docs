@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs/security-overview","deleted":false,"title":"Security Overview","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/security-overview\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/chromiumos-design-docs","parentWuid":"wuid:gx:2eb69dd73ece341e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Security Overview","locale":"en","wuid":"wuid:gx:56958cf666ca3a55","revision":7,"path":"/chromium-os/chromiumos-design-docs/security-overview","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"security-overview","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Security Overview - The Chromium Projects" />
+<meta itemprop="name" content="Security Overview - The Chromium Projects" />
+<meta property="og:title" content="Security Overview - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Security Overview - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/chromiumos-design-docs" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Security Overview</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Abstract"><strong>1 </strong>Abstract</a></li><li class="goog-toc"><a href="#TOC-Guiding-principles"><strong>2 </strong>Guiding principles</a><ol class="goog-toc"><li class="goog-toc"><a href="#The_Chrome_OS_Threat_Model_828_8822517982428096"><strong>2.1 </strong>Use cases and requirements</a></li><li class="goog-toc"><a href="#TOC-Our-threat-model"><strong>2.2 </strong>Our threat model</a></li></ol></li><li class="goog-toc"><a href="#Mitigating_System_Compromise_4"><strong>3 </strong>Mitigating remote system compromise</a><ol class="goog-toc"><li class="goog-toc"><a href="#OS_Hardening_9194542095065117__9067499944607271"><strong>3.1 </strong>OS hardening</a></li><li class="goog-toc"><a href="#TOC-Making-the-browser-more-modular"><strong>3.2 </strong>Making the browser more modular</a></li><li class="goog-toc"><a href="#_Web_App_Security_252856004306_6904816538615359"><strong>3.3 </strong>Web app security</a></li><li class="goog-toc"><a href="#TOC-Phishing-XSS-and-other-web-vulnerab"><strong>3.4 </strong>Phishing, XSS, and other web vulnerabilities</a></li><li class="goog-toc"><a href="#Secure_Autoupdate_514579947008_3042258492955804"><strong>3.5 </strong>Secure autoupdate</a></li><li class="goog-toc"><a href="#TOC-Verified-boot"><strong>3.6 </strong>Verified boot</a></li><li class="goog-toc"><a href="#TOC-Rendering-pwned-devices-useless"><strong>3.7 </strong>Rendering pwned devices useless</a></li></ol></li><li class="goog-toc"><a href="#TOC-Mitigating-device-theft"><strong>4 </strong>Mitigating device theft</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Data-protection"><strong>4.1 </strong>Data protection</a></li><li class="goog-toc"><a href="#TOC-Account-management"><strong>4.2 </strong>Account management</a></li><li class="goog-toc"><a href="#Login_06044909358024597_298465_5687262681137824"><strong>4.3 </strong>Login</a></li><li class="goog-toc"><a href="#TOC-Future-work"><strong>4.4 </strong>Future work</a></li></ol></li><li class="goog-toc"><a href="#TOC-Wrapup"><strong>5 </strong>Wrapup</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Abstract"></a>Abstract</h2>
+<div style="margin-top:0px;margin-bottom:0px">
+<ul style="margin-top:0px;margin-bottom:0px"><li style="margin-top:0px;margin-bottom:0px">Chromium OS has been designed from the ground up with security in mind.</li>
+<li style="margin-top:0px;margin-bottom:0px">Security is not a one-time effort, but rather an iterative process that must be focused on for the life of the operating system.</li>
+<li style="margin-top:0px;margin-bottom:0px">The goal is that, should either the operating system or the user detect that the system has been compromised, an update can be initiated, and—after a reboot—the system will have been returned to a known good state.</li>
+<li style="margin-top:0px;margin-bottom:0px">Chromium OS security strives to protect against an opportunistic adversary through a combination of system hardening, process isolation, continued web security improvements in Chromium, secure autoupdate, verified boot, encryption, and intuitive account management.</li></ul>
+<div><br />
+We have made a concerted effort to provide
+users of Chromium OS-based devices with a system that is both practically secure and easy to use. To do so, we've followed a set of four guiding principles:</div>
+</div>
+</div>
+<ul><li>The perfect is the enemy of the good.</li>
+<li>Deploy defenses in depth.</li>
+<li>Make devices secure by default.</li>
+<li>Don't scapegoat our users.</li></ul>
+In
+the rest of this document, we first explain these principles and
+discuss some expected use cases for Chromium OS devices.  We then give a high-level
+overview of the threat model against which we will endeavor to protect
+our users, while still enabling them to make full use of their cloud
+device.<br />
+<h2><a name="TOC-Guiding-principles"></a>Guiding principles</h2>
+<b>The perfect is the enemy of the good.</b> 
+No security solution is ever perfect.  Mistakes will be made, there
+will be unforeseen interactions between multiple complex systems that
+create security holes, and there will be vulnerabilities that aren't caught by pre-release testing.  Thus, we must not allow our search for some mythical perfect
+system to stop us from shipping something that is still very good.<br />
+<br />
+<b>Deploy defenses in depth.</b>  In light of our first principle, we will deploy a variety of defenses to act as a series of
+stumbling blocks for the attacker.  We will make it hard to get into the
+system, but assume that the attacker will.  We'll put another layer of defenses in place to make it difficult to turn a user account compromise into root or a
+kernel exploit.  Then, we'll also make it difficult for an attacker to persist his
+presence on the system by preventing him from adding an account,
+installing services, or re-compromising the system after reboot.<br />
+<br />
+<b>Make it secure by default.</b> 
+Being safe is not an advanced or optional feature.  Until now, the security community has had to deploy solutions that cope with arbitrary software running on users' machines; as a result, these solutions have often cost the user in terms of system performance or ease-of-use.  Since we have the advantage of knowing which software should be running on the device at all times, we should be better able to deploy solutions that leave the user's machine humming along
+nicely.<br />
+<br />
+<b>Don't scapegoat our users.</b> 
+In real life, people assess their risk all the time.  The Web is
+really a huge set of intertwined, semi-compatible implementations of overlapping standards.  Unsurprisingly, it is difficult
+to make accurate judgments about one's level of risk in the face of
+such complexity, and that is <i>not</i> our users' fault.  We're working to
+figure out the right signals to send our users, so that we can keep
+them informed, ask fewer questions, require them to make
+decisions only about things they comprehend, and be sure that we fail-safe if they don't understand a choice and just want to click and make
+it go away.<br />
+<h3><a name="The_Chrome_OS_Threat_Model_828_8822517982428096"></a> Use cases and requirements
+  </h3>
+  We are initially targeting the following use cases with Chromium OS devices:<br />
+<div>
+<ul><li>Computing on the couch</li>
+<li>Use as a lightweight, secondary work computer</li>
+<li>Borrowing a device for use in coffee shops and libraries</li>
+<li>Sharing a second computer among family members</li></ul>
+  Targeting these goals dictates several security-facing requirements:<br />
+</div>
+<div>
+<ul><li>The owner should be able to delegate login rights to users of his choice.<br />
+</li>
+<li>The user can manage his risk with respect to data loss, even in the face of device loss or theft.</li>
+<li>A user's data can't be exposed due to the mistakes of other users on the system.<br />
+</li>
+<li>The system provides a multi-tiered defense against malicious websites and other network-based attackers.</li>
+<li>Recovering from an attack that replaces or modifies system binaries should be as simple as rebooting.<br />
+</li>
+<li>In the event of a security bug, once an update is pushed, the user can reboot and be safe.</li></ul>
+<h3><a name="TOC-Our-threat-model"></a>Our threat model
+  </h3>
+  When designing security technology for Chromium OS systems, we consider two different kinds of adversaries:<br />
+<ul><li>An <b>opportunistic adversary</b></li>
+<li>A <b>dedicated adversary</b></li></ul>
+  
+  The <b>opportunistic adversary</b> is just trying to compromise an individual
+user's machine and/or data.  He is not targeting a specific user or enterprise, and he is not going to steal the user's machine to obtain the user's data. 
+The opportunistic adversary will, however, deploy attacks designed to lure users on the web to
+sites that will compromise their machines or to web apps that will try
+to gain unwarranted privileges (webcam access, mic access, etc).  If the opportunistic adversary <i>does </i>steal a device and the user's data is in the clear, the opportunistic adversary may take it.</div>
+<div>
+<br />
+  The <b>dedicated adversary</b> <i>may</i>
+target a user or an enterprise specifically for attack.  She is willing
+to steal devices to recover data or account credentials (not just to
+re-sell the device to make money).  She is willing to deploy DNS or
+other network-level attacks to attempt to subvert the Chromium OS device login
+or update processes.  She may also do anything that the opportunistic
+adversary can do.
+</div>
+<div>
+<br />
+</div>
+<div> For version 1.0, we are focusing on dangers posed by
+opportunistic adversaries.  We further subdivide the possible threats
+into two different classes of attacks: <b>remote system compromise</b> and<b> device theft.</b><br />
+<h2><a name="Mitigating_System_Compromise_4"></a>
+    Mitigating remote system compromise
+  </h2>
+<p>
+There are several vectors through which an adversary might try to
+compromise a Chromium OS device remotely: an exploit that
+gives him control of one of the Chromium-based browser processes, an exploit in a plugin,
+tricking the user into giving a malicious web app unwarranted access to
+HTML5/Extension APIs, or trying to subvert our autoupdate process in
+order to get some malicious code onto the device. </p>
+<p>As in any good security
+strategy, we wish to provide defense in depth: mechanisms that try to
+prevent these attacks and then several more layers of protection that try
+to limit how much damage the adversary can do provided that he's
+managed to execute one of these attacks.  The architecture of Chromium browsers provides us with some very nice process isolation already, but
+there is likely more that we can do.</p>
+<h3><a name="OS_Hardening_9194542095065117__9067499944607271"></a>
+    OS hardening</h3>
+</div>
+<div> The lowest level of our security strategy involves a combination
+of OS-level protection mechanisms and exploit mitigation
+techniques.  This combination limits our attack surface, reduces the
+the likelihood of successful attack, and reduces the usefulness of
+successful user-level exploits.  These protections aid in defending
+against both opportunistic and dedicated adversaries.  The approach
+designed relies on a number of independent techniques:<br />
+<ul><li>Process sandboxing<br />
+</li>
+<ul><li>Mandatory access control implementation that limits resource, process, and kernel interactions</li>
+<li>Control group device filtering and resource abuse constraint</li>
+<li>Chrooting and process namespacing for reducing resource and cross-process attack surfaces</li>
+<li>Media device interposition to reduce direct kernel interface access from Chromium browser and plugin processes<br />
+</li></ul>
+<li>Toolchain hardening to limit exploit reliability and success</li>
+<ul><li>NX, ASLR, stack cookies, etc</li></ul>
+<li>Kernel hardening and configuration paring<br />
+</li>
+<li>Additional file system restrictions</li>
+<ul><li>Read-only root partition</li>
+<li>tmpfs-based /tmp</li>
+<li>User home directories that can't have executables, privileged executables, or device nodes</li></ul>
+<li>Longer term, additional system enhancements will be pursued, like driver sandboxing<br />
+</li></ul>
+Detailed discussion can be found in the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/system-hardening">System Hardening</a> design document.<br />
+<h3><a name="TOC-Making-the-browser-more-modular"></a>Making the browser more modular</h3>
+</div>
+<div>The more modular the
+browser is, the easier it is for the Chromium OS to separate
+functionality and to sandbox different processes. Such increased modularity would also drive more efficient IPC within Chromium.  We welcome input from the community here, both in terms of ideas and in code.  Potential areas for future work include:
+<ul><li>Plugins</li>
+<ul><li>All plugins should run as independent processes.  We can then apply OS-level sandboxing techniques to limit their abilities.  Approved plugins
+could even have Mandatory Access Control (MAC) policies generated and ready for use.</li></ul>
+<li>Standalone
+network stack</li>
+<ul><li>Chromium browsers already sandbox media and HTML parsers.  </li>
+<li>If the HTTP and SSL stacks were isolated in
+independent processes, robustness issues with HTTP parsing or other
+behavior could be isolated.  In particular, if all SSL traffic used one
+process while all plaintext traffic used another, we would have some
+protection from unauthenticated attacks leading to full information
+compromise.  This can even be beneficial for cookie isolation, as the
+HTTP-only stack should never get access to cookies marked "secure."  It
+would even be possible to run two SSL/HTTP network stacks—one for
+known domains based on a large whitelist and one for unknown domains. 
+Alternately, it could be separated based on whether a certificate
+exception is required to finalize the connection. </li></ul>
+<li>Per-domain
+local storage  </li>
+<ul><li>If it were possible to isolate renderer access
+per domain, then access to local storage services could similarly by
+isolated—at a process level.  This would mean that a compromise of a
+renderer that escapes the sandbox would still not be guaranteed access
+to the other stored data unless the escape vector were a kernel-level
+exploit.</li></ul></ul>
+<h3><a name="_Web_App_Security_252856004306_6904816538615359"></a>Web app security</h3>
+<div>
+As we enable web applications to provide richer functionality for users, we are
+increasing the value of web-based exploits, whether the attacker tricks
+the browser into giving up extra access or the user into giving up
+extra access.  We are working on multiple fronts to design a system
+that allows Chromium OS devices to manage access to new APIs in a unified manner,
+providing the user visibility into the behavior of web applications where
+appropriate and an intuitive way to manage permissions granted to
+different applications where necessary.<br />
+<ul><li>
+        User experience</li>
+<ul><li>
+The user experience should be orthogonal to the policy enforcement mechanism inside the Chromium browser and, ideally, work the same for HTML5 APIs and Google Chrome Extensions. </li></ul>
+<li>
+        HTML5/Open Web Platform APIs and Google Chrome Extensions
+      </li>
+<ul><li>
+          We're hopeful that we can unify the policy enforcement mechanisms/user preference storage mechanisms across all of the above.<br />
+</li></ul>
+<li>
+        Plugins<br />
+</li>
+<ul><li>We are
+developing a multi-tiered sandboxing strategy, leveraging existing Chromium browser sandboxing technology and some of the
+work we discuss in our <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/system-hardening">System Hardening</a> design document.</li>
+<li>Long term, we will work with other browser vendors to make plugins more easily sandboxed.</li>
+<li>Full-screen
+mode in some plugins could allow an attacker to mock out the entire user experience of a Chromium OS device. 
+We are investigating a variety of mitigation strategies in this space.<br />
+</li></ul></ul>
+</div>
+<div>
+As
+HTML5 features like persistent workers move through the standards
+process, we must ensure that we watch for functionality creeping in
+that can poke holes in our security model and take care to handle it appropriately.<br />
+<h3><a name="TOC-Phishing-XSS-and-other-web-vulnerab"></a>Phishing, XSS, and other web vulnerabilities</h3>
+Phishing, XSS, and other web-based exploits are no more of an issue for
+Chromium OS systems than they are for Chromium browsers on other platforms.  The only
+JavaScript APIs used in web applications on Chromium OS devices will be the same HTML5
+and Open Web Platform APIs that are being deployed in Chromium browsers
+everywhere.  As the browser goes, so will we.<br />
+</div>
+<h3><a name="Secure_Autoupdate_514579947008_3042258492955804"></a>
+    Secure autoupdate
+  </h3>
+Attacks against the autoupdate process are likely to be executed by a
+dedicated adversary who would subvert networking infrastructure to
+inject a fake autoupdate with malicious code inside it.  That said, a
+well supported opportunistic adversary could attempt to subvert the
+update process for many users simultaneously, so we should address this possibility here. (For more on this subject, also see the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/filesystem-autoupdate">File System/Autoupdate</a> design document.)<br />
+<ul><li>Signed updates are downloaded over SSL.</li>
+<li>Version numbers of updates can't go backwards.</li>
+<li>The integrity of each update is verified on subsequent boot, using our Verified Boot process, described below.</li></ul>
+</div>
+<div>
+<h3><a name="TOC-Verified-boot"></a>Verified boot<br />
+</h3>
+Verified boot provides a means of getting
+cryptographic assurances that the Linux kernel, non-volatile system memory, and the partition table are untampered with when the system starts up.  This approach
+is not "trusted boot" as it does not depend on a TPM device or other
+specialized processor features.  Instead, a chain of trust is created
+using custom read-only firmware that performs integrity checking on
+a writable firmware.  The verified code in the writable firmware then verifies the next component in the boot
+path, and so on.  This approach allows for more flexibility than traditional trusted boot systems and avoids taking ownership away from the user.  The design is broken down into two stages:</div>
+<div>
+<ul><li>Firmware-based verification <br />
+(for details, see the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/firmware-boot-and-recovery">Firmware Boot and Recovery</a> design document)</li>
+<ul><li>Read-only firmware checks writable firmware with a permanently stored key.</li>
+<li>Writable firmware then checks any other non-volatile memory as well as the bootloader and kernel.</li>
+<li>If verification fails, the user can either bypass checking or boot to a safe recovery mode.<br />
+</li></ul>
+<li>Kernel-based verification <br />
+(for details, see the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/verified-boot">Verified Boot</a> design document) </li>
+<ul><li>This approach extends authenticity and integrity guarantees to files and metadata on the root file system.</li>
+<li>All access to the root file system device traverses a transparent layer which ensure data block integrity.</li>
+<li>Block integrity is determined using cryptographic hashes stored after the root file system on the system partition.</li>
+<li>All verification is done on-the-fly to avoid delaying system startup.</li>
+<li>The implementation is not tied to the firmware-based verification and may be compatible with any trusted kernel.</li></ul></ul>
+<div>When combined, the two verification systems will perform as follows:</div>
+<ul>
+<li>Detects changes at boot-time</li>
+<ul><li>Files, or read-write firmware, changed by an opportunistic attacker with a bootable USB drive will be caught on reboot.</li>
+<li>Changes performed by a successful runtime attack will also be detected on next reboot.</li></ul>
+<li>Provides a secure recovery path so that new installs are safe from past attacks.</li>
+<li>Doesn't protect against</li>
+<ul><li>Dedicated attackers replacing the firmware.</li>
+<li>Run-time attacks: Only code loaded from the file system is verified. Running code is not.</li>
+<li>Persistent attacks run by a compromised Chromium browser: It's not possible to verify the browser's configuration as safe using this technique.<b><i><br />
+</i></b><i>
+</i></li></ul></ul>
+It's
+important to note that at no point is the system restricted to
+code from the Chromium project; however, if Google Chrome OS is used, additional
+hardware-supported integrity guarantees can be made.<br />
+</div>
+<div>
+<h3><a name="TOC-Rendering-pwned-devices-useless"></a>Rendering pwned devices useless</h3>
+We
+do not intend to brick devices that we believe to be hacked.  If we can
+reliably detect this state on the client, we should just initiate an
+update and reboot.  We could try to leverage the abuse detection and
+mitigation mechanisms in the Google services that people are using from
+their Chromium OS devices, but it seems more scalable to allow each
+service to continue handling these problems on its own.<br />
+<h2><a name="TOC-Mitigating-device-theft"></a>Mitigating device theft</h2>
+<h3><a name="Mitigating_Device_Theft_415006"></a></h3>
+<p>
+A stolen device is likely to have a higher value to a dedicated
+adversary than to an opportunistic adversary.  An opportunistic adversary is more likely to reset the device for resale, or try to log in to use the device for himself.   </p>
+<p>The challenges here are myriad:</p>
+<ul><li>We want to protect user data while also enabling users to opt-in to auto-login.</li>
+<li>We want to protect user data while also allowing users to share the device.</li>
+<li>We especially want to protect user credentials without giving up offline login, auto-login, and device sharing.</li>
+<li>Disk encryption can have real impact on battery life and performance speed.</li>
+<li>The attacker can remove the hard drive to circumvent OS-level protections.</li>
+<li>The attacker can boot the device from a USB device.</li></ul>
+<ol>
+</ol>
+<h3><a name="TOC-Data-protection"></a>Data protection</h3>
+
+Users
+shouldn't need to worry about the privacy of their data if they forget
+their device in a coffee shop or share it with their family members.  
+The easiest way to protect the data from opportunistic attackers is to
+ensure that it is unreadable except when it is in use by its owner.</div>
+<p>The <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/protecting-cached-user-data">Protecting Cached User Data</a> design document provides details on data protection. Key requirements for protecting cached user data (at rest) are as follows:</p>
+<div>
+<ul>
+<li>Each user has his own encrypted store.</li>
+<li>All user data stored by the operating system, browser, and any plugins are encrypted.</li>
+<li>Users cannot access each other's data on a shared device.</li>
+<li>The system does not protect against attacks while a user is logged in.</li>
+<li>The system will attempt to protect against memory extraction (cold boot) attacks when additional hardware support arrives.</li>
+<li>The system does not protect against root file system tampering by a dedicated attacker (verified boot helps there).<br />
+<br />
+</li></ul>
+<div>
+<h3><a name="TOC-Account-management"></a>Account management</h3>
+<div>
+Preventing the adversary from logging in to the system closes one easy
+pathway to getting the machine to execute code on his behalf.  That
+said, many want this device to be just as sharable as a Google Doc.
+ How can we balance these questions, as well as take into account
+certain practical concerns?  These issues are discussed at length in the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/user-accounts-and-management">User Accounts and Management</a> design document, with some highlights below.<br />
+<ul><li>
+          What <i>are</i> the practical concerns?
+        </li>
+<ul><li>
+            Whose wifi settings do you use?  Jane's settings on Bob's device in Bob's house don't work.</li>
+<li>
+            But using Bob's settings no matter where the device is doesn't work either.</li>
+<li>
+            And if Bob's device is set up to use his enterprise's wifi, then it's dangerous if someone steals it!<br />
+</li></ul>
+<li>
+          "The owner"
+        </li>
+<ul><li>Each device has one and only one owner.           <br />
+</li>
+<li><i>User preferences</i> are distinct from <i>system settings.</i></li>
+<li>
+<i>System settings</i>, like wifi, follow the owner of a device.</li></ul>
+<li>
+          Whitelisting
+        </li>
+<ul><li>
+            The owner can whitelist other users, who can then log in.</li>
+<li>
+            The user experience for this feature should require only a few clicks or keystrokes.</li></ul>
+<li>
+          Promiscuous mode
+        </li>
+<ul><li>
+            The owner can opt in to a mode where anyone with a Google account can log in.</li></ul>
+<li>Guest mode</li>
+<ul><li>Users can initiate a completely stateless session, which does not sync or cache data.</li>
+<li>All system settings would be kept out of this session, including networking config.</li></ul></ul>
+</div>
+</div>
+<h3><a name="Login_06044909358024597_298465_5687262681137824"></a>
+    Login</h3>
+
+  For design details, see the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/login">Login</a> design document.</div>
+<div><b><i><br />
+</i></b>
+At a high level, here is how Chromium OS devices authenticate users:<br />
+<ol><li>Try to reach Google Accounts online.</li>
+<li>If the service can't be reached, attempt to unwrap the locally-stored, TPM-wrapped keys we use for per-user data encryption.  Successful unwrap means successful login.</li>
+<li>For every successful online login, use a salted hash of the password to wrap a fresh encryption key using the TPM.</li>
+</ol>
+
+There
+are a number of important convenience features around authentication
+that we must provide for users, and some consequences of integrating
+with Google Accounts we must deal with.  These all have
+security consequences, and we discuss these (and potential mitigation)
+here.  Additionally, we are currently working through the various tradeoffs of supporting non-Google OpenID providers as an authentication backend.<br />
+<br />
+<b>CAPTCHAs</b><br />
+</div>
+<div> Rather than strictly
+rate limiting failed authentication attempts, Google Accounts APIs
+respond with CAPTCHAs if our servers believe an attack is underway. We do not
+want users to face CAPTCHAs to log in to their device; if the user has correctly provided his credentials, he should be successfully logged in.<br />
+Furthermore, including HTML rendering code in our screen locker would
+introduce more potential for crashing bugs, which would give an
+attacker an opportunity to access the machine.  That said, we cannot introduce a
+vector by which attackers can brute force Google Accounts.<br />
+To
+work around this right now, we do offline credential checking when
+unlocking the screen and ignore problems at login time, though we realize this is not acceptable long-term and are considering a
+variety of ways to address this issue in time for V1.</div>
+<div>
+<br />
+<b>Single signon
+</b> <br />
+</div>
+<div> As we discuss in the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs/login">Login</a> design document, we want to
+provide an SSO experience on the web for our users.  Upon login, we decrypt the user's profile and perform a request for her Google Accounts cookies in the background.  As a result, her profile gets fresh cookies and she is logged in to all her Google services.</div>
+<h3><a name="TOC-1"></a><br /></h3><h3><a name="TOC-Future-work"></a><span style="font-size:15px">Future work</span></h3>
+<div style="font-size:13px"><b>Auto-login</b><span style="font-weight:normal"> </span></div>
+<div style="font-size:13px"><span style="font-weight:normal">When a user turns on auto-login, he is asserting that he wishes this device to be trusted as though it has his credentials at all times; however, we don't want to store actual Google Account credentials on the device—doing so would expose them to offline attack unnecessarily.  We also don't want to rely on an expiring cookie; auto-login would "only work sometimes," which is a poor user experience.  We would like to store a revokable credential on the device, one that can be exchanged on-demand for cookies that will log the user in to all of his Google services.  We're considering using an OAuth token for this purpose.</span></div>
+<div><b>Biometrics, smartcards and Bluetooth</b> </div>
+<div>We expect to keep an eye on biometric authentication technologies as they continue to become cheaper and more reliable, but at this time we believe that the cost/reliability tradeoff is not where it needs to be for our target users.  We expect these devices to be covered in our users' fingerprints, so a low-cost fingerprint scanner could actually increase the likelihood of compromise.  We were able to break into one device that used facial recognition authentication software just by holding it up to the user's photo.  Bluetooth adds a whole new software stack to our login/screenlocker code that could potentially be buggy, and the security of the pairing protocol has been <a href="http://www.schneier.com/blog/archives/2005/06/attack_on_the_b_1.html" style="color:rgb(0,102,204);outline-style:none;outline-width:initial;outline-color:initial">criticized in the past</a>.  Smart cards and USB crypto tokens are an interesting technology, but we don't want our users to have to keep track of a physically distinct item just to use their device.</div>
+<br />
+<b>Single signon</b> 
+<div>For third-party sites, we would like to provide credential generation and synced, cloud-based storage. 
+<h2><a name="TOC-Wrapup"></a>Wrapup</h2>
+In this document, we have aimed only to summarize the wide-ranging efforts we are undertaking to secure Chromium OS at all levels. For more detail, please read the rest of the <a href="https://www.chromium.org/chromium-os/chromiumos-design-docs">design documents.</a><b><br />
+</b>
+<div>
+<div>
+<br />
+<div>
+<br />
+<div>
+<a name="Web_App_Security"></a>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/security-overview">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9VAUL9lJaXN7JADO5YMxYmA5SAtR14_dpnVjxKk4AIZ4zUO1WBPwnDE-FICKWhMMvrrGL3utY68la34AeK_AHx_0mGv3WslDrKPfkpSAhdwHCg6GG/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

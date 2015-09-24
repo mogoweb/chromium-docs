@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/testing","deleted":false,"title":"Testing and infrastructure","dir":"ltr"},{"path":"/developers/testing/webkit-layout-tests","deleted":false,"title":"Layout Tests","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/testing/webkit-layout-tests\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/testing","parentWuid":"wuid:gx:1415bd4fdab62446","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Layout Tests","locale":"en","wuid":"wuid:gx:1a8b2a346aa3984","revision":140,"path":"/developers/testing/webkit-layout-tests","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"webkit-layout-tests","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Layout Tests - The Chromium Projects" />
+<meta itemprop="name" content="Layout Tests - The Chromium Projects" />
+<meta property="og:title" content="Layout Tests - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Layout Tests - The Chromium Projects</title>
+<meta itemprop="image" content="https://docs.google.com/drawings/d/1KNRNjlxK0Q3Tp8rKxuuM5mpWf4OJQZmvm9_kpwu_Wwg/pub?w=961&amp;h=263" />
+<meta property="og:image" content="https://docs.google.com/drawings/d/1KNRNjlxK0Q3Tp8rKxuuM5mpWf4OJQZmvm9_kpwu_Wwg/pub?w=961&amp;h=263" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/testing" dir="ltr">Testing and infrastructure</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Layout Tests</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><p>Layout tests are used by Blink to test many components--<b><i>certainly not just layout and rendering</i></b>. It involves loading pages in a test renderer (content_shell) and comparing the rendered output tree against an expected output file.  Additionally, there are "pixel tests" which compare an image of the rendered page against an expected file.</p><p>Note that Blink is increasingly running more and more of the W3C's conformance tests as part of the Layout Tests. For more, see <a href="http://www.chromium.org/blink/importing-the-w3c-tests">Running the W3C Tests in Blink</a> .</p>
+<div>
+</div>
+<div>
+<div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Running-the-Tests"><strong>1 </strong>Running the Tests</a></li><li class="goog-toc"><a href="#TOC-Test-Harness-Options"><strong>2 </strong>Test Harness Options</a></li><li class="goog-toc"><a href="#TOC-Success-and-Failure"><strong>3 </strong>Success and Failure</a></li><li class="goog-toc"><a href="#TOC-Test-Expectations"><strong>4 </strong>Test Expectations</a></li><li class="goog-toc"><a href="#TOC-Virtual-Test-Suites"><strong>5 </strong>Virtual Test Suites</a></li><li class="goog-toc"><a href="#TOC-Tracking-Test-Failures"><strong>6 </strong>Tracking Test Failures</a></li><li class="goog-toc"><a href="#TOC-Tests-that-use-a-HTTP-Server"><strong>7 </strong>Tests that use a HTTP Server</a></li><li class="goog-toc"><a href="#TOC-Debugging-a-test"><strong>8 </strong>Debugging a test</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Tips"><strong>8.1 </strong>Tips</a></li></ol></li><li class="goog-toc"><a href="#TOC-Rebaselining-Tests"><strong>9 </strong>Rebaselining Tests</a></li><li class="goog-toc"><a href="#TOC-Known-Issues"><strong>10 </strong>Known Issues</a></li><li class="goog-toc"><a href="#TOC-TestRunner-LayoutTest-support"><strong>11 </strong>TestRunner LayoutTest support</a></li><li class="goog-toc"><a href="#TOC-Some-layout-tests-rely-on-the-testRunner-object-to-expose-configuration-for-mocking-the-platform.-This-is-provided-in-content_shell-here-s-a-UML-of-testRunner-bindings-configuring-platform-implementation."><strong>12 </strong>Some layout tests rely on the testRunner object to expose configuration for mocking the platform. This is provided in content_shell, here's a UML of testRunner bindings configuring platform implementation.</a></li><li class="goog-toc"><a href="#TOC-Writing-reliable-layout-tests"><strong>13 </strong>Writing reliable layout tests</a></li><li class="goog-toc"><a href="#TOC-Writing-tests-that-need-to-paint-raster-draw-a-frame-of-intermediate-output"><strong>14 </strong>Writing tests that need to paint/raster/draw a frame of intermediate output</a></li></ol></div></div></div></div>
+<br />
+</div>
+<div><span style="font-size:22px;font-weight:bold">Getting set up</span></div>
+<div>Before you can run the layout tests, you need to do the following:</div>
+<div>
+<ul><li>Build "blink_tests" to get the content_shell and all of the other needed binaries.</li>
+<ul><li><span style="background-color:transparent;font-size:10pt"> <code>$ ninja -C out/Release blink_tests</code></span></li><li>On <a href="https://code.google.com/p/chromium/wiki/AndroidBuildInstructions" style="background-color:transparent;font-size:10pt">Android</a>, you need to build and install 'content_shell_apk' instead:</li><ul><li><span style="background-color:transparent;font-size:10pt"><code>$ ninja -C out/Release content_shell_apk</code></span></li><li><span style="background-color:transparent;font-size:10pt"><code>$ adb install -r out/Release/apks/ContentShell.apk</code></span></li></ul></ul>
+<li>If on Windows XP, install the necessary fonts (Windows Vista has all the necessary fonts installed by default).  You can do this from Control Panel → Regional and Language Options<span style="font-size:13.3333330154419px"> </span><span style="font-size:13.3333330154419px">→</span><span style="font-size:13.3333330154419px"> </span>Languages tab<span style="font-size:13.3333330154419px"> </span><span style="font-size:13.3333330154419px">→</span><span style="font-size:13.3333330154419px"> </span>check both boxes in the Supplemental languages support section.</li>
+<li>Install the <a href="http://www.apple.com/quicktime" rel="nofollow">http://www.apple.com/quicktime</a> plugin or a couple of tests will fail.<br />
+</li>
+<li>Make sure that you do <b>not</b> have Apple's Monaco font installed.</li>
+<li>Make sure the layout tests are checked out in your tree.  They should be located in <code>src/third_party/WebKit/LayoutTests</code>.  If that directory is empty, check your <code>.gclient</code> file (it's located one directory above your <code>src/</code> directory), comment out lines that say <font face="'courier new', monospace"><code>"src/third_party/WebKit/LayoutTests": None</code></font>, and re-run <font face="'courier new', monospace"><code>gclient sync</code></font></li>
+<li>If on Windows, run <code>src/third_party/cygwin/setup_mount.bat</code> to patch the registry so that the cygwin utilities used by the regression know where to find the root of their directory.</li>
+<li>If on Mac:</li>
+<ul><li>You probably want to strip the content_shell binary before starting the tests. If you don't, you'll have 5-10 running concurrently, all stuck being examined by the OS crash reporter. This will drag your poor machine to its knees, and probably cause other failures like timeouts where they normally don't occur. </li>
+<li><span style="font-family:courier new"><code>$ strip ./xcodebuild/{Debug,Release}/content_shell.app/Contents/MacOS/content_shell</code></span></li></ul></ul>
+<h2><a name="TOC-Running-the-Tests"></a>Running the Tests</h2>
+<div>The test runner script is in <code>$CHROMIUM_DIR/third_party/WebKit</code> </div>
+<div><span><span style="font-family:courier new,monospace">
+<div class="sites-codeblock sites-codesnippet-block"><code>python third_party/WebKit/Tools/Scripts/run-webkit-tests</code></div>
+</span></span></div>
+<div><br /></div><div><span style="color:rgb(0,96,0);font-family:monospace;line-height:13.333332061767578px;background-color:rgb(239,239,239)">
+</span></div>
+<div>For Android:</div><div><span style="background-color:rgb(239,239,239)"><div class="sites-codeblock sites-codesnippet-block"><font color="#006000" face="monospace">python third_party/WebKit/Tools/Scripts/run-webkit-tests</font><span style="color:rgb(0,96,0);font-family:monospace;line-height:13.3333320617676px"> --android</span></div></span></div><div><br /></div>
+Tests marked as SKIP in <a href="http://src.chromium.org/viewvc/blink/trunk/LayoutTests/TestExpectations">TestExpectations</a> (in Blink repo) won't be run at all, generally because they cause some intractable tool error. To force one of them to be run, either rename that file or specify the skipped test as the only one on the command line (see below).</div><div><br /></div><div>Note that currently only the tests listed in <a href="http://src.chromium.org/viewvc/blink/trunk/LayoutTests/SmokeTests">SmokeTests</a> are run on the Android bots, since running all layout tests takes too long on Android (and may still have some infrastructure issues).  Most developers focus their blink testing on Linux.  We rely on the fact that the Linux and Android behavior is nearly identical for scenarios outside those covered by the smoke tests.<br /><br /><div>
+To run only some of the tests, specify their directories or filenames as arguments to <code>run_webkit_tests.py</code> relative to the layout test directory (<code>src/third_party/WebKit/LayoutTests</code>). For example, to run the fast form tests, use
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+<div class="sites-codeblock sites-codesnippet-block"><p style="margin:0px;font-stretch:normal"><font color="#006000" face="monospace"><span style="font-size:12px;line-height:normal">Tools/Scripts/run-webkit-tests</span></font><span style="font-family:courier new,monospace;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal"><code> fast/forms</code></span></p>
+</div>
+<br />
+Or you could use
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>Tools/Scripts/run-webkit-tests fast/fo\*</code></div>
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br /></p>as a shorthand.<br /><br /><p style="margin:0px;font-stretch:normal"><span style="font-family:Arial,Verdana,sans-serif;font-size:10pt;font-style:normal;font-variant:normal;font-weight:normal;line-height:normal;background-color:transparent">Example: To run the layout tests with a debug build of content_shell, but only test the SVG tests and run pixel tests, you would run: </span><span style="background-color:transparent"><font face="courier new, monospace"><code>Tools/Scripts/run-webkit-tests</code></font><font face="courier new, monospace" size="2"><code> --debug svg</code></font></span></p>
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+As a final quick-but-less-robust alternative, you can also just use the content_shell executable to run specific tests by using (for Windows)
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>src/chrome/Debug/content_shell.exe --dump-render-tree --no-sandbox full_test_source_path</code></div>
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+as in
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>src/chrome/Debug/content_shell.exe --dump-render-tree --no-sandbox \<br />
+    c:/chrome/src/third_party/WebKit/LayoutTests/fast/forms/001.html</code>
+</div>
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br />
+</p>
+but this requires a manual diff against expected results, because the shell doesn't do it for you.
+<p style="margin:0px;font:12px Helvetica"><br />
+</p>
+To see a complete list of arguments supported, run: <code>run-webkit-tests --help</code><p style="margin:0px;font:12px Helvetica"><br />
+</p>
+<b>Linux Note: </b>We try to match the windows render tree output exactly by matching font metrics and widget metrics.   If there's a difference in the render tree output, we should see if we can avoid rebaselining by improving our font metrics.  For additional information on Linux Layout Tests, please see <a href="http://code.google.com/p/chromium/wiki/LayoutTestsLinux">http://code.google.com/p/chromium/wiki/LayoutTestsLinux</a>.
+<p style="margin:0px;font:12px Helvetica"><span style="font-family:Arial"><br />
+</span></p>
+<b>Mac Note: </b>While the tests are running, a bunch of Appearance settings are overridden for you so the right type of scroll bars, colors, etc. are used.  Your main display's "Color Profile" is also changed to make sure color correction by ColorSync matches what is expected in the pixel tests.  The change is noticeable, how much depends on the normal level of correction for your display.  The tests do their best to restore your setting when done, but if you're left in the wrong state, you can manually reset it by going to System Preferences → Displays <span style="font-size:13.3333330154419px">→</span> Color and selecting the "right" value.<br />
+<h2><a name="TOC-Test-Harness-Options"></a>Test Harness Options</h2><font face="Arial">
+</font>This script has a lot of command line flags.  You can pass <code>--help</code> to the script to see a full list of options. A few of the most useful options are below:<font face="Arial">
+<p style="margin:0px;font-family:Helvetica;font-style:normal;font-variant:normal;font-weight:normal;font-size:12px;line-height:normal"><span style="font-family:Arial"><br />
+</span></p>
+<table border="1" bordercolor="#888888" cellspacing="0" style="border-color:rgb(136,136,136);border-width:1px;margin:0px;border-collapse:collapse">
+<tbody>
+<tr>
+<td style="vertical-align:top;width:164px;height:15px"><code> --debug</code></td>
+<td style="vertical-align:top;width:865px;height:15px">Run the debug build of the test shell (default is release) </td>
+</tr>
+<tr>
+<td style="width:164px;height:29px"><code> --build-directory</code></td>
+<td style="width:865px;height:29px">The directory under which to look for the content_shell binary (default is "out" on Linux)</td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:164px;height:14px"><code> --verbose</code></td>
+<td style="vertical-align:top;width:865px;height:14px">Produce more verbose output (eg, list tests that pass) </td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:164px;height:28px"><code> --no-pixel-tests</code></td>
+<td style="vertical-align:top;width:865px;height:28px">Disable the pixel-to-pixel PNG comparisons and image checksums for tests that don't call <code>layoutTestController.dumpAsText()</code> </td>
+</tr><tr><td style="width:164px;height:14px"><code> --reset-results</code></td><td style="width:865px;height:14px">Write all generated results directly into the given directory, overwriting what's there  </td></tr>
+<tr>
+<td style="vertical-align:top;width:164px;height:29px"><code> --new-baseline</code></td>
+<td style="vertical-align:top;width:865px;height:29px">Write all generated results into the <b>most specific platform</b> directory, overwriting what's there. Equivalent to <code>--reset-results --add-platform-expectations</code></td>
+</tr>
+<tr>
+<td style="vertical-align:top;width:164px;height:14px"><code> --startup-dialog</code></td>
+<td style="vertical-align:top;width:865px;height:14px">Bring up a modal dialog before running the test (useful for attaching a debugger) </td>
+</tr>
+<tr>
+<td style="width:164px;height:14px"><code> --child-processes</code></td>
+<td style="width:865px;height:14px">The number of tests to run concurrently (defaults to the number of CPUs; useful with <code>--fully-parallel</code> to split up directories)</td>
+</tr>
+</tbody>
+</table>
+<p style="margin:0px;font-family:Helvetica;font-style:normal;font-variant:normal;font-weight:normal;font-size:12px;line-height:normal"><br />
+</p>
+<p style="margin:0px;font-family:Helvetica;font-style:normal;font-variant:normal;font-weight:normal;font-size:12px;line-height:normal">For more information on the script, see <a href="http://trac.webkit.org/wiki/NewRunWebKitTests">http://trac.webkit.org/wiki/NewRunWebKitTests</a></p>
+</font>
+<h2><a name="TOC-Success-and-Failure"></a>Success and Failure</h2>
+</div>
+<div><span style="font-family:Helvetica">A test succeeds when its output matches the pre-defined expected results. If any tests fail, the test script will place the actual generated results, along with a diff of the actual and expected results, in</span> <span><span style="font-family:courier new,monospace"><code>src/webkit/{Debug/Release}/layout_test_results/</code></span></span>. Look in there for the expected outcome, the actual outcome, as well as a contextual diff between the two. <span style="font-family:Helvetica">The full expected results are in the </span><span style="font-family:courier new,monospace"><code>src/third_party/WebKit/LayoutTests/platform</code></span><span style="font-family:Helvetica"> or </span><span style="font-family:Helvetica">alongside their respective tests.</span></div>
+<div><span style="font-family:Helvetica"><br />
+</span></div>
+<div>
+A test that runs but produces the wrong output is marked as "failed", one that causes the test shell to crash is marked "** CRASHED **", and one that takes longer than 10 seconds to complete is aborted and marked "** TIMED OUT **". A row of dots in the script's output indicates one or more tests that passed.
+<p style="font-family:Helvetica;margin:0px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:normal"><br />
+</p>
+There are some failures that are platform differences between our webkit implementation and Apple's implementation.  That is, we pass the test, but it shows up as a failure because the text diff or the pixel diff are slightly difference.  For example, we render our form controls to look like platform-native widgets while Apple uses Aqua widgets.  In these cases, we want to rebaseline the test by generating new expected results.  See below for instructions on how to rebaseline. 
+<p style="font-family:Helvetica;margin:0px"><br />
+</p>
+<p style="font-family:Helvetica;margin:0px">Known differences with our implementation that we should just rebaseline:</p>
+<ul style="font-family:Helvetica"><li>Font sizes - We try to match other Windows browser for font sizes.  This sometimes causes text to wrap between different words.  This is also ok.</li>
+<li>Form controls - On Windows, <a href="http://www.chromium.org/developers/design-documents/generic-theme-for-test-shell">we use a generic set of widgets</a> rather than aqua styled controls (or the platform's native widgets); on Linux, we use the native widgets. Both of these are different in size and appearance from WebKit's widgets..  Also, becaues of this, our select controls and buttons have a border that show up in the render tree output.  This is also ok.</li>
+<li>Scrollbars - We use different scrollbar widgets (just like the form controls).  We match the size of Apple's scrollbars so the render tree diff should match.  However, pixel diffs will fail so it's ok to rebaseline the images.</li>
+<li>V8 exceptions - In general, we try to match javascript exceptions exactly with JSC.  However, sometimes this is hard or undesirable.  If a test is failing only because exception text differs, ask someone on the V8 team if it's something they can change the text of or if we should just rebaseline.</li>
+<li>GURL difference - GURL tries to be compatible with how IE canonicalizes URLs.  Sometimes, this differs from how KURL canonicalizes.  If you're unsure about whether a test should be rebaselined, ask brettw.<br />
+</li></ul>
+<p style="font-family:Helvetica;margin:0px">Examples:</p>
+<p style="font-family:Helvetica;margin:0px">Scrollbars/fonts: <a href="http://trac.webkit.org/export/128192/trunk/LayoutTests/platform/mac/fast/css/word-space-extra-expected.png" rel="nofollow">Apple</a>  vs  <a href="http://trac.webkit.org/export/128192/trunk/LayoutTests/platform/chromium-win/fast/css/word-space-extra-expected.png">Chrome-Win</a>  vs  <a href="http://trac.webkit.org/export/128192/trunk/LayoutTests/platform/chromium-linux/fast/css/word-space-extra-expected.png">Chrome-Linux</a><br />
+</p>
+<p style="font-family:Helvetica;margin:0px">Form controls: <a href="http://trac.webkit.org/export/39453/trunk/LayoutTests/platform/mac/fast/forms/HTMLOptionElement_label01-expected.png" rel="nofollow">Apple</a>  vs  <a href="http://trac.webkit.org/export/128192/trunk/LayoutTests/platform/chromium-win/fast/forms/HTMLOptionElement_label01-expected.png">Chrome-Win</a>  vs  <a href="http://trac.webkit.org/export/128192/trunk/LayoutTests/platform/chromium-linux/fast/forms/HTMLOptionElement_label01-expected.png">Chrome-Linux</a><br />
+</p>
+<p style="font-family:Helvetica;margin:0px">V8 exceptions: <a href="http://trac.webkit.org/export/39453/trunk/LayoutTests/fast/js/large-expressions-expected.txt" rel="nofollow">Apple</a>  vs  <a href="http://trac.webkit.org/export/128192/trunk/LayoutTests/platform/chromium-win/fast/js/large-expressions-expected.txt">Chrome</a><br />
+</p>
+<p style="font-family:Helvetica;margin:0px"><br />
+</p>
+<p style="font-family:Helvetica;margin:0px">Those tests that use NPAPI plugin require the plugin to be installed if you want to view the test from Chrome rather than the content_shell. To install a NPAPI plugin in Chrome, just copy the .dll into <font face="'courier new', monospace">plugins</font> directory next to your chrome.exe binary. If the <font face="'courier new', monospace">plugins</font> directory does not exist, you can create it.</p>
+<h2 style="font-family:Helvetica"><a name="TOC-Test-Expectations"></a>Test Expectations</h2>
+<div style="font-family:Helvetica">The <a href="http://src.chromium.org/viewvc/blink/trunk/LayoutTests/TestExpectations" target="_blank">TestExpectations</a> (in Blink repo) file contains the list of all known layout test failures (there are actually multiple files, see the others next to TestExpectations plus <a href="https://chromium.googlesource.com/chromium/src/+/master/skia/skia_test_expectations.txt">skia_test_expectations.txt</a>). See <a href="http://www.chromium.org/developers/testing/webkit-layout-tests/testexpectations">Test Expectations</a> for more on this.</div>
+</div>
+<div>
+<h2 style="font-family:Helvetica"><a name="TOC-Virtual-Test-Suites"></a>Virtual Test Suites</h2><div><font face="Helvetica">The </font><font face="courier new, monospace">run-webkit-tests</font><font face="Helvetica"> harness supports the concept of "virtual test suites". A virtual test suite allows developers to re-run an existing set of tests with different command line arguments. For example, if you were testing a new "blocking repaint" mode in Blink (whatever that would mean), you could make that runtime enabled via a </font><font face="courier new, monospace">--blocking-repaint</font><font face="Helvetica"> flag in </font><font face="courier new, monospace">content_shell</font><font face="Helvetica">, and then re-run all of the tests in </font><font face="courier new, monospace">LayoutTests/fast/repaint</font><font face="Helvetica"> with the additional flag.</font><br /></div><div style="font-family:Helvetica"><br /></div><div style="font-family:Helvetica">Virtual test suites support having their own baselines, but will fall back to the existing baselines if need be. They also support having their own expectations in TestExpectations.</div><div style="font-family:Helvetica"><br /></div><div style="font-family:Helvetica">To add a new virtual test suite, add an entry to the <a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/LayoutTests/VirtualTestSuites">LayoutTests/VirtualTestSuites</a> file. The format for the file is a strict JSON object (no comments) containing a list of suite objects. Each suite object contains three keys, a "prefix" key, a"base" key, and an "args" key. For example, it might contain:</div><div style="font-family:Helvetica"><br /></div></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><font face="courier new, monospace">% cat LayoutTests/VirtualTestSuites</font></div></div></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div><font face="courier new, monospace">[</font></div></div></div><div><font face="courier new, monospace">  ...,</font></div><div><font face="courier new, monospace">  {</font></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><font face="courier new, monospace">    "prefix": "blocking_repaint",</font></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><font face="courier new, monospace">    "base": "fast/repaint",</font></div></blockquote><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><font face="courier new, monospace">    "args": ["--blocking-repaint"],</font></div><div><font face="courier new, monospace">  },</font></div><div><font face="courier new, monospace">  ...</font></div><div><font face="courier new, monospace">]</font></div><div><font face="courier new, monospace">%</font></div></blockquote><div><div><div style="font-family:Helvetica"><br /></div><div><span style="font-size:10pt;background-color:transparent"><font face="Helvetica">The "prefix" key is a single path component name (i.e., it cannot contain a "/") that will be used for a directory under </font><font face="courier new, monospace">LayoutTests/virtual</font><font face="Helvetica"> . You can think of this as the "name" for a suite, but the prefix does not have to be unique (in case  you want to run multiple directories using the same flags. Using the same prefix for different sets of flags is not recommended. </font></span></div><div style="font-family:Helvetica"><br /></div><div><div><font face="Helvetica">The "base" key indicates the subpath under </font><font face="courier new, monospace">LayoutTests/</font><font face="Helvetica"> to the directory of tests you want to run (e.g., "</font><font face="courier new, monospace">fast/repaint</font><font face="Helvetica">" in the above example). </font></div><div style="font-family:Helvetica"><br /></div></div><div style="font-family:Helvetica"><div>The "args" key is a list of the additional command line arguments to use. </div><div><br /></div></div><div><span style="font-family:Helvetica">Thus, interpreting the above example, if you have a test in fast/repaint called foo.html, running on the Mac the test harness would act as if it also found a </span><font face="courier new, monospace">LayoutTests/virtual/blocking_repaint/fast/repaint/foo.html</font><font face="Helvetica"> test. It would look for baselines in </font><font face="courier new, monospace">LayoutTests/platform/mac/virtual/fast/repaint</font><font face="Helvetica">, then </font><font face="courier new, monospace">LayoutTests/virtual/fast/repaint</font><font face="Helvetica">, then </font><font face="courier new, monospace">LayoutTests/platform/mac/fast/repaint</font><font face="Helvetica">, then </font><font face="courier new, monospace">LayoutTests/fast/repaint</font><font face="Helvetica">.</font></div><div><font face="Helvetica"><br /></font></div><div><font face="Helvetica">Note that virtual test suites do not inherit any test expectations from the underlying file; if TestExpectations contains "Bug(x) fast/repaint/foo.html [ Fail ]", the virtual file will still be expected to pass. If you want the virtual test to *also* be expected to fail, you have to add another suppression.</font></div><h2 style="font-family:Helvetica"><a name="TOC-Tracking-Test-Failures"></a>Tracking Test Failures</h2>
+<p style="font-family:Helvetica;margin:0px;font-style:normal;font-variant:normal;font-weight:normal;font-size:12px;line-height:normal"><span style="font-family:Arial,Verdana,sans-serif;font-size:13px">All bugs, associated with layout test failures must have the <a href="http://crbug.com/?q=label:LayoutTests" rel="nofollow" target="_blank">LayoutTests</a> label. Depending on how much you know about the bug, assign the status accordingly:</span></p>
+<ul style="font-family:Helvetica"><li><font face="Arial, Verdana, sans-serif" size="3"><span style="font-size:13px"><b>Unconfirmed</b> -- you aren't sure if this is a simple rebaseline, possible duplicate of an existing bug, or a real failure</span></font></li>
+<li><font face="Arial, Verdana, sans-serif"><b>Available</b> -- you know the root cause of the issue.</font></li>
+<li><font face="Arial, Verdana, sans-serif"><b>Assigned</b> or <b>Started</b> -- you will fix this issue.</font></li></ul>
+<p style="font-family:Helvetica;margin:0px;font-style:normal;font-variant:normal;font-weight:normal;font-size:12px;line-height:normal"><span style="font-family:Arial,Verdana,sans-serif;font-size:13px">When creating a new layout test bug, please assign these labels to it -- having proper label hygiene is good for everyone:</span></p>
+<ul style="font-family:Helvetica"><li><b>Type-Bug</b></li>
+<li><b>Pri-2</b> (<b>Pri-1</b> if it's a crash)</li>
+<li><b>Area-WebKit</b></li>
+<li><b>OS-All</b> (or whichever OS the failure is on)</li>
+<li><b>LayoutTests</b></li>
+<li><b>Mstone-9</b> (or current milestone)</li>
+<li><b>Tests-Flaky</b> (if the test is flaky)</li></ul>
+<div style="font-family:Helvetica">You can also use Layout Test Failure template, which will pre-set these labels for you.</div>
+<h2><a name="TOC-Tests-that-use-a-HTTP-Server"></a>Tests that use a HTTP Server</h2>HTTP tests use a locally running HTTP server (Apache) to run. You don't need any special configuration to run these, but you should make sure the server is not already running. As a rule, if the test is in an http directory, it will run off the server. Tests are served off of ports 8000, 8080, and 8443 (HTTPS). <br /><br />
+If you run the tests using run_webkit_tests.py, the server will be started automatically. To run the server manually:
+<p style="margin:0px;font:12px Helvetica;min-height:14px"><br /></p><div class="sites-codeblock sites-codesnippet-block"><code>cd src/third_party/WebKit/Tools/Scripts<br /></code><code>run-blink-httpd start </code>
+</div><span style="font-family:arial,sans-serif;font-size:12.7272720336914px;font-style:normal;font-variant:normal;line-height:normal"><br /></span><p style="margin:0px"><span style="font-family:arial,sans-serif;font-size:12.7272720336914px;font-style:normal;font-variant:normal;line-height:normal">The layout tests will be served from</span> http://localhost:8000<span style="font-family:arial,sans-serif;font-size:12.7272720336914px;font-style:normal;font-variant:normal;line-height:normal">. For example, to run the test "LayoutTest/http/tests/</span><span style="background-color:transparent;font-size:12.7272720336914px"><font face="arial, sans-serif">serviceworker/chromium/service-worker-allowed.html", navigate to "</font></span><span style="background-color:transparent;font-size:12.7272720336914px"><font face="arial, sans-serif">http://localhost:8000/serviceworker/chromium/service-worker-allowed.html".</font></span></p><br />To kill the server, run <code>run-blink-httpd --server stop</code>, or just use <code>taskkill</code> or the Task Manager on Windows, and <code>killall</code> or Activity Monitor on MacOS. <br /><br />The test server sets up an alias to <code>LayoutTests/resources</code> directory. In HTTP tests, you can access testing framework at e.g.<code> src="/js-test-resources/js-test.js"</code>.<br />
+</div>
+<h2><a name="TOC-Debugging-a-test"></a>Debugging a test</h2>
+<div>After the layout tests run, you should get a summary of tests that pass or fail.  If something fails unexpectedly (a new regression), you will get a content_shell window with a summary of the unexpected failures. Or you might have a failing test in mind to investigate. In any case, here are some steps and tips for finding the problem.</div>
+<div>
+<ol><li>Take a look at the result. Sometimes tests just need to be rebaselined (see below) to account for changes introduced in your patch.</li>
+<ul><li>Load the test into a trunk Chrome or content_shell build and look at its result. (For tests in the http/ directory, start the http server first. See above. Navigate to http://localhost:8000/ and proceed from there.) The best tests describe what they're looking for, but not all do, and sometimes things they're not explicitly testing are still broken.  Compare it to Safari, Firefox, and IE if necessary to see if it's correct. If you're still not sure, find the person who knows the most about it and ask.</li>
+<li>Some tests only work properly in content_shell, not Chrome, because they rely on extra APIs exposed there.</li>
+<li>Some tests only work properly when they're run in the layout-test framework, not when they're loaded into content_shell directly. The test should mention that in its visible text, but not all do. So try that too. See "Running the tests", above.</li></ul>
+<li>If you think the test is correct, confirm your suspicion by looking at the diffs between the expected result and the actual one.</li>
+<ul><li>Make sure that the diffs reported aren't important. Small differences in spacing or box sizes are often unimportant, especially around fonts and form controls. Differences in wording of JS error messages are also usually acceptable.</li></ul>
+<ul><li><span style="font-family:courier new">$ ./run_webkit_tests.py path/to/your/test.html --full-results-html<span style="font-family:Arial"> will produce a page including links to the expected result, actual result, and diff.</span></span></li>
+<li>Add the <span style="font-family:courier new,monospace">--sources</span> option to <span style="font-family:courier new,monospace">run_webkit_tests.py</span> to see exactly which expected result it's comparing to (a file next to the test, something in platform/mac/, something in platform/chromium-win/, etc.)</li></ul>
+<ul><li>If you're still sure it's correct, rebaseline the test (see below).  Otherwise...</li></ul>
+<li>If you're lucky, your test is one that runs properly when you navigate to it in content_shell normally. In that case, build the Debug content_shell project, fire it up in your favorite debugger, and load the test file either from a file:// URL.</li>
+<ul><li>You'll probably be starting and stopping the content_shell a lot. In VS, to save navigating to the test every time, you can set the URL to your test (file: or http:) as the command argument in the Debugging section of the content_shell project Properties.</li></ul>
+<ul><li>If your test contains a JS call, DOM manipulation, or other distinctive piece of code that you think is failing, search for that in the Chrome solution. That's a good place to put a starting breakpoint to start tracking down the issue.</li>
+<li>Otherwise, you're running in a standard message loop just like in Chrome.  If you have no other information, set a breakpoint on page load.</li></ul>
+<li>If your test only works in full layout-test mode, or if you find it simpler to debug without all the overhead of an interactive session, start the content_shell with the command-line flag <span style="font-family:courier new,monospace">--dump-render-tree</span>, followed by the URL (file: or http:) to your test. More information about running layout tests in content_shell can be found <a href="http://www.chromium.org/developers/testing/webkit-layout-tests/content-shell">here</a>.</li>
+<ul><li>In VS, you can do this in the Debugging section of the content_shell project Properties.</li>
+<li>Now you're running with exactly the same API, theme, and other setup that the layout tests use.</li>
+<li>Again, if your test contains a JS call, DOM manipulation, or other distinctive piece of code that you think is failing, search for that in the Chrome solution. That's a good place to put a starting breakpoint to start tracking down the issue.</li>
+<li>If you can't find any better place to set a breakpoint, start at the <span style="font-family:courier new,monospace">TestShell::RunFileTest()</span> call in <font face="courier new, monospace">content_shell_main.cc</font>, or at <span style="font-family:courier new,monospace">shell-&gt;LoadURL()</span> within <span style="font-family:courier new,monospace">RunFileTest()</span> in <font face="courier new, monospace">content_shell_win.cc</font>.</li></ul>
+<li>Debug as usual. Once you've gotten this far, the failing layout test is just a (hopefully) reduced test case that exposes a problem.</li>
+</ol>
+</div>
+<h4><a name="TOC-Tips"></a>Tips</h4>
+<div>
+<ul><li><span style="font-size:13px">Check <a href="http://test-results.appspot.com/">http://test-results.appspot.com/</a> to see<span style="font-family:arial"> how a test did in the most recent ~100 builds on each builder (as long as the page is being updated regularly).</span></span></li>
+<li><span style="font-family:arial;font-size:13px">A timeout will often also be a text mismatch, since the wrapper script kills the <span style="font-family:Arial,Verdana,sans-serif">content_shell</span> before it has a chance to finish. The exception is if the test finishes loading properly, but somehow hangs before it outputs the bit of text that tells the wrapper it's done.</span></li>
+<li><span style="font-size:13px">Why might a test fail (or crash, or timeout) on the buildbot, but pass on your local machine?</span></li>
+<ul><li><span style="font-family:arial;font-size:13px">If the test finishes locally but is slow, more than 10 seconds or so, that would be why it's called a timeout on the bot.</span></li>
+<li><span style="font-family:arial;font-size:13px">Otherwise, try running it as part of a set of tests; it's possible that a test one or two (or ten) before this one is corrupting something that makes this one fail.</span></li>
+<li><span style="font-family:arial;font-size:13px">If it consistently works locally, make sure your environment looks like the one on the bot (look at the top of the stdio for the webkit_tests step to see all the environment variables and so on).</span></li>
+<li><span style="font-family:arial;font-size:13px">If none of that helps, and you have access to the bot itself, you may have to log in there and see if you can reproduce the problem manually.</span></li></ul></ul>
+</div>
+<h2><a name="TOC-Rebaselining-Tests"></a>Rebaselining Tests</h2><div><i>To automatically re-baseline tests across all Chromium platforms, using the buildbot results, see the <a href="http://www.chromium.org/developers/testing/webkit-layout-tests/testexpectations#TOC-Rebaselining">Rebaselining keywords in TestExpectations</a> and  <a href="https://trac.webkit.org/wiki/Rebaseline">Rebaselining Tool</a>. Alternatively, to manually run and test and rebaseline it on your workstation, read on. <br /></i><br />By default, text-only tests (ones that call <code>layoutTestController.dumpAsText()</code>) produce only text results. Other tests produce both new text results and new image results (the image baseline comprises two files, <code>-expected.png</code> and <code>-expected.checksum</code>). So you'll need either one or three <code>-expected.*</code> files in your new baseline, depending on whether you have a text-only test or not. If you enable <code>--no-pixel-tests</code>, only new text results will be produced, even for tests that do image comparisons. <br /><br />
+<div class="sites-codeblock sites-codesnippet-block">
+<p style="margin:0px;font:12px Helvetica"><span style="font-family:courier new,monospace"><code>cd src/third_party/WebKit</code></span></p>
+<p style="margin:0px;font:12px Helvetica"><span style="font-family:courier new,monospace"><code>Tools/Scripts/run-webkit-tests --new-baseline foo/bar/test.html</code></span></p>
+</div>
+<p style="margin:0px;font:12px Helvetica"><br /></p><br />The above command will generate a new baseline for LayoutTests/foo/bar/test.html and put the output files in the right place, e.g.  <code>src/third_party/WebKit/LayoutTests/platform/chromium-win/LayoutTests/foo/bar/test-expected.{txt,png,checksum} </code><br /><br />
+When you rebaseline a test, make sure your commit description explains why the test is being re-baselined.  If this is a special case (i.e., something we've decided to be different with upstream), please put a README file next to the new expected output explaining the difference.<br />
+<h2><a name="TOC-Known-Issues"></a>Known Issues</h2><ul><li><span style="font-size:10pt;background-color:transparent">Windows &amp; Linux : Do not copy and paste while the layout tests are running, as it may interfere with the editing/pasteboard and other clipboard-related tests (Mac tests swizzle NSClipboard to avoid any conflicts).</span></li><li><span style="font-size:10pt;background-color:transparent">If QuickTime is not installed, the plugin tests fast/dom/object-embed-plugin-scripting.html and plugins/embed-attributes-setting.html are expected to fail.</span></li></ul> <div><h2><a name="TOC-TestRunner-LayoutTest-support"></a>TestRunner LayoutTest support</h2><h2><a name="TOC-Some-layout-tests-rely-on-the-testRunner-object-to-expose-configuration-for-mocking-the-platform.-This-is-provided-in-content_shell-here-s-a-UML-of-testRunner-bindings-configuring-platform-implementation."></a><span style="background-color:transparent"><font size="2"><span style="font-weight:normal">Some layout tests rely on the testRunner object to expose configuration for mocking the platform. This is provided in content_shell, here's a <a href="https://docs.google.com/drawings/d/1KNRNjlxK0Q3Tp8rKxuuM5mpWf4OJQZmvm9_kpwu_Wwg/edit?usp=sharing">UML of testRunner bindings configuring platform implementation</a>.</span></font></span></h2><div><span style="font-size:10pt;font-weight:normal;background-color:transparent"><div style="display:block;text-align:left"><a href="https://docs.google.com/drawings/d/1KNRNjlxK0Q3Tp8rKxuuM5mpWf4OJQZmvm9_kpwu_Wwg/edit?usp=sharing"><img border="0" src="https://docs.google.com/drawings/d/1KNRNjlxK0Q3Tp8rKxuuM5mpWf4OJQZmvm9_kpwu_Wwg/pub?w=961&amp;h=263" /></a></div><br /></span></div><h2><a name="TOC-Writing-reliable-layout-tests"></a>Writing reliable layout tests</h2></div><div>Layout tests are a powerful mechanism for testing functionality in different parts of Blink, but some care should be taken to avoid accidentally introducing flaky tests. Please refer to a guide on <a href="https://docs.google.com/a/chromium.org/document/d/1Yl4SnTLBWmY1O99_BTtQvuoffP8YM9HZx2YPkEsaduQ/edit#heading=h.ui2te0d6ongo">writing reliable layout tests</a> to avoid common pitfalls.</div><div><br /></div><h2><a name="TOC-Writing-tests-that-need-to-paint-raster-draw-a-frame-of-intermediate-output"></a>Writing tests that need to paint/raster/draw a frame of intermediate output</h2><div>A layout test does *not* actually draw frames of output until the test exits.</div><div><span style="font-size:10pt;background-color:transparent">If it is required to generate a painted frame, then use window.testRunner.displayAsyncThen, which will run the machinery to put up a frame, then call the passed callback.</span></div><div><span style="font-size:10pt;background-color:transparent">There is also a library at fast/repaint/resources/text-based-repaint.js to help with writing paint invalidation/repaint tests.</span></div>
+</div>
+</div>
+<div>
+<div>
+<ul></ul>
+<div>
+<div>
+<div><span style="font-family:courier new">
+<h2><a name="TOC-1"></a><span style="font-family:Helvetica;font-size:12px;font-weight:normal">
+</span></h2>
+</span></div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(6):</span>
+<span>
+<a href="/developers/testing/webkit-layout-tests/identifying-tests-that-depend-on-order" dir="ltr">Fixing layout test flakiness</a>
+</span>
+<span>
+<a href="/developers/testing/webkit-layout-tests/goals" dir="ltr">Goals</a>
+</span>
+<span>
+<a href="/developers/testing/webkit-layout-tests/layout-test-stats" dir="ltr">Layout test stats backup 2011-06-08</a>
+</span>
+<span>
+<a href="/developers/testing/webkit-layout-tests/content-shell" dir="ltr">Running layout tests using the content shell</a>
+</span>
+<span>
+<a href="/developers/testing/webkit-layout-tests/testexpectations" dir="ltr">Test Expectations</a>
+</span>
+<span>
+<a href="/developers/testing/webkit-layout-tests/using-breakpad-with-content-shell" dir="ltr">Using breakpad with content shell</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/testing/webkit-layout-tests">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXukca4jaDOG9SuQz_G8t7HlFNgFD_uj4tLEh49WUt7hm4Hi2NUP2sXbKHvJQRAwHdFcRZztGJsQoXiVxgGl7Ekhd8QKVn2FnkX-2h4zPw5y3H-v9tn105WDwJPKrcFPJA3--Dby/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

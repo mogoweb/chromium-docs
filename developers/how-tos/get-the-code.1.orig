@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/get-the-code","deleted":false,"title":"Get the Code: Checkout, Build, Run \u0026 Submit","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/get-the-code\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Get the Code: Checkout, Build, Run \u0026 Submit","locale":"en","wuid":"wuid:gx:6bcea0c758de87e3","revision":271,"path":"/developers/how-tos/get-the-code","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"get-the-code","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Get the Code: Checkout, Build, Run &amp; Submit - The Chromium Projects" />
+<meta itemprop="name" content="Get the Code: Checkout, Build, Run &amp; Submit - The Chromium Projects" />
+<meta property="og:title" content="Get the Code: Checkout, Build, Run &amp; Submit - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Get the Code: Checkout, Build, Run &amp; Submit - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Get the Code: Checkout, Build, Run &amp; Submit</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><font color="#333333"><span style="line-height:19px">Welcome to Chromium! If you're here, you want to learn how to check out the Chromium repository and contribute changes to the Chromium project. This guide will show you how to do that. </span></font>
+<div>
+<div><font color="#333333"><span style="line-height:19px">If you want to know how to go from </span></font><span style="color:rgb(64,64,64);font-family:Roboto,arial,sans-serif;font-size:13px;line-height:18.2000007629395px;background-color:transparent">checking the code out to making a small change and sending it out for review, <a href="http://meowni.ca/posts/chromium-101/" target="_blank">here</a> is a very detailed guide that explains all those steps.</span>
+<div>
+<div>
+<h2 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Getting-Started"></a>Getting Started</h2>
+<div style="color:rgb(51,51,51);line-height:19px"><span style="font-size:10pt;background-color:transparent">Chromium supports building on Windows, Mac and Linux. You can also build the mobile versions, iOS (from Mac) and Android (from Linux). </span></div>
+<div>
+<div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-There-are-two-main-components-to-your-build-environment:"></a><span style="font-size:10pt;font-weight:normal;background-color:transparent">There are two main components to your build environment:</span></h3>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<ol><li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">depot_tools</span> - this is our bootstrapped collection of utils that will help you checkout, compile, run and submit changes to the code</li>
+<li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">src</span> - a git repo; your local git copy of the chromium code. This will need to be updated regularly as other users submit changes.</li>
+</ol>
+</div>
+<h3><a name="TOC-Set-up-your-environment"></a>Set up your environment</h3>
+<b>First</b>, <a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up">check out and install the depot_tools package</a>.</div>
+<div><font color="#333333"><span style="line-height:19px"><br />
+</span></font>
+<div style="color:rgb(51,51,51);line-height:19px"><span style="font-size:10pt;background-color:transparent"><b>Now</b>, create a chromium directory for the checkout and change to it (you can call this whatever you like and put it wherever you like, as long as the path has no spaces):</span></div>
+<div><font color="#333333"><span style="line-height:19px">
+<div class="sites-codeblock sites-codesnippet-block">
+<code>$ mkdir chromium<br />$ cd chromium</code></div>
+</span></font></div>
+<div><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div><font color="#333333"><span style="line-height:19px">Mobile builds have their setup documented elsewhere:</span></font></div>
+<div>
+<ul><li><a href="https://www.chromium.org/developers/how-tos/build-instructions-ios" style="font-size:10pt;line-height:19px;background-color:transparent">Building for iOS?</a><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent"> </span></li>
+<li><a href="https://code.google.com/p/chromium/wiki/AndroidBuildInstructions" style="font-size:10pt;line-height:19px;background-color:transparent">Building for Android?</a><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent"> </span></li></ul>
+</div>
+<div>
+<h3><a name="TOC-Check-out-the-source-code."></a>Check out the source code. </h3>
+<span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent">The checkout will be from 6GB to 22GB, depending on your choices.</span></div>
+<div><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent"><br />
+</span></div>
+<div><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px">You can fetch one of two targets: <code style="background-color:rgb(243,243,243)">chromium</code> or </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:19px;background-color:rgb(243,243,243)">blink</span><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px">. Either choice will clone both the Chromium and Blink repos, but there's a small difference.</span></div>
+<div>
+<div>
+<ul><li style="font-size:13.3333330154419px"><code style="line-height:19px;font-size:10pt;background-color:transparent">fetch chromium</code><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"> will use the Blink version that's rolled into Chromium via DEPS (usually a few hours old). This choice is easier if working only on Chromium.</span></li>
+<li><code style="font-size:10pt;line-height:19px;background-color:transparent">fetch blink</code><span style="background-color:transparent"><font color="#333333"><span style="font-size:10pt;line-height:19px"> will always </span><span style="line-height:19px">retrieve</span><span style="font-size:10pt;line-height:19px"> the latest Blink (</span></font><a href="https://www.chromium.org/glossary#tot" style="color:rgb(51,51,51);font-size:10pt;line-height:19px">ToT</a><font color="#333333"><span style="font-size:10pt;line-height:19px">) version, and is useful if working on </span></font><a href="https://www.chromium.org/blink" style="color:rgb(51,51,51);font-size:13.3333330154419px;line-height:19px">Blink</a><font color="#333333"><span style="font-size:10pt;line-height:19px">. </span></font></span></li></ul><div><font color="#333333"><span style="line-height:19px">Either choice, the fetch will consume ~22GB of disk space.  However, if you choose to clone without git history, the checkout will total ~6.5GB. </span></font></div><div><font color="#333333" style="font-size:10pt;background-color:transparent"><span style="line-height:19px">Use</span></font><font color="#333333" style="font-size:13.3333330154419px;background-color:transparent"><span style="line-height:19px"> </span></font><span style="font-size:13.3333330154419px;line-height:19px"><font color="#333333"><code style="background-color:rgb(243,243,243)">--no-history</code> with <code style="background-color:rgb(238,238,238)">fetch</code></font></span><span style="font-size:10pt;line-height:19px;color:rgb(51,51,51);background-color:transparent"> to create shallow clones. Use if you don't need</span><span style="font-size:10pt;line-height:19px;color:rgb(51,51,51);background-color:transparent"> repo history or want a faster clone. Later,  </span><span style="color:rgb(0,96,0);font-family:Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;white-space:inherit;font-size:13px;background-color:rgb(238,238,238)">git fetch --unshallow</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> will deepen these shallow clones.</span></div><div><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"><br /></span></div><div><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">Regardless, </span><code style="font-size:10pt;line-height:19px;background-color:rgb(238,238,238)">--nohooks</code><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> is recommended for your initial fetch. </span></div></div></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><span style="background-color:transparent;line-height:19px"><code><font color="#333333">$ fetch --nohooks chromium     </font><font color="#999999"># Optionally, --no-history</font></code></span></div>
+</div>
+<div><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent"><br />
+</span></div>
+<div><span style="background-color:transparent;line-height:19px">
+<div class="sites-codeblock sites-codesnippet-block">
+<code style="color:rgb(51,51,51)">$ fetch --nohooks blink</code><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:19px"> </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:19px">       </span><span style="font-family:monospace;font-size:13.3333330154419px;line-height:19px"><font color="#999999"># Optionally, --no-history</font></span></div>
+</span></div>
+<div><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent"><br />
+</span></div>
+<div>
+<span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent">The fetch can take &gt; 30 min on the fastest connections, and many hours on a slow connection.</span></div>
+<div><span style="color:rgb(51,51,51);font-size:10pt;line-height:19px;background-color:transparent"><br />
+</span></div>
+<h3><a name="TOC-Install-any-necessary-dependencies"></a> Install any necessary dependencies </h3>
+<div><font color="#333333"><span style="line-height:19px">If you're on <b>Linux</b>:</span></font></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><font color="#333333"><span style="line-height:19px"><code>$ ./build/install-build-deps.sh</code></span></font></div>
+</div>
+<div><br />
+</div>
+<div style="font-size:13.3333330154419px"><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">If you're on <b>Mac</b>, you need Xcode 5+ to build. (See <a href="https://code.google.com/p/chromium/wiki/MacBuildInstructions">MacBuildInstructions</a> for more info).</span></div>
+<div style="font-size:13.3333330154419px"><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"><br />
+</span></div>
+<div style="font-size:13.3333330154419px"><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">If you're on <b>Windows</b>, you need Visual Studio 2013 in order to build (see <a href="https://www.chromium.org/developers/how-tos/build-instructions-windows">Build Instructions (Windows)</a> for more info; for Googlers, runhooks will install it automatically).</span></div>
+<div><br />
+</div><div><b>Optional: </b><a href="https://www.chromium.org/developers/how-tos/api-keys">install API keys</a> which allow your build to use certain Google services.</div><div><br /></div>
+<h3><a name="TOC-Run-post-sync-hooks"></a><font color="#333333"><span style="line-height:19px">Run post-sync hooks</span></font></h3>
+<div><font color="#333333"><span style="line-height:19px">Finally, runhooks to run any post-sync scripts</span></font></div>
+<div><br />
+</div>
+<div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>$ gclient runhooks</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Navigate-the-codebase"></a>Navigate the codebase</h3>
+<div><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">For navigating the codebase, we recommend either </span><a href="https://chromium.googlesource.com/chromium/src.git" style="line-height:19px;font-size:10pt;background-color:transparent">browsing the repo</a><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent"> or using the </span><a href="https://code.google.com/p/chromium/codesearch" style="line-height:19px;font-size:10pt;background-color:transparent">code search tool</a><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">, but there are </span><a href="https://www.chromium.org/developers/code-browsing-in-chromium" style="line-height:19px;font-size:10pt;background-color:transparent">other ways to browse the Chromium code</a><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">.</span></div>
+<div><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent"><br />
+</span></div>
+<h3><a name="TOC-Update-the-checkout"></a><span style="background-color:transparent">Update the checkout</span></h3>
+<h3><a name="TOC-When-changes-have-landed-in-the-source-repository-and-you-want-to-pull-those-changes-into-your-local-checkout-run-the-following-two-commands-in-the-root-of-your-src-checkout:"></a><font color="#333333"><span style="font-size:13.3333330154419px;font-weight:normal;line-height:19px">When changes have landed in the source repository and you want to pull those changes into your local checkout, run the following two commands in the root of your src/ checkout:</span></font></h3>
+<div style="font-size:13.3333330154419px">
+<div class="sites-codeblock sites-codesnippet-block"><code>$ git rebase-update<br />$ gclient sync</code></div>
+</div>
+<div style="font-size:13.3333330154419px"><br />
+</div>
+<div style="font-size:13.3333330154419px">The first updates the primary Chromium source repository (and rebases your local development branches on top of tip-of-tree), and the second updates all of the dependencies specified in the DEPS file. You can read more about <a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools.html">our helpful Git tools here</a>, and do <a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html">a tutorial of all of them here</a>.</div>
+<div style="font-size:13.3333330154419px"><br />
+</div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h2 style="margin-bottom:5px"><a name="TOC-Building-Chromium"></a>Building Chromium</h2>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px">If you've checked out the code, you should see the following files and folders in the directory where you ran <span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">fetch</span>:</div>
+<div>
+<ul style="color:rgb(51,51,51);line-height:19px"><li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">.gclient</span> This file (generated by fetch) defines the configuration of your checkout. It contains the location of the repository, as well as some other useful configuration</li>
+<li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">.gclient_entries</span> This file (also generated by fetch) contains the repository and version information for each of Chromium's sub-repositories (dependencies)</li>
+<li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">src/</span> Contains the Chromium codebase (<a href="https://www.chromium.org/developers/how-tos/getting-around-the-chrome-source-code">an explanation of the directory structure</a>)</li>
+<ul><li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/</span> Contains the generated output from builds</li>
+<ul><li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">Debug/</span> One of the default build folders; builds the debug GYP build</li>
+<li><span style="padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">Release/</span> One of the default build folders; builds the release GYP build</li></ul></ul></ul><div><font color="#333333"><span style="line-height:19px">Build commands are generally executed from the </span></font><span style="color:rgb(51,51,51);font-size:13.3333px;line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">src</span><span style="color:rgb(51,51,51);font-size:13.3333px;line-height:19px;background-color:transparent"> directory:</span></div><div><font color="#333333"><span style="line-height:19px"><br /></span></font></div><div><div style="font-size:13.3333px"><div class="sites-codeblock sites-codesnippet-block"><code>$ cd src<br /></code></div><div><code><br /></code></div></div></div>
+<div><font color="#333333"><span style="line-height:19px">
+<table cellpadding="10px" cellspacing="10px" style="table-layout:fixed">
+<tbody>
+<tr>
+<td style="border:1px solid rgb(204,204,204)">
+<div>
+<h3 style="margin-bottom:5px;margin-top:0px"><a name="TOC-GYP-build-recommended-for-non-Linux-builds-"></a>GYP build<span style="font-weight:normal"><i> (recommended for non-Linux builds)</i></span></h3>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">GYP (Generate-Your-Project) is our current build system, it works for all targets and platforms. The build configurations for GYP are stored in </span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">*.gyp</span><span style="font-size:10pt;background-color:transparent"> or</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">*.gypi</span><span style="font-size:10pt;background-color:transparent"> files.</span></div>
+<div>
+<h4 style="margin-bottom:5px"><a name="TOC-Generating-the-build-files"></a>Generating the build files</h4>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">If you've changed (or updated and have changes to) any</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">*.gyp</span><span style="font-size:10pt;background-color:transparent"> or</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">*.gypi</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">files</span><span style="font-size:10pt;background-color:transparent">, you'll need to re-generate the build files:</span></div>
+<div style="color:rgb(0,0,0);line-height:normal">
+<pre style="color:rgb(51,51,51);line-height:19px;font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial">$ ./build/gyp_chromium -Dcomponent=shared_library</pre>
+<font color="#333333"><span style="line-height:19px">By default, this will add the build files to the</span></font><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> directory, but you can specify a different directory if you wish, e.g.:</span></div>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial">$ ./build/gyp_chromium -Goutput_dir=out_cros</pre>
+<div style="color:rgb(0,0,0);line-height:normal"><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">Each generator output directory will have its own</span><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"> </span><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">Debug</span><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"> and</span><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"> </span><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">Release</span><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"> subdirectories. </span><span style="font-size:10pt;line-height:19px;color:rgb(51,51,51);background-color:transparent">For a full list of parameters GYP supports, run</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">./build/gyp_chromium --help</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> .</span></div>
+<div style="color:rgb(0,0,0);line-height:normal">
+<h4 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Specifying-build-parameters"></a>Specifying build parameters</h4>
+</div>
+<div style="color:rgb(0,0,0);line-height:normal">
+<div style="color:rgb(51,51,51);line-height:19px">You can specify custom build parameters that affect the target or speed of your build. For more info, see <a href="https://www.chromium.org/developers/gyp-environment-variables">GYP build parameters</a>.</div>
+</div>
+<div>
+<div style="color:rgb(0,0,0);line-height:normal">
+<div style="color:rgb(51,51,51);line-height:19px">
+<h4 style="margin-bottom:5px"><a name="TOC-Building-Chrome"></a>Building Chrome</h4>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px"><span style="font-size:10pt;background-color:transparent">You can then build Chromium (the</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">chrome</span><span style="font-size:10pt;background-color:transparent"> target) </span><span style="font-size:10pt;background-color:transparent">using:</span></div>
+</div>
+<h3 style="margin-bottom:5px"><a name="TOC-ninja--C-out-Debug-chrome-For-a-release-build-replace-out-Debug-with-out-Release-."></a>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ ninja -C </span>out/Debug <span style="font-weight:normal">chrome</span></pre>
+<div style="color:rgb(0,0,0);font-size:13px;font-weight:normal;line-height:normal"><font color="#333333" style="font-size:10pt;background-color:transparent"><span style="line-height:19px">For a release build, replace</span></font><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/Debug</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> with</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/Release</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> .</span></div>
+</h3>
+</div>
+</td>
+<td style="border:1px solid rgb(204,204,204);background:rgb(221,221,221)">
+<div>
+<h3 style="margin-bottom:5px;margin-top:0px"><a name="TOC-GN-build-recommended-on-Linux-works-on-Windows-Android-not-done-on-Mac-iOS-"></a>GN build<span style="font-weight:normal"> <i>(recommended on Linux, works on Windows/Android, not done on Mac/iOS)</i></span></h3>
+</div>
+<div><span style="font-size:10pt;background-color:transparent"><br />GN is our newer-style build system. </span><span style="font-size:10pt;background-color:transparent">The build configurations for GN are stored in </span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">BUILD.gn</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">files. </span><span style="font-size:10pt;background-color:transparent">To create a GN build directory, generate one with:</span></div><div><pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial">$ gn gen <b>out/Default</b></pre>
+<div><font color="#333333" style="font-size:10pt;line-height:normal;background-color:transparent"><span style="line-height:19px">You only have to do this once, it will regenerate automatically when the build files change.</span></font></div><div><font color="#333333" style="font-size:10pt;line-height:normal;background-color:transparent"><span style="line-height:19px"><br /></span></font></div><div><font color="#333333" style="font-size:10pt;line-height:normal;background-color:transparent"><span style="line-height:19px">You can replace </span></font><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/Default</span><span style="font-size:10pt;background-color:transparent"> with another name you choose inside the </span><font color="#333333" style="font-size:10pt;line-height:normal;background-color:transparent"><span style="line-height:19px"> </span></font><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent"> directory. </span><b>Do not use GYP's</b><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/Debug</span><span style="font-size:10pt;background-color:transparent"> </span><b style="font-size:10pt;background-color:transparent">or</b><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">out/Release</span><span style="font-size:10pt;background-color:transparent"> </span><b style="font-size:10pt;background-color:transparent">directories, as they may conflict with GYP builds.</b></div><div><br /></div><div><span style="font-size:10pt;background-color:transparent">To specify build parameters for GN builds, including release and component builds, see <a href="https://www.chromium.org/developers/gn-build-configuration">GN build configuration</a>. The default will be a debug Chromium static library build matching the current host operating system and CPU.</span></div></div><div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div>
+<div><span style="font-size:10pt;background-color:transparent">For more info on GN, run</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">gn help</span><span style="font-size:10pt;background-color:transparent"> on the command line or read</span><span style="font-size:10pt;background-color:transparent"> the </span><a href="https://chromium.googlesource.com/chromium/src/+/master/tools/gn/docs/quick_start.md" style="font-size:10pt;background-color:transparent">quick start guide</a><span style="font-size:10pt;background-color:transparent">.</span></div>
+</div>
+<div>
+<div style="color:rgb(0,0,0);line-height:normal">
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-Building-chrome"></a>Building chrome</h3>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px"><span style="font-size:10pt;background-color:transparent">You can build Chromium (the</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">chrome</span><span style="font-size:10pt;background-color:transparent"> target) </span><span style="font-size:10pt;background-color:transparent">using:</span></div>
+</div>
+<h3 style="margin-bottom:5px"><a name="TOC-ninja--C-out-Default-chrome"></a>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ ninja -C </span>out/Default<span style="font-weight:normal"> chrome</span></pre>
+</h3>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</span></font></div>
+<div>
+<h3 style="margin-bottom:5px"><a name="TOC-For-a-full-list-of-parameters-to-ninja-and-what-they-do-run-ninja---help-.-You-can-also-find-more-specific-build-instructions-depending-on-your-host-and-target-platform:-Linux-ninja--C-out-Debug-chrome-out-Debug-chrome-Linux-build-instructions-ChromeOS-nin"></a>
+<div style="font-size:13px;font-weight:normal"><font color="#333333" style="font-size:10pt;background-color:transparent"><span style="line-height:19px">For a full list of parameters to ninja a</span></font><font color="#333333" style="font-size:10pt;background-color:transparent"><span style="line-height:19px">nd what they do, run</span></font><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">ninja --help</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> . </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">You can also find more specific build instructions depending on your host and target platform:</span></div>
+<div>
+<table cellpadding="10px" cellspacing="10px" style="table-layout:fixed;width:100%">
+<tbody>
+<tr>
+<td style="border:1px solid rgb(204,204,204);background:#fcf8e3"><b><font color="#8a6d3b">Linux</font></b>
+<span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+</span>
+<span style="font-size:10pt;font-weight:normal;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">ninja -C out/Debug chrome &amp;&amp; out/Debug/chrome</span>
+<span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+<a href="https://chromium.googlesource.com/chromium/src/+/master/docs/linux_build_instructions.md">Linux build instructions</a></span>
+</td>
+<td style="border:1px solid rgb(204,204,204);background:#d9edf7"><b><font color="#31708f">ChromeOS</font></b><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+</span><span style="font-size:10pt;font-weight:normal;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">ninja -C out/Debug chrome &amp;&amp; out/Debug chrome</span><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+</span><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><a href="https://www.chromium.org/developers/how-tos/build-instructions-chromeos">ChromeOS build instructions</a></span>
+</td>
+</tr>
+<tr>
+<td style="border:1px solid rgb(204,204,204);background:#dff0d8"><b><font color="#3c763d">Windows</font></b>
+<span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+</span>
+<span style="font-size:10pt;font-weight:normal;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">ninja -C out\Debug chrome &amp;&amp; out\Debug\chrome.exe</span>
+<font color="#333333">
+<span style="font-weight:normal;line-height:19px"><font size="2"><br />
+</font>
+<a href="https://www.chromium.org/developers/how-tos/build-instructions-windows" style="font-size:small">Windows build instructions</a>
+</span></font>
+</td>
+<td style="border:1px solid rgb(204,204,204);background:rgba(86,61,124,.15)"><b><font style="color:rgba(86,61,124,1)">Android<br />
+</font></b><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px">See build instructions.<br />
+<a href="https://www.chromium.org/developers/how-tos/android-build-instructions">Android build instructions</a></span>
+</td>
+</tr>
+<tr>
+<td style="border:1px solid rgb(204,204,204);background:#ddd">
+<b><font color="#666666">Mac</font></b><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+</span><span style="font-size:10pt;font-weight:normal;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">ninja -C out/Release chrome &amp;&amp; out/Release/Chromium.app/Contents/MacOS/Chromium</span><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><br />
+</span><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px"><a href="https://chromium.googlesource.com/chromium/src/+/master/docs/mac_build_instructions.md">Mac build instructions</a></span>
+</td>
+<td style="border:1px solid rgb(204,204,204);background:#bbb"><b><font color="#666">iOS<br />
+</font></b><span style="color:rgb(51,51,51);font-size:13px;font-weight:normal;line-height:19px">See build instructions.<br />
+<a href="https://www.chromium.org/developers/how-tos/build-instructions-ios">iOS build instructions</a></span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<ul></ul>
+</div>
+</h3>
+</div>
+<div>
+<div>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Targets"></a>Targets</h3>
+<div>
+<div><font color="#333333" style="background-color:transparent"><span style="line-height:19px">You can build other targets, such as</span></font><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">unit_tests</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">, by changing the target:</span></div>
+<div>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-ninja--C-out-Debug-unit_tests"></a>
+<div style="color:rgb(0,0,0);font-size:13px;line-height:normal">
+<pre style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ ninja -C </span>out/Debug<span style="font-weight:normal"> unit_tests</span></pre>
+</div>
+</h3>
+</div>
+</div>
+<div><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">Some commonly-compiled targets are chrome, unit_tests, browser_tests, components_unittests, content_browsertests, content_unittests, gpu_unittests, and net_unittests. You can find </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">GN targets by running </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">gn ls <b>out/Default</b></span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> from the command line, and </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">GYP targets by grepping .gyp/.gypi files for the string </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">'target_name':</span></div></div><div>
+</div>
+</div>
+</div>
+<div>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-1"></a>
+<div style="font-size:13px;font-weight:normal"></div>
+</h3>
+<h2 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Running-Chromium"></a>Running Chromium</h2>
+<div style="color:rgb(51,51,51);line-height:19px">You can run chrome with:</div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-out-Debug-chrome"></a>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ </span>out/Debug<span style="font-weight:normal">/chrome</span></pre>
+</h3>
+</div>
+<div>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-You-can-also-pass-parameters-such-as-flags-on-the-command-line:"></a><span style="font-size:10pt;font-weight:normal;background-color:transparent">You can also pass parameters, such as flags, on the command line:</span></h3>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-out-Debug-chrome---enable-app-info-dialog---show-app-list---user-data-dir-tmp-profile"></a>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ </span>out/Debug<span style="font-weight:normal">/chrome --enable-app-info-dialog --show-app-list --user-data-dir=/tmp/profile</span></pre>
+<div></div>
+</h3>
+<h3 style="margin-bottom:5px"><a name="TOC-For-a-full-list-of-command-line-flags-see-the-_switches.cc-files."></a><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;font-weight:normal;background-color:transparent">For a full list of command-line flags, see <a href="https://sites.google.com/a/chromium.org/dev/developers/how-tos/goog_453996485">the</a></span><a href="https://code.google.com/p/chromium/codesearch#search/&amp;q=file:.*_switches.cc&amp;sq=package:chromium&amp;type=cs"><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;font-weight:normal;background-color:transparent"> </span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;font-weight:normal;padding:2px 5px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial">*_switches.cc</span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;font-weight:normal;background-color:transparent"> files</span></a><span style="color:rgb(51,51,51);line-height:19px;font-weight:normal;background-color:transparent"><font size="2">.</font></span></h3>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Running-tests"></a>Running tests</h3>
+</div>
+<div>
+<div style="color:rgb(51,51,51);line-height:19px">You can run the unit tests, for example, with:</div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-out-Debug-unit_tests"></a>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ </span>out/Debug<span style="font-weight:normal">/unit_tests</span></pre>
+</h3>
+</div>
+<div>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-You-can-specify-only-a-certain-set-of-tests-to-run-using---gtest_filter-e.g.:"></a><span style="font-size:10pt;font-weight:normal;background-color:transparent">You can specify only a certain set of tests to run using </span><span style="font-size:10pt;font-weight:normal;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">--gtest_filter</span><span style="font-size:10pt;font-weight:normal;background-color:transparent"> , e.g.:</span></h3>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-out-Debug-unit_tests---gtest_filter-PushClientTest.-"></a>
+<pre style="font-size:10pt;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial"><span style="font-weight:normal">$ </span>out/Debug<span style="font-weight:normal">/unit_tests --gtest_filter=PushClientTest.*</span></pre>
+<div></div>
+</h3>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-You-can-find-out-more-about-GoogleTest-on-the-GoogleTest-wiki-page."></a><font size="2"><span style="font-weight:normal">You can find out more about GoogleTest on the <a href="https://code.google.com/p/googletest/wiki/Documentation">GoogleTest wiki page</a>.</span></font></h3>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-Debugging"></a>Debugging</h3>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px">The best way to debug chrome depends on your platform:</div>
+<div>
+<ul><li><font color="#333333"><span style="line-height:19px"><a href="https://www.chromium.org/developers/how-tos/debugging-on-windows">Debugging on Windows</a></span></font></li>
+<li><font color="#333333"><span style="line-height:19px"><a href="https://code.google.com/p/chromium/wiki/LinuxDebugging">Debugging on Linux</a></span></font></li>
+<li><font color="#333333"><span style="line-height:19px"><a href="https://www.chromium.org/developers/how-tos/debugging-on-os-x">Debugging on Mac</a></span></font></li>
+<li><font color="#333333"><span style="line-height:19px"><a href="https://www.chromium.org/developers/how-tos/debugging-on-android">Debugging on Android</a></span></font></li>
+<li><font color="#333333"><a href="https://www.chromium.org/blink/getting-started-with-blink-debugging">Debugging Blink</a></font></li></ul>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Submitting-your-code"></a>Submitting your code</h2>
+<div>
+<div style="color:rgb(51,51,51);line-height:19px">You can find detailed instructions on how to submit your code on the depot_tools manpage:</div>
+<div><font color="#333333"><span style="line-height:19px"><a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_creating_uploading_a_cl">https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_creating_uploading_a_cl</a></span></font></div>
+<div><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"><br />
+</span></div>
+<div><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">Create a new review with:</span></div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-git-cl-upload"></a>
+<div style="font-size:13px;font-weight:normal"></div>
+<div style="font-size:13px;font-weight:normal"></div>
+<pre style="font-size:10pt;font-weight:normal;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial">$ git cl upload</pre>
+</h3>
+</div>
+<div>
+<h3 style="margin-bottom:5px"><a name="TOC-This-will-upload-your-code-to-https:-codereview.chromium.org-.-You-should-then-add-reviewers-see-wiki-page-and-submit-your-code-for-review.-You-can-also-run-your-code-on-the-trybots-to-see-if-it-passes-all-the-tests:"></a><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;font-weight:normal;background-color:transparent">This will upload your code to </span><span style="font-weight:normal;line-height:19px;background-color:transparent"><font color="#333333" size="2"><a href="https://codereview.chromium.org/">https://codereview.chromium.org/</a>. You should then add reviewers (see wiki page) and submit your code for review. </font></span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;font-weight:normal;background-color:transparent">You can also run your code on the trybots to see if it passes all the tests:</span></h3>
+</div>
+</div>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-git-cl-try"></a>
+<pre style="font-size:10pt;font-weight:normal;padding:5px 20px;margin-left:20px;font-family:Consolas,Courier New;background-image:initial;background-color:rgb(238,238,238);background-repeat:initial">$ git cl try</pre>
+</h3>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px"></div>
+</div>
+<div style="color:rgb(51,51,51);line-height:19px"><span style="font-size:10pt;background-color:transparent">For a full list of options, run</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">git cl help</span><span style="font-size:10pt;background-color:transparent"> , or for help with a particular command just append</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">--help</span><span style="font-size:10pt;background-color:transparent"> , e.g. </span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">git cl upload --help</span><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">.</span></div>
+<div style="color:rgb(51,51,51);line-height:19px">
+<h3 style="margin-bottom:5px"><a name="TOC-Keeping-Multiple-Changes"></a>Keeping Multiple Changes</h3>
+<div>You can use <b>branches</b> in your local repository to help separate multiple changes you are submitting to the Chromium code. <span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent">For more help with branches, see the </span><a href="https://www.chromium.org/developers/how-tos/get-the-code/working-with-branches" style="font-size:10pt;line-height:normal;background-color:transparent">Working with Branches</a><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent"> tutorial, or the</span><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent"> </span><a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_managing_multiple_cls" style="font-size:10pt;line-height:normal;background-color:transparent">Managing Multiple CLs</a><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent"> and</span><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent"> </span><a href="http://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_managing_dependent_cls" style="font-size:10pt;line-height:normal;background-color:transparent">Managing Dependent CLs</a><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent">sections of the man page. </span><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent">You can also set up </span><a href="https://www.chromium.org/developers/how-tos/get-the-code/multiple-working-directories" style="font-size:10pt;line-height:normal;background-color:transparent">multiple working directories</a><span style="font-size:10pt;color:rgb(0,0,0);line-height:normal;background-color:transparent"> to have multiple directories that build Chrome all share the same git database.</span></div>
+</div>
+<div>
+<h3 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Changing-the-Repo"></a>Changing the Repo</h3>
+<div>Chromium uses branches and tags to separate the various versions and releases it manages (see <a href="https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches" style="font-size:10pt;background-color:transparent">Working with Release Branches</a>). <span style="font-size:10pt;background-color:transparent">The repository also contains many sub-repositories that point to external repos using the DEPS files (see the </span><a href="https://www.chromium.org/developers/how-tos/get-the-code/working-with-nested-repos" style="font-size:10pt;background-color:transparent">Working with Nested Repositories</a><span style="font-size:10pt;background-color:transparent"> tutorial). </span><span style="font-size:10pt;background-color:transparent">Although we would prefer if you commit changes using the process above, sometimes you do need to </span><a href="https://www.chromium.org/developers/how-tos/get-the-code/committing-and-reverting-changes-manually" style="font-size:10pt;background-color:transparent">commit or revert changes manually</a><span style="font-size:10pt;background-color:transparent">. You can also find out more about merging changes into release branches on the git-drover tutorial page:</span></div>
+<div><span style="background-color:transparent"><a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/git-drover.html">https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/git-drover.html</a></span></div>
+<h2 style="color:rgb(51,51,51);line-height:19px;margin-bottom:5px"><a name="TOC-Getting-Help"></a>Getting Help</h2>
+<div style="color:rgb(51,51,51);line-height:19px">If you can't get chrome to build and you're not sure why, try the following:</div>
+<div>
+<ul><li><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">Ensure your checkout has been properly updated ( </span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">git rebase-update</span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent"> </span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">)</span></li>
+<li><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">Check you're on a stable, unmodified branch from master (</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">git map-branches</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">)</span></li>
+<li><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">Check you have no uncommitted changes (</span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent"><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">git status</span></span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent"> </span><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">)</span></li>
+<li><span style="color:rgb(51,51,51);line-height:19px;font-size:10pt;background-color:transparent">Check you have all the dependencies installed: try run </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">gclient --version</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> and </span><span style="font-size:10pt;line-height:19px;color:rgb(51,51,51);background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">ninja --version</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> from your</span><span style="font-size:10pt;line-height:19px;color:rgb(51,51,51);background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;padding:2px 5px;font-family:Consolas,Courier New;background:rgb(238,238,238)">src/</span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent"> </span><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">directory</span></li>
+<li><span style="font-size:10pt;color:rgb(51,51,51);line-height:19px;background-color:transparent">Join the </span><font color="#333333"><span style="line-height:19px"><b>#chromium</b> IRC channel on </span></font><span style="color:rgb(51,51,51);line-height:19px">irc.freenode.net (see the <a href="https://www.chromium.org/developers/irc">IRC page</a> for more info)</span></li>
+<li><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">E-mail </span><a href="mailto:chromium-dev@chromium.org" style="line-height:19px;font-size:10pt;background-color:transparent">chromium-dev@chromium.org</a><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent"> with your question, after taking the time to write it carefully. </span><b style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">Note that this is not a support channel for chrome itself, just a forum for developers. </b><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">You can also join the </span><a href="https://groups.google.com/a/chromium.org/forum/#!forum/chromium-dev" style="line-height:19px;font-size:10pt;background-color:transparent">chromium-dev Google Group</a>, or any other relevant <a href="https://www.chromium.org/developers/technical-discussion-groups">technical discussion groups</a><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">.</span></li>
+<li><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">If you think this is a serious problem that affects many users, file <a href="https://code.google.com/p/chromium/issues/entry?template=Build%20Infrastructure">a new bug with the label 'Infra'</a>. It will be looked at by our infrastructure team.</span></li>
+<li><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">Check out the <a href="https://www.chromium.org/developers/how-tos/get-the-code-v2">legacy documentation</a> for this page, or the other <a href="https://dev.chromium.org/developers">developer documentation</a> available in this wiki</span></li>
+<li><span style="line-height:19px;color:rgb(51,51,51);font-size:10pt;background-color:transparent">If you work at Google, check out the <a href="http://wiki/Main/ChromeBuildInstructions">Googler-specific Chrome documentation</a></span></li></ul>
+<div><font color="#333333"><span style="line-height:19px"><br />
+</span></font></div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(7):</span>
+<span>
+<a href="/developers/how-tos/get-the-code/committing-and-reverting-changes-manually" dir="ltr">Committing and reverting changes manually</a>
+</span>
+<span>
+<a href="/developers/how-tos/get-the-code/gclient-managed-mode" dir="ltr">Gclient Managed Mode</a>
+</span>
+<span>
+<a href="/developers/how-tos/get-the-code/git-svn" dir="ltr">How git-svn works</a>
+</span>
+<span>
+<a href="/developers/how-tos/get-the-code/multiple-working-directories" dir="ltr">Managing Multiple Working Directories</a>
+</span>
+<span>
+<a href="/developers/how-tos/get-the-code/working-with-branches" dir="ltr">Working with Branches</a>
+</span>
+<span>
+<a href="/developers/how-tos/get-the-code/working-with-nested-repos" dir="ltr">Working with Nested Third Party Repositories</a>
+</span>
+<span>
+<a href="/developers/how-tos/get-the-code/working-with-release-branches" dir="ltr">Working with Release Branches</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/get-the-code">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ZYvn6YACmdI6ZavKdu-YqJNIThJkc_911zldC_LP-3rDNrqo8817w5UhBkf-wKchngwN2SjyzDzMS9gRbxWAL9kprMdmVuA1hdHBL8vqfBFRvrb8/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

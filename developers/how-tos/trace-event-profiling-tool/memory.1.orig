@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/trace-event-profiling-tool","deleted":false,"title":"The Trace Event Profiling Tool (about:tracing)","dir":"ltr"},{"path":"/developers/how-tos/trace-event-profiling-tool/memory","deleted":false,"title":"Memory profiling in chrome://tracing","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool/memory\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos/trace-event-profiling-tool","parentWuid":"wuid:gx:33634d51f825446f","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Memory profiling in chrome://tracing","locale":"en","wuid":"wuid:gx:65fbfe83df826b50","revision":8,"path":"/developers/how-tos/trace-event-profiling-tool/memory","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"memory","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Memory profiling in chrome://tracing - The Chromium Projects" />
+<meta itemprop="name" content="Memory profiling in chrome://tracing - The Chromium Projects" />
+<meta property="og:title" content="Memory profiling in chrome://tracing - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Memory profiling in chrome://tracing - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1434126110789/developers/how-tos/trace-event-profiling-tool/memory/memory_infra_logo.png?height=148&amp;width=320" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1434126110789/developers/how-tos/trace-event-profiling-tool/memory/memory_infra_logo.png?height=148&amp;width=320" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/how-tos" dir="ltr">How-Tos</A>‎ &gt; ‎<A href="/developers/how-tos/trace-event-profiling-tool" dir="ltr">The Trace Event Profiling Tool (about:tracing)</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Memory profiling in chrome://tracing</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div style="display:block"><img border="0" height="148" src="https://www.chromium.org/_/rsrc/1434126110789/developers/how-tos/trace-event-profiling-tool/memory/memory_infra_logo.png?height=148&amp;width=320" style="float:right" width="320" />MemoryInfra is a timeline-based profiling system integrated in chrome://tracing. It aims at creating Chrome-scale memory measurement tooling so that, on any Chrome in the world — desktop, mobile, Chrome OS or any other — in the click of a button, you can understand where memory is being used in your system.
+</div>
+<div style="display:block"><br />
+</div>
+<div style="display:block"><b>Uh another memory profiler. What's wrong with tool X? Why is this any better?</b></div>
+<div style="display:block">See FAQs below for more exhaustive details. The TL;DR is: most of the existing tools: 1. Are incredibly hard to get working with Chrome (massive symbols, require OS-specific tricks). 2. Completely lack chrome-related context; 3. Don't deal with multiprocess scenarios. In the best case they provide a never-ending list of allocations and call-sites.</div>
+<div style="display:block">MemoryInfra leverages the existing tracing infrastructure present in Chrome and provides contextual data. In a nutshell:</div>
+<div style="display:block">
+<ul><li><span style="background-color:transparent"><b style="font-size:10pt">Speaks Chrome slang, </b><span style="font-size:10pt">not just call-sites like</span><b><span style="font-size:10pt"> </span><span style="font-family:courier new,monospace;font-weight:normal;background-color:transparent"><font size="1">__gnu_cxx::new_allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;std::string const, base::Value*&gt;&gt;&gt;::allocate</font></span></b><br />
+<span style="font-size:10pt">The chromium codebase is (being) instrumented. Its memory subsystem (allocators, caches, etc) uniformly report their stats into the trace in a way that can be understood by Chrome developers.<br />
+<br />
+</span></span></li>
+<li><span style="background-color:transparent"><span style="font-weight:bold;font-size:10pt">Timeline data, can be cross-correlated with other events</span><br />
+Did memory suddenly increase during a specific Blink / V8 / HTML parsing event? Which subsystem increased? Did memory not go down as expected after closing a tab? Which other threads were active during a bloat?<br />
+<br />
+</span></li>
+<li><span style="background-color:transparent"><span style="font-size:10pt"><span style="font-size:13.3333330154419px"><b>Desktop or mobile, wherever you are, just push one button.</b><br />
+No recompilations with unmaintained GYP_DEFINES, no time-consuming symbolizations stages. All the logic is already into Chrome, ready to dump at any time.<br />
+<br />
+</span></span></span></li>
+<li><span style="font-size:13.3333330154419px;font-weight:bold;background-color:transparent">Reuse the same core-tech for telemetry and ChromePerf dashboard (WIP)<br />
+<span style="font-size:13.3333330154419px;font-weight:normal">Now that we can tell how much memory V8, BlinkGC, PartAlloc, etc are using at any time, how about plotting that into our <a href="http://chromeperf.appspot.com" target="_blank">chromeperf</a> continuous perf integration dashboard? </span></span></li></ul>
+</div>
+<div style="display:block">
+<h2><a name="TOC-Current-state"></a>Current state</h2>
+<div>Memory profiling in chrome://tracing is in its very early stages but ready to be tried out. The current code allows to dump the process totals, VM stats*, and details about some of the many allocators (V8, PartAlloc, malloc, Android Runtime, some GPU transfer buffers, discardable memory) in the tracing timeline. <br />
+* Currently supported only on Linux/Android.</div>
+<div>
+<h2><a name="TOC-What-s-next"></a>What's next</h2>
+</div>
+<div><span style="font-size:13.3333330154419px;background-color:transparent">The development is being tracked in the crbug label:</span><a href="https://code.google.com/p/chromium/issues/list?q=label:Hotlist-MemoryInfra" style="font-size:13.3333330154419px;background-color:transparent" target="_blank">Hotlist-MemoryInfra</a><br />
+<ul><li><span style="font-size:10pt;background-color:transparent">A never-ending list of subsystems that will be instrumented. <a href="https://docs.google.com/a/chromium.org/spreadsheets/d/1FTcrWM2E3cgbjnFtbvllAzc6QlAjCPStQL87LosSrPc/edit?usp=drive_web" target="_blank">See this spreadsheet</a></span></li>
+<li>More fine grained and tunable dumping. Currently dumps happen at a fixed rate of 250 ms for allocators (and 2s for VM stats)</li>
+<li>Integration with chrome <a href="https://www.chromium.org/developers/telemetry">telemetry</a> / <a href="http://chromeperf.appspot.com/" style="color:rgb(85,26,139);font-size:13.3333330154419px" target="_blank">chromeperf</a> dashboard.</li>
+<li>More UI features and visualization / exploration panes.</li><li>Visualization / correlation of memory hierarchy (sharing / sub-allocations) and cross-process memory reporting (shared transfer buffers, shared memory, discardable memory). </li></ul>
+</div>
+</div>
+<h2 style="display:block"><a name="TOC-Getting-started:"></a>Getting started:</h2>
+<div><ul><li><span style="font-size:10pt;background-color:transparent">Get a</span><font size="4" style="background-color:transparent"> bleeding-edge / ToT</font><span style="font-size:10pt;background-color:transparent"> build of Chrome </span></li><li><span style="font-size:10pt;background-color:transparent">Record a trace as usual (see </span><a href="https://www.chromium.org/developers/how-tos/trace-event-profiling-tool/recording-tracing-runs" style="font-size:10pt;background-color:transparent">this page for full tracing instructions</a><span style="font-size:10pt;background-color:transparent">):</span></li><ul><li><span style="font-size:10pt;background-color:transparent">Chrome Desktop: start Chrome (<a href="http://crbug.com/461788">temporarily</a> passing the --no-sandbox option) open </span><span style="font-size:10pt;background-color:transparent"><font size="4"><a href="javascript:void(0);">chrome://tracing</a></font></span></li><li><span style="font-size:10pt;background-color:transparent">Chrome for Android: open </span><a href="javascript:void(0);" style="font-size:10pt;background-color:transparent">chrome://inspect?tracing</a></li></ul></ul></div><div>
+<img border="0" src="https://www.chromium.org/_/rsrc/1434132481090/developers/how-tos/trace-event-profiling-tool/memory/2.%20MemoryInfra-%20From%20trace%20JSON%20to%20Tracks.png" style="font-size:10pt;display:inline;margin:5px 10px;float:right;background-color:transparent" /><span style="font-size:10pt;background-color:transparent"> Enable the</span><font size="4"><span style="background-color:transparent"> </span><i style="background-color:transparent">memory-infra </i><span style="background-color:transparent">category </span></font><span style="font-size:10pt;background-color:transparent">on the right<br />
+<br />
+</span></div>
+<div>
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/trace-event-profiling-tool/memory/Screen%20Shot%202015-06-12%20at%205.30.33%20PM.png?attredirects=0" imageanchor="1"><img border="0" height="320" src="https://www.chromium.org/_/rsrc/1434126660599/developers/how-tos/trace-event-profiling-tool/memory/Screen%20Shot%202015-06-12%20at%205.30.33%20PM.png?height=320&amp;width=305" width="305" /></a></div>
+<div style="display:block;text-align:left"><br />
+</div>
+<div style="display:block;text-align:left"><br /></div>
+<div style="display:block;text-align:left">The full details and UI rationale are available in <a href="https://docs.google.com/document/d/1b5BSBEd1oB-3zj_CBAQWiQZ0cmI0HmjmXG-5iNveLqw/edit" target="_blank">this design doc</a>. A quick summary below:</div>
+<h3><a name="TOC-Timeline-view"></a>Timeline view</h3>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Global tracks</span></li>
+<ul><li><span style="font-size:10pt;background-color:transparent">Total (proportional) resident memory grouped by process (Browser, renderer 1, renderer 2, …)</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Totals grouped by subsystem (e.g. v8, PartAlloc, BlinkGC)</span></li></ul>
+<li>Per-process tracks</li>
+<ul><li>Allocated memory – line plot corresponding to total allocated memory (for the given process) for each subsystem.</li></ul></ul><div><div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://www.chromium.org/developers/how-tos/trace-event-profiling-tool/memory/dump.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1434136172188/developers/how-tos/trace-event-profiling-tool/memory/dump.png" /></a></div><br /></div>
+</div>
+<div>
+<h3><a name="TOC-Analysis-view"></a>Analysis view</h3>
+</div>
+<div>Clicking on a point on the memory tracks opens the Analysis view pane in the bottom half. Each cell reveals more details about its subsystem. For instance:</div>
+<div>
+<div style="display:block;text-align:left"><a href="https://www.chromium.org/developers/how-tos/trace-event-profiling-tool/memory/Screen%20Shot%202015-06-12%20at%207.42.47%20PM.png?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1434134595489/developers/how-tos/trace-event-profiling-tool/memory/Screen%20Shot%202015-06-12%20at%207.42.47%20PM.png" style="width:100%" /></a></div>
+ </div>
+<div><br />
+</div>
+<div style="display:block;text-align:left"><br />
+</div>
+</div>
+<h2><a name="TOC-Design-Docs"></a>Design Docs</h2>
+<h3><a name="TOC-1"></a><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">Architectural docs</h4><div class="sites-embed-object-title" style="display:none;">Architectural docs</div><div class="sites-embed-content sites-embed-type-folder"><iframe src="https://drive.google.com/embeddedfolderview?hl=en&amp;id=0B3KuDeqD-lVJfmp0cW1VcE5XVWNxZndxelV5T19kT2NFSndYZlNFbkFpc3pSa2VDN0hlMm8#list" width="100%" height="300" title="Architectural docs" frameborder="0" class="folder_embed" id="1753003649" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></div></div></h3>
+<div>
+<h3><a name="TOC-2"></a><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">MemoryInfra Chrome-side design docs</h4><div class="sites-embed-object-title" style="display:none;">MemoryInfra Chrome-side design docs</div><div class="sites-embed-content sites-embed-type-folder"><iframe src="https://drive.google.com/embeddedfolderview?hl=en&amp;id=0B3KuDeqD-lVJfndSa2dleUQtMnZDeWpPZk1JV0QtbVM5STkwWms4YThzQ0pGTmU1QU9kNVk#list" width="100%" height="550" title="MemoryInfra Chrome-side design docs" frameborder="0" class="folder_embed" id="808490550" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></div></div></h3></div><div>
+<div>
+<h3><a name="TOC-3"></a><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">MemoryInfra TraceViewer-side design docs</h4><div class="sites-embed-object-title" style="display:none;">MemoryInfra TraceViewer-side design docs</div><div class="sites-embed-content sites-embed-type-folder"><iframe src="https://drive.google.com/embeddedfolderview?hl=en&amp;id=0B3KuDeqD-lVJfm10bXd5YmRNWUpKOElOWS0xdU1tMmV1S3F4aHo0ZDJLTmtGRy1qVnQtVWM#list" width="100%" height="250" title="MemoryInfra TraceViewer-side design docs" frameborder="0" class="folder_embed" id="680509753" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></div></div></h3></div>
+<div style="font-size:13.3333330154419px">
+<h3><a name="TOC-4"></a><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><h4 class="sites-embed-title">Misc/Obsolete</h4><div class="sites-embed-object-title" style="display:none;">Misc/Obsolete</div><div class="sites-embed-content sites-embed-type-folder"><iframe src="https://drive.google.com/embeddedfolderview?hl=en&amp;id=0B3KuDeqD-lVJfjc4WjVaOF9MVjdwLUlnMUlXNVV3dm14NEwwQmV1MFlFYmFORFJ1dG5MdHc#list" width="100%" height="150" title="Misc/Obsolete" frameborder="0" class="folder_embed" id="979190047" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></div></div></h3>
+<div><br />
+</div>
+</div>
+<div style="font-size:13.3333330154419px"></div>
+</div>
+<h2><a name="TOC-FAQs"></a>FAQs</h2>
+<h4><a name="TOC-Which-platforms-are-currently-supported-Memory-Infra-aims-at-a-uniform-support-of-all-the-chrome-platforms.-Most-of-the-code-is-platform-agnostic.-The-main-exception-is-represented-by-the-VM-maps-dumps-which-are-currently-supported-only-on-Linux-Android."></a>Which platforms are currently supported?<br />
+<span style="font-weight:normal">Memory Infra aims at a uniform support of all the chrome platforms. Most of the code is platform-agnostic. The main exception is represented by the VM maps dumps, which are currently supported only on Linux/Android.</span></h4>
+<div><b>How frequently do the memory snapshots happen?</b></div>
+<div>In this first stage, the dump rate is hardcoded to a <a href="https://chromium.googlesource.com/chromium/src.git/+/b2134362e27459f1098a35effedad91e2d553192/base/trace_event/memory_dump_manager.cc#44">fixed value of 250 ms</a> for the allocator dumpers and 2 s for the VM maps dumpers. It is a temporary decision to trade off quality of results vs use of the trace buffer. In the near future the dump frequency will be customizable and triggerable by user-defined filters (Dump at every V8 GC, dump on every MessageLoop task matching *foobar*, etc.)</div>
+<div><br />
+</div>
+<div>
+<div style="font-size:13.3333330154419px"><b style="font-size:13.3333330154419px">I want my subsystem / allocator to be reported in this memory profiling infrastructure. How do I do?</b></div>
+<div style="font-size:13.3333330154419px"><span style="font-size:13.3333330154419px">MemoryInfra is based on a simple and extensible architecture. See <a href="https://docs.google.com/presentation/d/1GI3HY3Mm5-Mvp6eZyVB0JiaJ-u3L1MMJeKHJg4lxjEI/edit#slide=id.g995514d5c_1_45">this slide</a> or one of the existing examples: <a href="https://chromium.googlesource.com/chromium/src.git/+/b2134362e27459f1098a35effedad91e2d553192/base/trace_event/malloc_dump_provider.cc" target="_blank">malloc dump provider.cc</a> in chrome, </span><span style="background-color:transparent"><a href="http://partitionallocmemorydumpprovider.cpp/">PartitionAllocMemoryDumpProvider.cpp</a></span><span style="font-size:13.3333330154419px;background-color:transparent"> in Blink.</span><span style="font-size:13.3333330154419px;background-color:transparent"> Don't hesitate to contact <a href="https://groups.google.com/a/chromium.org/forum/#!forum/tracing">tracing@chromium.org</a> for questions / support</span></div>
+</div>
+<div style="font-size:13.3333330154419px"><span style="font-size:13.3333330154419px;background-color:transparent"><br />
+</span></div>
+<div><b>What is the difference between the blue used memory columns (PSS, Resident size, swap) and the allocator columns (V8, PartAlloc, BlinkGC, ...) </b></div>
+<div>Used memory reflects the amount of actual physical memory pages used by the process and reflect the actual memory pressure on the system.</div>
+<div>Allocated memory reflects the amount of virtual memory requested and <i>potentially </i>usable (but not necessarily used yet).</div>
+<div>In a nutshell:<br />
+<font face="courier new, monospace"><span>    </span>char* p = (char*) malloc(1024 * 1024);</font></div>
+<div><font face="courier new, monospace"><span>    for (size_t i = 0; i &lt; 4096; ++i) p</span></font><span style="font-family:courier new,monospace;font-size:10pt;background-color:transparent">[i] = 'X'</span></div>
+<div><font face="arial, sans-serif">    Allocated memory (as would be reported by the malloc dumper): 1 MiB</font></div>
+<div><font face="arial, sans-serif">    Resident memory (physical pages and reported as resident, stolen to other apps): 4 KiB</font><span style="font-size:13.3333330154419px;background-color:transparent">.</span></div>
+<div><b style="font-size:13.3333330154419px"><br />
+</b></div>
+<div><b style="font-size:13.3333330154419px">Uh, this is confusing. Can you just tell the proportion of used memory for each subsystem?</b></div>
+<div><span style="font-size:13.3333330154419px">This is a very tough problem. Supporting that is on the roadmap but will take a while.</span></div>
+<div>
+<div style="font-size:13.3333330154419px"><br />
+</div><div style="font-size:13.3333330154419px"><b>What are all those other memory-related tracks I see in the trace tracks (DiscardableMemoryUsage, unused_bytes, GPU TransferBuffer)?</b></div><div style="font-size:13.3333330154419px"><span style="font-size:13.3333330154419px">Bare with us, they are going to be assimilated :)</span></div><div style="font-size:13.3333330154419px"><br /></div>
+<div style="font-size:13.3333330154419px"><b>All this aggregated data is cool, but I want more details.</b></div>
+<div style="font-size:13.3333330154419px">The next plan on the roadmap is to attach pseudo stack-traces (stack frames coming from tracing events) to dumps. Pseudo-stack frames are less noisy, more human readable (leverage the custom TRACE_EVENT chrome instrumentation) and work out of the box.</div>
+<div style="font-size:13.3333330154419px"><br />
+</div>
+<div style="font-size:13.3333330154419px"><b>But I really want detailed call sites for each allocation.</b></div>
+<div style="font-size:13.3333330154419px">At the current state the highest priority of the project is to achieve a complete horizontal coverage and provide a wide number of aggregated stats for each subsystem.</div><div style="font-size:13.3333330154419px">The best way to achieve this, until we get there, is to use dedicated tools for heap profiling drill down like:</div><div><ul><li><a href="https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html" target="_blank">Apple Instruments on Mac OSX</a></li><li><a href="http://developer.android.com/tools/debugging/ddms.html" target="_blank">Android DDMS</a></li><li><a href="https://www.chromium.org/developers/deep-memory-profiler" target="_blank">Chromium Deep Memory Profiler</a></li></ul></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/how-tos/trace-event-profiling-tool/memory/startup-tracing-with-memory-profiling" dir="ltr">Startup tracing with memory profiling</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/trace-event-profiling-tool/memory">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9onvhc3KOQ_S0j5uk4wrcILJCjdpRMpLGZ9vRXSgluKE-_p8n6mWioJIVIrxjDAFrBoabKCCbHvfNguVS_0Nh-auUUuV8a_EG9hxU5G2LJbkDfdEz/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

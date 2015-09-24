@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/updating-webui-for-material-design","deleted":false,"title":"Updating WebUI for Material Design","dir":"ltr"},{"path":"/developers/updating-webui-for-material-design/testing-webui-with-mocha","deleted":false,"title":"Testing WebUI with Mocha","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/updating-webui-for-material-design/testing-webui-with-mocha\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/updating-webui-for-material-design","parentWuid":"wuid:gx:5d18bbd4b8cf5e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Testing WebUI with Mocha","locale":"en","wuid":"wuid:gx:67c848a0b7414f1f","revision":11,"path":"/developers/updating-webui-for-material-design/testing-webui-with-mocha","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"testing-webui-with-mocha","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Testing WebUI with Mocha - The Chromium Projects" />
+<meta itemprop="name" content="Testing WebUI with Mocha - The Chromium Projects" />
+<meta property="og:title" content="Testing WebUI with Mocha - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Testing WebUI with Mocha - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/updating-webui-for-material-design" dir="ltr">Updating WebUI for Material Design</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Testing WebUI with Mocha</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">As Chromium focuses on building modular WebUI using web components and well-defined API calls, we aim to phase out and ultimately replace <a href="https://www.chromium.org/Home/domui-testing/webui-browser_tests">WebUIBrowserTest</a> with a mocha-based alternative. <a href="http://mochajs.org" target="_blank">Mocha</a> is a flexible, lightweight test framework with strong async support. With mocha, we can write small unit tests for individual features of components instead of grouping everything into a monolithic browser test.
+<div><br />
+</div>
+<div>Advantages of using mocha over vanilla browser tests include:</div>
+<div>
+<ul><li>Allowing multiple test definitions within one browser test, amortizing the browser spin-up cost over several tests</li>
+<li>Pinpointing failure locations, even when several tests fail within one browser test or when assertions fail inside in helper functions</li>
+<li>Associating uncaught exceptions with the correct test</li>
+<li>Reporting test durations and flagging slow tests</li>
+<li>Fast test iteration -- changes to tests may not require recompiling</li></ul>
+<div>This framework is a work in progress; its first consumers are Polymer projects in Chromium.</div>
+<h3><a name="TOC-Adding-the-BrowserTest"></a>Adding the BrowserTest</h3>
+<div>
+<div></div>
+</div>
+<div><span style="font-size:10pt;background-color:transparent">Polymer tests should use </span><code style="font-size:10pt;background-color:transparent">PolymerTest</code><span style="font-size:10pt;background-color:transparent"> from </span><font face="courier new, monospace" style="font-size:10pt;background-color:transparent">polymer_browser_test_base.js</font><span style="font-size:10pt;background-color:transparent"> as their prototype. The following test will set the command-line args <font face="courier new, monospace">--my-switch=my-value</font> and navigate to <font face="courier new, monospace">chrome://my-webui/</font>.</span></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>/** @const {string} Path to source root. */</code></div>
+<div><code>var ROOT_PATH = '../../../../../';</code></div>
+<div><code><br />
+</code></div>
+<div><code>// Polymer BrowserTest fixture.</code></div>
+<div><code>GEN_INCLUDE(</code></div>
+<div><code>    [ROOT_PATH + 'chrome/test/data/webui/polymer_browser_test_base.js']);</code></div>
+<div><br />
+</div>
+<div><font color="#006000" face="monospace">/**</font></div>
+<div><font color="#006000" face="monospace"> * Test fixture for FooBar element.</font></div>
+<div><font color="#006000" face="monospace"> * @constructor</font></div>
+<div><font color="#006000" face="monospace"> * @extends {PolymerTest}</font></div>
+<div><font color="#006000" face="monospace"> */</font></div>
+<div><code>function CrFooBarBrowserTest() {}</code></div>
+<div><br />
+</div>
+<div><code>CrFooBarBrowserTest.prototype = {</code></div>
+<div><code>  __proto__: PolymerTest.prototype,</code></div><div><code><br /></code></div><div><code>  /**</code></div><div><code>   * Override browsePreload like this if you need to navigate to a particular WebUI</code></div><div><code>   * @override</code></div><div><code>   */</code></div><div><code>  browsePreload: 'chrome://my-webui',</code></div><div><code><br /></code></div><div><code>  /**</code></div><div><code>   * Set any command line switches needed by your features</code></div><div><code>   */</code></div><div><code>  commandLineSwitches: [{<br />    switchName: 'my-switch',</code></div><div><code>    switchValue: 'my-value' // omit switchValue for boolean switches</code></div><div><code>  }],</code></div>
+<div><code><br />
+</code></div>
+<div><code>  /**</code></div>
+<div><code>   * </code><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;line-height:13.3333320617676px">Set extra libraries relative to source root.</span></div>
+<div><code>   * @override</code></div>
+<div><code>   */ </code></div>
+<div><code>  extraLibraries: PolymerTest.getLibraries(ROOT_PATH);</code></div>
+<div><code>};</code></div>
+</div>
+<div><br />
+</div><div><br /></div>
+<div>Then, create one or more <code>TEST_F</code> functions. Each should register some number of tests with mocha:</div>
+</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>TEST_F('CrFooBarBrowserTest', 'CrFooBarTest', function() {</code></div>
+<div><code>  suite('CrFooBar', function() {</code></div>
+<div><code>    var fooBar;</code></div>
+<div><br />
+</div>
+<div><code>    // Import foo_bar.html before running suite.</code></div>
+<div><code>    suiteSetup(function() {</code></div><div><code>      // Returns a promise, ensuring mocha waits until the resource loads.</code></div>
+<div><code>      return PolymerTest.importHtml('chrome://resources/foo_bar.html');</code></div>
+<div><code>    });</code></div>
+<div><br />
+</div>
+<div><code>    // Create and initialize a CrFooBar before each test.</code></div>
+<div><code>    setup(function(done) {</code></div>
+<div><code>      PolymerTest.clearBody();</code></div>
+<div><code>      fooBar = document.createElement('cr-foo-bar');</code></div>
+<div><code>      document.body.appendChild(fooBar);</code></div>
+<div><code>      // Allow for the CrFooBar to be created and attached asynchronously.</code></div>
+<div><code>      setTimeout(done);</code></div>
+<div><code>    });</code></div>
+<div><br />
+</div>
+<div><code>    test('is a CrFooBar', function() {</code></div>
+<div><code>      assertEquals('CR-FOO-BAR', fooBar.tagName);</code></div>
+<div><code>      // ... more work and assertions</code></div>
+<div><code>    });</code></div>
+<div><br />
+</div>
+<div><code>    // ... more synchronous and asynchronous tests</code></div>
+<div><code>  });</code></div>
+<div><br />
+</div>
+<div><code>  // ... more test suites</code></div>
+<div><br />
+</div>
+<div><code>  // Run all the above tests.</code></div>
+<div><code>  mocha.run();</code></div>
+<div><code>});</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>Should you write a large number of tests (woohoo!), it may help to break tests into separate files. For example, if you have <font face="courier new, monospace">foo_bar_tests.js:</font></div>
+<div><font face="courier new, monospace"><br />
+</font></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><font face="courier new, monospace"><code>cr.define('foo_bar', function() {</code></font></div>
+<div><font face="courier new, monospace"><code>  function registerTests() {</code></font></div>
+<div><font face="courier new, monospace"><code>    suite('FooBar', function() { /* ... */ });</code></font></div>
+<div><font face="courier new, monospace"><code>  }</code></font></div>
+<div><font face="courier new, monospace"><code>});</code></font></div>
+<div></div>
+</div>
+<br />
+<div>You can then include these tests in your main <font face="courier new, monospace">foo_bar_browsertest.js </font><span style="font-size:10pt;background-color:transparent">by adding the file(s) to <code>CrFooBarBrowserTest.prototype.extraLibraries</code></span><span style="font-size:10pt;background-color:transparent">. Then, in your <code>TEST_F</code>, simply call <code>foo_bar.registerTests()</code> before the <code>mocha.run()</code> call.</span></div>
+<div><br />
+</div>
+<div>
+<div style="font-size:13.3333330154419px">
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="width:731px;height:212px;border:1px solid rgb(204,204,204);padding:5px;background:rgb(252,248,227)">
+<h4 style="margin-top:0px"><a name="TOC-Including-JS-files-in-tests"></a><b>Including JS files in tests</b></h4>
+js2gtest allows #include-style imports of JavaScript using <code>GEN_INCLUDE</code> and the <code>extraLibraries</code> property of the test fixture prototype. These should be relative to the file defining your test fixture.<br />
+<br />
+Use <code>GEN_INCLUDE</code> when the file needs to be included before the rest of the script is run. This will also result in the code being eval'd during the js2gtest step.<br />
+<br />
+Use the <code>extraLibraries</code> property of your test fixture's prototype when the file is only needed within your tests. The content of these files, along with any <code>GEN_INCLUDE</code>d files, are added to each GTest body before each test is run.<br />
+<br />
+Because these files are read at runtime, they must be present when running the browser_tests binary. This is only a concern in <a href="https://www.chromium.org/developers/testing/isolated-testing/for-swes">isolated testing</a>, and placing included files in <font face="courier new, monospace">chrome/test/data</font> should always work.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3><a name="TOC-Tests-and-suites"></a>Tests and suites</h3>
+<div>With mocha, we can define any number of <b>suites</b>; each suite can consist of any number of <b>tests</b>. Top-level tests are in the global suite, but it is recommended to always create an outer suite for your tests. Each <b>suite </b>and <b>test</b> call takes a name and a function.</div>
+<div><br />
+</div>
+<div>We can also define a <b>suiteSetup</b> to run at the beginning of a suite, a <b>setup</b> to run before each test in a suite, a <b>teardown</b> to run after each test in a suite, and a <b>suiteTeardown</b> to run once a suite is completed.</div>
+<div><br />
+</div>
+<div>Suites can be nested; each <b>setup</b> and <b>teardown</b> also applies to all tests in nested suites.</div>
+<div><br />
+</div><div><span style="font-size:10pt;background-color:transparent">By default, hooks and tests are synchronous. Any of the functions used in these calls can take a </span><code style="font-size:10pt;background-color:transparent">done</code><span style="font-size:10pt;background-color:transparent"> callback as a parameter, causing mocha to wait until the </span><code style="font-size:10pt;background-color:transparent">done</code><span style="font-size:10pt;background-color:transparent"> parameter is called before moving to the next test or hook. </span><b style="font-size:10pt;background-color:transparent">The <code>done</code> callback must be called with an <code>Error</code> on failure, or no arguments on success.</b></div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>suite('Outer suite', function() {</code></div>
+<div><code>  suiteSetup(function() {</code></div>
+<div><code>    // Function to run at the beginning of this suite.</code></div>
+<div><code>  });</code></div>
+<div><br />
+</div>
+<div><code>  setup(function() {</code></div>
+<div><code>    // Function to run before each test within this suite.</code></div>
+<div><code>  });</code></div>
+<div><br />
+</div>
+<div>
+<div style="font-size:13.3333330154419px"><code>  test(function() {</code></div>
+<div style="font-size:13.3333330154419px"><code>    // A test that runs after setup is called.</code></div>
+<div style="font-size:13.3333330154419px"><code>  });</code></div><div style="font-size:13.3333330154419px"><code><br /></code></div>
+</div>
+<div>
+<div style="font-size:13.3333330154419px"><code>  test(function(done) {</code></div>
+<div style="font-size:13.3333330154419px"><code>    // An asynchronous test that runs after setup is called again.</code></div>
+<div style="font-size:13.3333330154419px"><code>    setTimeout(done, 1000);</code></div>
+<div style="font-size:13.3333330154419px"><code>  });</code></div>
+</div>
+<div style="font-size:13.3333330154419px"><br />
+</div>
+<div style="font-size:13.3333330154419px"><code>  teardown(function() {</code></div>
+<div style="font-size:13.3333330154419px"><code>    // Function to run after each test in this suite.</code></div>
+<div><code>  });</code></div>
+<div><br />
+</div>
+<div><code>  suiteTeardown(function() {</code></div>
+<div><code>    // Function to run at the very end of this suite.</code></div>
+<div><code>  });</code></div>
+<div><br />
+</div>
+<div><code>  suite('Inner suite', function() {</code></div>
+<div><code>    // Another suite. We can define separate suiteSetup and setup functions here that only run within this suite.</code></div>
+<div><code>  });</code></div>
+<div><span style="font-size:10pt;background-color:transparent"><code>});</code></span></div>
+<div></div>
+</div>
+<div><br />
+</div><b>
+Instead of taking a <code>done</code> parameter, an asynchronous hook or test can return a <code>Promise</code>.</b> The test succeeds or fails once the promise is resolved or rejected.
+<div><br />
+</div>
+<div style="font-size:13.3333330154419px"></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div style="font-size:13.3333330154419px"><code>// Notice no done callback is taken.</code></div>
+<div><code>suiteSetup(function() {</code></div>
+<div><code>  return new Promise(function(resolve, reject) {</code></div>
+<div><code>    window.addEventListener('thingCreated', resolve);</code></div>
+<div><code>    createThingAsync();</code></div>
+<div><code>  });</code></div>
+<div><code>});</code></div>
+<div><code><br />
+</code></div>
+<div><code>test('Something doesn\'t happen', function() {</code></div>
+<div><span style="font-size:10pt;background-color:transparent"><code>  return new Promise(function(resolve, reject) {</code></span></div>
+<div style="font-size:13.3333330154419px"><code>    // Ensure no event fires.</code></div>
+<div style="font-size:13.3333330154419px"><code>    window.addEventListener('change', reject);</code></div>
+<div><code>    setTimeout(resolve, 1000);</code></div>
+<div><code>    somethingShouldNotChange();</code></div>
+<div><code>  });</code></div>
+<div><code>});</code></div>
+</div>
+<h3><a name="TOC-More-features"></a>More features</h3>
+<div>
+<div>For more mocha features, see <a href="http://mochajs.org/" target="_blank">the documentation</a>. The API is well documented <a href="https://github.com/mochajs/mocha/blob/master/lib/mocha.js" target="_blank">within the source</a>.</div>
+<div><br />
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/updating-webui-for-material-design/testing-webui-with-mocha">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9blw25gwkRgdLkDyeDCCmQfdJMGuh6gSgcKux2aw-oFQsg1t9XVQeo2SW4_qgCMd11JixphaeJYapT2o7pP0ZU6NPHNUJiLtltte2mYF2r9XHlvTV/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/jinja","deleted":false,"title":"Jinja","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/jinja\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Jinja","locale":"en","wuid":"wuid:gx:620dabf0b9bbcf2a","revision":33,"path":"/developers/jinja","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"jinja","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Jinja - The Chromium Projects" />
+<meta itemprop="name" content="Jinja - The Chromium Projects" />
+<meta property="og:title" content="Jinja - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Jinja - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Jinja</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overview"><strong>1 </strong>Overview</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Factoring-code"><strong>1.1 </strong>Factoring code</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Filters"><strong>1.1.1 </strong>Filters</a></li><li class="goog-toc"><a href="#TOC-Jinja-environment"><strong>1.1.2 </strong>Jinja environment</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Style"><strong>2 </strong>Style</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Python-Jinja-split"><strong>2.1 </strong>Python/Jinja split</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Do-not-call-Python-functions-from-Jinja-except-custom-filters-"><strong>2.1.1 </strong>Do not call Python functions from Jinja (except custom filters)</a></li></ol></li><li class="goog-toc"><a href="#TOC-Python"><strong>2.2 </strong>Python</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-One-dictionary-display-per-context-inline-expressions"><strong>2.2.1 </strong>One dictionary display per context, inline expressions</a></li><li class="goog-toc"><a href="#TOC-Logic-and-local-variables-before-display"><strong>2.2.2 </strong>Logic and local variables before display</a></li><li class="goog-toc"><a href="#TOC-Separate-functions-if-necessary"><strong>2.2.3 </strong>Separate functions if necessary</a></li><li class="goog-toc"><a href="#TOC-Early-return-if-necessary"><strong>2.2.4 </strong>Early return if necessary</a></li></ol></li><li class="goog-toc"><a href="#TOC-Jinja"><strong>2.3 </strong>Jinja</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Keep-it-simple"><strong>2.3.1 </strong>Keep it simple</a></li><li class="goog-toc"><a href="#TOC-Spacing"><strong>2.3.2 </strong>Spacing</a></li><li class="goog-toc"><a href="#TOC-set-if-simple-and-used-in-only-one-place"><strong>2.3.3 </strong>set if simple and used in only one place</a></li><li class="goog-toc"><a href="#TOC-Variables-should-be-complete-words-not-fragments"><strong>2.3.4 </strong>Variables should be complete words, not fragments</a></li><li class="goog-toc"><a href="#TOC-Name-variables-after-default-value"><strong>2.3.5 </strong>Name variables after default value</a></li><li class="goog-toc"><a href="#TOC-Comment-end-of-long-blocks"><strong>2.3.6 </strong>Comment end of long blocks</a></li><li class="goog-toc"><a href="#TOC-Use-implicit-False"><strong>2.3.7 </strong>Use implicit False</a></li><li class="goog-toc"><a href="#TOC-Whitespace"><strong>2.3.8 </strong>Whitespace</a></li><li class="goog-toc"><a href="#TOC-Treat-multi-line-macros-as-blocks-indent-trailing-semicolon-in-macro-"><strong>2.3.9 </strong>Treat multi-line macros as blocks (indent, trailing semicolon ; in macro)</a></li><li class="goog-toc"><a href="#TOC-Treat-one-line-macros-as-in-line-no-indent---to-strip-trailing-linebreak-semicolon-at-call-site-"><strong>2.3.10 </strong>Treat one-line macros as in-line (no indent, {%- to strip trailing linebreak, semicolon ; at call site)</a></li><li class="goog-toc"><a href="#TOC-C-code-generation"><strong>2.3.11 </strong>C++ code generation</a></li><li class="goog-toc"><a href="#TOC-Don-t-mix-Jinja-templates-and-C-templates"><strong>2.3.12 </strong>Don't mix Jinja templates and C++ templates</a></li><li class="goog-toc"><a href="#TOC-Group-related-code-minimize-code-within-clauses"><strong>2.3.13 </strong>Group related code, minimize code within clauses</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Tips"><strong>3 </strong>Tips</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Syntax-highlighting"><strong>3.1 </strong>Syntax highlighting</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-vim"><strong>3.1.1 </strong>vim</a></li><li class="goog-toc"><a href="#TOC-Emacs"><strong>3.1.2 </strong>Emacs</a></li></ol></li></ol></li><li class="goog-toc"><a href="#TOC-Performance"><strong>4 </strong>Performance</a></li><li class="goog-toc"><a href="#TOC-External-links"><strong>5 </strong>External links</a></li></ol></div></div></div></div></div>
+</div>
+<a href="http://jinja.pocoo.org/">Jinja</a> is a <a href="http://en.wikipedia.org/wiki/Template_language">template engine</a> for Python, which is used in a number of places in Chromium, particularly for generating bindings. It's also referred to as Jinja2, as it's on its second major version. Usage is generally easy, but it's a new macro language to learn, and a few tips can help.
+<div><br />
+</div>
+<div><b><i>Warning:</i></b> make sure to list Jinja template files as <code>inputs</code> in the appropriate <code>.gyp</code> or <code>.gypi</code> file, just like the Python files that use them – they <i>are</i> source code – otherwise the generated files will not rebuild properly.<br />
+<div><br />
+</div>
+<div>Notable uses:</div>
+<div>
+<ul><li><a href="https://code.google.com/p/chromium/codesearch#chromium/src/mojo/public/tools/bindings/">mojo/public/tools/bindings/</a>: Mojo bindings for C++, Python, Java, JavaScript</li>
+<li><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/bindings/scripts/code_generator_v8.py" style="background-color:transparent;font-size:10pt">Source/bindings/scripts/code_generator_v8.py</a><span style="background-color:transparent"><span style="font-size:10pt"> : </span>Blink V8 bindings (<a href="http://www.chromium.org/developers/design-documents/idl-compiler">IDL compiler</a>)</span></li>
+<li><a href="https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/build/scripts/template_expander.py" style="background-color:transparent;font-size:10pt">Source/build/scripts/template_expander.py</a><span style="background-color:transparent;font-size:10pt"> : general templates in Blink build</span></li></ul>
+</div>
+<div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<div><i>See: <a href="http://jinja.pocoo.org/docs/templates/">Template Designer Documentation</a></i></div>
+<div><br />
+</div>
+<div>Jinja templates provide both basic string substitution (fill in the blank, as in Python <span style="background-color:transparent;font-size:10pt"><a href="http://docs.python.org/2/library/string.html#template-strings">template strings</a>) and more advanced programming facilities. Key features are as follows:</span></div>
+<div>
+<ul><li><a href="http://jinja.pocoo.org/docs/templates/#if"><code>if</code></a> (conditional): <code>{% if %}...{% elif %}...{% else %}...{% endif %}</code></li>
+<li><a href="http://jinja.pocoo.org/docs/templates/#for"><code>for</code></a> (definite iteration): <code>{% for i in l if i.foo %}...{% endfor %}</code></li></ul>
+Note that linebreaks are <i>not</i> meaningful in Jinja block control statements, so you can put linebreaks wherever convenient, and don't need to use <code>()</code> for implicit line continuation.<br />
+<ul><li><span style="background-color:transparent"><a href="http://jinja.pocoo.org/docs/templates/#macros" style="font-size:10pt">Macros</a><span style="font-size:10pt">: Macros are actually functions (evaluation semantics, not expansion semantics: they are evaluated as a function, not expanded in place like a macro). However, they can be called with the current evaluation environment ("context"), which results in dynamic binding, with results like actual macros; see </span><a href="http://jinja.pocoo.org/docs/templates/#import-context-behavior">Import Context Behavior</a><span style="font-size:10pt">. Macros are suitable for <i>producing</i> text, but filters are clearer for <i>transforming</i> text, notably simple inline transforms (like changing capitalization) or wrapping or indenting a block of text.</span></span></li>
+<li><span style="background-color:transparent;font-size:10pt"><a href="http://jinja.pocoo.org/docs/templates/#block">Blocks</a>: Blocks are a bit trickier to use than macros, and are generally used like actual macros (by default calling environment is visible). They are powerful in general use, letting you have multiple templates based off of a base template, but in code generators, t</span>hey are <span style="font-size:10pt;background-color:transparent">mostly used when you want to optionally include or omit a block of code, and don't want to specify arguments (not a parametrized function, just a block that uses the current environment). If you always want to include code, a macro is easier, and if you want to specify arguments, a macro is clearer.</span></li></ul>
+<div><span style="background-color:transparent;font-size:10pt">Others:</span></div>
+<ul><li><span style="background-color:transparent;font-size:10pt"><a href="http://jinja.pocoo.org/docs/templates/#assignments">set</a> (assignment): <code>{% set x = '' %}</code> particularly useful with conditional expression: <code>{% set x = 'foo' if foo else 'bar' %}</code></span></li></ul>
+</div>
+<div><span style="background-color:transparent;font-size:10pt">In rare cases </span><span style="background-color:transparent;font-size:10pt"><code>call</code> is useful, but usually a custom filter works and is clearer.</span></div>
+<div><br />
+</div>
+<div>Note that Jinja identifiers are <b>lowercase,</b> and thus the 3 <span style="background-color:transparent;font-size:10pt"><a href="http://jinja.pocoo.org/docs/templates/#literals">literal</a> constants are written </span><span style="background-color:transparent;font-size:10pt"><code>true, false, none</code>, unlike in Python.</span></div>
+<h3><a name="TOC-Factoring-code"></a><span style="background-color:transparent;font-size:10pt">Factoring code</span></h3>
+<div>Macros can be put into a library and then imported into the template that uses them. This should generally be done (even for simple macros or those used in only one file), so that the code (macros) are separate from the data (template), and the actual template looks like the output, without being cluttered with macro definitions. This also allows you to have whitespace between macro definitions in the library.</div>
+<div><br />
+</div>
+<div>To put macros into a library, just put them into another file and import them with an <span style="background-color:transparent;font-size:10pt"><a href="http://jinja.pocoo.org/docs/templates/#import"><code>import</code></a> statement. In terms of name binding, you often want macros to access the global environment </span><span style="background-color:transparent">– so you don't need to pass everything explicitly as an argument, and to simplify factoring code into a macro </span><span style="background-color:transparent">– which you can do via the <code><a href="http://jinja.pocoo.org/docs/templates/#import-context-behavior">with context</a></code> keywords,</span></div>
+<div><br />
+</div>
+<div>Factoring code using blocks is a bit trickier, since you need to use <a href="http://jinja.pocoo.org/docs/templates/#template-inheritance" style="background-color:transparent;font-size:10pt">template Inheritance</a>, specifically one base template with the block layout, and a derived template that fills in values for the block. <span style="background-color:transparent;font-size:10pt">See </span><span style="background-color:transparent;font-size:10pt"><code>interface_base.cpp</code> and <code>interface.cpp</code> in the V8 bindings code generator for example of using blocks and template inheritance.</span></div>
+<h4><a name="TOC-Filters"></a>Filters</h4>
+<div><a href="http://jinja.pocoo.org/docs/templates/#filters">Filters</a> are very useful for transforming text functionally in Jinja, and can simplify code significantly. There are many <a href="http://jinja.pocoo.org/docs/templates/#builtin-filters">builtin filters</a>, often with powerful features, and you can write <a href="http://jinja.pocoo.org/docs/api/#writing-filters">custom filters</a>. In terms of use, you can either apply filters to variables, either in an expression expansion <code>{{ ... }}</code> or in a block control statement <code>{% ... %}</code>, or create a <a href="http://jinja.pocoo.org/docs/templates/#id7">filter section</a> to apply a filter to a portion of the template via <code>{% filter ... %}...{% endfilter %}</code>.</div>
+<div><br />
+</div>
+<div>Particularly useful filters for expression expansion include:</div>
+<div>
+<ul><li><code><a href="http://jinja.pocoo.org/docs/templates/#indent">indent</a>:</code> <code>indent, indent(8), indent(8, true)</code> – very useful for nested code via multi-line macros; see above.</li>
+<li><code><a href="http://jinja.pocoo.org/docs/templates/#join">join</a>:</code> <code>join(', ')</code> – very useful for parameter lists. This can also take an attribute name, so <code>join(', ', 'name')</code> will join the name attributes of the elements of the sequence.</li></ul>
+More rarely useful ones include:</div>
+<div>
+<ul><li><code><a href="http://jinja.pocoo.org/docs/templates/#wordwrap">wordwrap</a>:</code> <code>wordwrap(80, false)</code> – alternative to Python <a href="https://docs.python.org/2/library/textwrap.html"><code>textwrap</code></a> module.</li></ul>
+<div>Particularly useful filters for block control statements include:</div>
+<div>
+<ul><li><a href="http://jinja.pocoo.org/docs/templates/#dictsort"><code>dictsort</code></a><code>: {% for i in d|sort %}, {% for i in d|sort(false, 'name') %}</code></li>
+<li><a href="http://jinja.pocoo.org/docs/templates/#length"><code>length</code></a><code>: {% if foo|length &gt; 1 %}</code></li>
+<li><a href="http://jinja.pocoo.org/docs/templates/#sort"><code>sort:</code></a><code> {% for x in l|sort %}, </code><span style="color:rgb(0,96,0);font-family:monospace">{% for x in l|sort(attribute='name') %}</span> – note that given a Python set, it is clearer to convert it to a sorted list via <code>l = sorted(s)</code> in Python, but for unsorted lists, it's clearer to sort in Jinja.</li></ul>
+<h4><a name="TOC-Jinja-environment"></a>Jinja environment</h4>
+</div>
+<div>The overall setup of Jinja calls the <a href="http://jinja.pocoo.org/docs/api/#jinja2.Environment" style="font-size:10pt;background-color:transparent"><code>jinja2.Environment</code></a> constructor. There are a few flags which are very useful for whitespace control, and should be used (these need to be manually specified due to backwards compatibility); these are indicated below. After initializing the environment, if you have any custom filters, you'll need to add them to <a href="http://jinja.pocoo.org/docs/api/#jinja2.Environment.filters"><code>environment.filters</code></a>.</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>jinja_env = jinja2.Environment(</code></div>
+<div><code>    loader=jinja2.FileSystemLoader(templates_dir),</code></div>
+<div><code>    keep_trailing_newline=True,  # newline-terminate generated files</code></div>
+<div><code>    lstrip_blocks=True,  # so can indent control flow tags</code></div>
+<div><code>    trim_blocks=True)  # so don't need {%- -%} everywhere</code></div>
+</div>
+<div><code>jinja_env.filters.update({</code></div>
+<div><code>    'foo': foo,</code></div>
+<div><code>    # ...</code></div>
+<div><code>})</code></div>
+<div></div>
+</div>
+<br />
+<h2><a name="TOC-Style"></a>Style</h2>
+<h3><a name="TOC-Python-Jinja-split"></a>Python/Jinja split</h3>
+<div>In Jinja usage, the logic and code generation is not strictly split between the Python logic and the Jinja templates, and the boundary is sometimes a matter of taste.</div><div><br /></div><div>To understand a Jinja template, please open <i>both</i> the Jinja template <i>and</i> the Python script that computes the context and refer to both, preferably by mainly reading the Jinja, and referring to the Python when necessary to understand how variables are computed.</div><div><br /></div>
+<div>As a rule:</div>
+<ul><li>multi-line code should be in templates,</li>
+<li>components should be assembled in templates, and</li>
+<li>complex logic should be in Python.</li></ul>
+<div>Simple logic (list filtering, ternary operations, simple auxiliary variables) should be in templates, but complex logic (anything that doesn't fit in a single expression), should be in Python, and the Jinja side should just have a variable.</div>
+<div><br />
+</div>
+<div>As an example of the boundary is a method call. Unless there is complex logic, this should be assembled primarily in the template:</div>
+<div class="sites-codeblock sites-codesnippet-block" style="font-weight:normal"><code>{{method.namespace}}::{{method.name}}({{method.arguments | join(', ')}});</code></div>
+<div><br />
+</div>
+<div>By contrast, if there is complex logic, the logic should be in Python, and the template code should just contain a variable:</div>
+<div class="sites-codeblock sites-codesnippet-block" style="font-weight:normal"><code>{{method.call_expression}};</code></div>
+<div>Note that semicolons and linebreaks should be in the template, not the Python code!</div>
+<div><br />
+</div><div>For lists: simple iteration and filtering should be in Jinja, but list building or complex iteration should generally go in Python.</div><div><br /></div>
+<div>A good example of complex logic in the bindings generator is the expression for a Blink getter (method to call and arguments to pass), which is computed by <code>getter_expression()</code> in Python, and used as <code>{{attribute.cpp_value}}</code> in Jinja (so called because it might be <code>'resultValue'</code> instead, in cases where the value is stored in a local variable in the getter method).</div><h4><a name="TOC-Do-not-call-Python-functions-from-Jinja-except-custom-filters-"></a>Do not call Python functions from Jinja (except custom filters)</h4><div>Python functions should be called <i>in Python</i> to generate context values; this ensures a one-directional Python → Jinja pipeline. It is possible to pass Python functions as Jinja context values, and then call them in Jinja, but this makes the template hard to read and introduces a Python ⇄ Jinja cycle, which makes it harder to understand the code. This does create distance between computation and use (e.g., if there's a variable name in the template, and you want to compute a function call using that variable): if a Jinja context value should be computed in a certain way, adding a brief comment to that effect in the template is fine.</div><div><br /></div><div>Note that custom filters are Python functions, but they are intended to be called from Jinja, and are idiomatic.</div>
+<h3><a name="TOC-Python"></a>Python</h3>
+<h4><a name="TOC-One-dictionary-display-per-context-inline-expressions"></a>One dictionary display per context, inline expressions</h4>
+<div>Ideally, the Python logic for a given context will be a single <a href="http://docs.python.org/2/reference/expressions.html#dictionary-displays" style="color:rgb(85,26,139)">dictionary display</a> (like a dictionary literal, but keys and values can be expressions, not literals), with the keys being (string) literals and the values being Python expressions: the function is just <code>return {'bar': ..., 'foo': ..., ...}</code>. This means you can just look up the key in the context-generation code, and is very functional and flat (instead of building up the context in various functions, which makes lookup harder). In the bindings generator, <code>v8_methods</code>, <code>method_context</code> and <code>argument_context</code> (currently <code>generate_method</code> and <code>generate_argument</code>) are good examples: each corresponds to a single object type (<code>IdlOperation</code> and <code>IdlArgument</code>), and generates a dict, nested corresponding to the nesting of objects.</div>
+<div>
+<h4><a name="TOC-Logic-and-local-variables-before-display"></a>Logic and local variables before display</h4>
+<div>However, in some cases the code needs to do additional processing, not just produce a context value. In that case the additional logic should come <i>before</i> the display, and use local variables, which are then used as values in the dictionary display. For example, if there are side effects, this should come before the display: compute a local variable, test that variable and have side effects if necessary, then use the variable in the display (no local variable needed if value not needed in context, only side effects). A more complex case is when one context value is a combination of several others; in that case the individual values are computed before the display, stored in local variables, and then combined in the display.</div>
+<h4><a name="TOC-Separate-functions-if-necessary"></a>Separate functions if necessary</h4>
+<div>In some cases complex calculations are better factored into a separate function, with the main dictionary updated via <code>dict.update()</code>. If later calculations depend on earlier ones, the context computed so far can be passed in as an argument, and the dict updated in place. In the bindings generator a good example is the context for getters and setters for attributes: the logic is relative complicated, and depends on previously computed variables, so this is factored into separate functions, and the existing context dict is passed in as an argument, which is updated in place.</div>
+<h4><a name="TOC-Early-return-if-necessary"></a>Early return if necessary</h4>
+<div>In rare cases, the context-generation code will have an early return after the main display, and then additional processing afterwards.</div>
+</div>
+<h3><a name="TOC-Jinja"></a>Jinja</h3>
+<h4><a name="TOC-Keep-it-simple"></a>Keep it simple</h4>
+<div>Jinja templates are in a <a href="http://en.wikipedia.org/wiki/Domain-specific_language">domain-specific language</a> (DSL), which is not familiar to most developers. Thus try to keep it simple.</div>
+<h4><a name="TOC-Spacing"></a>Spacing</h4>
+<div>We use the following spacing:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{{foo}}</code></div>
+<div><code>{{foo | filter}}</code></div>
+<div><code>{% for i in x|filter %}</code></div>
+<div></div>
+</div>
+I.e., no spacing within <code>{{}}</code>, but do space around <code>|</code>, except in block control statements. This is the opposite of Jinja spec convention, which is <code>{{ foo }}</code> and <code>{{ foo|filter }}</code> – reasoning is that <code>{{}}</code> are functioning like parentheses or quotes, hence no spacing inside them; while <code>|</code> is functioning like a binary operator, like arithmetic operations, hence spaces around it. However, in block control statements <code>|</code> has higher precedence than the control flow keywords, and thus omitting spaces makes the precedence clearer.</div>
+<div>More pragmatically, <code>{{}}</code> is very widely used for variable substitution, hence want to keep it short and looking like a single unit, while usage of filters via <code>|</code> is logically complex, and thus should stick out visually, with the steps in the pipeline clearly separated. However, adding spaces within a block control statement makes it confusing, due to the spaces around the control flow keywords, and thus spaces around <code>|</code> should be omitted.<br />
+<h4><a name="TOC-set-if-simple-and-used-in-only-one-place"></a>set if simple and used in only one place</h4>
+<div>It is ok to use a <code>set</code> statement if a value is only useful in one place, and can be derived from existing data, which avoids cluttering the context display, but if a value is used multiple places or would require additional auxiliary variables just for it, it's better to compute it in the context display.</div>
+<h4><a name="TOC-Variables-should-be-complete-words-not-fragments"></a>Variables should be complete words, not fragments</h4>
+<div>Variables should be <i>complete words</i>, not fragments, notably not affixes (prefixes and suffixes).</div>
+<div>This is particularly important for literal values, due to searching, but also goes for variable values.</div>
+<div>Complete words are more legible, and can be searched for automatically.</div>
+<div>For example:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block" style="font-weight:normal">
+<div><code>{% set ref_ptr = 'RefPtrOrNull' if nullable else 'RefPtr' %}</code></div>
+<div><code>...</code></div>
+<div><code>...{{ref_ptr}}...</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>Compare to the use of fragments <b>(don't do this!):</b></div>
+<div style="font-weight:normal"></div>
+<div class="sites-codeblock sites-codesnippet-block" style="font-weight:normal">
+<div><code>{% set or_null = 'OrNull' if nullable else '' %}</code></div>
+<div><code>...</code></div>
+<div><code>...RefPtr{{or_null}}... // try grepping for "RefPtrOrNull"!</code></div>
+</div>
+<div><br />
+</div>
+<div>This also goes if the root itself is a variable: modify the variable via <code>set</code> instead of creating a new affix variable.</div>
+<div>This keeps the variable as a unit, and makes the substitution easier to read:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% set bar = bar + ('Constructor' if is_constructor else '') %}</code></div>
+<div><code>..., {{foo}}, {{bar}}, ...</code></div>
+<div>
+<div></div>
+</div>
+</div>
+<div><br />
+</div>
+Compare to the use of fragments <b>(don't do this!):</b><br />
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% set bar_suffix = 'Constructor' if is_constructor else '' %}</code></div>
+<div><code>..., {{foo}}, {{bar}}{{bar_suffix}}, ...</code></div>
+</div>
+<h4><a name="TOC-Name-variables-after-default-value"></a>Name variables after default value</h4>
+<div>A common use case is for a variable to have a default value, but sometimes have a different value, particularly an affix. This is easier to read if you name the variable after the default value, like:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>'foo': 'foo.bar' if bar else 'foo',</code></div>
+</div>
+<div>or:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code>{% set foo = 'foo.bar' if bar else 'foo' %}</code></div>
+</div>
+<div>...which can then be used as <code>{{foo}}</code> in templates, which mentally translates as "usually <code>foo</code>, but sometimes something else".</div>
+<h4><a name="TOC-Comment-end-of-long-blocks"></a>Comment end of long blocks</h4>
+<div>If a block is long, particularly if it is nested, please add a comment at the end to help clarify which block is ending; use the same content as the <code>if</code> condition or <code>for</code> list.</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>{% if foo %}</code></div>
+<div><code>...</code></div>
+<div>
+<div>
+<div><code>{% if bar == 'zork' %}</code></div>
+<div><code>...</code></div>
+<div><code>{% endif %}{# bar == 'zork' #}</code></div>
+<div></div>
+</div>
+</div>
+<div><code>...</code></div>
+<div><code>{% endif %}{# foo #}</code></div>
+<div></div>
+</div>
+<div><span style="background-color:transparent;font-size:10pt"><code>...</code></span></div>
+<div><span style="background-color:transparent;font-size:10pt"><code>{% for x in l %}</code></span></div>
+<div>
+<div><span style="background-color:transparent;font-size:10pt"><code>...</code></span></div>
+<div><code>{% endfor %}{# x in l #}</code></div>
+</div>
+</div>
+<div><br />
+</div>
+<div>Note that if there are nested blocks, there's no need to comment the end of a short inner block, but you should comment the outer block:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% if foo %}</code></div>
+<div><code>{% if bar %}</code></div>
+<div><code>...</code></div>
+<div><code>{% else %}</code></div>
+<div><code>...</code></div>
+<div><code>{% endif %}</code></div>
+<div><code>{% else %}{# foo #}</code></div>
+<div>
+<div><code>{% if bar %}</code></div>
+<div><code>...</code></div>
+<div><code>{% else %}</code></div>
+<div><code>...</code></div>
+<div><code>{% endif %}</code></div>
+<div><code>{% endif %}{# foo #}</code></div>
+</div>
+</div>
+<h4><a name="TOC-Use-implicit-False"></a>Use implicit <code>False</code></h4>
+<div>As in usual Python style (<a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=True/False_evaluations#True/False_evaluations">True/False evaluations</a>), you can use implicit <code>False</code>. <span style="background-color:transparent;font-size:10pt">Context variables can be used as both content (filled into expressions) and control (determining control flow); a common technique is to check for the existence of a content variable as a conditional, which avoids a separate boolean variable just for control. Compare </span><code style="background-color:transparent;font-size:10pt">{% if foo %}...{{foo}}...{% endif %}</code><span style="background-color:transparent;font-size:10pt"> to </span><span style="color:rgb(0,96,0);font-family:monospace;background-color:transparent;font-size:10pt">{% if is_foo %}...{{foo}}...{% endif %}</span><span style="background-color:transparent;font-size:10pt">.</span></div>
+<h4><a name="TOC-Whitespace"></a>Whitespace</h4>
+<div>Whitespace handling can be <i>very</i> fiddly, particularly around line breaks.</div>
+<div><br />
+</div>
+<div>First, make sure you've set up your Jinja environment with the whitespace control flags – <code>keep_trailing_newline, lstrip_blocks, trim_blocks</code> – this will ensure that whitespace will be generally sane, and you can use blocks without needing to worry about whitespace most of the time. In old code you'll often see lots of explicit <code>{%- ... -%}</code> which are not necessary with these flags.</div>
+<div><br />
+</div>
+<div>Secondly, it's easiest to define macros in a separate library, as this allows you to not worry about the whitespace caused by the macro definitions themselves, and also yields better factoring.</div>
+<div><br />
+</div>
+<div>The default behavior these flags give is to treat lines that only contain a block (possibly indented) as not there whitespace-wise. Thus:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>    {% if foo %}</code></div>
+<div><code>    ...</code></div>
+<div><code>    {% endif %}</code></div>
+<div></div>
+</div>
+<div>...will only output a single line, despite the 2 lines of (indented) block statements.</div>
+<div><br />
+</div>
+<div>Note however that expression evaluation in <code>{{ ... }}</code> are <i>not</i> trimmed; this is a particular issue for macros. Thus:</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>{{foo()}}</code></div>
+</div>
+<div>...<i>does</i> include a trailing newline, even if <code>foo()</code> evaluates to empty (<code>''</code>). Thus if you would like a section of the template to be omitted entirely in some cases, it is simplest to use a block, as in template inheritance.</div>
+<div><br />
+</div>
+<div>Manual whitespace handling can be specified with <code>{%-, -%}, {{-, -}},</code> to trim surrounding whitespace, and <code>{%+</code> to <i>not</i> strip a leading indent. Trimming can be very confusing, so it's generally best to only use it when there's a literal boundary (literal text that will be stripped until), not when next to another block or expression; this also means to strip at the innermost level.</div>
+<div><br />
+</div>
+<div>Cases where manual whitespace handling commonly occur:</div>
+<ul><li>In-line macros: end with <code>{%- endmacro %}</code>, or strip inside conditional block as <code>{%- else %}...{%- endif %}</code></li></ul>
+<div>For a macro that's expected to be used inline <span style="font-size:10pt;background-color:transparent">–</span><span style="font-size:10pt;background-color:transparent"> like </span><code style="font-size:10pt;background-color:transparent">a, {{f()}}, b</code><span style="font-size:10pt;background-color:transparent"> – you need to trim or omit the trailing newlines in the macro definition, otherwise it will include a newline when expanded. This can be done via </span><code style="font-size:10pt;background-color:transparent">{%-</code><span style="font-size:10pt;background-color:transparent"> as follows. Note that you only need to trim </span><i style="font-size:10pt;background-color:transparent">immediately after the newline,</i><span style="font-size:10pt;background-color:transparent"> not repeatedly.</span></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% macro f() %}</code></div>
+<div><code>...</code></div>
+<div><code>{%- endmacro %}</code></div>
+<div><br />
+</div>
+<div>
+<div><code>{% macro g() %}</code></div>
+<div><code>...</code></div>
+<div><code>{%- else %}</code></div>
+<div><code>...</code></div>
+<div><code>{%- endif %}</code></div>
+<div><code>{% endmacro %}</code></div>
+<div></div>
+</div>
+<div></div>
+</div>
+<br />
+<div>These are equivalent to omitting the line breaks, but allow more legible block positioning; omitting linebreaks yields the less legible:</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% macro foo() %}</code></div>
+<div><code>...</code><code>{% endmacro %}</code></div>
+<div><br />
+</div>
+<div><code>{% macro g() %}</code></div>
+<div><code>...{% else %}</code></div>
+<div><code>...{% endif %}</code></div>
+<div><code>{% endmacro %}</code></div>
+</div>
+</div>
+<ul><li>Block at start of line, keep indent: use <code>{%+</code></li></ul>
+<div>If you need to include an optional start of an indented line, use <code>{%+</code> to keep the initial indent:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>    ...</code></div>
+<div><code>    {%+ if foo %}... {% endif %}...</code></div>
+<div><code>    ...</code></div>
+</div>
+<ul><li>Split single line across multiple lines: avoid, use <code>{%- ... -%}</code> (<code>-</code> next to excess newline)</li></ul>
+<div>It's best to avoid complex conditional logic within a line. It's often simpler to set an auxiliary variable before the line and then just include that. Similarly, given multiple conditionals, such as an arguments list, it's often easier to have a list variable for the arguments and then build the arguments with <code>{{args | join(', ')}}</code> as in:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% set args = ['foo'] if foo else [] %}</code></div>
+<div><code>{% set args = args + ['bar'] %}</code></div>
+<div><code>{% set args = args + (['zork'] if zork else []) %}</code></div>
+<div><code>f({{args | join(', ')}});</code></div>
+</div>
+<div><br />
+</div>
+<div>
+However, if you wish to include the logic inline and split across multiple lines for legibility, the rule is: "use <code>-</code> next to the excess newline", making sure you're ultimately surrounded by literal text. For one-line conditionals, you just need <code>{%-</code> and <code>%-}</code> for the outermost tags. A common use is argument lists; note the spacing and comma usage.</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>f(</code></div>
+<div><code>    {%- if foo %}foo, {% endif -%}</code></div>
+<div><code>    bar</code></div>
+<div><code>    {%- if zork %}, zork{% endif -%}</code></div>
+<div><code>);</code></div>
+</div>
+<div><br />
+</div>
+The actual whitespace rules mean that you can omit some of these trim instructions (if there are consecutive blocks, for instance), but it is simpler and more robust to include them (this lets blocks be added and removed without worrying about whitespace, for instance). For extra-long lines where you want to split the condition and contents across separate lines, you should use <code>{%- ... -%}</code> for each block, to ensure trimming:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>f(</code></div>
+<div><code>{%- if very_long_condition_indeed -%}</code></div>
+<div><code>very_long_argument_name_with_bells_and_whistles</code></div>
+<div><code>{%- else -%}</code></div>
+<div><code>other_very_long_argument_name_with_bells_whistles_and_ribbons_too</code></div>
+<div><code>{%- endif -%}</code></div>
+<div><code>);</code></div>
+</div>
+<div><br />
+</div>
+<div>
+<ul><li><span style="font-size:10pt;background-color:transparent">Long block at start of line, keep indent and split: use <code>{%+ ... -%}</code></span></li></ul>
+The above two can be combined if you have a long block at the start of a line. This is the most complex case you are likely to encounter:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>    {%+ if foo %}[VeryLongExtendedAttributeName, AndThenAnotherOne] {% endif -%}</code></div>
+<div><code>    attribute DOMString name;</code></div>
+</div>
+<h4><a name="TOC-Treat-multi-line-macros-as-blocks-indent-trailing-semicolon-in-macro-"></a>Treat multi-line macros as blocks (indent, trailing semicolon <code>;</code> in macro)</h4>
+<div>If a macro expands to multiple lines of output in an indented block (common in generating C++ code), in order for the output to be properly indented:</div>
+<div>
+<ul><li>Do not indent the body of the macro.</li>
+<li>Use the <code><a href="http://jinja.pocoo.org/docs/templates/#indent">indent</a></code> filter at the call site.</li></ul>
+The indent defaults to adding an indent to all but the first line; use <code>indent(8)</code> (or <code>indent(12)</code> etc.) if you need to indent further, and <code>indentfirst=True</code> if you need to indent the first line as well, as <code>indent(8, True)</code> or <code>indent(indentfirst=True)</code>.<span style="background-color:transparent;font-size:10pt"> <font color="#006000" face="monospace">F</font></span><span style="background-color:transparent;font-size:10pt">or more complex logic, like not indenting preprocessor directives in C++, you'll need to write a <a href="http://jinja.pocoo.org/docs/api/#writing-filters">custom filter</a>.</span></div>
+<div><br /></div><div>For example, definition:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% macro f(x) %}</code></div>
+<div><code>{% if x %}</code></div>
+<div><code>a(x);</code></div>
+<div><code>b(x);</code></div>
+<div><code>{% else %}</code></div>
+<div><code>a(y);</code></div>
+<div><code>b(y);</code></div>
+<div><code>{% endif %}</code></div>
+<div><code>{% endmacro %}</code></div>
+<div></div>
+</div>
+<br />
+<div>Use:</div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>    ...</code></div>
+<div><code>    b();</code></div>
+<div><code>    {{f() | indent}}</code></div>
+<div><code>    c();</code></div>
+<div><code>    ...</code></div>
+</div>
+<h4><a name="TOC-Treat-one-line-macros-as-in-line-no-indent---to-strip-trailing-linebreak-semicolon-at-call-site-"></a>Treat one-line macros as in-line (no <code>indent</code>, <code>{%-</code> to strip trailing linebreak, semicolon <code>;</code> at call site)</h4>
+<div>Some macros generate exactly one line of content. These should be treated as in-line macros: they do not need an indent, you should strip the trailing linebreak in the macro, and any trailing context (notably a semicolon) should be at the call site. This simplifies both the macro and the call, improves consistency, and emphasizes that it is a one-line macro.</div>
+<div><span style="font-size:10pt;background-color:transparent"><br /></span></div><div><span style="font-size:10pt;background-color:transparent">For example, definition:</span></div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{% macro f(x) %}</code></div>
+<div><code>{% if x %}</code></div>
+<div><code>a(x)</code></div>
+<div><code>{%- else %}</code></div>
+<div><code>a(y)</code></div>
+<div><code>{%- endif %}</code></div>
+<div><code>{% endmacro %}</code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+Use:
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>    ...</code></div>
+<div><code>    b();</code></div>
+<div><code>    {{f()}};</code></div>
+<div><code>    c();</code></div>
+<div><code>    ...</code></div>
+</div>
+<h4><a name="TOC-C-code-generation"></a>C++ code generation</h4>
+<div>Templated code generation (esp. C++ code) is particularly complicated to read, since it requires following both the flow of the template and of the generated code.</div>
+<h4><a name="TOC-Don-t-mix-Jinja-templates-and-C-templates"></a>Don't mix Jinja templates and C++ templates</h4>
+<div>Jinja templates for generating C++ code, and C++ templates (in the usual sense) have the same effect: they are transformed into C++ code, which can then be compiled. These thus fill similar roles, and one can in principle use either for some purposes. I<span style="background-color:transparent;font-size:10pt">f a C++ template is only being used within Jinja-generated code, it is clearer to replace it with a Jinja template, so you don't need to keep track of 2 template systems at once.</span></div>
+<div>It is fine to use existing C++ templates that are used outside of the Jinja-generated code.</div>
+<h4><a name="TOC-Group-related-code-minimize-code-within-clauses"></a>Group related code, minimize code within clauses</h4>
+<div>As much as possible, group related code together, particularly by having variable definitions close to use, especially immediately before; and minimize code within template clauses, particularly by having more generic code and using auxiliary variables.</div>
+<div><br />
+</div>
+<div>For example:</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code>{# Bad #}</code></div>
+<div><code>T x = ...;</code></div>
+<div><code>...</code></div>
+<div><code>...</code></div>
+<div><code>{% if c %}</code></div>
+<div><code>f(x, g(...));</code></div>
+<div><code>{% else %}</code></div>
+<div><code>T y = h(...);</code></div>
+<div><code>f(x, y);</code></div>
+<div><code>{% endif %}</code></div>
+<div><br />
+</div>
+<div><code>{# Good #}</code></div>
+<div>
+<div><code>T x = ...;</code></div>
+<div><span style="background-color:transparent;font-size:10pt"><code>{% if c %}</code></span></div>
+<div><code>T y = g(...);</code></div>
+<div><span style="background-color:transparent;font-size:10pt"><code>{% else %}</code></span></div>
+<div><code>T y = h(...);</code></div>
+<div><span style="background-color:transparent;font-size:10pt"><code>{% endif %}</code></span></div>
+</div>
+<div><code>f(x, y);</code></div>
+</div>
+<h2><a name="TOC-Tips"></a>Tips</h2>
+<h3><a name="TOC-Syntax-highlighting"></a>Syntax highlighting</h3>
+<div>Syntax highlighting for Jinja is tricky, because ideally one wants highlighting for both languages: the target language (e.g., C++, HTML) and Jinja. Indeed, ideally one would have separate highlight colors for the target language and for Jinja (e.g., bold, inverse, or different background). This can be done, with some care.</div>
+<div><br />
+</div>
+<div>For simple editing, it's fine to just use the highlighting of the target language (this is a key reason to use the extensions of the underlying file type for templates) and deal with Jinja code not being highlighted or appearing broken, but if you edit templates frequently, proper syntax highlighting is very helpful.</div>
+<h4><a name="TOC-vim"></a>vim</h4>
+<div>In Vim, one can achieve nested <a href="http://vimdoc.sourceforge.net/htmldoc/syntax.html">syntax highlighting</a> of Jinja via the following 4 steps:</div>
+<div>
+<ol><li><span style="background-color:transparent;font-size:10pt">Download <a href="http://www.vim.org/scripts/download_script.php?src_id=8666">jinja.syntax</a> file, place in <code>~/.vim/syntax</code><br />
+(from </span><a href="http://www.vim.org/scripts/script.php?script_id=1856">Jinja : adds jinja highlighting support to vim</a>, link is to v1.1; you might want to make one minor update, but otherwise do not need to edit this file)</li>
+<li><span style="background-color:transparent;font-size:10pt">Add nested highlighting function to <code>~/.vimrc</code><br />
+(per below; </span>follows “<a href="http://vim.wikia.com/wiki/Different_syntax_highlighting_within_regions_of_a_file">Different syntax highlighting within regions of a file</a>”, with some modifications)</li>
+<li><span style="background-color:transparent;font-size:10pt">Add auto commands to call this function to <code>~/.vimrc</code><br />
+(depends on filename convention; sample below)</span></li>
+<li><span style="background-color:transparent;font-size:10pt"><i>(optional)</i> Add separate Jinja-specific highlighting groups.</span></li>
+</ol>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>" Per:</code></div>
+<div><code>" Different syntax highlighting within regions of a file</code></div>
+<div><code>" http://vim.wikia.com/wiki/Different_syntax_highlighting_within_regions_of_a_file</code></div>
+<div><code>" Important changes:</code></div>
+<div><code>" * Add keepend, otherwise nested C++/Jinja doesn't work!</code></div>
+<div><code>" * Add containedin=ALL, so also highlighted in C comments and strings.</code></div>
+<div><code>" * Remove the textSnipHl section (since want to include the delimiters</code></div>
+<div><code>"   for Jinja).</code></div>
+<div><code>"</code></div>
+<div><code>" ...and using syntax from:</code></div>
+<div><code>" http://www.vim.org/scripts/script.php?script_id=1856</code></div>
+<div><br />
+</div>
+<div><code>function! TextEnableCodeSnip(filetype,start,end) abort</code></div>
+<div><code>  let ft=toupper(a:filetype)</code></div>
+<div><code>  let group='textGroup'.ft</code></div>
+<div><code>  if exists('b:current_syntax')</code></div>
+<div><code>    let s:current_syntax=b:current_syntax</code></div>
+<div><code>    " Remove current syntax definition, as some syntax files (e.g. cpp.vim)</code></div>
+<div><code>    " do nothing if b:current_syntax is defined.</code></div>
+<div><code>    unlet b:current_syntax</code></div>
+<div><code>  endif</code></div>
+<div><code>  execute 'syntax include @'.group.' syntax/'.a:filetype.'.vim'</code></div>
+<div><code>  try</code></div>
+<div><code>    execute 'syntax include @'.group.' after/syntax/'.a:filetype.'.vim'</code></div>
+<div><code>  catch</code></div>
+<div><code>  endtry</code></div>
+<div><code>  if exists('s:current_syntax')</code></div>
+<div><code>    let b:current_syntax=s:current_syntax</code></div>
+<div><code>  else</code></div>
+<div><code>    unlet b:current_syntax</code></div>
+<div><code>  endif</code></div>
+<div><code>  execute 'syntax region textSnip'.ft.'</code></div>
+<div><code>  \ start="'.a:start.'" end="'.a:end.'"</code></div>
+<div><code>  \ keepend</code></div>
+<div><code>  \ containedin=ALL</code></div>
+<div><code>  \ contains=@'.group</code></div>
+<div><code>endfunction</code></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>
+<div>To automatically highlight Jinja files, add auto commands to turn on the nested highlighting. The following assumes that files in a directory named <span style="background-color:transparent;font-size:10pt"><code>templates</code></span><span style="background-color:transparent;font-size:10pt"> are Jinja templates:</span></div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>" Jinja template highlighting</code></div>
+<div><code>" Default delimiters are {{ }}, {% %}, and {# #}, per:</code></div>
+<div><code>" http://jinja.pocoo.org/docs/templates/</code></div>
+<div><code>au BufNewFile,BufRead */templates/* call TextEnableCodeSnip('jinja', '{{', '}}')</code></div>
+<div><code>au BufNewFile,BufRead */templates/* call TextEnableCodeSnip('jinja', '{%', '%}')</code></div>
+<div><code>au BufNewFile,BufRead */templates/* call TextEnableCodeSnip('jinja', '{#', '#}')</code></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div><span style="font-size:10pt;background-color:transparent"><a href="http://jinja.pocoo.org/docs/changelog/#version-2-7">Jinja 2.7</a> slightly changed the syntax, adding <code>{%+ ... %}</code>, so the syntax file needs a slight change (add <code>+\?</code> two places, following <code>-\?</code> </span><span style="background-color:transparent">– beware of vim's idiosyncratic regex syntax</span><span style="font-size:10pt;background-color:transparent">). The following patch applies this:</span></div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code>--- 1.1/jinja.vim</code></div>
+<div><code>+++ 1.2/jinja.vim</code></div>
+<div><code>@@ -58 +58 @@</code></div>
+<div><code>-syn region jinjaTagBlock matchgroup=jinjaTagDelim start=/{%-\?/ end=/-\?%}/ skipwhite containedin=ALLBUT,jinjaTagBlock,jinjaVarBlock,jinjaRaw,jinjaString,jinjaNested,jinjaComment</code></div>
+<div><code>+syn region jinjaTagBlock matchgroup=jinjaTagDelim start=/{%-\?+\?/ end=/-\?%}/ skipwhite containedin=ALLBUT,jinjaTagBlock,jinjaVarBlock,jinjaRaw,jinjaString,jinjaNested,jinjaComment</code></div>
+<div><code>@@ -71 +71 @@</code></div>
+<div><code>-syn match jinjaStatement containedin=jinjaTagBlock contained skipwhite /\({%-\?\s*\)\@&lt;=\&lt;[a-zA-Z_][a-zA-Z0-9_]*\&gt;\(\s*[,=]\)\@!/</code></div>
+<div><code>+syn match jinjaStatement containedin=jinjaTagBlock contained skipwhite /\({%-\?+\?\s*\)\@&lt;=\&lt;[a-zA-Z_][a-zA-Z0-9_]*\&gt;\(\s*[,=]\)\@!/</code></div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<div>You can apply this via <span style="font-size:10pt;background-color:transparent"><code>cd ~/.vim/syntax &amp;&amp; patch -p1</code> by just copy-pasting (hit <code>^D^D</code> to terminate), or use a temporary file as in:</span></div>
+<div><span style="font-size:10pt;background-color:transparent">
+<div class="sites-codeblock sites-codesnippet-block"><code>cd ~/.vim/syntax &amp;&amp; patch -p1 &lt; /tmp/jinja.vim.1_1-1_2.diff</code></div>
+</span></div>
+<div><br />
+</div>
+<div>Lastly, if you wish to have separate highlighting for Jinja (e.g., have C++ comments and Jinja comments highlighted differently), add <a href="http://vimdoc.sourceforge.net/htmldoc/syntax.html#:highlight"><code>highlight</code></a> commands for Jinja-specific syntax <a href="http://vimdoc.sourceforge.net/htmldoc/syntax.html#group-name" style="background-color:transparent;font-size:10pt">groups</a><span style="background-color:transparent;font-size:10pt"> (listed in jinja.vim, particularly the last block), such as </span><span style="background-color:transparent;font-size:10pt"><code>jinjaComment</code>. Note that these must be specified manually (not just "copy existing group and change one trait"), since </span><span style="background-color:transparent;font-size:10pt">Vim syntax highlighting does not support</span><span style="background-color:transparent;font-size:10pt"> such inheritance.</span></div>
+<h4><a name="TOC-Emacs"></a>Emacs</h4>
+<div><a href="https://github.com/paradoxxxzero/jinja2-mode">jinja2-mode</a> is a major mode for Jinja; <span style="font-size:10pt;background-color:transparent"><a href="http://web-mode.org/">web-mode</a> may also work.</span></div>
+<div><span style="background-color:transparent">See <a href="http://www.emacswiki.org/emacs/MultipleModes">Multiple Modes</a> for libraries providing multiple major modes in a single buffer.</span></div>
+<div>FIXME: do these work, say for C++ code?</div>
+<h2><a name="TOC-Performance"></a>Performance</h2>
+<div>
+<div><span style="background-color:transparent;font-size:10pt">http://jinja.pocoo.org/docs/api/#bytecode-cache</span></div>
+<div>https://groups.google.com/forum/#!topic/pocoo-libs/dIsNICT4j2Q</div>
+<div>https://gist.github.com/voscausa/9055838</div>
+<div>http://jinja.pocoo.org/docs/api/#jinja2.Environment.compile_templates</div>
+</div>
+<h2><a name="TOC-External-links"></a>External links</h2>
+<div><br />
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/jinja">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9iTJ6sDwSuhbd5q1XrEq0WfFukr2WwHZzPPJuP8u8IwLO6SGOGaRjLjrvwsubI2fxKRU8AL56Gg0yIuRCClg6_ga31l2ivaTgEnTJ7v8qt1LAmAEr/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

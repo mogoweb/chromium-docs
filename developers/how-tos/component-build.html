@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/how-tos","deleted":false,"title":"How-Tos","dir":"ltr"},{"path":"/developers/how-tos/component-build","deleted":false,"title":"Component build / Shared Library / Multi-DLL build","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/how-tos/component-build\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/how-tos","parentWuid":"wuid:gx:21c4408ba07e936a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Component build / Shared Library / Multi-DLL build","locale":"en","wuid":"wuid:gx:22209db0759c59a6","revision":30,"path":"/developers/how-tos/component-build","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"component-build","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Component build / Shared Library / Multi-DLL build - The Chromium Projects" />
+<meta itemprop="name" content="Component build / Shared Library / Multi-DLL build - The Chromium Projects" />
+<meta property="og:title" content="Component build / Shared Library / Multi-DLL build - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Component build / Shared Library / Multi-DLL build - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../developers.1.html" dir="ltr">For Developers</A>‎ &gt; ‎<A href="../how-tos.1.html" dir="ltr">How-Tos</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Component build / Shared Library / Multi-DLL build</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>There is an option to build chrome using multiple shared libraries instead of the single library that we have on a regular build. This mode is intended to ease development by making less demands on the compiler and linker as they have to deal with smaller final output files, and allow faster build times when making small localized changes. Debug time can also improve given that the symbol files are substantially smaller.</div><div><br />
+</div>
+<div>This mode is also known as "Shared build" or "Multi-DLL build".</div>
+<div><br />
+</div>
+<div><span style="font-size:20px;font-weight:bold">Setup</span></div>
+<div>
+<div><br />
+</div>
+<div>The build mode is selected by gyp during the project generation phase. There are <b>a few ways</b> to tell gyp to generate projects for a component build:</div>
+<div><br />
+</div>
+<div>1. Add a file named <b>chromium.gyp_env</b> next to your /src tree in the same directory as your .gclient file, eg. /checkout_root/chromium.gyp_env. </div><div>    Add the following contents and then regenerate projects by running "gclient runhooks":</div><div><br /></div><div><div><div style="min-height:100%;font-family:Times New Roman;font-size:medium"><div style="width:700px"><div style="min-height:1px;width:650px"><table cellpadding="0" style="padding:0px;border-collapse:collapse;width:650px"><tbody><tr><td style="margin:0px;font-family:arial,sans-serif;padding:0px"><div style="padding:0px 0px 1px"><div style="padding:4px 8px"><div style="clear:both;padding-bottom:0px"><div style="margin-bottom:10px;border-width:0px 1px 1px;border-style:solid;border-color:rgb(239,239,239) rgb(239,239,239) rgb(226,226,226);width:600px"><div style="padding-top:3px;border:1px solid rgb(188,188,188)"><div style="font-size:13px;margin:5px 15px;padding-bottom:20px"><span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate">{'GYP_DEFINES': 'component=shared_library'} # use space to delimit additional defines.</span></div></div></div></div></div></div></td></tr></tbody></table></div></div></div></div><div>   chromium.gyp_env applies only to the current tree. This is useful if you wish to have multiple checkouts.    </div></div><div><span style="background-color:transparent;font-size:10pt">  </span></div></div><div>
+<div>2. Add the following line to your <b>~/.gyp/include.gypi</b> (you might need to create that directory and file if they don't already exist) and regenerate projects:</div>
+<div><br />
+</div>
+<div>
+<div style="min-height:100%;font-family:Times New Roman;font-size:medium">
+<div style="width:700px">
+<div>
+<div>
+<div>
+<div style="min-height:1px;width:650px">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div style="color:rgb(0,0,0)">
+<table cellpadding="0" style="padding:0px;border-collapse:collapse;background-color:rgb(255,255,255);width:650px">
+<tbody>
+<tr>
+<td style="margin:0px;font-family:arial,sans-serif;vertical-align:top;padding:0px">
+<div style="padding:0px 0px 1px">
+<div>
+<div style="color:rgb(0,0,0);padding:4px 8px">
+<div>
+<div>
+<div style="clear:both;padding-bottom:0px">
+<div style="margin-bottom:10px;border-width:0px 1px 1px;border-style:solid;border-color:rgb(239,239,239) rgb(239,239,239) rgb(226,226,226);width:600px">
+<div style="padding-top:3px;background-color:rgb(255,255,255);border:1px solid rgb(188,188,188)">
+<div>
+<div>
+<div>
+<div>
+<div style="font-size:13px;margin:5px 15px;padding-bottom:20px">
+<div>
+<div>
+<div><span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate">{'variables': {'component': 'shared_library'}}</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></td></tr></tbody></table></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div>   <span style="background-color:transparent;font-size:10pt">Note: this will affect all your chromium projects. It also changes the build mode when you run "gclient sync"</span></div>
+<div><div><div><br /></div><div>3. Override the "component" variable with "shared_library" when running gyp:</div><div><br /></div><div><div style="min-height:100%;font-family:Times New Roman;font-size:medium"><div style="width:700px"><div style="min-height:1px;width:650px"><table cellpadding="0" style="padding:0px;border-collapse:collapse;width:650px"><tbody><tr><td style="margin:0px;font-family:arial,sans-serif;padding:0px"><div style="padding:0px 0px 1px"><div style="padding:4px 8px"><div style="clear:both;padding-bottom:0px"><div style="margin-bottom:10px;border-width:0px 1px 1px;border-style:solid;border-color:rgb(239,239,239) rgb(239,239,239) rgb(226,226,226);width:600px"><div style="padding-top:3px;border:1px solid rgb(188,188,188)"><div style="font-size:13px;margin:5px 15px;padding-bottom:20px"><span style="font-family:Arial,Verdana,sans-serif;border-collapse:separate">python build\gyp_chromium -D"component=shared_library"</span></div></div></div></div></div></div></td></tr></tbody></table></div></div></div></div></div><div></div>
+</div>
+<div><br /></div><div><span style="font-size:10pt">Note: you may need to do a "clean" when switching between non-Component/Component builds.</span></div>
+<h2><a name="TOC-Common-Issues"></a>Common Issues</h2>
+<h3><a name="TOC-My-change-breaks-the-shared-build-bot-but-the-other-bots-are-happy-how-do-I-fix-it-"></a>My change breaks the shared build bot, but the other bots are happy; how do I fix it?</h3>
+<div>1. The most common reason for this to happen is modifying a project in a way that creates a new dependency but failing to declare that dependency in a gyp file. The rule is actually quite simple: if project B uses code implemented by project A, there should be an explicit statement indicating that dependency.</div>
+<div><br />
+</div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>For example, the following error means that the project libphonenumber is not declaring the dependency on dynamic_annotations:</div>
+<div><br />
+</div>
+<span style="font-family:Courier New,courier,monotype">libphonenumber.lib(phonenumberutil.obj) :<font color="red">error LNK2019</font>: unresolved external symbol _AnnotateCondVarSignal referenced in function "private: static class i18n::phonenumbers::PhoneNumberUtil * __cdecl Singleton&lt;class i18n::phonenumbers::PhoneNumberUtil,struct DefaultSingletonTraits&lt;class i18n::phonenumbers::PhoneNumberUtil&gt;,class i18n::phonenumbers::PhoneNumberUtil&gt;::get(void)" (?get@?$Singleton@VPhoneNumberUtil@phonenumbers@i18n@@U?$DefaultSingletonTraits@VPhoneNumberUtil@phonenumbers@i18n@@@@V123@@@CAPAVPhoneNumberUtil@phonenumbers@i18n@@XZ)</span>
+<div><br />
+</div>
+<div>Even if it doesn't looks like it, this error also means that  libphonenumber is not declaring the dependency on base:</div>
+<div><br />
+</div>
+<div><span style="font-family:Courier New,courier,monotype">base.lib(base.dll) :<font color="red">error LNK2005</font>: "public: class std::basic_ostream&lt;char,struct std::char_traits&lt;char&gt; &gt; &amp; __thiscall logging::LogMessage::stream(void)" (?stream@LogMessage@logging@@QAEAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@XZ) already defined in libphonenumber.lib(regexp_adapter_icuregexp.obj)</span></div>
+</blockquote>
+<div>
+<div><br />
+</div>
+<div>2. Another common error is neglecting to export symbols for a component with consumers in other libraries. Most modules define a set of *_EXPORT preprocessor macros used to decorate public API.</div>
+<div><br />
+</div>
+</div>
+<blockquote style="margin:0pt 0pt 0pt 40px;border:medium none;padding:0px">
+<div>
+<div>For example, see the base module's <a href="http://src.chromium.org/viewvc/chrome/trunk/src/base/base_export.h?view=markup">src/base/base_export.h</a> and the use of BASE_EXPORT for exposed classes and functions in <a href="http://src.chromium.org/viewvc/chrome/trunk/src/base/logging.h?view=markup">src/base/logging.h</a></div>
+</div>
+<div>
+<div><br />
+</div>
+</div>
+<div><font face="'courier new', monospace">BASE_EXPORT void SetMinLogLevel(int level);</font></div>
+<div><font face="'courier new', monospace">...</font></div>
+<div><font face="'courier new', monospace">class BASE_EXPORT LogMessage {</font></div>
+<div><font face="'courier new', monospace">...</font></div>
+</blockquote>
+<div><br />
+<div>3. Switching from a "regular" build to a shared build basically invalidates any previously compiled code so a clean build is required.</div>
+<h3><a name="TOC-My-version-of-chrome-fails-to-run-on-another-machine"></a>My version of chrome fails to run on another machine</h3>
+<div>Remember that now you not only have to copy the regular files of a shipping build, but also all the intermediate libraries (base.dll, v8.dll etc). Furthermore, the run-time libraries also have to be present on the target machine. Yes, this is a Windows specific issue for the most part.</div>
+<div><br />
+</div>
+<div>We need the same CRT files installed on the target computer. For release builds, Microsoft has downloadable packages that install various CRTs, as they are supposed to coexist on the WinSxS folder. Debug versions of the CRT are not redistributable so either Visual Studio is installed on the target machine, or the files are copied from the Visual Studio installation folder to the same directory that contains chrome.exe on the target. See <a href="http://msdn.microsoft.com/en-us/library/ms235291(VS.80).aspx">Deploying Visual C++ library DLLs as private assemblies</a> for the second option.</div><div><br /></div><div>However, just copying the CRT files doesn't work as advertised due to a version mismatch. There are <b>two ways</b> to fix the problem:</div><div><br /></div><div>1. Open one of the generated DLL files with Visual Studio (for example base.dll). Inspect the resources of the file, and take note of the CRT version that is declared in the embedded manifest. Edit the manifest file copied from the CRT directory in the target machine, and replace the version number there with the number embedded into the DLLs that we build. This has to be done for every new target machine each time the CRT version is updated, for instance by a new service pack (not very often).</div><div><br /></div><div>This may go from something like</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div>name="Microsoft.VC90.DebugCRT" version="9.0.30729.4148"</div></div></blockquote><div><br /></div>To something like<div><br /></div><div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div>name="Microsoft.VC90.DebugCRT" version="9.0.21022.8"</div></blockquote></div><div><br /></div><div>Note that the version number will go backwards.<br /><div><div><br /></div><div>2. Edit common.gypi, and add a new definition for the shared build: <span style="font-family:Consolas,Courier,monospace;text-align:left">_BIND_TO_CURRENT_CRT_VERSION=1</span></div><div>The downside of this approach is that it may backfire if there is a new version of the CRT installed on the target machine, for instance if Visual Studio is installed and the version is not exactly the same one that was used on the development machine. In other words, this approach is the simplest one for a developer to test a build, but it doesn't work that well for the bots. Don't forget to rebuild everything after adding the new definition.</div><div><br /></div><div>The change to common.gypi looks something like this:</div><div><br /></div></div><blockquote style="margin:0 0 0 40px;border:none;padding:0px"><div><div><div>@@ -1025,7 +1025,13 @@</div></div></div><div><div><div>         'defines': ['CHROMIUM_BUILD'],</div></div></div><div><div><div>       }],</div></div></div><div><div><div>       ['component=="shared_library"', {</div></div></div><div><div><div>-        'defines': ['COMPONENT_BUILD'],</div></div></div><div><div><div>+        'defines': [</div></div></div><div><div><div>+          'COMPONENT_BUILD',</div></div></div><div><div><div>+          # This makes it easier to copy files from a development machine</div></div></div><div><div><div>+          # to a test machine. The downside is that the CRT has to be updated</div></div></div><div><div><div>+          # on the test machine if it changes on the development one.</div></div></div><div><div><div>+          '_BIND_TO_CURRENT_CRT_VERSION=1',</div></div></div><div><div><div>+        ],</div></div></div><div><div><div>       }],</div></div></div><div><div><div>       ['component=="shared_library" and incremental_chrome_dll==1', {</div></div></div></blockquote><div><br /></div><h3><a name="TOC-What-should-I-know-about-when-working-on-Chrome-s-installer-for-Windows-"></a>What should I know about when working on Chrome's installer for Windows?</h3><div>The Windows installer for Chrome gets tripped up by the component=shared_library build in many ways. Mostly everything is supported now, but use a component=static_library build if you prefer a non-ginormous mini_installer.exe that more precisely reproduces behaviour of real Chrome installs.</div><div>
+<h2><a name="TOC-Creating-New-Components"></a>Creating New Components</h2>
+<div>In order to build some existing part of the code into a separate dynamic library, the first thing to do is to make sure that there is a relatively clean set of dependencies and ideally a limited interface exposed to other parts of the code.</div>
+<div><br />
+</div>
+<div>A common pattern for a viable target (teleporter) looks something like this:</div>
+<div><br />
+</div>
+<div>src/base</div>
+<div>src/crypto</div>
+<div>src/teleporter/common</div>
+<div>src/teleporter/ui</div>
+<div>src/teleporter/power_converter</div>
+<div>src/teleporter/laser_controller</div>
+<div>src/teleporter/modulator</div>
+<div>src/teleporter/demodulator</div>
+<div>src/teleporter/integration_tests</div>
+<div>src/third_party/scanner</div>
+<div><br />
+</div>
+<div>Most likely, each of these directories generates a static library, and the current final executable (chrome.dll) links against most of these libraries and the rest of the code. The important part about that is that more often that not, there are hidden dependencies that are masked by the current process, and the build works just by the fact that the linker has visibility over all included static libraries.</div>
+<div><br />
+</div>
+<div>Let's assume for a second that teleporter/modulator depends on third_party/scanner. If there is some other piece of code linked into chrome.dll that also uses third_party/scanner, things may go wrong if we just have that static library linked with teleporter.dll and chrome.dll: if the library only performs computation, it may be fine to have some small code duplication, but if the library performs IO, we may end up with corruption due to two global objects in the same process that don't know about each other.</div>
+<div><br />
+</div>
+<div>In other words, it is likely that before attempting to build teleoprter.dll, we need to have base, crypto and scanner, all building as a shared library.</div>
+<div><br />
+</div>
+<div>The next thing to consider is how do we want to break up this project: we have at least 6 static libraries here, and it would probably be inconvenient to end up with 7 DLLs for the teleporter. It may make more sense to have a single resulting DLL, but then we have the problem of merging the current static targets into a single target (at the gyp level), something currently not supported by gyp, or we could simply eliminate most of the targets altogether by hand, from every build configuration, at the cost of ending up with large target descriptions and maybe too little granularity for project settings (warning silencing or something like that).
+</div>
+<div><br />
+</div>
+<div>The final point to consider is how to export the actual interface for the module, and the interaction with tests.</div>
+<div><br />
+</div>
+<div>We want to have unit tests for every piece of code that we write, and tests often end up touching internal classes or helpers that are not really intended to be used by consumers. We could also have a very simple "public" interface for the consumer, but a good number of implementation specific classes that we want to test. Once we have teleporter.dll, teleporter_unittests will only be able to see whatever code is explicitly exported from the library, and having a satatic version of the code to be linked against the different tests would end up almost doubling the size of the code that we compile.</div>
+<div><br />
+</div>
+<div>The current solution is to have multiple definition of the export macros, so that at least someone reading the code will see that a given class or method is exported for the unit tests and not because it is intended to be used by consumers. See for example <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/net_export.h?view=markup">src/net/base/net_export.h</a></div>
+<div><br />
+</div>
+<div>The last thing to do is to go through the code, annotating the public and testing API, building all the unit tests from this particular code, and finally moving into the consumers, making sure that all targets work correctly.</div>
+</div></div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/how-tos/component-build">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq96LOxeQ76DmlA1z1kFOdFXCR_H8a8fmQoQ-CTpFFaBoEoRMgWsT4kPFY-1g_8vLObCLWfx3ZuPOFLK7vfY9uMWX1mZjLCgLyA7yyoa86ZHPzbPTQd/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

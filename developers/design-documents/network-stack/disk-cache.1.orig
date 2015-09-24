@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/network-stack","deleted":false,"title":"Network Stack","dir":"ltr"},{"path":"/developers/design-documents/network-stack/disk-cache","deleted":false,"title":"Disk Cache","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/disk-cache\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents/network-stack","parentWuid":"wuid:gx:1e5bf38b977efb4d","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Disk Cache","locale":"en","wuid":"wuid:gx:2d28c4236c1be185","revision":45,"path":"/developers/design-documents/network-stack/disk-cache","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"disk-cache","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Disk Cache - The Chromium Projects" />
+<meta itemprop="name" content="Disk Cache - The Chromium Projects" />
+<meta property="og:title" content="Disk Cache - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Disk Cache - The Chromium Projects</title>
+<meta itemprop="image" content="https://www.chromium.org/_/rsrc/1292454665609/developers/design-documents/network-stack/disk-cache/alloc2.PNG" />
+<meta property="og:image" content="https://www.chromium.org/_/rsrc/1292454665609/developers/design-documents/network-stack/disk-cache/alloc2.PNG" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎<A href="/developers/design-documents/network-stack" dir="ltr">Network Stack</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Disk Cache</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="#TOC-External-Interface"><strong>2 </strong>External Interface</a></li><li class="goog-toc"><a href="#TOC-Disk-Structure"><strong>3 </strong>Disk Structure</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Cache-Address"><strong>3.1 </strong>Cache Address</a></li><li class="goog-toc"><a href="#TOC-Index-File-Structure"><strong>3.2 </strong>Index File Structure</a></li><li class="goog-toc"><a href="#TOC-Block-File-Structure"><strong>3.3 </strong>Block File Structure</a></li><li class="goog-toc"><a href="#TOC-Cache-Entry"><strong>3.4 </strong>Cache Entry</a></li><li class="goog-toc"><a href="#TOC-The-Big-Picture"><strong>3.5 </strong>The Big Picture</a></li></ol></li><li class="goog-toc"><a href="#TOC-Implementation-Notes"><strong>4 </strong>Implementation Notes</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Lower-Interface"><strong>4.1 </strong>Lower Interface</a></li><li class="goog-toc"><a href="#TOC-Eviction"><strong>4.2 </strong>Eviction</a></li><li class="goog-toc"><a href="#TOC-Buffering"><strong>4.3 </strong>Buffering</a></li><li class="goog-toc"><a href="#TOC-Deleting-Entries"><strong>4.4 </strong>Deleting Entries</a></li><li class="goog-toc"><a href="#TOC-Enumerations"><strong>4.5 </strong>Enumerations</a></li><li class="goog-toc"><a href="#TOC-Sparse-Data"><strong>4.6 </strong>Sparse Data</a></li><li class="goog-toc"><a href="#TOC-Dedicated-Thread"><strong>4.7 </strong>Dedicated Thread</a></li></ol></li><li class="goog-toc"><a href="#TOC-Data-Integrity"><strong>5 </strong>Data Integrity</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<div>
+<p>The disk cache stores resources fetched from the web so that
+they can be accessed quickly at a latter time if needed. The main
+characteristics of Chromium disk cache are:</p>
+<ul><li>The cache should not grow unbounded so there
+must be an algorithm for deciding when to remove old entries.</li>
+<li><span style="font-family:Symbol"><span> </span></span>While it is not critical to lose some data from
+the cache, having to discard the whole cache should be minimized. The current
+design should be able to gracefully handle application crashes, no matter
+what is going on at that time, only discarding the resources that were open at that time. However, if the whole computer crashes while we are
+updating the cache, everything on the cache probably will be discarded.</li>
+<li>Access to previously stored data should be
+reasonably efficient, and it should be possible to use synchronous or
+asynchronous operations.</li>
+<li>We should be able to avoid conflicts that
+prevent us from storing two given resources simultaneously. In other words, the design should avoid cache trashing.<br />
+</li>
+<li>It should be possible to remove a given entry
+from the cache, and keep working with a given entry while at the same time
+making it inaccessible to other requests (as if it was never stored).</li>
+<li>The cache should not be using explicit multithread synchronization because it will always be called from the same thread. However,
+callbacks should avoid reentrancy problems so they must be issued through the
+thread's message loop.</li></ul>
+<div>A <a href="https://www.chromium.org/developers/design-documents/network-stack/disk-cache/disk-cache-v3">new version of the cache</a> is under development, and some sections of this documents are going to be stale soon. In particular, the description of a cache entry, and the big picture diagram (sections 3.4 and 3.5) are only valid for files saved with version 2.x</div>
+<div><br />
+</div>
+<div>Note that on Android we don't use this implementation; we use the <a href="https://www.chromium.org/developers/design-documents/network-stack/disk-cache/very-simple-backend">simple cache</a> instead.</div>
+<h2><a name="TOC-External-Interface"></a>External Interface</h2>
+<p>Any implementation of Chromium's cache exposes two interfaces: <span style="font-family:courier new,monospace">disk_cache::Backend</span> and <span style="font-family:courier new,monospace">disk_cache::Entry</span>. (see <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/disk_cache/disk_cache.h?view=markup"><span style="font-family:courier new,monospace">src/net/disk_cache/disk_cache.h</span></a>). The <span style="font-weight:bold">Backend</span> provides methods to
+enumerate the resources stored on the cache (a.k.a Entries), open old entries
+or create new ones etc. Operations specific to a given resource are
+handled with the <span style="font-weight:bold">Entry</span> interface.</p>
+<p>An entry is identified by its key, which is just the name of
+the resource (for example <span style="font-style:italic">http://www.google.com/favicon.ico</span> ).
+Once an entry is created, the data for that particular resource is
+stored in separate chunks or data streams: one for the HTTP headers and another
+one for the actual resource data, so the index for the required stream is an
+argument to the <span style="font-family:courier new,monospace">Entry::ReadData</span> and <span style="font-family:courier new,monospace">Entry::WriteData</span> methods.</p>
+<h2><a name="TOC-Disk-Structure"></a>Disk Structure</h2>
+<p>All the files that store Chromium’s disk cache live in a
+single folder (you guessed it, it is called <span style="font-style:italic">cache</span>), and every file inside that
+folder is considered to be part of the cache (so it may be deleted by Chromium
+at some point!).</p>
+<p>Chromium uses at least five files: one <span style="font-weight:bold">index file</span> and four
+<span style="font-weight:bold">data files</span>. If any of those files is missing or corrupt, the whole set of files
+is recreated. The index file contains the main hash table used to locate
+entries on the cache, and the data files contain all sorts of interesting data,
+from bookkeeping information to the actual HTTP headers and data of a given
+request. These data files are also known as <span style="font-weight:bold">block-files</span>, because their file
+format is optimized to store information on fixed-size “blocks”. For instance,
+a given block-file may store blocks of 256 bytes and it will be used to store
+data that can span from one to four such blocks, in other words, data with a
+total size of 1 KB or less.</p>
+<p>When the size of a piece of data is bigger than <span style="font-family:courier new,monospace">disk_cache::kMaxBlockSize</span>
+(16 KB), it will no longer be stored inside one of our standard block-files.
+In this case, it will be stored in a “<span style="font-weight:bold">separate file</span>”, which is a file that has
+no special headers and contains only the data we want to save. The name of a
+separate file follows the form <span style="font-style:italic">f_xx</span>, where <span style="font-style:italic">xx</span> is just the hexadecimal number
+that identifies the file.</p>
+<h3><a name="TOC-Cache-Address"></a>Cache Address</h3>
+<p>Every piece of data stored by the disk cache has a given
+“cache address”. The cache address is simply a 32-bit number that describes
+exactly where the data is actually located.</p>
+<p>A cache entry will have an address; the HTTP headers will
+have another address, the actual request data will have a different address,
+the entry name (key) may have another address and auxiliary information for the
+entry (such as the rankings info for the eviction algorithm) will have another
+address. This allows us to reuse the same infrastructure to efficiently store
+different types of data while at the same time keeping frequently modified data
+together, so that we can leverage the underlying operating system to reduce
+access latency.</p>
+<p>The structure of a cache address is defined on
+<a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/disk_cache/addr.h?view=markup"><span style="font-family:courier new,monospace">disk_cache/addr.h</span></a>, and basically tells if the required data is stored
+inside a block-file or as a separate file and the number of the file (block
+file or otherwise). If the data is part of a block-file, the cache address also
+has the number of the first block with the data, the number of blocks
+used and the type of block file.</p>
+<p>These are few examples of valid addresses:</p>
+<p><span style="font-family:courier new,monospace">0x00000000</span>: not initialized</p>
+<p><span style="font-family:courier new,monospace">0x8000002A</span>: external file <span style="font-style:italic">f_0002A</span></p>
+<p><span style="font-family:courier new,monospace">0xA0010003</span>: block-file number 1 (<span style="font-style:italic">data_1</span>), initial block
+number 3, 1 block of length.</p>
+<h3><a name="TOC-Index-File-Structure"></a>Index File Structure</h3>
+<p>The index file structure is specified on <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/disk_cache/disk_format.h?view=markup"><span style="font-family:courier new,monospace">disk_cache/disk_format.h</span>.</a>
+Basically, it is just an <span style="font-family:courier new,monospace">disk_cache::Ind</span><span style="font-family:courier new,monospace">exHeader</span> structure followed by the actual hash
+table. The number of entries in the table is at least <span style="font-family:courier new,monospace">disk_cache::kIndexTablesize</span> (65536),
+but the actual size is controlled by the <span style="font-family:courier new,monospace">table_len</span> member of the header.</p>
+<p>The whole file is memory mapped to allow fast translation
+between the hash of the name of a resource (the key), and the cache address
+that stores the resource. The low order bits of the hash are used to index the table,
+and the content of the table is the address of the first stored resource with
+the same low order bits on the hash.</p>
+<p>One of the things that must be verified when dealing with
+the disk cache files (the index and every block-file) is that the magic number
+on the header matches the expected value, and that the version is correct. The
+version has a mayor and a minor part, and the expected behavior is that any
+change on the mayor number means that the format is now incompatible with older
+formats.</p>
+<h3><a name="TOC-Block-File-Structure"></a>Block File Structure</h3>
+<p>The block-file structure is specified on
+<a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/disk_cache/disk_format.h?view=markup"><span style="font-family:courier new,monospace">disk_cache/disk_format.h</span></a>. Basically, it is just a file header (<span style="font-family:courier new,monospace">disk_cache::BlockFileHeader</span>)
+followed by a variable number of fixed-size data blocks. Block files are named <span style="font-style:italic">data_n</span>, where <span style="font-style:italic">n</span> is the decimal file number.</p>
+<p>The header of the file (8 KB) is memory mapped to allow
+efficient creation and deletion of elements of the file. The bulk of the header
+is actually a bitmap that identifies used blocks on the file. The maximum
+number of blocks that can be stored on a single file is thus a little less than
+64K.</p>
+<p>Whenever there are not enough free blocks on a file to store
+more data, the file is grown by 1024 blocks until the maximum number of blocks is reached. At that moment, a new block-file of the same type is created, and
+the two files are linked together using the <span style="font-family:courier new,monospace">next_file</span> member of the header. The
+type of the block-file is simply the size of the blocks that the file stores, so all files that store blocks of the same size are linked together. Keep in mind that even if there are multiple
+block-files chained together, the cache address points
+directly to the file that stores a given record. The chain is only used when
+looking for space to allocate a new record.</p>
+<p>To simplify allocation of disk space, it is
+only possible to store records that use from one to four actual blocks. If the
+total size of the record is bigger than that, another type of block-file
+must be used. For example, to store a string of 2420 bytes, three blocks of
+1024 bytes are needed, so that particular string will go to the block-file that
+has blocks of 1KB.</p>
+<p>Another simplification of the allocation algorithm is that a
+piece of data is not going to cross the four block alignment boundary. In other
+words, if the bitmap says that block 0 is used, and everything else is free (state A),
+and we want to allocate space for four blocks, the new record will use blocks 4
+through 7 (state B), leaving three unused blocks in the middle. However, if after that we need to
+allocate just two blocks instead of four, the new record will use blocks 1 and
+2 (state C).</p>
+<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://www.chromium.org/developers/design-documents/network-stack/disk-cache/alloc2.PNG?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1292454665609/developers/design-documents/network-stack/disk-cache/alloc2.PNG" /></a></div>
+<br />
+<p>There are a couple of fields on the header to help the
+process of allocating space for a new record. The <span style="font-family:courier new,monospace">empty</span> field stores counters of available space per block type and <span style="font-family:courier new,monospace">hints</span> stores the last scanned location per
+block type. In this context, a block type is the number of blocks requested for
+the allocation. When a file is empty, it can store up to <span style="font-style:italic">X</span> records of four
+blocks each (<span style="font-style:italic">X</span> being close to 64K / 4). After a record of one block is allocated,
+it is able be able to store <span style="font-style:italic">X-1</span> records of four blocks, and one record of three
+blocks. If after that, a record of two blocks is allocated, the new capacity is
+<span style="font-style:italic">X-1</span> records of four blocks and one record of one block, because the space that
+was available to store the record of three blocks was used to store the new
+record (two blocks), leaving one empty block.</p>
+<p>It is important to realize that once a record has been
+allocated, its size cannot be increased. The only way to grow a record that was
+already saved is to read it, then delete it from the file and allocate a new
+record of the required size.<br />
+</p>
+<p>From the reliability point of view, having the header memory
+mapped allows us to detect scenarios when the application crashes while we are in
+the middle of modifying the allocation bitmap. The <span style="font-family:courier new,monospace">updating</span> field of the header provides a way to signal that we are
+updating something on the headers, so that if the field is set when the file is
+open, the header must be checked for consistency.</p>
+<h3><a name="TOC-Cache-Entry"></a>Cache Entry</h3>
+
+An entry is basically a complete entity stored by the cache. It is divided in two main parts: the <span style="font-family:courier new,monospace">disk_cache::EntryStore</span> stores the part that fully identifies the entry and doesn’t change very often, and the <span style="font-family:courier new,monospace">disk_cache::RankingsNode</span> stores the part that changes often and is used to implement the eviction algorithm.<br />
+<br />
+The <span style="font-family:courier new,monospace">RankingsNode</span> is always the same size (36 bytes), and it is stored on a dedicated type of block files (with blocks of 36 bytes). On the other hand, the <span style="font-family:courier new,monospace">EntryStore</span> can use from one to four blocks of 256 bytes each, depending on the actual size of the key (name of the resource). In case the key is too long to be stored directly as part of the <span style="font-family:courier new,monospace">EntryStore</span> structure, the appropriate storage will be allocated and the address of the key will be saved on the <span style="font-family:courier new,monospace">long_key</span> field,  instead of the full key.
+
+<p>The other things stored within <span style="font-family:courier new,monospace">EntryStore</span> are addresses of the actual data streams associated with
+this entry, the key’s hash and a pointer to the next entry that has the same
+low-order hash bits (and thus shares the same position on the index table).</p>
+<p>Whenever an entry is in use, its <span style="font-family:courier new,monospace">RankingsNode</span> is marked as in-use so that when a new
+entry is read from disk we can tell if it was properly closed or not.<br />
+<br />
+</p>
+<h3><a name="TOC-The-Big-Picture"></a> The Big Picture</h3>
+<br />
+<div style="display:block;text-align:center;margin-right:auto;margin-left:auto"><a href="https://www.chromium.org/developers/design-documents/network-stack/disk-cache/files4.PNG?attredirects=0" imageanchor="1"><img border="0" src="https://www.chromium.org/_/rsrc/1292454665609/developers/design-documents/network-stack/disk-cache/files4.PNG" /></a></div>
+This diagram shows a disk cache with 7 files on disk: the index file, 5 block-files and one separate file. <i>data_1</i> and <i>data_4</i> are chained together so they store blocks of the same size (256 bytes), while <i>data_2</i> stores blocks of 1KB and <i>data_3</i> stores blocks of 4 KB. The depicted entry has its key stored outside the <span style="font-family:courier new,monospace">EntryStore</span> structure, and given that it uses two blocks, it must be between one and two kilobytes. This entry also has two data streams, one for the HTTP headers (less than 256 bytes) and another one for the actual payload (more than 16 KB so it lives on a dedicated file). All blue arrows indicate that a cache address is used to locate another piece of data.<br />
+<h2><a name="TOC-Implementation-Notes"></a>Implementation Notes</h2>
+<div>Chromium has two different implementations of the cache
+interfaces: while the main one is used to store info on a given disk, there is
+also a very simple implementation that doesn’t use a hard drive at all, and
+stores everything in memory. The in-memory implementation is used for the
+<span style="font-style:italic">Incognito</span> mode so that even if the application crashes it will be quite
+difficult to extract any information that was accessed while browsing in that
+mode.</div>
+<p>There are a few different types of caches (see <span><span style="font-size:10pt;color:black"><span style="font-family:courier new,monospace"><a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/cache_type.h?view=markup">net/base/cache_type.h</a></span><span style="font-family:courier new,monospace">)</span></span></span>, mainly defined by their intended use: there is a media specific cache, the general purpose disk cache, and another one that serves as the back end storage for AppCache, in addition to the in-memory type already mentioned. All types of caches behave in a similar way, with the exception that the eviction algorithm used by the general purpose cache is not the same LRU used by the others.</p>
+<span style="font-weight:normal;font-size:13px">The regular cache implementation is located on
+<span style="font-family:courier new,monospace">disk_cache/backend_impl.cc</span> and <span style="font-family:courier new,monospace">disk_cache/entry_impl.cc</span>. Most of the files on
+that folder are actually related to the main implementation, except for a few that
+implement the in-memory cache: <span style="font-family:courier new,monospace">disk_cache/mem_backend_impl.cc</span> and
+<span style="font-family:courier new,monospace">disk_cache/entry_impl.cc</span>.</span>
+<div>
+<h3><a name="TOC-Lower-Interface"></a>Lower Interface</h3>
+</div>
+<p>The lower interface of the disk cache (the one that deals
+with the OS) is handled mostly by two files: <span style="font-family:courier new,monospace">disk_cache/file.h</span> and <span style="font-family:courier new,monospace">disk_cache/mapped_file.h</span>,
+with separate implementations per operating system. The most notable
+requirement is support for partially memory-mapped files, but asynchronous
+interfaces and a decent file system level cache go a long way towards
+performance (we don’t want to replicate the work of the OS).</p>
+<p>To deal with all the details about block-file access, the
+disk cache keeps a single object that deals with all of them: a <span style="font-family:courier new,monospace">disk_cache::BlockFiles</span> object. This object enables
+allocation and deletion of disk space, and provides <span style="font-family:courier new,monospace">disk_cache::File</span> object pointers to other people so that they can access the
+information that they need.</p>
+ A <span style="font-family:courier new,monospace">StorageBlock</span> is a simple template that represents information stored on a block-file, and it provides methods to load and store the required data from disk (based on the record’s cache address). We have two instantiations of the template, one for dealing with the <span style="font-family:courier new,monospace">EntryStore</span> structure and another one for dealing with the <span style="font-family:courier new,monospace">RankingsNode</span> structure. With this template, it is common to find code like <span style="font-family:courier new,monospace">entry-&gt;rankings()-&gt;Store()</span>.</div>
+<h3><a name="TOC-Eviction"></a>Eviction</h3>
+<div>
+<p>Support for the eviction algorithm of the cache is implemented
+on <span style="font-family:courier new,monospace">disk_cache/rankings</span> (and <span style="font-family:courier new,monospace">mem_rankings</span> for the in-memory one), and the eviction itself is implemented on <span style="font-family:courier new,monospace"><a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/disk_cache/eviction.cc?view=markup">disk_cache/eviction</a><span style="font-family:Arial,Verdana,sans-serif">. Right now we
+have a simple <span style="font-style:italic">Least Recently Used</span> algorithm that just starts deleting old
+entries once a certain limit is exceeded, and a second algorithm that takes reuse and age into account before evicting an entry. We also have the concept of transaction when one of the the lists is modified so that if the application
+crashes in the middle of inserting or removing an entry, next time we will roll
+the change back or forward so that the list is always consistent.</span></span></p>
+<p><span style="font-family:courier new,monospace"><span style="font-family:Arial,Verdana,sans-serif">In order to support reuse as a factor for evictions, we keep multiple lists of entries depending on their type: not reused, with low reuse and highly reused. We also have a list of recently evicted entries so that if we see them again we can adjust their eviction next time we need the space. There is a time-target for each list and we try to avoid eviction of entries without having the chance to see them again. If the cache uses only LRU, all lists except the not-reused are empty.</span></span></p>
+<h3><a name="TOC-Buffering"></a>Buffering</h3>
+<p>When we start writing data for a new entry we allocate a buffer
+of 16 KB where we keep the first part of the data. If the total length is
+less than the buffer size, we only write the information to disk when the entry
+is closed; however, if we receive more than 16 KB, then we start growing that buffer until we reach a limit for this stream (1 MB), or for the total size of all the buffers that we have. This scheme gives us immediate response
+when receiving small entries (we just copy the data), and works well with the
+fact that the total record size is required in order to create a new cache
+address for it. It also minimizes the number of writes to disk so it improves performance and reduces disk fragmentation.</p>
+<h3><a name="TOC-Deleting-Entries"></a>Deleting Entries</h3>
+<p>To delete entries from the cache, one of the <span style="font-family:courier new,monospace">Doom*()</span> methods can be used. All that
+they do is to mark a given entry to be deleted once all users have closed the
+entry. Of course, this means that it is possible to open a given entry multiple
+times (and read and write to it simultaneously). When an entry is doomed
+(marked for deletion), it is removed from the index table so that any attempt
+to open it again will fail (and creating the entry will succeed), even when an
+already created Entry object can still be used to read and write the old entry.</p>
+<p>When two objects are open at the same time, both users will
+see what the other is doing with the entry (there is only one “real” entry,
+and they see a consistent state of it). That’s even true if the entry is doomed
+after it was open twice. However, once the entry is created after it was
+doomed, we end up with basically two separate entries, one for the old, doomed
+entry, and another one for the newly created one.</p>
+<h3><a name="TOC-Enumerations"></a>Enumerations</h3>
+<p>A good example of enumerating the entries stored by the cache
+is located at <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request_view_cache_job.cc?view=markup"><span><span style="font-size:10pt;color:black"><span style="font-family:courier new,monospace">src/net/url_request/</span><span style="font-family:courier new,monospace">url_request_view_cache_job.cc</span></span></span></a>
+. It should be noted that this interface is not making any statements about the
+order in which the entries are enumerated, so it is not a good idea to
+make assumptions about it. Also, it could take a long time to go through all
+the info stored on disk.</p>
+<h3><a name="TOC-Sparse-Data"></a>Sparse Data</h3>
+<p>An entry can be used to store sparse data instead of a single, continuous stream. In this case, only two streams can be stored by the entry, a regular one (the first one), and a sparse one (the second one). Internally, the cache will distribute sparse chunks among a set of dedicated entries (child entries) that are linked together from the main entry (the parent entry). Each child entry will store a particular range of the sparse data, and inside that range we could have "holes" that have not been written yet. This design allows the user to store files of any length (even bigger than the total size of the cache), while the cache is in fact simultaneously evicting parts of that file, according to the regular eviction policy. Most of this logic is implemented on <span style="font-family:courier new,monospace">disk_cache/sparse_control<span style="font-family:Arial,Verdana,sans-serif"> (and <span style="font-family:courier new,monospace">disk_cache/mem_entry_impl<span style="font-family:Arial,Verdana,sans-serif"> for the in-memory case).</span></span></span></span></p>
+<h3><a name="TOC-Dedicated-Thread"></a>Dedicated Thread</h3>
+<p>We have a dedicated thread to perform most of the work, while the public API is called on the regular network thread (the browser's IO thread).</p>
+<p>The reason for this dedicated thread is to be able to remove <b>any</b> potentially blocking call from the IO thread, because that thread serves the IPC messages with all the renderer and plugin processes: even if the browser's UI remains responsive when the IO thread is blocked, there is no way to talk to any renderer so tabs look unresponsive. On the other hand, if the computer's IO subsystem is under heavy load, any disk access can block for a long time.</p>
+<p>Note that it may be possible to extend the use of asynchronous IO and just keep using the same thread. However, we are not really using asynchronous IO for Posix (due to compatibility issues), and even in Windows, not every operation can be performed asynchronously; for instance, opening and closing a file are always synchronous operations, so they are subject to significant delays under the proper set of circumstances.</p>
+<p>Another thing to keep in mind is that we tend to perform a large number of IO operations, knowing that most of the time they just end up being completed by the system's cache. It would have been possible to use asynchronous operations all the time, but the code would have been much harder to understand because that means a lot of very fragmented state machines. And of course that doesn't solve the problem with Open/Close.</p>
+<p>As a result, we have a mechanism to post tasks from the main thread (IO thread), to a background thread (Cache thread), and back, and we forward most of the API to the actual implementation that runs on the background thread. See <span style="font-family:courier new,monospace">disk_cache/in_flight_io</span> and <span style="font-family:courier new,monospace">disk_cache/in_flight_backend_io.</span> There are a few methods that are not forwarded to the dedicated thread, mostly because they don't interact with the files, and only provide state information. There is no locking to access the cache, so these methods are generally racing with actual modifications, but that non-racy guarantee is not made by the API. For example, getting the size of a data stream (<i>entry::GetDataSize</i>()) is racing with any pending <i>WriteData</i> operation, so it may return the value before of after the write completes.</p>
+<p>Note that we have multiple instances of disk-caches, and they all have the same background thread.</p>
+<h2><a name="TOC-Data-Integrity"></a>Data Integrity</h2>
+<p>There is a balance to achieve between performance and crash
+resilience. At one extreme, every unexpected failure will lead to unrecoverable
+corrupt information and at the other extreme every action has to be flushed to
+disk before moving on to be able to guarantee the correct ordering of
+operations. We didn’t want to add the complexity of a journaling system given
+that the data stored by the cache is not critical by definition, and doing that
+implies some performance degradation.</p>
+<p>The current system relies heavily on the presence of an OS-wide
+file system cache that provides adequate performance characteristics at the
+price of loosing some deterministic guarantees about when the data actually
+reaches the disk (we just know that at some point, some part of the OS will
+actually decide that it is time to write the information to disk, but not if
+page X will get to disk before page Y).</p>
+<p>Some critical parts of the system are directly memory mapped
+so that, besides providing optimum performance, even if the application crashes
+the latest state will be flushed to disk by the system. Of course, if the
+computer crashes we’ll end up on a pretty bad state because we don’t know if
+some part of the information reached disk or not (each memory page can be in a
+different state).</p>
+<p>The most common problem if the system crashes is that the
+lists used by the eviction algorithm will be corrupt because some pages will
+have reached disk while others will effectively be on a “previous” state,
+still linking to entries that were removed etc. In this case, the corruption will
+not be detected at start up (although individual dirty entries will be detected
+and handled correctly), but at some point we’ll find out and proceed to discard
+the whole cache. It could be possible to start “saving” individual good entries
+from the cache, but the benefit is probably not worth the increased complexity.</p>
+</div>
+<div><br />
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(3):</span>
+<span>
+<a href="/developers/design-documents/network-stack/disk-cache/disk-cache-v3" dir="ltr">Disk Cache 3.0</a>
+</span>
+<span>
+<a href="/developers/design-documents/network-stack/disk-cache/disk-cache-benchmarking" dir="ltr">Disk Cache Benchmarking &amp; Performance Tracking</a>
+</span>
+<span>
+<a href="/developers/design-documents/network-stack/disk-cache/very-simple-backend" dir="ltr">Very Simple Backend</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/design-documents/network-stack/disk-cache">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

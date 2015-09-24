@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/u-boot-porting-guide","deleted":false,"title":"Firmware (U-Boot) Overview and Porting Guide","dir":"ltr"},{"path":"/chromium-os/u-boot-porting-guide/using-nv-u-boot-on-the-samsung-arm-chromebook","deleted":false,"title":"Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/u-boot-porting-guide/using-nv-u-boot-on-the-samsung-arm-chromebook\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/u-boot-porting-guide","parentWuid":"wuid:gx:71af0edaddc05358","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook","locale":"en","wuid":"wuid:gx:6ae80f627ae80bf6","revision":35,"path":"/chromium-os/u-boot-porting-guide/using-nv-u-boot-on-the-samsung-arm-chromebook","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"using-nv-u-boot-on-the-samsung-arm-chromebook","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook - The Chromium Projects" />
+<meta itemprop="name" content="Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook - The Chromium Projects" />
+<meta property="og:title" content="Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../chromium-os.1.html" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="../u-boot-porting-guide.1.html" dir="ltr">Firmware (U-Boot) Overview and Porting Guide</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Appendix A: Using nv-U-Boot on the Samsung ARM Chromebook</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:350px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Quickstart"><strong>1 </strong>Quickstart</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Introduction"><strong>2 </strong>Introduction</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Getting-nv-U-Boot"><strong>3 </strong>Getting nv-U-Boot</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-nv-U-Boot-with-simplefb-and-simplified-environment-variables"><strong>4 </strong>nv-U-Boot with simplefb and simplified environment variables</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Installing-nv-U-Boot-chained-U-Boot-method-"><strong>5 </strong>Installing nv-U-Boot (chained U-Boot method)</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Running-update_kernel.sh-in-the-presence-of-a-chained-U-Boot"><strong>6 </strong>Running update_kernel.sh in the presence of a chained U-Boot</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Installing-nv-U-Boot-servo-method-"><strong>7 </strong>Installing nv-U-Boot (servo method)</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Tips-and-Tricks-with-nv-U-Boot"><strong>8 </strong>Tips and Tricks with nv-U-Boot</a><ol class="goog-toc"><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Setting-a-non-zero-bootdelay"><strong>8.1 </strong>Setting a non-zero bootdelay</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Saving-your-environment-and-getting-back-to-the-default"><strong>8.2 </strong>Saving your environment and getting back to the default</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Adding-to-the-kernel-command-line"><strong>8.3 </strong>Adding to the kernel command line</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Adjusting-the-kernel-command-line-doing-more-than-just-adding-"><strong>8.4 </strong>Adjusting the kernel command line (doing more than just adding)</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-The-default-boot-flow"><strong>8.5 </strong>The default boot flow</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Booting-from-a-backup-kernel"><strong>8.6 </strong>Booting from a backup kernel</a></li><li class="goog-toc"><a href="using-nv-u-boot-on-the-samsung-arm-chromebook.html#TOC-Running-vboot-even-though-you-ve-got-nv-U-Boot"><strong>8.7 </strong>Running vboot, even though you've got nv-U-Boot</a></li></ol></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Quickstart"></a>Quickstart</h2>
+<div>
+<p>tl;dr If you want to get nv-U-boot (a.k.a regular U-boot), on the original <a href="http://www.samsung.com/us/computer/chrome-os-devices/XE303C12-A01US">Samsung ARM Chromebook</a> (not the <a href="http://www.samsung.com/us/computer/chrome-os-devices/XE503C12-K01US">Chromebook 2</a>) and are impatient do the following:</p><div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#6aa84f"># Download the latest nv_uboot-snow kernel partition</font></code></div>
+<div><code><font color="#9900ff">wget -O - http://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/nv_uboot-snow.kpart.bz2 | bunzip2 &gt; nv_uboot-snow.kpart</font></code></div>
+<div><br />
+</div>
+<div><code><font color="#9900ff">MY_SD_CARD=/dev/sdX</font></code></div>
+<div><code><font color="#9900ff">sudo dd if=nv_uboot-snow.kpart of=${MY_SD_CARD}2</font></code></div>
+<div><code><font color="#9900ff"><br />
+</font></code></div>
+<div><code><font color="#6aa84f"># on boot up press and hold the space bar to drop into your favorite u-boot prompt</font></code></div></div>
+<p>If you want to install this on eMMC replace the /dev/sdX with the corresponding partition. You can also dd to any partition and use cgpt to adjust which partition is selected for boot.</p><p>Or, if you prefer to use a nv-u-boot that keeps LCD on and will allow use of the simple framebuffer driver in recent upstream kernels, use this one instead:</p><div class="sites-codeblock sites-codesnippet-block"><div><code><font color="#6aa84f"><br /># Download the latest nv_uboot-snow kernel partition</font></code></div><div><code><font color="#9900ff">wget -O - http://commondatastorage.googleapis.com/chromeos-localmirror/distfiles/nv_uboot-snow-simplefb.kpart.bz2 | bunzip2 &gt; nv_uboot-snow-simplefb.kpart</font></code></div><div><br /></div><div><code><font color="#9900ff">MY_SD_CARD=/dev/sdX</font></code></div><div><code><font color="#9900ff">sudo dd if=nv_uboot-snow-simplefb.kpart of=${MY_SD_CARD}2</font></code></div><div><code><font color="#9900ff"><br /></font></code></div><div><code><font color="#6aa84f"># on boot up press and hold the space bar to drop into your favorite u-boot prompt</font></code></div><div><code><font color="#6aa84f"><br /></font></code></div></div>
+</div>
+<h2><a name="TOC-Introduction"></a>Introduction</h2>
+<p>As talked about in the <a href="../developer-information-for-chrome-os-devices/custom-firmware.html">Custom Firmware</a> page, Chromebooks are designed to run only verified BIOS.  This is great and super secure, but can introduce a few hurdles if you're trying to do kernel development.  Most notably:</p>
+<ul><li>The verified BIOS has its own rules for determining which kernel to boot and when to change the default.  If you are in the habit of building/installing non-working or partially-working kernels it can be a pain to get your device booting again after putting a bad kernel on.</li>
+<li>The verified BIOS makes it hard to boot from external media.  Even after enabling the <code><font color="#990000">dev_boot_usb</font></code> feature you still need to press <code><font color="#990000">Ctrl-U</font></code> on every bootup to boot from a USB disk or SD card.</li>
+<li>The verified BIOS makes it a little harder to tweak kernel command lines.  You need to rebuild a new kernel to get a new command line.</li>
+<li>The officially-built verified BIOS will always silence your Linux console by changing the "<code><font color="#990000">console=blah</font></code>" string on your command line to just "<code><font color="#990000">console=</font></code>".</li>
+<li>The verified BIOS doesn't allow way-cool workflows like grabbing your kernel from TFTP.</li></ul>
+<p><span style="font-size:10pt">nv-U-Boot is "non-verified U-Boot" and at one point was also confusingly referred to as "legacy U-Boot".  The main differences between nv-U-Boot and the normal U-Boot are:</span></p>
+<div>
+<ul><li>nv-U-Boot lets you break into the U-Boot command prompt, unleashing the awesome power of its command line.</li>
+<li>nv-U-Boot can save/load its environment.</li>
+<li>nv-U-Boot's default boot command doesn't use the Chrome OS logic to select the kernel and doesn't verify it.</li>
+<li>nv-U-Boot doesn't properly pass things through the device tree, so that means that the <code><font color="#990000">crossystem</font></code> command win't work.  This could be fixed but hasn't yet. [Anyone? Anyone?]</li></ul>
+</div>
+<p>If you're doing kernel development and aren't worried about someone with physical access to your device hacking into it, you might want to consider using nv-U-Boot for your kernel development.  <span style="font-size:10pt">This page will describe how to get / use nv-U-Boot, focusing on the install method talked about in </span><span style="font-size:10pt">the</span><span style="font-size:10pt"> </span><a href="../developer-information-for-chrome-os-devices/custom-firmware.html" style="font-size:10pt">Custom Firmware</a><span style="font-size:10pt"> </span><span style="font-size:10pt">page of making your nv-U-Boot look like a developer-signed kernel.  All descriptions / examples here are relevant for the Samsung ARM Chromebook released in 2012.  It is possible that these instructions might still be relevant for other hardware.</span></p>
+<h2><a name="TOC-Getting-nv-U-Boot"></a>Getting nv-U-Boot</h2>
+<p>At the moment nv-U-Boot is really just the same as the verified U-Boot with a different device tree.  nv-U-Boot is actually produced in addition to verified U-Boot by a normal build of <code><font color="#9900ff">chromeos-bootimage</font></code>.  Since <code><font color="#9900ff">chromeos-bootimage</font></code> is part of the standard packages built, you can just follow instructions in the <a href="../developer-guide.1.html">Developer Guide</a> to build packages for <code><font color="#9900ff">BOARD=daisy</font></code> and then find <code><font color="#9900ff">/build/daisy/firmware/nv_image-snow.bin</font></code>.</p>
+<p>A few notes:</p>
+<div>
+<ul><li>By default you'll get the tip of tree U-Boot, which should work for you.  However, if you have trouble you could try t<span style="font-size:10pt">o get something closer to what actually shipped by building from the snow firmware branch.  To do this, add <code>-b firmware-snow-2695.B</code> to your </span><code style="font-size:10pt"><a href="../developer-guide.html#TOC-Get-the-Source">repo init</a></code><span style="font-size:10pt">.  There have been a few bugs that have been fixed on ToT since then, though.</span></li>
+<li><span style="font-size:10pt">Speaking of bugs, there's some in the shipping U-Boot (</span><a href="http://crosbug.com/37195" style="font-size:10pt">37195</a><span style="font-size:10pt"> for the most part)</span><span style="font-size:10pt">, the built-in U-Boot can't reliably boot a chained U-Boot that is loaded at address </span><span style="font-size:10pt">0x43e00000.  That means that your chained U-Boot will need</span><span style="font-size:10pt"> </span><a href="https://gerrit.chromium.org/gerrit/39649" style="font-size:10pt">a CL</a><span style="font-size:10pt"> to work around the issue.</span></li></ul><h2><a name="TOC-nv-U-Boot-with-simplefb-and-simplified-environment-variables"></a><font size="4"><b>nv-U-Boot with simplefb and simplified environment variables</b></font></h2><div>If all you want to do is use a simple nv-u-boot so you can get a firmware prompt and load a non-Chrome OS kernel, then it might be easier for you to use the "simplefb" U-boot. The two CLs for enabling this are: <a href="https://gerrit.chromium.org/gerrit/49358">Here</a> and <a href="https://gerrit.chromium.org/gerrit/50848">here</a>.</div><div><br /></div><div>There are a couple of things to keep in mind with it:</div><div><ul><li>It instantiates the 'simplefb' device in the kernel device-tree, so that a kernel with the corresponding driver (CONFIG_FB_SIMPLE) will configure and use it</li><li>Since the framebuffer is kept alive from u-boot, it means that if you build your kernel with SYSMMU support, and use the regular FIMD graphics driver that Samsung provides, your system will crash on boot since the mapping that the simplefb is using will be invalidated when SYSMMU is enabled.</li><li>The simplefb firmware (linked at the top of the page above) has most of the environment variables removed, to make it easier to see what is actually used to boot the system, and edit them accordingly. The first time you boot it, you might want to run an "env default -f" to setup the environment with the default contents from the u-boot binary. <b>NOTE: This will remove any customizations to the u-boot environment that you might have done before.</b></li></ul></div>
+</div>
+<h2><a name="TOC-Installing-nv-U-Boot-chained-U-Boot-method-"></a>Installing nv-U-Boot (chained U-Boot method)</h2>
+<div><span style="font-size:10pt">If you've got a Chromebook and want to get a U-Boot command line but don't want to reflash the BIOS (and risk bricking your device), this section is for you...</span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div><span style="font-size:10pt">The</span><span style="font-size:10pt"> </span><a href="../developer-information-for-chrome-os-devices/custom-firmware.html" style="font-size:10pt">Custom Firmware</a><span style="font-size:10pt"> page describes a method to run a custom firmware without any reflashing.  That's the suggested method for running nv-U-Boot for people that don't have wires sticking out of their Chromebook.</span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div><span style="font-size:10pt">A quick summary of the custom firmware page</span><span style="font-size:10pt">:</span></div>
+<div>
+<ol><li>The first portion of the BIOS is stored in read-only (RO) memory and can't be updated without disabling write protection on your device (a scary proposition that could brick your device).</li>
+<li>The BIOS can be updated by putting a new version in the read-write (RW) memory and the read-only version will jump there if it's present.  However, this portion of the BIOS must officially signed by Google.  There is no provision for installing a developer-signed BIOS here.</li>
+<li>The official BIOS will normally only look on the fixed disk to find a kernel to boot.  The kernel must be properly signed by the <code><font color="#9900ff">vbutil_kernel</font></code> tool, but <u>can</u> be signed with developer keys if the device is in developer mode.</li>
+</ol>
+<div>The "shortlist" of instructions for building a chained U-Boot.  This assumes you've got a Chromium OS chroot.  See the <a href="../developer-guide.1.html">Developer Guide</a> if you don't:</div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><font color="#9900ff" face="monospace">
+<div># This example uses the daisy board and snow device tree</div>
+<div><span style="line-height:1;font-size:10pt">BOARD=daisy</span></div>
+<div><span style="line-height:1;font-size:10pt">FDT=snow</span></div>
+<div><span style="line-height:1;font-size:10pt"><br />
+</span></div>
+</font>
+<div style="color:rgb(153,0,255);font-family:monospace"><span style="line-height:1;font-size:10pt">cros_workon --board=${BOARD} start chromeos-u-boot</span></div>
+<font color="#9900ff" face="monospace">
+<div><span style="line-height:1;font-size:10pt"><br />
+</span></div>
+<div><span style="line-height:1;font-size:10pt"># Get the fixup to load U-Boot at an alternate address</span></div>
+<div>pushd ~/trunk/src/third_party/u-boot/files</div>
+<div><br />
+</div>
+<div>repo start altAddr .</div>
+<div>git fetch \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>https://gerrit.chromium.org/gerrit/chromiumos/third_party/u-boot \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>refs/changes/49/39649/1 &amp;&amp; git cherry-pick FETCH_HEA<span style="font-size:10pt;line-height:1">D</span></div><div><span style="font-size:10pt;line-height:1"><br /></span></div><div># If you want to apply the two patches for simplefb and simplified</div><div># environment, then also do these two (commented-out) cherry-picks:</div><div><div><br /></div><div># git fetch \</div><div>#   https://gerrit.chromium.org/gerrit/chromiumos/third_party/u-boot \</div><div>#   refs/changes/58/49358/2 &amp;&amp; git cherry-pick FETCH_HEAD</div><div><br /># git fetch \</div><div>#   https://gerrit.chromium.org/gerrit/chromiumos/third_party/u-boot \</div><div>#   refs/changes/48/50848/1 &amp;&amp; git cherry-pick FETCH_HEAD</div><div><br /></div></div>
+<div><br />
+</div>
+<div><span style="line-height:1;font-size:10pt"># Build things now that we've patched it up</span></div>
+<div>emerge-${BOARD} chromeos-ec chromeos-u-boot chromeos-bootimage</div>
+<div><span style="line-height:1;font-size:10pt"><br />
+</span></div>
+<div><span style="line-height:1;font-size:10pt"># Don't leave the altAddr hack there</span></div>
+<div><span style="line-height:1;font-size:10pt">git checkout m/master</span></div>
+<div><span style="font-size:10pt;line-height:1">popd</span></div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="line-height:1;font-size:10pt"><br />
+</span></div>
+<div><span style="line-height:1;font-size:10pt"># Produce U_BOOT file and find the text_start</span></div>
+<div><span style="font-size:10pt;line-height:1">dump_fmap -x /build/${BOARD}/firmware/nv_image-${FDT}.bin U_BOOT</span></div>
+<div>TEXT_START=$(awk '$NF == "__text_start" { printf "0x"$1 }' \</div></font><font color="#9900ff" face="monospace"><div><span style="white-space:pre;line-height:1;font-size:10pt"> </span><span style="line-height:1;font-size:10pt">/build/${BOARD}/firmware/System.map)</span></div><div><span style="line-height:1;font-size:10pt"><br /></span></div><div><span style="line-height:1;font-size:10pt"><br /></span></div><div><span style="line-height:1;font-size:10pt"># Note::</span></div><div><span style="line-height:1;font-size:10pt"># for the Samsung Chromebook (Daisy or snow)</span></div><div><span style="line-height:1;font-size:10pt"># CONFIG_SYS_TEXT_BASE is </span>0x43e00000</div><div><span style="line-height:1;font-size:10pt"># for the Samsung Chromebook 2</span></div><div><span style="line-height:1;font-size:10pt"># CONFIG_SYS_TEXT_BASE is </span>0x23E00000</div>
+</font><font color="#9900ff" face="monospace">
+<div><br />
+</div>
+<div><span style="font-size:10pt;line-height:1"># Make it look like an image U-Boot will like:</span></div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="line-height:1;font-size:10pt"># The "-a" and "-e" here are the "CONFIG_SYS_TEXT_BASE" from</span></div>
+<div><span style="line-height:1;font-size:10pt"># </span>include/configs/exynos5-common.h</div>
+<div>
+<div>sudo mkimage \</div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span><span style="line-height:1;font-size:10pt">-A arm \</span></div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>-O linux \</div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>-T kernel \</div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>-C none \</div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>-a "${TEXT_START}" -e "${TEXT_START}" \</div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>-n "Non-verified u-boot" \</div>
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>-d U_BOOT <span style="line-height:1;font-size:10pt">/build/${BOARD}/firmware/</span><span style="line-height:1;font-size:10pt">nv_uboot-${FDT}.uimage</span></div>
+</div>
+<div><br />
+</div>
+<div>MY_BINARY=/build/${BOARD}/firmware/<span style="line-height:1;font-size:10pt">nv_uboot-${FDT}.uimage</span></div>
+<div><span style="line-height:1;font-size:10pt"><br />
+</span></div>
+<div><span style="line-height:1;font-size:10pt"># Sign the uimage</span></div>
+<div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><font color="#9900ff" face="monospace">echo blah &gt; dummy.txt</font></div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><span style="color:rgb(153,0,255);font-family:monospace;line-height:1;font-size:10pt">sudo vbutil_kernel \</span></div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><span style="white-space:pre;color:rgb(153,0,255);font-family:monospace;line-height:1;font-size:10pt"> </span><span style="color:rgb(153,0,255);font-family:monospace;line-height:1;font-size:10pt">--pack </span><span style="color:rgb(153,0,255);font-family:monospace;line-height:1;font-size:10pt">/build/${BOARD}/firmware/</span><span style="color:rgb(153,0,255);font-family:monospace;line-height:1;font-size:10pt">nv_uboot-${FDT}.kpart</span><span style="color:rgb(153,0,255);font-family:monospace;font-size:10pt;line-height:1"> \</span></div>
+<div style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif"><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--keyblock /usr/share/vboot/devkeys/kernel.keyblock \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--signprivate /usr/share/vboot/devkeys/kernel_data_key.vbprivk \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--version 1 \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--vmlinuz ${MY_BINARY} \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--bootloader dummy.txt \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--config dummy.txt \</div>
+</font><font color="#9900ff" face="monospace">
+<div><span style="white-space:pre;line-height:1;font-size:10pt"> </span>--arch arm</div>
+<div><br />
+</div>
+<div>KPART=<span style="line-height:1;font-size:10pt">/build/${BOARD}/firmware/</span><span style="line-height:1;font-size:10pt">nv_uboot-${FDT}.kpart</span></div>
+<div><br />
+</div>
+</font></div>
+</div>
+</font></div>
+<div>
+<div></div>
+</div>
+</div>
+<div><br />
+</div>
+</div>
+<div>After running the above, the <code><font color="#9900ff">${KPART}</font></code> variable has the path of a file that can be placed in a kernel partition and will boot nv-U-Boot.</div>
+<div><br />
+</div>
+<div><b>SIDE NOTE</b>: You could avoid building <code><font color="#9900ff">chromeos-bootimage</font></code> above and build your own <code><font color="#9900ff">U_BOOT</font></code> file by calling the right incantation of <code><font color="#9900ff">cros_bundle_firmware</font></code>.  I have chosen to document as above because it seems slightly more likely to continue to working even if <span style="color:rgb(153,0,255);font-family:monospace">cros_bundle_firmware</span> changes.</div>
+<div><br />
+</div>
+<div>
+<div>If you placed a full Chrome OS boot image onto an SD card or USB stick with "<code><font color="#9900ff">image_to_usb</font></code>", you could place the above U-Boot onto it with:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#9900ff"># <b>NOTE</b>: Replace /dev/sdX with your SD card/USB stick</font></code></div>
+<div><code><font color="#9900ff"># </font><b><font color="#ff0000">WARNING</font></b><font color="#9900ff">: make sure you get it right or this will clobber your host hard disk</font></code></div>
+<div><code><font color="#9900ff"><br />
+</font></code></div>
+<div><code><font color="#9900ff">MY_SD_CARD=/dev/sdX</font></code></div>
+<div><code><font color="#9900ff">sudo dd if=${KPART} of=${MY_SD_CARD}2</font></code></div>
+<div></div>
+</div>
+<br />
+<div>If you want to install this on eMMC, it's probably best to follow the instructions on the <a href="../developer-information-for-chrome-os-devices/custom-firmware.html" style="font-size:10pt">Custom Firmware</a><span style="font-size:10pt"> page</span>.</div>
+</div>
+<div></div>
+<h2><a name="TOC-Running-update_kernel.sh-in-the-presence-of-a-chained-U-Boot"></a><font size="4">Running update_kernel.sh in the presence of a chained U-Boot</font></h2>
+</div>
+<div>
+<div>If you've installed nv-U-Boot into the kernel partition of your SD card or eMMC then you must be always <span style="font-size:10pt;background-color:transparent">pass the </span><code style="font-size:10pt;background-color:transparent"><font color="#9900ff">--novboot</font></code><span style="font-size:10pt;background-color:transparent"> option when updating the kernel using</span><span style="font-size:10pt;background-color:transparent"> the ChromeOS </span><code style="font-size:10pt;background-color:transparent"><font color="#9900ff">update_kernel.sh</font></code><span style="font-size:10pt;background-color:transparent"> </span><span style="font-size:10pt;background-color:transparent">script</span><span style="font-size:10pt;background-color:transparent">.  </span></div>
+<div><br />
+</div>
+<h2><a name="TOC-Installing-nv-U-Boot-servo-method-"></a>Installing nv-U-Boot (servo method)</h2>
+<div><b>Most people can ignore this section</b>, but if you've lucky enough to have a <a href="../servo.1.html">servo board</a> attached to your Chromebook (and, I assume, write protect turned off), you can mess with the BIOS that's flashed with impunity since servo can be used to recover a bad flash.  <span style="font-size:10pt">The following commands might be useful to you.  Note that anything here is officially unsupported and if you've got a servo attached you've already voided any warranty you might have:</span></div>
+<div><br />
+</div>
+<div>Build U-Boot and flash nv-U-Boot directly over an A-to-A USB cable (uses servo to select alternate boot mode).  Make sure to remove any SD cards:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#9900ff">USE=dev emerge-${BOARD} chromeos-u-boot</font></code></div>
+<div><span style="font-size:10pt"><code><font color="#9900ff">cros_bundle_firmware --add-config-int load_env 1 -d exynos5250-${FDT} -b </font></code></span><span style="color:rgb(153,0,255);font-family:monospace">${BOARD}</span><span style="font-size:10pt"><code><font color="#9900ff"> -F spi -w usb</font></code></span></div>
+<div></div>
+</div>
+<br />
+<div>Build a nv-U-Boot "flasher" SD card.  If you place this SD card in a machine and boot with alternate boot mode (requires servo), it will update the built-in U-Boot:</div>
+<div><br />
+</div>
+<div>
+<div></div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div><code><font color="#9900ff">USE=dev emerge-${BOARD} chromeos-u-boot</font></code></div>
+<div><code><font color="#9900ff">cros_bundle_firmware --add-config-int load_env 1 -d exynos5250-</font><span style="color:rgb(153,0,255)">${FDT}</span><font color="#9900ff"> -b </font><span style="color:rgb(153,0,255)">${BOARD}</span><font color="#9900ff"> -F spi -w sd:.</font></code></div>
+</div>
+<div></div>
+</div>
+<br />
+<div>Build a nv-U-Boot SD card for booting directly.  <span style="font-size:10pt">If you place this SD card in a machine and boot with </span>alternate boot mode<span style="font-size:10pt"> (requires servo), the machine will boot U-Boot from the card.  The built-in BIOS will not be updated.</span></div>
+<div><br />
+</div>
+<div>
+<div>
+<div></div>
+</div>
+</div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div>
+<div>
+<div><code><font color="#9900ff">USE=dev emerge-${BOARD} chromeos-u-boot</font></code></div>
+<div><code><font color="#9900ff">cros_bundle_firmware --add-config-int load_env 1 -d exynos5250-</font><span style="color:rgb(153,0,255)">${FDT}</span><font color="#9900ff"> -b </font><span style="color:rgb(153,0,255)">${BOARD}</span><font color="#9900ff"> -w sd:.</font></code></div>
+</div>
+</div>
+<div></div>
+</div>
+<div><br />
+</div>
+<h2><a name="TOC-Tips-and-Tricks-with-nv-U-Boot"></a>Tips and Tricks with nv-U-Boot</h2>
+<p>The default nv-U-Boot that's built for the Samsung ARM Chromebook has a bunch of environment variables that can be dizzying to figure out.  Some of the confusion stems from the fact that U-Boot stores "scripts" in environment variables.  These scripts can't pass parameters (so need to use other environment variables to communicate with each other) and are sorted alphabetically with data.  Ick!</p>
+<p>To help you get some use out of the scripts, here are a few usage scenarios and explanations.  You might also want to look at some of <a href="http://git.chromium.org/gitweb/?p=chromiumos/third_party/u-boot.git;a=blob;f=include/configs/chromeos.h;hb=refs/heads/firmware-snow-2695.B">the documentation in the source code</a>, which is slightly easier to figure out.</p>
+<h3><a name="TOC-Setting-a-non-zero-bootdelay"></a>Setting a non-zero bootdelay</h3>
+<p><span style="font-size:10pt">In order to make nv-U-Boot useful you need a way to break into it.  By default, nv-U-Boot has a <code><font color="#990000">$bootdelay</font></code> of 0.  You can break into U-Boot if you hold down the space bar while you're booting, but that can be a pain.  </span><span style="font-size:10pt">A </span><span style="color:rgb(153,0,0);font-family:monospace">$bootdelay</span><span style="font-size:10pt"> of 1 or higher is useful if you end up breaking into U-Boot a lot.</span></p>
+<h3><a name="TOC-Saving-your-environment-and-getting-back-to-the-default"></a>Saving your environment and getting back to the default</h3>
+<p>U-Boot has the ability to load/save your environment variables to SPI flash and loads up saved values on every bootup.  That means you can permanently change the way that U-Boot boots up your device by tweaking a few variables and saving them.  To save the current environment just use the <code><font color="#990000">saveenv</font></code> command.  If you messed up your environment and want to get back to sane defaults, you can always do it with <span style="font-size:10pt"><code><font color="#990000">env default -f</font></code>.</span></p>
+<h3><a name="TOC-Adding-to-the-kernel-command-line"></a>Adding to the kernel command line</h3>
+<div><span style="font-size:10pt">The easiest way to add boot arguments is to use the </span><code style="font-size:10pt"><font color="#990000">$dev_extras</font></code><span style="font-size:10pt"> environment variable.  You can clobber the obsolete "</span><code style="font-size:10pt"><font color="#990000">daisy</font></code><span style="font-size:10pt">" argument that's there by default.  So if you wanted to enable slub debugging on your kernel, you could just use:</span></div>
+<div><span style="font-size:10pt"><br />
+</span></div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#990000">setenv dev_extras slub_debug=FZPUA</font></code></div>
+<div></div>
+</div>
+<br />
+</div>
+<div>Don't forget to <code><font color="#990000">saveenv</font></code> afterwards if you want to apply these options every time.</div>
+<h3><a name="TOC-Adjusting-the-kernel-command-line-doing-more-than-just-adding-"></a>Adjusting the kernel command line (doing more than just adding)</h3>
+<p>If you want to tweak kernel command line in interesting ways, you should be aware that the default boot scripts will clobber any changes you make to <code><font color="#990000">$bootargs</font></code>.  If you really want to tweak things you should modify the <code><font color="#990000">$regen_all</font></code> "script".  All of the standard boot scripts call this so that they can insert their various parameters into the kernel command line.</p>
+<h3><a name="TOC-The-default-boot-flow"></a>The default boot flow</h3>
+<div>By default the standard <code><font color="#990000">$bootcmd</font></code> is <code><font color="#990000">run non_verified_boot</font></code>.  That does the following:</div>
+<div>
+<ul><li>Try to boot from TFTP/NFS (if a compatible USB ethernet adapter is present and <code><font color="#990000">$tftpserverip</font></code> and perhaps <code><font color="#990000">$nfsserverip</font></code> is set).</li>
+<li>Try to boot from USB 2.0 using the "disk boot script" + <code><font color="#990000">$ext2_boot</font></code>.</li>
+<li>Try to boot from SD card (mmc1) using the "disk boot script" + <code><font color="#990000">$ext2_boot</font></code>.</li>
+<li>Try to boot from EMMC (mmc0) using the "disk boot script"+ <code><font color="#990000">$ext2_boot</font></code>.</li></ul>
+<p>The "disk boot script" is designed to allow A-B swapping for the <code><font color="#9900ff">image_to_live.sh</font></code> script, though it could be useful in other cases.  It's goal is to set the <code><font color="#990000">$kernelpart</font></code> and <code><font color="#990000">$rootpart</font></code> environment variables to point to the proper filesystem for getting the kernel (verified) and root filesystem (contains non-verified kernel).  The script is <span style="font-size:10pt">stored in the environment variable </span><code style="font-size:10pt"><font color="#990000">$run_disk_boot_script</font></code><span style="font-size:10pt"> and loads up a U-Boot script from the FAT filesystem on partition 12 (aka </span><code style="font-size:10pt"><font color="#990000">$script_part</font></code><span style="font-size:10pt">, which is in hex).  The script named </span><code style="font-size:10pt"><font color="#990000">/u-boot/boot.scr.uimg</font></code><span style="font-size:10pt"> (aka </span><code style="font-size:10pt"><font color="#990000">$script_img</font></code><span style="font-size:10pt">) should be a "compiled" u-boot script that adjusts the </span><code style="font-size:10pt"><font color="#990000">$kernelpart</font></code><span style="font-size:10pt"> and </span><code style="font-size:10pt"><font color="#990000">$rootpart</font></code><span style="font-size:10pt"> environment variables.  See the </span><a href="http://git.chromium.org/gitweb/?p=chromiumos/overlays/chromiumos-overlay.git;a=tree;f=chromeos-base/u-boot-scripts;h=5a0ea30bdba341c9def2e2cf447bb922c388a453;hb=refs/heads/master" style="font-size:10pt">u-boot-scripts project</a><span style="font-size:10pt"> for details.</span></p>
+</div>
+<p><span style="font-size:10pt">The <code><font color="#990000">$ext2_boot</font></code> command loads the kernel that's stored at </span><code><font color="#990000">/boot/vmlinux.uimg</font></code> (aka <code><font color="#990000">$cros_bootfile</font></code>) in the root filesystem (pointed to by <code><font color="#990000">$rootpart</font></code> and <code><font color="#990000">$kernelpart</font></code> is ignored).  It then adjust the command line parameters so that the kernel knows which disk/partition contains the root filesystem (requires kernel and U-Boot to agree about device IDs) and boots.</p>
+<h3><a name="TOC-Booting-from-a-backup-kernel"></a>Booting from a backup kernel</h3>
+<div>A practical example of the adjusting the boot flow is to boot a backup kernel.  If you prepare ahead of time and make a backup kernel, like:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#990000">mount -oremount,rw /</font></code></div>
+<div><code><font color="#990000">cp /boot/vmlinux.uimg /boot/vmlinux.uimg.bak</font></code></div>
+<div><code><font color="#990000">sync</font></code></div>
+<div>
+<div><code><font color="#990000">mount -oremount,ro /</font></code></div>
+</div>
+<div></div>
+</div>
+<br />
+<div>Then you can always interrupt your boot flow (hold space at bootup) and boot from a backup kernel like this:</div>
+<div><br />
+</div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#990000">setenv cros_bootfile /boot/vmlinux.uimg.bak</font></code></div>
+<div><code><font color="#990000">boot</font></code></div>
+<div></div>
+</div>
+<div><br />
+</div>
+<h3><a name="TOC-Running-vboot-even-though-you-ve-got-nv-U-Boot"></a>Running vboot, even though you've got nv-U-Boot</h3>
+<div>This is really only applicable to people who have removed the write protect (Danger, Will Robinson! Danger!) and flashed nv-U-Boot (rather than used the trick to put nv-U-Boot in the place of the signed kernel).  If you've done that, you can actually boot the device in a way that's very similar to the standard verified boot (you'll get the kernel from the fixed disk, verify it, update the priority, and boot with the standard command line parameters).  Just use the <code><font color="#990000">vboot_twostop</font></code> command.</div>
+<div><br />
+</div>
+<div> </div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/u-boot-porting-guide/using-nv-u-boot-on-the-samsung-arm-chromebook">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9ep8PJwE97eOmo5rvOWnmzS2eZe3NHV-0miRaECfqHSrBI96GQt4FhvZ2hwyoI31-rqJ9J81LjeJTC0oGXfhBZRIHULQtS1hHeEH9Ni8TBGbN53t5/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

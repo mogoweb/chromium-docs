@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://www.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/design-documents","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/developers/design-documents/browser-components","deleted":false,"title":"Browser Components Design Document","dir":"ltr"}];
+  var JOT_clearDotPath = 'http://www.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttp://sites.google.com/a/chromium.org/dev/developers/design-documents/browser-components\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"http://csi.gstatic.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["http://www.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["http://www.gstatic.com/sites/p/56e332/system/js/codemirror.js","http://www.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","http://www.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","http://www.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","http://www.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers/design-documents","parentWuid":"wuid:gx:359ef223e0fb14ac","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Browser Components Design Document","locale":"en","wuid":"wuid:gx:2b5d3cd05f42535a","revision":21,"path":"/developers/design-documents/browser-components","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"browser-components","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Browser Components Design Document - The Chromium Projects" />
+<meta itemprop="name" content="Browser Components Design Document - The Chromium Projects" />
+<meta property="og:title" content="Browser Components Design Document - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Browser Components Design Document - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="http://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="http://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:fe204a485666144" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎<A href="/developers/design-documents" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Browser Components Design Document</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<div><div class="sites-embed-align-right-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Overview"><strong>1 </strong>Overview</a></li><li class="goog-toc"><a href="#TOC-Objectives"><strong>2 </strong>Objectives</a></li><li class="goog-toc"><a href="#TOC-Design"><strong>3 </strong>Design</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Design-Overview"><strong>3.1 </strong>Design Overview</a></li><li class="goog-toc"><a href="#TOC-Component-Examples"><strong>3.2 </strong>Component Examples</a></li><li class="goog-toc"><a href="#TOC-DEPS-Improvements"><strong>3.3 </strong>DEPS Improvements</a></li><li class="goog-toc"><a href="#TOC-Automatic-Refactoring"><strong>3.4 </strong>Automatic Refactoring</a></li><li class="goog-toc"><a href="#TOC-Simple-Refactoring-Tools"><strong>3.5 </strong>Simple Refactoring Tools</a></li><li class="goog-toc"><a href="#TOC-Code-Review-Conventions"><strong>3.6 </strong>Code Review Conventions</a></li></ol></li><li class="goog-toc"><a href="#TOC-Project-Plan"><strong>4 </strong>Project Plan</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Current-Team-Timeline"><strong>4.1 </strong>Current Team &amp; Timeline</a></li><li class="goog-toc"><a href="#TOC-Initial-Team-Timeline"><strong>4.2 </strong>Initial Team &amp; Timeline</a></li><li class="goog-toc"><a href="#TOC-Risks"><strong>4.3 </strong>Risks</a></li></ol></li></ol></div></div></div></div></div>
+<h2><a name="TOC-Overview"></a>Overview</h2>
+<div>Browser Components is the project of continuing to modularize the Chrome codebase. A large project to extract the <a href="http://www.chromium.org/developers/content-module">content module</a> out of the <tt>src/chrome/</tt> directory is complete. Despite the efforts of this project, the <tt>src/chrome/</tt> directory remains by far the largest inter-dependent block of code in the codebase, so continuing to tease the next largest modules out of that directory is the next step.<br />
+<h2><a name="TOC-Objectives"></a>Objectives</h2>
+<div>The Chrome project has grown a lot over the last few years in both size and complexity. The number of people contributing to the project has increased a lot, the size of the codebase has increased, and we have added many new target platforms and configurations that were not envisioned in the start. It has also become harder for individuals to understand the whole of the architecture, let alone the whole of the codebase.</div>
+<div>The Browser Components project is introducing and enforcing modularity, with these objectives in mind:</div>
+<ul><li>Scale up the architecture to make it more adaptable to new requirements, e.g. new flavors of Chrome that use some features from src/chrome/browser but wish to turn off or reimplement others (e.g. ChromeOS and Chrome for Android);</li>
+<li>Make the intended architecture more apparent through further enforcement of the dependency graph via DEPS rules that specify which includes are allowed and disallowed;</li>
+<li>Significantly simplify the dependency graph of the features currently under <tt>src/chrome/</tt>, making it less cyclic;</li>
+<li>Speed up developer builds by increasing the number of independent components (production code as well as unit test executables) in the component build, and decreasing the size of some of the largest components with the highest link times such as ‘browser’ and ‘unit_tests’. Smaller unit test executables also make it easier to e.g. step through code in gdb, or iterate quickly on adding printf’s for debugging;</li>
+<li>All of the above should improve separation of concerns and allow our large engineering team to more easily collaborate, make it harder to misunderstand the architecture and write architecturally bad changes, and in general make us more productive.</li></ul>
+<h2><a name="TOC-Design"></a>Design</h2>
+<h3><a name="TOC-Design-Overview"></a>Design Overview</h3>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> What are you doing?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Extracting bits of </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> into components that are each individual targets, have a separate unit test target, specify their dependencies on each other explicitly, and have no cyclic dependencies.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> What do you mean, components that have no cyclic dependencies?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> They know nothing about their embedder (e.g., </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">). If they need information or services from their embedder they either receive them at initialization time, or retrieve them at runtime via an abstract client interface defined by the component and implemented by the embedder.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> What if one component wants to depend on another?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> It can. However, such dependencies must be acyclic. This precludes the possibility of dependency cycles between two (or any N) components.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Do we want to componentize UI?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Not in the sense described above. However, it is fine for components to contain portions of code related to UI. In general, however, components should not bake UI into their core logic in order to allow embedders the freedom to reuse logic while providing their own UI. The UI that components contain should be made available to embedders as optional "add-ons" to the core logic.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> What if I’m evaluating some code for componentization and I see that it has dependencies that are currently implemented by the rest of </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Usually, that means we first need to componentize those dependencies. There are two exceptions:</span><br />
+<ul style="font-size:medium;font-family:Times New Roman;margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">If the dependency is small enough: The preferred approach is to fulfill it via methods on the component’s client interface.</span></li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">If it is a fairly large dependency on UI functionality which we don’t expect to ever make into a component:</span></li>
+<ul style="margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:circle;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">If the dependency will be used only by one component: Add the ability to access this functionality to the component’s client interface(s).</span></li>
+<li dir="ltr" style="list-style-type:circle;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">If the dependency is or will be used by multiple components: You may be tempted to write one client interface for that dependency, and reuse it between components. The need for this should be rare or non-existent; such shared clients tend to be larger than what each component specifically needs, which makes it harder to embed individual components. Our aim is to try very hard to avoid shared clients, so we only plan to use them if we find a very compelling concrete scenario that needs them, where we agree after discussion they are needed.</span></li></ul></ul>
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Where do components live?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> I</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">n a subdirectory of </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/components/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">, e.g. a component named </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">foo</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> would be contained in the directory </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/components/foo/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">. </span><br />
+<ul style="font-size:medium;font-family:Times New Roman;margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Note: Something that is more like a major abstraction layer (think </span><span style="font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/content/</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">) or a major product (think </span><span style="font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">) should be its own top-level directory rather than a subdirectory of </span><span style="font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/components/</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">.</span></li></ul>
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Where do components’ client interfaces live?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Their declaration lives in the same directory as the component. Their embedder-specific implementation lives in each embedder, wherever the embedder chooses.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Do components provide an API for the embedder to use?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Generally speaking, it is fine for the embedder to use the component as a concrete set of C++ classes, in which case the “API” is simply whatever the “entry point” classes are, where the component receives pointers to implementations of its delegate interfaces from its embedder. In certain cases, we may decide to introduce a fully-abstract API for the embedder to use, that hides implementation details of the component, as we did for </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/content/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">. In certain other cases, we might categorize the component’s concrete C++ classes into an internal set and a publicly-usable set. In either of these cases, the API or publicly-usable set of classes should reside in a subdirectory of the component’s directory named </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">public</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> (e.g. </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/components/mycomponent/public/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">). If a </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">public</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> directory is present, the component’s client interfaces should live within that directory.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Is there any further standardization of the structure within a component’s directory?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Some components that depend on the </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/content/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> layer may have bits of code intended to run in different processes of the embedder, e.g. browser or renderer. The convention for these is to place the code in sub-directories with names matching those already used in </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">, so for a component </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">xyz</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> you might have </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/components/xyz/browser/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> and </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/components/xyz/renderer/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> directories.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Q:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> Is this like Microsoft COM or Mozilla XPCOM?</span><br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">A:</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> No. It is a non-goal to create binary reusable components similar to Microsoft’s COM or Mozilla’s XPCOM mechanisms. We expect the components we are introducing, and all users of the components, to live in a single codebase and be built together, so we do not need complicated registration and discovery mechanisms, or to limit ourselves exclusively to APIs that are pure vtables.</span><br />
+</div>
+<h3><a name="TOC-Component-Examples"></a>Component Examples</h3>
+<div>For a step-by-step guide and cookbook-style recipes on how to componentize, see the <a href="http://www.chromium.org/developers/design-documents/browser-components/cookbook" style="color:rgb(71,18,100);outline:none">Browser Components Cookbook</a>.</div>
+<div>The content module (<code>src/content/</code>) is a component according to the definitions above; one that is quite large, and that provides a fully-abstract public API.</div>
+<div>Smaller examples that illustrate how to componentize can be seen in the work done to implement the following issues:</div>
+<ul><li>Componentize input_method (issue <a href="http://crbug.com/164375">164375</a>).</li>
+<li>Componentize Prefs (issue <a href="http://crbug.com/155525">155525</a>).</li>
+<li>Extract FaviconDownloadHelper; this ended up as a feature of the content module rather than as a separate component, but is still instructive (issue <a href="http://crbug.com/146851">146851</a>).</li></ul>
+<h3><a name="TOC-DEPS-Improvements"></a>DEPS Improvements</h3>
+<div></div>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The DEPS tool has been very useful for maintaining the intended dependency graph in our codebase. We have made a couple of improvements to it to facilitate the Browser Components work:</span><br />
+<ol style="font-size:medium;font-family:Times New Roman;margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The tool previously had up to one set of rules per directory, of dependencies that are blacklisted and/or whitelisted for files residing in that directory and its subdirectories. While the dependents are specified as entire directories, the dependencies may be specified as folders or down to individual files. We added the ability to specify the dependents down to the file level, including down to a glob level (e.g. *.cc may depend on X, Y, Z, whereas *.h may not). This should let us enforce certain models in the dependency graph that otherwise could only be done by moving large numbers of files around, which although sometimes the right thing to do, is not something we want our tools to force us to do.</span></li>
+<li dir="ltr" style="list-style-type:decimal;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The tool previously acted only on the entire state of the codebase. For our purposes, it is very useful to be able to express dependency rules that we </span><span style="background-color:transparent;font-style:italic;vertical-align:baseline;white-space:pre-wrap">aspire</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> to, i.e. “don’t add dependencies to X, Y or Z, even though there are already some.”  To achieve this, we added a new syntax to DEPS files that lets you document aspirational dependency rules, and we added a presubmit step that verifies changes as they are uploaded or committed against these aspirational rules.</span></li>
+</ol>
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">We have also extended DEPS to allow generation of a visual graph of components and their dependencies. This is helpful when trying to find appropriate “leaves” in the dependency graph under </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">, that make for good next things to componentize.</span><br />
+<h3 dir="ltr" style="font-size:medium;font-family:Times New Roman"><a name="TOC-Automatic-Refactoring"></a><span style="font-size:16px;font-family:Arial;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Automatic Refactoring</span></h3>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">We have surveyed the available automatic refactoring tools for C++; the brief conclusions are:</span><br />
+<ul style="font-size:medium;font-family:Times New Roman;margin-top:0pt;margin-bottom:0pt"><li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">None of the commercially-available tools seem able to cope with the size of our code base;</span></li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Clang-based refactoring tools have started becoming useful and can deal with our code, but they take a while to run;</span></li>
+<li dir="ltr" style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Clang-based tools can be useful for certain types of changes (e.g. renaming a method that has a very common name and exists in multiple classes) but more often than not, directly editing the code or using simpler tools that just parse our source files as text (rather than syntactically) is more efficient.</span></li></ul>
+<h3 dir="ltr" style="font-size:medium;font-family:Times New Roman"><a name="TOC-Simple-Refactoring-Tools"></a><span style="font-size:16px;font-family:Arial;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Simple Refactoring Tools</span></h3>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">We have tools for moving source files that updates include guards and updates references to files (#includes and #imports in other source files, references in .gyp(i) files); see </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/tools/git/{move_source_file.py, mass-rename.py}</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">.</span><br />
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">We also have a tool for doing search-and-replace across the codebase using Python regular expression syntax; see </span><span style="font-family:Courier New;font-size:15px;white-space:pre-wrap">src/tools/git/mffr.py.</span><div><font face="Courier New" size="1"><span style="white-space:pre-wrap"><br /></span></font></div><div><font size="1"><span style="white-space:pre-wrap"><font face="arial, sans-serif">We highly encourage the usage of "git cl format" to ease the tedious process of reformatting that often needs to occur when doing refactorings.</font><font face="Courier New"><br /></font></span></font>
+<h3 dir="ltr" style="font-size:medium;font-family:Times New Roman"><a name="TOC-Code-Review-Conventions"></a><span style="font-size:16px;font-family:Arial;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Code Review Conventions</span></h3>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Because the Chrome codebase changes so rapidly, we know from prior experience that all of the above needs to be done using rapid-fire incremental changes. The ability to get quick code reviews from multiple owners and, in many cases, the ability to TBR the trivial parts of changes with wide impact, will be key. In many cases the leaders of the componentization effort are made temporary owners of a feature for the duration of its componentization.</span><br />
+<h2 dir="ltr" style="font-size:medium;font-family:Times New Roman"><a name="TOC-Project-Plan"></a><span style="font-size:19px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Project Plan</span></h2>
+<h3 dir="ltr" style="font-size:medium;font-family:Times New Roman"><a name="TOC-Current-Team-Timeline"></a><span style="font-size:16px;font-family:Arial;color:rgb(102,102,102);vertical-align:baseline;white-space:pre-wrap;background-color:transparent">Current Team &amp; Timeline</span></h3><div>Colin Blundell &lt;blundell@chromium.org&gt; is leading the effort. Other full-time members are David Roger &lt;droger@chromium.org&gt;, Jean-François Geyelin &lt;jif@chromium.org&gt;, and Sylvain Defresne &lt;sdefresne@chromium.org&gt;. The current goal of the project is to <a href="https://code.google.com/p/chromium/issues/list?can=2&amp;q=C14n&amp;colspec=ID+Pri+M+Iteration+ReleaseBlock+Cr+Status+Owner+Summary+OS+Modified&amp;cells=tiles">componentize all of the features</a> under //chrome that are used by the iOS port. If you're interested in helping (no contribution is too small!), reach out to blundell@chromium.org and/or have a list at <a href="https://code.google.com/p/chromium/issues/list?can=2&amp;q=C14n-OpenBar&amp;colspec=ID+Pri+M+Iteration+ReleaseBlock+Cr+Status+Owner+Summary+OS+Modified&amp;x=m&amp;y=releaseblock&amp;cells=tiles">available work</a> that is suitable for anyone generally familiar with Chromium to handle. Be sure to mark a bug Started if you're starting work on it!</div><h3 dir="ltr" style="font-size:medium;font-family:Times New Roman"><a name="TOC-Initial-Team-Timeline"></a><span style="font-size:16px;font-family:Arial;color:rgb(102,102,102);background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Initial Team &amp; Timeline</span></h3>
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><div><span style="vertical-align:baseline;background-color:transparent">The Browser Components founding team members were Jói Sigurðsson &lt;</span><a href="mailto:joi@chromium.org" style="font-size:medium;font-family:Times New Roman;background-color:transparent"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);vertical-align:baseline;background-color:transparent">joi@chromium.org</span></a><span style="vertical-align:baseline;background-color:transparent">&gt;, Erik Wright &lt;</span><a href="mailto:erikwright@chromium.org" style="font-size:medium;font-family:Times New Roman;background-color:transparent"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);vertical-align:baseline;background-color:transparent">erikwright@chromium.org</span></a><span style="vertical-align:baseline;background-color:transparent">&gt;, Cait Phillips &lt;</span><a href="mailto:caitkp@chromium.org" style="font-size:medium;font-family:Times New Roman;background-color:transparent"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);vertical-align:baseline;background-color:transparent">caitkp@chromium.org</span></a><span style="vertical-align:baseline;background-color:transparent">&gt; and Kai Wang &lt;</span><a href="mailto:kaiwang@chromium.org" style="font-size:medium;font-family:Times New Roman;background-color:transparent"><span style="font-size:15px;font-family:Arial;color:rgb(17,85,204);vertical-align:baseline;background-color:transparent">kaiwang@chromium.org</span></a><span style="vertical-align:baseline;background-color:transparent">&gt;.</span></div></span>
+<br />
+<span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap"><b>[following text is out-of-date but retained for historical purposes]</b> The project started in mid-Q3 2012. Our expectation is that we can put at least a man-year or two of fast and furious work into this project before reaching diminishing returns. We will re-evaluate quarterly, involving the Chrome TLs in the discussion. We will also attempt to set quarterly goals that fulfill shorter-term needs while driving us forward on our longer-term goals (e.g. for Q4 2012 we have a goal to help the Android WebView folks reuse functionality from Chrome without depending on anything under </span><span style="font-size:15px;font-family:Courier New;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">src/chrome/</span><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">).</span><br />
+<h3><a name="TOC-Risks"></a>Risks</h3>
+<div>While a full risk analysis has not yet been done, there are a couple of obvious risks:</div>
+<ol><li><i>Making life harder for folks who live on a branch and upstream changes.</i> Large refactorings that move files around can make it significantly harder to upstream changes from a branch. We believe paying this cost is reasonable, since we try to avoid branches in general (so it makes sense to make a trade-off that favors quality and maintainability of the trunk over ease of doing development on a branch), and because other factors in this refactoring work make upstreaming easier (e.g. the ability to turn off or replace individual components without dozens of #ifdefs littering the code). In conversation with folks responsible for upstreaming, no concerns were voiced, but rather support for the project.</li>
+<li><i>Spending too much time and effort on something with no direct user-visible improvements.</i> The general consensus seems to be that the last project similar to this one (extracting the <a href="http://www.chromium.org/developers/content-module">content module</a>) was easily worth the effort and had substantial concrete benefits, although not user-visible. We believe the Browser Components project also has substantial concrete benefits as outlined in the Objectives section. We will also use metrics to keep track of progress and re-evaluate the need for continuing the project quarterly with key stakeholders, to avoid this risk from materializing.</li>
+</ol>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="/developers/design-documents/browser-components/cookbook" dir="ltr">Browser Components / Layered Components Cookbook</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=http://sites.google.com/a/chromium.org/dev/developers/design-documents/browser-components">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="http://www.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9B-vUKtpfjCl6YzvPzh4PXEb8yGiJl4BMbuvuzitIKDzBSPIHoTk5KxYWs_ZNzTtBC9HdTJ9Hfz6jumkL8r7yVK29eE25CNq2GHd8Ddng6xoI7-yc/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('http://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'http://csi.gstatic.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

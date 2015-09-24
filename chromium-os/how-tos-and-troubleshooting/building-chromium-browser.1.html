@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="../../_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting","deleted":false,"title":"How Tos and Troubleshooting","dir":"ltr"},{"path":"/chromium-os/how-tos-and-troubleshooting/building-chromium-browser","deleted":false,"title":"Building Chromium for Chromium OS (simple chrome)","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/building-chromium-browser\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/how-tos-and-troubleshooting","parentWuid":"wuid:gx:72ecb36fa9c83ecd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Building Chromium for Chromium OS (simple chrome)","locale":"en","wuid":"wuid:gx:10c8dd71476cb6e0","revision":159,"path":"/chromium-os/how-tos-and-troubleshooting/building-chromium-browser","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"building-chromium-browser","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Building Chromium for Chromium OS (simple chrome) - The Chromium Projects" />
+<meta itemprop="name" content="Building Chromium for Chromium OS (simple chrome) - The Chromium Projects" />
+<meta property="og:title" content="Building Chromium for Chromium OS (simple chrome) - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/overlay.css%3Fcb=beigeandblueundefineda100%2525%2525150goog-ws-leftthemedefaultstandard.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Building Chromium for Chromium OS (simple chrome) - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1438879449147/config/customLogo.gif%3Frevision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="../../index.html" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://www.chromium.org/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-projects.html" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../Home.1.html" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../chromium-os.1.html" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="../../for-testers/bug-reporting-guidelines.html" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../developers/discussion-groups.html" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="../../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../../chromium-os.1.html" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="../how-tos-and-troubleshooting.1.html" dir="ltr">How Tos and Troubleshooting</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Building Chromium for Chromium OS (simple chrome)</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Typography-conventions"><strong>1 </strong>Typography conventions</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Checkout-Chromium"><strong>2 </strong>Checkout Chromium</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Run-cros-chrome-sdk-"><strong>3 </strong>Run `cros chrome-sdk`</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Using-a-custom-Chromium-OS-build-from-your-Chromium-OS-chroot-optional-"><strong>3.1 </strong>Using a custom Chromium OS build from your Chromium OS chroot (optional)</a></li></ol></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Build-Chromium"><strong>4 </strong>Build Chromium</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Set-up-the-Chromium-OS-device"><strong>5 </strong>Set up the Chromium OS device</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Create-a-bootable-USB-stick"><strong>5.1 </strong>Create a bootable USB stick</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Download-a-test-image-manually"><strong>5.1.1 </strong>Download a test image manually</a></li></ol></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Put-your-Chrome-OS-device-in-dev-mode"><strong>5.2 </strong>Put your Chrome OS device in dev mode</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Install-the-test-image-onto-your-device"><strong>5.3 </strong>Install the test image onto your device</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Connect-device-to-corp-network"><strong>5.4 </strong>Connect device to corp network</a></li></ol></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Deploying-Chrome-to-the-device"><strong>6 </strong>Deploying Chrome to the device</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Checking-the-IP-address"><strong>6.1 </strong>Checking the IP address</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Using-deploy_chrome"><strong>6.2 </strong>Using deploy_chrome</a></li></ol></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Debugging"><strong>7 </strong>Debugging</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Logfiles"><strong>7.1 </strong>Logfiles</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Commandline-Flags-and-Envvars"><strong>7.2 </strong>Commandline Flags and Envvars</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-R37-and-newer-"><strong>7.2.1 </strong>R37 (and newer)</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-R36-and-older-"><strong>7.2.2 </strong>R36 (and older)</a></li></ol></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Debug-build"><strong>7.3 </strong>Debug build</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Remote-GDB"><strong>7.4 </strong>Remote GDB</a></li></ol></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Additional-instructions"><strong>8 </strong>Additional instructions</a><ol class="goog-toc"><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Updating-the-version-of-the-Chrome-OS-SDK"><strong>8.1 </strong>Updating the version of the Chrome OS SDK</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Specifying-the-version-of-the-Chrome-OS-SDK-to-use"><strong>8.2 </strong>Specifying the version of the Chrome OS SDK to use</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Updating-Chrome"><strong>8.3 </strong>Updating Chrome</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Using-clang"><strong>8.4 </strong>Using clang</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Updating-Deployed-Files"><strong>8.5 </strong>Updating Deployed Files</a></li><li class="goog-toc"><a href="building-chromium-browser.1.html#TOC-Deploying-debug-build-without-stripping-symbols"><strong>8.6 </strong>Deploying debug build without stripping symbols</a></li></ol></li></ol></div></div></div></div>
+<p>This workflow allows you to quickly build/deploy Chromium to any Chromium OS device without needing a Chromium OS checkout or chroot. It's useful for trying out your changes on a real device while you're doing Chromium development. If you want your Chromium changes to be included when building a full Chromium OS image, see the <a href="../developer-guide.1.html#TOC-Making-changes-to-the-Chromium-web-" target="_blank">instructions in the development guide</a>.</p>
+<p>At its core is the <code>chrome-sdk</code> shell which sets up the shell environment, and fetches the necessary SDK components (CrOS toolchain, sysroot, etc.).</p>
+<h2><a name="TOC-Typography-conventions"></a>Typography conventions</h2>
+<table border="1" cellspacing="0" style="color:rgb(40,55,105);line-height:20px;border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+<td style="padding:1px 4px;width:121.19886374473572px;height:19.19318187236786px"><b>Color</b></td>
+<td style="padding:1px 4px;width:352.1988637447357px;height:19.19318187236786px"><b>Paths, files, and commands:</b></td>
+</tr>
+<tr>
+<td style="padding:1px 4px;width:121.19886374473572px;height:19.19318187236786px"><code>green text</code></td>
+<td style="padding:1px 4px;width:352.1988637447357px;height:19.19318187236786px">on your build machine, outside the chroot<br />
+</td>
+</tr>
+<tr>
+<td style="padding:1px 4px;width:121.19886374473572px;height:59.19318187236786px"><code><font color="#ff00ff">purple text</font></code></td>
+<td style="padding:1px 4px;width:352.1988637447357px;height:59.19318187236786px">inside the <code>chrome-sdk</code> shell on your build machine<br />
+Note: This is not the same thing as the <code>cros-sdk</code> chroot.</td>
+</tr>
+<tr>
+<td style="padding:1px 4px;width:121.19886374473572px;height:24.19318187236786px"><code><font color="#741b47">crimson text</font></code></td>
+<td style="padding:1px 4px;width:352.1988637447357px;height:24.19318187236786px">on your Chromium OS device<br />
+<br />
+</td>
+</tr>
+</tbody>
+</table>
+<h2><a name="TOC-Checkout-Chromium"></a>Checkout Chromium</h2>
+<p>First off make sure all preconditions are met:</p>
+<div>
+<ol><li>You have a <a href="../../developers/how-tos/get-the-code.1.html" target="_blank">local copy of the Chromium source code</a>.</li>
+<li>You have a <a href="../../developers/how-tos/install-depot-tools.html" target="_blank">local copy of depot_tools</a>.</li>
+</ol>
+<p>Secondly, think about whether you need access to Google APIs from the executable you are building. <b>S<span style="font-size:13.3333330154419px;background-color:transparent">igning in</span></b><span style="font-size:13.3333330154419px;background-color:transparent"><b>,</b> translating web pages, geolocation, etc. require use of Google APIs, the usage of which requires </span><span style="font-size:10pt;background-color:transparent">keys.  If you will need to have your keys (see </span><a href="http://www.chromium.org/developers/how-tos/api-keys" style="font-size:10pt;background-color:transparent">http://www.chromium.org/developers/how-tos/api-keys</a><span style="font-size:10pt;background-color:transparent">), place them either in your include.gypi, or in a file in your home directory called "</span><span style="font-size:10pt;background-color:transparent">.googleapikeys". </span><span style="font-size:13.3333330154419px;background-color:transparent"> If either of these files are present during build, they will be included automatically.  If you don't have these keys, these features of chromium will be quietly disabled.</span></p><div><span style="font-size:13.3333330154419px"><br /></span></div>
+</div>
+<h2><a name="TOC-Run-cros-chrome-sdk-"></a>Run `cros chrome-sdk`</h2>
+<p>Run this from within your <b>Chromium</b> checkout (not the Chromium OS chroot):</p>
+<p><b>Have you setup gsutil yet?</b></p>
+<blockquote style="margin:0 0 0 40px;border:none;padding:0px">
+<p>Steps below may run slow and fail with "Login Required" from gsutil. <a href="https://cloud.google.com/storage/docs/gsutil_install">Install gsutil</a> and run <code>gsutil config</code> to set the authentication token. (If you are a Googler, use your <b>@google.com</b> account)</p>
+<p><b><font color="#cc0000">NOTE: When prompted for a project ID, enter <b>134157665460 as your project ID (this is the Chrome OS project ID).</b></font></b></p>
+</blockquote>
+<div class="sites-codeblock sites-codesnippet-block"><code># Note: Replace $BOARD with a <a href="../developer-information-for-chrome-os-devices.html">Chromium OS board name</a></code><br />
+<code>cros chrome-sdk --board=$BOARD</code>
+</div>
+<p><code style="font-size:10pt;background-color:transparent">cros chrome-sdk</code><span style="font-size:10pt;background-color:transparent"> will fetch the latest Chrome OS SDK for building Chrome,
+and put you in a shell (with a </span><font color="#ffff00" style="font-size:10pt;background-color:rgb(0,0,0)"> yellow command prompt </font><span style="font-size:10pt;background-color:transparent">).  </span><span style="font-size:10pt;color:rgb(0,96,0);font-family:monospace;background-color:transparent">chrome-sdk</span><span style="font-size:10pt;line-height:1.5;background-color:transparent"> will also automatically install and start the Goma server, with the active server port stored in the </span><code style="font-size:10pt;line-height:1.5;background-color:transparent"><font color="#ff00ff">$SDK_GOMA_PORT</font></code><span style="font-size:10pt;line-height:1.5;background-color:transparent"> environment variable</span><span style="font-size:10pt;line-height:1.5;background-color:transparent">.</span></p>
+<p>The necessary environment variables needed to build Chrome (i.e.,
+<code>GYP_DEFINES</code>, <code>GYP_GENERATORS</code>, etc.) are set up for you, and t<span style="line-height:1.5;font-size:10pt">he contents of </span><code style="line-height:1.5;font-size:10pt">~/.chromite/chrome_sdk.bashrc</code><span style="line-height:1.5;font-size:10pt"> (which you can use to set a custom environment) will be sourced. If you use a <code>~/.gyp/include.gyp</code> file to customize your builds outside of this workflow, note that it will override <code>GYP_DEFINES</code>, which may cause issues (see <a href="https://www.chromium.org/chromium-os/how-tos-and-troubleshooting/goog_1523084848">http://crbug.com/</a></span><span style="background-color:transparent;line-height:20px"><a href="http://crbug.com/411469">411469</a>). You can work around this by setting the </span><span style="background-color:transparent;line-height:20px"><code>GYP_CONFIG_DIR</code> environment variable to point to a different directory in </span><span style="background-color:transparent;line-height:20px"><code>chrome_sdk.bashrc</code>.</span></p>
+<p><b>Tip:</b> <code>cros chrome-sdk</code> will set up the environment to build external Chromium by default. To build the official Chrome, run with the <code>--internal</code> flag.
+</p>
+<p><b>Note1:</b> There are no public builders yet for non-generic boards, so you'll have to use the generic or create your own local build. Star <a href="http://crbug.com/360342">http://crbug.com/360342</a> for updates.</p>
+<h3><a name="TOC-Using-a-custom-Chromium-OS-build-from-your-Chromium-OS-chroot-optional-"></a>Using a custom Chromium OS build from your Chromium OS chroot (optional)</h3>
+<p>If you are making changes to Chromium OS and have a Chromium OS build inside a chroot that you want to build against, run <code>cros chrome-sdk</code> with the <code>--chroot</code> option.</p>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(0,96,0);font-family:monospace">cros chrome-sdk --board=$BOARD --chroot=/path/to/chromiumos/chroot</span></div>
+<h2><a name="TOC-Build-Chromium"></a>Build Chromium</h2>
+<p><code>cros chrome-sdk</code> defaults to setting Ninja as the
+<code>GYP_GENERATOR</code>. From inside the <code>chrome-sdk</code> shell, run the following commands, where <code><font color="#ff00ff">%CHROME_DIR%</font></code> is the path to your Chromium checkout:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code><font color="#ff00ff">unset PKG_CONFIG_PATH</font></code><br />
+<code><font color="#ff00ff">cd %CHROME_DIR%/src</font></code><br />
+<code><font color="#ff00ff">./build/install-build-deps.sh # Append --arm for arm targets (e.g., $BOARD=daisy)</font></code><br />
+<code><font color="#ff00ff"><br /># Optionally remove debugging symbols for faster build &amp; link.<br /># The default GYP_DEFINES leaves them, but unless you pass </font><font color="#274e13">--nostrip</font><br /><font color="#ff00ff"># to </font><font color="#274e13">deploy_chrome</font><font color="#ff00ff"> the symbols will be stripped by default.</font></code><br />
+<code><font color="#ff00ff">#   export GYP_DEFINES=${GYP_DEFINES//release_extra_cflags=-g/}<br /><br /># Probably enable DCHECKS in Release build.<br />#   export GYP_DEFINES="${GYP_DEFINES} dcheck_always_on=1"<br /><br />gclient runhooks</font></code><br />
+<code><font color="#ff00ff">ninja -C out_${SDK_BOARD}/Release -j500 chrome chrome_sandbox nacl_helper</font></code>
+</div>
+<p>Congratulations, you've now built Chromium for Chromium OS!</p>
+<p>Once you've built Chromium the first time, you can build incrementally just using <code><font color="#ff00ff">ninja</font></code>. Here's an example:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code><font color="#ff00ff">ninja -C out_</font><span style="color:rgb(255,0,255)">${SDK_BOARD}</span><font color="#ff00ff">/Release -j500 chrome</font></code></div>
+<p><b>Tip:</b> The default extensions will be installed by the test image you use below.</p>
+<h2><a name="TOC-Set-up-the-Chromium-OS-device"></a>Set up the Chromium OS device</h2>
+<p>Before you can deploy your build of Chromium to the device, it needs to have a test image loaded on it.</p>
+<h3><a name="TOC-Create-a-bootable-USB-stick"></a><span style="background-color:transparent"><font size="3">Create a bootable USB stick</font></span></h3>
+<p>You will need a 4GiB USB stick (you can get one at the ChromeStop where you picked up your Chromebook).</p>
+<p><font color="#ff0000" style="background-color:rgb(255,255,255)">For now cros flash usb:// xbuddy://... does not work. (<a href="https://code.google.com/p/chromium/issues/detail?id=403086">issue 437877</a>).<br />
+Use the "<b>Download a test Image manually</b>" instructions below.</font></p>
+<p>Run <code><font color="#ff00ff">cros flash</font></code> from your current checkout and tell it to download &amp; install the right test image.</p>
+<p>Here, replace $BOARD with and &lt;version&gt; with the right values. Both can be seen in your SDK prompt <span style="font-size:10pt;background-color:transparent">(e.g. </span><code style="font-size:10pt;background-color:transparent"><font color="#ff00ff">(sdk <b>lumpy</b> <b>R27-3789.0.0</b>)</font></code><span style="font-size:10pt;background-color:transparent"> is the lumpy board using version R27-3789.0.0).</span></p>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#ff00ff">cros flash usb:// xbuddy://remote/$BOARD/&lt;version&gt;/test</font></code></div>
+</div>
+<p>See the <a href="../build/cros-flash.html">Cros Flash page</a> for more details.</p>
+<h4><a name="TOC-Download-a-test-image-manually"></a>Download a test image manually</h4>
+<p>Easiest way to get a test image is to let cros flash download it for you. However, if you want to download one manually, you can use the URL (where $BOARD and &lt;version&gt; are replaced same as above):<br />
+<u>https://storage.cloud.google.com/chromeos-image-archive/<b>$BOARD</b>-release/<b>&lt;version&gt;</b>/chromiumos_test_image.tar.xz</u></p>
+<p>Googlers can navigate releases at <a href="https://cros-goldeneye.corp.google.com/console/listRelease">https://cros-goldeneye.corp.google.com/console/listRelease</a>.</p>
+<p>After you download the compressed tarball containing the test image (it should have "test" somewhere in the file name), extract the image by running:</p>
+<div class="sites-codeblock sites-codesnippet-block"><code>tar xf chromiumos_test_image.tar.xz</code></div>
+<p>Copy the image to your drive using <code>cros flash</code></p>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#ff00ff">cros flash usb:// chromiumos_test_image.bin</font></code></div>
+<p style="font-size:13.3333330154419px">If cros flash does not work you can do it the old fashioned way using <font color="#006000" face="monospace">dd.</font><span style="font-size:13.3333330154419px;background-color:transparent"> W</span><span style="font-size:13.3333330154419px;background-color:transparent">here the X in sdX is the path to your usb key, and you can use </span><span style="color:rgb(0,96,0);font-family:monospace;font-size:13.3333330154419px;background-color:transparent">dmesg</span><span style="font-size:13.3333330154419px;background-color:transparent"> to figure out the right path (it'll show when you plug it in).</span></p>
+<div class="sites-codeblock sites-codesnippet-block" style="font-size:13.3333330154419px"><code><font color="#ff00ff">sudo dd if=chromiumos_test_image.bin of=/dev/sdX</font></code></div>
+<h3><a name="TOC-Put-your-Chrome-OS-device-in-dev-mode"></a>Put your Chrome OS device in dev mode</h3>
+<p>Follow the <a href="../developer-information-for-chrome-os-devices.html">device-specific instructions</a> to </p>
+<ol><li><span style="font-size:10pt;background-color:transparent">Put your device into dev mode.</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Enable booting from USB.</span></li>
+</ol>
+<h3><a name="TOC-Install-the-test-image-onto-your-device"></a>Install the test image onto your device</h3>
+<ol><li><span style="font-size:10pt;background-color:transparent">Plug the USB stick into the machine and reboot.</span></li><li><span style="font-size:10pt;background-color:transparent">At the dev-mode warning screen, press Ctrl-U to boot from the USB.</span></li><li><span style="font-size:10pt;background-color:transparent">Switch to terminal, Ctrl-Alt-F2 (</span><span style="font-size:13.3333330154419px">Ctrl-Alt-NavigateForward)</span></li><li><span style="font-size:13.3333330154419px">Login as chronos, password test0000.</span></li><li><code style="font-size:13.3333330154419px;line-height:13px;background-color:rgb(239,239,239)"><font color="#660000">sudo </font></code><span style="font-size:10pt;line-height:1;color:rgb(153,0,0);font-family:monospace;background-color:rgb(239,239,239)">/usr/sbin/chromeos-install</span></li></ol>
+<p><b style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;letter-spacing:normal;line-height:normal"><font color="#e69138">IMPORTANT NOTES</font></b><span style="color:rgb(0,0,0);font-family:Arial,Verdana,sans-serif;font-size:13px;letter-spacing:normal;line-height:normal">:</span></p><ul><li><span style="font-size:13px;background-color:transparent">Installing Chromium OS onto your hard disk will</span><span style="font-size:13px;background-color:transparent"> </span><b style="font-size:13px;background-color:transparent"><font color="#ff0000">WIPE YOUR HARD DISK CLEAN</font></b><span style="font-size:13px;background-color:transparent">.</span></li><li><span style="font-size:13px;background-color:transparent"><font color="#ff0000"><b>DO NOT</b></font> log into this test image with a username and password you care about. The root password is PUBLIC ("test0000"), so anyone with ssh access could compromise the device.</span></li></ul>
+<h3><a name="TOC-Connect-device-to-corp-network"></a>Connect device to corp network</h3>
+<p>To do this you will need a USB-to-ethernet dongle (you can find these at the techstop).</p>
+<h2><a name="TOC-Deploying-Chrome-to-the-device"></a>Deploying Chrome to the device</h2>
+<p>To deploy the build to a device, you will need direct ssh access to it from your computer. The scripts below handle everything else.</p>
+<h3><a name="TOC-Checking-the-IP-address"></a>Checking the IP address</h3>
+<div>
+<ol><li><span style="font-size:10pt;background-color:transparent">Click the status area in the lower-right corner</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Click the network icon</span></li>
+<li><span style="font-size:10pt;background-color:transparent">Click the circled i symbol in the lower-right corner</span></li>
+<li>A small window pops up that shows the IP address</li>
+</ol>
+<div>This also works both before and after login. Another option is to run 'ifconfig' from the shell (Ctrl-Alt-t -&gt; shell) after guest login.</div>
+</div>
+<h3><a name="TOC-Using-deploy_chrome"></a>Using deploy_chrome</h3>
+<p>Just type <span style="color:rgb(255,0,255);font-family:monospace;line-height:1.5;font-size:10pt">deploy_chrome</span><span style="line-height:1.5;font-size:10pt"> from with your chrome-sdk shell. It will use rsync to incrementally deploy to the device.</span></p>
+<p>Specify the build output directory to deploy from using
+<code><font color="#ff00ff">--build-dir</font></code>, and the IP address of the target device (which must
+be ssh-able as user 'root') using <code><font color="#ff00ff">--to</font></code>, <span style="line-height:1.5;font-size:10pt">where</span><span style="line-height:1.5;font-size:10pt"> </span><code style="line-height:1.5;font-size:10pt"><font color="#ff00ff">%CHROME_DIR%</font></code><span style="line-height:1.5;font-size:10pt"> </span><span style="line-height:1.5;font-size:10pt">is the path to your Chrome checkout</span><span style="line-height:1.5;font-size:10pt">:</span></p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code><font color="#ff00ff">cd %CHROME_DIR%/src<br />
+    deploy_chrome --build-dir=out_${SDK_BOARD}/Release
+    --to=172.11.11.11</font></code>
+</div>
+<p><b>Tip:</b> <code><font color="#ff00ff">deploy_chrome</font></code> lives under <code><font color="#ff00ff">$CHROME_DIR/src/</font></code><font color="#ff00ff" face="monospace">third_party/</font><code style="line-height:1.5;font-size:10pt"><font color="#ff00ff">chromite/bin</font></code><span style="line-height:1.5;font-size:10pt">. You can run </span><code style="line-height:1.5;font-size:10pt"><font color="#ff00ff">deploy_chrome</font></code><span style="line-height:1.5;font-size:10pt"> outside of a </span><code style="line-height:1.5;font-size:10pt">chrome-sdk</code><span style="line-height:1.5;font-size:10pt"> shell as well.</span></p>
+<p><b>Tip:</b> Specify the <code><font color="#ff00ff">--target-dir</font></code> flag to deploy to a custom location on the target device.</p>
+<h2><a name="TOC-Debugging"></a>Debugging</h2>
+<h3><a name="TOC-Logfiles"></a>Logfiles</h3>
+<p>Other than the normal system output in <code>/var/log/messages</code>, you can find the output of Chrome itself in <code>/var/log/ui/ui.LATEST</code>. This is where vmodule output and such ends up.</p>
+<h3><a name="TOC-Commandline-Flags-and-Envvars"></a>Commandline Flags and Envvars</h3>
+<p>If you want to tweak the command line of Chrome or its environment, you have to do this on the device itself.</p>
+<h4><a name="TOC-R37-and-newer-"></a>R37 (and newer)</h4>
+<p>Edit the <code>/etc/chrome_dev.conf</code> file. Instructions on using it are in the file itself.</p>
+<h4><a name="TOC-R36-and-older-"></a>R36 (and older)</h4>
+<p>Edit the <code>/sbin/session_manager_setup.sh</code> script. If you go to the end, you'll see where Chrome is invoked and where you can tweak the flags/env.</p>
+<h3><a name="TOC-Debug-build"></a>Debug build</h3>
+<div>A debug build of Chrome will include useful tools like DCHECK()s and debug logs (DVLOG(), etc.). <span style="font-size:10pt;background-color:transparent">To build a debug version of Chrome, pass Debug instead of Release to ninja:</span></div>
+<div><br />
+</div>
+<div>
+<div class="sites-codeblock sites-codesnippet-block"><span style="color:rgb(255,0,255);font-family:monospace;line-height:13.3333320617676px">ninja -C out_${SDK_BOARD}/Debug -j500 chrome chrome_sandbox nacl_helper</span></div>
+</div>
+<h3><a name="TOC-Remote-GDB"></a>Remote GDB</h3>
+<p>On the target machine, open up a port for the gdb server to listen on, and attach the gdb server to the running chrome process.  </p>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#741b47">sudo /sbin/iptables -A INPUT -p tcp --dport 1234 -j ACCEPT</font></code></div>
+<div><code><font color="#741b47">sudo gdbserver --attach :1234 $(pgrep chrome -P $(pgrep session_manager))</font></code></div>
+</div>
+</div>
+<p>On your host machine (inside the chrome-sdk shell), run gdb and start the Python interpreter:</p>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#ff00ff">cd %CHROME_DIR%/src</font></code></div>
+<div><code><font color="#ff00ff">gdb out_${BOARD}/Release/chrome</font></code></div>
+<div><code><font color="#ff00ff">Reading symbols from /usr/local/google2/chromium2/src/out_link/Release/chrome...</font></code></div>
+<div><code><font color="#ff00ff">(gdb) pi </font></code></div>
+<div><code><font color="#ff00ff">&gt;&gt;&gt;</font></code></div>
+</div>
+</div>
+<p><b>Note: These instructions are for targeting an x86_64 device.  For now, to target an ARM device, you need to run the cross-compiled gdb from within a chroot.</b></p>
+<div>
+<p>Then from within the Python interpreter, run these commands:</p>
+</div>
+<div>
+<div></div>
+<div class="sites-codeblock sites-codesnippet-block">
+<div><code><font color="#ff00ff">import os</font></code></div>
+<div><code><font color="#ff00ff">sysroot = os.environ['SYSROOT']</font></code></div>
+<div><code><font color="#ff00ff">gdb.execute('set sysroot %s' % sysroot)</font></code></div>
+<div><code><font color="#ff00ff">gdb.execute('set solib-absolute-prefix %s' % sysroot)</font></code></div>
+<div><code><font color="#ff00ff">gdb.execute('set debug-file-directory %s/usr/lib/debug' % sysroot)</font></code></div>
+<div><code><font color="#ff00ff">gdb.execute('target remote 12.34.56.78:1234')</font></code></div>
+</div>
+</div>
+<p>If you wish, after you connect, you can Ctrl-D out of the Python shell.</p>
+<p>Extra debugging instructions are located at <a href="debugging-tips.html" style="line-height:1.5;font-size:10pt">http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-tips</a>.</p>
+<div>
+<h2><a name="TOC-Additional-instructions"></a>Additional instructions</h2>
+<h3><a name="TOC-Updating-the-version-of-the-Chrome-OS-SDK"></a>Updating the version of the Chrome OS SDK</h3>
+<p>When you invoke <code>cros chrome-sdk</code>, the script fetches the version of the SDK that corresponds to your Chrome checkout.  To update the SDK, sync your Chrome checkout and re-run <code>cros chrome-sdk</code>.</p>
+<p><span style="line-height:1.5;font-size:10pt"><font color="#e69138"><b>IMPORTANT NOTE:</b></font> Every time that you update Chrome or the Chrome OS SDK, it is possible that Chrome may start depending on new features from a new Chrome OS image. This can cause unexpected problems, so it is important to update your image regularly</span><span style="line-height:1.5;font-size:10pt">. </span><span style="line-height:1.5;font-size:10pt">Instructions for updating your Chrome OS image are above in <a href="building-chromium-browser.1.html#TOC-Set-up-the-Chromium-OS-device">Set Up the Chromium OS device</a>.</span></p>
+<h3><a name="TOC-Specifying-the-version-of-the-Chrome-OS-SDK-to-use"></a>Specifying the version of the Chrome OS SDK to use</h3>
+<p>You can specify a version of Chrome OS to build against. This is handy for
+tracking down when a particular bug was introduced.</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>cros chrome-sdk --board=$BOARD --version=3680.0.0</code>
+</div>
+<p>Once you are finished testing the old version of the chrome-sdk, you can
+always start a new shell with the latest version again. Here's an example:</p>
+<div class="sites-codeblock sites-codesnippet-block">
+<code>cros chrome-sdk --board=$BOARD</code>
+</div>
+<h3><a name="TOC-Updating-Chrome"></a>Updating Chrome</h3>
+<p><b>Tip</b>: If you update Chrome inside the <code>chrome-sdk</code>, it will automatically run
+<code><font color="#ff00ff">./build/gyp_chromium</font></code> for you inside the <code>chrome-sdk</code> shell.  Note that you may then be using an SDK that is out of date with the current Chrome.  See <a href="building-chromium-browser.1.html#TOC-Updating-the-version-of-the-Chrome-OS-SDK">Updating the version of the Chrome OS SDK</a> above.</p>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#ff00ff">git rebase-update<br />
+gclient sync</font></code>
+</div>
+<h3><a name="TOC-Using-clang"></a>Using clang</h3>
+<p><span style="line-height:1.5;font-size:10pt">Run </span><code style="line-height:1.5;font-size:10pt">cros chrome-sdk</code><span style="line-height:1.5;font-size:10pt"> with the </span><code style="line-height:1.5;font-size:10pt">--clang</code><span style="line-height:1.5;font-size:10pt"> flag.  Clang doesn't work with Ninja right now, so you'll also need to pass in </span><code style="line-height:1.5;font-size:10pt">--make</code><span style="line-height:1.5;font-size:10pt">.</span></p>
+<div class="sites-codeblock sites-codesnippet-block"><code>cros chrome-sdk --board=$BOARD --clang --make</code></div>
+<p>Then run these commands to build with make, <span style="line-height:1.5;font-size:10pt">where</span><span style="line-height:1.5;font-size:10pt"> </span><code style="line-height:1.5;font-size:10pt"><font color="#ff00ff">%CHROME_DIR%</font></code><span style="line-height:1.5;font-size:10pt"> </span><span style="line-height:1.5;font-size:10pt">is the path to your Chrome checkout</span><span style="line-height:1.5;font-size:10pt">:</span></p>
+<div class="sites-codeblock sites-codesnippet-block"><code><font color="#ff00ff">cd %CHROME_DIR%/src</font></code>
+<div><code><font color="#ff00ff">./build/gyp_chromium</font></code></div>
+<div><code><font color="#ff00ff">make -j1000 chrome chrome_sandbox nacl_helper</font></code></div>
+</div>
+<p>Note that  Make files are spread through the source tree, and not concentrated in the out_$BOARD directory, so you can only have one Make config running at a time.</p>
+<h3><a name="TOC-Updating-Deployed-Files"></a>Updating Deployed Files</h3>
+<p>Since the gyp files don't define which targets get installed, that information is maintained in the <a href="https://chromium.googlesource.com/chromiumos/chromite/">chromite repo</a> as part of Chromium OS. That repo is also integrated into the Chromium source tree via the DEPS file.</p>
+<p>In order to add/remove a file from the installed list:</p>
+<ol><li>Go into the chromite directory and modify lib/chrome_util.py</li>
+<ol><li>Look for the _COPY_PATHS list</li>
+<li>Add your new file with optional=True</li>
+</ol>
+<li>Commit your change locally using git</li>
+<li>Upload your change to gerrit</li>
+<ol><li>git push origin master:refs/for/master</li>
+</ol>
+<li>Get it reviewed by someone on the Chromium OS build team (e-mail chromium-os-dev@ if you can't find anyone)</li>
+<li>Merge the change into Chromium OS via gerrit</li>
+<li>Update the DEPS file in Chromium to use the new chromite sha1</li>
+<li>Check in the Chromium change like normal</li>
+<li>Once everything has settled, then go back and remove the optional=True from the file list</li>
+<ol><li>Unless the file is actually optional, then keep it</li>
+</ol>
+</ol><div><h3><a name="TOC-Deploying-debug-build-without-stripping-symbols"></a>Deploying debug build without stripping symbols</h3></div><div><span style="color:rgb(34,34,34);font-size:small;font-family:arial,helvetica,sans-serif">You need to add </span><font face="monospace, monospace" style="color:rgb(34,34,34);font-size:small">--nostrip</font><font face="arial, helvetica, sans-serif" style="color:rgb(34,34,34);font-size:small"> to </font><font face="monospace, monospace" style="color:rgb(34,34,34);font-size:small">deploy_chrome</font><font face="arial, helvetica, sans-serif" style="color:rgb(34,34,34);font-size:small"> because otherwise it will strip symbols even from a debug build.  The rootfs will probably not be big enough to hold all the binaries so you need to put it on the stateful partition and bind mount over the real directory.</font></div><div><font face="arial, helvetica, sans-serif" style="color:rgb(34,34,34);font-size:small"><br /></font></div><div><div class="sites-codeblock sites-codesnippet-block" style="font-size:13.3333px">deploy_chrome --build_dir=out_$BOARD/Debug \<br />                          --to=&lt;ip-address&gt; <br />                          --target-dir=/usr/local/chrome \<br /><span style="font-size:13.3333px;line-height:1">                          --mount-dir=/opt/google/chrome \<br />                          --nostrip</span></div></div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages" class="sites-canvas-bottom-panel-wrapper" style="">
+<div class="sites-subpages">
+            Subpages <span id="subpages-total-number">(1):</span>
+<span>
+<a href="building-chromium-browser/chrome-api-keys-in-the-chroot.html" dir="ltr">Chrome API keys in the Chromium OS SDK chroot</a>
+</span>
+</div>
+</div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/how-tos-and-troubleshooting/building-chromium-browser">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9LBIi7UXOmFiE5pAF8xmyv8IWqSvcQ-SniIYlMK98Qm0bAbfi8XiwKvIIy4LqN2Zykf0O7bQ1cAho8VzQEBLrBx3Xd838-cRScPf9-GmGcic_fI_j/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

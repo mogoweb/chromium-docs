@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/developers","deleted":false,"title":"For Developers","dir":"ltr"},{"path":"/developers/chromium-string-usage","deleted":false,"title":"Chromium String usage","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/developers/chromium-string-usage\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/developers","parentWuid":"wuid:gx:982466121d9f2cd","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"Chromium String usage","locale":"en","wuid":"wuid:gx:7b20a4ec30024bfb","revision":11,"path":"/developers/chromium-string-usage","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"chromium-string-usage","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Chromium String usage - The Chromium Projects" />
+<meta itemprop="name" content="Chromium String usage - The Chromium Projects" />
+<meta property="og:title" content="Chromium String usage - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Chromium String usage - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/developers" dir="ltr">For Developers</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Chromium String usage</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><b style="font-family:Times;font-size:medium;font-weight:normal"><span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Types of Strings</span><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">In the Chromium code base, we use std::string and string16.  WebKit uses WTF::string instead, which is patterned on std::string, but is a slightly different class (see the webkit docs for their guidelines, we’ll only talk about chromium here).  We also have a StringPiece class, which is basically a pointer to a string that is owned elsewhere with a length of how many characters from the other string form this “token”. Finally, there is also WebCString and WebString, which is used by the webkit glue layer.</span><br /><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">String Encodings</span><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">We use a variety of encodings in the code base.  UTF-8 is most common, but we also use UTF-16, UCS-2, and others.  </span><br /><br /><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">UTF-8 </span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">is an encoding where most all characters are one or more bytes (up to 6) in length.  Each byte will indicate whether another byte follows.  </span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">UTF-16 </span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">is an encoding where all characters are at least 2 bytes long.  There are also 4 byte UTF-16 characters (a pair of two 16-bit code units ; surrogate pair).  While they are somewhat rare, 4 byte characters can occur in Chinese, not just languages like ancient Sumerian and Linear B. Most of Emoji characters are also represented in 4 bytes.   </span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">UCS-2</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> is an older format that is very similar to UTF-16 (think of UTF-16 with 2 byte characters only, no 4 byte characters).</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">ASCII</span><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap"> is the older 7 bit encoding which includes 0-9, a-z, A-Z, and a few common punctuation characters, but not too much else.  ASCII is always one byte per character.</span></li></ul><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">When to use which encoding</span><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">The most important rule here is the meta-rule, code in the style of the surrounding code. I</span><span style="font-size:15px;font-family:Arial;color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">n the frontend, we use std::string/char for UTF-8 and string16/char16 for UTF-16 on all platforms.  Even though std::string is encoding agnostic, we only put UTF-8 into it.  std::wstring/wchar_t is banned in cross-platform code (in part because it's differently-sized on different platforms), and only allowed in Windows-specific code where appropriate to interface with native APIs (which often take wchar_t* or similar).  Most UI strings are UTF-16. URLs are generally UTF-8. Strings in the webkit glue layer are typically UTF-16 with several exceptions.</span><br /><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">The GURL class and strings</span><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline;white-space:pre-wrap">One common data type using strings is the GURL class. The constructor takes a std::string in UTF-8 for the URL itself.  If you have a GURL, you can use the spec() method to get the std::string for the entire URL, or you can use component methods to get parsed parts, such as scheme(), host(), port(), path(), query(), and ref(), all of which return a std::string.  All the parts of the GURL with the possible exception of the ref string will be pure ASCII, the ref string might have some UTF-8 characters which are not also ASCII characters.</span><br /><br /><span style="font-size:15px;font-family:Arial;background-color:transparent;font-weight:bold;vertical-align:baseline;white-space:pre-wrap">Guidelines for string use in our codebase</span><br /><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Use std::string from the C++ standard library for normal use with strings</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Length checking - if  checking for empty, prefer “string.empty():” to “string.length() == 0”</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">When you make a string constant at the top of the file, use char[] instead of a std::string:</span></li><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:circle;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">ex) const char kFoo[] = “foo”; </span></li><li style="list-style-type:circle;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">This is part of our style guidelines.  It also makes faster code because there are no destructors, and more maintainable code because there are no shutdown order dependencies.</span></li></ul><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">There are many handy routines which operate on strings.  You can use IntToString() if you want to do atoi(), and StringPrintf() if you need the full power of printf.  You can use WriteInto() to make a C++ string writeable by a C API.  StringPiece makes it easy and efficient to write functions that take both C++ and C style strings.</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">For function input parameters, prefer to pass a string by const reference instead of making a new copy.</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">For function output parameters, it is OK to either return a new string or pass a pointer to a string.  Performance wise, there isn’t much difference.</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">Often, efficency is not paramount, but sometimes it is - when working in an inner loop, pay special attention to minimize the amount of string construction that we do, and the number of temporary copies that we make</span></li><ul style="margin-top:0pt;margin-bottom:0pt"><li style="list-style-type:circle;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">When you use std::string, you can end up constructing lots of temporary string objects if you aren’t careful, or copying the string lots of times.  Each copy makes a call to malloc, which needs a lock, and slows things down.  Try to minimize how many temporaries get constructed.</span></li><li style="list-style-type:circle;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">When building a string, prefer “string1 += string2; string1 += string3;” to       “string1 = string1 + string2 + string3;”  Better still, if you are doing lots of this, consider a string builder class.</span></li></ul><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="background-color:transparent;vertical-align:baseline;white-space:pre-wrap">For localization, we have the ICU library, with many useful helpers to do things like find word boundaries or convert to lowercase or uppercase correctly for the current locale.</span></li><li style="list-style-type:disc;font-size:15px;font-family:Arial;background-color:transparent;vertical-align:baseline"><span style="color:rgb(34,34,34);vertical-align:baseline;white-space:pre-wrap">We try to avoid repeated conversions between string encoding formats, as converting them is not cheap.  It's generally OK to convert once, but if we have code that toggles the encoding six times as a string goes through some pipeline, that should be fixed.</span></li></ul></b></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/developers/chromium-string-usage">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq9nLubF8R526-_O0U3dk4N0HVpZQFQMH4MZszgDtajQcvbuD5kxXXNeWFi7n8NuqvSqSPYSRmsJn4oWSuaEuWOo_g--RxHq5IilMc0qCgAh-Bic1BU/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>

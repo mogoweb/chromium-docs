@@ -1,0 +1,953 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" href="/_/rsrc/1354323194313/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/56e332/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/chromium-os","deleted":false,"title":"Chromium OS","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs","deleted":false,"title":"Design Documents","dir":"ltr"},{"path":"/chromium-os/chromiumos-design-docs/system-hardening","deleted":false,"title":"System Hardening","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/56e332/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED_WITH_INDICATOR","siteTitle":"The Chromium Projects","isStartPageEnabled":true,"adsensePublisherId":null,"features":{"languageSelectDefaultTextSetToDefault":true,"validateClientGvizDataSourceUrls":true,"moreMobileStyleImprovements":true,"newInsertMenuIcons":true,"accessibleSortingButtons":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":false,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/system-hardening\u0026service\u003djotspot","analyticsAccountId":"UA-5484340-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/56e332/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/56e332/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/56e332/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/56e332/system/app/css/trogedit.css","/_/rsrc/1441580320000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/56e332/system/app/css/codeeditor.css","/_/rsrc/1441580320000/system/app/css/camelot/editor-jfk-wlb.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"chromium.org","baseUri":"","name":"dev","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/chromium-os/chromiumos-design-docs","parentWuid":"wuid:gx:2eb69dd73ece341e","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"System Hardening","locale":"en","wuid":"wuid:gx:60a72e3dbd6e655c","revision":3,"path":"/chromium-os/chromiumos-design-docs/system-hardening","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"system-hardening","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="System Hardening - The Chromium Projects" />
+<meta itemprop="name" content="System Hardening - The Chromium Projects" />
+<meta property="og:title" content="System Hardening - The Chromium Projects" />
+<meta name="description" content="Home of the Chromium Open Source Project" />
+<meta itemprop="description" content="Home of the Chromium Open Source Project" />
+<meta id="meta-tag-description" property="og:description" content="Home of the Chromium Open Source Project" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/56e332/system/app/themes/beigeandblue/standard-css-beigeandblue-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/overlay.css?cb=beigeandblueundefineda100%25%25150goog-ws-leftthemedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="/_/rsrc/1441580320000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>System Hardening - The Chromium Projects</title>
+<meta itemprop="image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<meta property="og:image" content="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><a href="https://www.chromium.org/" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="/_/rsrc/1438879449147/config/customLogo.gif?revision=3" alt="The Chromium Projects" class="sites-logo  " /></a><h2><a href="https://www.chromium.org/" dir="ltr" id="sites-chrome-userheader-title">The Chromium Projects</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_7648876402527094" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-projects" jotId="wuid:gx:10ae433dadbbab13" class="sites-navigation-link">Home</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/Home" jotId="wuid:gx:43582b9d2029d3af" class="sites-navigation-link">Chromium</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/chromium-os" jotId="wuid:gx:83df2ab1f8880ba" class="sites-navigation-link">Chromium OS</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14720868319272995" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Quick links</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/for-testers/bug-reporting-guidelines" class="sites-navigation-link">Report bugs</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://www.chromium.org/developers/discussion-groups" class="sites-navigation-link">Discuss</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:4b58a9a350ad12f" class="sites-navigation-link">网站地图</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19690813310444355" class="sites-embed" role="navigation"><h4 class="sites-embed-title">Other sites</h4><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList"><li class="nav-first "><div dir="ltr" style="padding-left: 5px;"><a href="http://blog.chromium.org/" class="sites-navigation-link">Chromium Blog</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="http://code.google.com/chrome/extensions/" class="sites-navigation-link">Google Chrome Extensions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://developers.google.com/chrome/chrome-frame/" class="sites-navigation-link">Google Chrome Frame</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_19695218559354544" class="sites-embed" role="complementary"><h4 class="sites-embed-title"></h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><span style="font-size:x-small">Except as otherwise </span><a href="http://developers.google.com/site-policies.html#restrictions"><span style="font-size:x-small">noted</span></a><span style="font-size:x-small">, the content of this page is licensed under a </span><a href="http://creativecommons.org/licenses/by/2.5/"><span style="font-size:x-small">Creative Commons Attribution 2.5 license</span></a><span style="font-size:x-small">, and examples are licensed under the </span><a href="http://src.chromium.org/viewvc/chrome/trunk/src/LICENSE" target="_blank"><span style="font-size:x-small">BSD License</span></a><span style="font-size:x-small">.<br /></span></div></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/chromium-os" dir="ltr">Chromium OS</A>‎ &gt; ‎<A href="/chromium-os/chromiumos-design-docs" dir="ltr">Design Documents</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">System Hardening</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>
+<div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:250px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-2"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Abstract"><strong>1 </strong>Abstract</a></li><li class="goog-toc"><a href="#TOC-Technology"><strong>2 </strong>Technology</a></li><li class="goog-toc"><a href="#Detailed_Design_73859539098644_6227793370126997"><strong>3 </strong>Detailed design</a><ol class="goog-toc"><li class="goog-toc"><a href="#Containment_Options_8128426250_0061274315380753785"><strong>3.1 </strong>Containment options</a></li><li class="goog-toc"><a href="#TOC-Deployment"><strong>3.2 </strong>Deployment</a></li><li class="goog-toc"><a href="#Phase_1_026564505184363374_762"><strong>3.3 </strong>Phase 1: Surface changes</a></li><li class="goog-toc"><a href="#Phase_2_the_phase_of_awesomene_9867454650616646"><strong>3.4 </strong>Phase 2: Diving deeper</a></li><li class="goog-toc"><a href="#Phase_3_resistance_is_futile_8_4503263582141973"><strong>3.5 </strong>Phase 3: Don't forget your snorkel!</a></li><li class="goog-toc"><a href="#Designing_for_security_3724505_10836828257027842"><strong>3.6 </strong>Designing and developing for security</a></li><li class="goog-toc"><a href="#TOC-Exploit-mitigation"><strong>3.7 </strong>Exploit mitigation</a></li><li class="goog-toc"><a href="#Quantifying_effectiveness_0663_6404567439111519"><strong>3.8 </strong>Quantifying effectiveness</a></li></ol></li><li class="goog-toc"><a href="#TOC-Plan"><strong>4 </strong>Plan</a></li></ol></div></div></div></div>
+<h2><a name="TOC-Abstract"></a>Abstract</h2>
+<div>
+<ul><li>Chromium OS strives to make remote attacks more difficult by using multiple techniques ranging from privilege minimization to compile-time hardening.<br />
+</li>
+<li>A phased approach to system hardening is proposed to iteratively reduce the exposed attack surfaces and increase the number of defensive layers.<br />
+</li></ul>
+</div>
+</div>
+<div><br />
+</div>
+<div>
+<div>This document lays out a technical vision for making Chromium OS-based systems difficult for remote attackers to compromise using various system-level
+mechanisms. Three objectives guide this vision:<br />
+<ul><li>Reducing surface area exposed to attack</li>
+<li>Reducing ability to successfully and reliably exploit any exposed, vulnerable software<br />
+</li>
+<li>Reducing benefit of a successful exploitation</li></ul>
+<p>Efforts to secure Linux environments tend to revolve around the <a href="http://web.mit.edu/Saltzer/www/publications/protection/" title="principle of least privilege">principle of least privilege</a> and applying exploit mitigation tactics wherever possible.  While the exploit mitigation techniques are effective, they are never a perfect defense and often the specific techniques deployed vary from distribution to distribution.  In addition, the principle of least privilege is excellent in a server environment and for locking down system services on desktops.  However, desktop systems are meant to be general purpose.  This makes it incredibly difficult to determine the least privilege needed if a program has not ever been seen on the system before (or was written since the system was installed!).  The end result is that the risks from interactively executed applications are addressed only using exploit mitigations and not as comprehensively as desired.</p>
+<p>Chromium
+OS has an advantage.  All native programs run by the end user are
+known in advance since all general purpose applications are web applications.  We use this knowledge to apply comprehensive access control enforcement in addition to the well-known exploit mitigation techniques.  This combination allows Chromium OS to benefit from the great work securing Linux in both end-user and server enviroments!<br />
+</p>
+<h2><a name="TOC-Technology"></a>Technology</h2>
+<p><a href="http://lxr.linux.no/linux+v2.6.30/Documentation/cgroups/" title="Control Groups (cgroups)">Control Groups (cgroups)</a>
+are a somewhat recent addition to the Linux kernel.  They are a
+hierarchical collection of tasks that can be arbitrarily created. 
+Once a task has been associated with a hierarchy, it falls under
+runtime constraints ranging from limited device node access to limited
+CPU and memory usage. cgroups restrictions can be specified in terms of
+percentages or as constants which provide an intuitive means of <i>"guaranteeing" </i>that
+processes operate within their given bounds.  This feature is great for
+constraining denial of service attacks and general robustness issues
+(and combines well with rlimit).  The device filtering is useful for
+limiting <font face="&amp;apos;courier new&amp;apos;, monospace">/dev</font> access in constrained namespaces. </p>
+<a href="http://lxr.linux.no/linux+v2.6.30/Documentation/namespaces/" title="Namespaces">Namespacing</a>
+provide a means of isolating processes, and process trees, from other
+running processes on a system.  Their use has been driven largely by
+the <a href="http://wiki.linux-vserver.org/" title="Linux VServer">Linux VServer</a>.
+Namespaces can be created only when a new process is started using
+<font face="&amp;apos;courier new&amp;apos;, monospace">clone()</font>.  The following namespaces are currently available in the
+upstream kernel:<br />
+<ul><li>
+    PID: The process called with a new PID namespace becomes pid=1 and is treated as a local <i>init </i>for
+the purposes of reparenting orphaned processes.  When this process
+terminates, the namespace is shut down.  Processes in this namespace can
+only "see" other processes in the namespace and a custom <font face="&amp;apos;courier new&amp;apos;, monospace">/proc</font> can be
+mounted to provide visibility. A custom mount should be paired with a
+VFS namespace.<br />
+</li>
+<li>
+    UTS: UTS namespacing allows for a custom host and domain names to be set for a given namespace.<br />
+</li>
+<li>
+User:  User namespacing remaps users to new, localized UIDs.  At
+present, this functionality is immature in the kernel as many
+guarantees are not met, such as similar UIDs in different namespaces
+sharing a global UID.<br />
+</li>
+<li>
+IPC: This isolates SystemV IPC ids to the processes in this namespace. 
+This means that globally shared memory, semaphores, and message queues
+are accessible only to other processes in the same namespace.<br />
+</li>
+<li>
+<a href="http://www.ibm.com/developerworks/linux/library/l-mount-namespaces.html" title="VFS">VFS</a>:
+VFS namespacing allows for a custom view of the locally mounted
+file systems.  In addition, any file systems mounted in a VFS namespace
+will automatically be unmounted when all the processes in the namespace
+have terminated.  In addition, mount namespacing also comes with
+interesting new sharing attributes (make-private, make-unbindable,
+make-slave, make-shared).<br />
+</li>
+<li>
+<a href="http://lxc.sourceforge.net/network.php" title="NET">NET</a>:
+This namespace isolates the processes from the network interfaces, defaulting to having access only to the loopback interface.</li></ul>
+<p>
+  In addition to namespacing and cgroups, Linux supports <a href="http://www.ibm.com/developerworks/aix/library/l-posixcap.html" title="parceling superuser privileges using Linux capabilities">parceling superuser privileges using capabilities</a>. 
+Privileges that were once limited to uid=0 are now available in a
+coarse-grained fashion using runtime and file system (extended
+attribute)-based labeling.  In addition, process tree capabilities
+inheritance is possible with a <a href="http://marc.info/?l=linux-kernel&amp;m=125026482525494&amp;w=2" title="lightweight kernel patch">lightweight kernel patch</a>. 
+With file system capabilities enabled, specific process trees can also
+disable uid=0 from having any default privilege (other than that
+granted by file system permissions) using the securebits SECURE_NOROOT
+and SECURE_NO_SETUID_FIXUP.  All processes in the subtree could then be
+locked into this pure capability-based superuser privilege mode barring
+a kernel privilege escalation vulnerability.  All capabilities are
+broken into effective, permitted, and inherited sets, which can be
+applied to a file or process.  In addition, processes all have a
+starting bounding set that places an upper limit on which capabilities
+can be used, even if in one of the other sets.  At present, we're not
+aware of any Linux distributions that make heavy use of capabilities. </p>
+<p>
+<a href="http://lwn.net/Articles/154277/" title="Linux Security Modules">Linux Security Modules</a>
+(LSM) is a subsystem of the Linux Kernel Modules that implements a
+number of kernel task-based hooks.  It allows for a security module to
+be implemented that enforces mandatory access controls and can be
+stacked (if supported by the module) with other security modules.  <a href="http://tomoyo.sourceforge.jp/" title="Tomoyo">Tomoyo</a> 2.x, <a href="http://www.nsa.gov/research/selinux/index.shtml" title="SELinux">SELinux</a>, and <a href="http://schaufler-ca.com/" title="SMACK">SMACK</a> are examples of these systems.</p>
+<p><a href="http://grsecurity.net/" title="GRSecurity">grsecurity</a>
+is a standalone kernel patch that provides role-based access controls,
+kernel hardening, and bug fixes, as well as extensive detection
+functionality.</p>
+<p>
+  The kernel supports a notification system to inform userland of process events: fork, id changes, so on.  The <a href="http://lwn.net/Articles/157150/" title="process events">process events</a>
+subsystem allows for low-cost monitoring of task creation and removal
+as well as other pertinent runtime information.  Communication is
+handled over a netlink connection provided by the CONFIG_CONNECTOR
+option.</p>
+<a name="Overview_000639178213980296_33"></a>
+<h2><a name="Detailed_Design_73859539098644_6227793370126997"></a>
+  Detailed design
+</h2>
+<p>This project will be undertaken iteratively to increase both the amount of process isolation and overall system security as the implementation proceeds.<br />
+<br />
+To reduce the surface area exposed to attack, we aggressively isolate
+processes to access only what they require to function.  Applying the <a href="http://web.mit.edu/Saltzer/www/publications/protection/" title="principle of least privilege">principle of least privilege</a>
+reduces the total amount of code exposed at any one point and, ideally,
+minimizes the risk that the exposed code contains a vulnerability.<br />
+<br />
+Since
+it's not practically possible to isolate any software so completely as
+to guarantee that vulnerable code isn't exposed, we use runtime and
+compile-time exploit mitigations to increase the difficulty of a
+successful attack.  In addition, the mitigations used should make
+viable exploits behave unreliably across Chromium OS systems.<br />
+<br />
+Again, we assume that a <i>perfect</i> defense is unattainable, but providing a very good defense will be on-going, iterative work which we all must contribute to.  <span style="background-color:rgb(255,255,255)">To </span>that end, we want
+to make successful exploitation less beneficial for the attacker.  For
+successful user-level exploits, this is done using the same isolation
+techniques used to minimize exposed kernel attack surfaces.  Successful
+kernel-level exploits may be partially contained through some kernel
+hardening patches, but more extensive fault isolation approaches have
+not yet been explored.<br />
+</p>
+<h3><a name="Containment_Options_8128426250_0061274315380753785"></a>
+  Containment options
+</h3>
+Two main approaches will be supported for containment:<br />
+<ul><li>
+    minijail: a tiny, custom launcher that handles namespacing, control groups, chroot'ing, and more.<br />
+</li>
+<li>
+    A mandatory access control mechanism with automated learning mode, like Tomoyo or grsecurity.<br />
+</li></ul>
+<h4><a name="minijail_8776645008605757"></a>minijail
+</h4>
+<i>minijail</i> is a small executable that can be used by root and
+non-root users to perform a range of behaviors when launching a new
+executable:<br />
+<ul><li>
+    Dropping capabilities from the bounding set
+  </li>
+<li>
+    Enable/disable capabilities
+  </li>
+<li>
+    chroot
+  </li>
+<li>
+    Dropping root (uid+gid)
+  </li>
+<li>
+    Setting securebits (SECURE_NOROOT, SET_DUMPABLE)</li>
+<li>Setting rlimits</li>
+<li>
+    Process namespacing:
+  </li>
+<ul><li>
+      Will act as init for any pid namespaces
+    </li>
+<li>
+      Will mount /proc in any child vfs namespaces
+    </li>
+<li>
+      Will support uts namespacing (not required)
+    </li>
+<li>
+      Will support user namespacing (in the future)
+    </li>
+<li>
+      Will support IPC namespacing (binary decision)
+    </li>
+<li>
+      Will support net namespacing (for locking down network interfaces w/veth)</li></ul>
+<li> A generic <a href="http://src.chromium.org/viewvc/chrome/trunk/src/sandbox/linux/suid/sandbox.c?revision=25019&amp;view=markup" title="suid sandbox">suid sandbox</a> (using the features above)</li></ul>
+The final implementation should
+include a standalone library, libminijail, and a command-line tool that supports individual feature specification or the loading of specific,
+preconfigured profiles. <br />
+<p>
+  Regardless of the implementation, the binary will need the cap_setpcaps extended attribute set (+ep) to be able to operate without root privileges.  (If
+we move to a root file system that doesn't support extended attributes,
+any specialized binaries can be mounted off of an ext3 loopback, or the
+kernel-based inheritance patch can be used.)</p>
+<h4><a name="Tomoyo_1_x_8395558641669357_59"></a>
+  Mandatory access controls (MAC)<br />
+</h4>
+If we are able to use kernel hardening patches (discussed later), we
+should seriously consider using grsecurity. 
+If not, we will use the in-kernel solution Tomoyo.  grsecurity supplies an effective automatic rule generator and includes
+a large
+number of kernel hardening features and bug fixes that will otherwise
+be missed.<br />
+<br />
+Tomoyo will provide mandatory access controls to ensure that processes
+don't exceed their expected boundaries.  Initially, the coverage will
+be largely limited to additional file system enforcements. Protection
+around ptrace, ioctl, and other areas are needed before this will be
+considered a good solution. <br />
+<br />
+Whichever MAC solution we choose will be configured to run in enforcement mode for all processes, except when running in development mode. In that case, the development
+mode parent process runs in permissive mode to allow the developer to
+take whatever actions he wishes.</div>
+<div><br />
+<h3><a name="TOC-Deployment"></a>Deployment<br />
+</h3>
+System hardening will proceed in roughly three phases.  The first phase applies comprehensive userland isolation using the two main containment options. <br />
+<h3><a name="Phase_1_026564505184363374_762"></a>
+  Phase 1: Surface changes<br />
+</h3>
+Phase 1 focuses largely on putting existing services (and user logins)
+in to SECURE_NOROOT+namespaced jails with as little system impact as
+possible.  This can be done by tweaking initialization scripts and
+modifying file extended attributes.  In particular, this will be done
+in our custom upstart configuration files and other boot scripts.<br />
+<h4><a name="Nobody_puts_baby_in_a_corner_O_6207490055798748"></a>
+  Nobody puts user in a corner: Or, taking root from the user.<br />
+</h4>
+<p>It turns out that this is pretty easy as long as we don't focus on making all of Xorg non-root-based.  For example, there is a command run by the login manager upon successful user authentication:</p>
+<p style="font-family:Courier New">       /bin/bash --login /etc/X11/Xsessionrc %session
+</p>
+<p>which we could change to</p>
+<p style="font-family:Courier New">       /sbin/capsh --secbits=0x2f --drop=[all] -- --login /etc/X11/Xsessionrc %session
+</p>
+<p>
+  in order to run the user's session in SECURE_NOROOT, if we were using the capsh tool (capabilities-aware shell).</p>
+<p>
+  However, since we have minijail, we can use it to do more than just run in SECURE_NOROOT:
+</p>
+<p>
+<span style="font-family:Courier New">       /sbin/minijail --init --namespace=pid,vfs --cgroup=chromeuser
+--secbits=0x2f --drop=[all] --exec=/bin/bash -- --login /etc/Xsessionrc
+%s</span><br />
+</p>
+<p>This will dump the new process in its own namespace where minijail
+acts as pid 1.  The entire X session will only be able to see a /proc
+that is related to its pid namespace, and it will have access only to
+devices whitelisted for the cgroup: chromeuser.  No SUID binaries or
+binaries with any additional extended capability attributes set will be
+executable in this session.</p>
+<p>The biggest impact is that when it comes time to perform screen
+unlocking, the xscreensaver process will not be able to do anything
+privileged.<br />
+</p>
+<p><b>Note: </b> We have not chroot'd or net-namespaced the binaries.  At
+present, /dev/ is limited by cgroup filtering (discussed below) and by
+mounting a fresh /proc with the namespace view.  While we will have
+stripped power from any simple root privilege escalation attack, a user
+running as uid=0 will still have normal discretionary access controls
+to a crazy number of files and devices as the root user.  In Phase 2,
+we will look at further segmenting access.</p>
+<p><span style="font-weight:bold">Big Note: Any privileged actions must be brokered by preconfigured, preexecuted binaries.</span></p>
+<p>With this Big Note in mind, we can look back at our
+slim.conf.  If we find that we need to launch some processes with some
+privileges, we can tone down how aggressive the first call to minijail
+is.  It can set up the namespace and lock down root, but it can leave the
+bounding set a bit wider; that way, we can launch utilities that may
+need capabilities like pulseaudio.  This can be done inside the
+Xsessionrc by calling minijail on all subsequent binaries with specific
+bounding set changes, etc.  They can all, thankfully, live in their new
+pid namespace unless we lock them down further (chroot, etc). 
+Initially, we'll start with the above configuration and tweak as
+problems are introduced.</p>
+<p><span style="font-weight:bold">Guiding resource utilization with control groups</span></p>
+Control groups (cgroups) will be used to segment the population with
+respect to device access and resource utilization.  To that end, we can
+preconfigure a few control groups at start via a simple
+/etc/init.d/cgroups script:<br />
+   <br />
+<span style="font-family:Courier New">   mkdir /cgroup<br />
+   chown root:root /cgroup<br />
+   chmod 700 /cgroup<br />
+   mount none /cgroups -t cgroup -o cpu,memory,dev</span><br style="font-family:Courier New" />
+<span style="font-family:Courier New">   mkdir /cgroups/services/network</span><span style="font-family:Courier New"><br />
+   mkdir /cgroups/services/autoupdate<br style="font-family:Courier New" />
+<span style="font-family:Courier New">   <span style="font-family:Courier New"><span style="font-family:Courier New">mkdir /cgroups/user/chrome</span></span><br />
+<span style="font-family:Courier New"><span style="font-family:Courier New">   mkdir /cgroups/user/chrome/sandbox<br />
+   mkdir /cgroups/user/chrome/plugins/flash<br />
+</span></span>    mkdir /cgroups/user/xorg</span><br />
+</span><br />
+With that done, we can leave it to minijail invocations to add the pid
+to the /cgroups/&lt;cgroup&gt;/task file.  The biggest challenge will
+be nested cgroups like chrome/sandbox, since we will not mount /cgroups
+in the chrome user namespace and users will be unable to see the
+/cgroups file system.  In Phase 1, we'll just have to let renderers live
+in the chrome cgroup and hope for the best.  Segmenting chrome user
+processes from the system services should be enough to guarantee that a
+Chromium browser CPU DoS won't peg the system too badly, but we'll see.  If it
+can tie up xorg, the user experience will be the same.  However, in
+Phase 2, we will introduce a cgroupsd daemon.  This daemon will monitor
+new process creation (via a TBD mechanism with _low_ power/cpu needs)
+and automatically add them to the appropriate cgroup.
+<div><br />
+Devices will be added quite simply with:<br />
+<p>   <font face="&amp;apos;courier new&amp;apos;, monospace">echo 'c 1:3 mr' &gt; /cgroups/1/devices.allow</font></p>
+
+Memory per group can be determined based on system memory.  Below, limit chrome to using 80 percent of available memory:<br />
+<br />
+<font face="Courier New">   total_mem=$(free -b  | grep Mem | tr -s ' ' | cut -f2 -d' ')<br />
+   echo $((total_mem / 5 * 4)) &gt; /cgroups/user/chrome/memory.limit_in_bytes<br />
+<br />
+</font>CPU usage can also be determined using the system total, which
+is available in cpu.shares.  Below, we give all chrome processes 80 percent of
+the CPU shares:<br />
+<br />
+<font face="Courier New">   total_cpu=$(cat /cgroups/cpu.shares)<br />
+   echo $((total_cpu / 5 * 4)) &gt; /cgroups/user/chrome/cpu.shares<br />
+<br />
+<a href="http://lxr.linux.no/linux+*/Documentation/cgroups/memory.txt#L204" name="L204"></a></font>Of
+course, we can tweak the total number of shares to make specific
+allocations.  The allocations should then be used for fair scheduling.<br />
+<br />
+Longer term, we may be able to use 'freezer' support to freeze all
+processes prior to suspend or use cpusets to ensure that the Chromium browser, or perhaps even an <a href="http://code.google.com/chrome/extensions/">extension</a>, is privately allocated an entire CPU core (using <i>cpusets</i>). 
+In addition, if any of these items imply too much overhead, it is
+possible to achieve similar (and even more focused) results using
+RLIMITS. <br />
+<h4><a name="Extended_attributes_and_existi_4586749093631083"></a>
+  Locking down existing daemons with extended attributes and a bit of luck</h4>
+<h4><a name="TOC-At-present-there-are-a-number-of-pr"></a><span style="font-weight:normal">At present, there are a number of processes running as root:</span></h4>
+<ul><li> SLiM and X: both run with privilege.  SLiM starts Xorg, and Xorg needs ioctl and ioperm access, which equates to root access in
+most cases.  We will explore a non-root Xorg in Phase 2.<br />
+</li>
+<li>
+connman will need CAP_NET_ADMIN, CAP_NET_RAWIO at most in its bounding
+set so that they may be used by properly annotated files: ping,
+dhclient, wpa_supplicant.<br />
+</li>
+<li>
+dhclient is used for acquiring a network address and configuring an
+existing network device.  It needs to broadcast UDP and change network
+device parameters.<br />
+</li>
+<li>
+    wpa_supplicant is used for configuring the wireless device to properly associate with wireless access points.<br />
+</li>
+<li>
+    acpid handles power management and other events: lid close, low battery, etc.<br />
+</li>
+<li>
+    getty handles the standalone console, which will most likely be disabled in nondeveloper installs.<br />
+</li>
+<li>
+    udev handles firmware loading and hot-pluggable device.<br />
+</li></ul>
+<p>The final goal is to move to a pure capability-based system which means that no service should <i>need</i>
+root access.  To this end, we'll need to modify the startup process for
+these daemons.  The easiest approach is to just wrap their
+start-stop-daemon calls with calls to minijail, either in the
+control panel or in /etc/init.d.  Each one should get its own
+namespacing with chroot'ing if possible. (If
+it seems difficult to chroot a specific binary, then we should consider
+doing so with the Chromium OS project's <a href="http://code.google.com/p/chromium/wiki/LinuxSUIDSandbox">LinuxSUIDSandbox</a>.) Capabilities required will be determined using <i>strace | grep 'EPERM|EACCESS'</i>
+while locking down the binaries.  Each binary will have the
+capabilities it needs added to its extended attributes.  For
+example, dhclient needs
+CAP_NET_BIND_SERVICE|CAP_NET_BROADCAST|CAP_NET_ADMIN:</p>
+<p>
+</p>
+<p style="font-family:Courier New">
+    capset cap_net_bind_service,cap_net_broadcast,cap_net_admin=ep /sbin/dhclient3
+</p>
+<p>
+</p>
+<p> Then, dhclient will be called with minijail dropping all
+capabilities except those three (and cap_setcaps if needed).  If
+dhclient is called from connman, then that process can already be
+running with a restricted capability bounding set.
+</p>
+<p> At present, our root file system supports extended attributes.  If
+we move to squashfs or another file system without xattr<b><span style="font-weight:normal">, we will have to
+work around the restriction. This can be done using the patch referenced
+in the Technology section or by mounting a loopback file system with the
+desired binaries with the appropriate xattrs.</span></b></p>
+<p>
+</p>
+<h4><a name="Supporting_development_before__044505742500650314"></a>
+  Supporting development mode before we finish designing it<br />
+</h4>
+<p> Once we dump the user in SECURE_NOROOT land, sudo and su become
+useless.  To allow continued tinkering, we can use the secondary
+console if enabled or a loopback ssh daemon.  As long as we don't lock
+these alternative entry points the same way as the primary user session, they will be perfectly sane ways to
+implement a secure but useful development mode.<br />
+</p>
+<p>
+</p>
+<h4><a name="Configuring_Tomoyo_57610870098_5258779823226403"></a>
+  Adding fine-grained controls over coarse-grained capabilities with mandatory access controls<br />
+</h4>
+<p> For our Mandatory Access Control (MAC) needs, we are considering the external grsecurity kernel patch as well as the currently in-kernel Tomoyo module and accompanying tomoyo-ccstools
+package.  In either case, a similar approach applies.  Once installed, an initial policy
+can be configured using learning mode.  We can then enable enforcement
+on process trees which shouldn't change: dhclient, wpa_supplicant,
+etc.  The Chromium browser itself will likely run in a permissive
+mode as we explore extensions and other changes.  However, as we
+approach releases, we can configure a final policy using learning mode
+both with active users and through automated testing that exercises
+all the expected use cases for the system.<br />
+</p>
+<p>The Tomoyo tool for editing the policy is ccs-editpolicy. 
+Initially, there should be no need to perform any special customization
+other than converting process trees from disabled to learning or
+permissive.  In addition, we will need to make sure that the
+development mode runs in permissive or disabled mode.</p>
+<p>
+</p>
+<h4><a name="Locking_down_the_filesystem_50"></a>
+  Locking down the file system (discretionary access controls)<br />
+</h4>
+Discretionary access controls have been satisfactory at
+implementing basic security in Linux for years.  An audit of the root file system will ensure that no end user can read
+files or directories he has no need to read, execute files he has no need to access, or chdir to directories he has no need to enter.  This effort will be
+further expanded by the Phase 2 efforts around changing file ownership
+to limit root's discretionary access—even when its capabilities have
+been revoked.<br />
+<br />
+In addition to the normal file system, /dev and /proc can be dangerous
+for an unprivileged root user. While we are filtering devices
+per-cgroup, we should ensure that CONFIG_STRICT_DEVMEM is set to limit
+/dev/mem usefulness.  If we patch Xorg, we may be able to get rid of
+/dev/mem entirely.  In addition, a review of what is available in /proc
+and /dev for each group will be crucial.  Whenever we place a process
+tree in a new VFS, we can mount --bind in only the files we want.  This
+is harder with /proc, but doable if needed.  /proc may be remounted
+read-only at the very least.  We may be able to make use of the Linux
+VServer's 'setattr' tool to hide /proc entries on namespace mount.  If
+so, this would be done in the minijail code but would require that we
+support the vserver kernel patches.  However, namespacing and
+chroot'ing will hopefully cover a lot of ground.<br />
+<br />
+User home directories and the /home partition should be mounted nosuid,
+nodev, and ideally, noexec.  We should attempt to limit user access to
+included scripting engines if possible to to aid in enforcing noexec
+(dash, bash, or any others).<br />
+<h4><a name="Deploying_the_firewall_8997681_2912435959388987"></a>
+  Deploying the firewall<br />
+</h4>
+The netfilter/iptables infrastructure provides a number of interesting
+approaches for limiting network access, both inbound and outbound. 
+While a basic inbound-only policy will work for general TCP and UDP
+level attack protection, it would be nice to limit the OUTPUT chain as
+well.  We can also consider using network namespaces and VETH devices,
+but for Phase 1, the added complexity and potential robustness issues
+make it questionable (see Phase 2 for more detail).<br />
+<h4><a name="Xorg_without_the_root_user_274_4553212936137553"></a>Xorg without the root user
+</h4>
+On a testing system, we have restricted Xorg to CAP_SYS_RAWIO and seen everything work
+except ioctl() access to the graphics device.  We believe there to be patches that deal with this, but getting them working within our codebase may require some work.  In
+addition, we can't just drop privilege because that will make returning
+from suspend quite painful.<br />
+<h4><a name="SLiM_and_pam_gaia_with_limited_11748445826866993"></a>
+  SLiM and pam_google with limited capabilities<br />
+</h4>
+Any privileged behavior needed by pam_google will need to be moved into a
+standalone daemon.  For instance, any encrypted volume management will
+need to be shifted into a daemon that handles it for the user.  A
+simple daemon that checks SO_PEERCRED and the current mount state
+would do the trick.<br />
+<h3><a name="Phase_2_the_phase_of_awesomene_9867454650616646"></a>
+  Phase 2: Diving deeper<br />
+</h3>
+Phase 2 is where we start making changes that are farther reaching.<br />
+<h4><a name="cgroupsd_024907483838749633_93"></a>
+  cgroupsd
+</h4>
+cgroupsd is a simple daemon that will automagically add new processes
+to a control group specified in a libcg-style configuration file.  The
+only useful design point is that it will do so by using
+CONFIG_CONNECTOR and CONFIG_PROC_EVENTS to be notified by the kernel of
+new processes via netlink.  It will need access to the /cgroups mountpoint, but
+otherwise, will not need any additional privileges.  In particular, if cgroupsd is used <i>only</i> for Chromium browser sandbox processes, it can run with privileges to modify only /cgroups/user/chrome/sandbox/tasks.<br />
+<br />
+cgroupsd will also be used to enforce device filtering and resource management on plugins like Flash.<br />
+<h4><a name="Other_local_system_management__9619707451250135"></a>
+  Other local system management daemons (network, sound, removable storage, ?)<br />
+</h4>
+The further we lock down the user's session, the more work we'll
+have to put in to brokering access to system resources.  The control panel approach is
+great for system management brokering (via a network loopback), but we
+will need to make sure that udev and hal access can be handled safely.<br />
+<br />
+We're probably also going to see some pain with Adobe Flash and other
+binary plugins unless we give them access.  Reviewing and integrating
+plugins with this design will be critical to avoiding introducing a
+trivial backdoor through the protections.<br />
+<h4><a name="Put_chrome_instances_in_their_"></a>
+  Put browser instances in their own namespaces<br />
+</h4>
+Chromium browsers can make use of the measures deployed in Phase 1.   If the
+existing sandbox isn't isolating rendered processes in their own pid
+namespace, then it should be done here.  In addition, every browser
+process itself can be dropped into its own namespace when launched.<br />
+<h4><a name="Applying_net_namespaces_and_tr_833697125899621"></a>
+  Applying net namespaces
+</h4>
+One possible approach to isolating processes further is putting them all in their own <a href="http://lxc.sourceforge.net/network/configuration.php" title="net namespace">net namespace</a>. 
+We can then expose to the system a virtual interface with a virtual, internal, IP address.  We could even optionally enforce userland proxy use (for truly dodgy
+inmates).  However, this may introduce robustness issues if a user is
+assigned a physical address that is the same or in the same netmask as
+the virtual ones.  Given that we can't control the eth0 address, we have
+delayed pursuing this until Phase 2.  When we get there, it will be worth
+investigating and deploying if possible to keep any process from being
+able to bind to an external port.<br />
+<h4><a name="Re_chowning_the_filesystem_or__9641667131846766"></a>
+  Re-chowning the file system, or why root shouldn't own <i>everything</i>.<br />
+</h4>
+Even in a SECURE_NOROOT environment, root still has discretionary
+access control to a large number of files and devices, and that access may be
+used to escalate privileges or make system changes.  One possible
+approach is to create multiple system accounts that are responsible
+for files along some logical domain.  One option would be to use a var
+user and a home user and a bin user for each of the areas they may
+own.  A privileged user can always override such discretionary access control mechanisms, but it will stop any
+accidental root access from being completely detrimental.<br />
+<br />
+That
+change may be overkill or add more complexity than the gain.  Another
+option would be to add a new secure bit along the lines of
+SECURE_UNSAFE.  If that secure bit is set on a tree, then no process in
+the tree can change to UID/GID 0.<br />
+<h4><a name="Device_interposition_608972725"></a>Device interposition</h4>
+Given
+that Chromium browsers and plugins need access to the webcam and audio (in
+and out), it's important to isolate the kernel device drivers from
+software that may be attacker controlled.  To this end, access to
+/dev/video0 will be brokered via a userland daemon.  The work may be
+based on <a href="http://code.google.com/p/gstfakevideo/" title="GSTFakeVideo">GSTFakeVideo</a>. 
+Not only will this avoid direct attacks on random webcam drivers, it
+will also mean we can later offer an interface for doing real-time
+video stream filtering: custom effects, etc. <br />
+<br />
+In addition to
+/dev/video, we'll want to position userland code for audio interception
+(e.g, /dev/dsp, etc).  This can be done using something like esound or
+pulseaudio.  If we go with one of those daemons anyway, we can get this for free.<br />
+<br />
+After
+the audio/video experience, we're left with one major exposed surface
+for plugins which require video card device access.  Since we will want
+to support accelerated 3D and other fast rendering, we'll be exposing
+(possibly binary-only) video card drivers via X/DRI.  This is a larger
+problem that will be addressed in a more detailed design document on
+the issue.<br />
+<h4><a name="Monitoring_027602842684686046_"></a>
+  Monitoring<br />
+</h4>
+If we can monitor our system for any clear signs of compromise without
+seriously affecting battery life or performance, then we should!  This
+area should be branched out into a full standalone design document. 
+But within the scope of this document, it is worth considering a very
+simple system.<br />
+<br />
+A single daemon can monitor process creation and uid changes
+via the proc events kernel interface.  If it sees any process become
+uid/euid==0, then we have someone running a privilege escalation
+exploit.  If we determine an exceptional-event user interface or a
+reboot path that will notify the user to put-a-paperclip-in to reset the device, then we
+can trigger it immediately.  While an exploit can target this behavior,
+it is just one more layer of defense.<br />
+<br />
+The
+Linux Auditing Framework may be very useful for doing detection, but
+its cost may outweigh the benefit.  Since we are not expecting a huge
+number of process creation events, we can monitor system calls ranging
+from ptrace to clone(2) to fork.  If we avoid high traffic system
+calls, we should be able to enforce some basic system call detection
+without sandboxing explicitly.  In addition, if we don't use auditd,
+but instead a <a href="http://people.redhat.com/sgrubb/audit/audit-rt-events.txt" title="custom listener">custom listener</a>,
+we can immediately react to an event—such as terminating the calling
+process or triggering a reboot into the recovery system.<br />
+<h3><a name="Phase_3_resistance_is_futile_8_4503263582141973"></a>
+  Phase 3: Don't forget your snorkel!<br />
+</h3>
+Phase 3 is where we get to explore additional innovations in the security space that will require the most long-term investment.  We're excited about the possibilities around integrating new kernel and user space hardening techniques and figuring out how to properly isolate drivers in kernel-space.<br />
+<br />
+Here are some of the ideas we have, but there is a lot of area to research:<br />
+<ul><li>Retrofit /sbin/init and remove root everywhere.</li>
+<li>Isolate all running Xorg windows in Xephyr transparently to mitigate keystroke theft, etc. (is the benefit worth the extra code?)<br />
+</li>
+<li>Custom Linux Security Module for doing nested runtime sandboxes.<br />
+</li>
+<li>Device driver security:  We need to analyze device drivers and determine a plan for isolation and or robustness.</li>
+<ul>
+<li>Using <a href="http://hci.stanford.edu/cstr/reports/2008-03.pdf" target="_blank">KLEE</a> or other automated dynamic analysis suite</li>
+<li>Consider vt-d/trustzone approaches for driver isolation (l4linux, 64-bit friendly KERNSEAL/KERNEXEC?, Nooks)</li></ul>
+<li>Harden the kernel heap management.</li>
+<li>Chromium-browser-based isolation of user data and processes by site domain.</li>
+<li>Chromium browser http and https network stack isolation (as processes) to protect secure cookies from evil sites accessed over HTTP.<br />
+</li>
+<li>Further harden userland/kernel interfaces.</li></ul>
+<h3 style="color:rgb(51,102,255);font-family:sans-serif"><a name="Designing_for_security_3724505_10836828257027842"></a><font size="3"><font color="#000000">Designing and developing for security </font><br />
+</font></h3>
+Future
+software written for and included in Chromium OS-based devices must not work around or
+otherwise undermine any of the features implemented to ensure system
+security.  In addition, it is important that software used in Chromium
+OS receive sufficient peer code reviews, manual and automated security
+testing, as well as security code audits.  Security testing and code
+review processes should be discussed in more detail in another document.  Obviously, we feel that all Chromium OS devices should only run software that follows these guidelines, but we can only ensure that this is so for our official builds.</div>
+<div>
+<h3><a name="TOC-Exploit-mitigation"></a>Exploit mitigation</h3>
+In addition to the containment plan, there are steps we can take to
+hardening our user and kernel toolchains and harden the kernel itself. 
+Toolchain hardening and kernel patching should be performed
+opportunistically and are not tied to the phased implementation laid
+out above.<br />
+<h4><a name="Kernel_toolchain_patches_49053"></a>
+  Kernel toolchain and patches<br />
+</h4>
+<div>There are a huge number of potential changes to the kernel we can pursue.  We'll start with known approaches and then expand as permitted into newer areas as possible:</div>
+<ul><li><font face="Courier New"><a href="http://pax.grsecurity.net/docs/" title="PaX">PaX</a></font>
+provides a number of useful exploit mitigation techniques as a
+standalone patch to the Linux kernel.  grsecurity and PaX are available
+in one bundled patch.  If at all possible, PaX and grsecurity should be
+applied to the kernel.<br />
+</li>
+<li>Ensure that we don't optimize out NULL pointer checks as mmap(0) tricks are the current trend in kernel exploitation.<font face="Courier New"><br />
+      -fno-delete-null-pointer-checks</font>
+</li>
+<li>
+    The kernel should be compiled so that it is relocatable:<br />
+<font face="Courier New">CONFIG_RELOCATABLE=y</font>
+</li>
+<li>
+    Compile out the vdso mapping unless we are really using something that needs it:<br />
+<font face="Courier New">COMPAT_VDSO=n</font><br />
+</li>
+<li>
+    A minimum mmap address must be enforced (&gt; NULL):<br />
+<font face="Courier New">CONFIG_SECURITY_DEFAULT_MMAP_MIN_ADDR</font><br />
+</li>
+<li>
+    The kernel should be compiled with stack smashing detection support:<br />
+<font face="Courier New">CONFIG_CC_STACKPROTECTOR=y
+    CONFIG_CC_STACKPROTECTOR_ALL=y</font>
+</li>
+<li>
+    System call patching: we should patch out, or severely restrict, system calls that are new or potentially risky (e.g., <font face="Courier New">ptrace, vmsplice</font>).
+  </li>
+<li>
+    Rebooting on soft panic:  Currently, the kernel will try to continue after a soft
+panic.  To avoid a soft panic being caused by a less-than-robust
+compromise, it'd be better to just reboot—which leads into the next
+point.
+  </li>
+<li>
+<a href="http://lwn.net/Articles/108596/" title="kexec-on-panic">kexec-on-panic</a>: While <a href="http://lxr.linux.no/#linux+v2.6.30/Documentation/kdump/kdump.txt" title="kdump">kdump</a>
+is meant to aid in enterprise-grade kernel debugging, we can
+automatically boot over to a standby kernel if something goes wrong
+with our primary kernel.  This means that we will gain the long term
+option of uploading kernel crash dumps, but at the very least, we could
+boot a kernel that displays "Awww, snap!" and safely reboots—or
+calls the autoupdater.  While an attacker could target modifying the
+kexec backup kernel, it seems an unlikely target if the attacker can
+modify the running kernel (but we expect someone will do it for fun). 
+Note, this is not an option for ARM.<br />
+</li>
+<li>
+    Additional kernel configuration audit: remove all unneeded features.<br />
+</li>
+<li>Disable automodule loading after the system is brought up.  One approach that was suggested is running <font face="Courier New">sysctl -q kernel.modprobe="/usr/bin/logger"</font> and then <font face="Courier New">rmmod -a</font> after the system is up if we can't move to a module-less kernel build.</li>
+<li>Enforce that system calls can't be called directly from writable memory segments, like the heap.</li></ul>
+<h4><a name="Userland_toolchain_12325799587_5156473655912429"></a>
+  Userland toolchain
+</h4>
+The userland toolchain should enforce a number of requirements (which will need benchmarking):<br />
+<ul><li>
+    -fno-delete-null-pointer-checks<br />
+</li>
+<li>
+    -fstack-protector: stack canary<br />
+</li>
+<li>
+    -pie: relocatable executables (and marked ET_DYN)<br />
+</li>
+<li>
+    -Wl,-z,relro: read-only relocations
+  </li>
+<li>
+    FORTIFY_SOURCE
+  </li></ul>
+<div>Longer term, we'll also look at:</div>
+<ul><li>
+    Additional glibc heap hardening</li>
+<li>Extending stack protector to obscure return addresses on the stack</li></ul>
+<p>
+</p>
+<h3><a name="Quantifying_effectiveness_0663_6404567439111519"></a>
+  Quantifying effectiveness
+</h3>
+<p> In order to quantify effectiveness, we should take the time to
+truly enumerate the attack surfaces yielded by these hardening steps:<br />
+</p>
+<ul><li>Available files
+  </li>
+<li>Files with privileges (capabilities, suid, /proc, /dev, /sys)
+  </li>
+<li>System calls
+  </li>
+<li>User id separation</li></ul>
+In addition to enumeration of attack surfaces, we should also implement proof-of-concept attacks for each layer of our defenses by placing vulnerable code at various points and directly testing the security properties at that point.  To supplement explicit tests, we will also pull in new exploits for newly vulnerable code and evaluated if it is successful, how reliable it is, and what we can do to protect against something like it in the future.<br />
+<br />
+<div>
+<h2><a name="TOC-Plan"></a>Plan</h2>
+The phases as laid out will be followed with the end goal of having Phases 1 and 2 completed fully in a few months -- including toolchain hardening.  Attack-oriented testing may be performed as part of the functional testing during deployment, but if not, it should be completed immediately after phase 2 along with a full system review.  In addition to retrospective analysis of the security, as new attacks emerge for Linux and Chromium OS, we will need to evaluate their behavior and determine how to continue to futureproof the system from a security perspective!<br />
+<span style="background-color:rgb(255,229,153)"><br />
+</span></div>
+</div>
+</div>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/system-hardening">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/56e332/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("7648876402527094", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_7648876402527094');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("14720868319272995", "Quick links", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_14720868319272995');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("19690813310444355", "Other sites", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_19690813310444355');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvrAwjAfmld0ObrebBiGRq921IJTLsgF9vlqOZxLnni_8sM0egY_EzbQj75tUqAwLxONGaUrLlAFAgAoXooO0Qbh2VV-2udJym6K0hvryjaTYzFFztJkl89XtGkYtYjAcBSai1z/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([]);
+    gsites.Xhr.send('https://www.chromium.org/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>
